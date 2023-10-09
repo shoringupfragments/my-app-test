@@ -1,5 +1,10 @@
 import React from 'react';
 import {
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
   ChakraProvider,
   Breadcrumb,
   BreadcrumbItem,
@@ -7,7 +12,6 @@ import {
   Box,
   Button,
   Heading,
-  Link,
   HStack,
   VStack,
   Grid,
@@ -31,6 +35,7 @@ import {
   NumberDecrementStepper,
   Container,
   Spacer,
+  Divider,
 } from '@chakra-ui/react';
 import { ChevronDownIcon } from '@chakra-ui/icons';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
@@ -46,15 +51,6 @@ function App() {
             <Heading>4theWords Planner</Heading>
             <Container>Fill out the tables below with the items you need and the items you already have.
             This page will auto-calculate the most efficient monsters and an approximate word count.</Container>
-            <Link
-              color="teal.500"
-              href="https://chakra-ui.com"
-              fontSize="2xl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              saving this code
-            </Link>
             <Breadcrumb>
             <BreadcrumbItem>
     <BreadcrumbLink href='#'
@@ -80,6 +76,18 @@ function App() {
             Nivali</BreadcrumbLink>
   </BreadcrumbItem>
 </Breadcrumb>
+            <Heading>Quick Convert Word Count</Heading>
+            <Container><p>Type your attack stat and your target word count below to quickly calculate the attack-adjusted word count.</p></Container>
+            <VStack><text>Attack Stat:</text>
+            <NumberInput defaultValue={0} min={0} max={9999}>
+  <NumberInputField id='atk'/></NumberInput></VStack>
+  <VStack><text>Word Count:</text>
+            <NumberInput defaultValue={0} min={0} max={Infinity}>
+  <NumberInputField id='wc'/></NumberInput></VStack>
+
+
+<Container><Divider></Divider></Container>
+
             <Heading>Craft Materials Needed</Heading>
             <TableContainer>
   <Table variant='striped' colorScheme='teal'>
@@ -126,7 +134,7 @@ function App() {
     <NumberDecrementStepper />
   </NumberInputStepper>
 </NumberInput></Td>
-<Td><NumberInput defaultValue={0} min={0} max={9999}>
+<Td><NumberInput id='fghave' defaultValue={0} min={0} max={9999}>
   <NumberInputField />
   <NumberInputStepper>
     <NumberIncrementStepper />
@@ -765,6 +773,42 @@ function App() {
   </Table>
 </TableContainer>
 <Spacer></Spacer>
+<Accordion defaultIndex={[0]} allowMultiple>
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box flex='1' textAlign='center'>
+         <Heading>Wardrobe Items</Heading>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+      <Container>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
+      </Container>
+    </AccordionPanel>
+  </AccordionItem>
+
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box flex='1' textAlign='center'>
+          <Heading>Housing Items</Heading>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+    <Container>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</Container>
+    </AccordionPanel>
+  </AccordionItem>
+</Accordion>
 <Heading>Monsters to Fight</Heading>
 <HStack><text>Calculate with your attack stat:</text>
 <NumberInput defaultValue={0} min={0} max={999}>
@@ -798,7 +842,7 @@ function App() {
 </Td>
       <Td>###</Td>
         <Td>1500</Td>
-        <Td>###</Td>
+        <Td id='1'>1</Td>
       </Tr>
       <Tr>
       <Td><HStack>
@@ -813,7 +857,7 @@ function App() {
 </Td>
       <Td>###</Td>
         <Td>50</Td>
-        <Td>###</Td>
+        <Td id='2'>2</Td>
       </Tr>
       <Tr>
       <Td><HStack>
@@ -828,7 +872,7 @@ function App() {
 </Td>
       <Td>###</Td>
         <Td>150</Td>
-        <Td>###</Td>
+        <Td id='3'>3</Td>
       </Tr>
       <Tr>
       <Td><HStack>
@@ -842,8 +886,8 @@ function App() {
         </HStack>
 </Td>
       <Td>###</Td>
-        <Td>150</Td>
-        <Td>###</Td>
+        <Td>444</Td>
+        <Td id='4'>4</Td>
       </Tr>
       <Tr>
       <Td><HStack>
@@ -857,8 +901,8 @@ function App() {
         </HStack>
 </Td>
       <Td>###</Td>
-        <Td>150</Td>
-        <Td>###</Td>
+        <Td>300</Td>
+        <Td id='5'>5</Td>
       </Tr>
       <Tr>
       <Td><HStack>
@@ -873,7 +917,7 @@ function App() {
 </Td>
       <Td>###</Td>
         <Td>66</Td>
-        <Td>###</Td>
+        <Td id='6'>6</Td>
       </Tr>
       <Tr>
       <Td><HStack>
@@ -888,7 +932,7 @@ function App() {
 </Td>
       <Td>###</Td>
         <Td>1500</Td>
-        <Td>###</Td>
+        <Td id='7'>7</Td>
       </Tr>
       <Tr>
       <Td><HStack>
@@ -903,13 +947,13 @@ function App() {
 </Td>
       <Td>###</Td>
         <Td>120</Td>
-        <Td>###</Td>
+        <Td id='8'>8</Td>
       </Tr>
       <Tr>
       <Td></Td>
       <Td></Td>
         <Td>Total Word Count:</Td>
-        <Td>###</Td>
+        <Td>#</Td>
       </Tr>
     </Tbody>
   </Table>
