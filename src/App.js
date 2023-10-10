@@ -53,30 +53,41 @@ function App() {
 
   
   const [NoanzaIsShown, setNoanzaIsShown] = useState(false);
+  const [NoanzaQtyIsShown, setNoanzaQtyIsShown] = useState(false);
   const [AakultaIsShown, setAakultaIsShown] = useState(false);
+  const [AakultaQtyIsShown, setAakultaQtyIsShown] = useState(false);
   const [FGCraftingIsShown, setFGCraftingIsShown] = useState(false);
+  const [FGCraftingQtyIsShown, setFGCraftingQtyIsShown] = useState(false);
 
 
   const handleNoanzaClick = event => {
     // 👇️ toggle shown state
     setNoanzaIsShown(current => !NoanzaIsShown);
+    setNoanzaQtyIsShown(current => !NoanzaQtyIsShown)
     setAakultaIsShown(current => null);
+    setAakultaQtyIsShown(current => 0);
     setFGCraftingIsShown(current => null);
+    setFGCraftingQtyIsShown(current => null);
   };
 
   const handleAakultaClick = event => {
     // 👇️ toggle shown state
     setAakultaIsShown(current => !AakultaIsShown);
+    setAakultaQtyIsShown(current => !AakultaQtyIsShown);
     setFGCraftingIsShown(current => null);
+    setFGCraftingQtyIsShown(current => null);
     setNoanzaIsShown(current => null);
-  
+    setNoanzaQtyIsShown(current => 0);
   };
 
   const handleFGCraftingClick = event => {
     // 👇️ toggle shown state
     setFGCraftingIsShown(current => !FGCraftingIsShown);
+    setFGCraftingQtyIsShown(current => !FGCraftingQtyIsShown);
     setAakultaIsShown(current => null);
+    setAakultaQtyIsShown(current => 0);
     setNoanzaIsShown(current => null);
+    setNoanzaQtyIsShown(current => 0);
   };
 
   const [GlivaIsShown, setGlivaIsShown] = useState(false);
@@ -863,18 +874,6 @@ const handlePoepicHChange = (valueString) => {
 
 
 
-// Expected output: "The word "fox" is in the sentence"
-
-
-//test for words//
-
-
-if (isPacked) {
-  return <li className="item">{name} ✔</li>;
-}
-return <li className="item">{name}</li>;
-
-
 // END OF EQUATIONS SO FAR//
 
   return (
@@ -1036,7 +1035,7 @@ return <li className="item">{name}</li>;
         mr='0px'
       /><text>Fusion Glass</text>
         </HStack></Td>
-        <Td id='fgchoice'>{NoanzaIsShown && <Container><Image
+        <Td>{NoanzaIsShown && <Container><Image
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png'
@@ -1572,7 +1571,7 @@ return <li className="item">{name}</li>;
       /> <text>Aakulta</text>
         </HStack>
 </Td>
-      <Td>###</Td>
+<Td>{AakultaQtyIsShown && <span>1</span>}</Td>
         <Td>1500</Td>
         <Td id='1'>1</Td>
       </Tr>
@@ -1649,7 +1648,7 @@ return <li className="item">{name}</li>;
 </Td>
       <Td>###</Td>
         <Td>66</Td>
-        <Td id='6'>6</Td>
+        <Td>6</Td>
       </Tr>
       <Tr>
       <Td><HStack>
@@ -1662,7 +1661,7 @@ return <li className="item">{name}</li>;
       /> <text>Noanza</text>
         </HStack>
 </Td>
-      <Td>###</Td>
+      <Td>{NoanzaQtyIsShown && <span>1</span>}</Td>
         <Td>1500</Td>
         <Td id='7'>7</Td>
       </Tr>
@@ -1912,7 +1911,7 @@ return <li className="item">{name}</li>;
         src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
         alt='Fusion Glass'
         mr='0px'
-      /><text>Fusion Glass: [needs code]</text>
+      /><text>Fusion Glass: {FGCraftingQtyIsShown && <span>1</span>}</text>
         </HStack>
         </Box>
         <AccordionIcon />
