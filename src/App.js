@@ -26,6 +26,9 @@ import {
   Td,
   TableContainer,
   Image,
+  List,
+  ListItem,
+  ListIcon,
   Menu,
   MenuButton,
   MenuList,
@@ -45,8 +48,10 @@ import {
   StatHelpText,
   StatArrow,
   StatGroup,
+  WrapItem,
+  Wrap,
 } from '@chakra-ui/react';
-import { ChevronDownIcon, MinusIcon, AddIcon } from '@chakra-ui/icons';
+import { ChevronDownIcon, ChevronRightIcon, MinusIcon, AddIcon, } from '@chakra-ui/icons';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 
 function App() {
@@ -56,57 +61,96 @@ function App() {
   const [NoanzaQtyIsShown, setNoanzaQtyIsShown] = useState(false);
   const [AakultaIsShown, setAakultaIsShown] = useState(false);
   const [AakultaQtyIsShown, setAakultaQtyIsShown] = useState(false);
-  const [FGCraftingIsShown, setFGCraftingIsShown] = useState(false);
-  const [FGCraftingQtyIsShown, setFGCraftingQtyIsShown] = useState(false);
+  const [FgCraftingIsShown, setFgCraftingIsShown] = useState(false);
+  const [FgCraftingQtyIsShown, setFgCraftingQtyIsShown] = useState(false);
+  const [SummaryFgCraftingIsShown, setSummaryFgCraftingIsShown] = useState(false);
+  const [SummaryAakultaIsShown, setSummaryAakultaIsShown] = useState(false);
+  const [SummaryNoanzaIsShown, setSummaryNoanzaIsShown] = useState(false);
+  const [MushNoanzaIsShown, setMushNoanzaIsShown] = useState(false);
+  const [MushAakultaIsShown, setMushAakultaIsShown] = useState(false);
+  const [MushFgCraftingIsShown, setMushFgCraftingIsShown] = useState(false);
+
+
 
 
   const handleNoanzaClick = event => {
     // 👇️ toggle shown state
     setNoanzaIsShown(current => !NoanzaIsShown);
     setNoanzaQtyIsShown(current => !NoanzaQtyIsShown)
+    setSummaryNoanzaIsShown(current => !SummaryNoanzaIsShown);
+    setMushNoanzaIsShown(current =>!MushNoanzaIsShown)
     setAakultaIsShown(current => null);
     setAakultaQtyIsShown(current => 0);
-    setFGCraftingIsShown(current => null);
-    setFGCraftingQtyIsShown(current => null);
+    setFgCraftingIsShown(current => null);
+    setFgCraftingQtyIsShown(current => null);
+    setSummaryAakultaIsShown(current => null);
+    setSummaryFgCraftingIsShown(current => null);
+    setMushAakultaIsShown(current =>null)
+    setMushFgCraftingIsShown(current => null);
   };
 
   const handleAakultaClick = event => {
     // 👇️ toggle shown state
     setAakultaIsShown(current => !AakultaIsShown);
     setAakultaQtyIsShown(current => !AakultaQtyIsShown);
-    setFGCraftingIsShown(current => null);
-    setFGCraftingQtyIsShown(current => null);
+    setSummaryAakultaIsShown(current => !SummaryAakultaIsShown);
+    setMushAakultaIsShown(current =>!MushAakultaIsShown)
+    setFgCraftingIsShown(current => null);
+    setFgCraftingQtyIsShown(current => null);
+    setSummaryFgCraftingIsShown(current => null);
+    setSummaryFgCraftingIsShown(current => null);
+    setMushFgCraftingIsShown(current => null);
     setNoanzaIsShown(current => null);
     setNoanzaQtyIsShown(current => 0);
+    setSummaryNoanzaIsShown(current => null);
+    setMushNoanzaIsShown(current =>null)
   };
 
-  const handleFGCraftingClick = event => {
+  const handleFgCraftingClick = event => {
     // 👇️ toggle shown state
-    setFGCraftingIsShown(current => !FGCraftingIsShown);
-    setFGCraftingQtyIsShown(current => !FGCraftingQtyIsShown);
+    setFgCraftingIsShown(current => !FgCraftingIsShown);
+    setFgCraftingQtyIsShown(current => !FgCraftingQtyIsShown);
+    setSummaryFgCraftingIsShown(current => !SummaryFgCraftingIsShown);
+    setMushFgCraftingIsShown(current => !MushFgCraftingIsShown);
     setAakultaIsShown(current => null);
     setAakultaQtyIsShown(current => 0);
+    setSummaryAakultaIsShown(current => null);
+    setMushAakultaIsShown(current =>null)
     setNoanzaIsShown(current => null);
     setNoanzaQtyIsShown(current => 0);
+    setSummaryNoanzaIsShown(current => null);
+    setMushNoanzaIsShown(current =>null)
   };
 
   const [GlivaIsShown, setGlivaIsShown] = useState(false);
+  const [GlivaQtyIsShown, setGlivaQtyIsShown] = useState(false);
+  const [SummaryGlivaIsShown, setSummaryGlivaIsShown] = useState(false);
   const [KirerfIsShown, setKirerfIsShown] = useState(false);
+  const [KirerfQtyIsShown, setKirerfQtyIsShown] = useState(false);
+  const [SummaryKirerfIsShown, setSummaryKirerfIsShown] = useState(false);
 
 
   const handleGlivaClick = event => {
     // 👇️ toggle shown state
     setGlivaIsShown(current => !GlivaIsShown);
+    setGlivaQtyIsShown(current => !GlivaQtyIsShown);
+    setSummaryGlivaIsShown(current => !SummaryGlivaIsShown);
     setKirerfIsShown(current => null);
+    setKirerfQtyIsShown(current => 0);
+    setSummaryKirerfIsShown(current => null)
   };
 
   const handleKirerfClick = event => {
     // 👇️ toggle shown state
-    setKirerfIsShown(current => !AakultaIsShown);
+    setKirerfIsShown(current => !KirerfIsShown);
+    setKirerfQtyIsShown(current => !KirerfQtyIsShown);
+    setSummaryKirerfIsShown(current => !SummaryKirerfIsShown);
     setGlivaIsShown(current => null);
-  
+    setGlivaQtyIsShown(current => 0);
+    setSummaryGlivaIsShown(current => null);
   };
 
+//CALCULATOR //
   
 const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
 const [wordCount, setWordCount] = useState(0);   // Or any other non-zero value
@@ -131,7 +175,11 @@ const [wcResult, setWCResult] = useState(0);
   const calculateWCResult = (atk, wc) => {
     const totalWords = Math.round (wc / ((atk/100) + 1));
     setWCResult(totalWords);
-  };
+
+};
+
+
+//DUST-REPELLENT ELIXIR -- NO WEAPONS ONLY INPUT//
 
 const [dreN, setDreN] = useState(0); // Or any other non-zero value
 const [dreH, setDreH] = useState(0);   // Or any other non-zero value
@@ -145,8 +193,6 @@ const [mushDreResult, setMushDreResult] = useState(0);
 const [dflDreResult, setDflDreResult] = useState(0);
 const [bonesDreResult, setBonesDreResult] = useState(0);
 
-
-//DUST-REPELLENT ELIXIR -- NO WEAPONS OR OTHER ITEMS YET, JUST THE INPUTS IN THE TABLE//
 
 useEffect(() => {
   // Calculate the result whenever attackStat or wordCount changes
@@ -366,6 +412,60 @@ const calculateBonesResult = (bonesN, bonesH) => {
   setBonesResult(totalBones);
   };
 
+  //PCS: INPUT ONLY//
+
+  const [pCSN, setPCSN] = useState(0); // Or any other non-zero value
+  const [pCSH, setPCSH] = useState(0);   // Or any other non-zero value
+  const [pCSResult, setPCSResult] = useState(0);
+  
+  useEffect(() => {
+    calculatePCSResult(pCSN, pCSH);
+  }, [pCSN, pCSH]);
+  
+  const handlePCSNChange = (valueString) => {
+    const value = parseFloat(valueString);
+      setPCSN(value);
+  };
+  
+  const handlePCSHChange = (valueString) => {
+    const value = parseFloat(valueString);
+      setPCSH(value);
+    };
+  
+  
+  const calculatePCSResult = (pCSN, pCSH) => {
+    const totalPCS = Math.max (pCSN - pCSH,0);
+    setPCSResult(totalPCS);
+    };
+
+
+  //Mushroom: INPUT ONLY//
+
+  const [mushN, setMushN] = useState(0); // Or any other non-zero value
+  const [mushH, setMushH] = useState(0);   // Or any other non-zero value
+  const [mushResult, setMushResult] = useState(0);
+  
+  useEffect(() => {
+    calculateMushResult(mushN, mushH);
+  }, [mushN, mushH]);
+  
+  const handleMushNChange = (valueString) => {
+    const value = parseFloat(valueString);
+      setMushN(value);
+  };
+  
+  const handleMushHChange = (valueString) => {
+    const value = parseFloat(valueString);
+      setMushH(value);
+    };
+  
+  
+  const calculateMushResult = (mushN, mushH) => {
+    const totalMush = Math.max (mushN - mushH,0);
+    setMushResult(totalMush);
+    };
+  
+
 //AAKULTA HELMET: INPUT ONLY//
 
 const [aakhelN, setAakhelN] = useState(0); // Or any other non-zero value
@@ -567,8 +667,9 @@ const handleFuscuiHChange = (valueString) => {
     const totalDreFuscui = Math.max (totalFuscui*4);
     const totalFinefabricFuscui = Math.max (totalFuscui*4);
     const totalSteelFuscui = Math.max (totalFuscui*15);
-    const totalCoinsFuscui = Math.max (totalFuscui*500);
+    const totalCoinsFuscui = Math.max (totalFuscui*1000);
     setFuscuiResult(totalFuscui);
+    setFgFuscuiResult(totalFgFuscui);
     setDreFuscuiResult(totalDreFuscui);
     setFinefabricFuscuiResult(totalFinefabricFuscui);
     setSteelFuscuiResult(totalSteelFuscui);
@@ -612,7 +713,8 @@ const handleFuscroHChange = (valueString) => {
 	const totalSteelFuscro = Math.max (totalFuscro*3);
 	const totalCoinsFuscro = Math.max (totalFuscro*500);
 	setFuscroResult(totalFuscro);
-	setDreFuscroResult(totalDreFuscro);
+	setFgFuscroResult(totalFgFuscro);
+  setDreFuscroResult(totalDreFuscro);
 	setHardwoodFuscroResult(totalHardwoodFuscro);
 	setReinforcedropeFuscroResult(totalReinforcedropeFuscro);
 	setSteelFuscroResult(totalSteelFuscro);
@@ -656,6 +758,7 @@ const handleFusswoHChange = (valueString) => {
 	const totalSteelFusswo = Math.max (totalFusswo*10);
 	const totalCoinsFusswo = Math.max (totalFusswo*500);
 	setFusswoResult(totalFusswo);
+  setFgFusswoResult(totalFgFusswo);
 	setDreFusswoResult(totalDreFusswo);
 	setGoldFusswoResult(totalGoldFusswo);
 	setSteelFusswoResult(totalSteelFusswo);
@@ -858,9 +961,9 @@ const handlePoepicHChange = (valueString) => {
 
   const calculatePoepicResult = (poepicN, poepicH) => {
     const totalPoepic = Math.max (poepicN - poepicH,0)
-    const totalHardwoodPoepic = Math.max (totalPoepic*1);
-    const totalDrePoepic = Math.max (totalPoepic*3);
-    const totalSteelPoepic = Math.max (totalPoepic*1);
+    const totalHardwoodPoepic = Math.max (totalPoepic*8);
+    const totalDrePoepic = Math.max (totalPoepic*2);
+    const totalSteelPoepic = Math.max (totalPoepic*8);
     const totalCoinsPoepic = Math.max (totalPoepic*500);
     setPoepicResult(totalPoepic);
     setHardwoodPoepicResult(totalHardwoodPoepic);
@@ -870,9 +973,304 @@ const handlePoepicHChange = (valueString) => {
     };
 
 
-//FUSION GLASS CALCULATIONS TO COME//
+//D-R ELIXIR TOTAL//
+const calculateAllDreResult = {dreResult, dreAakhelResult, dreClibooResult, dreCrehelResult, dreFlosliResult, dreFuscuiResult, dreFuscroResult, dreFusswoResult, dreHopligResult, dreLeacuiResult, dreLeaturResult, dreLigbloResult, drePoepicResult}
+const totalAllDre = Math.round (dreResult + dreAakhelResult + dreClibooResult + dreCrehelResult + dreFlosliResult + dreFuscuiResult + dreFuscroResult + dreFusswoResult + dreHopligResult + dreLeacuiResult + dreLeaturResult + dreLigbloResult + drePoepicResult)
+
+//FG TOTAL//
+
+const calculateAllFgResult = {fgResult, fgAakhelResult, fgCrehelResult, fgFuscuiResult, fgFuscroResult, fgFusswoResult, fgHopligResult, fgLigbloResult}
+const totalAllFg = Math.round (fgResult + fgAakhelResult + fgCrehelResult + fgFuscuiResult + fgFuscroResult + fgFusswoResult + fgHopligResult + fgLigbloResult)
 
 
+//D-R ELIX FOR FUSION GLASS MATH//
+const [dreFgCrafting, setDreFgCrafting] = useState(0); // Or any other non-zero value
+const calculateDreFgCraftingResult = {totalAllDre, totalAllFg}
+const totalDreFgCrafting = Math.max (totalAllDre + totalAllFg,0)
+
+//LD FOR LOOTING//
+const [ldLooting, setLdLooting] = useState(0); // Or any other non-zero value
+const calculateLdLooting = {ldResult, totalAllDre}
+const totalLdLooting = Math.max ((ldResult + (totalAllDre*10)),0)
+
+//LD FOR Crafting//
+const [ldCrafting, setLdCrafting] = useState(0); // Or any other non-zero value
+const calculateLdCrafting = {ldResult, totalAllDre, totalAllFg}
+const totalLdCrafting = Math.max ((ldResult + (totalDreFgCrafting*10) + (totalAllFg*4)),0)
+
+//RD FOR LOOTING//
+const [rdLooting, setRdLooting] = useState(0); // Or any other non-zero value
+const calculateRdLooting = {rdResult, totalAllDre}
+const totalRdLooting = Math.max ((rdResult + (totalAllDre*8)),0)
+
+//RD FOR Crafting//
+const [rdCrafting, setRdCrafting] = useState(0); // Or any other non-zero value
+const calculateRdCrafting = {rdResult, totalAllDre, totalAllFg}
+const totalRdCrafting = Math.max ((rdResult + (totalDreFgCrafting*8)),0)
+
+//DU FOR LOOTING//
+const [duLooting, setDuLooting] = useState(0); // Or any other non-zero value
+const calculateDuLooting = {dustResult, totalAllDre}
+const totalDuLooting = Math.max ((dustResult + (totalAllDre*20)),0)
+
+//DU FOR Crafting//
+const [duCrafting, setDuCrafting] = useState(0); // Or any other non-zero value
+const calculateDuCrafting = {dustResult, totalAllDre, totalAllFg}
+const totalDuCrafting = Math.max ((dustResult + (totalDreFgCrafting*20)),0)
+
+//ESS FOR LOOTING//
+const [essLooting, setEssLooting] = useState(0); // Or any other non-zero value
+const calculateEssLooting = {essResult, totalAllDre}
+const totalEssLooting = Math.max ((essResult + (totalAllDre*5)),0)
+
+//ESS FOR Crafting//
+const [essCrafting, setEssCrafting] = useState(0); // Or any other non-zero value
+const calculateEssCrafting = {essResult, totalAllDre, totalAllFg}
+const totalEssCrafting = Math.max ((essResult + (totalDreFgCrafting*5)),0)
+
+//DFL FOR LOOTING//
+const [dflLooting, setDflLooting] = useState(0); // Or any other non-zero value
+const calculateDflLooting = {dflResult, totalAllDre}
+const totalDflLooting = Math.max ((dflResult + (totalAllDre*2)),0)
+
+//DFL FOR Crafting//
+const [dflCrafting, setDflCrafting] = useState(0); // Or any other non-zero value
+const calculateDflCrafting = {dflResult, totalAllDre, totalAllFg}
+const totalDflCrafting = Math.max ((dflResult + (totalDreFgCrafting*2)),0)
+
+//BONES FOR LOOTING//
+const [bonesLooting, setBonesLooting] = useState(0); // Or any other non-zero value
+const calculateBonesLooting = {bonesResult, totalAllDre}
+const totalBonesLooting = Math.max ((bonesResult + (totalAllDre*3)),0)
+
+//BONES FOR Crafting//
+const [bonesCrafting, setBonesCrafting] = useState(0); // Or any other non-zero value
+const calculateBonesCrafting = {bonesResult, totalAllDre, totalAllFg}
+const totalBonesCrafting = Math.max ((bonesResult + (totalDreFgCrafting*3)),0)
+
+
+//MUSH FOR LOOTING//
+const [mushLooting, setMushLooting] = useState(0); // Or any other non-zero value
+const calculateMushLooting = {mushResult, totalAllDre}
+const totalMushLooting = Math.max ((mushResult + (totalAllDre*1)),0)
+
+//MUSH FOR Crafting//
+const [mushCrafting, setMushCrafting] = useState(0); // Or any other non-zero value
+const calculateMushCrafting = {mushResult, totalAllDre, totalAllFg}
+const totalMushCrafting = Math.max ((mushResult + (totalDreFgCrafting*1)),0)
+
+
+//AAKULTA QTY + WC//
+const [aakultaQty, setAakultaQty] = useState(0);
+const calculateAakultaQty = {totalAllFg}
+const totalAakultaQty = Math.max ((totalAllFg/1), 0)
+
+const [aakultaWC, setAakultaWC] = useState (0);
+const calculateAakultaWC = {totalAakultaQty, attackStat}
+const totalAakultaWC = Math.round ((totalAakultaQty*1500) / ((attackStat/100) + 1));
+
+//Arluzi QTY + WC//
+const [arluziQtyLoot, setArluziQtyLoot] = useState(0);
+const calculateArluziQtyLoot = {totalLdLooting}
+const totalArluziQtyLoot = Math.max ((totalLdLooting/1), 0)
+
+const [arluziWCLoot, setArluziWCLoot] = useState (0);
+const calculateArluziWCLoot = {totalArluziQtyLoot, attackStat}
+const totalArluziWCLoot = Math.round ((totalArluziQtyLoot*50) / ((attackStat/100) + 1));
+
+const [arluziQtyCraft, setArluziQtyCraft] = useState(0);
+const calculateArluziQtyCraft = {totalLdCrafting}
+const totalArluziQtyCraft = Math.max ((totalLdCrafting/1), 0)
+
+const [arluziWCCraft, setArluziWCCraft] = useState (0);
+const calculateArluziWCCraft = {totalArluziQtyCraft, attackStat}
+const totalArluziWCCraft = Math.round ((totalArluziQtyCraft*50) / ((attackStat/100) + 1));
+
+//Ascre QTY + WC//
+const [ascreQtyLoot, setAscreQtyLoot] = useState(0);
+const calculateAscreQtyLoot = {totalRdLooting}
+const totalAscreQtyLoot = Math.max ((totalRdLooting/.5), 0)
+
+const [ascreWCLoot, setAscreWCLoot] = useState (0);
+const calculateAscreWCLoot = {totalAscreQtyLoot, attackStat}
+const totalAscreWCLoot = Math.round ((totalAscreQtyLoot*150) / ((attackStat/100) + 1));
+
+const [ascreQtyCraft, setAscreQtyCraft] = useState(0);
+const calculateAscreQtyCraft = {totalRdCrafting}
+const totalAscreQtyCraft = Math.max ((totalRdCrafting/.5), 0)
+
+const [ascreWCCraft, setAscreWCCraft] = useState (0);
+const calculateAscreWCCraft = {totalAscreQtyCraft, attackStat}
+const totalAscreWCCraft = Math.round ((totalAscreQtyCraft*150) / ((attackStat/100) + 1));
+
+//DustWignow QTY + WC//
+const [dustWignowQtyLoot, setDustWignowQtyLoot] = useState(0);
+const calculateDustWignowQtyLoot = {totalDflLooting}
+const totalDustWignowQtyLoot = Math.round (totalDflLooting/3.5)
+
+const [dustWignowWCLoot, setDustWignowWCLoot] = useState (0);
+const calculateDustWignowWCLoot = {totalDustWignowQtyLoot, attackStat}
+const totalDustWignowWCLoot = Math.round ((totalDustWignowQtyLoot*150) / ((attackStat/100) + 1));
+
+const [dustWignowQtyCraft, setDustWignowQtyCraft] = useState(0);
+const calculateDustWignowQtyCraft = {totalDflCrafting}
+const totalDustWignowQtyCraft = Math.round (totalDflCrafting/3.5)
+
+const [dustWignowWCCraft, setDustWignowWCCraft] = useState (0);
+const calculateDustWignowWCCraft = {totalDustWignowQtyCraft, attackStat}
+const totalDustWignowWCCraft = Math.round ((totalDustWignowQtyCraft*444) / ((attackStat/100) + 1));
+
+
+//Noanza QTY + WC//
+const [noanzaQty, setNoanzaQty] = useState(0);
+const calculateNoanzaQty = {totalAllFg}
+const totalNoanzaQty = Math.round ((totalAllFg/2.5), 0)
+
+const [noanzaWC, setNoanzaWC] = useState (0);
+const calculateNoanzaWC = {totalNoanzaQty, attackStat}
+const totalNoanzaWC = Math.round ((totalNoanzaQty*1500) / ((attackStat/100) + 1));
+
+//Xaey QTY + WC//
+const [xaeyQtyLoot, setXaeyQtyLoot] = useState(0);
+const calculateXaeyQtyLoot = {totalBonesLooting}
+const totalXaeyQtyLoot = Math.max ((totalBonesLooting/1), 0)
+
+const [xaeyQtyLootActual, setXaeyQtyLootActual] = useState(0);
+const calculateXaeyQtyLootActual = {totalXaeyQtyLoot}
+const totalXaeyQtyLootActual = Math.max (totalXaeyQtyLoot, 0)
+
+const [xaeyWCLoot, setXaeyWCLoot] = useState (0);
+const calculateXaeyWCLoot = {xaeyQtyLootActual, attackStat}
+const totalXaeyWCLoot = Math.round (((xaeyQtyLootActual)*120) / ((attackStat/100) + 1));
+
+const [xaeyQtyCraft, setXaeyQtyCraft] = useState(0);
+const calculateXaeyQtyCraft = {totalBonesCrafting}
+const totalXaeyQtyCraft = Math.max ((totalBonesCrafting/1), 0)
+
+const [xaeyWCCraft, setXaeyWCCraft] = useState (0);
+const calculateXaeyWCCraft = {totalXaeyQtyCraft, attackStat}
+const totalXaeyWCCraft = Math.round ((totalXaeyQtyCraft*120) / ((attackStat/100) + 1));
+
+
+
+//GLIVA MUSH CALC//
+
+const [glivaQty, setGlivaQty] = useState(0);
+const calculateGlivaQty = {mushResult, totalAllFg, totalAllDre}
+const totalGlivaQty = Math.max ((mushResult + totalAllFg + totalAllDre), 0)
+
+const [glivaWC, setGlivaWC] = useState (0);
+const calculateGlivaWC = {totalGlivaQty, attackStat}
+const totalGlivaWC = Math.round ((totalGlivaQty*300) / ((attackStat/100) + 1));
+
+
+//KIRERF MUSH CALC//
+
+
+const [kirerfQty, setKirerfQty] = useState(0);
+const calculateKirerfQty = {mushResult, totalAllFg, totalAllDre}
+const totalKirerfQty = Math.max ((mushResult + totalAllFg + totalAllDre), 0)
+
+const [kirerfWC, setKirerfWC] = useState (0);
+const calculateKirerfWC = {totalKirerfQty, attackStat}
+const totalKirerfWC = Math.round ((totalKirerfQty*66) / ((attackStat/100) + 1));
+
+
+
+//DO I EVEN NEED XAEY CALC LOL - DFL overlap CALC//
+//must be here so I can use it in the PCS calculations//
+
+const [bonesOverlapLoot, setBonesOverlapLoot] = useState(0);
+const calculateBonesOverlapLoot = {totalDflLooting,totalBonesLooting}
+const totalBonesOverlapLoot = (totalBonesLooting-totalDflLooting)
+
+
+//PCS CALC//
+const [grossXaey, SetGrossXaey] = useState(0);
+const calculateGrossXaey={bonesResult, totalXaeyQtyCraft}
+const totalGrossXaey = Math.round (bonesResult + totalXaeyQtyCraft)
+
+const [xaeyPCS, SetXaeyPCS] = useState(0);
+const calculateXaeyPCS = {totalGrossXaey}
+const totalXaeyPCS = Math.round (totalGrossXaey*.5)
+
+const [allPCS, setAllPCS] = useState(0);
+const calculateAllPCS = {pCSResult, totalAllFg, totalXaeyPCS}
+const totalAllPCS = Math.max (((pCSResult + totalAllFg) - totalXaeyPCS),0) //repair this //
+
+const [grossPCS, setGrossPCS] = useState(0);
+const calculateGrossPCS = {totalAllFg, pCSResult}
+const totalGrossPCS = Math.max ((totalAllFg+pCSResult))
+
+//ARDID CALC//
+const [ardidQty, SetArdidQty] = useState (0);
+const calculateArdidQty = {totalAllPCS}
+const totalArdidQty = Math.max ((totalAllPCS*2),0)
+
+const [ardidWC, setArdidWC] = useState (0);
+const calculateArdidWC = {totalArdidQty, attackStat}
+const totalArdidWC = Math.round ((totalArdidQty*90) / ((attackStat/100) + 1));
+
+//DUST overlap CALC//
+const [dustGrossTotal, setDustGrossTotal] = useState (0);
+const calculateDustGrossTotal = {totalDuCrafting,totalDuLooting}
+const totalDustGrossTotal = Math.max ((totalDuCrafting + totalDuLooting), 0)
+
+const [dustArdidTotal, setDustArdidTotal] = useState (0);
+const calculateDustArdidTotal = {totalArdidQty}
+const totalDustArdidTotal = Math.round (totalArdidQty*1.5)
+
+const [dustAllOtherMonsters, SetDustAllOtherMonsters] = useState (0);
+const calculateDustAllOtherMonstersTotal = {totalDustArdidTotal, totalKirerfQty}
+const totalDustAllOtherMonsters = Math.max ((totalDustArdidTotal + totalKirerfQty),0)
+
+const [dustQty, setDustQty] = useState (0);
+const calculateDustQty = {totalDustArdidTotal, totalDustGrossTotal}
+const totalDustQty = Math.max ((totalDustGrossTotal-totalDustAllOtherMonsters),0)
+
+const [dustCost, SetDustCost] = useState (0);
+const calculateDustCost = {totalDustQty}
+const totalDustCost = Math.max ((totalDustQty*8),0)
+
+//LD overlap CALC//
+
+const [noanzaBattleCost, SetNoanzaBattleCost] = useState(0);
+const calculateNoanzaBattleCost = {totalNoanzaQty}
+const totalNoanzaBattleCost = Math.round (totalNoanzaQty*4)  // SUBTRACT this value
+
+const [aakultaLdLoot, SetAakultaLdLoot] = useState (0);
+const calculateAakultaLdLoot = {totalAakultaQty}
+const totalAakultaLdLoot = Math.max ((totalAakultaQty*5.5),0)
+
+const [adjustedLdAakultaLoot, SetAdjustedAakultaLdLoot] = useState (0);
+const calculateAdjustedLdAakultaLoot = {totalAakultaLdLoot, totalLdLooting}
+const totalAdjustedLdAakultaLoot = Math.max ((totalLdLooting-totalAakultaLdLoot),0)
+
+const [adjustedLdNoanzaLoot, SetAdjustedNoanzaLdLoot] = useState (0);
+const calculateAdjustedLdNoanzaLoot = {totalNoanzaBattleCost, totalLdLooting}
+const totalAdjustedLdNoanzaLoot = Math.max ((totalLdLooting+totalNoanzaBattleCost),0)
+
+const [adjustedLdAakultaLootWC, SetAdjustedAakultaLdLootWC] = useState (0);
+const calculateAdjustedLdAakultaLootWC = {totalAdjustedLdAakultaLoot, totalLdLooting}
+const totalAdjustedLdAakultaLootWC = Math.round ((totalAdjustedLdAakultaLoot*50) / ((attackStat/100) + 1))
+
+const [adjustedLdNoanzaLootWC, SetAdjustedNoanzaLdLootWC] = useState (0);
+const calculateAdjustedLdNoanzaLootWC = {totalAdjustedLdNoanzaLoot, totalLdLooting}
+const totalAdjustedLdNoanzaLootWC = Math.round ((totalAdjustedLdNoanzaLoot*50) / ((attackStat/100) + 1))
+
+
+
+
+//Total WC Monsters Calc//
+
+const calculateFinalWCResult = {totalXaeyWCLoot, totalXaeyWCCraft, totalDustWignowWCLoot, totalDustWignowWCCraft, totalAscreWCLoot, totalAscreWCCraft, totalArluziWCLoot,totalArluziWCCraft, totalKirerfWC, totalGlivaWC, totalAakultaWC, totalNoanzaWC}
+const totalFinalWCResult = (totalXaeyWCLoot + totalXaeyWCCraft + totalDustWignowWCLoot + totalDustWignowWCCraft + totalAscreWCLoot + totalAscreWCCraft + totalArluziWCLoot,totalArluziWCCraft + totalKirerfWC + totalGlivaWC + totalAakultaWC + totalNoanzaWC
+  )
+
+//reverse the attack eq lmfao//
+
+const calculateFinalWCNoAtk = {totalFinalWCResult, attackStat}
+const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*totalFinalWCResult)))
 
 // END OF EQUATIONS SO FAR//
 
@@ -912,7 +1310,6 @@ const handlePoepicHChange = (valueString) => {
   </BreadcrumbItem>
 </Breadcrumb>
             <Heading>Quick Convert Word Count</Heading>
-
             <Container><p>Type your attack stat and your target word count below to quickly calculate the attack-adjusted word count.</p></Container>
 
 <VStack>
@@ -961,7 +1358,7 @@ const handlePoepicHChange = (valueString) => {
         mr='12px'
       />
       <span>Aakulta</span></Button>
-        <Button onClick={handleFGCraftingClick}>Crafting (least efficient)</Button>
+        <Button onClick={handleFgCraftingClick}>Crafting (least efficient)</Button>
         </HStack></Container>
         <HStack><text>Select source for</text> 
         <Image
@@ -1051,7 +1448,7 @@ const handlePoepicHChange = (valueString) => {
         mr='12px'
       />  
       <span>Aakulta</span></Container>}
-      {FGCraftingIsShown && <text>Crafting</text>}</Td>
+      {FgCraftingIsShown && <text>Crafting</text>}</Td>
       </Tr>
       <Tr>
         <Td><NumberInput defaultValue={0} min={0} max={9999}>
@@ -1163,10 +1560,10 @@ const handlePoepicHChange = (valueString) => {
       </Tr>
       <Tr>
         <Td><NumberInput defaultValue={0} min={0} max={9999}>
-  <NumberInputField />
+        <NumberInputField id='MushN' onInput={(e) => handleMushNChange(e.target.value)} />
 </NumberInput></Td>
         <Td><NumberInput defaultValue={0} min={0} max={9999}>
-  <NumberInputField />
+        <NumberInputField id='MushH' onInput={(e) => handleMushHChange(e.target.value)} />
 </NumberInput></Td>
 <Td><HStack>
         <Image
@@ -1242,9 +1639,36 @@ const handlePoepicHChange = (valueString) => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/2/22/Xaey.png'
-        alt='Coin'
+        alt='Xaey'
         mr='5px'
       /> <text>Xaey</text>
+        </HStack>
+</Td>
+      </Tr>
+      <Tr>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='PCSN' onInput={(e) => handlePCSNChange(e.target.value)} />
+</NumberInput></Td>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='PCSH' onInput={(e) => handlePCSHChange(e.target.value)} />
+</NumberInput></Td>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/ad/Purple-crystal-shards.png'
+        alt='Purple Crystal Shards'
+        mr='0px'
+      /><text>Purple Crystal Shards</text>
+        </HStack></Td>
+        <Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/23/Ardid.png'
+        alt='Ardid'
+        mr='5px'
+      /> <text>Ardid</text>
         </HStack>
 </Td>
       </Tr>
@@ -1528,11 +1952,11 @@ const handlePoepicHChange = (valueString) => {
     <Tr>
   <Td><Stat>
   <StatLabel>Total Word Count</StatLabel>
-  <StatNumber>000,000</StatNumber>
+  <StatNumber>{totalFinalWCNoAtk}</StatNumber>
 </Stat></Td>
 <Td><Stat>
   <StatLabel>Total Word Count with Attack</StatLabel>
-  <StatNumber>000,000</StatNumber>
+  <StatNumber>{totalFinalWCResult}</StatNumber>
 </Stat></Td></Tr>
 <Tr>
   <Td><Stat>
@@ -1547,8 +1971,172 @@ const handlePoepicHChange = (valueString) => {
 </Table>
 </TableContainer>
 
-<Heading>Monsters to Fight</Heading>
+<Container><b>Total Materials to Loot:</b></Container>
+<Wrap spacing='30px' justify='center'>
+<WrapItem>
+    <Center w='50px' h='50px'>
+       <VStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
+        alt='Fusion Glass'
+        mr='0px'
+      />
+      {SummaryNoanzaIsShown && <Container>{totalAllFg}</Container>}
+      {SummaryAakultaIsShown && <Container>{totalAllFg}</Container>}
+      {SummaryFgCraftingIsShown && <Container><text>0</text></Container>}</VStack>
+  </Center>
+  </WrapItem>
+  <WrapItem>
+    <Center w='50px' h='50px'>
+       <VStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/91/LightenedDust.png'
+        alt='Lightened Dust'
+        mr='0px'
+      />      {SummaryNoanzaIsShown && <Container>{totalLdLooting}</Container>}
+      {SummaryAakultaIsShown && <Container>{totalLdLooting}</Container>}
+      {SummaryFgCraftingIsShown && <Container>{totalLdCrafting}</Container>}</VStack>
+  </Center>
+  </WrapItem>
+  <WrapItem>
+    <Center w='50px' h='50px'>
+       <VStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e2/Refined-dust.png'
+        alt='Refined Dust'
+        mr='0px'
+      />
+      {SummaryNoanzaIsShown && <Container>{totalRdLooting}</Container>}
+      {SummaryAakultaIsShown && <Container>{totalRdLooting}</Container>}
+      {SummaryFgCraftingIsShown && <Container>{totalRdCrafting}</Container>}
+      </VStack>
+  </Center>
+  </WrapItem>
+  <WrapItem>
+    <Center w='50px' h='50px'>
+       <VStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b3/Dust_md.png'
+        alt='Dust'
+        mr='0px'
+      />
+  	{SummaryNoanzaIsShown && <Container>{totalDuLooting}</Container>}
+  	{SummaryAakultaIsShown && <Container>{totalDuLooting}</Container>}
+  	{SummaryFgCraftingIsShown && <Container>{totalDuCrafting}</Container>}
+</VStack>
+  </Center>
+  </WrapItem>
+  <WrapItem>
+    <Center w='50px' h='50px'>
+       <VStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/19/Wignowessence_md.png'
+        alt='Essence'
+        mr='0px'
+      />  	{SummaryNoanzaIsShown && <Container>{totalEssLooting}</Container>}
+      {SummaryAakultaIsShown && <Container>{totalEssLooting}</Container>}
+      {SummaryFgCraftingIsShown && <Container>{totalEssCrafting}</Container>}</VStack>
+  </Center>
+  </WrapItem>
+  <WrapItem>
+    <Center w='50px' h='50px'>
+       <VStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/72/Cave-mushroom.png'
+        alt='Mushrooms'
+        mr='0px'
+      />  	{MushNoanzaIsShown && <Container>{totalMushLooting}</Container>}
+      {MushAakultaIsShown && <Container>{totalMushLooting}</Container>}
+      {MushFgCraftingIsShown && <Container>{totalMushCrafting}</Container>}</VStack>
+  </Center>
+  </WrapItem>
+  <WrapItem>
+    <Center w='50px' h='50px'>
+       <VStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/d8/Dark-forest-leaves.png'
+        alt='Dark Forest Leaves'
+        mr='0px'
+      />  	{SummaryNoanzaIsShown && <Container>{totalDflLooting}</Container>}
+      {SummaryAakultaIsShown && <Container>{totalDflLooting}</Container>}
+      {SummaryFgCraftingIsShown && <Container>{totalDflCrafting}</Container>}</VStack>
+  </Center>
+  </WrapItem>
+  <WrapItem>
+    <Center w='50px' h='50px'>
+       <VStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5e/Bones.png/'
+        alt='Bones'
+        mr='0px'
+      />  	{SummaryNoanzaIsShown && <Container>{totalBonesLooting}</Container>}
+      {SummaryAakultaIsShown && <Container>{totalBonesLooting}</Container>}
+      {SummaryFgCraftingIsShown && <Container>{totalBonesCrafting}</Container>}</VStack>
+  </Center>
+  </WrapItem>
+  <WrapItem>
+    <Center w='50px' h='50px'>
+       <VStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/ad/Purple-crystal-shards.png/'
+        alt='Purple Crystal Shards'
+        mr='0px'
+      />  	<Container>{totalGrossPCS}</Container></VStack>
+  </Center>
+  </WrapItem>
+</Wrap>
+<Container><b>Total Materials to Craft:</b></Container>
+<Wrap spacing='30px' justify='center'>
+<WrapItem>
+    <Center w='50px' h='50px'>
+       <VStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        alt='Dust-Repellent Elixir'
+        mr='0px'
+      />        {SummaryNoanzaIsShown && <Container>{totalAllDre}</Container>}
+      {SummaryAakultaIsShown && <Container>{totalAllDre}</Container>}
+      {SummaryFgCraftingIsShown && <Container>{totalDreFgCrafting}</Container>}</VStack>
+  </Center>
+  </WrapItem>
+<WrapItem>
+    <Center w='50px' h='50px'>
+       <VStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
+        alt='Fusion Glass'
+        mr='0px'
+      />{SummaryNoanzaIsShown && <Container><text>0</text></Container>}
+      {SummaryAakultaIsShown && <Container><text>0</text></Container>}
+      {SummaryFgCraftingIsShown && <Container>{totalAllFg}</Container>}</VStack>
+  </Center>
+  </WrapItem>
+</Wrap>
+<Spacer />
 
+<Heading>Monsters to Fight</Heading>
 <TableContainer>
   <Table variant='striped' colorScheme='teal'>
     <Thead>
@@ -1571,9 +2159,30 @@ const handlePoepicHChange = (valueString) => {
       /> <text>Aakulta</text>
         </HStack>
 </Td>
-<Td>{AakultaQtyIsShown && <span>1</span>}</Td>
-        <Td>1500</Td>
-        <Td id='1'>1</Td>
+<Td isNumeric>        {SummaryNoanzaIsShown && <Container><text>0</text></Container>}
+      {SummaryAakultaIsShown && <Container>{totalAakultaQty}</Container>}
+      {SummaryFgCraftingIsShown && <Container><text>0</text></Container>}</Td>
+        <Td isNumeric>1500</Td>
+        <Td isNumeric>
+        {SummaryNoanzaIsShown && <Container><text>0</text></Container>}
+      {SummaryAakultaIsShown && <Container>{totalAakultaWC}</Container>}
+      {SummaryFgCraftingIsShown && <Container><text>0</text></Container>}
+          </Td>
+      </Tr>
+      <Tr>
+      <Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/23/Ardid.png'
+        alt='Ardid'
+        mr='5px'
+      /> <text>Ardid</text>
+        </HStack>
+</Td>
+      <Td isNumeric><Container>{totalArdidQty}</Container></Td>
+        <Td isNumeric>90</Td>
+        <Td isNumeric><Container>{totalArdidWC}</Container></Td>
       </Tr>
       <Tr>
       <Td><HStack>
@@ -1586,9 +2195,13 @@ const handlePoepicHChange = (valueString) => {
       /> <text>Arluzi</text>
         </HStack>
 </Td>
-      <Td>###</Td>
-        <Td>50</Td>
-        <Td id='2'>2</Td>
+      <Td isNumeric>        {SummaryNoanzaIsShown && <Container>{totalAdjustedLdNoanzaLoot}</Container>}
+      {SummaryAakultaIsShown && <Container>{totalAdjustedLdAakultaLoot}</Container>}
+      {SummaryFgCraftingIsShown && <Container>{totalArluziQtyCraft}</Container>}</Td>
+        <Td isNumeric>50</Td>
+        <Td isNumeric>{SummaryNoanzaIsShown && <Container>{totalAdjustedLdNoanzaLootWC}</Container>}
+      {SummaryAakultaIsShown && <Container>{totalAdjustedLdAakultaLootWC}</Container>}
+      {SummaryFgCraftingIsShown && <Container>{totalArluziWCCraft}</Container>}</Td>
       </Tr>
       <Tr>
       <Td><HStack>
@@ -1601,9 +2214,14 @@ const handlePoepicHChange = (valueString) => {
       /> <text>Ascre</text>
         </HStack>
 </Td>
-      <Td>###</Td>
-        <Td>150</Td>
-        <Td id='3'>3</Td>
+      <Td isNumeric>{SummaryNoanzaIsShown && <Container>{totalAscreQtyLoot}</Container>}
+  	{SummaryAakultaIsShown && <Container>{totalAscreQtyLoot}</Container>}
+  	{SummaryFgCraftingIsShown && <Container>{totalAscreQtyCraft}</Container>}</Td>
+        <Td isNumeric>150</Td>
+        <Td isNumeric>{SummaryNoanzaIsShown && <Container>{totalAscreWCLoot}</Container>}
+  	{SummaryAakultaIsShown && <Container>{totalAscreWCLoot}</Container>}
+  	{SummaryFgCraftingIsShown && <Container>{totalAscreWCCraft}</Container>}
+</Td>
       </Tr>
       <Tr>
       <Td><HStack>
@@ -1616,9 +2234,13 @@ const handlePoepicHChange = (valueString) => {
       /> <text>Dust Wignow</text>
         </HStack>
 </Td>
-      <Td>###</Td>
-        <Td>444</Td>
-        <Td id='4'>4</Td>
+      <Td isNumeric><Container>{SummaryNoanzaIsShown && <Container>{totalDustWignowQtyLoot}</Container>}
+  	{SummaryAakultaIsShown && <Container>{totalDustWignowQtyLoot}</Container>}
+  	{SummaryFgCraftingIsShown && <Container>{totalDustWignowQtyCraft}</Container>}</Container></Td>
+        <Td isNumeric>444</Td>
+        <Td isNumeric><Container>{SummaryNoanzaIsShown && <Container>{totalDustWignowWCLoot}</Container>}
+  	{SummaryAakultaIsShown && <Container>{totalDustWignowWCLoot}</Container>}
+  	{SummaryFgCraftingIsShown && <Container>{totalDustWignowWCCraft}</Container>}</Container></Td>
       </Tr>
       <Tr>
       <Td><HStack>
@@ -1631,9 +2253,9 @@ const handlePoepicHChange = (valueString) => {
       /> <text>Gliva</text>
         </HStack>
 </Td>
-      <Td>###</Td>
-        <Td>300</Td>
-        <Td id='5'>5</Td>
+<Td isNumeric><Container>{GlivaQtyIsShown && <Container>{totalGlivaQty}</Container>}</Container></Td>
+        <Td isNumeric>300</Td>
+        <Td isNumeric><Container>{GlivaQtyIsShown && <Container>{totalGlivaWC}</Container>}</Container></Td>
       </Tr>
       <Tr>
       <Td><HStack>
@@ -1646,9 +2268,9 @@ const handlePoepicHChange = (valueString) => {
       /> <text>Kirerf</text>
         </HStack>
 </Td>
-      <Td>###</Td>
-        <Td>66</Td>
-        <Td>6</Td>
+<Td isNumeric>{KirerfQtyIsShown && <Container>{totalKirerfQty}</Container>}</Td>
+        <Td isNumeric>66</Td>
+        <Td isNumeric>{KirerfQtyIsShown && <Container>{totalKirerfWC}</Container>}</Td>
       </Tr>
       <Tr>
       <Td><HStack>
@@ -1661,9 +2283,14 @@ const handlePoepicHChange = (valueString) => {
       /> <text>Noanza</text>
         </HStack>
 </Td>
-      <Td>{NoanzaQtyIsShown && <span>1</span>}</Td>
-        <Td>1500</Td>
-        <Td id='7'>7</Td>
+      <Td isNumeric> <Container>{SummaryNoanzaIsShown && <Container>{totalNoanzaQty}</Container>}
+      {SummaryAakultaIsShown && <Container><text>0</text></Container>}
+      {SummaryFgCraftingIsShown && <Container><text>0</text></Container>}</Container>
+</Td>
+        <Td isNumeric>1500</Td>
+        <Td isNumeric>{SummaryNoanzaIsShown && <Container>{totalNoanzaWC}</Container>}
+  	{SummaryAakultaIsShown && <Container><text>0</text></Container>}
+  	{SummaryFgCraftingIsShown && <Container><text>0</text></Container>}</Td>
       </Tr>
       <Tr>
       <Td><HStack>
@@ -1671,20 +2298,24 @@ const handlePoepicHChange = (valueString) => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/2/22/Xaey.png'
-        alt='Ascre'
+        alt='Xaey'
         mr='5px'
       /> <text>Xaey</text>
         </HStack>
 </Td>
-      <Td>###</Td>
-        <Td>120</Td>
-        <Td id='8'>8</Td>
+      <Td isNumeric>{SummaryNoanzaIsShown && <Container>{totalXaeyQtyLoot}</Container>}
+  	{SummaryAakultaIsShown && <Container>{totalXaeyQtyLoot}</Container>}
+  	{SummaryFgCraftingIsShown && <Container>{totalXaeyQtyCraft}</Container>}</Td>
+        <Td isNumeric>120</Td>
+        <Td isNumeric>{SummaryNoanzaIsShown && <Container>{totalXaeyWCLoot}</Container>}
+  	{SummaryAakultaIsShown && <Container>{totalXaeyWCLoot}</Container>}
+  	{SummaryFgCraftingIsShown && <Container>{totalXaeyWCCraft}</Container>}</Td>
       </Tr>
       <Tr>
       <Td></Td>
       <Td></Td>
         <Td>Total Word Count:</Td>
-        <Td>#</Td>
+        <Td isNumeric><Container>{totalFinalWCResult}</Container></Td>
       </Tr>
     </Tbody>
   </Table>
@@ -1711,8 +2342,8 @@ const handlePoepicHChange = (valueString) => {
         mr='0px'
       /><text>Dust</text>
         </HStack></Td>
-        <Td>#</Td>
-        <Td>#</Td>
+        <Td><Container>{totalDustQty}</Container></Td>
+        <Td><Container>{totalDustCost}</Container></Td>
       </Tr>
       <Tr>
 <Td><HStack>
@@ -1724,8 +2355,8 @@ const handlePoepicHChange = (valueString) => {
         mr='0px'
       /><text>Essence</text>
         </HStack></Td>
-        <Td>#</Td>
-        <Td>#</Td>
+        <Td><Container>{totalDustGrossTotal}</Container></Td>
+        <Td><Container>{totalDustQty}</Container></Td>
       </Tr>
       </Tbody>
   </Table>
@@ -1743,7 +2374,7 @@ const handlePoepicHChange = (valueString) => {
         src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
         alt='Dust-Repellent Elixir'
         mr='0px'
-      /><text>Dust-Repellent Elixir: {dreResult}</text>
+      /><text id='drecraft'>Dust-Repellent Elixir: {dreResult}</text>
         </HStack>
         </Box>
         <AccordionIcon />
@@ -1911,7 +2542,7 @@ const handlePoepicHChange = (valueString) => {
         src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
         alt='Fusion Glass'
         mr='0px'
-      /><text>Fusion Glass: {FGCraftingQtyIsShown && <span>1</span>}</text>
+      /><text>Fusion Glass: {FgCraftingQtyIsShown && <span>1</span>}</text>
         </HStack>
         </Box>
         <AccordionIcon />
@@ -2061,7 +2692,7 @@ const handlePoepicHChange = (valueString) => {
         mr='0px'
       /><text>Dust-Repellent Elixir</text>
         </HStack></Td>
-        <Td>            
+        <Td id='dreaakhel'>
           {dreAakhelResult !== null && (
               <div>
                 <p>{dreAakhelResult}</p>
