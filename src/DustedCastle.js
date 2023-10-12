@@ -1308,7 +1308,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 <Heading>4theMath:</Heading>
 <Spacer></Spacer>
 <Container>Your Attack Stat</Container>
-<NumberInput defaultValue={0} min={0} max={9999}>
+<NumberInput defaultValue={0} min={0} max={9999} size='md'>
 <NumberInputField id='atk' onInput={(e) => handleAttackStatChange(e.target.value)} />
 </NumberInput>
 </VStack>
@@ -1375,13 +1375,12 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       <text>Gliva</text></Button>
         </Wrap></Container></Center>
         <Spacer></Spacer>
-        <Heading>Craft Materials Needed</Heading>
 
 <Accordion allowMultiple>
   <AccordionItem>
   <h2>
       <AccordionButton>
-        <Box as="span" flex='1' textAlign='center'>
+        <Box as="span" flex='1' textAlign='center' p={3}>
         <Heading as='h3' size='lg'>Craft Materials Needed</Heading>
         </Box>
         <AccordionIcon />
@@ -1417,6 +1416,8 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         </HStack>
       </Box>
       <br></br>
+      <Divider />
+      <br></br>
       <Box as="span" flex='1'>
         <HStack justify='center'>
         <Image
@@ -1431,18 +1432,22 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       <Box>
       <HStack justify='center'>
       <VStack>
+      <text>Need:</text>
       <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
         <NumberInputField id='FgN' onInput={(e) => handleFgNChange(e.target.value)} />
 </NumberInput>
       </VStack>
       <spacer></spacer>
       <VStack>
+      <text>Have:</text>
       <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
 <NumberInputField id='FgH' onInput={(e) => handleFgHChange(e.target.value)} />
 </NumberInput>
       </VStack>
         </HStack>
       </Box>
+      <br></br>
+      <Divider />
       <br></br>
 
 
@@ -1460,12 +1465,14 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       <Box>
       <HStack justify='center'>
       <VStack>
+      <text>Need:</text>
       <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
         <NumberInputField id='LdN' onInput={(e) => handleLdNChange(e.target.value)} />
 </NumberInput>
       </VStack>
       <spacer></spacer>
       <VStack>
+      <text>Have:</text>
       <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
         <NumberInputField id='LdH' onInput={(e) => handleLdHChange(e.target.value)} />
 </NumberInput>
@@ -1473,6 +1480,222 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         </HStack>
       </Box>
       <br></br>
+      <Divider />
+      <br></br>
+
+      <Box as="span" flex='1'>
+        <HStack justify='center'>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e2/Refined-dust.png'
+        alt='Refined Dust'
+        mr='0px'
+      /><text>Refined Dust</text>
+        </HStack>
+        </Box>
+      <Box>
+      <HStack justify='center'>
+      <VStack>
+      <text>Need:</text>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+        <NumberInputField id='RdN' onInput={(e) => handleRdNChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      <spacer></spacer>
+      <VStack>
+      <text>Have:</text>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+        <NumberInputField id='RdH' onInput={(e) => handleRdHChange(e.target.value)} />
+</NumberInput>      </VStack>
+        </HStack>
+      </Box>
+      <br></br>
+      <Divider />
+      <br></br>
+
+
+      <Box as="span" flex='1'>
+        <HStack justify='center'>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b3/Dust_md.png'
+        alt='Dust'
+        mr='0px'
+      /><text>Dust</text>
+        </HStack>
+        </Box>
+      <Box>
+      <HStack justify='center'>
+      <VStack>
+      <text>Need:</text>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+        <NumberInputField id='DustN' onInput={(e) => handleDustNChange(e.target.value)} />
+</NumberInput>      </VStack>
+      <spacer></spacer>
+      <VStack>
+      <text>Have:</text>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+        <NumberInputField id='DustH' onInput={(e) => handleDustHChange(e.target.value)} />
+</NumberInput>      </VStack>
+        </HStack>
+      </Box>
+      <br></br>
+
+      <Box as="span" flex='1'>
+        <HStack justify='center'>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/19/Wignowessence_md.png'
+        alt='Essence'
+        mr='0px'
+      /><text>Essence</text>
+        </HStack>
+        </Box>
+      <Box>
+      <HStack justify='center'>
+      <VStack>
+      <text>Need:</text>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+        <NumberInputField id='EssN' onInput={(e) => handleEssNChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      <spacer></spacer>
+      <VStack>
+      <text>Have:</text>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+        <NumberInputField id='EssH' onInput={(e) => handleEssHChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+        </HStack>
+      </Box>
+      <br></br>
+
+
+      <Box as="span" flex='1'>
+        <HStack justify='center'>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/72/Cave-mushroom.png'
+        alt='Mushroom'
+        mr='0px'
+      /><text>Mushroom</text>
+        </HStack>
+        </Box>
+      <Box>
+      <HStack justify='center'>
+      <VStack>
+      <text>Need:</text>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+        <NumberInputField id='MushN' onInput={(e) => handleMushNChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      <spacer></spacer>
+      <VStack>
+      <text>Have:</text>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+        <NumberInputField id='MushH' onInput={(e) => handleMushHChange(e.target.value)} />
+</NumberInput>      </VStack>
+        </HStack>
+      </Box>
+      <br></br>
+
+
+      <Box as="span" flex='1'>
+        <HStack justify='center'>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/d8/Dark-forest-leaves.png'
+        alt='Dark Forest Leaves'
+        mr='0px'
+      /><text>Dark Forest Leaves</text>
+        </HStack>
+        </Box>
+      <Box>
+      <HStack justify='center'>
+      <VStack>
+      <text>Need:</text>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+        <NumberInputField id='DflN' onInput={(e) => handleDflNChange(e.target.value)} />
+</NumberInput>      
+</VStack>
+      <spacer></spacer>
+      <VStack>
+      <text>Have:</text>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+        <NumberInputField id='DflH' onInput={(e) => handleDflHChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+        </HStack>
+      </Box>
+      <br></br>
+
+
+      <Box as="span" flex='1'>
+        <HStack justify='center'>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5e/Bones.png/'
+        alt='Bones'
+        mr='0px'
+      /><text>Bones</text>
+        </HStack>
+        </Box>
+      <Box>
+      <HStack justify='center'>
+      <VStack>
+      <text>Need:</text>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+        <NumberInputField id='BonesN' onInput={(e) => handleBonesNChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      <spacer></spacer>
+      <VStack>
+      <text>Have:</text>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+        <NumberInputField id='BonesH' onInput={(e) => handleBonesHChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+        </HStack>
+      </Box>
+      <br></br>
+
+
+      <Box as="span" flex='1'>
+        <HStack justify='center'>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/ad/Purple-crystal-shards.png'
+        alt='Purple Crystal Shards'
+        mr='0px'
+      /><text>Purple Crystal Shards</text>
+        </HStack>
+        </Box>
+      <Box>
+      <HStack justify='center'>
+      <VStack>
+      <text>Need:</text>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+        <NumberInputField id='PCSN' onInput={(e) => handlePCSNChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      <spacer></spacer>
+      <VStack>
+      <text>Have:</text>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+        <NumberInputField id='PCSH' onInput={(e) => handlePCSHChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+        </HStack>
+      </Box>
+      <br></br>
+
 
       <Box as="span" flex='1'>
         <HStack justify='center'>
@@ -1482,10 +1705,12 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       <Box>
       <HStack justify='center'>
       <VStack>
+      <text>Need:</text>
       //need input//
       </VStack>
       <spacer></spacer>
       <VStack>
+      <text>Have:</text>
       //have input//
       </VStack>
         </HStack>
@@ -1494,6 +1719,137 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 
     </AccordionPanel>
   </AccordionItem>
+
+  <AccordionItem>
+  <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='center'  p={3}>
+        <Heading as='h3' size='lg'>Battle Items Needed</Heading>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+    <Wrap><WrapItem>
+    <Box as="span" flex='1'>
+        <HStack justify='center'>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        alt='Dust-Repellent Elixir'
+        mr='0px'
+      /><text>Dust-Repellent Elixir</text>
+        </HStack>
+
+      <HStack justify='center'>
+      <VStack>
+      <text>Need:</text>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+  <NumberInputField id='dreN' onInput={(e) => handleDreNChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      <VStack>
+      <text>Have:</text>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+  <NumberInputField id='dreH' onInput={(e) => handleDreHChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+        </HStack>
+      </Box></WrapItem>
+      <WrapItem>
+      <Box as="span" flex='1'>
+        <HStack justify='center'>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
+        alt='Fusion Glass'
+        mr='0px'
+      /><text>Fusion Glass</text>
+        </HStack>
+      <HStack justify='center'>
+      <VStack>
+      <text>Need:</text>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+        <NumberInputField id='FgN' onInput={(e) => handleFgNChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      <spacer></spacer>
+      <VStack>
+      <text>Have:</text>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+<NumberInputField id='FgH' onInput={(e) => handleFgHChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+        </HStack>
+      </Box>
+      </WrapItem>
+      </Wrap>
+
+      <Spacer></Spacer>
+
+      <Wrap><WrapItem>
+    <Box as="span" flex='1'>
+        <HStack justify='center'>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        alt='Dust-Repellent Elixir'
+        mr='0px'
+      /><text>Dust-Repellent Elixir</text>
+        </HStack>
+
+      <HStack justify='center'>
+      <VStack>
+      <text>Need:</text>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+  <NumberInputField id='dreN' onInput={(e) => handleDreNChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      <VStack>
+      <text>Have:</text>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+  <NumberInputField id='dreH' onInput={(e) => handleDreHChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+        </HStack>
+      </Box></WrapItem>
+      <WrapItem>
+      <Box as="span" flex='1'>
+        <HStack justify='center'>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
+        alt='Fusion Glass'
+        mr='0px'
+      /><text>Fusion Glass</text>
+        </HStack>
+      <HStack justify='center'>
+      <VStack>
+      <text>Need:</text>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+        <NumberInputField id='FgN' onInput={(e) => handleFgNChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      <spacer></spacer>
+      <VStack>
+      <text>Have:</text>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+<NumberInputField id='FgH' onInput={(e) => handleFgHChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+        </HStack>
+      </Box>
+      </WrapItem>
+      </Wrap>
+
+
+    </AccordionPanel>
+  </AccordionItem>
+
   </Accordion>
 <Spacer></Spacer>
 <Spacer></Spacer>
