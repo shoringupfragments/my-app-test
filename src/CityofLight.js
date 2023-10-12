@@ -15,6 +15,7 @@ import {
   VStack,
   Grid,
   theme,
+  Text,
   Table,
   Thead,
   Tbody,
@@ -60,7 +61,7 @@ function App() {
   const [MushNoanzaIsShown, setMushNoanzaIsShown] = useState(false);
   const [MushAakultaIsShown, setMushAakultaIsShown] = useState(false);
   const [MushFgCraftingIsShown, setMushFgCraftingIsShown] = useState(false);
-
+  const [noanzaCost, SetNoanzaCost] = useState(false);
 
   const handleNoanzaClick = event => {
     // 👇️ toggle shown state
@@ -79,7 +80,7 @@ function App() {
     setNoanzaActive(!noanzaActive);
     setAakultaActive(current => null);
     setFgCraftingActive(current => null);
-
+    SetNoanzaCost(!noanzaCost)
   };
 
   const handleAakultaClick = event => {
@@ -1300,13 +1301,13 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         <Grid minH="100vh">
           <VStack spacing={8}>
             <Heading>City of Light</Heading>
-            <Container><p>This page calculates what monsters you need for City of Light materials and battle items, based on average loot drops.<br></br><br></br>Never worry again about how many Fusion Glasses you need for Noanza's fifty million weapons. <br></br><br></br> Just list how many you need, and we'll do the rest.</p></Container>
+            <Container><p>This page calculates what monsters you need for City of Light materials and battle items, based on average loot drops.</p></Container>
             <Container><Divider></Divider></Container>
 
 <VStack>
-<Heading>Info for the Math:</Heading>
-<br></br><br></br>
-<Container>Your Attack Stat:</Container>
+<Heading>4theMath:</Heading>
+<Spacer></Spacer>
+<Container>Your Attack Stat</Container>
 <NumberInput defaultValue={0} min={0} max={9999}>
 <NumberInputField id='atk' onInput={(e) => handleAttackStatChange(e.target.value)} />
 </NumberInput>
@@ -1340,6 +1341,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       <span>Aakulta</span></Button>
         <Button  variant='outline' onClick={handleFgCraftingClick} style={{ backgroundColor: fgCraftingActive ? "#319795" : "transparent" }}>Crafting (least efficient)</Button>
         </HStack></Container>
+        {noanzaCost && <Text fontSize='md'><i>+4 Lightened Dust added per Noanza to account for battle cost</i></Text>}
         <HStack><text>Select source for</text> 
         <Image
         boxSize='3rem'

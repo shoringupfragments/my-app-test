@@ -68,7 +68,7 @@ const [wcResult, setWCResult] = useState(0);
 <Spacer></Spacer>
 {wcResult !== null && (
               <div>
-                <Container><b>Total:</b> {wcResult}</Container>
+                <Container><b>Total:</b> {wcResult} words</Container>
               </div>
             )}  
 
