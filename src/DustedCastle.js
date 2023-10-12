@@ -1331,7 +1331,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Noanza'
         mr='12px'
       />
-      <span>Noanza (most efficient)</span></Button>
+      <span>Noanza</span></Button>
       </WrapItem>
       <WrapItem>
         <Button variant='outline' onClick= {handleAakultaClick} style={{ backgroundColor: aakultaActive ? "#2C7A7B" : "transparent" }}>      <Image
@@ -1343,10 +1343,10 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       />
       <span>Aakulta</span></Button></WrapItem>
       <WrapItem>
-        <Button  variant='outline' onClick={handleFgCraftingClick} style={{ backgroundColor: fgCraftingActive ? "#2C7A7B" : "transparent" }}>Crafting (least efficient)</Button>
+        <Button  variant='outline' onClick={handleFgCraftingClick} style={{ backgroundColor: fgCraftingActive ? "#2C7A7B" : "transparent" }}>Crafting</Button>
         </WrapItem>
         </Wrap></Container>
-        {noanzaCost && <Text fontSize='md'><i>+4 Lightened Dust added per Noanza to account for battle cost</i></Text>}
+        {noanzaCost && <Text fontSize='md'></Text>}
         <HStack><text>Select source for</text> 
         <Image
         boxSize='3rem'
@@ -1364,7 +1364,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Kirerf'
         mr='12px'
       />
-      <text>Kirerf (most efficient)</text></Button>
+      <text>Kirerf</text></Button>
         <Button  variant='outline' onClick={handleGlivaClick}  style={{ backgroundColor: glivaActive ? "#2C7A7B" : "transparent" }}>      <Image
         boxSize='2rem'
         borderRadius='full'
@@ -2117,19 +2117,11 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
   <Table align='center' variant='simple' colorScheme='teal' maxW={20}>
   <Tbody>
     <Tr>
-  <Td><Stat>
-  <StatLabel>Total Word Count</StatLabel>
-  <StatNumber>{totalFinalWCNoAtk}</StatNumber>
-</Stat></Td>
 <Td><Stat>
   <StatLabel>Total Word Count with Attack</StatLabel>
   <StatNumber>{totalFinalWCResult}</StatNumber>
 </Stat></Td></Tr>
 <Tr>
-  <Td><Stat>
-  <StatLabel>Approx. Cost (Coins)</StatLabel>
-  <StatNumber>000,000</StatNumber>
-</Stat></Td>
 <Td><Stat>
   <StatLabel>Total Monsters</StatLabel>
   <StatNumber>000,000</StatNumber>
