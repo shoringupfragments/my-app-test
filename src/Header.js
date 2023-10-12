@@ -21,10 +21,9 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Box textAlign="center" fontSize="xl">
-        
         <Grid minH="70vh" p={3}>
           <ColorModeSwitcher justifySelf="flex-end" />
-          <VStack spacing={8}>
+          <VStack spacing={8} justify='center'>
             <Image src='https://i.imgur.com/QUBFKJf.png' />
             <Heading
                     _hover={{  color: "teal.500",  }}><Link to="/">4theWords Planner</Link></Heading>

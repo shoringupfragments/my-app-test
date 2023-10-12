@@ -2138,7 +2138,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 </Table>
 </TableContainer>
         <Box as="span" flex='1' textAlign='center' p={3}>
-        <Text><b>Craft Materials Needed</b></Text>
+        <Text><b>Materials to Loot</b></Text>
         </Box></Container>
 <Wrap spacing='30px' justify='center'>
 <WrapItem>
@@ -2309,8 +2309,10 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
   </WrapItem>
 </Wrap>
 <br></br>
-
 </Container>
+<Divider />
+<Container><br></br>
+<br></br></Container>
         </Grid>
       </Box>
     </ChakraProvider>
