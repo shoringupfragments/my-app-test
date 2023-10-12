@@ -2132,9 +2132,9 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         <Box as="span" flex='1' textAlign='center' p={3}>
         <Text><b>Materials to Loot</b></Text>
         </Box></Container>
-<Wrap spacing='30px' justify='center'>
+<Wrap spacingY='30px' justify='center'>
 <WrapItem>
-    <Box justify='center' w='50px' h='50px'>
+    <Box justify='center' w='50px' h='50px' pb={5}>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2149,7 +2149,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
   </Box>
   </WrapItem>
   <WrapItem>
-    <Box justify='center' w='50px' h='50px'>
+    <Box justify='center' w='50px' h='50px' pb={5}>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2163,7 +2163,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
   </Box>
   </WrapItem>
   <WrapItem>
-    <Box justify='center' w='50px' h='50px'>
+    <Box justify='center' w='50px' h='50px' pb={5}>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2179,7 +2179,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
   </Box>
   </WrapItem>
   <WrapItem>
-    <Box justify='center' w='50px' h='50px'>
+    <Box justify='center' w='50px' h='50px' pb={5}>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2195,7 +2195,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
   </Box>
   </WrapItem>
   <WrapItem>
-    <Box justify='center' w='50px' h='50px'>
+    <Box justify='center' w='50px' h='50px' pb={5}>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2209,7 +2209,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
   </Box>
   </WrapItem>
   <WrapItem>
-    <Box justify='center' w='50px' h='50px'>
+    <Box justify='center' w='50px' h='50px' pb={5}>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2223,7 +2223,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
   </Box>
   </WrapItem>
   <WrapItem>
-    <Box justify='center' w='50px' h='50px'>
+    <Box justify='center' w='50px' h='50px' pb={5}>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2237,7 +2237,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
   </Box>
   </WrapItem>
   <WrapItem>
-    <Box justify='center' w='50px' h='50px'>
+    <Box justify='center' w='50px' h='50px' pb={5}>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2251,7 +2251,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
   </Box>
   </WrapItem>
   <WrapItem>
-    <Box justify='center' w='50px' h='50px'>
+    <Box justify='center' w='50px' h='50px' pb={5}>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2270,9 +2270,9 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 <Container> <Box as="span" flex='1' textAlign='center' p={3}>
         <Text pt={3}><b>Materials to Craft:</b></Text>
         </Box>
-<Wrap spacing='30px' justify='center'>
+<Wrap spacing='0px' justify='center'>
 <WrapItem>
-    <Box justify='center' w='50px' h='50px'>
+    <Box justify='center' w='50px' h='50px' pb={5}>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2286,7 +2286,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
   </Box>
   </WrapItem>
 <WrapItem>
-    <Box justify='center' w='50px' h='50px'>
+    <Box justify='center' w='50px' h='50px' pb={5}>
        <VStack> 
         <Image
         boxSize='3rem'
