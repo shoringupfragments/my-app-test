@@ -1322,6 +1322,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       /><text><b>Fusion Glass</b></text>
          Source:</HStack>
         <Container><Wrap justify='center'>
+        <WrapItem>
         <Button variant='outline' onClick={handleNoanzaClick} style={{ backgroundColor: noanzaActive ? "#2C7A7B" : "transparent" }}>
         <Image
         boxSize='2rem'
@@ -1331,6 +1332,8 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         mr='12px'
       />
       <span>Noanza (most efficient)</span></Button>
+      </WrapItem>
+      <WrapItem>
         <Button variant='outline' onClick= {handleAakultaClick} style={{ backgroundColor: aakultaActive ? "#2C7A7B" : "transparent" }}>      <Image
         boxSize='2rem'
         borderRadius='full'
@@ -1338,8 +1341,10 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Aakulta'
         mr='12px'
       />
-      <span>Aakulta</span></Button>
+      <span>Aakulta</span></Button></WrapItem>
+      <WrapItem>
         <Button  variant='outline' onClick={handleFgCraftingClick} style={{ backgroundColor: fgCraftingActive ? "#2C7A7B" : "transparent" }}>Crafting (least efficient)</Button>
+        </WrapItem>
         </Wrap></Container>
         {noanzaCost && <Text fontSize='md'><i>+4 Lightened Dust added per Noanza to account for battle cost</i></Text>}
         <HStack><text>Select source for</text> 
