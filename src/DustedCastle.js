@@ -1402,14 +1402,14 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       <Box>
       <HStack justify='center'>
       <VStack>
-      <text>Need:</text><br></br>
+      <text>Need:</text>
       <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
   <NumberInputField id='dreN' onInput={(e) => handleDreNChange(e.target.value)} />
 </NumberInput>
       </VStack>
       <spacer></spacer>
       <VStack>
-      <text>Have:</text><br></br>
+      <text>Have:</text>
       <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
   <NumberInputField id='dreH' onInput={(e) => handleDreHChange(e.target.value)} />
 </NumberInput>
