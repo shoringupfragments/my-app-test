@@ -1321,8 +1321,8 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         mr='0px'
       /><text><b>Fusion Glass</b></text>
          Source:</HStack>
-        <Container><HStack>
-        <Button variant='outline' onClick={handleNoanzaClick} style={{ backgroundColor: noanzaActive ? "#319795" : "transparent" }}>
+        <Container><Wrap justify='center'>
+        <Button variant='outline' onClick={handleNoanzaClick} style={{ backgroundColor: noanzaActive ? "#2C7A7B" : "transparent" }}>
         <Image
         boxSize='2rem'
         borderRadius='full'
@@ -1331,7 +1331,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         mr='12px'
       />
       <span>Noanza (most efficient)</span></Button>
-        <Button variant='outline' onClick= {handleAakultaClick} style={{ backgroundColor: aakultaActive ? "#319795" : "transparent" }}>      <Image
+        <Button variant='outline' onClick= {handleAakultaClick} style={{ backgroundColor: aakultaActive ? "#2C7A7B" : "transparent" }}>      <Image
         boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/5/59/Aakulta.png'
@@ -1339,8 +1339,8 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         mr='12px'
       />
       <span>Aakulta</span></Button>
-        <Button  variant='outline' onClick={handleFgCraftingClick} style={{ backgroundColor: fgCraftingActive ? "#319795" : "transparent" }}>Crafting (least efficient)</Button>
-        </HStack></Container>
+        <Button  variant='outline' onClick={handleFgCraftingClick} style={{ backgroundColor: fgCraftingActive ? "#2C7A7B" : "transparent" }}>Crafting (least efficient)</Button>
+        </Wrap></Container>
         {noanzaCost && <Text fontSize='md'><i>+4 Lightened Dust added per Noanza to account for battle cost</i></Text>}
         <HStack><text>Select source for</text> 
         <Image
@@ -1351,8 +1351,8 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         mr='0px'
       /><text><b>Mushrooms</b></text>
          Source:</HStack>
-        <Center><Container><HStack>
-        <Button  variant='outline' onClick={handleKirerfClick}  style={{ backgroundColor: kirerfActive ? "#319795" : "transparent" }}>      <Image
+        <Center><Container><Wrap justify='center'>
+        <Button  variant='outline' onClick={handleKirerfClick}  style={{ backgroundColor: kirerfActive ? "#2C7A7B" : "transparent" }}>      <Image
         boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/a/a6/Kirerf.png'
@@ -1360,7 +1360,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         mr='12px'
       />
       <text>Kirerf (most efficient)</text></Button>
-        <Button  variant='outline' onClick={handleGlivaClick}  style={{ backgroundColor: glivaActive ? "#319795" : "transparent" }}>      <Image
+        <Button  variant='outline' onClick={handleGlivaClick}  style={{ backgroundColor: glivaActive ? "#2C7A7B" : "transparent" }}>      <Image
         boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/1/15/Gliva.png'
@@ -1368,9 +1368,57 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         mr='12px'
       />
       <text>Gliva</text></Button>
-        </HStack></Container></Center>
-                <Heading>Craft Materials Needed</Heading>
+        </Wrap></Container></Center>
+        <Spacer></Spacer>
+        <Heading>Craft Materials Needed</Heading>
+
+<Accordion allowMultiple>
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box as="span" flex='1'>
+        <HStack justify='center'>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        alt='Dust-Repellent Elixir'
+        mr='0px'
+      /><text>Dust-Repellent Elixir</text>
+        </HStack>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+      <Box>
+      <HStack justify='center'>
+      <VStack>
+      <text>Have:</text><br></br>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+  <NumberInputField id='dreN' onInput={(e) => handleDreNChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      <spacer></spacer>
+      <VStack>
+      <text>Need:</text><br></br>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+  <NumberInputField id='dreH' onInput={(e) => handleDreHChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+        </HStack>
+      </Box>
+    </AccordionPanel>
+  </AccordionItem>
+  </Accordion>
+
+
+<Spacer></Spacer>
+<Spacer></Spacer>
+<Spacer></Spacer>
+<Spacer></Spacer>
           </VStack>
+          
         </Grid>
       </Box>
     </ChakraProvider>
