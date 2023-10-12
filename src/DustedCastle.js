@@ -1379,9 +1379,16 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 
 <Accordion allowMultiple>
   <AccordionItem>
-    <h2>
+  <h2>
       <AccordionButton>
-        <Box as="span" flex='1'>
+        <Box as="span" flex='1' textAlign='center'>
+        <Heading as='h3' size='lg'>Craft Materials Needed</Heading>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+    <Box as="span" flex='1'>
         <HStack justify='center'>
         <Image
         boxSize='3rem'
@@ -1392,32 +1399,102 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       /><text>Dust-Repellent Elixir</text>
         </HStack>
         </Box>
-        <AccordionIcon />
-      </AccordionButton>
-    </h2>
-    <AccordionPanel pb={4}>
       <Box>
       <HStack justify='center'>
       <VStack>
-      <text>Have:</text><br></br>
+      <text>Need:</text><br></br>
       <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
   <NumberInputField id='dreN' onInput={(e) => handleDreNChange(e.target.value)} />
 </NumberInput>
       </VStack>
       <spacer></spacer>
       <VStack>
-      <text>Need:</text><br></br>
+      <text>Have:</text><br></br>
       <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
   <NumberInputField id='dreH' onInput={(e) => handleDreHChange(e.target.value)} />
 </NumberInput>
       </VStack>
         </HStack>
       </Box>
+      <br></br>
+      <Box as="span" flex='1'>
+        <HStack justify='center'>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
+        alt='Fusion Glass'
+        mr='0px'
+      /><text>Fusion Glass</text>
+        </HStack>
+        </Box>
+      <Box>
+      <HStack justify='center'>
+      <VStack>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+        <NumberInputField id='FgN' onInput={(e) => handleFgNChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      <spacer></spacer>
+      <VStack>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+<NumberInputField id='FgH' onInput={(e) => handleFgHChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+        </HStack>
+      </Box>
+      <br></br>
+
+
+      <Box as="span" flex='1'>
+        <HStack justify='center'>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/91/LightenedDust.png'
+        alt='Lightened Dust'
+        mr='0px'
+      /><text>Lightened Dust</text>
+        </HStack>
+        </Box>
+      <Box>
+      <HStack justify='center'>
+      <VStack>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+        <NumberInputField id='LdN' onInput={(e) => handleLdNChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      <spacer></spacer>
+      <VStack>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+        <NumberInputField id='LdH' onInput={(e) => handleLdHChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+        </HStack>
+      </Box>
+      <br></br>
+
+      <Box as="span" flex='1'>
+        <HStack justify='center'>
+        //material name//
+        </HStack>
+        </Box>
+      <Box>
+      <HStack justify='center'>
+      <VStack>
+      //need input//
+      </VStack>
+      <spacer></spacer>
+      <VStack>
+      //have input//
+      </VStack>
+        </HStack>
+      </Box>
+      <br></br>
+
     </AccordionPanel>
   </AccordionItem>
   </Accordion>
-
-
 <Spacer></Spacer>
 <Spacer></Spacer>
 <Spacer></Spacer>
