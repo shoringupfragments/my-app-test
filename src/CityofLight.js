@@ -38,11 +38,16 @@ import { ChevronDownIcon, ChevronRightIcon, MinusIcon, AddIcon, } from '@chakra-
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Routes, Route, Link } from 'react-router-dom';
 import QuickWCCalc from './QuickWCCalc';
-import About from './About'
 
 function App() {
 
-  
+  const [noanzaActive, setNoanzaActive] = useState(false);
+  const [aakultaActive, setAakultaActive] = useState(false);
+  const [fgCraftingActive, setFgCraftingActive] = useState(false);
+  const [glivaActive, setGlivaActive] = useState(false);
+  const [kirerfActive, setKirerfActive] = useState(false);
+
+
   const [NoanzaIsShown, setNoanzaIsShown] = useState(false);
   const [NoanzaQtyIsShown, setNoanzaQtyIsShown] = useState(false);
   const [AakultaIsShown, setAakultaIsShown] = useState(false);
@@ -55,8 +60,6 @@ function App() {
   const [MushNoanzaIsShown, setMushNoanzaIsShown] = useState(false);
   const [MushAakultaIsShown, setMushAakultaIsShown] = useState(false);
   const [MushFgCraftingIsShown, setMushFgCraftingIsShown] = useState(false);
-
-
 
 
   const handleNoanzaClick = event => {
@@ -73,6 +76,10 @@ function App() {
     setSummaryFgCraftingIsShown(current => null);
     setMushAakultaIsShown(current =>null)
     setMushFgCraftingIsShown(current => null);
+    setNoanzaActive(!noanzaActive);
+    setAakultaActive(current => null);
+    setFgCraftingActive(current => null);
+
   };
 
   const handleAakultaClick = event => {
@@ -90,7 +97,11 @@ function App() {
     setNoanzaQtyIsShown(current => 0);
     setSummaryNoanzaIsShown(current => null);
     setMushNoanzaIsShown(current =>null)
-  };
+    setAakultaActive(!aakultaActive);
+    setNoanzaActive(current => null);
+    setFgCraftingActive(current => null);
+
+    };
 
   const handleFgCraftingClick = event => {
     // 👇️ toggle shown state
@@ -105,7 +116,10 @@ function App() {
     setNoanzaIsShown(current => null);
     setNoanzaQtyIsShown(current => 0);
     setSummaryNoanzaIsShown(current => null);
-    setMushNoanzaIsShown(current =>null)
+    setMushNoanzaIsShown(current =>null);
+    setFgCraftingActive(!fgCraftingActive)
+    setNoanzaActive(current => null);
+    setAakultaActive(current => null);
   };
 
   const [GlivaIsShown, setGlivaIsShown] = useState(false);
@@ -124,6 +138,10 @@ function App() {
     setKirerfIsShown(current => null);
     setKirerfQtyIsShown(current => 0);
     setSummaryKirerfIsShown(current => null)
+    setGlivaActive(!glivaActive);
+    setKirerfActive(current => null);
+
+
   };
 
   const handleKirerfClick = event => {
@@ -134,6 +152,9 @@ function App() {
     setGlivaIsShown(current => null);
     setGlivaQtyIsShown(current => 0);
     setSummaryGlivaIsShown(current => null);
+    setKirerfActive(!kirerfActive);
+    setGlivaActive(current => null);
+
   };
 
 //CALCULATOR //
@@ -1276,7 +1297,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
   return (
     <ChakraProvider theme={theme}>
       <Box textAlign="center" fontSize="xl">
-        <Grid minH="100vh" p={3}>
+        <Grid minH="100vh">
           <VStack spacing={8}>
             <Heading>City of Light</Heading>
             <Container><p>This page calculates what monsters you need for City of Light materials and battle items, based on average loot drops.<br></br><br></br>Never worry again about how many Fusion Glasses you need for Noanza's fifty million weapons. <br></br><br></br> Just list how many you need, and we'll do the rest.</p></Container>
@@ -1300,7 +1321,8 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       /><text><b>Fusion Glass</b></text>
          Source:</HStack>
         <Container><HStack>
-        <Button onClick= {handleNoanzaClick}>      <Image
+        <Button variant='outline' onClick={handleNoanzaClick} style={{ backgroundColor: noanzaActive ? "#319795" : "transparent" }}>
+        <Image
         boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png'
@@ -1308,7 +1330,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         mr='12px'
       />
       <span>Noanza (most efficient)</span></Button>
-        <Button onClick= {handleAakultaClick}>      <Image
+        <Button variant='outline' onClick= {handleAakultaClick} style={{ backgroundColor: aakultaActive ? "#319795" : "transparent" }}>      <Image
         boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/5/59/Aakulta.png'
@@ -1316,7 +1338,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         mr='12px'
       />
       <span>Aakulta</span></Button>
-        <Button onClick={handleFgCraftingClick}>Crafting (least efficient)</Button>
+        <Button  variant='outline' onClick={handleFgCraftingClick} style={{ backgroundColor: fgCraftingActive ? "#319795" : "transparent" }}>Crafting (least efficient)</Button>
         </HStack></Container>
         <HStack><text>Select source for</text> 
         <Image
@@ -1328,7 +1350,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       /><text><b>Mushrooms</b></text>
          Source:</HStack>
         <Center><Container><HStack>
-        <Button onClick={handleKirerfClick}>      <Image
+        <Button  variant='outline' onClick={handleKirerfClick}  style={{ backgroundColor: kirerfActive ? "#319795" : "transparent" }}>      <Image
         boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/a/a6/Kirerf.png'
@@ -1336,7 +1358,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         mr='12px'
       />
       <text>Kirerf (most efficient)</text></Button>
-        <Button onClick={handleGlivaClick}>      <Image
+        <Button  variant='outline' onClick={handleGlivaClick}  style={{ backgroundColor: glivaActive ? "#319795" : "transparent" }}>      <Image
         boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/1/15/Gliva.png'
