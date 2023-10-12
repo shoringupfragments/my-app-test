@@ -2134,7 +2134,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         </Box></Container>
 <Wrap spacing='30px' justify='center'>
 <WrapItem>
-    <Center w='50px' h='50px'>
+    <Box justify='center' w='50px' h='50px'>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2146,10 +2146,10 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       {SummaryNoanzaIsShown && <Container>{totalAllFg}</Container>}
       {SummaryAakultaIsShown && <Container>{totalAllFg}</Container>}
       {SummaryFgCraftingIsShown && <Container><text>0</text></Container>}</VStack>
-  </Center>
+  </Box>
   </WrapItem>
   <WrapItem>
-    <Center w='50px' h='50px'>
+    <Box justify='center' w='50px' h='50px'>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2160,10 +2160,10 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       />      {SummaryNoanzaIsShown && <Container>{totalLdLootingNoanza}</Container>}
       {SummaryAakultaIsShown && <Container>{totalLdLooting}</Container>}
       {SummaryFgCraftingIsShown && <Container>{totalLdCrafting}</Container>}</VStack>
-  </Center>
+  </Box>
   </WrapItem>
   <WrapItem>
-    <Center w='50px' h='50px'>
+    <Box justify='center' w='50px' h='50px'>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2176,10 +2176,10 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       {SummaryAakultaIsShown && <Container>{totalRdLooting}</Container>}
       {SummaryFgCraftingIsShown && <Container>{totalRdCrafting}</Container>}
       </VStack>
-  </Center>
+  </Box>
   </WrapItem>
   <WrapItem>
-    <Center w='50px' h='50px'>
+    <Box justify='center' w='50px' h='50px'>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2192,10 +2192,10 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
   	{SummaryAakultaIsShown && <Container>{totalDustAllOtherMonsters}</Container>}
   	{SummaryFgCraftingIsShown && <Container>{totalDustAllOtherMonsters}</Container>}
 </VStack>
-  </Center>
+  </Box>
   </WrapItem>
   <WrapItem>
-    <Center w='50px' h='50px'>
+    <Box justify='center' w='50px' h='50px'>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2206,10 +2206,10 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       />  	{SummaryNoanzaIsShown && <Container>{totalEssLooting}</Container>}
       {SummaryAakultaIsShown && <Container>{totalEssLooting}</Container>}
       {SummaryFgCraftingIsShown && <Container>{totalEssCrafting}</Container>}</VStack>
-  </Center>
+  </Box>
   </WrapItem>
   <WrapItem>
-    <Center w='50px' h='50px'>
+    <Box justify='center' w='50px' h='50px'>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2220,10 +2220,10 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       />  	{MushNoanzaIsShown && <Container>{totalMushLooting}</Container>}
       {MushAakultaIsShown && <Container>{totalMushLooting}</Container>}
       {MushFgCraftingIsShown && <Container>{totalMushCrafting}</Container>}</VStack>
-  </Center>
+  </Box>
   </WrapItem>
   <WrapItem>
-    <Center w='50px' h='50px'>
+    <Box justify='center' w='50px' h='50px'>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2234,10 +2234,10 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       />  	{SummaryNoanzaIsShown && <Container>{totalDflLooting}</Container>}
       {SummaryAakultaIsShown && <Container>{totalDflLooting}</Container>}
       {SummaryFgCraftingIsShown && <Container>{totalDflCrafting}</Container>}</VStack>
-  </Center>
+  </Box>
   </WrapItem>
   <WrapItem>
-    <Center w='50px' h='50px'>
+    <Box justify='center' w='50px' h='50px'>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2248,10 +2248,10 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       />  	{SummaryNoanzaIsShown && <Container>{totalBonesLooting}</Container>}
       {SummaryAakultaIsShown && <Container>{totalBonesLooting}</Container>}
       {SummaryFgCraftingIsShown && <Container>{totalBonesCrafting}</Container>}</VStack>
-  </Center>
+  </Box>
   </WrapItem>
   <WrapItem>
-    <Center w='50px' h='50px'>
+    <Box justify='center' w='50px' h='50px'>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2264,15 +2264,15 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         {SummaryAakultaIsShown && <Container>{totalGrossPCS}</Container>}
         {SummaryFgCraftingIsShown && <Container>{totalGrossPCS}</Container>}
         </Container></VStack>
-  </Center>
+  </Box>
   </WrapItem>
 </Wrap>
-<Container>        <Box as="span" flex='1' textAlign='center' p={3}>
-        <Text><b>Craft Materials to Craft:</b></Text>
+<Container> <Box as="span" flex='1' textAlign='center' p={3}>
+        <Text pt={3}><b>Materials to Craft:</b></Text>
         </Box>
 <Wrap spacing='30px' justify='center'>
 <WrapItem>
-    <Center w='50px' h='50px'>
+    <Box justify='center' w='50px' h='50px'>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2283,10 +2283,10 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       />        {SummaryNoanzaIsShown && <Container>{totalAllDre}</Container>}
       {SummaryAakultaIsShown && <Container>{totalAllDre}</Container>}
       {SummaryFgCraftingIsShown && <Container>{totalDreFgCrafting}</Container>}</VStack>
-  </Center>
+  </Box>
   </WrapItem>
 <WrapItem>
-    <Center w='50px' h='50px'>
+    <Box justify='center' w='50px' h='50px'>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2297,7 +2297,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       />{SummaryNoanzaIsShown && <Container><text>0</text></Container>}
       {SummaryAakultaIsShown && <Container><text>0</text></Container>}
       {SummaryFgCraftingIsShown && <Container>{totalAllFg}</Container>}</VStack>
-  </Center>
+  </Box>
   </WrapItem>
 </Wrap>
 <br></br>
