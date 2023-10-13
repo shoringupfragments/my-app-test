@@ -38,6 +38,7 @@ import {
 import { ChevronDownIcon, ChevronRightIcon, MinusIcon, AddIcon, } from '@chakra-ui/icons';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Routes, Route, Link } from 'react-router-dom';
+import QuickWCCalc from './QuickWCCalc';
 
 function App() {
 
@@ -60,7 +61,6 @@ function App() {
   const [MushNoanzaIsShown, setMushNoanzaIsShown] = useState(false);
   const [MushAakultaIsShown, setMushAakultaIsShown] = useState(false);
   const [MushFgCraftingIsShown, setMushFgCraftingIsShown] = useState(false);
-  const [noanzaCost, SetNoanzaCost] = useState(false);
 
   const handleNoanzaClick = event => {
     // 👇️ toggle shown state
@@ -79,7 +79,6 @@ function App() {
     setNoanzaActive(!noanzaActive);
     setAakultaActive(current => null);
     setFgCraftingActive(current => null);
-    SetNoanzaCost(!noanzaCost)
   };
 
   const handleAakultaClick = event => {
@@ -184,6 +183,7 @@ const [wcResult, setWCResult] = useState(0);
     setWCResult(totalWords);
 
 };
+
 
 //DUST-REPELLENT ELIXIR -- NO WEAPONS ONLY INPUT//
 
@@ -1291,13 +1291,8 @@ const totalFinalWCResult = (totalXaeyWCLoot + totalXaeyWCCraft + totalDustWignow
 const calculateFinalWCNoAtk = {totalFinalWCResult, attackStat}
 const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*totalFinalWCResult)))
 
-//end this now omg//
-        // The number you want to format
-        const number = totalFinalWCResult;
+//thousands //
 
-        // Format the number with the US locale
-        const USformatter = new Intl.NumberFormat("en-US");
-        const USformattedNumber = USformatter.format(number);
 
 // END OF EQUATIONS SO FAR//
 
@@ -1306,7 +1301,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh">
           <VStack spacing={8}>
-            <Heading pt={3}>City of Light</Heading>
+            <Heading>City of Light</Heading>
             <Container><p>This page calculates what monsters you need for City of Light materials and battle items, based on average loot drops.</p></Container>
             <Container><Divider></Divider></Container>
 
@@ -1314,7 +1309,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 <Heading>4theMath:</Heading>
 <Spacer></Spacer>
 <Container>Your Attack Stat</Container>
-<NumberInput defaultValue={0} min={0} max={9999} size='md'>
+<NumberInput defaultValue={0} min={0} max={9999}>
 <NumberInputField id='atk' onInput={(e) => handleAttackStatChange(e.target.value)} />
 </NumberInput>
 </VStack>
@@ -1327,9 +1322,8 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         mr='0px'
       /><text><b>Fusion Glass</b></text>
          Source:</HStack>
-        <Container><Wrap justify='center'>
-        <WrapItem>
-        <Button variant='outline' onClick={handleNoanzaClick} style={{ backgroundColor: noanzaActive ? "#2C7A7B" : "transparent" }}>
+        <Container><HStack>
+        <Button variant='outline' onClick={handleNoanzaClick} style={{ backgroundColor: noanzaActive ? "#319795" : "transparent" }}>
         <Image
         boxSize='2rem'
         borderRadius='full'
@@ -1337,22 +1331,17 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Noanza'
         mr='12px'
       />
-      <span>Noanza</span></Button>
-      </WrapItem>
-      <WrapItem>
-        <Button variant='outline' onClick= {handleAakultaClick} style={{ backgroundColor: aakultaActive ? "#2C7A7B" : "transparent" }}>      <Image
+      <span>Noanza (most efficient)</span></Button>
+        <Button variant='outline' onClick= {handleAakultaClick} style={{ backgroundColor: aakultaActive ? "#319795" : "transparent" }}>      <Image
         boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/5/59/Aakulta.png'
         alt='Aakulta'
         mr='12px'
       />
-      <span>Aakulta</span></Button></WrapItem>
-      <WrapItem>
-        <Button  variant='outline' onClick={handleFgCraftingClick} style={{ backgroundColor: fgCraftingActive ? "#2C7A7B" : "transparent" }}>Crafting</Button>
-        </WrapItem>
-        </Wrap></Container>
-        {noanzaCost && <Text fontSize='md'></Text>}
+      <span>Aakulta</span></Button>
+        <Button  variant='outline' onClick={handleFgCraftingClick} style={{ backgroundColor: fgCraftingActive ? "#319795" : "transparent" }}>Crafting (least efficient)</Button>
+        </HStack></Container>
         <HStack><text>Select source for</text> 
         <Image
         boxSize='3rem'
@@ -1362,16 +1351,16 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         mr='0px'
       /><text><b>Mushrooms</b></text>
          Source:</HStack>
-        <Center><Container><Wrap justify='center'>
-        <Button  variant='outline' onClick={handleKirerfClick}  style={{ backgroundColor: kirerfActive ? "#2C7A7B" : "transparent" }}>      <Image
+        <Center><Container><HStack>
+        <Button  variant='outline' onClick={handleKirerfClick}  style={{ backgroundColor: kirerfActive ? "#319795" : "transparent" }}>      <Image
         boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/a/a6/Kirerf.png'
         alt='Kirerf'
         mr='12px'
       />
-      <text>Kirerf</text></Button>
-        <Button  variant='outline' onClick={handleGlivaClick}  style={{ backgroundColor: glivaActive ? "#2C7A7B" : "transparent" }}>      <Image
+      <text>Kirerf (most efficient)</text></Button>
+        <Button  variant='outline' onClick={handleGlivaClick}  style={{ backgroundColor: glivaActive ? "#319795" : "transparent" }}>      <Image
         boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/1/15/Gliva.png'
@@ -1379,22 +1368,28 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         mr='12px'
       />
       <text>Gliva</text></Button>
-        </Wrap></Container></Center>
+        </HStack></Container></Center>
         <Spacer></Spacer>
-
-<Accordion allowMultiple>
-  <AccordionItem>
-  <h2>
-      <AccordionButton>
-        <Box as="span" flex='1' textAlign='center' p={3}>
-        <Heading as='h3' size='lg'>Craft Materials Needed</Heading>
-        </Box>
-        <AccordionIcon />
-      </AccordionButton>
-    </h2>
-    <AccordionPanel pb={4}>
-    <Box as="span" flex='1'>
-        <HStack justify='center'>
+        <Heading>Craft Materials Needed</Heading>
+            <TableContainer>
+  <Table variant='striped' colorScheme='teal'>
+    <Thead>
+      <Tr>
+        <Th>Need to Get</Th>
+        <Th>Already Have</Th>
+        <Th>Materials</Th>
+        <Th>Best Source</Th>
+      </Tr>
+    </Thead>
+    <Tbody>
+      <Tr>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+  <NumberInputField id='dreN' onInput={(e) => handleDreNChange(e.target.value)} />
+</NumberInput></Td>
+<Td><NumberInput defaultValue={0} min={0} max={9999}>
+  <NumberInputField id='dreH' onInput={(e) => handleDreHChange(e.target.value)} />
+</NumberInput></Td>
+        <Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -1402,30 +1397,17 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Dust-Repellent Elixir'
         mr='0px'
       /><text>Dust-Repellent Elixir</text>
-        </HStack>
-        </Box>
-      <Box>
-      <HStack justify='center'>
-      <VStack>
-      <text>Need:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='dreN' onInput={(e) => handleDreNChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-      <spacer></spacer>
-      <VStack>
-      <text>Have:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-  <NumberInputField id='dreH' onInput={(e) => handleDreHChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-        </HStack>
-      </Box>
-      <br></br>
-      <Divider />
-      <br></br>
-      <Box as="span" flex='1'>
-        <HStack justify='center'>
+        </HStack></Td>
+        <Td>Crafting</Td>
+      </Tr>
+      <Tr>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='FgN' onInput={(e) => handleFgNChange(e.target.value)} />
+</NumberInput></Td>
+<Td><NumberInput defaultValue={0} min={0} max={9999}>
+<NumberInputField id='FgH' onInput={(e) => handleFgHChange(e.target.value)} />
+</NumberInput></Td>
+<Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -1433,32 +1415,33 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Fusion Glass'
         mr='0px'
       /><text>Fusion Glass</text>
-        </HStack>
-        </Box>
-      <Box>
-      <HStack justify='center'>
-      <VStack>
-      <text>Need:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='FgN' onInput={(e) => handleFgNChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-      <spacer></spacer>
-      <VStack>
-      <text>Have:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-<NumberInputField id='FgH' onInput={(e) => handleFgHChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-        </HStack>
-      </Box>
-      <br></br>
-      <Divider />
-      <br></br>
-
-
-      <Box as="span" flex='1'>
-        <HStack justify='center'>
+        </HStack></Td>
+        <Td>{NoanzaIsShown && <Container><Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png'
+        alt='Noanza'
+        mr='12px'
+      />  
+      <span>Noanza</span></Container>}
+      {AakultaIsShown && <Container><Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/59/Aakulta.png'
+        alt='Aakulta'
+        mr='12px'
+      />  
+      <span>Aakulta</span></Container>}
+      {FgCraftingIsShown && <text>Crafting</text>}</Td>
+      </Tr>
+      <Tr>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='LdN' onInput={(e) => handleLdNChange(e.target.value)} />
+</NumberInput></Td>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='LdH' onInput={(e) => handleLdHChange(e.target.value)} />
+</NumberInput></Td>
+<Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -1466,31 +1449,26 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Lightened Dust'
         mr='0px'
       /><text>Lightened Dust</text>
+        </HStack></Td>
+        <Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/c/c5/Arluzi.png'
+        alt='Arluzi'
+        mr='5px'
+      /> <text>Arluzi</text>
         </HStack>
-        </Box>
-      <Box>
-      <HStack justify='center'>
-      <VStack>
-      <text>Need:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='LdN' onInput={(e) => handleLdNChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-      <spacer></spacer>
-      <VStack>
-      <text>Have:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='LdH' onInput={(e) => handleLdHChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-        </HStack>
-      </Box>
-      <br></br>
-      <Divider />
-      <br></br>
-
-      <Box as="span" flex='1'>
-        <HStack justify='center'>
+</Td>
+      </Tr>
+      <Tr>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='RdN' onInput={(e) => handleRdNChange(e.target.value)} />
+</NumberInput></Td>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='RdH' onInput={(e) => handleRdHChange(e.target.value)} />
+</NumberInput></Td>
+<Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -1498,31 +1476,26 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Refined Dust'
         mr='0px'
       /><text>Refined Dust</text>
+        </HStack></Td>
+        <Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/0/0d/Ascre.png'
+        alt='Ascre'
+        mr='5px'
+      /> <text>Ascre</text>
         </HStack>
-        </Box>
-      <Box>
-      <HStack justify='center'>
-      <VStack>
-      <text>Need:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='RdN' onInput={(e) => handleRdNChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-      <spacer></spacer>
-      <VStack>
-      <text>Have:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='RdH' onInput={(e) => handleRdHChange(e.target.value)} />
-</NumberInput>      </VStack>
-        </HStack>
-      </Box>
-      <br></br>
-      <Divider />
-      <br></br>
-
-
-      <Box as="span" flex='1'>
-        <HStack justify='center'>
+</Td>
+      </Tr>
+      <Tr>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='DustN' onInput={(e) => handleDustNChange(e.target.value)} />
+</NumberInput></Td>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='DustH' onInput={(e) => handleDustHChange(e.target.value)} />
+</NumberInput></Td>
+<Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -1530,29 +1503,26 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Dust'
         mr='0px'
       /><text>Dust</text>
+        </HStack></Td>
+        <Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        alt='Coin'
+        mr='5px'
+      /> <text>Purchase</text>
         </HStack>
-        </Box>
-      <Box>
-      <HStack justify='center'>
-      <VStack>
-      <text>Need:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='DustN' onInput={(e) => handleDustNChange(e.target.value)} />
-</NumberInput>      </VStack>
-      <spacer></spacer>
-      <VStack>
-      <text>Have:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='DustH' onInput={(e) => handleDustHChange(e.target.value)} />
-</NumberInput>      </VStack>
-        </HStack>
-      </Box>
-      <br></br>
-      <Divider />
-      <br></br>
-
-      <Box as="span" flex='1'>
-        <HStack justify='center'>
+</Td>
+      </Tr>
+      <Tr>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='EssN' onInput={(e) => handleEssNChange(e.target.value)} />
+</NumberInput></Td>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='EssH' onInput={(e) => handleEssHChange(e.target.value)} />
+</NumberInput></Td>
+<Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -1560,31 +1530,26 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Essence'
         mr='0px'
       /><text>Essence</text>
+        </HStack></Td>
+        <Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        alt='Coin'
+        mr='5px'
+      /> <text>Purchase</text>
         </HStack>
-        </Box>
-      <Box>
-      <HStack justify='center'>
-      <VStack>
-      <text>Need:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='EssN' onInput={(e) => handleEssNChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-      <spacer></spacer>
-      <VStack>
-      <text>Have:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='EssH' onInput={(e) => handleEssHChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-        </HStack>
-      </Box>
-      <br></br>
-      <Divider />
-      <br></br>
-
-      <Box as="span" flex='1'>
-        <HStack justify='center'>
+</Td>
+      </Tr>
+      <Tr>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='MushN' onInput={(e) => handleMushNChange(e.target.value)} />
+</NumberInput></Td>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='MushH' onInput={(e) => handleMushHChange(e.target.value)} />
+</NumberInput></Td>
+<Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -1592,30 +1557,32 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Mushroom'
         mr='0px'
       /><text>Mushroom</text>
-        </HStack>
-        </Box>
-      <Box>
-      <HStack justify='center'>
-      <VStack>
-      <text>Need:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='MushN' onInput={(e) => handleMushNChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-      <spacer></spacer>
-      <VStack>
-      <text>Have:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='MushH' onInput={(e) => handleMushHChange(e.target.value)} />
-</NumberInput>      </VStack>
-        </HStack>
-      </Box>
-      <br></br>
-      <Divider />
-      <br></br>
-
-      <Box as="span" flex='1'>
-        <HStack justify='center'>
+        </HStack></Td>
+        <Td>{GlivaIsShown && <Container><Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/15/Gliva.png'
+        alt='Gliva'
+        mr='12px'
+      />  
+      <span>Gliva</span></Container>}
+      {KirerfIsShown && <Container><Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/a6/Kirerf.png'
+        alt='Kirerf'
+        mr='12px'
+      />  
+      <span>Kirerf</span></Container>}</Td>
+      </Tr>
+      <Tr>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='DflN' onInput={(e) => handleDflNChange(e.target.value)} />
+</NumberInput></Td>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='DflH' onInput={(e) => handleDflHChange(e.target.value)} />
+</NumberInput></Td>
+<Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -1623,31 +1590,26 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Dark Forest Leaves'
         mr='0px'
       /><text>Dark Forest Leaves</text>
+        </HStack></Td>
+        <Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/7b/Dust_Wignow.png'
+        alt='Dust Wignow'
+        mr='5px'
+      /> <text>Dust Wignow</text>
         </HStack>
-        </Box>
-      <Box>
-      <HStack justify='center'>
-      <VStack>
-      <text>Need:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='DflN' onInput={(e) => handleDflNChange(e.target.value)} />
-</NumberInput>      
-</VStack>
-      <spacer></spacer>
-      <VStack>
-      <text>Have:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='DflH' onInput={(e) => handleDflHChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-        </HStack>
-      </Box>
-      <br></br>
-      <Divider />
-      <br></br>
-
-      <Box as="span" flex='1'>
-        <HStack justify='center'>
+</Td>
+      </Tr>
+      <Tr>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='BonesN' onInput={(e) => handleBonesNChange(e.target.value)} />
+</NumberInput></Td>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='BonesH' onInput={(e) => handleBonesHChange(e.target.value)} />
+</NumberInput></Td>
+<Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -1655,32 +1617,26 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Bones'
         mr='0px'
       /><text>Bones</text>
+        </HStack></Td>
+        <Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/22/Xaey.png'
+        alt='Xaey'
+        mr='5px'
+      /> <text>Xaey</text>
         </HStack>
-        </Box>
-      <Box>
-      <HStack justify='center'>
-      <VStack>
-      <text>Need:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='BonesN' onInput={(e) => handleBonesNChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-      <spacer></spacer>
-      <VStack>
-      <text>Have:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='BonesH' onInput={(e) => handleBonesHChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-        </HStack>
-      </Box>
-      <br></br>
-      <Divider />
-      <br></br>
-
-
-      <Box as="span" flex='1'>
-        <HStack justify='center'>
+</Td>
+      </Tr>
+      <Tr>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='PCSN' onInput={(e) => handlePCSNChange(e.target.value)} />
+</NumberInput></Td>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='PCSH' onInput={(e) => handlePCSHChange(e.target.value)} />
+</NumberInput></Td>
+<Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -1688,41 +1644,43 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Purple Crystal Shards'
         mr='0px'
       /><text>Purple Crystal Shards</text>
+        </HStack></Td>
+        <Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/23/Ardid.png'
+        alt='Ardid'
+        mr='5px'
+      /> <text>Ardid</text>
         </HStack>
-        </Box>
-      <Box>
-      <HStack justify='center'>
-      <VStack>
-      <text>Need:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='PCSN' onInput={(e) => handlePCSNChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-      <spacer></spacer>
-      <VStack>
-      <text>Have:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='PCSH' onInput={(e) => handlePCSHChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-        </HStack>
-      </Box>
-      <br></br>
-    </AccordionPanel>
-  </AccordionItem>
+</Td>
+      </Tr>
+    </Tbody>
+  </Table>
+</TableContainer>
+<Spacer></Spacer>
+<Heading>Battle Items Needed</Heading>
+<TableContainer>
+  <Table variant='striped' colorScheme='teal'>
+    <Thead>
+      <Tr>
+      <Th>Need to Get</Th>
+        <Th>Already Have</Th>
+        <Th>Battle Item</Th>
+        <Th>Best Source</Th>
+      </Tr>
+    </Thead>
+    <Tbody>
+    <Tr>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='AakhelN' onInput={(e) => handleAakhelNChange(e.target.value)} />
+</NumberInput></Td>
+<Td><NumberInput defaultValue={0} min={0} max={9999}>
+<NumberInputField id='AakhelH' onInput={(e) => handleAakhelHChange(e.target.value)} />
+</NumberInput></Td>
 
-  <AccordionItem>
-  <h2>
-      <AccordionButton>
-        <Box as="span" flex='1' textAlign='center'  p={3}>
-        <Heading as='h3' size='lg'>Battle Items Needed</Heading>
-        </Box>
-        <AccordionIcon />
-      </AccordionButton>
-    </h2>
-    <AccordionPanel pb={4}>
-       <Box as="span" flex='1'>
-        <HStack justify='center'>
+        <Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -1730,95 +1688,54 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Aakulta Helmet'
         mr='0px'
       /><text>Aakulta Helmet</text>
-        </HStack>
-        </Box>
-      <Box>
-      <HStack justify='center'>
-      <VStack>
-      <text>Need:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='AakhelN' onInput={(e) => handleAakhelNChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-      <spacer></spacer>
-      <VStack>
-      <text>Have:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-<NumberInputField id='AakhelH' onInput={(e) => handleAakhelHChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-        </HStack>
-      </Box>
-      <br></br>
-      <Divider />
-      <br></br>
+        </HStack></Td>
+        <Td>Crafting</Td>
+      </Tr>
+      <Tr>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='ClibooN' onInput={(e) => handleClibooNChange(e.target.value)} />
+</NumberInput></Td>
+<Td><NumberInput defaultValue={0} min={0} max={9999}>
+<NumberInputField id='ClibooH' onInput={(e) => handleClibooHChange(e.target.value)} />
+</NumberInput></Td>
 
-
-      <Box as="span" flex='1'>
-        <HStack justify='center'>
+<Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/7/7d/ClimbingBoots.png/'
-        alt='Climbing Boots'
+        alt='Climbing Bootss'
         mr='0px'
-      /><text>Climbing Boots</text>        </HStack>
-        </Box>
-      <Box>
-      <HStack justify='center'>
-      <VStack>
-      <text>Need:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='ClibooN' onInput={(e) => handleClibooNChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-      <spacer></spacer>
-      <VStack>
-      <text>Have:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-<NumberInputField id='ClibooH' onInput={(e) => handleClibooHChange(e.target.value)} />
-</NumberInput> 
-</VStack>
-        </HStack>
-      </Box>
-      <br></br>
-      <Divider />
-      <br></br>
+      /><text>Climbing Boots</text>
+        </HStack></Td>
+        <Td>Crafting</Td>      </Tr>
+      <Tr>
+      <Td><NumberInput defaultValue={0} min={0} max={9999}>
+      <NumberInputField id='CrehelN' onInput={(e) => handleCrehelNChange(e.target.value)} />
+</NumberInput></Td>
 
-      <Box as="span" flex='1'>
-      <HStack justify='center'>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='CrehelH' onInput={(e) => handleCrehelHChange(e.target.value)} />
+</NumberInput></Td>
+<Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/f/f8/CrestedHelmet.png'
         alt='Crested Helmet'
         mr='0px'
-      /><text>Crested Helmet</text>        
-      </HStack>
-        </Box>
-      <Box>
-      <HStack justify='center'>
-      <VStack>
-      <text>Need:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-      <NumberInputField id='CrehelN' onInput={(e) => handleCrehelNChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-      <spacer></spacer>
-      <VStack>
-      <text>Have:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='CrehelH' onInput={(e) => handleCrehelHChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-        </HStack>
-      </Box>
-      <br></br>
-      <Divider />
-      <br></br>
-
-      <Box as="span" flex='1'>
-        <HStack justify='center'>
+      /><text>Crested Helmet</text>
+        </HStack></Td>
+        <Td>Crafting</Td>
+      </Tr>
+      <Tr>
+      <Td><NumberInput defaultValue={0} min={0} max={9999}>
+      <NumberInputField id='FlosliN' onInput={(e) => handleFlosliNChange(e.target.value)} />
+</NumberInput></Td>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='FlosliH' onInput={(e) => handleFlosliHChange(e.target.value)} />
+</NumberInput></Td>
+        <Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -1826,32 +1743,17 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Flower Slingshot'
         mr='0px'
       /><text>Flower Slingshot</text>
-      </HStack>
-        </Box>
-      <Box>
-      <HStack justify='center'>
-      <VStack>
-      <text>Need:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-      <NumberInputField id='FlosliN' onInput={(e) => handleFlosliNChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-      <spacer></spacer>
-      <VStack>
-      <text>Have:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='FlosliH' onInput={(e) => handleFlosliHChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-        </HStack>
-      </Box>
-      <br></br>
-      <Divider />
-      <br></br>
-
-
-      <Box as="span" flex='1'>
-        <HStack justify='center'>
+        </HStack></Td>
+        <Td>Crafting</Td>
+      </Tr>
+      <Tr>
+      <Td><NumberInput defaultValue={0} min={0} max={9999}>
+      <NumberInputField id='FuscroN' onInput={(e) => handleFuscroNChange(e.target.value)} />
+</NumberInput></Td>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='FuscroH' onInput={(e) => handleFuscroHChange(e.target.value)} />
+</NumberInput></Td>
+<Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -1859,32 +1761,15 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Fusion Crossbow'
         mr='0px'
       /><text>Fusion Crossbow</text>
-        </HStack>
-        </Box>
-      <Box>
-      <HStack justify='center'>
-      <VStack>
-      <text>Need:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-      <NumberInputField id='FuscroN' onInput={(e) => handleFuscroNChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-      <spacer></spacer>
-      <VStack>
-      <text>Have:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='FuscroH' onInput={(e) => handleFuscroHChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-        </HStack>
-      </Box>
-      <br></br>
-      <Divider />
-      <br></br>
-
-
-      <Box as="span" flex='1'>
-        <HStack justify='center'>
+        </HStack></Td>
+        <Td>Crafting</Td>      </Tr>
+      <Tr>        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+      <NumberInputField id='FuscuiN' onInput={(e) => handleFuscuiNChange(e.target.value)} />
+</NumberInput></Td>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='FuscuiH' onInput={(e) => handleFuscuiHChange(e.target.value)} />
+</NumberInput></Td>
+<Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -1892,32 +1777,17 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Fusion Cuirass'
         mr='0px'
       /><text>Fusion Cuirass</text>
-        </HStack>
-        </Box>
-      <Box>
-      <HStack justify='center'>
-      <VStack>
-      <text>Need:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-      <NumberInputField id='FuscuiN' onInput={(e) => handleFuscuiNChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-      <spacer></spacer>
-      <VStack>
-      <text>Have:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='FuscuiH' onInput={(e) => handleFuscuiHChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-        </HStack>
-      </Box>
-      <br></br>
-      <Divider />
-      <br></br>
-
-
-      <Box as="span" flex='1'>
-        <HStack justify='center'>
+        </HStack></Td>
+        <Td>Crafting</Td>
+      </Tr>
+      <Tr>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='FusswoN' onInput={(e) => handleFusswoNChange(e.target.value)} />
+</NumberInput></Td>
+<Td><NumberInput defaultValue={0} min={0} max={9999}>
+<NumberInputField id='FusswoH' onInput={(e) => handleFusswoHChange(e.target.value)} />
+</NumberInput></Td>
+        <Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -1925,32 +1795,17 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Fusion Sword'
         mr='0px'
       /><text>Fusion Sword</text>
-        </HStack>
-        </Box>
-      <Box>
-      <HStack justify='center'>
-      <VStack>
-      <text>Need:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='FusswoN' onInput={(e) => handleFusswoNChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-      <spacer></spacer>
-      <VStack>
-      <text>Have:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-<NumberInputField id='FusswoH' onInput={(e) => handleFusswoHChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-        </HStack>
-      </Box>
-      <br></br>
-      <Divider />
-      <br></br>
-
-
-      <Box as="span" flex='1'>
-        <HStack justify='center'>
+        </HStack></Td>
+        <Td>Crafting</Td>
+      </Tr>
+      <Tr>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='HopligN' onInput={(e) => handleHopligNChange(e.target.value)} />
+        </NumberInput></Td>
+<Td><NumberInput defaultValue={0} min={0} max={9999}>
+<NumberInputField id='HopligH' onInput={(e) => handleHopligHChange(e.target.value)} />
+</NumberInput></Td>
+<Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -1958,31 +1813,16 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Hopes Light'
         mr='0px'
       /><text>Hope's Light</text>
-        </HStack>
-        </Box>
-      <Box>
-      <HStack justify='center'>
-      <VStack>
-      <text>Need:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='HopligN' onInput={(e) => handleHopligNChange(e.target.value)} />
-        </NumberInput>
-      </VStack>
-      <spacer></spacer>
-      <VStack>
-      <text>Have:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-<NumberInputField id='HopligH' onInput={(e) => handleHopligHChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-        </HStack>
-      </Box>
-      <br></br>
-      <Divider />
-      <br></br>
-
-      <Box as="span" flex='1'>
-        <HStack justify='center'>
+        </HStack></Td>
+        <Td>Crafting</Td>      </Tr>
+      <Tr>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='LeacuiN' onInput={(e) => handleLeacuiNChange(e.target.value)} />
+</NumberInput></Td>
+<Td><NumberInput defaultValue={0} min={0} max={9999}>
+<NumberInputField id='LeacuiH' onInput={(e) => handleLeacuiHChange(e.target.value)} />
+</NumberInput></Td>
+<Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -1990,31 +1830,17 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Leather Cuirass'
         mr='0px'
       /><text>Leather Cuirass</text>
-        </HStack>
-        </Box>
-      <Box>
-      <HStack justify='center'>
-      <VStack>
-      <text>Need:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='LeacuiN' onInput={(e) => handleLeacuiNChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-      <spacer></spacer>
-      <VStack>
-      <text>Have:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-<NumberInputField id='LeacuiH' onInput={(e) => handleLeacuiHChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-        </HStack>
-      </Box>
-      <br></br>
-      <Divider />
-      <br></br>
-
-      <Box as="span" flex='1'>
-        <HStack justify='center'>
+        </HStack></Td>
+        <Td>Crafting</Td>
+      </Tr>
+      <Tr>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='LeaturN' onInput={(e) => handleLeaturNChange(e.target.value)} />
+</NumberInput></Td>
+<Td><NumberInput defaultValue={0} min={0} max={9999}>
+<NumberInputField id='LeaturH' onInput={(e) => handleLeaturHChange(e.target.value)} />
+</NumberInput></Td>
+        <Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -2022,31 +1848,17 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Leather Turnshoe'
         mr='0px'
       /><text>Leather Turnshoe</text>
-        </HStack>
-        </Box>
-      <Box>
-      <HStack justify='center'>
-      <VStack>
-      <text>Need:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='LeaturN' onInput={(e) => handleLeaturNChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-      <spacer></spacer>
-      <VStack>
-      <text>Have:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-<NumberInputField id='LeaturH' onInput={(e) => handleLeaturHChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-        </HStack>
-      </Box>
-      <br></br>
-      <Divider />
-      <br></br>
-
-      <Box as="span" flex='1'>
-        <HStack justify='center'>
+        </HStack></Td>
+        <Td>Crafting</Td>
+      </Tr>
+      <Tr>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='LigbloN' onInput={(e) => handleLigbloNChange(e.target.value)} />
+</NumberInput></Td>
+<Td><NumberInput defaultValue={0} min={0} max={9999}>
+<NumberInputField id='LigbloH' onInput={(e) => handleLigbloHChange(e.target.value)} />
+</NumberInput></Td>
+<Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -2054,31 +1866,16 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Lights Bloom'
         mr='0px'
       /><text>Light's Bloom</text>
-        </HStack>
-        </Box>
-      <Box>
-      <HStack justify='center'>
-      <VStack>
-      <text>Need:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='LigbloN' onInput={(e) => handleLigbloNChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-      <spacer></spacer>
-      <VStack>
-      <text>Have:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-<NumberInputField id='LigbloH' onInput={(e) => handleLigbloHChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-        </HStack>
-      </Box>
-      <br></br>
-      <Divider />
-      <br></br>
-
-      <Box as="span" flex='1'>
-        <HStack justify='center'>
+        </HStack></Td>
+        <Td>Crafting</Td>      </Tr>
+      <Tr>
+        <Td><NumberInput defaultValue={0} min={0} max={9999}>
+        <NumberInputField id='PoepicN' onInput={(e) => handlePoepicNChange(e.target.value)} />
+</NumberInput></Td>
+<Td><NumberInput defaultValue={0} min={0} max={9999}>
+<NumberInputField id='PoepicH' onInput={(e) => handlePoepicHChange(e.target.value)} />
+</NumberInput></Td>
+<Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -2086,48 +1883,70 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Poe Pick'
         mr='0px'
       /><text>Poe Pick</text>
-        </HStack>
+        </HStack></Td>
+        <Td>Crafting</Td>
+      </Tr>
+    </Tbody>
+  </Table>
+</TableContainer>
+<Spacer></Spacer>
+<Accordion defaultIndex={[0]} allowMultiple>
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box flex='1' textAlign='center'>
+         <Heading>Wardrobe Items</Heading>
         </Box>
-      <Box>
-      <HStack justify='center'>
-      <VStack>
-      <text>Need:</text>
-<NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-        <NumberInputField id='PoepicN' onInput={(e) => handlePoepicNChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-      <spacer></spacer>
-      <VStack>
-      <text>Have:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-<NumberInputField id='PoepicH' onInput={(e) => handlePoepicHChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-        </HStack>
-      </Box>
-      <br></br>
-      <Divider />
-      <br></br>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+      <Container>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
+      </Container>
     </AccordionPanel>
   </AccordionItem>
-  </Accordion>
-<Spacer></Spacer>
-<Spacer></Spacer>
-          </VStack>
-<Divider />
-<Container>
-<br></br>
+
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box flex='1' textAlign='center'>
+          <Heading>Housing Items</Heading>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+    <Container>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.</Container>
+    </AccordionPanel>
+  </AccordionItem>
+</Accordion>
+
+<Divider></Divider>
+
 <Heading>Quick View</Heading>
-<br></br>
 <TableContainer>
-  <Table align='center' variant='simple' colorScheme='teal' maxW={20}>
+  <Table variant='simple' colorScheme='teal'>
   <Tbody>
     <Tr>
+  <Td><Stat>
+  <StatLabel>Total Word Count</StatLabel>
+  <StatNumber>{totalFinalWCNoAtk}</StatNumber>
+</Stat></Td>
 <Td><Stat>
   <StatLabel>Total Word Count with Attack</StatLabel>
-  <StatNumber>{USformattedNumber}</StatNumber>
+  <StatNumber>{totalFinalWCResult}</StatNumber>
 </Stat></Td></Tr>
 <Tr>
+  <Td><Stat>
+  <StatLabel>Approx. Cost (Coins)</StatLabel>
+  <StatNumber>000,000</StatNumber>
+</Stat></Td>
 <Td><Stat>
   <StatLabel>Total Monsters</StatLabel>
   <StatNumber>000,000</StatNumber>
@@ -2136,181 +1955,10 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 </Table>
 </TableContainer>
 
-<Box as="span" flex='1' textAlign='center' padding-top={3}>
-<br></br>
-        <Text><b>Monsters to Fight</b></Text>
-        </Box></Container>
-
-<Container>
-        <TableContainer>
-  <Table variant='unstyled' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-        <Box w='50px' h='100px' pb={5}>
-       <VStack> 
-       <Image
-        align='center' 
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/5/59/Aakulta.png'
-        alt='Aakulta'
-        mr='5px'
-      /> <Text fontSize='lg' align='center'>Aakulta</Text>
-      {SummaryNoanzaIsShown && <text align='center'>0</text>}
-      {SummaryAakultaIsShown && <text align='center'>{totalAakultaQty}</text>}
-      {SummaryFgCraftingIsShown && <text align='center'><text>0</text></text>}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='100px' pb={5}>
-       <VStack> 
-       <Image
-        align='center'
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/2/23/Ardid.png'
-        alt='Ardid'
-        mr='5px'
-      /> <Text fontSize='lg' align='center'>Ardid</Text>
-      {SummaryNoanzaIsShown && <text align='center'>0</text>}
-      {SummaryAakultaIsShown && <text align='center'>0</text>}
-      {SummaryFgCraftingIsShown && <text  align='center'>{totalArdidQty}</text>}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='100px' pb={5}>
-       <VStack> 
-       <Image
-       align='center'
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/c/c5/Arluzi.png'
-        alt='Arluzi'
-        mr='5px'
-      /> <Text fontSize='lg' align='center'>Arluzi</Text>
-      {SummaryNoanzaIsShown && <text align='center'>{totalLdLootingNoanza}</text>}
-      {SummaryAakultaIsShown && <text align='center'>{totalAdjustedLdAakultaLoot}</text>}
-      {SummaryFgCraftingIsShown && <text align='center'>{totalArluziQtyCraft}</text>}
-      </VStack>
-  </Box>
-        </Td>
-      </Tr>
-      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='100px' pb={5}>
-       <VStack> 
-       <Image
-       align='center'
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/0/0d/Ascre.png'
-        alt='Ascre'
-        mr='5px'
-      /> <Text fontSize='lg' align='center'>Ascre</Text>
-{SummaryNoanzaIsShown && <text align='center'>{totalAscreQtyLoot}</text>}
-  	{SummaryAakultaIsShown && <text align='center'>{totalAscreQtyLoot}</text>}
-  	{SummaryFgCraftingIsShown && <text align='center'>{totalAscreQtyCraft}</text>}
-</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='100px' pb={5}>
-       <VStack> 
-       <Image
-       align='center'
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/7/7b/Dust_Wignow.png'
-        alt='Dust Wignow'
-        mr='5px'
-      /> <Text fontSize='lg' align='center'>Dust Wignow</Text>
- {SummaryNoanzaIsShown && <text align='center'>{totalDustWignowQtyLoot}</text>}
-  	{SummaryAakultaIsShown && <text align='center'>{totalDustWignowQtyLoot}</text>}
-  	{SummaryFgCraftingIsShown && <text align='center'>{totalDustWignowQtyCraft}</text>}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='100px' pb={5}>
-       <VStack> 
-       <Image
-       align='center'
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/1/15/Gliva.png'
-        alt='Gliva'
-        mr='5px'
-      /> <Text fontSize='lg' align='center'>Gliva</Text>
-{GlivaQtyIsShown && <text align='center'>{totalGlivaQty}</text>}
-{KirerfQtyIsShown && <text align='center'>0</text>}
-</VStack>
-  </Box>
-        </Td>
-      </Tr>      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='100px'>
-       <VStack> 
-       <Image
-       align='center'
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/a/a6/Kirerf.png'
-        alt='Kirerf'
-        mr='5px'
-      /> <Text fontSize='lg' align='center'>Kirerf</Text>
- {KirerfQtyIsShown && <text align='center'>{totalKirerfQty}</text>}
- {GlivaQtyIsShown && <text align='center'>0</text>}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='100px'>
-       <VStack> 
-       <Image
-       align='center'
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png'
-        alt='Noanza'
-        mr='5px'
-      /> <Text fontSize='lg' align='center'>Noanza</Text>
-{SummaryNoanzaIsShown && <text align='center'>{totalNoanzaQty}</text>}
-      {SummaryAakultaIsShown && <text align='center'>0</text>}
-      {SummaryFgCraftingIsShown && <text align='center'>0</text>}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='100px'>
-       <VStack> 
-       <Image
-       align='center'
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/2/22/Xaey.png'
-        alt='Xaey'
-        mr='5px'
-      /> <Text fontSize='lg' align='center'>Xaey</Text>  	
- {SummaryNoanzaIsShown && <text align='center' justify='center'>{totalXaeyQtyLoot}</text>}
-  	{SummaryAakultaIsShown && <text align='center' justify='center'>{totalXaeyQtyLoot}</text>}
-  	{SummaryFgCraftingIsShown && <text align='center' justify='center'>{totalXaeyQtyCraft}</text>}
-        </VStack>
-  </Box>
-        </Td>
-      </Tr>
-    </Tbody>
-  </Table>
-</TableContainer>
-<Container><br></br></Container>
-        <Box as="span" flex='1' textAlign='center'>
-        <Text><b>Materials to Loot</b></Text>
-        </Box></Container>
-
-<Container>
-        <TableContainer>
-  <Table variant='unstyled' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
+<Container><b>Total Materials to Loot:</b></Container>
+<Wrap spacing='30px' justify='center'>
+<WrapItem>
+    <Center w='50px' h='50px'>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2319,28 +1967,27 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Fusion Glass'
         mr='0px'
       />
-      {SummaryNoanzaIsShown && <text align='center'>{totalAllFg}</text>}
-      {SummaryAakultaIsShown && <text align='center'>{totalAllFg}</text>}
-      {SummaryFgCraftingIsShown && <text align='center'>0</text>}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
+      {SummaryNoanzaIsShown && <Container>{totalAllFg}</Container>}
+      {SummaryAakultaIsShown && <Container>{totalAllFg}</Container>}
+      {SummaryFgCraftingIsShown && <Container><text>0</text></Container>}</VStack>
+  </Center>
+  </WrapItem>
+  <WrapItem>
+    <Center w='50px' h='50px'>
        <VStack> 
         <Image
         boxSize='3rem'
         borderRadius='full'
-        align='center'
         src='https://static.wikia.nocookie.net/4thewords/images/9/91/LightenedDust.png'
         alt='Lightened Dust'
         mr='0px'
-      />      {SummaryNoanzaIsShown && <text align='center'>{totalLdLootingNoanza}</text>}
-      {SummaryAakultaIsShown && <text align='center'>{totalLdLooting}</text>}
-      {SummaryFgCraftingIsShown && <text align='center'>{totalLdCrafting}</text>}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
+      />      {SummaryNoanzaIsShown && <Container>{totalLdLootingNoanza}</Container>}
+      {SummaryAakultaIsShown && <Container>{totalLdLooting}</Container>}
+      {SummaryFgCraftingIsShown && <Container>{totalLdCrafting}</Container>}</VStack>
+  </Center>
+  </WrapItem>
+  <WrapItem>
+    <Center w='50px' h='50px'>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2349,16 +1996,14 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Refined Dust'
         mr='0px'
       />
-      {SummaryNoanzaIsShown && <text align='center'>{totalRdLooting}</text>}
-      {SummaryAakultaIsShown && <text align='center'>{totalRdLooting}</text>}
-      {SummaryFgCraftingIsShown && <text align='center'>{totalRdCrafting}</text>}
+      {SummaryNoanzaIsShown && <Container>{totalRdLooting}</Container>}
+      {SummaryAakultaIsShown && <Container>{totalRdLooting}</Container>}
+      {SummaryFgCraftingIsShown && <Container>{totalRdCrafting}</Container>}
       </VStack>
-  </Box>
-        </Td>
-      </Tr>
-      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
+  </Center>
+  </WrapItem>
+  <WrapItem>
+    <Center w='50px' h='50px'>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2367,14 +2012,14 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Dust'
         mr='0px'
       />
-  	{SummaryNoanzaIsShown && <text align='center'>{totalDustAllOtherMonsters}</text>}
-  	{SummaryAakultaIsShown && <text align='center'>{totalDustAllOtherMonsters}</text>}
-  	{SummaryFgCraftingIsShown && <text align='center'>{totalDustAllOtherMonsters}</text>}
+  	{SummaryNoanzaIsShown && <Container>{totalDustAllOtherMonsters}</Container>}
+  	{SummaryAakultaIsShown && <Container>{totalDustAllOtherMonsters}</Container>}
+  	{SummaryFgCraftingIsShown && <Container>{totalDustAllOtherMonsters}</Container>}
 </VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
+  </Center>
+  </WrapItem>
+  <WrapItem>
+    <Center w='50px' h='50px'>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2382,13 +2027,13 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         src='https://static.wikia.nocookie.net/4thewords/images/1/19/Wignowessence_md.png'
         alt='Essence'
         mr='0px'
-      />  	{SummaryNoanzaIsShown && <text align='center'>{totalEssLooting}</text>}
-      {SummaryAakultaIsShown && <text align='center'>{totalEssLooting}</text>}
-      {SummaryFgCraftingIsShown && <text align='center'>{totalEssCrafting}</text>}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
+      />  	{SummaryNoanzaIsShown && <Container>{totalEssLooting}</Container>}
+      {SummaryAakultaIsShown && <Container>{totalEssLooting}</Container>}
+      {SummaryFgCraftingIsShown && <Container>{totalEssCrafting}</Container>}</VStack>
+  </Center>
+  </WrapItem>
+  <WrapItem>
+    <Center w='50px' h='50px'>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2396,14 +2041,13 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         src='https://static.wikia.nocookie.net/4thewords/images/7/72/Cave-mushroom.png'
         alt='Mushrooms'
         mr='0px'
-      />  	{MushNoanzaIsShown && <text align='center'>{totalMushLooting}</text>}
-      {MushAakultaIsShown && <text align='center'>{totalMushLooting}</text>}
-      {MushFgCraftingIsShown && <text align='center'>{totalMushCrafting}</text>}</VStack>
-  </Box>
-        </Td>
-      </Tr>      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='60px'>
+      />  	{MushNoanzaIsShown && <Container>{totalMushLooting}</Container>}
+      {MushAakultaIsShown && <Container>{totalMushLooting}</Container>}
+      {MushFgCraftingIsShown && <Container>{totalMushCrafting}</Container>}</VStack>
+  </Center>
+  </WrapItem>
+  <WrapItem>
+    <Center w='50px' h='50px'>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2411,13 +2055,13 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         src='https://static.wikia.nocookie.net/4thewords/images/d/d8/Dark-forest-leaves.png'
         alt='Dark Forest Leaves'
         mr='0px'
-      />  	{SummaryNoanzaIsShown && <text align='center'>{totalDflLooting}</text>}
-      {SummaryAakultaIsShown && <text align='center'>{totalDflLooting}</text>}
-      {SummaryFgCraftingIsShown && <text align='center'>{totalDflCrafting}</text>}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px'>
+      />  	{SummaryNoanzaIsShown && <Container>{totalDflLooting}</Container>}
+      {SummaryAakultaIsShown && <Container>{totalDflLooting}</Container>}
+      {SummaryFgCraftingIsShown && <Container>{totalDflCrafting}</Container>}</VStack>
+  </Center>
+  </WrapItem>
+  <WrapItem>
+    <Center w='50px' h='50px'>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2425,13 +2069,13 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         src='https://static.wikia.nocookie.net/4thewords/images/5/5e/Bones.png/'
         alt='Bones'
         mr='0px'
-      />  	{SummaryNoanzaIsShown && <text align='center'>{totalBonesLooting}</text>}
-      {SummaryAakultaIsShown && <text align='center'>{totalBonesLooting}</text>}
-      {SummaryFgCraftingIsShown && <text align='center'>{totalBonesCrafting}</text>}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px'>
+      />  	{SummaryNoanzaIsShown && <Container>{totalBonesLooting}</Container>}
+      {SummaryAakultaIsShown && <Container>{totalBonesLooting}</Container>}
+      {SummaryFgCraftingIsShown && <Container>{totalBonesCrafting}</Container>}</VStack>
+  </Center>
+  </WrapItem>
+  <WrapItem>
+    <Center w='50px' h='50px'>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2440,137 +2084,73 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Purple Crystal Shards'
         mr='0px'
       />  	<Container>  	
-      	{SummaryNoanzaIsShown && <text align='center'>{totalGrossPCS}</text>}
-        {SummaryAakultaIsShown && <text align='center'>{totalGrossPCS}</text>}
-        {SummaryFgCraftingIsShown && <text align='center'>{totalGrossPCS}</text>}
+      	{SummaryNoanzaIsShown && <Container>{totalGrossPCS}</Container>}
+        {SummaryAakultaIsShown && <Container>{totalGrossPCS}</Container>}
+        {SummaryFgCraftingIsShown && <Container>{totalGrossPCS}</Container>}
         </Container></VStack>
-  </Box>
-        </Td>
-      </Tr>
-    </Tbody>
-  </Table>
-</TableContainer></Container>
-<Container><br></br></Container>
-<Container> <Box as="span" flex='1' textAlign='center'>
-        <Text pt={3}><b>Materials to Craft:</b></Text>
-        </Box>
-        <TableContainer>
-  <Table variant='unstyled' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
+  </Center>
+  </WrapItem>
+</Wrap>
+<Container><b>Total Materials to Craft:</b></Container>
+<Wrap spacing='30px' justify='center'>
+<WrapItem>
+    <Center w='50px' h='50px'>
        <VStack> 
-       <Image
+        <Image
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
         alt='Dust-Repellent Elixir'
-        mr='0px'/>
-{SummaryNoanzaIsShown && <text align='center'>{totalAllDre}</text>}
-      {SummaryAakultaIsShown && <text align='center'>{totalAllDre}</text>}
-      {SummaryFgCraftingIsShown && <text align='center'>{totalDreFgCrafting}</text>}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
+        mr='0px'
+      />        {SummaryNoanzaIsShown && <Container>{totalAllDre}</Container>}
+      {SummaryAakultaIsShown && <Container>{totalAllDre}</Container>}
+      {SummaryFgCraftingIsShown && <Container>{totalDreFgCrafting}</Container>}</VStack>
+  </Center>
+  </WrapItem>
+<WrapItem>
+    <Center w='50px' h='50px'>
        <VStack> 
-       <Image
+        <Image
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
         alt='Fusion Glass'
         mr='0px'
-      />      
-      {SummaryNoanzaIsShown && <text align='center'><text>0</text></text>}
-      {SummaryAakultaIsShown && <text align='center'><text>0</text></text>}
-      {SummaryFgCraftingIsShown && <text align='center'>{totalAllFg}</text>}
-      </VStack>
-  </Box>
-        </Td>
-      </Tr>
-    </Tbody>
-  </Table>
-</TableContainer>
-</Container>
-<Container><br></br></Container>
-<Container> <Box as="span" flex='1' textAlign='center'>
-        <Text pt={3}><b>Materials to Purchase:</b></Text>
-        </Box>
-        <TableContainer>
-  <Table variant='unstyled' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
-        alt='Dust-Repellent Elixir'
-        mr='0px'/>
-{SummaryNoanzaIsShown && <text align='center'>{totalAllDre}</text>}
-      {SummaryAakultaIsShown && <text align='center'>{totalAllDre}</text>}
-      {SummaryFgCraftingIsShown && <text align='center'>{totalDreFgCrafting}</text>}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
-        alt='Fusion Glass'
-        mr='0px'
-      />      
-      {SummaryNoanzaIsShown && <text align='center'><text>0</text></text>}
-      {SummaryAakultaIsShown && <text align='center'><text>0</text></text>}
-      {SummaryFgCraftingIsShown && <text align='center'>{totalAllFg}</text>}
-      </VStack>
-  </Box>
-        </Td>
-      </Tr>
-    </Tbody>
-  </Table>
-</TableContainer>
+      />{SummaryNoanzaIsShown && <Container><text>0</text></Container>}
+      {SummaryAakultaIsShown && <Container><text>0</text></Container>}
+      {SummaryFgCraftingIsShown && <Container>{totalAllFg}</Container>}</VStack>
+  </Center>
+  </WrapItem>
+</Wrap>
+<Spacer />
 
-
-<br></br>
-</Container>
-
-<Divider />
-<Container><br></br>
-<br></br></Container>
-<Heading>Detailed Results</Heading>
-<Container><br></br>
-<br></br></Container>
+<Heading>Monsters to Fight</Heading>
 <TableContainer>
-  <Table variant='striped' align='center' colorScheme='teal' maxW={10}>
+  <Table variant='striped' colorScheme='teal'>
     <Thead>
       <Tr>
         <Th>Monster</Th>
-        <Th>Qty</Th>
-        <Th>Word Count</Th>
+        <Th>Quantity</Th>
+        <Th>Base Word Count</Th>
+        <Th>Target Word Count</Th>
       </Tr>
     </Thead>
     <Tbody>
     <Tr>
-      <Td><VStack>
+      <Td><HStack>
         <Image
-        align='center'
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/5/59/Aakulta.png'
         alt='Aakulta'
         mr='5px'
-      /> <Text>Aakulta</Text>
-        </VStack>
+      /> <text>Aakulta</text>
+        </HStack>
 </Td>
 <Td isNumeric>        {SummaryNoanzaIsShown && <Container><text>0</text></Container>}
       {SummaryAakultaIsShown && <Container>{totalAakultaQty}</Container>}
       {SummaryFgCraftingIsShown && <Container><text>0</text></Container>}</Td>
+        <Td isNumeric>1500</Td>
         <Td isNumeric>
         {SummaryNoanzaIsShown && <Container><text>0</text></Container>}
       {SummaryAakultaIsShown && <Container>{totalAakultaWC}</Container>}
@@ -2578,7 +2158,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
           </Td>
       </Tr>
       <Tr>
-      <Td><VStack>
+      <Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -2586,13 +2166,14 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Ardid'
         mr='5px'
       /> <text>Ardid</text>
-        </VStack>
+        </HStack>
 </Td>
       <Td isNumeric><Container>
       {SummaryNoanzaIsShown && <Container><text>0</text></Container>}
       {SummaryAakultaIsShown && <Container><text>0</text></Container>}
       {SummaryFgCraftingIsShown && <Container>{totalArdidQty}</Container>}
         </Container></Td>
+        <Td isNumeric>90</Td>
         <Td isNumeric><Container>
         {SummaryNoanzaIsShown && <Container><text>0</text></Container>}
       {SummaryAakultaIsShown && <Container><text>0</text></Container>}
@@ -2600,7 +2181,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
           </Container></Td>
       </Tr>
       <Tr>
-      <Td><VStack>
+      <Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -2608,17 +2189,18 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Arluzi'
         mr='5px'
       /> <text>Arluzi</text>
-        </VStack>
+        </HStack>
 </Td>
       <Td isNumeric>        {SummaryNoanzaIsShown && <Container>{totalLdLootingNoanza}</Container>}
       {SummaryAakultaIsShown && <Container>{totalAdjustedLdAakultaLoot}</Container>}
       {SummaryFgCraftingIsShown && <Container>{totalArluziQtyCraft}</Container>}</Td>
+        <Td isNumeric>50</Td>
         <Td isNumeric>{SummaryNoanzaIsShown && <Container>{totalAdjustedLdNoanzaLootWC}</Container>}
       {SummaryAakultaIsShown && <Container>{totalAdjustedLdAakultaLootWC}</Container>}
       {SummaryFgCraftingIsShown && <Container>{totalArluziWCCraft}</Container>}</Td>
       </Tr>
       <Tr>
-      <Td><VStack>
+      <Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -2626,36 +2208,38 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Ascre'
         mr='5px'
       /> <text>Ascre</text>
-        </VStack>
+        </HStack>
 </Td>
       <Td isNumeric>{SummaryNoanzaIsShown && <Container>{totalAscreQtyLoot}</Container>}
   	{SummaryAakultaIsShown && <Container>{totalAscreQtyLoot}</Container>}
   	{SummaryFgCraftingIsShown && <Container>{totalAscreQtyCraft}</Container>}</Td>
+        <Td isNumeric>150</Td>
         <Td isNumeric>{SummaryNoanzaIsShown && <Container>{totalAscreWCLoot}</Container>}
   	{SummaryAakultaIsShown && <Container>{totalAscreWCLoot}</Container>}
   	{SummaryFgCraftingIsShown && <Container>{totalAscreWCCraft}</Container>}
 </Td>
       </Tr>
       <Tr>
-      <Td><VStack>
+      <Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/7/7b/Dust_Wignow.png'
         alt='Dust Wignow'
         mr='5px'
-      /> <Text align='center'>Dust<br></br>Wignow</Text>
-        </VStack>
+      /> <text>Dust Wignow</text>
+        </HStack>
 </Td>
       <Td isNumeric>{SummaryNoanzaIsShown && <Container>{totalDustWignowQtyLoot}</Container>}
   	{SummaryAakultaIsShown && <Container>{totalDustWignowQtyLoot}</Container>}
   	{SummaryFgCraftingIsShown && <Container>{totalDustWignowQtyCraft}</Container>}</Td>
+        <Td isNumeric>444</Td>
         <Td isNumeric>{SummaryNoanzaIsShown && <Container>{totalDustWignowWCLoot}</Container>}
   	{SummaryAakultaIsShown && <Container>{totalDustWignowWCLoot}</Container>}
   	{SummaryFgCraftingIsShown && <Container>{totalDustWignowWCCraft}</Container>}</Td>
       </Tr>
       <Tr>
-      <Td><VStack>
+      <Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -2663,13 +2247,14 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Gliva'
         mr='5px'
       /> <text>Gliva</text>
-        </VStack>
+        </HStack>
 </Td>
 <Td isNumeric>{GlivaQtyIsShown && <Container>{totalGlivaQty}</Container>}</Td>
+        <Td isNumeric>300</Td>
         <Td isNumeric>{GlivaQtyIsShown && <Container>{totalGlivaWC}</Container>}</Td>
       </Tr>
       <Tr>
-      <Td><VStack>
+      <Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -2677,13 +2262,14 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Kirerf'
         mr='5px'
       /> <text>Kirerf</text>
-        </VStack>
+        </HStack>
 </Td>
 <Td isNumeric>{KirerfQtyIsShown && <Container>{totalKirerfQty}</Container>}</Td>
+        <Td isNumeric>66</Td>
         <Td isNumeric>{KirerfQtyIsShown && <Container>{totalKirerfWC}</Container>}</Td>
       </Tr>
       <Tr>
-      <Td><VStack>
+      <Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -2691,18 +2277,19 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Noanza'
         mr='5px'
       /> <text>Noanza</text>
-        </VStack>
+        </HStack>
 </Td>
       <Td isNumeric> {SummaryNoanzaIsShown && <Container>{totalNoanzaQty}</Container>}
       {SummaryAakultaIsShown && <Container>0</Container>}
       {SummaryFgCraftingIsShown && <Container><text>0</text></Container>}
 </Td>
+        <Td isNumeric>1500</Td>
         <Td isNumeric>{SummaryNoanzaIsShown && <Container>{totalNoanzaWC}</Container>}
   	{SummaryAakultaIsShown && <Container><text>0</text></Container>}
   	{SummaryFgCraftingIsShown && <Container><text>0</text></Container>}</Td>
       </Tr>
       <Tr>
-      <Td><VStack>
+      <Td><HStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -2710,20 +2297,1677 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Xaey'
         mr='5px'
       /> <text>Xaey</text>
-        </VStack>
+        </HStack>
 </Td>
       <Td isNumeric>{SummaryNoanzaIsShown && <Container>{totalXaeyQtyLoot}</Container>}
   	{SummaryAakultaIsShown && <Container>{totalXaeyQtyLoot}</Container>}
   	{SummaryFgCraftingIsShown && <Container>{totalXaeyQtyCraft}</Container>}</Td>
+        <Td isNumeric>120</Td>
         <Td isNumeric>{SummaryNoanzaIsShown && <Container>{totalXaeyWCLoot}</Container>}
   	{SummaryAakultaIsShown && <Container>{totalXaeyWCLoot}</Container>}
   	{SummaryFgCraftingIsShown && <Container>{totalXaeyWCCraft}</Container>}</Td>
       </Tr>
+      <Tr>
+      <Td></Td>
+      <Td></Td>
+        <Td>Total Word Count:</Td>
+        <Td isNumeric><Container>{totalFinalWCResult}</Container></Td>
+      </Tr>
     </Tbody>
   </Table>
 </TableContainer>
-<Container><br></br>
-<br></br></Container>
+<Spacer></Spacer>
+<Heading>Materials to Purchase</Heading>
+<TableContainer>
+  <Table variant='striped' colorScheme='teal'>
+    <Thead>
+      <Tr>
+        <Th>Material</Th>
+        <Th>Quantity</Th>
+        <Th>Cost</Th>
+      </Tr>
+    </Thead>
+    <Tbody>
+    <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b3/Dust_md.png'
+        alt='Dust'
+        mr='0px'
+      /><text>Dust</text>
+        </HStack></Td>
+        <Td><Container>{totalDustQty}</Container></Td>
+        <Td><Container>{totalDustCost}</Container></Td>
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/19/Wignowessence_md.png'
+        alt='Essence'
+        mr='0px'
+      /><text>Essence</text>
+        </HStack></Td>
+        <Td><Container>{totalDustGrossTotal}</Container></Td>
+        <Td><Container>{totalDustQty}</Container></Td>
+      </Tr>
+      </Tbody>
+  </Table>
+</TableContainer>
+<Heading>Materials to Craft</Heading>
+<Accordion allowMultiple>
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        alt='Dust-Repellent Elixir'
+        mr='0px'
+      /><text id='drecraft'>Dust-Repellent Elixir: {dreResult}</text>
+        </HStack>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+    <TableContainer>
+<Table variant='striped' colorScheme='teal'>
+    <Thead>
+      <Tr>
+        <Th>Crafting Materials</Th>
+        <Th>Quantity</Th>
+      </Tr>
+    </Thead>
+    <Tbody>
+    <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        alt='Dust-Repellent Elixir'
+        mr='0px'
+      /><text>Dust-Repellent Elixir</text>
+        </HStack></Td>
+        <Td>            
+          {dreResult !== null && (
+              <div>
+                <p>{dreResult}</p>
+              </div>
+            )}</Td>
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/91/LightenedDust.png'
+        alt='Lightened Dust'
+        mr='0px'
+      /><text>Lightened Dust</text>
+        </HStack></Td>
+        <Td>            
+          {ldDreResult !== null && (
+              <div>
+                <p>{ldDreResult}</p>
+              </div>
+            )}</Td>
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e2/Refined-dust.png'
+        alt='Refined Dust'
+        mr='0px'
+      /><text>Refined Dust</text>
+        </HStack></Td>
+        <Td>            
+          {rdDreResult !== null && (
+              <div>
+                <p>{rdDreResult}</p>
+              </div>
+            )}</Td>
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b3/Dust_md.png'
+        alt='Dust'
+        mr='0px'
+      /><text>Dust</text>
+        </HStack></Td>
+        <Td>            
+          {dustDreResult !== null && (
+              <div>
+                <p>{dustDreResult}</p>
+              </div>
+            )}</Td>
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/19/Wignowessence_md.png'
+        alt='Essence'
+        mr='0px'
+      /><text>Essence</text>
+        </HStack></Td>
+        <Td>            
+          {essDreResult !== null && (
+              <div>
+                <p>{essDreResult}</p>
+              </div>
+            )}</Td>      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/72/Cave-mushroom.png'
+        alt='Mushrooms'
+        mr='0px'
+      /><text>Mushrooms</text>
+        </HStack></Td>
+        <Td>            
+          {mushDreResult !== null && (
+              <div>
+                <p>{mushDreResult}</p>
+              </div>
+            )}</Td>
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/d8/Dark-forest-leaves.png'
+        alt='Dark Forest Leaves'
+        mr='0px'
+      /><text>Dark Forest Leaves</text>
+        </HStack></Td>
+        <Td>            
+          {dflDreResult !== null && (
+              <div>
+                <p>{dflDreResult}</p>
+              </div>
+            )}</Td>
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5e/Bones.png/'
+        alt='Bones'
+        mr='0px'
+      /><text>Bones</text>
+        </HStack></Td>
+        <Td>            
+          {bonesDreResult !== null && (
+              <div>
+                <p>{bonesDreResult}</p>
+              </div>
+            )}</Td>
+      </Tr>
+    </Tbody>
+  </Table>
+</TableContainer>
+    </AccordionPanel>
+  </AccordionItem>
+
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
+        alt='Fusion Glass'
+        mr='0px'
+      /><text>Fusion Glass: {FgCraftingQtyIsShown && <span>1</span>}</text>
+        </HStack>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+    <TableContainer>
+<Table id='FG crafting' variant='striped' colorScheme='teal'>
+    <Thead>
+      <Tr>
+        <Th>Crafting Materials</Th>
+        <Th>Quantity</Th>
+      </Tr>
+    </Thead>
+    <Tbody>
+    <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
+        alt='Fusion Glass'
+        mr='0px'
+      /><text>Fusion Glass</text>
+        </HStack></Td>
+        <Td>###</Td>
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/91/LightenedDust.png'
+        alt='Lightened Dust'
+        mr='0px'
+      /><text>Lightened Dust</text>
+        </HStack></Td>
+        <Td>#</Td>
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/ad/Purple-crystal-shards.png'
+        alt='Purple Crystal Shards'
+        mr='0px'
+      /><text>Purple Crystal Shards</text>
+        </HStack></Td>
+        <Td>#</Td>
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/d5/Glass_md.png/'
+        alt='Glass'
+        mr='0px'
+      /><text>Glass</text>
+        </HStack></Td>
+        <Td>#</Td>
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5b/Reddye_md.png'
+        alt='Red Dye'
+        mr='0px'
+      /><text>Red Dye</text>
+        </HStack></Td>
+        <Td>#</Td>      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png'
+        alt='Coins'
+        mr='0px'
+      /><text>Coins</text>
+        </HStack></Td>
+        <Td>#</Td>
+      </Tr>
+    </Tbody>
+  </Table>
+</TableContainer>
+    </AccordionPanel>
+  </AccordionItem>
+</Accordion>
+
+<Heading>Battle Items to Craft</Heading>
+<Accordion allowMultiple>
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/0/07/AakultaHelmet.png'
+        alt='Aakulta Helmet'
+        mr='0px'
+      /><text>Aakulta Helmet: {aakhelResult}</text>
+        </HStack>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+    <TableContainer>
+<Table id='aakulta helmet' variant='striped' colorScheme='teal'>
+    <Thead>
+      <Tr>
+        <Th>Crafting Materials</Th>
+        <Th>Quantity</Th>
+      </Tr>
+    </Thead>
+    <Tbody>
+    <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
+        alt='Fusion Glass'
+        mr='0px'
+      /><text>Fusion Glass</text>
+        </HStack></Td>
+        <Td>            
+          {fgAakhelResult !== null && (
+              <div>
+                <p>{fgAakhelResult}</p>
+              </div>
+            )}</Td>
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        alt='Dust-Repellent Elixir'
+        mr='0px'
+      /><text>Dust-Repellent Elixir</text>
+        </HStack></Td>
+        <Td id='dreaakhel'>
+          {dreAakhelResult !== null && (
+              <div>
+                <p>{dreAakhelResult}</p>
+              </div>
+            )}</Td>
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
+        alt='Steel'
+        mr='0px'
+      /><text>Steel</text>
+        </HStack></Td>
+        <Td>            
+          {steelAakhelResult !== null && (
+              <div>
+                <p>{steelAakhelResult}</p>
+              </div>
+            )}</Td>
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/87/Gold_md.png/'
+        alt='Gold'
+        mr='0px'
+      /><text>Gold</text>
+        </HStack></Td>
+        <Td>            
+          {goldAakhelResult !== null && (
+              <div>
+                <p>{goldAakhelResult}</p>
+              </div>
+            )}</Td>
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        alt='Coins'
+        mr='0px'
+      /><text>Coins</text>
+        </HStack></Td>
+        <Td>            
+          {coinsAakhelResult !== null && (
+              <div>
+                <p>{coinsAakhelResult}</p>
+              </div>
+            )}</Td>      
+        </Tr>
+    </Tbody>
+  </Table>
+</TableContainer>
+    </AccordionPanel>
+  </AccordionItem>
+
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/7d/ClimbingBoots.png/'
+        alt='Climbing Boots'
+        mr='0px'
+      /><text>Climbing Boots: {clibooResult}</text>
+        </HStack>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+    <TableContainer>
+<Table id='climbing boots' variant='striped' colorScheme='teal'>
+    <Thead>
+      <Tr>
+        <Th>Crafting Materials</Th>
+        <Th>Quantity</Th>
+      </Tr>
+    </Thead>
+    <Tbody>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        alt='Dust-Repellent Elixir'
+        mr='0px'
+      /><text>Dust-Repellent Elixir</text>
+        </HStack></Td>
+        <Td>            
+          {dreClibooResult !== null && (
+              <div>
+                <p>{dreClibooResult}</p>
+              </div>
+            )}</Td>
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/99/Leatherroll_md.png'
+        alt='Leather Roll'
+        mr='0px'
+      /><text>Leather Roll</text>
+        </HStack></Td>
+        <Td>            
+          {leatherrollClibooResult !== null && (
+              <div>
+                <p>{leatherrollClibooResult}</p>
+              </div>
+            )}</Td>
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
+        alt='Steel'
+        mr='0px'
+      /><text>Steel</text>
+        </HStack></Td>
+        <Td>            
+          {steelClibooResult !== null && (
+              <div>
+                <p>{steelClibooResult}</p>
+              </div>
+            )}</Td>
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        alt='Coins'
+        mr='0px'
+      /><text>Coins</text>
+        </HStack></Td>
+        <Td>            
+          {coinsClibooResult !== null && (
+              <div>
+                <p>{coinsClibooResult}</p>
+              </div>
+            )}</Td>
+              </Tr>
+    </Tbody>
+  </Table>
+</TableContainer>
+    </AccordionPanel>
+  </AccordionItem>
+
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/f8/CrestedHelmet.png'
+        alt='Crested Helmet'
+        mr='0px'
+      /><text>Crested Helmet: {crehelResult}</text>
+        </HStack>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+    <TableContainer>
+<Table id='Crested Helmet' variant='striped' colorScheme='teal'>
+    <Thead>
+      <Tr>
+        <Th>Crafting Materials</Th>
+        <Th>Quantity</Th>
+      </Tr>
+    </Thead>
+    <Tbody>
+    <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
+        alt='Fusion Glass'
+        mr='0px'
+      /><text>Fusion Glass</text>
+        </HStack></Td>
+        <Td>            
+          {fgCrehelResult !== null && (
+              <div>
+                <p>{fgCrehelResult}</p>
+              </div>
+            )}</Td>
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        alt='Dust-Repellent Elixir'
+        mr='0px'
+      /><text>Dust-Repellent Elixir</text>
+        </HStack></Td>
+        <Td>            
+          {dreCrehelResult !== null && (
+              <div>
+                <p>{dreCrehelResult}</p>
+              </div>
+            )}</Td>
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
+        alt='Steel'
+        mr='0px'
+      /><text>Steel</text>
+        </HStack></Td>
+        <Td>            
+          {steelCrehelResult !== null && (
+              <div>
+                <p>{steelCrehelResult}</p>
+              </div>
+            )}</Td>
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        alt='Coins'
+        mr='0px'
+      /><text>Coins</text>
+        </HStack></Td>
+        <Td>            
+          {coinsCrehelResult !== null && (
+              <div>
+                <p>{coinsCrehelResult}</p>
+              </div>
+            )}</Td>      
+        </Tr>
+    </Tbody>
+  </Table>
+</TableContainer>
+    </AccordionPanel>
+  </AccordionItem>
+
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b6/FlowerSlingshot.png/'
+        alt='Flower Slingshot'
+        mr='0px'
+      /><text>Flower Slingshot: {flosliResult}</text>
+        </HStack>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+    <TableContainer>
+<Table id='Flower Slingshot' variant='striped' colorScheme='teal'>
+    <Thead>
+      <Tr>
+        <Th>Crafting Materials</Th>
+        <Th>Quantity</Th>
+      </Tr>
+    </Thead>
+    <Tbody>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        alt='Dust-Repellent Elixir'
+        mr='0px'
+      /><text>Dust-Repellent Elixir</text>
+        </HStack></Td>
+        <Td>            
+          {dreFlosliResult !== null && (
+              <div>
+                <p>{dreFlosliResult}</p>
+              </div>
+            )}</Td>  
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/0/0c/Hardwood_md.png'
+        alt='Hardwood'
+        mr='0px'
+      /><text>Hardwood</text>
+        </HStack></Td>
+        <Td>            
+          {hardwoodFlosliResult !== null && (
+              <div>
+                <p>{hardwoodFlosliResult}</p>
+              </div>
+            )}</Td>  
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/47/Reinforced-rope.png/'
+        alt='Reinforced Rope'
+        mr='0px'
+      /><text>Reinforced Rope</text>
+        </HStack></Td>
+        <Td>            
+          {reinforcedropeFlosliResult !== null && (
+              <div>
+                <p>{reinforcedropeFlosliResult}</p>
+              </div>
+            )}</Td>  
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/99/Leatherroll_md.png'
+        alt='Leather Roll'
+        mr='0px'
+      /><text>Leather Roll</text>
+        </HStack></Td>
+        <Td>            
+          {leatherrollFlosliResult !== null && (
+              <div>
+                <p>{leatherrollFlosliResult}</p>
+              </div>
+            )}</Td>  
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        alt='Coins'
+        mr='0px'
+      /><text>Coins</text>
+        </HStack></Td>
+        <Td>            
+          {coinsFlosliResult !== null && (
+              <div>
+                <p>{coinsFlosliResult}</p>
+              </div>
+            )}</Td>  
+        </Tr>
+    </Tbody>
+  </Table>
+</TableContainer>
+    </AccordionPanel>
+  </AccordionItem>
+
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Fusion_Crossbow.png'
+        alt='Fusion Crossbow'
+        mr='0px'
+      /><text>Fusion Crossbow: {fuscroResult}</text>
+        </HStack>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+    <TableContainer>
+<Table id='Fusion Crossbow' variant='striped' colorScheme='teal'>
+    <Thead>
+      <Tr>
+        <Th>Crafting Materials</Th>
+        <Th>Quantity</Th>
+      </Tr>
+    </Thead>
+    <Tbody>
+    <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
+        alt='Fusion Glass'
+        mr='0px'
+      /><text>Fusion Glass</text>
+        </HStack></Td>
+        <Td>            
+          {fgFuscroResult !== null && (
+              <div>
+                <p>{fgFuscroResult}</p>
+              </div>
+            )}</Td> 
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        alt='Dust-Repellent Elixir'
+        mr='0px'
+      /><text>Dust-Repellent Elixir</text>
+        </HStack></Td>
+        <Td>            
+          {dreFuscroResult !== null && (
+              <div>
+                <p>{dreFuscroResult}</p>
+              </div>
+            )}</Td> 
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/0/0c/Hardwood_md.png'
+        alt='Hardwood'
+        mr='0px'
+      /><text>Hardwood</text>
+        </HStack></Td>
+        <Td>            
+          {hardwoodFuscroResult !== null && (
+              <div>
+                <p>{hardwoodFuscroResult}</p>
+              </div>
+            )}</Td> 
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/47/Reinforced-rope.png'
+        alt='Reinforced Rope'
+        mr='0px'
+      /><text>Reinforced Rope</text>
+        </HStack></Td>
+        <Td>            
+          {reinforcedropeFuscroResult !== null && (
+              <div>
+                <p>{reinforcedropeFuscroResult}</p>
+              </div>
+            )}</Td> 
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
+        alt='Steel'
+        mr='0px'
+      /><text>Steel</text>
+        </HStack></Td>
+        <Td>            
+          {steelFuscroResult !== null && (
+              <div>
+                <p>{steelFuscroResult}</p>
+              </div>
+            )}</Td> 
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        alt='Coins'
+        mr='0px'
+      /><text>Coins</text>
+        </HStack></Td>
+        <Td>            
+          {coinsFuscroResult !== null && (
+              <div>
+                <p>{coinsFuscroResult}</p>
+              </div>
+            )}</Td>  
+        </Tr>
+    </Tbody>
+  </Table>
+</TableContainer>
+    </AccordionPanel>
+  </AccordionItem>
+
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/fa/FusionCuirass.png'
+        alt='Fusion Cuirass'
+        mr='0px'
+      /><text>Fusion Cuirass: {fuscuiResult}</text>
+        </HStack>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+    <TableContainer>
+<Table id='Fusion Cuirass' variant='striped' colorScheme='teal'>
+    <Thead>
+      <Tr>
+        <Th>Crafting Materials</Th>
+        <Th>Quantity</Th>
+      </Tr>
+    </Thead>
+    <Tbody>
+    <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
+        alt='Fusion Glass'
+        mr='0px'
+      /><text>Fusion Glass</text>
+        </HStack></Td>
+        <Td>            
+          {fgFuscuiResult !== null && (
+              <div>
+                <p>{fgFuscuiResult}</p>
+              </div>
+            )}</Td>  
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        alt='Dust-Repellent Elixir'
+        mr='0px'
+      /><text>Dust-Repellent Elixir</text>
+        </HStack></Td>
+        <Td>            
+          {dreFuscuiResult !== null && (
+              <div>
+                <p>{dreFuscuiResult}</p>
+              </div>
+            )}</Td>  
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
+        alt='Steel'
+        mr='0px'
+      /><text>Steel</text>
+        </HStack></Td>
+        <Td>            
+          {steelFuscuiResult !== null && (
+              <div>
+                <p>{steelFuscuiResult}</p>
+              </div>
+            )}</Td>  
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/0/0b/Finefabric_md.png'
+        alt='Fine Fabric'
+        mr='0px'
+      /><text>Fine Fabric</text>
+        </HStack></Td>
+        <Td>            
+          {finefabricFuscuiResult !== null && (
+              <div>
+                <p>{finefabricFuscuiResult}</p>
+              </div>
+            )}</Td>  
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        alt='Coins'
+        mr='0px'
+      /><text>Coins</text>
+        </HStack></Td>
+        <Td>            
+          {coinsFuscuiResult !== null && (
+              <div>
+                <p>{coinsFuscuiResult}</p>
+              </div>
+            )}</Td>  
+        </Tr>
+    </Tbody>
+  </Table>
+</TableContainer>
+    </AccordionPanel>
+  </AccordionItem>
+
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/c/c6/FusionSword.png'
+        alt='Fusion Sword'
+        mr='0px'
+      /><text>Fusion Sword: {fusswoResult}</text>
+        </HStack>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+    <TableContainer>
+<Table id='Fusion Sword' variant='striped' colorScheme='teal'>
+    <Thead>
+      <Tr>
+        <Th>Crafting Materials</Th>
+        <Th>Quantity</Th>
+      </Tr>
+    </Thead>
+    <Tbody>
+    <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
+        alt='Fusion Glass'
+        mr='0px'
+      /><text>Fusion Glass</text>
+        </HStack></Td>
+        <Td>            
+          {fgFusswoResult !== null && (
+              <div>
+                <p>{fgFusswoResult}</p>
+              </div>
+            )}</Td>  
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        alt='Dust-Repellent Elixir'
+        mr='0px'
+      /><text>Dust-Repellent Elixir</text>
+        </HStack></Td>
+        <Td>            
+          {dreFusswoResult !== null && (
+              <div>
+                <p>{dreFusswoResult}</p>
+              </div>
+            )}</Td>  
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
+        alt='Steel'
+        mr='0px'
+      /><text>Steel</text>
+        </HStack></Td>
+        <Td>            
+          {steelFusswoResult !== null && (
+              <div>
+                <p>{steelFusswoResult}</p>
+              </div>
+            )}</Td>  
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/87/Gold_md.png/'
+        alt='Gold'
+        mr='0px'
+      /><text>Gold</text>
+        </HStack></Td>
+        <Td>            
+          {goldFusswoResult !== null && (
+              <div>
+                <p>{goldFusswoResult}</p>
+              </div>
+            )}</Td>  
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        alt='Coins'
+        mr='0px'
+      /><text>Coins</text>
+        </HStack></Td>
+        <Td>            
+          {coinsFusswoResult !== null && (
+              <div>
+                <p>{coinsFusswoResult}</p>
+              </div>
+            )}</Td>  
+        </Tr>
+    </Tbody>
+  </Table>
+</TableContainer>
+    </AccordionPanel>
+  </AccordionItem>
+
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/3/3c/HopesLight.png'
+        alt='Hopes Light'
+        mr='0px'
+      /><text>Hope's Light: {hopligResult}</text>
+        </HStack>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+    <TableContainer>
+<Table id='Hopes Light' variant='striped' colorScheme='teal'>
+    <Thead>
+      <Tr>
+        <Th>Crafting Materials</Th>
+        <Th>Quantity</Th>
+      </Tr>
+    </Thead>
+    <Tbody>
+    <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
+        alt='Fusion Glass'
+        mr='0px'
+      /><text>Fusion Glass</text>
+        </HStack></Td>
+        <Td>            
+          {fgHopligResult !== null && (
+              <div>
+                <p>{fgHopligResult}</p>
+              </div>
+            )}</Td>       
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        alt='Dust-Repellent Elixir'
+        mr='0px'
+      /><text>Dust-Repellent Elixir</text>
+        </HStack></Td>
+        <Td>            
+          {dreHopligResult !== null && (
+              <div>
+                <p>{dreHopligResult}</p>
+              </div>
+            )}</Td>       
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
+        alt='Steel'
+        mr='0px'
+      /><text>Steel</text>
+        </HStack></Td>
+        <Td>            
+          {steelHopligResult !== null && (
+              <div>
+                <p>{steelHopligResult}</p>
+              </div>
+            )}</Td>       
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        alt='Coins'
+        mr='0px'
+      /><text>Coins</text>
+        </HStack></Td>
+        <Td>            
+          {coinsHopligResult !== null && (
+              <div>
+                <p>{coinsHopligResult}</p>
+              </div>
+            )}</Td>       
+        </Tr>
+    </Tbody>
+  </Table>
+</TableContainer>
+    </AccordionPanel>
+  </AccordionItem>
+
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/db/LeatherCuriass.png'
+        alt='Leather Cuirass'
+        mr='0px'
+      /><text>Leather Cuirass: {leacuiResult}</text>
+        </HStack>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+    <TableContainer>
+<Table id='Leather Cuirass' variant='striped' colorScheme='teal'>
+    <Thead>
+      <Tr>
+        <Th>Crafting Materials</Th>
+        <Th>Quantity</Th>
+      </Tr>
+    </Thead>
+    <Tbody>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        alt='Dust-Repellent Elixir'
+        mr='0px'
+      /><text>Dust-Repellent Elixir</text>
+        </HStack></Td>
+        <Td>            
+          {dreLeacuiResult !== null && (
+              <div>
+                <p>{dreLeacuiResult}</p>
+              </div>
+            )}</Td>     
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/99/Leatherroll_md.png'
+        alt='Leather Roll'
+        mr='0px'
+      /><text>Leather Roll</text>
+        </HStack></Td>
+        <Td>            
+          {leatherrollLeacuiResult !== null && (
+              <div>
+                <p>{leatherrollLeacuiResult}</p>
+              </div>
+            )}</Td>     
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
+        alt='Steel'
+        mr='0px'
+      /><text>Steel</text>
+        </HStack></Td>
+        <Td>            
+          {steelLeacuiResult !== null && (
+              <div>
+                <p>{steelLeacuiResult}</p>
+              </div>
+            )}</Td>     
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/0/0b/Finefabric_md.png'
+        alt='Fine Fabric'
+        mr='0px'
+      /><text>Fine Fabric</text>
+        </HStack></Td>
+        <Td>            
+          {finefabricLeacuiResult !== null && (
+              <div>
+                <p>{finefabricLeacuiResult}</p>
+              </div>
+            )}</Td>     
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        alt='Coins'
+        mr='0px'
+      /><text>Coins</text>
+        </HStack></Td>
+        <Td>            
+          {coinsLeacuiResult !== null && (
+              <div>
+                <p>{coinsLeacuiResult}</p>
+              </div>
+            )}</Td>     
+        </Tr>
+    </Tbody>
+  </Table>
+</TableContainer>
+    </AccordionPanel>
+  </AccordionItem>
+
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/f6/LeatherTurnshoe.png'
+        alt='Leather Turnshoe'
+        mr='0px'
+      /><text>Leather Turnshoe: {leaturResult}</text>
+        </HStack>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+    <TableContainer>
+<Table id='Leather Turnshoe' variant='striped' colorScheme='teal'>
+    <Thead>
+      <Tr>
+        <Th>Crafting Materials</Th>
+        <Th>Quantity</Th>
+      </Tr>
+    </Thead>
+    <Tbody>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        alt='Dust-Repellent Elixir'
+        mr='0px'
+      /><text>Dust-Repellent Elixir</text>
+        </HStack></Td>
+        <Td>            
+          {dreLeaturResult !== null && (
+              <div>
+                <p>{dreLeaturResult}</p>
+              </div>
+            )}</Td>           
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/99/Leatherroll_md.png'
+        alt='Leather Roll'
+        mr='0px'
+      /><text>Leather Roll</text>
+        </HStack></Td>
+        <Td>            
+          {leatherrollLeaturResult !== null && (
+              <div>
+                <p>{leatherrollLeaturResult}</p>
+              </div>
+            )}</Td>           
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/0/0b/Finefabric_md.png'
+        alt='Fine Fabric'
+        mr='0px'
+      /><text>Fine Fabric</text>
+        </HStack></Td>
+        <Td>            
+          {finefabricLeaturResult !== null && (
+              <div>
+                <p>{finefabricLeaturResult}</p>
+              </div>
+            )}</Td>           
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        alt='Coins'
+        mr='0px'
+      /><text>Coins</text>
+        </HStack></Td>
+        <Td>            
+          {coinsLeaturResult !== null && (
+              <div>
+                <p>{coinsLeaturResult}</p>
+              </div>
+            )}</Td>           
+        </Tr>
+    </Tbody>
+  </Table>
+</TableContainer>
+    </AccordionPanel>
+  </AccordionItem>
+
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/a7/LightsBloom.png'
+        alt='Lights Bloom'
+        mr='0px'
+      /><text>Light's Bloom: {ligbloResult}</text>
+        </HStack>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+    <TableContainer>
+<Table id='Lights Bloom' variant='striped' colorScheme='teal'>
+    <Thead>
+      <Tr>
+        <Th>Crafting Materials</Th>
+        <Th>Quantity</Th>
+      </Tr>
+    </Thead>
+    <Tbody>
+    <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
+        alt='Fusion Glass'
+        mr='0px'
+      /><text>Fusion Glass</text>
+        </HStack></Td>
+        <Td>            
+          {fgLigbloResult !== null && (
+              <div>
+                <p>{fgLigbloResult}</p>
+              </div>
+            )}</Td>        
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        alt='Dust-Repellent Elixir'
+        mr='0px'
+      /><text>Dust-Repellent Elixir</text>
+        </HStack></Td>
+        <Td>            
+          {dreLigbloResult !== null && (
+              <div>
+                <p>{dreLigbloResult}</p>
+              </div>
+            )}</Td>        
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/87/Gold_md.png/'
+        alt='Gold'
+        mr='0px'
+      /><text>Gold</text>
+        </HStack></Td>
+        <Td>            
+          {goldLigbloResult !== null && (
+              <div>
+                <p>{goldLigbloResult}</p>
+              </div>
+            )}</Td>        
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        alt='Coins'
+        mr='0px'
+      /><text>Coins</text>
+        </HStack></Td>
+        <Td>            
+          {coinsLigbloResult !== null && (
+              <div>
+                <p>{coinsLigbloResult}</p>
+              </div>
+            )}</Td>        
+        </Tr>
+    </Tbody>
+  </Table>
+</TableContainer>
+    </AccordionPanel>
+  </AccordionItem>
+
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/f0/PoePick.png/'
+        alt='Poe Pick'
+        mr='0px'
+      /><text>Poe Pick: {poepicResult}</text>
+        </HStack>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+    <TableContainer>
+<Table id='Poe Pick' variant='striped' colorScheme='teal'>
+    <Thead>
+      <Tr>
+        <Th>Crafting Materials</Th>
+        <Th>Quantity</Th>
+      </Tr>
+    </Thead>
+    <Tbody>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        alt='Dust-Repellent Elixir'
+        mr='0px'
+      /><text>Dust-Repellent Elixir</text>
+        </HStack></Td>
+        <Td>            
+          {drePoepicResult !== null && (
+              <div>
+                <p>{drePoepicResult}</p>
+              </div>
+            )}</Td> 
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/0/0c/Hardwood_md.png'
+        alt='Hardwood'
+        mr='0px'
+      /><text>Hardwood</text>
+        </HStack></Td>
+        <Td>            
+          {hardwoodPoepicResult !== null && (
+              <div>
+                <p>{hardwoodPoepicResult}</p>
+              </div>
+            )}</Td> 
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
+        alt='Steel'
+        mr='0px'
+      /><text>Steel</text>
+        </HStack></Td>
+        <Td>            
+          {steelPoepicResult !== null && (
+              <div>
+                <p>{steelPoepicResult}</p>
+              </div>
+            )}</Td> 
+      </Tr>
+      <Tr>
+<Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        alt='Coins'
+        mr='0px'
+      /><text>Coins</text>
+        </HStack></Td>
+        <Td>            
+          {coinsPoepicResult !== null && (
+              <div>
+                <p>{coinsPoepicResult}</p>
+              </div>
+            )}</Td> 
+              </Tr>
+    </Tbody>
+  </Table>
+</TableContainer>
+    </AccordionPanel>
+  </AccordionItem>
+</Accordion>
+
+          </VStack>
+          
         </Grid>
       </Box>
     </ChakraProvider>
