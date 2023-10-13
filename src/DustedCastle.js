@@ -2552,7 +2552,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       <Tr>
         <Th>Monster</Th>
         <Th>Quantity</Th>
-        <Th>Target Word Count</Th>
+        <Th>Word Count</Th>
       </Tr>
     </Thead>
     <Tbody>
@@ -2564,7 +2564,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         src='https://static.wikia.nocookie.net/4thewords/images/5/59/Aakulta.png'
         alt='Aakulta'
         mr='5px'
-      /> <text>Aakulta</text>
+      /> <Text fontSize='lg'>Aakulta</Text>
         </HStack>
 </Td>
 <Td isNumeric>        {SummaryNoanzaIsShown && <Container><text>0</text></Container>}
@@ -2643,7 +2643,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         src='https://static.wikia.nocookie.net/4thewords/images/7/7b/Dust_Wignow.png'
         alt='Dust Wignow'
         mr='5px'
-      /> <text>Dust Wignow</text>
+      /> <Text  fontSize='lg'>Dust Wignow</Text>
         </HStack>
 </Td>
       <Td isNumeric>{SummaryNoanzaIsShown && <Container>{totalDustWignowQtyLoot}</Container>}
@@ -2721,6 +2721,8 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
     </Tbody>
   </Table>
 </TableContainer>
+<Container><br></br>
+<br></br></Container>
         </Grid>
       </Box>
     </ChakraProvider>
