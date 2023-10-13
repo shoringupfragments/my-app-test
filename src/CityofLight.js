@@ -2656,8 +2656,8 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       /> <text>Gliva</text>
         </VStack>
 </Td>
-        <Td>{GlivaQtyIsShown && <Container>{totalGlivaQty}</Container>}</Td>
-        <Td>{GlivaQtyIsShown && <Container>{totalGlivaWC}</Container>}</Td>
+        <Td isNumeric>{GlivaQtyIsShown && <Container>{totalGlivaQty}</Container>}</Td>
+        <Td isNumeric>{GlivaQtyIsShown && <Container>{totalGlivaWC}</Container>}</Td>
       </Tr>
       <Tr>
       <Td><VStack>
@@ -2670,8 +2670,8 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       /> <text>Kirerf</text>
         </VStack>
 </Td>
-<Td>{KirerfQtyIsShown && <Text isNumeric>{totalKirerfQty}</Text>}</Td>
-        <Td>{KirerfQtyIsShown && <Text isNumeric>{totalKirerfWC}</Text>}</Td>
+<Td isNumeric>{KirerfQtyIsShown && <Container>{totalKirerfQty}</Container>}</Td>
+        <Td isNumeric>{KirerfQtyIsShown && <Container>{totalKirerfWC}</Container>}</Td>
       </Tr>
       <Tr>
       <Td><VStack>
@@ -2715,9 +2715,19 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 </TableContainer>
 <Container><br></br>
 <br></br></Container>
+
 <Container>
-<Heading>Battle Items to Craft</Heading>
-<br></br></Container>
+<Accordion allowMultiple>
+  <AccordionItem>
+  <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='center' p={3}>
+        <Heading as='h3' size='lg'>Battle Items to Craft</Heading>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
 
 <Container>
 <Center>        
@@ -4099,8 +4109,10 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 <Divider />
 <br></br>
 </Container>
-
-
+</AccordionPanel>
+  </AccordionItem>
+</Accordion>
+<br></br></Container>
         </Grid>
       </Box>
     </ChakraProvider>

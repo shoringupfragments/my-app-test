@@ -62,6 +62,10 @@ function App() {
   const [MushAakultaIsShown, setMushAakultaIsShown] = useState(false);
   const [MushFgCraftingIsShown, setMushFgCraftingIsShown] = useState(false);
 
+  const [AakhelIsShown, setAakhelIsShown] = useState(false)
+
+  setAakhelIsShown(current => !AakhelIsShown)
+
   const handleNoanzaClick = event => {
     // 👇️ toggle shown state
     setNoanzaIsShown(current => !NoanzaIsShown);
