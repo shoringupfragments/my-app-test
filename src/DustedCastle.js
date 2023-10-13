@@ -2150,9 +2150,9 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Aakulta'
         mr='5px'
       /> <text justify='center'>Aakulta</text>
-      {SummaryNoanzaIsShown && <text justify='center'>0</text>}
-      {SummaryAakultaIsShown && <text justify='center'>{totalAakultaQty}</text>}
-      {SummaryFgCraftingIsShown && <text justify='center'><text>0</text></text>}</VStack>
+      {SummaryNoanzaIsShown && <text align='center'>0</text>}
+      {SummaryAakultaIsShown && <text align='center'>{totalAakultaQty}</text>}
+      {SummaryFgCraftingIsShown && <text align='center'><text>0</text></text>}</VStack>
   </Box>
         </Td>
         <Td>
