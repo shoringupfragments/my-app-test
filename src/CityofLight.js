@@ -1293,6 +1293,9 @@ const totalFinalWCResult = (totalXaeyWCLoot + totalXaeyWCCraft + totalDustWignow
 const calculateFinalWCNoAtk = {totalFinalWCResult, attackStat}
 const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*totalFinalWCResult)))
 
+//thousands //
+
+
 // END OF EQUATIONS SO FAR//
 
   return (
