@@ -2132,12 +2132,10 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 </Tbody>
 </Table>
 </TableContainer>
-
-<Box as="span" flex='1' textAlign='center' padding-top={3}>
 <br></br>
+<Box as="span" flex='1' textAlign='center' padding-top={3}>
         <Text><b>Monsters to Fight</b></Text>
         </Box></Container>
-
 <Container>
         <TableContainer>
   <Table variant='unstyled' maxW={20} align='center'>
@@ -2549,7 +2547,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       <Tr>
         <Th>Monster</Th>
         <Th>Qty</Th>
-        <Th>Word Count</Th>
+        <Th>Total WC</Th>
       </Tr>
     </Thead>
     <Tbody>
