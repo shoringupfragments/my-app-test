@@ -2159,6 +2159,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         <Image
         boxSize='3rem'
         borderRadius='full'
+        align='center'
         src='https://static.wikia.nocookie.net/4thewords/images/9/91/LightenedDust.png'
         alt='Lightened Dust'
         mr='0px'
