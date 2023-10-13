@@ -2543,6 +2543,184 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 <Divider />
 <Container><br></br>
 <br></br></Container>
+<Heading>Detailed Results</Heading>
+<Container><br></br>
+<br></br></Container>
+<TableContainer>
+  <Table variant='striped' align='center' colorScheme='teal' maxW={15}>
+    <Thead>
+      <Tr>
+        <Th>Monster</Th>
+        <Th>Quantity</Th>
+        <Th>Target Word Count</Th>
+      </Tr>
+    </Thead>
+    <Tbody>
+    <Tr>
+      <Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/59/Aakulta.png'
+        alt='Aakulta'
+        mr='5px'
+      /> <text>Aakulta</text>
+        </HStack>
+</Td>
+<Td isNumeric>        {SummaryNoanzaIsShown && <Container><text>0</text></Container>}
+      {SummaryAakultaIsShown && <Container>{totalAakultaQty}</Container>}
+      {SummaryFgCraftingIsShown && <Container><text>0</text></Container>}</Td>
+        <Td isNumeric>
+        {SummaryNoanzaIsShown && <Container><text>0</text></Container>}
+      {SummaryAakultaIsShown && <Container>{totalAakultaWC}</Container>}
+      {SummaryFgCraftingIsShown && <Container><text>0</text></Container>}
+          </Td>
+      </Tr>
+      <Tr>
+      <Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/23/Ardid.png'
+        alt='Ardid'
+        mr='5px'
+      /> <text>Ardid</text>
+        </HStack>
+</Td>
+      <Td isNumeric><Container>
+      {SummaryNoanzaIsShown && <Container><text>0</text></Container>}
+      {SummaryAakultaIsShown && <Container><text>0</text></Container>}
+      {SummaryFgCraftingIsShown && <Container>{totalArdidQty}</Container>}
+        </Container></Td>
+        <Td isNumeric><Container>
+        {SummaryNoanzaIsShown && <Container><text>0</text></Container>}
+      {SummaryAakultaIsShown && <Container><text>0</text></Container>}
+      {SummaryFgCraftingIsShown && <Container>{totalArdidWC}</Container>}
+          </Container></Td>
+      </Tr>
+      <Tr>
+      <Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/c/c5/Arluzi.png'
+        alt='Arluzi'
+        mr='5px'
+      /> <text>Arluzi</text>
+        </HStack>
+</Td>
+      <Td isNumeric>        {SummaryNoanzaIsShown && <Container>{totalLdLootingNoanza}</Container>}
+      {SummaryAakultaIsShown && <Container>{totalAdjustedLdAakultaLoot}</Container>}
+      {SummaryFgCraftingIsShown && <Container>{totalArluziQtyCraft}</Container>}</Td>
+        <Td isNumeric>{SummaryNoanzaIsShown && <Container>{totalAdjustedLdNoanzaLootWC}</Container>}
+      {SummaryAakultaIsShown && <Container>{totalAdjustedLdAakultaLootWC}</Container>}
+      {SummaryFgCraftingIsShown && <Container>{totalArluziWCCraft}</Container>}</Td>
+      </Tr>
+      <Tr>
+      <Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/0/0d/Ascre.png'
+        alt='Ascre'
+        mr='5px'
+      /> <text>Ascre</text>
+        </HStack>
+</Td>
+      <Td isNumeric>{SummaryNoanzaIsShown && <Container>{totalAscreQtyLoot}</Container>}
+  	{SummaryAakultaIsShown && <Container>{totalAscreQtyLoot}</Container>}
+  	{SummaryFgCraftingIsShown && <Container>{totalAscreQtyCraft}</Container>}</Td>
+        <Td isNumeric>{SummaryNoanzaIsShown && <Container>{totalAscreWCLoot}</Container>}
+  	{SummaryAakultaIsShown && <Container>{totalAscreWCLoot}</Container>}
+  	{SummaryFgCraftingIsShown && <Container>{totalAscreWCCraft}</Container>}
+</Td>
+      </Tr>
+      <Tr>
+      <Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/7b/Dust_Wignow.png'
+        alt='Dust Wignow'
+        mr='5px'
+      /> <text>Dust Wignow</text>
+        </HStack>
+</Td>
+      <Td isNumeric>{SummaryNoanzaIsShown && <Container>{totalDustWignowQtyLoot}</Container>}
+  	{SummaryAakultaIsShown && <Container>{totalDustWignowQtyLoot}</Container>}
+  	{SummaryFgCraftingIsShown && <Container>{totalDustWignowQtyCraft}</Container>}</Td>
+        <Td isNumeric>{SummaryNoanzaIsShown && <Container>{totalDustWignowWCLoot}</Container>}
+  	{SummaryAakultaIsShown && <Container>{totalDustWignowWCLoot}</Container>}
+  	{SummaryFgCraftingIsShown && <Container>{totalDustWignowWCCraft}</Container>}</Td>
+      </Tr>
+      <Tr>
+      <Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/15/Gliva.png'
+        alt='Gliva'
+        mr='5px'
+      /> <text>Gliva</text>
+        </HStack>
+</Td>
+<Td isNumeric>{GlivaQtyIsShown && <Container>{totalGlivaQty}</Container>}</Td>
+        <Td isNumeric>{GlivaQtyIsShown && <Container>{totalGlivaWC}</Container>}</Td>
+      </Tr>
+      <Tr>
+      <Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/a6/Kirerf.png'
+        alt='Kirerf'
+        mr='5px'
+      /> <text>Kirerf</text>
+        </HStack>
+</Td>
+<Td isNumeric>{KirerfQtyIsShown && <Container>{totalKirerfQty}</Container>}</Td>
+        <Td isNumeric>{KirerfQtyIsShown && <Container>{totalKirerfWC}</Container>}</Td>
+      </Tr>
+      <Tr>
+      <Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png'
+        alt='Noanza'
+        mr='5px'
+      /> <text>Noanza</text>
+        </HStack>
+</Td>
+      <Td isNumeric> {SummaryNoanzaIsShown && <Container>{totalNoanzaQty}</Container>}
+      {SummaryAakultaIsShown && <Container>0</Container>}
+      {SummaryFgCraftingIsShown && <Container><text>0</text></Container>}
+</Td>
+        <Td isNumeric>{SummaryNoanzaIsShown && <Container>{totalNoanzaWC}</Container>}
+  	{SummaryAakultaIsShown && <Container><text>0</text></Container>}
+  	{SummaryFgCraftingIsShown && <Container><text>0</text></Container>}</Td>
+      </Tr>
+      <Tr>
+      <Td><HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/22/Xaey.png'
+        alt='Xaey'
+        mr='5px'
+      /> <text>Xaey</text>
+        </HStack>
+</Td>
+      <Td isNumeric>{SummaryNoanzaIsShown && <Container>{totalXaeyQtyLoot}</Container>}
+  	{SummaryAakultaIsShown && <Container>{totalXaeyQtyLoot}</Container>}
+  	{SummaryFgCraftingIsShown && <Container>{totalXaeyQtyCraft}</Container>}</Td>
+        <Td isNumeric>{SummaryNoanzaIsShown && <Container>{totalXaeyWCLoot}</Container>}
+  	{SummaryAakultaIsShown && <Container>{totalXaeyWCLoot}</Container>}
+  	{SummaryFgCraftingIsShown && <Container>{totalXaeyWCCraft}</Container>}</Td>
+      </Tr>
+    </Tbody>
+  </Table>
+</TableContainer>
         </Grid>
       </Box>
     </ChakraProvider>
