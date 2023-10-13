@@ -2140,18 +2140,19 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
     <Tbody>
       <Tr>
         <Td>
-        <Box justify='center' w='50px' h='100px' pb={5}>
+        <Box w='50px' h='100px' pb={5}>
        <VStack> 
        <Image
+       justify='center' 
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/5/59/Aakulta.png'
         alt='Aakulta'
         mr='5px'
-      /> <text>Aakulta</text>
-{SummaryNoanzaIsShown && <Container><text>0</text></Container>}
-      {SummaryAakultaIsShown && <Container>{totalAakultaQty}</Container>}
-      {SummaryFgCraftingIsShown && <Container><text>0</text></Container>}</VStack>
+      /> <text justify='center'>Aakulta</text>
+      {SummaryNoanzaIsShown && <text justify='center'>0</text>}
+      {SummaryAakultaIsShown && <text justify='center'>{totalAakultaQty}</text>}
+      {SummaryFgCraftingIsShown && <text justify='center'><text>0</text></text>}</VStack>
   </Box>
         </Td>
         <Td>
