@@ -2547,7 +2547,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 <Container><br></br>
 <br></br></Container>
 <TableContainer>
-  <Table variant='striped' align='center' colorScheme='teal' maxW={15}>
+  <Table variant='striped' align='center' colorScheme='teal' maxW={10}>
     <Thead>
       <Tr>
         <Th>Monster</Th>
@@ -2644,7 +2644,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         src='https://static.wikia.nocookie.net/4thewords/images/7/7b/Dust_Wignow.png'
         alt='Dust Wignow'
         mr='5px'
-      /> <Text>Dust Wignow</Text>
+      /> <Text align='center'>Dust<br></br>Wignow</Text>
         </VStack>
 </Td>
       <Td isNumeric>{SummaryNoanzaIsShown && <Container>{totalDustWignowQtyLoot}</Container>}
