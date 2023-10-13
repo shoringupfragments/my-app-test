@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   ChakraProvider,
-  Center,
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
@@ -21,9 +20,8 @@ function App() {
   
   return (
     <ChakraProvider theme={theme}>
-      <Center>
       <Box textAlign="center" fontSize="xl">
-        <Grid w='360px'  minH="70vh" p={3}>
+        <Grid minH="70vh" p={3}>
           <ColorModeSwitcher justifySelf="flex-end" />
           <VStack spacing={8} justify='center'>
             <Image src='https://i.imgur.com/QUBFKJf.png' />
@@ -56,8 +54,6 @@ function App() {
           </VStack>
         </Grid>
       </Box>
-      </Center>
-
     </ChakraProvider>
   );
 }

@@ -2718,7 +2718,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 
 <Container>
 <Center>
-<Accordion allowMultiple maxW={360}>
+<Accordion allowMultiple w='360px'>
   <AccordionItem>
   <h2>
       <AccordionButton>
