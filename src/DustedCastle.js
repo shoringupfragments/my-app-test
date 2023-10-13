@@ -1409,7 +1409,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       <VStack>
       <text>Need:</text>
       <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
-  <NumberInputField id='dreN' onInput={(e) => handleDreNChange(e.target.value)} />
+        <NumberInputField id='dreN' onInput={(e) => handleDreNChange(e.target.value)} />
 </NumberInput>
       </VStack>
       <spacer></spacer>
@@ -2551,21 +2551,22 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
     <Thead>
       <Tr>
         <Th>Monster</Th>
-        <Th>Quantity</Th>
+        <Th>Qty</Th>
         <Th>Word Count</Th>
       </Tr>
     </Thead>
     <Tbody>
     <Tr>
-      <Td><HStack>
+      <Td><VStack>
         <Image
+        align='center'
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/5/59/Aakulta.png'
         alt='Aakulta'
         mr='5px'
-      /> <Text fontSize='lg'>Aakulta</Text>
-        </HStack>
+      /> <Text>Aakulta</Text>
+        </VStack>
 </Td>
 <Td isNumeric>        {SummaryNoanzaIsShown && <Container><text>0</text></Container>}
       {SummaryAakultaIsShown && <Container>{totalAakultaQty}</Container>}
@@ -2577,7 +2578,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
           </Td>
       </Tr>
       <Tr>
-      <Td><HStack>
+      <Td><VStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -2585,7 +2586,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Ardid'
         mr='5px'
       /> <text>Ardid</text>
-        </HStack>
+        </VStack>
 </Td>
       <Td isNumeric><Container>
       {SummaryNoanzaIsShown && <Container><text>0</text></Container>}
@@ -2599,7 +2600,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
           </Container></Td>
       </Tr>
       <Tr>
-      <Td><HStack>
+      <Td><VStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -2607,7 +2608,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Arluzi'
         mr='5px'
       /> <text>Arluzi</text>
-        </HStack>
+        </VStack>
 </Td>
       <Td isNumeric>        {SummaryNoanzaIsShown && <Container>{totalLdLootingNoanza}</Container>}
       {SummaryAakultaIsShown && <Container>{totalAdjustedLdAakultaLoot}</Container>}
@@ -2617,7 +2618,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       {SummaryFgCraftingIsShown && <Container>{totalArluziWCCraft}</Container>}</Td>
       </Tr>
       <Tr>
-      <Td><HStack>
+      <Td><VStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -2625,7 +2626,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Ascre'
         mr='5px'
       /> <text>Ascre</text>
-        </HStack>
+        </VStack>
 </Td>
       <Td isNumeric>{SummaryNoanzaIsShown && <Container>{totalAscreQtyLoot}</Container>}
   	{SummaryAakultaIsShown && <Container>{totalAscreQtyLoot}</Container>}
@@ -2636,15 +2637,15 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 </Td>
       </Tr>
       <Tr>
-      <Td><HStack>
+      <Td><VStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/7/7b/Dust_Wignow.png'
         alt='Dust Wignow'
         mr='5px'
-      /> <Text  fontSize='lg'>Dust Wignow</Text>
-        </HStack>
+      /> <Text>Dust Wignow</Text>
+        </VStack>
 </Td>
       <Td isNumeric>{SummaryNoanzaIsShown && <Container>{totalDustWignowQtyLoot}</Container>}
   	{SummaryAakultaIsShown && <Container>{totalDustWignowQtyLoot}</Container>}
@@ -2654,7 +2655,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
   	{SummaryFgCraftingIsShown && <Container>{totalDustWignowWCCraft}</Container>}</Td>
       </Tr>
       <Tr>
-      <Td><HStack>
+      <Td><VStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -2662,13 +2663,13 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Gliva'
         mr='5px'
       /> <text>Gliva</text>
-        </HStack>
+        </VStack>
 </Td>
 <Td isNumeric>{GlivaQtyIsShown && <Container>{totalGlivaQty}</Container>}</Td>
         <Td isNumeric>{GlivaQtyIsShown && <Container>{totalGlivaWC}</Container>}</Td>
       </Tr>
       <Tr>
-      <Td><HStack>
+      <Td><VStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -2676,13 +2677,13 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Kirerf'
         mr='5px'
       /> <text>Kirerf</text>
-        </HStack>
+        </VStack>
 </Td>
 <Td isNumeric>{KirerfQtyIsShown && <Container>{totalKirerfQty}</Container>}</Td>
         <Td isNumeric>{KirerfQtyIsShown && <Container>{totalKirerfWC}</Container>}</Td>
       </Tr>
       <Tr>
-      <Td><HStack>
+      <Td><VStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -2690,7 +2691,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Noanza'
         mr='5px'
       /> <text>Noanza</text>
-        </HStack>
+        </VStack>
 </Td>
       <Td isNumeric> {SummaryNoanzaIsShown && <Container>{totalNoanzaQty}</Container>}
       {SummaryAakultaIsShown && <Container>0</Container>}
@@ -2701,7 +2702,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
   	{SummaryFgCraftingIsShown && <Container><text>0</text></Container>}</Td>
       </Tr>
       <Tr>
-      <Td><HStack>
+      <Td><VStack>
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -2709,7 +2710,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Xaey'
         mr='5px'
       /> <text>Xaey</text>
-        </HStack>
+        </VStack>
 </Td>
       <Td isNumeric>{SummaryNoanzaIsShown && <Container>{totalXaeyQtyLoot}</Container>}
   	{SummaryAakultaIsShown && <Container>{totalXaeyQtyLoot}</Container>}
