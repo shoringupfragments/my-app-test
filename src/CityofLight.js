@@ -2718,12 +2718,12 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 
 <Container>
 <Center>
-<Accordion maxW={400}>
+<Accordion allowMultiple maxW={360}>
   <AccordionItem>
   <h2>
       <AccordionButton>
         <Box as="span" flex='1' textAlign='center' p={3}>
-        <Heading as='h3' size='lg'>Battle Items to Craft</Heading>
+        <Heading as='h3' size='lg'>Battle Items</Heading>
         </Box>
         <AccordionIcon />
       </AccordionButton>
