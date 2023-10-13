@@ -2132,9 +2132,14 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         <Box as="span" flex='1' textAlign='center' p={3}>
         <Text><b>Materials to Loot</b></Text>
         </Box></Container>
-<Wrap spacingY='30px' justify='center'>
-<WrapItem>
-    <Box justify='center' w='50px' h='50px' pb={5}>
+
+<Container>
+        <TableContainer>
+  <Table variant='unstyled' maxW={20} align='center'>
+    <Tbody>
+      <Tr>
+        <Td>
+        <Box justify='center' w='50px' h='60px' pb={5}>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2147,9 +2152,9 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       {SummaryAakultaIsShown && <Container>{totalAllFg}</Container>}
       {SummaryFgCraftingIsShown && <Container><text>0</text></Container>}</VStack>
   </Box>
-  </WrapItem>
-  <WrapItem>
-    <Box justify='center' w='50px' h='50px' pb={5}>
+        </Td>
+        <Td>
+        <Box justify='center' w='50px' h='60px' pb={5}>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2161,9 +2166,9 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       {SummaryAakultaIsShown && <Container>{totalLdLooting}</Container>}
       {SummaryFgCraftingIsShown && <Container>{totalLdCrafting}</Container>}</VStack>
   </Box>
-  </WrapItem>
-  <WrapItem>
-    <Box justify='center' w='50px' h='50px' pb={5}>
+        </Td>
+        <Td>
+        <Box justify='center' w='50px' h='60px' pb={5}>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2177,9 +2182,11 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       {SummaryFgCraftingIsShown && <Container>{totalRdCrafting}</Container>}
       </VStack>
   </Box>
-  </WrapItem>
-  <WrapItem>
-    <Box justify='center' w='50px' h='50px' pb={5}>
+        </Td>
+      </Tr>
+      <Tr>
+        <Td>
+        <Box justify='center' w='50px' h='60px' pb={5}>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2193,9 +2200,9 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
   	{SummaryFgCraftingIsShown && <Container>{totalDustAllOtherMonsters}</Container>}
 </VStack>
   </Box>
-  </WrapItem>
-  <WrapItem>
-    <Box justify='center' w='50px' h='50px' pb={5}>
+        </Td>
+        <Td>
+        <Box justify='center' w='50px' h='60px' pb={5}>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2207,9 +2214,9 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       {SummaryAakultaIsShown && <Container>{totalEssLooting}</Container>}
       {SummaryFgCraftingIsShown && <Container>{totalEssCrafting}</Container>}</VStack>
   </Box>
-  </WrapItem>
-  <WrapItem>
-    <Box justify='center' w='50px' h='50px' pb={5}>
+        </Td>
+        <Td>
+        <Box justify='center' w='50px' h='60px' pb={5}>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2221,9 +2228,10 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       {MushAakultaIsShown && <Container>{totalMushLooting}</Container>}
       {MushFgCraftingIsShown && <Container>{totalMushCrafting}</Container>}</VStack>
   </Box>
-  </WrapItem>
-  <WrapItem>
-    <Box justify='center' w='50px' h='50px' pb={5}>
+        </Td>
+      </Tr>      <Tr>
+        <Td>
+        <Box justify='center' w='50px' h='60px'>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2235,9 +2243,9 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       {SummaryAakultaIsShown && <Container>{totalDflLooting}</Container>}
       {SummaryFgCraftingIsShown && <Container>{totalDflCrafting}</Container>}</VStack>
   </Box>
-  </WrapItem>
-  <WrapItem>
-    <Box justify='center' w='50px' h='50px' pb={5}>
+        </Td>
+        <Td>
+        <Box justify='center' w='50px' h='60px'>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2249,9 +2257,9 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       {SummaryAakultaIsShown && <Container>{totalBonesLooting}</Container>}
       {SummaryFgCraftingIsShown && <Container>{totalBonesCrafting}</Container>}</VStack>
   </Box>
-  </WrapItem>
-  <WrapItem>
-    <Box justify='center' w='50px' h='50px' pb={5}>
+        </Td>
+        <Td>
+        <Box justify='center' w='50px' h='60px'>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2265,14 +2273,18 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         {SummaryFgCraftingIsShown && <Container>{totalGrossPCS}</Container>}
         </Container></VStack>
   </Box>
-  </WrapItem>
-</Wrap>
+        </Td>
+      </Tr>
+    </Tbody>
+  </Table>
+</TableContainer></Container>
+
 <Container> <Box as="span" flex='1' textAlign='center' p={3}>
         <Text pt={3}><b>Materials to Craft:</b></Text>
         </Box>
-<Wrap spacing='0px' justify='center'>
+<Wrap justify='center'>
 <WrapItem>
-    <Box justify='center' w='50px' h='50px' pb={5}>
+    <Box justify='center' w='50px' h='60px' pb={5}>
        <VStack> 
         <Image
         boxSize='3rem'
@@ -2286,7 +2298,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
   </Box>
   </WrapItem>
 <WrapItem>
-    <Box justify='center' w='50px' h='50px' pb={5}>
+    <Box justify='center' w='50px' h='60px' pb={5}>
        <VStack> 
         <Image
         boxSize='3rem'
