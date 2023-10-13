@@ -2129,6 +2129,158 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 </Tbody>
 </Table>
 </TableContainer>
+
+<Box as="span" flex='1' textAlign='center' p={3}>
+        <Text><b>Monsters to Fight</b></Text>
+        </Box></Container>
+
+<Container>
+        <TableContainer>
+  <Table variant='unstyled' maxW={20} align='center'>
+    <Tbody>
+      <Tr>
+        <Td>
+        <Box justify='center' w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/59/Aakulta.png'
+        alt='Aakulta'
+        mr='5px'
+      /> <text>Aakulta</text>
+{SummaryNoanzaIsShown && <Container><text>0</text></Container>}
+      {SummaryAakultaIsShown && <Container>{totalAakultaQty}</Container>}
+      {SummaryFgCraftingIsShown && <Container><text>0</text></Container>}</VStack>
+  </Box>
+        </Td>
+        <Td>
+        <Box justify='center' w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/23/Ardid.png'
+        alt='Ardid'
+        mr='5px'
+      /> <text>Ardid</text>
+      {SummaryNoanzaIsShown && <Container><text>0</text></Container>}
+      {SummaryAakultaIsShown && <Container><text>0</text></Container>}
+      {SummaryFgCraftingIsShown && <Container>{totalArdidQty}</Container>}</VStack>
+  </Box>
+        </Td>
+        <Td>
+        <Box justify='center' w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/c/c5/Arluzi.png'
+        alt='Arluzi'
+        mr='5px'
+      /> <text>Arluzi</text>
+      {SummaryNoanzaIsShown && <Container>{totalLdLootingNoanza}</Container>}
+      {SummaryAakultaIsShown && <Container>{totalAdjustedLdAakultaLoot}</Container>}
+      {SummaryFgCraftingIsShown && <Container>{totalArluziQtyCraft}</Container>}
+      </VStack>
+  </Box>
+        </Td>
+      </Tr>
+      <Tr>
+        <Td>
+        <Box justify='center' w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/0/0d/Ascre.png'
+        alt='Ascre'
+        mr='5px'
+      /> <text>Ascre</text>
+{SummaryNoanzaIsShown && <Container>{totalAscreQtyLoot}</Container>}
+  	{SummaryAakultaIsShown && <Container>{totalAscreQtyLoot}</Container>}
+  	{SummaryFgCraftingIsShown && <Container>{totalAscreQtyCraft}</Container>}
+</VStack>
+  </Box>
+        </Td>
+        <Td>
+        <Box justify='center' w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/7b/Dust_Wignow.png'
+        alt='Dust Wignow'
+        mr='5px'
+      /> <text>Dust Wignow</text>
+ {SummaryNoanzaIsShown && <Container>{totalDustWignowQtyLoot}</Container>}
+  	{SummaryAakultaIsShown && <Container>{totalDustWignowQtyLoot}</Container>}
+  	{SummaryFgCraftingIsShown && <Container>{totalDustWignowQtyCraft}</Container>}</VStack>
+  </Box>
+        </Td>
+        <Td>
+        <Box justify='center' w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/15/Gliva.png'
+        alt='Gliva'
+        mr='5px'
+      /> <text>Gliva</text>
+{GlivaQtyIsShown && <Container>{totalGlivaQty}</Container>}</VStack>
+  </Box>
+        </Td>
+      </Tr>      <Tr>
+        <Td>
+        <Box justify='center' w='50px' h='100px'>
+       <VStack> 
+       <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/a6/Kirerf.png'
+        alt='Kirerf'
+        mr='5px'
+      /> <text>Kirerf</text>
+ {KirerfQtyIsShown && <Container>{totalKirerfQty}</Container>}</VStack>
+  </Box>
+        </Td>
+        <Td>
+        <Box justify='center' w='50px' h='100px'>
+       <VStack> 
+       <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png'
+        alt='Noanza'
+        mr='5px'
+      /> <text>Noanza</text>
+{SummaryNoanzaIsShown && <Container>{totalNoanzaQty}</Container>}
+      {SummaryAakultaIsShown && <Container>0</Container>}
+      {SummaryFgCraftingIsShown && <Container><text>0</text></Container>}</VStack>
+  </Box>
+        </Td>
+        <Td>
+        <Box justify='center' w='50px' h='100px'>
+       <VStack> 
+       <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/22/Xaey.png'
+        alt='Xaey'
+        mr='5px'
+      /> <text>Xaey</text>  	
+ {SummaryNoanzaIsShown && <Container justify='center'>{totalXaeyQtyLoot}</Container>}
+  	{SummaryAakultaIsShown && <Container justify='center'>{totalXaeyQtyLoot}</Container>}
+  	{SummaryFgCraftingIsShown && <Container justify='center'>{totalXaeyQtyCraft}</Container>}
+        </VStack>
+  </Box>
+        </Td>
+      </Tr>
+    </Tbody>
+  </Table>
+</TableContainer>
+
         <Box as="span" flex='1' textAlign='center' p={3}>
         <Text><b>Materials to Loot</b></Text>
         </Box></Container>
