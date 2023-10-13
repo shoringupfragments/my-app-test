@@ -2148,9 +2148,9 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Fusion Glass'
         mr='0px'
       />
-      {SummaryNoanzaIsShown && <Container>{totalAllFg}</Container>}
-      {SummaryAakultaIsShown && <Container>{totalAllFg}</Container>}
-      {SummaryFgCraftingIsShown && <Container><text>0</text></Container>}</VStack>
+      {SummaryNoanzaIsShown && <Container align='center'>{totalAllFg}</Container>}
+      {SummaryAakultaIsShown && <Container align='center'>{totalAllFg}</Container>}
+      {SummaryFgCraftingIsShown && <Container align='center'><text>0</text></Container>}</VStack>
   </Box>
         </Td>
         <Td>
@@ -2162,9 +2162,9 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         src='https://static.wikia.nocookie.net/4thewords/images/9/91/LightenedDust.png'
         alt='Lightened Dust'
         mr='0px'
-      />      {SummaryNoanzaIsShown && <Container>{totalLdLootingNoanza}</Container>}
-      {SummaryAakultaIsShown && <Container>{totalLdLooting}</Container>}
-      {SummaryFgCraftingIsShown && <Container>{totalLdCrafting}</Container>}</VStack>
+      />      {SummaryNoanzaIsShown && <Container align='center'>{totalLdLootingNoanza}</Container>}
+      {SummaryAakultaIsShown && <Container align='center'>{totalLdLooting}</Container>}
+      {SummaryFgCraftingIsShown && <Container align='center'>{totalLdCrafting}</Container>}</VStack>
   </Box>
         </Td>
         <Td>
@@ -2177,9 +2177,9 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Refined Dust'
         mr='0px'
       />
-      {SummaryNoanzaIsShown && <Container>{totalRdLooting}</Container>}
-      {SummaryAakultaIsShown && <Container>{totalRdLooting}</Container>}
-      {SummaryFgCraftingIsShown && <Container>{totalRdCrafting}</Container>}
+      {SummaryNoanzaIsShown && <Container align='center'>{totalRdLooting}</Container>}
+      {SummaryAakultaIsShown && <Container align='center'>{totalRdLooting}</Container>}
+      {SummaryFgCraftingIsShown && <Container align='center'>{totalRdCrafting}</Container>}
       </VStack>
   </Box>
         </Td>
@@ -2195,9 +2195,9 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Dust'
         mr='0px'
       />
-  	{SummaryNoanzaIsShown && <Container>{totalDustAllOtherMonsters}</Container>}
-  	{SummaryAakultaIsShown && <Container>{totalDustAllOtherMonsters}</Container>}
-  	{SummaryFgCraftingIsShown && <Container>{totalDustAllOtherMonsters}</Container>}
+  	{SummaryNoanzaIsShown && <Container align='center'>{totalDustAllOtherMonsters}</Container>}
+  	{SummaryAakultaIsShown && <Container align='center'>{totalDustAllOtherMonsters}</Container>}
+  	{SummaryFgCraftingIsShown && <Container align='center'>{totalDustAllOtherMonsters}</Container>}
 </VStack>
   </Box>
         </Td>
@@ -2210,9 +2210,9 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         src='https://static.wikia.nocookie.net/4thewords/images/1/19/Wignowessence_md.png'
         alt='Essence'
         mr='0px'
-      />  	{SummaryNoanzaIsShown && <Container>{totalEssLooting}</Container>}
-      {SummaryAakultaIsShown && <Container>{totalEssLooting}</Container>}
-      {SummaryFgCraftingIsShown && <Container>{totalEssCrafting}</Container>}</VStack>
+      />  	{SummaryNoanzaIsShown && <Container align='center'>{totalEssLooting}</Container>}
+      {SummaryAakultaIsShown && <Container align='center'>{totalEssLooting}</Container>}
+      {SummaryFgCraftingIsShown && <Container align='center'>{totalEssCrafting}</Container>}</VStack>
   </Box>
         </Td>
         <Td>
@@ -2224,9 +2224,9 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         src='https://static.wikia.nocookie.net/4thewords/images/7/72/Cave-mushroom.png'
         alt='Mushrooms'
         mr='0px'
-      />  	{MushNoanzaIsShown && <Container>{totalMushLooting}</Container>}
-      {MushAakultaIsShown && <Container>{totalMushLooting}</Container>}
-      {MushFgCraftingIsShown && <Container>{totalMushCrafting}</Container>}</VStack>
+      />  	{MushNoanzaIsShown && <Container align='center'>{totalMushLooting}</Container>}
+      {MushAakultaIsShown && <Container align='center'>{totalMushLooting}</Container>}
+      {MushFgCraftingIsShown && <Container align='center'>{totalMushCrafting}</Container>}</VStack>
   </Box>
         </Td>
       </Tr>      <Tr>
@@ -2239,9 +2239,9 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         src='https://static.wikia.nocookie.net/4thewords/images/d/d8/Dark-forest-leaves.png'
         alt='Dark Forest Leaves'
         mr='0px'
-      />  	{SummaryNoanzaIsShown && <Container>{totalDflLooting}</Container>}
-      {SummaryAakultaIsShown && <Container>{totalDflLooting}</Container>}
-      {SummaryFgCraftingIsShown && <Container>{totalDflCrafting}</Container>}</VStack>
+      />  	{SummaryNoanzaIsShown && <Container align='center'>{totalDflLooting}</Container>}
+      {SummaryAakultaIsShown && <Container align='center'>{totalDflLooting}</Container>}
+      {SummaryFgCraftingIsShown && <Container align='center'>{totalDflCrafting}</Container>}</VStack>
   </Box>
         </Td>
         <Td>
@@ -2253,9 +2253,9 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         src='https://static.wikia.nocookie.net/4thewords/images/5/5e/Bones.png/'
         alt='Bones'
         mr='0px'
-      />  	{SummaryNoanzaIsShown && <Container>{totalBonesLooting}</Container>}
-      {SummaryAakultaIsShown && <Container>{totalBonesLooting}</Container>}
-      {SummaryFgCraftingIsShown && <Container>{totalBonesCrafting}</Container>}</VStack>
+      />  	{SummaryNoanzaIsShown && <Container align='center'>{totalBonesLooting}</Container>}
+      {SummaryAakultaIsShown && <Container align='center'>{totalBonesLooting}</Container>}
+      {SummaryFgCraftingIsShown && <Container align='center'>{totalBonesCrafting}</Container>}</VStack>
   </Box>
         </Td>
         <Td>
@@ -2268,9 +2268,9 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Purple Crystal Shards'
         mr='0px'
       />  	<Container>  	
-      	{SummaryNoanzaIsShown && <Container>{totalGrossPCS}</Container>}
-        {SummaryAakultaIsShown && <Container>{totalGrossPCS}</Container>}
-        {SummaryFgCraftingIsShown && <Container>{totalGrossPCS}</Container>}
+      	{SummaryNoanzaIsShown && <Container align='center'>{totalGrossPCS}</Container>}
+        {SummaryAakultaIsShown && <Container align='center'>{totalGrossPCS}</Container>}
+        {SummaryFgCraftingIsShown && <Container align='center'>{totalGrossPCS}</Container>}
         </Container></VStack>
   </Box>
         </Td>
@@ -2282,36 +2282,46 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 <Container> <Box as="span" flex='1' textAlign='center' p={3}>
         <Text pt={3}><b>Materials to Craft:</b></Text>
         </Box>
-<Wrap justify='center'>
-<WrapItem>
-    <Box justify='center' w='50px' h='60px' pb={5}>
+        <TableContainer>
+  <Table variant='unstyled' maxW={20} align='center'>
+    <Tbody>
+      <Tr>
+        <Td>
+        <Box justify='center' w='50px' h='60px' pb={5}>
        <VStack> 
-        <Image
+       <Image
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
         alt='Dust-Repellent Elixir'
-        mr='0px'
-      />        {SummaryNoanzaIsShown && <Container>{totalAllDre}</Container>}
+        mr='0px'/>
+{SummaryNoanzaIsShown && <Container>{totalAllDre}</Container>}
       {SummaryAakultaIsShown && <Container>{totalAllDre}</Container>}
       {SummaryFgCraftingIsShown && <Container>{totalDreFgCrafting}</Container>}</VStack>
   </Box>
-  </WrapItem>
-<WrapItem>
-    <Box justify='center' w='50px' h='60px' pb={5}>
+        </Td>
+        <Td>
+        <Box justify='center' w='50px' h='60px' pb={5}>
        <VStack> 
-        <Image
+       <Image
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
         alt='Fusion Glass'
         mr='0px'
-      />{SummaryNoanzaIsShown && <Container><text>0</text></Container>}
+      />      
+      {SummaryNoanzaIsShown && <Container><text>0</text></Container>}
       {SummaryAakultaIsShown && <Container><text>0</text></Container>}
-      {SummaryFgCraftingIsShown && <Container>{totalAllFg}</Container>}</VStack>
+      {SummaryFgCraftingIsShown && <Container>{totalAllFg}</Container>}
+      </VStack>
   </Box>
-  </WrapItem>
-</Wrap>
+        </Td>
+      </Tr>
+    </Tbody>
+  </Table>
+</TableContainer>
+
+
 <br></br>
 </Container>
 <Divider />
