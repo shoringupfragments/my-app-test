@@ -2717,7 +2717,8 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 <br></br></Container>
 
 <Container>
-<Accordion allowMultiple>
+<Center>
+<Accordion maxW={400}>
   <AccordionItem>
   <h2>
       <AccordionButton>
@@ -4111,8 +4112,9 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 </Container>
 </AccordionPanel>
   </AccordionItem>
-</Accordion>
+</Accordion></Center>
 <br></br></Container>
+
         </Grid>
       </Box>
     </ChakraProvider>
