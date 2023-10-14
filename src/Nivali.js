@@ -2718,11 +2718,11 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 
 <Container>
 <Center>
-<Accordion allowMultiple w='360px'>
+<Accordion allowMultiple w='350px'>
   <AccordionItem>
   <h2>
       <AccordionButton>
-        <Box as="span" flex='1' textAlign='center' p={3}>
+        <Box  as="span" flex='1' textAlign='center' p={3}>
         <Heading as='h3' size='lg'>Battle Items</Heading>
         </Box>
         <AccordionIcon />
@@ -2752,7 +2752,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
         alt='Fusion Glass'
         mr='0px'
-      /> <br></br>
+      /> 
           {fgAakhelResult !== null && (
               <div>
                 <p>{fgAakhelResult}</p>
