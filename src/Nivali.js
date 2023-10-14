@@ -2757,7 +2757,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
                 <p>{fgAakhelResult}</p>
               </div>
             )}</VStack>
-                  <br></br>
+        <Spacer />
         <VStack>
         <Image
         boxSize='2rem'
@@ -2771,7 +2771,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
                 <p>{dreAakhelResult}</p>
               </div>
             )}</VStack>
-                  <br></br>
+        <Spacer />
         <VStack> 
         <Image
         boxSize='2rem'
@@ -2785,7 +2785,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
                 <p>{steelAakhelResult}</p>
               </div>
             )}</VStack>
-          <br></br>
+        <Spacer />
         <VStack> 
         <Image
         boxSize='2rem'
@@ -2799,7 +2799,8 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
                 <p>{goldAakhelResult}</p>
               </div>
             )}</VStack>
-<br></br><VStack> 
+       <Spacer />     
+      <VStack> 
         <Image
         boxSize='2rem'
         borderRadius='full'
@@ -2817,10 +2818,368 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         </Box>
         </Center>
 
-<br></br>
 <Divider />
 <br></br>
 </Container>
+
+
+<Container>
+<Center>        
+  <Box>
+    <Center>
+        <Image
+        boxSize='5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/7d/ClimbingBoots.png/'
+        alt='Climbing Boots'
+        mr='0px'/>
+        </Center>
+       <Heading size='md'>{clibooResult} Climbing Boots</Heading>
+      <br></br>
+      
+      <HStack>
+        <VStack>
+        <Image
+        boxSize='2rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        alt='Dust-Repellent Elixir'
+        mr='0px'
+      /> 
+           {dreClibooResult !== null && (
+              <div>
+                <p>{dreClibooResult}</p>
+              </div>
+            )}</VStack>
+        <Spacer />
+        <VStack> 
+        <Image
+        boxSize='2rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/99/Leatherroll_md.png'
+        alt='Leather Roll'
+        mr='0px'
+      /> 
+          {leatherrollClibooResult !== null && (
+              <div>
+                <p>{leatherrollClibooResult}</p>
+              </div>
+            )}</VStack>
+        <Spacer />
+        <VStack> 
+        <Image
+        boxSize='2rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
+        alt='Steel'
+        mr='0px'
+      /> 
+          {steelClibooResult !== null && (
+              <div>
+                <p>{steelClibooResult}</p>
+              </div>
+            )}</VStack>
+       <Spacer />     
+      <VStack> 
+        <Image
+        boxSize='2rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        alt='Coins'
+        mr='0px'
+      /> 
+          {coinsClibooResult !== null && (
+              <div>
+                <p>{coinsClibooResult}</p>
+              </div>
+            )}</VStack>
+      </HStack>
+      <br></br>
+        </Box>
+        </Center>
+
+<Divider />
+<br></br>
+</Container>
+
+<Container>
+<Center>        
+  <Box>
+    <Center>
+        <Image
+        boxSize='5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/f8/CrestedHelmet.png'
+        alt='Crested Helmet'
+        mr='0px'/>
+        </Center>
+       <Heading size='md'>{crehelResult} Crested Helmet</Heading>
+      <br></br>
+      
+      <HStack>
+        <VStack>
+        <Image
+        boxSize='2rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
+        alt='Fusion Glass'
+        mr='0px'
+      /> 
+           {fgCrehelResult !== null && (
+              <div>
+                <p>{fgCrehelResult}</p>
+              </div>
+            )}</VStack>
+        <Spacer />
+        <VStack> 
+        <Image
+        boxSize='2rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        alt='Dust-Repellent Elixir'
+        mr='0px'
+      /> 
+          {dreCrehelResult !== null && (
+              <div>
+                <p>{dreCrehelResult}</p>
+              </div>
+            )}</VStack>
+        <Spacer />
+        <VStack> 
+        <Image
+        boxSize='2rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
+        alt='Steel'
+        mr='0px'
+      /> 
+          {steelCrehelResult !== null && (
+              <div>
+                <p>{steelCrehelResult}</p>
+              </div>
+            )}</VStack>
+       <Spacer />     
+      <VStack> 
+        <Image
+        boxSize='2rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        alt='Coins'
+        mr='0px'
+      /> 
+          {coinsCrehelResult !== null && (
+              <div>
+                <p>{coinsCrehelResult}</p>
+              </div>
+            )}</VStack>
+      </HStack>
+      <br></br>
+        </Box>
+        </Center>
+
+<Divider />
+<br></br>
+</Container>
+
+<Container>
+<Center>        
+  <Box>
+    <Center>
+        <Image
+        boxSize='5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b6/FlowerSlingshot.png/'
+        alt='Flower Slingshot'
+        mr='0px'/>
+        </Center>
+       <Heading size='md'>{flosliResult} Flower Slingshot</Heading>
+      <br></br>
+      
+      <HStack>
+        <VStack>
+        <Image
+        boxSize='2rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        alt='Dust-Repellent Elixir'
+        mr='0px'
+      /> 
+           {dreFlosliResult !== null && (
+              <div>
+                <p>{dreFlosliResult}</p>
+              </div>
+            )}</VStack>
+        <Spacer />
+        <VStack> 
+        <Image
+        boxSize='2rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/0/0c/Hardwood_md.png'
+        alt='Hardwood'
+        mr='0px'
+      /> 
+          {hardwoodFlosliResult !== null && (
+              <div>
+                <p>{hardwoodFlosliResult}</p>
+              </div>
+            )}</VStack>
+        <Spacer />
+        <VStack> 
+        <Image
+        boxSize='2rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/47/Reinforced-rope.png/'
+        alt='Reinforced Rope'
+        mr='0px'
+      /> 
+          {reinforcedropeFlosliResult !== null && (
+              <div>
+                <p>{reinforcedropeFlosliResult}</p>
+              </div>
+            )}</VStack>
+       <Spacer />     
+       <VStack> 
+        <Image
+        boxSize='2rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/99/Leatherroll_md.png'
+        alt='Leather Roll'
+        mr='0px'
+      /> 
+          {leatherrollFlosliResult !== null && (
+              <div>
+                <p>{leatherrollFlosliResult}</p>
+              </div>
+            )}</VStack>
+       <Spacer />     
+      <VStack> 
+        <Image
+        boxSize='2rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        alt='Coins'
+        mr='0px'
+      /> 
+          {coinsFlosliResult !== null && (
+              <div>
+                <p>{coinsFlosliResult}</p>
+              </div>
+            )}</VStack>
+      </HStack>
+      <br></br>
+        </Box>
+        </Center>
+
+<Divider />
+<br></br>
+</Container>
+
+<Container>
+<Center>        
+  <Box>
+    <Center>
+        <Image
+        boxSize='5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Fusion_Crossbow.png'
+        alt='Fusion Crossbow'
+        mr='0px'/>
+        </Center>
+       <Heading size='md'>{flosliResult} Fusion Crossbow</Heading>
+      <br></br>
+      
+      <HStack>
+      <VStack>
+        <Image
+        boxSize='1.5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
+        alt='Fusion Glass'
+        mr='0px'
+      /> 
+           {fgCrehelResult !== null && (
+              <div>
+                <p>{fgCrehelResult}</p>
+              </div>
+            )}</VStack>
+        <Spacer />
+        <VStack>
+        <Image
+        boxSize='1.5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        alt='Dust-Repellent Elixir'
+        mr='0px'
+      /> 
+           {dreFlosliResult !== null && (
+              <div>
+                <p>{dreFlosliResult}</p>
+              </div>
+            )}</VStack>
+        <Spacer />
+        <VStack> 
+        <Image
+        boxSize='1.5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/0/0c/Hardwood_md.png'
+        alt='Hardwood'
+        mr='0px'
+      /> 
+          {hardwoodFlosliResult !== null && (
+              <div>
+                <p>{hardwoodFlosliResult}</p>
+              </div>
+            )}</VStack>
+        <VStack> 
+        <Image
+        boxSize='1.5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/47/Reinforced-rope.png/'
+        alt='Reinforced Rope'
+        mr='0px'
+      /> 
+          {reinforcedropeFlosliResult !== null && (
+              <div>
+                <p>{reinforcedropeFlosliResult}</p>
+              </div>
+            )}</VStack>
+       <Spacer />     
+       <VStack> 
+        <Image
+        boxSize='1.5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/99/Leatherroll_md.png'
+        alt='Leather Roll'
+        mr='0px'
+      /> 
+          {leatherrollFlosliResult !== null && (
+              <div>
+                <p>{leatherrollFlosliResult}</p>
+              </div>
+            )}</VStack>
+       <Spacer />     
+      <VStack> 
+        <Image
+        boxSize='1.5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        alt='Coins'
+        mr='0px'
+      /> 
+          {coinsFlosliResult !== null && (
+              <div>
+                <p>{coinsFlosliResult}</p>
+              </div>
+            )}</VStack>
+      </HStack>
+      <br></br>
+        </Box>
+        </Center>
+
+<Divider />
+<br></br>
+</Container>
+
 
 </AccordionPanel>
   </AccordionItem>
