@@ -2723,7 +2723,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
   <h2>
       <AccordionButton>
         <Box as="span" flex='1' textAlign='center' p={3}>
-        <Heading as='h3' size='lg'>Battle Items: All Materials</Heading>
+        <Heading as='h3' size='lg'>Battle Items</Heading>
         </Box>
         <AccordionIcon />
       </AccordionButton>
@@ -2733,122 +2733,91 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 <Container>
 <Center>        
   <Box>
-        <VStack>
+    <Center>
         <Image
         boxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/0/07/AakultaHelmet.png'
         alt='Aakulta Helmet'
-        mr='0px'
-      /><br></br><text>Aakulta Helmet: {aakhelResult}</text>
-        </VStack>
-        </Box>
+        mr='0px'/>
         </Center>
-
-        <TableContainer>
-  <Table variant='unstyled' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
+      <br></br><Heading size='md'>{aakhelResult} Aakulta Helmet</Heading>
+      <br></br>
+      
+      <HStack>
+      <VStack> 
         <Image
-        boxSize='3rem'
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
         alt='Fusion Glass'
         mr='0px'
-      />
+      /> <br></br>
           {fgAakhelResult !== null && (
               <div>
                 <p>{fgAakhelResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+                  <br></br>
+        <VStack>
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
         alt='Dust-Repellent Elixir'
         mr='0px'
-      />
+      /> 
            {dreAakhelResult !== null && (
               <div>
                 <p>{dreAakhelResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+                  <br></br>
+        <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
         alt='Steel'
         mr='0px'
-      />
+      /> 
           {steelAakhelResult !== null && (
               <div>
                 <p>{steelAakhelResult}</p>
               </div>
-            )}
-      </VStack>
-  </Box>
-        </Td>
-      </Tr>     
-    </Tbody>
-  </Table>
-</TableContainer>
-
-<TableContainer>
-  <Table variant='unstyled' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+            )}</VStack>
+          <br></br>
+        <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/8/87/Gold_md.png/'
         alt='Gold'
         mr='0px'
-      />
+      /> 
           {goldAakhelResult !== null && (
               <div>
                 <p>{goldAakhelResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+<br></br><VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
         alt='Coins'
         mr='0px'
-      />     
+      /> 
           {coinsAakhelResult !== null && (
               <div>
                 <p>{coinsAakhelResult}</p>
               </div>
-            )}
-      </VStack>
-  </Box>
-        </Td>
-      </Tr>
-    </Tbody>
-  </Table>
-</TableContainer>
+            )}</VStack>
+      </HStack>
+      <br></br>
+        </Box>
+        </Center>
+
 <br></br>
 <Divider />
 <br></br>
