@@ -1401,14 +1401,14 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       <HStack justify='center'>
       <VStack>
       <text>Need:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+      <NumberInput min={0} max={9999} size='md' maxW={20}>
         <NumberInputField id='dreN' onInput={(e) => handleDreNChange(e.target.value)} />
 </NumberInput>
       </VStack>
       <spacer></spacer>
       <VStack>
       <text>Have:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+      <NumberInput min={0} max={9999} size='md' maxW={20}>
   <NumberInputField id='dreH' onInput={(e) => handleDreHChange(e.target.value)} />
 </NumberInput>
       </VStack>
@@ -1432,14 +1432,14 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       <HStack justify='center'>
       <VStack>
       <text>Need:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+      <NumberInput min={0} max={9999} size='md' maxW={20}>
         <NumberInputField id='FgN' onInput={(e) => handleFgNChange(e.target.value)} />
 </NumberInput>
       </VStack>
       <spacer></spacer>
       <VStack>
       <text>Have:</text>
-      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
+      <NumberInput min={0} max={9999} size='md' maxW={20}>
 <NumberInputField id='FgH' onInput={(e) => handleFgHChange(e.target.value)} />
 </NumberInput>
       </VStack>
@@ -2718,18 +2718,17 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 
 <Container>
 <Center>
-<Accordion allowMultiple w='360px'>
+<Accordion allowMultiple w='300px'>
   <AccordionItem>
   <h2>
       <AccordionButton>
-        <Box as="span" flex='1' textAlign='center' p={3}>
+        <Box  as="span" flex='1' textAlign='center' p={3}>
         <Heading as='h3' size='lg'>Battle Items</Heading>
         </Box>
         <AccordionIcon />
       </AccordionButton>
     </h2>
     <AccordionPanel pb={4}>
-
 <Container>
 <Center>        
   <Box>
@@ -2741,7 +2740,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Aakulta Helmet'
         mr='0px'/>
         </Center>
-      <br></br><Heading size='md'>{aakhelResult} Aakulta Helmet</Heading>
+       <Heading size='md'>{aakhelResult} Aakulta Helmet</Heading>
       <br></br>
       
       <HStack>
@@ -2752,13 +2751,13 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
         alt='Fusion Glass'
         mr='0px'
-      /> <br></br>
+      /> 
           {fgAakhelResult !== null && (
               <div>
                 <p>{fgAakhelResult}</p>
               </div>
             )}</VStack>
-                  <br></br>
+        <Spacer />
         <VStack>
         <Image
         boxSize='2rem'
@@ -2772,7 +2771,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
                 <p>{dreAakhelResult}</p>
               </div>
             )}</VStack>
-                  <br></br>
+        <Spacer />
         <VStack> 
         <Image
         boxSize='2rem'
@@ -2786,7 +2785,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
                 <p>{steelAakhelResult}</p>
               </div>
             )}</VStack>
-          <br></br>
+        <Spacer />
         <VStack> 
         <Image
         boxSize='2rem'
@@ -2800,7 +2799,8 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
                 <p>{goldAakhelResult}</p>
               </div>
             )}</VStack>
-<br></br><VStack> 
+       <Spacer />     
+      <VStack> 
         <Image
         boxSize='2rem'
         borderRadius='full'
@@ -2818,112 +2818,86 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         </Box>
         </Center>
 
-<br></br>
 <Divider />
 <br></br>
 </Container>
 
+
 <Container>
 <Center>        
   <Box>
-        <VStack>
+    <Center>
         <Image
         boxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/7/7d/ClimbingBoots.png/'
         alt='Climbing Boots'
-        mr='0px'
-      /><br></br><text>Climbing Boots: {clibooResult}</text>
-        </VStack>
-        </Box>
+        mr='0px'/>
         </Center>
-
-        <TableContainer>
-  <Table variant='unstyled' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+       <Heading size='md'>{clibooResult} Climbing Boots</Heading>
+      <br></br>
+      
+      <HStack>
+        <VStack>
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
         alt='Dust-Repellent Elixir'
         mr='0px'
-      />
-          {dreClibooResult !== null && (
+      /> 
+           {dreClibooResult !== null && (
               <div>
                 <p>{dreClibooResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+        <Spacer />
+        <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/9/99/Leatherroll_md.png'
         alt='Leather Roll'
         mr='0px'
-      />
+      /> 
           {leatherrollClibooResult !== null && (
               <div>
                 <p>{leatherrollClibooResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+        <Spacer />
+        <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
         alt='Steel'
         mr='0px'
-      />
+      /> 
           {steelClibooResult !== null && (
               <div>
                 <p>{steelClibooResult}</p>
               </div>
-            )}
-      </VStack>
-  </Box>
-        </Td>
-      </Tr>     
-    </Tbody>
-  </Table>
-</TableContainer>
-<TableContainer>
-  <Table variant='unstyled' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+            )}</VStack>
+       <Spacer />     
+      <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
         alt='Coins'
         mr='0px'
-      />
+      /> 
           {coinsClibooResult !== null && (
               <div>
                 <p>{coinsClibooResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-      </Tr>
-    </Tbody>
-  </Table>
-</TableContainer>
-<br></br>
+      </HStack>
+      <br></br>
+        </Box>
+        </Center>
+
 <Divider />
 <br></br>
 </Container>
@@ -2931,104 +2905,78 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 <Container>
 <Center>        
   <Box>
-        <VStack>
+    <Center>
         <Image
         boxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/f/f8/CrestedHelmet.png'
         alt='Crested Helmet'
-        mr='0px'
-      /><text>Crested Helmet: {crehelResult}</text>
-        </VStack>
-        </Box>
+        mr='0px'/>
         </Center>
-
-        <TableContainer>
-  <Table variant='unstyled' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+       <Heading size='md'>{crehelResult} Crested Helmet</Heading>
+      <br></br>
+      
+      <HStack>
+        <VStack>
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
         alt='Fusion Glass'
         mr='0px'
-      />
-          {fgCrehelResult !== null && (
+      /> 
+           {fgCrehelResult !== null && (
               <div>
                 <p>{fgCrehelResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+        <Spacer />
+        <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
         alt='Dust-Repellent Elixir'
         mr='0px'
-      />
+      /> 
           {dreCrehelResult !== null && (
               <div>
                 <p>{dreCrehelResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+        <Spacer />
+        <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
         alt='Steel'
         mr='0px'
-      />
+      /> 
           {steelCrehelResult !== null && (
               <div>
                 <p>{steelCrehelResult}</p>
               </div>
-            )}
-      </VStack>
-  </Box>
-        </Td>
-      </Tr>     
-    </Tbody>
-  </Table>
-</TableContainer>
-<TableContainer>
-  <Table variant='unstyled' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+            )}</VStack>
+       <Spacer />     
+      <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
         alt='Coins'
         mr='0px'
-      />
+      /> 
           {coinsCrehelResult !== null && (
               <div>
                 <p>{coinsCrehelResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-      </Tr>
-    </Tbody>
-  </Table>
-</TableContainer>
-<br></br>
+      </HStack>
+      <br></br>
+        </Box>
+        </Center>
+
 <Divider />
 <br></br>
 </Container>
@@ -3036,121 +2984,92 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 <Container>
 <Center>        
   <Box>
-        <VStack>
+    <Center>
         <Image
         boxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/b/b6/FlowerSlingshot.png/'
         alt='Flower Slingshot'
-        mr='0px'
-      /><text>Flower Slingshot: {flosliResult}</text>
-        </VStack>
-        </Box>
+        mr='0px'/>
         </Center>
-
-        <TableContainer>
-  <Table variant='unstyled' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+       <Heading size='md'>{flosliResult} Flower Slingshot</Heading>
+      <br></br>
+      
+      <HStack>
+        <VStack>
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
         alt='Dust-Repellent Elixir'
         mr='0px'
-      />
-          {dreFlosliResult !== null && (
+      /> 
+           {dreFlosliResult !== null && (
               <div>
                 <p>{dreFlosliResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+        <Spacer />
+        <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/0/0c/Hardwood_md.png'
         alt='Hardwood'
         mr='0px'
-      />
+      /> 
           {hardwoodFlosliResult !== null && (
               <div>
                 <p>{hardwoodFlosliResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+        <Spacer />
+        <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/4/47/Reinforced-rope.png/'
         alt='Reinforced Rope'
         mr='0px'
-      />
+      /> 
           {reinforcedropeFlosliResult !== null && (
               <div>
                 <p>{reinforcedropeFlosliResult}</p>
               </div>
-            )}
-      </VStack>
-  </Box>
-        </Td>
-      </Tr>     
-    </Tbody>
-  </Table>
-</TableContainer>
-<TableContainer>
-  <Table variant='unstyled' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
+            )}</VStack>
+       <Spacer />     
        <VStack> 
-       <Image
-        boxSize='3rem'
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/9/99/Leatherroll_md.png'
         alt='Leather Roll'
         mr='0px'
-      />
+      /> 
           {leatherrollFlosliResult !== null && (
               <div>
                 <p>{leatherrollFlosliResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+       <Spacer />     
+      <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
         alt='Coins'
         mr='0px'
-      />
+      /> 
           {coinsFlosliResult !== null && (
               <div>
                 <p>{coinsFlosliResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-      </Tr>
-    </Tbody>
-  </Table>
-</TableContainer>
-<br></br>
+      </HStack>
+      <br></br>
+        </Box>
+        </Center>
+
 <Divider />
 <br></br>
 </Container>
@@ -3158,382 +3077,293 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 <Container>
 <Center>        
   <Box>
-        <VStack>
+    <Center>
         <Image
         boxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Fusion_Crossbow.png'
         alt='Fusion Crossbow'
-        mr='0px'
-      /><text>Fusion Crossbow: {fuscroResult}</text>
-        </VStack>
-        </Box>
+        mr='0px'/>
         </Center>
-
-        <TableContainer>
-  <Table variant='unstyled' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+       <Heading size='md'>{fuscroResult} Fusion Crossbow</Heading>
+      <br></br>
+      
+      <HStack>
+      <VStack>
+        <Image
+        boxSize='1.5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
         alt='Fusion Glass'
         mr='0px'
-      />
-          {fgFuscroResult !== null && (
+      /> 
+           {fgFuscroResult !== null && (
               <div>
                 <p>{fgFuscroResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+        <Spacer />
+        <VStack>
+        <Image
+        boxSize='1.5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
         alt='Dust-Repellent Elixir'
         mr='0px'
-      />
-          {dreFuscroResult !== null && (
+      /> 
+           {dreFuscroResult !== null && (
               <div>
                 <p>{dreFuscroResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+        <Spacer />
+        <VStack> 
+        <Image
+        boxSize='1.5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/0/0c/Hardwood_md.png'
         alt='Hardwood'
         mr='0px'
-      />
+      /> 
           {hardwoodFuscroResult !== null && (
               <div>
                 <p>{hardwoodFuscroResult}</p>
               </div>
-            )}
-      </VStack>
-  </Box>
-        </Td>
-      </Tr>     
-    </Tbody>
-  </Table>
-</TableContainer>
-<TableContainer>
-  <Table variant='unstyled' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+            )}</VStack>
+        <VStack> 
+        <Image
+        boxSize='1.5rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/4/47/Reinforced-rope.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/47/Reinforced-rope.png/'
         alt='Reinforced Rope'
         mr='0px'
-      />
+      /> 
           {reinforcedropeFuscroResult !== null && (
               <div>
                 <p>{reinforcedropeFuscroResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
+       <Spacer />     
        <VStack> 
-       <Image
-        boxSize='3rem'
+        <Image
+        boxSize='1.5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
         alt='Steel'
         mr='0px'
-      />
+      /> 
           {steelFuscroResult !== null && (
               <div>
                 <p>{steelFuscroResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+       <Spacer />     
+      <VStack> 
+        <Image
+        boxSize='1.5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
         alt='Coins'
         mr='0px'
-      />
+      /> 
           {coinsFuscroResult !== null && (
               <div>
                 <p>{coinsFuscroResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-      </Tr>
-    </Tbody>
-  </Table>
-</TableContainer>
-<br></br>
+      </HStack>
+      <br></br>
+        </Box>
+        </Center>
+
 <Divider />
 <br></br>
 </Container>
 
+
 <Container>
 <Center>        
   <Box>
-        <VStack>
+    <Center>
         <Image
         boxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/f/fa/FusionCuirass.png'
         alt='Fusion Cuirass'
-        mr='0px'
-      /><text>Fusion Cuirass: {fuscuiResult}</text>
-        </VStack>
-        </Box>
+        mr='0px'/>
         </Center>
-
-        <TableContainer>
-  <Table variant='unstyled' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+       <Heading size='md'>{fuscuiResult} Fusion Cuirass</Heading>
+      <br></br>
+      
+      <HStack>
+        <VStack>
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
         alt='Fusion Glass'
         mr='0px'
-      />
-          {fgFuscuiResult !== null && (
+      /> 
+           {fgFuscuiResult !== null && (
               <div>
                 <p>{fgFuscuiResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+        <Spacer />
+        <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
         alt='Dust-Repellent Elixir'
         mr='0px'
-      />
+      /> 
           {dreFuscuiResult !== null && (
               <div>
                 <p>{dreFuscuiResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+        <Spacer />
+        <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
         alt='Steel'
         mr='0px'
-      />
+      /> 
           {steelFuscuiResult !== null && (
               <div>
                 <p>{steelFuscuiResult}</p>
               </div>
-            )}
-      </VStack>
-  </Box>
-        </Td>
-      </Tr>     
-    </Tbody>
-  </Table>
-</TableContainer>
-<TableContainer>
-  <Table variant='unstyled' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
+            )}</VStack>
+       <Spacer />     
        <VStack> 
-       <Image
-        boxSize='3rem'
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/0/0b/Finefabric_md.png'
         alt='Fine Fabric'
         mr='0px'
-      />
+      /> 
           {finefabricFuscuiResult !== null && (
               <div>
                 <p>{finefabricFuscuiResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+       <Spacer />     
+      <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
         alt='Coins'
         mr='0px'
-      />
+      /> 
           {coinsFuscuiResult !== null && (
               <div>
                 <p>{coinsFuscuiResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-      </Tr>
-    </Tbody>
-  </Table>
-</TableContainer>
-<br></br>
+      </HStack>
+      <br></br>
+        </Box>
+        </Center>
+
 <Divider />
 <br></br>
 </Container>
 
+
 <Container>
 <Center>        
   <Box>
-        <VStack>
+    <Center>
         <Image
         boxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/c/c6/FusionSword.png'
         alt='Fusion Sword'
-        mr='0px'
-      /><text>Fusion Sword: {fusswoResult}</text>
-        </VStack>
-        </Box>
+        mr='0px'/>
         </Center>
-
-        <TableContainer>
-  <Table variant='unstyled' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+       <Heading size='md'>{fusswoResult} Fusion Sword</Heading>
+      <br></br>
+      
+      <HStack>
+        <VStack>
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
         alt='Fusion Glass'
         mr='0px'
-      />
-          {fgFusswoResult !== null && (
+      /> 
+           {fgFusswoResult !== null && (
               <div>
                 <p>{fgFusswoResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+        <Spacer />
+        <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
         alt='Dust-Repellent Elixir'
         mr='0px'
-      />
+      /> 
           {dreFusswoResult !== null && (
               <div>
                 <p>{dreFusswoResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+        <Spacer />
+        <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
         alt='Steel'
         mr='0px'
-      />
+      /> 
           {steelFusswoResult !== null && (
               <div>
                 <p>{steelFusswoResult}</p>
               </div>
-            )}
-      </VStack>
-  </Box>
-        </Td>
-      </Tr>     
-    </Tbody>
-  </Table>
-</TableContainer>
-<TableContainer>
-  <Table variant='unstyled' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
+            )}</VStack>
+       <Spacer />     
        <VStack> 
-       <Image
-        boxSize='3rem'
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/8/87/Gold_md.png/'
         alt='Gold'
         mr='0px'
-      />
+      /> 
           {goldFusswoResult !== null && (
               <div>
                 <p>{goldFusswoResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+       <Spacer />     
+      <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
         alt='Coins'
         mr='0px'
-      />
+      /> 
           {coinsFusswoResult !== null && (
               <div>
                 <p>{coinsFusswoResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-      </Tr>
-    </Tbody>
-  </Table>
-</TableContainer>
-<br></br>
+      </HStack>
+      <br></br>
+        </Box>
+        </Center>
+
 <Divider />
 <br></br>
 </Container>
@@ -3541,104 +3371,78 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 <Container>
 <Center>        
   <Box>
-        <VStack>
+    <Center>
         <Image
         boxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/3/3c/HopesLight.png'
         alt='Hopes Light'
-        mr='0px'
-      /><text>Hope's Light: {hopligResult}</text>
-        </VStack>
-        </Box>
+        mr='0px'/>
         </Center>
-
-        <TableContainer>
-  <Table variant='unstyled' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+       <Heading size='md'>{hopligResult} Hope's Light</Heading>
+      <br></br>
+      
+      <HStack>
+        <VStack>
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
         alt='Fusion Glass'
         mr='0px'
-      />
-          {fgHopligResult !== null && (
+      /> 
+           {fgHopligResult !== null && (
               <div>
                 <p>{fgHopligResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+        <Spacer />
+        <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
         alt='Dust-Repellent Elixir'
         mr='0px'
-      />
+      /> 
           {dreHopligResult !== null && (
               <div>
                 <p>{dreHopligResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+        <Spacer />
+        <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
         alt='Steel'
         mr='0px'
-      />
+      /> 
           {steelHopligResult !== null && (
               <div>
                 <p>{steelHopligResult}</p>
               </div>
-            )}
-      </VStack>
-  </Box>
-        </Td>
-      </Tr>     
-    </Tbody>
-  </Table>
-</TableContainer>
-<TableContainer>
-  <Table variant='unstyled' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+            )}</VStack>
+       <Spacer />     
+      <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
         alt='Coins'
         mr='0px'
-      />
+      /> 
           {coinsHopligResult !== null && (
               <div>
                 <p>{coinsHopligResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-      </Tr>
-    </Tbody>
-  </Table>
-</TableContainer>
-<br></br>
+      </HStack>
+      <br></br>
+        </Box>
+        </Center>
+
 <Divider />
 <br></br>
 </Container>
@@ -3646,331 +3450,252 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 <Container>
 <Center>        
   <Box>
-        <VStack>
+    <Center>
         <Image
         boxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/d/db/LeatherCuriass.png'
         alt='Leather Cuirass'
-        mr='0px'
-      /><text>Leather Cuirass: {leacuiResult}</text>
-        </VStack>
-        </Box>
+        mr='0px'/>
         </Center>
-
-        <TableContainer>
-  <Table variant='unstyled' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+       <Heading size='md'>{leacuiResult} Leather Cuirass</Heading>
+      <br></br>
+      
+      <HStack>
+        <VStack>
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
         alt='Dust-Repellent Elixir'
         mr='0px'
-      />
-          {dreLeacuiResult !== null && (
+      /> 
+           {dreLeacuiResult !== null && (
               <div>
                 <p>{dreLeacuiResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+        <Spacer />
+        <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/9/99/Leatherroll_md.png'
         alt='Leather Roll'
         mr='0px'
-      />
+      /> 
           {leatherrollLeacuiResult !== null && (
               <div>
                 <p>{leatherrollLeacuiResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+        <Spacer />
+        <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
         alt='Steel'
         mr='0px'
-      />
+      /> 
           {steelLeacuiResult !== null && (
               <div>
                 <p>{steelLeacuiResult}</p>
               </div>
-            )}
-      </VStack>
-  </Box>
-        </Td>
-      </Tr>     
-    </Tbody>
-  </Table>
-</TableContainer>
-<TableContainer>
-  <Table variant='unstyled' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+            )}</VStack>
+         <Spacer />     
+      <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/0/0b/Finefabric_md.png'
         alt='Fine Fabric'
         mr='0px'
-      />
+      /> 
           {finefabricLeacuiResult !== null && (
               <div>
                 <p>{finefabricLeacuiResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+       <Spacer />     
+      <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
         alt='Coins'
         mr='0px'
-      />
+      /> 
           {coinsLeacuiResult !== null && (
               <div>
                 <p>{coinsLeacuiResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-      </Tr>
-    </Tbody>
-  </Table>
-</TableContainer>
-<br></br>
+      </HStack>
+      <br></br>
+        </Box>
+        </Center>
+
 <Divider />
 <br></br>
 </Container>
 
+
 <Container>
 <Center>        
   <Box>
-        <VStack>
+    <Center>
         <Image
         boxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/f/f6/LeatherTurnshoe.png'
         alt='Leather Turnshoe'
-        mr='0px'
-      /><text>Leather Turnshoe: {leaturResult}</text>
-        </VStack>
-        </Box>
+        mr='0px'/>
         </Center>
-
-        <TableContainer>
-  <Table variant='unstyled' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+       <Heading size='md'>{leaturResult} Leather Turnshoe</Heading>
+      <br></br>
+      
+      <HStack>
+        <VStack>
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
         alt='Dust-Repellent Elixir'
         mr='0px'
-      />
-         {dreLeaturResult !== null && (
+      /> 
+           {dreLeaturResult !== null && (
               <div>
                 <p>{dreLeaturResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+        <Spacer />
+        <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/9/99/Leatherroll_md.png'
         alt='Leather Roll'
         mr='0px'
-      />
-         {leatherrollLeaturResult !== null && (
+      /> 
+          {leatherrollLeaturResult !== null && (
               <div>
                 <p>{leatherrollLeaturResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+        <Spacer />   
+      <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/0/0b/Finefabric_md.png'
         alt='Fine Fabric'
         mr='0px'
-      />
+      /> 
           {finefabricLeaturResult !== null && (
               <div>
                 <p>{finefabricLeaturResult}</p>
               </div>
-            )}
-      </VStack>
-  </Box>
-        </Td>
-      </Tr>     
-    </Tbody>
-  </Table>
-</TableContainer>
-<TableContainer>
-  <Table variant='unstyled' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+            )}</VStack>
+       <Spacer />     
+      <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
         alt='Coins'
         mr='0px'
-      />
+      /> 
           {coinsLeaturResult !== null && (
               <div>
                 <p>{coinsLeaturResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-      </Tr>
-    </Tbody>
-  </Table>
-</TableContainer>
-<br></br>
+      </HStack>
+      <br></br>
+        </Box>
+        </Center>
+
 <Divider />
 <br></br>
 </Container>
 
+
 <Container>
 <Center>        
   <Box>
-        <VStack>
+    <Center>
         <Image
         boxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/a/a7/LightsBloom.png'
         alt='Lights Bloom'
-        mr='0px'
-      /><text>Light's Bloom: {ligbloResult}</text>
-        </VStack>
-        </Box>
+        mr='0px'/>
         </Center>
-
-        <TableContainer>
-  <Table variant='unstyled' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+       <Heading size='md'>{ligbloResult} Light's Bloom</Heading>
+      <br></br>
+      
+      <HStack>
+        <VStack>
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
         alt='Fusion Glass'
         mr='0px'
-      />
-          {fgLigbloResult !== null && (
+      /> 
+           {fgLigbloResult !== null && (
               <div>
                 <p>{fgLigbloResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+        <Spacer />
+        <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
         alt='Dust-Repellent Elixir'
         mr='0px'
-      />
+      /> 
           {dreLigbloResult !== null && (
               <div>
                 <p>{dreLigbloResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+        <Spacer />
+        <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/8/87/Gold_md.png/'
         alt='Gold'
         mr='0px'
-      />
+      /> 
           {goldLigbloResult !== null && (
               <div>
                 <p>{goldLigbloResult}</p>
               </div>
-            )}
-      </VStack>
-  </Box>
-        </Td>
-      </Tr>     
-    </Tbody>
-  </Table>
-</TableContainer>
-<TableContainer>
-  <Table variant='unstyled' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+            )}</VStack>
+       <Spacer />     
+      <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
         alt='Coins'
         mr='0px'
-      />
+      /> 
           {coinsLigbloResult !== null && (
               <div>
                 <p>{coinsLigbloResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-      </Tr>
-    </Tbody>
-  </Table>
-</TableContainer>
-<br></br>
+      </HStack>
+      <br></br>
+        </Box>
+        </Center>
+
 <Divider />
 <br></br>
 </Container>
@@ -3978,107 +3703,82 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 <Container>
 <Center>        
   <Box>
-        <VStack>
+    <Center>
         <Image
         boxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/f/f0/PoePick.png/'
         alt='Poe Pick'
-        mr='0px'
-      /><text>Poe Pick: {poepicResult}</text>
-        </VStack>
-        </Box>
+        mr='0px'/>
         </Center>
-
-        <TableContainer>
-  <Table variant='unstyled' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+       <Heading size='md'>{poepicResult} Poe Pick</Heading>
+      <br></br>
+      
+      <HStack>
+        <VStack>
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
         alt='Dust-Repellent Elixir'
         mr='0px'
-      />
-          {drePoepicResult !== null && (
+      /> 
+           {drePoepicResult !== null && (
               <div>
                 <p>{drePoepicResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+        <Spacer />
+        <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/0/0c/Hardwood_md.png'
         alt='Hardwood'
         mr='0px'
-      />
+      /> 
           {hardwoodPoepicResult !== null && (
               <div>
                 <p>{hardwoodPoepicResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+        <Spacer />   
+      <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
         alt='Steel'
         mr='0px'
-      />
+      /> 
           {steelPoepicResult !== null && (
               <div>
                 <p>{steelPoepicResult}</p>
               </div>
-            )}
-      </VStack>
-  </Box>
-        </Td>
-      </Tr>     
-    </Tbody>
-  </Table>
-</TableContainer>
-<TableContainer>
-  <Table variant='unstyled' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-       <Image
-        boxSize='3rem'
+            )}</VStack>
+       <Spacer />     
+      <VStack> 
+        <Image
+        boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
         alt='Coins'
         mr='0px'
-      />
+      /> 
           {coinsPoepicResult !== null && (
               <div>
                 <p>{coinsPoepicResult}</p>
               </div>
             )}</VStack>
-  </Box>
-        </Td>
-      </Tr>
-    </Tbody>
-  </Table>
-</TableContainer>
-<br></br>
+      </HStack>
+      <br></br>
+        </Box>
+        </Center>
+
 <Divider />
 <br></br>
 </Container>
+
 </AccordionPanel>
   </AccordionItem>
 </Accordion></Center>
