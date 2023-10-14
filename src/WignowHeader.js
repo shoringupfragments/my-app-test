@@ -31,23 +31,23 @@ function App() {
             <BreadcrumbItem>
     <BreadcrumbLink
         color='teal.500'   
-        _hover={{  color: "white",  }}><Link to="quickwccalc">Quick Calculator</Link></BreadcrumbLink>
+        _hover={{  color: "teal.300",  }}><Link to="quickwccalc">Quick Calculator</Link></BreadcrumbLink>
   </BreadcrumbItem>
   <BreadcrumbItem>
     <BreadcrumbLink
             color='teal.500'   
-            _hover={{  color: "white",  }}><Link to="cityoflight">City of Light</Link></BreadcrumbLink>
+            _hover={{  color: "teal.300",  }}><Link to="cityoflight">City of Light</Link></BreadcrumbLink>
   </BreadcrumbItem>
   <BreadcrumbItem>
     <BreadcrumbLink href='#'
         color='teal.500'   
-        _hover={{  color: "white",  }}><Link to="dustedcastle">Dusted Castle</Link></BreadcrumbLink>
+        _hover={{  color: "teal.300",  }}><Link to="dustedcastle">Dusted Castle</Link></BreadcrumbLink>
   </BreadcrumbItem>
 
   <BreadcrumbItem>
     <BreadcrumbLink href='#' 
         color='teal.500'   
-        _hover={{  color: "white",  }}><Link to="nivali">Nivali</Link></BreadcrumbLink>
+        _hover={{  color: "teal.300",  }}><Link to="nivali">Nivali</Link></BreadcrumbLink>
   </BreadcrumbItem>
 </Breadcrumb>
 <Divider></Divider>

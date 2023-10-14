@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState,useEffect } from "react";
+import { useState,useEffect, useColorMode, useColorModeValue, } from "react";
 import {
   Accordion,
   AccordionItem,
@@ -1401,14 +1401,14 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       <HStack justify='center'>
       <VStack>
       <text>Need:</text>
-      <NumberInput min={0} max={9999} size='md' maxW={20}>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
         <NumberInputField id='dreN' onInput={(e) => handleDreNChange(e.target.value)} />
 </NumberInput>
       </VStack>
       <spacer></spacer>
       <VStack>
       <text>Have:</text>
-      <NumberInput min={0} max={9999} size='md' maxW={20}>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
   <NumberInputField id='dreH' onInput={(e) => handleDreHChange(e.target.value)} />
 </NumberInput>
       </VStack>
@@ -1432,14 +1432,14 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       <HStack justify='center'>
       <VStack>
       <text>Need:</text>
-      <NumberInput min={0} max={9999} size='md' maxW={20}>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
         <NumberInputField id='FgN' onInput={(e) => handleFgNChange(e.target.value)} />
 </NumberInput>
       </VStack>
       <spacer></spacer>
       <VStack>
       <text>Have:</text>
-      <NumberInput min={0} max={9999} size='md' maxW={20}>
+      <NumberInput defaultValue={0} min={0} max={9999} size='md' maxW={20}>
 <NumberInputField id='FgH' onInput={(e) => handleFgHChange(e.target.value)} />
 </NumberInput>
       </VStack>
@@ -2119,11 +2119,6 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 <Td><Stat>
   <StatLabel>Total Word Count with Attack</StatLabel>
   <StatNumber>{USformattedNumber}</StatNumber>
-</Stat></Td></Tr>
-<Tr>
-<Td><Stat>
-  <StatLabel>Total Monsters</StatLabel>
-  <StatNumber>000,000</StatNumber>
 </Stat></Td></Tr>
 </Tbody>
 </Table>
