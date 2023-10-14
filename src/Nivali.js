@@ -2718,7 +2718,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
 
 <Container>
 <Center>
-<Accordion allowMultiple w='350px'>
+<Accordion allowMultiple w='300px'>
   <AccordionItem>
   <h2>
       <AccordionButton>
@@ -2729,7 +2729,6 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       </AccordionButton>
     </h2>
     <AccordionPanel pb={4}>
-
 <Container>
 <Center>        
   <Box>
@@ -2741,7 +2740,7 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Aakulta Helmet'
         mr='0px'/>
         </Center>
-      <br></br><Heading size='md'>{aakhelResult} Aakulta Helmet</Heading>
+       <Heading size='md'>{aakhelResult} Aakulta Helmet</Heading>
       <br></br>
       
       <HStack>
