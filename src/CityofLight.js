@@ -8,6 +8,9 @@ import {
   AccordionIcon,
   ChakraProvider,
   Box,
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
   Button,
   Center,
   Heading,
@@ -60,6 +63,7 @@ function App() {
   const [MushNoanzaIsShown, setMushNoanzaIsShown] = useState(false);
   const [MushAakultaIsShown, setMushAakultaIsShown] = useState(false);
   const [MushFgCraftingIsShown, setMushFgCraftingIsShown] = useState(false);
+  const [NoanzaKirerfButton, setNoanzaKirerfButton] = useState(false);
 
   const handleNoanzaClick = event => {
     // 👇️ toggle shown state
@@ -133,7 +137,7 @@ function App() {
     setGlivaIsShown(current => !GlivaIsShown);
     setGlivaQtyIsShown(current => !GlivaQtyIsShown);
     setKirerfIsShown(current => null);
-    setKirerfQtyIsShown(current => 0);
+    setKirerfQtyIsShown(current => null);
     setGlivaActive(!glivaActive);
     setKirerfActive(current => null);
 
@@ -145,11 +149,126 @@ function App() {
     setKirerfIsShown(current => !KirerfIsShown);
     setKirerfQtyIsShown(current => !KirerfQtyIsShown);
     setGlivaIsShown(current => null);
-    setGlivaQtyIsShown(current => 0);
+    setGlivaQtyIsShown(current => null);
     setKirerfActive(!kirerfActive);
     setGlivaActive(current => null);
 
   };
+
+
+//NOANZA + MUSHROOM//
+
+const [noanzaGlivaActive, setNoanzaGlivaActive] = useState(false);
+const [noanzaKirerfActive, setNoanzaKirerfActive] = useState(false); 
+
+const [NoanzaGlivaIsShown, setNoanzaGlivaIsShown] = useState(false);
+const [NoanzaGlivaQtyIsShown, setNoanzaGlivaQtyIsShown] = useState(false);
+const [SummaryNoanzaGlivaIsShown, setSummaryNoanzaGlivaIsShown] = useState(false);
+const [NoanzaKirerfIsShown, setNoanzaKirerfIsShown] = useState(false);
+const [NoanzaKirerfQtyIsShown, setNoanzaKirerfQtyIsShown] = useState(false);
+const [SummaryNoanzaKirerfIsShown, setSummaryNoanzaKirerfIsShown] = useState(false);
+
+
+const handleNoanzaGlivaClick = event => {
+// 👇️ toggle shown state
+setNoanzaGlivaIsShown(current => !NoanzaGlivaIsShown);
+setNoanzaGlivaQtyIsShown(current => !NoanzaGlivaQtyIsShown);
+setNoanzaKirerfIsShown(current => null);
+setNoanzaKirerfQtyIsShown(current => null);
+setNoanzaGlivaActive(!noanzaGlivaActive);
+setNoanzaKirerfActive(current => null);
+
+
+};
+
+const handleNoanzaKirerfClick = event => {
+// 👇️ toggle shown state
+setNoanzaKirerfIsShown(current => !NoanzaKirerfIsShown);
+setNoanzaKirerfQtyIsShown(current => !NoanzaKirerfQtyIsShown);
+setNoanzaGlivaIsShown(current => null);
+setNoanzaGlivaQtyIsShown(current => null);
+setNoanzaKirerfActive(!noanzaKirerfActive);
+setNoanzaGlivaActive(current => null);
+
+};
+
+//AAKULTA + MUSHROOM//
+const [aakultaGlivaActive, setAakultaGlivaActive] = useState(false);
+const [aakultaKirerfActive, setAakultaKirerfActive] = useState(false);
+
+const [AakultaGlivaIsShown, setAakultaGlivaIsShown] = useState(false);
+const [AakultaGlivaQtyIsShown, setAakultaGlivaQtyIsShown] = useState(false);
+const [SummaryAakultaGlivaIsShown, setSummaryAakultaGlivaIsShown] = useState(false);
+const [AakultaKirerfIsShown, setAakultaKirerfIsShown] = useState(false);
+const [AakultaKirerfQtyIsShown, setAakultaKirerfQtyIsShown] = useState(false);
+const [SummaryAakultaKirerfIsShown, setSummaryAakultaKirerfIsShown] = useState(false);
+
+
+const handleAakultaGlivaClick = event => {
+// 👇️ toggle shown state
+setAakultaGlivaIsShown(current => !AakultaGlivaIsShown);
+setAakultaGlivaQtyIsShown(current => !AakultaGlivaQtyIsShown);
+setAakultaKirerfIsShown(current => null);
+setAakultaKirerfQtyIsShown(current => null);
+setAakultaGlivaActive(!aakultaGlivaActive);
+setAakultaKirerfActive(current => null);
+
+
+};
+
+const handleAakultaKirerfClick = event => {
+// 👇️ toggle shown state
+setAakultaKirerfIsShown(current => !AakultaKirerfIsShown);
+setAakultaKirerfQtyIsShown(current => !AakultaKirerfQtyIsShown);
+setAakultaGlivaIsShown(current => null);
+setAakultaGlivaQtyIsShown(current => null);
+setAakultaKirerfActive(!aakultaKirerfActive);
+setAakultaGlivaActive(current => null);
+
+};
+
+//CRAFTING + MUSHROOM//
+
+const [craftingGlivaActive, setCraftingGlivaActive] = useState(false);
+const [craftingKirerfActive, setCraftingKirerfActive] = useState(false);
+
+const [CraftingGlivaIsShown, setCraftingGlivaIsShown] = useState(false);
+const [CraftingGlivaQtyIsShown, setCraftingGlivaQtyIsShown] = useState(false);
+const [SummaryCraftingGlivaIsShown, setSummaryCraftingGlivaIsShown] = useState(false);
+const [CraftingKirerfIsShown, setCraftingKirerfIsShown] = useState(false);
+const [CraftingKirerfQtyIsShown, setCraftingKirerfQtyIsShown] = useState(false);
+const [SummaryCraftingKirerfIsShown, setSummaryCraftingKirerfIsShown] = useState(false);
+
+
+const handleCraftingGlivaClick = event => {
+// 👇️ toggle shown state
+setCraftingGlivaIsShown(current => !CraftingGlivaIsShown);
+setCraftingGlivaQtyIsShown(current => !CraftingGlivaQtyIsShown);
+setCraftingKirerfIsShown(current => null);
+setCraftingKirerfQtyIsShown(current => null);
+setCraftingGlivaActive(!craftingGlivaActive);
+setCraftingKirerfActive(current => null);
+
+
+};
+
+const handleCraftingKirerfClick = event => {
+// 👇️ toggle shown state
+setCraftingKirerfIsShown(current => !CraftingKirerfIsShown);
+setCraftingKirerfQtyIsShown(current => !CraftingKirerfQtyIsShown);
+setCraftingGlivaIsShown(current => null);
+setCraftingGlivaQtyIsShown(current => null);
+setCraftingKirerfActive(!craftingKirerfActive);
+setCraftingGlivaActive(current => null);
+
+};
+
+
+
+//DONT DELETE THIS I USE IT//
+
+const [fakeZero, SetFakeZero] = useState(0);
+const totalFakeZero = (0+0)
 
 //CALCULATOR //
   
@@ -982,7 +1101,6 @@ const totalAllDre = Math.round (dreResult + dreAakhelResult + dreClibooResult + 
 const calculateAllFgResult = {fgResult, fgAakhelResult, fgCrehelResult, fgFuscuiResult, fgFuscroResult, fgFusswoResult, fgHopligResult, fgLigbloResult}
 const totalAllFg = Math.round (fgResult + fgAakhelResult + fgCrehelResult + fgFuscuiResult + fgFuscroResult + fgFusswoResult + fgHopligResult + fgLigbloResult)
 
-
 //D-R ELIX FOR FUSION GLASS MATH//
 const [dreFgCrafting, setDreFgCrafting] = useState(0); // Or any other non-zero value
 const calculateDreFgCraftingResult = {totalAllDre, totalAllFg}
@@ -995,7 +1113,7 @@ const totalLdLooting = Math.max ((ldResult + (totalAllDre*10)),0)
 
 //LD FOR Crafting//
 const [ldCrafting, setLdCrafting] = useState(0); // Or any other non-zero value
-const calculateLdCrafting = {ldResult, totalAllDre, totalAllFg}
+const calculateLdCrafting = {ldResult, totalDreFgCrafting, totalAllFg}
 const totalLdCrafting = Math.max ((ldResult + (totalDreFgCrafting*10) + (totalAllFg*4)),0)
 
 //RD FOR LOOTING//
@@ -1005,7 +1123,7 @@ const totalRdLooting = Math.max ((rdResult + (totalAllDre*8)),0)
 
 //RD FOR Crafting//
 const [rdCrafting, setRdCrafting] = useState(0); // Or any other non-zero value
-const calculateRdCrafting = {rdResult, totalAllDre, totalAllFg}
+const calculateRdCrafting = {rdResult, totalDreFgCrafting}
 const totalRdCrafting = Math.max ((rdResult + (totalDreFgCrafting*8)),0)
 
 //DU FOR LOOTING//
@@ -1015,7 +1133,7 @@ const totalDuLooting = Math.max ((dustResult + (totalAllDre*20)),0)
 
 //DU FOR Crafting//
 const [duCrafting, setDuCrafting] = useState(0); // Or any other non-zero value
-const calculateDuCrafting = {dustResult, totalAllDre, totalAllFg}
+const calculateDuCrafting = {dustResult, totalDreFgCrafting}
 const totalDuCrafting = Math.max ((dustResult + (totalDreFgCrafting*20)),0)
 
 //ESS FOR LOOTING//
@@ -1025,7 +1143,7 @@ const totalEssLooting = Math.max ((essResult + (totalAllDre*5)),0)
 
 //ESS FOR Crafting//
 const [essCrafting, setEssCrafting] = useState(0); // Or any other non-zero value
-const calculateEssCrafting = {essResult, totalAllDre, totalAllFg}
+const calculateEssCrafting = {essResult, totalDreFgCrafting}
 const totalEssCrafting = Math.max ((essResult + (totalDreFgCrafting*5)),0)
 
 //DFL FOR LOOTING//
@@ -1035,7 +1153,7 @@ const totalDflLooting = Math.max ((dflResult + (totalAllDre*2)),0)
 
 //DFL FOR Crafting//
 const [dflCrafting, setDflCrafting] = useState(0); // Or any other non-zero value
-const calculateDflCrafting = {dflResult, totalAllDre, totalAllFg}
+const calculateDflCrafting = {dflResult, totalDreFgCrafting}
 const totalDflCrafting = Math.max ((dflResult + (totalDreFgCrafting*2)),0)
 
 //BONES FOR LOOTING//
@@ -1045,9 +1163,18 @@ const totalBonesLooting = Math.max ((bonesResult + (totalAllDre*3)),0)
 
 //BONES FOR Crafting//
 const [bonesCrafting, setBonesCrafting] = useState(0); // Or any other non-zero value
-const calculateBonesCrafting = {bonesResult, totalAllDre, totalAllFg}
+const calculateBonesCrafting = {bonesResult, totalDreFgCrafting}
 const totalBonesCrafting = Math.max ((bonesResult + (totalDreFgCrafting*3)),0)
 
+//PCS FOR Looting//
+const [pcsLooting, setPcsLooting] = useState(0); // Or any other non-zero value
+const calculatePcsLooting = {pCSResult, totalAllFg}
+const totalPcsLooting = Math.max ((pCSResult),0)
+
+//PCS FOR Crafting//
+const [pcsCrafting, setPcsCrafting] = useState(0); // Or any other non-zero value
+const calculatePcsCrafting = {pCSResult, totalAllFg}
+const totalPcsCrafting = Math.max ((pCSResult + (totalAllFg*2)),0)
 
 //MUSH FOR LOOTING//
 const [mushLooting, setMushLooting] = useState(0); // Or any other non-zero value
@@ -1089,7 +1216,7 @@ const totalArluziWCCraft = Math.round ((totalArluziQtyCraft*50) / ((attackStat/1
 //Ascre QTY + WC//
 const [ascreQtyLoot, setAscreQtyLoot] = useState(0);
 const calculateAscreQtyLoot = {totalRdLooting}
-const totalAscreQtyLoot = Math.max ((totalRdLooting/.5), 0)
+const totalAscreQtyLoot = Math.ceil ((totalRdLooting/.5), 0)
 
 const [ascreWCLoot, setAscreWCLoot] = useState (0);
 const calculateAscreWCLoot = {totalAscreQtyLoot, attackStat}
@@ -1097,24 +1224,34 @@ const totalAscreWCLoot = Math.round ((totalAscreQtyLoot*150) / ((attackStat/100)
 
 const [ascreQtyCraft, setAscreQtyCraft] = useState(0);
 const calculateAscreQtyCraft = {totalRdCrafting}
-const totalAscreQtyCraft = Math.max ((totalRdCrafting/.5), 0)
+const totalAscreQtyCraft = Math.ceil ((totalRdCrafting/.5), 0)
 
 const [ascreWCCraft, setAscreWCCraft] = useState (0);
 const calculateAscreWCCraft = {totalAscreQtyCraft, attackStat}
 const totalAscreWCCraft = Math.round ((totalAscreQtyCraft*150) / ((attackStat/100) + 1));
 
+
+//ADJUST FOR ASCRE'S DFL DROP//
+const [checkDflLooting, setCheckDflLooting] = useState (0);
+const calculateCheckflLooting = {totalDflLooting, totalAscreQtyLoot}
+const totalCheckDflLooting = Math.max ((totalDflLooting - totalAscreQtyLoot),0);
+
+const [checkDflCrafting, setCheckDflCrafting] = useState (0);
+const calculateCheckDflCrafting = {totalDflCrafting, totalAscreQtyCraft}
+const totalCheckDflCrafting = Math.max ((totalDflCrafting - totalAscreQtyCraft),0);
+
 //DustWignow QTY + WC//
 const [dustWignowQtyLoot, setDustWignowQtyLoot] = useState(0);
-const calculateDustWignowQtyLoot = {totalDflLooting}
-const totalDustWignowQtyLoot = Math.round (totalDflLooting/3.5)
+const calculateDustWignowQtyLoot = {totalCheckDflLooting}
+const totalDustWignowQtyLoot = Math.ceil (totalCheckDflLooting/3.5)
 
 const [dustWignowWCLoot, setDustWignowWCLoot] = useState (0);
 const calculateDustWignowWCLoot = {totalDustWignowQtyLoot, attackStat}
 const totalDustWignowWCLoot = Math.round ((totalDustWignowQtyLoot*150) / ((attackStat/100) + 1));
 
 const [dustWignowQtyCraft, setDustWignowQtyCraft] = useState(0);
-const calculateDustWignowQtyCraft = {totalDflCrafting}
-const totalDustWignowQtyCraft = Math.round (totalDflCrafting/3.5)
+const calculateDustWignowQtyCraft = {totalCheckDflCrafting}
+const totalDustWignowQtyCraft = Math.ceil (totalCheckDflCrafting/3.5)
 
 const [dustWignowWCCraft, setDustWignowWCCraft] = useState (0);
 const calculateDustWignowWCCraft = {totalDustWignowQtyCraft, attackStat}
@@ -1135,13 +1272,9 @@ const [xaeyQtyLoot, setXaeyQtyLoot] = useState(0);
 const calculateXaeyQtyLoot = {totalBonesLooting}
 const totalXaeyQtyLoot = Math.max ((totalBonesLooting/1), 0)
 
-const [xaeyQtyLootActual, setXaeyQtyLootActual] = useState(0);
-const calculateXaeyQtyLootActual = {totalXaeyQtyLoot}
-const totalXaeyQtyLootActual = Math.max (totalXaeyQtyLoot, 0)
-
 const [xaeyWCLoot, setXaeyWCLoot] = useState (0);
-const calculateXaeyWCLoot = {xaeyQtyLootActual, attackStat}
-const totalXaeyWCLoot = Math.round (((xaeyQtyLootActual)*120) / ((attackStat/100) + 1));
+const calculateXaeyWCLoot = {totalXaeyQtyLoot, attackStat}
+const totalXaeyWCLoot = Math.round (((totalXaeyQtyLoot)*120) / ((attackStat/100) + 1));
 
 const [xaeyQtyCraft, setXaeyQtyCraft] = useState(0);
 const calculateXaeyQtyCraft = {totalBonesCrafting}
@@ -1151,29 +1284,65 @@ const [xaeyWCCraft, setXaeyWCCraft] = useState (0);
 const calculateXaeyWCCraft = {totalXaeyQtyCraft, attackStat}
 const totalXaeyWCCraft = Math.round ((totalXaeyQtyCraft*120) / ((attackStat/100) + 1));
 
+//PCS overlap calc//
 
+const [overlapPcsLoot, setOverlapPcsLoot] = useState (0);
+const calculateOverlapPcsLoot = {totalXaeyQtyLoot}
+const totalOverlapPcsLoot = Math.floor (.5 * totalXaeyQtyLoot)
+
+const [overlapPcsCraft, setOverlapPcsCraft] = useState (0);
+const calculateOverlapPcsCraft = {totalXaeyQtyCraft}
+const totalOverlapPcsCraft = Math.floor (.5 * totalXaeyQtyCraft)
+
+const [pcsNeededLoot, setPcsNeededLoot] = useState(0);
+const calculatePcsNeededLoot = {totalPcsLooting, totalOverlapPcsLoot}
+const totalPcsNeededLoot = Math.round ((totalPcsLooting - totalOverlapPcsLoot),0)
+
+const [pcsNeededCraft, setPcsNeededCraft] = useState(0);
+const calculatePcsNeededCraft = {totalPcsCrafting, totalOverlapPcsCraft}
+const totalPcsNeededCraft = Math.round ((totalPcsCrafting - totalOverlapPcsCraft),0)
 
 //GLIVA MUSH CALC//
 
-const [glivaQty, setGlivaQty] = useState(0);
-const calculateGlivaQty = {mushResult, totalAllFg, totalAllDre}
-const totalGlivaQty = Math.max ((mushResult + totalAllFg + totalAllDre), 0)
+const [glivaQtyLoot, setGlivaQtyLoot] = useState(0);
+const calculateGlivaQtyLoot = {mushResult, totalAllDre}
+const totalGlivaQtyLoot = Math.max ((mushResult + totalAllDre), 0)
 
-const [glivaWC, setGlivaWC] = useState (0);
-const calculateGlivaWC = {totalGlivaQty, attackStat}
-const totalGlivaWC = Math.round ((totalGlivaQty*300) / ((attackStat/100) + 1));
+const [glivaWCLoot, setGlivaWCLoot] = useState (0);
+const calculateGlivaWCLoot = {totalGlivaQtyLoot, attackStat}
+const totalGlivaWCLoot = Math.round ((totalGlivaQtyLoot*300) / ((attackStat/100) + 1));
+
+const [glivaQtyCrafting, setGlivaQtyCrafting] = useState(0);
+const calculateGlivaQtyCrafting = {mushResult, totalAllDre, totalAllFg}
+const totalGlivaQtyCrafting = Math.max ((mushResult + totalAllFg + totalAllDre), 0)
+
+const [glivaWCCrafting, setGlivaWCCrafting] = useState (0);
+const calculateGlivaWCCrafting = {totalGlivaQtyCrafting, attackStat}
+const totalGlivaWCCrafting = Math.round ((totalGlivaQtyCrafting*300) / ((attackStat/100) + 1));
+
+
 
 
 //KIRERF MUSH CALC//
 
 
-const [kirerfQty, setKirerfQty] = useState(0);
-const calculateKirerfQty = {mushResult, totalAllFg, totalAllDre}
-const totalKirerfQty = Math.max ((mushResult + totalAllFg + totalAllDre), 0)
+const [kirerfQtyLoot, setKirerfQtyLoot] = useState(0);
+const calculateKirerfQtyLoot = {mushResult, totalAllDre}
+const totalKirerfQtyLoot = Math.max ((mushResult + totalAllDre), 0)
 
-const [kirerfWC, setKirerfWC] = useState (0);
-const calculateKirerfWC = {totalKirerfQty, attackStat}
-const totalKirerfWC = Math.round ((totalKirerfQty*66) / ((attackStat/100) + 1));
+const [kirerfWCLoot, setKirerfWCLoot] = useState (0);
+const calculateKirerfWCLoot = {totalKirerfQtyLoot, attackStat}
+const totalKirerfWCLoot = Math.round ((totalKirerfQtyLoot*66) / ((attackStat/100) + 1));
+
+const [kirerfQtyCrafting, setKirerfQtyCrafting] = useState(0);
+const calculateKirerfQtyCrafting = {mushResult, totalAllDre, totalAllFg}
+const totalKirerfQtyCrafting = Math.max ((mushResult + totalAllFg + totalAllDre), 0)
+
+const [kirerfWCCrafting, setKirerfWCCrafting] = useState (0);
+const calculateKirerfWCCrafting = {totalKirerfQtyCrafting, attackStat}
+const totalKirerfWCCrafting = Math.round ((totalKirerfQtyCrafting*66) / ((attackStat/100) + 1));
+
+
 
 
 //DFL AND RD OVERLAP (REDUCES DFL)//
@@ -1187,56 +1356,64 @@ const totalKirerfWC = Math.round ((totalKirerfQty*66) / ((attackStat/100) + 1));
 //must be here so I can use it in the PCS calculations//
 
 const [bonesOverlapLoot, setBonesOverlapLoot] = useState(0);
-const calculateBonesOverlapLoot = {totalDflLooting,totalBonesLooting}
-const totalBonesOverlapLoot = (totalBonesLooting-totalDflLooting)
+const calculateBonesOverlapLoot = {totalDustWignowQtyLoot,totalBonesLooting}
+const totalBonesOverlapLoot = Math.max ((totalBonesLooting-totalDustWignowQtyLoot),0)
+
+const [bonesOverlapCraft, setBonesOverlapCraft] = useState(0);
+const calculateBonesOverlapCraft = {totalDustWignowQtyCraft,totalBonesLooting}
+const totalBonesOverlapCraft = Math.max ((totalBonesCrafting-totalDustWignowQtyCraft),0)
+
+//essence overlap//
+
+const [essOverlapLoot, setEssOverlapLoot] = useState(0);
+const calculateEssOverlapLoot = {totalDustWignowQtyLoot,totalEssLooting}
+const totalEssOverlapLoot = Math.max ((totalEssLooting-totalDustWignowQtyLoot),0)
+
+const [essOverlapCraft, setEssOverlapCraft] = useState(0);
+const calculateEssOverlapCraft = {totalDustWignowQtyCraft,totalEssLooting}
+const totalEssOverlapCraft = Math.max ((totalEssCrafting-totalDustWignowQtyCraft),0)
+
+//XAEY ADJUSTED//
+
 
 
 //PCS CALC//
-const [grossXaey, SetGrossXaey] = useState(0);
-const calculateGrossXaey={bonesResult, totalXaeyQtyCraft}
-const totalGrossXaey = Math.round (bonesResult + totalXaeyQtyCraft)
 
-const [xaeyPCS, SetXaeyPCS] = useState(0);
-const calculateXaeyPCS = {totalGrossXaey}
-const totalXaeyPCS = Math.round (totalGrossXaey*.5)
-
-const [allPCS, setAllPCS] = useState(0);
-const calculateAllPCS = {pCSResult, totalAllFg, totalXaeyPCS}
-const totalAllPCS = Math.max (((pCSResult + totalAllFg) - totalXaeyPCS),0) //repair this //
-
-const [grossPCS, setGrossPCS] = useState(0);
-const calculateGrossPCS = {totalAllFg, pCSResult}
-const totalGrossPCS = Math.max ((totalAllFg+pCSResult))
 
 //ARDID CALC//
-const [ardidQty, SetArdidQty] = useState (0);
-const calculateArdidQty = {totalAllPCS}
-const totalArdidQty = Math.max ((totalAllPCS*2),0)
+const [ardidQtyLoot, SetArdidQtyLoot] = useState (0);
+const calculateArdidQtyLoot = {totalPcsNeededLoot}
+const totalArdidQtyLoot = Math.max ((totalPcsNeededLoot*2),0)
 
-const [ardidWC, setArdidWC] = useState (0);
-const calculateArdidWC = {totalArdidQty, attackStat}
-const totalArdidWC = Math.round ((totalArdidQty*90) / ((attackStat/100) + 1));
+const [ardidWCLoot, setArdidWCLoot] = useState (0);
+const calculateArdidWCLoot = {totalArdidQtyLoot, attackStat}
+const totalArdidWCLoot = Math.round ((totalArdidQtyLoot*90) / ((attackStat/100) + 1));
+
+const [ardidQtyCraft, SetArdidQtyCraft] = useState (0);
+const calculateArdidQtyCraft = {totalPcsNeededCraft}
+const totalArdidQtyCraft = Math.max ((totalPcsNeededCraft*2),0)
+
+const [ardidWCCraft, setArdidWCCraft] = useState (0);
+const calculateArdidWCCraft = {totalArdidQtyCraft, attackStat}
+const totalArdidWCCraft = Math.round ((totalArdidQtyCraft*90) / ((attackStat/100) + 1));
 
 //DUST overlap CALC//
-const [dustGrossTotal, setDustGrossTotal] = useState (0);
-const calculateDustGrossTotal = {totalDuCrafting,totalDuLooting}
-const totalDustGrossTotal = Math.max ((totalDuCrafting + totalDuLooting), 0)
+const [dustArdidTotalLoot, setDustArdidTotalLoot] = useState (0);
+const calculateDustArdidTotalLoot = {totalArdidQtyLoot}
+const totalDustArdidTotalLoot = Math.round (totalArdidQtyLoot*1.5)
 
-const [dustArdidTotal, setDustArdidTotal] = useState (0);
-const calculateDustArdidTotal = {totalArdidQty}
-const totalDustArdidTotal = Math.round (totalArdidQty*1.5)
+const [dustArdidTotalCraft, setDustArdidTotalCraft] = useState (0);
+const calculateDustArdidTotalCraft = {totalArdidQtyCraft}
+const totalDustArdidTotalCraft = Math.round (totalArdidQtyCraft*1.5)
 
-const [dustAllOtherMonsters, SetDustAllOtherMonsters] = useState (0);
-const calculateDustAllOtherMonstersTotal = {totalDustArdidTotal, totalKirerfQty}
-const totalDustAllOtherMonsters = Math.max ((totalDustArdidTotal + totalKirerfQty),0)
+const [dustAllOtherMonstersLoot, SetDustAllOtherMonstersLoot] = useState (0);
+const calculateDustAllOtherMonstersTotalLoot = {totalDustArdidTotalLoot, totalKirerfQtyLoot}
+const totalDustAllOtherMonstersLoot = Math.max ((totalDustArdidTotalLoot + totalKirerfQtyLoot),0)
 
-const [dustQty, setDustQty] = useState (0);
-const calculateDustQty = {totalDustArdidTotal, totalDustGrossTotal}
-const totalDustQty = Math.max ((totalDustGrossTotal-totalDustAllOtherMonsters),0)
+const [dustAllOtherMonstersCraft, SetDustAllOtherMonstersCraft] = useState (0);
+const calculateDustAllOtherMonstersTotalCraft = {totalDustArdidTotalCraft, totalKirerfQtyLoot}
+const totalDustAllOtherMonstersCraft = Math.max ((totalDustArdidTotalCraft + totalKirerfQtyLoot),0)
 
-const [dustCost, SetDustCost] = useState (0);
-const calculateDustCost = {totalDustQty}
-const totalDustCost = Math.max ((totalDustQty*8),0)
 
 //LD overlap CALC//
 
@@ -1273,21 +1450,45 @@ const [adjustedLdNoanzaLootWC, SetAdjustedNoanzaLdLootWC] = useState (0);
 const calculateAdjustedLdNoanzaLootWC = {totalLdLootingNoanza, attackStat}
 const totalAdjustedLdNoanzaLootWC = Math.round ((totalLdLootingNoanza*50) / ((attackStat/100) + 1))
 
+//CALC NOANZA + KIRERF //
 
-//Total WC Monsters Calc//
+//CALC NOANZA + GLIVA //
 
-const calculateFinalWCResult = {totalXaeyWCLoot, totalXaeyWCCraft, totalDustWignowWCLoot, totalDustWignowWCCraft, totalAscreWCLoot, totalAscreWCCraft, totalArluziWCLoot,totalArluziWCCraft, totalKirerfWC, totalGlivaWC, totalAakultaWC, totalNoanzaWC}
-const totalFinalWCResult = (totalXaeyWCLoot + totalXaeyWCCraft + totalDustWignowWCLoot + totalDustWignowWCCraft + totalAscreWCLoot + totalAscreWCCraft + totalArluziWCLoot,totalArluziWCCraft + totalKirerfWC + totalGlivaWC + totalAakultaWC + totalNoanzaWC
-  )
+//wild idea time //
 
-//reverse the attack eq lmfao//
+const [groupWC, setGroupWC] = useState(0);
+const calculateGroupWC = {totalAakultaWC, totalArdidWCLoot, totalAscreWCLoot, totalDustWignowWCLoot, totalXaeyWCLoot}
+const totalGroupWC = (totalAakultaWC + totalArdidWCLoot + totalAscreWCLoot + totalDustWignowWCLoot + totalXaeyWCLoot)
 
-const calculateFinalWCNoAtk = {totalFinalWCResult, attackStat}
-const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*totalFinalWCResult)))
+const [ldNoanWC, setLdNoanWC] = useState(0);
+const calculateLdNoanWC = {totalNoanzaWC, totalAdjustedLdNoanzaLootWC}
+const totalLdNoanWC = (totalNoanzaWC + totalAdjustedLdNoanzaLootWC)
+
+const [ldAakWC, setLdAakWC] = useState(0);
+const calculateLdAakWC = {totalAakultaWC, totalAdjustedLdAakultaLootWC}
+const totalLdAakWC = (totalAakultaWC + totalAdjustedLdAakultaLootWC)
+
+
+//Total WC Noanza + Gliva//
+
+const calculateNoanzaGlivaWCResult = {totalXaeyWCLoot, totalDustWignowWCLoot, totalAscreWCLoot,  totalAdjustedLdNoanzaLootWC, totalNoanzaWC, totalNoanzaWC, totalGlivaWCLoot}
+const totalNoanzaGlivaWCResult = (totalXaeyWCLoot + totalDustWignowWCLoot + totalAscreWCLoot +  totalAdjustedLdNoanzaLootWC + totalNoanzaWC + totalNoanzaWC + totalGlivaWCLoot)
+
+const calculateNoanzaKirerfWCResult = {totalXaeyWCLoot, totalDustWignowWCLoot, totalAscreWCLoot,  totalAdjustedLdNoanzaLootWC, totalNoanzaWC, totalNoanzaWC, totalKirerfWCLoot}
+const totalNoanzaKirerfWCResult = (totalXaeyWCLoot + totalDustWignowWCLoot + totalAscreWCLoot +  totalAdjustedLdNoanzaLootWC + totalNoanzaWC + totalNoanzaWC + totalKirerfWCLoot)
+
+const calculateAakultaGlivafWCResult = {totalXaeyWCLoot, totalDustWignowWCLoot, totalAscreWCLoot,  totalAdjustedLdAakultaLootWC, totalNoanzaWC, totalNoanzaWC, totalGlivaWCLoot}
+const totalAakultaGlivaWCResult = (totalXaeyWCLoot + totalDustWignowWCLoot + totalAscreWCLoot +  totalAdjustedLdAakultaLootWC + totalNoanzaWC + totalNoanzaWC + totalGlivaWCLoot)
+
+const calculateAakultaKirerfWCResult = {totalXaeyWCLoot, totalDustWignowWCLoot, totalAscreWCLoot,  totalAdjustedLdAakultaLootWC, totalNoanzaWC, totalNoanzaWC, totalKirerfWCLoot}
+const totalAakultaKirerfWCResult = (totalXaeyWCLoot + totalDustWignowWCLoot + totalAscreWCLoot +  totalAdjustedLdAakultaLootWC + totalNoanzaWC + totalNoanzaWC + totalKirerfWCLoot)
+
+
+
 
 //end this now omg//
         // The number you want to format
-        const number = totalFinalWCResult;
+        const number = totalNoanzaGlivaWCResult;
 
         // Format the number with the US locale
         const USformatter = new Intl.NumberFormat("en-US");
@@ -1355,25 +1556,63 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         mr='0px'
       /><text><b>Mushrooms</b></text>
          Source:</HStack>
-        <Center><Container><Wrap justify='center'>
-        <Button  variant='outline' onClick={handleKirerfClick}  style={{ backgroundColor: kirerfActive ? "#2C7A7B" : "transparent" }}>      <Image
+        
+        {NoanzaIsShown &&  <Container><Wrap justify='center'>
+        <Button  variant='outline' onClick={handleNoanzaKirerfClick}  style={{ backgroundColor: noanzaKirerfActive ? "#2C7A7B" : "transparent" }}>      <Image
         boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/a/a6/Kirerf.png'
         alt='Kirerf'
         mr='12px'
       />
-      <text>Kirerf</text></Button>
-        <Button  variant='outline' onClick={handleGlivaClick}  style={{ backgroundColor: glivaActive ? "#2C7A7B" : "transparent" }}>      <Image
+      <text>Kirerf (N)</text></Button>
+        <Button  variant='outline' onClick={handleNoanzaGlivaClick}  style={{ backgroundColor: noanzaGlivaActive ? "#2C7A7B" : "transparent" }}>      <Image
         boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/1/15/Gliva.png'
         alt='Gliva'
         mr='12px'
       />
-      <text>Gliva</text></Button>
-        </Wrap></Container></Center>
-        <Spacer></Spacer>
+      <text>Gliva (N)</text></Button>
+        </Wrap></Container>}
+
+        {AakultaIsShown &&  <Container><Wrap justify='center'>
+        <Button  variant='outline' onClick={handleAakultaKirerfClick}  style={{ backgroundColor: aakultaKirerfActive ? "#2C7A7B" : "transparent" }}>      <Image
+        boxSize='2rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/a6/Kirerf.png'
+        alt='Kirerf'
+        mr='12px'
+      />
+      <text>Kirerf (A)</text></Button>
+        <Button  variant='outline' onClick={handleAakultaGlivaClick}  style={{ backgroundColor: aakultaGlivaActive ? "#2C7A7B" : "transparent" }}>      <Image
+        boxSize='2rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/15/Gliva.png'
+        alt='Gliva'
+        mr='12px'
+      />
+      <text>Gliva (A)</text></Button>
+        </Wrap></Container>}
+
+        {FgCraftingIsShown &&  <Container><Wrap justify='center'>
+        <Button  variant='outline' onClick={handleCraftingKirerfClick}  style={{ backgroundColor: craftingKirerfActive ? "#2C7A7B" : "transparent" }}>      <Image
+        boxSize='2rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/a6/Kirerf.png'
+        alt='Kirerf'
+        mr='12px'
+      />
+      <text>Kirerf (C)</text></Button>
+        <Button  variant='outline' onClick={handleCraftingGlivaClick}  style={{ backgroundColor: craftingGlivaActive ? "#2C7A7B" : "transparent" }}>      <Image
+        boxSize='2rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/15/Gliva.png'
+        alt='Gliva'
+        mr='12px'
+      />
+      <text>Gliva (C)</text></Button>
+        </Wrap></Container>}
 
 <Accordion allowMultiple>
   <AccordionItem>
@@ -2118,7 +2357,10 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
     <Tr>
 <Td><Stat>
   <StatLabel>Total Word Count with Attack</StatLabel>
-  <StatNumber>{USformattedNumber}</StatNumber>
+  <StatNumber>
+  {NoanzaIsShown && <text align='center'>select mushroom source to show WC</text>}
+  {NoanzaGlivaQtyIsShown && <text align='center'>{USformattedNumber}</text>}
+  {NoanzaKirerfQtyIsShown && <text align='center'>0</text>}</StatNumber>
 </Stat></Td></Tr>
 </Tbody>
 </Table>
@@ -2159,9 +2401,9 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Ardid'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Ardid</Text>
-      {SummaryNoanzaIsShown && <text align='center'>0</text>}
-      {SummaryAakultaIsShown && <text align='center'>0</text>}
-      {SummaryFgCraftingIsShown && <text  align='center'>{totalArdidQty}</text>}</VStack>
+      {SummaryNoanzaIsShown && <text align='center'>{totalArdidQtyLoot}</text>}
+      {SummaryAakultaIsShown && <text align='center'>{totalArdidQtyLoot}</text>}
+      {SummaryFgCraftingIsShown && <text  align='center'>{totalArdidQtyCraft}</text>}</VStack>
   </Box>
         </Td>
         <Td>
@@ -2227,8 +2469,8 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Gliva'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Gliva</Text>
-{GlivaQtyIsShown && <text align='center'>{totalGlivaQty}</text>}
-{KirerfQtyIsShown && <text align='center'>0</text>}
+{NoanzaGlivaQtyIsShown && <text align='center'>{totalGlivaQtyLoot}</text>}
+{NoanzaKirerfQtyIsShown && <text align='center'>0</text>}
 </VStack>
   </Box>
         </Td>
@@ -2244,8 +2486,8 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Kirerf'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Kirerf</Text>
- {KirerfQtyIsShown && <text align='center'>{totalKirerfQty}</text>}
- {GlivaQtyIsShown && <text align='center'>0</text>}</VStack>
+ {NoanzaKirerfQtyIsShown && <text align='center'>{totalKirerfQtyLoot}</text>}
+ {NoanzaGlivaQtyIsShown && <text align='center'>0</text>}</VStack>
   </Box>
         </Td>
         <Td>
@@ -2353,9 +2595,9 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Dust'
         mr='0px'
       />
-  	{SummaryNoanzaIsShown && <text align='center'>{totalDustAllOtherMonsters}</text>}
-  	{SummaryAakultaIsShown && <text align='center'>{totalDustAllOtherMonsters}</text>}
-  	{SummaryFgCraftingIsShown && <text align='center'>{totalDustAllOtherMonsters}</text>}
+  	{SummaryNoanzaIsShown && <text align='center'>{totalDuLooting}</text>}
+  	{SummaryAakultaIsShown && <text align='center'>{totalDuLooting}</text>}
+  	{SummaryFgCraftingIsShown && <text align='center'>{totalDuCrafting}</text>}
 </VStack>
   </Box>
         </Td>
@@ -2426,9 +2668,9 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         alt='Purple Crystal Shards'
         mr='0px'
       />  	<Container>  	
-      	{SummaryNoanzaIsShown && <text align='center'>{totalGrossPCS}</text>}
-        {SummaryAakultaIsShown && <text align='center'>{totalGrossPCS}</text>}
-        {SummaryFgCraftingIsShown && <text align='center'>{totalGrossPCS}</text>}
+      	{SummaryNoanzaIsShown && <text align='center'>{totalPcsLooting}</text>}
+        {SummaryAakultaIsShown && <text align='center'>{totalPcsLooting}</text>}
+        {SummaryFgCraftingIsShown && <text align='center'>{totalPcsCrafting}</text>}
         </Container></VStack>
   </Box>
         </Td>
@@ -2554,9 +2796,9 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       /> <Text>Aakulta</Text>
         </VStack>
 </Td>
-<Td isNumeric>        {SummaryNoanzaIsShown && <Container><text>0</text></Container>}
+<Td isNumeric>        {SummaryNoanzaIsShown && <Container>0</Container>}
       {SummaryAakultaIsShown && <Container>{totalAakultaQty}</Container>}
-      {SummaryFgCraftingIsShown && <Container><text>0</text></Container>}</Td>
+      {SummaryFgCraftingIsShown && <Container>0</Container>}</Td>
         <Td isNumeric>
         {SummaryNoanzaIsShown && <Container><text>0</text></Container>}
       {SummaryAakultaIsShown && <Container>{totalAakultaWC}</Container>}
@@ -2575,14 +2817,14 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
         </VStack>
 </Td>
       <Td isNumeric>
-      {SummaryNoanzaIsShown && <Container><text>0</text></Container>}
-      {SummaryAakultaIsShown && <Container><text>0</text></Container>}
-      {SummaryFgCraftingIsShown && <Container>{totalArdidQty}</Container>}
+      {SummaryNoanzaIsShown && <Container>{totalArdidQtyLoot}</Container>}
+      {SummaryAakultaIsShown && <Container>{totalArdidQtyLoot}</Container>}
+      {SummaryFgCraftingIsShown && <Container>{totalArdidQtyCraft}</Container>}
         </Td>
         <Td isNumeric>
-        {SummaryNoanzaIsShown && <Container><text>0</text></Container>}
-      {SummaryAakultaIsShown && <Container><text>0</text></Container>}
-      {SummaryFgCraftingIsShown && <Container>{totalArdidWC}</Container>}
+        {SummaryNoanzaIsShown && <Container>{totalArdidWCLoot}</Container>}
+      {SummaryAakultaIsShown && <Container>{totalArdidWCLoot}</Container>}
+      {SummaryFgCraftingIsShown && <Container>{totalArdidWCCraft}</Container>}
           </Td>
       </Tr>
       <Tr>
@@ -2651,8 +2893,14 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       /> <text>Gliva</text>
         </VStack>
 </Td>
-        <Td isNumeric>{GlivaQtyIsShown && <Container>{totalGlivaQty}</Container>}</Td>
-        <Td isNumeric>{GlivaQtyIsShown && <Container>{totalGlivaWC}</Container>}</Td>
+        <Td isNumeric>
+        {NoanzaKirerfQtyIsShown && <text align='center'>0</text>}
+        {NoanzaGlivaQtyIsShown && <text align='center'>{totalGlivaQtyLoot}</text>}
+        </Td>
+        <Td isNumeric>
+        {NoanzaKirerfQtyIsShown && <Container>0</Container>}
+        {NoanzaGlivaQtyIsShown && <Container>{totalGlivaWCLoot}</Container>}
+        </Td>
       </Tr>
       <Tr>
       <Td><VStack>
@@ -2665,8 +2913,13 @@ const totalFinalWCNoAtk = Math.round ((totalFinalWCResult + ((attackStat/100)*to
       /> <text>Kirerf</text>
         </VStack>
 </Td>
-<Td isNumeric>{KirerfQtyIsShown && <Container>{totalKirerfQty}</Container>}</Td>
-        <Td isNumeric>{KirerfQtyIsShown && <Container>{totalKirerfWC}</Container>}</Td>
+<Td isNumeric> 
+        {NoanzaKirerfQtyIsShown && <Container>{totalKirerfQtyLoot}</Container>}
+        {NoanzaGlivaQtyIsShown && <Container>0</Container>}
+      </Td>
+        <Td isNumeric>{NoanzaKirerfQtyIsShown && <Container>{totalKirerfWCLoot}</Container>}
+        {NoanzaGlivaQtyIsShown && <Container>0</Container>}
+        </Td>
       </Tr>
       <Tr>
       <Td><VStack>

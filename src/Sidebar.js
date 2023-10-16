@@ -34,7 +34,7 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Box textAlign="center" fontSize="xl">
-        <Grid minH="10vh" p={3}>
+        <Grid p={3}>
           <VStack spacing={8} justify='center'>
           <Button ref={btnRef} colorScheme='teal' onClick={onOpen}>
         Open

@@ -16,16 +16,9 @@ const root = ReactDOM.createRoot(container);
 root.render(
   <BrowserRouter>
     <ColorModeScript />
-    <Sidebar />
     <Header />
-    <Routes>
-        <Route exact path="/" component={App} />
-        <Route exact path="/quickwccalculator" component={QuickWCCalc} />
-        <Route exact path="/cityoflight" component={CityofLight} />
-        <Route exact path="/dustedcastle" component={DustedCastle} />
-        <Route exact path="/nivali" component={Nivali} />
 
-        </Routes>
+
     <App />
   </BrowserRouter>
 );
