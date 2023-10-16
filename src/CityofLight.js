@@ -2358,7 +2358,9 @@ const totalAakultaKirerfWCResult = (totalXaeyWCLoot + totalDustWignowWCLoot + to
 <Td><Stat>
   <StatLabel>Total Word Count with Attack</StatLabel>
   <StatNumber>
-  {NoanzaIsShown && <text align='center'>select mushroom source to show WC</text>}
+  {NoanzaIsShown && <text align='center'>select mushroom source<br></br>to show WC</text>}
+  {AakultaIsShown && <text align='center'>select mushroom source<br></br>to show WC</text>}
+  {FgCraftingIsShown && <text align='center'>select mushroom source<br></br>to show WC</text>}
   {NoanzaGlivaQtyIsShown && <text align='center'>{USformattedNumber}</text>}
   {NoanzaKirerfQtyIsShown && <text align='center'>0</text>}</StatNumber>
 </Stat></Td></Tr>
