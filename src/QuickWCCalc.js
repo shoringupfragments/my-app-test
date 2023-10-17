@@ -51,7 +51,7 @@ const [wcResult, setWCResult] = useState(0);
       <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh">
           <VStack spacing={8}>
-          <Heading>Word Count Calculator</Heading>
+          <Heading pt={3}>Word Count Calculator</Heading>
             <Container><p>Type your attack stat and your target word count below to quickly calculate the attack-adjusted word count.</p></Container>
 
 <VStack>
