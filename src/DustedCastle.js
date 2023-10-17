@@ -14,7 +14,6 @@ function App() {
 
 
   return (
-    <ChakraProvider theme={theme}>
       <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh">
             <Heading>Dusted Castle</Heading>
@@ -22,7 +21,6 @@ function App() {
             <Container><Divider></Divider></Container>
         </Grid>
       </Box>
-    </ChakraProvider>
   );
 }
 
