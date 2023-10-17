@@ -37,6 +37,7 @@ import {
   StatNumber,
   WrapItem,
   Wrap,
+  Tfoot,
 } from '@chakra-ui/react';
 import { ChevronDownIcon, ChevronRightIcon, MinusIcon, AddIcon, } from '@chakra-ui/icons';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
@@ -82,6 +83,12 @@ function App() {
     setNoanzaActive(!noanzaActive);
     setAakultaActive(current => null);
     setFgCraftingActive(current => null);
+    setAakultaKirerfActive(current => null);
+    setAakultaGlivaActive(current => null);
+    setNoanzaGlivaActive(current => null);
+    setNoanzaKirerfActive(current => null);
+    setCraftingGlivaActive(current => null);
+    setCraftingKirerfActive(current => null);
   };
 
   const handleAakultaClick = event => {
@@ -102,7 +109,12 @@ function App() {
     setAakultaActive(!aakultaActive);
     setNoanzaActive(current => null);
     setFgCraftingActive(current => null);
-
+    setAakultaKirerfActive(current => null);
+    setAakultaGlivaActive(current => null);
+    setNoanzaGlivaActive(current => null);
+    setNoanzaKirerfActive(current => null);
+    setCraftingGlivaActive(current => null);
+    setCraftingKirerfActive(current => null);
     };
 
   const handleFgCraftingClick = event => {
@@ -122,6 +134,12 @@ function App() {
     setFgCraftingActive(!fgCraftingActive)
     setNoanzaActive(current => null);
     setAakultaActive(current => null);
+    setAakultaKirerfActive(current => null);
+    setAakultaGlivaActive(current => null);
+    setNoanzaGlivaActive(current => null);
+    setNoanzaKirerfActive(current => null);
+    setCraftingGlivaActive(current => null);
+    setCraftingKirerfActive(current => null);
   };
 
   const [GlivaIsShown, setGlivaIsShown] = useState(false);
@@ -131,29 +149,6 @@ function App() {
   const [KirerfQtyIsShown, setKirerfQtyIsShown] = useState(false);
   const [SummaryKirerfIsShown, setSummaryKirerfIsShown] = useState(false);
 
-
-  const handleGlivaClick = event => {
-    // 👇️ toggle shown state
-    setGlivaIsShown(current => !GlivaIsShown);
-    setGlivaQtyIsShown(current => !GlivaQtyIsShown);
-    setKirerfIsShown(current => null);
-    setKirerfQtyIsShown(current => null);
-    setGlivaActive(!glivaActive);
-    setKirerfActive(current => null);
-
-
-  };
-
-  const handleKirerfClick = event => {
-    // 👇️ toggle shown state
-    setKirerfIsShown(current => !KirerfIsShown);
-    setKirerfQtyIsShown(current => !KirerfQtyIsShown);
-    setGlivaIsShown(current => null);
-    setGlivaQtyIsShown(current => null);
-    setKirerfActive(!kirerfActive);
-    setGlivaActive(current => null);
-
-  };
 
 
 //NOANZA + MUSHROOM//
@@ -175,10 +170,18 @@ setNoanzaGlivaIsShown(current => !NoanzaGlivaIsShown);
 setNoanzaGlivaQtyIsShown(current => !NoanzaGlivaQtyIsShown);
 setNoanzaKirerfIsShown(current => null);
 setNoanzaKirerfQtyIsShown(current => null);
+
 setNoanzaGlivaActive(!noanzaGlivaActive);
 setNoanzaKirerfActive(current => null);
+setAakultaGlivaActive(current => null);
+setAakultaKirerfActive(current => null);
+setCraftingGlivaActive(current => null);
+setCraftingKirerfActive(current => null);
 
-
+setAakultaGlivaQtyIsShown(current => null);
+setAakultaKirerfQtyIsShown(current => null);
+setCraftingGlivaQtyIsShown(current => null);
+setCraftingKirerfQtyIsShown(current => null);
 };
 
 const handleNoanzaKirerfClick = event => {
@@ -187,9 +190,18 @@ setNoanzaKirerfIsShown(current => !NoanzaKirerfIsShown);
 setNoanzaKirerfQtyIsShown(current => !NoanzaKirerfQtyIsShown);
 setNoanzaGlivaIsShown(current => null);
 setNoanzaGlivaQtyIsShown(current => null);
+
 setNoanzaKirerfActive(!noanzaKirerfActive);
 setNoanzaGlivaActive(current => null);
+setAakultaGlivaActive(current => null);
+setAakultaKirerfActive(current => null);
+setCraftingGlivaActive(current => null);
+setCraftingKirerfActive(current => null);
 
+setAakultaGlivaQtyIsShown(current => null);
+setAakultaKirerfQtyIsShown(current => null);
+setCraftingGlivaQtyIsShown(current => null);
+setCraftingKirerfQtyIsShown(current => null);
 };
 
 //AAKULTA + MUSHROOM//
@@ -210,10 +222,18 @@ setAakultaGlivaIsShown(current => !AakultaGlivaIsShown);
 setAakultaGlivaQtyIsShown(current => !AakultaGlivaQtyIsShown);
 setAakultaKirerfIsShown(current => null);
 setAakultaKirerfQtyIsShown(current => null);
+
 setAakultaGlivaActive(!aakultaGlivaActive);
 setAakultaKirerfActive(current => null);
+setNoanzaGlivaActive(current => null);
+setNoanzaKirerfActive(current => null);
+setCraftingGlivaActive(current => null);
+setCraftingKirerfActive(current => null);
 
-
+setNoanzaGlivaQtyIsShown(current => null);
+setNoanzaKirerfQtyIsShown(current => null);
+setCraftingGlivaQtyIsShown(current => null);
+setCraftingKirerfQtyIsShown(current => null);
 };
 
 const handleAakultaKirerfClick = event => {
@@ -222,9 +242,18 @@ setAakultaKirerfIsShown(current => !AakultaKirerfIsShown);
 setAakultaKirerfQtyIsShown(current => !AakultaKirerfQtyIsShown);
 setAakultaGlivaIsShown(current => null);
 setAakultaGlivaQtyIsShown(current => null);
+
 setAakultaKirerfActive(!aakultaKirerfActive);
 setAakultaGlivaActive(current => null);
+setNoanzaGlivaActive(current => null);
+setNoanzaKirerfActive(current => null);
+setCraftingGlivaActive(current => null);
+setCraftingKirerfActive(current => null);
 
+setNoanzaGlivaQtyIsShown(current => null);
+setNoanzaKirerfQtyIsShown(current => null);
+setCraftingGlivaQtyIsShown(current => null);
+setCraftingKirerfQtyIsShown(current => null);
 };
 
 //CRAFTING + MUSHROOM//
@@ -246,9 +275,20 @@ setCraftingGlivaIsShown(current => !CraftingGlivaIsShown);
 setCraftingGlivaQtyIsShown(current => !CraftingGlivaQtyIsShown);
 setCraftingKirerfIsShown(current => null);
 setCraftingKirerfQtyIsShown(current => null);
+
 setCraftingGlivaActive(!craftingGlivaActive);
 setCraftingKirerfActive(current => null);
+setNoanzaGlivaActive(current => null);
+setNoanzaKirerfActive(current => null);
+setAakultaGlivaActive(current => null);
+setAakultaKirerfActive(current => null);
+setNoanzaKirerfActive(current => null);
+setNoanzaGlivaActive(current => null);
 
+setAakultaGlivaQtyIsShown(current => null);
+setAakultaKirerfQtyIsShown(current => null);
+setNoanzaGlivaQtyIsShown(current => null);
+setNoanzaKirerfQtyIsShown(current => null);
 
 };
 
@@ -258,10 +298,23 @@ setCraftingKirerfIsShown(current => !CraftingKirerfIsShown);
 setCraftingKirerfQtyIsShown(current => !CraftingKirerfQtyIsShown);
 setCraftingGlivaIsShown(current => null);
 setCraftingGlivaQtyIsShown(current => null);
+
 setCraftingKirerfActive(!craftingKirerfActive);
 setCraftingGlivaActive(current => null);
+setNoanzaGlivaActive(current => null);
+setNoanzaKirerfActive(current => null);
+setAakultaGlivaActive(current => null);
+setAakultaKirerfActive(current => null);
+setNoanzaKirerfActive(current => null);
+setNoanzaGlivaActive(current => null);
 
+
+setAakultaGlivaQtyIsShown(current => null);
+setAakultaKirerfQtyIsShown(current => null);
+setNoanzaGlivaQtyIsShown(current => null);
+setNoanzaKirerfQtyIsShown(current => null);
 };
+
 
 
 
@@ -1247,7 +1300,7 @@ const totalDustWignowQtyLoot = Math.ceil (totalCheckDflLooting/3.5)
 
 const [dustWignowWCLoot, setDustWignowWCLoot] = useState (0);
 const calculateDustWignowWCLoot = {totalDustWignowQtyLoot, attackStat}
-const totalDustWignowWCLoot = Math.round ((totalDustWignowQtyLoot*150) / ((attackStat/100) + 1));
+const totalDustWignowWCLoot = Math.round ((totalDustWignowQtyLoot*444) / ((attackStat/100) + 1));
 
 const [dustWignowQtyCraft, setDustWignowQtyCraft] = useState(0);
 const calculateDustWignowQtyCraft = {totalCheckDflCrafting}
@@ -1471,28 +1524,45 @@ const totalLdAakWC = (totalAakultaWC + totalAdjustedLdAakultaLootWC)
 
 //Total WC Noanza + Gliva//
 
-const calculateNoanzaGlivaWCResult = {totalXaeyWCLoot, totalDustWignowWCLoot, totalAscreWCLoot,  totalAdjustedLdNoanzaLootWC, totalNoanzaWC, totalNoanzaWC, totalGlivaWCLoot}
-const totalNoanzaGlivaWCResult = (totalXaeyWCLoot + totalDustWignowWCLoot + totalAscreWCLoot +  totalAdjustedLdNoanzaLootWC + totalNoanzaWC + totalNoanzaWC + totalGlivaWCLoot)
+const calculateNoanzaGlivaWCResult = {totalXaeyWCLoot, totalDustWignowWCLoot, totalAscreWCLoot,  totalAdjustedLdNoanzaLootWC, totalNoanzaWC, totalGlivaWCLoot}
+const totalNoanzaGlivaWCResult = (totalXaeyWCLoot + totalDustWignowWCLoot + totalAscreWCLoot +  totalAdjustedLdNoanzaLootWC + totalNoanzaWC + totalGlivaWCLoot)
 
-const calculateNoanzaKirerfWCResult = {totalXaeyWCLoot, totalDustWignowWCLoot, totalAscreWCLoot,  totalAdjustedLdNoanzaLootWC, totalNoanzaWC, totalNoanzaWC, totalKirerfWCLoot}
-const totalNoanzaKirerfWCResult = (totalXaeyWCLoot + totalDustWignowWCLoot + totalAscreWCLoot +  totalAdjustedLdNoanzaLootWC + totalNoanzaWC + totalNoanzaWC + totalKirerfWCLoot)
+const calculateNoanzaKirerfWCResult = {totalXaeyWCLoot, totalDustWignowWCLoot, totalAscreWCLoot,  totalAdjustedLdNoanzaLootWC, totalNoanzaWC, totalKirerfWCLoot}
+const totalNoanzaKirerfWCResult = (totalXaeyWCLoot + totalDustWignowWCLoot + totalAscreWCLoot +  totalAdjustedLdNoanzaLootWC + totalNoanzaWC  + totalKirerfWCLoot)
 
-const calculateAakultaGlivafWCResult = {totalXaeyWCLoot, totalDustWignowWCLoot, totalAscreWCLoot,  totalAdjustedLdAakultaLootWC, totalNoanzaWC, totalNoanzaWC, totalGlivaWCLoot}
-const totalAakultaGlivaWCResult = (totalXaeyWCLoot + totalDustWignowWCLoot + totalAscreWCLoot +  totalAdjustedLdAakultaLootWC + totalNoanzaWC + totalNoanzaWC + totalGlivaWCLoot)
+const calculateAakultaGlivaWCResult = {totalXaeyWCLoot, totalDustWignowWCLoot, totalAscreWCLoot,  totalAdjustedLdAakultaLootWC, totalAakultaWC, totalGlivaWCLoot}
+const totalAakultaGlivaWCResult = (totalXaeyWCLoot + totalDustWignowWCLoot + totalAscreWCLoot +  totalAdjustedLdAakultaLootWC + totalAakultaWC + totalGlivaWCLoot)
 
-const calculateAakultaKirerfWCResult = {totalXaeyWCLoot, totalDustWignowWCLoot, totalAscreWCLoot,  totalAdjustedLdAakultaLootWC, totalNoanzaWC, totalNoanzaWC, totalKirerfWCLoot}
-const totalAakultaKirerfWCResult = (totalXaeyWCLoot + totalDustWignowWCLoot + totalAscreWCLoot +  totalAdjustedLdAakultaLootWC + totalNoanzaWC + totalNoanzaWC + totalKirerfWCLoot)
+const calculateAakultaKirerfWCResult = {totalXaeyWCLoot, totalDustWignowWCLoot, totalAscreWCLoot,  totalAdjustedLdAakultaLootWC, totalAakultaWC, totalKirerfWCLoot}
+const totalAakultaKirerfWCResult = (totalXaeyWCLoot + totalDustWignowWCLoot + totalAscreWCLoot +  totalAdjustedLdAakultaLootWC + totalAakultaWC + totalKirerfWCLoot)
 
+const calculateFgCraftingGlivaWCResult = {totalXaeyWCCraft, totalDustWignowWCCraft, totalAscreWCCraft, totalArluziWCCraft, totalArdidWCCraft, totalGlivaWCLoot}
+const totalFgCraftingGlivaWCResult = (totalXaeyWCCraft + totalDustWignowWCCraft + totalAscreWCCraft + totalArluziWCCraft + totalArdidWCCraft + totalGlivaWCLoot)
 
+const calculateFgCraftingKirerfWCResult = {totalXaeyWCCraft, totalDustWignowWCCraft, totalAscreWCCraft, totalArluziWCCraft, totalArdidWCCraft, totalKirerfWCLoot}
+const totalFgCraftingKirerfWCResult = (totalXaeyWCCraft + totalDustWignowWCCraft + totalAscreWCCraft + totalArluziWCCraft + totalArdidWCCraft + totalKirerfWCLoot)
 
-
-//end this now omg//
-        // The number you want to format
+//format the WC #s//
+//NOANZA//
         const number = totalNoanzaGlivaWCResult;
-
-        // Format the number with the US locale
         const USformatter = new Intl.NumberFormat("en-US");
-        const USformattedNumber = USformatter.format(number);
+        const NoanzaGlivaWC = USformatter.format(number);
+
+        const number1 = totalNoanzaKirerfWCResult;
+        const NoanzaKirerfWC = USformatter.format(number1)
+      
+        const number2 = totalAakultaGlivaWCResult;
+        const AakultaGlivaWC = USformatter.format(number2);
+
+        const number3 = totalAakultaKirerfWCResult;
+        const AakultaKirerfWC = USformatter.format(number3)
+
+        const number4 = totalFgCraftingGlivaWCResult;
+        const CraftingGlivaWC = USformatter.format(number4);
+
+        const number5 = totalFgCraftingKirerfWCResult;
+        const CraftingKirerfWC = USformatter.format(number5)
+
 
 // END OF EQUATIONS SO FAR//
 
@@ -1565,7 +1635,7 @@ const totalAakultaKirerfWCResult = (totalXaeyWCLoot + totalDustWignowWCLoot + to
         alt='Kirerf'
         mr='12px'
       />
-      <text>Kirerf (N)</text></Button>
+      <text>Kirerf</text></Button>
         <Button  variant='outline' onClick={handleNoanzaGlivaClick}  style={{ backgroundColor: noanzaGlivaActive ? "#2C7A7B" : "transparent" }}>      <Image
         boxSize='2rem'
         borderRadius='full'
@@ -1573,7 +1643,7 @@ const totalAakultaKirerfWCResult = (totalXaeyWCLoot + totalDustWignowWCLoot + to
         alt='Gliva'
         mr='12px'
       />
-      <text>Gliva (N)</text></Button>
+      <text>Gliva</text></Button>
         </Wrap></Container>}
 
         {AakultaIsShown &&  <Container><Wrap justify='center'>
@@ -1584,7 +1654,7 @@ const totalAakultaKirerfWCResult = (totalXaeyWCLoot + totalDustWignowWCLoot + to
         alt='Kirerf'
         mr='12px'
       />
-      <text>Kirerf (A)</text></Button>
+      <text>Kirerf</text></Button>
         <Button  variant='outline' onClick={handleAakultaGlivaClick}  style={{ backgroundColor: aakultaGlivaActive ? "#2C7A7B" : "transparent" }}>      <Image
         boxSize='2rem'
         borderRadius='full'
@@ -1592,7 +1662,7 @@ const totalAakultaKirerfWCResult = (totalXaeyWCLoot + totalDustWignowWCLoot + to
         alt='Gliva'
         mr='12px'
       />
-      <text>Gliva (A)</text></Button>
+      <text>Gliva</text></Button>
         </Wrap></Container>}
 
         {FgCraftingIsShown &&  <Container><Wrap justify='center'>
@@ -1603,7 +1673,7 @@ const totalAakultaKirerfWCResult = (totalXaeyWCLoot + totalDustWignowWCLoot + to
         alt='Kirerf'
         mr='12px'
       />
-      <text>Kirerf (C)</text></Button>
+      <text>Kirerf</text></Button>
         <Button  variant='outline' onClick={handleCraftingGlivaClick}  style={{ backgroundColor: craftingGlivaActive ? "#2C7A7B" : "transparent" }}>      <Image
         boxSize='2rem'
         borderRadius='full'
@@ -1611,7 +1681,7 @@ const totalAakultaKirerfWCResult = (totalXaeyWCLoot + totalDustWignowWCLoot + to
         alt='Gliva'
         mr='12px'
       />
-      <text>Gliva (C)</text></Button>
+      <text>Gliva</text></Button>
         </Wrap></Container>}
 
 <Accordion allowMultiple>
@@ -2358,13 +2428,23 @@ const totalAakultaKirerfWCResult = (totalXaeyWCLoot + totalDustWignowWCLoot + to
 <Td><Stat>
   <StatLabel>Total Word Count with Attack</StatLabel>
   <StatNumber>
-  {NoanzaIsShown && <text align='center'>select mushroom source<br></br>to show WC</text>}
-  {AakultaIsShown && <text align='center'>select mushroom source<br></br>to show WC</text>}
-  {FgCraftingIsShown && <text align='center'>select mushroom source<br></br>to show WC</text>}
-  {NoanzaGlivaQtyIsShown && <text align='center'>{USformattedNumber}</text>}
-  {NoanzaKirerfQtyIsShown && <text align='center'>0</text>}</StatNumber>
+  {NoanzaGlivaQtyIsShown && <text align='center'>{NoanzaGlivaWC}</text>}
+  {NoanzaKirerfQtyIsShown && <text align='center'>{NoanzaKirerfWC}</text>}
+  {AakultaGlivaQtyIsShown && <text align='center'>{AakultaGlivaWC}</text>}
+  {AakultaKirerfQtyIsShown && <text align='center'>{AakultaKirerfWC}</text>}
+  {CraftingGlivaQtyIsShown && <text align='center'>{CraftingGlivaWC}</text>}
+  {CraftingKirerfQtyIsShown && <text align='center'>{CraftingKirerfWC}</text>}
+  </StatNumber>
 </Stat></Td></Tr>
 </Tbody>
+<Tfoot>
+  {NoanzaGlivaQtyIsShown && <Text fontSize='sm' align='center'>calculated using Noanza and Gliva</Text>}
+  {NoanzaKirerfQtyIsShown && <Text fontSize='sm' align='center'>calculated using Noanza and Kirerf</Text>}
+  {AakultaGlivaQtyIsShown && <Text fontSize='sm' align='center'>calculated using Aakulta and Gliva</Text>}
+  {AakultaKirerfQtyIsShown && <Text fontSize='sm' align='center'>calculated using Aakulta and Kirerf</Text>}
+  {CraftingGlivaQtyIsShown && <Text fontSize='sm' align='center'>calculated using Crafting and Gliva</Text>}
+  {CraftingKirerfQtyIsShown && <Text fontSize='sm' align='center'>calculated using Crafting and Kirerf</Text>}  
+  </Tfoot>
 </Table>
 </TableContainer>
 <br></br>
@@ -2473,6 +2553,8 @@ const totalAakultaKirerfWCResult = (totalXaeyWCLoot + totalDustWignowWCLoot + to
       /> <Text fontSize='lg' align='center'>Gliva</Text>
 {NoanzaGlivaQtyIsShown && <text align='center'>{totalGlivaQtyLoot}</text>}
 {NoanzaKirerfQtyIsShown && <text align='center'>0</text>}
+{AakultaGlivaQtyIsShown && <text align='center'>{totalGlivaQtyLoot}</text>}
+{AakultaKirerfQtyIsShown && <text align='center'>0</text>}
 </VStack>
   </Box>
         </Td>
@@ -2489,7 +2571,10 @@ const totalAakultaKirerfWCResult = (totalXaeyWCLoot + totalDustWignowWCLoot + to
         mr='5px'
       /> <Text fontSize='lg' align='center'>Kirerf</Text>
  {NoanzaKirerfQtyIsShown && <text align='center'>{totalKirerfQtyLoot}</text>}
- {NoanzaGlivaQtyIsShown && <text align='center'>0</text>}</VStack>
+ {NoanzaGlivaQtyIsShown && <text align='center'>0</text>}
+ {AakultaKirerfQtyIsShown && <text align='center'>{totalKirerfQtyLoot}</text>}
+ {AakultaGlivaQtyIsShown && <text align='center'>0</text>}</VStack>
+
   </Box>
         </Td>
         <Td>
@@ -2612,9 +2697,9 @@ const totalAakultaKirerfWCResult = (totalXaeyWCLoot + totalDustWignowWCLoot + to
         src='https://static.wikia.nocookie.net/4thewords/images/1/19/Wignowessence_md.png'
         alt='Essence'
         mr='0px'
-      />  	{SummaryNoanzaIsShown && <text align='center'>{totalEssLooting}</text>}
-      {SummaryAakultaIsShown && <text align='center'>{totalEssLooting}</text>}
-      {SummaryFgCraftingIsShown && <text align='center'>{totalEssCrafting}</text>}</VStack>
+      />  	{SummaryNoanzaIsShown && <text align='center'>{totalDustWignowQtyLoot}</text>}
+      {SummaryAakultaIsShown && <text align='center'>{totalDustWignowQtyLoot}</text>}
+      {SummaryFgCraftingIsShown && <text align='center'>{totalDustWignowQtyCraft}</text>}</VStack>
   </Box>
         </Td>
         <Td>
@@ -2725,7 +2810,7 @@ const totalAakultaKirerfWCResult = (totalXaeyWCLoot + totalDustWignowWCLoot + to
 </Container>
 <Container><br></br></Container>
 <Container> <Box as="span" flex='1' textAlign='center'>
-        <Text pt={3}><b>Materials to Purchase:</b></Text>
+        <Text pt={3}><b>Materials to Purchase or Gather:</b></Text>
         </Box>
         <TableContainer>
   <Table variant='unstyled' maxW={20} align='center'>
@@ -2734,15 +2819,15 @@ const totalAakultaKirerfWCResult = (totalXaeyWCLoot + totalDustWignowWCLoot + to
         <Td>
         <Box justify='center' w='50px' h='60px' pb={5}>
        <VStack> 
-       <Image
+        <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
-        alt='Dust-Repellent Elixir'
-        mr='0px'/>
-{SummaryNoanzaIsShown && <text align='center'>{totalAllDre}</text>}
-      {SummaryAakultaIsShown && <text align='center'>{totalAllDre}</text>}
-      {SummaryFgCraftingIsShown && <text align='center'>{totalDreFgCrafting}</text>}</VStack>
+        src='https://static.wikia.nocookie.net/4thewords/images/1/19/Wignowessence_md.png'
+        alt='Essence'
+        mr='0px'
+      />  	{SummaryNoanzaIsShown && <text align='center'>{totalEssOverlapLoot}</text>}
+      {SummaryAakultaIsShown && <text align='center'>{totalEssOverlapLoot}</text>}
+      {SummaryFgCraftingIsShown && <text align='center'>{totalEssOverlapCraft}</text>}</VStack>
   </Box>
         </Td>
         <Td>
