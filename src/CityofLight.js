@@ -45,6 +45,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 
 function App() {
 
+
   const [noanzaActive, setNoanzaActive] = useState(false);
   const [aakultaActive, setAakultaActive] = useState(false);
   const [fgCraftingActive, setFgCraftingActive] = useState(false);
@@ -1630,7 +1631,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
 // END OF EQUATIONS SO FAR//
 
   return (
-    <ChakraProvider theme={theme}>
       <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh">
           <VStack spacing={8}>
@@ -4334,7 +4334,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
 
         </Grid>
       </Box>
-    </ChakraProvider>
   );
 }
 
