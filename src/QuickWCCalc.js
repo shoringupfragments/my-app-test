@@ -45,6 +45,9 @@ const [wcResult, setWCResult] = useState(0);
 
 };
 
+const number = wcResult;
+const USformatter = new Intl.NumberFormat("en-US");
+const fixWcResult = USformatter.format(number);
 
   return (
       <Box textAlign="center" fontSize="xl">
@@ -67,7 +70,7 @@ const [wcResult, setWCResult] = useState(0);
 <Spacer></Spacer>
 {wcResult !== null && (
               <div>
-                <Container><b>Total:</b> {wcResult} words</Container>
+                <Container><b>Total:</b> {fixWcResult} words</Container>
               </div>
             )}  
 
