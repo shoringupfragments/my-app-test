@@ -22,7 +22,7 @@ function App() {
       <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh">
           <VStack spacing={8}>
-          <Heading>About This Site</Heading>
+          <Heading pt={3}>About This Site</Heading>
             <Container><p>This is a work-in-progress 4theWords guide, intended to help you spend 
                 less time planning and more time writing.
                 <br></br>
