@@ -6,8 +6,8 @@ import {
 import { Routes, Route} from 'react-router-dom';
 import QuickWCCalc from './QuickWCCalc';
 import CityofLight from './CityofLight'
-import DustedCastle from './DustedCastle'
-import Nivali from './Nivali'
+import Homepage from './Homepage'
+
 
 function App() {
 
@@ -15,10 +15,9 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Routes>
+      <Route path="" element={ <Homepage/> } />
       <Route path="quickwccalc" element={ <QuickWCCalc/> } />
       <Route path="cityoflight" element={ <CityofLight/> } />
-      <Route path="dustedcastle" element={ <DustedCastle/> } />
-      <Route path="nivali" element={ <Nivali/> } />
       </Routes>
     </ChakraProvider>
   );

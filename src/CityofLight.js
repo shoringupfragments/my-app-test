@@ -1564,6 +1564,69 @@ const totalFgCraftingKirerfWCResult = (totalXaeyWCCraft + totalDustWignowWCCraft
         const CraftingKirerfWC = USformatter.format(number5)
 
 
+//assorted other mats -- essence up above//
+
+//coins//
+
+const [coins, setCoins] = useState(0);
+
+const calculateCoins = {coinsAakhelResult, coinsClibooResult, coinsCrehelResult, 
+                        coinsFuscroResult, coinsFuscuiResult, coinsFusswoResult, 
+                        coinsHopligResult, coinsLeacuiResult, coinsLeaturResult,
+                        coinsLigbloResult, coinsPoepicResult, coinsFlosliResult}
+const totalCoins = (coinsAakhelResult + coinsClibooResult + coinsCrehelResult + 
+  coinsFuscroResult + coinsFuscuiResult + coinsFusswoResult + 
+  coinsHopligResult + coinsLeacuiResult + coinsLeaturResult +
+  coinsLigbloResult + coinsPoepicResult + coinsFlosliResult)
+
+//fine fabric//
+
+const [finefabric, setFinefabric] = useState(0);
+
+const calculateFinefabric = {finefabricFuscuiResult, finefabricLeacuiResult, finefabricLeaturResult}
+const totalFinefabric = (finefabricFuscuiResult + finefabricLeacuiResult + finefabricLeaturResult)
+
+//gold//
+
+const [gold, setGold] = useState(0);
+
+const calculateGold = {goldAakhelResult, goldFusswoResult, goldLigbloResult}
+const totalGold = (goldAakhelResult + goldFusswoResult + goldLigbloResult)
+
+//hardwood//
+
+const [hardwood, setHardwood] = useState(0);
+
+const calculateHardwood = {hardwoodFuscroResult, hardwoodPoepicResult, coinsFlosliResult}
+const totalHardwood = (hardwoodFuscroResult + hardwoodPoepicResult + hardwoodFlosliResult)
+
+//leather roll/
+
+const [leatherroll, setLeatherroll] = useState(0);
+
+const calculateLeatherroll = {leatherrollClibooResult, leatherrollLeacuiResult, leatherrollLeaturResult, leatherrollFlosliResult}
+const totalLeatherroll = (leatherrollClibooResult + leatherrollLeacuiResult + leatherrollLeaturResult + leatherrollFlosliResult)
+
+//reinforced rope//
+
+const [reinforcedrope, setReinforcedrope] = useState(0);
+
+const calculateReinforcedrope = {reinforcedropeFlosliResult, reinforcedropeFuscroResult}
+const totalReinforcedrope = (reinforcedropeFlosliResult + reinforcedropeFuscroResult)
+
+//steel//
+
+const [steel, setSteel] = useState(0);
+
+const calculateSteel = {steelAakhelResult, steelClibooResult, steelCrehelResult,
+                    	steelFuscroResult, steelFuscuiResult, steelFusswoResult,
+                    	steelHopligResult, steelLeacuiResult, steelPoepicResult}
+const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
+  steelFuscroResult + steelFuscuiResult + steelFusswoResult +
+  steelHopligResult + steelLeacuiResult + steelPoepicResult)
+
+
+
 // END OF EQUATIONS SO FAR//
 
   return (
@@ -1572,7 +1635,19 @@ const totalFgCraftingKirerfWCResult = (totalXaeyWCCraft + totalDustWignowWCCraft
         <Grid minH="100vh">
           <VStack spacing={8}>
             <Heading pt={3}>City of Light</Heading>
-            <Container><p>This page calculates what monsters you need for City of Light materials and battle items, based on average loot drops.</p></Container>
+            <Container><p>This page calculates what monsters you need for City of Light materials and battle items, based on average loot drops.
+              <br></br><br></br>
+              Fusion Glass and Mushroom sources <i>must</i> be selected for the page to work, but your attack stat is optional.</p>
+            <br></br>
+            
+            <Divider />
+            <br></br>
+            <p><b>Accessibility Notes:</b>
+              <br></br>
+             - you can open and close the lists of craft materials and battle items without losing any data</p>
+              <br></br>
+              - this page is fully keyboard navigable, including using Enter to select buttons or open collapsed menus
+            </Container>
             <Container><Divider></Divider></Container>
 
 <VStack>
@@ -2555,6 +2630,8 @@ const totalFgCraftingKirerfWCResult = (totalXaeyWCCraft + totalDustWignowWCCraft
 {NoanzaKirerfQtyIsShown && <text align='center'>0</text>}
 {AakultaGlivaQtyIsShown && <text align='center'>{totalGlivaQtyLoot}</text>}
 {AakultaKirerfQtyIsShown && <text align='center'>0</text>}
+{CraftingGlivaQtyIsShown && <text align='center'>{totalGlivaQtyCrafting}</text>}
+{CraftingKirerfQtyIsShown && <text align='center'>0</text>}
 </VStack>
   </Box>
         </Td>
@@ -2574,7 +2651,8 @@ const totalFgCraftingKirerfWCResult = (totalXaeyWCCraft + totalDustWignowWCCraft
  {NoanzaGlivaQtyIsShown && <text align='center'>0</text>}
  {AakultaKirerfQtyIsShown && <text align='center'>{totalKirerfQtyLoot}</text>}
  {AakultaGlivaQtyIsShown && <text align='center'>0</text>}</VStack>
-
+ {CraftingGlivaQtyIsShown && <text align='center'>0</text>}
+{CraftingKirerfQtyIsShown && <text align='center'>{totalKirerfQtyCrafting}</text>}
   </Box>
         </Td>
         <Td>
@@ -2810,12 +2888,26 @@ const totalFgCraftingKirerfWCResult = (totalXaeyWCCraft + totalDustWignowWCCraft
 </Container>
 <Container><br></br></Container>
 <Container> <Box as="span" flex='1' textAlign='center'>
-        <Text pt={3}><b>Materials to Purchase or Gather:</b></Text>
+        <Text pt={3}><b>Miscellaneous Materials Needed:</b></Text>
         </Box>
         <TableContainer>
   <Table variant='unstyled' maxW={20} align='center'>
     <Tbody>
       <Tr>
+        <Td>
+        <Box justify='center' w='50px' h='60px' pb={5}>
+       <VStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        alt='Coins'
+        mr='0px'
+      />  	{SummaryNoanzaIsShown && <text align='center'>{totalCoins}</text>}
+      {SummaryAakultaIsShown && <text align='center'>{totalCoins}</text>}
+      {SummaryFgCraftingIsShown && <text align='center'>{totalCoins}</text>}</VStack>
+  </Box>
+        </Td>
         <Td>
         <Box justify='center' w='50px' h='60px' pb={5}>
        <VStack> 
@@ -2836,13 +2928,97 @@ const totalFgCraftingKirerfWCResult = (totalXaeyWCCraft + totalDustWignowWCCraft
        <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
-        alt='Fusion Glass'
+        src='https://static.wikia.nocookie.net/4thewords/images/0/0b/Finefabric_md.png'
+        alt='Fine Fabric'
         mr='0px'
       />      
-      {SummaryNoanzaIsShown && <text align='center'><text>0</text></text>}
-      {SummaryAakultaIsShown && <text align='center'><text>0</text></text>}
-      {SummaryFgCraftingIsShown && <text align='center'>{totalAllFg}</text>}
+      {SummaryNoanzaIsShown && <text align='center'>{totalFinefabric}</text>}
+      {SummaryAakultaIsShown && <text align='center'>{totalFinefabric}</text>}
+      {SummaryFgCraftingIsShown && <text align='center'>{totalFinefabric}</text>}
+      </VStack>
+  </Box>
+        </Td>
+      </Tr>
+      <Tr>
+        <Td>
+        <Box justify='center' w='50px' h='60px' pb={5}>
+       <VStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/87/Gold_md.png/'
+        alt='Gold'
+        mr='0px'
+      />  	{SummaryNoanzaIsShown && <text align='center'>{totalGold}</text>}
+      {SummaryAakultaIsShown && <text align='center'>{totalGold}</text>}
+      {SummaryFgCraftingIsShown && <text align='center'>{totalGold}</text>}</VStack>
+  </Box>
+        </Td>
+        <Td>
+        <Box justify='center' w='50px' h='60px' pb={5}>
+       <VStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/0/0c/Hardwood_md.png'
+        alt='Hardwood'
+        mr='0px'
+      />  	{SummaryNoanzaIsShown && <text align='center'>{totalHardwood}</text>}
+      {SummaryAakultaIsShown && <text align='center'>{totalHardwood}</text>}
+      {SummaryFgCraftingIsShown && <text align='center'>{totalHardwood}</text>}</VStack>
+  </Box>
+        </Td>
+        <Td>
+        <Box justify='center' w='50px' h='60px' pb={5}>
+       <VStack> 
+       <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/99/Leatherroll_md.png'
+        alt='Leather Roll'
+        mr='0px'
+      />      
+      {SummaryNoanzaIsShown && <text align='center'>{totalLeatherroll}</text>}
+      {SummaryAakultaIsShown && <text align='center'>{totalLeatherroll}</text>}
+      {SummaryFgCraftingIsShown && <text align='center'>{totalLeatherroll}</text>}
+      </VStack>
+  </Box>
+        </Td>
+      </Tr>
+      </Tbody>
+      </Table></TableContainer>
+
+      <TableContainer>
+  <Table variant='unstyled' maxW={20} align='center'>
+    <Tbody>
+      <Tr>
+        <Td>
+        <Box justify='center' w='50px' h='60px' pb={5}>
+       <VStack> 
+       <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/47/Reinforced-rope.png/'
+        alt='Reinforced Rope'
+        mr='0px'/>
+{SummaryNoanzaIsShown && <text align='center'>{totalReinforcedrope}</text>}
+      {SummaryAakultaIsShown && <text align='center'>{totalReinforcedrope}</text>}
+      {SummaryFgCraftingIsShown && <text align='center'>{totalReinforcedrope}</text>}</VStack>
+  </Box>
+        </Td>
+        <Td>
+        <Box justify='center' w='50px' h='60px' pb={5}>
+       <VStack> 
+       <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
+        alt='Steel'
+        mr='0px'
+      />      
+      {SummaryNoanzaIsShown && <text align='center'>{totalSteel}</text>}
+      {SummaryAakultaIsShown && <text align='center'>{totalSteel}</text>}
+      {SummaryFgCraftingIsShown && <text align='center'>{totalSteel}</text>}
       </VStack>
   </Box>
         </Td>
@@ -2850,7 +3026,6 @@ const totalFgCraftingKirerfWCResult = (totalXaeyWCCraft + totalDustWignowWCCraft
     </Tbody>
   </Table>
 </TableContainer>
-
 
 <br></br>
 </Container>
@@ -2981,12 +3156,20 @@ const totalFgCraftingKirerfWCResult = (totalXaeyWCCraft + totalDustWignowWCCraft
         </VStack>
 </Td>
         <Td isNumeric>
-        {NoanzaKirerfQtyIsShown && <text align='center'>0</text>}
-        {NoanzaGlivaQtyIsShown && <text align='center'>{totalGlivaQtyLoot}</text>}
+        {NoanzaKirerfQtyIsShown && <Container>0</Container>}
+        {NoanzaGlivaQtyIsShown && <Container>{totalGlivaQtyLoot}</Container>}
+        {AakultaGlivaQtyIsShown && <Container>{totalGlivaQtyLoot}</Container>}
+        {AakultaKirerfQtyIsShown && <Container>0</Container>}
+        {CraftingGlivaQtyIsShown && <Container>{totalGlivaQtyCrafting}</Container>}
+        {CraftingKirerfQtyIsShown && <Container>0</Container>}
         </Td>
         <Td isNumeric>
         {NoanzaKirerfQtyIsShown && <Container>0</Container>}
         {NoanzaGlivaQtyIsShown && <Container>{totalGlivaWCLoot}</Container>}
+        {AakultaGlivaQtyIsShown && <Container>{totalGlivaWCLoot}</Container>}
+        {AakultaKirerfQtyIsShown && <Container>0</Container>}
+        {CraftingGlivaQtyIsShown && <Container>{totalGlivaWCCrafting}</Container>}
+        {CraftingKirerfQtyIsShown && <Container>0</Container>}
         </Td>
       </Tr>
       <Tr>
@@ -3003,9 +3186,18 @@ const totalFgCraftingKirerfWCResult = (totalXaeyWCCraft + totalDustWignowWCCraft
 <Td isNumeric> 
         {NoanzaKirerfQtyIsShown && <Container>{totalKirerfQtyLoot}</Container>}
         {NoanzaGlivaQtyIsShown && <Container>0</Container>}
+        {AakultaGlivaQtyIsShown && <Container>{totalKirerfQtyLoot}</Container>}
+        {AakultaKirerfQtyIsShown && <Container>0</Container>}
+        {CraftingGlivaQtyIsShown && <Container>{totalKirerfQtyCrafting}</Container>}
+        {CraftingKirerfQtyIsShown && <Container>0</Container>}
       </Td>
-        <Td isNumeric>{NoanzaKirerfQtyIsShown && <Container>{totalKirerfWCLoot}</Container>}
+        <Td isNumeric>
+        {NoanzaKirerfQtyIsShown && <Container>{totalKirerfWCLoot}</Container>}
         {NoanzaGlivaQtyIsShown && <Container>0</Container>}
+        {AakultaGlivaQtyIsShown && <Container>{totalKirerfWCLoot}</Container>}
+        {AakultaKirerfQtyIsShown && <Container>0</Container>}
+        {CraftingGlivaQtyIsShown && <Container>{totalKirerfWCCrafting}</Container>}
+        {CraftingKirerfQtyIsShown && <Container>0</Container>}
         </Td>
       </Tr>
       <Tr>
