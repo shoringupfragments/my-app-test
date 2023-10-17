@@ -11,7 +11,6 @@ import {
   Image,
   Divider,
 } from '@chakra-ui/react';
-import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Link } from 'react-router-dom';
 import darkTheme from './theme';
 
@@ -22,9 +21,8 @@ function App() {
     <ChakraProvider theme={darkTheme}>
       <Box textAlign="center" fontSize="xl">
         <Grid minH="70vh" p={3}>
-          <ColorModeSwitcher justifySelf="flex-end" />
           <VStack spacing={8} justify='center'>
-            <Image src='https://i.imgur.com/QUBFKJf.png' />
+            <Image src='https://i.imgur.com/svUT2a2.png' />
             <Heading
                     _hover={{  color: "teal.500",  }}><Link to="/">4theWords Planner</Link></Heading>
             <Breadcrumb>

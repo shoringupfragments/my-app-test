@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState,useEffect, useColorMode, useColorModeValue, } from "react";
+import { useState, useEffect } from "react";
 import {
   Accordion,
   AccordionItem,
@@ -38,13 +38,19 @@ import {
   WrapItem,
   Wrap,
   Tfoot,
+  useColorMode, useColorModeValue
 } from '@chakra-ui/react';
-import { ChevronDownIcon, ChevronRightIcon, MinusIcon, AddIcon, } from '@chakra-ui/icons';
-import { ColorModeSwitcher } from './ColorModeSwitcher';
-import { Routes, Route, Link } from 'react-router-dom';
+import { FaMoon, FaSun } from 'react-icons/fa';
+
+
+
 
 function App() {
 
+  const { toggleColorMode } = useColorMode()
+  const text = useColorModeValue('light', 'dark');
+  const SwitchIcon = useColorModeValue(FaSun, FaMoon);
+  const tablecolor = useColorModeValue('purple', 'teal')
 
   const [noanzaActive, setNoanzaActive] = useState(false);
   const [aakultaActive, setAakultaActive] = useState(false);
@@ -1631,7 +1637,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
 // END OF EQUATIONS SO FAR//
 
   return (
-      <Box textAlign="center" fontSize="xl">
+    <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh">
           <VStack spacing={8}>
             <Heading pt={3}>City of Light</Heading>
@@ -1663,7 +1669,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png '
-        alt='Fusion Glass'
         mr='0px'
       /><text><b>Fusion Glass</b></text>
          Source:</HStack>
@@ -1674,7 +1679,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png'
-        alt='Noanza'
         mr='12px'
       />
       <span>Noanza</span></Button>
@@ -1684,7 +1688,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/5/59/Aakulta.png'
-        alt='Aakulta'
         mr='12px'
       />
       <span>Aakulta</span></Button></WrapItem>
@@ -1699,7 +1702,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/7/72/Cave-mushroom.png'
-        alt='Mushrooms'
         mr='0px'
       /><text><b>Mushrooms</b></text></HStack>
          <br></br>
@@ -1708,7 +1710,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/a/a6/Kirerf.png'
-        alt='Kirerf'
         mr='12px'
       />
       <text>Kirerf</text></Button>
@@ -1716,7 +1717,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/1/15/Gliva.png'
-        alt='Gliva'
         mr='12px'
       />
       <text>Gliva</text></Button>
@@ -1728,7 +1728,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/7/72/Cave-mushroom.png'
-        alt='Mushrooms'
         mr='0px'
       /><text><b>Mushrooms</b></text></HStack>
          <br></br>
@@ -1737,7 +1736,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/a/a6/Kirerf.png'
-        alt='Kirerf'
         mr='12px'
       />
       <text>Kirerf</text></Button>
@@ -1745,7 +1743,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/1/15/Gliva.png'
-        alt='Gliva'
         mr='12px'
       />
       <text>Gliva</text></Button>
@@ -1757,7 +1754,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/7/72/Cave-mushroom.png'
-        alt='Mushrooms'
         mr='0px'
       /><text><b>Mushrooms</b></text></HStack>
          <br></br>
@@ -1766,7 +1762,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/a/a6/Kirerf.png'
-        alt='Kirerf'
         mr='12px'
       />
       <text>Kirerf</text></Button>
@@ -1774,7 +1769,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/1/15/Gliva.png'
-        alt='Gliva'
         mr='12px'
       />
       <text>Gliva</text></Button>
@@ -1797,7 +1791,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
-        alt='Dust-Repellent Elixir'
         mr='0px'
       /><text>Dust-Repellent Elixir</text>
         </HStack>
@@ -1828,7 +1821,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
-        alt='Fusion Glass'
         mr='0px'
       /><text>Fusion Glass</text>
         </HStack>
@@ -1861,7 +1853,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/9/91/LightenedDust.png'
-        alt='Lightened Dust'
         mr='0px'
       /><text>Lightened Dust</text>
         </HStack>
@@ -1893,7 +1884,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e2/Refined-dust.png'
-        alt='Refined Dust'
         mr='0px'
       /><text>Refined Dust</text>
         </HStack>
@@ -1925,7 +1915,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/b/b3/Dust_md.png'
-        alt='Dust'
         mr='0px'
       /><text>Dust</text>
         </HStack>
@@ -1955,7 +1944,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/1/19/Wignowessence_md.png'
-        alt='Essence'
         mr='0px'
       /><text>Essence</text>
         </HStack>
@@ -1987,7 +1975,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/7/72/Cave-mushroom.png'
-        alt='Mushroom'
         mr='0px'
       /><text>Mushroom</text>
         </HStack>
@@ -2018,7 +2005,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/d/d8/Dark-forest-leaves.png'
-        alt='Dark Forest Leaves'
         mr='0px'
       /><text>Dark Forest Leaves</text>
         </HStack>
@@ -2050,7 +2036,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/5/5e/Bones.png/'
-        alt='Bones'
         mr='0px'
       /><text>Bones</text>
         </HStack>
@@ -2083,7 +2068,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/a/ad/Purple-crystal-shards.png'
-        alt='Purple Crystal Shards'
         mr='0px'
       /><text>Purple Crystal Shards</text>
         </HStack>
@@ -2125,7 +2109,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/0/07/AakultaHelmet.png'
-        alt='Aakulta Helmet'
         mr='0px'
       /><text>Aakulta Helmet</text>
         </HStack>
@@ -2158,7 +2141,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/7/7d/ClimbingBoots.png/'
-        alt='Climbing Boots'
         mr='0px'
       /><text>Climbing Boots</text>        </HStack>
         </Box>
@@ -2189,7 +2171,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/f/f8/CrestedHelmet.png'
-        alt='Crested Helmet'
         mr='0px'
       /><text>Crested Helmet</text>        
       </HStack>
@@ -2221,7 +2202,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/b/b6/FlowerSlingshot.png/'
-        alt='Flower Slingshot'
         mr='0px'
       /><text>Flower Slingshot</text>
       </HStack>
@@ -2254,7 +2234,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Fusion_Crossbow.png'
-        alt='Fusion Crossbow'
         mr='0px'
       /><text>Fusion Crossbow</text>
         </HStack>
@@ -2287,7 +2266,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/f/fa/FusionCuirass.png'
-        alt='Fusion Cuirass'
         mr='0px'
       /><text>Fusion Cuirass</text>
         </HStack>
@@ -2320,7 +2298,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/c/c6/FusionSword.png'
-        alt='Fusion Sword'
         mr='0px'
       /><text>Fusion Sword</text>
         </HStack>
@@ -2353,7 +2330,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/3/3c/HopesLight.png'
-        alt='Hopes Light'
         mr='0px'
       /><text>Hope's Light</text>
         </HStack>
@@ -2385,7 +2361,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/d/db/LeatherCuriass.png'
-        alt='Leather Cuirass'
         mr='0px'
       /><text>Leather Cuirass</text>
         </HStack>
@@ -2417,7 +2392,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/f/f6/LeatherTurnshoe.png'
-        alt='Leather Turnshoe'
         mr='0px'
       /><text>Leather Turnshoe</text>
         </HStack>
@@ -2449,7 +2423,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/a/a7/LightsBloom.png'
-        alt='Lights Bloom'
         mr='0px'
       /><text>Light's Bloom</text>
         </HStack>
@@ -2481,7 +2454,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/f/f0/PoePick.png/'
-        alt='Poe Pick'
         mr='0px'
       /><text>Poe Pick</text>
         </HStack>
@@ -2518,7 +2490,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
 <Heading>Quick View</Heading>
 <br></br>
 <TableContainer>
-  <Table align='center' variant='simple' colorScheme='teal' maxW={20}>
+  <Table align='center' variant='simple' colorScheme={tablecolor} maxW={20}>
   <Tbody>
     <Tr>
 <Td><Stat>
@@ -2560,7 +2532,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/5/59/Aakulta.png'
-        alt='Aakulta'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Aakulta</Text>
       {SummaryNoanzaIsShown && <text align='center'>0</text>}
@@ -2576,7 +2547,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/2/23/Ardid.png'
-        alt='Ardid'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Ardid</Text>
       {SummaryNoanzaIsShown && <text align='center'>{totalArdidQtyLoot}</text>}
@@ -2592,7 +2562,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/c/c5/Arluzi.png'
-        alt='Arluzi'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Arluzi</Text>
       {SummaryNoanzaIsShown && <text align='center'>{totalLdLootingNoanza}</text>}
@@ -2611,7 +2580,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/0/0d/Ascre.png'
-        alt='Ascre'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Ascre</Text>
 {SummaryNoanzaIsShown && <text align='center'>{totalAscreQtyLoot}</text>}
@@ -2628,7 +2596,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/7/7b/Dust_Wignow.png'
-        alt='Dust Wignow'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Dust Wignow</Text>
  {SummaryNoanzaIsShown && <text align='center'>{totalDustWignowQtyLoot}</text>}
@@ -2644,7 +2611,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/1/15/Gliva.png'
-        alt='Gliva'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Gliva</Text>
 {NoanzaGlivaQtyIsShown && <text align='center'>{totalGlivaQtyLoot}</text>}
@@ -2665,7 +2631,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/a/a6/Kirerf.png'
-        alt='Kirerf'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Kirerf</Text>
  {NoanzaKirerfQtyIsShown && <text align='center'>{totalKirerfQtyLoot}</text>}
@@ -2684,7 +2649,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png'
-        alt='Noanza'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Noanza</Text>
 {SummaryNoanzaIsShown && <text align='center'>{totalNoanzaQty}</text>}
@@ -2700,7 +2664,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/2/22/Xaey.png'
-        alt='Xaey'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Xaey</Text>  	
  {SummaryNoanzaIsShown && <text align='center' justify='center'>{totalXaeyQtyLoot}</text>}
@@ -3058,7 +3021,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
 <Container><br></br>
 <br></br></Container>
 <TableContainer>
-  <Table variant='striped' align='center' colorScheme='teal' maxW={10}>
+  <Table variant='striped' align='center' colorScheme={tablecolor} maxW={10}>
     <Thead>
       <Tr>
         <Th>Monster</Th>
@@ -3074,7 +3037,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/5/59/Aakulta.png'
-        alt='Aakulta'
         mr='5px'
       /> <Text>Aakulta</Text>
         </VStack>
@@ -3094,7 +3056,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/2/23/Ardid.png'
-        alt='Ardid'
         mr='5px'
       /> <text>Ardid</text>
         </VStack>
@@ -3116,7 +3077,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/c/c5/Arluzi.png'
-        alt='Arluzi'
         mr='5px'
       /> <text>Arluzi</text>
         </VStack>
@@ -3134,7 +3094,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/0/0d/Ascre.png'
-        alt='Ascre'
         mr='5px'
       /> <text>Ascre</text>
         </VStack>
@@ -3153,7 +3112,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/7/7b/Dust_Wignow.png'
-        alt='Dust Wignow'
         mr='5px'
       /> <Text align='center'>Dust<br></br>Wignow</Text>
         </VStack>
@@ -3171,7 +3129,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/1/15/Gliva.png'
-        alt='Gliva'
         mr='5px'
       /> <text>Gliva</text>
         </VStack>
@@ -3199,7 +3156,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/a/a6/Kirerf.png'
-        alt='Kirerf'
         mr='5px'
       /> <text>Kirerf</text>
         </VStack>
@@ -3227,7 +3183,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png'
-        alt='Noanza'
         mr='5px'
       /> <text>Noanza</text>
         </VStack>
@@ -3246,7 +3201,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/2/22/Xaey.png'
-        alt='Xaey'
         mr='5px'
       /> <text>Xaey</text>
         </VStack>
@@ -3285,7 +3239,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/0/07/AakultaHelmet.png'
-        alt='Aakulta Helmet'
         mr='0px'/>
         </Center>
        <Heading size='md'>{aakhelResult} Aakulta Helmet</Heading>
@@ -3379,7 +3332,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/7/7d/ClimbingBoots.png/'
-        alt='Climbing Boots'
         mr='0px'/>
         </Center>
        <Heading size='md'>{clibooResult} Climbing Boots</Heading>
@@ -3458,7 +3410,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/f/f8/CrestedHelmet.png'
-        alt='Crested Helmet'
         mr='0px'/>
         </Center>
        <Heading size='md'>{crehelResult} Crested Helmet</Heading>
@@ -3537,7 +3488,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/b/b6/FlowerSlingshot.png/'
-        alt='Flower Slingshot'
         mr='0px'/>
         </Center>
        <Heading size='md'>{flosliResult} Flower Slingshot</Heading>
@@ -3630,7 +3580,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Fusion_Crossbow.png'
-        alt='Fusion Crossbow'
         mr='0px'/>
         </Center>
        <Heading size='md'>{fuscroResult} Fusion Crossbow</Heading>
@@ -3737,7 +3686,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/f/fa/FusionCuirass.png'
-        alt='Fusion Cuirass'
         mr='0px'/>
         </Center>
        <Heading size='md'>{fuscuiResult} Fusion Cuirass</Heading>
@@ -3831,7 +3779,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/c/c6/FusionSword.png'
-        alt='Fusion Sword'
         mr='0px'/>
         </Center>
        <Heading size='md'>{fusswoResult} Fusion Sword</Heading>
@@ -3924,7 +3871,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/3/3c/HopesLight.png'
-        alt='Hopes Light'
         mr='0px'/>
         </Center>
        <Heading size='md'>{hopligResult} Hope's Light</Heading>
@@ -4003,7 +3949,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/d/db/LeatherCuriass.png'
-        alt='Leather Cuirass'
         mr='0px'/>
         </Center>
        <Heading size='md'>{leacuiResult} Leather Cuirass</Heading>
@@ -4097,7 +4042,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/f/f6/LeatherTurnshoe.png'
-        alt='Leather Turnshoe'
         mr='0px'/>
         </Center>
        <Heading size='md'>{leaturResult} Leather Turnshoe</Heading>
@@ -4177,7 +4121,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/a/a7/LightsBloom.png'
-        alt='Lights Bloom'
         mr='0px'/>
         </Center>
        <Heading size='md'>{ligbloResult} Light's Bloom</Heading>
@@ -4256,7 +4199,6 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         boxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/f/f0/PoePick.png/'
-        alt='Poe Pick'
         mr='0px'/>
         </Center>
        <Heading size='md'>{poepicResult} Poe Pick</Heading>

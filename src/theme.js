@@ -6,6 +6,6 @@ const config = {
     useSystemColorMode: false,
   }
 
-  const theme = extendTheme({ config })
+  const darkTheme = extendTheme({ config })
 
-export default theme
+export default darkTheme

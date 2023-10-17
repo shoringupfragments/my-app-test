@@ -36,9 +36,10 @@ function App() {
                 <br></br>
                 - Nivali battle items, wardrobe, and housing items
                 <br></br>
-                <br></br></p></Container>
+                <br></br></p>
+                <Divider /></Container>
                 <Heading>Notice a Mistake?</Heading>
-                <Container><text>This site is maintained by</text> <Link href='https://app.4thewords.com/account/ecstatic' color='teal.500'><b>ecstatic</b></Link><text>. <br></br> If you see an error, please let me know so I can correct it :)
+                <Container><text>This planner is maintained by</text> <Link href='https://app.4thewords.com/account/ecstatic' color='teal.500'><b>ecstatic</b></Link><text>. <br></br> If you see an error, please let me know so I can correct it :)
                 </text></Container>
                 <br></br>
           </VStack>

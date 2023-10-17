@@ -7,6 +7,7 @@ export const ColorModeSwitcher = props => {
   const { toggleColorMode } = useColorMode();
   const text = useColorModeValue('light', 'dark');
   const SwitchIcon = useColorModeValue(FaSun, FaMoon);
+  const tablecolor = useColorModeValue('purple', 'teal')
 
 
   return (
