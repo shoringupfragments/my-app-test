@@ -1692,17 +1692,18 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Button  variant='outline' onClick={handleFgCraftingClick} style={{ backgroundColor: fgCraftingActive ? "#434ea0" : "transparent" }}>Crafting</Button>
         </WrapItem>
         </Wrap></Container>
-        <HStack><text>Select source for</text> 
+        
+        {NoanzaIsShown && <Container>
+          <VStack><HStack><text>Select source for</text> 
         <Image
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/7/72/Cave-mushroom.png'
         alt='Mushrooms'
         mr='0px'
-      /><text><b>Mushrooms</b></text>
-         Source:</HStack>
-        
-        {NoanzaIsShown &&  <Container><Wrap justify='center'>
+      /><text><b>Mushrooms</b></text></HStack>
+         <br></br>
+         <Wrap justify='center'>
         <Button  variant='outline' onClick={handleNoanzaKirerfClick}  style={{ backgroundColor: noanzaKirerfActive ? "#2C7A7B" : "transparent" }}>      <Image
         boxSize='2rem'
         borderRadius='full'
@@ -1719,9 +1720,19 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         mr='12px'
       />
       <text>Gliva</text></Button>
-        </Wrap></Container>}
+        </Wrap></VStack></Container>}
 
-        {AakultaIsShown &&  <Container><Wrap justify='center'>
+        {AakultaIsShown &&  <Container>
+          <VStack><HStack><text>Select source for</text> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/72/Cave-mushroom.png'
+        alt='Mushrooms'
+        mr='0px'
+      /><text><b>Mushrooms</b></text></HStack>
+         <br></br>
+         <Wrap justify='center'>
         <Button  variant='outline' onClick={handleAakultaKirerfClick}  style={{ backgroundColor: aakultaKirerfActive ? "#2C7A7B" : "transparent" }}>      <Image
         boxSize='2rem'
         borderRadius='full'
@@ -1738,9 +1749,19 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         mr='12px'
       />
       <text>Gliva</text></Button>
-        </Wrap></Container>}
+        </Wrap></VStack></Container>}
 
-        {FgCraftingIsShown &&  <Container><Wrap justify='center'>
+        {FgCraftingIsShown && <Container>
+          <VStack><HStack><text>Select source for</text> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/72/Cave-mushroom.png'
+        alt='Mushrooms'
+        mr='0px'
+      /><text><b>Mushrooms</b></text></HStack>
+         <br></br>
+         <Wrap justify='center'>
         <Button  variant='outline' onClick={handleCraftingKirerfClick}  style={{ backgroundColor: craftingKirerfActive ? "#2C7A7B" : "transparent" }}>      <Image
         boxSize='2rem'
         borderRadius='full'
@@ -1757,7 +1778,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         mr='12px'
       />
       <text>Gliva</text></Button>
-        </Wrap></Container>}
+        </Wrap></VStack></Container>}
 
 <Accordion allowMultiple>
   <AccordionItem>
