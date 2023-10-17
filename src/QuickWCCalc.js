@@ -47,7 +47,6 @@ const [wcResult, setWCResult] = useState(0);
 
 
   return (
-    <ChakraProvider theme={theme}>
       <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh">
           <VStack spacing={8}>
@@ -78,7 +77,6 @@ const [wcResult, setWCResult] = useState(0);
           
         </Grid>
       </Box>
-    </ChakraProvider>
   );
 }
 

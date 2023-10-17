@@ -8,18 +8,18 @@ import {
   Heading,
   VStack,
   Grid,
-  theme,
   Image,
   Divider,
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import { Link } from 'react-router-dom';
+import darkTheme from './theme';
 
 function App() {
 
   
   return (
-    <ChakraProvider theme={theme}>
+    <ChakraProvider theme={darkTheme}>
       <Box textAlign="center" fontSize="xl">
         <Grid minH="70vh" p={3}>
           <ColorModeSwitcher justifySelf="flex-end" />

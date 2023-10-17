@@ -17,7 +17,6 @@ import {
   HStack,
   VStack,
   Grid,
-  theme,
   Text,
   Table,
   Thead,
@@ -1462,7 +1461,6 @@ const totalFinalWCResult = (totalXaeyWCLoot + totalXaeyWCCraft + totalDustWignow
 // END OF EQUATIONS SO FAR//
 
   return (
-    <ChakraProvider theme={theme}>
       <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh">
           <VStack spacing={8}>
@@ -3993,7 +3991,6 @@ const totalFinalWCResult = (totalXaeyWCLoot + totalXaeyWCCraft + totalDustWignow
 
         </Grid>
       </Box>
-    </ChakraProvider>
   );
 }
 
