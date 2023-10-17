@@ -9,13 +9,14 @@ import CityofLight from './CityofLight'
 import DustedCastle from './DustedCastle'
 import Nivali from './Nivali'
 import Sidebar from './Sidebar'
+import theme from './theme';
 
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
 
 root.render(
   <BrowserRouter>
-    <ColorModeScript />
+    <ColorModeScript initialColorMode={theme.config.initialColorMode} />
     <Header />
 
 
