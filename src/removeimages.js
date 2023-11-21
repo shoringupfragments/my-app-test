@@ -82,7 +82,7 @@ function App() {
             - dragon preview sketches (thanks Splash!)
             <br></br>
             <br></br>
-            Each option has a set of rules for the 4gittheWords site and the 4theWords Wiki, 
+            Each option has a set of rules for the 4theWords site and the 4theWords Wiki, 
             replacing every single spooder across the sites (as of 2023-20-11). 
             <br></br>            
     </ListItem>
