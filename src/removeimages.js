@@ -70,7 +70,7 @@ function App() {
     </ListItem>
   <br></br>
   <ListItem>Download the following json file from Google Drive: 
-  <Link href="https://drive.google.com/file/d/1Fd9P-rijSyRkVEwfC2IQV3CZ_BEgzBfP/view?usp=sharing"
+  <Link href="https://drive.google.com/file/d/1KW9LXtVkjG0IjTm9ZsinF93j08xREcSD/view?usp=sharing"
             color='teal.500'   
             _hover={{  color: "teal.300",  }}><b> Pre-made Spider Replacements</b></Link>
             <br></br>
