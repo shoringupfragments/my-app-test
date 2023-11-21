@@ -47,7 +47,7 @@ function App() {
     <h2>
       <AccordionButton>
       <Box as="span" flex='1' textAlign='center' p={3}>
-        <Heading as='h3' size='lg'>On Desktop</Heading>
+        <Heading as='h3' size='lg'>Remove Spoods On Desktop</Heading>
         </Box>
         <AccordionIcon />
       </AccordionButton>
@@ -197,7 +197,7 @@ function App() {
     <h2>
       <AccordionButton>
       <Box as="span" flex='1' textAlign='center' p={3}>
-        <Heading as='h3' size='lg'>On Mobile (Firefox only)</Heading>
+        <Heading as='h3' size='lg'>Remove Spoods On Mobile (Firefox only)</Heading>
         </Box>
         <AccordionIcon />
       </AccordionButton>
@@ -248,8 +248,95 @@ function App() {
     <br></br>
     </AccordionPanel>
   </AccordionItem>
-</Accordion>
-<br></br>
+<AccordionItem>
+    <h2>
+      <AccordionButton>
+      <Box as="span" flex='1' textAlign='center' p={3}>
+        <Heading as='h3' size='lg'>Replace Any Image on Desktop</Heading>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+    <OrderedList textAlign='left'>
+    <ListItem>Install the <b>Request Interceptor</b> extension: 
+  <Link href="https://chromewebstore.google.com/detail/request-interceptor/bfgblailifedppfilabonohepkofbkpm"
+            color='teal.500'   
+            _hover={{  color: "teal.300",  }}> <b>Chrome</b></Link> / 
+      <Link href="https://addons.mozilla.org/en-US/firefox/addon/request-interceptor/"
+            color='teal.500'   
+            _hover={{  color: "teal.300",  }}><b> Firefox</b></Link> /
+                  <Link href="https://microsoftedge.microsoft.com/addons/detail/request-interceptor/mbfelkekkjdbfaaocmdkdchffhejfplk"
+            color='teal.500'   
+            _hover={{  color: "teal.300",  }}><b> Microsoft Edge</b></Link>
+            <br></br><br></br>
+    </ListItem>
+    <ListItem>
+    Open the extension's menu and edit its settings in the upper right corner to 
+    be able to add descriptions or toggle individual rules on and off. Note: I 
+    like to have auto-save on, but if you're sensitive to fast frame refresh or flicking movement,
+    I would advise manual save only since the extension flickers a loading screen every time it saves.
+    </ListItem>
+    <br></br>
+    <Box boxSize='med'>
+  <Image src='https://i.imgur.com/DdC0Tuj.png'/>
+  </Box>
+  <br></br>
+    <ListItem>
+      Create a new rule group. Note that rule groups can be toggled 
+      on/off as an entire unit.
+    </ListItem>
+    <br></br>
+    <Box boxSize='med'>
+  <Image src='https://i.imgur.com/AWbJ3Ox.png'/>
+  </Box>
+  <br></br>
+  <ListItem>
+    Give your group a title and specify what URL to apply it to, 4theWords or the Wiki.
+  </ListItem>
+  <br></br>
+  <Box boxSize='med'>
+  <Image src='https://i.imgur.com/S0gtHz3.png'/>
+  </Box>
+  <br></br>
+  <ListItem>
+    Gather your image links. You need a link for the monster you want to replace and a 
+    link for the image you want to replace it with. <b>The image you replace with
+      MUST be square to avoid breaking the site's layout.</b> You can use any image by uploading 
+      to a host like Imgur.
+    <br></br><br></br>
+    <Box boxSize='med'>
+  <Image src='https://i.imgur.com/DPaDF3t.png'/>
+  </Box>
+  </ListItem>
+  <br></br><br></br>
+  <ListItem>
+    Fill out the rule conditions. Source link goes first. Select "Redirect To" in the dropdown, 
+    then put the link to the image you want to display instead. The description is optional but helpful 
+    for organization.
+    <br></br><br></br>
+    <Box boxSize='med'>
+  <Image src='https://i.imgur.com/q69GPvZ.png'/>
+  </Box>
+  </ListItem>
+  <br></br>
+  <ListItem>If this toggle says OFF, switch it to ON to enable your rule group</ListItem>
+  <br></br>
+  <Box boxSize='med'>
+  <Image src='https://i.imgur.com/yRwqugW.png'/>
+  </Box>
+  <br></br>
+  <ListItem>Refresh the page; you should now see your custom image. Have fun!</ListItem>
+  <br></br>
+  <Box boxSize='med'>
+  <Image src='https://i.imgur.com/4jXdlSa.png'/>
+  </Box>
+  <br></br>
+    </OrderedList>
+    </AccordionPanel>
+    </AccordionItem>
+    </Accordion>
+
                 </Container>
 
           </VStack>
