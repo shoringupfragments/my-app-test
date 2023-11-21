@@ -2,11 +2,11 @@ import React from 'react';
 import {
   ChakraProvider,
 } from '@chakra-ui/react';
-import { ChakraTheme } from '@chakra-ui/theme';
 import { Routes, Route} from 'react-router-dom';
 import QuickWCCalc from './QuickWCCalc';
 import CityofLight from './CityofLight'
-import Homepage from './Homepage'
+import Homepage from './Homepage';
+import RemoveImages from './removeimages';
 import darkTheme from './theme';
 
 
@@ -19,6 +19,7 @@ function App() {
       <Route path="" element={ <Homepage/> } />
       <Route path="quickwccalc" element={ <QuickWCCalc/> } />
       <Route path="cityoflight" element={ <CityofLight/> } />
+      <Route path="removeimages" element={ <RemoveImages/> } />
       </Routes>
     </ChakraProvider>
   );

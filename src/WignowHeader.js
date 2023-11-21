@@ -36,6 +36,11 @@ function App() {
             color='teal.500'   
             _hover={{  color: "teal.300",  }}><Link to="cityoflight">City of Light</Link></BreadcrumbLink>
   </BreadcrumbItem>
+  <BreadcrumbItem>
+    <BreadcrumbLink
+            color='teal.500'   
+            _hover={{  color: "teal.300",  }}><Link to="removeimages">Remove Images</Link></BreadcrumbLink>
+  </BreadcrumbItem>
 </Breadcrumb>
 <Divider></Divider>
           </VStack>
