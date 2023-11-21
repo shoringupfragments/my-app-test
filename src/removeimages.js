@@ -32,17 +32,16 @@ function App() {
         <Grid minH="100vh">
           <VStack spacing={8}>
           <Heading pt={3}>How to Replace Images on 4theWords</Heading>
-            <Container><p>This page was created to de-spider 
+            <Container><p>This page was created to de-spooder 
                 4theWords' November 2023 event. 
                 <br></br>
                 <br></br>
                 Follow the instructions below to install premade alternatives
                 to the spideys, or scroll on to find how to replace any other 
-                image.
+                image. 
                 </p>
                 <br></br>
-                <Divider></Divider>
-                <br></br>
+
                 <Accordion allowMultiple>
   <AccordionItem>
     <h2>
@@ -72,18 +71,18 @@ function App() {
   <ListItem>Download the following json file from Google Drive: 
   <Link href="https://drive.google.com/file/d/1KW9LXtVkjG0IjTm9ZsinF93j08xREcSD/view?usp=sharing"
             color='teal.500'   
-            _hover={{  color: "teal.300",  }}><b> Pre-made Spider Replacements</b></Link>
+            _hover={{  color: "teal.300",  }}><b> Pre-made Spooder Replacements</b></Link>
             <br></br>
             <br></br>
 
-            This file has three options to replace spiders with: 
+            This file has three options to replace spooders with: 
             <br></br>
             - color-coded Knuffs             <br></br>
             - class symbols (thanks Chokolatte!)             <br></br>
             - dragon preview sketches (thanks Splash!)
             <br></br>
             <br></br>
-            Each option has a set of rules for the 4theWords site and the 4theWords Wiki, 
+            Each option has a set of rules for the 4gittheWords site and the 4theWords Wiki, 
             replacing every single spooder across the sites (as of 2023-20-11). 
             <br></br>            
     </ListItem>
@@ -132,6 +131,64 @@ function App() {
   <Image src='https://i.imgur.com/JVSzE9B.png'/>
 </Box>
 </OrderedList>
+<br></br>
+<Divider></Divider>
+<br></br>
+<Heading pt={3} as='h3' size='lg'>Optional: Remove Text References to Spooders</Heading>
+<br></br>
+<OrderedList textAlign='left'>
+  <ListItem>Install the <b>Word Replacer</b> extension: 
+  <Link href="https://chromewebstore.google.com/detail/word-replacer-ii/djakfbefalbkkdgnhkkdiihelkjdpbfh"
+            color='teal.500'   
+            _hover={{  color: "teal.300",  }}> <b>Chrome</b></Link> / 
+      <Link href="https://addons.mozilla.org/en-US/firefox/addon/word_replacer/"
+            color='teal.500'   
+            _hover={{  color: "teal.300",  }}><b> Firefox</b></Link> /
+                  <Link href="https://support.microsoft.com/en-us/microsoft-edge/add-turn-off-or-remove-extensions-in-microsoft-edge-9c0ec68c-2fbc-2f2c-9ff0-bdc76f46b026"
+            color='teal.500'   
+            _hover={{  color: "teal.300",  }}><b> How to Use Chrome Extension on Microsoft Edge</b></Link>
+            <br></br><br></br>
+    </ListItem>
+  <br></br>
+  <ListItem>
+    Copy the appropriate Pastebin text for the version of spooder filter you want to use:
+    <Link href="https://pastebin.com/HLJaRFby"
+            color='teal.500'   
+            _hover={{  color: "teal.300",  }}> <b> Knuffs</b></Link> / 
+      <Link href="https://pastebin.com/myWqEPsF"
+            color='teal.500'   
+            _hover={{  color: "teal.300",  }}><b> Class Symbols</b></Link> /
+                  <Link href="https://pastebin.com/Hnppuk9c"
+            color='teal.500'   
+            _hover={{  color: "teal.300",  }}><b> Dragons</b></Link>
+            <br></br><br></br>
+  </ListItem>
+  <ListItem>
+    Open the Word Replacer settings by clicking the add-on in your toolbar or add-ons menu
+  </ListItem>
+  <br></br>
+  <Box boxSize='med'>
+  <Image src='https://i.imgur.com/VB1WQDf.png'/>
+</Box>
+  <br></br>
+  <ListItem>
+    Paste your text into the Export / Import box and select <b>Import</b>
+  </ListItem>
+  <br></br>
+  <Box boxSize='med'>
+  <Image src='https://i.imgur.com/OYeGsRO.png'/>
+</Box>
+  <br></br>
+  <ListItem>
+    Your list will auto-populate on the left. To change the filters you use, just click the ones you 
+    want to enable and select <b>Enable</b> at the top of the list. Then repeat for those you want to disable, 
+    selecting <b>Disable</b> this time.
+    <br></br><br></br>
+    All three lists have all options available, to spare you returning to this page or copy/pasting more. 
+  </ListItem>
+  <br></br><br></br>
+</OrderedList>
+
 <br></br>
     </AccordionPanel>
   </AccordionItem>
