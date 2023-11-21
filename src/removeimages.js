@@ -106,6 +106,13 @@ function App() {
   <Image src='https://i.imgur.com/SG5c9Nk.png'/>
 </Box>
   <br></br>
+  <ListItem>Toggle the image replacement categories you select (one for 4theWords, one for the Wiki)
+     to <b>On</b> in the upper right corner
+  </ListItem>
+  <br></br>
+  <Box boxSize='med'>
+  <Image src='https://i.imgur.com/yRwqugW.png'/>
+</Box>
   <ListItem>Select <b>Save</b> in the upper right corner</ListItem>
   <br></br>
   <Box boxSize='med'>
