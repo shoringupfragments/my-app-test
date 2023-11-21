@@ -61,7 +61,12 @@ function App() {
             _hover={{  color: "teal.300",  }}> <b>Chrome</b></Link> / 
       <Link href="https://addons.mozilla.org/en-US/firefox/addon/request-interceptor/"
             color='teal.500'   
-            _hover={{  color: "teal.300",  }}><b> Firefox</b></Link>
+            _hover={{  color: "teal.300",  }}><b> Firefox</b></Link> /
+                  <Link href="https://microsoftedge.microsoft.com/addons/detail/request-interceptor/mbfelkekkjdbfaaocmdkdchffhejfplk"
+            color='teal.500'   
+            _hover={{  color: "teal.300",  }}><b> Microsoft Edge</b></Link>
+            <br></br><br></br>
+
     </ListItem>
   <br></br>
   <ListItem>Download the following json file from Google Drive: 
