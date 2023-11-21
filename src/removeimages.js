@@ -124,7 +124,9 @@ function App() {
   <Image src='https://i.imgur.com/PGBmAwn.png'/>
 </Box>
 <br></br>
-  <ListItem><b>CLEAR YOUR CACHE! </b>Go to your browser's settings and clear both 4theWords' and the Wiki's cache</ListItem>
+  <ListItem>Refresh the page to load the changes.</ListItem>
+<br></br>    
+  <ListItem>If refreshing doesn't load the changes, clear your broswer cache. Go to your browser's settings and clear both 4theWords' and the Wiki's cache</ListItem>
   <br></br>
   <Box boxSize='med'>
   <Image src='https://i.imgur.com/JVSzE9B.png'/>
