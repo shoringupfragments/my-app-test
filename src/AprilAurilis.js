@@ -65,6 +65,7 @@ function App() {
   const [AKIsShown, setAKIsShown] = useState(false);
   const [AstroIsShown, setAstroIsShown] = useState(false);
   const [SpellsIsShown, setSpellsIsShown] = useState(false);
+  const [NullIsShown, setNullIsShown] = useState(false);
 
   const [RD1Active, setRD1Active] = useState(false);
   const [RD2Active, setRD2Active] = useState(false);
@@ -499,6 +500,12 @@ const [SapSix, setSapSix] = useState(0); // Or any other non-zero value
 const totalSapSix = Math.floor (totalSapee/6);
 
 const SmallestAedJarSap = Math.min (totalAedTen, totalJarSix, totalSapSix)
+
+//repeatable quest: 12 sapee//
+
+const [SapTwelve, setSapTwelve] = useState(0); // Or any other non-zero value
+const totalSapTwelve = Math.floor (totalSapee/12);
+
 
 
 //repeatable quest: 4 tyomu, 8 odees//
@@ -1434,36 +1441,21 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Magic_Sapee_Lamp.png'
         mr='12px'
       />
-      <span><b>AL 305: Different Items (3/3)</b><br></br>repeat up to {SmallestAedJarSap}x<br></br>##,### words per quest <br></br>##,### words total</span>
+      <span><b>AL 305: Different Items (3/3)</b><br></br>repeat up to <b>{totalSapTwelve}x</b><br></br>##,### words per quest <br></br>##,### words total</span>
       </HStack>
       </Box>
         <AccordionIcon />
       </AccordionButton>
     </h2>
-    <AccordionPanel h='220px' pb={4}>
-    <Text textAlign='center' fontSize={{ base: "16px", md: "18px"}}><i>Monsters Per Quest</i><br></br></Text>
-      <Wrap justify='center'>
-        <WrapItem>
+    <AccordionPanel h='250px' pb={4}>
+      <HStack justify='center'>
+    <Box justify='center' w='175px' h='60px' pb={5}>
        <HStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/8/82/Aederster.png/'
-        alt='Aederster'
-        mr='0px'/>  	    
-        <Text textAlign='left' fontSize={{ base: "14px", md: "16px"}}>10 Aederster</Text>
-      </HStack></WrapItem>
-      <WrapItem>
-      <HStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/c/c3/Jaraci.png/'
-        alt='Jaraci'
-        mr='0px'/>  	
-                <Text textAlign='left' fontSize={{ base: "14px", md: "16px"}}>6 Jaraci</Text></HStack>
-        </WrapItem>
-        <WrapItem>
+<Text mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='175px' h='60px' pb={5}>
         <HStack> 
        <Image
         boxSize='3rem'
@@ -1472,52 +1464,42 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         alt='Sapee'
         mr='0px'
       />      
-        <Text textAlign='left' fontSize={{ base: "14px", md: "16px"}}>6 Sapee</Text>
+      <text align='center'>12 Sapee</text>
       </HStack>
-      </WrapItem>
-  </Wrap>
-  <br></br>
-  <Text textAlign='center' fontSize={{ base: "16px", md: "18px"}}><i>Monsters for All {SmallestAedJarSap} Quests</i><br></br></Text>
-      <Wrap justify='center'>
-        <WrapItem>
+  </Box>
+  </HStack>
+<Divider mt='20px' mb='12px' />
+  <HStack justify='center'>
+    <Box justify='center' w='175px' h='60px' pb={5}>
+       <HStack> 
+<Text mt='5px' mr='15px' align='left'><i>Rewards<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='175px' h='60px' pb={5}>
        <HStack> 
         <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/8/82/Aederster.png/'
-        alt='Aederster'
-        mr='0px'/>  	    
-        <Text textAlign='left' fontSize={{ base: "14px", md: "16px"}}>10 Aederster</Text>
-      </HStack></WrapItem>
-      <WrapItem>
+        src='https://static.wikia.nocookie.net/4thewords/images/9/9a/Alchemy_Exam_Credit.png/'
+        mr='0px'
+      />  	<Text mb='12px' align='left'>1 Alchemy Exam Credit</Text>
+      </HStack>
       <HStack> 
         <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/c/c3/Jaraci.png/'
-        alt='Jaraci'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Magic_Sapee_Lamp.png'
         mr='0px'/>  	
-                <Text textAlign='left' fontSize={{ base: "14px", md: "16px"}}>6 Jaraci</Text></HStack>
-        </WrapItem>
-        <WrapItem>
-        <HStack> 
-       <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/2/27/Sapee.png/'
-        alt='Sapee'
-        mr='0px'
-      />      
-        <Text textAlign='left' fontSize={{ base: "14px", md: "16px"}}>6 Sapee</Text>
-      </HStack>
-      </WrapItem>
-  </Wrap>
+        <Text align='left'>1 Magic Sapee Lamp</Text></HStack>
+  </Box>
+  </HStack>
     </AccordionPanel>
   </AccordionItem>
 
   <AccordionItem>
     <h2>
-      <AccordionButton>
+      <AccordionButton _expanded={{ bg: 'green.900', color: 'white' }}>
       <Box as="span" flex='1' textAlign='left'>
         <HStack>
         <Image
@@ -1526,50 +1508,20 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         src='https://static.wikia.nocookie.net/4thewords/images/c/c7/Alchemy_Class_Ecosystem_1.png/'
         mr='12px'
       />
-      <span><b>AL 402: Using Organic Materials (3/3)</b><br></br>repeat up to {SmallestAedJarSap}x<br></br>##,### words per quest <br></br>##,### words total</span></HStack>
+      <span><b>AL 402: Using Organic Materials (3/3)</b><br></br>repeat up to <b>{SmallestAedJarSap}x</b><br></br>##,### words per quest <br></br>##,### words total</span></HStack>
       </Box>
         <AccordionIcon />
       </AccordionButton>
     </h2>
-    <AccordionPanel pb={4}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat.
-    </AccordionPanel>
-  </AccordionItem>
-</Accordion>
+    <AccordionPanel  h='350px'  pb={4}>
+    <HStack justify='center'>
+    <Box justify='center' w='175px' h='60px' pb={5}>
+       <HStack> 
+<Text mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
 
-        <TableContainer maxWidth='100%'>
-  <Table variant='striped' colorScheme={tablecolor}  align='center'>
-  <Thead>
-      <Tr>
-        <Th>Quest Name</Th>
-        <Th>Repetitions</Th>
-      </Tr>
-    </Thead>
-    <Tbody>
-      <Tr>
-        <Td>
-<text align='center'>Using Organic Materials (3/3)</text>
-        </Td>
-        <Td>
-<text align='center'>{SmallestAedJarSap}</text>
-        </Td>
-      </Tr>
-
-    </Tbody>
-  </Table>
-</TableContainer>
-<TableContainer maxWidth='100%'>
-  <Table variant='simple' align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><Text fontSize='md'><i>monsters per quest</i></Text></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
+    <Box justify='center' w='175px' h='60px' pb={5}>
        <HStack> 
         <Image
         boxSize='3rem'
@@ -1598,69 +1550,41 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
       <text align='center'>6 Sapee</text>
       </HStack>
   </Box>
-  <br></br>  <br></br>  <br></br>   <br></br>   <br></br>
-        </Td>
-      </Tr>
+  </HStack>
+<br></br><br></br><br></br><Divider mt='12px' mb='12px' />
+  <HStack justify='center'>
+    <Box justify='center' w='175px' h='60px' pb={5}>
+       <HStack> 
+<Text mt='5px' mr='15px' align='left'><i>Rewards<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
 
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>rewards<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
+    <Box justify='center' w='175px' h='60px' pb={5}>
        <HStack> 
         <Image
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/9/9a/Alchemy_Exam_Credit.png/'
         mr='0px'
-      />  	<text align='center'>1 Alchemy Exam Credit</text>
+      />  	<Text mb='12px' align='left'>1 Alchemy Exam Credit</Text>
       </HStack>
-  </Box>
-
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <HStack> 
+      <HStack> 
         <Image
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/c/c7/Alchemy_Class_Ecosystem_1.png/'
-        alt='Alchemy Class Ecosystem (House Reward)'
         mr='0px'/>  	
-        <text align='center'>1 Alchemy Class Ecosystem</text></HStack>
+        <Text align='left'>1 Alchemy Class Ecosystem</Text></HStack>
   </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-        </Td>
-      </Tr>
+  </HStack>
+    </AccordionPanel>
+  </AccordionItem>
+</Accordion>
 
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>word count<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://media.4thewords.com/media/ui/icons/i_words.png'
-        mr='0px'
-      />  	<text align='center'>#,###<br></br></text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-      </Tr>
-      </Tbody>
-      </Table></TableContainer>
-      <br></br><br></br><Divider />
 <br></br>
 </Container>}
 
-{AKIsShown && 
+{NullIsShown && 
 <Container>
   
 <Box as="span" flex='1' textAlign='center' padding-top={3}>
@@ -1807,7 +1731,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
 <br></br>
 </Container>}
 
-{AstroIsShown && 
+{NullIsShown && 
 <Container>
 <Box as="span" flex='1' textAlign='center' padding-top={3}>
               <Wrap justify='center'>
@@ -2202,7 +2126,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
 <br></br>
 </Container>}
 
-{SpellsIsShown && 
+{NullIsShown && 
 <Container>
 <Box as="span" flex='1' textAlign='center' padding-top={3}>
               <Wrap justify='center'>
