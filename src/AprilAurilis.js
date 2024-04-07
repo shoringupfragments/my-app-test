@@ -1483,7 +1483,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/9/9a/Alchemy_Exam_Credit.png/'
         mr='0px'
-      />  	<Text mb='12px' align='left'>1 Alchemy Exam Credit</Text>
+      />  	<Text  fontSize={{ base: "14px", lg: "20px"}} mb='12px' align='left'>1 Alchemy Exam Credit</Text>
       </HStack>
       <HStack> 
         <Image
@@ -1491,7 +1491,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Magic_Sapee_Lamp.png'
         mr='0px'/>  	
-        <Text align='left'>1 Magic Sapee Lamp</Text></HStack>
+        <Text  fontSize={{ base: "14px", lg: "20px"}} align='left'>1 Magic Sapee Lamp</Text></HStack>
   </Box>
   </HStack>
     </AccordionPanel>
@@ -1529,7 +1529,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         src='https://static.wikia.nocookie.net/4thewords/images/8/82/Aederster.png/'
         alt='Aederster'
         mr='0px'
-      />  	<text align='left'>10 Aederster</text>
+      />  	<Text  fontSize={{ base: "14px", lg: "20px"}} align='left'>10 Aederster</Text>
       </HStack>
       <HStack> 
         <Image
@@ -1538,7 +1538,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         src='https://static.wikia.nocookie.net/4thewords/images/c/c3/Jaraci.png/'
         alt='Jaraci'
         mr='0px'/>  	
-        <text align='left'>6 Jaraci</text></HStack>
+        <Text  fontSize={{ base: "14px", lg: "20px"}} align='left'>6 Jaraci</Text></HStack>
         <HStack> 
        <Image
         boxSize='3rem'
@@ -1547,7 +1547,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         alt='Sapee'
         mr='0px'
       />      
-      <text align='center'>6 Sapee</text>
+      <Text  fontSize={{ base: "14px", lg: "20px"}} align='center'>6 Sapee</Text>
       </HStack>
   </Box>
   </HStack>
@@ -1566,7 +1566,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/9/9a/Alchemy_Exam_Credit.png/'
         mr='0px'
-      />  	<Text mb='12px' align='left'>1 Alchemy Exam Credit</Text>
+      />  	<Text  fontSize={{ base: "14px", lg: "20px"}} mb='12px' align='left'>1 Alchemy Exam Credit</Text>
       </HStack>
       <HStack> 
         <Image
@@ -1574,7 +1574,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/c/c7/Alchemy_Class_Ecosystem_1.png/'
         mr='0px'/>  	
-        <Text align='left'>1 Alchemy Class Ecosystem</Text></HStack>
+        <Text  fontSize={{ base: "14px", lg: "20px"}} align='left'>1 Alchemy Class Ecosystem</Text></HStack>
   </Box>
   </HStack>
     </AccordionPanel>
