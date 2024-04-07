@@ -1441,7 +1441,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Magic_Sapee_Lamp.png'
         mr='12px'
       />
-      <span><b>AL 305: Different Items (3/3)</b><br></br>repeat up to <b>{totalSapTwelve}x</b><br></br>##,### words per quest <br></br>##,### words total</span>
+      <span><b>AL 305: Different Items (3/3)</b><br></br>repeat up to <b>{totalSapTwelve}x</b></span>
       </HStack>
       </Box>
         <AccordionIcon />
@@ -1451,7 +1451,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
       <HStack justify='center'>
     <Box justify='center' w='110px' h='60px' pb={5}>
        <HStack> 
-<Text  fontSize={{ base: "14px", lg: "20px"}} mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
+<Text  fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
       </HStack>
   </Box>
 
@@ -1464,7 +1464,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         alt='Sapee'
         mr='0px'
       />      
-      <Text  fontSize={{ base: "14px", lg: "20px"}} align='center'>12 Sapee</Text>
+      <Text  fontSize={{ base: "14px", lg: "18px"}} align='center'>12 Sapee</Text>
       </HStack>
   </Box>
   </HStack>
@@ -1472,7 +1472,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
   <HStack justify='center'>
     <Box justify='center' w='110px' h='60px' pb={5}>
        <HStack> 
-<Text fontSize={{ base: "14px", lg: "20px"}} mt='5px' mr='15px' align='left'><i>Rewards<br></br>(per quest)</i></Text>
+<Text fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Rewards<br></br>(per quest)</i></Text>
       </HStack>
   </Box>
 
@@ -1483,7 +1483,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/9/9a/Alchemy_Exam_Credit.png/'
         mr='0px'
-      />  	<Text  fontSize={{ base: "14px", lg: "20px"}} mb='12px' align='left'>1 Alchemy Exam Credit</Text>
+      />  	<Text  fontSize={{ base: "14px", lg: "18px"}} mb='12px' align='left'>1 Alchemy Exam Credit</Text>
       </HStack>
       <HStack> 
         <Image
@@ -1491,7 +1491,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Magic_Sapee_Lamp.png'
         mr='0px'/>  	
-        <Text  fontSize={{ base: "14px", lg: "20px"}} align='left'>1 Magic Sapee Lamp</Text></HStack>
+        <Text  fontSize={{ base: "14px", lg: "18px"}} align='left'>1 Magic Sapee Lamp</Text></HStack>
   </Box>
   </HStack>
     </AccordionPanel>
@@ -1508,7 +1508,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         src='https://static.wikia.nocookie.net/4thewords/images/c/c7/Alchemy_Class_Ecosystem_1.png/'
         mr='12px'
       />
-      <span><b>AL 402: Using Organic Materials (3/3)</b><br></br>repeat up to <b>{SmallestAedJarSap}x</b><br></br>##,### words per quest <br></br>##,### words total</span></HStack>
+      <span><b>AL 402: Using Organic Materials (3/3)</b><br></br>repeat up to <b>{SmallestAedJarSap}x</b></span></HStack>
       </Box>
         <AccordionIcon />
       </AccordionButton>
@@ -1517,11 +1517,11 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
     <HStack justify='center'>
     <Box justify='center' w='110px' h='60px' pb={5}>
        <HStack> 
-<Text  fontSize={{ base: "14px", lg: "20px"}} mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
+<Text  fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
       </HStack>
   </Box>
 
-    <Box justify='center' w='175px' h='60px' pb={5}>
+    <Box justify='center' w='165px' h='60px' pb={5}>
        <HStack> 
         <Image
         boxSize='3rem'
@@ -1529,7 +1529,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         src='https://static.wikia.nocookie.net/4thewords/images/8/82/Aederster.png/'
         alt='Aederster'
         mr='0px'
-      />  	<Text  fontSize={{ base: "14px", lg: "20px"}} align='left'>10 Aederster</Text>
+      />  	<Text  fontSize={{ base: "14px", lg: "18px"}} align='left'>10 Aederster</Text>
       </HStack>
       <HStack> 
         <Image
@@ -1538,7 +1538,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         src='https://static.wikia.nocookie.net/4thewords/images/c/c3/Jaraci.png/'
         alt='Jaraci'
         mr='0px'/>  	
-        <Text  fontSize={{ base: "14px", lg: "20px"}} align='left'>6 Jaraci</Text></HStack>
+        <Text  fontSize={{ base: "14px", lg: "18px"}} align='left'>6 Jaraci</Text></HStack>
         <HStack> 
        <Image
         boxSize='3rem'
@@ -1547,7 +1547,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         alt='Sapee'
         mr='0px'
       />      
-      <Text  fontSize={{ base: "14px", lg: "20px"}} align='center'>6 Sapee</Text>
+      <Text  fontSize={{ base: "14px", lg: "18px"}} align='center'>6 Sapee</Text>
       </HStack>
   </Box>
   </HStack>
@@ -1555,18 +1555,18 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
   <HStack justify='center'>
     <Box justify='center' w='110px' h='60px' pb={5}>
        <HStack> 
-<Text  fontSize={{ base: "14px", lg: "20px"}} mt='5px' mr='15px' align='left'><i>Rewards<br></br>(per quest)</i></Text>
+<Text  fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Rewards<br></br>(per quest)</i></Text>
       </HStack>
   </Box>
 
-    <Box justify='center' w='175px' h='60px' pb={5}>
+    <Box justify='center' w='165px' h='60px' pb={5}>
        <HStack> 
         <Image
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/9/9a/Alchemy_Exam_Credit.png/'
         mr='0px'
-      />  	<Text  fontSize={{ base: "14px", lg: "20px"}} mb='12px' align='left'>1 Alchemy Exam Credit</Text>
+      />  	<Text  fontSize={{ base: "14px", lg: "18px"}} mb='12px' align='left'>1 Alchemy Exam Credit</Text>
       </HStack>
       <HStack> 
         <Image
@@ -1574,7 +1574,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/c/c7/Alchemy_Class_Ecosystem_1.png/'
         mr='0px'/>  	
-        <Text  fontSize={{ base: "14px", lg: "20px"}} align='left'>1 Alchemy Class Ecosystem</Text></HStack>
+        <Text  fontSize={{ base: "14px", lg: "18px"}} align='left'>1 Alchemy Class Ecosystem</Text></HStack>
   </Box>
   </HStack>
     </AccordionPanel>
@@ -1584,9 +1584,8 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
 <br></br>
 </Container>}
 
-{NullIsShown && 
+{AKIsShown && 
 <Container>
-  
 <Box as="span" flex='1' textAlign='center' padding-top={3}>
               <Wrap justify='center'>
         <WrapItem>
@@ -1599,139 +1598,92 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
       <span><b>Repeatable Ancient Knowledge Quests</b></span>
       </WrapItem>
       </Wrap>
-
         </Box>
-        <TableContainer>
-  <Table variant='striped' colorScheme={AKtablecolor}   maxW='444px'  align='center'>
-  <Thead>
-      <Tr>
-        <Th>Quest Name</Th>
-        <Th>Repetitions</Th>
-      </Tr>
-    </Thead>
-    <Tbody>
-      <Tr>
-        <Td>
-<text align='center'>Terrific Toxins (2/2)</text>
-        </Td>
-        <Td>
-<text align='center'>{SmallestTyoOdees}</text>
-        </Td>
-      </Tr>
+<br></br>
 
-    </Tbody>
-  </Table>
-</TableContainer>
-<TableContainer>
-  <Table variant='simple' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>monsters<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
+        <Accordion allowMultiple>
+  <AccordionItem>
+    <h2>
+      <AccordionButton _expanded={{ bg: 'purple.900', color: 'white' }}>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
         <Image
+        boxSize='6rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1a/Cursed_Rug_1.png/'
+        mr='12px'
+      />
+      <span><b>K 302: Terrific Toxins (2/2)</b><br></br>repeat up to <b>{totalSapTwelve}x</b></span>
+      </HStack>
+      </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel h='278px' pb={4} >
+      <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text  fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+        <HStack> 
+       <Image
+       mb='9px'
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/5/5c/Tyomu.png/'
-        alt='Tyomu'
         mr='0px'
-      />  	<text align='center'>4</text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
+      />      
+      <Text fontSize={{ base: "14px", lg: "18px"}} align='center'>4 Tyomu</Text>
+      </HStack>
+      <HStack> 
+       <Image
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/f/f7/OdysOdees.png/'
-        alt='Odees'
-        mr='0px'/>  	
-        <text align='center'>8</text></VStack>
+        mr='0px'
+      />      
+      <Text  fontSize={{ base: "14px", lg: "18px"}} align='center'>8 Odees</Text>
+      </HStack>
   </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
+  </HStack>
+<Divider mt='55px' mb='12px' />
+  <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Rewards<br></br>(per quest)</i></Text>
+      </HStack>
   </Box>
-  <br></br>
-        </Td>
-      </Tr>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>rewards<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+       <HStack> 
         <Image
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/4/4c/Ancient_Knowledge_Exam_Credit.png/'
-        alt='Ancient Knowledge Exam Credit'
         mr='0px'
-      />  	<text align='center'>1</text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
+      />  	<Text  fontSize={{ base: "14px", lg: "18px"}} mb='12px' align='left'>1 Ancient Knowledge Exam Credit</Text>
+      </HStack>
+      <HStack> 
         <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/1/1a/Cursed_Rug_1.png'
-        alt='Cursed Rug (House Reward)'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1a/Cursed_Rug_1.png/'
         mr='0px'/>  	
-        <text align='center'>1</text></VStack>
+        <Text  fontSize={{ base: "14px", lg: "18px"}} align='left'>1 Cursed Rug</Text></HStack>
   </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-        </Td>
-      </Tr>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>word count<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://media.4thewords.com/media/ui/icons/i_words.png'
-        mr='0px'
-      />  	<text align='center'>#,###<br></br></text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-        </Td>
-      </Tr>
-      </Tbody>
-      </Table></TableContainer>
-      <br></br><Divider />
+  </HStack>
+    </AccordionPanel>
+  </AccordionItem>
+
+</Accordion>
+
 <br></br>
 </Container>}
 
-{NullIsShown && 
+{AstroIsShown && 
 <Container>
 <Box as="span" flex='1' textAlign='center' padding-top={3}>
               <Wrap justify='center'>
@@ -1745,1179 +1697,232 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
       <span><b>Repeatable Astrology Quests</b></span>
       </WrapItem>
       </Wrap>
-
         </Box>
-        <TableContainer>
-  <Table variant='striped' colorScheme={Astrotablecolor}  maxW='444px' align='center'>
-  <Thead>
-      <Tr>
-        <Th>Quest Name</Th>
-        <Th>Repetitions</Th>
-      </Tr>
-    </Thead>
-    <Tbody>
-      <Tr>
-        <Td>
-<text align='center'>Conjunctions & Constellations</text>
-        </Td>
-        <Td>
-<Text align='left'>{SmallestWizKnuff}</Text>
-        </Td>
-      </Tr>
+<br></br>
 
-    </Tbody>
-  </Table>
-</TableContainer>
-<TableContainer>
-  <Table variant='simple' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>monsters<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
+        <Accordion allowMultiple>
+  <AccordionItem>
+    <h2>
+      <AccordionButton _expanded={{ bg: 'blue.900', color: 'white' }}>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
         <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://media.4thewords.com/public/monsters/image_1707777984.png'
-        alt='Wizkal'
-        mr='0px'
-      />  	<text align='center'>2</text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/2/24/Knuff.png'
-        alt='Knuff'
-        mr='0px'/>  	
-        <text align='center'>16</text></VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-  <br></br>
-        </Td>
-      </Tr>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>rewards<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Astrology_Exam_Credit.png'
-        alt='Astrology Exam Credit'
-        mr='0px'
-      />  	<text align='center'>1</text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
-        boxSize='3rem'
+        boxSize='6rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/e/ef/Star_Pillow_1.png/'
-        alt='Star Pillow (House Reward)'
-        mr='0px'/>  	
-        <text align='center'>1</text></VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-        </Td>
-      </Tr>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>word count<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://media.4thewords.com/media/ui/icons/i_words.png'
-        mr='0px'
-      />  	<text align='center'>#,###<br></br></text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-        </Td>
-      </Tr>
-      </Tbody>
-      </Table></TableContainer>
-      <br></br>
-      <TableContainer>
-  <Table variant='striped' colorScheme={Astrotablecolor}  maxW='444px' align='center'>
-  <Thead>
-      <Tr>
-        <Th>Quest Name</Th>
-        <Th>Repetitions</Th>
-      </Tr>
-    </Thead>
-    <Tbody>
-      <Tr>
-        <Td>
-<text align='center'>Doomed Destiny</text>
-        </Td>
-        <Td>
-        <Box>
-<Text align='left'>{totalMertThree}</Text>
-          </Box>
-        </Td>
-      </Tr>
-
-    </Tbody>
-  </Table>
-</TableContainer>
-<TableContainer>
-  <Table variant='simple' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>monsters<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/c/c5/Mertino.png/'
-        alt='Mertino'
-        mr='0px'
-      />  	<text align='center'>3</text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-  <br></br>
-        </Td>
-      </Tr>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>rewards<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Astrology_Exam_Credit.png'
-        alt='Astrology Exam Credit'
-        mr='0px'
-      />  	<text align='center'>1</text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/2/26/Mertino_Skull_1.png/'
-        alt='Mertino Skull (House Reward)'
-        mr='0px'/>  	
-        <text align='center'>1</text></VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-        </Td>
-      </Tr>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>word count<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://media.4thewords.com/media/ui/icons/i_words.png'
-        mr='0px'
-      />  	<text align='center'>#,###<br></br></text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-        </Td>
-      </Tr>
-      </Tbody>
-      </Table></TableContainer>
-      <br></br>
-      <TableContainer>
-  <Table variant='striped' colorScheme={Astrotablecolor}  maxW='444px' align='center'>
-  <Thead>
-      <Tr>
-        <Th>Quest Name</Th>
-        <Th>Repetitions</Th>
-      </Tr>
-    </Thead>
-    <Tbody>
-      <Tr>
-        <Td>
-<text align='center'>Quintiles & Quasi-Moons</text>
-        </Td>
-        <Td><Box>
-<Text align='left'>{SmallestGreifGull}</Text>
-</Box>
-        </Td>
-      </Tr>
-    </Tbody>
-  </Table>
-</TableContainer>
-<TableContainer>
-  <Table variant='simple' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>monsters<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/d/d1/Greifkon.png'
-        alt='Greifkon'
-        mr='0px'
-      />  	<text align='center'>3</text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-        <VStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/e/ee/Gullio.png/'
-        alt='Gullio'
-        mr='0px'
-      />  	<text align='center'>10</text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-  <br></br>
-        </Td>
-      </Tr>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>rewards<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Astrology_Exam_Credit.png'
-        alt='Astrology Exam Credit'
-        mr='0px'
-      />  	<text align='center'>1</text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/3/39/Starry_Curtains_1.png'
-        alt='Starry Curtains (House Reward)'
-        mr='0px'/>  	
-        <text align='center'>1</text></VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-        </Td>
-      </Tr>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>word count<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://media.4thewords.com/media/ui/icons/i_words.png'
-        mr='0px'
-      />  	<text align='center'>#,###<br></br></text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-        </Td>
-      </Tr>
-      </Tbody>
-      </Table></TableContainer>
-      <br></br><Divider />
-<br></br>
-</Container>}
-
-{NullIsShown && 
-<Container>
-<Box as="span" flex='1' textAlign='center' padding-top={3}>
-              <Wrap justify='center'>
-        <WrapItem>
-        <Image
-        boxSize='2rem'
-        borderRadius='full'
-        src='https://i.imgur.com/qbOorw6.png'
         mr='12px'
       />
-      <span><b>Spells Dungeon Chains to Complete</b></span>
-      </WrapItem>
-      </Wrap>
+      <span><b>Conjunctions & Constellations</b><br></br>repeat up to <b>{SmallestWizKnuff}x</b></span>
+      </HStack>
+      </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel h='270px' pb={4} >
+      <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text  fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
 
-        </Box>
-        <TableContainer>
-  <Table variant='striped' colorScheme={Spellstablecolor}  maxW='444px' align='center'>
-  <Thead>
-      <Tr>
-        <Th>Quest Name</Th>
-        <Th>Repetitions</Th>
-      </Tr>
-    </Thead>
-    <Tbody>
-      <Tr>
-        <Td>
-<text align='center'>Conjunctions & Constellations</text>
-        </Td>
-        <Td>
-<Text align='left'>{SmallestWizKnuff}</Text>
-        </Td>
-      </Tr>
-
-    </Tbody>
-  </Table>
-</TableContainer>
-<TableContainer>
-  <Table variant='simple' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>monsters<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
+    <Box justify='center' w='165px' h='60px' pb={5}>
+        <HStack> 
+       <Image
+       mb='9px'
         boxSize='3rem'
         borderRadius='full'
         src='https://media.4thewords.com/public/monsters/image_1707777984.png'
-        alt='Wizkal'
         mr='0px'
-      />  	<text align='center'>2</text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
+      />      
+      <Text fontSize={{ base: "14px", lg: "18px"}} align='center'>2 Wizkal</Text>
+      </HStack>
+      <HStack> 
+       <Image
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/2/24/Knuff.png'
-        alt='Knuff'
-        mr='0px'/>  	
-        <text align='center'>16</text></VStack>
+        mr='0px'
+      />      
+      <Text  fontSize={{ base: "14px", lg: "18px"}} align='center'>16 Knuff</Text>
+      </HStack>
   </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
+  </HStack>
+<Divider mt='55px' mb='12px' />
+  <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Rewards<br></br>(per quest)</i></Text>
+      </HStack>
   </Box>
-  <br></br>
-        </Td>
-      </Tr>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>rewards<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+       <HStack> 
         <Image
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Astrology_Exam_Credit.png'
-        alt='Astrology Exam Credit'
         mr='0px'
-      />  	<text align='center'>1</text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
+      />  	<Text  fontSize={{ base: "14px", lg: "18px"}} mb='12px' align='left'>1 Astrology Exam Credit</Text>
+      </HStack>
+      <HStack> 
         <Image
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/e/ef/Star_Pillow_1.png/'
-        alt='Star Pillow (House Reward)'
         mr='0px'/>  	
-        <text align='center'>1</text></VStack>
+        <Text  fontSize={{ base: "14px", lg: "18px"}} align='left'>1 Star Pillow</Text></HStack>
   </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-        </Td>
-      </Tr>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>word count<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
+  </HStack>
+    </AccordionPanel>
+  </AccordionItem>
+  <AccordionItem>
+    <h2>
+      <AccordionButton _expanded={{ bg: 'blue.900', color: 'white' }}>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
         <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://media.4thewords.com/media/ui/icons/i_words.png'
-        mr='0px'
-      />  	<text align='center'>#,###<br></br></text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-        </Td>
-      </Tr>
-      </Tbody>
-      </Table></TableContainer>
-      <br></br>
-      <TableContainer>
-  <Table variant='striped' colorScheme={Spellstablecolor}  maxW='444px' align='center'>
-  <Thead>
-      <Tr>
-        <Th>Quest Name</Th>
-        <Th>Repetitions</Th>
-      </Tr>
-    </Thead>
-    <Tbody>
-      <Tr>
-        <Td>
-<text align='center'>Doomed Destiny</text>
-        </Td>
-        <Td>
-        <Box>
-<Text align='left'>{totalMertThree}</Text>
-          </Box>
-        </Td>
-      </Tr>
-
-    </Tbody>
-  </Table>
-</TableContainer>
-<TableContainer>
-  <Table variant='simple' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>monsters<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/c/c5/Mertino.png/'
-        alt='Mertino'
-        mr='0px'
-      />  	<text align='center'>3</text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-  <br></br>
-        </Td>
-      </Tr>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>rewards<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Astrology_Exam_Credit.png'
-        alt='Astrology Exam Credit'
-        mr='0px'
-      />  	<text align='center'>1</text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
-        boxSize='3rem'
+        boxSize='6rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/2/26/Mertino_Skull_1.png/'
-        alt='Mertino Skull (House Reward)'
-        mr='0px'/>  	
-        <text align='center'>1</text></VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-        </Td>
-      </Tr>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>word count<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://media.4thewords.com/media/ui/icons/i_words.png'
-        mr='0px'
-      />  	<text align='center'>#,###<br></br></text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-        </Td>
-      </Tr>
-      </Tbody>
-      </Table></TableContainer>
-      <br></br>
-      <TableContainer>
-  <Table variant='striped' colorScheme={Spellstablecolor}  maxW='444px' align='center'>
-  <Thead>
-      <Tr>
-        <Th>Quest Name</Th>
-        <Th>Repetitions</Th>
-      </Tr>
-    </Thead>
-    <Tbody>
-      <Tr>
-        <Td>
-<text align='center'>Quintiles & Quasi-Moons</text>
-        </Td>
-        <Td><Box>
-<Text align='left'>{SmallestGreifGull}</Text>
-</Box>
-        </Td>
-      </Tr>
-    </Tbody>
-  </Table>
-</TableContainer>
-<TableContainer>
-  <Table variant='simple' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>monsters<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/d/d1/Greifkon.png'
-        alt='Greifkon'
-        mr='0px'
-      />  	<text align='center'>3</text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-        <VStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/e/ee/Gullio.png/'
-        alt='Gullio'
-        mr='0px'
-      />  	<text align='center'>10</text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-  <br></br>
-        </Td>
-      </Tr>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>rewards<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Astrology_Exam_Credit.png'
-        alt='Astrology Exam Credit'
-        mr='0px'
-      />  	<text align='center'>1</text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/3/39/Starry_Curtains_1.png'
-        alt='Starry Curtains (House Reward)'
-        mr='0px'/>  	
-        <text align='center'>1</text></VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-        </Td>
-      </Tr>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>word count<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://media.4thewords.com/media/ui/icons/i_words.png'
-        mr='0px'
-      />  	<text align='center'>#,###<br></br></text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-        </Td>
-      </Tr>
-      </Tbody>
-      </Table></TableContainer>
-      <br></br><Divider />
-<br></br>
-</Container>}
-
-
-{SpellsIsShown && 
-<Container>
-<Box as="span" flex='1' textAlign='center' padding-top={3}>
-              <Wrap justify='center'>
-        <WrapItem>
-        <Image
-        boxSize='2rem'
-        borderRadius='full'
-        src='https://i.imgur.com/qbOorw6.png'
         mr='12px'
       />
-      <span><b>Repeatable Spells Quests</b></span>
-      </WrapItem>
-      </Wrap>
+      <span><b>Doomed Destiny</b><br></br>repeat up to <b>{totalMertThree}x</b></span>
+      </HStack>
+      </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel h='270px' pb={4} >
+      <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text  fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
 
-        </Box>
-        <TableContainer>
-  <Table variant='striped' colorScheme={Spellstablecolor}  maxW='444px' align='center'>
-  <Thead>
-      <Tr>
-        <Th>Quest Name</Th>
-        <Th>Repetitions</Th>
-      </Tr>
-    </Thead>
-    <Tbody>
-      <Tr>
-        <Td>
-<text align='center'>Conjunctions & Constellations</text>
-        </Td>
-        <Td>
-<Text align='left'>{SmallestWizKnuff}</Text>
-        </Td>
-      </Tr>
-
-    </Tbody>
-  </Table>
-</TableContainer>
-<TableContainer>
-  <Table variant='simple' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>monsters<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://media.4thewords.com/public/monsters/image_1707777984.png'
-        alt='Wizkal'
-        mr='0px'
-      />  	<text align='center'>2</text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/2/24/Knuff.png'
-        alt='Knuff'
-        mr='0px'/>  	
-        <text align='center'>16</text></VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-  <br></br>
-        </Td>
-      </Tr>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>rewards<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Astrology_Exam_Credit.png'
-        alt='Astrology Exam Credit'
-        mr='0px'
-      />  	<text align='center'>1</text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/e/ef/Star_Pillow_1.png/'
-        alt='Star Pillow (House Reward)'
-        mr='0px'/>  	
-        <text align='center'>1</text></VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-        </Td>
-      </Tr>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>word count<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://media.4thewords.com/media/ui/icons/i_words.png'
-        mr='0px'
-      />  	<text align='center'>#,###<br></br></text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-        </Td>
-      </Tr>
-      </Tbody>
-      </Table></TableContainer>
-      <br></br>
-      <TableContainer>
-  <Table variant='striped' colorScheme={Spellstablecolor}  maxW='444px' align='center'>
-  <Thead>
-      <Tr>
-        <Th>Quest Name</Th>
-        <Th>Repetitions</Th>
-      </Tr>
-    </Thead>
-    <Tbody>
-      <Tr>
-        <Td>
-<text align='center'>Doomed Destiny</text>
-        </Td>
-        <Td>
-        <Box>
-<Text align='left'>{totalMertThree}</Text>
-          </Box>
-        </Td>
-      </Tr>
-
-    </Tbody>
-  </Table>
-</TableContainer>
-<TableContainer>
-  <Table variant='simple' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>monsters<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
+    <Box justify='center' w='165px' h='60px' pb={5}>
+        <HStack> 
+       <Image
+       mb='9px'
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/c/c5/Mertino.png/'
-        alt='Mertino'
         mr='0px'
-      />  	<text align='center'>3</text>
-      </VStack>
+      />      
+      <Text fontSize={{ base: "14px", lg: "18px"}} align='center'>3 Mertino</Text>
+      </HStack>
   </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
+  </HStack>
+<Divider mt='55px' mb='12px' />
+  <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Rewards<br></br>(per quest)</i></Text>
+      </HStack>
   </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-  <br></br>
-        </Td>
-      </Tr>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>rewards<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+       <HStack> 
         <Image
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Astrology_Exam_Credit.png'
-        alt='Astrology Exam Credit'
         mr='0px'
-      />  	<text align='center'>1</text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
+      />  	<Text  fontSize={{ base: "14px", lg: "18px"}} mb='12px' align='left'>1 Astrology Exam Credit</Text>
+      </HStack>
+      <HStack> 
         <Image
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/2/26/Mertino_Skull_1.png/'
-        alt='Mertino Skull (House Reward)'
         mr='0px'/>  	
-        <text align='center'>1</text></VStack>
+        <Text  fontSize={{ base: "14px", lg: "18px"}} align='left'>1 Mertino Skull</Text></HStack>
   </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-        </Td>
-      </Tr>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>word count<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
+  </HStack>
+    </AccordionPanel>
+  </AccordionItem>
+
+  <AccordionItem>
+    <h2>
+      <AccordionButton _expanded={{ bg: 'blue.900', color: 'white' }}>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
         <Image
-        boxSize='3rem'
+        boxSize='6rem'
         borderRadius='full'
-        src='https://media.4thewords.com/media/ui/icons/i_words.png'
-        mr='0px'
-      />  	<text align='center'>#,###<br></br></text>
-      </VStack>
+        src='https://static.wikia.nocookie.net/4thewords/images/3/39/Starry_Curtains_1.png'
+        mr='12px'
+      />
+      <span><b>Quintiles & Quasi-Moons</b><br></br>repeat up to <b>{SmallestGreifGull}x</b></span>
+      </HStack>
+      </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel h='270px' pb={4} >
+      <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text  fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
+      </HStack>
   </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-        </Td>
-      </Tr>
-      </Tbody>
-      </Table></TableContainer>
-      <br></br>
-      <TableContainer>
-  <Table variant='striped' colorScheme={Spellstablecolor}  maxW='444px' align='center'>
-  <Thead>
-      <Tr>
-        <Th>Quest Name</Th>
-        <Th>Repetitions</Th>
-      </Tr>
-    </Thead>
-    <Tbody>
-      <Tr>
-        <Td>
-<text align='center'>Quintiles & Quasi-Moons</text>
-        </Td>
-        <Td><Box>
-<Text align='left'>{SmallestGreifGull}</Text>
-</Box>
-        </Td>
-      </Tr>
-    </Tbody>
-  </Table>
-</TableContainer>
-<TableContainer>
-  <Table variant='simple' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>monsters<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+        <HStack> 
+       <Image
+       mb='9px'
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/d/d1/Greifkon.png'
-        alt='Greifkon'
         mr='0px'
-      />  	<text align='center'>3</text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-        <VStack> 
-        <Image
+      />      
+      <Text fontSize={{ base: "14px", lg: "18px"}} align='center'>3 Greifkon</Text>
+      </HStack>
+      <HStack> 
+       <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/e/ee/Gullio.png/'
-        alt='Gullio'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/ee/Gullio.png'
         mr='0px'
-      />  	<text align='center'>10</text>
-      </VStack>
+      />      
+      <Text  fontSize={{ base: "14px", lg: "18px"}} align='center'>10 Gullio</Text>
+      </HStack>
   </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
+  </HStack>
+<Divider mt='55px' mb='12px' />
+  <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Rewards<br></br>(per quest)</i></Text>
+      </HStack>
   </Box>
-  <br></br>
-        </Td>
-      </Tr>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>rewards<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+       <HStack> 
         <Image
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Astrology_Exam_Credit.png'
-        alt='Astrology Exam Credit'
         mr='0px'
-      />  	<text align='center'>1</text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
+      />  	<Text  fontSize={{ base: "14px", lg: "18px"}} mb='12px' align='left'>1 Astrology Exam Credit</Text>
+      </HStack>
+      <HStack> 
         <Image
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/3/39/Starry_Curtains_1.png'
-        alt='Starry Curtains (House Reward)'
         mr='0px'/>  	
-        <text align='center'>1</text></VStack>
+        <Text  fontSize={{ base: "14px", lg: "18px"}} align='left'>1 Starry Curtains</Text></HStack>
   </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-        </Td>
-      </Tr>
-      <Tr>
-        <Td>
-          <Wrap><WrapItem><span><i>word count<br></br>per quest</i></span></WrapItem></Wrap>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
-        <Image
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://media.4thewords.com/media/ui/icons/i_words.png'
-        mr='0px'
-      />  	<text align='center'>#,###<br></br></text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-        </Td>
-      </Tr>
-      </Tbody>
-      </Table></TableContainer>
-      <br></br><Divider />
+  </HStack>
+    </AccordionPanel>
+  </AccordionItem>
+
+</Accordion>
+
 <br></br>
 </Container>}
-
-
 
 
 <Container><br></br>
