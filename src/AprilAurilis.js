@@ -67,15 +67,18 @@ function App() {
   const [SpellsIsShown, setSpellsIsShown] = useState(false);
   const [NullIsShown, setNullIsShown] = useState(false);
 
-  const [RD1Active, setRD1Active] = useState(false);
-  const [RD2Active, setRD2Active] = useState(false);
-  const [RD3Active, setRD3Active] = useState(false);
-  const [RD4Active, setRD4Active] = useState(false);
+  const [OdeeYesActive, setOdeeYesActive] = useState(false);
+  const [OdeeNoActive, setOdeeNoActive] = useState(false);
 
-  const [RD1IsShown, setRD1IsShown] = useState(false);
-  const [RD2IsShown, setRD2IsShown] = useState(false);
-  const [RD3IsShown, setRD3IsShown] = useState(false);
-  const [RD4IsShown, setRD4IsShown] = useState(false);
+  const [OdeeYesIsShown, setOdeeYesIsShown] = useState(false);
+  const [OdeeNoIsShown, setOdeeNoIsShown] = useState(false);
+
+  const [CrystalActive, setCrystalActive] = useState(false);
+  const [GalaxyActive, setGalaxyActive] = useState(false);
+
+  const [CrystalIsShown, setCrystalIsShown] = useState(false);
+  const [GalaxyIsShown, setGalaxyIsShown] = useState(false);
+
 
   const handleAlchemyClick = event => {
     // 👇️ toggle shown state
@@ -104,25 +107,38 @@ function App() {
 
 
 
-const handleRD1Click = event => {
+const handleOdeeYesClick = event => {
 // 👇️ toggle shown state
-setRD1IsShown(current => !RD1IsShown);
-setRD1Active(!RD1Active);};
+setOdeeYesIsShown(current => !OdeeYesIsShown);
+setOdeeYesActive(!OdeeYesActive);
+setOdeeNoIsShown(current => null);
+setOdeeNoActive (current => null);
+};
 
-const handleRD2Click = event => {
+const handleOdeeNoClick = event => {
   // 👇️ toggle shown state
-  setRD2IsShown(current => !RD2IsShown);
-  setRD2Active(!RD2Active);};
+  setOdeeNoIsShown(current => !OdeeNoIsShown);
+  setOdeeNoActive(!OdeeNoActive);
+  setOdeeYesIsShown(current => null);
+  setOdeeYesActive (current => null);
+};
 
-  const handleRD3Click = event => {
+const handleCrystalClick = event => {
+  // 👇️ toggle shown state
+  setCrystalIsShown(current => !CrystalIsShown);
+  setCrystalActive(!CrystalActive);
+  setGalaxyIsShown(current => null);
+  setGalaxyActive (current => null);
+  };
+  
+  const handleGalaxyClick = event => {
     // 👇️ toggle shown state
-    setRD3IsShown(current => !RD3IsShown);
-    setRD3Active(!RD3Active);};
+    setGalaxyIsShown(current => !GalaxyIsShown);
+    setGalaxyActive(!GalaxyActive);
+    setCrystalIsShown(current => null);
+    setCrystalActive (current => null);
+  };  
 
-    const handleRD4Click = event => {
-      // 👇️ toggle shown state
-      setRD4IsShown(current => !RD4IsShown);
-      setRD4Active(!RD4Active);};
 
 
 
@@ -518,6 +534,14 @@ const totalOdeesEight = Math.floor (totalOdees/8);
 
 const SmallestTyoOdees = Math.min (totalTyoFour, totalOdeesEight)
 
+//repeatable quest: 4 tyomu, 8 odees - repeat odees//
+
+const [OdeeReps, setOdeeReps] = useState(0);
+const totalOdeeReps = Math.floor (totalTyoFour*8)
+
+const [OdeeQuest, setOdeeQuest] = useState(0);
+const totalOdeeQuest = Math.floor (totalOdeeReps/44)
+
 //repeatable quest: 2 wizkal, 16 knuff//
 
 const [WizTwo, setWizTwo] = useState(0); // Or any other non-zero value
@@ -543,62 +567,50 @@ const totalGullTen = Math.floor (totalGull/10);
 
 const SmallestGreifGull = Math.min (totalGreifThree, totalGullTen)
 
-//DUNGEONS: need to do dungeon 1, 2, 3, 4//
+//repeatable quest: 1 choros//
+const [ChorOne, setChorOne] = useState(0); // Or any other non-zero value
+const totalChorOne = Math.floor (totalChor/1);
 
+//repeatable quest: 3 oniine//
+const [OniThree, setOniThree] = useState(0); // Or any other non-zero value
+const totalOniThree = Math.floor (totalOni/3);
 
-//DUNGEONS: need to do dungeon 1, 2, 3//
+//repeatable quest: 3 oniine//
+const [NeilFive, setNeilFive] = useState(0); // Or any other non-zero value
+const totalNeilFive = Math.floor (totalNeil/5);
 
+//repeatable quest: 1 each cobaltoan//
 
-//DUNGEONS: need to do dungeon 1, 2, 4//
+const [CChyOne, setCChyOne] = useState(0); // Or any other non-zero value
+const totalCChyOne = Math.floor (totalCChy/1);
 
+const [CAlderOne, setCAlderOne] = useState(0); // Or any other non-zero value
+const totalCAlderOne = Math.floor (totalCAlder/1);
 
-//DUNGEONS: need to do dungeon 2, 3, 4//
+const [CWhoOne, setCWhoOne] = useState(0); // Or any other non-zero value
+const totalCWhoOne = Math.floor (totalCWho/1);
 
+const [CMundOne, setCMundOne] = useState(0); // Or any other non-zero value
+const totalCMundOne = Math.floor (totalCMund/1);
 
-//DUNGEONS: need to do dungeon 1, 2//
+const SmallestCrystal = Math.min (totalCChyOne, totalCAlderOne, totalCWhoOne, totalCMundOne)
 
+//repeatable quest: 1 each galaxy//
 
-//DUNGEONS: need to do dungeon 1, 3//
+const [GChyOne, setGChyOne] = useState(0); // Or any other non-zero value
+const totalGChyOne = Math.floor (totalGChy/1);
 
+const [GAlderOne, setGAlderOne] = useState(0); // Or any other non-zero value
+const totalGAlderOne = Math.floor (totalGAlder/1);
 
-//DUNGEONS: need to do dungeon 1, 4//
+const [GWhoOne, setGWhoOne] = useState(0); // Or any other non-zero value
+const totalGWhoOne = Math.floor (totalGWho/1);
 
+const [GMundOne, setGMundOne] = useState(0); // Or any other non-zero value
+const totalGMundOne = Math.floor (totalGMund/1);
 
-//DUNGEONS: need to do dungeon 2, 3//
+const SmallestGalaxy = Math.min (totalGChyOne, totalGAlderOne, totalGWhoOne, totalGMundOne)
 
-
-//DUNGEONS: need to do dungeon 2, 4//
-
-
-//DUNGEONS: need to do dungeon 3, 4//
-
-
-//DUNGEONS: need to do dungeon 1//
-const [Dungeon1_1Chor, setDungeon1_1Chor] = useState(0);
-const [Dungeon1_2Oni, setDungeon1_2Oni] = useState(0);
-const [Dungeon1_3Neil, setDungeon1_3Neil] = useState(0);
-
-
-const totalDungeon1_1Chor = Math.max (totalChor-1,0) 
-const totalDungeon1_2Oni = Math.max (totalOni-3,0)
-const totalDungeon1_3Neil = Math.max (totalNeil-8,0)
-
-
-//DUNGEONS: need to do dungeon 2//
-const [Dungeon2_1Oni, setDungeon2_1Oni] = useState(0);
-const [Dungeon2_2Chor, setDungeon2_2Chor] = useState(0);
-const [Dungeon2_3Oni, setDungeon2_3Oni] = useState(0);
-
-
-const totalDungeon2_1Oni = Math.max (totalOni-3,0) 
-const totalDungeon2_2Chor = Math.max (totalChor-2,0)
-const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
-
-
-//DUNGEONS: need to do dungeon 3//
-
-
-//DUNGEONS: need to do dungeon 4//
 
 //format the WC #s//
 //NOANZA//
@@ -617,16 +629,10 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         <Grid w='100%' minH="100vh">
           <VStack spacing={8}>
             <Heading>"Defend Your Thesis" Aurilis Academy Quests</Heading>
-            <Container><p>This page calculates quest overlap for the large Aurilis Academy "Thesis" quests, based upon your progress so far.</p>
+            <Container><p>This page calculates quest overlap for the large Aurilis Academy "Thesis" quests, based upon your progress so far. <br></br> <br></br> Make sure you complete the
+              various Side Quests and Dungeon Chains you want to get done, because this page doesn't account for all Aurilis quests — only the most efficient repeatables.
+            </p>
             <br></br>
-            
-            <Divider />
-            <br></br>
-            <p><b>Accessibility Notes:</b>
-              <br></br>
-             - you can open and close the monster lists without losing any data</p>
-              <br></br>
-              - this page is fully keyboard navigable, including using Enter to select buttons or open collapsed menus
             </Container>
             <Container><Divider></Divider></Container>
 
@@ -668,7 +674,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
       <span>Astrology</span></Button>
         </WrapItem>
         <WrapItem>
-      <Button variant='outline' onClick= {handleSpellsClick} style={{ backgroundColor: SpellsActive ? "#2d0116" : "transparent" }}>      <Image
+      <Button variant='outline' onClick= {handleSpellsClick} style={{ backgroundColor: SpellsActive ? "#6b1901" : "transparent" }}>      <Image
         boxSize='2rem'
         borderRadius='full'
         src='https://i.imgur.com/qbOorw6.png'
@@ -677,42 +683,45 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
       <span>Spells</span></Button>
         </WrapItem>
         </Wrap></Container>
+
         
-        {SpellsIsShown &&  <Container>
-          <VStack><HStack><text>Which dungeon quest chains do you still need to do?</text></HStack>
-         <br></br>
-         <Wrap justify='center'>
-        <Button  variant='outline' onClick={handleRD1Click}  style={{ backgroundColor: RD1Active ? "#2C0517" : "transparent" }}>      <Image
+        
+        {AKIsShown &&  <Container>
+          <VStack><HStack><text>Are you also working on the big 1,000 Odees quest?<br></br><br></br></text></HStack>
+</VStack><Wrap justify='center'>
+        <WrapItem>
+        <Button variant='outline' onClick={handleOdeeYesClick} style={{ backgroundColor: OdeeYesActive ? "#130119" : "transparent" }}>
+        <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/6/6b/Red_Dungeon_1_Badge.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/f7/OdysOdees.png'
         mr='12px'
       />
-      <text>Red Dungeon #1</text></Button>
-        <Button  variant='outline' onClick={handleRD2Click}  style={{ backgroundColor: RD2Active ? "#2C0517" : "transparent" }}>      <Image
+      <span>Yes</span></Button>
+      </WrapItem>
+      <WrapItem>
+        <Button variant='outline' onClick= {handleOdeeNoClick} style={{ backgroundColor: OdeeNoActive ? "#130119" : "transparent" }}>      <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/e/ea/Red_Dungeon_2_Badge.png/'
+        src='https://media.4thewords.com/public/items/1576709063_no-thanks.png'
         mr='12px'
       />
-      <text>Red Dungeon #2</text></Button>
+      <span>No</span></Button></WrapItem>
+        </Wrap></Container>}
 
-      <Button  variant='outline' onClick={handleRD3Click}  style={{ backgroundColor: RD3Active ? "#2C0517" : "transparent" }}>      <Image
+        {AlchemyIsShown && AKIsShown && AstroIsShown && SpellsIsShown && <Container>
+          <VStack><HStack><text>Include the Familiar Variants quests? <br></br><i>Note: each requires fighting 1 extra Lole</i><br></br><br></br></text></HStack>
+</VStack><Wrap justify='center'>
+        <WrapItem>
+        <Button variant='outline' onClick={handleCrystalClick} style={{ backgroundColor: CrystalActive ? "whiteAlpha.50" : "transparent" }}>
+        <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/d/dc/Red_Dungeon_3_Badge.png/'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/82/Galaxy_Alderbam.png/'
         mr='12px'
       />
-      <text>Red Dungeon #3</text></Button>
-
-      <Button  variant='outline' onClick={handleRD4Click}  style={{ backgroundColor: RD4Active ? "#2C0517" : "transparent" }}>      <Image
-        boxSize='2rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/a/a0/Red_Dungeon_4.png/'
-        mr='12px'
-      />
-      <text>Red Dungeon #4</text></Button>
-        </Wrap></VStack></Container>}
+      <span>Yes</span></Button></WrapItem>
+        </Wrap></Container>}
 
 <Accordion allowMultiple>
 {AlchemyIsShown &&  <Container w={[350, 400, 450]}>
@@ -934,7 +943,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         src='https://static.wikia.nocookie.net/4thewords/images/2/21/Cobaltoan_Whodini.png/'
         mr='5px'
       /> <Text
-        align='left'>Crystal Whodini</Text>
+        align='left'>Cobaltoan Whodini</Text>
         </VStack>
         <Spacer />
         <VStack align='center' mr='15px'>
@@ -1103,7 +1112,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         src='https://media.4thewords.com/public/monsters/image_1711489731.png'
         mr='5px'
       /> <Text
-        align='left' fontSize='lg'>Crystal Alderbam</Text>
+        align='left' fontSize='lg'>Cobaltoan Alderbam</Text>
         </VStack>
         <Spacer />
         <VStack align='center' mr='15px'>
@@ -1225,7 +1234,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
     </h2>
     <AccordionPanel pb={4}>
         <Box  w='250px'  as="span" flex='1'>
-          <HStack p={3} bg='orange.900'>
+          <HStack p={3} bg='red.900'>
         <VStack align='right' ml='15px'>
         <Image
         align='left'
@@ -1263,7 +1272,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
 <Text align='left'>of 8</Text>
       </VStack>
 </HStack>
-<HStack p={3} bg='orange.900'>
+<HStack p={3} bg='red.900'>
         <VStack align='right' ml='15px'>
         <Image
         align='left'
@@ -1301,7 +1310,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
 <Text align='left'>of 10</Text>
       </VStack>
 </HStack>
-<HStack p={3} bg='orange.900'>
+<HStack p={3} bg='red.900'>
         <VStack align='right' ml='15px'>
         <Image
         align='left'
@@ -1339,7 +1348,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
 <Text align='left'>of 50</Text>
       </VStack>
 </HStack>
-        <HStack p={3}  bg='orange.900'>
+        <HStack p={3}  bg='red.900'>
         <VStack align='right' ml='15px'>
         <Image
         align='left'
@@ -1412,6 +1421,235 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
 </TableContainer>
 <br></br></Container>
 
+{CrystalIsShown && 
+<Container>
+        <Accordion allowMultiple>
+        <AccordionItem>
+    <h2>
+      <AccordionButton bg='whiteAlpha.50'  _expanded={{ bg: 'whiteAlpha.50', color: 'white' }}  _hover={{ bg: 'whiteAlpha.50', color: 'white' }}>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='6rem'
+        borderRadius='full'
+        src='https://i.imgur.com/5ZMuerJ.png'
+        mr='12px'
+      />
+      <VStack align='center'><Text fontSize='22px'><b>Repeatable Familiars Quests</b></Text></VStack>
+      </HStack>
+      </Box>
+      </AccordionButton>
+    </h2>
+</AccordionItem>
+  <AccordionItem>
+    <h2>
+      <AccordionButton _expanded={{ bg: 'whiteAlpha.100', color: 'white' }}>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='6rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/f4/CobaltoanPath05.png/'
+        mr='12px'
+      />
+            <VStack align='left'><Text fontSize='22px'><b>Familiar Like Crystals</b></Text><Text>Location: Enchanted Forest</Text><HStack><Text>repeat up to</Text><Text color="teal.300"><b>{SmallestCrystal}x</b></Text></HStack></VStack>
+  
+      </HStack>
+      </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel h='410px' pb={4}>
+      <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text  fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+        <HStack> 
+       <Image
+       mb='9px'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5e/Cobaltoan_Chysis.png/'
+        mr='0px'
+      />      
+      <Text  fontSize={{ base: "14px", lg: "18px"}} align='center' mb='9px'>1 Cobaltoan Chysis</Text>
+      </HStack>
+      <HStack> 
+       <Image
+       mb='9px'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/c/c6/Cobaltoan_Alderbam.png'
+        mr='0px'
+      />      
+      <Text  fontSize={{ base: "14px", lg: "18px"}} align='center' mb='9px'>1 Cobaltoan Alderbam</Text>
+      </HStack>
+      <HStack> 
+       <Image
+       mb='9px'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/21/Cobaltoan_Whodini.png'
+        mr='0px'
+      />      
+      <Text  fontSize={{ base: "14px", lg: "18px"}} align='center' mb='9px'>1 Cobaltoan Whodini</Text>
+      </HStack>
+      <HStack> 
+       <Image
+       mb='9px'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1a/Cobaltoan_Mund.png'
+        mr='0px'
+      />      
+      <Text  fontSize={{ base: "14px", lg: "18px"}} align='center' mb='9px'>1 Cobaltoan Mund</Text>
+      </HStack>
+      
+      <HStack> 
+       <Image
+       mb='9px'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/eb/Cobaltoan_Lole.png'
+        mr='0px'
+      />      
+      <Text  fontSize={{ base: "14px", lg: "18px"}} align='center'>1 Cobaltoan Lole</Text>
+      </HStack>
+  </Box>
+  </HStack>
+<Divider mt='255px' mb='12px' />
+  <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Rewards<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+       <HStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/f4/CobaltoanPath05.png/'
+        mr='0px'
+      />  	<Text  fontSize={{ base: "14px", lg: "18px"}} mb='12px' align='left'>1 Colbatoan Path</Text>
+      </HStack>
+  </Box>
+  </HStack>
+    </AccordionPanel>
+  </AccordionItem>
+
+  <AccordionItem>
+    <h2>
+      <AccordionButton _expanded={{ bg: 'whiteAlpha.100', color: 'white' }}>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='6rem'
+        borderRadius='full'
+        src='https://media.4thewords.com/public/hideouts/hideout_element_2130_96279/variant_icon_12893_603.png'
+        mr='12px'
+      />
+            <VStack align='left'><Text fontSize='22px'><b>Familiar Like Stars</b></Text><Text>Location: Observatory</Text><HStack><Text>repeat up to</Text><Text color="teal.300"><b>{SmallestGalaxy}x</b></Text></HStack></VStack>
+  
+      </HStack>
+      </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel h='410px' pb={4}>
+      <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text  fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+        <HStack> 
+       <Image
+       mb='9px'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5b/Galaxy_Chysis.png'
+        mr='0px'
+      />      
+      <Text  fontSize={{ base: "14px", lg: "18px"}} align='center' mb='9px'>1 Galaxy Chysis</Text>
+      </HStack>
+      <HStack> 
+       <Image
+       mb='9px'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/82/Galaxy_Alderbam.png/'
+        mr='0px'
+      />      
+      <Text  fontSize={{ base: "14px", lg: "18px"}} align='center' mb='9px'>1 Galaxy Alderbam</Text>
+      </HStack>
+      <HStack> 
+       <Image
+       mb='9px'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/fd/Galaxy_Whodini.png/'
+        mr='0px'
+      />      
+      <Text  fontSize={{ base: "14px", lg: "18px"}} align='center' mb='9px'>1 Galaxy Whodini</Text>
+      </HStack>
+      <HStack> 
+       <Image
+       mb='9px'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Galaxy_Mund.png'
+        mr='0px'
+      />      
+      <Text  fontSize={{ base: "14px", lg: "18px"}} align='center' mb='9px'>1 Galaxy Mund</Text>
+      </HStack>
+      
+      <HStack> 
+       <Image
+       mb='9px'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/53/Galaxy_Lole.png'
+        mr='0px'
+      />      
+      <Text  fontSize={{ base: "14px", lg: "18px"}} align='center'>1 Galaxy Lole</Text>
+      </HStack>
+  </Box>
+  </HStack>
+<Divider mt='255px' mb='12px' />
+  <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Rewards<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+       <HStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://media.4thewords.com/public/hideouts/hideout_element_2130_96279/variant_icon_12893_603.png'
+        mr='0px'
+      />  	<Text  fontSize={{ base: "14px", lg: "18px"}} mb='12px' align='left'>1 Galaxy Path</Text>
+      </HStack>
+  </Box>
+  </HStack>
+    </AccordionPanel>
+  </AccordionItem>
+
+</Accordion>
+
+<br></br>
+</Container>}
+
         {AlchemyIsShown && 
 <Container>
         <Accordion allowMultiple>
@@ -1434,7 +1672,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
 </AccordionItem>
   <AccordionItem>
     <h2>
-      <AccordionButton _expanded={{ bg: 'green.900', color: 'white' }}>
+      <AccordionButton _expanded={{ bg: 'green.800', color: 'white' }}>
       <Box as="span" flex='1' textAlign='left'>
         <HStack>
         <Image
@@ -1502,7 +1740,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
 
   <AccordionItem>
     <h2>
-      <AccordionButton _expanded={{ bg: 'green.900', color: 'white' }}>
+      <AccordionButton _expanded={{ bg: 'green.800', color: 'white' }}>
       <Box as="span" flex='1' textAlign='left'>
         <HStack>
         <Image
@@ -1511,7 +1749,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         src='https://static.wikia.nocookie.net/4thewords/images/c/c7/Alchemy_Class_Ecosystem_1.png/'
         mr='12px'
       />
-            <VStack align='left'><Text fontSize='22px'><b>AL 402: Using Organic Materials (3/3</b></Text><HStack><Text>repeat up to</Text><Text color="green.300"><b>{SmallestAedJarSap}x</b></Text></HStack></VStack>
+            <VStack align='left'><Text fontSize='22px'><b>AL 402: Using Organic Materials (3/3)</b></Text><HStack><Text>repeat up to</Text><Text color="green.300"><b>{SmallestAedJarSap}x</b></Text></HStack></VStack>
      </HStack>
       </Box>
         <AccordionIcon />
@@ -1588,7 +1826,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
 <br></br>
 </Container>}
 
-{AKIsShown && 
+{OdeeNoIsShown && 
 <Container>
         <Accordion allowMultiple>
         <AccordionItem>
@@ -1610,7 +1848,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
 </AccordionItem>
   <AccordionItem>
     <h2>
-      <AccordionButton _expanded={{ bg: 'purple.900', color: 'white' }}>
+      <AccordionButton _expanded={{ bg: 'purple.800', color: 'white' }}>
       <Box as="span" flex='1' textAlign='left'>
         <HStack>
         <Image
@@ -1619,7 +1857,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         src='https://static.wikia.nocookie.net/4thewords/images/1/1a/Cursed_Rug_1.png/'
         mr='12px'
       />
-            <VStack align='left'><Text fontSize='22px'><b>K 302: Terrific Toxins (2/2)</b></Text><HStack><Text>repeat up to</Text><Text color="purple.400"><b>{totalSapTwelve}x</b></Text></HStack></VStack>
+            <VStack align='left'><Text fontSize='22px'><b>K 302: Terrific Toxins (2/2)</b></Text><HStack><Text>repeat up to</Text><Text color="pink.300"><b>{totalSapTwelve}x</b></Text></HStack></VStack>
       </HStack>
       </Box>
         <AccordionIcon />
@@ -1689,6 +1927,171 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
 <br></br>
 </Container>}
 
+{OdeeYesIsShown && 
+<Container>
+        <Accordion allowMultiple>
+        <AccordionItem>
+    <h2>
+      <AccordionButton bg='purple.900'  _expanded={{ bg: 'purple.900', color: 'white' }}  _hover={{ bg: 'purple.900', color: 'white' }}>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='6rem'
+        borderRadius='full'
+        src='https://i.imgur.com/hEBDkSp.png'
+        mr='12px'
+      />
+      <VStack align='center'><Text fontSize='22px'><b>Repeatable Ancient Knowledge Quests</b></Text></VStack>
+      </HStack>
+      </Box>
+      </AccordionButton>
+    </h2>
+</AccordionItem>
+  <AccordionItem>
+    <h2>
+      <AccordionButton _expanded={{ bg: 'purple.800', color: 'white' }}>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='6rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1a/Cursed_Rug_1.png/'
+        mr='12px'
+      />
+            <VStack align='left'><Text fontSize='22px'><b>K 302: Terrific Toxins (2/2)</b></Text><HStack><Text>repeat up to</Text><Text color="pink.300"><b>{totalTyoFour}x</b></Text></HStack></VStack>
+      </HStack>
+      </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel h='278px' pb={4} >
+      <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text  fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+        <HStack> 
+       <Image
+       mb='9px'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5c/Tyomu.png/'
+        mr='0px'
+      />      
+      <Text fontSize={{ base: "14px", lg: "18px"}} align='center'>4 Tyomu</Text>
+      </HStack>
+      <HStack> 
+       <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/f7/OdysOdees.png/'
+        mr='0px'
+      />      
+      <Text  fontSize={{ base: "14px", lg: "18px"}} align='center'>8 Odees</Text>
+      </HStack>
+  </Box>
+  </HStack>
+<Divider mt='55px' mb='12px' />
+  <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Rewards<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+       <HStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/4c/Ancient_Knowledge_Exam_Credit.png/'
+        mr='0px'
+      />  	<Text  fontSize={{ base: "14px", lg: "18px"}} mb='12px' align='left'>1 Ancient Knowledge Exam Credit</Text>
+      </HStack>
+      <HStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1a/Cursed_Rug_1.png/'
+        mr='0px'/>  	
+        <Text  fontSize={{ base: "14px", lg: "18px"}} align='left'>1 Cursed Rug</Text></HStack>
+  </Box>
+  </HStack>
+    </AccordionPanel>
+  </AccordionItem>
+  <AccordionItem>
+    <h2>
+      <AccordionButton _expanded={{ bg: 'purple.800', color: 'white' }}>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='6rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/f7/OdysOdees.png/'
+        mr='12px'
+      />
+            <VStack align='left'><Text fontSize='22px'><b>KXC: Thinking Outside the Rules</b></Text><HStack><Text>repeat up to</Text><Text color="pink.300"><b>{totalOdeeQuest}x</b></Text></HStack></VStack>
+      </HStack>
+      </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel h='278px' pb={4} >
+      <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text  fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+      <HStack> 
+       <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/f7/OdysOdees.png/'
+        mr='0px'
+      />      
+      <Text  fontSize={{ base: "14px", lg: "18px"}} align='center'>44 Odees</Text>
+      </HStack>
+  </Box>
+  </HStack>
+<Divider mt='30px' mb='12px' />
+  <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Rewards<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+       <HStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/4c/Ancient_Knowledge_Exam_Credit.png/'
+        mr='0px'
+      />  	<Text  fontSize={{ base: "14px", lg: "18px"}} mb='12px' align='left'>1 Ancient Knowledge Exam Credit</Text>
+      </HStack>
+      <HStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1b/Odys_Line.png/'
+        mr='0px'/>  	
+        <Text  fontSize={{ base: "14px", lg: "18px"}} align='left'>1 Odys Line</Text></HStack>
+  </Box>
+  </HStack>
+    </AccordionPanel>
+  </AccordionItem>
+</Accordion>
+
+<br></br>
+</Container>}
+
 {AstroIsShown && 
 <Container>
         <Accordion allowMultiple>
@@ -1711,7 +2114,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
 </AccordionItem>
   <AccordionItem>
     <h2>
-      <AccordionButton _expanded={{ bg: 'blue.900', color: 'white' }}>
+      <AccordionButton _expanded={{ bg: 'blue.800', color: 'white' }}>
       <Box as="span" flex='1' textAlign='left'>
         <HStack>
         <Image
@@ -1786,7 +2189,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
   </AccordionItem>
   <AccordionItem>
     <h2>
-      <AccordionButton _expanded={{ bg: 'blue.900', color: 'white' }}>
+      <AccordionButton _expanded={{ bg: 'blue.800', color: 'white' }}>
       <Box as="span" flex='1' textAlign='left'>
         <HStack>
         <Image
@@ -1853,7 +2256,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
 
   <AccordionItem>
     <h2>
-      <AccordionButton _expanded={{ bg: 'blue.900', color: 'white' }}>
+      <AccordionButton _expanded={{ bg: 'blue.800', color: 'white' }}>
       <Box as="span" flex='1' textAlign='left'>
         <HStack>
         <Image
@@ -1922,6 +2325,261 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         src='https://static.wikia.nocookie.net/4thewords/images/3/39/Starry_Curtains_1.png'
         mr='0px'/>  	
         <Text  fontSize={{ base: "14px", lg: "18px"}} align='left'>1 Starry Curtains</Text></HStack>
+  </Box>
+  </HStack>
+    </AccordionPanel>
+  </AccordionItem>
+
+</Accordion>
+
+<br></br>
+</Container>}
+
+{SpellsIsShown && 
+<Container>
+        <Accordion allowMultiple>
+        <AccordionItem>
+    <h2>
+      <AccordionButton bg='red.900'  _expanded={{ bg: 'red.900', color: 'white' }}  _hover={{ bg: 'red.900', color: 'white' }}>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='6rem'
+        borderRadius='full'
+        src='https://i.imgur.com/qbOorw6.png'
+        mr='12px'
+      />
+      <VStack align='center'><Text fontSize='22px'><b>Repeatable Spells Quests</b></Text></VStack>
+      </HStack>
+      </Box>
+      </AccordionButton>
+    </h2>
+</AccordionItem>
+  <AccordionItem>
+    <h2>
+      <AccordionButton _expanded={{ bg: 'red.800', color: 'white' }}>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='6rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/21/Spells_Exam_Credit.png'
+        mr='12px'
+      />
+      <VStack align='left'><Text fontSize='22px'><b>SDR1: Red Dungeon (1/3)</b></Text><HStack><Text>repeat up to</Text><Text color="orange.300"><b>{totalChorOne}x</b></Text></HStack></VStack>
+      </HStack>
+      </Box>
+      <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel h='250px' pb={4} >
+      <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text  fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+        <HStack> 
+       <Image
+       mb='9px'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/23/Choros.png/'
+        mr='0px'
+      />      
+      <Text fontSize={{ base: "14px", lg: "18px"}} align='center'>1 Choros</Text>
+      </HStack>
+  </Box>
+  </HStack>
+<Divider mt='30px' mb='12px' />
+  <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Rewards<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+       <HStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/21/Spells_Exam_Credit.png'
+        mr='0px'
+      />  	<Text  fontSize={{ base: "14px", lg: "18px"}} mb='12px' align='left'>1 Spells Exam Credit</Text>
+      </HStack>
+      <HStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/50/Spellfire_(Spells).png/'
+        mr='0px'/>  	
+        <Text  fontSize={{ base: "14px", lg: "18px"}} align='left'>5 Spellfire</Text></HStack>
+  </Box>
+  </HStack>
+    </AccordionPanel>
+  </AccordionItem>
+  <AccordionItem>
+    <h2>
+      <AccordionButton _expanded={{ bg: 'red.800', color: 'white' }}>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='6rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/74/Decorated_Oniine_Skull_1.png'
+        mr='12px'
+      />
+      <VStack align='left'><Text fontSize='20px'><b>SDR1: Red Dungeon (2/3)</b> <br></br><b>SDR2: 1 Day Sprint Chain (1/3)</b><br></br><i>grab both quests!</i></Text><HStack><Text>repeat up to</Text><Text color="orange.300"><b>{totalOniThree}x</b></Text></HStack></VStack>
+      </HStack> 
+      </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel h='250px' pb={4} >
+      <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text  fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+        <HStack> 
+       <Image
+       mb='9px'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/fa/Oniine.png/'
+        mr='0px'
+      />      
+      <Text fontSize={{ base: "14px", lg: "18px"}} align='center'>3 Oniine</Text>
+      </HStack>
+  </Box>
+  </HStack>
+<Divider mt='30px' mb='12px' />
+  <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Rewards<br></br>(both quests)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+       <HStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/21/Spells_Exam_Credit.png'
+        mr='0px'
+      />  	<Text  fontSize={{ base: "14px", lg: "18px"}} mb='12px' align='left'>2 Spells Exam Credits</Text>
+      </HStack>
+      <HStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/50/Spellfire_(Spells).png/'
+        mr='0px'/>  	
+        <Text  fontSize={{ base: "14px", lg: "18px"}} align='left'>15 Spellfire</Text></HStack>
+  </Box>
+  </HStack>
+    </AccordionPanel>
+  </AccordionItem>
+
+  <AccordionItem>
+    <h2>
+      <AccordionButton _expanded={{ bg: 'red.800', color: 'white' }}>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='6rem'
+        borderRadius='full'
+        src='https://media.4thewords.com/public/items/1576709063_no-thanks.png'
+        mr='12px'
+      />
+      <VStack align='left'><Text fontSize='20px'><b>SDR1: Red Dungeon (3/3)</b><br></br> <b>SDR2: 1 Day Sprint Chain (2/3)</b>
+       <br></br><i>drop these quests!</i></Text></VStack>
+      </HStack> 
+      </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel h='160px' pb={4} >
+      <HStack justify='center'>
+    <Box justify='center' pb={5}>
+       <HStack> 
+<Text  fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='center'>You don't need either of these quests :)<br></br><br></br> It's technically more efficient to keep repeating the loop (1 Choros quest + the doubled 3 Oniine quest) than to complete the later parts of the quest chains.</Text>
+      </HStack>
+  </Box>
+
+  </HStack>
+    </AccordionPanel>
+  </AccordionItem>
+
+  <AccordionItem>
+    <h2>
+      <AccordionButton _expanded={{ bg: 'red.800', color: 'white' }}>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='6rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/21/Spells_Exam_Credit.png/'
+        mr='12px'
+      />
+      <VStack align='left'><Text fontSize='20px'><b>SDR3: Spellfire Harvesting (1/4)</b></Text><HStack><Text>repeat up to</Text><Text color="orange.300"><b>{totalNeilFive}x</b></Text></HStack></VStack>
+      </HStack>
+      </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel h='230px' pb={4} >
+      <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text  fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+        <HStack> 
+       <Image
+       mb='9px'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/19/Neilon.png'
+        mr='0px'
+      />      
+      <Text fontSize={{ base: "14px", lg: "18px"}} align='center'>5 Neilon</Text>
+      </HStack>
+  </Box>
+  </HStack>
+<Divider mt='30px' mb='12px' />
+  <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Rewards<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+       <HStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/21/Spells_Exam_Credit.png'
+        mr='0px'
+      />  	<Text  fontSize={{ base: "14px", lg: "18px"}} mb='12px' align='left'>1 Spells Exam Credit</Text>
+      </HStack>
+      <HStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/50/Spellfire_(Spells).png/'
+        mr='0px'/>  	
+        <Text  fontSize={{ base: "14px", lg: "18px"}} align='left'>5 Spellfire</Text></HStack>
   </Box>
   </HStack>
     </AccordionPanel>
