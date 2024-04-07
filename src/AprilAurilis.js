@@ -606,7 +606,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
 
   return (
     <Box textAlign="center" fontSize="xl">
-        <Grid minH="100vh">
+        <Grid w='100%' minH="100vh">
           <VStack spacing={8}>
             <Heading pt={3}>"Defend Your Thesis" Aurilis Academy Quests</Heading>
             <Container><p>This page calculates quest overlap for the large Aurilis Academy "Thesis" quests, based upon your progress so far.</p>
