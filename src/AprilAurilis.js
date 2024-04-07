@@ -1712,7 +1712,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         src='https://static.wikia.nocookie.net/4thewords/images/e/ef/Star_Pillow_1.png/'
         mr='12px'
       />
-      <span><b>Conjunctions & Constellations</b><br></br>repeat up to <b>{SmallestWizKnuff}x</b></span>
+      <VStack align='left'><Text fontSize='20px'><b>Conjunctions & Constellations</b></Text><HStack><Text>repeat up to</Text><Text color="cyan.300"><b>{SmallestWizKnuff}x</b></Text></HStack></VStack>
       </HStack>
       </Box>
         <AccordionIcon />
@@ -1787,8 +1787,8 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         src='https://static.wikia.nocookie.net/4thewords/images/2/26/Mertino_Skull_1.png/'
         mr='12px'
       />
-      <span><b>Doomed Destiny</b><br></br>repeat up to <b>{totalMertThree}x</b></span>
-      </HStack>
+      <VStack align='left'><Text fontSize='20px'><b>Doomed Destiny</b></Text><HStack><Text>repeat up to</Text><Text color="cyan.300"><b>{totalMertThree}x</b></Text></HStack></VStack>
+      </HStack> 
       </Box>
         <AccordionIcon />
       </AccordionButton>
@@ -1854,7 +1854,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         src='https://static.wikia.nocookie.net/4thewords/images/3/39/Starry_Curtains_1.png'
         mr='12px'
       />
-      <span><b>Quintiles & Quasi-Moons</b><br></br>repeat up to <b>{SmallestGreifGull}x</b></span>
+      <VStack align='left'><Text fontSize='20px'><b>Quintiles & Quasi-Moons</b></Text><HStack><Text>repeat up to</Text><Text color="cyan.300"><b>{SmallestGreifGull}x</b></Text></HStack></VStack>
       </HStack>
       </Box>
         <AccordionIcon />
