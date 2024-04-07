@@ -1685,22 +1685,24 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
 
 {AstroIsShown && 
 <Container>
-<Box as="span" flex='1' textAlign='center' padding-top={3}>
-              <Wrap justify='center'>
-        <WrapItem>
+        <Accordion allowMultiple>
+        <AccordionItem>
+    <h2>
+      <AccordionButton bg='blue.900'>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
         <Image
-        boxSize='2rem'
+        boxSize='6rem'
         borderRadius='full'
         src='https://i.imgur.com/EDRa116.png'
         mr='12px'
       />
-      <span><b>Repeatable Astrology Quests</b></span>
-      </WrapItem>
-      </Wrap>
-        </Box>
-<br></br>
-
-        <Accordion allowMultiple>
+      <VStack align='center'><Text fontSize='22px'><b>Repeatable Astrology Quests</b></Text></VStack>
+      </HStack>
+      </Box>
+      </AccordionButton>
+    </h2>
+</AccordionItem>
   <AccordionItem>
     <h2>
       <AccordionButton _expanded={{ bg: 'blue.900', color: 'white' }}>
@@ -1712,10 +1714,10 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         src='https://static.wikia.nocookie.net/4thewords/images/e/ef/Star_Pillow_1.png/'
         mr='12px'
       />
-      <VStack align='left'><Text fontSize='20px'><b>Conjunctions & Constellations</b></Text><HStack><Text>repeat up to</Text><Text color="cyan.300"><b>{SmallestWizKnuff}x</b></Text></HStack></VStack>
+      <VStack align='left'><Text fontSize='22px'><b>Conjunctions & Constellations</b></Text><HStack><Text>repeat up to</Text><Text color="cyan.300"><b>{SmallestWizKnuff}x</b></Text></HStack></VStack>
       </HStack>
       </Box>
-        <AccordionIcon />
+      <AccordionIcon />
       </AccordionButton>
     </h2>
     <AccordionPanel h='270px' pb={4} >
