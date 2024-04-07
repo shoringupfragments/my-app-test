@@ -1451,7 +1451,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
       <HStack justify='center'>
     <Box justify='center' w='125px' h='60px' pb={5}>
        <HStack> 
-<Text mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
+<Text  fontSize={{ base: "14px", lg: "20px"}} mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
       </HStack>
   </Box>
 
@@ -1464,7 +1464,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         alt='Sapee'
         mr='0px'
       />      
-      <text align='center'>12 Sapee</text>
+      <Text  fontSize={{ base: "14px", lg: "20px"}} align='center'>12 Sapee</Text>
       </HStack>
   </Box>
   </HStack>
@@ -1472,7 +1472,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
   <HStack justify='center'>
     <Box justify='center' w='125px' h='60px' pb={5}>
        <HStack> 
-<Text mt='5px' mr='15px' align='left'><i>Rewards<br></br>(per quest)</i></Text>
+<Text fontSize={{ base: "14px", lg: "20px"}} mt='5px' mr='15px' align='left'><i>Rewards<br></br>(per quest)</i></Text>
       </HStack>
   </Box>
 
@@ -1517,7 +1517,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
     <HStack justify='center'>
     <Box justify='center' w='125px' h='60px' pb={5}>
        <HStack> 
-<Text mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
+<Text  fontSize={{ base: "14px", lg: "20px"}} mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
       </HStack>
   </Box>
 
@@ -1555,7 +1555,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
   <HStack justify='center'>
     <Box justify='center' w='125px' h='60px' pb={5}>
        <HStack> 
-<Text mt='5px' mr='15px' align='left'><i>Rewards<br></br>(per quest)</i></Text>
+<Text  fontSize={{ base: "14px", lg: "20px"}} mt='5px' mr='15px' align='left'><i>Rewards<br></br>(per quest)</i></Text>
       </HStack>
   </Box>
 
