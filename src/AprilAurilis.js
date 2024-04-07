@@ -1449,7 +1449,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
     </h2>
     <AccordionPanel h='250px' pb={4}>
       <HStack justify='center'>
-    <Box justify='center' w='125px' h='60px' pb={5}>
+    <Box justify='center' w='110px' h='60px' pb={5}>
        <HStack> 
 <Text  fontSize={{ base: "14px", lg: "20px"}} mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
       </HStack>
