@@ -19,7 +19,7 @@ function App() {
   
   return (
     <ChakraProvider theme={darkTheme}>
-      <Box textAlign="center" fontSize="xl">
+      <Box textAlign="center" fontSize="xl" w="100%">
         <Grid minH="70vh" p={3}>
           <VStack spacing={8} justify='center'>
             <Image src='https://i.imgur.com/svUT2a2.png' />
