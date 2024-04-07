@@ -1449,7 +1449,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
     </h2>
     <AccordionPanel h='250px' pb={4}>
       <HStack justify='center'>
-    <Box justify='center' w='175px' h='60px' pb={5}>
+    <Box justify='center' w='125px' h='60px' pb={5}>
        <HStack> 
 <Text mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
       </HStack>
@@ -1470,7 +1470,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
   </HStack>
 <Divider mt='20px' mb='12px' />
   <HStack justify='center'>
-    <Box justify='center' w='175px' h='60px' pb={5}>
+    <Box justify='center' w='125px' h='60px' pb={5}>
        <HStack> 
 <Text mt='5px' mr='15px' align='left'><i>Rewards<br></br>(per quest)</i></Text>
       </HStack>
@@ -1515,7 +1515,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
     </h2>
     <AccordionPanel  h='350px'  pb={4}>
     <HStack justify='center'>
-    <Box justify='center' w='175px' h='60px' pb={5}>
+    <Box justify='center' w='125px' h='60px' pb={5}>
        <HStack> 
 <Text mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
       </HStack>
@@ -1553,7 +1553,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
   </HStack>
 <br></br><br></br><br></br><Divider mt='12px' mb='12px' />
   <HStack justify='center'>
-    <Box justify='center' w='175px' h='60px' pb={5}>
+    <Box justify='center' w='125px' h='60px' pb={5}>
        <HStack> 
 <Text mt='5px' mr='15px' align='left'><i>Rewards<br></br>(per quest)</i></Text>
       </HStack>
