@@ -38,6 +38,7 @@ import {
   WrapItem,
   Wrap,
   Tfoot,
+  Link,
   useColorMode, useColorModeValue
 } from '@chakra-ui/react';
 import { FaMoon, FaSun } from 'react-icons/fa';
@@ -620,6 +621,42 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
               <br></br>
               - this page is fully keyboard navigable, including using Enter to select buttons or open collapsed menus
             </Container>
+            <Box p={4} display={{ md: "flex" }}>
+  <Box flexShrink={0}>
+    <Image
+      borderRadius="lg"
+      width={{ md: 40 }}
+      src="https://bit.ly/2jYM25F"
+      alt="Woman paying for a purchase"
+      p={3}
+    />
+  </Box>
+  <Box mt={{ base: 4, md: 0 }} ml={{ md: 6 }}>
+    <Text
+      fontWeight="bold"
+      textTransform="uppercase"
+      fontSize="sm"
+      letterSpacing="wide"
+      color="teal.300"
+    >
+      Marketing
+    </Text>
+    <Link
+      mt={1}
+      display="block"
+      fontSize="lg"
+      lineHeight="normal"
+      fontWeight="semibold"
+      href="#"
+    >
+      Finding customers for your new business
+    </Link>
+    <Text mt={2} color="gray.500" p={3}>
+      Getting a new business off the ground is a lot of hard work. Here are five
+      ideas you can use to find your first customers.
+    </Text>
+  </Box>
+</Box>
             <Container><Divider></Divider></Container>
 
 <VStack>
@@ -1593,8 +1630,85 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
       </WrapItem>
       </Wrap>
         </Box>
-        <TableContainer>
-  <Table variant='striped' colorScheme={tablecolor}   maxW='444px'  align='center'>
+<br></br>
+        <Accordion defaultIndex={[0]} allowMultiple>
+  <AccordionItem>
+    <h2>
+      <AccordionButton _expanded={{ bg: 'green.900', color: 'white' }}>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='6rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Magic_Sapee_Lamp.png'
+        mr='12px'
+      />
+      <span><b>AL 305: Different Items (3/3)</b><br></br>repeat up to {SmallestAedJarSap}x<br></br>##,### words per quest <br></br>##,### words total</span></HStack>
+      </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+      <i>Monsters Per Quest:</i>
+      <Box justify='center' w='50px' h='60px' pb={5}>
+       <HStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/82/Aederster.png/'
+        alt='Aederster'
+        mr='0px'
+      />  	<text align='left'>10 Aederster</text>
+      </HStack>
+      <HStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/c/c3/Jaraci.png/'
+        alt='Jaraci'
+        mr='0px'/>  	
+        <text align='left'>6 Jaraci</text></HStack>
+        <HStack> 
+       <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/27/Sapee.png/'
+        alt='Sapee'
+        mr='0px'
+      />      
+      <text align='center'>6 Sapee</text>
+      </HStack>
+  </Box>
+    </AccordionPanel>
+  </AccordionItem>
+
+  <AccordionItem>
+    <h2>
+      <AccordionButton>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='6rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/c/c7/Alchemy_Class_Ecosystem_1.png/'
+        mr='12px'
+      />
+      <span><b>AL 402: Using Organic Materials (3/3)</b><br></br>repeat up to {SmallestAedJarSap}x<br></br>##,### words per quest <br></br>##,### words total</span></HStack>
+      </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
+    </AccordionPanel>
+  </AccordionItem>
+</Accordion>
+
+        <TableContainer maxWidth='100%'>
+  <Table variant='striped' colorScheme={tablecolor}  align='center'>
   <Thead>
       <Tr>
         <Th>Quest Name</Th>
@@ -1614,43 +1728,33 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
     </Tbody>
   </Table>
 </TableContainer>
-<TableContainer>
-  <Table variant='simple' maxW={20} align='center'>
+<TableContainer maxWidth='100%'>
+  <Table variant='simple' align='center'>
     <Tbody>
       <Tr>
         <Td>
-          <Wrap><WrapItem><span><i>monsters<br></br>per quest</i></span></WrapItem></Wrap>
+          <Wrap><WrapItem><Text fontSize='md'><i>monsters per quest</i></Text></WrapItem></Wrap>
         </Td>
         <Td>
         <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
+       <HStack> 
         <Image
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/8/82/Aederster.png/'
         alt='Aederster'
         mr='0px'
-      />  	<text align='center'>10</text>
-      </VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
+      />  	<text align='left'>10 Aederster</text>
+      </HStack>
+      <HStack> 
         <Image
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/c/c3/Jaraci.png/'
         alt='Jaraci'
         mr='0px'/>  	
-        <text align='center'>6</text></VStack>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
+        <text align='left'>6 Jaraci</text></HStack>
+        <HStack> 
        <Image
         boxSize='3rem'
         borderRadius='full'
@@ -1658,40 +1762,38 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         alt='Sapee'
         mr='0px'
       />      
-      <text align='center'>6</text>
-      </VStack>
+      <text align='center'>6 Sapee</text>
+      </HStack>
   </Box>
-  <br></br>
+  <br></br>  <br></br>  <br></br>   <br></br>   <br></br>
         </Td>
       </Tr>
+
       <Tr>
         <Td>
           <Wrap><WrapItem><span><i>rewards<br></br>per quest</i></span></WrapItem></Wrap>
         </Td>
         <Td>
         <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
+       <HStack> 
         <Image
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/9/9a/Alchemy_Exam_Credit.png/'
-        alt='Alchemy Exam Credit'
         mr='0px'
-      />  	<text align='center'>1</text>
-      </VStack>
+      />  	<text align='center'>1 Alchemy Exam Credit</text>
+      </HStack>
   </Box>
-  <br></br>
-        </Td>
-        <Td>
+
         <Box justify='center' w='50px' h='60px' pb={5}>
-       <VStack> 
+       <HStack> 
         <Image
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/c/c7/Alchemy_Class_Ecosystem_1.png/'
         alt='Alchemy Class Ecosystem (House Reward)'
         mr='0px'/>  	
-        <text align='center'>1</text></VStack>
+        <text align='center'>1 Alchemy Class Ecosystem</text></HStack>
   </Box>
   <br></br>
         </Td>
@@ -1700,6 +1802,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
   </Box>
         </Td>
       </Tr>
+
       <Tr>
         <Td>
           <Wrap><WrapItem><span><i>word count<br></br>per quest</i></span></WrapItem></Wrap>
@@ -1716,15 +1819,6 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
       </VStack>
   </Box>
   <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
-  <br></br>
-        </Td>
-        <Td>
-        <Box justify='center' w='50px' h='60px' pb={5}>
-  </Box>
         </Td>
       </Tr>
       </Tbody>
