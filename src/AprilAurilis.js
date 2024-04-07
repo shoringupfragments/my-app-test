@@ -706,7 +706,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
       <text>Red Dungeon #4</text></Button>
         </Wrap></VStack></Container>}
 
-<Accordion minWidth='475px' maxWidth='475px' allowMultiple>
+<Accordion minWidth='425px' maxWidth='425px' allowMultiple>
 {AlchemyIsShown &&  <Container>
   <AccordionItem>
   <h2>
@@ -720,7 +720,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
     <AccordionPanel pb={4}>
         <Box as="span" flex='1'>
 <TableContainer>
-  <Table variant='striped' align='center' colorScheme={tablecolor} minW='400px' maxW='400px'>
+  <Table variant='striped' align='center' colorScheme={tablecolor} maxW='400px'>
     <Thead>
       <Tr>
         <Th>Monster</Th>
@@ -743,7 +743,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
 </Td>
         <Td>
         <VStack align='left'>
-        <NumberInput defaultValue={0} min={0} max={9999} size='md' mindW='85px' maxW='85px'>
+        <NumberInput defaultValue={0} min={0} max={9999} size='md' mindW='80px' maxW='80px'>
   <NumberInputField id='Mund' onInput={(e) => handleMundChange(e.target.value)} />
 </NumberInput>
 <Text align='left'>of 8</Text></VStack>
@@ -930,7 +930,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
     <AccordionPanel pb={4}>
         <Box as="span" flex='1'>
 <TableContainer>
-  <Table variant='striped' align='center' colorScheme={AKtablecolor}  minW='400px' maxW='400px'>
+  <Table variant='striped' align='center' colorScheme={AKtablecolor}   maxW='400px'>
     <Thead>
       <Tr>
         <Th>Monster</Th>
@@ -1139,7 +1139,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
     <AccordionPanel pb={4}>
         <Box as="span" flex='1'>
 <TableContainer>
-  <Table variant='striped' align='center' colorScheme={Astrotablecolor}  minW='400px' maxW='400px'>
+  <Table variant='striped' align='center' colorScheme={Astrotablecolor}   maxW='400px'>
     <Thead>
       <Tr>
         <Th>Monster</Th>
@@ -1347,7 +1347,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
     <AccordionPanel pb={4}>
         <Box as="span" flex='1'>
 <TableContainer>
-  <Table variant='striped' align='center' colorScheme={Spellstablecolor}  minW='400px' maxW='400px'>
+  <Table variant='striped' align='center' colorScheme={Spellstablecolor}   maxW='400px'>
     <Thead>
       <Tr>
         <Th>Monster</Th>
@@ -1594,7 +1594,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
       </Wrap>
         </Box>
         <TableContainer>
-  <Table variant='striped' colorScheme={tablecolor}  minW='444px' maxW='444px'  align='center'>
+  <Table variant='striped' colorScheme={tablecolor}   maxW='444px'  align='center'>
   <Thead>
       <Tr>
         <Th>Quest Name</Th>
@@ -1751,7 +1751,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
 
         </Box>
         <TableContainer>
-  <Table variant='striped' colorScheme={AKtablecolor}  minW='444px' maxW='444px'  align='center'>
+  <Table variant='striped' colorScheme={AKtablecolor}   maxW='444px'  align='center'>
   <Thead>
       <Tr>
         <Th>Quest Name</Th>
@@ -1897,7 +1897,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
 
         </Box>
         <TableContainer>
-  <Table variant='striped' colorScheme={Astrotablecolor} minW='444px' maxW='444px' align='center'>
+  <Table variant='striped' colorScheme={Astrotablecolor}  maxW='444px' align='center'>
   <Thead>
       <Tr>
         <Th>Quest Name</Th>
@@ -2024,7 +2024,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
       </Table></TableContainer>
       <br></br>
       <TableContainer>
-  <Table variant='striped' colorScheme={Astrotablecolor} minW='444px' maxW='444px' align='center'>
+  <Table variant='striped' colorScheme={Astrotablecolor}  maxW='444px' align='center'>
   <Thead>
       <Tr>
         <Th>Quest Name</Th>
@@ -2145,7 +2145,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
       </Table></TableContainer>
       <br></br>
       <TableContainer>
-  <Table variant='striped' colorScheme={Astrotablecolor} minW='444px' maxW='444px' align='center'>
+  <Table variant='striped' colorScheme={Astrotablecolor}  maxW='444px' align='center'>
   <Thead>
       <Tr>
         <Th>Quest Name</Th>
@@ -2292,7 +2292,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
 
         </Box>
         <TableContainer>
-  <Table variant='striped' colorScheme={Spellstablecolor} minW='444px' maxW='444px' align='center'>
+  <Table variant='striped' colorScheme={Spellstablecolor}  maxW='444px' align='center'>
   <Thead>
       <Tr>
         <Th>Quest Name</Th>
@@ -2419,7 +2419,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
       </Table></TableContainer>
       <br></br>
       <TableContainer>
-  <Table variant='striped' colorScheme={Spellstablecolor} minW='444px' maxW='444px' align='center'>
+  <Table variant='striped' colorScheme={Spellstablecolor}  maxW='444px' align='center'>
   <Thead>
       <Tr>
         <Th>Quest Name</Th>
@@ -2540,7 +2540,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
       </Table></TableContainer>
       <br></br>
       <TableContainer>
-  <Table variant='striped' colorScheme={Spellstablecolor} minW='444px' maxW='444px' align='center'>
+  <Table variant='striped' colorScheme={Spellstablecolor}  maxW='444px' align='center'>
   <Thead>
       <Tr>
         <Th>Quest Name</Th>
@@ -2688,7 +2688,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
 
         </Box>
         <TableContainer>
-  <Table variant='striped' colorScheme={Spellstablecolor} minW='444px' maxW='444px' align='center'>
+  <Table variant='striped' colorScheme={Spellstablecolor}  maxW='444px' align='center'>
   <Thead>
       <Tr>
         <Th>Quest Name</Th>
@@ -2815,7 +2815,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
       </Table></TableContainer>
       <br></br>
       <TableContainer>
-  <Table variant='striped' colorScheme={Spellstablecolor} minW='444px' maxW='444px' align='center'>
+  <Table variant='striped' colorScheme={Spellstablecolor}  maxW='444px' align='center'>
   <Thead>
       <Tr>
         <Th>Quest Name</Th>
@@ -2936,7 +2936,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
       </Table></TableContainer>
       <br></br>
       <TableContainer>
-  <Table variant='striped' colorScheme={Spellstablecolor} minW='444px' maxW='444px' align='center'>
+  <Table variant='striped' colorScheme={Spellstablecolor}  maxW='444px' align='center'>
   <Thead>
       <Tr>
         <Th>Quest Name</Th>
