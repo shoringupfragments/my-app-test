@@ -1414,22 +1414,24 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
 
         {AlchemyIsShown && 
 <Container>
-<Box as="span" flex='1' textAlign='center' padding-top={3}>
-              <Wrap justify='center'>
-        <WrapItem>
+        <Accordion allowMultiple>
+        <AccordionItem>
+    <h2>
+      <AccordionButton bg='green.900'  _expanded={{ bg: 'green.900', color: 'white' }}  _hover={{ bg: 'green.900', color: 'white' }}>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
         <Image
-        boxSize='2rem'
+        boxSize='6rem'
         borderRadius='full'
         src='https://i.imgur.com/dzFooLd.png'
         mr='12px'
       />
-      <span><b>Repeatable Alchemy Quests</b></span>
-      </WrapItem>
-      </Wrap>
-        </Box>
-<br></br>
-
-        <Accordion allowMultiple>
+      <VStack align='center'><Text fontSize='22px'><b>Repeatable Alchemy Quests</b></Text></VStack>
+      </HStack>
+      </Box>
+      </AccordionButton>
+    </h2>
+</AccordionItem>
   <AccordionItem>
     <h2>
       <AccordionButton _expanded={{ bg: 'green.900', color: 'white' }}>
@@ -1441,7 +1443,8 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Magic_Sapee_Lamp.png'
         mr='12px'
       />
-      <span><b>AL 305: Different Items (3/3)</b><br></br>repeat up to <b>{totalSapTwelve}x</b></span>
+            <VStack align='left'><Text fontSize='22px'><b>AL 305: Different Items (3/3)</b></Text><HStack><Text>repeat up to</Text><Text color="green.300"><b>{totalSapTwelve}x</b></Text></HStack></VStack>
+  
       </HStack>
       </Box>
         <AccordionIcon />
@@ -1508,7 +1511,8 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         src='https://static.wikia.nocookie.net/4thewords/images/c/c7/Alchemy_Class_Ecosystem_1.png/'
         mr='12px'
       />
-      <span><b>AL 402: Using Organic Materials (3/3)</b><br></br>repeat up to <b>{SmallestAedJarSap}x</b></span></HStack>
+            <VStack align='left'><Text fontSize='22px'><b>AL 402: Using Organic Materials (3/3</b></Text><HStack><Text>repeat up to</Text><Text color="green.300"><b>{SmallestAedJarSap}x</b></Text></HStack></VStack>
+     </HStack>
       </Box>
         <AccordionIcon />
       </AccordionButton>
@@ -1586,22 +1590,24 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
 
 {AKIsShown && 
 <Container>
-<Box as="span" flex='1' textAlign='center' padding-top={3}>
-              <Wrap justify='center'>
-        <WrapItem>
+        <Accordion allowMultiple>
+        <AccordionItem>
+    <h2>
+      <AccordionButton bg='purple.900'  _expanded={{ bg: 'purple.900', color: 'white' }}  _hover={{ bg: 'purple.900', color: 'white' }}>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
         <Image
-        boxSize='2rem'
+        boxSize='6rem'
         borderRadius='full'
         src='https://i.imgur.com/hEBDkSp.png'
         mr='12px'
       />
-      <span><b>Repeatable Ancient Knowledge Quests</b></span>
-      </WrapItem>
-      </Wrap>
-        </Box>
-<br></br>
-
-        <Accordion allowMultiple>
+      <VStack align='center'><Text fontSize='22px'><b>Repeatable Ancient Knowledge Quests</b></Text></VStack>
+      </HStack>
+      </Box>
+      </AccordionButton>
+    </h2>
+</AccordionItem>
   <AccordionItem>
     <h2>
       <AccordionButton _expanded={{ bg: 'purple.900', color: 'white' }}>
@@ -1613,7 +1619,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         src='https://static.wikia.nocookie.net/4thewords/images/1/1a/Cursed_Rug_1.png/'
         mr='12px'
       />
-      <span><b>K 302: Terrific Toxins (2/2)</b><br></br>repeat up to <b>{totalSapTwelve}x</b></span>
+            <VStack align='left'><Text fontSize='22px'><b>K 302: Terrific Toxins (2/2)</b></Text><HStack><Text>repeat up to</Text><Text color="purple.400"><b>{totalSapTwelve}x</b></Text></HStack></VStack>
       </HStack>
       </Box>
         <AccordionIcon />
@@ -1688,7 +1694,7 @@ const totalDungeon2_3Oni = Math.max (totalDungeon2_1Oni-5,0)
         <Accordion allowMultiple>
         <AccordionItem>
     <h2>
-      <AccordionButton bg='blue.900'>
+      <AccordionButton bg='blue.900'  _expanded={{ bg: 'blue.900', color: 'white' }}  _hover={{ bg: 'blue.900', color: 'white' }}>
       <Box as="span" flex='1' textAlign='left'>
         <HStack>
         <Image
