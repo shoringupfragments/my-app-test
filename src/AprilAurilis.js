@@ -682,10 +682,6 @@ const totalSpellfire = Math.max (totalSDR1_1_SF + totalOniCombo_SF + totalSDR3_1
 <VStack>
 <Heading>4theMath:</Heading>
 <Spacer></Spacer>
-<Container>Your Attack Stat</Container>
-<NumberInput defaultValue={0} min={0} max={9999} size='md'>
-<NumberInputField id='atk' onInput={(e) => handleAttackStatChange(e.target.value)} />
-</NumberInput>
 </VStack>
             <HStack><text>Select which thesis quest(s) you're currently working on:</text> </HStack>
         <Container><Wrap justify='center'>
@@ -1445,7 +1441,8 @@ const totalSpellfire = Math.max (totalSDR1_1_SF + totalOniCombo_SF + totalSDR3_1
 <br></br>
 
 <Box as="span" flex='1' textAlign='center' padding-top={3}>
-        <Text><b>Potential Rewards</b></Text>
+        <Text fontSize='22px'><b>Potential Rewards:</b></Text> <br></br>
+        <Text><b>Class Exam Credits</b></Text>
         </Box>
         <Wrap mt='12px' justify='center'>
 {AlchemyIsShown &&
@@ -1525,6 +1522,12 @@ const totalSpellfire = Math.max (totalSDR1_1_SF + totalOniCombo_SF + totalSDR3_1
   </Box>
         </WrapItem>}
 </Wrap>
+
+
+
+<Box as="span" flex='1' textAlign='center' padding-top={3}>
+        <Text><b>House Items & Materials</b></Text>
+        </Box>
 
 <Wrap mt='12px' justify='center'>
 {AlchemyIsShown &&
@@ -1667,6 +1670,38 @@ const totalSpellfire = Math.max (totalSDR1_1_SF + totalOniCombo_SF + totalSDR3_1
 </VStack>
   </Box>
         </WrapItem>}
+        {CrystalIsShown && 
+        <WrapItem>
+        <Box justify='center' w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+       align='center'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e0/CobaltoanPath00.png/'
+        mr='5px'
+      />
+<text align='center'>{SmallestCrystal}</text>
+</VStack>
+  </Box>
+        </WrapItem>}
+        {CrystalIsShown && 
+        <WrapItem>
+        <Box justify='center' w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+       align='center'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b1/GalaxyPath00.png/'
+        mr='5px'
+      />
+<text align='center'>{SmallestGalaxy}</text>
+</VStack>
+  </Box>
+        </WrapItem>}
+
+
 </Wrap>
 
 <br></br></Container>
@@ -2588,6 +2623,531 @@ const totalSpellfire = Math.max (totalSDR1_1_SF + totalOniCombo_SF + totalSDR3_1
 {SpellsIsShown && 
 <Container>
         <Accordion allowMultiple>
+        <AccordionItem>
+    <h2>
+      <AccordionButton bg='red.900'  _expanded={{ bg: 'red.900', color: 'white' }}  _hover={{ bg: 'red.900', color: 'white' }}>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='6rem'
+        borderRadius='full'
+        src='https://i.imgur.com/qbOorw6.png'
+        mr='12px'
+      />
+      <VStack align='center'><Text fontSize='22px'><b>Repeatable Spells Quests</b></Text></VStack>
+      </HStack>
+      </Box>
+      </AccordionButton>
+    </h2>
+</AccordionItem>
+  <AccordionItem>
+    <h2>
+      <AccordionButton _expanded={{ bg: 'red.800', color: 'white' }}>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='6rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/21/Spells_Exam_Credit.png'
+        mr='12px'
+      />
+      <VStack align='left'><Text fontSize='22px'><b>SDR1: Red Dungeon (1/3)</b></Text><HStack><Text>repeat up to</Text><Text color="orange.300"><b>{totalChorOne}x</b></Text></HStack></VStack>
+      </HStack>
+      </Box>
+      <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel h='250px' pb={4} >
+      <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text  fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+        <HStack> 
+       <Image
+       mb='9px'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/23/Choros.png/'
+        mr='0px'
+      />      
+      <Text fontSize={{ base: "14px", lg: "18px"}} align='center'>1 Choros</Text>
+      </HStack>
+  </Box>
+  </HStack>
+<Divider mt='30px' mb='12px' />
+  <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Rewards<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+       <HStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/21/Spells_Exam_Credit.png'
+        mr='0px'
+      />  	<Text  fontSize={{ base: "14px", lg: "18px"}} mb='12px' align='left'>1 Spells Exam Credit</Text>
+      </HStack>
+      <HStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/50/Spellfire_(Spells).png/'
+        mr='0px'/>  	
+        <Text  fontSize={{ base: "14px", lg: "18px"}} align='left'>5 Spellfire</Text></HStack>
+  </Box>
+  </HStack>
+    </AccordionPanel>
+  </AccordionItem>
+  <AccordionItem>
+    <h2>
+      <AccordionButton _expanded={{ bg: 'red.800', color: 'white' }}>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='6rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/74/Decorated_Oniine_Skull_1.png'
+        mr='12px'
+      />
+      <VStack align='left'><Text fontSize='20px'><b>SDR1: Red Dungeon (2/3)</b> <br></br><b>SDR2: 1 Day Sprint Chain (1/3)</b><br></br><i>grab both quests!</i></Text><HStack><Text>repeat up to</Text><Text color="orange.300"><b>{totalOniThree}x</b></Text></HStack></VStack>
+      </HStack> 
+      </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel h='250px' pb={4} >
+      <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text  fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+        <HStack> 
+       <Image
+       mb='9px'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/fa/Oniine.png/'
+        mr='0px'
+      />      
+      <Text fontSize={{ base: "14px", lg: "18px"}} align='center'>3 Oniine</Text>
+      </HStack>
+  </Box>
+  </HStack>
+<Divider mt='30px' mb='12px' />
+  <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Rewards<br></br>(both quests)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+       <HStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/21/Spells_Exam_Credit.png'
+        mr='0px'
+      />  	<Text  fontSize={{ base: "14px", lg: "18px"}} mb='12px' align='left'>2 Spells Exam Credits</Text>
+      </HStack>
+      <HStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/50/Spellfire_(Spells).png/'
+        mr='0px'/>  	
+        <Text  fontSize={{ base: "14px", lg: "18px"}} align='left'>15 Spellfire</Text></HStack>
+  </Box>
+  </HStack>
+    </AccordionPanel>
+  </AccordionItem>
+
+  <AccordionItem>
+    <h2>
+      <AccordionButton _expanded={{ bg: 'red.800', color: 'white' }}>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='6rem'
+        borderRadius='full'
+        src='https://media.4thewords.com/public/items/1576709063_no-thanks.png'
+        mr='12px'
+      />
+      <VStack align='left'><Text fontSize='20px'><b>SDR1: Red Dungeon (3/3)</b><br></br> <b>SDR2: 1 Day Sprint Chain (2/3)</b>
+       <br></br><i>drop these quests!</i></Text></VStack>
+      </HStack> 
+      </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel h='160px' pb={4} >
+      <HStack justify='center'>
+    <Box justify='center' pb={5}>
+       <HStack> 
+<Text  fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='center'>You don't need either of these quests :)<br></br><br></br> It's technically more efficient to keep repeating the loop (1 Choros quest + the doubled 3 Oniine quest) than to complete the later parts of the quest chains.</Text>
+      </HStack>
+  </Box>
+
+  </HStack>
+    </AccordionPanel>
+  </AccordionItem>
+
+  <AccordionItem>
+    <h2>
+      <AccordionButton _expanded={{ bg: 'red.800', color: 'white' }}>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='6rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/21/Spells_Exam_Credit.png/'
+        mr='12px'
+      />
+      <VStack align='left'><Text fontSize='20px'><b>SDR3: Spellfire Harvesting (1/4)</b></Text><HStack><Text>repeat up to</Text><Text color="orange.300"><b>{totalNeilFive}x</b></Text></HStack></VStack>
+      </HStack>
+      </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel h='230px' pb={4} >
+      <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text  fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+        <HStack> 
+       <Image
+       mb='9px'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/19/Neilon.png'
+        mr='0px'
+      />      
+      <Text fontSize={{ base: "14px", lg: "18px"}} align='center'>5 Neilon</Text>
+      </HStack>
+  </Box>
+  </HStack>
+<Divider mt='30px' mb='12px' />
+  <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Rewards<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+       <HStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/21/Spells_Exam_Credit.png'
+        mr='0px'
+      />  	<Text  fontSize={{ base: "14px", lg: "18px"}} mb='12px' align='left'>1 Spells Exam Credit</Text>
+      </HStack>
+      <HStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/50/Spellfire_(Spells).png/'
+        mr='0px'/>  	
+        <Text  fontSize={{ base: "14px", lg: "18px"}} align='left'>5 Spellfire</Text></HStack>
+  </Box>
+  </HStack>
+    </AccordionPanel>
+  </AccordionItem>
+
+</Accordion>
+
+<br></br>
+</Container>}
+
+{NullIsShown && 
+<Container>
+        <Accordion allowMultiple>
+        <AccordionItem>
+    <h2>
+      <AccordionButton bg='red.900'  _expanded={{ bg: 'red.900', color: 'white' }}  _hover={{ bg: 'red.900', color: 'white' }}>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='6rem'
+        borderRadius='full'
+        src='https://i.imgur.com/qbOorw6.png'
+        mr='12px'
+      />
+      <VStack align='center'><Text fontSize='22px'><b>Dungeon Chains to Complete (#4 only)</b></Text></VStack>
+      </HStack>
+      </Box>
+      </AccordionButton>
+    </h2>
+</AccordionItem>
+  <AccordionItem>
+    <h2>
+      <AccordionButton _expanded={{ bg: 'red.800', color: 'white' }}>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='6rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/ef/Single_Spell_Shield_4.png/'
+        mr='12px'
+      />
+      <VStack align='left'><Text fontSize='22px'><b>SDR4: Improve Your Reflexes (1/3)</b></Text><HStack><Text>overlaps with </Text><Text color="orange.300"><b>SP201: Open Your Eyes (1/3)</b></Text></HStack></VStack>
+      </HStack>
+      </Box>
+      <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel h='325px' pb={4} >
+      <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text  fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+        <HStack> 
+       <Image
+       mb='9px'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/65/Kinguz.png/'
+        mr='0px'
+      />      
+      <Text fontSize={{ base: "14px", lg: "18px"}} align='center'>10 Kinguz</Text>
+      </HStack>
+      <HStack> 
+       <Image
+       mb='9px'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/f2/Zenme.png'
+        mr='0px'
+      />      
+      <Text fontSize={{ base: "14px", lg: "18px"}} align='center'>2 Zenme</Text>
+      </HStack>
+  </Box>
+  </HStack>
+<Divider mt='55px' mb='12px' />
+  <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Rewards<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+       <HStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/21/Spells_Exam_Credit.png'
+        mr='0px'
+      />  	<Text  fontSize={{ base: "14px", lg: "18px"}} mb='12px' align='left'>1 Spells Exam Credit</Text>
+      </HStack>
+      <HStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/50/Spellfire_(Spells).png/'
+        mr='0px'/>  	
+        <Text  fontSize={{ base: "14px", lg: "18px"}} align='left'>5 Spellfire</Text></HStack>
+        <HStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/ef/Single_Spell_Shield_4.png'
+        mr='0px'/>  	
+        <Text  fontSize={{ base: "14px", lg: "18px"}} align='left'>1  Single Spell Shield 4</Text></HStack>
+  </Box>
+  </HStack>
+    </AccordionPanel>
+  </AccordionItem>
+
+  <AccordionItem>
+    <h2>
+      <AccordionButton _expanded={{ bg: 'red.800', color: 'white' }}>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='6rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/f5/Spells_Floor.png'
+        mr='12px'
+      />
+      <VStack align='left'><Text fontSize='22px'><b>SDR4: Improve Your Reflexes (2/3)</b></Text><HStack><Text>overlaps with </Text><Text color="orange.300"><b>SP202: Learn From Mistakes (2/3)</b></Text></HStack></VStack>
+      </HStack>
+      </Box>
+      <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel h='325px' pb={4} >
+      <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text  fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+        <HStack> 
+       <Image
+       mb='9px'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/65/Kinguz.png/'
+        mr='0px'
+      />      
+      <Text fontSize={{ base: "14px", lg: "18px"}} align='center'>10 Kinguz</Text>
+      </HStack>
+      <HStack> 
+       <Image
+       mb='9px'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/f2/Zenme.png'
+        mr='0px'
+      />      
+      <Text fontSize={{ base: "14px", lg: "18px"}} align='center'>2 Zenme</Text>
+      </HStack>
+  </Box>
+  </HStack>
+<Divider mt='55px' mb='12px' />
+  <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Rewards<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+       <HStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/21/Spells_Exam_Credit.png'
+        mr='0px'
+      />  	<Text  fontSize={{ base: "14px", lg: "18px"}} mb='12px' align='left'>1 Spells Exam Credit</Text>
+      </HStack>
+      <HStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/ac/Single_Spell_Shield_3.png/'
+        mr='0px'/>  	
+        <Text  fontSize={{ base: "14px", lg: "18px"}} align='left'>1 Single Spell Shield 3</Text></HStack>
+        <HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/f5/Spells_Floor.png'
+        mr='0px'/>  	
+        <Text  fontSize={{ base: "14px", lg: "18px"}} align='left'>1  Spells Floor</Text></HStack>
+  </Box>
+  </HStack>
+    </AccordionPanel>
+  </AccordionItem>
+  
+  <AccordionItem>
+    <h2>
+      <AccordionButton _expanded={{ bg: 'red.800', color: 'white' }}>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='6rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/ab/Single_Spell_Shield_1.png/'
+        mr='12px'
+      />
+      <VStack align='left'><Text fontSize='22px'><b>SDR4: Improve Your Stamina (3/3)</b></Text><HStack><Text>overlaps with </Text><Text color="orange.300"><b>SP203: Be Steps Ahead (3/3)</b></Text></HStack></VStack>
+      </HStack>
+      </Box>
+      <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel h='340px' pb={4} >
+      <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text  fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+        <HStack> 
+       <Image
+       mb='9px'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/23/Choros.png/'
+        mr='0px'
+      />      
+      <Text fontSize={{ base: "14px", lg: "18px"}} align='center'>6 Choros</Text>
+      </HStack>
+      <HStack> 
+       <Image
+       mb='9px'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/f2/Zenme.png'
+        mr='0px'
+      />      
+      <Text fontSize={{ base: "14px", lg: "18px"}} align='center'>6 Zenme</Text>
+      </HStack>
+  </Box>
+  </HStack>
+<Divider mt='55px' mb='12px' />
+  <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Rewards<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+       <HStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/21/Spells_Exam_Credit.png'
+        mr='0px'
+      />  	<Text  fontSize={{ base: "14px", lg: "18px"}} mb='12px' align='left'>1 Spells Exam Credit</Text>
+      </HStack>
+      <HStack> 
+        <Image
+         mb='12px'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/ab/Single_Spell_Shield_1.png/'
+        mr='0px'/>  	
+        <Text  fontSize={{ base: "14px", lg: "18px"}} mb='12px' align='left'>1 Single Spell Shield 1</Text></HStack>
+        <HStack>
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/0/01/Blazing_Eye_Spell.png/'
+        mr='0px'/>  	
+        <Text  fontSize={{ base: "14px", lg: "18px"}} align='left'>1 Blazing Eye Spell</Text></HStack>
+  </Box>
+  </HStack>
+    </AccordionPanel>
+  </AccordionItem>
+
         <AccordionItem>
     <h2>
       <AccordionButton bg='red.900'  _expanded={{ bg: 'red.900', color: 'white' }}  _hover={{ bg: 'red.900', color: 'white' }}>
