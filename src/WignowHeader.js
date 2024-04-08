@@ -40,7 +40,7 @@ function App() {
   <BreadcrumbItem>
     <BreadcrumbLink
             color='teal.500'   
-            _hover={{  color: "teal.300",  }}><Link to="removeimages">Remove Images</Link></BreadcrumbLink>
+            _hover={{  color: "teal.300",  }}><Link to="aurilis">Aurilis Thesis Quests</Link></BreadcrumbLink>
   </BreadcrumbItem>
 </Breadcrumb>
 <Divider></Divider>
