@@ -79,6 +79,12 @@ function App() {
   const [CrystalIsShown, setCrystalIsShown] = useState(false);
   const [GalaxyIsShown, setGalaxyIsShown] = useState(false);
 
+  const [StarfallYesActive, setStarfallYesActive] = useState(false);
+  const [StarfallNoActive, setStarfallNoActive] = useState(false);
+
+  const [StarfallYesIsShown, setStarfallYesIsShown] = useState(false);
+  const [StarfallNoIsShown, setStarfallNoIsShown] = useState(false);
+
 
   const handleAlchemyClick = event => {
     // 👇️ toggle shown state
@@ -144,8 +150,21 @@ const handleCrystalClick = event => {
   };  
 
 
-
-
+  const handleStarfallYesClick = event => {
+    // 👇️ toggle shown state
+    setStarfallYesIsShown(current => !StarfallYesIsShown);
+    setStarfallYesActive(!StarfallYesActive);
+    setStarfallNoIsShown(current => null);
+    setStarfallNoActive (current => null);
+    };
+    
+    const handleStarfallNoClick = event => {
+      // 👇️ toggle shown state
+      setStarfallNoIsShown(current => !StarfallNoIsShown);
+      setStarfallNoActive(!StarfallNoActive);
+      setStarfallYesIsShown(current => null);
+      setStarfallYesActive (current => null);
+    };
 
 
 
@@ -654,6 +673,8 @@ const [Spellfire, setSpellfire] = useState(0); // Or any other non-zero value
 const calculateSpellfireResult = {totalSDR1_1_SF, totalOniCombo_SF, totalSDR3_1_SF}
 const totalSpellfire = Math.max (totalSDR1_1_SF + totalOniCombo_SF + totalSDR3_1_SF, 0)
 
+//starfall token math//
+
 
 //format the WC #s//
 //NOANZA//
@@ -722,6 +743,30 @@ const totalSpellfire = Math.max (totalSDR1_1_SF + totalOniCombo_SF + totalSDR3_1
       <span>Spells</span></Button>
         </WrapItem>
         </Wrap></Container>
+
+<Container>
+          <VStack><HStack><text>Include Starfall repeatable quests?<br></br><br></br></text></HStack>
+</VStack><Wrap justify='center'>
+        <WrapItem>
+        <Button variant='outline' onClick={handleStarfallYesClick} style={{ backgroundColor: StarfallYesActive ? "#1a3d06" : "transparent" }}>
+        <Image
+        boxSize='2rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/82/Green_Star_Sprite.png/'
+        mr='12px'
+      />
+      <span>Yes</span></Button>
+      </WrapItem>
+      <WrapItem>
+        <Button variant='outline' onClick= {handleStarfallNoClick} style={{ backgroundColor: StarfallNoActive ? "#591310" : "transparent" }}>      <Image
+        boxSize='2rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/89/Red_Star_Sprite.png/'
+        mr='12px'
+      />
+      <span>No</span></Button></WrapItem>
+        </Wrap></Container>
+
 
         
         
@@ -1700,11 +1745,96 @@ const totalSpellfire = Math.max (totalSDR1_1_SF + totalOniCombo_SF + totalSDR3_1
 </VStack>
   </Box>
         </WrapItem>}
-
-
 </Wrap>
-
 <br></br></Container>
+
+
+
+{StarfallYesIsShown && 
+<Container>
+        <Accordion allowMultiple>
+        <AccordionItem>
+    <h2>
+      <AccordionButton bg='teal.900'  _expanded={{ bg: 'teal.900', color: 'white' }}  _hover={{ bg: 'teal.900', color: 'white' }}>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='6rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/f3/StarFall2024EventToken.png/'
+        mr='12px'
+      />
+      <VStack align='center'><Text fontSize='22px'><b>Repeatable Starfall Quests</b></Text></VStack>
+      </HStack>
+      </Box>
+      </AccordionButton>
+    </h2>
+</AccordionItem>
+  <AccordionItem>
+    <h2>
+      <AccordionButton _expanded={{ bg: 'teal.800', color: 'white' }}>
+      <Box as="span" flex='1' textAlign='left'>
+        <HStack>
+        <Image
+        boxSize='6rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/f3/StarFall2024EventToken.png/'
+        mr='12px'
+      />
+      <VStack align='left'><Text fontSize='22px'><b>No Quarter Given</b></Text><HStack><Text>repeat up to</Text><Text color="yellow.300"><b>2x per day</b></Text></HStack></VStack>
+      </HStack>
+      </Box>
+      <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel h='190px' pb={4} >
+      <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text  fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Monsters<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+        <HStack> 
+       <Image
+       mb='9px'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://i.imgur.com/RnyfErA.png'
+        mr='0px'
+      />      
+      <Text fontSize={{ base: "14px", lg: "18px"}} align='center'>25 monsters</Text>
+      </HStack>
+  </Box>
+  </HStack>
+<Divider mt='30px' mb='12px' />
+  <HStack justify='center'>
+    <Box justify='center' w='110px' h='60px' pb={5}>
+       <HStack> 
+<Text fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Rewards<br></br>(per quest)</i></Text>
+      </HStack>
+  </Box>
+
+    <Box justify='center' w='165px' h='60px' pb={5}>
+       <HStack> 
+        <Image
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/f3/StarFall2024EventToken.png/'
+        mr='0px'
+      />  	<Text  fontSize={{ base: "14px", lg: "18px"}} mb='12px' align='left'>25 Starfall Tokens</Text>
+      </HStack>
+  </Box>
+  </HStack>
+    </AccordionPanel>
+  </AccordionItem>
+
+</Accordion>
+
+<br></br>
+</Container>}
+
 
 {CrystalIsShown && 
 <Container>
