@@ -90,6 +90,10 @@ function App() {
     // 👇️ toggle shown state
     setAKIsShown(current => !AKIsShown)
     setAKActive(!AKActive);
+    setOdeeNoIsShown(current => null);
+setOdeeNoActive (current => null);
+setOdeeYesIsShown(current => null);
+setOdeeYesActive (current => null);
     };
 
     const handleAstroClick = event => {
@@ -575,7 +579,7 @@ const totalChorOne = Math.floor (totalChor/1);
 const [OniThree, setOniThree] = useState(0); // Or any other non-zero value
 const totalOniThree = Math.floor (totalOni/3);
 
-//repeatable quest: 3 oniine//
+//repeatable quest: 5 neilon//
 const [NeilFive, setNeilFive] = useState(0); // Or any other non-zero value
 const totalNeilFive = Math.floor (totalNeil/5);
 
@@ -610,6 +614,45 @@ const [GMundOne, setGMundOne] = useState(0); // Or any other non-zero value
 const totalGMundOne = Math.floor (totalGMund/1);
 
 const SmallestGalaxy = Math.min (totalGChyOne, totalGAlderOne, totalGWhoOne, totalGMundOne)
+
+
+//alchemy exam credit math//
+const [AlcExam, setAlcExam] = useState(0); // Or any other non-zero value
+const calculateAlcExamResult = {SmallestAedJarSap, totalSapTwelve}
+const totalAlcExam = Math.round (SmallestAedJarSap + totalSapTwelve)
+
+//ancient knowledge exam credit math - yes odees //
+const [AKYesExam, setAKYesExam] = useState(0); // Or any other non-zero value
+const calculateAKYesExamResult = {totalTyoFour, totalOdeeQuest}
+const totalAKYesExam = Math.round (totalTyoFour + totalOdeeQuest)
+
+
+//astrology exam credit math//
+const [AstroExam, setAstroExam] = useState(0); // Or any other non-zero value
+const calculateAstroExamResult = {SmallestWizKnuff, totalMertThree, SmallestGreifGull}
+const totalAstroExam = Math.round (SmallestWizKnuff + totalMertThree + SmallestGreifGull)
+
+//spells exam credit math - no dungeon//
+const [DoubleOni, setDoubleOni] = useState(0);
+const totalDoubleOni = Math.round (totalOniThree*2)
+
+const [SDR1_1_SF, setSDR1_1_SF] = useState(0);
+const totalSDR1_1_SF = Math.round (totalChorOne*5)
+
+const [OniCombo_SF, setOniCombo_SF] = useState(0);
+const totalOniCombo_SF = Math.round (totalOniThree*15)
+
+const [SDR3_1_SF, setSDR3_1_SF] = useState(0);
+const totalSDR3_1_SF = Math.round (totalNeilFive*5)
+
+const [SpellsExam, setSpellsExam] = useState(0); // Or any other non-zero value
+const calculateSpellsExamResult = {totalChorOne, totalNeilFive, totalDoubleOni}
+const totalSpellsExam = Math.round (totalChorOne + totalNeilFive + totalDoubleOni)
+
+//spellfire math - no dungeon//
+const [Spellfire, setSpellfire] = useState(0); // Or any other non-zero value
+const calculateSpellfireResult = {totalSDR1_1_SF, totalOniCombo_SF, totalSDR3_1_SF}
+const totalSpellfire = Math.max (totalSDR1_1_SF + totalOniCombo_SF + totalSDR3_1_SF, 0)
 
 
 //format the WC #s//
@@ -687,7 +730,7 @@ const SmallestGalaxy = Math.min (totalGChyOne, totalGAlderOne, totalGWhoOne, tot
         
         
         {AKIsShown &&  <Container>
-          <VStack><HStack><text>Are you also working on the big 1,000 Odees quest?<br></br><br></br></text></HStack>
+          <VStack><HStack><text>Are you also working on the 1,000 Odees quest?<br></br><br></br></text></HStack>
 </VStack><Wrap justify='center'>
         <WrapItem>
         <Button variant='outline' onClick={handleOdeeYesClick} style={{ backgroundColor: OdeeYesActive ? "#130119" : "transparent" }}>
@@ -713,7 +756,7 @@ const SmallestGalaxy = Math.min (totalGChyOne, totalGAlderOne, totalGWhoOne, tot
           <VStack><HStack><text>Include the Familiar Variants quests? <br></br><i>Note: each requires fighting 1 extra Lole</i><br></br><br></br></text></HStack>
 </VStack><Wrap justify='center'>
         <WrapItem>
-        <Button variant='outline' onClick={handleCrystalClick} style={{ backgroundColor: CrystalActive ? "whiteAlpha.50" : "transparent" }}>
+        <Button variant='outline' onClick={handleCrystalClick} style={{ backgroundColor: CrystalActive ? "#070726" : "transparent" }}>
         <Image
         boxSize='2rem'
         borderRadius='full'
@@ -1398,27 +1441,234 @@ const SmallestGalaxy = Math.min (totalGChyOne, totalGAlderOne, totalGWhoOne, tot
 <Divider />
 <Container>
 <br></br>
-<Heading>Quick View</Heading>
+<Heading>Overlapping Quests</Heading>
 <br></br>
-<TableContainer>
-  <Table align='center' variant='simple' colorScheme={tablecolor} maxW={20}>
-  <Tbody>
-    <Tr>
-<Td><Stat>
-  <StatLabel>Total Word Count with Attack</StatLabel>
-  <StatNumber>
-  {AlchemyIsShown && <text align='center'>{totalAedTen}, {totalJarSix}, {totalSapSix}, {SmallestAedJarSap}<br></br><br></br></text>}
-  {AKIsShown && <text align='center'>{totalTyoFour}, {totalOdeesEight}, {SmallestTyoOdees}</text>}
 
-  </StatNumber>
-</Stat></Td></Tr>
-</Tbody>
-<Tfoot>
-  {AlchemyIsShown && <Text fontSize='sm' align='center'>alchemy thesis</Text>}
-  {AKIsShown && <Text fontSize='sm' align='center'>knowledge thesis</Text>}
-  </Tfoot>
-</Table>
-</TableContainer>
+<Box as="span" flex='1' textAlign='center' padding-top={3}>
+        <Text><b>Potential Rewards</b></Text>
+        </Box>
+        <Wrap mt='12px' justify='center'>
+{AlchemyIsShown &&
+        <WrapItem>
+        <Box w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/9a/Alchemy_Exam_Credit.png/'
+        mr='5px'
+      /> 
+      <text align='center'>{totalAlcExam}</text></VStack>
+  </Box>
+        </WrapItem>}
+
+        {AKIsShown && OdeeYesIsShown &&
+        <WrapItem>
+        <Box justify='center' w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/4c/Ancient_Knowledge_Exam_Credit.png/'
+        mr='5px'
+      /> 
+      <text align='center'>{totalAKYesExam}</text></VStack>
+  </Box>
+        </WrapItem>}
+
+        {AKIsShown && OdeeNoIsShown &&
+        <WrapItem>
+        <Box justify='center' w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/4c/Ancient_Knowledge_Exam_Credit.png/'
+        mr='5px'
+      /> 
+      <text align='center'>{SmallestTyoOdees}</text></VStack>
+  </Box>
+        </WrapItem>}
+        
+        {AstroIsShown &&
+        <WrapItem>
+        <Box justify='center' w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+       align='center'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Astrology_Exam_Credit.png'
+        mr='5px'
+      /> 
+      <text align='center'>{totalAstroExam}</text>
+      </VStack>
+  </Box>
+        </WrapItem>}
+
+        {SpellsIsShown &&
+        <WrapItem>
+        <Box justify='center' w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+       align='center'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/21/Spells_Exam_Credit.png'
+        mr='5px'
+      />
+        <text align='center'>{totalSpellsExam}</text>
+</VStack>
+  </Box>
+        </WrapItem>}
+</Wrap>
+
+<Wrap mt='12px' justify='center'>
+{AlchemyIsShown &&
+        <WrapItem>
+        <Box w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Magic_Sapee_Lamp.png'
+        mr='5px'
+      /> 
+      <text align='center'>{totalSapTwelve}</text>
+      </VStack>
+  </Box>
+        </WrapItem>}
+        {AlchemyIsShown &&
+        <WrapItem>
+        <Box justify='center' w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/c/c7/Alchemy_Class_Ecosystem_1.png/'
+        mr='5px'
+      /> 
+      <text align='center'>{SmallestAedJarSap}</text></VStack>
+  </Box>
+        </WrapItem>}
+        {AKIsShown && OdeeYesIsShown &&
+        <WrapItem>
+        <Box justify='center' w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+       align='center'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1a/Cursed_Rug_1.png/'
+        mr='5px'
+      /> 
+      {OdeeYesIsShown && <text align='center'>{totalTyoFour}</text>}
+      </VStack>
+  </Box>
+        </WrapItem>}
+
+        {AKIsShown && OdeeNoIsShown &&
+        <WrapItem>
+        <Box justify='center' w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+       align='center'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1a/Cursed_Rug_1.png/'
+        mr='5px'
+      /> 
+      {OdeeNoIsShown && <text align='center'>{SmallestTyoOdees}</text>}
+      </VStack>
+  </Box>
+        </WrapItem>}
+
+
+        {AKIsShown && OdeeYesIsShown &&
+        <WrapItem>
+        <Box justify='center' w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+       align='center'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1b/Odys_Line.png/'
+        mr='5px'
+      />
+        <text align='center'>{totalOdeeQuest}</text>
+</VStack>
+  </Box>
+        </WrapItem>}
+
+        {AstroIsShown && 
+        <WrapItem>
+        <Box justify='center' w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+       align='center'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/ef/Star_Pillow_1.png/'
+        mr='5px'
+      />
+<text align='center'>{SmallestWizKnuff}</text>
+</VStack>
+  </Box>
+        </WrapItem>}
+        {AstroIsShown && 
+        <WrapItem>
+        <Box justify='center' w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+       align='center'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/26/Mertino_Skull_1.png/'
+        mr='5px'
+      />
+<text align='center'>{totalMertThree}</text>
+</VStack>
+  </Box>
+        </WrapItem>}
+
+        {AstroIsShown && 
+        <WrapItem>
+        <Box justify='center' w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+       align='center'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/3/39/Starry_Curtains_1.png'
+        mr='5px'
+      />
+<text align='center'>{SmallestGreifGull}</text>
+</VStack>
+  </Box>
+        </WrapItem>}
+
+        {SpellsIsShown && 
+        <WrapItem>
+        <Box justify='center' w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+       align='center'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/50/Spellfire_(Spells).png/'
+        mr='5px'
+      />
+<text align='center'>{totalSpellfire}</text>
+</VStack>
+  </Box>
+        </WrapItem>}
+</Wrap>
+
 <br></br></Container>
 
 {CrystalIsShown && 
@@ -1857,7 +2107,7 @@ const SmallestGalaxy = Math.min (totalGChyOne, totalGAlderOne, totalGWhoOne, tot
         src='https://static.wikia.nocookie.net/4thewords/images/1/1a/Cursed_Rug_1.png/'
         mr='12px'
       />
-            <VStack align='left'><Text fontSize='22px'><b>K 302: Terrific Toxins (2/2)</b></Text><HStack><Text>repeat up to</Text><Text color="pink.300"><b>{totalSapTwelve}x</b></Text></HStack></VStack>
+            <VStack align='left'><Text fontSize='22px'><b>K 302: Terrific Toxins (2/2)</b></Text><HStack><Text>repeat up to</Text><Text color="pink.300"><b>{SmallestTyoOdees}x</b></Text></HStack></VStack>
       </HStack>
       </Box>
         <AccordionIcon />
