@@ -1440,7 +1440,7 @@ const totalSpellfire = Math.max (totalSDR1_1_SF + totalOniCombo_SF + totalSDR3_1
 <Heading>Overlapping Quests</Heading>
 <br></br>
 
-<Box as="span" flex='1' textAlign='center' padding-top={3}>
+        <Box as="span" flex='1' textAlign='center' padding-top={3}>
         <Text fontSize='22px'><b>Potential Rewards:</b></Text> <br></br>
         <Text><b>Class Exam Credits</b></Text>
         </Box>
