@@ -20,7 +20,7 @@ function App() {
       <Route path="" element={ <Homepage/> } />
       <Route path="quickwccalc" element={ <QuickWCCalc/> } />
       <Route path="cityoflight" element={ <CityofLight/> } />
-      <Route path="aurilis" element={ <AprilAurilis/> } />
+      <Route path="aurilis-thesis" element={ <AprilAurilis/> } />
       <Route path="removeimages" element={ <RemoveImages/> } />
       <Route path="fanedits" element={ <FanEdits/> } />
       </Routes>
