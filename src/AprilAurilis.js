@@ -1781,7 +1781,7 @@ const totalSpellfire = Math.max (totalSDR1_1_SF + totalOniCombo_SF + totalSDR3_1
         src='https://static.wikia.nocookie.net/4thewords/images/f/f3/StarFall2024EventToken.png/'
         mr='12px'
       />
-      <VStack align='left'><Text fontSize='22px'><b>No Quarter Given</b></Text><HStack><Text>repeat up to</Text><Text color="yellow.300"><b>2x per day</b></Text></HStack></VStack>
+      <VStack align='left'><Text fontSize='22px'><b>No Quarter Given</b></Text><HStack><Text>repeat up to</Text><Text color="yellow.300"><b>2x/day</b></Text></HStack></VStack>
       </HStack>
       </Box>
       <AccordionIcon />
