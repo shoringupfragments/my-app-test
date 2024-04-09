@@ -1842,6 +1842,38 @@ const totalSpellfireSDR4 = Math.max (totalSDR1_1_SFSDR4 + totalOniCombo_SF + tot
   </Box>
         </WrapItem>}
 
+        {CrystalIsShown && 
+        <WrapItem>
+        <Box justify='center' w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+       align='center'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e0/CobaltoanPath00.png/'
+        mr='5px'
+      />
+<text align='center'>{SmallestCrystal}</text>
+</VStack>
+  </Box>
+        </WrapItem>}
+        {CrystalIsShown && 
+        <WrapItem>
+        <Box justify='center' w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+       align='center'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b1/GalaxyPath00.png/'
+        mr='5px'
+      />
+<text align='center'>{SmallestGalaxy}</text>
+</VStack>
+  </Box>
+        </WrapItem>}
+
+        
         {SpellsIsShown && SDR4YesIsShown &&
         <WrapItem>
         <Box justify='center' w='50px' h='100px' pb={5}>
@@ -1870,37 +1902,6 @@ const totalSpellfireSDR4 = Math.max (totalSDR1_1_SFSDR4 + totalOniCombo_SF + tot
         mr='5px'
       />
 <text align='center'>{totalSpellfire}</text>
-</VStack>
-  </Box>
-        </WrapItem>}
-
-        {CrystalIsShown && 
-        <WrapItem>
-        <Box justify='center' w='50px' h='100px' pb={5}>
-       <VStack> 
-       <Image
-       align='center'
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/e/e0/CobaltoanPath00.png/'
-        mr='5px'
-      />
-<text align='center'>{SmallestCrystal}</text>
-</VStack>
-  </Box>
-        </WrapItem>}
-        {CrystalIsShown && 
-        <WrapItem>
-        <Box justify='center' w='50px' h='100px' pb={5}>
-       <VStack> 
-       <Image
-       align='center'
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/b/b1/GalaxyPath00.png/'
-        mr='5px'
-      />
-<text align='center'>{SmallestGalaxy}</text>
 </VStack>
   </Box>
         </WrapItem>}
@@ -3650,7 +3651,7 @@ const totalSpellfireSDR4 = Math.max (totalSDR1_1_SFSDR4 + totalOniCombo_SF + tot
   <HStack justify='center'>
     <Box justify='center' w='110px' h='60px' pb={5}>
        <HStack> 
-<Text fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Rewards<br></br>(all quests)</i></Text>
+<Text fontSize={{ base: "14px", lg: "18px"}} mt='5px' mr='15px' align='left'><i>Rewards<br></br>(all 3 quests)</i></Text>
       </HStack>
   </Box>
 
