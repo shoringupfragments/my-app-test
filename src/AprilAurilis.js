@@ -388,7 +388,7 @@ const handleOdeesChange = (valueString) => {
     setOdees(value);
   };
 
-const totalOdees = Math.max (8-Odees,0);
+const totalOdees = Math.max (111-Odees,0);
 
 
 //~*~*~*ASTROLOGY MONSTERS*~*~*~//
@@ -1221,7 +1221,7 @@ const totalSpellfireSDR4 = Math.max (totalSDR1_1_SFSDR4 + totalOniCombo_SF + tot
         <NumberInput defaultValue={0} min={0} max={9999} size='md' mindW='85px' maxW='85px'>
   <NumberInputField id='dreH' onInput={(e) => handleOdeesChange(e.target.value)} />
 </NumberInput>
-<Text align='left'>of 8</Text>
+<Text align='left'>of 111</Text>
       </VStack>
 </HStack>
 </Box>
