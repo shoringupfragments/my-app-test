@@ -341,13 +341,13 @@ const totalNoanzaKirerfWCResult = (0+0)
     </FormControl>
 </Container>}
 
-            <HStack><text>Do you have the companion</text> 
+            <HStack><text ml='10px'>Do you have the companion</text> 
         <Image
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/6/6d/Lole.png/ '
         mr='0px'
-      /><text><b>Lole</b>?</text>
+      /><text mr='10px'><b>Lole</b>?</text>
          </HStack>
         <Container><Wrap justify='center'>
         <WrapItem>
@@ -371,7 +371,7 @@ const totalNoanzaKirerfWCResult = (0+0)
         </Wrap></Container>
 
 {LoleYIsShown && <VStack>
-        <text>What is the word count of the monster you're mastering?<br></br><br></br></text> 
+        <text mr='10px' ml='10px'>What is the word count of the monster you're mastering?<br></br><br></br></text> 
     
         <Container><Wrap justify='center'>
         <WrapItem>
