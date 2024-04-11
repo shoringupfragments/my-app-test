@@ -69,6 +69,7 @@ function App() {
 
   const [NullIsShown, setNullIsShown] = useState(false);
 
+
   
   const monsterOptions = [
     {
@@ -117,6 +118,63 @@ function App() {
   const [LoleY_UseBlast_IsShown, setLoleY_UseBlast_IsShown] = useState(false);
   const [LoleN_UseBlast_IsShown, setLoleN_UseBlast_IsShown] = useState(false);
 
+//monsters//
+  const [TesvenActive, setTesvenActive] = useState(false);
+  const [TesvenIsShown, setTesvenIsShown] = useState(false);
+
+  const [VelsounActive, setVelsounActive] = useState(false);
+  const [VelsounIsShown, setVelsounIsShown] = useState(false);
+
+  const [AlphaTamboActive, setAlphaTamboActive] = useState(false);
+  const [AlphaTamboIsShown, setAlphaTamboIsShown] = useState(false);
+
+  const [AzadiActive, setAzadiActive] = useState(false);
+  const [AzadiIsShown, setAzadiIsShown] = useState(false);
+
+  const [TareitActive, setTareitActive] = useState(false);
+  const [TareitIsShown, setTareitIsShown] = useState(false);
+
+  const [BabuActive, setBabuActive] = useState(false);
+  const [BabuIsShown, setBabuIsShown] = useState(false);
+
+  const [DustSuwoActive, setDustSuwoActive] = useState(false);
+  const [DustSuwoIsShown, setDustSuwoIsShown] = useState(false);
+
+  const [SuwoActive, setSuwoActive] = useState(false);
+  const [SuwoIsShown, setSuwoIsShown] = useState(false);
+
+  const [RakstalActive, setRakstalActive] = useState(false);
+  const [RakstalIsShown, setRakstalIsShown] = useState(false);
+
+  const [ShamanLuziaActive, setShamanLuziaActive] = useState(false);
+  const [ShamanLuziaIsShown, setShamanLuziaIsShown] = useState(false);
+
+  const [DarkReflectionActive, setDarkReflectionActive] = useState(false);
+  const [DarkReflectionIsShown, setDarkReflectionIsShown] = useState(false);
+
+  const [ReflectionActive, setReflectionActive] = useState(false);
+  const [ReflectionIsShown, setReflectionIsShown] = useState(false);
+
+  const [CaravanActive, setCaravanActive] = useState(false);
+  const [CaravanIsShown, setCaravanIsShown] = useState(false);
+
+  const [KultalvaActive, setKultalvaActive] = useState(false);
+  const [KultalvaIsShown, setKultalvaIsShown] = useState(false);
+
+  const [MiclanActive, setMiclanActive] = useState(false);
+  const [MiclanIsShown, setMiclanIsShown] = useState(false);
+
+  const [RiverGoddessActive, setRiverGoddessActive] = useState(false);
+  const [RiverGoddessIsShown, setRiverGoddessIsShown] = useState(false);
+
+  const [KingMaiActive, setKingMaiActive] = useState(false);
+  const [KingMaiIsShown, setKingMaiIsShown] = useState(false);
+  
+  const [DustedLuziaActive, setDustedLuziaActive] = useState(false);
+  const [DustedLuziaIsShown, setDustedLuziaIsShown] = useState(false);
+
+  const [DustyKingMaiActive, setDustyKingMaiActive] = useState(false);
+  const [DustyKingMaiIsShown, setDustyKingMaiIsShown] = useState(false);
 
 
   const handleLoleYClick = event => {
@@ -133,6 +191,46 @@ function App() {
     setLoleY_UseBlast_Active(current => null);
     setLoleN_UseGrenade_Active(current => null);
     setLoleN_UseBlast_Active(current => null);
+
+    setTesvenIsShown (current => null)
+    setTesvenActive (current => null)  
+    setVelsounIsShown (current => null)
+    setVelsounActive (current => null)
+    setAlphaTamboIsShown (current => null)
+    setAlphaTamboActive (current => null)
+    setAzadiIsShown (current => null)
+    setAzadiActive (current => null)
+    setTareitIsShown (current => null)
+    setTareitActive (current => null)
+    setBabuIsShown (current => null)
+    setBabuActive (current => null)
+    setDustSuwoIsShown (current => null)
+    setDustSuwoActive (current => null)
+    setSuwoIsShown (current => null)
+    setSuwoActive (current => null)
+    setRakstalIsShown (current => null)
+    setRakstalActive (current => null)
+    setShamanLuziaIsShown (current => null)
+    setShamanLuziaActive (current => null)
+    setDarkReflectionIsShown (current => null)
+    setDarkReflectionActive (current => null)
+    setReflectionIsShown (current => null)
+    setReflectionActive (current => null)
+    setCaravanIsShown (current => null)
+    setCaravanActive (current => null)
+    setKultalvaIsShown (current => null)
+    setKultalvaActive (current => null)
+    setMiclanIsShown (current => null)
+    setMiclanActive (current => null)
+    setRiverGoddessIsShown (current => null)
+    setRiverGoddessActive (current => null)
+    setKingMaiIsShown (current => null)
+    setKingMaiActive (current => null)
+    setDustedLuziaIsShown (current => null)
+    setDustedLuziaActive (current => null)
+    setDustyKingMaiIsShown (current => null)
+    setDustyKingMaiActive (current => null)
+
   };
 
   const handleLoleNClick = event => {
@@ -149,6 +247,45 @@ function App() {
     setLoleY_UseBlast_Active(current => null);
     setLoleN_UseGrenade_Active(current => null);
     setLoleN_UseBlast_Active(current => null);
+
+    setTesvenIsShown (current => null)
+    setTesvenActive (current => null)  
+    setVelsounIsShown (current => null)
+    setVelsounActive (current => null)
+    setAlphaTamboIsShown (current => null)
+    setAlphaTamboActive (current => null)
+    setAzadiIsShown (current => null)
+    setAzadiActive (current => null)
+    setTareitIsShown (current => null)
+    setTareitActive (current => null)
+    setBabuIsShown (current => null)
+    setBabuActive (current => null)
+    setDustSuwoIsShown (current => null)
+    setDustSuwoActive (current => null)
+    setSuwoIsShown (current => null)
+    setSuwoActive (current => null)
+    setRakstalIsShown (current => null)
+    setRakstalActive (current => null)
+    setShamanLuziaIsShown (current => null)
+    setShamanLuziaActive (current => null)
+    setDarkReflectionIsShown (current => null)
+    setDarkReflectionActive (current => null)
+    setReflectionIsShown (current => null)
+    setReflectionActive (current => null)
+    setCaravanIsShown (current => null)
+    setCaravanActive (current => null)
+    setKultalvaIsShown (current => null)
+    setKultalvaActive (current => null)
+    setMiclanIsShown (current => null)
+    setMiclanActive (current => null)
+    setRiverGoddessIsShown (current => null)
+    setRiverGoddessActive (current => null)
+    setKingMaiIsShown (current => null)
+    setKingMaiActive (current => null)
+    setDustedLuziaIsShown (current => null)
+    setDustedLuziaActive (current => null)
+    setDustyKingMaiIsShown (current => null)
+    setDustyKingMaiActive (current => null)
     };
 
   const handleLoleY_UseGrenade_Click = event => {
@@ -162,6 +299,45 @@ function App() {
     setLoleY_UseBlast_Active(current => null);
     setLoleN_UseGrenade_Active(current => null);
     setLoleN_UseBlast_Active(current => null);
+
+    setTesvenIsShown (current => null)
+    setTesvenActive (current => null)  
+    setVelsounIsShown (current => null)
+    setVelsounActive (current => null)
+    setAlphaTamboIsShown (current => null)
+    setAlphaTamboActive (current => null)
+    setAzadiIsShown (current => null)
+    setAzadiActive (current => null)
+    setTareitIsShown (current => null)
+    setTareitActive (current => null)
+    setBabuIsShown (current => null)
+    setBabuActive (current => null)
+    setDustSuwoIsShown (current => null)
+    setDustSuwoActive (current => null)
+    setSuwoIsShown (current => null)
+    setSuwoActive (current => null)
+    setRakstalIsShown (current => null)
+    setRakstalActive (current => null)
+    setShamanLuziaIsShown (current => null)
+    setShamanLuziaActive (current => null)
+    setDarkReflectionIsShown (current => null)
+    setDarkReflectionActive (current => null)
+    setReflectionIsShown (current => null)
+    setReflectionActive (current => null)
+    setCaravanIsShown (current => null)
+    setCaravanActive (current => null)
+    setKultalvaIsShown (current => null)
+    setKultalvaActive (current => null)
+    setMiclanIsShown (current => null)
+    setMiclanActive (current => null)
+    setRiverGoddessIsShown (current => null)
+    setRiverGoddessActive (current => null)
+    setKingMaiIsShown (current => null)
+    setKingMaiActive (current => null)
+    setDustedLuziaIsShown (current => null)
+    setDustedLuziaActive (current => null)
+    setDustyKingMaiIsShown (current => null)
+    setDustyKingMaiActive (current => null)
   };
 
   const handleLoleN_UseGrenade_Click = event => {
@@ -175,6 +351,45 @@ function App() {
     setLoleY_UseBlast_Active(current => null);
     setLoleN_UseBlast_IsShown(current => null);
     setLoleN_UseBlast_Active(current => null);
+
+    setTesvenIsShown (current => null)
+    setTesvenActive (current => null)  
+    setVelsounIsShown (current => null)
+    setVelsounActive (current => null)
+    setAlphaTamboIsShown (current => null)
+    setAlphaTamboActive (current => null)
+    setAzadiIsShown (current => null)
+    setAzadiActive (current => null)
+    setTareitIsShown (current => null)
+    setTareitActive (current => null)
+    setBabuIsShown (current => null)
+    setBabuActive (current => null)
+    setDustSuwoIsShown (current => null)
+    setDustSuwoActive (current => null)
+    setSuwoIsShown (current => null)
+    setSuwoActive (current => null)
+    setRakstalIsShown (current => null)
+    setRakstalActive (current => null)
+    setShamanLuziaIsShown (current => null)
+    setShamanLuziaActive (current => null)
+    setDarkReflectionIsShown (current => null)
+    setDarkReflectionActive (current => null)
+    setReflectionIsShown (current => null)
+    setReflectionActive (current => null)
+    setCaravanIsShown (current => null)
+    setCaravanActive (current => null)
+    setKultalvaIsShown (current => null)
+    setKultalvaActive (current => null)
+    setMiclanIsShown (current => null)
+    setMiclanActive (current => null)
+    setRiverGoddessIsShown (current => null)
+    setRiverGoddessActive (current => null)
+    setKingMaiIsShown (current => null)
+    setKingMaiActive (current => null)
+    setDustedLuziaIsShown (current => null)
+    setDustedLuziaActive (current => null)
+    setDustyKingMaiIsShown (current => null)
+    setDustyKingMaiActive (current => null)
     };
 
     const handleLoleY_UseBlast_Click = event => {
@@ -189,6 +404,45 @@ function App() {
       setLoleN_UseBlast_IsShown(current => null);
       setLoleN_UseGrenade_Active(current => null);
       setLoleN_UseBlast_Active(current => null);
+
+      setTesvenIsShown (current => null)
+      setTesvenActive (current => null)  
+      setVelsounIsShown (current => null)
+      setVelsounActive (current => null)
+      setAlphaTamboIsShown (current => null)
+      setAlphaTamboActive (current => null)
+      setAzadiIsShown (current => null)
+      setAzadiActive (current => null)
+      setTareitIsShown (current => null)
+      setTareitActive (current => null)
+      setBabuIsShown (current => null)
+      setBabuActive (current => null)
+      setDustSuwoIsShown (current => null)
+      setDustSuwoActive (current => null)
+      setSuwoIsShown (current => null)
+      setSuwoActive (current => null)
+      setRakstalIsShown (current => null)
+      setRakstalActive (current => null)
+      setShamanLuziaIsShown (current => null)
+      setShamanLuziaActive (current => null)
+      setDarkReflectionIsShown (current => null)
+      setDarkReflectionActive (current => null)
+      setReflectionIsShown (current => null)
+      setReflectionActive (current => null)
+      setCaravanIsShown (current => null)
+      setCaravanActive (current => null)
+      setKultalvaIsShown (current => null)
+      setKultalvaActive (current => null)
+      setMiclanIsShown (current => null)
+      setMiclanActive (current => null)
+      setRiverGoddessIsShown (current => null)
+      setRiverGoddessActive (current => null)
+      setKingMaiIsShown (current => null)
+      setKingMaiActive (current => null)
+      setDustedLuziaIsShown (current => null)
+      setDustedLuziaActive (current => null)
+      setDustyKingMaiIsShown (current => null)
+      setDustyKingMaiActive (current => null)
   
     };
   
@@ -204,8 +458,848 @@ function App() {
       setLoleY_UseBlast_Active(current => null);
       setLoleN_UseGrenade_Active(current => null);
 
+      setTesvenIsShown (current => null)
+      setTesvenActive (current => null)  
+      setVelsounIsShown (current => null)
+      setVelsounActive (current => null)
+      setAlphaTamboIsShown (current => null)
+      setAlphaTamboActive (current => null)
+      setAzadiIsShown (current => null)
+      setAzadiActive (current => null)
+      setTareitIsShown (current => null)
+      setTareitActive (current => null)
+      setBabuIsShown (current => null)
+      setBabuActive (current => null)
+      setDustSuwoIsShown (current => null)
+      setDustSuwoActive (current => null)
+      setSuwoIsShown (current => null)
+      setSuwoActive (current => null)
+      setRakstalIsShown (current => null)
+      setRakstalActive (current => null)
+      setShamanLuziaIsShown (current => null)
+      setShamanLuziaActive (current => null)
+      setDarkReflectionIsShown (current => null)
+      setDarkReflectionActive (current => null)
+      setReflectionIsShown (current => null)
+      setReflectionActive (current => null)
+      setCaravanIsShown (current => null)
+      setCaravanActive (current => null)
+      setKultalvaIsShown (current => null)
+      setKultalvaActive (current => null)
+      setMiclanIsShown (current => null)
+      setMiclanActive (current => null)
+      setRiverGoddessIsShown (current => null)
+      setRiverGoddessActive (current => null)
+      setKingMaiIsShown (current => null)
+      setKingMaiActive (current => null)
+      setDustedLuziaIsShown (current => null)
+      setDustedLuziaActive (current => null)
+      setDustyKingMaiIsShown (current => null)
+      setDustyKingMaiActive (current => null)
+
       };
+
+const handleTesvenClick = event => {
+  setTesvenIsShown (current => !TesvenIsShown)
+  setTesvenActive (current => !TesvenActive)  
+  setVelsounIsShown (current => null)
+  setVelsounActive (current => null)
+  setAlphaTamboIsShown (current => null)
+  setAlphaTamboActive (current => null)
+  setAzadiIsShown (current => null)
+  setAzadiActive (current => null)
+  setTareitIsShown (current => null)
+  setTareitActive (current => null)
+  setBabuIsShown (current => null)
+  setBabuActive (current => null)
+  setDustSuwoIsShown (current => null)
+  setDustSuwoActive (current => null)
+  setSuwoIsShown (current => null)
+  setSuwoActive (current => null)
+  setRakstalIsShown (current => null)
+  setRakstalActive (current => null)
+  setShamanLuziaIsShown (current => null)
+  setShamanLuziaActive (current => null)
+  setDarkReflectionIsShown (current => null)
+  setDarkReflectionActive (current => null)
+  setReflectionIsShown (current => null)
+  setReflectionActive (current => null)
+  setCaravanIsShown (current => null)
+  setCaravanActive (current => null)
+  setKultalvaIsShown (current => null)
+  setKultalvaActive (current => null)
+  setMiclanIsShown (current => null)
+  setMiclanActive (current => null)
+  setRiverGoddessIsShown (current => null)
+  setRiverGoddessActive (current => null)
+  setKingMaiIsShown (current => null)
+  setKingMaiActive (current => null)
+  setDustedLuziaIsShown (current => null)
+  setDustedLuziaActive (current => null)
+  setDustyKingMaiIsShown (current => null)
+  setDustyKingMaiActive (current => null)
+    
+  };
+
+const handleVelsounClick = event => {
+  setTesvenIsShown (current => null)
+  setTesvenActive (current => null)  
+  setVelsounIsShown (current => !VelsounIsShown)
+  setVelsounActive (current => !VelsounActive)
+  setAlphaTamboIsShown (current => null)
+  setAlphaTamboActive (current => null)
+  setAzadiIsShown (current => null)
+  setAzadiActive (current => null)
+  setTareitIsShown (current => null)
+  setTareitActive (current => null)
+  setBabuIsShown (current => null)
+  setBabuActive (current => null)
+  setDustSuwoIsShown (current => null)
+  setDustSuwoActive (current => null)
+  setSuwoIsShown (current => null)
+  setSuwoActive (current => null)
+  setRakstalIsShown (current => null)
+  setRakstalActive (current => null)
+  setShamanLuziaIsShown (current => null)
+  setShamanLuziaActive (current => null)
+  setDarkReflectionIsShown (current => null)
+  setDarkReflectionActive (current => null)
+  setReflectionIsShown (current => null)
+  setReflectionActive (current => null)
+  setCaravanIsShown (current => null)
+  setCaravanActive (current => null)
+  setKultalvaIsShown (current => null)
+  setKultalvaActive (current => null)
+  setMiclanIsShown (current => null)
+  setMiclanActive (current => null)
+  setRiverGoddessIsShown (current => null)
+  setRiverGoddessActive (current => null)
+  setKingMaiIsShown (current => null)
+  setKingMaiActive (current => null)
+  setDustedLuziaIsShown (current => null)
+  setDustedLuziaActive (current => null)
+  setDustyKingMaiIsShown (current => null)
+  setDustyKingMaiActive (current => null)
+    
+  };
+
+const handleAlphaTamboClick = event => {
+  setTesvenIsShown (current => null)
+  setTesvenActive (current => null)  
+  setVelsounIsShown (current => null)
+  setVelsounActive (current => null)
+  setAlphaTamboIsShown (current => !AlphaTamboIsShown)
+  setAlphaTamboActive (current => !AlphaTamboActive)
+  setAzadiIsShown (current => null)
+  setAzadiActive (current => null)
+  setTareitIsShown (current => null)
+  setTareitActive (current => null)
+  setBabuIsShown (current => null)
+  setBabuActive (current => null)
+  setDustSuwoIsShown (current => null)
+  setDustSuwoActive (current => null)
+  setSuwoIsShown (current => null)
+  setSuwoActive (current => null)
+  setRakstalIsShown (current => null)
+  setRakstalActive (current => null)
+  setShamanLuziaIsShown (current => null)
+  setShamanLuziaActive (current => null)
+  setDarkReflectionIsShown (current => null)
+  setDarkReflectionActive (current => null)
+  setReflectionIsShown (current => null)
+  setReflectionActive (current => null)
+  setCaravanIsShown (current => null)
+  setCaravanActive (current => null)
+  setKultalvaIsShown (current => null)
+  setKultalvaActive (current => null)
+  setMiclanIsShown (current => null)
+  setMiclanActive (current => null)
+  setRiverGoddessIsShown (current => null)
+  setRiverGoddessActive (current => null)
+  setKingMaiIsShown (current => null)
+  setKingMaiActive (current => null)
+  setDustedLuziaIsShown (current => null)
+  setDustedLuziaActive (current => null)
+  setDustyKingMaiIsShown (current => null)
+  setDustyKingMaiActive (current => null)
+    
+  };
+
+const handleAzadiClick = event => {
+  setTesvenIsShown (current => null)
+  setTesvenActive (current => null)  
+  setVelsounIsShown (current => null)
+  setVelsounActive (current => null)
+  setAlphaTamboIsShown (current => null)
+  setAlphaTamboActive (current => null)
+  setAzadiIsShown (current => !AzadiIsShown)
+  setAzadiActive (current => !AzadiActive)
+  setTareitIsShown (current => null)
+  setTareitActive (current => null)
+  setBabuIsShown (current => null)
+  setBabuActive (current => null)
+  setDustSuwoIsShown (current => null)
+  setDustSuwoActive (current => null)
+  setSuwoIsShown (current => null)
+  setSuwoActive (current => null)
+  setRakstalIsShown (current => null)
+  setRakstalActive (current => null)
+  setShamanLuziaIsShown (current => null)
+  setShamanLuziaActive (current => null)
+  setDarkReflectionIsShown (current => null)
+  setDarkReflectionActive (current => null)
+  setReflectionIsShown (current => null)
+  setReflectionActive (current => null)
+  setCaravanIsShown (current => null)
+  setCaravanActive (current => null)
+  setKultalvaIsShown (current => null)
+  setKultalvaActive (current => null)
+  setMiclanIsShown (current => null)
+  setMiclanActive (current => null)
+  setRiverGoddessIsShown (current => null)
+  setRiverGoddessActive (current => null)
+  setKingMaiIsShown (current => null)
+  setKingMaiActive (current => null)
+  setDustedLuziaIsShown (current => null)
+  setDustedLuziaActive (current => null)
+  setDustyKingMaiIsShown (current => null)
+  setDustyKingMaiActive (current => null)
+  };
+
+  const handleTareitClick = event => {
+    setTesvenIsShown (current => null)
+    setTesvenActive (current => null)  
+    setVelsounIsShown (current => null)
+    setVelsounActive (current => null)
+    setAlphaTamboIsShown (current => null)
+    setAlphaTamboActive (current => null)
+    setAzadiIsShown (current => null)
+    setAzadiActive (current => null)
+    setTareitIsShown (current => !TareitIsShown)
+    setTareitActive (current => !TareitActive)
+    setBabuIsShown (current => null)
+    setBabuActive (current => null)
+    setDustSuwoIsShown (current => null)
+    setDustSuwoActive (current => null)
+    setSuwoIsShown (current => null)
+    setSuwoActive (current => null)
+    setRakstalIsShown (current => null)
+    setRakstalActive (current => null)
+    setShamanLuziaIsShown (current => null)
+    setShamanLuziaActive (current => null)
+    setDarkReflectionIsShown (current => null)
+    setDarkReflectionActive (current => null)
+    setReflectionIsShown (current => null)
+    setReflectionActive (current => null)
+    setCaravanIsShown (current => null)
+    setCaravanActive (current => null)
+    setKultalvaIsShown (current => null)
+    setKultalvaActive (current => null)
+    setMiclanIsShown (current => null)
+    setMiclanActive (current => null)
+    setRiverGoddessIsShown (current => null)
+    setRiverGoddessActive (current => null)
+    setKingMaiIsShown (current => null)
+    setKingMaiActive (current => null)
+    setDustedLuziaIsShown (current => null)
+    setDustedLuziaActive (current => null)
+    setDustyKingMaiIsShown (current => null)
+    setDustyKingMaiActive (current => null)
+      
+    };
+
+  const handleBabuClick = event => {
+  setTesvenIsShown (current => null)
+  setTesvenActive (current => null)  
+  setVelsounIsShown (current => null)
+  setVelsounActive (current => null)
+  setAlphaTamboIsShown (current => null)
+  setAlphaTamboActive (current => null)
+  setAzadiIsShown (current => null)
+  setAzadiActive (current => null)
+  setTareitIsShown (current => null)
+  setTareitActive (current => null)
+  setBabuIsShown (current => !BabuIsShown)
+  setBabuActive (current => !BabuActive)
+  setDustSuwoIsShown (current => null)
+  setDustSuwoActive (current => null)
+  setSuwoIsShown (current => null)
+  setSuwoActive (current => null)
+  setRakstalIsShown (current => null)
+  setRakstalActive (current => null)
+  setShamanLuziaIsShown (current => null)
+  setShamanLuziaActive (current => null)
+  setDarkReflectionIsShown (current => null)
+  setDarkReflectionActive (current => null)
+  setReflectionIsShown (current => null)
+  setReflectionActive (current => null)
+  setCaravanIsShown (current => null)
+  setCaravanActive (current => null)
+  setKultalvaIsShown (current => null)
+  setKultalvaActive (current => null)
+  setMiclanIsShown (current => null)
+  setMiclanActive (current => null)
+  setRiverGoddessIsShown (current => null)
+  setRiverGoddessActive (current => null)
+  setKingMaiIsShown (current => null)
+  setKingMaiActive (current => null)
+  setDustedLuziaIsShown (current => null)
+  setDustedLuziaActive (current => null)
+  setDustyKingMaiIsShown (current => null)
+  setDustyKingMaiActive (current => null)
+    
+  };
+
+  const handleDustSuwoClick = event => {
+  setTesvenIsShown (current => null)
+  setTesvenActive (current => null)  
+  setVelsounIsShown (current => null)
+  setVelsounActive (current => null)
+  setAlphaTamboIsShown (current => null)
+  setAlphaTamboActive (current => null)
+  setAzadiIsShown (current => null)
+  setAzadiActive (current => null)
+  setTareitIsShown (current => null)
+  setTareitActive (current => null)
+  setBabuIsShown (current => null)
+  setBabuActive (current => null)
+  setDustSuwoIsShown (current => !DustSuwoIsShown)
+  setDustSuwoActive (current => !DustSuwoActive)
+  setSuwoIsShown (current => null)
+  setSuwoActive (current => null)
+  setRakstalIsShown (current => null)
+  setRakstalActive (current => null)
+  setShamanLuziaIsShown (current => null)
+  setShamanLuziaActive (current => null)
+  setDarkReflectionIsShown (current => null)
+  setDarkReflectionActive (current => null)
+  setReflectionIsShown (current => null)
+  setReflectionActive (current => null)
+  setCaravanIsShown (current => null)
+  setCaravanActive (current => null)
+  setKultalvaIsShown (current => null)
+  setKultalvaActive (current => null)
+  setMiclanIsShown (current => null)
+  setMiclanActive (current => null)
+  setRiverGoddessIsShown (current => null)
+  setRiverGoddessActive (current => null)
+  setKingMaiIsShown (current => null)
+  setKingMaiActive (current => null)
+  setDustedLuziaIsShown (current => null)
+  setDustedLuziaActive (current => null)
+  setDustyKingMaiIsShown (current => null)
+  setDustyKingMaiActive (current => null)
+    
+  };
+
+  const handleSuwoClick = event => {
+  setTesvenIsShown (current => null)
+  setTesvenActive (current => null)  
+  setVelsounIsShown (current => null)
+  setVelsounActive (current => null)
+  setAlphaTamboIsShown (current => null)
+  setAlphaTamboActive (current => null)
+  setAzadiIsShown (current => null)
+  setAzadiActive (current => null)
+  setTareitIsShown (current => null)
+  setTareitActive (current => null)
+  setBabuIsShown (current => null)
+  setBabuActive (current => null)
+  setDustSuwoIsShown (current => null)
+  setDustSuwoActive (current => null)
+  setSuwoIsShown (current => !SuwoIsShown)
+  setSuwoActive (current => !SuwoActive)
+  setRakstalIsShown (current => null)
+  setRakstalActive (current => null)
+  setShamanLuziaIsShown (current => null)
+  setShamanLuziaActive (current => null)
+  setDarkReflectionIsShown (current => null)
+  setDarkReflectionActive (current => null)
+  setReflectionIsShown (current => null)
+  setReflectionActive (current => null)
+  setCaravanIsShown (current => null)
+  setCaravanActive (current => null)
+  setKultalvaIsShown (current => null)
+  setKultalvaActive (current => null)
+  setMiclanIsShown (current => null)
+  setMiclanActive (current => null)
+  setRiverGoddessIsShown (current => null)
+  setRiverGoddessActive (current => null)
+  setKingMaiIsShown (current => null)
+  setKingMaiActive (current => null)
+  setDustedLuziaIsShown (current => null)
+  setDustedLuziaActive (current => null)
+  setDustyKingMaiIsShown (current => null)
+  setDustyKingMaiActive (current => null)
+    
+  };
+
+  const handleRakstalClick = event => {
+  setTesvenIsShown (current => null)
+  setTesvenActive (current => null)  
+  setVelsounIsShown (current => null)
+  setVelsounActive (current => null)
+  setAlphaTamboIsShown (current => null)
+  setAlphaTamboActive (current => null)
+  setAzadiIsShown (current => null)
+  setAzadiActive (current => null)
+  setTareitIsShown (current => null)
+  setTareitActive (current => null)
+  setBabuIsShown (current => null)
+  setBabuActive (current => null)
+  setDustSuwoIsShown (current => null)
+  setDustSuwoActive (current => null)
+  setSuwoIsShown (current => null)
+  setSuwoActive (current => null)
+  setRakstalIsShown (current => !RakstalIsShown)
+  setRakstalActive (current => !RakstalActive)
+  setShamanLuziaIsShown (current => null)
+  setShamanLuziaActive (current => null)
+  setDarkReflectionIsShown (current => null)
+  setDarkReflectionActive (current => null)
+  setReflectionIsShown (current => null)
+  setReflectionActive (current => null)
+  setCaravanIsShown (current => null)
+  setCaravanActive (current => null)
+  setKultalvaIsShown (current => null)
+  setKultalvaActive (current => null)
+  setMiclanIsShown (current => null)
+  setMiclanActive (current => null)
+  setRiverGoddessIsShown (current => null)
+  setRiverGoddessActive (current => null)
+  setKingMaiIsShown (current => null)
+  setKingMaiActive (current => null)
+  setDustedLuziaIsShown (current => null)
+  setDustedLuziaActive (current => null)
+  setDustyKingMaiIsShown (current => null)
+  setDustyKingMaiActive (current => null)
+    
+  };
+
+  const handleShamanLuziaClick = event => {
+    setTesvenIsShown (current => null)
+    setTesvenActive (current => null)  
+    setVelsounIsShown (current => null)
+    setVelsounActive (current => null)
+    setAlphaTamboIsShown (current => null)
+    setAlphaTamboActive (current => null)
+    setAzadiIsShown (current => null)
+    setAzadiActive (current => null)
+    setTareitIsShown (current => null)
+    setTareitActive (current => null)
+    setBabuIsShown (current => null)
+    setBabuActive (current => null)
+    setDustSuwoIsShown (current => null)
+    setDustSuwoActive (current => null)
+    setSuwoIsShown (current => null)
+    setSuwoActive (current => null)
+    setRakstalIsShown (current => null)
+    setRakstalActive (current => null)
+    setShamanLuziaIsShown (current => !ShamanLuziaIsShown)
+    setShamanLuziaActive (current => !ShamanLuziaActive)
+    setDarkReflectionIsShown (current => null)
+    setDarkReflectionActive (current => null)
+    setReflectionIsShown (current => null)
+    setReflectionActive (current => null)
+    setCaravanIsShown (current => null)
+    setCaravanActive (current => null)
+    setKultalvaIsShown (current => null)
+    setKultalvaActive (current => null)
+    setMiclanIsShown (current => null)
+    setMiclanActive (current => null)
+    setRiverGoddessIsShown (current => null)
+    setRiverGoddessActive (current => null)
+    setKingMaiIsShown (current => null)
+    setKingMaiActive (current => null)
+    setDustedLuziaIsShown (current => null)
+    setDustedLuziaActive (current => null)
+    setDustyKingMaiIsShown (current => null)
+    setDustyKingMaiActive (current => null)
+      
+    };
+
+  const handleDarkReflectionClick = event => {
+    setTesvenIsShown (current => null)
+    setTesvenActive (current => null)  
+    setVelsounIsShown (current => null)
+    setVelsounActive (current => null)
+    setAlphaTamboIsShown (current => null)
+    setAlphaTamboActive (current => null)
+    setAzadiIsShown (current => null)
+    setAzadiActive (current => null)
+    setTareitIsShown (current => null)
+    setTareitActive (current => null)
+    setBabuIsShown (current => null)
+    setBabuActive (current => null)
+    setDustSuwoIsShown (current => null)
+    setDustSuwoActive (current => null)
+    setSuwoIsShown (current => null)
+    setSuwoActive (current => null)
+    setRakstalIsShown (current => null)
+    setRakstalActive (current => null)
+    setShamanLuziaIsShown (current => null)
+    setShamanLuziaActive (current => null)
+    setDarkReflectionIsShown (current => !DarkReflectionIsShown)
+    setDarkReflectionActive (current => !DarkReflectionActive)
+    setReflectionIsShown (current => null)
+    setReflectionActive (current => null)
+    setCaravanIsShown (current => null)
+    setCaravanActive (current => null)
+    setKultalvaIsShown (current => null)
+    setKultalvaActive (current => null)
+    setMiclanIsShown (current => null)
+    setMiclanActive (current => null)
+    setRiverGoddessIsShown (current => null)
+    setRiverGoddessActive (current => null)
+    setKingMaiIsShown (current => null)
+    setKingMaiActive (current => null)
+    setDustedLuziaIsShown (current => null)
+    setDustedLuziaActive (current => null)
+    setDustyKingMaiIsShown (current => null)
+    setDustyKingMaiActive (current => null)
+      
+    };
+
+const handleReflectionClick = event => {
+  setTesvenIsShown (current => null)
+  setTesvenActive (current => null)  
+  setVelsounIsShown (current => null)
+  setVelsounActive (current => null)
+  setAlphaTamboIsShown (current => null)
+  setAlphaTamboActive (current => null)
+  setAzadiIsShown (current => null)
+  setAzadiActive (current => null)
+  setTareitIsShown (current => null)
+  setTareitActive (current => null)
+  setBabuIsShown (current => null)
+  setBabuActive (current => null)
+  setDustSuwoIsShown (current => null)
+  setDustSuwoActive (current => null)
+  setSuwoIsShown (current => null)
+  setSuwoActive (current => null)
+  setRakstalIsShown (current => null)
+  setRakstalActive (current => null)
+  setShamanLuziaIsShown (current => null)
+  setShamanLuziaActive (current => null)
+  setDarkReflectionIsShown (current => null)
+  setDarkReflectionActive (current => null)
+  setReflectionIsShown (current => !ReflectionIsShown)
+  setReflectionActive (current => !ReflectionActive)
+  setCaravanIsShown (current => null)
+  setCaravanActive (current => null)
+  setKultalvaIsShown (current => null)
+  setKultalvaActive (current => null)
+  setMiclanIsShown (current => null)
+  setMiclanActive (current => null)
+  setRiverGoddessIsShown (current => null)
+  setRiverGoddessActive (current => null)
+  setKingMaiIsShown (current => null)
+  setKingMaiActive (current => null)
+  setDustedLuziaIsShown (current => null)
+  setDustedLuziaActive (current => null)
+  setDustyKingMaiIsShown (current => null)
+  setDustyKingMaiActive (current => null)
+    
+  };
+
+  const handleCaravanClick = event => {
+    setTesvenIsShown (current => null)
+    setTesvenActive (current => null)  
+    setVelsounIsShown (current => null)
+    setVelsounActive (current => null)
+    setAlphaTamboIsShown (current => null)
+    setAlphaTamboActive (current => null)
+    setAzadiIsShown (current => null)
+    setAzadiActive (current => null)
+    setTareitIsShown (current => null)
+    setTareitActive (current => null)
+    setBabuIsShown (current => null)
+    setBabuActive (current => null)
+    setDustSuwoIsShown (current => null)
+    setDustSuwoActive (current => null)
+    setSuwoIsShown (current => null)
+    setSuwoActive (current => null)
+    setRakstalIsShown (current => null)
+    setRakstalActive (current => null)
+    setShamanLuziaIsShown (current => null)
+    setShamanLuziaActive (current => null)
+    setDarkReflectionIsShown (current => null)
+    setDarkReflectionActive (current => null)
+    setReflectionIsShown (current => null)
+    setReflectionActive (current => null)
+    setCaravanIsShown (current => !CaravanIsShown)
+    setCaravanActive (current => !CaravanActive)
+    setKultalvaIsShown (current => null)
+    setKultalvaActive (current => null)
+    setMiclanIsShown (current => null)
+    setMiclanActive (current => null)
+    setRiverGoddessIsShown (current => null)
+    setRiverGoddessActive (current => null)
+    setKingMaiIsShown (current => null)
+    setKingMaiActive (current => null)
+    setDustedLuziaIsShown (current => null)
+    setDustedLuziaActive (current => null)
+    setDustyKingMaiIsShown (current => null)
+    setDustyKingMaiActive (current => null)
+      
+    };
+
+  const handleKultalvaClick = event => {
+    setTesvenIsShown (current => null)
+    setTesvenActive (current => null)  
+    setVelsounIsShown (current => null)
+    setVelsounActive (current => null)
+    setAlphaTamboIsShown (current => null)
+    setAlphaTamboActive (current => null)
+    setAzadiIsShown (current => null)
+    setAzadiActive (current => null)
+    setTareitIsShown (current => null)
+    setTareitActive (current => null)
+    setBabuIsShown (current => null)
+    setBabuActive (current => null)
+    setDustSuwoIsShown (current => null)
+    setDustSuwoActive (current => null)
+    setSuwoIsShown (current => null)
+    setSuwoActive (current => null)
+    setRakstalIsShown (current => null)
+    setRakstalActive (current => null)
+    setShamanLuziaIsShown (current => null)
+    setShamanLuziaActive (current => null)
+    setDarkReflectionIsShown (current => null)
+    setDarkReflectionActive (current => null)
+    setReflectionIsShown (current => null)
+    setReflectionActive (current => null)
+    setCaravanIsShown (current => null)
+    setCaravanActive (current => null)
+    setKultalvaIsShown (current => !KultalvaIsShown)
+    setKultalvaActive (current => !KultalvaActive)
+    setMiclanIsShown (current => null)
+    setMiclanActive (current => null)
+    setRiverGoddessIsShown (current => null)
+    setRiverGoddessActive (current => null)
+    setKingMaiIsShown (current => null)
+    setKingMaiActive (current => null)
+    setDustedLuziaIsShown (current => null)
+    setDustedLuziaActive (current => null)
+    setDustyKingMaiIsShown (current => null)
+    setDustyKingMaiActive (current => null)
+      
+    };
+
+  const handleMiclanClick = event => {
+    setTesvenIsShown (current => null)
+    setTesvenActive (current => null)  
+    setVelsounIsShown (current => null)
+    setVelsounActive (current => null)
+    setAlphaTamboIsShown (current => null)
+    setAlphaTamboActive (current => null)
+    setAzadiIsShown (current => null)
+    setAzadiActive (current => null)
+    setTareitIsShown (current => null)
+    setTareitActive (current => null)
+    setBabuIsShown (current => null)
+    setBabuActive (current => null)
+    setDustSuwoIsShown (current => null)
+    setDustSuwoActive (current => null)
+    setSuwoIsShown (current => null)
+    setSuwoActive (current => null)
+    setRakstalIsShown (current => null)
+    setRakstalActive (current => null)
+    setShamanLuziaIsShown (current => null)
+    setShamanLuziaActive (current => null)
+    setDarkReflectionIsShown (current => null)
+    setDarkReflectionActive (current => null)
+    setReflectionIsShown (current => null)
+    setReflectionActive (current => null)
+    setCaravanIsShown (current => null)
+    setCaravanActive (current => null)
+    setKultalvaIsShown (current => null)
+    setKultalvaActive (current => null)
+    setMiclanIsShown (current => !MiclanIsShown)
+    setMiclanActive (current => !MiclanActive)
+    setRiverGoddessIsShown (current => null)
+    setRiverGoddessActive (current => null)
+    setKingMaiIsShown (current => null)
+    setKingMaiActive (current => null)
+    setDustedLuziaIsShown (current => null)
+    setDustedLuziaActive (current => null)
+    setDustyKingMaiIsShown (current => null)
+    setDustyKingMaiActive (current => null)
+      
+    };
+
+  const handleRiverGoddessClick = event => {
+    setTesvenIsShown (current => null)
+    setTesvenActive (current => null)  
+    setVelsounIsShown (current => null)
+    setVelsounActive (current => null)
+    setAlphaTamboIsShown (current => null)
+    setAlphaTamboActive (current => null)
+    setAzadiIsShown (current => null)
+    setAzadiActive (current => null)
+    setTareitIsShown (current => null)
+    setTareitActive (current => null)
+    setBabuIsShown (current => null)
+    setBabuActive (current => null)
+    setDustSuwoIsShown (current => null)
+    setDustSuwoActive (current => null)
+    setSuwoIsShown (current => null)
+    setSuwoActive (current => null)
+    setRakstalIsShown (current => null)
+    setRakstalActive (current => null)
+    setShamanLuziaIsShown (current => null)
+    setShamanLuziaActive (current => null)
+    setDarkReflectionIsShown (current => null)
+    setDarkReflectionActive (current => null)
+    setReflectionIsShown (current => null)
+    setReflectionActive (current => null)
+    setCaravanIsShown (current => null)
+    setCaravanActive (current => null)
+    setKultalvaIsShown (current => null)
+    setKultalvaActive (current => null)
+    setMiclanIsShown (current => null)
+    setMiclanActive (current => null)
+    setRiverGoddessIsShown (current => !RiverGoddessIsShown)
+    setRiverGoddessActive (current => !RiverGoddessActive)
+    setKingMaiIsShown (current => null)
+    setKingMaiActive (current => null)
+    setDustedLuziaIsShown (current => null)
+    setDustedLuziaActive (current => null)
+    setDustyKingMaiIsShown (current => null)
+    setDustyKingMaiActive (current => null)
+      
+    };
+
+  const handleKingMaiClick = event => {
+    setTesvenIsShown (current => null)
+    setTesvenActive (current => null)  
+    setVelsounIsShown (current => null)
+    setVelsounActive (current => null)
+    setAlphaTamboIsShown (current => null)
+    setAlphaTamboActive (current => null)
+    setAzadiIsShown (current => null)
+    setAzadiActive (current => null)
+    setTareitIsShown (current => null)
+    setTareitActive (current => null)
+    setBabuIsShown (current => null)
+    setBabuActive (current => null)
+    setDustSuwoIsShown (current => null)
+    setDustSuwoActive (current => null)
+    setSuwoIsShown (current => null)
+    setSuwoActive (current => null)
+    setRakstalIsShown (current => null)
+    setRakstalActive (current => null)
+    setShamanLuziaIsShown (current => null)
+    setShamanLuziaActive (current => null)
+    setDarkReflectionIsShown (current => null)
+    setDarkReflectionActive (current => null)
+    setReflectionIsShown (current => null)
+    setReflectionActive (current => null)
+    setCaravanIsShown (current => null)
+    setCaravanActive (current => null)
+    setKultalvaIsShown (current => null)
+    setKultalvaActive (current => null)
+    setMiclanIsShown (current => null)
+    setMiclanActive (current => null)
+    setRiverGoddessIsShown (current => null)
+    setRiverGoddessActive (current => null)
+    setKingMaiIsShown (current => !KingMaiIsShown)
+    setKingMaiActive (current => !KingMaiActive)
+    setDustedLuziaIsShown (current => null)
+    setDustedLuziaActive (current => null)
+    setDustyKingMaiIsShown (current => null)
+    setDustyKingMaiActive (current => null)
+      
+    };
+
+
+const handleDustedLuziaClick = event => {
+  setDustedLuziaIsShown (current => !DustedLuziaIsShown)
+  setDustedLuziaActive (current => !DustedLuziaActive)
+
+  setTesvenIsShown (current => null)
+  setTesvenActive (current => null)  
+  setVelsounIsShown (current => null)
+  setVelsounActive (current => null)
+  setAlphaTamboIsShown (current => null)
+  setAlphaTamboActive (current => null)
+  setAzadiIsShown (current => null)
+  setAzadiActive (current => null)
+  setTareitIsShown (current => null)
+  setTareitActive (current => null)
+  setBabuIsShown (current => null)
+  setBabuActive (current => null)
+  setDustSuwoIsShown (current => null)
+  setDustSuwoActive (current => null)
+  setSuwoIsShown (current => null)
+  setSuwoActive (current => null)
+  setRakstalIsShown (current => null)
+  setRakstalActive (current => null)
+  setShamanLuziaIsShown (current => null)
+  setShamanLuziaActive (current => null)
+  setDarkReflectionIsShown (current => null)
+  setDarkReflectionActive (current => null)
+  setReflectionIsShown (current => null)
+  setReflectionActive (current => null)
+  setCaravanIsShown (current => null)
+  setCaravanActive (current => null)
+  setKultalvaIsShown (current => null)
+  setKultalvaActive (current => null)
+  setMiclanIsShown (current => null)
+  setMiclanActive (current => null)
+  setRiverGoddessIsShown (current => null)
+  setRiverGoddessActive (current => null)
+  setKingMaiIsShown (current => null)
+  setKingMaiActive (current => null)
+  setDustyKingMaiIsShown (current => null)
+  setDustyKingMaiActive (current => null)
+    
+  };
+
+  const handleDustyKingMaiClick = event => {
+  setDustyKingMaiIsShown (current => !DustyKingMaiIsShown)
+  setDustyKingMaiActive (current => !DustyKingMaiActive)
   
+  setTesvenIsShown (current => null)
+  setTesvenActive (current => null)  
+  setVelsounIsShown (current => null)
+  setVelsounActive (current => null)
+  setAlphaTamboIsShown (current => null)
+  setAlphaTamboActive (current => null)
+  setAzadiIsShown (current => null)
+  setAzadiActive (current => null)
+  setTareitIsShown (current => null)
+  setTareitActive (current => null)
+  setBabuIsShown (current => null)
+  setBabuActive (current => null)
+  setDustSuwoIsShown (current => null)
+  setDustSuwoActive (current => null)
+  setSuwoIsShown (current => null)
+  setSuwoActive (current => null)
+  setRakstalIsShown (current => null)
+  setRakstalActive (current => null)
+  setShamanLuziaIsShown (current => null)
+  setShamanLuziaActive (current => null)
+  setDarkReflectionIsShown (current => null)
+  setDarkReflectionActive (current => null)
+  setReflectionIsShown (current => null)
+  setReflectionActive (current => null)
+  setCaravanIsShown (current => null)
+  setCaravanActive (current => null)
+  setKultalvaIsShown (current => null)
+  setKultalvaActive (current => null)
+  setMiclanIsShown (current => null)
+  setMiclanActive (current => null)
+  setRiverGoddessIsShown (current => null)
+  setRiverGoddessActive (current => null)
+  setKingMaiIsShown (current => null)
+  setKingMaiActive (current => null)
+  setDustedLuziaIsShown (current => null)
+  setDustedLuziaActive (current => null)
+  
+};
+
+
   
 
 //DONT DELETE THIS I USE IT//
@@ -314,6 +1408,7 @@ const totalNoanzaKirerfWCResult = (0+0)
 
   </Accordion>
             <Divider></Divider></Container>
+      
 <VStack>
 <Heading>4theMath:</Heading>
 <Spacer></Spacer>
@@ -375,7 +1470,7 @@ const totalNoanzaKirerfWCResult = (0+0)
     
         <Container><Wrap justify='center'>
         <WrapItem>
-        <Button variant='outline' onClick={handleLoleY_UseGrenade_Click} style={{ backgroundColor: LoleY_UseGrenade_Active ? "#3f011c" : "transparent" }}>
+        <Button variant='outline' onClick={handleLoleY_UseGrenade_Click} style={{ backgroundColor: LoleY_UseGrenade_Active ? "#2d1b59" : "transparent" }}>
         <Image
         boxSize='2rem'
         borderRadius='full'
@@ -385,7 +1480,7 @@ const totalNoanzaKirerfWCResult = (0+0)
       <span>2000 words or fewer</span></Button>
       </WrapItem>
       <WrapItem>
-        <Button variant='outline' onClick= {handleLoleY_UseBlast_Click} style={{ backgroundColor: LoleY_UseBlast_Active ? "#3f011c" : "transparent" }}>
+        <Button variant='outline' onClick= {handleLoleY_UseBlast_Click} style={{ backgroundColor: LoleY_UseBlast_Active ? "#2d1b59" : "transparent" }}>
         <Image
         boxSize='2rem'
         borderRadius='full'
@@ -400,7 +1495,7 @@ const totalNoanzaKirerfWCResult = (0+0)
     
         <Container><Wrap justify='center'>
         <WrapItem>
-        <Button variant='outline' onClick={handleLoleN_UseGrenade_Click} style={{ backgroundColor: LoleN_UseGrenade_Active ? "#3f011c" : "transparent" }}>
+        <Button variant='outline' onClick={handleLoleN_UseGrenade_Click} style={{ backgroundColor: LoleN_UseGrenade_Active ? "#2d1b59" : "transparent" }}>
         <Image
         boxSize='2rem'
         borderRadius='full'
@@ -410,7 +1505,7 @@ const totalNoanzaKirerfWCResult = (0+0)
       <span>2000 words or fewer</span></Button>
       </WrapItem>
       <WrapItem>
-        <Button variant='outline' onClick= {handleLoleN_UseBlast_Click} style={{ backgroundColor: LoleN_UseBlast_Active ? "#3f011c" : "transparent" }}>
+        <Button variant='outline' onClick= {handleLoleN_UseBlast_Click} style={{ backgroundColor: LoleN_UseBlast_Active ? "#2d1b59" : "transparent" }}>
         <Image
         boxSize='2rem'
         borderRadius='full'
@@ -436,7 +1531,7 @@ const totalNoanzaKirerfWCResult = (0+0)
       <Box h='300px' overflowY='scroll'>
           <Wrap>
             <WrapItem>
-            <Button w='100px' h='140px' pb={5}>
+            <Button w='100px' h='140px' pb={5} onClick={handleTesvenClick} style={{ backgroundColor: TesvenActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -450,7 +1545,7 @@ const totalNoanzaKirerfWCResult = (0+0)
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='100px' h='140px' pb={5}>
+            <Button w='100px' h='140px' pb={5} onClick={handleVelsounClick} style={{ backgroundColor: VelsounActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -465,7 +1560,7 @@ const totalNoanzaKirerfWCResult = (0+0)
             </WrapItem>
 
             <WrapItem>
-            <Button w='100px' h='140px' pb={5}>
+            <Button w='100px' h='140px' pb={5} onClick={handleAlphaTamboClick} style={{ backgroundColor: AlphaTamboActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -480,7 +1575,7 @@ const totalNoanzaKirerfWCResult = (0+0)
             </WrapItem>
 
             <WrapItem>
-            <Button w='100px' h='140px' pb={5}>
+            <Button w='100px' h='140px' pb={5} onClick={handleAzadiClick} style={{ backgroundColor: AzadiActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -494,7 +1589,7 @@ const totalNoanzaKirerfWCResult = (0+0)
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='100px' h='140px' pb={5}>
+            <Button w='100px' h='140px' pb={5} onClick={handleTareitClick} style={{ backgroundColor: TareitActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -509,7 +1604,7 @@ const totalNoanzaKirerfWCResult = (0+0)
             </WrapItem>
 
             <WrapItem>
-            <Button w='100px' h='140px' pb={5}>
+            <Button w='100px' h='140px' pb={5} onClick={handleBabuClick} style={{ backgroundColor: BabuActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -525,7 +1620,7 @@ const totalNoanzaKirerfWCResult = (0+0)
 
             
             <WrapItem>
-            <Button w='100px' h='140px' pb={5}>
+            <Button w='100px' h='140px' pb={5} onClick={handleDustSuwoClick} style={{ backgroundColor: DustSuwoActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -539,7 +1634,7 @@ const totalNoanzaKirerfWCResult = (0+0)
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='100px' h='140px' pb={5}>
+            <Button w='100px' h='140px' pb={5} onClick={handleSuwoClick} style={{ backgroundColor: SuwoActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -554,7 +1649,7 @@ const totalNoanzaKirerfWCResult = (0+0)
             </WrapItem>
 
             <WrapItem>
-            <Button w='100px' h='140px' pb={5}>
+            <Button w='100px' h='140px' pb={5} onClick={handleRakstalClick} style={{ backgroundColor: RakstalActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -568,7 +1663,7 @@ const totalNoanzaKirerfWCResult = (0+0)
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='100px' h='140px' pb={5}>
+            <Button w='100px' h='140px' pb={5} onClick={handleShamanLuziaClick} style={{ backgroundColor: ShamanLuziaActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -582,7 +1677,7 @@ const totalNoanzaKirerfWCResult = (0+0)
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='100px' h='140px' pb={5}>
+            <Button w='100px' h='140px' pb={5} onClick={handleDarkReflectionClick} style={{ backgroundColor: DarkReflectionActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -597,7 +1692,7 @@ const totalNoanzaKirerfWCResult = (0+0)
             </WrapItem>
 
             <WrapItem>
-            <Button w='100px' h='140px' pb={5}>
+            <Button w='100px' h='140px' pb={5} onClick={handleReflectionClick} style={{ backgroundColor: ReflectionActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -612,7 +1707,7 @@ const totalNoanzaKirerfWCResult = (0+0)
             </WrapItem>
 
             <WrapItem>
-            <Button w='100px' h='140px' pb={5}>
+            <Button w='100px' h='140px' pb={5} onClick={handleCaravanClick} style={{ backgroundColor: CaravanActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -626,7 +1721,7 @@ const totalNoanzaKirerfWCResult = (0+0)
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='100px' h='140px' pb={5}>
+            <Button w='100px' h='140px' pb={5} onClick={handleKultalvaClick} style={{ backgroundColor: KultalvaActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -641,7 +1736,7 @@ const totalNoanzaKirerfWCResult = (0+0)
             </WrapItem>
 
             <WrapItem>
-            <Button w='100px' h='140px' pb={5}>
+            <Button w='100px' h='140px' pb={5} onClick={handleMiclanClick} style={{ backgroundColor: MiclanActive ? "#2d1b59" : "#2D3748" }}> 
        <VStack> 
        <Image
         mt='12px'
@@ -656,7 +1751,7 @@ const totalNoanzaKirerfWCResult = (0+0)
             </WrapItem>
 
             <WrapItem>
-            <Button w='100px' h='140px' pb={5}>
+            <Button w='100px' h='140px' pb={5}  onClick={handleRiverGoddessClick} style={{ backgroundColor: RiverGoddessActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -670,7 +1765,7 @@ const totalNoanzaKirerfWCResult = (0+0)
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='100px' h='140px' pb={5}>
+            <Button w='100px' h='140px' pb={5}onClick={handleKingMaiClick} style={{ backgroundColor: KingMaiActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -685,7 +1780,7 @@ const totalNoanzaKirerfWCResult = (0+0)
             </WrapItem>
 
             <WrapItem>
-            <Button w='100px' h='140px' pb={5}>
+            <Button w='100px' h='140px' pb={5} onClick={handleDustedLuziaClick} style={{ backgroundColor: DustedLuziaActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -700,7 +1795,7 @@ const totalNoanzaKirerfWCResult = (0+0)
             </WrapItem>
 
             <WrapItem>
-            <Button w='100px' h='140px' pb={5}>
+            <Button w='100px' h='140px' pb={5} onClick={handleDustyKingMaiClick} style={{ backgroundColor: DustyKingMaiActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -728,7 +1823,142 @@ const totalNoanzaKirerfWCResult = (0+0)
 <Divider />
 <Container>
 <br></br>
-<Heading>Quick View</Heading>
+<Heading>Quick View</Heading><br></br>
+
+{TesvenIsShown &&
+
+<Box as="span" flex='1' textAlign='center' padding-top={3}>
+        <Text><b>Tesven</b></Text>
+        </Box>
+}
+
+{VelsounIsShown &&
+
+<Box as="span" flex='1' textAlign='center' padding-top={3}>
+        <Text><b>Velsoun</b></Text>
+        </Box>
+}
+
+{AlphaTamboIsShown &&
+
+<Box as="span" flex='1' textAlign='center' padding-top={3}>
+        <Text><b>Alpha Tambo</b></Text>
+        </Box>
+}
+
+{AzadiIsShown &&
+
+<Box as="span" flex='1' textAlign='center' padding-top={3}>
+        <Text><b>Azadi</b></Text>
+        </Box>
+}
+
+{TareitIsShown &&
+
+<Box as="span" flex='1' textAlign='center' padding-top={3}>
+        <Text><b>Tareit</b></Text>
+        </Box>
+}
+
+{BabuIsShown &&
+
+<Box as="span" flex='1' textAlign='center' padding-top={3}>
+        <Text><b>Babu</b></Text>
+        </Box>
+}
+
+{DustSuwoIsShown &&
+
+<Box as="span" flex='1' textAlign='center' padding-top={3}>
+        <Text><b>Dust Suwo</b></Text>
+        </Box>
+}
+
+{SuwoIsShown &&
+
+<Box as="span" flex='1' textAlign='center' padding-top={3}>
+        <Text><b>Suwo</b></Text>
+        </Box>
+}
+
+{RakstalIsShown &&
+
+<Box as="span" flex='1' textAlign='center' padding-top={3}>
+        <Text><b>Rakstal</b></Text>
+        </Box>
+}
+
+{ShamanLuziaIsShown &&
+
+<Box as="span" flex='1' textAlign='center' padding-top={3}>
+        <Text><b>Shaman Luzia</b></Text>
+        </Box>
+}
+
+{DarkReflectionIsShown &&
+
+<Box as="span" flex='1' textAlign='center' padding-top={3}>
+        <Text><b>Dark Reflection</b></Text>
+        </Box>
+}
+
+{ReflectionIsShown &&
+
+<Box as="span" flex='1' textAlign='center' padding-top={3}>
+        <Text><b>Reflection</b></Text>
+        </Box>
+}
+
+{CaravanIsShown &&
+
+<Box as="span" flex='1' textAlign='center' padding-top={3}>
+        <Text><b>Caravan</b></Text>
+        </Box>
+}
+
+{KultalvaIsShown &&
+
+<Box as="span" flex='1' textAlign='center' padding-top={3}>
+        <Text><b>Kultalva</b></Text>
+        </Box>
+}
+
+{MiclanIsShown &&
+
+<Box as="span" flex='1' textAlign='center' padding-top={3}>
+        <Text><b>Miclan</b></Text>
+        </Box>
+}
+
+{RiverGoddessIsShown &&
+
+<Box as="span" flex='1' textAlign='center' padding-top={3}>
+        <Text><b>River Goddess</b></Text>
+        </Box>
+}
+
+
+{KingMaiIsShown &&
+
+<Box as="span" flex='1' textAlign='center' padding-top={3}>
+        <Text><b>King Mai</b></Text>
+        </Box>
+}
+
+{DustedLuziaIsShown &&
+
+<Box as="span" flex='1' textAlign='center' padding-top={3}>
+        <Text><b>Dusted Luzia</b></Text>
+        </Box>
+}
+
+{DustyKingMaiIsShown &&
+
+<Box as="span" flex='1' textAlign='center' padding-top={3}>
+        <Text><b>Corrupted King Mai</b></Text>
+        </Box>
+}
+
 <br></br>
 <TableContainer>
   <Table align='center' variant='simple' colorScheme={tablecolor} maxW={20}>
@@ -750,6 +1980,7 @@ const totalNoanzaKirerfWCResult = (0+0)
 </Table>
 </TableContainer>
 <br></br>
+
 <Box as="span" flex='1' textAlign='center' padding-top={3}>
         <Text><b>Monsters to Fight</b></Text>
         </Box>
