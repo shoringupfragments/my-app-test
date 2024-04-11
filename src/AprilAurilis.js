@@ -592,7 +592,7 @@ const SmallestTyoOdees = Math.min (totalTyoFour, totalOdeesEight)
 //repeatable quest: 4 tyomu, 8 odees - repeat odees//
 
 const [OdeeQuest, setOdeeQuest] = useState(0);
-const totalOdeeQuest = Math.floor (totalOdee/44)
+const totalOdeeQuest = Math.floor (totalOdees/44)
 
 
 //repeatable quest: 2 wizkal, 16 knuff//
