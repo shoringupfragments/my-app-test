@@ -86,7 +86,67 @@ function App() {
       value: "velsoun",
       label: "Velsoun",
       icon: <Image src="https://static.wikia.nocookie.net/4thewords/images/9/9d/Velsoun.png" color="red.600" mr={2} h={5} w={5} />
-    }
+    },
+    {
+      value: "darkreflection",
+      label: "Dark Reflection",
+      icon: <Image src="https://static.wikia.nocookie.net/4thewords/images/d/d6/Dark_Reflection.png" color="yellow.800" mr={2} h={5} w={5} />
+    },
+    {
+      value: "dustedluzia3",
+      label: "Dusted Luzia",
+      icon: <Image src="https://static.wikia.nocookie.net/4thewords/images/6/6b/Dusted_Luzia.png" color="yellow.800" mr={2} h={5} w={5} />
+    },
+    {
+      value: "kultalva",
+      label: "Kultalva",
+      icon: <Image src="https://static.wikia.nocookie.net/4thewords/images/8/87/Kultalva.png" color="red.500" mr={2} h={5} w={5} />
+    },
+    {
+      value: "velsoun",
+      label: "Velsoun",
+      icon: <Image src="https://static.wikia.nocookie.net/4thewords/images/9/9d/Velsoun.png" color="red.600" mr={2} h={5} w={5} />
+    },
+    {
+      value: "darkreflection",
+      label: "Dark Reflection",
+      icon: <Image src="https://static.wikia.nocookie.net/4thewords/images/d/d6/Dark_Reflection.png" color="yellow.800" mr={2} h={5} w={5} />
+    },
+    {
+      value: "dustedluzia2",
+      label: "Dusted Luzia",
+      icon: <Image src="https://static.wikia.nocookie.net/4thewords/images/6/6b/Dusted_Luzia.png" color="yellow.800" mr={2} h={5} w={5} />
+    },
+    {
+      value: "kultalva",
+      label: "Kultalva",
+      icon: <Image src="https://static.wikia.nocookie.net/4thewords/images/8/87/Kultalva.png" color="red.500" mr={2} h={5} w={5} />
+    },
+    {
+      value: "velsoun",
+      label: "Velsoun",
+      icon: <Image src="https://static.wikia.nocookie.net/4thewords/images/9/9d/Velsoun.png" color="red.600" mr={2} h={5} w={5} />
+    },
+    {
+      value: "darkreflection",
+      label: "Dark Reflection",
+      icon: <Image src="https://static.wikia.nocookie.net/4thewords/images/d/d6/Dark_Reflection.png" color="yellow.800" mr={2} h={5} w={5} />
+    },
+    {
+      value: "dustedluzia1",
+      label: "Dusted Luzia",
+      icon: <Image src="https://static.wikia.nocookie.net/4thewords/images/6/6b/Dusted_Luzia.png" color="yellow.800" mr={2} h={5} w={5} />
+    },
+    {
+      value: "kultalva",
+      label: "Kultalva",
+      icon: <Image src="https://static.wikia.nocookie.net/4thewords/images/8/87/Kultalva.png" color="red.500" mr={2} h={5} w={5} />
+    },
+    {
+      value: "velsoun",
+      label: "Velsoun",
+      icon: <Image src="https://static.wikia.nocookie.net/4thewords/images/9/9d/Velsoun.png" color="red.600" mr={2} h={5} w={5} />
+    },
   ];
   
   const customComponents = {
@@ -1746,6 +1806,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         options={flavorOptions}
         placeholder="Select a monster"
         components={customComponents}
+        color='teal'
       />
     </FormControl>
 
