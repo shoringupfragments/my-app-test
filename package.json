@@ -11,6 +11,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.5.1",
+    "chakra-react-select": "^4.7.6",
     "comma-number": "^2.1.0",
     "comma-separator": "^1.0.9",
     "formik": "^2.4.5",
