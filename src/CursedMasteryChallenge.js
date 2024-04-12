@@ -46,7 +46,6 @@ import {
   FormHelperText,
   FormLabel,
   Code,
-
 } from '@chakra-ui/react';
 
 import { FaMoon, FaSun } from 'react-icons/fa';
@@ -1817,6 +1816,308 @@ const totalNoanzaKirerfWCResult = (0+0)
 
   </Accordion>}
 
+{LoleN_UseBlast_IsShown &&
+  <Accordion allowMultiple w={350}>
+  <AccordionItem>
+  <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='center' p={3}>
+        <Heading as='h3' size='lg'>Select Monster</Heading>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+
+      <Box h='300px' overflowY='scroll'>
+          <Wrap>
+            <WrapItem>
+            <Button w='100px' h='140px' pb={5} onClick={handleTesvenClick} style={{ backgroundColor: TesvenActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/8a/Tesven.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Tesven<br></br>(2100 words)</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+            <WrapItem>
+            <Button w='100px' h='140px' pb={5} onClick={handleVelsounClick} style={{ backgroundColor: VelsounActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/9d/Velsoun.png'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Velsoun<br></br>(2430 words)</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+
+            <WrapItem>
+            <Button w='100px' h='140px' pb={5} onClick={handleAlphaTamboClick} style={{ backgroundColor: AlphaTamboActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/6d/Alpha_Tambo.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Alpha Tambo<br></br>(2500 words)</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+
+            <WrapItem>
+            <Button w='100px' h='140px' pb={5} onClick={handleAzadiClick} style={{ backgroundColor: AzadiActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Azadi<br></br>(2500 words)</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+            <WrapItem>
+            <Button w='100px' h='140px' pb={5} onClick={handleTareitClick} style={{ backgroundColor: TareitActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/9f/Tareit.png'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Tareit<br></br>(2999 words)</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+
+            <WrapItem>
+            <Button w='100px' h='140px' pb={5} onClick={handleBabuClick} style={{ backgroundColor: BabuActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Babu.png'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Babu<br></br>(3000 words)</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+
+            
+            <WrapItem>
+            <Button w='100px' h='140px' pb={5} onClick={handleDustSuwoClick} style={{ backgroundColor: DustSuwoActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/dd/Dust_Suwo.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Dust Suwo<br></br>(3000 words)</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+            <WrapItem>
+            <Button w='100px' h='140px' pb={5} onClick={handleSuwoClick} style={{ backgroundColor: SuwoActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Suwo<br></br>(3000 words)</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+
+            <WrapItem>
+            <Button w='100px' h='140px' pb={5} onClick={handleRakstalClick} style={{ backgroundColor: RakstalActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/2f/Rakstal.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Rakstal<br></br>(3154 words)</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+            <WrapItem>
+            <Button w='100px' h='140px' pb={5} onClick={handleShamanLuziaClick} style={{ backgroundColor: ShamanLuziaActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/41/Shaman_Luzia.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Shaman Luzia<br></br>(3600 words)</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+            <WrapItem>
+            <Button w='100px' h='140px' pb={5} onClick={handleDarkReflectionClick} style={{ backgroundColor: DarkReflectionActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/d6/Dark_Reflection.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Dark Reflection<br></br>(4444 words)</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+
+            <WrapItem>
+            <Button w='100px' h='140px' pb={5} onClick={handleReflectionClick} style={{ backgroundColor: ReflectionActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/20/Reflection.png'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Reflection<br></br>(4444 words)</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+
+            <WrapItem>
+            <Button w='100px' h='140px' pb={5} onClick={handleCaravanClick} style={{ backgroundColor: CaravanActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/2e/Caravan.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Caravan<br></br>(5000 words)</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+            <WrapItem>
+            <Button w='100px' h='140px' pb={5} onClick={handleKultalvaClick} style={{ backgroundColor: KultalvaActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/87/Kultalva.png'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Kultalva<br></br>(5000 words)</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+
+            <WrapItem>
+            <Button w='100px' h='140px' pb={5} onClick={handleMiclanClick} style={{ backgroundColor: MiclanActive ? "#2d1b59" : "#2D3748" }}> 
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/7d/Miclan.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Miclan<br></br>(5000 words)</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+
+            <WrapItem>
+            <Button w='100px' h='140px' pb={5}  onClick={handleRiverGoddessClick} style={{ backgroundColor: RiverGoddessActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/73/River_Goddess.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>River Goddess<br></br>(5000 words)</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+            <WrapItem>
+            <Button w='100px' h='140px' pb={5}onClick={handleKingMaiClick} style={{ backgroundColor: KingMaiActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/8b/King_Mai.png'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>King Mai<br></br>(5000 words)</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+
+            <WrapItem>
+            <Button w='100px' h='140px' pb={5} onClick={handleDustedLuziaClick} style={{ backgroundColor: DustedLuziaActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/6b/Dusted_Luzia.png'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Dusted Luzia<br></br>(8160 words)</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+
+            <WrapItem>
+            <Button w='100px' h='140px' pb={5} onClick={handleDustyKingMaiClick} style={{ backgroundColor: DustyKingMaiActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/23/King_Mai_(Corrupted).png/'
+        mr='5px'
+      /> <Text fontSize='xs' align='center'>Dusty King Mai<br></br>(15000 words)</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+
+          </Wrap>
+          </Box>
+      <br></br>
+    </AccordionPanel>
+  </AccordionItem>
+
+  </Accordion>}
+
 <Spacer></Spacer>
 <Spacer></Spacer>
           </VStack>
@@ -1825,19 +2126,132 @@ const totalNoanzaKirerfWCResult = (0+0)
 <br></br>
 <Heading>Quick View</Heading><br></br>
 
-{TesvenIsShown &&
+{TesvenIsShown && LoleY_UseBlast_IsShown &&
 
-<Box as="span" flex='1' textAlign='center' padding-top={3}>
-        <Text><b>Tesven</b></Text>
-        </Box>
+<Container>
+<Button w='300px' h='480px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
+       <VStack>
+       <Image
+        align='center' 
+        boxSize='10rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/8a/Tesven.png/'
+      />
+        <Text fontSize='lg' textAlign='center'><b>Tesven</b></Text>
+        <Text fontSize='md'><b>Word Count:</b> 2100</Text>
+        <Text fontSize='md'><b>Resource Cost:</b> 40,000</Text>
+        <Text fontSize='md'><b>Coin Cost:</b> 200,000</Text>
+        <Text fontSize='md'><b>Aurilis Masteries Needed:</b></Text>
+        <List>
+          <ListItem>10,000 Odys/Odees</ListItem>
+          <ListItem>10,000 Quaruk</ListItem>
+          <ListItem>10,000 Musya</ListItem>
+          <ListItem>10,000 Knuff</ListItem>
+        </List>
+
+        <Text fontSize='md'><b>Coin Masteries Needed:</b></Text>
+        <List>
+          <ListItem>10,000 Kuikas</ListItem>
+        </List>
+      </VStack>
+            </Button></Container>
 }
 
-{VelsounIsShown &&
+{TesvenIsShown && LoleN_UseBlast_IsShown &&
 
-<Box as="span" flex='1' textAlign='center' padding-top={3}>
-        <Text><b>Velsoun</b></Text>
-        </Box>
+<Container>
+<Button w='300px' h='480px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
+       <VStack>
+       <Image
+        align='center' 
+        boxSize='10rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/8a/Tesven.png/'
+      />
+        <Text fontSize='lg' textAlign='center'><b>Tesven</b></Text>
+        <Text fontSize='md'><b>Word Count:</b> 2100</Text>
+        <Text fontSize='md'><b>Resource Cost:</b> 60,000</Text>
+        <Text fontSize='md'><b>Coin Cost:</b> 200,000</Text>
+        <Text fontSize='md'><b>Aurilis Masteries Needed:</b></Text>
+        <List>
+          <ListItem>10,000 Odys/Odees</ListItem>
+          <ListItem>10,000 Quaruk</ListItem>
+          <ListItem>10,000 Musya</ListItem>
+          <ListItem>10,000 Knuff</ListItem>
+          <ListItem>10,000 Mibloom</ListItem>
+        </List>
+
+        <Text fontSize='md'><b>Coin Masteries Needed:</b></Text>
+        <List>
+          <ListItem>10,000 Kuikas</ListItem>
+        </List>
+      </VStack>
+            </Button></Container>
 }
+
+{VelsounIsShown && LoleY_UseBlast_IsShown &&
+
+<Container>
+<Button w='300px' h='480px' pb={5} style={{ backgroundColor: VelsounActive ? "#3a2639" : "#2D3748" }}>
+       <VStack>
+       <Image
+        align='center' 
+        boxSize='10rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/9d/Velsoun.png'
+      />
+        <Text fontSize='lg' textAlign='center'><b>Velsoun</b></Text>
+        <Text fontSize='md'><b>Word Count:</b> 2430</Text>
+        <Text fontSize='md'><b>Resource Cost:</b> 40,000</Text>
+        <Text fontSize='md'><b>Coin Cost:</b> 200,000</Text>
+        <Text fontSize='md'><b>Aurilis Masteries Needed:</b></Text>
+        <List>
+          <ListItem>10,000 Odys/Odees</ListItem>
+          <ListItem>10,000 Quaruk</ListItem>
+          <ListItem>10,000 Musya</ListItem>
+          <ListItem>10,000 Knuff</ListItem>
+        </List>
+
+        <Text fontSize='md'><b>Coin Masteries Needed:</b></Text>
+        <List>
+          <ListItem>10,000 Kuikas</ListItem>
+        </List>
+      </VStack>
+            </Button></Container>
+}
+
+{VelsounIsShown && LoleN_UseBlast_IsShown &&
+
+<Container>
+<Button w='300px' h='480px' pb={5} style={{ backgroundColor: VelsounActive ? "#3a2639" : "#2D3748" }}>
+       <VStack>
+       <Image
+        align='center' 
+        boxSize='10rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/9d/Velsoun.png'
+      />
+        <Text fontSize='lg' textAlign='center'><b>Velsoun</b></Text>
+        <Text fontSize='md'><b>Word Count:</b> 2430</Text>
+        <Text fontSize='md'><b>Resource Cost:</b> 60,000</Text>
+        <Text fontSize='md'><b>Coin Cost:</b> 200,000</Text>
+        <Text fontSize='md'><b>Aurilis Masteries Needed:</b></Text>
+        <List>
+          <ListItem>10,000 Odys/Odees</ListItem>
+          <ListItem>10,000 Quaruk</ListItem>
+          <ListItem>10,000 Musya</ListItem>
+          <ListItem>10,000 Knuff</ListItem>
+          <ListItem>10,000 Mibloom</ListItem>
+        </List>
+
+        <Text fontSize='md'><b>Coin Masteries Needed:</b></Text>
+        <List>
+          <ListItem>10,000 Kuikas</ListItem>
+        </List>
+      </VStack>
+            </Button></Container>
+}
+
 
 {AlphaTamboIsShown &&
 
