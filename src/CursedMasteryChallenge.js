@@ -1298,6 +1298,125 @@ const handleDustedLuziaClick = event => {
   
 };
 
+const [CoinsIsShown, setCoinsIsShown] = useState(false)
+const [CoinsActive, setCoinsActive] = useState(false)
+
+const [BattleIsShown, setBattleIsShown] = useState(false)
+const [BattleActive, setBattleActive] = useState(false)
+
+const handleCoinsClick = event => {
+  // 👇️ toggle shown state
+  setCoinsIsShown (current => !CoinsIsShown);
+  setCoinsActive (current => !CoinsActive);
+  setBattleIsShown (current => null);
+  setBattleActive (current => null);
+
+};
+
+const handleBattleClick = event => {
+  // 👇️ toggle shown state
+  setCoinsIsShown (current => null);
+  setCoinsActive (current => null);
+  setBattleIsShown (current => !BattleIsShown);
+  setBattleActive (current => !BattleActive);
+
+};
+
+//mastery reward type//
+
+const [CutoutIsShown, setCutoutIsShown] = useState(false)
+const [CutoutActive, setCutoutActive] = useState(false)
+
+const [MaskIsShown, setMaskIsShown] = useState(false)
+const [MaskActive, setMaskActive] = useState(false)
+
+const [StatueIsShown, setStatueIsShown] = useState(false)
+const [StatueActive, setStatueActive] = useState(false)
+
+const [BalloonIsShown, setBalloonIsShown] = useState(false)
+const [BalloonActive, setBalloonActive] = useState(false)
+
+const [BookIsShown, setBookIsShown] = useState(false)
+const [BookActive, setBookActive] = useState(false)
+
+
+const handleCutoutClick = event => {
+  // 👇️ toggle shown state
+  setCutoutIsShown (current => !CutoutIsShown);
+  setCutoutActive (current => !CutoutActive);
+  setMaskIsShown (current => null);
+  setMaskActive (current => null);
+  setStatueIsShown (current => null);
+  setStatueActive (current => null);
+  setBalloonIsShown (current => null);
+  setBalloonActive (current => null);
+  setBookIsShown (current => null);
+  setBookActive (current => null);
+};
+
+  const handleMaskClick = event => {
+  setMaskIsShown (current => !MaskIsShown);
+  setMaskActive (current => !MaskActive);
+  setCutoutIsShown (current => null);
+  setCutoutActive (current => null);
+  setStatueIsShown (current => null);
+  setStatueActive (current => null);
+  setBalloonIsShown (current => null);
+  setBalloonActive (current => null);
+  setBookIsShown (current => null);
+  setBookActive (current => null);
+};
+
+  const handleStatueClick = event => {
+  setStatueIsShown (current => !StatueIsShown);
+  setStatueActive (current => !StatueActive);
+  setCutoutIsShown (current => null);
+  setCutoutActive (current => null);
+  setMaskIsShown (current => null);
+  setMaskActive (current => null);
+  setBalloonIsShown (current => null);
+  setBalloonActive (current => null);
+  setBookIsShown (current => null);
+  setBookActive (current => null);
+};
+
+  const handleBalloonClick = event => {
+  setBalloonIsShown (current => !BalloonIsShown);
+  setBalloonActive (current => !BalloonActive);
+  setCutoutIsShown (current => null);
+  setCutoutActive (current => null);
+  setMaskIsShown (current => null);
+  setMaskActive (current => null);
+  setStatueIsShown (current => null);
+  setStatueActive (current => null);
+  setBookIsShown (current => null);
+  setBookActive (current => null);
+};
+
+  const handleBookClick = event => {
+  setBookIsShown (current => !BookIsShown);
+  setBookActive (current => !BookActive);
+  setCutoutIsShown (current => null);
+  setCutoutActive (current => null);
+  setMaskIsShown (current => null);
+  setMaskActive (current => null);
+  setBalloonIsShown (current => null);
+  setBalloonActive (current => null);
+};
+
+//how many MONSTER have you fought?//
+
+
+const [DustedLuzia, setDustedLuzia] = useState(0); // Or any other non-zero value
+
+const handleDustedLuziaChange = (valueString) => {
+  const value = parseFloat(valueString);
+    setDustedLuzia(value);
+  };
+
+const totalDustedLuzia = Math.max (1000-DustedLuzia,0);
+
+
 
   
 
@@ -1369,7 +1488,7 @@ const totalNoanzaKirerfWCResult = (0+0)
             <Container><p>This page is for calculating a new mastery strategy on 4theWords: defeat small Aurilis creatures, make potions from their loot drops, 
               and use those potions to defeat large word count monsters. <br></br><br></br>
               You can use this page to estimate how many potions you can make from your current inventory or plan future mastery goals. <br></br><br></br>
-              <b>Note:</b> this strategy requires the companion Mund to convert potion ingredients.
+              <b>Note:</b> this strategy requires the companion DustedLuzia to convert potion ingredients.
               <br></br><br></br>
             </p>
             
@@ -1463,6 +1582,53 @@ const totalNoanzaKirerfWCResult = (0+0)
       />
       <span>No</span></Button></WrapItem>
         </Wrap></Container>
+
+        <Container align='center'>
+    <VStack>
+<Text>What is your mastery goal?</Text><br></br>
+<Wrap justify='center'>
+        <WrapItem>
+        <Button variant='outline' onClick={handleCutoutClick} style={{ backgroundColor: CutoutActive ? "#2d1b59" : "transparent" }}>
+        <Image
+        boxSize='2rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/73/Winter_Cordu_Cutout.png'
+        mr='12px'
+      />
+      <span>Cutout</span></Button>
+      </WrapItem>
+      <WrapItem>
+        <Button variant='outline' onClick= {handleMaskClick} style={{ backgroundColor: MaskActive ? "#2d1b59" : "transparent" }}>      <Image
+        boxSize='2rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/90/Winter_Cordu_Wardrobe_Mask.png/'
+        mr='12px'
+      />
+      <span>Mask</span></Button></WrapItem>
+      <WrapItem>
+        <Button variant='outline' onClick= {handleStatueClick} style={{ backgroundColor: StatueActive ? "#2d1b59" : "transparent" }}>      <Image
+        boxSize='2rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/40/Winter_Cordu_Statue.png/'
+        mr='12px'
+      />
+      <span>Statue</span></Button></WrapItem>
+      <WrapItem>
+        <Button variant='outline' onClick= {handleBalloonClick} style={{ backgroundColor: BalloonActive ? "#2d1b59" : "transparent" }}>      <Image
+        boxSize='2rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/a2/Winter_Cordu_Wardrobe_Balloon.png/'
+        mr='12px'
+      />
+      <span>Balloon</span></Button></WrapItem>
+      <WrapItem>
+        <Button variant='outline' onClick= {handleBookClick} style={{ backgroundColor: BookActive ? "#2d1b59" : "transparent" }}>      <Image
+        boxSize='2rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5f/Winter_Cordu_Book_4.png/'
+        mr='12px'
+      />
+      <span>Book</span></Button></WrapItem>
+        </Wrap>
+</VStack>
+</Container>
 
 {LoleYIsShown && <VStack>
         <text mr='10px' ml='10px'>What is the word count of the monster you're mastering?<br></br><br></br></text> 
@@ -2118,6 +2284,96 @@ const totalNoanzaKirerfWCResult = (0+0)
 
   </Accordion>}
 
+  
+
+  {DustedLuziaIsShown && LoleY_UseBlast_IsShown &&
+  <Container align='center'>
+    <VStack>
+<Text>How many <b>Dusted Luzia</b> have you already fought?</Text><br></br>
+        <NumberInput defaultValue={0} min={0} max={9999} size='md' w='100px'>
+  <NumberInputField id='DustedLuzia' onInput={(e) => handleDustedLuziaChange(e.target.value)} />
+</NumberInput>
+</VStack>
+</Container>
+}
+
+{DustedLuziaIsShown && LoleY_UseBlast_IsShown &&
+  <Container align='center'>
+    <VStack>
+<Text>What is your mastery goal?</Text><br></br>
+<Wrap justify='center'>
+        <WrapItem>
+        <Button variant='outline' onClick={handleCutoutClick} style={{ backgroundColor: CutoutActive ? "#1c1138" : "transparent" }}>
+        <Image
+        boxSize='2rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/73/Winter_Cordu_Cutout.png'
+        mr='12px'
+      />
+      <span>Cutout</span></Button>
+      </WrapItem>
+      <WrapItem>
+        <Button variant='outline' onClick= {handleMaskClick} style={{ backgroundColor: MaskActive ? "#1c1138" : "transparent" }}>      <Image
+        boxSize='2rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/90/Winter_Cordu_Wardrobe_Mask.png/'
+        mr='12px'
+      />
+      <span>Mask</span></Button></WrapItem>
+      <WrapItem>
+        <Button variant='outline' onClick= {handleStatueClick} style={{ backgroundColor: StatueActive ? "#1c1138" : "transparent" }}>      <Image
+        boxSize='2rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/40/Winter_Cordu_Statue.png/'
+        mr='12px'
+      />
+      <span>Statue</span></Button></WrapItem>
+      <WrapItem>
+        <Button variant='outline' onClick= {handleBalloonClick} style={{ backgroundColor: BalloonActive ? "#1c1138" : "transparent" }}>      <Image
+        boxSize='2rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/a2/Winter_Cordu_Wardrobe_Balloon.png/'
+        mr='12px'
+      />
+      <span>Balloon</span></Button></WrapItem>
+      <WrapItem>
+        <Button variant='outline' onClick= {handleBookClick} style={{ backgroundColor: BookActive ? "#1c1138" : "transparent" }}>      <Image
+        boxSize='2rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5f/Winter_Cordu_Book_4.png/'
+        mr='12px'
+      />
+      <span>Book</span></Button></WrapItem>
+        </Wrap>
+</VStack>
+</Container>
+}
+
+{DustedLuziaIsShown && LoleY_UseBlast_IsShown &&
+  <Container align='center'>
+    <VStack>
+<Text><b>Dusted Luzia</b> has a battle cost (1 Steel Axe + 1 Steel Shield)<br></br> Select a source for farming battle cost:</Text><br></br>
+<Wrap justify='center'>
+        <WrapItem>
+        <Button variant='outline' onClick={handleCoinsClick} style={{ backgroundColor: CoinsActive ? "#1c1138" : "transparent" }}>
+        <Image
+        boxSize='2rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        mr='12px'
+      />
+      <span>Buy with Coins</span></Button>
+      </WrapItem>
+      <WrapItem>
+        <Button variant='outline' onClick= {handleBattleClick} style={{ backgroundColor: BattleActive ? "#1c1138" : "transparent" }}>      <Image
+        boxSize='2rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/29/1576709093_for-the-valley.png/'
+        mr='12px'
+      />
+      <span>Battle Monsters</span></Button></WrapItem>
+        </Wrap>
+</VStack>
+</Container>
+}
+
 <Spacer></Spacer>
 <Spacer></Spacer>
           </VStack>
@@ -2372,22 +2628,22 @@ const totalNoanzaKirerfWCResult = (0+0)
           borderRadius='full'
           src='https://static.wikia.nocookie.net/4thewords/images/6/6b/Dusted_Luzia.png'
         />
-          <Text fontSize='lg' textAlign='center'><b>Dusted Luzia</b><br></br>8160 words</Text>
+          <Text fontSize='lg' textAlign='center'><b>Dusted Luzia</b><br></br>8160 words<br></br># to Fight: {totalDustedLuzia}</Text>
           <Divider w='250px' />
           <Text fontSize='md'><b>Potion Resource Cost:</b><br></br> 40,000</Text>
-          <Text fontSize='md'><b>Aurilis Masteries Needed:</b><br></br>
+          <Text fontSize='md'><b>Masteries Needed:</b><br></br>
           10,000 Odys/Odees<br></br>
             10,000 Quaruk<br></br>
             10,000 Musya<br></br>
             10,000 Knuff<br></br>
           </Text>
           <Divider mt='3px' w='250px' />
-          <Text fontSize='md'><b>Battle Cost:</b><br></br> 1000 Steel Axe and 1000 Steel Shield</Text>
-          <Text fontSize='md'><b>Masteries Needed for Battle Cost:</b><br></br>
+          <Text fontSize='md'><b>Battle Cost:</b><br></br> 1000 Steel Axe<br></br> 1000 Steel Shield</Text>
+          <Text fontSize='md'><b>Masteries Needed:</b><br></br>
           1000 Jeso
           </Text>
           <Divider mt='3px' w='250px' />
-          <Text fontSize='md'><b>Coins Needed<br></br> (potions and battle cost):</b><br></br>200,000</Text>
+          <Text fontSize='md'><b>Coin Cost:<br></br></b>200,000</Text>
           <Text fontSize='md'><b>Coin Masteries Needed:</b><br></br>
             10,000 Kuikas
           </Text>
@@ -2396,10 +2652,8 @@ const totalNoanzaKirerfWCResult = (0+0)
   }
   
   {DustedLuziaIsShown && LoleN_UseBlast_IsShown &&
-
-
 <Container align='center'>
-<Box rounded='lg'  w='290px' h='720px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='810px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
        <VStack>
        <Image
          mt="12px"
@@ -2412,30 +2666,11 @@ const totalNoanzaKirerfWCResult = (0+0)
         <Divider w='250px' />
         <Text fontSize='md'><b>Potion Resource Cost:</b><br></br> 60,000</Text>
         <Text fontSize='md'><b>Masteries Needed:</b><br></br>
-        <TableContainer w='270px'>
-        <Table variant='unstyled' w='270px'>
-        <Tbody>
-        <Tr w='270px'>
-          <Td verticalAlign='top'>
-            10,000 battles
-          </Td>
-          <Td>
-
-          <Wrap><WrapItem>Odees<br></br>Musya<br></br>Quaruk<br></br>Knuff<br></br></WrapItem></Wrap>
-          </Td>
-        </Tr>
-        <Tr w='270px'>
-          <Td verticalAlign='top'>
-            6667 battles
-          </Td>
-          <Td>
-
-          <Wrap><WrapItem>Mibloom</WrapItem></Wrap>
-          </Td>
-        </Tr>
-        </Tbody>
-        </Table>
-        </TableContainer>
+        10,000 Odees<br></br>
+        10,000 Musya<br></br>
+        10,000 Quaruk<br></br>
+        10,000 Knuff<br></br>
+        6667 Mibloom <br></br>
         </Text>
         <Divider mt='3px' w='250px' />
         <Text fontSize='md'><b>Battle Cost:</b><br></br> 1000 Steel Axe <br></br>1000 Steel Shield</Text>
@@ -2443,7 +2678,7 @@ const totalNoanzaKirerfWCResult = (0+0)
           1,000 Jeso
         </Text>
         <Divider mt='3px' w='250px' />
-        <Text fontSize='md'><b>Coins Needed</b><br></br>200,000</Text>
+        <Text fontSize='md'><b>Coin Cost:</b><br></br>200,000</Text>
         <Text fontSize='md'><b>Masteries Needed:</b><br></br>
           10,000 Kuikas
         </Text>
