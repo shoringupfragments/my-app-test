@@ -107,15 +107,10 @@ function App() {
   const [LoleYIsShown, setLoleYIsShown] = useState(false);
   const [LoleNIsShown, setLoleNIsShown] = useState(false);
 
-  const [LoleY_UseGrenade_Active, setLoleY_UseGrenade_Active] = useState(false);
-  const [LoleN_UseGrenade_Active, setLoleN_UseGrenade_Active] = useState(false);
-  const [LoleY_UseGrenade_IsShown, setLoleY_UseGrenade_IsShown] = useState(false);
-  const [LoleN_UseGrenade_IsShown, setLoleN_UseGrenade_IsShown] = useState(false);
-
-  const [LoleY_UseBlast_Active, setLoleY_UseBlast_Active] = useState(false);
-  const [LoleN_UseBlast_Active, setLoleN_UseBlast_Active] = useState(false);
-  const [LoleY_UseBlast_IsShown, setLoleY_UseBlast_IsShown] = useState(false);
-  const [LoleN_UseBlast_IsShown, setLoleN_UseBlast_IsShown] = useState(false);
+  const [GrenadeActive, setGrenadeActive] = useState(false);
+  const [GrenadeIsShown, setGrenadeIsShown] = useState(false);
+  const [BlastActive, setBlastActive] = useState(false);
+  const [BlastIsShown, setBlastIsShown] = useState(false);
 
 //monsters//
   const [TesvenActive, setTesvenActive] = useState(false);
@@ -182,53 +177,6 @@ function App() {
     setLoleNIsShown(current => null);
     setLoleYActive(!LoleYActive);
     setLoleNActive(current => null);
-    setLoleY_UseGrenade_IsShown(current => null);
-    setLoleY_UseBlast_IsShown(current => null);
-    setLoleN_UseGrenade_IsShown(current => null);
-    setLoleN_UseBlast_IsShown(current => null);
-    setLoleY_UseGrenade_Active(current => null);
-    setLoleY_UseBlast_Active(current => null);
-    setLoleN_UseGrenade_Active(current => null);
-    setLoleN_UseBlast_Active(current => null);
-
-    setTesvenIsShown (current => null)
-    setTesvenActive (current => null)  
-    setVelsounIsShown (current => null)
-    setVelsounActive (current => null)
-    setAlphaTamboIsShown (current => null)
-    setAlphaTamboActive (current => null)
-    setAzadiIsShown (current => null)
-    setAzadiActive (current => null)
-    setTareitIsShown (current => null)
-    setTareitActive (current => null)
-    setBabuIsShown (current => null)
-    setBabuActive (current => null)
-    setDustSuwoIsShown (current => null)
-    setDustSuwoActive (current => null)
-    setSuwoIsShown (current => null)
-    setSuwoActive (current => null)
-    setRakstalIsShown (current => null)
-    setRakstalActive (current => null)
-    setShamanLuziaIsShown (current => null)
-    setShamanLuziaActive (current => null)
-    setDarkReflectionIsShown (current => null)
-    setDarkReflectionActive (current => null)
-    setReflectionIsShown (current => null)
-    setReflectionActive (current => null)
-    setCaravanIsShown (current => null)
-    setCaravanActive (current => null)
-    setKultalvaIsShown (current => null)
-    setKultalvaActive (current => null)
-    setMiclanIsShown (current => null)
-    setMiclanActive (current => null)
-    setRiverGoddessIsShown (current => null)
-    setRiverGoddessActive (current => null)
-    setKingMaiIsShown (current => null)
-    setKingMaiActive (current => null)
-    setDustedLuziaIsShown (current => null)
-    setDustedLuziaActive (current => null)
-    setDustyKingMaiIsShown (current => null)
-    setDustyKingMaiActive (current => null)
 
   };
 
@@ -238,265 +186,26 @@ function App() {
     setLoleYIsShown(current => null);
     setLoleNActive(!LoleNActive);
     setLoleYActive(current => null);
-    setLoleY_UseGrenade_IsShown(current => null);
-    setLoleY_UseBlast_IsShown(current => null);
-    setLoleN_UseGrenade_IsShown(current => null);
-    setLoleN_UseBlast_IsShown(current => null);
-    setLoleY_UseGrenade_Active(current => null);
-    setLoleY_UseBlast_Active(current => null);
-    setLoleN_UseGrenade_Active(current => null);
-    setLoleN_UseBlast_Active(current => null);
-
-    setTesvenIsShown (current => null)
-    setTesvenActive (current => null)  
-    setVelsounIsShown (current => null)
-    setVelsounActive (current => null)
-    setAlphaTamboIsShown (current => null)
-    setAlphaTamboActive (current => null)
-    setAzadiIsShown (current => null)
-    setAzadiActive (current => null)
-    setTareitIsShown (current => null)
-    setTareitActive (current => null)
-    setBabuIsShown (current => null)
-    setBabuActive (current => null)
-    setDustSuwoIsShown (current => null)
-    setDustSuwoActive (current => null)
-    setSuwoIsShown (current => null)
-    setSuwoActive (current => null)
-    setRakstalIsShown (current => null)
-    setRakstalActive (current => null)
-    setShamanLuziaIsShown (current => null)
-    setShamanLuziaActive (current => null)
-    setDarkReflectionIsShown (current => null)
-    setDarkReflectionActive (current => null)
-    setReflectionIsShown (current => null)
-    setReflectionActive (current => null)
-    setCaravanIsShown (current => null)
-    setCaravanActive (current => null)
-    setKultalvaIsShown (current => null)
-    setKultalvaActive (current => null)
-    setMiclanIsShown (current => null)
-    setMiclanActive (current => null)
-    setRiverGoddessIsShown (current => null)
-    setRiverGoddessActive (current => null)
-    setKingMaiIsShown (current => null)
-    setKingMaiActive (current => null)
-    setDustedLuziaIsShown (current => null)
-    setDustedLuziaActive (current => null)
-    setDustyKingMaiIsShown (current => null)
-    setDustyKingMaiActive (current => null)
     };
 
-  const handleLoleY_UseGrenade_Click = event => {
+  const handleGrenadeClick = event => {
     // 👇️ toggle shown state
-    setLoleY_UseGrenade_IsShown(current => !LoleY_UseGrenade_IsShown);
-    setLoleY_UseGrenade_Active(!LoleY_UseGrenade_Active);
-
-    setLoleY_UseBlast_IsShown(current => null);
-    setLoleN_UseGrenade_IsShown(current => null);
-    setLoleN_UseBlast_IsShown(current => null);
-    setLoleY_UseBlast_Active(current => null);
-    setLoleN_UseGrenade_Active(current => null);
-    setLoleN_UseBlast_Active(current => null);
-
-    setTesvenIsShown (current => null)
-    setTesvenActive (current => null)  
-    setVelsounIsShown (current => null)
-    setVelsounActive (current => null)
-    setAlphaTamboIsShown (current => null)
-    setAlphaTamboActive (current => null)
-    setAzadiIsShown (current => null)
-    setAzadiActive (current => null)
-    setTareitIsShown (current => null)
-    setTareitActive (current => null)
-    setBabuIsShown (current => null)
-    setBabuActive (current => null)
-    setDustSuwoIsShown (current => null)
-    setDustSuwoActive (current => null)
-    setSuwoIsShown (current => null)
-    setSuwoActive (current => null)
-    setRakstalIsShown (current => null)
-    setRakstalActive (current => null)
-    setShamanLuziaIsShown (current => null)
-    setShamanLuziaActive (current => null)
-    setDarkReflectionIsShown (current => null)
-    setDarkReflectionActive (current => null)
-    setReflectionIsShown (current => null)
-    setReflectionActive (current => null)
-    setCaravanIsShown (current => null)
-    setCaravanActive (current => null)
-    setKultalvaIsShown (current => null)
-    setKultalvaActive (current => null)
-    setMiclanIsShown (current => null)
-    setMiclanActive (current => null)
-    setRiverGoddessIsShown (current => null)
-    setRiverGoddessActive (current => null)
-    setKingMaiIsShown (current => null)
-    setKingMaiActive (current => null)
-    setDustedLuziaIsShown (current => null)
-    setDustedLuziaActive (current => null)
-    setDustyKingMaiIsShown (current => null)
-    setDustyKingMaiActive (current => null)
+    setGrenadeIsShown(current => !GrenadeIsShown);
+    setGrenadeActive(!GrenadeActive);
+    setBlastIsShown(current => null);
+    setBlastActive(current => null);
   };
 
-  const handleLoleN_UseGrenade_Click = event => {
-    // 👇️ toggle shown state
-    setLoleN_UseGrenade_IsShown(current => !LoleN_UseGrenade_IsShown);
-    setLoleN_UseGrenade_Active(!LoleN_UseGrenade_Active);
 
-    setLoleY_UseGrenade_IsShown(current => null);
-    setLoleY_UseBlast_IsShown(current => null);
-    setLoleY_UseGrenade_Active(current => null);
-    setLoleY_UseBlast_Active(current => null);
-    setLoleN_UseBlast_IsShown(current => null);
-    setLoleN_UseBlast_Active(current => null);
-
-    setTesvenIsShown (current => null)
-    setTesvenActive (current => null)  
-    setVelsounIsShown (current => null)
-    setVelsounActive (current => null)
-    setAlphaTamboIsShown (current => null)
-    setAlphaTamboActive (current => null)
-    setAzadiIsShown (current => null)
-    setAzadiActive (current => null)
-    setTareitIsShown (current => null)
-    setTareitActive (current => null)
-    setBabuIsShown (current => null)
-    setBabuActive (current => null)
-    setDustSuwoIsShown (current => null)
-    setDustSuwoActive (current => null)
-    setSuwoIsShown (current => null)
-    setSuwoActive (current => null)
-    setRakstalIsShown (current => null)
-    setRakstalActive (current => null)
-    setShamanLuziaIsShown (current => null)
-    setShamanLuziaActive (current => null)
-    setDarkReflectionIsShown (current => null)
-    setDarkReflectionActive (current => null)
-    setReflectionIsShown (current => null)
-    setReflectionActive (current => null)
-    setCaravanIsShown (current => null)
-    setCaravanActive (current => null)
-    setKultalvaIsShown (current => null)
-    setKultalvaActive (current => null)
-    setMiclanIsShown (current => null)
-    setMiclanActive (current => null)
-    setRiverGoddessIsShown (current => null)
-    setRiverGoddessActive (current => null)
-    setKingMaiIsShown (current => null)
-    setKingMaiActive (current => null)
-    setDustedLuziaIsShown (current => null)
-    setDustedLuziaActive (current => null)
-    setDustyKingMaiIsShown (current => null)
-    setDustyKingMaiActive (current => null)
-    };
-
-    const handleLoleY_UseBlast_Click = event => {
+    const handleBlastClick = event => {
       // 👇️ toggle shown state
-      setLoleY_UseBlast_IsShown(current => !LoleY_UseBlast_IsShown);
-      setLoleY_UseBlast_Active(!LoleY_UseBlast_Active);
-
-      setLoleY_UseGrenade_IsShown(current => null);
-      setLoleY_UseGrenade_Active(current => null);
-
-      setLoleN_UseGrenade_IsShown(current => null);
-      setLoleN_UseBlast_IsShown(current => null);
-      setLoleN_UseGrenade_Active(current => null);
-      setLoleN_UseBlast_Active(current => null);
-
-      setTesvenIsShown (current => null)
-      setTesvenActive (current => null)  
-      setVelsounIsShown (current => null)
-      setVelsounActive (current => null)
-      setAlphaTamboIsShown (current => null)
-      setAlphaTamboActive (current => null)
-      setAzadiIsShown (current => null)
-      setAzadiActive (current => null)
-      setTareitIsShown (current => null)
-      setTareitActive (current => null)
-      setBabuIsShown (current => null)
-      setBabuActive (current => null)
-      setDustSuwoIsShown (current => null)
-      setDustSuwoActive (current => null)
-      setSuwoIsShown (current => null)
-      setSuwoActive (current => null)
-      setRakstalIsShown (current => null)
-      setRakstalActive (current => null)
-      setShamanLuziaIsShown (current => null)
-      setShamanLuziaActive (current => null)
-      setDarkReflectionIsShown (current => null)
-      setDarkReflectionActive (current => null)
-      setReflectionIsShown (current => null)
-      setReflectionActive (current => null)
-      setCaravanIsShown (current => null)
-      setCaravanActive (current => null)
-      setKultalvaIsShown (current => null)
-      setKultalvaActive (current => null)
-      setMiclanIsShown (current => null)
-      setMiclanActive (current => null)
-      setRiverGoddessIsShown (current => null)
-      setRiverGoddessActive (current => null)
-      setKingMaiIsShown (current => null)
-      setKingMaiActive (current => null)
-      setDustedLuziaIsShown (current => null)
-      setDustedLuziaActive (current => null)
-      setDustyKingMaiIsShown (current => null)
-      setDustyKingMaiActive (current => null)
+      setBlastIsShown(current => !BlastIsShown);
+      setBlastActive(!BlastActive);
+      setGrenadeIsShown(current => null);
+      setGrenadeActive(current => null);
   
     };
   
-    const handleLoleN_UseBlast_Click = event => {
-      // 👇️ toggle shown state
-      setLoleN_UseBlast_IsShown(current => !LoleN_UseBlast_IsShown);
-      setLoleN_UseBlast_Active(!LoleN_UseBlast_Active);
-
-      setLoleY_UseGrenade_IsShown(current => null);
-      setLoleY_UseBlast_IsShown(current => null);
-      setLoleN_UseGrenade_IsShown(current => null);
-      setLoleY_UseGrenade_Active(current => null);
-      setLoleY_UseBlast_Active(current => null);
-      setLoleN_UseGrenade_Active(current => null);
-
-      setTesvenIsShown (current => null)
-      setTesvenActive (current => null)  
-      setVelsounIsShown (current => null)
-      setVelsounActive (current => null)
-      setAlphaTamboIsShown (current => null)
-      setAlphaTamboActive (current => null)
-      setAzadiIsShown (current => null)
-      setAzadiActive (current => null)
-      setTareitIsShown (current => null)
-      setTareitActive (current => null)
-      setBabuIsShown (current => null)
-      setBabuActive (current => null)
-      setDustSuwoIsShown (current => null)
-      setDustSuwoActive (current => null)
-      setSuwoIsShown (current => null)
-      setSuwoActive (current => null)
-      setRakstalIsShown (current => null)
-      setRakstalActive (current => null)
-      setShamanLuziaIsShown (current => null)
-      setShamanLuziaActive (current => null)
-      setDarkReflectionIsShown (current => null)
-      setDarkReflectionActive (current => null)
-      setReflectionIsShown (current => null)
-      setReflectionActive (current => null)
-      setCaravanIsShown (current => null)
-      setCaravanActive (current => null)
-      setKultalvaIsShown (current => null)
-      setKultalvaActive (current => null)
-      setMiclanIsShown (current => null)
-      setMiclanActive (current => null)
-      setRiverGoddessIsShown (current => null)
-      setRiverGoddessActive (current => null)
-      setKingMaiIsShown (current => null)
-      setKingMaiActive (current => null)
-      setDustedLuziaIsShown (current => null)
-      setDustedLuziaActive (current => null)
-      setDustyKingMaiIsShown (current => null)
-      setDustyKingMaiActive (current => null)
-
-      };
 
 const handleTesvenClick = event => {
   setTesvenIsShown (current => !TesvenIsShown)
@@ -1408,53 +1117,120 @@ const handleCutoutClick = event => {
 
 //how many DUSTED LUZIA have you fought?//
 
-const [DustedLuziaCutout, setDustedLuziaCutout] = useState(0); // Or any other non-zero value
+const [DustedLuzia, setDustedLuzia] = useState(0); // Or any other non-zero value
 
-const handleDustedLuziaCutoutChange = (valueString) => {
+const handleDustedLuziaChange = (valueString) => {
   const value = parseFloat(valueString);
-    setDustedLuziaCutout(value);
+    setDustedLuzia(value);
   };
-const totalDustedLuziaCutout = Math.max (5000-DustedLuziaCutout,0);
+const totalDustedLuziaCutout = Math.max (500-DustedLuzia,0);
 
 
 const [DustedLuziaMask, setDustedLuziaMask] = useState(0); // Or any other non-zero value
 
-const handleDustedLuziaMaskChange = (valueString) => {
-  const value = parseFloat(valueString);
-    setDustedLuziaMask(value);
-  };
-
-const totalDustedLuziaMask = Math.max (1000-DustedLuziaMask,0);
+const totalDustedLuziaMask = Math.max (1000-DustedLuzia,0);
 
 
 const [DustedLuziaStatue, setDustedLuziaStatue] = useState(0); // Or any other non-zero value
 
-const handleDustedLuziaStatueChange = (valueString) => {
-  const value = parseFloat(valueString);
-    setDustedLuziaStatue(value);
-  };
-
-const totalDustedLuziaStatue = Math.max (2500-DustedLuziaStatue,0);
+const totalDustedLuziaStatue = Math.max (2500-DustedLuzia,0);
 
 
 const [DustedLuziaBalloon, setDustedLuziaBalloon] = useState(0); // Or any other non-zero value
 
-const handleDustedLuziaBalloonChange = (valueString) => {
-  const value = parseFloat(valueString);
-    setDustedLuziaBalloon(value);
-  };
-
-const totalDustedLuziaBalloon = Math.max (5000-DustedLuziaBalloon,0);
+const totalDustedLuziaBalloon = Math.max (5000-DustedLuzia,0);
 
 const [DustedLuziaBook, setDustedLuziaBook] = useState(0); // Or any other non-zero value
 
-const handleDustedLuziaBookChange = (valueString) => {
-  const value = parseFloat(valueString);
-    setDustedLuziaBook(value);
-  };
 
-const totalDustedLuziaBook = Math.max (10000-DustedLuziaBook,0);
-  
+const totalDustedLuziaBook = Math.max (10000-DustedLuzia,0);
+
+//DUSTED LUZIA - Lole yes - resources//
+
+const [DustedLuziaLoleYCutout, setDustedLuziaLoleYCutout] = useState(0);
+const totalDustedLuziaLoleYCutout = Math.max (totalDustedLuziaCutout*40)
+
+const [DustedLuziaLoleYMask, setDustedLuziaLoleYMask] = useState(0);
+const totalDustedLuziaLoleYMask = Math.max (totalDustedLuziaMask*40)
+
+const [DustedLuziaLoleYStatue, setDustedLuziaLoleYStatue] = useState(0);
+const totalDustedLuziaLoleYStatue = Math.max (totalDustedLuziaStatue*40)
+
+const [DustedLuziaLoleYBalloon, setDustedLuziaLoleYBalloon] = useState(0);
+const totalDustedLuziaLoleYBalloon = Math.max (totalDustedLuziaBalloon*40)
+
+const [DustedLuziaLoleYBook, setDustedLuziaLoleYBook] = useState(0);
+const totalDustedLuziaLoleYBook = Math.max (totalDustedLuziaBook*40)
+
+//DUSTED LUZIA - Lole no - resources//
+
+const [DustedLuziaLoleNCutout, setDustedLuziaLoleNCutout] = useState(0);
+const totalDustedLuziaLoleNCutout = Math.max (totalDustedLuziaCutout*60)
+
+const [DustedLuziaLoleNMask, setDustedLuziaLoleNMask] = useState(0);
+const totalDustedLuziaLoleNMask = Math.max (totalDustedLuziaMask*60)
+
+const [DustedLuziaLoleNStatue, setDustedLuziaLoleNStatue] = useState(0);
+const totalDustedLuziaLoleNStatue = Math.max (totalDustedLuziaStatue*60)
+
+const [DustedLuziaLoleNBalloon, setDustedLuziaLoleNBalloon] = useState(0);
+const totalDustedLuziaLoleNBalloon = Math.max (totalDustedLuziaBalloon*60)
+
+const [DustedLuziaLoleNBook, setDustedLuziaLoleNBook] = useState(0);
+const totalDustedLuziaLoleNBook = Math.max (totalDustedLuziaBook*60)
+
+//DUSTED LUZIA - Lole yes - cutout WC//
+
+const [DustedLuziaLoleYCutoutFiftyW, setDustedLuziaLoleYCutoutFiftyW] = useState(0);
+const totalDustedLuziaLoleYCutoutFiftyW = Math.max (totalDustedLuziaLoleYCutout-10000,0)
+
+const [DustedLuziaLoleYCutoutFiftyWWC, setDustedLuziaLoleYCutoutFiftyWWC] = useState(0);
+const totalDustedLuziaLoleYCutoutFiftyWWC = Math.max (totalDustedLuziaLoleYCutoutFiftyW*50,0)
+
+const [DustedLuziaLoleYCutoutOdee, setDustedLuziaLoleYCutoutOdee] = useState(0);
+const totalDustedLuziaLoleYCutoutOdee = Math.max (totalDustedLuziaLoleYCutout-totalDustedLuziaLoleYCutoutFiftyW,0)
+
+const [DustedLuziaLoleYCutoutOdeeWC, setDustedLuziaLoleYCutoutOdeeWC] = useState(0);
+const totalDustedLuziaLoleYCutoutOdeeWC = Math.max (totalDustedLuziaLoleYCutoutOdee*44,0)
+
+const [DustedLuziaLoleYCutoutWC, setDustedLuziaLoleYCutoutWC] = useState(0);
+const totalDustedLuziaLoleYCutoutWC = Math.max (totalDustedLuziaLoleYCutoutOdeeWC + totalDustedLuziaLoleYCutoutFiftyWWC)
+
+//DUSTED LUZIA - Lole yes - Mask WC//
+
+const [DustedLuziaLoleYMaskKnuff, setDustedLuziaLoleYMaskKnuff] = useState(0);
+const totalDustedLuziaLoleYMaskKnuff = Math.max (totalDustedLuziaLoleYMask-30000,0)
+
+const [DustedLuziaLoleYMaskKnuffWC, setDustedLuziaLoleYMaskKnuffWC] = useState(0);
+const totalDustedLuziaLoleYMaskKnuffWC = Math.max (totalDustedLuziaLoleYMaskKnuff*60,0)
+
+const totalDustedLuziaLoleYMaskMusya = Math.max ((totalDustedLuziaLoleYMask-totalDustedLuziaLoleYMaskKnuff)-20000,0)
+
+const [DustedLuziaLoleYMaskMusyaWC, setDustedLuziaLoleYMaskMusyaWC] = useState(0);
+const totalDustedLuziaLoleYMaskMusyaWC = Math.max (totalDustedLuziaLoleYMaskMusya*50,0)
+
+const totalDustedLuziaLoleYMaskQuaruk = Math.max (((totalDustedLuziaLoleYMask-totalDustedLuziaLoleYMaskKnuff)-totalDustedLuziaLoleYMaskMusya)-10000,0)
+
+const [DustedLuziaLoleYMaskQuarukWC, setDustedLuziaLoleYMaskQuarukWC] = useState(0);
+const totalDustedLuziaLoleYMaskQuarukWC = Math.max (totalDustedLuziaLoleYMaskQuaruk*50,0)
+
+const [DustedLuziaLoleYMaskOdee, setDustedLuziaLoleYMaskOdee] = useState(0);
+const totalDustedLuziaLoleYMaskOdee = Math.max (((((totalDustedLuziaLoleYMask-totalDustedLuziaLoleYMaskKnuff)-totalDustedLuziaLoleYMaskMusya))-totalDustedLuziaLoleYMaskQuaruk),0)
+
+const [DustedLuziaLoleYMaskOdeeWC, setDustedLuziaLoleYMaskOdeeWC] = useState(0);
+const totalDustedLuziaLoleYMaskOdeeWC = Math.max (totalDustedLuziaLoleYMaskOdee*44,0)
+
+const [DustedLuziaLoleYMaskWC, setDustedLuziaLoleYMaskWC] = useState(0);
+const totalDustedLuziaLoleYMaskWC = Math.max (totalDustedLuziaLoleYMaskKnuffWC + totalDustedLuziaLoleYMaskMusyaWC + totalDustedLuziaLoleYMaskQuarukWC + totalDustedLuziaLoleYMaskOdeeWC)
+
+//DUSTED LUZIA - Lole yes - Statue WC//
+
+const [DustedLuziaLoleYStatueOdeeWC, setDustedLuziaLoleYStatueOdeeWC] = useState(0);
+const totalDustedLuziaLoleYStatueOdeeWC = Math.max (2500*40*44,0)
+
+const [DustedLuziaLoleYStatueWC, setDustedLuziaLoleYStatueWC] = useState(0);
+const totalDustedLuziaLoleYStatueWC = Math.max (totalDustedLuziaLoleYStatueOdeeWC - totalDustedLuziaLoleYMaskWC, 0)
+
 
 //DONT DELETE THIS I USE IT//
 
@@ -1464,30 +1240,20 @@ const totalFakeZero = (0+0)
 //CALCULATOR //
   
 const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
-const [wordCount, setWordCount] = useState(0);   // Or any other non-zero value
-const [wcResult, setWCResult] = useState(0);
+const [DustedLuziaLoleYCutoutWCResult, setDustedLuziaLoleYCutoutWCResult] = useState(0);
+const [DustedLuziaLoleYMaskWCResult, setDustedLuziaLoleYMaskWCResult] = useState(0);
 
-  useEffect(() => {
-    // Calculate the result whenever attackStat or wordCount changes
-    calculateWCResult(attackStat, wordCount);
-  }, [attackStat, wordCount]);
+
   
   const handleAttackStatChange = (valueString) => {
     const value = parseFloat(valueString); 
       setAttackStat(value);
   };
   
-  const handleWordCountChange = (valueString) => {
-    const value = parseFloat(valueString);
-      setWordCount(value);
-    };
-  
+  const totalDustedLuziaLoleYCutoutWCResult = Math.round (totalDustedLuziaLoleYCutoutWC /  + ((attackStat/100) + 1))
+  const totalDustedLuziaLoleYMaskWCResult = Math.round (totalDustedLuziaLoleYMaskWC /  + ((attackStat/100) + 1))
 
-  const calculateWCResult = (atk, wc) => {
-    const totalWords = Math.round (wc / ((atk/100) + 1));
-    setWCResult(totalWords);
 
-};
 
 
 
@@ -1501,17 +1267,49 @@ const totalNoanzaKirerfWCResult = (0+0)
 
 
 //format the WC #s//
-//NOANZA//
-        const number = totalNoanzaGlivaWCResult;
+        const number = totalDustedLuziaBook;
         const USformatter = new Intl.NumberFormat("en-US");
-        const NoanzaGlivaWC = USformatter.format(number);
+        const DustedLuziaBookComma = USformatter.format(number);
 
-        const number1 = totalNoanzaKirerfWCResult;
-        const NoanzaKirerfWC = USformatter.format(number1)
-      
+        const number1 = totalDustedLuziaLoleYCutout;
+        const DustedLuziaLoleYCutoutComma = USformatter.format(number1)
 
+        const number2 = totalDustedLuziaLoleYMask;
+        const DustedLuziaLoleYMaskComma = USformatter.format(number2)
 
+        const number3 = totalDustedLuziaLoleYStatue;
+        const DustedLuziaLoleYStatueComma = USformatter.format(number3)
 
+        const number4 = totalDustedLuziaLoleYBalloon;
+        const DustedLuziaLoleYBalloonComma = USformatter.format(number4)
+
+        const number5 = totalDustedLuziaLoleYBook;
+        const DustedLuziaLoleYBookComma = USformatter.format(number5)
+
+        const number6 = totalDustedLuziaLoleNCutout;
+        const DustedLuziaLoleNCutoutComma = USformatter.format(number6)
+
+        const number7 = totalDustedLuziaLoleNMask;
+        const DustedLuziaLoleNMaskComma = USformatter.format(number7)
+
+        const number8 = totalDustedLuziaLoleNStatue;
+        const DustedLuziaLoleNStatueComma = USformatter.format(number8)
+
+        const number9 = totalDustedLuziaLoleNBalloon;
+        const DustedLuziaLoleNBalloonComma = USformatter.format(number9)
+
+        const number10 = totalDustedLuziaLoleNBook;
+        const DustedLuziaLoleNBookComma = USformatter.format(number10)
+
+        const number11 = totalDustedLuziaLoleYCutoutWCResult;
+        const DustedLuziaLoleYCutoutWCComma = USformatter.format(number11)
+
+        const number12 = totalDustedLuziaLoleYMaskWCResult;
+        const DustedLuziaLoleYMaskWCComma = USformatter.format(number12)
+
+        const number13 = totalDustedLuziaLoleYStatueWC;
+        const DustedLuziaLoleYStatueWCComma = USformatter.format(number13)
+        
 
 // END OF EQUATIONS SO FAR//
 
@@ -1619,12 +1417,12 @@ const totalNoanzaKirerfWCResult = (0+0)
       <span>No</span></Button></WrapItem>
         </Wrap></Container>
 
-{LoleYIsShown && <VStack>
+      <VStack>
         <text mr='10px' ml='10px'>What is the word count of the monster you're mastering?<br></br><br></br></text> 
     
         <Container><Wrap justify='center'>
         <WrapItem>
-        <Button variant='outline' onClick={handleLoleY_UseGrenade_Click} style={{ backgroundColor: LoleY_UseGrenade_Active ? "#2d1b59" : "transparent" }}>
+        <Button variant='outline' onClick={handleGrenadeClick} style={{ backgroundColor: GrenadeActive ? "#2d1b59" : "transparent" }}>
         <Image
         boxSize='2rem'
         borderRadius='full'
@@ -1634,7 +1432,7 @@ const totalNoanzaKirerfWCResult = (0+0)
       <span>2000 words or fewer</span></Button>
       </WrapItem>
       <WrapItem>
-        <Button variant='outline' onClick= {handleLoleY_UseBlast_Click} style={{ backgroundColor: LoleY_UseBlast_Active ? "#2d1b59" : "transparent" }}>
+        <Button variant='outline' onClick= {handleBlastClick} style={{ backgroundColor: BlastActive ? "#2d1b59" : "transparent" }}>
         <Image
         boxSize='2rem'
         borderRadius='full'
@@ -1642,34 +1440,9 @@ const totalNoanzaKirerfWCResult = (0+0)
         mr='12px'
       />      
       <span>over 2000 words</span></Button></WrapItem>
-        </Wrap></Container></VStack>}
+        </Wrap></Container></VStack>
 
-{LoleNIsShown && <VStack>
-        <text>What is the word count of the monster you're mastering?<br></br><br></br></text> 
-    
-        <Container><Wrap justify='center'>
-        <WrapItem>
-        <Button variant='outline' onClick={handleLoleN_UseGrenade_Click} style={{ backgroundColor: LoleN_UseGrenade_Active ? "#2d1b59" : "transparent" }}>
-        <Image
-        boxSize='2rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/c/cc/Blast_Potion.png'
-        mr='12px'
-      />
-      <span>2000 words or fewer</span></Button>
-      </WrapItem>
-      <WrapItem>
-        <Button variant='outline' onClick= {handleLoleN_UseBlast_Click} style={{ backgroundColor: LoleN_UseBlast_Active ? "#2d1b59" : "transparent" }}>
-        <Image
-        boxSize='2rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/0/0b/Fire_Grenade_Potion.png/'
-        mr='12px'
-      />      
-      <span>over 2000 words</span></Button></WrapItem>
-        </Wrap></Container></VStack>}
-        
-{LoleY_UseBlast_IsShown &&
+
         <Accordion allowMultiple w={350}>
   <AccordionItem>
   <h2>
@@ -2059,375 +1832,32 @@ const totalNoanzaKirerfWCResult = (0+0)
       <br></br>
     </AccordionPanel>
   </AccordionItem>
-  </Accordion>}
-
-{LoleN_UseBlast_IsShown &&
-  <Accordion allowMultiple w={350}>
-  <AccordionItem>
-  <h2>
-      <AccordionButton>
-        <Box as="span" flex='1' textAlign='center' p={3}>
-        <Heading as='h3' size='lg'>Select Monster</Heading>
-        </Box>
-        <AccordionIcon />
-      </AccordionButton>
-    </h2>
-    <AccordionPanel pb={4}>
-
-      <Box h='300px' overflowY='scroll'>
-          <Wrap>
-            <WrapItem>
-            <Button w='100px' h='140px' pb={5} onClick={handleTesvenClick} style={{ backgroundColor: TesvenActive ? "#2d1b59" : "#2D3748" }}>
-       <VStack> 
-       <Image
-        mt='12px'
-        align='center' 
-        BoxSize='5rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/8/8a/Tesven.png/'
-        mr='5px'
-      /> <Text fontSize='sm' align='center'>Tesven<br></br>(2100 words)</Text>
-      </VStack>
-            </Button>
-            </WrapItem>
-            <WrapItem>
-            <Button w='100px' h='140px' pb={5} onClick={handleVelsounClick} style={{ backgroundColor: VelsounActive ? "#2d1b59" : "#2D3748" }}>
-       <VStack> 
-       <Image
-        mt='12px'
-        align='center' 
-        BoxSize='5rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/9/9d/Velsoun.png'
-        mr='5px'
-      /> <Text fontSize='sm' align='center'>Velsoun<br></br>(2430 words)</Text>
-      </VStack>
-            </Button>
-            </WrapItem>
-
-            <WrapItem>
-            <Button w='100px' h='140px' pb={5} onClick={handleAlphaTamboClick} style={{ backgroundColor: AlphaTamboActive ? "#2d1b59" : "#2D3748" }}>
-       <VStack> 
-       <Image
-        mt='12px'
-        align='center' 
-        BoxSize='5rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/6/6d/Alpha_Tambo.png/'
-        mr='5px'
-      /> <Text fontSize='sm' align='center'>Alpha Tambo<br></br>(2500 words)</Text>
-      </VStack>
-            </Button>
-            </WrapItem>
-
-            <WrapItem>
-            <Button w='100px' h='140px' pb={5} onClick={handleAzadiClick} style={{ backgroundColor: AzadiActive ? "#2d1b59" : "#2D3748" }}>
-       <VStack> 
-       <Image
-        mt='12px'
-        align='center' 
-        BoxSize='5rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png'
-        mr='5px'
-      /> <Text fontSize='sm' align='center'>Azadi<br></br>(2500 words)</Text>
-      </VStack>
-            </Button>
-            </WrapItem>
-            <WrapItem>
-            <Button w='100px' h='140px' pb={5} onClick={handleTareitClick} style={{ backgroundColor: TareitActive ? "#2d1b59" : "#2D3748" }}>
-       <VStack> 
-       <Image
-        mt='12px'
-        align='center' 
-        BoxSize='5rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/9/9f/Tareit.png'
-        mr='5px'
-      /> <Text fontSize='sm' align='center'>Tareit<br></br>(2999 words)</Text>
-      </VStack>
-            </Button>
-            </WrapItem>
-
-            <WrapItem>
-            <Button w='100px' h='140px' pb={5} onClick={handleBabuClick} style={{ backgroundColor: BabuActive ? "#2d1b59" : "#2D3748" }}>
-       <VStack> 
-       <Image
-        mt='12px'
-        align='center' 
-        BoxSize='5rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Babu.png'
-        mr='5px'
-      /> <Text fontSize='sm' align='center'>Babu<br></br>(3000 words)</Text>
-      </VStack>
-            </Button>
-            </WrapItem>
-
-            
-            <WrapItem>
-            <Button w='100px' h='140px' pb={5} onClick={handleDustSuwoClick} style={{ backgroundColor: DustSuwoActive ? "#2d1b59" : "#2D3748" }}>
-       <VStack> 
-       <Image
-        mt='12px'
-        align='center' 
-        BoxSize='5rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/d/dd/Dust_Suwo.png/'
-        mr='5px'
-      /> <Text fontSize='sm' align='center'>Dust Suwo<br></br>(3000 words)</Text>
-      </VStack>
-            </Button>
-            </WrapItem>
-            <WrapItem>
-            <Button w='100px' h='140px' pb={5} onClick={handleSuwoClick} style={{ backgroundColor: SuwoActive ? "#2d1b59" : "#2D3748" }}>
-       <VStack> 
-       <Image
-        mt='12px'
-        align='center' 
-        BoxSize='5rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
-        mr='5px'
-      /> <Text fontSize='sm' align='center'>Suwo<br></br>(3000 words)</Text>
-      </VStack>
-            </Button>
-            </WrapItem>
-
-            <WrapItem>
-            <Button w='100px' h='140px' pb={5} onClick={handleRakstalClick} style={{ backgroundColor: RakstalActive ? "#2d1b59" : "#2D3748" }}>
-       <VStack> 
-       <Image
-        mt='12px'
-        align='center' 
-        BoxSize='5rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/2/2f/Rakstal.png/'
-        mr='5px'
-      /> <Text fontSize='sm' align='center'>Rakstal<br></br>(3154 words)</Text>
-      </VStack>
-            </Button>
-            </WrapItem>
-            <WrapItem>
-            <Button w='100px' h='140px' pb={5} onClick={handleShamanLuziaClick} style={{ backgroundColor: ShamanLuziaActive ? "#2d1b59" : "#2D3748" }}>
-       <VStack> 
-       <Image
-        mt='12px'
-        align='center' 
-        BoxSize='5rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/4/41/Shaman_Luzia.png/'
-        mr='5px'
-      /> <Text fontSize='sm' align='center'>Shaman Luzia<br></br>(3600 words)</Text>
-      </VStack>
-            </Button>
-            </WrapItem>
-            <WrapItem>
-            <Button w='100px' h='140px' pb={5} onClick={handleDarkReflectionClick} style={{ backgroundColor: DarkReflectionActive ? "#2d1b59" : "#2D3748" }}>
-       <VStack> 
-       <Image
-        mt='12px'
-        align='center' 
-        BoxSize='5rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/d/d6/Dark_Reflection.png/'
-        mr='5px'
-      /> <Text fontSize='sm' align='center'>Dark Reflection<br></br>(4444 words)</Text>
-      </VStack>
-            </Button>
-            </WrapItem>
-
-            <WrapItem>
-            <Button w='100px' h='140px' pb={5} onClick={handleReflectionClick} style={{ backgroundColor: ReflectionActive ? "#2d1b59" : "#2D3748" }}>
-       <VStack> 
-       <Image
-        mt='12px'
-        align='center' 
-        BoxSize='5rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/2/20/Reflection.png'
-        mr='5px'
-      /> <Text fontSize='sm' align='center'>Reflection<br></br>(4444 words)</Text>
-      </VStack>
-            </Button>
-            </WrapItem>
-
-            <WrapItem>
-            <Button w='100px' h='140px' pb={5} onClick={handleCaravanClick} style={{ backgroundColor: CaravanActive ? "#2d1b59" : "#2D3748" }}>
-       <VStack> 
-       <Image
-        mt='12px'
-        align='center' 
-        BoxSize='5rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/2/2e/Caravan.png/'
-        mr='5px'
-      /> <Text fontSize='sm' align='center'>Caravan<br></br>(5000 words)</Text>
-      </VStack>
-            </Button>
-            </WrapItem>
-            <WrapItem>
-            <Button w='100px' h='140px' pb={5} onClick={handleKultalvaClick} style={{ backgroundColor: KultalvaActive ? "#2d1b59" : "#2D3748" }}>
-       <VStack> 
-       <Image
-        mt='12px'
-        align='center' 
-        BoxSize='5rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/8/87/Kultalva.png'
-        mr='5px'
-      /> <Text fontSize='sm' align='center'>Kultalva<br></br>(5000 words)</Text>
-      </VStack>
-            </Button>
-            </WrapItem>
-
-            <WrapItem>
-            <Button w='100px' h='140px' pb={5} onClick={handleMiclanClick} style={{ backgroundColor: MiclanActive ? "#2d1b59" : "#2D3748" }}> 
-       <VStack> 
-       <Image
-        mt='12px'
-        align='center' 
-        BoxSize='5rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/7/7d/Miclan.png/'
-        mr='5px'
-      /> <Text fontSize='sm' align='center'>Miclan<br></br>(5000 words)</Text>
-      </VStack>
-            </Button>
-            </WrapItem>
-
-            <WrapItem>
-            <Button w='100px' h='140px' pb={5}  onClick={handleRiverGoddessClick} style={{ backgroundColor: RiverGoddessActive ? "#2d1b59" : "#2D3748" }}>
-       <VStack> 
-       <Image
-        mt='12px'
-        align='center' 
-        BoxSize='5rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/7/73/River_Goddess.png/'
-        mr='5px'
-      /> <Text fontSize='sm' align='center'>River Goddess<br></br>(5000 words)</Text>
-      </VStack>
-            </Button>
-            </WrapItem>
-            <WrapItem>
-            <Button w='100px' h='140px' pb={5}onClick={handleKingMaiClick} style={{ backgroundColor: KingMaiActive ? "#2d1b59" : "#2D3748" }}>
-       <VStack> 
-       <Image
-        mt='12px'
-        align='center' 
-        BoxSize='5rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/8/8b/King_Mai.png'
-        mr='5px'
-      /> <Text fontSize='sm' align='center'>King Mai<br></br>(5000 words)</Text>
-      </VStack>
-            </Button>
-            </WrapItem>
-
-            <WrapItem>
-            <Button w='100px' h='140px' pb={5} onClick={handleDustedLuziaClick} style={{ backgroundColor: DustedLuziaActive ? "#2d1b59" : "#2D3748" }}>
-       <VStack> 
-       <Image
-        mt='12px'
-        align='center' 
-        BoxSize='5rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/6/6b/Dusted_Luzia.png'
-        mr='5px'
-      /> <Text fontSize='sm' align='center'>Dusted Luzia<br></br>(8160 words)</Text>
-      </VStack>
-            </Button>
-            </WrapItem>
-
-            <WrapItem>
-            <Button w='100px' h='140px' pb={5} onClick={handleDustyKingMaiClick} style={{ backgroundColor: DustyKingMaiActive ? "#2d1b59" : "#2D3748" }}>
-       <VStack> 
-       <Image
-        mt='12px'
-        align='center' 
-        boxSize='5rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/2/23/King_Mai_(Corrupted).png/'
-        mr='5px'
-      /> <Text fontSize='xs' align='center'>Dusty King Mai<br></br>(15000 words)</Text>
-      </VStack>
-            </Button>
-            </WrapItem>
-
-          </Wrap>
-          </Box>
-      <br></br>
-    </AccordionPanel>
-  </AccordionItem>
-
-  </Accordion>}
+  </Accordion>
 
 
-  {DustedLuziaIsShown && LoleY_UseBlast_IsShown && CutoutIsShown &&
+
+
+  {DustedLuziaIsShown && BlastIsShown && 
   <Container align='center'>
     <VStack>
 <Text>How many <b>Dusted Luzia</b> have you already fought?</Text><br></br>
         <NumberInput defaultValue={0} min={0} max={9999} size='md' w='100px'>
-  <NumberInputField id='DustedLuziaCutout' onInput={(e) => handleDustedLuziaCutoutChange(e.target.value)} />
+  <NumberInputField id='DustedLuziaCutout' onInput={(e) => handleDustedLuziaChange(e.target.value)} />
 </NumberInput>
 </VStack>
 </Container>
 }  
-
-  {DustedLuziaIsShown && LoleY_UseBlast_IsShown && MaskIsShown &&
-  <Container align='center'>
-    <VStack>
-<Text>How many <b>Dusted Luzia</b> have you already fought?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={9999} size='md' w='100px'>
-  <NumberInputField id='DustedLuziaMask' onInput={(e) => handleDustedLuziaMaskChange(e.target.value)} />
-</NumberInput>
-</VStack>
-</Container>
-}
-
-{DustedLuziaIsShown && LoleY_UseBlast_IsShown && StatueIsShown &&
-  <Container align='center'>
-    <VStack>
-<Text>How many <b>Dusted Luzia</b> have you already fought?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={9999} size='md' w='100px'>
-  <NumberInputField id='DustedLuziaStatue' onInput={(e) => handleDustedLuziaStatueChange(e.target.value)} />
-</NumberInput>
-</VStack>
-</Container>
-}
-
-{DustedLuziaIsShown && LoleY_UseBlast_IsShown && BalloonIsShown &&
-  <Container align='center'>
-    <VStack>
-<Text>How many <b>Dusted Luzia</b> have you already fought?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={9999} size='md' w='100px'>
-  <NumberInputField id='DustedLuziaBalloon' onInput={(e) => handleDustedLuziaBalloonChange(e.target.value)} />
-</NumberInput>
-</VStack>
-</Container>
-}
-
-{DustedLuziaIsShown && LoleY_UseBlast_IsShown && BookIsShown &&
-  <Container align='center'>
-    <VStack>
-<Text>How many <b>Dusted Luzia</b> have you already fought?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={9999} size='md' w='100px'>
-  <NumberInputField id='DustedLuziaBook' onInput={(e) => handleDustedLuziaBookChange(e.target.value)} />
-</NumberInput>
-</VStack>
-</Container>
 }
 
 
 
-{DustedLuziaIsShown && LoleY_UseBlast_IsShown &&
+{DustedLuziaIsShown && BlastIsShown &&
   <Container align='center'>
     <VStack>
 <Text><b>Dusted Luzia</b> has a battle cost (1 Steel Axe + 1 Steel Shield)<br></br> Select a source for farming battle cost:</Text><br></br>
 <Wrap justify='center'>
         <WrapItem>
-        <Button variant='outline' onClick={handleCoinsClick} style={{ backgroundColor: CoinsActive ? "#1c1138" : "transparent" }}>
+        <Button variant='outline' onClick={handleCoinsClick} style={{ backgroundColor: CoinsActive ? "#2d1b59" : "transparent" }}>
         <Image
         boxSize='2rem'
         borderRadius='full'
@@ -2437,7 +1867,7 @@ const totalNoanzaKirerfWCResult = (0+0)
       <span>Buy with Coins</span></Button>
       </WrapItem>
       <WrapItem>
-        <Button variant='outline' onClick= {handleBattleClick} style={{ backgroundColor: BattleActive ? "#1c1138" : "transparent" }}>      <Image
+        <Button variant='outline' onClick= {handleBattleClick} style={{ backgroundColor: BattleActive ? "#2d1b59" : "transparent" }}>      <Image
         boxSize='2rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/2/29/1576709093_for-the-valley.png/'
@@ -2457,7 +1887,7 @@ const totalNoanzaKirerfWCResult = (0+0)
 <br></br>
 <Heading>Quick View</Heading><br></br>
 
-{TesvenIsShown && LoleY_UseBlast_IsShown &&
+{TesvenIsShown && BlastIsShown &&
 
 
 <Container align='center'>
@@ -2489,7 +1919,7 @@ const totalNoanzaKirerfWCResult = (0+0)
 }
 
 
-{TesvenIsShown && LoleN_UseBlast_IsShown &&
+{TesvenIsShown && LoleNIsShown && BlastIsShown &&
 
 <Container align='center'>
 <Box rounded='lg'  w='290px' h='585px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
@@ -2520,7 +1950,7 @@ const totalNoanzaKirerfWCResult = (0+0)
             </Box></Container>
 }
 
-{VelsounIsShown && LoleY_UseBlast_IsShown &&
+{VelsounIsShown && BlastIsShown &&
 
 
 <Container align='center'>
@@ -2552,7 +1982,7 @@ const totalNoanzaKirerfWCResult = (0+0)
 }
 
 
-{VelsounIsShown && LoleN_UseBlast_IsShown &&
+{VelsounIsShown && LoleNIsShown && BlastIsShown &&
 
 <Container align='center'>
 <Box rounded='lg'  w='290px' h='570px' pb={5} style={{ backgroundColor: VelsounActive ? "#3a2639" : "#2D3748" }}>
@@ -2690,11 +2120,11 @@ const totalNoanzaKirerfWCResult = (0+0)
         </Box>
 }
 
-{DustedLuziaIsShown && LoleY_UseBlast_IsShown &&
+{DustedLuziaIsShown && BlastIsShown &&
 
 
   <Container align='center'>
-  <Box rounded='lg'  w='290px' h='720px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
+  <Box rounded='lg'  w='290px' h='670px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
          <VStack>
          <Image
            mt="12px"
@@ -2703,67 +2133,75 @@ const totalNoanzaKirerfWCResult = (0+0)
           borderRadius='full'
           src='https://static.wikia.nocookie.net/4thewords/images/6/6b/Dusted_Luzia.png'
         />
-          <Text fontSize='lg' textAlign='center'><b>Dusted Luzia</b><br></br>8160 words<br></br># to Fight: {totalDustedLuziaMask}</Text>
+        {DustedLuziaIsShown && CutoutIsShown &&
+          <Text fontSize='lg' textAlign='center'><b>Dusted Luzia</b><br></br>8160 words<br></br># to Fight: {totalDustedLuziaCutout}</Text>}
+        {DustedLuziaIsShown && MaskIsShown &&
+          <Text fontSize='lg' textAlign='center'><b>Dusted Luzia</b><br></br>8160 words<br></br># to Fight: {totalDustedLuziaMask}</Text>}
+        {DustedLuziaIsShown && StatueIsShown &&
+          <Text fontSize='lg' textAlign='center'><b>Dusted Luzia</b><br></br>8160 words<br></br># to Fight: {totalDustedLuziaStatue}</Text>}
+        {DustedLuziaIsShown && BalloonIsShown &&
+          <Text fontSize='lg' textAlign='center'><b>Dusted Luzia</b><br></br>8160 words<br></br># to Fight: {totalDustedLuziaBalloon}</Text>}
+        {DustedLuziaIsShown && BookIsShown &&
+          <Text fontSize='lg' textAlign='center'><b>Dusted Luzia</b><br></br>8160 words<br></br># to Fight: {DustedLuziaBookComma}</Text>}
+
           <Divider w='250px' />
-          <Text fontSize='md'><b>Potion Resource Cost:</b><br></br> 40,000</Text>
-          <Text fontSize='md'><b>Masteries Needed:</b><br></br>
-          10,000 Odys/Odees<br></br>
-            10,000 Quaruk<br></br>
-            10,000 Musya<br></br>
-            10,000 Knuff<br></br>
+          <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
+          {DustedLuziaIsShown && CutoutIsShown && LoleYActive &&
+          <Text fontSize='md' textAlign='center'>{DustedLuziaLoleYCutoutComma}</Text>}
+        {DustedLuziaIsShown && MaskIsShown && LoleYActive &&
+          <Text fontSize='md' textAlign='center'>{DustedLuziaLoleYMaskComma}</Text>}
+        {DustedLuziaIsShown && StatueIsShown && LoleYActive &&
+          <Text fontSize='md' textAlign='center'>{DustedLuziaLoleYStatueComma}</Text>}
+        {DustedLuziaIsShown && BalloonIsShown && LoleYActive &&
+          <Text fontSize='md' textAlign='center'>{DustedLuziaLoleYBalloonComma}</Text>}
+        {DustedLuziaIsShown && BookIsShown && LoleYActive &&
+          <Text fontSize='md' textAlign='center'>{DustedLuziaLoleYBookComma}</Text>}
+
+        {DustedLuziaIsShown && CutoutIsShown && LoleNActive &&
+          <Text fontSize='md' textAlign='center'>{DustedLuziaLoleNCutoutComma}</Text>}
+        {DustedLuziaIsShown && MaskIsShown && LoleNActive &&
+          <Text fontSize='md' textAlign='center'>{DustedLuziaLoleNMaskComma}</Text>}
+        {DustedLuziaIsShown && StatueIsShown && LoleNActive &&
+          <Text fontSize='md' textAlign='center'>{DustedLuziaLoleNStatueComma}</Text>}
+        {DustedLuziaIsShown && BalloonIsShown && LoleNActive &&
+          <Text fontSize='md' textAlign='center'>{DustedLuziaLoleNBalloonComma}</Text>}
+        {DustedLuziaIsShown && BookIsShown && LoleNActive &&
+          <Text fontSize='md' textAlign='center'>{DustedLuziaLoleNBookComma}</Text>}
+
           </Text>
+          <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
+
+{DustedLuziaIsShown && LoleYIsShown && CutoutIsShown &&
+          <Text fontSize='md' textAlign='center'>
+          {DustedLuziaLoleYCutoutWCComma}<br></br>
+          </Text>}
+
+          {DustedLuziaIsShown && LoleYIsShown && MaskIsShown &&
+          <Text fontSize='md' textAlign='center'>
+            {DustedLuziaLoleYMaskWCComma}<br></br>
+          </Text>}
+
+          {DustedLuziaIsShown && LoleYIsShown && StatueIsShown &&
+          <Text fontSize='md' textAlign='center'>
+            {DustedLuziaLoleYStatueWCComma}<br></br>
+          </Text>}
+
+          </Text>
+
           <Divider mt='3px' w='250px' />
           <Text fontSize='md'><b>Battle Cost:</b><br></br> 1000 Steel Axe<br></br> 1000 Steel Shield</Text>
-          <Text fontSize='md'><b>Masteries Needed:</b><br></br>
+          <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
           1000 Jeso
           </Text>
           <Divider mt='3px' w='250px' />
           <Text fontSize='md'><b>Coin Cost:<br></br></b>200,000</Text>
-          <Text fontSize='md'><b>Coin Masteries Needed:</b><br></br>
+          <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
             10,000 Kuikas
           </Text>
         </VStack>
               </Box></Container>
   }
   
-  {DustedLuziaIsShown && LoleN_UseBlast_IsShown &&
-<Container align='center'>
-<Box rounded='lg'  w='290px' h='810px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
-       <VStack>
-       <Image
-         mt="12px"
-        align='center' 
-        boxSize='10rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/6/6b/Dusted_Luzia.png'
-      />
-        <Text fontSize='lg' textAlign='center'><b>Dusted Luzia</b><br></br>8160 words</Text>
-        <Divider w='250px' />
-        <Text fontSize='md'><b>Potion Resource Cost:</b><br></br> 60,000</Text>
-        <Text fontSize='md'><b>Masteries Needed:</b><br></br>
-        10,000 Odees<br></br>
-        10,000 Musya<br></br>
-        10,000 Quaruk<br></br>
-        10,000 Knuff<br></br>
-        6667 Mibloom <br></br>
-        </Text>
-        <Divider mt='3px' w='250px' />
-        <Text fontSize='md'><b>Battle Cost:</b><br></br> 1000 Steel Axe <br></br>1000 Steel Shield</Text>
-        <Text fontSize='md'><b>Masteries Needed:</b><br></br>
-          1,000 Jeso
-        </Text>
-        <Divider mt='3px' w='250px' />
-        <Text fontSize='md'><b>Coin Cost:</b><br></br>200,000</Text>
-        <Text fontSize='md'><b>Masteries Needed:</b><br></br>
-          10,000 Kuikas
-        </Text>
-        <Divider mt='3px' w='250px' />
-        <Text fontSize='lg'><b>Total Word Count:</b><br></br>200,000<br></br><br></br>
-        </Text>
-      </VStack>
-            </Box></Container>
-}
-
 {DustyKingMaiIsShown &&
 
 <Box as="span" flex='1' textAlign='center' padding-top={3}>
@@ -2779,15 +2217,15 @@ const totalNoanzaKirerfWCResult = (0+0)
 <Td><Stat>
   <StatLabel>Total Word Count with Attack</StatLabel>
   <StatNumber>
-  {LoleN_UseGrenade_IsShown && <text align='center'>{0}</text>}
+  {LoleNIsShown && GrenadeIsShown && <text align='center'>{0}</text>}
   </StatNumber>
 </Stat></Td></Tr>
 </Tbody>
 <Tfoot>
-  {LoleY_UseGrenade_IsShown && <Text fontSize='sm' align='center'>yes lole, grenade potions</Text>}
-  {LoleY_UseBlast_IsShown && <Text fontSize='sm' align='center'>yes lole, blast potions</Text>}
-  {LoleN_UseGrenade_IsShown && <Text fontSize='sm' align='center'>no lole, grnenade potions</Text>}
-  {LoleN_UseBlast_IsShown && <Text fontSize='sm' align='center'>no lole, blast potions</Text>}
+  {GrenadeIsShown && LoleYIsShown && <Text fontSize='sm' align='center'>yes lole, grenade potions</Text>}
+  {BlastIsShown && LoleYIsShown && <Text fontSize='sm' align='center'>yes lole, blast potions</Text>}
+  {LoleNIsShown && GrenadeIsShown && <Text fontSize='sm' align='center'>no lole, grnenade potions</Text>}
+  {LoleNIsShown && BlastIsShown && <Text fontSize='sm' align='center'>no lole, blast potions</Text>}
   </Tfoot>
 </Table>
 </TableContainer>
@@ -2811,7 +2249,7 @@ const totalNoanzaKirerfWCResult = (0+0)
         src='https://static.wikia.nocookie.net/4thewords/images/5/59/Aakulta.png'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Aakulta</Text>
-      {LoleY_UseBlast_IsShown && <text align='center'>0</text>}</VStack>
+      {BlastIsShown && <text align='center'>0</text>}</VStack>
   </Box>
         </Td>
         <Td>
@@ -2824,7 +2262,7 @@ const totalNoanzaKirerfWCResult = (0+0)
         src='https://static.wikia.nocookie.net/4thewords/images/2/23/Ardid.png'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Ardid</Text>
-      {LoleY_UseBlast_IsShown && <text align='center'>{0}</text>}</VStack>
+      {BlastIsShown && <text align='center'>{0}</text>}</VStack>
   </Box>
         </Td>
         <Td>
@@ -2837,7 +2275,7 @@ const totalNoanzaKirerfWCResult = (0+0)
         src='https://static.wikia.nocookie.net/4thewords/images/c/c5/Arluzi.png'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Arluzi</Text>
-      {LoleY_UseBlast_IsShown && <text align='center'>{0}</text>}
+      {BlastIsShown && <text align='center'>{0}</text>}
       </VStack>
   </Box>
         </Td>
