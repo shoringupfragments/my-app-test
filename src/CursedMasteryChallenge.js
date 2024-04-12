@@ -1400,24 +1400,60 @@ const handleCutoutClick = event => {
   setCutoutActive (current => null);
   setMaskIsShown (current => null);
   setMaskActive (current => null);
+  setStatueIsShown (current => null);
+  setStatueActive (current => null);
   setBalloonIsShown (current => null);
   setBalloonActive (current => null);
 };
 
-//how many MONSTER have you fought?//
+//how many DUSTED LUZIA have you fought?//
 
+const [DustedLuziaCutout, setDustedLuziaCutout] = useState(0); // Or any other non-zero value
 
-const [DustedLuzia, setDustedLuzia] = useState(0); // Or any other non-zero value
-
-const handleDustedLuziaChange = (valueString) => {
+const handleDustedLuziaCutoutChange = (valueString) => {
   const value = parseFloat(valueString);
-    setDustedLuzia(value);
+    setDustedLuziaCutout(value);
+  };
+const totalDustedLuziaCutout = Math.max (5000-DustedLuziaCutout,0);
+
+
+const [DustedLuziaMask, setDustedLuziaMask] = useState(0); // Or any other non-zero value
+
+const handleDustedLuziaMaskChange = (valueString) => {
+  const value = parseFloat(valueString);
+    setDustedLuziaMask(value);
   };
 
-const totalDustedLuzia = Math.max (1000-DustedLuzia,0);
+const totalDustedLuziaMask = Math.max (1000-DustedLuziaMask,0);
 
 
+const [DustedLuziaStatue, setDustedLuziaStatue] = useState(0); // Or any other non-zero value
 
+const handleDustedLuziaStatueChange = (valueString) => {
+  const value = parseFloat(valueString);
+    setDustedLuziaStatue(value);
+  };
+
+const totalDustedLuziaStatue = Math.max (2500-DustedLuziaStatue,0);
+
+
+const [DustedLuziaBalloon, setDustedLuziaBalloon] = useState(0); // Or any other non-zero value
+
+const handleDustedLuziaBalloonChange = (valueString) => {
+  const value = parseFloat(valueString);
+    setDustedLuziaBalloon(value);
+  };
+
+const totalDustedLuziaBalloon = Math.max (5000-DustedLuziaBalloon,0);
+
+const [DustedLuziaBook, setDustedLuziaBook] = useState(0); // Or any other non-zero value
+
+const handleDustedLuziaBookChange = (valueString) => {
+  const value = parseFloat(valueString);
+    setDustedLuziaBook(value);
+  };
+
+const totalDustedLuziaBook = Math.max (10000-DustedLuziaBook,0);
   
 
 //DONT DELETE THIS I USE IT//
@@ -1583,53 +1619,6 @@ const totalNoanzaKirerfWCResult = (0+0)
       <span>No</span></Button></WrapItem>
         </Wrap></Container>
 
-        <Container align='center'>
-    <VStack>
-<Text>What is your mastery goal?</Text><br></br>
-<Wrap justify='center'>
-        <WrapItem>
-        <Button variant='outline' onClick={handleCutoutClick} style={{ backgroundColor: CutoutActive ? "#2d1b59" : "transparent" }}>
-        <Image
-        boxSize='2rem'
-        src='https://static.wikia.nocookie.net/4thewords/images/7/73/Winter_Cordu_Cutout.png'
-        mr='12px'
-      />
-      <span>Cutout</span></Button>
-      </WrapItem>
-      <WrapItem>
-        <Button variant='outline' onClick= {handleMaskClick} style={{ backgroundColor: MaskActive ? "#2d1b59" : "transparent" }}>      <Image
-        boxSize='2rem'
-        src='https://static.wikia.nocookie.net/4thewords/images/9/90/Winter_Cordu_Wardrobe_Mask.png/'
-        mr='12px'
-      />
-      <span>Mask</span></Button></WrapItem>
-      <WrapItem>
-        <Button variant='outline' onClick= {handleStatueClick} style={{ backgroundColor: StatueActive ? "#2d1b59" : "transparent" }}>      <Image
-        boxSize='2rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/4/40/Winter_Cordu_Statue.png/'
-        mr='12px'
-      />
-      <span>Statue</span></Button></WrapItem>
-      <WrapItem>
-        <Button variant='outline' onClick= {handleBalloonClick} style={{ backgroundColor: BalloonActive ? "#2d1b59" : "transparent" }}>      <Image
-        boxSize='2rem'
-        src='https://static.wikia.nocookie.net/4thewords/images/a/a2/Winter_Cordu_Wardrobe_Balloon.png/'
-        mr='12px'
-      />
-      <span>Balloon</span></Button></WrapItem>
-      <WrapItem>
-        <Button variant='outline' onClick= {handleBookClick} style={{ backgroundColor: BookActive ? "#2d1b59" : "transparent" }}>      <Image
-        boxSize='2rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/5/5f/Winter_Cordu_Book_4.png/'
-        mr='12px'
-      />
-      <span>Book</span></Button></WrapItem>
-        </Wrap>
-</VStack>
-</Container>
-
 {LoleYIsShown && <VStack>
         <text mr='10px' ml='10px'>What is the word count of the monster you're mastering?<br></br><br></br></text> 
     
@@ -1701,7 +1690,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/8/8a/Tesven.png/'
         mr='5px'
@@ -1715,7 +1704,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/9/9d/Velsoun.png'
         mr='5px'
@@ -1730,7 +1719,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/6/6d/Alpha_Tambo.png/'
         mr='5px'
@@ -1745,7 +1734,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png'
         mr='5px'
@@ -1759,7 +1748,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/9/9f/Tareit.png'
         mr='5px'
@@ -1774,7 +1763,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Babu.png'
         mr='5px'
@@ -1790,7 +1779,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/d/dd/Dust_Suwo.png/'
         mr='5px'
@@ -1804,7 +1793,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
         mr='5px'
@@ -1819,7 +1808,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/2/2f/Rakstal.png/'
         mr='5px'
@@ -1833,7 +1822,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/4/41/Shaman_Luzia.png/'
         mr='5px'
@@ -1847,7 +1836,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/d/d6/Dark_Reflection.png/'
         mr='5px'
@@ -1862,7 +1851,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/2/20/Reflection.png'
         mr='5px'
@@ -1877,7 +1866,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/2/2e/Caravan.png/'
         mr='5px'
@@ -1891,7 +1880,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/8/87/Kultalva.png'
         mr='5px'
@@ -1906,7 +1895,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/7/7d/Miclan.png/'
         mr='5px'
@@ -1921,7 +1910,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/7/73/River_Goddess.png/'
         mr='5px'
@@ -1935,7 +1924,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/8/8b/King_Mai.png'
         mr='5px'
@@ -1950,7 +1939,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/6/6b/Dusted_Luzia.png'
         mr='5px'
@@ -1979,7 +1968,97 @@ const totalNoanzaKirerfWCResult = (0+0)
       <br></br>
     </AccordionPanel>
   </AccordionItem>
+  <AccordionItem>
+  <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='center' p={3}>
+        <Heading as='h3' size='lg'>Select Mastery Goal</Heading>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
 
+      <Box h='300px' overflowY='scroll'>
+          <Wrap>
+            <WrapItem>
+            <Button w='100px' h='140px' pb={5} onClick={handleCutoutClick} style={{ backgroundColor: CutoutActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/73/Winter_Cordu_Cutout.png'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Cutout<br></br>(500 battles)</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+            <WrapItem>
+            <Button w='100px' h='140px' pb={5} onClick={handleMaskClick} style={{ backgroundColor: MaskActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/90/Winter_Cordu_Wardrobe_Mask.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Mask<br></br>(1000 battles)</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+
+            <WrapItem>
+            <Button w='100px' h='140px' pb={5} onClick={handleStatueClick} style={{ backgroundColor: StatueActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/40/Winter_Cordu_Statue.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Statue<br></br>(2500 battles)</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+            
+            <WrapItem>
+            <Button w='100px' h='140px' pb={5} onClick={handleBalloonClick} style={{ backgroundColor: BalloonActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/a2/Winter_Cordu_Wardrobe_Balloon.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Statue<br></br>(5000 battles)</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+            
+            <WrapItem>
+            <Button w='100px' h='140px' pb={5} onClick={handleBookClick} style={{ backgroundColor: BookActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/94/Winter_Cordu_Book_Wardrobe.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Book<br></br>(10,000 battles)</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+          </Wrap>
+          </Box>
+      <br></br>
+    </AccordionPanel>
+  </AccordionItem>
   </Accordion>}
 
 {LoleN_UseBlast_IsShown &&
@@ -2003,7 +2082,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/8/8a/Tesven.png/'
         mr='5px'
@@ -2017,7 +2096,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/9/9d/Velsoun.png'
         mr='5px'
@@ -2032,7 +2111,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/6/6d/Alpha_Tambo.png/'
         mr='5px'
@@ -2047,7 +2126,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png'
         mr='5px'
@@ -2061,7 +2140,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/9/9f/Tareit.png'
         mr='5px'
@@ -2076,7 +2155,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Babu.png'
         mr='5px'
@@ -2092,7 +2171,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/d/dd/Dust_Suwo.png/'
         mr='5px'
@@ -2106,7 +2185,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
         mr='5px'
@@ -2121,7 +2200,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/2/2f/Rakstal.png/'
         mr='5px'
@@ -2135,7 +2214,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/4/41/Shaman_Luzia.png/'
         mr='5px'
@@ -2149,7 +2228,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/d/d6/Dark_Reflection.png/'
         mr='5px'
@@ -2164,7 +2243,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/2/20/Reflection.png'
         mr='5px'
@@ -2179,7 +2258,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/2/2e/Caravan.png/'
         mr='5px'
@@ -2193,7 +2272,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/8/87/Kultalva.png'
         mr='5px'
@@ -2208,7 +2287,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/7/7d/Miclan.png/'
         mr='5px'
@@ -2223,7 +2302,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/7/73/River_Goddess.png/'
         mr='5px'
@@ -2237,7 +2316,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/8/8b/King_Mai.png'
         mr='5px'
@@ -2252,7 +2331,7 @@ const totalNoanzaKirerfWCResult = (0+0)
        <Image
         mt='12px'
         align='center' 
-        boxSize='rem'
+        BoxSize='5rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/6/6b/Dusted_Luzia.png'
         mr='5px'
@@ -2284,67 +2363,63 @@ const totalNoanzaKirerfWCResult = (0+0)
 
   </Accordion>}
 
-  
 
-  {DustedLuziaIsShown && LoleY_UseBlast_IsShown &&
+  {DustedLuziaIsShown && LoleY_UseBlast_IsShown && CutoutIsShown &&
   <Container align='center'>
     <VStack>
 <Text>How many <b>Dusted Luzia</b> have you already fought?</Text><br></br>
         <NumberInput defaultValue={0} min={0} max={9999} size='md' w='100px'>
-  <NumberInputField id='DustedLuzia' onInput={(e) => handleDustedLuziaChange(e.target.value)} />
+  <NumberInputField id='DustedLuziaCutout' onInput={(e) => handleDustedLuziaCutoutChange(e.target.value)} />
+</NumberInput>
+</VStack>
+</Container>
+}  
+
+  {DustedLuziaIsShown && LoleY_UseBlast_IsShown && MaskIsShown &&
+  <Container align='center'>
+    <VStack>
+<Text>How many <b>Dusted Luzia</b> have you already fought?</Text><br></br>
+        <NumberInput defaultValue={0} min={0} max={9999} size='md' w='100px'>
+  <NumberInputField id='DustedLuziaMask' onInput={(e) => handleDustedLuziaMaskChange(e.target.value)} />
 </NumberInput>
 </VStack>
 </Container>
 }
 
-{DustedLuziaIsShown && LoleY_UseBlast_IsShown &&
+{DustedLuziaIsShown && LoleY_UseBlast_IsShown && StatueIsShown &&
   <Container align='center'>
     <VStack>
-<Text>What is your mastery goal?</Text><br></br>
-<Wrap justify='center'>
-        <WrapItem>
-        <Button variant='outline' onClick={handleCutoutClick} style={{ backgroundColor: CutoutActive ? "#1c1138" : "transparent" }}>
-        <Image
-        boxSize='2rem'
-        src='https://static.wikia.nocookie.net/4thewords/images/7/73/Winter_Cordu_Cutout.png'
-        mr='12px'
-      />
-      <span>Cutout</span></Button>
-      </WrapItem>
-      <WrapItem>
-        <Button variant='outline' onClick= {handleMaskClick} style={{ backgroundColor: MaskActive ? "#1c1138" : "transparent" }}>      <Image
-        boxSize='2rem'
-        src='https://static.wikia.nocookie.net/4thewords/images/9/90/Winter_Cordu_Wardrobe_Mask.png/'
-        mr='12px'
-      />
-      <span>Mask</span></Button></WrapItem>
-      <WrapItem>
-        <Button variant='outline' onClick= {handleStatueClick} style={{ backgroundColor: StatueActive ? "#1c1138" : "transparent" }}>      <Image
-        boxSize='2rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/4/40/Winter_Cordu_Statue.png/'
-        mr='12px'
-      />
-      <span>Statue</span></Button></WrapItem>
-      <WrapItem>
-        <Button variant='outline' onClick= {handleBalloonClick} style={{ backgroundColor: BalloonActive ? "#1c1138" : "transparent" }}>      <Image
-        boxSize='2rem'
-        src='https://static.wikia.nocookie.net/4thewords/images/a/a2/Winter_Cordu_Wardrobe_Balloon.png/'
-        mr='12px'
-      />
-      <span>Balloon</span></Button></WrapItem>
-      <WrapItem>
-        <Button variant='outline' onClick= {handleBookClick} style={{ backgroundColor: BookActive ? "#1c1138" : "transparent" }}>      <Image
-        boxSize='2rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/5/5f/Winter_Cordu_Book_4.png/'
-        mr='12px'
-      />
-      <span>Book</span></Button></WrapItem>
-        </Wrap>
+<Text>How many <b>Dusted Luzia</b> have you already fought?</Text><br></br>
+        <NumberInput defaultValue={0} min={0} max={9999} size='md' w='100px'>
+  <NumberInputField id='DustedLuziaStatue' onInput={(e) => handleDustedLuziaStatueChange(e.target.value)} />
+</NumberInput>
 </VStack>
 </Container>
 }
+
+{DustedLuziaIsShown && LoleY_UseBlast_IsShown && BalloonIsShown &&
+  <Container align='center'>
+    <VStack>
+<Text>How many <b>Dusted Luzia</b> have you already fought?</Text><br></br>
+        <NumberInput defaultValue={0} min={0} max={9999} size='md' w='100px'>
+  <NumberInputField id='DustedLuziaBalloon' onInput={(e) => handleDustedLuziaBalloonChange(e.target.value)} />
+</NumberInput>
+</VStack>
+</Container>
+}
+
+{DustedLuziaIsShown && LoleY_UseBlast_IsShown && BookIsShown &&
+  <Container align='center'>
+    <VStack>
+<Text>How many <b>Dusted Luzia</b> have you already fought?</Text><br></br>
+        <NumberInput defaultValue={0} min={0} max={9999} size='md' w='100px'>
+  <NumberInputField id='DustedLuziaBook' onInput={(e) => handleDustedLuziaBookChange(e.target.value)} />
+</NumberInput>
+</VStack>
+</Container>
+}
+
+
 
 {DustedLuziaIsShown && LoleY_UseBlast_IsShown &&
   <Container align='center'>
@@ -2628,7 +2703,7 @@ const totalNoanzaKirerfWCResult = (0+0)
           borderRadius='full'
           src='https://static.wikia.nocookie.net/4thewords/images/6/6b/Dusted_Luzia.png'
         />
-          <Text fontSize='lg' textAlign='center'><b>Dusted Luzia</b><br></br>8160 words<br></br># to Fight: {totalDustedLuzia}</Text>
+          <Text fontSize='lg' textAlign='center'><b>Dusted Luzia</b><br></br>8160 words<br></br># to Fight: {totalDustedLuziaMask}</Text>
           <Divider w='250px' />
           <Text fontSize='md'><b>Potion Resource Cost:</b><br></br> 40,000</Text>
           <Text fontSize='md'><b>Masteries Needed:</b><br></br>
