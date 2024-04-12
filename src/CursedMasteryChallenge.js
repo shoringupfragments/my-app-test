@@ -2193,7 +2193,7 @@ const totalNoanzaKirerfWCResult = (0+0)
 
 
 <Container align='center'>
-<Box rounded='lg'  w='300px' h='570px' pb={5} style={{ backgroundColor: VelsounActive ? "#3a2639" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='570px' pb={5} style={{ backgroundColor: VelsounActive ? "#3a2639" : "#2D3748" }}>
        <VStack>
        <Image
          mt="12px"
@@ -2224,7 +2224,7 @@ const totalNoanzaKirerfWCResult = (0+0)
 {VelsounIsShown && LoleN_UseBlast_IsShown &&
 
 <Container align='center'>
-<Box rounded='lg'  w='300px' h='570px' pb={5} style={{ backgroundColor: VelsounActive ? "#3a2639" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='570px' pb={5} style={{ backgroundColor: VelsounActive ? "#3a2639" : "#2D3748" }}>
        <VStack>
        <Image
          mt="12px"
@@ -2363,7 +2363,7 @@ const totalNoanzaKirerfWCResult = (0+0)
 
 
   <Container align='center'>
-  <Box rounded='lg'  w='300px' h='720px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
+  <Box rounded='lg'  w='290px' h='720px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
          <VStack>
          <Image
            mt="12px"
@@ -2399,7 +2399,7 @@ const totalNoanzaKirerfWCResult = (0+0)
 
 
 <Container align='center'>
-<Box rounded='lg'  w='300px' h='720px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='720px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
        <VStack>
        <Image
          mt="12px"
@@ -2411,21 +2411,44 @@ const totalNoanzaKirerfWCResult = (0+0)
         <Text fontSize='lg' textAlign='center'><b>Dusted Luzia</b><br></br>8160 words</Text>
         <Divider w='250px' />
         <Text fontSize='md'><b>Potion Resource Cost:</b><br></br> 60,000</Text>
-        <Text fontSize='md'><b>Aurilis Masteries Needed:</b><br></br>
-        10,000 Odys/Odees<br></br>
-          10,000 Quaruk<br></br>
-          10,000 Musya<br></br>
-          10,000 Knuff<br></br>
+        <Text fontSize='md'><b>Masteries Needed:</b><br></br>
+        <TableContainer w='270px'>
+        <Table variant='unstyled' w='270px'>
+        <Tbody>
+        <Tr w='270px'>
+          <Td verticalAlign='top'>
+            10,000 battles
+          </Td>
+          <Td>
+
+          <Wrap><WrapItem>Odees<br></br>Musya<br></br>Quaruk<br></br>Knuff<br></br></WrapItem></Wrap>
+          </Td>
+        </Tr>
+        <Tr w='270px'>
+          <Td verticalAlign='top'>
+            6667 battles
+          </Td>
+          <Td>
+
+          <Wrap><WrapItem>Mibloom</WrapItem></Wrap>
+          </Td>
+        </Tr>
+        </Tbody>
+        </Table>
+        </TableContainer>
         </Text>
         <Divider mt='3px' w='250px' />
-        <Text fontSize='md'><b>Battle Cost:</b><br></br> 1000 Steel Axe and 1000 Steel Shield</Text>
-        <Text fontSize='md'><b>Masteries Needed for Battle Cost:</b><br></br>
-        1000 Jeso
+        <Text fontSize='md'><b>Battle Cost:</b><br></br> 1000 Steel Axe <br></br>1000 Steel Shield</Text>
+        <Text fontSize='md'><b>Masteries Needed:</b><br></br>
+          1,000 Jeso
         </Text>
         <Divider mt='3px' w='250px' />
-        <Text fontSize='md'><b>Coins Needed<br></br> (potions and battle cost):</b><br></br>200,000</Text>
-        <Text fontSize='md'><b>Coin Masteries Needed:</b><br></br>
+        <Text fontSize='md'><b>Coins Needed</b><br></br>200,000</Text>
+        <Text fontSize='md'><b>Masteries Needed:</b><br></br>
           10,000 Kuikas
+        </Text>
+        <Divider mt='3px' w='250px' />
+        <Text fontSize='lg'><b>Total Word Count:</b><br></br>200,000<br></br><br></br>
         </Text>
       </VStack>
             </Box></Container>
