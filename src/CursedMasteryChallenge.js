@@ -2128,65 +2128,65 @@ const totalNoanzaKirerfWCResult = (0+0)
 
 {TesvenIsShown && LoleY_UseBlast_IsShown &&
 
-<Container>
-<Button w='300px' h='480px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
+
+<Container align='center'>
+<Box rounded='lg'  w='300px' h='600px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
        <VStack>
        <Image
+         mt="12px"
         align='center' 
         boxSize='10rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/8/8a/Tesven.png/'
       />
-        <Text fontSize='lg' textAlign='center'><b>Tesven</b></Text>
-        <Text fontSize='md'><b>Word Count:</b> 2100</Text>
-        <Text fontSize='md'><b>Resource Cost:</b> 40,000</Text>
-        <Text fontSize='md'><b>Coin Cost:</b> 200,000</Text>
-        <Text fontSize='md'><b>Aurilis Masteries Needed:</b></Text>
-        <List>
-          <ListItem>10,000 Odys/Odees</ListItem>
-          <ListItem>10,000 Quaruk</ListItem>
-          <ListItem>10,000 Musya</ListItem>
-          <ListItem>10,000 Knuff</ListItem>
-        </List>
-
-        <Text fontSize='md'><b>Coin Masteries Needed:</b></Text>
-        <List>
-          <ListItem>10,000 Kuikas</ListItem>
-        </List>
+        <Text fontSize='lg' textAlign='center'><b>Tesven</b><br></br>2100 words</Text>
+        <Divider w='250px' />
+        <Text fontSize='md'><b>Resource Cost:</b><br></br> 40,000</Text>
+        <Text fontSize='md'><b>Aurilis Masteries Needed:</b><br></br>
+        10,000 Odys/Odees<br></br>
+          10,000 Quaruk<br></br>
+          10,000 Musya<br></br>
+          10,000 Knuff<br></br>
+        </Text>
+        <Divider mt='3px' w='250px' />
+        <Text fontSize='md'><b>Coin Cost:</b><br></br>200,000</Text>
+        <Text fontSize='md'><b>Coin Masteries Needed:</b><br></br>
+          10,000 Kuikas
+        </Text>
       </VStack>
-            </Button></Container>
+            </Box></Container>
 }
+
 
 {TesvenIsShown && LoleN_UseBlast_IsShown &&
 
-<Container>
-<Button w='300px' h='480px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
+<Container align='center'>
+<Box rounded='lg'  w='300px' h='600px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
        <VStack>
        <Image
+         mt="12px"
         align='center' 
         boxSize='10rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/8/8a/Tesven.png/'
       />
-        <Text fontSize='lg' textAlign='center'><b>Tesven</b></Text>
-        <Text fontSize='md'><b>Word Count:</b> 2100</Text>
-        <Text fontSize='md'><b>Resource Cost:</b> 60,000</Text>
-        <Text fontSize='md'><b>Coin Cost:</b> 200,000</Text>
-        <Text fontSize='md'><b>Aurilis Masteries Needed:</b></Text>
-        <List>
-          <ListItem>10,000 Odys/Odees</ListItem>
-          <ListItem>10,000 Quaruk</ListItem>
-          <ListItem>10,000 Musya</ListItem>
-          <ListItem>10,000 Knuff</ListItem>
-          <ListItem>10,000 Mibloom</ListItem>
-        </List>
-
-        <Text fontSize='md'><b>Coin Masteries Needed:</b></Text>
-        <List>
-          <ListItem>10,000 Kuikas</ListItem>
-        </List>
+        <Text fontSize='lg' textAlign='center'><b>Tesven</b><br></br>2100 words</Text>
+        <Divider w='250px' />
+        <Text fontSize='md'><b>Resource Cost:</b><br></br> 60,000</Text>
+        <Text fontSize='md'><b>Aurilis Masteries Needed:</b><br></br>
+        10,000 Odys/Odees<br></br>
+          10,000 Quaruk<br></br>
+          10,000 Musya<br></br>
+          10,000 Knuff<br></br>
+          10,000 Mibloom
+        </Text>
+        <Divider mt='3px' w='250px' />
+        <Text fontSize='md'><b>Coin Cost:</b><br></br>200,000</Text>
+        <Text fontSize='md'><b>Coin Masteries Needed:</b><br></br>
+          10,000 Kuikas
+        </Text>
       </VStack>
-            </Button></Container>
+            </Box></Container>
 }
 
 {VelsounIsShown && LoleY_UseBlast_IsShown &&
