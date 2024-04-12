@@ -1486,7 +1486,7 @@ const totalNoanzaKirerfWCResult = (0+0)
         src='https://static.wikia.nocookie.net/4thewords/images/0/0b/Fire_Grenade_Potion.png/'
         mr='12px'
       />      
-      <span>over 2001 words</span></Button></WrapItem>
+      <span>over 2000 words</span></Button></WrapItem>
         </Wrap></Container></VStack>}
 
 {LoleNIsShown && <VStack>
@@ -1511,7 +1511,7 @@ const totalNoanzaKirerfWCResult = (0+0)
         src='https://static.wikia.nocookie.net/4thewords/images/0/0b/Fire_Grenade_Potion.png/'
         mr='12px'
       />      
-      <span>over 2001 words</span></Button></WrapItem>
+      <span>over 2000 words</span></Button></WrapItem>
         </Wrap></Container></VStack>}
         
 {LoleY_UseBlast_IsShown &&
@@ -2130,7 +2130,7 @@ const totalNoanzaKirerfWCResult = (0+0)
 
 
 <Container align='center'>
-<Box rounded='lg'  w='300px' h='570px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='570px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
        <VStack>
        <Image
          mt="12px"
@@ -2161,7 +2161,7 @@ const totalNoanzaKirerfWCResult = (0+0)
 {TesvenIsShown && LoleN_UseBlast_IsShown &&
 
 <Container align='center'>
-<Box rounded='lg'  w='300px' h='570px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='585px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
        <VStack>
        <Image
          mt="12px"
