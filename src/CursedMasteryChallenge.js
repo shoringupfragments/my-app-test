@@ -54,6 +54,7 @@ import {
   chakraComponents,
   Select,
 } from "chakra-react-select";
+import { toBePartiallyChecked } from '@testing-library/jest-dom/matchers';
 
 
 
@@ -1115,121 +1116,450 @@ const handleCutoutClick = event => {
   setBalloonActive (current => null);
 };
 
-//how many DUSTED LUZIA have you fought?//
+//AURILIS MONSTERS TO SKIP//
 
-const [DustedLuzia, setDustedLuzia] = useState(0); // Or any other non-zero value
+const [Odees, setOdees] = useState(0); // Or any other non-zero value
 
-const handleDustedLuziaChange = (valueString) => {
+const handleOdeesChange = (valueString) => {
   const value = parseFloat(valueString);
-    setDustedLuzia(value);
+    setOdees(value);
   };
-const totalDustedLuziaCutout = Math.max (500-DustedLuzia,0);
+
+const [Musya, setMusya] = useState(0); // Or any other non-zero value
+
+const handleMusyaChange = (valueString) => {
+  const value = parseFloat(valueString);
+    setMusya(value);
+  };
+
+const [Quaruk, setQuaruk] = useState(0); // Or any other non-zero value
+
+const handleQuarukChange = (valueString) => {
+  const value = parseFloat(valueString);
+    setQuaruk(value);
+  };
+
+const [Knuff, setKnuff] = useState(0); // Or any other non-zero value
+
+const handleKnuffChange = (valueString) => {
+  const value = parseFloat(valueString);
+    setKnuff(value);
+  };
+
+const [Mibloom, setMibloom] = useState(0); // Or any other non-zero value
+
+const handleMibloomChange = (valueString) => {
+  const value = parseFloat(valueString);
+    setMibloom(value);
+  };
+
+const [Kinguz, setKinguz] = useState(0); // Or any other non-zero value
+
+const handleKinguzChange = (valueString) => {
+  const value = parseFloat(valueString);
+    setKinguz(value);
+  };
+
+  const [YSS, setYSS] = useState(0); // Or any other non-zero value
+
+const handleYSSChange = (valueString) => {
+  const value = parseFloat(valueString);
+    setYSS(value);
+  };
+
+  const [PSS, setPSS] = useState(0); // Or any other non-zero value
+
+  const handlePSSChange = (valueString) => {
+    const value = parseFloat(valueString);
+      setPSS(value);
+    };
+
+    const [SSS, setSSS] = useState(0); // Or any other non-zero value
+
+    const handleSSSChange = (valueString) => {
+      const value = parseFloat(valueString);
+        setSSS(value);
+      };
+
+    const [Aed, setAed] = useState(0); // Or any other non-zero value
+
+    const handleAedChange = (valueString) => {
+      const value = parseFloat(valueString);
+        setAed(value);
+      };
+
+    const [Boma, setBoma] = useState(0); // Or any other non-zero value
+
+    const handleBomaChange = (valueString) => {
+      const value = parseFloat(valueString);
+        setBoma(value);
+      };
+
+    const [Gull, setGull] = useState(0); // Or any other non-zero value
+
+    const handleGullChange = (valueString) => {
+      const value = parseFloat(valueString);
+        setGull(value);
+      };
+
+    const [Misul, setMisul] = useState(0); // Or any other non-zero value
+
+    const handleMisulChange = (valueString) => {
+      const value = parseFloat(valueString);
+        setMisul(value);
+      };
 
 
-const [DustedLuziaMask, setDustedLuziaMask] = useState(0); // Or any other non-zero value
+// experiment ?? //
 
-const totalDustedLuziaMask = Math.max (1000-DustedLuzia,0);
+const [MasteryMonster, setMasteryMonster] = useState(0); // Or any other non-zero value
 
+const handleMasteryMonsterChange = (valueString) => {
+  const value = parseFloat(valueString);
+    setMasteryMonster(value);
+  };
 
-const [DustedLuziaStatue, setDustedLuziaStatue] = useState(0); // Or any other non-zero value
-
-const totalDustedLuziaStatue = Math.max (2500-DustedLuzia,0);
-
-
-const [DustedLuziaBalloon, setDustedLuziaBalloon] = useState(0); // Or any other non-zero value
-
-const totalDustedLuziaBalloon = Math.max (5000-DustedLuzia,0);
-
-const [DustedLuziaBook, setDustedLuziaBook] = useState(0); // Or any other non-zero value
+const totalResourcesCutoutLoleY = Math.max (20000-MasteryMonster*40)
+const totalResourcesCutoutLoleYMusya = Math.max (totalResourcesCutoutLoleY-10000,0)
+const totalResourcesCutoutLoleYOdees = Math.max (totalResourcesCutoutLoleY-totalResourcesCutoutLoleYMusya)
 
 
-const totalDustedLuziaBook = Math.max (10000-DustedLuzia,0);
+const totalResourcesMaskLoleY = Math.max (40000-MasteryMonster*40,0)
+const totalResourcesMaskLoleYKnuff = Math.max (totalResourcesMaskLoleY-30000,0)
+const totalResourcesMaskLoleYKnuQua = Math.max (totalResourcesMaskLoleY-totalResourcesMaskLoleYKnuff,0)
+const totalResourcesMaskLoleYQuaruk = Math.max (totalResourcesMaskLoleYKnuQua-20000,0 )
+const totalResourcesMaskLoleYQuaMus = Math.max (totalResourcesMaskLoleYKnuQua-totalResourcesMaskLoleYQuaruk,0)
+const totalResourcesMaskLoleYMusya = Math.max (totalResourcesMaskLoleYQuaMus-10000,0)
+const totalResourcesMaskLoleYOdees = Math.max (totalResourcesMaskLoleYQuaMus-totalResourcesMaskLoleYMusya)
 
-//DUSTED LUZIA - Lole yes - resources//
+const totalResourcesCutoutLoleN = Math.max (30000-MasteryMonster*60)
+const totalResourcesCutoutLoleNQuaruk = Math.max (totalResourcesCutoutLoleN-20000,0 )
+const totalResourcesCutoutLoleNQuaMus = Math.max (totalResourcesCutoutLoleN-totalResourcesCutoutLoleNQuaruk,0)
+const totalResourcesCutoutLoleNMusya = Math.max (totalResourcesCutoutLoleNQuaMus-10000,0)
+const totalResourcesCutoutLoleNOdees = Math.max (totalResourcesCutoutLoleNQuaMus-totalResourcesCutoutLoleNMusya)
 
-const [DustedLuziaLoleYCutout, setDustedLuziaLoleYCutout] = useState(0);
-const totalDustedLuziaLoleYCutout = Math.max (totalDustedLuziaCutout*40)
 
-const [DustedLuziaLoleYMask, setDustedLuziaLoleYMask] = useState(0);
-const totalDustedLuziaLoleYMask = Math.max (totalDustedLuziaMask*40)
+const totalResourcesMaskLoleN = Math.max (60000-MasteryMonster*60)
+const totalResourcesMaskLoleNMibloom = Math.max (totalResourcesMaskLoleN-40000,0)
+const totalResourcesMaskLoleNMiKnu = Math.max (totalResourcesMaskLoleN-totalResourcesMaskLoleNMibloom,0)
+const totalResourcesMaskLoleNKnuff = Math.max (totalResourcesMaskLoleN-30000,0)
+const totalResourcesMaskLoleNKnuQua = Math.max (totalResourcesMaskLoleN-totalResourcesMaskLoleNKnuff,0)
+const totalResourcesMaskLoleNQuaruk = Math.max (totalResourcesMaskLoleN-20000,0 )
+const totalResourcesMaskLoleNQuaMus = Math.max (totalResourcesMaskLoleN-totalResourcesMaskLoleNQuaruk,0)
+const totalResourcesMaskLoleNMusya = Math.max (totalResourcesMaskLoleNQuaMus-10000,0)
+const totalResourcesMaskLoleNOdees = Math.max (totalResourcesMaskLoleNQuaMus-totalResourcesMaskLoleNMusya)
 
-const [DustedLuziaLoleYStatue, setDustedLuziaLoleYStatue] = useState(0);
-const totalDustedLuziaLoleYStatue = Math.max (totalDustedLuziaStatue*40)
 
-const [DustedLuziaLoleYBalloon, setDustedLuziaLoleYBalloon] = useState(0);
-const totalDustedLuziaLoleYBalloon = Math.max (totalDustedLuziaBalloon*40)
 
-const [DustedLuziaLoleYBook, setDustedLuziaLoleYBook] = useState(0);
-const totalDustedLuziaLoleYBook = Math.max (totalDustedLuziaBook*40)
+//how many AURILIS MONSTERS are left//
 
-//DUSTED LUZIA - Lole no - resources//
 
-const [DustedLuziaLoleNCutout, setDustedLuziaLoleNCutout] = useState(0);
-const totalDustedLuziaLoleNCutout = Math.max (totalDustedLuziaCutout*60)
+const [WhichForOdee, setWhichForOdee] = useState(0);
+const totalWhichForOdee = Math.min (totalResourcesCutoutLoleYOdees, 10000)
 
-const [DustedLuziaLoleNMask, setDustedLuziaLoleNMask] = useState(0);
-const totalDustedLuziaLoleNMask = Math.max (totalDustedLuziaMask*60)
+const [WhichForMusya, setWhichForMusya] = useState(0);
+const totalWhichForMusya = Math.min (totalResourcesCutoutLoleYMusya, 10000)
 
-const [DustedLuziaLoleNStatue, setDustedLuziaLoleNStatue] = useState(0);
-const totalDustedLuziaLoleNStatue = Math.max (totalDustedLuziaStatue*60)
+const totalOdeesLeft = Math.max (totalWhichForOdee-Odees, 0)
+const totalMusyaLeft = Math.max (totalWhichForMusya-Musya, 0)
 
-const [DustedLuziaLoleNBalloon, setDustedLuziaLoleNBalloon] = useState(0);
-const totalDustedLuziaLoleNBalloon = Math.max (totalDustedLuziaBalloon*60)
+const [WhichForOdeeCutoutLoleN, setWhichForOdeeCutoutLoleN] = useState(0);
+const totalWhichForOdeeCutoutLoleN = Math.min (totalResourcesCutoutLoleNOdees, 10000)
 
-const [DustedLuziaLoleNBook, setDustedLuziaLoleNBook] = useState(0);
-const totalDustedLuziaLoleNBook = Math.max (totalDustedLuziaBook*60)
+const [WhichForMusyaCutoutLoleN, setWhichForMusyaCutoutLoleN] = useState(0);
+const totalWhichForMusyaCutoutLoleN = Math.min (totalResourcesCutoutLoleNMusya, 10000)
 
-//DUSTED LUZIA - Lole yes - cutout WC//
+const totalOdeesPossCutoutLoleN = Math.max (totalWhichForOdeeCutoutLoleN-Odees, 0)
+const totalMusyaPossCutoutLoleN = Math.max (totalWhichForMusyaCutoutLoleN-Musya, 0)
 
-const [DustedLuziaLoleYCutoutFiftyW, setDustedLuziaLoleYCutoutFiftyW] = useState(0);
-const totalDustedLuziaLoleYCutoutFiftyW = Math.max (totalDustedLuziaLoleYCutout-10000,0)
 
-const [DustedLuziaLoleYCutoutFiftyWWC, setDustedLuziaLoleYCutoutFiftyWWC] = useState(0);
-const totalDustedLuziaLoleYCutoutFiftyWWC = Math.max (totalDustedLuziaLoleYCutoutFiftyW*50,0)
 
-const [DustedLuziaLoleYCutoutOdee, setDustedLuziaLoleYCutoutOdee] = useState(0);
-const totalDustedLuziaLoleYCutoutOdee = Math.max (totalDustedLuziaLoleYCutout-totalDustedLuziaLoleYCutoutFiftyW,0)
+const [WhichForOdeeMaskLoleN, setWhichForOdeeMaskLoleN] = useState(0);
+const totalWhichForOdeeMaskLoleN = Math.min (totalResourcesMaskLoleNOdees, 10000)
 
-const [DustedLuziaLoleYCutoutOdeeWC, setDustedLuziaLoleYCutoutOdeeWC] = useState(0);
-const totalDustedLuziaLoleYCutoutOdeeWC = Math.max (totalDustedLuziaLoleYCutoutOdee*44,0)
+const [WhichForMusyaMaskLoleN, setWhichForMusyaMaskLoleN] = useState(0);
+const totalWhichForMusyaMaskLoleN = Math.min (totalResourcesMaskLoleNMusya, 10000)
 
-const [DustedLuziaLoleYCutoutWC, setDustedLuziaLoleYCutoutWC] = useState(0);
-const totalDustedLuziaLoleYCutoutWC = Math.max (totalDustedLuziaLoleYCutoutOdeeWC + totalDustedLuziaLoleYCutoutFiftyWWC)
+const totalOdeesPossMaskLoleN = Math.max (totalWhichForOdeeMaskLoleN-Odees, 0)
+const totalMusyaPossMaskLoleN = Math.max (totalWhichForMusyaMaskLoleN-Musya, 0)
 
-//DUSTED LUZIA - Lole yes - Mask WC//
 
-const [DustedLuziaLoleYMaskKnuff, setDustedLuziaLoleYMaskKnuff] = useState(0);
-const totalDustedLuziaLoleYMaskKnuff = Math.max (totalDustedLuziaLoleYMask-30000,0)
 
-const [DustedLuziaLoleYMaskKnuffWC, setDustedLuziaLoleYMaskKnuffWC] = useState(0);
-const totalDustedLuziaLoleYMaskKnuffWC = Math.max (totalDustedLuziaLoleYMaskKnuff*60,0)
+const totalQuarukPoss = Math.max (10000-Quaruk, 0)
 
-const totalDustedLuziaLoleYMaskMusya = Math.max ((totalDustedLuziaLoleYMask-totalDustedLuziaLoleYMaskKnuff)-20000,0)
+const totalKnuffPoss = Math.max (10000-Knuff, 0)
 
-const [DustedLuziaLoleYMaskMusyaWC, setDustedLuziaLoleYMaskMusyaWC] = useState(0);
-const totalDustedLuziaLoleYMaskMusyaWC = Math.max (totalDustedLuziaLoleYMaskMusya*50,0)
+const totalMibloomPoss = Math.max ((10000-Mibloom), 0)
+const totalMibloomPossAdjusted = Math.max (totalMibloomPoss*3,0)
 
-const totalDustedLuziaLoleYMaskQuaruk = Math.max (((totalDustedLuziaLoleYMask-totalDustedLuziaLoleYMaskKnuff)-totalDustedLuziaLoleYMaskMusya)-10000,0)
+const totalKinguzPoss = Math.max (10000-Kinguz, 0)
 
-const [DustedLuziaLoleYMaskQuarukWC, setDustedLuziaLoleYMaskQuarukWC] = useState(0);
-const totalDustedLuziaLoleYMaskQuarukWC = Math.max (totalDustedLuziaLoleYMaskQuaruk*50,0)
+const totalAedLeft = Math.max (10000-Aed, 0)
 
-const [DustedLuziaLoleYMaskOdee, setDustedLuziaLoleYMaskOdee] = useState(0);
-const totalDustedLuziaLoleYMaskOdee = Math.max (((((totalDustedLuziaLoleYMask-totalDustedLuziaLoleYMaskKnuff)-totalDustedLuziaLoleYMaskMusya))-totalDustedLuziaLoleYMaskQuaruk),0)
+const totalBomaLeft = Math.max (10000-Boma, 0)
 
-const [DustedLuziaLoleYMaskOdeeWC, setDustedLuziaLoleYMaskOdeeWC] = useState(0);
-const totalDustedLuziaLoleYMaskOdeeWC = Math.max (totalDustedLuziaLoleYMaskOdee*44,0)
+const totalGullLeft = Math.max (10000-Gull, 0)
 
-const [DustedLuziaLoleYMaskWC, setDustedLuziaLoleYMaskWC] = useState(0);
-const totalDustedLuziaLoleYMaskWC = Math.max (totalDustedLuziaLoleYMaskKnuffWC + totalDustedLuziaLoleYMaskMusyaWC + totalDustedLuziaLoleYMaskQuarukWC + totalDustedLuziaLoleYMaskOdeeWC)
+const totalMisulLeft = Math.max (10000-Misul, 0)
 
-//DUSTED LUZIA - Lole yes - Statue WC//
+//how many MASTERY MONSTER have you fought?//
 
-const [DustedLuziaLoleYStatueOdeeWC, setDustedLuziaLoleYStatueOdeeWC] = useState(0);
-const totalDustedLuziaLoleYStatueOdeeWC = Math.max (2500*40*44,0)
+const totalMasteryMonsterCutout = Math.max (500-MasteryMonster,0);
 
-const [DustedLuziaLoleYStatueWC, setDustedLuziaLoleYStatueWC] = useState(0);
-const totalDustedLuziaLoleYStatueWC = Math.max (totalDustedLuziaLoleYStatueOdeeWC - totalDustedLuziaLoleYMaskWC, 0)
+
+const [MasteryMonsterMask, setMasteryMonsterMask] = useState(0); // Or any other non-zero value
+
+const totalMasteryMonsterMask = Math.max (1000-MasteryMonster,0);
+
+
+const [MasteryMonsterStatue, setMasteryMonsterStatue] = useState(0); // Or any other non-zero value
+
+const totalMasteryMonsterStatue = Math.max (2500-MasteryMonster,0);
+
+
+const [MasteryMonsterBalloon, setMasteryMonsterBalloon] = useState(0); // Or any other non-zero value
+
+const totalMasteryMonsterBalloon = Math.max (5000-MasteryMonster,0);
+
+const [MasteryMonsterBook, setMasteryMonsterBook] = useState(0); // Or any other non-zero value
+
+
+const totalMasteryMonsterBook = Math.max (10000-MasteryMonster,0);
+
+
+//MASTERY MONSTER - Lole yes - resources//
+
+const [MasteryMonsterLoleYCutout, setMasteryMonsterLoleYCutout] = useState(0);
+const totalMasteryMonsterLoleYCutout = Math.max (totalMasteryMonsterCutout*40)
+
+const [MasteryMonsterLoleYMask, setMasteryMonsterLoleYMask] = useState(0);
+const totalMasteryMonsterLoleYMask = Math.max (totalMasteryMonsterMask*40)
+
+const [MasteryMonsterLoleYStatue, setMasteryMonsterLoleYStatue] = useState(0);
+const totalMasteryMonsterLoleYStatue = Math.max (totalMasteryMonsterStatue*40)
+
+const [MasteryMonsterLoleYBalloon, setMasteryMonsterLoleYBalloon] = useState(0);
+const totalMasteryMonsterLoleYBalloon = Math.max (totalMasteryMonsterBalloon*40)
+
+const [MasteryMonsterLoleYBook, setMasteryMonsterLoleYBook] = useState(0);
+const totalMasteryMonsterLoleYBook = Math.max (totalMasteryMonsterBook*40)
+
+//MASTERY MONSTER - Lole no - resources//
+
+const [MasteryMonsterLoleNCutout, setMasteryMonsterLoleNCutout] = useState(0);
+const totalMasteryMonsterLoleNCutout = Math.max (totalMasteryMonsterCutout*60)
+
+const [MasteryMonsterLoleNMask, setMasteryMonsterLoleNMask] = useState(0);
+const totalMasteryMonsterLoleNMask = Math.max (totalMasteryMonsterMask*60)
+
+const [MasteryMonsterLoleNStatue, setMasteryMonsterLoleNStatue] = useState(0);
+const totalMasteryMonsterLoleNStatue = Math.max (totalMasteryMonsterStatue*60)
+
+const [MasteryMonsterLoleNBalloon, setMasteryMonsterLoleNBalloon] = useState(0);
+const totalMasteryMonsterLoleNBalloon = Math.max (totalMasteryMonsterBalloon*60)
+
+const [MasteryMonsterLoleNBook, setMasteryMonsterLoleNBook] = useState(0);
+const totalMasteryMonsterLoleNBook = Math.max (totalMasteryMonsterBook*60)
+
+
+
+//LOLEY CUTOUT Odees -> Musya -> Quaruk -> Knuff -> Mibloom -> Kinguz//
+
+const [ActualOdees, setActualOdees] = useState(0);
+const totalActualOdees = Math.max (totalOdeesLeft, 0)
+
+const [OdeesOverflow, setOdeesOverflow] = useState(0);
+const totalOdeesOverflow = Math.min (totalResourcesCutoutLoleYOdees, Odees)
+
+const [Musya_OdeesOverflow, setMusya_OdeesOverflow] = useState(0);
+const totalMusya_OdeesOverflow = Math.max (totalOdeesOverflow + totalWhichForMusya, 0)
+
+const [ActualMusya, setActualMusya] = useState(0);
+const totalActualMusya = Math.min (totalMusyaLeft+totalOdeesOverflow, (10000-Musya))
+
+const [MusyaOverflow, setMusyaOverflow] = useState(0);
+const totalMusyaOverflow = Math.max ((totalMusya_OdeesOverflow-totalActualMusya), 0)
+
+const [ActualQuaruk, setActualQuaruk] = useState(0);
+const totalActualQuaruk = Math.min (totalQuarukPoss + totalMusyaOverflow, (10000-Quaruk))
+
+const [QuarukOverflow, setQuarukOverflow] = useState(0);
+const totalQuarukOverflow = Math.max (totalMusyaOverflow-totalActualQuaruk,0)
+
+const [ActualKnuff, setActualKnuff] = useState(0);
+const totalActualKnuff = Math.min (totalKnuffPoss, totalQuarukOverflow)
+
+const [KnuffOverflow, setKnuffOverflow] = useState(0);
+const totalKnuffOverflow = Math.max (totalQuarukOverflow-totalActualKnuff,0)
+
+const [ActualMibloom, setActualMibloom] = useState(0);
+const totalActualMibloom = Math.min (totalMibloomPossAdjusted, totalKnuffOverflow)
+
+const [ActualMibloomAdjusted, setActualMibloomAdjusted] = useState(0);
+const totalActualMibloomAdjusted = Math.ceil (totalActualMibloom/3)
+
+const [MibloomOverflow, setMibloomOverflow] = useState(0);
+const totalMibloomOverflow = Math.max (totalKnuffOverflow-totalActualMibloom, 0)
+
+const [ActualKinguz, setActualKinguz] = useState(0);
+const totalActualKinguz = Math.min (totalKinguzPoss, totalMibloomOverflow)
+
+const [KinguzOverflow, setKinguzOverflow] = useState(0);
+const totalKinguzOverflow = Math.max (totalMibloomOverflow-totalActualKinguz, 0)
+
+const [finalOdees, setFinalOdees] = useState(0);
+const totalFinalOdees = Math.max (totalKinguzOverflow+totalActualOdees, totalActualOdees)
+
+const [LoleYCutoutWC, setLoleYCutoutWC] = useState(0);
+const totalLoleYCutoutWC = Math.max ((totalFinalOdees*44)+(totalActualMusya*50)+(totalActualQuaruk*50)+(totalActualKnuff*60)+(totalActualMibloomAdjusted*150)+(totalActualKinguz*70),0)
+
+
+//LOLEY MASK Odees -> Musya -> Quaruk -> Knuff -> Mibloom -> Kinguz//
+
+const [ActualOdeesMask, setActualOdeesMask] = useState(0);
+const totalActualOdeesMask = Math.max (totalOdeesLeft, 0)
+
+const [OdeesMaskOverflow, setOdeesMaskOverflow] = useState(0);
+const totalOdeesMaskOverflow = Math.max ((totalResourcesMaskLoleYOdees + totalResourcesMaskLoleYMusya + totalResourcesMaskLoleYQuaruk + totalResourcesMaskLoleYKnuff)-totalActualOdeesMask, totalActualOdeesMask)
+
+const [ActualMusyaMask, setActualMusyaMask] = useState(0);
+const totalActualMusyaMask = Math.min (totalMusyaLeft+totalOdeesMaskOverflow, (10000-Musya))
+
+const [MusyaMaskOverflow, setMusyaMaskOverflow] = useState(0);
+const totalMusyaMaskOverflow = Math.max ((totalOdeesMaskOverflow - totalActualMusyaMask), 0)
+
+const [ActualQuarukMask, setActualQuarukMask] = useState(0);
+const totalActualQuarukMask = Math.min (totalResourcesMaskLoleYQuaruk, totalQuarukPoss)
+
+const [QuarukMaskOverflow, setQuarukMaskOverflow] = useState(0);
+const totalQuarukMaskOverflow = Math.max ((totalMusyaMaskOverflow-totalActualQuarukMask), 0)
+
+const [ActualKnuffMask, setActualKnuffMask] = useState(0);
+const totalActualKnuffMask = Math.min (totalResourcesMaskLoleYKnuff, totalKnuffPoss)
+
+const [KnuffMaskOverflow, setKnuffMaskOverflow] = useState(0);
+const totalKnuffMaskOverflow = Math.max (totalQuarukMaskOverflow-totalActualKnuffMask, 0)
+
+const [MibloomMaskDrops, setMibloomMaskDrops] = useState(0);
+const totalMibloomMaskDrops = Math.min (totalMibloomPossAdjusted, totalKnuffMaskOverflow)
+
+const [MibloomMaskActual, setMibloomMaskActual] = useState(0);
+const totalMibloomMaskActual = Math.ceil (totalMibloomMaskDrops/3)
+
+const [MibloomMaskOverflow, setMibloomMaskOverflow] = useState(0);
+const totalMibloomMaskOverflow = Math.max (totalKnuffMaskOverflow-totalMibloomMaskDrops,0)
+
+const [ActualKinguzMask, setActualKinguzMask] = useState(0);
+const totalActualKinguzMask = Math.min (totalKinguzPoss, totalMibloomMaskOverflow)
+
+const [KinguzMaskOverflow, setKinguzMaskOverflow] = useState(0);
+const totalKinguzMaskOverflow = Math.max (totalMibloomMaskOverflow-totalActualKinguzMask, 0)
+
+const [finalOdeesMask, setFinalOdeesMask] = useState(0);
+const totalFinalOdeesMask = Math.max (totalKinguzMaskOverflow+totalActualOdeesMask, totalActualOdeesMask)
+
+const [LoleYMaskWC, setLoleYMaskWC] = useState(0);
+const totalLoleYMaskWC = Math.max ((totalFinalOdeesMask*44)+(totalActualMusyaMask*50)+(totalActualQuarukMask*50)+(totalActualKnuffMask*60)+(totalMibloomMaskActual*150)+(totalActualKinguzMask*70),0)
+
+
+//LOLEN CUTOUT Odees -> Musya -> Quaruk -> Knuff -> Mibloom -> Kinguz//
+
+const [ActualOdeesLoleN, setActualOdeesLoleN] = useState(0);
+const totalActualOdeesLoleN = Math.max (totalOdeesPossMaskLoleN, 0)
+
+const [OdeesLoleNOverflow, setOdeesLoleNOverflow] = useState(0);
+const totalOdeesLoleNOverflow = Math.max (totalResourcesCutoutLoleN - totalActualOdeesLoleN, 0)
+
+const [Musya_OdeesLoleNOverflow, setMusya_OdeesLoleNOverflow] = useState(0);
+const totalMusya_OdeesLoleNOverflow = Math.max (totalOdeesLoleNOverflow + totalWhichForMusyaCutoutLoleN, 0)
+
+const [ActualMusyaLoleN, setActualMusyaLoleN] = useState(0);
+const totalActualMusyaLoleN = Math.min (totalMusya_OdeesLoleNOverflow-totalOdeesLoleNOverflow, (10000-Musya))
+
+const [MusyaLoleNOverflow, setMusyaLoleNOverflow] = useState(0);
+const totalMusyaLoleNOverflow = Math.max ((totalOdeesLoleNOverflow-totalActualMusyaLoleN), 0)
+
+const [ActualQuarukLoleN, setActualQuarukLoleN] = useState(0);
+const totalActualQuarukLoleN = Math.min (totalQuarukPoss + totalMusyaLoleNOverflow, (10000-Quaruk))
+
+const [QuarukLoleNOverflow, setQuarukLoleNOverflow] = useState(0);
+const totalQuarukLoleNOverflow = Math.max (totalMusyaLoleNOverflow-totalActualQuarukLoleN,0)
+
+const [ActualKnuffLoleN, setActualKnuffLoleN] = useState(0);
+const totalActualKnuffLoleN = Math.min (totalKnuffPoss, totalQuarukLoleNOverflow)
+
+const [KnuffLoleNOverflow, setKnuffLoleNOverflow] = useState(0);
+const totalKnuffLoleNOverflow = Math.max (totalQuarukLoleNOverflow-totalActualKnuffLoleN,0)
+
+const [ActualMibloomLoleN, setActualMibloomLoleN] = useState(0);
+const totalActualMibloomLoleN = Math.min (totalMibloomPossAdjusted, totalKnuffLoleNOverflow)
+
+const [ActualMibloomLoleNAdjusted, setActualMibloomLoleNAdjusted] = useState(0);
+const totalActualMibloomLoleNAdjusted = Math.ceil (totalActualMibloomLoleN/3)
+
+const [MibloomLoleNOverflow, setMibloomLoleNOverflow] = useState(0);
+const totalMibloomLoleNOverflow = Math.max (totalKnuffLoleNOverflow-totalActualMibloomLoleN, 0)
+
+const [ActualKinguzLoleN, setActualKinguzLoleN] = useState(0);
+const totalActualKinguzLoleN = Math.min (totalKinguzPoss, totalMibloomLoleNOverflow)
+
+const [KinguzLoleNOverflow, setKinguzLoleNOverflow] = useState(0);
+const totalKinguzLoleNOverflow = Math.max (totalMibloomLoleNOverflow-totalActualKinguzLoleN, 0)
+
+const [finalOdeesLoleN, setFinalOdeesLoleN] = useState(0);
+const totalFinalOdeesLoleN = Math.max (totalKinguzLoleNOverflow+totalActualOdeesLoleN, totalActualOdeesLoleN)
+
+const [LoleNCutoutWC, setLoleNCutoutWC] = useState(0);
+const totalLoleNCutoutWC = Math.max ((totalFinalOdeesLoleN*44)+(totalActualMusyaLoleN*50)+(totalActualQuarukLoleN*50)+(totalActualKnuffLoleN*60)+(totalActualMibloomLoleNAdjusted*150)+(totalActualKinguzLoleN*70),0)
+
+
+//LOLEN MASK Odees -> Musya -> Quaruk -> Knuff -> Mibloom -> Kinguz//
+
+const [ActualOdeesMaskLoleN, setActualOdeesMaskLoleN] = useState(0);
+const totalActualOdeesMaskLoleN = Math.max (totalOdeesPossMaskLoleN, 0)
+
+const [OdeesMaskLoleNOverflow, setOdeesMaskLoleNOverflow] = useState(0);
+const totalOdeesMaskLoleNOverflow = Math.max (totalResourcesMaskLoleN-totalActualOdeesMaskLoleN, 0)
+
+const [ActualMusyaMaskLoleN, setActualMusyaMaskLoleN] = useState(0);
+const totalActualMusyaMaskLoleN = Math.min (totalMusyaLeft+totalOdeesMaskLoleNOverflow, (10000-Musya))
+
+const [MusyaMaskLoleNOverflow, setMusyaMaskLoleNOverflow] = useState(0);
+const totalMusyaMaskLoleNOverflow = Math.max ((totalOdeesMaskLoleNOverflow - totalActualMusyaMaskLoleN), 0)
+
+const [ActualQuarukMaskLoleN, setActualQuarukMaskLoleN] = useState(0);
+const totalActualQuarukMaskLoleN = Math.min (totalResourcesMaskLoleNQuaruk, totalQuarukPoss)
+
+const [QuarukMaskLoleNOverflow, setQuarukMaskLoleNOverflow] = useState(0);
+const totalQuarukMaskLoleNOverflow = Math.max ((totalMusyaMaskLoleNOverflow-totalActualQuarukMaskLoleN), 0)
+
+const [ActualKnuffMaskLoleN, setActualKnuffMaskLoleN] = useState(0);
+const totalActualKnuffMaskLoleN = Math.min (totalResourcesMaskLoleNKnuff, totalKnuffPoss)
+
+const [KnuffMaskLoleNOverflow, setKnuffMaskLoleNOverflow] = useState(0);
+const totalKnuffMaskLoleNOverflow = Math.max (totalQuarukMaskLoleNOverflow-totalActualKnuffMaskLoleN, 0)
+
+const [MibloomMaskLoleNDrops, setMibloomMaskLoleNDrops] = useState(0);
+const totalMibloomMaskLoleNDrops = Math.min (totalMibloomPossAdjusted, totalKnuffMaskLoleNOverflow)
+
+const [MibloomMaskLoleNActual, setMibloomMaskLoleNActual] = useState(0);
+const totalMibloomMaskLoleNActual = Math.ceil (totalMibloomMaskLoleNDrops/3)
+
+const [MibloomMaskLoleNOverflow, setMibloomMaskLoleNOverflow] = useState(0);
+const totalMibloomMaskLoleNOverflow = Math.max (totalKnuffMaskLoleNOverflow-totalMibloomMaskLoleNDrops,0)
+
+const [ActualKinguzMaskLoleN, setActualKinguzMaskLoleN] = useState(0);
+const totalActualKinguzMaskLoleN = Math.min (totalKinguzPoss, totalMibloomMaskLoleNOverflow)
+
+const [KinguzMaskLoleNOverflow, setKinguzMaskLoleNOverflow] = useState(0);
+const totalKinguzMaskLoleNOverflow = Math.max (totalMibloomMaskLoleNOverflow-totalActualKinguzMaskLoleN, 0)
+
+const [finalOdeesLoleNMask, setFinalOdeesLoleNMask] = useState(0);
+const totalFinalOdeesLoleNMask = Math.max (totalKinguzMaskLoleNOverflow + totalActualOdeesMaskLoleN, totalActualOdeesMaskLoleN)
+
+const [LoleNMaskWC, setLoleNMaskWC] = useState(0);
+const totalLoleNMaskWC = Math.max ((totalFinalOdeesLoleNMask*44)+(totalActualMusyaMaskLoleN*50)+(totalActualQuarukMaskLoleN*50)+(totalActualKnuffMaskLoleN*60)+(totalMibloomMaskLoleNActual*150)+(totalActualKinguzMaskLoleN*70),0)
+
 
 
 //DONT DELETE THIS I USE IT//
@@ -1240,8 +1570,9 @@ const totalFakeZero = (0+0)
 //CALCULATOR //
   
 const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
-const [DustedLuziaLoleYCutoutWCResult, setDustedLuziaLoleYCutoutWCResult] = useState(0);
-const [DustedLuziaLoleYMaskWCResult, setDustedLuziaLoleYMaskWCResult] = useState(0);
+const [MasteryMonsterLoleYCutoutWCResult, setMasteryMonsterLoleYCutoutWCResult] = useState(0);
+const [LoleYCutoutWCResult, setLoleYCutoutWCResult] = useState(0);
+const [LoleNCutoutWCResult, setLoleNCutoutWCResult] = useState(0);
 
 
   
@@ -1250,10 +1581,11 @@ const [DustedLuziaLoleYMaskWCResult, setDustedLuziaLoleYMaskWCResult] = useState
       setAttackStat(value);
   };
   
-  const totalDustedLuziaLoleYCutoutWCResult = Math.round (totalDustedLuziaLoleYCutoutWC /  + ((attackStat/100) + 1))
-  const totalDustedLuziaLoleYMaskWCResult = Math.round (totalDustedLuziaLoleYMaskWC /  + ((attackStat/100) + 1))
+  const totalLoleYCutoutWCResult = Math.round (totalLoleYCutoutWC / ((attackStat/100) + 1))  
+  const totalLoleYMaskWCResult = Math.round (totalLoleYMaskWC / ((attackStat/100) + 1))
 
-
+  const totalLoleNCutoutWCResult = Math.round (totalLoleNCutoutWC / ((attackStat/100) + 1))
+  const totalLoleNMaskWCResult = Math.round (totalLoleNMaskWC / ((attackStat/100) + 1))
 
 
 
@@ -1267,49 +1599,57 @@ const totalNoanzaKirerfWCResult = (0+0)
 
 
 //format the WC #s//
-        const number = totalDustedLuziaBook;
+        const number = totalMasteryMonsterBook;
         const USformatter = new Intl.NumberFormat("en-US");
-        const DustedLuziaBookComma = USformatter.format(number);
+        const MasteryMonsterBookComma = USformatter.format(number);
 
-        const number1 = totalDustedLuziaLoleYCutout;
-        const DustedLuziaLoleYCutoutComma = USformatter.format(number1)
+        const number1 = totalLoleYCutoutWCResult;
+        const LoleYCutoutWCComma = USformatter.format(number1)
 
-        const number2 = totalDustedLuziaLoleYMask;
-        const DustedLuziaLoleYMaskComma = USformatter.format(number2)
+        const number2 = totalMasteryMonsterLoleYMask;
+        const MasteryMonsterLoleYMaskComma = USformatter.format(number2)
 
-        const number3 = totalDustedLuziaLoleYStatue;
-        const DustedLuziaLoleYStatueComma = USformatter.format(number3)
+        const number3 = totalMasteryMonsterLoleYStatue;
+        const MasteryMonsterLoleYStatueComma = USformatter.format(number3)
 
-        const number4 = totalDustedLuziaLoleYBalloon;
-        const DustedLuziaLoleYBalloonComma = USformatter.format(number4)
+        const number4 = totalMasteryMonsterLoleYBalloon;
+        const MasteryMonsterLoleYBalloonComma = USformatter.format(number4)
 
-        const number5 = totalDustedLuziaLoleYBook;
-        const DustedLuziaLoleYBookComma = USformatter.format(number5)
+        const number5 = totalMasteryMonsterLoleYBook;
+        const MasteryMonsterLoleYBookComma = USformatter.format(number5)
 
-        const number6 = totalDustedLuziaLoleNCutout;
-        const DustedLuziaLoleNCutoutComma = USformatter.format(number6)
+        const number6 = totalMasteryMonsterLoleNCutout;
+        const MasteryMonsterLoleNCutoutComma = USformatter.format(number6)
 
-        const number7 = totalDustedLuziaLoleNMask;
-        const DustedLuziaLoleNMaskComma = USformatter.format(number7)
+        const number7 = totalMasteryMonsterLoleNMask;
+        const MasteryMonsterLoleNMaskComma = USformatter.format(number7)
 
-        const number8 = totalDustedLuziaLoleNStatue;
-        const DustedLuziaLoleNStatueComma = USformatter.format(number8)
+        const number8 = totalMasteryMonsterLoleNStatue;
+        const MasteryMonsterLoleNStatueComma = USformatter.format(number8)
 
-        const number9 = totalDustedLuziaLoleNBalloon;
-        const DustedLuziaLoleNBalloonComma = USformatter.format(number9)
+        const number9 = totalMasteryMonsterLoleNBalloon;
+        const MasteryMonsterLoleNBalloonComma = USformatter.format(number9)
 
-        const number10 = totalDustedLuziaLoleNBook;
-        const DustedLuziaLoleNBookComma = USformatter.format(number10)
+        const number10 = totalMasteryMonsterLoleNBook;
+        const MasteryMonsterLoleNBookComma = USformatter.format(number10)
 
-        const number11 = totalDustedLuziaLoleYCutoutWCResult;
-        const DustedLuziaLoleYCutoutWCComma = USformatter.format(number11)
+        const number11 = totalResourcesCutoutLoleY;
+        const LoleYCutoutResourcesComma = USformatter.format(number11)
 
-        const number12 = totalDustedLuziaLoleYMaskWCResult;
-        const DustedLuziaLoleYMaskWCComma = USformatter.format(number12)
+        const number12 = totalLoleYMaskWCResult;
+        const LoleYMaskWCComma = USformatter.format(number12)
 
-        const number13 = totalDustedLuziaLoleYStatueWC;
-        const DustedLuziaLoleYStatueWCComma = USformatter.format(number13)
+        const number13 = totalResourcesMaskLoleY;
+        const LoleYMaskResourcesComma = USformatter.format(number13)
+
+        const number14 = totalResourcesCutoutLoleN;
+        const LoleNCutoutResourcesComma = USformatter.format(number14)
+
+        const number15 = totalLoleNCutoutWCResult;
+        const LoleNCutoutWCComma = USformatter.format(number15)
         
+        const number16 = totalLoleNMaskWCResult;
+        const LoleNMaskWCComma = USformatter.format(number16)
 
 // END OF EQUATIONS SO FAR//
 
@@ -1322,7 +1662,7 @@ const totalNoanzaKirerfWCResult = (0+0)
             <Container><p>This page is for calculating a new mastery strategy on 4theWords: defeat small Aurilis creatures, make potions from their loot drops, 
               and use those potions to defeat large word count monsters. <br></br><br></br>
               You can use this page to estimate how many potions you can make from your current inventory or plan future mastery goals. <br></br><br></br>
-              <b>Note:</b> this strategy requires the companion DustedLuzia to convert potion ingredients.
+              <b>Note:</b> this strategy requires the companion Lole to convert potion ingredients.
               <br></br><br></br>
             </p>
             
@@ -1388,7 +1728,7 @@ const totalNoanzaKirerfWCResult = (0+0)
     </FormControl>
 </Container>}
 
-            <HStack><text ml='10px'>Do you have the companion</text> 
+            <HStack><text ml='10px'>Do you have </text> 
         <Image
         boxSize='3rem'
         borderRadius='full'
@@ -1441,7 +1781,6 @@ const totalNoanzaKirerfWCResult = (0+0)
       />      
       <span>over 2000 words</span></Button></WrapItem>
         </Wrap></Container></VStack>
-
 
         <Accordion allowMultiple w={350}>
   <AccordionItem>
@@ -1808,7 +2147,7 @@ const totalNoanzaKirerfWCResult = (0+0)
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/a/a2/Winter_Cordu_Wardrobe_Balloon.png/'
         mr='5px'
-      /> <Text fontSize='sm' align='center'>Statue<br></br>(5000 battles)</Text>
+      /> <Text fontSize='sm' align='center'>Balloon<br></br>(5000 battles)</Text>
       </VStack>
             </Button>
             </WrapItem>
@@ -1832,6 +2171,145 @@ const totalNoanzaKirerfWCResult = (0+0)
       <br></br>
     </AccordionPanel>
   </AccordionItem>
+  <AccordionItem>
+  <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='center' p={3}>
+        <Heading as='h3' size='lg'>Aurilis Monsters Already Fought</Heading>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+<Container align='center'>
+
+      <Box align='center' h='300px' overflowY='scroll'>
+        <Text fontSize='md' mb='12px'>
+        <i>
+          This section tells the site to skip over any small Aurilis mastery you may have already accomplished.<br></br>
+        </i>
+        </Text>
+
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/f7/OdysOdees.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Odees/Odys</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='Odees' onInput={(e) => handleOdeesChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/3/33/Musya.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Musya</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleMusyaChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>            
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/85/Quaruk.png'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Quaruk</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='Quaruk' onInput={(e) => handleQuarukChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>     
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/24/Knuff.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Knuff</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='Knuff' onInput={(e) => handleKnuffChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>     
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b2/Mibloom.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Mibloom</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='Mibloom' onInput={(e) => handleMibloomChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>     
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/65/Kinguz.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Kinguz</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='Kinguz' onInput={(e) => handleKinguzChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>     
+
+          </Box>
+          </Container>
+      <br></br>
+    </AccordionPanel>
+  </AccordionItem>
   </Accordion>
 
 
@@ -1841,13 +2319,13 @@ const totalNoanzaKirerfWCResult = (0+0)
   <Container align='center'>
     <VStack>
 <Text>How many <b>Dusted Luzia</b> have you already fought?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={9999} size='md' w='100px'>
-  <NumberInputField id='DustedLuziaCutout' onInput={(e) => handleDustedLuziaChange(e.target.value)} />
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='MasteryMonsterHowMany' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
 </NumberInput>
 </VStack>
 </Container>
 }  
-}
+
 
 
 
@@ -2133,57 +2611,63 @@ const totalNoanzaKirerfWCResult = (0+0)
           borderRadius='full'
           src='https://static.wikia.nocookie.net/4thewords/images/6/6b/Dusted_Luzia.png'
         />
-        {DustedLuziaIsShown && CutoutIsShown &&
-          <Text fontSize='lg' textAlign='center'><b>Dusted Luzia</b><br></br>8160 words<br></br># to Fight: {totalDustedLuziaCutout}</Text>}
+        {DustedLuziaIsShown &&
+          <Text fontSize='lg' textAlign='center'><b>Dusted Luzia</b><br></br>8160 words<br></br></Text>}
+          {DustedLuziaIsShown && CutoutIsShown &&<Text># to Fight: {totalMasteryMonsterCutout}</Text>}
         {DustedLuziaIsShown && MaskIsShown &&
-          <Text fontSize='lg' textAlign='center'><b>Dusted Luzia</b><br></br>8160 words<br></br># to Fight: {totalDustedLuziaMask}</Text>}
+          <Text fontSize='lg' textAlign='center'># to Fight: {totalMasteryMonsterMask}</Text>}
         {DustedLuziaIsShown && StatueIsShown &&
-          <Text fontSize='lg' textAlign='center'><b>Dusted Luzia</b><br></br>8160 words<br></br># to Fight: {totalDustedLuziaStatue}</Text>}
+          <Text fontSize='lg' textAlign='center'># to Fight: {totalMasteryMonsterStatue}</Text>}
         {DustedLuziaIsShown && BalloonIsShown &&
-          <Text fontSize='lg' textAlign='center'><b>Dusted Luzia</b><br></br>8160 words<br></br># to Fight: {totalDustedLuziaBalloon}</Text>}
+          <Text fontSize='lg' textAlign='center'># to Fight: {totalMasteryMonsterBalloon}</Text>}
         {DustedLuziaIsShown && BookIsShown &&
-          <Text fontSize='lg' textAlign='center'><b>Dusted Luzia</b><br></br>8160 words<br></br># to Fight: {DustedLuziaBookComma}</Text>}
+          <Text fontSize='lg' textAlign='center'># to Fight: {MasteryMonsterBookComma}</Text>}
 
           <Divider w='250px' />
           <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
           {DustedLuziaIsShown && CutoutIsShown && LoleYActive &&
-          <Text fontSize='md' textAlign='center'>{DustedLuziaLoleYCutoutComma}</Text>}
+          <Text fontSize='md' textAlign='center'>{LoleYCutoutResourcesComma}</Text>}
         {DustedLuziaIsShown && MaskIsShown && LoleYActive &&
-          <Text fontSize='md' textAlign='center'>{DustedLuziaLoleYMaskComma}</Text>}
+          <Text fontSize='md' textAlign='center'>{LoleYMaskResourcesComma}</Text>}
         {DustedLuziaIsShown && StatueIsShown && LoleYActive &&
-          <Text fontSize='md' textAlign='center'>{DustedLuziaLoleYStatueComma}</Text>}
+          <Text fontSize='md' textAlign='center'>{MasteryMonsterLoleYStatueComma}</Text>}
         {DustedLuziaIsShown && BalloonIsShown && LoleYActive &&
-          <Text fontSize='md' textAlign='center'>{DustedLuziaLoleYBalloonComma}</Text>}
+          <Text fontSize='md' textAlign='center'>{MasteryMonsterLoleYBalloonComma}</Text>}
         {DustedLuziaIsShown && BookIsShown && LoleYActive &&
-          <Text fontSize='md' textAlign='center'>{DustedLuziaLoleYBookComma}</Text>}
+          <Text fontSize='md' textAlign='center'>{MasteryMonsterLoleYBookComma}</Text>}
 
         {DustedLuziaIsShown && CutoutIsShown && LoleNActive &&
-          <Text fontSize='md' textAlign='center'>{DustedLuziaLoleNCutoutComma}</Text>}
+          <Text fontSize='md' textAlign='center'>{LoleNCutoutResourcesComma}</Text>}
         {DustedLuziaIsShown && MaskIsShown && LoleNActive &&
-          <Text fontSize='md' textAlign='center'>{DustedLuziaLoleNMaskComma}</Text>}
+          <Text fontSize='md' textAlign='center'>{MasteryMonsterLoleNMaskComma}</Text>}
         {DustedLuziaIsShown && StatueIsShown && LoleNActive &&
-          <Text fontSize='md' textAlign='center'>{DustedLuziaLoleNStatueComma}</Text>}
+          <Text fontSize='md' textAlign='center'>{MasteryMonsterLoleNStatueComma}</Text>}
         {DustedLuziaIsShown && BalloonIsShown && LoleNActive &&
-          <Text fontSize='md' textAlign='center'>{DustedLuziaLoleNBalloonComma}</Text>}
+          <Text fontSize='md' textAlign='center'>{MasteryMonsterLoleNBalloonComma}</Text>}
         {DustedLuziaIsShown && BookIsShown && LoleNActive &&
-          <Text fontSize='md' textAlign='center'>{DustedLuziaLoleNBookComma}</Text>}
+          <Text fontSize='md' textAlign='center'>{MasteryMonsterLoleNBookComma}</Text>}
 
           </Text>
           <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
 
 {DustedLuziaIsShown && LoleYIsShown && CutoutIsShown &&
           <Text fontSize='md' textAlign='center'>
-          {DustedLuziaLoleYCutoutWCComma}<br></br>
+          {LoleYCutoutWCComma}<br></br>
           </Text>}
 
           {DustedLuziaIsShown && LoleYIsShown && MaskIsShown &&
           <Text fontSize='md' textAlign='center'>
-            {DustedLuziaLoleYMaskWCComma}<br></br>
+            {LoleYMaskWCComma}<br></br>
           </Text>}
 
-          {DustedLuziaIsShown && LoleYIsShown && StatueIsShown &&
+          {DustedLuziaIsShown && LoleNIsShown && CutoutIsShown &&
           <Text fontSize='md' textAlign='center'>
-            {DustedLuziaLoleYStatueWCComma}<br></br>
+            {LoleNCutoutWCComma}<br></br>
+          </Text>}
+
+          {DustedLuziaIsShown && LoleNIsShown && MaskIsShown &&
+          <Text fontSize='md' textAlign='center'>
+            {LoleNMaskWCComma}<br></br>
           </Text>}
 
           </Text>
@@ -2217,7 +2701,6 @@ const totalNoanzaKirerfWCResult = (0+0)
 <Td><Stat>
   <StatLabel>Total Word Count with Attack</StatLabel>
   <StatNumber>
-  {LoleNIsShown && GrenadeIsShown && <text align='center'>{0}</text>}
   </StatNumber>
 </Stat></Td></Tr>
 </Tbody>
@@ -2234,6 +2717,7 @@ const totalNoanzaKirerfWCResult = (0+0)
 <Box as="span" flex='1' textAlign='center' padding-top={3}>
         <Text><b>Monsters to Fight</b></Text>
         </Box>
+
         <Container>
         <TableContainer>
   <Table variant='unstyled' maxW={20} align='center'>
@@ -2246,10 +2730,15 @@ const totalNoanzaKirerfWCResult = (0+0)
         align='center' 
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/5/59/Aakulta.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/f7/OdysOdees.png/'
         mr='5px'
-      /> <Text fontSize='lg' align='center'>Aakulta</Text>
-      {BlastIsShown && <text align='center'>0</text>}</VStack>
+      /> <Text fontSize='lg' align='center'>Odees</Text>
+      {CutoutIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalFinalOdees}</text>}
+      {MaskIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalFinalOdeesMask}</text>}
+
+      {CutoutIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalFinalOdeesLoleN}      </text>}
+      {MaskIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalFinalOdeesLoleNMask}      </text>}
+      </VStack>
   </Box>
         </Td>
         <Td>
@@ -2259,10 +2748,15 @@ const totalNoanzaKirerfWCResult = (0+0)
         align='center'
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/2/23/Ardid.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/3/33/Musya.png/'
         mr='5px'
-      /> <Text fontSize='lg' align='center'>Ardid</Text>
-      {BlastIsShown && <text align='center'>{0}</text>}</VStack>
+      /> <Text fontSize='lg' align='center'>Musya</Text>
+      {CutoutIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalActualMusya}</text>}
+      {MaskIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalActualMusyaMask}</text>}
+
+      {CutoutIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalActualMusyaLoleN}</text>}
+      {MaskIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalActualMusyaMaskLoleN}</text>}
+      </VStack>
   </Box>
         </Td>
         <Td>
@@ -2272,20 +2766,92 @@ const totalNoanzaKirerfWCResult = (0+0)
        align='center'
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/c/c5/Arluzi.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/85/Quaruk.png'
         mr='5px'
-      /> <Text fontSize='lg' align='center'>Arluzi</Text>
-      {BlastIsShown && <text align='center'>{0}</text>}
+      /> <Text fontSize='lg' align='center'>Quaruk</Text>
+      {CutoutIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalActualQuaruk}</text>}
+      {MaskIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalActualQuarukMask}</text>}
+
+      {CutoutIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalActualQuarukLoleN}</text>}
+      {MaskIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalActualQuarukMaskLoleN}      </text>}
       </VStack>
   </Box>
         </Td>
       </Tr>    
+
+      <Tr>
+        <Td>
+        <Box w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/24/Knuff.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Knuff</Text>
+      {CutoutIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalActualKnuff}</text>}
+      {MaskIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalActualKnuffMask}</text>}
+
+      {CutoutIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalActualKnuffLoleN}</text>}
+      {MaskIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalActualKnuffMaskLoleN}</text>}
+      </VStack>
+  </Box>
+        </Td>
+        <Td>
+        <Box justify='center' w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b2/Mibloom.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Mibloom</Text>
+      {CutoutIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalActualMibloomAdjusted}</text>}
+      {MaskIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMibloomMaskActual}</text>}
+
+      {CutoutIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalActualMibloomLoleNAdjusted}</text>}
+      {MaskIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMibloomMaskLoleNActual}
+      </text>}
+      </VStack>
+  </Box>
+        </Td>
+        <Td>
+        <Box justify='center' w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+       align='center'
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/65/Kinguz.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Kinguz</Text>
+      {CutoutIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalActualKinguz}      </text>}
+      {MaskIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalActualKinguzMask}</text>}
+
+      {CutoutIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalActualKinguzLoleN}      </text>}
+      {MaskIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalActualKinguzMaskLoleN}</text>}
+      </VStack>
+  </Box>
+        </Td>
+      </Tr>    
+
     </Tbody>
   </Table>
 </TableContainer>
-</Container>
-        
-        
+</Container> 
+ 
+      
+
+
+
+
+
+
+     
+        <br></br>
+        <br></br>
         </Container>
 <br></br><br></br>
 
