@@ -2315,7 +2315,8 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
       <span>over 2000 words</span></Button></WrapItem>
         </Wrap></Container></VStack>
 
-        <Accordion allowMultiple w={350}>
+{BlastIsShown &&
+<Accordion allowMultiple w={350}>
   <AccordionItem>
   <h2>
       <AccordionButton>
@@ -2843,7 +2844,7 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
       <br></br>
     </AccordionPanel>
   </AccordionItem>
-  </Accordion>
+  </Accordion>}
 
   {TesvenIsShown && BlastIsShown && 
   <Container align='center'>
@@ -3167,6 +3168,7 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
 <Spacer></Spacer>
           </VStack>
 <Divider />
+{BlastIsShown &&
 <Container>
 <br></br>
 <Heading>Quick View</Heading><br></br>
@@ -3174,7 +3176,9 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
 
 <Container align='center'>
 
-{BlastIsShown && 
+{BlastIsShown && !VelsounIsShown && !AlphaTamboIsShown && !TareitIsShown &&
+!BabuIsShown && !RakstalIsShown && !ShamanLuziaIsShown && !MiclanIsShown &&
+!KingMaiIsShown && !DustedLuziaIsShown && !DustyKingMaiIsShown &&
 <Box rounded='lg'  w='290px' h='605px' pb={5} style={{ backgroundColor: 
 TesvenActive ? "#15391E" : "#1A202C" &&
 AzadiActive ? "#2b0707" : "#1A202C" &&
@@ -4565,6 +4569,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 </TableContainer>
 </Container> 
 
+{BlastIsShown && !VelsounIsShown && !AlphaTamboIsShown && !TareitIsShown &&
+!BabuIsShown && !RakstalIsShown && !ShamanLuziaIsShown && !MiclanIsShown &&
+!KingMaiIsShown && !DustedLuziaIsShown && !DustyKingMaiIsShown &&
 <Container>
         <Text><b>Farm for Coins</b></Text>
         <TableContainer>
@@ -4590,7 +4597,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     </Tbody>
   </Table>
 </TableContainer>
-</Container> 
+</Container> }
  
       
 {NullIsShown &&
@@ -4627,7 +4634,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
      
         <br></br>
         <br></br>
-        </Container>
+        </Container>}
 <br></br><br></br>
 
         </Grid>
