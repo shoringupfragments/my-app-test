@@ -1272,6 +1272,13 @@ const handleYSSChange = (valueString) => {
                   setCoins(value);
                 };
 
+                const [Roberries, setRoberries] = useState(0); // Or any other non-zero value
+
+                const handleRoberriesChange = (valueString) => {
+                  const value = parseFloat(valueString);
+                    setRoberries(value);
+                  };
+
 // experiment ?? //
 
 const [MasteryMonster, setMasteryMonster] = useState(0); // Or any other non-zero value
@@ -1670,6 +1677,31 @@ const totalNoBattleCostMonsterLoleNCutoutWC = Math.max (totalLoleNCutoutWC + tot
 const [NoBattleCostMonsterLoleNMaskWC, setNoBattleCostMonsterLoleNMaskWC] = useState(0);
 const totalNoBattleCostMonsterLoleNMaskWC = Math.max (totalLoleNMaskWC + totalLoleBothMaskPotionCostWC,0)
 
+
+//ALPHA TAMBO BATTLE COST - CUTOUT & MASK//
+const [RoberriesCutoutAT, setRoberriesCutoutAT] = useState(0);
+const totalRoberriesCutoutAT = Math.max ((totalMasteryMonsterCutout*5)-Roberries,0)
+
+const [RoberriesMaskAT, setRoberriesMaskAT] = useState(0);
+const totalRoberriesMaskAT = Math.max ((totalMasteryMonsterMask*5)-Roberries,0)
+
+const [WizellWCCutoutAT, setWizellWCCutoutAT] = useState(0);
+const totalWizellWCCutoutAT = Math.max (totalRoberriesCutoutAT*180,0)
+
+const [WizellWCMaskAT, setWizellWCMaskAT] = useState(0);
+const totalWizellWCMaskAT = Math.max (totalRoberriesMaskAT*180,0)
+
+const [WCAlphaTamboCutoutLoleY, setWCAlphaTamboCutoutLoleY] = useState(0);
+const totalWCAlphaTamboCutoutLoleY = Math.max (totalLoleYCutoutWC + totalWizellWCCutoutAT,0)
+
+const [WCAlphaTamboCutoutLoleN, setWCAlphaTamboCutoutLoleN] = useState(0);
+const totalWCAlphaTamboCutoutLoleN = Math.max (totalLoleNCutoutWC + totalWizellWCCutoutAT,0)
+
+const [WCAlphaTamboMaskLoleY, setWCAlphaTamboMaskLoleY] = useState(0);
+const totalWCAlphaTamboMaskLoleY = Math.max (totalLoleYMaskWC + totalWizellWCMaskAT,0)
+
+const [WCAlphaTamboMaskLoleN, setWCAlphaTamboMaskLoleN] = useState(0);
+const totalWCAlphaTamboMaskLoleN = Math.max (totalLoleNMaskWC + totalWizellWCMaskAT,0)
 
 
 //DUSTED LUZIA BATTLE COST - CUTOUT - //
@@ -2183,6 +2215,18 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
 
         const number57 = totalNoBattleCostMonsterLoleNMaskWC;
         const TotalLoleNMaskWCComma = USformatter.format(number57)
+
+        const number58 = totalWCAlphaTamboCutoutLoleY;
+        const TotalLoleYCutoutAlphaTamboWCComma = USformatter.format(number58)
+
+        const number59 = totalWCAlphaTamboCutoutLoleN;
+        const TotalLoleNCutoutAlphaTamboWCComma = USformatter.format(number59)
+
+        const number60 = totalWCAlphaTamboMaskLoleY;
+        const TotalLoleYMaskAlphaTamboWCComma = USformatter.format(number60)
+
+        const number61 = totalWCAlphaTamboMaskLoleN;
+        const TotalLoleNMaskAlphaTamboWCComma = USformatter.format(number61)
 
 // END OF EQUATIONS SO FAR//
 
@@ -2854,7 +2898,7 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
   <NumberInputField id='MasteryMonsterHowMany' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
 </NumberInput>
 <Text mt='12px'>How many <b>Coins</b> do you already have?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
   <NumberInputField id='CoinsHowMany' onInput={(e) => handleCoinsChange(e.target.value)} />
 </NumberInput>
 </VStack>
@@ -2868,7 +2912,7 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
   <NumberInputField id='MasteryMonsterHowMany' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
 </NumberInput>
 <Text mt='12px'>How many <b>Coins</b> do you already have?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
   <NumberInputField id='CoinsHowMany' onInput={(e) => handleCoinsChange(e.target.value)} />
 </NumberInput>
 </VStack>
@@ -2882,7 +2926,7 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
   <NumberInputField id='MasteryMonsterHowMany' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
 </NumberInput>
 <Text mt='12px'>How many <b>Coins</b> do you already have?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
   <NumberInputField id='CoinsHowMany' onInput={(e) => handleCoinsChange(e.target.value)} />
 </NumberInput>
 </VStack>
@@ -2896,7 +2940,7 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
   <NumberInputField id='MasteryMonsterHowMany' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
 </NumberInput>
 <Text mt='12px'>How many <b>Coins</b> do you already have?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
   <NumberInputField id='CoinsHowMany' onInput={(e) => handleCoinsChange(e.target.value)} />
 </NumberInput>
 </VStack>
@@ -2910,7 +2954,7 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
   <NumberInputField id='MasteryMonsterHowMany' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
 </NumberInput>
 <Text mt='12px'>How many <b>Coins</b> do you already have?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
   <NumberInputField id='CoinsHowMany' onInput={(e) => handleCoinsChange(e.target.value)} />
 </NumberInput>
 </VStack>
@@ -2924,7 +2968,7 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
   <NumberInputField id='MasteryMonsterHowMany' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
 </NumberInput>
 <Text mt='12px'>How many <b>Coins</b> do you already have?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
   <NumberInputField id='CoinsHowMany' onInput={(e) => handleCoinsChange(e.target.value)} />
 </NumberInput>
 </VStack>
@@ -2938,7 +2982,7 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
   <NumberInputField id='MasteryMonsterHowMany' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
 </NumberInput>
 <Text mt='12px'>How many <b>Coins</b> do you already have?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
   <NumberInputField id='CoinsHowMany' onInput={(e) => handleCoinsChange(e.target.value)} />
 </NumberInput>
 </VStack>
@@ -2952,7 +2996,7 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
   <NumberInputField id='MasteryMonsterHowMany' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
 </NumberInput>
 <Text mt='12px'>How many <b>Coins</b> do you already have?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
   <NumberInputField id='CoinsHowMany' onInput={(e) => handleCoinsChange(e.target.value)} />
 </NumberInput>
 </VStack>
@@ -2966,11 +3010,29 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
   <NumberInputField id='MasteryMonsterHowMany' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
 </NumberInput>
 <Text mt='12px'>How many <b>Coins</b> do you already have?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
   <NumberInputField id='CoinsHowMany' onInput={(e) => handleCoinsChange(e.target.value)} />
 </NumberInput>
 </VStack>
 </Container>}
+
+
+{AlphaTamboIsShown && BlastIsShown && 
+  <Container align='center'>
+    <VStack>
+<Text>How many <b>Alpha Tambo</b> have you already fought?</Text><br></br>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='MasteryMonsterHowMany' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
+</NumberInput>
+
+<Text><b>Alpha Tambo</b> has a battle cost (5 Roberries), which can only be gathered 
+through battling creatures. How many <b>Roberries</b> do you already have?<br></br></Text>
+<NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='CoinsHowMany' onInput={(e) => handleRoberriesChange(e.target.value)} />
+</NumberInput>
+</VStack>
+</Container>}
+
 
   {DustedLuziaIsShown && BlastIsShown && 
   <Container align='center'>
@@ -3756,7 +3818,189 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           </VStack>
             </Box>}
 
+{AlphaTamboIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown && 
+<Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: AlphaTamboActive ? "#512F30" : "#2D3748" }}>
+       <VStack>
+       <Box mr='220px' mb='225px'>
+        <Image
+        position='absolute'
+         mt="70px"
+         ml='54px'
+        align='center' 
+        boxSize='7.5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/6d/Alpha_Tambo.png/'
+      />
+              <Image
+        position='absolute'
+         mt="12px"
+        align='center' 
+        boxSize='14rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/64/GoldBadge.png/'
+      />
+      </Box>
+        <Text fontSize='lg' textAlign='center'><b>Alpha Tambo</b><br></br>
+        # to Fight: {totalMasteryMonsterCutout}</Text>
+        <Text fontSize='lg' textAlign='center'>
+            Total Word Count:<br></br>{TotalLoleYCutoutAlphaTamboWCComma}
+          </Text>
+        <Divider w='250px' />
+        <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
+        {LoleYCutoutResourcesComma}</Text>
+        <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
+        {LoleYCutoutWCComma}
+        </Text>
+        <Divider mt='3px' w='250px' />
+        
+        <Text fontSize='md'><b>Battle Cost:</b><br></br> {totalRoberriesCutoutAT} Roberries</Text>
 
+
+        <Divider mt='3px' w='250px' />
+        <Text fontSize='md'><b>Coin Cost:<br></br></b>{TotalLoleBothCutoutPotionCostComma} coins
+          <br></br></Text>
+        <Text fontSize='md'><b>Monster Word Count:</b><br></br>
+          {TotalLoleBothCutoutPotionCostWCComma}</Text>
+          </VStack>
+            </Box>}
+
+{AlphaTamboIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown && 
+<Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: AlphaTamboActive ? "#512F30" : "#2D3748" }}>
+       <VStack>
+       <Box mr='220px' mb='225px'>
+        <Image
+        position='absolute'
+         mt="70px"
+         ml='54px'
+        align='center' 
+        boxSize='7.5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/6d/Alpha_Tambo.png/'
+      />
+              <Image
+        position='absolute'
+         mt="12px"
+        align='center' 
+        boxSize='14rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/64/GoldBadge.png/'
+      />
+      </Box>
+        <Text fontSize='lg' textAlign='center'><b>Alpha Tambo</b><br></br>
+        # to Fight: {totalMasteryMonsterCutout}</Text>
+        <Text fontSize='lg' textAlign='center'>
+            Total Word Count:<br></br>{TotalLoleNCutoutAlphaTamboWCComma}
+          </Text>
+        <Divider w='250px' />
+        <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
+        {LoleYCutoutResourcesComma}</Text>
+        <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
+        {LoleYCutoutWCComma}
+        </Text>
+        <Divider mt='3px' w='250px' />
+        
+        <Text fontSize='md'><b>Battle Cost:</b><br></br> {totalRoberriesCutoutAT} Roberries</Text>
+
+
+        <Divider mt='3px' w='250px' />
+        <Text fontSize='md'><b>Coin Cost:<br></br></b>{TotalLoleBothCutoutPotionCostComma} coins
+          <br></br></Text>
+        <Text fontSize='md'><b>Monster Word Count:</b><br></br>
+          {TotalLoleBothCutoutPotionCostWCComma}</Text>
+          </VStack>
+            </Box>}
+
+{AlphaTamboIsShown && BlastIsShown && LoleYIsShown && MaskIsShown && 
+<Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: AlphaTamboActive ? "#512F30" : "#2D3748" }}>
+       <VStack>
+       <Box mr='220px' mb='225px'>
+        <Image
+        position='absolute'
+         mt="70px"
+         ml='54px'
+        align='center' 
+        boxSize='7.5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/6d/Alpha_Tambo.png/'
+      />
+              <Image
+        position='absolute'
+         mt="12px"
+        align='center' 
+        boxSize='14rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/fd/LightBadge.png/'
+      />
+      </Box>
+        <Text fontSize='lg' textAlign='center'><b>Alpha Tambo</b><br></br>
+        # to Fight: {totalMasteryMonsterMask}</Text>
+        <Text fontSize='lg' textAlign='center'>
+            Total Word Count:<br></br>{TotalLoleYMaskAlphaTamboWCComma}
+          </Text>
+        <Divider w='250px' />
+        <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
+        {LoleYMaskResourcesComma}</Text>
+        <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
+        {LoleYMaskWCComma}
+        </Text>
+        <Divider mt='3px' w='250px' />
+        
+        <Text fontSize='md'><b>Battle Cost:</b><br></br> {totalRoberriesMaskAT} Roberries</Text>
+
+
+        <Divider mt='3px' w='250px' />
+        <Text fontSize='md'><b>Coin Cost:<br></br></b>{TotalLoleBothMaskPotionCostComma} coins
+          <br></br></Text>
+        <Text fontSize='md'><b>Monster Word Count:</b><br></br>
+          {TotalLoleBothMaskPotionCostWCComma}</Text>
+          </VStack>
+            </Box>}
+
+{AlphaTamboIsShown && BlastIsShown && LoleNIsShown && MaskIsShown && 
+<Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: AlphaTamboActive ? "#512F30" : "#2D3748" }}>
+       <VStack>
+       <Box mr='220px' mb='225px'>
+        <Image
+        position='absolute'
+         mt="70px"
+         ml='54px'
+        align='center' 
+        boxSize='7.5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/6d/Alpha_Tambo.png/'
+      />
+              <Image
+        position='absolute'
+         mt="12px"
+        align='center' 
+        boxSize='14rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/fd/LightBadge.png/'
+      />
+      </Box>
+        <Text fontSize='lg' textAlign='center'><b>Alpha Tambo</b><br></br>
+        # to Fight: {totalMasteryMonsterMask}</Text>
+        <Text fontSize='lg' textAlign='center'>
+            Total Word Count:<br></br>{TotalLoleNMaskAlphaTamboWCComma}
+          </Text>
+        <Divider w='250px' />
+        <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
+        {LoleNMaskResourcesComma}</Text>
+        <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
+        {LoleNMaskWCComma}
+        </Text>
+        <Divider mt='3px' w='250px' />
+        
+        <Text fontSize='md'><b>Battle Cost:</b><br></br> {totalRoberriesMaskAT} Roberries</Text>
+
+
+        <Divider mt='3px' w='250px' />
+        <Text fontSize='md'><b>Coin Cost:<br></br></b>{TotalLoleBothMaskPotionCostComma} coins
+          <br></br></Text>
+        <Text fontSize='md'><b>Monster Word Count:</b><br></br>
+          {TotalLoleBothMaskPotionCostWCComma}</Text>
+          </VStack>
+            </Box>}
 
 
 {DustedLuziaIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown && CoinsIsShown &&
@@ -4573,7 +4817,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 !BabuIsShown && !RakstalIsShown && !ShamanLuziaIsShown && !MiclanIsShown &&
 !KingMaiIsShown && !DustedLuziaIsShown && !DustyKingMaiIsShown &&
 <Container>
-        <Text><b>Farm for Coins</b></Text>
+        <Text mt='12px'><b>Farm for Coins</b></Text>
         <TableContainer>
   <Table variant='unstyled' maxW={20} align='center'>
     <Tbody>
@@ -4598,11 +4842,10 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
   </Table>
 </TableContainer>
 </Container> }
- 
-      
-{NullIsShown &&
+
+{AlphaTamboIsShown && 
 <Container>
-        <Text><b>Battle Cost</b></Text>
+        <Text mt='12px'><b>Battle Cost</b></Text>
         <TableContainer>
   <Table variant='unstyled' maxW={20} align='center'>
     <Tbody>
@@ -4616,9 +4859,98 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/4/40/Kuikas.png/'
         mr='5px'
-      /> <Text fontSize='lg' align='center'>should be hidden</Text>
+      /> <Text fontSize='lg' align='center'>Kuikas</Text>
       {CutoutIsShown && BlastIsShown && <text align='center'>{totalLoleBothCutoutKuikas}</text>}
       {MaskIsShown && BlastIsShown && <text align='center'>{totalLoleBothMaskKuikas}</text>}
+      </VStack>
+  </Box>
+        </Td>
+        <Td>
+        <Box w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/f1/Wizell.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Wizell</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalRoberriesCutoutAT}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalRoberriesMaskAT}</text>}
+      </VStack>
+  </Box>
+        </Td>
+      </Tr>    
+
+    </Tbody>
+  </Table>
+</TableContainer>
+</Container> } 
+      
+{DustedLuziaIsShown && CoinsIsShown &&
+<Container>
+        <Text mt='12px'><b>Battle Cost</b></Text>
+        <TableContainer>
+  <Table variant='unstyled' maxW={20} align='center'>
+    <Tbody>
+      <Tr>
+        <Td>
+        <Box w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/40/Kuikas.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Kuikas</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalKuikasCoinsCutoutDL}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalKuikasCoinsMaskDL}</text>}
+      </VStack>
+  </Box>
+        </Td>
+      </Tr>    
+
+    </Tbody>
+  </Table>
+</TableContainer>
+</Container> }
+
+
+{DustedLuziaIsShown && ComboIsShown &&
+<Container>
+        <Text mt='12px'><b>Battle Cost</b></Text>
+        <TableContainer>
+  <Table variant='unstyled' maxW={20} align='center'>
+    <Tbody>
+      <Tr>
+        <Td>
+        <Box w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/40/Kuikas.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Kuikas</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalKuikasFarmComboCutoutDL}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalKuikasFarmComboMaskDL}</text>}
+      </VStack>
+  </Box>
+        </Td>
+        <Td>
+        <Box w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/26/Jeso.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Jeso</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalJesoNeededCutoutDL}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalJesoNeededMaskDL}</text>}
       </VStack>
   </Box>
         </Td>
@@ -4629,7 +4961,98 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 </Container> }
 
 
+{DustedLuziaIsShown && BattleIsShown &&
+<Container>
+        <Text mt='12px'><b>Battle Cost</b></Text>
+        <TableContainer>
+  <Table variant='unstyled' maxW={20} align='center'>
+    <Tbody>
+      <Tr>
+        <Td>
+        <Box w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/40/Kuikas.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Kuikas</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalKuikasFarmBattleCutoutDL}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalKuikasFarmBattleMaskDL}</text>}
+      </VStack>
+  </Box>
+        </Td>
+    
+        <Td>
+        <Box w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/60/Jaaje.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Jaaje</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalHWCutoutDL}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalHWMaskDL}</text>}
+      </VStack>
+  </Box>
+        </Td>
+        <Td>
+        <Box w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/0/0e/Olea.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Olea</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalRGBattleCutoutDL}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalRGBattleMaskDL}</text>}
+      </VStack>
+  </Box>
+        </Td>
+      </Tr>    
 
+      <Tr>
+        <Td>
+        <Box w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Scofin.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Scofin</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalScofinSteelCutoutDL}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalScofinSteelMaskDL}</text>}
+      </VStack>
+  </Box>
+        </Td>
+        <Td>
+        <Box w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/78/Xin.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Xin</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalLeavesNeededCutoutDL}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalLeavesNeededMaskDL}</text>}
+      </VStack>
+  </Box>
+        </Td>
+      </Tr>    
+
+    </Tbody>
+  </Table>
+</TableContainer>
+</Container> }
 
      
         <br></br>
