@@ -1279,6 +1279,13 @@ const handleYSSChange = (valueString) => {
                     setRoberries(value);
                   };
 
+                  const [SwampMoss, setSwampMoss] = useState(0); // Or any other non-zero value
+
+                  const handleSwampMossChange = (valueString) => {
+                    const value = parseFloat(valueString);
+                      setSwampMoss(value);
+                    };
+  
 // experiment ?? //
 
 const [MasteryMonster, setMasteryMonster] = useState(0); // Or any other non-zero value
@@ -1702,6 +1709,31 @@ const totalWCAlphaTamboMaskLoleY = Math.max (totalLoleYMaskWC + totalWizellWCMas
 
 const [WCAlphaTamboMaskLoleN, setWCAlphaTamboMaskLoleN] = useState(0);
 const totalWCAlphaTamboMaskLoleN = Math.max (totalLoleNMaskWC + totalWizellWCMaskAT,0)
+
+//RAKSTAL BATTLE COST - CUTOUT & MASK//
+const [SwampMossCutoutRakstal, setSwampMossCutoutRakstal] = useState(0);
+const totalSwampMossCutoutRakstal = Math.max ((totalMasteryMonsterCutout*2)-SwampMoss,0)
+
+const [SwampMossMaskRakstal, setSwampMossMaskRakstal] = useState(0);
+const totalSwampMossMaskRakstal = Math.max ((totalMasteryMonsterMask*2)-SwampMoss,0)
+
+const [HeliodaeWCCutoutRakstal, setHeliodaeWCCutoutRakstal] = useState(0);
+const totalHeliodaeWCCutoutRakstal = Math.max (totalSwampMossCutoutRakstal*120,0)
+
+const [HeliodaeWCMaskRakstal, setHeliodaeWCMaskRakstal] = useState(0);
+const totalHeliodaeWCMaskRakstal = Math.max (totalSwampMossMaskRakstal*120,0)
+
+const [WCRakstalCutoutLoleY, setWCRakstalCutoutLoleY] = useState(0);
+const totalWCRakstalCutoutLoleY = Math.max (totalLoleYCutoutWC + totalHeliodaeWCCutoutRakstal,0)
+
+const [WCRakstalCutoutLoleN, setWCRakstalCutoutLoleN] = useState(0);
+const totalWCRakstalCutoutLoleN = Math.max (totalLoleNCutoutWC + totalHeliodaeWCCutoutRakstal,0)
+
+const [WCRakstalMaskLoleY, setWCRakstalMaskLoleY] = useState(0);
+const totalWCRakstalMaskLoleY = Math.max (totalLoleYMaskWC + totalHeliodaeWCMaskRakstal,0)
+
+const [WCRakstalMaskLoleN, setWCRakstalMaskLoleN] = useState(0);
+const totalWCRakstalMaskLoleN = Math.max (totalLoleNMaskWC + totalHeliodaeWCMaskRakstal,0)
 
 
 //DUSTED LUZIA BATTLE COST - CUTOUT - //
@@ -2227,6 +2259,18 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
 
         const number61 = totalWCAlphaTamboMaskLoleN;
         const TotalLoleNMaskAlphaTamboWCComma = USformatter.format(number61)
+
+        const number62 = totalWCRakstalCutoutLoleY;
+        const TotalLoleYCutoutRakstalWCComma = USformatter.format(number62)
+
+        const number63 = totalWCRakstalCutoutLoleN;
+        const TotalLoleNCutoutRakstalWCComma = USformatter.format(number63)
+
+        const number64 = totalWCRakstalMaskLoleY;
+        const TotalLoleYMaskRakstalWCComma = USformatter.format(number64)
+
+        const number65 = totalWCRakstalMaskLoleN;
+        const TotalLoleNMaskRakstalWCComma = USformatter.format(number65)
 
 // END OF EQUATIONS SO FAR//
 
@@ -3029,6 +3073,23 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
 through battling creatures. How many <b>Roberries</b> do you already have?<br></br></Text>
 <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
   <NumberInputField id='CoinsHowMany' onInput={(e) => handleRoberriesChange(e.target.value)} />
+</NumberInput>
+</VStack>
+</Container>}
+
+
+{RakstalIsShown && BlastIsShown && 
+  <Container align='center'>
+    <VStack>
+<Text>How many <b>Rakstal</b> have you already fought?</Text><br></br>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='MasteryMonsterHowMany' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
+</NumberInput>
+
+<Text><b>Rakstal</b> has a battle cost (2 Swamp Moss), which can only be gathered 
+through battling creatures. How many <b>Swamp Moss</b> do you already have?<br></br></Text>
+<NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='CoinsHowMany' onInput={(e) => handleSwampMossChange(e.target.value)} />
 </NumberInput>
 </VStack>
 </Container>}
@@ -4003,6 +4064,191 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             </Box>}
 
 
+{RakstalIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown && 
+<Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: RakstalActive ? "#27445e" : "#2D3748" }}>
+       <VStack>
+       <Box mr='220px' mb='225px'>
+        <Image
+        position='absolute'
+         mt="70px"
+         ml='54px'
+        align='center' 
+        boxSize='7.5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/2f/Rakstal.png'
+      />
+              <Image
+        position='absolute'
+         mt="12px"
+        align='center' 
+        boxSize='14rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/64/GoldBadge.png/'
+      />
+      </Box>
+        <Text fontSize='lg' textAlign='center'><b>Rakstal</b><br></br>
+        # to Fight: {totalMasteryMonsterCutout}</Text>
+        <Text fontSize='lg' textAlign='center'>
+            Total Word Count:<br></br>{TotalLoleYCutoutRakstalWCComma}
+          </Text>
+        <Divider w='250px' />
+        <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
+        {LoleYCutoutResourcesComma}</Text>
+        <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
+        {LoleYCutoutWCComma}
+        </Text>
+        <Divider mt='3px' w='250px' />
+        
+        <Text fontSize='md'><b>Battle Cost:</b><br></br> {totalSwampMossCutoutRakstal} Swamp Moss</Text>
+
+
+        <Divider mt='3px' w='250px' />
+        <Text fontSize='md'><b>Coin Cost:<br></br></b>{TotalLoleBothCutoutPotionCostComma} coins
+          <br></br></Text>
+        <Text fontSize='md'><b>Monster Word Count:</b><br></br>
+          {TotalLoleBothCutoutPotionCostWCComma}</Text>
+          </VStack>
+            </Box>}
+
+{RakstalIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown && 
+<Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: RakstalActive ? "#27445e" : "#2D3748" }}>
+       <VStack>
+       <Box mr='220px' mb='225px'>
+        <Image
+        position='absolute'
+         mt="70px"
+         ml='54px'
+        align='center' 
+        boxSize='7.5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/2f/Rakstal.png'
+      />
+              <Image
+        position='absolute'
+         mt="12px"
+        align='center' 
+        boxSize='14rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/64/GoldBadge.png/'
+      />
+      </Box>
+        <Text fontSize='lg' textAlign='center'><b>Rakstal</b><br></br>
+        # to Fight: {totalMasteryMonsterCutout}</Text>
+        <Text fontSize='lg' textAlign='center'>
+            Total Word Count:<br></br>{TotalLoleNCutoutRakstalWCComma}
+          </Text>
+        <Divider w='250px' />
+        <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
+        {LoleYCutoutResourcesComma}</Text>
+        <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
+        {LoleYCutoutWCComma}
+        </Text>
+        <Divider mt='3px' w='250px' />
+        
+        <Text fontSize='md'><b>Battle Cost:</b><br></br>{totalSwampMossCutoutRakstal} Swamp Moss</Text>
+
+
+        <Divider mt='3px' w='250px' />
+        <Text fontSize='md'><b>Coin Cost:<br></br></b>{TotalLoleBothCutoutPotionCostComma} coins
+          <br></br></Text>
+        <Text fontSize='md'><b>Monster Word Count:</b><br></br>
+          {TotalLoleBothCutoutPotionCostWCComma}</Text>
+          </VStack>
+            </Box>}
+
+{RakstalIsShown && BlastIsShown && LoleYIsShown && MaskIsShown && 
+<Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: RakstalActive ? "#27445e" : "#2D3748" }}>
+       <VStack>
+       <Box mr='220px' mb='225px'>
+        <Image
+        position='absolute'
+         mt="70px"
+         ml='54px'
+        align='center' 
+        boxSize='7.5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/2f/Rakstal.png'
+      />
+              <Image
+        position='absolute'
+         mt="12px"
+        align='center' 
+        boxSize='14rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/fd/LightBadge.png/'
+      />
+      </Box>
+        <Text fontSize='lg' textAlign='center'><b>Rakstal</b><br></br>
+        # to Fight: {totalMasteryMonsterMask}</Text>
+        <Text fontSize='lg' textAlign='center'>
+            Total Word Count:<br></br>{TotalLoleYMaskRakstalWCComma}
+          </Text>
+        <Divider w='250px' />
+        <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
+        {LoleYMaskResourcesComma}</Text>
+        <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
+        {LoleYMaskWCComma}
+        </Text>
+        <Divider mt='3px' w='250px' />
+        
+        <Text fontSize='md'><b>Battle Cost:</b><br></br>{totalSwampMossMaskRakstal} Swamp Moss</Text>
+
+
+        <Divider mt='3px' w='250px' />
+        <Text fontSize='md'><b>Coin Cost:<br></br></b>{TotalLoleBothMaskPotionCostComma} coins
+          <br></br></Text>
+        <Text fontSize='md'><b>Monster Word Count:</b><br></br>
+          {TotalLoleBothMaskPotionCostWCComma}</Text>
+          </VStack>
+            </Box>}
+
+{RakstalIsShown && BlastIsShown && LoleNIsShown && MaskIsShown && 
+<Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: RakstalActive ? "#27445e" : "#2D3748" }}>
+       <VStack>
+       <Box mr='220px' mb='225px'>
+        <Image
+        position='absolute'
+         mt="70px"
+         ml='54px'
+        align='center' 
+        boxSize='7.5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/2f/Rakstal.png'
+      />
+              <Image
+        position='absolute'
+         mt="12px"
+        align='center' 
+        boxSize='14rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/fd/LightBadge.png/'
+      />
+      </Box>
+        <Text fontSize='lg' textAlign='center'><b>Rakstal</b><br></br>
+        # to Fight: {totalMasteryMonsterMask}</Text>
+        <Text fontSize='lg' textAlign='center'>
+            Total Word Count:<br></br>{TotalLoleNMaskRakstalWCComma}
+          </Text>
+        <Divider w='250px' />
+        <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
+        {LoleNMaskResourcesComma}</Text>
+        <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
+        {LoleNMaskWCComma}
+        </Text>
+        <Divider mt='3px' w='250px' />
+        
+        <Text fontSize='md'><b>Battle Cost:</b><br></br>{totalSwampMossMaskRakstal} Swamp Moss</Text>
+
+
+        <Divider mt='3px' w='250px' />
+        <Text fontSize='md'><b>Coin Cost:<br></br></b>{TotalLoleBothMaskPotionCostComma} coins
+          <br></br></Text>
+        <Text fontSize='md'><b>Monster Word Count:</b><br></br>
+          {TotalLoleBothMaskPotionCostWCComma}</Text>
+          </VStack>
+            </Box>}
+
+
 {DustedLuziaIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown && CoinsIsShown &&
 <Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
        <VStack>
@@ -4877,6 +5123,51 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       /> <Text fontSize='lg' align='center'>Wizell</Text>
       {CutoutIsShown && BlastIsShown && <text align='center'>{totalRoberriesCutoutAT}</text>}
       {MaskIsShown && BlastIsShown && <text align='center'>{totalRoberriesMaskAT}</text>}
+      </VStack>
+  </Box>
+        </Td>
+      </Tr>    
+
+    </Tbody>
+  </Table>
+</TableContainer>
+</Container> } 
+
+
+{RakstalIsShown && 
+<Container>
+        <Text mt='12px'><b>Battle Cost</b></Text>
+        <TableContainer>
+  <Table variant='unstyled' maxW={20} align='center'>
+    <Tbody>
+      <Tr>
+        <Td>
+        <Box w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/40/Kuikas.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Kuikas</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalLoleBothCutoutKuikas}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalLoleBothMaskKuikas}</text>}
+      </VStack>
+  </Box>
+        </Td>
+        <Td>
+        <Box w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/76/Heliodae.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Heliodae</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalSwampMossCutoutRakstal}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalSwampMossMaskRakstal}</text>}
       </VStack>
   </Box>
         </Td>
