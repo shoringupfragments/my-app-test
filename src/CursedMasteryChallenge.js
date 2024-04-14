@@ -1285,6 +1285,13 @@ const handleYSSChange = (valueString) => {
                     const value = parseFloat(valueString);
                       setSwampMoss(value);
                     };
+
+                    const [LeafBreastplate, setLeafBreastplate] = useState(0); // Or any other non-zero value
+
+                    const handleLeafBreastplateChange = (valueString) => {
+                      const value = parseFloat(valueString);
+                        setLeafBreastplate(value);
+                      };
   
 // experiment ?? //
 
@@ -1684,6 +1691,42 @@ const totalNoBattleCostMonsterLoleNCutoutWC = Math.max (totalLoleNCutoutWC + tot
 const [NoBattleCostMonsterLoleNMaskWC, setNoBattleCostMonsterLoleNMaskWC] = useState(0);
 const totalNoBattleCostMonsterLoleNMaskWC = Math.max (totalLoleNMaskWC + totalLoleBothMaskPotionCostWC,0)
 
+//VELSOUN BATTLE COST - CUTOUT & MASK//
+const [VelsounLoleBothCutoutCoins, setVelsounLoleBothCutoutCoins] = useState(0);
+const totalVelsounLoleBothCutoutCoins = Math.max ((totalMasteryMonsterCutout*416)-LeafBreastplate,0)
+
+const [VelsounLoleBothMaskCoins, setVelsounLoleBothMaskCoins] = useState(0);
+const totalVelsounLoleBothMaskCoins = Math.max ((totalMasteryMonsterMask*416)-LeafBreastplate,0)
+
+const [VelsounLoleBothCutoutKuikas, setVelsounLoleBothCutoutKuikas] = useState(0);
+const totalVelsounLoleBothCutoutKuikas = Math.ceil (totalVelsounLoleBothCutoutCoins/33)
+
+const [VelsounLoleBothMaskKuikas, setVelsounLoleBothMaskKuikas] = useState(0);
+const totalVelsounLoleBothMaskKuikas = Math.ceil (totalVelsounLoleBothMaskCoins/33)
+
+const [VelsounLoleBothCutoutBattleCostCoinsWC, setVelsounLoleBothCutoutBattleCostCoinsWC] = useState(0);
+const totalVelsounLoleBothCutoutBattleCostCoinsWC = Math.max (totalVelsounLoleBothCutoutKuikas*50,0)
+
+const [VelsounLoleBothMaskBattleCostCoinsWC, setVelsounLoleBothMaskBattleCostCoinsWC] = useState(0);
+const totalVelsounLoleBothMaskBattleCostCoinsWC = Math.max (totalVelsounLoleBothMaskKuikas*50,0)
+
+const [VelsounLoleYCutoutTotalCoinsWC, setVelsounLoleYCutoutTotalCoinsWC] = useState(0);
+const totalVelsounLoleYCutoutTotalCoinsWC = Math.max (totalVelsounLoleBothCutoutBattleCostCoinsWC + totalLoleYCutoutWC + totalLoleBothCutoutPotionCostWC,0)
+
+const [VelsounLoleYMaskTotalCoinsWC, setVelsounLoleYMaskTotalCoinsWC] = useState(0);
+const totalVelsounLoleYMaskTotalCoinsWC = Math.max (totalVelsounLoleBothMaskBattleCostCoinsWC + totalLoleYMaskWC + totalLoleBothMaskPotionCostWC,0)
+
+const [VelsounLoleNCutoutTotalCoinsWC, setVelsounLoleNCutoutTotalCoinsWC] = useState(0);
+const totalVelsounLoleNCutoutTotalCoinsWC = Math.max (totalVelsounLoleBothCutoutBattleCostCoinsWC + totalLoleNCutoutWC + totalLoleBothCutoutPotionCostWC,0)
+
+const [VelsounLoleNMaskTotalCoinsWC, setVelsounLoleNMaskTotalCoinsWC] = useState(0);
+const totalVelsounLoleNMaskTotalCoinsWC = Math.max (totalVelsounLoleBothMaskBattleCostCoinsWC + totalLoleNMaskWC + totalLoleBothMaskPotionCostWC,0)
+
+const [VelsounKuikasLoleBothCutout, setVelsounKuikasLoleBothCutout] = useState(0);
+const totalVelsounKuikasLoleBothCutout = Math.max (totalVelsounLoleBothCutoutKuikas+totalLoleBothCutoutKuikas,0)
+
+const [VelsounKuikasLoleBothMask, setVelsounKuikasLoleBothMask] = useState(0);
+const totalVelsounKuikasLoleBothMask = Math.max (totalVelsounLoleBothMaskKuikas+totalLoleBothMaskKuikas,0)
 
 //ALPHA TAMBO BATTLE COST - CUTOUT & MASK//
 const [RoberriesCutoutAT, setRoberriesCutoutAT] = useState(0);
@@ -1699,16 +1742,16 @@ const [WizellWCMaskAT, setWizellWCMaskAT] = useState(0);
 const totalWizellWCMaskAT = Math.max (totalRoberriesMaskAT*180,0)
 
 const [WCAlphaTamboCutoutLoleY, setWCAlphaTamboCutoutLoleY] = useState(0);
-const totalWCAlphaTamboCutoutLoleY = Math.max (totalLoleYCutoutWC + totalWizellWCCutoutAT,0)
+const totalWCAlphaTamboCutoutLoleY = Math.max (totalLoleYCutoutWC + totalWizellWCCutoutAT + totalLoleBothCutoutPotionCostWC,0)
 
 const [WCAlphaTamboCutoutLoleN, setWCAlphaTamboCutoutLoleN] = useState(0);
-const totalWCAlphaTamboCutoutLoleN = Math.max (totalLoleNCutoutWC + totalWizellWCCutoutAT,0)
+const totalWCAlphaTamboCutoutLoleN = Math.max (totalLoleNCutoutWC + totalWizellWCCutoutAT + totalLoleBothCutoutPotionCostWC,0)
 
 const [WCAlphaTamboMaskLoleY, setWCAlphaTamboMaskLoleY] = useState(0);
-const totalWCAlphaTamboMaskLoleY = Math.max (totalLoleYMaskWC + totalWizellWCMaskAT,0)
+const totalWCAlphaTamboMaskLoleY = Math.max (totalLoleYMaskWC + totalWizellWCMaskAT + totalLoleBothMaskPotionCostWC,0)
 
 const [WCAlphaTamboMaskLoleN, setWCAlphaTamboMaskLoleN] = useState(0);
-const totalWCAlphaTamboMaskLoleN = Math.max (totalLoleNMaskWC + totalWizellWCMaskAT,0)
+const totalWCAlphaTamboMaskLoleN = Math.max (totalLoleNMaskWC + totalWizellWCMaskAT + totalLoleBothMaskPotionCostWC,0)
 
 //RAKSTAL BATTLE COST - CUTOUT & MASK//
 const [SwampMossCutoutRakstal, setSwampMossCutoutRakstal] = useState(0);
@@ -1724,16 +1767,16 @@ const [HeliodaeWCMaskRakstal, setHeliodaeWCMaskRakstal] = useState(0);
 const totalHeliodaeWCMaskRakstal = Math.max (totalSwampMossMaskRakstal*120,0)
 
 const [WCRakstalCutoutLoleY, setWCRakstalCutoutLoleY] = useState(0);
-const totalWCRakstalCutoutLoleY = Math.max (totalLoleYCutoutWC + totalHeliodaeWCCutoutRakstal,0)
+const totalWCRakstalCutoutLoleY = Math.max (totalLoleYCutoutWC + totalHeliodaeWCCutoutRakstal + totalLoleBothCutoutPotionCostWC,0)
 
 const [WCRakstalCutoutLoleN, setWCRakstalCutoutLoleN] = useState(0);
-const totalWCRakstalCutoutLoleN = Math.max (totalLoleNCutoutWC + totalHeliodaeWCCutoutRakstal,0)
+const totalWCRakstalCutoutLoleN = Math.max (totalLoleNCutoutWC + totalHeliodaeWCCutoutRakstal + totalLoleBothCutoutPotionCostWC,0)
 
 const [WCRakstalMaskLoleY, setWCRakstalMaskLoleY] = useState(0);
-const totalWCRakstalMaskLoleY = Math.max (totalLoleYMaskWC + totalHeliodaeWCMaskRakstal,0)
+const totalWCRakstalMaskLoleY = Math.max (totalLoleYMaskWC + totalHeliodaeWCMaskRakstal + totalLoleBothMaskPotionCostWC,0)
 
 const [WCRakstalMaskLoleN, setWCRakstalMaskLoleN] = useState(0);
-const totalWCRakstalMaskLoleN = Math.max (totalLoleNMaskWC + totalHeliodaeWCMaskRakstal,0)
+const totalWCRakstalMaskLoleN = Math.max (totalLoleNMaskWC + totalHeliodaeWCMaskRakstal + totalLoleBothMaskPotionCostWC,0)
 
 
 //DUSTED LUZIA BATTLE COST - CUTOUT - //
@@ -2271,6 +2314,18 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
 
         const number65 = totalWCRakstalMaskLoleN;
         const TotalLoleNMaskRakstalWCComma = USformatter.format(number65)
+
+        const number66 = totalVelsounLoleYCutoutTotalCoinsWC;
+        const TotalLoleYCutoutVelsounWCComma = USformatter.format(number66)
+
+        const number67 = totalVelsounLoleNCutoutTotalCoinsWC;
+        const TotalLoleNCutoutVelsounWCComma = USformatter.format(number67)
+
+        const number68 = totalVelsounLoleYMaskTotalCoinsWC;
+        const TotalLoleYMaskVelsounWCComma = USformatter.format(number68)
+
+        const number69 = totalVelsounLoleNMaskTotalCoinsWC;
+        const TotalLoleNMaskVelsounWCComma = USformatter.format(number69)
 
 // END OF EQUATIONS SO FAR//
 
@@ -3094,6 +3149,23 @@ through battling creatures. How many <b>Swamp Moss</b> do you already have?<br><
 </VStack>
 </Container>}
 
+{VelsounIsShown && BlastIsShown && 
+  <Container align='center'>
+    <VStack>
+<Text>How many <b>Velsoun</b> have you already fought?</Text><br></br>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='MasteryMonsterHowMany' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
+</NumberInput>
+
+<Text><b>Velsoun</b> has a battle cost (1 Leaf Breastplate), which this guide calculates as coin cost of materials. <br></br>
+How many <b>Leaf Breastplate</b> do you already have?<br></br></Text>
+<NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='CoinsHowMany' onInput={(e) => handleLeafBreastplateChange(e.target.value)} />
+</NumberInput>
+</VStack>
+</Container>}
+
+
 
   {DustedLuziaIsShown && BlastIsShown && 
   <Container align='center'>
@@ -3878,6 +3950,191 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 
           </VStack>
             </Box>}
+
+{VelsounIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown && 
+<Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
+       <VStack>
+       <Box mr='220px' mb='225px'>
+        <Image
+        position='absolute'
+         mt="70px"
+         ml='54px'
+        align='center' 
+        boxSize='7.5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/9d/Velsoun.png/'
+      />
+              <Image
+        position='absolute'
+         mt="12px"
+        align='center' 
+        boxSize='14rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/64/GoldBadge.png/'
+      />
+      </Box>
+        <Text fontSize='lg' textAlign='center'><b>Velsoun</b><br></br>
+        # to Fight: {totalMasteryMonsterCutout}</Text>
+        <Text fontSize='lg' textAlign='center'>
+            Total Word Count:<br></br>{TotalLoleYCutoutVelsounWCComma}
+          </Text>
+        <Divider w='250px' />
+        <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
+        {LoleYCutoutResourcesComma}</Text>
+        <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
+        {LoleYCutoutWCComma}
+        </Text>
+        <Divider mt='3px' w='250px' />
+        
+        <Text fontSize='md'><b>Battle Cost:</b><br></br> {totalMasteryMonsterCutout} Leaf Breastplates</Text>
+
+
+        <Divider mt='3px' w='250px' />
+        <Text fontSize='md'><b>Coin Cost:<br></br></b>{TotalLoleBothCutoutPotionCostComma} coins
+          <br></br></Text>
+        <Text fontSize='md'><b>Monster Word Count:</b><br></br>
+          {TotalLoleBothCutoutPotionCostWCComma}</Text>
+          </VStack>
+            </Box>}
+
+{VelsounIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown && 
+<Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
+       <VStack>
+       <Box mr='220px' mb='225px'>
+        <Image
+        position='absolute'
+         mt="70px"
+         ml='54px'
+        align='center' 
+        boxSize='7.5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/9d/Velsoun.png/'
+      />
+              <Image
+        position='absolute'
+         mt="12px"
+        align='center' 
+        boxSize='14rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/64/GoldBadge.png/'
+      />
+      </Box>
+        <Text fontSize='lg' textAlign='center'><b>Velsoun</b><br></br>
+        # to Fight: {totalMasteryMonsterCutout}</Text>
+        <Text fontSize='lg' textAlign='center'>
+            Total Word Count:<br></br>{TotalLoleNCutoutVelsounWCComma}
+          </Text>
+        <Divider w='250px' />
+        <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
+        {LoleYCutoutResourcesComma}</Text>
+        <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
+        {LoleYCutoutWCComma}
+        </Text>
+        <Divider mt='3px' w='250px' />
+        
+        <Text fontSize='md'><b>Battle Cost:</b><br></br> {totalMasteryMonsterCutout} Leaf Breastplates</Text>
+
+
+        <Divider mt='3px' w='250px' />
+        <Text fontSize='md'><b>Coin Cost:<br></br></b>{TotalLoleBothCutoutPotionCostComma} coins
+          <br></br></Text>
+        <Text fontSize='md'><b>Monster Word Count:</b><br></br>
+          {TotalLoleBothCutoutPotionCostWCComma}</Text>
+          </VStack>
+            </Box>}
+
+{VelsounIsShown && BlastIsShown && LoleYIsShown && MaskIsShown && 
+<Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
+       <VStack>
+       <Box mr='220px' mb='225px'>
+        <Image
+        position='absolute'
+         mt="70px"
+         ml='54px'
+        align='center' 
+        boxSize='7.5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/9d/Velsoun.png/'
+      />
+              <Image
+        position='absolute'
+         mt="12px"
+        align='center' 
+        boxSize='14rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/fd/LightBadge.png/'
+      />
+      </Box>
+        <Text fontSize='lg' textAlign='center'><b>Velsoun</b><br></br>
+        # to Fight: {totalMasteryMonsterMask}</Text>
+        <Text fontSize='lg' textAlign='center'>
+            Total Word Count:<br></br>{TotalLoleYMaskVelsounWCComma}
+          </Text>
+        <Divider w='250px' />
+        <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
+        {LoleYMaskResourcesComma}</Text>
+        <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
+        {LoleYMaskWCComma}
+        </Text>
+        <Divider mt='3px' w='250px' />
+        
+        <Text fontSize='md'><b>Battle Cost:</b><br></br>{totalMasteryMonsterMask} Leaf Breastplates</Text>
+
+
+        <Divider mt='3px' w='250px' />
+        <Text fontSize='md'><b>Coin Cost:<br></br></b>{TotalLoleBothMaskPotionCostComma} coins
+          <br></br></Text>
+        <Text fontSize='md'><b>Monster Word Count:</b><br></br>
+          {TotalLoleBothMaskPotionCostWCComma}</Text>
+          </VStack>
+            </Box>}
+
+{VelsounIsShown && BlastIsShown && LoleNIsShown && MaskIsShown && 
+<Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
+       <VStack>
+       <Box mr='220px' mb='225px'>
+        <Image
+        position='absolute'
+         mt="70px"
+         ml='54px'
+        align='center' 
+        boxSize='7.5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/9d/Velsoun.png/'
+      />
+              <Image
+        position='absolute'
+         mt="12px"
+        align='center' 
+        boxSize='14rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/fd/LightBadge.png/'
+      />
+      </Box>
+        <Text fontSize='lg' textAlign='center'><b>Alpha Tambo</b><br></br>
+        # to Fight: {totalMasteryMonsterMask}</Text>
+        <Text fontSize='lg' textAlign='center'>
+            Total Word Count:<br></br>{TotalLoleNMaskVelsounWCComma}
+          </Text>
+        <Divider w='250px' />
+        <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
+        {LoleNMaskResourcesComma}</Text>
+        <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
+        {LoleNMaskWCComma}
+        </Text>
+        <Divider mt='3px' w='250px' />
+        
+        <Text fontSize='md'><b>Battle Cost:</b><br></br> {totalMasteryMonsterMask} Leaf Breastplates</Text>
+
+
+        <Divider mt='3px' w='250px' />
+        <Text fontSize='md'><b>Coin Cost:<br></br></b>{TotalLoleBothMaskPotionCostComma} coins
+          <br></br></Text>
+        <Text fontSize='md'><b>Monster Word Count:</b><br></br>
+          {TotalLoleBothMaskPotionCostWCComma}</Text>
+          </VStack>
+            </Box>}
+
 
 {AlphaTamboIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown && 
 <Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: AlphaTamboActive ? "#512F30" : "#2D3748" }}>
@@ -5080,6 +5337,34 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       /> <Text fontSize='lg' align='center'>Kuikas</Text>
       {CutoutIsShown && BlastIsShown && <text align='center'>{totalLoleBothCutoutKuikas}</text>}
       {MaskIsShown && BlastIsShown && <text align='center'>{totalLoleBothMaskKuikas}</text>}
+      </VStack>
+  </Box>
+        </Td>
+      </Tr>    
+    </Tbody>
+  </Table>
+</TableContainer>
+</Container> }
+
+{VelsounIsShown &&
+  <Container>
+        <Text mt='12px'><b>Farm for Coins</b></Text>
+        <TableContainer>
+  <Table variant='unstyled' maxW={20} align='center'>
+    <Tbody>
+      <Tr>
+        <Td>
+        <Box w='50px' h='100px' pb={5}>
+        <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/40/Kuikas.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Kuikas</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalVelsounKuikasLoleBothCutout}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalVelsounKuikasLoleBothMask}</text>}
       </VStack>
   </Box>
         </Td>
