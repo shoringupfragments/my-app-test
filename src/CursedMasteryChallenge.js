@@ -55,6 +55,7 @@ import {
   Select,
 } from "chakra-react-select";
 import { toBePartiallyChecked } from '@testing-library/jest-dom/matchers';
+import { useFormAction } from 'react-router-dom';
 
 
 
@@ -1011,6 +1012,9 @@ const handleDustedLuziaClick = event => {
 const [CoinsIsShown, setCoinsIsShown] = useState(false)
 const [CoinsActive, setCoinsActive] = useState(false)
 
+const [ComboIsShown, setComboIsShown] = useState(false)
+const [ComboActive, setComboActive] = useState(false)
+
 const [BattleIsShown, setBattleIsShown] = useState(false)
 const [BattleActive, setBattleActive] = useState(false)
 
@@ -1020,6 +1024,18 @@ const handleCoinsClick = event => {
   setCoinsActive (current => !CoinsActive);
   setBattleIsShown (current => null);
   setBattleActive (current => null);
+  setComboIsShown (current => null);
+  setComboActive (current => null);
+};
+
+const handleComboClick = event => {
+  // 👇️ toggle shown state
+  setComboIsShown (current => !ComboIsShown);
+  setComboActive (current => !ComboActive);
+  setBattleIsShown (current => null);
+  setBattleActive (current => null);
+  setCoinsIsShown (current => null);
+  setCoinsActive (current => null);
 
 };
 
@@ -1029,7 +1045,8 @@ const handleBattleClick = event => {
   setCoinsActive (current => null);
   setBattleIsShown (current => !BattleIsShown);
   setBattleActive (current => !BattleActive);
-
+  setComboIsShown (current => null);
+  setComboActive (current => null);
 };
 
 //mastery reward type//
@@ -1209,6 +1226,47 @@ const handleYSSChange = (valueString) => {
         setMisul(value);
       };
 
+      const [Steel, setSteel] = useState(0); // Or any other non-zero value
+
+      const handleSteelChange = (valueString) => {
+        const value = parseFloat(valueString);
+          setSteel(value);
+        };
+
+      const [RawSteel, setRawSteel] = useState(0); // Or any other non-zero value
+
+      const handleRawSteelChange = (valueString) => {
+        const value = parseFloat(valueString);
+          setRawSteel(value);
+        };
+
+        const [Leaves, setLeaves] = useState(0); // Or any other non-zero value
+
+        const handleLeavesChange = (valueString) => {
+          const value = parseFloat(valueString);
+            setLeaves(value);
+          };
+
+          const [HW, setHW] = useState(0); // Or any other non-zero value
+
+          const handleHWChange = (valueString) => {
+            const value = parseFloat(valueString);
+              setHW(value);
+            };
+
+            const [RG, setRG] = useState(0); // Or any other non-zero value
+
+            const handleRGChange = (valueString) => {
+              const value = parseFloat(valueString);
+                setRG(value);
+              };
+
+              const [Coins, setCoins] = useState(0); // Or any other non-zero value
+
+              const handleCoinsChange = (valueString) => {
+                const value = parseFloat(valueString);
+                  setCoins(value);
+                };
 
 // experiment ?? //
 
@@ -1219,27 +1277,27 @@ const handleMasteryMonsterChange = (valueString) => {
     setMasteryMonster(value);
   };
 
-const totalResourcesCutoutLoleY = Math.max (20000-MasteryMonster*40)
+const totalResourcesCutoutLoleY = Math.max (20000-(MasteryMonster*40), 0)
 const totalResourcesCutoutLoleYMusya = Math.max (totalResourcesCutoutLoleY-10000,0)
-const totalResourcesCutoutLoleYOdees = Math.max (totalResourcesCutoutLoleY-totalResourcesCutoutLoleYMusya)
+const totalResourcesCutoutLoleYOdees = Math.max (totalResourcesCutoutLoleY-totalResourcesCutoutLoleYMusya, 0)
 
 
-const totalResourcesMaskLoleY = Math.max (40000-MasteryMonster*40,0)
+const totalResourcesMaskLoleY = Math.max (40000-(MasteryMonster*40),0)
 const totalResourcesMaskLoleYKnuff = Math.max (totalResourcesMaskLoleY-30000,0)
 const totalResourcesMaskLoleYKnuQua = Math.max (totalResourcesMaskLoleY-totalResourcesMaskLoleYKnuff,0)
 const totalResourcesMaskLoleYQuaruk = Math.max (totalResourcesMaskLoleYKnuQua-20000,0 )
 const totalResourcesMaskLoleYQuaMus = Math.max (totalResourcesMaskLoleYKnuQua-totalResourcesMaskLoleYQuaruk,0)
 const totalResourcesMaskLoleYMusya = Math.max (totalResourcesMaskLoleYQuaMus-10000,0)
-const totalResourcesMaskLoleYOdees = Math.max (totalResourcesMaskLoleYQuaMus-totalResourcesMaskLoleYMusya)
+const totalResourcesMaskLoleYOdees = Math.max (totalResourcesMaskLoleYQuaMus-totalResourcesMaskLoleYMusya,0)
 
-const totalResourcesCutoutLoleN = Math.max (30000-MasteryMonster*60)
+const totalResourcesCutoutLoleN = Math.max (30000-(MasteryMonster*60), 0)
 const totalResourcesCutoutLoleNQuaruk = Math.max (totalResourcesCutoutLoleN-20000,0 )
 const totalResourcesCutoutLoleNQuaMus = Math.max (totalResourcesCutoutLoleN-totalResourcesCutoutLoleNQuaruk,0)
 const totalResourcesCutoutLoleNMusya = Math.max (totalResourcesCutoutLoleNQuaMus-10000,0)
-const totalResourcesCutoutLoleNOdees = Math.max (totalResourcesCutoutLoleNQuaMus-totalResourcesCutoutLoleNMusya)
+const totalResourcesCutoutLoleNOdees = Math.max (totalResourcesCutoutLoleNQuaMus-totalResourcesCutoutLoleNMusya, 0)
 
 
-const totalResourcesMaskLoleN = Math.max (60000-MasteryMonster*60)
+const totalResourcesMaskLoleN = Math.max (60000-(MasteryMonster*60), 0)
 const totalResourcesMaskLoleNMibloom = Math.max (totalResourcesMaskLoleN-40000,0)
 const totalResourcesMaskLoleNMiKnu = Math.max (totalResourcesMaskLoleN-totalResourcesMaskLoleNMibloom,0)
 const totalResourcesMaskLoleNKnuff = Math.max (totalResourcesMaskLoleN-30000,0)
@@ -1247,7 +1305,7 @@ const totalResourcesMaskLoleNKnuQua = Math.max (totalResourcesMaskLoleN-totalRes
 const totalResourcesMaskLoleNQuaruk = Math.max (totalResourcesMaskLoleN-20000,0 )
 const totalResourcesMaskLoleNQuaMus = Math.max (totalResourcesMaskLoleN-totalResourcesMaskLoleNQuaruk,0)
 const totalResourcesMaskLoleNMusya = Math.max (totalResourcesMaskLoleNQuaMus-10000,0)
-const totalResourcesMaskLoleNOdees = Math.max (totalResourcesMaskLoleNQuaMus-totalResourcesMaskLoleNMusya)
+const totalResourcesMaskLoleNOdees = Math.max (totalResourcesMaskLoleNQuaMus-totalResourcesMaskLoleNMusya,0)
 
 
 
@@ -1262,6 +1320,16 @@ const totalWhichForMusya = Math.min (totalResourcesCutoutLoleYMusya, 10000)
 
 const totalOdeesLeft = Math.max (totalWhichForOdee-Odees, 0)
 const totalMusyaLeft = Math.max (totalWhichForMusya-Musya, 0)
+
+
+const [WhichForOdeeMask, setWhichForOdeeMask] = useState(0);
+const totalWhichForOdeeMask = Math.min (totalResourcesMaskLoleYOdees, 10000)
+
+const [WhichForMusyaMask, setWhichForMusyaMask] = useState(0);
+const totalWhichForMusyaMask = Math.min (totalResourcesMaskLoleYMusya, 10000)
+
+const totalOdeesLeftMask = Math.max (totalWhichForOdeeMask-Odees, 0)
+const totalMusyaLeftMask = Math.max (totalWhichForMusyaMask-Musya, 0)
 
 const [WhichForOdeeCutoutLoleN, setWhichForOdeeCutoutLoleN] = useState(0);
 const totalWhichForOdeeCutoutLoleN = Math.min (totalResourcesCutoutLoleNOdees, 10000)
@@ -1381,7 +1449,7 @@ const [MusyaOverflow, setMusyaOverflow] = useState(0);
 const totalMusyaOverflow = Math.max ((totalMusya_OdeesOverflow-totalActualMusya), 0)
 
 const [ActualQuaruk, setActualQuaruk] = useState(0);
-const totalActualQuaruk = Math.min (totalQuarukPoss + totalMusyaOverflow, (10000-Quaruk))
+const totalActualQuaruk = Math.min (totalMusyaOverflow, totalQuarukPoss + totalMusyaOverflow, (10000-Quaruk))
 
 const [QuarukOverflow, setQuarukOverflow] = useState(0);
 const totalQuarukOverflow = Math.max (totalMusyaOverflow-totalActualQuaruk,0)
@@ -1417,13 +1485,13 @@ const totalLoleYCutoutWC = Math.max ((totalFinalOdees*44)+(totalActualMusya*50)+
 //LOLEY MASK Odees -> Musya -> Quaruk -> Knuff -> Mibloom -> Kinguz//
 
 const [ActualOdeesMask, setActualOdeesMask] = useState(0);
-const totalActualOdeesMask = Math.max (totalOdeesLeft, 0)
+const totalActualOdeesMask = Math.max (totalOdeesLeftMask, 0)
 
 const [OdeesMaskOverflow, setOdeesMaskOverflow] = useState(0);
-const totalOdeesMaskOverflow = Math.max ((totalResourcesMaskLoleYOdees + totalResourcesMaskLoleYMusya + totalResourcesMaskLoleYQuaruk + totalResourcesMaskLoleYKnuff)-totalActualOdeesMask, totalActualOdeesMask)
+const totalOdeesMaskOverflow = Math.max ((totalResourcesMaskLoleYOdees + totalResourcesMaskLoleYMusya + totalResourcesMaskLoleYQuaruk + totalResourcesMaskLoleYKnuff)-totalActualOdeesMask, 0)
 
 const [ActualMusyaMask, setActualMusyaMask] = useState(0);
-const totalActualMusyaMask = Math.min (totalMusyaLeft+totalOdeesMaskOverflow, (10000-Musya))
+const totalActualMusyaMask = Math.min (totalMusyaLeftMask+totalOdeesMaskOverflow, (10000-Musya))
 
 const [MusyaMaskOverflow, setMusyaMaskOverflow] = useState(0);
 const totalMusyaMaskOverflow = Math.max ((totalOdeesMaskOverflow - totalActualMusyaMask), 0)
@@ -1465,7 +1533,7 @@ const totalLoleYMaskWC = Math.max ((totalFinalOdeesMask*44)+(totalActualMusyaMas
 //LOLEN CUTOUT Odees -> Musya -> Quaruk -> Knuff -> Mibloom -> Kinguz//
 
 const [ActualOdeesLoleN, setActualOdeesLoleN] = useState(0);
-const totalActualOdeesLoleN = Math.max (totalOdeesPossMaskLoleN, 0)
+const totalActualOdeesLoleN = Math.max (totalOdeesPossCutoutLoleN, 0)
 
 const [OdeesLoleNOverflow, setOdeesLoleNOverflow] = useState(0);
 const totalOdeesLoleNOverflow = Math.max (totalResourcesCutoutLoleN - totalActualOdeesLoleN, 0)
@@ -1480,7 +1548,7 @@ const [MusyaLoleNOverflow, setMusyaLoleNOverflow] = useState(0);
 const totalMusyaLoleNOverflow = Math.max ((totalOdeesLoleNOverflow-totalActualMusyaLoleN), 0)
 
 const [ActualQuarukLoleN, setActualQuarukLoleN] = useState(0);
-const totalActualQuarukLoleN = Math.min (totalQuarukPoss + totalMusyaLoleNOverflow, (10000-Quaruk))
+const totalActualQuarukLoleN = Math.min (Quaruk + totalMusyaLoleNOverflow, (10000-Quaruk))
 
 const [QuarukLoleNOverflow, setQuarukLoleNOverflow] = useState(0);
 const totalQuarukLoleNOverflow = Math.max (totalMusyaLoleNOverflow-totalActualQuarukLoleN,0)
@@ -1507,7 +1575,7 @@ const [KinguzLoleNOverflow, setKinguzLoleNOverflow] = useState(0);
 const totalKinguzLoleNOverflow = Math.max (totalMibloomLoleNOverflow-totalActualKinguzLoleN, 0)
 
 const [finalOdeesLoleN, setFinalOdeesLoleN] = useState(0);
-const totalFinalOdeesLoleN = Math.max (totalKinguzLoleNOverflow+totalActualOdeesLoleN, totalActualOdeesLoleN)
+const totalFinalOdeesLoleN = Math.max (totalKinguzLoleNOverflow+totalActualOdeesLoleN, 0)
 
 const [LoleNCutoutWC, setLoleNCutoutWC] = useState(0);
 const totalLoleNCutoutWC = Math.max ((totalFinalOdeesLoleN*44)+(totalActualMusyaLoleN*50)+(totalActualQuarukLoleN*50)+(totalActualKnuffLoleN*60)+(totalActualMibloomLoleNAdjusted*150)+(totalActualKinguzLoleN*70),0)
@@ -1561,6 +1629,137 @@ const [LoleNMaskWC, setLoleNMaskWC] = useState(0);
 const totalLoleNMaskWC = Math.max ((totalFinalOdeesLoleNMask*44)+(totalActualMusyaMaskLoleN*50)+(totalActualQuarukMaskLoleN*50)+(totalActualKnuffMaskLoleN*60)+(totalMibloomMaskLoleNActual*150)+(totalActualKinguzMaskLoleN*70),0)
 
 
+//DUSTED LUZIA BATTLE COST - CUTOUT - //
+
+const [RawSteelHave, setRawSteelHave] = useState(0);
+const totalRawSteelHave = Math.floor (RawSteel/3,0) 
+
+const [SteelCutoutDL, setSteelCutoutDL] = useState(0);
+const totalSteelCutoutDL = Math.max ((totalMasteryMonsterCutout*5)-Steel-totalRawSteelHave,0)
+
+const [RawSteelNeededCutoutDL, setRawSteelNeededCutoutDL] = useState(0);
+const totalRawSteelNeededCutoutDL = Math.max (totalSteelCutoutDL*3,0)
+
+const [LeavesNeededCutoutDL, setLeavesNeededCutoutDL] = useState(0);
+const totalLeavesNeededCutoutDL = Math.max (totalSteelCutoutDL*4, 0)
+
+const [HWCutoutDL, setHWCutoutDL] = useState(0);
+const totalHWCutoutDL = Math.max ((totalMasteryMonsterCutout*7)-HW,0)
+
+const [RGCutoutDL, setRGCutoutDL] = useState(0);
+const totalRGCutoutDL = Math.max ((totalMasteryMonsterCutout*2)-RG,0)
+
+// coinsssss
+
+const [CoinsCutoutDL, setCoinsCutoutDL] = useState(0);
+const totalCoinsCutoutDL = Math.max (((totalMasteryMonsterCutout*850)+(totalRawSteelNeededCutoutDL*35)+(totalLeavesNeededCutoutDL*8)+(totalHWCutoutDL*250)+(totalRGCutoutDL*100)-Coins), 0)
+
+const [KuikasCoinsCutoutDL, setKuikasCoinsCutoutDL] = useState(0);
+const totalKuikasCoinsCutoutDL = Math.ceil ((totalCoinsCutoutDL/33))
+
+const [KuikasCoinsWCCutoutDL, setKuikasCoinsWCCutoutDL] = useState(0);
+const totalKuikasCoinsWCCutoutDL = Math.max (totalKuikasCoinsCutoutDL*50,0)
+
+//combo
+
+//buy: hardwood, leaves
+//fight: JESO, 3 steel, 5 raw steel, 34 distorted signals tokens, 17  hunter tokens, 1 gold, 5 raw gold, 1 red dye, 15 coins
+
+const [JesoSteelCutoutDL, setJesoSteelCutoutDL] = useState(0);
+const totalJesoSteelCutoutDL = Math.ceil (totalRawSteelNeededCutoutDL/20)
+
+const [JesoNeededCutoutDL, setJesoNeededCutoutDL] = useState(0);
+const totalJesoNeededCutoutDL = Math.max (totalJesoSteelCutoutDL, 0)
+
+const [JesoWCCutoutDL, setJesoWCCutoutDL] = useState(0);
+const totalJesoWCCutoutDL = Math.max (totalJesoNeededCutoutDL*1667, 0)
+
+const [JesoRawGold, setJesoRawGold] = useState(0);
+const totalJesoRawGold = Math.round ((totalJesoNeededCutoutDL*5)/3)
+
+const [JesoCoinsCutoutDL, setJesoCoinsCutoutDL] = useState(0);
+const totalJesoCoinsCutoutDL = Math.max ((totalJesoNeededCutoutDL*34*10)+(totalJesoNeededCutoutDL*17*10)+(totalJesoNeededCutoutDL*100)+
+                                          (totalJesoRawGold*66)+(totalJesoNeededCutoutDL*15)+(totalJesoNeededCutoutDL*49),0)
+//total coins = DS token val + Hunt token val + gold val + raw gold val + red dye val + coin drop
+
+const [LeavesComboCutoutDL, setLeavesComboCutoutDL] = useState(0);
+const totalLeavesComboCutoutDL = Math.max (totalLeavesNeededCutoutDL*8, 0)
+
+const [HWComboCutoutDL, setHWComboCutoutDL] = useState(0);
+const totalHWComboCutoutDL = Math.max (totalHWCutoutDL*250, 0)
+
+const [RGComboCutoutDL, setRGComboCutoutDL] = useState(0);
+const totalRGComboCutoutDL = Math.max (totalRGCutoutDL*100, 0)
+
+const [PurchaseComboCutoutDL, setPurchaseComboCutoutDL] = useState(0);
+const totalPurchaseComboCutoutDL = Math.max (totalLeavesComboCutoutDL + totalHWComboCutoutDL + totalRGComboCutoutDL, 0)
+
+const [CoinFarmComboCutoutDL, setCoinFarmComboCutoutDL] = useState(0);
+const totalCoinFarmComboCutoutDL = Math.max ((totalMasteryMonsterCutout*850+(totalPurchaseComboCutoutDL-totalJesoCoinsCutoutDL))-Coins, 0)
+
+//kuikas = 2 battles are 66 g
+
+const [KuikasFarmComboCutoutDL, setKuikasFarmComboCutoutDL] = useState(0);
+const totalKuikasFarmComboCutoutDL = Math.ceil ((totalCoinFarmComboCutoutDL/66)*2)
+
+const [LoleYComboDLCoinsWC, setLoleYComboDLCoinsWC] = useState(0);
+const totalLoleYComboDLCoinsWC = Math.max (totalKuikasFarmComboCutoutDL*50,0)
+
+//battle only - need HW and Leaves
+
+//scofin for steel
+const [ScofinSteelCutoutDL, setScofinSteelCutoutDL] = useState(0);
+const totalScofinSteelCutoutDL = Math.ceil (totalRawSteelNeededCutoutDL/1.5)
+
+const [ScofinSteelWCCutoutDL, setScofinSteelWCCutoutDL] = useState(0);
+const totalScofinSteelWCCutoutDL = Math.max (totalScofinSteelCutoutDL * 150,0)
+
+//xin for leaves
+const [LeavesBattleWCCutoutDL, setLeavesBattleWCCutoutDL] = useState(0);
+const totalLeavesBattleWCCutoutDL = Math.max (totalLeavesNeededCutoutDL*50, 0)
+
+//jaaje for HW everyone else is too ugly
+const [HWBattleWCCutoutDL, setHWBattleWCCutoutDL] = useState(0);
+const totalHWBattleWCCutout = Math.max (totalHWCutoutDL*500,0)
+
+//Olea for RG, drops .5 RG per 100 words
+
+const [RGBattleCutoutDL, setRGBattleCutoutDL] = useState(0);
+const totalRGBattleCutoutDL = Math.ceil ((totalRGCutoutDL/.5))
+
+const [RGBattleWCCutoutDL, setRGBattleWCCutoutDL] = useState(0);
+const totalRGBattleWCCutoutDL = Math.max (totalRGBattleCutoutDL*100, 0)
+
+//battle wc - no coins, that's in the next step
+
+const [BattleWCCutoutDL, setBattleWCCutoutDL] = useState(0);
+const totalBattleWCCutoutDL = Math.max (totalHWBattleWCCutout+totalLeavesBattleWCCutoutDL+totalScofinSteelWCCutoutDL+totalRGBattleWCCutoutDL,0)
+
+
+//kuikas for coins
+const [BattleCoinCutoutDL, setBattleCoinCutoutDL] = useState(0);
+const totalBattleCoinCutoutDL = Math.max ((totalMasteryMonsterCutout*850)-Coins,0)
+
+const [KuikasFarmBattleCutoutDL, setKuikasFarmBattleCutoutDL] = useState(0);
+const totalKuikasFarmBattleCutoutDL = Math.ceil ((totalBattleCoinCutoutDL/66)*2)
+
+const [KuikasWCBattleCutoutDL, setKuikasWCBattleCutoutDL] = useState(0);
+const totalKuikasWCBattleCutoutDL = Math.max (totalKuikasFarmBattleCutoutDL*50,0)
+
+
+//TOTAL WORD COUNTS - DUSTED LUZIA CUTOUT//
+
+const [WCDustedLuziaCutoutLoleYCoins, setWCDustedLuziaCutoutLoleYCoins] = useState(0);
+const totalWCDustedLuziaCutoutLoleYCoins = Math.max (totalLoleYCutoutWC + totalKuikasCoinsWCCutoutDL,0)
+
+const [WCDustedLuziaCutoutLoleNCoins, setWCDustedLuziaCutoutLoleNCoins] = useState(0);
+const totalWCDustedLuziaCutoutLoleNCoins = Math.max (totalLoleNCutoutWC + totalKuikasCoinsWCCutoutDL,0)
+
+const [WCDustedLuziaCutoutLoleYCombo, setWCDustedLuziaCutoutLoleYCombo] = useState(0);
+const totalWCDustedLuziaCutoutLoleYCombo = Math.max (totalLoleYCutoutWC + totalJesoWCCutoutDL + totalLoleYComboDLCoinsWC,0)
+
+const [WCDustedLuziaCutoutLoleNCombo, setWCDustedLuziaCutoutLoleNCombo] = useState(0);
+const totalWCDustedLuziaCutoutLoleNCombo = Math.max (totalLoleNCutoutWC )
 
 //DONT DELETE THIS I USE IT//
 
@@ -1571,9 +1770,15 @@ const totalFakeZero = (0+0)
   
 const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
 const [MasteryMonsterLoleYCutoutWCResult, setMasteryMonsterLoleYCutoutWCResult] = useState(0);
+
 const [LoleYCutoutWCResult, setLoleYCutoutWCResult] = useState(0);
 const [LoleNCutoutWCResult, setLoleNCutoutWCResult] = useState(0);
 
+const [CutoutDLBattleWCResult, setCutoutDLBattleWCResult] = useState(0);
+
+//total wc: lole yes + cutout + DL + coins
+const [LoleYCutoutDLCoinsWCResult, setLoleYCutoutDLCoinsWCResult] = useState(0);
+const [LoleYComboDLCoinsWCResult, setLoleYComboDLCoinsWCResult] = useState(0);
 
   
   const handleAttackStatChange = (valueString) => {
@@ -1587,16 +1792,12 @@ const [LoleNCutoutWCResult, setLoleNCutoutWCResult] = useState(0);
   const totalLoleNCutoutWCResult = Math.round (totalLoleNCutoutWC / ((attackStat/100) + 1))
   const totalLoleNMaskWCResult = Math.round (totalLoleNMaskWC / ((attackStat/100) + 1))
 
+  const totalCutoutDLBattleWCResult = Math.round (totalBattleWCCutoutDL / ((attackStat/100) +1))
 
-
-//Total WC Noanza + Gliva//
-
-const calculateNoanzaGlivaWCResult = {}
-const totalNoanzaGlivaWCResult = (0+0)
-
-const calculateNoanzaKirerfWCResult = {}
-const totalNoanzaKirerfWCResult = (0+0)
-
+  const totalLoleYCutoutDLCoinsWCResult = Math.round (totalWCDustedLuziaCutoutLoleYCoins / ((attackStat/100) + 1))
+  const totalLoleNCutoutDLCoinsWCResult = Math.round (totalWCDustedLuziaCutoutLoleNCoins / ((attackStat/100) + 1))
+  const totalLoleYCutoutDLComboWCResult = Math.round (totalWCDustedLuziaCutoutLoleYCombo / ((attackStat/100) + 1))
+  const totalLoleYComboDLCoinsWCResult = Math.round (totalLoleYComboDLCoinsWC / ((attackStat / 100) +1))
 
 //format the WC #s//
         const number = totalMasteryMonsterBook;
@@ -1651,6 +1852,48 @@ const totalNoanzaKirerfWCResult = (0+0)
         const number16 = totalLoleNMaskWCResult;
         const LoleNMaskWCComma = USformatter.format(number16)
 
+        const number17 = totalBattleWCCutoutDL;
+        const BattleWCCutoutDLComma = USformatter.format(number17)
+
+        const number18 = totalCoinsCutoutDL;
+        const CoinsCutoutDLComma = USformatter.format(number18)
+
+        const number19 = totalKuikasCoinsWCCutoutDL;
+        const KuikasCoinsWCCutoutDLComma = USformatter.format(number19)
+
+        const number20 = totalKuikasCoinsCutoutDL;
+        const KuikasCoinCutoutDL = USformatter.format(number20)
+
+        const number21 = totalJesoWCCutoutDL;
+        const JesoWCComboCutoutDL = USformatter.format(number21)
+
+        const number22 = totalCoinFarmComboCutoutDL;
+        const CoinComboCutoutDL = USformatter.format(number22)
+
+
+
+
+        const number24 = totalBattleCoinCutoutDL;
+        const CoinBattleCutoutDL = USformatter.format(number24)
+
+        const number25 = totalKuikasWCBattleCutoutDL;
+        const KuikasWCBattleCutoutDLComma = USformatter.format(number25)
+
+        const number26 = totalLoleYCutoutDLCoinsWCResult;
+        const TotalWCLoleYCutoutDLCoinsComma = USformatter.format(number26)
+
+        const number27 = totalLoleNCutoutDLCoinsWCResult;
+        const TotalWCLoleNCutoutDLCoinsComma = USformatter.format(number27)
+
+        const number28 = totalLoleYCutoutDLComboWCResult;
+        const TotalWCLoleYCutoutDLComboComma = USformatter.format(number28)
+
+        const number29 = totalLoleYComboDLCoinsWCResult;
+        const TotalWCLoleYCutoutDLComboCoinsComma = USformatter.format(number29)
+
+
+
+        
 // END OF EQUATIONS SO FAR//
 
   return (
@@ -2344,6 +2587,17 @@ const totalNoanzaKirerfWCResult = (0+0)
       />
       <span>Buy with Coins</span></Button>
       </WrapItem>
+
+      <WrapItem>
+        <Button variant='outline' onClick={handleComboClick} style={{ backgroundColor: ComboActive ? "#2d1b59" : "transparent" }}>
+        <Image
+        boxSize='2rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/9e/Better-together.png'
+        mr='12px'
+      />
+      <span>Combo of both</span></Button>
+      </WrapItem>
+
       <WrapItem>
         <Button variant='outline' onClick= {handleBattleClick} style={{ backgroundColor: BattleActive ? "#2d1b59" : "transparent" }}>      <Image
         boxSize='2rem'
@@ -2354,7 +2608,149 @@ const totalNoanzaKirerfWCResult = (0+0)
       <span>Battle Monsters</span></Button></WrapItem>
         </Wrap>
 </VStack>
-</Container>
+</Container>}
+
+{DustedLuziaIsShown && BlastIsShown &&
+        <Accordion allowMultiple w={350}>
+<AccordionItem>
+  <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='center' p={3}>
+        <Heading as='h3' size='lg'>Materials You Already Have</Heading>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+<Container align='center'>
+
+      <Box align='center' h='300px' overflowY='scroll'>
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Steel</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Odees' onInput={(e) => handleSteelChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/76/Rawsteel_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Raw Steel</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleRawSteelChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>            
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/fc/Leaves_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Leaves</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Quaruk' onInput={(e) => handleLeavesChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>     
+
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/0/0c/Hardwood_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Hardwood</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleHWChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>            
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/ea/Rivergrass_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>River Grass</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Quaruk' onInput={(e) => handleRGChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>     
+
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Coins</Text>
+        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleCoinsChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>            
+
+
+          </Box>
+          </Container>
+      <br></br>
+    </AccordionPanel>
+  </AccordionItem>
+
+
+</Accordion>
+
 }
 
 <Spacer></Spacer>
@@ -2598,8 +2994,197 @@ const totalNoanzaKirerfWCResult = (0+0)
         </Box>
 }
 
-{DustedLuziaIsShown && BlastIsShown &&
+<Container align='center'>
 
+{DustedLuziaIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown && CoinsIsShown &&
+<Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
+       <VStack>
+       <Box mr='220px' mb='225px'>
+        <Image
+        position='absolute'
+         mt="70px"
+         ml='54px'
+        align='center' 
+        boxSize='7.5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/6b/Dusted_Luzia.png'
+      />
+              <Image
+        position='absolute'
+         mt="12px"
+        align='center' 
+        boxSize='14rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/64/GoldBadge.png/'
+      />
+      </Box>
+        <Text fontSize='lg' textAlign='center'><b>Dusted Luzia</b><br></br>
+        # to Fight: {totalMasteryMonsterCutout}</Text>
+        <Text fontSize='lg' textAlign='center'>
+            Total Word Count:<br></br>{TotalWCLoleYCutoutDLCoinsComma}
+          </Text>
+        <Divider w='250px' />
+        <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
+        {LoleYCutoutResourcesComma}</Text>
+        <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
+        {LoleYCutoutWCComma}
+        </Text>
+        <Divider mt='3px' w='250px' />
+        
+        <Text fontSize='md'><b>Battle Cost:</b><br></br> {totalMasteryMonsterCutout} Steel Axe<br></br> {totalMasteryMonsterCutout} Steel Shield</Text>
+
+
+        <Divider mt='3px' w='250px' />
+        <Text fontSize='md'><b>Coin Cost:<br></br></b>{CoinsCutoutDLComma} coins
+          <br></br></Text>
+        <Text fontSize='md'><b>Monster Word Count:</b><br></br>
+          {KuikasCoinsWCCutoutDLComma}</Text>
+          </VStack>
+            </Box>}
+
+{DustedLuziaIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown && CoinsIsShown &&
+<Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
+       <VStack>
+       <Box mr='220px' mb='225px'>
+        <Image
+        position='absolute'
+         mt="70px"
+         ml='54px'
+        align='center' 
+        boxSize='7.5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/6b/Dusted_Luzia.png'
+      />
+              <Image
+        position='absolute'
+         mt="12px"
+        align='center' 
+        boxSize='14rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/64/GoldBadge.png/'
+      />
+      </Box>
+        <Text fontSize='lg' textAlign='center'><b>Dusted Luzia</b><br></br>
+        # to Fight: {totalMasteryMonsterCutout}</Text>
+        <Text fontSize='lg' textAlign='center'>
+            Total Word Count:<br></br>{TotalWCLoleNCutoutDLCoinsComma}
+          </Text>
+        <Divider w='250px' />
+        <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
+        {LoleNCutoutResourcesComma}</Text>
+        <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
+        {LoleNCutoutWCComma}
+        </Text>
+        <Divider mt='3px' w='250px' />
+        
+        <Text fontSize='md'><b>Battle Cost:</b><br></br> {totalMasteryMonsterCutout} Steel Axe<br></br> {totalMasteryMonsterCutout} Steel Shield</Text>
+
+
+        <Divider mt='3px' w='250px' />
+        <Text fontSize='md'><b>Coin Cost:<br></br></b>{CoinsCutoutDLComma} coins
+          <br></br></Text>
+        <Text fontSize='md'><b>Monster Word Count:</b><br></br>
+          {KuikasCoinsWCCutoutDLComma}</Text>
+          </VStack>
+            </Box>}
+
+      {DustedLuziaIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown && ComboIsShown &&
+        <Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
+       <VStack>
+       <Box mr='220px' mb='225px'>
+        <Image
+        position='absolute'
+         mt="70px"
+         ml='54px'
+        align='center' 
+        boxSize='7.5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/6b/Dusted_Luzia.png'
+      />
+              <Image
+        position='absolute'
+         mt="12px"
+        align='center' 
+        boxSize='14rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/64/GoldBadge.png/'
+      />
+      </Box>
+        <Text fontSize='lg' textAlign='center'><b>Dusted Luzia</b><br></br>
+        # to Fight: {totalMasteryMonsterCutout}</Text>
+        <Text fontSize='lg' textAlign='center'>
+            Total Word Count:<br></br>{TotalWCLoleYCutoutDLComboComma}
+          </Text>
+        <Divider w='250px' />
+        <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
+        {LoleYCutoutResourcesComma}</Text>
+        <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
+        {LoleYCutoutWCComma}
+        </Text>
+        <Divider mt='3px' w='250px' />
+        
+        <Text fontSize='md'><b>Battle Cost:</b><br></br> {totalMasteryMonsterCutout} Steel Axe<br></br> {totalMasteryMonsterCutout} Steel Shield</Text>
+
+
+        <Divider mt='3px' w='250px' />
+        <Text fontSize='md'><b>Coin Cost:<br></br></b>{CoinComboCutoutDL} coins
+          <br></br></Text>
+        <Text fontSize='md'><b>Monster Word Count:</b><br></br>
+          {TotalWCLoleYCutoutDLComboCoinsComma}</Text>
+          </VStack>
+            </Box>}
+
+            {DustedLuziaIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown && ComboIsShown &&
+        <Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
+       <VStack>
+       <Box mr='220px' mb='225px'>
+        <Image
+        position='absolute'
+         mt="70px"
+         ml='54px'
+        align='center' 
+        boxSize='7.5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/6b/Dusted_Luzia.png'
+      />
+              <Image
+        position='absolute'
+         mt="12px"
+        align='center' 
+        boxSize='14rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/64/GoldBadge.png/'
+      />
+      </Box>
+        <Text fontSize='lg' textAlign='center'><b>Dusted Luzia [NOT UPDATED]</b><br></br>
+        # to Fight: {totalMasteryMonsterCutout}</Text>
+        <Text fontSize='lg' textAlign='center'>
+            Total Word Count:<br></br>{TotalWCLoleYCutoutDLComboComma}
+          </Text>
+        <Divider w='250px' />
+        <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
+        {LoleYCutoutResourcesComma}</Text>
+        <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
+        {LoleYCutoutWCComma}
+        </Text>
+        <Divider mt='3px' w='250px' />
+        
+        <Text fontSize='md'><b>Battle Cost:</b><br></br> {totalMasteryMonsterCutout} Steel Axe<br></br> {totalMasteryMonsterCutout} Steel Shield</Text>
+
+
+        <Divider mt='3px' w='250px' />
+        <Text fontSize='md'><b>Coin Cost:<br></br></b>{CoinComboCutoutDL} coins
+          <br></br></Text>
+        <Text fontSize='md'><b>Monster Word Count:</b><br></br>
+          {TotalWCLoleYCutoutDLComboCoinsComma}</Text>
+          </VStack>
+            </Box>}
+
+  </Container>
+
+
+
+{NullIsShown &&
 
   <Container align='center'>
   <Box rounded='lg'  w='290px' h='670px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
@@ -2611,61 +3196,72 @@ const totalNoanzaKirerfWCResult = (0+0)
           borderRadius='full'
           src='https://static.wikia.nocookie.net/4thewords/images/6/6b/Dusted_Luzia.png'
         />
-        {DustedLuziaIsShown &&
-          <Text fontSize='lg' textAlign='center'><b>Dusted Luzia</b><br></br>8160 words<br></br></Text>}
-          {DustedLuziaIsShown && CutoutIsShown &&<Text># to Fight: {totalMasteryMonsterCutout}</Text>}
-        {DustedLuziaIsShown && MaskIsShown &&
+          <Text fontSize='lg' textAlign='center'><b>Dusted Luzia</b><br></br></Text>
+          
+          {CutoutIsShown &&<Text># to Fight: {totalMasteryMonsterCutout}</Text>}
+        {MaskIsShown &&
           <Text fontSize='lg' textAlign='center'># to Fight: {totalMasteryMonsterMask}</Text>}
-        {DustedLuziaIsShown && StatueIsShown &&
+        {StatueIsShown &&
           <Text fontSize='lg' textAlign='center'># to Fight: {totalMasteryMonsterStatue}</Text>}
-        {DustedLuziaIsShown && BalloonIsShown &&
+        {BalloonIsShown &&
           <Text fontSize='lg' textAlign='center'># to Fight: {totalMasteryMonsterBalloon}</Text>}
-        {DustedLuziaIsShown && BookIsShown &&
+        {BookIsShown &&
           <Text fontSize='lg' textAlign='center'># to Fight: {MasteryMonsterBookComma}</Text>}
+
+
+        {DustedLuziaIsShown && CutoutIsShown && CoinsIsShown && LoleYIsShown &&
+            <Text fontSize='lg'>
+              Total Word Count:<br></br>{TotalWCLoleYCutoutDLCoinsComma}
+            </Text>}
+
+        {DustedLuziaIsShown && CutoutIsShown && CoinsIsShown && LoleNIsShown &&
+            <Text fontSize='lg'>
+              Total Word Count:<br></br>{TotalWCLoleNCutoutDLCoinsComma}
+            </Text>}
 
           <Divider w='250px' />
           <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
-          {DustedLuziaIsShown && CutoutIsShown && LoleYActive &&
+          {CutoutIsShown && LoleYActive &&
           <Text fontSize='md' textAlign='center'>{LoleYCutoutResourcesComma}</Text>}
-        {DustedLuziaIsShown && MaskIsShown && LoleYActive &&
+        {MaskIsShown && LoleYActive &&
           <Text fontSize='md' textAlign='center'>{LoleYMaskResourcesComma}</Text>}
-        {DustedLuziaIsShown && StatueIsShown && LoleYActive &&
+        {StatueIsShown && LoleYActive &&
           <Text fontSize='md' textAlign='center'>{MasteryMonsterLoleYStatueComma}</Text>}
-        {DustedLuziaIsShown && BalloonIsShown && LoleYActive &&
+        {BalloonIsShown && LoleYActive &&
           <Text fontSize='md' textAlign='center'>{MasteryMonsterLoleYBalloonComma}</Text>}
-        {DustedLuziaIsShown && BookIsShown && LoleYActive &&
+        {BookIsShown && LoleYActive &&
           <Text fontSize='md' textAlign='center'>{MasteryMonsterLoleYBookComma}</Text>}
 
-        {DustedLuziaIsShown && CutoutIsShown && LoleNActive &&
+        {CutoutIsShown && LoleNActive &&
           <Text fontSize='md' textAlign='center'>{LoleNCutoutResourcesComma}</Text>}
-        {DustedLuziaIsShown && MaskIsShown && LoleNActive &&
+        {MaskIsShown && LoleNActive &&
           <Text fontSize='md' textAlign='center'>{MasteryMonsterLoleNMaskComma}</Text>}
-        {DustedLuziaIsShown && StatueIsShown && LoleNActive &&
+        {StatueIsShown && LoleNActive &&
           <Text fontSize='md' textAlign='center'>{MasteryMonsterLoleNStatueComma}</Text>}
-        {DustedLuziaIsShown && BalloonIsShown && LoleNActive &&
+        {BalloonIsShown && LoleNActive &&
           <Text fontSize='md' textAlign='center'>{MasteryMonsterLoleNBalloonComma}</Text>}
-        {DustedLuziaIsShown && BookIsShown && LoleNActive &&
+        {BookIsShown && LoleNActive &&
           <Text fontSize='md' textAlign='center'>{MasteryMonsterLoleNBookComma}</Text>}
 
           </Text>
           <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
 
-{DustedLuziaIsShown && LoleYIsShown && CutoutIsShown &&
+{LoleYIsShown && CutoutIsShown &&
           <Text fontSize='md' textAlign='center'>
           {LoleYCutoutWCComma}<br></br>
           </Text>}
 
-          {DustedLuziaIsShown && LoleYIsShown && MaskIsShown &&
+          {LoleYIsShown && MaskIsShown &&
           <Text fontSize='md' textAlign='center'>
             {LoleYMaskWCComma}<br></br>
           </Text>}
 
-          {DustedLuziaIsShown && LoleNIsShown && CutoutIsShown &&
+          {LoleNIsShown && CutoutIsShown &&
           <Text fontSize='md' textAlign='center'>
             {LoleNCutoutWCComma}<br></br>
           </Text>}
 
-          {DustedLuziaIsShown && LoleNIsShown && MaskIsShown &&
+          {LoleNIsShown && MaskIsShown &&
           <Text fontSize='md' textAlign='center'>
             {LoleNMaskWCComma}<br></br>
           </Text>}
@@ -2673,15 +3269,38 @@ const totalNoanzaKirerfWCResult = (0+0)
           </Text>
 
           <Divider mt='3px' w='250px' />
-          <Text fontSize='md'><b>Battle Cost:</b><br></br> 1000 Steel Axe<br></br> 1000 Steel Shield</Text>
-          <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
-          1000 Jeso
-          </Text>
+          {CutoutIsShown &&
+          <Text fontSize='md'><b>Battle Cost:</b><br></br> {totalMasteryMonsterCutout} Steel Axe<br></br> {totalMasteryMonsterCutout} Steel Shield</Text>}
+
+
+          {CutoutIsShown && ComboIsShown &&
+          <Text fontSize='md'><b>Battle Cost Word Count:</b><br></br>
+          {JesoWCComboCutoutDL}
+          </Text>}
+
+          {CutoutIsShown && BattleIsShown &&
+          <Text fontSize='md'><b>Battle Cost Word Count:</b><br></br>
+          {BattleWCCutoutDLComma}
+          </Text>}
+
           <Divider mt='3px' w='250px' />
-          <Text fontSize='md'><b>Coin Cost:<br></br></b>200,000</Text>
-          <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
-            10,000 Kuikas
-          </Text>
+            {CutoutIsShown && CoinsIsShown &&
+          <Text fontSize='md'><b>Coin Cost:<br></br></b>{CoinsCutoutDLComma} coins</Text>}
+            {CutoutIsShown && CoinsIsShown &&
+          <Text fontSize='md'><b>Monster Word Count:</b><br></br>
+            {KuikasCoinsWCCutoutDLComma}</Text>}
+
+            {CutoutIsShown && ComboIsShown &&
+          <Text fontSize='md'><b>Coin Cost:<br></br></b>{CoinComboCutoutDL} coins</Text>}
+            {CutoutIsShown && ComboIsShown &&
+          <Text fontSize='md'><b>Coin Cost Word Count:</b><br></br>
+            {0}</Text>}
+
+            {CutoutIsShown && BattleIsShown &&
+          <Text fontSize='md'><b>Coin Cost:<br></br></b>{CoinBattleCutoutDL} coins</Text>}
+            {CutoutIsShown && BattleIsShown &&
+          <Text fontSize='md'><b>Coin Cost Word Count:</b><br></br>
+            {KuikasWCBattleCutoutDLComma}</Text>}
         </VStack>
               </Box></Container>
   }
@@ -2701,6 +3320,21 @@ const totalNoanzaKirerfWCResult = (0+0)
 <Td><Stat>
   <StatLabel>Total Word Count with Attack</StatLabel>
   <StatNumber>
+    <text>
+      raw steel have: {totalRawSteelHave}<br></br>
+      steel for cutout: {totalSteelCutoutDL}<br></br>
+      raw steel for cutout: {totalRawSteelNeededCutoutDL}<br></br>
+      leaves for cutout: {totalLeavesNeededCutoutDL}<br></br>
+      hardwood for cutout: {totalHWCutoutDL}<br></br>
+      river grass for cutout: {totalRGCutoutDL}<br></br>
+      coin cost: {totalCoinsCutoutDL}<br></br>
+      jesos needed: {totalJesoNeededCutoutDL}<br></br>
+      scofin comp: {totalScofinSteelCutoutDL}<br></br>
+      jeso coin profit: {totalJesoCoinsCutoutDL}<br></br>
+      cost leaves + HW combo: {totalPurchaseComboCutoutDL}<br></br>
+      coins to farm: {totalCoinFarmComboCutoutDL}<br></br>
+      kuikas to fight: {totalKuikasFarmComboCutoutDL}
+    </text>
   </StatNumber>
 </Stat></Td></Tr>
 </Tbody>
@@ -2736,7 +3370,7 @@ const totalNoanzaKirerfWCResult = (0+0)
       {CutoutIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalFinalOdees}</text>}
       {MaskIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalFinalOdeesMask}</text>}
 
-      {CutoutIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalFinalOdeesLoleN}      </text>}
+      {CutoutIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalFinalOdeesLoleN}            </text>}
       {MaskIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalFinalOdeesLoleNMask}      </text>}
       </VStack>
   </Box>
@@ -2752,7 +3386,7 @@ const totalNoanzaKirerfWCResult = (0+0)
         mr='5px'
       /> <Text fontSize='lg' align='center'>Musya</Text>
       {CutoutIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalActualMusya}</text>}
-      {MaskIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalActualMusyaMask}</text>}
+      {MaskIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalActualMusyaMask}      </text>}
 
       {CutoutIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalActualMusyaLoleN}</text>}
       {MaskIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalActualMusyaMaskLoleN}</text>}
@@ -2772,7 +3406,7 @@ const totalNoanzaKirerfWCResult = (0+0)
       {CutoutIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalActualQuaruk}</text>}
       {MaskIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalActualQuarukMask}</text>}
 
-      {CutoutIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalActualQuarukLoleN}</text>}
+      {CutoutIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalActualQuarukLoleN}      </text>}
       {MaskIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalActualQuarukMaskLoleN}      </text>}
       </VStack>
   </Box>
