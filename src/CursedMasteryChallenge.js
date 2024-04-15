@@ -1969,11 +1969,11 @@ const totalBabuBattleCostCutoutSix = Math.max (totalMasteryMonsterCutout*6,0)
 const [BabuBattleCostMaskSix, setBabuBattleCostMaskSix] = useState(0);
 const totalBabuBattleCostMaskSix = Math.max (totalMasteryMonsterMask*6,0)
 
-const [BabuBattleCostCutoutFifteen, setBabuBattleCostCutoutFifteen] = useState(0);
-const totalBabuBattleCostCutoutFifteen = Math.max (totalMasteryMonsterCutout*15,0)
+const [BabuBattleCostCutoutNine, setBabuBattleCostCutoutNine] = useState(0);
+const totalBabuBattleCostCutoutNine = Math.max (totalMasteryMonsterCutout*9,0)
 
-const [BabuBattleCostMaskFifteen, setBabuBattleCostMaskFifteen] = useState(0);
-const totalBabuBattleCostMaskFifteen = Math.max (totalMasteryMonsterMask*15,0)
+const [BabuBattleCostMaskNine, setBabuBattleCostMaskNine] = useState(0);
+const totalBabuBattleCostMaskNine = Math.max (totalMasteryMonsterMask*9,0)
 
 
 
@@ -6793,8 +6793,29 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 </Container> }
 
 {VelsounIsShown && 
-<Container>
-        <Text mt='12px'><b>Battle Cost</b></Text>
+<Container  align='center'>
+<Text mb='12px' fontSize='2xl'><u><b>Battle Cost</b></u></Text>
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/60/Leafbreastplate_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+{CutoutIsShown &&
+        <Text mt='12px' mr='24px' fontSize='lg' align='center'>{totalMasteryMonsterCutout} Leaf Breastplate</Text>}
+
+{MaskIsShown &&
+        <Text mt='12px' mr='24px' fontSize='lg' align='center'>{totalMasteryMonsterMask} Leaf Breastplate</Text>}
+      </VStack>
+      </HStack>
+            </Box>   
+        <Text mt='12px'><b>Materials Needed</b></Text>
         <TableContainer>
   <Table variant='unstyled' maxW={20} align='center'>
     <Tbody>
@@ -6930,102 +6951,33 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 
 
 {BabuIsShown && 
-<Container>
-        <Text mt='12px'><b>Battle Cost: Materials Needed</b></Text>
-        <TableContainer>
-  <Table variant='unstyled' maxW={20} align='center'>
-    <Tbody>
-      <Tr>
-        <Td>
-        <Box w='50px' h='120px' pb={5}>
-       <VStack> 
+<Container align='center'>
+<Text mb='12px' fontSize='2xl'><u><b>Battle Cost</b></u></Text>
+
+<Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
        <Image
+        ml='24px'
+        mt='20px'
         align='center' 
-        boxSize='3rem'
+        boxSize='4rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/0/05/Steel_chains.png/'
-        mr='5px'
-      /> <Text fontSize='lg' align='center'>Steel<br></br>Chains</Text>
-      {CutoutIsShown && BlastIsShown && <text align='center'>{totalBabuSteelChainsCutout}</text>}
-      {MaskIsShown && BlastIsShown && <text align='center'>{totalBabuSteelChainsMask}</text>}
-      </VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box w='50px' h='120px' pb={5}>
-       <VStack> 
-       <Image
-        align='center' 
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/4/40/Piece-of-parchment.png/'
-        mr='5px'
-      /> <Text fontSize='md' align='center'>Piece of<br></br>Parchment</Text>
-      {CutoutIsShown && BlastIsShown && <text align='center'>{totalBabuPieceofParchCutout}</text>}
-      {MaskIsShown && BlastIsShown && <text align='center'>{totalBabuPieceofParchMask}</text>}
-      </VStack>
-  </Box>
-        </Td>
-        <Td>
-        <Box w='50px' h='120px' pb={5}>
-       <VStack> 
-       <Image
-        align='center' 
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/d/d3/Blue-essence-ink.png/'
-        mr='5px'
-      /> <Text fontSize='md' align='center'>Blue Essence<br></br>Ink</Text>
-      {CutoutIsShown && BlastIsShown && <text align='center'>{totalBabuBlueEssInkCutout}</text>}
-      {MaskIsShown && BlastIsShown && <text align='center'>{totalBabuBlueEssInkMask}</text>}
-      </VStack>
-  </Box>
-        </Td>
-      </Tr>    
+        mr='5px'        />
+      <VStack align='center'> 
+{CutoutIsShown &&
+        <Text mt='12px' mr='24px' fontSize='lg' align='center'>{totalBabuSteelChainsCutout} Steel Chains</Text>}
 
-       <Tr>
-        <Td>
-        <Box w='50px' h='100px' pb={5}>
-       <VStack> 
-       <Image
-        align='center' 
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
-        mr='5px'
-      /> <Text fontSize='lg' align='center'>Coins</Text>
-      {CutoutIsShown && BlastIsShown && <text align='center'>{totalVelsounLoleBothCutoutCoinsLBP}</text>}
-      {MaskIsShown && BlastIsShown && <text align='center'>{totalVelsounLoleBothMaskCoinsLBP}</text>}
+{MaskIsShown &&
+        <Text mt='12px' mr='24px' fontSize='lg' align='center'>{totalBabuSteelChainsMask} Steel Chains</Text>}
       </VStack>
-  </Box>
-        </Td>
-      </Tr>    
-
-    </Tbody>
-  </Table>
-</TableContainer>
-
-<Text mt='12px'><b>Full Crafting Breakdown</b></Text>
-        <TableContainer>
+      </HStack>
+            </Box>   
+            <TableContainer>
   <Table variant='unstyled' maxW={20} align='center'>
     <Tbody>
       <Tr>
-        <Td>
-        <Box w='50px' h='120px' pb={5}>
-       <VStack> 
-       <Image
-        align='center' 
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png/'
-        mr='5px'
-      /> <Text fontSize='lg' align='center'>Steel</Text>
-      {CutoutIsShown && BlastIsShown && <text align='center'>{totalBabuSteelChainsCutout}</text>}
-      {MaskIsShown && BlastIsShown && <text align='center'>{totalBabuSteelChainsMask}</text>}
-      </VStack>
-  </Box>
-        </Td>
-        <Td>
+      <Td>
         <Box w='50px' h='120px' pb={5}>
        <VStack> 
        <Image
@@ -7040,7 +6992,6 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       </VStack>
   </Box>
         </Td>
-
         <Td>
         <Box w='50px' h='100px' pb={5}>
        <VStack> 
@@ -7056,10 +7007,6 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       </VStack>
   </Box>
         </Td>
-
-      </Tr>    
-
-       <Tr>
         <Td>
         <Box w='50px' h='100px' pb={5}>
        <VStack> 
@@ -7070,13 +7017,100 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/b/b2/Kuaywood_md.png/'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Wood</Text>
-      {CutoutIsShown && BlastIsShown && <text align='center'>{totalBabuBattleCostCutoutFifteen}</text>}
-      {MaskIsShown && BlastIsShown && <text align='center'>{totalBabuBattleCostMaskFifteen}</text>}
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalBabuBattleCostCutoutSix}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalBabuBattleCostMaskSix}</text>}
       </VStack>
   </Box>
         </Td>
+      </Tr>    
+    </Tbody>
+  </Table>
+</TableContainer>
 
+<Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/40/Piece-of-parchment.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+{CutoutIsShown &&
+        <Text mt='12px' mr='24px' fontSize='lg' align='center'>{totalBabuPieceofParchCutout} Piece of Parchment</Text>}
+
+{MaskIsShown &&
+        <Text mt='12px' mr='24px' fontSize='lg' align='center'>{totalBabuPieceofParchMask} Piece of Parchment</Text>}
+      </VStack>
+      </HStack>
+            </Box>   
+
+            <TableContainer>
+  <Table variant='unstyled' maxW={20} align='center'>
+    <Tbody>
+      <Tr>
         <Td>
+        <Box w='50px' h='120px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Steel</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalBabuBattleCostCutoutNine}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalBabuBattleCostMaskNine}</text>}
+      </VStack>
+  </Box>
+        </Td>
+        <Td>
+        <Box w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b2/Kuaywood_md.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Wood</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalBabuBattleCostCutoutNine}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalBabuBattleCostMaskNine}</text>}
+      </VStack>
+  </Box>
+        </Td>
+      </Tr>    
+    </Tbody>
+  </Table>
+</TableContainer>
+
+<Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/d3/Blue-essence-ink.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+{CutoutIsShown &&
+        <Text mt='12px' mr='24px' fontSize='lg' align='center'>{totalBabuBlueEssInkCutout} Blue Essence Ink</Text>}
+
+{MaskIsShown &&
+        <Text mt='12px' mr='24px' fontSize='lg' align='center'>{totalBabuBlueEssInkMask} Blue Essence Ink</Text>}
+      </VStack>
+      </HStack>
+            </Box>
+
+            <TableContainer>
+  <Table variant='unstyled' maxW={20} align='center'>
+    <Tbody>
+      <Tr>
+      <Td>
         <Box w='50px' h='100px' pb={5}>
        <VStack> 
        <Image
@@ -7106,13 +7140,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       </VStack>
   </Box>
         </Td>
-
-
-      </Tr>  
-
-      <Tr>
         <Td>
-        <Box w='50px' h='100px' pb={5}>
+        <Box w='50px' h='120px' pb={5}>
        <VStack> 
        <Image
         align='center' 
@@ -7120,19 +7149,17 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e2/Refined-dust.png/'
         mr='5px'
-      /> <Text fontSize='md' align='center'>Refined Dust</Text>
+      /> <Text fontSize='lg' align='center'>Refined<br></br>Dust</Text>
       {CutoutIsShown && BlastIsShown && <text align='center'>{totalBabuSteelChainsCutout}</text>}
       {MaskIsShown && BlastIsShown && <text align='center'>{totalBabuSteelChainsMask}</text>}
       </VStack>
   </Box>
         </Td>
-
       </Tr>    
-
-
     </Tbody>
   </Table>
-</TableContainer>
+</TableContainer>   
+
 
 
 </Container> } 
