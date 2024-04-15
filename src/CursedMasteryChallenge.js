@@ -248,7 +248,8 @@ const handleTesvenClick = event => {
   setDustedLuziaActive (current => null)
   setDustyKingMaiIsShown (current => null)
   setDustyKingMaiActive (current => null)
-    
+  setMasteryMonster (current => null)
+  setCoins (current => null)
   };
 
 const handleVelsounClick = event => {
@@ -290,7 +291,8 @@ const handleVelsounClick = event => {
   setDustedLuziaActive (current => null)
   setDustyKingMaiIsShown (current => null)
   setDustyKingMaiActive (current => null)
-    
+  setMasteryMonster (current => null)
+  setCoins (current => null)
   };
 
 const handleAlphaTamboClick = event => {
@@ -332,7 +334,8 @@ const handleAlphaTamboClick = event => {
   setDustedLuziaActive (current => null)
   setDustyKingMaiIsShown (current => null)
   setDustyKingMaiActive (current => null)
-    
+  setMasteryMonster (current => null)
+  setCoins (current => null)
   };
 
 const handleAzadiClick = event => {
@@ -374,6 +377,8 @@ const handleAzadiClick = event => {
   setDustedLuziaActive (current => null)
   setDustyKingMaiIsShown (current => null)
   setDustyKingMaiActive (current => null)
+  setMasteryMonster (current => null)
+  setCoins (current => null)
   };
 
   const handleTareitClick = event => {
@@ -415,7 +420,8 @@ const handleAzadiClick = event => {
     setDustedLuziaActive (current => null)
     setDustyKingMaiIsShown (current => null)
     setDustyKingMaiActive (current => null)
-      
+    setMasteryMonster (current => null)
+    setCoins (current => null)
     };
 
   const handleBabuClick = event => {
@@ -457,7 +463,8 @@ const handleAzadiClick = event => {
   setDustedLuziaActive (current => null)
   setDustyKingMaiIsShown (current => null)
   setDustyKingMaiActive (current => null)
-    
+  setMasteryMonster (current => null)
+  setCoins (current => null)
   };
 
   const handleDustSuwoClick = event => {
@@ -499,7 +506,8 @@ const handleAzadiClick = event => {
   setDustedLuziaActive (current => null)
   setDustyKingMaiIsShown (current => null)
   setDustyKingMaiActive (current => null)
-    
+  setMasteryMonster (current => null)
+  setCoins (current => null)
   };
 
   const handleSuwoClick = event => {
@@ -541,7 +549,8 @@ const handleAzadiClick = event => {
   setDustedLuziaActive (current => null)
   setDustyKingMaiIsShown (current => null)
   setDustyKingMaiActive (current => null)
-    
+  setMasteryMonster (current => null)
+  setCoins (current => null)
   };
 
   const handleRakstalClick = event => {
@@ -583,7 +592,8 @@ const handleAzadiClick = event => {
   setDustedLuziaActive (current => null)
   setDustyKingMaiIsShown (current => null)
   setDustyKingMaiActive (current => null)
-    
+  setMasteryMonster (current => null)
+  setCoins (current => null)
   };
 
   const handleShamanLuziaClick = event => {
@@ -625,7 +635,8 @@ const handleAzadiClick = event => {
     setDustedLuziaActive (current => null)
     setDustyKingMaiIsShown (current => null)
     setDustyKingMaiActive (current => null)
-      
+    setMasteryMonster (current => null)
+    setCoins (current => null)
     };
 
   const handleDarkReflectionClick = event => {
@@ -667,7 +678,8 @@ const handleAzadiClick = event => {
     setDustedLuziaActive (current => null)
     setDustyKingMaiIsShown (current => null)
     setDustyKingMaiActive (current => null)
-      
+    setMasteryMonster (current => null)  
+    setCoins (current => null)
     };
 
 const handleReflectionClick = event => {
@@ -709,7 +721,8 @@ const handleReflectionClick = event => {
   setDustedLuziaActive (current => null)
   setDustyKingMaiIsShown (current => null)
   setDustyKingMaiActive (current => null)
-    
+  setMasteryMonster (current => null) 
+  setCoins (current => null)
   };
 
   const handleCaravanClick = event => {
@@ -751,7 +764,8 @@ const handleReflectionClick = event => {
     setDustedLuziaActive (current => null)
     setDustyKingMaiIsShown (current => null)
     setDustyKingMaiActive (current => null)
-      
+    setMasteryMonster (current => null)
+    setCoins (current => null)
     };
 
   const handleKultalvaClick = event => {
@@ -793,7 +807,8 @@ const handleReflectionClick = event => {
     setDustedLuziaActive (current => null)
     setDustyKingMaiIsShown (current => null)
     setDustyKingMaiActive (current => null)
-      
+    setMasteryMonster (current => null)
+    setCoins (current => null)
     };
 
   const handleMiclanClick = event => {
@@ -835,7 +850,8 @@ const handleReflectionClick = event => {
     setDustedLuziaActive (current => null)
     setDustyKingMaiIsShown (current => null)
     setDustyKingMaiActive (current => null)
-      
+    setMasteryMonster (current => null)
+    setCoins (current => null)
     };
 
   const handleRiverGoddessClick = event => {
@@ -877,7 +893,8 @@ const handleReflectionClick = event => {
     setDustedLuziaActive (current => null)
     setDustyKingMaiIsShown (current => null)
     setDustyKingMaiActive (current => null)
-      
+    setMasteryMonster (current => null)
+    setCoins (current => null)
     };
 
   const handleKingMaiClick = event => {
@@ -919,7 +936,8 @@ const handleReflectionClick = event => {
     setDustedLuziaActive (current => null)
     setDustyKingMaiIsShown (current => null)
     setDustyKingMaiActive (current => null)
-      
+    setMasteryMonster (current => null)
+    setCoins (current => null)
     };
 
 
@@ -963,7 +981,8 @@ const handleDustedLuziaClick = event => {
   setKingMaiActive (current => null)
   setDustyKingMaiIsShown (current => null)
   setDustyKingMaiActive (current => null)
-    
+  setMasteryMonster (current => null)
+  setCoins (current => null)
   };
 
   const handleDustyKingMaiClick = event => {
@@ -1006,7 +1025,8 @@ const handleDustedLuziaClick = event => {
   setKingMaiActive (current => null)
   setDustedLuziaIsShown (current => null)
   setDustedLuziaActive (current => null)
-  
+  setMasteryMonster (current => null)
+  setCoins (current => null)
 };
 
 const [CoinsIsShown, setCoinsIsShown] = useState(false)
@@ -1226,6 +1246,13 @@ const handleYSSChange = (valueString) => {
         setMisul(value);
       };
 
+    const [Wizell, setWizell] = useState(0); // Or any other non-zero value
+
+    const handleWizellChange = (valueString) => {
+      const value = parseFloat(valueString);
+        setWizell(value);
+      };
+
       const [Steel, setSteel] = useState(0); // Or any other non-zero value
 
       const handleSteelChange = (valueString) => {
@@ -1292,7 +1319,94 @@ const handleYSSChange = (valueString) => {
                       const value = parseFloat(valueString);
                         setLeafBreastplate(value);
                       };
+
+                      const [SpiderLegs, setSpiderLegs] = useState(0); // Or any other non-zero value
+
+                      const handleSpiderLegsChange = (valueString) => {
+                        const value = parseFloat(valueString);
+                          setSpiderLegs(value);
+                        };
+
+                      const [Feathers, setFeathers] = useState(0); // Or any other non-zero value
+
+                      const handleFeathersChange = (valueString) => {
+                        const value = parseFloat(valueString);
+                          setFeathers(value);
+                        };
+
+                      const [Claws, setClaws] = useState(0); // Or any other non-zero value
+
+                      const handleClawsChange = (valueString) => {
+                        const value = parseFloat(valueString);
+                          setClaws(value);
+                        };
+
+                      const [SteelChains, setSteelChains] = useState(0); // Or any other non-zero value
+
+                      const handleSteelChainsChange = (valueString) => {
+                        const value = parseFloat(valueString);
+                          setSteelChains(value);
+                        };
+
+                      const [PieceofParch, setPieceofParch] = useState(0); // Or any other non-zero value
+
+                      const handlePieceofParchChange = (valueString) => {
+                        const value = parseFloat(valueString);
+                          setPieceofParch(value);
+                        };
+
+                      const [BlueEssInk, setBlueEssInk] = useState(0); // Or any other non-zero value
+
+                      const handleBlueEssInkChange = (valueString) => {
+                        const value = parseFloat(valueString);
+                          setBlueEssInk(value);
+                        };
+
+                      const [DriedPulp, setDriedPulp] = useState(0); // Or any other non-zero value
+
+                      const handleDriedPulpChange = (valueString) => {
+                        const value = parseFloat(valueString);
+                          setDriedPulp(value);
+                        };
+
+                        const [Dust, setDust] = useState(0); // Or any other non-zero value
+
+                        const handleDustChange = (valueString) => {
+                          const value = parseFloat(valueString);
+                            setDust(value);
+                          };
   
+                          const [Wood, setWood] = useState(0); // Or any other non-zero value
+
+                          const handleWoodChange = (valueString) => {
+                            const value = parseFloat(valueString);
+                              setWood(value);
+                            };
+    
+                          const [GlassBar, setGlassBar] = useState(0); // Or any other non-zero value
+
+                          const handleGlassBarChange = (valueString) => {
+                            const value = parseFloat(valueString);
+                              setGlassBar(value);
+                            };
+
+                            const [Ess, setEss] = useState(0); // Or any other non-zero value
+
+                            const handleEssChange = (valueString) => {
+                              const value = parseFloat(valueString);
+                                setEss(value);
+                              };
+
+                          const [RD, setRD] = useState(0); // Or any other non-zero value
+
+                          const handleRDChange = (valueString) => {
+                            const value = parseFloat(valueString);
+                              setRD(value);
+                            };
+
+
+
+
 // experiment ?? //
 
 const [MasteryMonster, setMasteryMonster] = useState(0); // Or any other non-zero value
@@ -1692,6 +1806,39 @@ const [NoBattleCostMonsterLoleNMaskWC, setNoBattleCostMonsterLoleNMaskWC] = useS
 const totalNoBattleCostMonsterLoleNMaskWC = Math.max (totalLoleNMaskWC + totalLoleBothMaskPotionCostWC,0)
 
 //VELSOUN BATTLE COST - CUTOUT & MASK//
+
+//2 spider legs
+
+const [VelsounLoleBothCutoutSpiderLegs, setVelsounLoleBothCutoutSpiderLegs] = useState(0);
+const totalVelsounLoleBothCutoutSpiderLegs = Math.max ((totalMasteryMonsterCutout*2)-SpiderLegs,0)
+
+const [VelsounLoleBothMaskSpiderLegs, setVelsounLoleBothMaskSpiderLegs] = useState(0);
+const totalVelsounLoleBothMaskSpiderLegs = Math.max ((totalMasteryMonsterMask*2)-SpiderLegs,0)
+
+const [VelsounLoleBothCutoutFeathers, setVelsounLoleBothCutoutFeathers] = useState(0);
+const totalVelsounLoleBothCutoutFeathers = Math.max ((totalMasteryMonsterCutout*5)-Feathers,0)
+
+const [VelsounLoleBothMaskFeathers, setVelsounLoleBothMaskFeathers] = useState(0);
+const totalVelsounLoleBothMaskFeathers = Math.max ((totalMasteryMonsterMask*5)-Feathers,0)
+
+const [VelsounLoleBothCutoutLeaves, setVelsounLoleBothCutoutLeaves] = useState(0);
+const totalVelsounLoleBothCutoutLeaves = Math.max ((totalMasteryMonsterCutout*25)-Leaves,0)
+
+const [VelsounLoleBothMaskLeaves, setVelsounLoleBothMaskLeaves] = useState(0);
+const totalVelsounLoleBothMaskLeaves = Math.max ((totalMasteryMonsterMask*25)-Leaves,0)
+
+const [VelsounLoleBothCutoutClaws, setVelsounLoleBothCutoutClaws] = useState(0);
+const totalVelsounLoleBothCutoutClaws = Math.max ((totalMasteryMonsterCutout*1)-Claws,0)
+
+const [VelsounLoleBothMaskClaws, setVelsounLoleBothMaskClaws] = useState(0);
+const totalVelsounLoleBothMaskClaws = Math.max ((totalMasteryMonsterMask*1)-Claws,0)
+
+const [VelsounLoleBothCutoutCoinsLBP, setVelsounLoleBothCutoutCoinLBPs] = useState(0);
+const totalVelsounLoleBothCutoutCoinsLBP = Math.max ((totalMasteryMonsterCutout*15)-Coins,0)
+
+const [VelsounLoleBothMaskCoinsLBP, setVelsounLoleBothMaskCoinsLBP] = useState(0);
+const totalVelsounLoleBothMaskCoinsLBP = Math.max ((totalMasteryMonsterMask*15)-Coins,0)
+
 const [VelsounLoleBothCutoutCoins, setVelsounLoleBothCutoutCoins] = useState(0);
 const totalVelsounLoleBothCutoutCoins = Math.max ((totalMasteryMonsterCutout*416)-LeafBreastplate,0)
 
@@ -1736,10 +1883,10 @@ const [RoberriesMaskAT, setRoberriesMaskAT] = useState(0);
 const totalRoberriesMaskAT = Math.max ((totalMasteryMonsterMask*5)-Roberries,0)
 
 const [WizellWCCutoutAT, setWizellWCCutoutAT] = useState(0);
-const totalWizellWCCutoutAT = Math.max (totalRoberriesCutoutAT*180,0)
+const totalWizellWCCutoutAT = Math.max ((totalRoberriesCutoutAT-Wizell)*180,0)
 
 const [WizellWCMaskAT, setWizellWCMaskAT] = useState(0);
-const totalWizellWCMaskAT = Math.max (totalRoberriesMaskAT*180,0)
+const totalWizellWCMaskAT = Math.max ((totalRoberriesMaskAT-Wizell)*180,0)
 
 const [WCAlphaTamboCutoutLoleY, setWCAlphaTamboCutoutLoleY] = useState(0);
 const totalWCAlphaTamboCutoutLoleY = Math.max (totalLoleYCutoutWC + totalWizellWCCutoutAT + totalLoleBothCutoutPotionCostWC,0)
@@ -1777,6 +1924,78 @@ const totalWCRakstalMaskLoleY = Math.max (totalLoleYMaskWC + totalHeliodaeWCMask
 
 const [WCRakstalMaskLoleN, setWCRakstalMaskLoleN] = useState(0);
 const totalWCRakstalMaskLoleN = Math.max (totalLoleNMaskWC + totalHeliodaeWCMaskRakstal + totalLoleBothMaskPotionCostWC,0)
+
+//BABU AND MICLAN COST //
+
+const [SteelChainsCutout, setSteelChainsCutout] = useState(0);
+const totalSteelChainsCutout = Math.max (totalMasteryMonsterCutout - SteelChains,0)
+
+const [PieceofParchCutout, setPieceofParchCutout] = useState(0);
+const totalPieceofParchCutout = Math.max (totalMasteryMonsterCutout - PieceofParch,0)
+
+const [BlueEssInkCutout, setBlueEssInkCutout] = useState(0);
+const totalBlueEssInkCutout = Math.max (totalMasteryMonsterCutout - BlueEssInk,0)
+
+const [SteelChainsMask, setSteelChainsMask] = useState(0);
+const totalSteelChainsMask = Math.max (totalMasteryMonsterMask - SteelChains,0)
+
+const [PieceofParchMask, setPieceofParchMask] = useState(0);
+const totalPieceofParchMask = Math.max (totalMasteryMonsterMask - PieceofParch,0)
+
+const [BlueEssInkMask, setBlueEssInkMask] = useState(0);
+const totalBlueEssInkMask = Math.max (totalMasteryMonsterMask - BlueEssInk,0)
+
+const [BabuSteelChainsCutout, setBabuSteelChainsCutout] = useState(0);
+const totalBabuSteelChainsCutout = Math.max (totalSteelChainsCutout*3,0)
+
+const [BabuPieceofParchCutout, setBabuPieceofParchCutout] = useState(0);
+const totalBabuPieceofParchCutout = Math.max (totalPieceofParchCutout*2,0)
+
+const [BabuBlueEssInkCutout, setBabuBlueEssInkCutout] = useState(0);
+const totalBabuBlueEssInkCutout = Math.max (totalBlueEssInkCutout*1,0)
+
+const [BabuSteelChainsMask, setBabuSteelChainsMask] = useState(0);
+const totalBabuSteelChainsMask = Math.max (totalSteelChainsMask*3,0)
+
+const [BabuPieceofParchMask, setBabuPieceofParchMask] = useState(0);
+const totalBabuPieceofParchMask = Math.max (totalPieceofParchMask*2,0)
+
+const [BabuBlueEssInkMask, setBabuBlueEssInkMask] = useState(0);
+const totalBabuBlueEssInkMask = Math.max (totalBlueEssInkMask*1,0)
+
+const [BabuBattleCostCutoutSix, setBabuBattleCostCutoutSix] = useState(0);
+const totalBabuBattleCostCutoutSix = Math.max (totalMasteryMonsterCutout*6,0)
+
+const [BabuBattleCostMaskSix, setBabuBattleCostMaskSix] = useState(0);
+const totalBabuBattleCostMaskSix = Math.max (totalMasteryMonsterMask*6,0)
+
+const [BabuBattleCostCutoutFifteen, setBabuBattleCostCutoutFifteen] = useState(0);
+const totalBabuBattleCostCutoutFifteen = Math.max (totalMasteryMonsterCutout*15,0)
+
+const [BabuBattleCostMaskFifteen, setBabuBattleCostMaskFifteen] = useState(0);
+const totalBabuBattleCostMaskFifteen = Math.max (totalMasteryMonsterMask*15,0)
+
+
+
+
+const [MiclanSteelChainsCutout, setMiclanSteelChainsCutout] = useState(0);
+const totalMiclanSteelChainsCutout = Math.max (totalSteelChainsCutout*5,0)
+
+const [MiclanPieceofParchCutout, setMiclanPieceofParchCutout] = useState(0);
+const totalMiclanPieceofParchCutout = Math.max (totalPieceofParchCutout*3,0)
+
+const [MiclanBlueEssInkCutout, setMiclanBlueEssInkCutout] = useState(0);
+const totalMiclanBlueEssInkCutout = Math.max (totalBlueEssInkCutout*1,0)
+
+const [MiclanSteelChainsMask, setMiclanSteelChainsMask] = useState(0);
+const totalMiclanSteelChainsMask = Math.max (totalSteelChainsMask*5,0)
+
+const [MiclanPieceofParchMask, setMiclanPieceofParchMask] = useState(0);
+const totalMiclanPieceofParchMask = Math.max (totalPieceofParchMask*3,0)
+
+const [MiclanBlueEssInkMask, setMiclanBlueEssInkMask] = useState(0);
+const totalMiclanBlueEssInkMask = Math.max (totalBlueEssInkMask*1,0)
+
 
 
 //DUSTED LUZIA BATTLE COST - CUTOUT - //
@@ -2327,6 +2546,24 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
         const number69 = totalVelsounLoleNMaskTotalCoinsWC;
         const TotalLoleNMaskVelsounWCComma = USformatter.format(number69)
 
+        const number70 = totalWizellWCCutoutAT;
+        const WizellWCCutoutATComma = USformatter.format(number70)
+
+        const number71 = totalWizellWCMaskAT;
+        const WizellWCMaskATComma = USformatter.format(number71)
+
+        const number72 = totalHeliodaeWCCutoutRakstal;
+        const HeliodaeWCCutoutRakstalComma = USformatter.format(number72)
+
+        const number73 = totalHeliodaeWCMaskRakstal;
+        const HeliodaeWCMaskRakstalComma = USformatter.format(number73)
+
+        const number74 = totalVelsounLoleBothCutoutBattleCostCoinsWC;
+        const VelsounCutoutBattleCostComma = USformatter.format(number74)
+
+        const number75 = totalVelsounLoleBothMaskBattleCostCoinsWC;
+        const VelsounMaskBattleCostComma = USformatter.format(number75)
+
 // END OF EQUATIONS SO FAR//
 
   return (
@@ -2852,7 +3089,7 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
   <h2>
       <AccordionButton>
         <Box as="span" flex='1' textAlign='center' p={3}>
-        <Heading as='h3' size='lg'>Aurilis Monsters Already Fought</Heading>
+        <Heading as='h3' size='lg'>Monsters Already Fought</Heading>
         </Box>
         <AccordionIcon />
       </AccordionButton>
@@ -2861,14 +3098,390 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
 <Container align='center'>
 
       <Box align='center' h='300px' overflowY='scroll'>
-        <Text fontSize='md' mb='12px'>
-        <i>
-          This section tells the site to skip over any small Aurilis mastery you may have already accomplished.<br></br>
-        </i>
-        </Text>
+
+{TesvenIsShown &&
+      <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/8a/Tesven.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Tesven</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box> }  
+            
+{VelsounIsShown &&
+      <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/9d/Velsoun.png'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Velsoun</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box> }       
+
+{AlphaTamboIsShown &&
+      <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/6d/Alpha_Tambo.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Alpha Tambo</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box> }  
+
+{AzadiIsShown &&
+      <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Azadi</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box> }  
+
+{TareitIsShown &&
+      <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/9f/Tareit.png'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Tareit</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box> }  
+
+{BabuIsShown &&
+      <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Babu.png'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Babu</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box> }  
+
+{DustSuwoIsShown &&
+      <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/dd/Dust_Suwo.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Dust Suwo</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box> }  
+
+{SuwoIsShown &&
+      <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Suwo</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box> }  
 
 
-            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+{RakstalIsShown &&
+      <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/2f/Rakstal.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Rakstal</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box> }  
+
+{ShamanLuziaIsShown &&
+      <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/41/Shaman_Luzia.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Shaman Luzia</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box> }  
+
+
+{DarkReflectionIsShown &&
+      <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/d6/Dark_Reflection.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Dark Reflection</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box> }  
+
+{ReflectionIsShown &&
+      <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/20/Reflection.png'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Reflection</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box> }  
+
+{CaravanIsShown &&
+      <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/2e/Caravan.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Caravan</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box> }  
+
+{KultalvaIsShown &&
+      <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/87/Kultalva.png'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Kultalva</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box> }  
+
+{MiclanIsShown &&
+      <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/7d/Miclan.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Miclan</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box> }  
+
+{RiverGoddessIsShown &&
+      <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/73/River_Goddess.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>River Goddess</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box> }  
+
+{KingMaiIsShown &&
+      <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/8b/King_Mai.png'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>King Mai</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box> }  
+
+{DustedLuziaIsShown &&
+      <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/6b/Dusted_Luzia.png'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Dusted Luzia</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box> }  
+
+{DustyKingMaiIsShown &&
+      <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/23/King_Mai_(Corrupted).png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Dusty King Mai</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box> }  
+
+      <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
        <HStack> 
        <Image
         ml='24px'
@@ -2887,7 +3500,7 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
       </HStack>
             </Box>
 
-            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
        <HStack> 
        <Image
         ml='24px'
@@ -2906,7 +3519,7 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
       </HStack>
             </Box>            
 
-            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
        <HStack> 
        <Image
         ml='24px'
@@ -2925,7 +3538,7 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
       </HStack>
             </Box>     
 
-            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
        <HStack> 
        <Image
         ml='24px'
@@ -2944,7 +3557,7 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
       </HStack>
             </Box>     
 
-            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
        <HStack> 
        <Image
         ml='24px'
@@ -2963,7 +3576,7 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
       </HStack>
             </Box>     
 
-            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
        <HStack> 
        <Image
         ml='24px'
@@ -2980,203 +3593,984 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
 </NumberInput>
       </VStack>
       </HStack>
-            </Box>     
+            </Box>    
+
+       <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/f1/Wizell.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Wizell</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='Mibloom' onInput={(e) => handleWizellChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>      
 
           </Box>
           </Container>
       <br></br>
     </AccordionPanel>
   </AccordionItem>
+
+
+<AccordionItem>
+  <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='center' p={3}>
+        <Heading as='h3' size='lg'>Materials You Already Have</Heading>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+
+    {TesvenIsShown && BlastIsShown &&
+<Container align='center'>
+      <Box align='center' h='100px' overflowY='scroll'>
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Coins</Text>
+        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleCoinsChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>            
+          </Box>
+          </Container>}
+
+    {AzadiIsShown && BlastIsShown &&
+<Container align='center'>
+      <Box align='center' h='100px' overflowY='scroll'>
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Coins</Text>
+        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleCoinsChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>            
+          </Box>
+          </Container>}
+
+    {DustSuwoIsShown && BlastIsShown &&
+<Container align='center'>
+      <Box align='center' h='100px' overflowY='scroll'>
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Coins</Text>
+        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleCoinsChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>            
+          </Box>
+          </Container>}
+
+
+    {SuwoIsShown && BlastIsShown &&
+<Container align='center'>
+      <Box align='center' h='100px' overflowY='scroll'>
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Coins</Text>
+        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleCoinsChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>            
+          </Box>
+          </Container>}
+
+
+    {DarkReflectionIsShown && BlastIsShown &&
+<Container align='center'>
+      <Box align='center' h='100px' overflowY='scroll'>
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Coins</Text>
+        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleCoinsChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>            
+          </Box>
+          </Container>}
+
+
+    {ReflectionIsShown && BlastIsShown &&
+<Container align='center'>
+      <Box align='center' h='100px' overflowY='scroll'>
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Coins</Text>
+        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleCoinsChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>            
+          </Box>
+          </Container>}
+
+
+    {CaravanIsShown && BlastIsShown &&
+<Container align='center'>
+      <Box align='center' h='100px' overflowY='scroll'>
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Coins</Text>
+        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleCoinsChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>            
+          </Box>
+          </Container>}
+
+
+    {KultalvaIsShown && BlastIsShown &&
+<Container align='center'>
+      <Box align='center' h='100px' overflowY='scroll'>
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Coins</Text>
+        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleCoinsChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>            
+          </Box>
+          </Container>}
+
+
+    {RiverGoddessIsShown && BlastIsShown &&
+<Container align='center'>
+      <Box align='center' h='100px' overflowY='scroll'>
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Coins</Text>
+        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleCoinsChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>            
+          </Box>
+          </Container>}
+
+          {VelsounIsShown && BlastIsShown &&
+<Container align='center'>
+
+      <Box align='center' h='300px' overflowY='scroll'>
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/60/Leafbreastplate_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Leaf Breastplate</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Odees' onInput={(e) => handleLeafBreastplateChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/a6/Spiderlegs_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Spider Legs</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleSpiderLegsChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>            
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/f9/Feathers_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Feathers</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleFeathersChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>  
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/fc/Leaves_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Leaves</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Quaruk' onInput={(e) => handleLeavesChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>               
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Coins</Text>
+        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleCoinsChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>            
+          </Box>
+          </Container>}
+
+  {AlphaTamboIsShown && BlastIsShown &&
+<Container align='center'>
+
+      <Box align='center' h='200px' overflowY='scroll'>
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/ee/Roberries.png'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Roberries</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Odees' onInput={(e) => handleRoberriesChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Coins</Text>
+        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleCoinsChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>            
+     
+          </Box>
+          </Container>}
+
+       {BabuIsShown && BlastIsShown &&
+<Container align='center'>
+
+      <Box align='center' h='300px' overflowY='scroll'>
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/0/05/Steel_chains.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Steel Chains</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Odees' onInput={(e) => handleSteelChainsChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Steel</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Odees' onInput={(e) => handleSteelChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/76/Rawsteel_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Raw Steel</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleRawSteelChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>            
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/fc/Leaves_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Leaves</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Quaruk' onInput={(e) => handleLeavesChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>     
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/40/Piece-of-parchment.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Piece of Parchment</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handlePieceofParchChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>         
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/a6/Dried-pulp.png'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Dried Pulp</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleDriedPulpChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>            
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b3/Dust_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Dust</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Quaruk' onInput={(e) => handleDustChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>   
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b2/Kuaywood_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Wood</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleWoodChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>           
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/d3/Blue-essence-ink.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Blue Essence Ink</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleBlueEssInkChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box> 
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/d5/Glass_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Glass Bar</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleGlassBarChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>            
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/19/Wignowessence_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Essence</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Quaruk' onInput={(e) => handleEssChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>   
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e2/Refined-dust.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Refined Dust</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleRDChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box> 
+
+        
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Coins</Text>
+        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleCoinsChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>            
+          </Box>
+          </Container>}
+
+
+  {RakstalIsShown && BlastIsShown &&
+<Container align='center'>
+
+      <Box align='center' h='200px' overflowY='scroll'>
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/0/08/Swamp-moss.png'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Swamp Moss</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Odees' onInput={(e) => handleSwampMossChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Coins</Text>
+        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleCoinsChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>            
+     
+          </Box>
+          </Container>}
+
+      {MiclanIsShown && BlastIsShown &&
+<Container align='center'>
+
+      <Box align='center' h='300px' overflowY='scroll'>
+      <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/0/05/Steel_chains.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Steel Chains</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Odees' onInput={(e) => handleSteelChainsChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Steel</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Odees' onInput={(e) => handleSteelChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/76/Rawsteel_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Raw Steel</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleRawSteelChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>            
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/fc/Leaves_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Leaves</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Quaruk' onInput={(e) => handleLeavesChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>     
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/40/Piece-of-parchment.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Piece of Parchment</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handlePieceofParchChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>         
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/a6/Dried-pulp.png'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Dried Pulp</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleDriedPulpChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>            
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b3/Dust_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Dust</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Quaruk' onInput={(e) => handleDustChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>   
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b2/Kuaywood_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Wood</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleWoodChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>           
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/d3/Blue-essence-ink.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Blue Essence Ink</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleBlueEssInkChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box> 
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/d5/Glass_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Glass Bar</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleGlassBarChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>            
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/19/Wignowessence_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Essence</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Quaruk' onInput={(e) => handleEssChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>   
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e2/Refined-dust.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Refined Dust</Text>
+        <NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleRDChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box> 
+
+        
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Coins</Text>
+        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleCoinsChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>               
+          </Box>
+          </Container>}
+
+
+      <br></br>
+    </AccordionPanel>
+  </AccordionItem>
+
+
   </Accordion>}
-
-  {TesvenIsShown && BlastIsShown && 
-  <Container align='center'>
-    <VStack>
-<Text>How many <b>Tesven</b> have you already fought?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
-  <NumberInputField id='MasteryMonsterHowMany' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
-</NumberInput>
-<Text mt='12px'>How many <b>Coins</b> do you already have?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
-  <NumberInputField id='CoinsHowMany' onInput={(e) => handleCoinsChange(e.target.value)} />
-</NumberInput>
-</VStack>
-</Container>}  
-
-{AzadiIsShown && BlastIsShown && 
-  <Container align='center'>
-    <VStack>
-<Text>How many <b>Azadi</b> have you already fought?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
-  <NumberInputField id='MasteryMonsterHowMany' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
-</NumberInput>
-<Text mt='12px'>How many <b>Coins</b> do you already have?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
-  <NumberInputField id='CoinsHowMany' onInput={(e) => handleCoinsChange(e.target.value)} />
-</NumberInput>
-</VStack>
-</Container>}
-
-{DustSuwoIsShown && BlastIsShown && 
-  <Container align='center'>
-    <VStack>
-<Text>How many <b>Dust Suwo</b> have you already fought?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
-  <NumberInputField id='MasteryMonsterHowMany' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
-</NumberInput>
-<Text mt='12px'>How many <b>Coins</b> do you already have?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
-  <NumberInputField id='CoinsHowMany' onInput={(e) => handleCoinsChange(e.target.value)} />
-</NumberInput>
-</VStack>
-</Container>}
-
-{SuwoIsShown && BlastIsShown && 
-  <Container align='center'>
-    <VStack>
-<Text>How many <b>Suwo</b> have you already fought?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
-  <NumberInputField id='MasteryMonsterHowMany' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
-</NumberInput>
-<Text mt='12px'>How many <b>Coins</b> do you already have?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
-  <NumberInputField id='CoinsHowMany' onInput={(e) => handleCoinsChange(e.target.value)} />
-</NumberInput>
-</VStack>
-</Container>}
-
-{DarkReflectionIsShown && BlastIsShown && 
-  <Container align='center'>
-    <VStack>
-<Text>How many <b>Dark Reflection</b> have you already fought?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
-  <NumberInputField id='MasteryMonsterHowMany' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
-</NumberInput>
-<Text mt='12px'>How many <b>Coins</b> do you already have?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
-  <NumberInputField id='CoinsHowMany' onInput={(e) => handleCoinsChange(e.target.value)} />
-</NumberInput>
-</VStack>
-</Container>}
-
-{ReflectionIsShown && BlastIsShown && 
-  <Container align='center'>
-    <VStack>
-<Text>How many <b>Reflection</b> have you already fought?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
-  <NumberInputField id='MasteryMonsterHowMany' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
-</NumberInput>
-<Text mt='12px'>How many <b>Coins</b> do you already have?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
-  <NumberInputField id='CoinsHowMany' onInput={(e) => handleCoinsChange(e.target.value)} />
-</NumberInput>
-</VStack>
-</Container>}
-
-{CaravanIsShown && BlastIsShown && 
-  <Container align='center'>
-    <VStack>
-<Text>How many <b>Caravan</b> have you already fought?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
-  <NumberInputField id='MasteryMonsterHowMany' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
-</NumberInput>
-<Text mt='12px'>How many <b>Coins</b> do you already have?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
-  <NumberInputField id='CoinsHowMany' onInput={(e) => handleCoinsChange(e.target.value)} />
-</NumberInput>
-</VStack>
-</Container>}
-
-{KultalvaIsShown && BlastIsShown && 
-  <Container align='center'>
-    <VStack>
-<Text>How many <b>Kultalva</b> have you already fought?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
-  <NumberInputField id='MasteryMonsterHowMany' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
-</NumberInput>
-<Text mt='12px'>How many <b>Coins</b> do you already have?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
-  <NumberInputField id='CoinsHowMany' onInput={(e) => handleCoinsChange(e.target.value)} />
-</NumberInput>
-</VStack>
-</Container>}
-
-{RiverGoddessIsShown && BlastIsShown && 
-  <Container align='center'>
-    <VStack>
-<Text>How many <b>River Goddess</b> have you already fought?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
-  <NumberInputField id='MasteryMonsterHowMany' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
-</NumberInput>
-<Text mt='12px'>How many <b>Coins</b> do you already have?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
-  <NumberInputField id='CoinsHowMany' onInput={(e) => handleCoinsChange(e.target.value)} />
-</NumberInput>
-</VStack>
-</Container>}
-
-
-{AlphaTamboIsShown && BlastIsShown && 
-  <Container align='center'>
-    <VStack>
-<Text>How many <b>Alpha Tambo</b> have you already fought?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
-  <NumberInputField id='MasteryMonsterHowMany' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
-</NumberInput>
-
-<Text><b>Alpha Tambo</b> has a battle cost (5 Roberries), which can only be gathered 
-through battling creatures. How many <b>Roberries</b> do you already have?<br></br></Text>
-<NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
-  <NumberInputField id='CoinsHowMany' onInput={(e) => handleRoberriesChange(e.target.value)} />
-</NumberInput>
-</VStack>
-</Container>}
-
-
-{RakstalIsShown && BlastIsShown && 
-  <Container align='center'>
-    <VStack>
-<Text>How many <b>Rakstal</b> have you already fought?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
-  <NumberInputField id='MasteryMonsterHowMany' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
-</NumberInput>
-
-<Text><b>Rakstal</b> has a battle cost (2 Swamp Moss), which can only be gathered 
-through battling creatures. How many <b>Swamp Moss</b> do you already have?<br></br></Text>
-<NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
-  <NumberInputField id='CoinsHowMany' onInput={(e) => handleSwampMossChange(e.target.value)} />
-</NumberInput>
-</VStack>
-</Container>}
-
-{VelsounIsShown && BlastIsShown && 
-  <Container align='center'>
-    <VStack>
-<Text>How many <b>Velsoun</b> have you already fought?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
-  <NumberInputField id='MasteryMonsterHowMany' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
-</NumberInput>
-
-<Text><b>Velsoun</b> has a battle cost (1 Leaf Breastplate), which this guide calculates as coin cost of materials. <br></br>
-How many <b>Leaf Breastplate</b> do you already have?<br></br></Text>
-<NumberInput defaultValue={0} min={0} max={100000} size='md' w='100px'>
-  <NumberInputField id='CoinsHowMany' onInput={(e) => handleLeafBreastplateChange(e.target.value)} />
-</NumberInput>
-</VStack>
-</Container>}
-
-
-
-  {DustedLuziaIsShown && BlastIsShown && 
-  <Container align='center'>
-    <VStack>
-<Text>How many <b>Dusted Luzia</b> have you already fought?</Text><br></br>
-        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
-  <NumberInputField id='MasteryMonsterHowMany' onInput={(e) => handleMasteryMonsterChange(e.target.value)} />
-</NumberInput>
-</VStack>
-</Container>
-}  
+ 
 
 {DustedLuziaIsShown && BlastIsShown &&
   <Container align='center'>
@@ -3952,7 +5346,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             </Box>}
 
 {VelsounIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown && 
-<Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='730px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -3986,8 +5380,10 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         </Text>
         <Divider mt='3px' w='250px' />
         
-        <Text fontSize='md'><b>Battle Cost:</b><br></br> {totalMasteryMonsterCutout} Leaf Breastplates</Text>
-
+        <Text fontSize='md'><b>Battle Cost:</b><br></br> {totalMasteryMonsterCutout} Leaf Breastplate</Text>
+        <Text fontSize='md'><b>Battle Cost Word Count:</b><br></br>
+        {VelsounCutoutBattleCostComma}
+        </Text>
 
         <Divider mt='3px' w='250px' />
         <Text fontSize='md'><b>Coin Cost:<br></br></b>{TotalLoleBothCutoutPotionCostComma} coins
@@ -3998,7 +5394,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             </Box>}
 
 {VelsounIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown && 
-<Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='730px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -4032,8 +5428,10 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         </Text>
         <Divider mt='3px' w='250px' />
         
-        <Text fontSize='md'><b>Battle Cost:</b><br></br> {totalMasteryMonsterCutout} Leaf Breastplates</Text>
-
+        <Text fontSize='md'><b>Battle Cost:</b><br></br> {totalMasteryMonsterCutout} Leaf Breastplate</Text>
+        <Text fontSize='md'><b>Battle Cost Word Count:</b><br></br>
+        {VelsounCutoutBattleCostComma}
+        </Text>
 
         <Divider mt='3px' w='250px' />
         <Text fontSize='md'><b>Coin Cost:<br></br></b>{TotalLoleBothCutoutPotionCostComma} coins
@@ -4044,7 +5442,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             </Box>}
 
 {VelsounIsShown && BlastIsShown && LoleYIsShown && MaskIsShown && 
-<Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='730px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -4078,8 +5476,10 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         </Text>
         <Divider mt='3px' w='250px' />
         
-        <Text fontSize='md'><b>Battle Cost:</b><br></br>{totalMasteryMonsterMask} Leaf Breastplates</Text>
-
+        <Text fontSize='md'><b>Battle Cost:</b><br></br>{totalMasteryMonsterMask} Leaf Breastplate</Text>
+        <Text fontSize='md'><b>Battle Cost Word Count:</b><br></br>
+        {VelsounCutoutBattleCostComma}
+        </Text>
 
         <Divider mt='3px' w='250px' />
         <Text fontSize='md'><b>Coin Cost:<br></br></b>{TotalLoleBothMaskPotionCostComma} coins
@@ -4090,7 +5490,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             </Box>}
 
 {VelsounIsShown && BlastIsShown && LoleNIsShown && MaskIsShown && 
-<Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='730px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -4124,8 +5524,10 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         </Text>
         <Divider mt='3px' w='250px' />
         
-        <Text fontSize='md'><b>Battle Cost:</b><br></br> {totalMasteryMonsterMask} Leaf Breastplates</Text>
-
+        <Text fontSize='md'><b>Battle Cost:</b><br></br> {totalMasteryMonsterMask} Leaf Breastplate</Text>
+        <Text fontSize='md'><b>Battle Cost Word Count:</b><br></br>
+        {VelsounCutoutBattleCostComma}
+        </Text>
 
         <Divider mt='3px' w='250px' />
         <Text fontSize='md'><b>Coin Cost:<br></br></b>{TotalLoleBothMaskPotionCostComma} coins
@@ -4137,7 +5539,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 
 
 {AlphaTamboIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown && 
-<Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: AlphaTamboActive ? "#512F30" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: AlphaTamboActive ? "#512F30" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -4172,7 +5574,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         <Divider mt='3px' w='250px' />
         
         <Text fontSize='md'><b>Battle Cost:</b><br></br> {totalRoberriesCutoutAT} Roberries</Text>
-
+        <Text fontSize='md'><b>Battle Cost Word Count:</b><br></br>
+        {WizellWCCutoutATComma}
+        </Text>
 
         <Divider mt='3px' w='250px' />
         <Text fontSize='md'><b>Coin Cost:<br></br></b>{TotalLoleBothCutoutPotionCostComma} coins
@@ -4183,7 +5587,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             </Box>}
 
 {AlphaTamboIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown && 
-<Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: AlphaTamboActive ? "#512F30" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: AlphaTamboActive ? "#512F30" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -4218,7 +5622,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         <Divider mt='3px' w='250px' />
         
         <Text fontSize='md'><b>Battle Cost:</b><br></br> {totalRoberriesCutoutAT} Roberries</Text>
-
+        <Text fontSize='md'><b>Battle Cost Word Count:</b><br></br>
+        {WizellWCCutoutATComma}
+        </Text>
 
         <Divider mt='3px' w='250px' />
         <Text fontSize='md'><b>Coin Cost:<br></br></b>{TotalLoleBothCutoutPotionCostComma} coins
@@ -4229,7 +5635,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             </Box>}
 
 {AlphaTamboIsShown && BlastIsShown && LoleYIsShown && MaskIsShown && 
-<Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: AlphaTamboActive ? "#512F30" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: AlphaTamboActive ? "#512F30" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -4264,7 +5670,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         <Divider mt='3px' w='250px' />
         
         <Text fontSize='md'><b>Battle Cost:</b><br></br> {totalRoberriesMaskAT} Roberries</Text>
-
+        <Text fontSize='md'><b>Battle Cost Word Count:</b><br></br>
+        {WizellWCMaskATComma}
+        </Text>
 
         <Divider mt='3px' w='250px' />
         <Text fontSize='md'><b>Coin Cost:<br></br></b>{TotalLoleBothMaskPotionCostComma} coins
@@ -4275,7 +5683,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             </Box>}
 
 {AlphaTamboIsShown && BlastIsShown && LoleNIsShown && MaskIsShown && 
-<Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: AlphaTamboActive ? "#512F30" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: AlphaTamboActive ? "#512F30" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -4310,7 +5718,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         <Divider mt='3px' w='250px' />
         
         <Text fontSize='md'><b>Battle Cost:</b><br></br> {totalRoberriesMaskAT} Roberries</Text>
-
+        <Text fontSize='md'><b>Battle Cost Word Count:</b><br></br>
+        {WizellWCMaskATComma}
+        </Text>
 
         <Divider mt='3px' w='250px' />
         <Text fontSize='md'><b>Coin Cost:<br></br></b>{TotalLoleBothMaskPotionCostComma} coins
@@ -4322,7 +5732,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 
 
 {RakstalIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown && 
-<Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: RakstalActive ? "#27445e" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: RakstalActive ? "#27445e" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -4357,7 +5767,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         <Divider mt='3px' w='250px' />
         
         <Text fontSize='md'><b>Battle Cost:</b><br></br> {totalSwampMossCutoutRakstal} Swamp Moss</Text>
-
+        <Text fontSize='md'><b>Battle Cost Word Count:</b><br></br>
+        {HeliodaeWCCutoutRakstalComma}
+        </Text>
 
         <Divider mt='3px' w='250px' />
         <Text fontSize='md'><b>Coin Cost:<br></br></b>{TotalLoleBothCutoutPotionCostComma} coins
@@ -4368,7 +5780,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             </Box>}
 
 {RakstalIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown && 
-<Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: RakstalActive ? "#27445e" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: RakstalActive ? "#27445e" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -4403,7 +5815,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         <Divider mt='3px' w='250px' />
         
         <Text fontSize='md'><b>Battle Cost:</b><br></br>{totalSwampMossCutoutRakstal} Swamp Moss</Text>
-
+        <Text fontSize='md'><b>Battle Cost Word Count:</b><br></br>
+        {HeliodaeWCCutoutRakstalComma}
+        </Text>
 
         <Divider mt='3px' w='250px' />
         <Text fontSize='md'><b>Coin Cost:<br></br></b>{TotalLoleBothCutoutPotionCostComma} coins
@@ -4414,7 +5828,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             </Box>}
 
 {RakstalIsShown && BlastIsShown && LoleYIsShown && MaskIsShown && 
-<Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: RakstalActive ? "#27445e" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: RakstalActive ? "#27445e" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -4449,7 +5863,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         <Divider mt='3px' w='250px' />
         
         <Text fontSize='md'><b>Battle Cost:</b><br></br>{totalSwampMossMaskRakstal} Swamp Moss</Text>
-
+        <Text fontSize='md'><b>Battle Cost Word Count:</b><br></br>
+        {HeliodaeWCMaskRakstalComma}
+        </Text>
 
         <Divider mt='3px' w='250px' />
         <Text fontSize='md'><b>Coin Cost:<br></br></b>{TotalLoleBothMaskPotionCostComma} coins
@@ -4460,7 +5876,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             </Box>}
 
 {RakstalIsShown && BlastIsShown && LoleNIsShown && MaskIsShown && 
-<Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: RakstalActive ? "#27445e" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: RakstalActive ? "#27445e" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -4495,7 +5911,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         <Divider mt='3px' w='250px' />
         
         <Text fontSize='md'><b>Battle Cost:</b><br></br>{totalSwampMossMaskRakstal} Swamp Moss</Text>
-
+        <Text fontSize='md'><b>Battle Cost Word Count:</b><br></br>
+        {HeliodaeWCMaskRakstalComma}
+        </Text>
 
         <Divider mt='3px' w='250px' />
         <Text fontSize='md'><b>Coin Cost:<br></br></b>{TotalLoleBothMaskPotionCostComma} coins
@@ -5374,6 +6792,98 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 </TableContainer>
 </Container> }
 
+{VelsounIsShown && 
+<Container>
+        <Text mt='12px'><b>Battle Cost</b></Text>
+        <TableContainer>
+  <Table variant='unstyled' maxW={20} align='center'>
+    <Tbody>
+      <Tr>
+        <Td>
+        <Box w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/a6/Spiderlegs_md.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Spider Legs</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalVelsounLoleBothCutoutSpiderLegs}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalVelsounLoleBothMaskSpiderLegs}</text>}
+      </VStack>
+  </Box>
+        </Td>
+        <Td>
+        <Box w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/f9/Feathers_md.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Feathers</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalVelsounLoleBothCutoutFeathers}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalVelsounLoleBothMaskFeathers}</text>}
+      </VStack>
+  </Box>
+        </Td>
+        <Td>
+        <Box w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/fc/Leaves_md.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Leaves</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalVelsounLoleBothCutoutLeaves}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalVelsounLoleBothMaskLeaves}</text>}
+      </VStack>
+  </Box>
+        </Td>
+      </Tr>    
+
+       <Tr>
+        <Td>
+        <Box w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/24/Tyluclaws_md.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Claws</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalVelsounLoleBothCutoutClaws}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalVelsounLoleBothMaskClaws}</text>}
+      </VStack>
+  </Box>
+        </Td>
+        <Td>
+        <Box w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Coins</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalVelsounLoleBothCutoutCoinsLBP}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalVelsounLoleBothMaskCoinsLBP}</text>}
+      </VStack>
+  </Box>
+        </Td>
+      </Tr>    
+
+    </Tbody>
+  </Table>
+</TableContainer>
+</Container> } 
+
 {AlphaTamboIsShown && 
 <Container>
         <Text mt='12px'><b>Battle Cost</b></Text>
@@ -5416,6 +6926,215 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     </Tbody>
   </Table>
 </TableContainer>
+</Container> } 
+
+
+{BabuIsShown && 
+<Container>
+        <Text mt='12px'><b>Battle Cost: Materials Needed</b></Text>
+        <TableContainer>
+  <Table variant='unstyled' maxW={20} align='center'>
+    <Tbody>
+      <Tr>
+        <Td>
+        <Box w='50px' h='120px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/0/05/Steel_chains.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Steel<br></br>Chains</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalBabuSteelChainsCutout}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalBabuSteelChainsMask}</text>}
+      </VStack>
+  </Box>
+        </Td>
+        <Td>
+        <Box w='50px' h='120px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/40/Piece-of-parchment.png/'
+        mr='5px'
+      /> <Text fontSize='md' align='center'>Piece of<br></br>Parchment</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalBabuPieceofParchCutout}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalBabuPieceofParchMask}</text>}
+      </VStack>
+  </Box>
+        </Td>
+        <Td>
+        <Box w='50px' h='120px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/d3/Blue-essence-ink.png/'
+        mr='5px'
+      /> <Text fontSize='md' align='center'>Blue Essence<br></br>Ink</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalBabuBlueEssInkCutout}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalBabuBlueEssInkMask}</text>}
+      </VStack>
+  </Box>
+        </Td>
+      </Tr>    
+
+       <Tr>
+        <Td>
+        <Box w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Coins</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalVelsounLoleBothCutoutCoinsLBP}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalVelsounLoleBothMaskCoinsLBP}</text>}
+      </VStack>
+  </Box>
+        </Td>
+      </Tr>    
+
+    </Tbody>
+  </Table>
+</TableContainer>
+
+<Text mt='12px'><b>Full Crafting Breakdown</b></Text>
+        <TableContainer>
+  <Table variant='unstyled' maxW={20} align='center'>
+    <Tbody>
+      <Tr>
+        <Td>
+        <Box w='50px' h='120px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Steel</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalBabuSteelChainsCutout}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalBabuSteelChainsMask}</text>}
+      </VStack>
+  </Box>
+        </Td>
+        <Td>
+        <Box w='50px' h='120px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/a6/Dried-pulp.png'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Dried Pulp</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalBabuBattleCostCutoutSix}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalBabuBattleCostMaskSix}</text>}
+      </VStack>
+  </Box>
+        </Td>
+
+        <Td>
+        <Box w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b3/Dust_md.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Dust</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalBabuBattleCostCutoutSix}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalBabuBattleCostMaskSix}</text>}
+      </VStack>
+  </Box>
+        </Td>
+
+      </Tr>    
+
+       <Tr>
+        <Td>
+        <Box w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b2/Kuaywood_md.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Wood</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalBabuBattleCostCutoutFifteen}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalBabuBattleCostMaskFifteen}</text>}
+      </VStack>
+  </Box>
+        </Td>
+
+        <Td>
+        <Box w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/d5/Glass_md.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Glass Bar</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalBabuBlueEssInkCutout}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalBabuBlueEssInkMask}</text>}
+      </VStack>
+  </Box>
+        </Td>
+        <Td>
+        <Box w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/19/Wignowessence_md.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Essence</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalBabuBlueEssInkCutout}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalBabuBlueEssInkMask}</text>}
+      </VStack>
+  </Box>
+        </Td>
+
+
+      </Tr>  
+
+      <Tr>
+        <Td>
+        <Box w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e2/Refined-dust.png/'
+        mr='5px'
+      /> <Text fontSize='md' align='center'>Refined Dust</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalBabuSteelChainsCutout}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalBabuSteelChainsMask}</text>}
+      </VStack>
+  </Box>
+        </Td>
+
+      </Tr>    
+
+
+    </Tbody>
+  </Table>
+</TableContainer>
+
+
 </Container> } 
 
 
@@ -5462,6 +7181,86 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
   </Table>
 </TableContainer>
 </Container> } 
+
+
+
+{MiclanIsShown && 
+<Container>
+        <Text mt='12px'><b>Battle Cost</b></Text>
+        <TableContainer>
+  <Table variant='unstyled' maxW={20} align='center'>
+    <Tbody>
+      <Tr>
+        <Td>
+        <Box w='50px' h='120px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/0/05/Steel_chains.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Steel<br></br>Chains</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalMiclanSteelChainsCutout}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalMiclanSteelChainsMask}</text>}
+      </VStack>
+  </Box>
+        </Td>
+        <Td>
+        <Box w='50px' h='120px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/40/Piece-of-parchment.png/'
+        mr='5px'
+      /> <Text fontSize='md' align='center'>Piece of<br></br>Parchment</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalMiclanPieceofParchCutout}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalMiclanPieceofParchMask}</text>}
+      </VStack>
+  </Box>
+        </Td>
+        <Td>
+        <Box w='50px' h='120px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/d3/Blue-essence-ink.png/'
+        mr='5px'
+      /> <Text fontSize='md' align='center'>Blue Essence<br></br>Ink</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalMiclanBlueEssInkCutout}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalMiclanBlueEssInkMask}</text>}
+      </VStack>
+  </Box>
+        </Td>
+      </Tr>    
+
+       <Tr>
+        <Td>
+        <Box w='50px' h='100px' pb={5}>
+       <VStack> 
+       <Image
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        mr='5px'
+      /> <Text fontSize='lg' align='center'>Coins</Text>
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalVelsounLoleBothCutoutCoinsLBP}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalVelsounLoleBothMaskCoinsLBP}</text>}
+      </VStack>
+  </Box>
+        </Td>
+      </Tr>    
+
+    </Tbody>
+  </Table>
+</TableContainer>
+</Container> } 
+
       
 {DustedLuziaIsShown && CoinsIsShown &&
 <Container>
