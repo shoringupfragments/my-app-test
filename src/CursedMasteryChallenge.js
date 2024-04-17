@@ -6472,7 +6472,8 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         </Wrap></Container>
 
       <VStack>
-        <text mr='10px' ml='10px'>What is the word count of the monster you're mastering?<br></br><br></br></text> 
+        <text mr='10px' ml='10px'>What is the word count of the monster you're mastering?<br></br>
+        Note: the 2000+ words monsters section contains many late game monster spoilers<br></br><br></br></text> 
     
         <Container><Wrap justify='center'>
         <WrapItem>
