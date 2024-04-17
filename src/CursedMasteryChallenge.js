@@ -1534,6 +1534,11 @@ const totalResourcesMaskLoleNMusya = Math.max (totalResourcesMaskLoleNQuaMus-100
 const totalResourcesMaskLoleNOdees = Math.max (totalResourcesMaskLoleNQuaMus-totalResourcesMaskLoleNMusya,0)
 
 
+const totalResourcesCutoutLoleY_BlastPotionsNeeded = Math.ceil (totalResourcesCutoutLoleY/4)
+const totalResourcesMaskLoleY_BlastPotionsNeeded = Math.ceil (totalResourcesMaskLoleY/4)
+
+const totalResourcesCutoutLoleN_BlastPotionsNeeded = Math.ceil (totalResourcesCutoutLoleN/6)
+const totalResourcesMaskLoleN_BlastPotionsNeeded = Math.ceil (totalResourcesMaskLoleN/6)
 
 //how many AURILIS MONSTERS are left//
 
@@ -6141,7 +6146,17 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         const number319 = totalMasteryMonsterLoleNBookResourcesNeeded;
         const MasteryMonsterLoleNBookResourcesNeededComma = USformatter.format(number319)
   
-  
+        const number320 = totalResourcesCutoutLoleY_BlastPotionsNeeded;
+        const ResourcesCutoutLoleY_BlastPotionsNeededComma = USformatter.format(number320)
+
+        const number321 = totalResourcesMaskLoleY_BlastPotionsNeeded;
+        const ResourcesMaskLoleY_BlastPotionsNeededComma = USformatter.format(number321)
+
+        const number322 = totalResourcesCutoutLoleN_BlastPotionsNeeded;
+        const ResourcesCutoutLoleN_BlastPotionsNeededComma = USformatter.format(number322)
+
+        const number323 = totalResourcesMaskLoleN_BlastPotionsNeeded;
+        const ResourcesMaskLoleN_BlastPotionsNeededComma = USformatter.format(number323)
 
 // END OF EQUATIONS SO FAR//
 
