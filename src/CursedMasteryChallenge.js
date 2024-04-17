@@ -1,6 +1,7 @@
 import React from 'react';
-import { useState, useEffect, useId, props } from "react";
+import { useState, useEffect, useId } from "react";
 import {
+  props,
   Accordion,
   AccordionItem,
   AccordionButton,
@@ -10143,6 +10144,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TesvenWCLoleYCutoutComma}
           </Text>
         <Divider w='250px' />
+        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleYCutoutResourcesComma}</Text>
         <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10185,6 +10188,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TesvenWCLoleNCutoutComma}
           </Text>
         <Divider w='250px' />
+        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleN_BlastPotionsNeededComma}</Text>
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleNCutoutResourcesComma}</Text>
         <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10227,6 +10232,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TesvenWCLoleYMaskComma}
           </Text>
         <Divider w='250px' />
+        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleY_BlastPotionsNeededComma}</Text>
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleYMaskResourcesComma}</Text>
         <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10269,6 +10276,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TesvenWCLoleNMaskComma}
           </Text>
         <Divider w='250px' />
+        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleNMaskResourcesComma}</Text>
         <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10313,6 +10322,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{AzadiWCLoleYCutoutComma}
       	</Text>
     	<Divider w='250px' />
+      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10482,6 +10493,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{DustSuwoWCLoleYCutoutComma}
       	</Text>
     	<Divider w='250px' />
+      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10652,6 +10665,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{SuwoWCLoleYCutoutComma}
       	</Text>
     	<Divider w='250px' />
+      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10820,6 +10835,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{DarkReflectionWCLoleYCutoutComma}
       	</Text>
     	<Divider w='250px' />
+      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10988,6 +11005,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{DarkReflectionWCLoleYCutoutComma}
       	</Text>
     	<Divider w='250px' />
+      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -11157,6 +11176,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{CaravanWCLoleYCutoutComma}
       	</Text>
     	<Divider w='250px' />
+      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -11325,6 +11346,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{RiverGoddessWCLoleYCutoutComma}
       	</Text>
     	<Divider w='250px' />
+      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -11494,6 +11517,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{KultalvaWCLoleYCutoutComma}
       	</Text>
     	<Divider w='250px' />
+      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -11662,6 +11687,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TotalLoleYCutoutVelsounWCComma}
           </Text>
         <Divider w='250px' />
+        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleYCutoutResourcesComma}</Text>
         <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -11845,6 +11872,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TotalLoleYCutoutAlphaTamboWCComma}
           </Text>
         <Divider w='250px' />
+        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleYCutoutResourcesComma}</Text>
         <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -12032,6 +12061,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TotalLoleYCutoutRakstalWCComma}
           </Text>
         <Divider w='250px' />
+        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleYCutoutResourcesComma}</Text>
         <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -12213,6 +12244,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{TareitWCLoleYCutoutComma}
       	</Text>
     	<Divider w='250px' />
+      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -12385,6 +12418,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{BabuWCLoleYCutoutComma}
       	</Text>
     	<Divider w='250px' />
+      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -12569,6 +12604,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{MiclanWCLoleYCutoutComma}
       	</Text>
     	<Divider w='250px' />
+      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
