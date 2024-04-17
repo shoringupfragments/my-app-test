@@ -4078,6 +4078,45 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
   const totalDustyKingMaiWCLoleYMaskResult = Math.round (totalDustyKingMaiTotalWCLoleYMask / ((attackStat/100) +1))
   const totalDustyKingMaiWCLoleNMaskResult = Math.round (totalDustyKingMaiTotalWCLoleNMask / ((attackStat/100) +1))
 
+//attack stat for mastery amts
+
+const totalTesvenMasteryCutoutAttack = Math.round (totalTesvenMasteryCutout / ((attackStat/100) + 1))  
+const totalTesvenMasteryMaskAttack = Math.round (totalTesvenMasteryMask / ((attackStat/100) + 1))  
+
+
+const totalVelsounMasteryCutoutAttack = Math.round (totalVelsounMasteryCutout / ((attackStat/100) + 1))  
+const totalVelsounMasteryMaskAttack = Math.round (totalVelsounMasteryMask / ((attackStat/100) + 1))  
+
+
+const totalAlphaTamboAzadiMasteryCutoutAttack = Math.round (totalAlphaTamboAzadiMasteryCutout / ((attackStat/100) + 1))  
+const totalAlphaTamboAzadiMasteryMaskAttack = Math.round (totalAlphaTamboAzadiMasteryMask / ((attackStat/100) + 1))  
+
+const totalTareitMasteryCutoutAttack = Math.round (totalTareitMasteryCutout / ((attackStat/100) + 1))  
+const totalTareitMasteryMaskAttack = Math.round (totalTareitMasteryMask / ((attackStat/100) + 1))  
+
+const totalBabuSuwoDustSuwoMasteryCutoutAttack = Math.round (totalBabuSuwoDustSuwoMasteryCutout / ((attackStat/100) + 1))  
+const totalBabuSuwoDustSuwoMasteryMaskAttack = Math.round (totalBabuSuwoDustSuwoMasteryMask / ((attackStat/100) + 1))  
+
+const totalRakstalMasteryCutoutAttack = Math.round (totalRakstalMasteryCutout / ((attackStat/100) + 1))  
+const totalRakstalMasteryMaskAttack = Math.round (totalRakstalMasteryMask / ((attackStat/100) + 1))  
+
+const totalShamanLuziaMasteryCutoutAttack = Math.round (totalShamanLuziaMasteryCutout / ((attackStat/100) + 1))  
+const totalShamanLuziaMasteryMaskAttack = Math.round (totalShamanLuziaMasteryMask / ((attackStat/100) + 1))  
+
+const totalReflDarkReflMasteryCutoutAttack = Math.round (totalReflDarkReflMasteryCutout / ((attackStat/100) + 1))  
+const totalReflDarkReflMasteryMaskAttack = Math.round (totalReflDarkReflMasteryMask / ((attackStat/100) + 1))  
+
+const totalCaraKultMicRivGodKingMaiMasteryCutoutAttack = Math.round (totalCaraKultMicRivGodKingMaiMasteryCutout / ((attackStat/100) + 1))  
+const totalCaraKultMicRivGodKingMaiMasteryMaskAttack = Math.round (totalCaraKultMicRivGodKingMaiMasteryMask / ((attackStat/100) + 1))  
+const totalDustyLuzMasteryCutoutAttack = Math.round (totalDustyLuzMasteryCutout / ((attackStat/100) + 1))  
+const totalDustyLuzMasteryMaskAttack = Math.round (totalDustyLuzMasteryMask / ((attackStat/100) + 1))  
+
+const totalDustyKingMaiMasteryCutoutAttack = Math.round (totalDustyKingMaiMasteryCutout / ((attackStat/100) + 1))  
+const totalDustyKingMaiMasteryMaskAttack = Math.round (totalDustyKingMaiMasteryMask / ((attackStat/100) + 1))  
+
+
+
+
 
 //Blast POTIONS
 
@@ -6168,6 +6207,176 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
 
         const number323 = totalResourcesMaskLoleN_GrenadePotionsNeeded;
         const ResourcesMaskLoleN_GrenadePotionsNeededComma = USformatter.format(number323)
+
+        const number324 = totalTesvenMasteryCutoutAttack;
+        const TesvenMasteryCutoutComma  = USformatter.format(number324);
+        
+        const number325 = totalTesvenMasteryCutoutAttack;
+        const TesvenMasteryMaskComma  = USformatter.format(number325);
+        
+        const number326 = totalTesvenMasteryStatue;
+        const TesvenMasteryStatueComma  = USformatter.format(number326);
+        
+        const number327 = totalTesvenMasteryBalloon;
+        const TesvenMasteryBalloonComma  = USformatter.format(number327);
+        
+        const number328 = totalTesvenMasteryBook;
+        const TesvenMasteryBookComma  = USformatter.format(number328);
+        
+        
+        
+        const number329 = totalVelsounMasteryCutoutAttack;
+        const VelsounMasteryCutoutComma  = USformatter.format(number329);
+        
+        const number330 = totalVelsounMasteryCutoutAttack;
+        const VelsounMasteryMaskComma  = USformatter.format(number330);
+        
+        const number331 = totalVelsounMasteryStatue;
+        const VelsounMasteryStatueComma  = USformatter.format(number331);
+        
+        const number332 = totalVelsounMasteryBalloon;
+        const VelsounMasteryBalloonComma  = USformatter.format(number332);
+        
+        const number333 = totalVelsounMasteryBook;
+        const VelsounMasteryBookComma  = USformatter.format(number333);
+        
+        
+        const number334 = totalAlphaTamboAzadiMasteryCutoutAttack;
+        const AlphaTamboAzadiMasteryCutoutComma  = USformatter.format(number334);
+        
+        const number335 = totalAlphaTamboAzadiMasteryCutoutAttack;
+        const AlphaTamboAzadiMasteryMaskComma  = USformatter.format(number335);
+        
+        const number336 = totalAlphaTamboAzadiMasteryStatue;
+        const AlphaTamboAzadiMasteryStatueComma  = USformatter.format(number336);
+        
+        const number337 = totalAlphaTamboAzadiMasteryBalloon;
+        const AlphaTamboAzadiMasteryBalloonComma  = USformatter.format(number337);
+        
+        const number338 = totalAlphaTamboAzadiMasteryBook;
+        const AlphaTamboAzadiMasteryBookComma  = USformatter.format(number338);
+        
+        const number339 = totalTareitMasteryCutoutAttack;
+        const TareitMasteryCutoutComma  = USformatter.format(number339);
+        
+        const number340 = totalTareitMasteryCutoutAttack;
+        const TareitMasteryMaskComma  = USformatter.format(number340);
+        
+        const number341 = totalTareitMasteryStatue;
+        const TareitMasteryStatueComma  = USformatter.format(number341);
+        
+        const number342 = totalTareitMasteryBalloon;
+        const TareitMasteryBalloonComma  = USformatter.format(number342);
+        
+        const number343 = totalTareitMasteryBook;
+        const TareitMasteryBookComma  = USformatter.format(number343);
+        
+        const number344 = totalBabuSuwoDustSuwoMasteryCutoutAttack;
+        const BabuSuwoDustSuwoMasteryCutoutComma  = USformatter.format(number344);
+        
+        const number345 = totalBabuSuwoDustSuwoMasteryCutoutAttack;
+        const BabuSuwoDustSuwoMasteryMaskComma  = USformatter.format(number345);
+        
+        const number346 = totalBabuSuwoDustSuwoMasteryStatue;
+        const BabuSuwoDustSuwoMasteryStatueComma  = USformatter.format(number346);
+        
+        const number347 = totalBabuSuwoDustSuwoMasteryBalloon;
+        const BabuSuwoDustSuwoMasteryBalloonComma  = USformatter.format(number347);
+        
+        const number348 = totalBabuSuwoDustSuwoMasteryBook;
+        const BabuSuwoDustSuwoMasteryBookComma  = USformatter.format(number348);
+        
+        const number349 = totalRakstalMasteryCutoutAttack;
+        const RakstalMasteryCutoutComma  = USformatter.format(number349);
+        
+        const number350 = totalRakstalMasteryCutoutAttack;
+        const RakstalMasteryMaskComma  = USformatter.format(number350);
+        
+        const number351 = totalRakstalMasteryStatue;
+        const RakstalMasteryStatueComma  = USformatter.format(number351);
+        
+        const number352 = totalRakstalMasteryBalloon;
+        const RakstalMasteryBalloonComma  = USformatter.format(number352);
+        
+        const number353 = totalRakstalMasteryBook;
+        const RakstalMasteryBookComma  = USformatter.format(number353);
+        
+        const number354 = totalShamanLuziaMasteryCutoutAttack;
+        const ShamanLuziaMasteryCutoutComma  = USformatter.format(number354);
+        
+        const number355 = totalShamanLuziaMasteryCutoutAttack;
+        const ShamanLuziaMasteryMaskComma  = USformatter.format(number355);
+        
+        const number356 = totalShamanLuziaMasteryStatue;
+        const ShamanLuziaMasteryStatueComma  = USformatter.format(number356);
+        
+        const number357 = totalShamanLuziaMasteryBalloon;
+        const ShamanLuziaMasteryBalloonComma  = USformatter.format(number357);
+        
+        const number358 = totalShamanLuziaMasteryBook;
+        const ShamanLuziaMasteryBookComma  = USformatter.format(number358);
+        
+        const number359 = totalReflDarkReflMasteryCutoutAttack;
+        const ReflDarkReflMasteryCutoutComma  = USformatter.format(number359);
+        
+        const number360 = totalReflDarkReflMasteryCutoutAttack;
+        const ReflDarkReflMasteryMaskComma  = USformatter.format(number360);
+        
+        const number361 = totalReflDarkReflMasteryStatue;
+        const ReflDarkReflMasteryStatueComma  = USformatter.format(number361);
+        
+        const number362 = totalReflDarkReflMasteryBalloon;
+        const ReflDarkReflMasteryBalloonComma  = USformatter.format(number362);
+        
+        const number363 = totalReflDarkReflMasteryBook;
+        const ReflDarkReflMasteryBookComma  = USformatter.format(number363);
+        
+        const number364 = totalCaraKultMicRivGodKingMaiMasteryCutoutAttack;
+        const CaraKultMicRivGodKingMaiMasteryCutoutComma  = USformatter.format(number364);
+        
+        const number365 = totalCaraKultMicRivGodKingMaiMasteryCutoutAttack;
+        const CaraKultMicRivGodKingMaiMasteryMaskComma  = USformatter.format(number365);
+        
+        const number366 = totalCaraKultMicRivGodKingMaiMasteryStatue;
+        const CaraKultMicRivGodKingMaiMasteryStatueComma  = USformatter.format(number366);
+        
+        const number367 = totalCaraKultMicRivGodKingMaiMasteryBalloon;
+        const CaraKultMicRivGodKingMaiMasteryBalloonComma  = USformatter.format(number367);
+        
+        const number368 = totalCaraKultMicRivGodKingMaiMasteryBook;
+        const CaraKultMicRivGodKingMaiMasteryBookComma  = USformatter.format(number368);
+        
+        const number369 = totalDustyLuzMasteryCutoutAttack;
+        const DustyLuzMasteryCutoutComma  = USformatter.format(number369);
+        
+        const number370 = totalDustyLuzMasteryCutoutAttack;
+        const DustyLuzMasteryMaskComma  = USformatter.format(number370);
+        
+        const number371 = totalDustyLuzMasteryStatue;
+        const DustyLuzMasteryStatueComma  = USformatter.format(number371);
+        
+        const number372 = totalDustyLuzMasteryBalloon;
+        const DustyLuzMasteryBalloonComma  = USformatter.format(number372);
+        
+        const number373 = totalDustyLuzMasteryBook;
+        const DustyLuzMasteryBookComma  = USformatter.format(number373);
+        
+        const number374 = totalDustyKingMaiMasteryCutoutAttack;
+        const DustyKingMaiMasteryCutoutComma  = USformatter.format(number374);
+        
+        const number375 = totalDustyKingMaiMasteryCutoutAttack;
+        const DustyKingMaiMasteryMaskComma  = USformatter.format(number375);
+        
+        const number376 = totalDustyKingMaiMasteryStatue;
+        const DustyKingMaiMasteryStatueComma  = USformatter.format(number376);
+        
+        const number377 = totalDustyKingMaiMasteryBalloon;
+        const DustyKingMaiMasteryBalloonComma  = USformatter.format(number377);
+        
+        const number378 = totalDustyKingMaiMasteryBook;
+        const DustyKingMaiMasteryBookComma  = USformatter.format(number378);
+        
+        
 
 // END OF EQUATIONS SO FAR//
 
@@ -9549,7 +9758,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
 {NullIsShown && !VelsounIsShown && !AlphaTamboIsShown && !TareitIsShown &&
 !BabuIsShown && !RakstalIsShown && !ShamanLuziaIsShown && !MiclanIsShown &&
 !KingMaiIsShown && !DustedLuziaIsShown && !DustyKingMaiIsShown && 
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: 
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: 
 TesvenActive ? "#15391E" : "#1A202C" &&
 AzadiActive ? "#2b0707" : "#1A202C" &&
 DustSuwoActive ? "#2b0723" : "#1A202C" &&
@@ -10127,7 +10336,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             </Box>}
 
 {TesvenIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown && 
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -10154,6 +10363,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TesvenWCLoleYCutoutComma}
           </Text>
         <Divider w='250px' />
+      
         <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
         {ResourcesCutoutLoleY_GrenadePotionsNeededComma}</Text>
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
@@ -10161,17 +10371,20 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
         {LoleYCutoutWCComma}
         </Text>
-
         <Divider mt='3px' w='250px' />
         <Text fontSize='md'><b>Coins Needed:<br></br></b>{TesvenCoinsNeededCutoutComma}
           <br></br></Text>
         <Text fontSize='md'><b>Monster Word Count:</b><br></br>
           {TesvenKuikasWCCutoutComma}</Text>
+          <Divider mt='3px' w='250px' />
+          <Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+        {TesvenMasteryCutoutComma}
+          <br></br></Text>
           </VStack>
             </Box>}
 
 {TesvenIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown && 
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -10211,11 +10424,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           <br></br></Text>
         <Text fontSize='md'><b>Monster Word Count:</b><br></br>
           {TesvenKuikasWCCutoutComma}</Text>
+          <Divider mt='3px' w='250px' />
+          <Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+        {TesvenMasteryCutoutComma}
+          <br></br></Text>
           </VStack>
             </Box>}
 
 {TesvenIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown && 
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -10255,11 +10472,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           <br></br></Text>
         <Text fontSize='md'><b>Monster Word Count:</b><br></br>
           {TesvenKuikasWCMaskComma}</Text>
+          <Divider mt='3px' w='250px' />
+          <Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+        {TesvenMasteryMaskComma}
+          <br></br></Text>
           </VStack>
             </Box>}
 
 {TesvenIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown && 
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -10299,13 +10520,17 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           <br></br></Text>
         <Text fontSize='md'><b>Monster Word Count:</b><br></br>
           {TesvenKuikasWCMaskComma}</Text>
+          <Divider mt='3px' w='250px' />
+          <Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+        {TesvenMasteryMaskComma}
+          <br></br></Text>
           </VStack>
             </Box>}            
 
 
 
 {AzadiIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: AzadiActive ? "#2b0707" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: AzadiActive ? "#2b0707" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -10345,11 +10570,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{AzadiKuikasWCCutoutComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{AlphaTamboAzadiMasteryCutoutComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {AzadiIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: AzadiActive ? "#2b0707" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: AzadiActive ? "#2b0707" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -10389,11 +10618,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{AzadiKuikasWCCutoutComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{AlphaTamboAzadiMasteryCutoutComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {AzadiIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: AzadiActive ? "#2b0707" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: AzadiActive ? "#2b0707" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -10433,11 +10666,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{AzadiKuikasWCMaskComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{AlphaTamboAzadiMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {AzadiIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: AzadiActive ? "#2b0707" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: AzadiActive ? "#2b0707" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -10477,12 +10714,16 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{AzadiKuikasWCMaskComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{AlphaTamboAzadiMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}     
 
 
           {DustSuwoIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: DustSuwoActive ? "#2b0723" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: DustSuwoActive ? "#2b0723" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -10522,11 +10763,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{DustSuwoKuikasWCCutoutComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{BabuSuwoDustSuwoMasteryCutoutComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {DustSuwoIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: DustSuwoActive ? "#2b0723" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: DustSuwoActive ? "#2b0723" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -10566,11 +10811,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{DustSuwoKuikasWCCutoutComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{BabuSuwoDustSuwoMasteryCutoutComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {DustSuwoIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: DustSuwoActive ? "#2b0723" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: DustSuwoActive ? "#2b0723" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -10610,11 +10859,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{DustSuwoKuikasWCMaskComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{BabuSuwoDustSuwoMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {DustSuwoIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: DustSuwoActive ? "#2b0723" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: DustSuwoActive ? "#2b0723" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -10654,13 +10907,17 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{DustSuwoKuikasWCMaskComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{BabuSuwoDustSuwoMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}        	   	
 
 
 
           {SuwoIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: SuwoActive ? "#18292b" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: SuwoActive ? "#18292b" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -10700,11 +10957,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{SuwoKuikasWCCutoutComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{BabuSuwoDustSuwoMasteryCutoutComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {SuwoIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: SuwoActive ? "#18292b" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: SuwoActive ? "#18292b" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -10744,11 +11005,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{SuwoKuikasWCCutoutComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{BabuSuwoDustSuwoMasteryCutoutComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {SuwoIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: SuwoActive ? "#18292b" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: SuwoActive ? "#18292b" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -10788,11 +11053,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{SuwoKuikasWCMaskComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{BabuSuwoDustSuwoMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {SuwoIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: SuwoActive ? "#18292b" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: SuwoActive ? "#18292b" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -10832,11 +11101,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{SuwoKuikasWCMaskComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{BabuSuwoDustSuwoMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}        	
 
 {DarkReflectionIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: DarkReflectionActive ? "#0d030f" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: DarkReflectionActive ? "#0d030f" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -10876,11 +11149,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{DarkReflectionKuikasWCCutoutComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{ReflDarkReflMasteryCutoutComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {DarkReflectionIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: DarkReflectionActive ? "#0d030f" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: DarkReflectionActive ? "#0d030f" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -10920,11 +11197,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{DarkReflectionKuikasWCCutoutComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{ReflDarkReflMasteryCutoutComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {DarkReflectionIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: DarkReflectionActive ? "#0d030f" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: DarkReflectionActive ? "#0d030f" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -10964,11 +11245,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{DarkReflectionKuikasWCMaskComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{ReflDarkReflMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {DarkReflectionIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: DarkReflectionActive ? "#0d030f" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: DarkReflectionActive ? "#0d030f" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -11008,11 +11293,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{DarkReflectionKuikasWCMaskComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{ReflDarkReflMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}        	
 
           {ReflectionIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: ReflectionActive ? "#0d211f" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: ReflectionActive ? "#0d211f" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -11052,11 +11341,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{DarkReflectionKuikasWCCutoutComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{ReflDarkReflMasteryCutoutComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {ReflectionIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: ReflectionActive ? "#0d211f" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: ReflectionActive ? "#0d211f" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -11096,11 +11389,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{DarkReflectionKuikasWCCutoutComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{ReflDarkReflMasteryCutoutComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {ReflectionIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: ReflectionActive ? "#0d211f" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: ReflectionActive ? "#0d211f" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -11140,11 +11437,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{DarkReflectionKuikasWCMaskComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{ReflDarkReflMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {ReflectionIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: ReflectionActive ? "#0d211f" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: ReflectionActive ? "#0d211f" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -11184,12 +11485,16 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{DarkReflectionKuikasWCMaskComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{ReflDarkReflMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}        
 
 
           {CaravanIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: CaravanActive ? "#423222" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: CaravanActive ? "#423222" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -11229,11 +11534,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{CaravanKuikasWCCutoutComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{CaraKultMicRivGodKingMaiMasteryCutoutComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {CaravanIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: CaravanActive ? "#423222" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: CaravanActive ? "#423222" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -11273,11 +11582,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{CaravanKuikasWCCutoutComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{CaraKultMicRivGodKingMaiMasteryCutoutComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {CaravanIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: CaravanActive ? "#423222" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: CaravanActive ? "#423222" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -11317,11 +11630,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{CaravanKuikasWCMaskComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{CaraKultMicRivGodKingMaiMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {CaravanIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: CaravanActive ? "#423222" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: CaravanActive ? "#423222" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -11361,11 +11678,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{CaravanKuikasWCMaskComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{CaraKultMicRivGodKingMaiMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}      
 
           {RiverGoddessIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: RiverGoddessActive ? "#171321" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: RiverGoddessActive ? "#171321" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -11405,11 +11726,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{RiverGoddessKuikasWCCutoutComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{CaraKultMicRivGodKingMaiMasteryCutoutComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {RiverGoddessIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: RiverGoddessActive ? "#171321" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: RiverGoddessActive ? "#171321" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -11449,11 +11774,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{RiverGoddessKuikasWCCutoutComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{CaraKultMicRivGodKingMaiMasteryCutoutComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {RiverGoddessIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: RiverGoddessActive ? "#171321" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: RiverGoddessActive ? "#171321" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -11493,11 +11822,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{RiverGoddessKuikasWCMaskComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{CaraKultMicRivGodKingMaiMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {RiverGoddessIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: RiverGoddessActive ? "#171321" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: RiverGoddessActive ? "#171321" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -11538,12 +11871,16 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{RiverGoddessKuikasWCMaskComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{CaraKultMicRivGodKingMaiMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}     
 
 
             {KultalvaIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: KultalvaActive ? "#191b21" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: KultalvaActive ? "#191b21" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -11583,11 +11920,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{KultalvaKuikasWCCutoutComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{CaraKultMicRivGodKingMaiMasteryCutoutComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {KultalvaIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: KultalvaActive ? "#191b21" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: KultalvaActive ? "#191b21" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -11627,11 +11968,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{KultalvaKuikasWCCutoutComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{CaraKultMicRivGodKingMaiMasteryCutoutComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {KultalvaIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: KultalvaActive ? "#191b21" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: KultalvaActive ? "#191b21" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -11671,11 +12016,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{KultalvaKuikasWCMaskComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{CaraKultMicRivGodKingMaiMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {KultalvaIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: KultalvaActive ? "#191b21" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='725px' pb={5} style={{ backgroundColor: KultalvaActive ? "#191b21" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -11716,11 +12065,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{KultalvaKuikasWCMaskComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{CaraKultMicRivGodKingMaiMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}        	
 
 {VelsounIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown && 
-<Box rounded='lg'  w='290px' h='735px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='800px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -11763,13 +12116,17 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           <br></br></Text>
         <Text fontSize='md'><b>Monster Word Count:</b><br></br>
           {VelsounKuikasWCCutoutComma}</Text>
+          <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{VelsounMasteryCutoutComma}
+      	<br></br></Text>
           </VStack>
 
             </Box>}
 
 
 {VelsounIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown && 
-<Box rounded='lg'  w='290px' h='735px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='800px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -11812,11 +12169,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           <br></br></Text>
         <Text fontSize='md'><b>Monster Word Count:</b><br></br>
           {VelsounKuikasWCCutoutComma}</Text>
+          <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{VelsounMasteryCutoutComma}
+      	<br></br></Text>
           </VStack>
             </Box>}
 
 {VelsounIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown && 
-<Box rounded='lg'  w='290px' h='735px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='800px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -11859,11 +12220,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           <br></br></Text>
         <Text fontSize='md'><b>Monster Word Count:</b><br></br>
           {VelsounKuikasWCMaskComma}</Text>
+          <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{VelsounMasteryMaskComma}
+      	<br></br></Text>
           </VStack>
             </Box>}
 
 {VelsounIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown && 
-<Box rounded='lg'  w='290px' h='735px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='800px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -11907,12 +12272,16 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           <br></br></Text>
         <Text fontSize='md'><b>Monster Word Count:</b><br></br>
           {VelsounKuikasWCMaskComma}</Text>
+          <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{VelsounMasteryMaskComma}
+      	<br></br></Text>
           </VStack>
             </Box>}
 
 
 {AlphaTamboIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown && 
-<Box rounded='lg'  w='290px' h='730px' pb={5} style={{ backgroundColor: AlphaTamboActive ? "#512F30" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='850px' pb={5} style={{ backgroundColor: AlphaTamboActive ? "#512F30" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -11955,11 +12324,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           <br></br></Text>
         <Text fontSize='md'><b>Monster Word Count:</b><br></br>
           {AlphaTamboKuikasWCCutoutComma}</Text>
+          <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{AlphaTamboAzadiMasteryCutoutComma}
+      	<br></br></Text>
           </VStack>
             </Box>}
 
 {AlphaTamboIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown && 
-<Box rounded='lg'  w='290px' h='730px' pb={5} style={{ backgroundColor: AlphaTamboActive ? "#512F30" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='850px' pb={5} style={{ backgroundColor: AlphaTamboActive ? "#512F30" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -12002,11 +12375,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           <br></br></Text>
         <Text fontSize='md'><b>Monster Word Count:</b><br></br>
           {AlphaTamboKuikasWCCutoutComma}</Text>
+          <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{AlphaTamboAzadiMasteryCutoutComma}
+      	<br></br></Text>
           </VStack>
             </Box>}
 
 {AlphaTamboIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown && 
-<Box rounded='lg'  w='290px' h='730px' pb={5} style={{ backgroundColor: AlphaTamboActive ? "#512F30" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='850px' pb={5} style={{ backgroundColor: AlphaTamboActive ? "#512F30" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -12052,11 +12429,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           <br></br></Text>
         <Text fontSize='md'><b>Monster Word Count:</b><br></br>
           {AlphaTamboKuikasWCMaskComma}</Text>
+          <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{AlphaTamboAzadiMasteryMaskComma}
+      	<br></br></Text>
           </VStack>
             </Box>}
 
 {AlphaTamboIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown && 
-<Box rounded='lg'  w='290px' h='730px' pb={5} style={{ backgroundColor: AlphaTamboActive ? "#512F30" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='850px' pb={5} style={{ backgroundColor: AlphaTamboActive ? "#512F30" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -12103,12 +12484,16 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           <br></br></Text>
         <Text fontSize='md'><b>Monster Word Count:</b><br></br>
           {AlphaTamboKuikasWCMaskComma}</Text>
+          <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{AlphaTamboAzadiMasteryMaskComma}
+      	<br></br></Text>
           </VStack>
             </Box>}
 
 
 {RakstalIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown && 
-<Box rounded='lg'  w='290px' h='730px' pb={5} style={{ backgroundColor: RakstalActive ? "#27445e" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='850px' pb={5} style={{ backgroundColor: RakstalActive ? "#27445e" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -12151,11 +12536,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           <br></br></Text>
         <Text fontSize='md'><b>Monster Word Count:</b><br></br>
           {RakstalKuikasWCCutoutComma}</Text>
+          <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{RakstalMasteryCutoutComma}
+      	<br></br></Text>
           </VStack>
             </Box>}
 
 {RakstalIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown && 
-<Box rounded='lg'  w='290px' h='730px' pb={5} style={{ backgroundColor: RakstalActive ? "#27445e" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='850px' pb={5} style={{ backgroundColor: RakstalActive ? "#27445e" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -12198,11 +12587,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           <br></br></Text>
         <Text fontSize='md'><b>Monster Word Count:</b><br></br>
           {RakstalKuikasWCCutoutComma}</Text>
+          <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{RakstalMasteryCutoutComma}
+      	<br></br></Text>
           </VStack>
             </Box>}
 
 {RakstalIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown && 
-<Box rounded='lg'  w='290px' h='730px' pb={5} style={{ backgroundColor: RakstalActive ? "#27445e" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='850px' pb={5} style={{ backgroundColor: RakstalActive ? "#27445e" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -12245,11 +12638,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           <br></br></Text>
         <Text fontSize='md'><b>Monster Word Count:</b><br></br>
           {RakstalKuikasWCMaskComma}</Text>
+          <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{RakstalMasteryMaskComma}
+      	<br></br></Text>
           </VStack>
             </Box>}
 
 {RakstalIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown && 
-<Box rounded='lg'  w='290px' h='730px' pb={5} style={{ backgroundColor: RakstalActive ? "#27445e" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='850px' pb={5} style={{ backgroundColor: RakstalActive ? "#27445e" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -12293,12 +12690,16 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           <br></br></Text>
         <Text fontSize='md'><b>Monster Word Count:</b><br></br>
           {RakstalKuikasWCMaskComma}</Text>
+          <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{RakstalMasteryMaskComma}
+      	<br></br></Text>
           </VStack>
             </Box>}
 
 
           {TareitIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='735px' pb={5} style={{ backgroundColor: TareitActive ? "#4f2e49" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='800px' pb={5} style={{ backgroundColor: TareitActive ? "#4f2e49" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -12339,11 +12740,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{TareitKuikasWCCutoutComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{TareitMasteryCutoutComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {TareitIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='735px' pb={5} style={{ backgroundColor: TareitActive ? "#4f2e49" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='800px' pb={5} style={{ backgroundColor: TareitActive ? "#4f2e49" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -12384,11 +12789,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{TareitKuikasWCCutoutComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{TareitMasteryCutoutComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {TareitIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='735px' pb={5} style={{ backgroundColor: TareitActive ? "#4f2e49" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='800px' pb={5} style={{ backgroundColor: TareitActive ? "#4f2e49" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -12429,11 +12838,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{TareitKuikasWCMaskComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{TareitMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {TareitIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='735px' pb={5} style={{ backgroundColor: TareitActive ? "#4f2e49" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='800px' pb={5} style={{ backgroundColor: TareitActive ? "#4f2e49" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -12475,11 +12888,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{TareitKuikasWCMaskComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{TareitMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}        	
 
 {BabuIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='775px' pb={5} style={{ backgroundColor: BabuActive ? "#4f2e49" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='840px' pb={5} style={{ backgroundColor: BabuActive ? "#4f2e49" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -12523,11 +12940,14 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{BabuKuikasWCCutoutComma}</Text>
+        <Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{CaraKultMicRivGodKingMaiMasteryCutoutComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {BabuIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='775px' pb={5} style={{ backgroundColor: BabuActive ? "#4f2e49" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='840px' pb={5} style={{ backgroundColor: BabuActive ? "#4f2e49" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -12571,11 +12991,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{BabuKuikasWCCutoutComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{CaraKultMicRivGodKingMaiMasteryCutoutComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {BabuIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='775px' pb={5} style={{ backgroundColor: BabuActive ? "#4f2e49" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='840px' pb={5} style={{ backgroundColor: BabuActive ? "#4f2e49" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -12619,11 +13043,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{BabuKuikasWCMaskComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{CaraKultMicRivGodKingMaiMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {BabuIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='775px' pb={5} style={{ backgroundColor: BabuActive ? "#4f2e49" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='840px' pb={5} style={{ backgroundColor: BabuActive ? "#4f2e49" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -12668,6 +13096,10 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{BabuKuikasWCMaskComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{CaraKultMicRivGodKingMaiMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}        	
 
@@ -12716,11 +13148,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{MiclanKuikasWCCutoutComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{CaraKultMicRivGodKingMaiMasteryCutoutComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {MiclanIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='775px' pb={5} style={{ backgroundColor: MiclanActive ? "#072627" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='840px' pb={5} style={{ backgroundColor: MiclanActive ? "#072627" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -12764,11 +13200,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{MiclanKuikasWCCutoutComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{CaraKultMicRivGodKingMaiMasteryCutoutComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {MiclanIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='775px' pb={5} style={{ backgroundColor: MiclanActive ? "#072627" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='840px' pb={5} style={{ backgroundColor: MiclanActive ? "#072627" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -12812,11 +13252,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{MiclanKuikasWCMaskComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{CaraKultMicRivGodKingMaiMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {MiclanIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='775px' pb={5} style={{ backgroundColor: MiclanActive ? "#072627" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='840px' pb={5} style={{ backgroundColor: MiclanActive ? "#072627" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -12863,11 +13307,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{MiclanKuikasWCMaskComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{CaraKultMicRivGodKingMaiMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}        	
 
 {ShamanLuziaIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: ShamanLuziaActive ? "#403954" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='815px' pb={5} style={{ backgroundColor: ShamanLuziaActive ? "#403954" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -12910,11 +13358,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{ShamanLuziaKuikasWCCutoutComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{ShamanLuziaMasteryCutoutComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {ShamanLuziaIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: ShamanLuziaActive ? "#403954" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='815px' pb={5} style={{ backgroundColor: ShamanLuziaActive ? "#403954" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -12957,11 +13409,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{ShamanLuziaKuikasWCCutoutComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{ShamanLuziaMasteryCutoutComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {ShamanLuziaIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: ShamanLuziaActive ? "#403954" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='815px' pb={5} style={{ backgroundColor: ShamanLuziaActive ? "#403954" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -13004,11 +13460,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{ShamanLuziaKuikasWCMaskComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{ShamanLuziaMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {ShamanLuziaIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: ShamanLuziaActive ? "#403954" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='815px' pb={5} style={{ backgroundColor: ShamanLuziaActive ? "#403954" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -13052,11 +13512,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{ShamanLuziaKuikasWCMaskComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{ShamanLuziaMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
           {KingMaiIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: KingMaiActive ? "#0b1d2d" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='815px' pb={5} style={{ backgroundColor: KingMaiActive ? "#0b1d2d" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -13099,11 +13563,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{KingMaiKuikasWCCutoutComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{CaraKultMicRivGodKingMaiMasteryCutoutComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {KingMaiIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: KingMaiActive ? "#0b1d2d" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='815px' pb={5} style={{ backgroundColor: KingMaiActive ? "#0b1d2d" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -13146,11 +13614,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{KingMaiKuikasWCCutoutComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{CaraKultMicRivGodKingMaiMasteryCutoutComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {KingMaiIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: KingMaiActive ? "#0b1d2d" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='815px' pb={5} style={{ backgroundColor: KingMaiActive ? "#0b1d2d" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -13193,11 +13665,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{KingMaiKuikasWCMaskComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{CaraKultMicRivGodKingMaiMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {KingMaiIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: KingMaiActive ? "#0b1d2d" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='815px' pb={5} style={{ backgroundColor: KingMaiActive ? "#0b1d2d" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -13241,6 +13717,10 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{KingMaiKuikasWCMaskComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{CaraKultMicRivGodKingMaiMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}        	
 
@@ -13286,7 +13766,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     	<Text fontSize='md'><b>Coins Needed:<br></br></b>{DustedLuziaCoinsNeededCutoutComma}
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
-      	{DustedLuziaKuikasWCCutoutComma}</Text>
+      	{DustyLuzMasteryCutoutComma}</Text>
       	</VStack>
         	</Box>}
 
@@ -13334,7 +13814,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     	<Text fontSize='md'><b>Coins Needed:<br></br></b>{DustedLuziaCoinsNeededCutoutComma}
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
-      	{DustedLuziaKuikasWCCutoutComma}</Text>
+      	{DustyLuzMasteryCutoutComma}</Text>
       	</VStack>
         	</Box>}
 
@@ -13382,7 +13862,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     	<Text fontSize='md'><b>Coins Needed:<br></br></b>{DustedLuziaCoinsNeededMaskComma}
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
-      	{DustedLuziaKuikasWCMaskComma}</Text>
+      	{DustyLuzMasteryMaskComma}</Text>
       	</VStack>
         	</Box>}
 
@@ -13431,7 +13911,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     	<Text fontSize='md'><b>Coins Needed:<br></br></b>{DustedLuziaCoinsNeededMaskComma}
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
-      	{DustedLuziaKuikasWCMaskComma}</Text>
+      	{DustyLuzMasteryMaskComma}</Text>
       	</VStack>
         	</Box>}        	
 
@@ -14000,7 +14480,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 
 
             {DustyKingMaiIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: DustyKingMaiActive ? "#1c1138" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='750px' pb={5} style={{ backgroundColor: DustyKingMaiActive ? "#1c1138" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -14042,12 +14522,12 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     	<Text fontSize='md'><b>Coins Needed:<br></br></b>{DustyKingMaiCoinsNeededCutoutComma}
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
-      	{DustyKingMaiKuikasWCCutoutComma}</Text>
+      	{DustyKingMaiMasteryCutoutComma}</Text>
       	</VStack>
         	</Box>}
 
 {DustyKingMaiIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: DustyKingMaiActive ? "#1c1138" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='750px' pb={5} style={{ backgroundColor: DustyKingMaiActive ? "#1c1138" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -14091,10 +14571,14 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{DustyKingMaiKuikasWCCutoutComma}</Text>
       	</VStack>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{DustyKingMaiMasteryCutoutComma}
+      	<br></br></Text>
         	</Box>}
 
 {DustyKingMaiIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: DustyKingMaiActive ? "#1c1138" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='750px' pb={5} style={{ backgroundColor: DustyKingMaiActive ? "#1c1138" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -14137,11 +14621,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{DustyKingMaiKuikasWCMaskComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{DustyKingMaiMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {DustyKingMaiIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: DustyKingMaiActive ? "#1c1138" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='750px' pb={5} style={{ backgroundColor: DustyKingMaiActive ? "#1c1138" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -14184,6 +14672,10 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
       	{DustyKingMaiKuikasWCMaskComma}</Text>
+        <Divider mt='3px' w='250px' />
+      	<Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{DustyKingMaiMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}        	
 
