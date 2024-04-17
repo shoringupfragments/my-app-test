@@ -6271,7 +6271,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/c/cc/Grenade_Potion.png'
+        src='https://i.imgur.com/WyU7qek.png'
         mr='12px'
       />
       <span>2000 words or fewer</span></Button>
@@ -6281,7 +6281,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/0/0b/Fire_Blast_Potion.png/'
+        src='https://i.imgur.com/x3k39BC.png'
         mr='12px'
       />      
       <span>over 2000 words</span></Button></WrapItem>
