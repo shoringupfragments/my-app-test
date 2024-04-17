@@ -4081,11 +4081,9 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
 
 //GRENADE POTIONS
 
-const inputName = props.inputName;
-const inputWCMonster = props.inputWCMonster;
 
   const id = useId();
-  const [input, setInput] = useState({inputName}?.value ?? '');
+  const [input, setInput] = useState(props?.value ?? '');
   
 
   const [MonsterWC, setMonsterWC] = useState(0); // Or any other non-zero value
@@ -4097,7 +4095,7 @@ const inputWCMonster = props.inputWCMonster;
   };
 
   const idWC = useId();
-  const [inputWC, setInputWC] = useState({inputWCMonster}?.value ?? '');
+  const [inputWC, setInputWC] = useState(props?.value ?? '');
 
 
 
