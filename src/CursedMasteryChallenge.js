@@ -4087,7 +4087,7 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
   const [input, setInput] = useState(null)
 
   const MyComponent = props => {
-    const [input, setInput] = useState(props.name || '')
+    const [input, setInput] = useState(props || '')
     return (
       {input}
     )
@@ -4104,8 +4104,10 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
 
   const idWC = useId();
 
+  const [inputWC, setInputWC] = useState(null)
+
   const MyComponentWC = props => {
-    const [inputWC, setInputWC] = useState(props.name || '')
+    const [inputWC, setInputWC] = useState(props || '')
     return (
       {inputWC}
     )
@@ -16753,14 +16755,14 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 
 export default App;
 export   const MyComponent = props => {
-  const [input, setInput] = useState(props.name || '')
+  const [input, setInput] = useState(props || '')
   return (
     {input}
   )
 }
 
 export   const MyComponentWC = props => {
-  const [inputWC, setInputWC] = useState(props.name || '')
+  const [inputWC, setInputWC] = useState(props || '')
   return (
     {inputWC}
   )
