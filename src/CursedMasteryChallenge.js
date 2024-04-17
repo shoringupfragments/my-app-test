@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useEffect, useId, props } from "react";
+import { useState, useEffect, useId } from "react";
 import {
   Accordion,
   AccordionItem,
@@ -4103,7 +4103,6 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
   };
 
   const idWC = useId();
-  const [inputWC, setInputWC] = useState(props?.value ?? '');
 
   const MyComponentWC = props => {
     const [inputWC, setInputWC] = useState(props.name || '')
