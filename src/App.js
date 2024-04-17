@@ -11,6 +11,7 @@ import RemoveImages from './removeimages';
 import darkTheme from './theme';
 import FanEdits from './fanedits';
 import CursedMasteryChallenge from './CursedMasteryChallenge';
+import AurilisMain from './AurilisMain'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
       <Route path="removeimages" element={ <RemoveImages/> } />
       <Route path="fanedits" element={ <FanEdits/> } />
       <Route path="mastery-potions" element={ <CursedMasteryChallenge /> } />
+      <Route path="aurilis" element={ <AurilisMain /> } />
       </Routes>
     </ChakraProvider>
   );
