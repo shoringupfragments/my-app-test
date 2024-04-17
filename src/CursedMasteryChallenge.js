@@ -108,10 +108,10 @@ const handlePikiClick = event => {
   const [LoleYIsShown, setLoleYIsShown] = useState(false);
   const [LoleNIsShown, setLoleNIsShown] = useState(false);
 
-  const [GrenadeActive, setGrenadeActive] = useState(false);
-  const [GrenadeIsShown, setGrenadeIsShown] = useState(false);
   const [BlastActive, setBlastActive] = useState(false);
   const [BlastIsShown, setBlastIsShown] = useState(false);
+  const [GrenadeActive, setGrenadeActive] = useState(false);
+  const [GrenadeIsShown, setGrenadeIsShown] = useState(false);
 
   const [BattleCostYActive, setBattleCostYActive] = useState(false);
   const [BattleCostNActive, setBattleCostNActive] = useState(false);
@@ -194,21 +194,21 @@ const handlePikiClick = event => {
     setLoleYActive(current => null);
     };
 
-  const handleGrenadeClick = event => {
+  const handleBlastClick = event => {
     // 👇️ toggle shown state
-    setGrenadeIsShown(current => !GrenadeIsShown);
-    setGrenadeActive(!GrenadeActive);
-    setBlastIsShown(current => null);
-    setBlastActive(current => null);
+    setBlastIsShown(current => !BlastIsShown);
+    setBlastActive(!BlastActive);
+    setGrenadeIsShown(current => null);
+    setGrenadeActive(current => null);
   };
 
 
-    const handleBlastClick = event => {
+    const handleGrenadeClick = event => {
       // 👇️ toggle shown state
-      setBlastIsShown(current => !BlastIsShown);
-      setBlastActive(!BlastActive);
-      setGrenadeIsShown(current => null);
-      setGrenadeActive(current => null);
+      setGrenadeIsShown(current => !GrenadeIsShown);
+      setGrenadeActive(!GrenadeActive);
+      setBlastIsShown(current => null);
+      setBlastActive(current => null);
   
     };
   
@@ -1501,7 +1501,7 @@ const handleMasteryMonsterChange = (valueString) => {
 
 
 
-//blast potion calc
+//Grenade potion calc
 
 const totalResourcesCutoutLoleY = Math.max (20000-(MasteryMonster*40), 0)
 const totalResourcesCutoutLoleYMusya = Math.max (totalResourcesCutoutLoleY-10000,0)
@@ -1534,11 +1534,11 @@ const totalResourcesMaskLoleNMusya = Math.max (totalResourcesMaskLoleNQuaMus-100
 const totalResourcesMaskLoleNOdees = Math.max (totalResourcesMaskLoleNQuaMus-totalResourcesMaskLoleNMusya,0)
 
 
-const totalResourcesCutoutLoleY_BlastPotionsNeeded = Math.ceil (totalResourcesCutoutLoleY/4)
-const totalResourcesMaskLoleY_BlastPotionsNeeded = Math.ceil (totalResourcesMaskLoleY/4)
+const totalResourcesCutoutLoleY_GrenadePotionsNeeded = Math.ceil (totalResourcesCutoutLoleY/4)
+const totalResourcesMaskLoleY_GrenadePotionsNeeded = Math.ceil (totalResourcesMaskLoleY/4)
 
-const totalResourcesCutoutLoleN_BlastPotionsNeeded = Math.ceil (totalResourcesCutoutLoleN/6)
-const totalResourcesMaskLoleN_BlastPotionsNeeded = Math.ceil (totalResourcesMaskLoleN/6)
+const totalResourcesCutoutLoleN_GrenadePotionsNeeded = Math.ceil (totalResourcesCutoutLoleN/6)
+const totalResourcesMaskLoleN_GrenadePotionsNeeded = Math.ceil (totalResourcesMaskLoleN/6)
 
 //how many AURILIS MONSTERS are left//
 
@@ -4079,7 +4079,7 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
   const totalDustyKingMaiWCLoleNMaskResult = Math.round (totalDustyKingMaiTotalWCLoleNMask / ((attackStat/100) +1))
 
 
-//GRENADE POTIONS
+//Blast POTIONS
 
 
   const id = useId();
@@ -4219,7 +4219,7 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
   
 //WC//
 
-//grenade potion calc
+//Blast potion calc
 
 
 const [MasteryMonsterLoleYCutout_OdeeTen, setMasteryMonsterLoleYCutout_OdeeTen] = useState(0);
@@ -5040,7 +5040,7 @@ const totalMasteryMonsterLoleNBook_KuikasQty = Math.ceil (totalMasteryMonsterLol
 
 
 
-//WC for all levels grenade potion
+//WC for all levels Blast potion
 
 const [MasteryMonsterLoleYCutoutWC, setMasteryMonsterLoleYCutoutWC] = useState(0);
 const totalMasteryMonsterLoleYCutoutWC = Math.max (totalMasteryMonsterLoleYCutout_WC+totalMasteryMonsterLoleYCutoutCoinsWC,0)
@@ -5091,7 +5091,7 @@ const totalMasteryMonsterTypicalBalloon = Math.max (inputWC*5000)
 const [MasteryMonsterTypicalBook, setMasteryMonsterTypicalBook] = useState(0);
 const totalMasteryMonsterTypicalBook = Math.max (inputWC*10000)
 
-//attack stat for grenade eq//
+//attack stat for Blast eq//
 
 const totalMasteryMonsterLoleYCutoutCoinsWCAttack = Math.round ( totalMasteryMonsterLoleYCutoutCoinsWC/ ((attackStat/100) + 1))
 const totalMasteryMonsterLoleYMaskCoinsWCAttack = Math.round ( totalMasteryMonsterLoleYMaskCoinsWC/ ((attackStat/100) + 1))
@@ -6157,17 +6157,17 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         const number319 = totalMasteryMonsterLoleNBookResourcesNeeded;
         const MasteryMonsterLoleNBookResourcesNeededComma = USformatter.format(number319)
   
-        const number320 = totalResourcesCutoutLoleY_BlastPotionsNeeded;
-        const ResourcesCutoutLoleY_BlastPotionsNeededComma = USformatter.format(number320)
+        const number320 = totalResourcesCutoutLoleY_GrenadePotionsNeeded;
+        const ResourcesCutoutLoleY_GrenadePotionsNeededComma = USformatter.format(number320)
 
-        const number321 = totalResourcesMaskLoleY_BlastPotionsNeeded;
-        const ResourcesMaskLoleY_BlastPotionsNeededComma = USformatter.format(number321)
+        const number321 = totalResourcesMaskLoleY_GrenadePotionsNeeded;
+        const ResourcesMaskLoleY_GrenadePotionsNeededComma = USformatter.format(number321)
 
-        const number322 = totalResourcesCutoutLoleN_BlastPotionsNeeded;
-        const ResourcesCutoutLoleN_BlastPotionsNeededComma = USformatter.format(number322)
+        const number322 = totalResourcesCutoutLoleN_GrenadePotionsNeeded;
+        const ResourcesCutoutLoleN_GrenadePotionsNeededComma = USformatter.format(number322)
 
-        const number323 = totalResourcesMaskLoleN_BlastPotionsNeeded;
-        const ResourcesMaskLoleN_BlastPotionsNeededComma = USformatter.format(number323)
+        const number323 = totalResourcesMaskLoleN_GrenadePotionsNeeded;
+        const ResourcesMaskLoleN_GrenadePotionsNeededComma = USformatter.format(number323)
 
 // END OF EQUATIONS SO FAR//
 
@@ -6202,8 +6202,8 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
           2. Use the resources earned from those battles to create damage potions.<br></br><br></br>
           3. Use those damage potions to defeat BIG word count monsters and achieve their mastery rewards, effectively double-dipping the words into two masteries at once.            
           <br></br><br></br>
-            The 10% grenade potion is the primary secret to this strategy. While the 1000-word potion is viable in some circumstances, 
-            the beauty of the 10% potion is simple: 10 grenade potions will defeat any 4theWords creature of any size. <br></br><br></br> Each potion costs 4 Aurilis resources with the companion Lole or 
+            The 10% Blast potion is the primary secret to this strategy. While the 1000-word potion is viable in some circumstances, 
+            the beauty of the 10% potion is simple: 10 Blast potions will defeat any 4theWords creature of any size. <br></br><br></br> Each potion costs 4 Aurilis resources with the companion Lole or 
             6 resources without Lole. Thus, defeating <b>any monster in the game</b> costs 40 or 60 Aurilis resources + 850 coins, depending on whether the user owns Lole.<br></br><br></br>
 
           This is where the masteries can double-dip. To defeat any monster 500 times (cutout mastery) via potions, you need 20,000 or 30,000 resources, depending on if you have Lole. To defeat any 
@@ -6267,27 +6267,27 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
     
         <Container><Wrap justify='center'>
         <WrapItem>
-        <Button variant='outline' onClick={handleGrenadeClick} style={{ backgroundColor: GrenadeActive ? "#2d1b59" : "transparent" }}>
+        <Button variant='outline' onClick={handleBlastClick} style={{ backgroundColor: BlastActive ? "#2d1b59" : "transparent" }}>
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/c/cc/Blast_Potion.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/c/cc/Grenade_Potion.png'
         mr='12px'
       />
       <span>2000 words or fewer</span></Button>
       </WrapItem>
       <WrapItem>
-        <Button variant='outline' onClick= {handleBlastClick} style={{ backgroundColor: BlastActive ? "#2d1b59" : "transparent" }}>
+        <Button variant='outline' onClick= {handleGrenadeClick} style={{ backgroundColor: GrenadeActive ? "#2d1b59" : "transparent" }}>
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/0/0b/Fire_Grenade_Potion.png/'
+        src='https://static.wikia.nocookie.net/4thewords/images/0/0b/Fire_Blast_Potion.png/'
         mr='12px'
       />      
       <span>over 2000 words</span></Button></WrapItem>
         </Wrap></Container></VStack>
 
-{GrenadeIsShown &&
+{BlastIsShown &&
 <Accordion allowMultiple w={350}>
 <AccordionItem>
   <h2>
@@ -6606,10 +6606,10 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
   </AccordionItem>
   </Accordion> }
 
-  {GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
+  {BlastIsShown && LoleYIsShown && CutoutIsShown &&
             <Heading>Quick View</Heading>}
 
-  {GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
+  {BlastIsShown && LoleYIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -6639,7 +6639,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         <Text fontSize='lg' textAlign='center'><b>{input}</b><br></br>
         Total Word Count: {MasteryMonsterLoleYCutoutTotalWCComma}</Text>
         <Divider w='250px' />
-        <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
         {MasteryMonsterLoleYCutoutPotionsNeededComma}</Text>
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {MasteryMonsterLoleYCutoutResourcesNeededComma}</Text>
@@ -6659,11 +6659,11 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
             </Box>}
 
 
-  {GrenadeIsShown && LoleYIsShown && MaskIsShown &&
+  {BlastIsShown && LoleYIsShown && MaskIsShown &&
             <Heading>Quick View</Heading>}
 
 
-  {GrenadeIsShown && LoleYIsShown && MaskIsShown &&
+  {BlastIsShown && LoleYIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -6693,7 +6693,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         <Text fontSize='lg' textAlign='center'><b>{input}</b><br></br>
         Total Word Count: {MasteryMonsterLoleYMaskTotalWCComma}</Text>
         <Divider w='250px' />
-        <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
         {totalMasteryMonsterLoleYMaskPotionsNeeded}</Text>
 
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
@@ -6714,10 +6714,10 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
           </VStack>
             </Box>}
 
-            {GrenadeIsShown && LoleYIsShown && StatueIsShown &&
+            {BlastIsShown && LoleYIsShown && StatueIsShown &&
         	<Heading>Quick View</Heading>}
 
-  {GrenadeIsShown && LoleYIsShown && StatueIsShown &&
+  {BlastIsShown && LoleYIsShown && StatueIsShown &&
 <Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -6747,7 +6747,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
     	<Text fontSize='lg' textAlign='center'><b>{input}</b><br></br>
     	Total Word Count: {MasteryMonsterLoleYStatueTotalWCComma}</Text>
     	<Divider w='250px' />
-    	<Text fontSize='md'><b>Grenade Potions Needed:</b><br></br>
+    	<Text fontSize='md'><b>Blast Potions Needed:</b><br></br>
     	{MasteryMonsterLoleYStatuePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{MasteryMonsterLoleYStatueResourcesNeededComma}</Text>
@@ -6766,10 +6766,10 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
       	</VStack>
         	</Box>}
 
-  {GrenadeIsShown && LoleYIsShown && BalloonIsShown &&
+  {BlastIsShown && LoleYIsShown && BalloonIsShown &&
         	<Heading>Quick View</Heading>}
 
-  {GrenadeIsShown && LoleYIsShown && BalloonIsShown &&
+  {BlastIsShown && LoleYIsShown && BalloonIsShown &&
 <Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -6799,7 +6799,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
     	<Text fontSize='lg' textAlign='center'><b>{input}</b><br></br>
     	Total Word Count: {MasteryMonsterLoleYBalloonTotalWCComma}</Text>
     	<Divider w='250px' />
-    	<Text fontSize='md'><b>Grenade Potions Needed:</b><br></br>
+    	<Text fontSize='md'><b>Blast Potions Needed:</b><br></br>
     	{MasteryMonsterLoleYBalloonPotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{MasteryMonsterLoleYBalloonResourcesNeededComma}</Text>
@@ -6818,10 +6818,10 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
       	</VStack>
         	</Box>}
 
-  {GrenadeIsShown && LoleYIsShown && BookIsShown &&
+  {BlastIsShown && LoleYIsShown && BookIsShown &&
         	<Heading>Quick View</Heading>}
 
-  {GrenadeIsShown && LoleYIsShown && BookIsShown &&
+  {BlastIsShown && LoleYIsShown && BookIsShown &&
 <Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -6851,7 +6851,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
     	<Text fontSize='lg' textAlign='center'><b>{input}</b><br></br>
     	Total Word Count: {MasteryMonsterLoleYBookTotalWCComma}</Text>
     	<Divider w='250px' />
-    	<Text fontSize='md'><b>Grenade Potions Needed:</b><br></br>
+    	<Text fontSize='md'><b>Blast Potions Needed:</b><br></br>
     	{MasteryMonsterLoleYBookPotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{MasteryMonsterLoleYBookResourcesNeededComma}</Text>
@@ -6872,10 +6872,10 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
 
 
 
-            {GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
+            {BlastIsShown && LoleNIsShown && CutoutIsShown &&
         	<Heading>Quick View</Heading>}
 
-  {GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
+  {BlastIsShown && LoleNIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -6905,7 +6905,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
     	<Text fontSize='lg' textAlign='center'><b>{input}</b><br></br>
     	Total Word Count: {MasteryMonsterLoleNCutoutTotalWCComma}</Text>
     	<Divider w='250px' />
-    	<Text fontSize='md'><b>Grenade Potions Needed:</b><br></br>
+    	<Text fontSize='md'><b>Blast Potions Needed:</b><br></br>
     	{MasteryMonsterLoleNCutoutPotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{MasteryMonsterLoleNCutoutResourcesNeededComma}</Text>
@@ -6924,11 +6924,11 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
       	</VStack>
         	</Box>}
 
-  {GrenadeIsShown && LoleNIsShown && MaskIsShown &&
+  {BlastIsShown && LoleNIsShown && MaskIsShown &&
         	<Heading>Quick View</Heading>}
 
 
-  {GrenadeIsShown && LoleNIsShown && MaskIsShown &&
+  {BlastIsShown && LoleNIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -6958,7 +6958,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
     	<Text fontSize='lg' textAlign='center'><b>{input}</b><br></br>
     	Total Word Count: {MasteryMonsterLoleNMaskTotalWCComma}</Text>
     	<Divider w='250px' />
-    	<Text fontSize='md'><b>Grenade Potions Needed:</b><br></br>
+    	<Text fontSize='md'><b>Blast Potions Needed:</b><br></br>
     	{totalMasteryMonsterLoleNMaskPotionsNeeded}</Text>
 
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
@@ -6980,10 +6980,10 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         	</Box>}
 
 
-          {GrenadeIsShown && LoleNIsShown && StatueIsShown &&
+          {BlastIsShown && LoleNIsShown && StatueIsShown &&
         	<Heading>Quick View</Heading>}
 
-  {GrenadeIsShown && LoleNIsShown && StatueIsShown &&
+  {BlastIsShown && LoleNIsShown && StatueIsShown &&
 <Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -7013,7 +7013,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
     	<Text fontSize='lg' textAlign='center'><b>{input}</b><br></br>
     	Total Word Count: {MasteryMonsterLoleNStatueTotalWCComma}</Text>
     	<Divider w='250px' />
-    	<Text fontSize='md'><b>Grenade Potions Needed:</b><br></br>
+    	<Text fontSize='md'><b>Blast Potions Needed:</b><br></br>
     	{MasteryMonsterLoleNStatuePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{MasteryMonsterLoleNStatueResourcesNeededComma}</Text>
@@ -7032,10 +7032,10 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
       	</VStack>
         	</Box>}
 
-  {GrenadeIsShown && LoleNIsShown && BalloonIsShown &&
+  {BlastIsShown && LoleNIsShown && BalloonIsShown &&
         	<Heading>Quick View</Heading>}
 
-  {GrenadeIsShown && LoleNIsShown && BalloonIsShown &&
+  {BlastIsShown && LoleNIsShown && BalloonIsShown &&
 <Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -7065,7 +7065,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
     	<Text fontSize='lg' textAlign='center'><b>{input}</b><br></br>
     	Total Word Count: {MasteryMonsterLoleNBalloonTotalWCComma}</Text>
     	<Divider w='250px' />
-    	<Text fontSize='md'><b>Grenade Potions Needed:</b><br></br>
+    	<Text fontSize='md'><b>Blast Potions Needed:</b><br></br>
     	{MasteryMonsterLoleNBalloonPotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{MasteryMonsterLoleNBalloonResourcesNeededComma}</Text>
@@ -7084,10 +7084,10 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
       	</VStack>
         	</Box>}
 
-  {GrenadeIsShown && LoleNIsShown && BookIsShown &&
+  {BlastIsShown && LoleNIsShown && BookIsShown &&
         	<Heading>Quick View</Heading>}
 
-  {GrenadeIsShown && LoleNIsShown && BookIsShown &&
+  {BlastIsShown && LoleNIsShown && BookIsShown &&
 <Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -7117,7 +7117,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
     	<Text fontSize='lg' textAlign='center'><b>{input}</b><br></br>
     	Total Word Count: {MasteryMonsterLoleNBookTotalWCComma}</Text>
     	<Divider w='250px' />
-    	<Text fontSize='md'><b>Grenade Potions Needed:</b><br></br>
+    	<Text fontSize='md'><b>Blast Potions Needed:</b><br></br>
     	{MasteryMonsterLoleNBookPotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{MasteryMonsterLoleNBookResourcesNeededComma}</Text>
@@ -7140,14 +7140,14 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
 
 
 
-{GrenadeIsShown && 
+{BlastIsShown && 
             <Heading>Detailed View</Heading>}
 
-{GrenadeIsShown &&
+{BlastIsShown &&
 <Box as="span" flex='1' textAlign='center' padding-top={3}>
   <Text mb='12px' fontSize='2xl'><u><b>Monsters to Fight</b></u></Text>
         </Box>}
-        {GrenadeIsShown &&
+        {BlastIsShown &&
         <Container>
         <Text><b>Potion Resources</b></Text>
         <TableContainer>
@@ -7164,26 +7164,26 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         src='https://static.wikia.nocookie.net/4thewords/images/f/f7/OdysOdees.png/'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Odees</Text>
-      {CutoutIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYCutout_OdeesFinal}
+      {CutoutIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYCutout_OdeesFinal}
       </text>}
-      {MaskIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYMask_OdeesFinal}
+      {MaskIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYMask_OdeesFinal}
       </text>}
-  	{StatueIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYStatue_OdeesFinal}
+  	{StatueIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYStatue_OdeesFinal}
   	</text>}
-  	{BalloonIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYBalloon_OdeesFinal}
+  	{BalloonIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYBalloon_OdeesFinal}
   	</text>}
-  	{BookIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYBook_OdeesFinal}
+  	{BookIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYBook_OdeesFinal}
   	</text>}
 
-      {CutoutIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNCutout_OdeesFinal}
+      {CutoutIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNCutout_OdeesFinal}
       </text>}
-      {MaskIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNMask_OdeesFinal}
+      {MaskIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNMask_OdeesFinal}
       </text>}
-      {StatueIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNStatue_OdeesFinal}
+      {StatueIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNStatue_OdeesFinal}
   	</text>}
-  	{BalloonIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNBalloon_OdeesFinal}
+  	{BalloonIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNBalloon_OdeesFinal}
   	</text>}
-  	{BookIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNBook_OdeesFinal}
+  	{BookIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNBook_OdeesFinal}
   	</text>}
       </VStack>
   </Box>
@@ -7198,26 +7198,26 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         src='https://static.wikia.nocookie.net/4thewords/images/3/33/Musya.png/'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Musya</Text>
-  	{CutoutIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYCutout_MusyaDisplay}
+  	{CutoutIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYCutout_MusyaDisplay}
   	</text>}
-  	{MaskIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYMask_MusyaDisplay}
+  	{MaskIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYMask_MusyaDisplay}
   	</text>}
-      {StatueIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYStatue_MusyaDisplay}
+      {StatueIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYStatue_MusyaDisplay}
       </text>}
-      {BalloonIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYBalloon_MusyaDisplay}
+      {BalloonIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYBalloon_MusyaDisplay}
       </text>}
-      {BookIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYBook_MusyaDisplay}
+      {BookIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYBook_MusyaDisplay}
       </text>}
 
-  	{CutoutIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNCutout_MusyaDisplay}
+  	{CutoutIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNCutout_MusyaDisplay}
   	</text>}
-  	{MaskIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNMask_MusyaDisplay}
+  	{MaskIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNMask_MusyaDisplay}
   	</text>}
-  	{StatueIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNStatue_MusyaDisplay}
+  	{StatueIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNStatue_MusyaDisplay}
       </text>}
-      {BalloonIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNBalloon_MusyaDisplay}
+      {BalloonIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNBalloon_MusyaDisplay}
       </text>}
-      {BookIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNBook_MusyaDisplay}
+      {BookIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNBook_MusyaDisplay}
       </text>}
 
 
@@ -7234,26 +7234,26 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         src='https://static.wikia.nocookie.net/4thewords/images/8/85/Quaruk.png'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Quaruk</Text>
-  	{CutoutIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYCutout_QuarukDisplay}
+  	{CutoutIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYCutout_QuarukDisplay}
   	</text>}
-  	{MaskIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYMask_QuarukDisplay}
+  	{MaskIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYMask_QuarukDisplay}
   	</text>}
-      {StatueIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYStatue_QuarukDisplay}
+      {StatueIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYStatue_QuarukDisplay}
       </text>}
-      {BalloonIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYBalloon_QuarukDisplay}
+      {BalloonIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYBalloon_QuarukDisplay}
       </text>}
-      {BookIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYBook_QuarukDisplay}
+      {BookIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYBook_QuarukDisplay}
       </text>}
 
-  	{CutoutIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNCutout_QuarukDisplay}
+  	{CutoutIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNCutout_QuarukDisplay}
   	</text>}
-  	{MaskIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNMask_QuarukDisplay}
+  	{MaskIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNMask_QuarukDisplay}
   	</text>}
-  	{StatueIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNStatue_QuarukDisplay}
+  	{StatueIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNStatue_QuarukDisplay}
       </text>}
-      {BalloonIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNBalloon_QuarukDisplay}
+      {BalloonIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNBalloon_QuarukDisplay}
       </text>}
-      {BookIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNBook_QuarukDisplay}
+      {BookIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNBook_QuarukDisplay}
       </text>}
 
 
@@ -7273,26 +7273,26 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         src='https://static.wikia.nocookie.net/4thewords/images/2/24/Knuff.png/'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Knuff</Text>
-  	{CutoutIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYCutout_KnuffDisplay}
+  	{CutoutIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYCutout_KnuffDisplay}
   	</text>}
-  	{MaskIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYMask_KnuffDisplay}
+  	{MaskIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYMask_KnuffDisplay}
   	</text>}
-      {StatueIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYStatue_KnuffDisplay}
+      {StatueIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYStatue_KnuffDisplay}
       </text>}
-      {BalloonIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYBalloon_KnuffDisplay}
+      {BalloonIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYBalloon_KnuffDisplay}
       </text>}
-      {BookIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYBook_KnuffDisplay}
+      {BookIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYBook_KnuffDisplay}
       </text>}
 
-  	{CutoutIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNCutout_KnuffDisplay}
+  	{CutoutIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNCutout_KnuffDisplay}
   	</text>}
-  	{MaskIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNMask_KnuffDisplay}
+  	{MaskIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNMask_KnuffDisplay}
   	</text>}
-  	{StatueIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNStatue_KnuffDisplay}
+  	{StatueIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNStatue_KnuffDisplay}
       </text>}
-      {BalloonIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNBalloon_KnuffDisplay}
+      {BalloonIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNBalloon_KnuffDisplay}
       </text>}
-      {BookIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNBook_KnuffDisplay}
+      {BookIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNBook_KnuffDisplay}
       </text>}
 
       </VStack>
@@ -7309,26 +7309,26 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         src='https://media.4thewords.com/public/monsters/image_1708469171.png'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Sopoi</Text>
-  	{CutoutIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYCutout_SopoiDisplay}
+  	{CutoutIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYCutout_SopoiDisplay}
   	</text>}
-  	{MaskIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYMask_SopoiDisplay}
+  	{MaskIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYMask_SopoiDisplay}
   	</text>}
-      {StatueIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYStatue_SopoiDisplay}
+      {StatueIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYStatue_SopoiDisplay}
       </text>}
-      {BalloonIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYBalloon_SopoiDisplay}
+      {BalloonIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYBalloon_SopoiDisplay}
       </text>}
-      {BookIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYBook_SopoiDisplay}
+      {BookIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYBook_SopoiDisplay}
       </text>}
 
-  	{CutoutIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNCutout_SopoiDisplay}
+  	{CutoutIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNCutout_SopoiDisplay}
   	</text>}
-  	{MaskIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNMask_SopoiDisplay}
+  	{MaskIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNMask_SopoiDisplay}
   	</text>}
-  	{StatueIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNStatue_SopoiDisplay}
+  	{StatueIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNStatue_SopoiDisplay}
       </text>}
-      {BalloonIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNBalloon_SopoiDisplay}
+      {BalloonIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNBalloon_SopoiDisplay}
       </text>}
-      {BookIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNBook_SopoiDisplay}
+      {BookIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNBook_SopoiDisplay}
       </text>}
 
       </VStack>
@@ -7345,26 +7345,26 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         src='https://static.wikia.nocookie.net/4thewords/images/b/b2/Mibloom.png/'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Mibloom</Text>
-  	{CutoutIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYCutout_MibloomDisplay}
+  	{CutoutIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYCutout_MibloomDisplay}
   	</text>}
-  	{MaskIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYMask_MibloomDisplay}
+  	{MaskIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYMask_MibloomDisplay}
   	</text>}
-      {StatueIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYStatue_MibloomDisplay}
+      {StatueIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYStatue_MibloomDisplay}
       </text>}
-      {BalloonIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYBalloon_MibloomDisplay}
+      {BalloonIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYBalloon_MibloomDisplay}
       </text>}
-      {BookIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYBook_MibloomDisplay}
+      {BookIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYBook_MibloomDisplay}
       </text>}
 
-  	{CutoutIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNCutout_MibloomDisplay}
+  	{CutoutIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNCutout_MibloomDisplay}
   	</text>}
-  	{MaskIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNMask_MibloomDisplay}
+  	{MaskIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNMask_MibloomDisplay}
   	</text>}
-  	{StatueIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNStatue_MibloomDisplay}
+  	{StatueIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNStatue_MibloomDisplay}
       </text>}
-      {BalloonIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNBalloon_MibloomDisplay}
+      {BalloonIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNBalloon_MibloomDisplay}
       </text>}
-      {BookIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNBook_MibloomDisplay}
+      {BookIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNBook_MibloomDisplay}
       </text>}
 
 
@@ -7385,26 +7385,26 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         src='https://static.wikia.nocookie.net/4thewords/images/6/65/Kinguz.png/'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Kinguz</Text>
-  	{CutoutIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYCutout_KinguzDisplay}
+  	{CutoutIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYCutout_KinguzDisplay}
   	</text>}
-  	{MaskIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYMask_KinguzDisplay}
+  	{MaskIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYMask_KinguzDisplay}
   	</text>}
-      {StatueIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYStatue_KinguzDisplay}
+      {StatueIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYStatue_KinguzDisplay}
       </text>}
-      {BalloonIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYBalloon_KinguzDisplay}
+      {BalloonIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYBalloon_KinguzDisplay}
       </text>}
-      {BookIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYBook_KinguzDisplay}
+      {BookIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYBook_KinguzDisplay}
       </text>}
 
-  	{CutoutIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNCutout_KinguzDisplay}
+  	{CutoutIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNCutout_KinguzDisplay}
   	</text>}
-  	{MaskIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNMask_KinguzDisplay}
+  	{MaskIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNMask_KinguzDisplay}
   	</text>}
-  	{StatueIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNStatue_KinguzDisplay}
+  	{StatueIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNStatue_KinguzDisplay}
       </text>}
-      {BalloonIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNBalloon_KinguzDisplay}
+      {BalloonIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNBalloon_KinguzDisplay}
       </text>}
-      {BookIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleNBook_KinguzDisplay}
+      {BookIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleNBook_KinguzDisplay}
       </text>}
 
 
@@ -7420,7 +7420,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
 </TableContainer>
 </Container> }
 
-{GrenadeIsShown && 
+{BlastIsShown && 
 <Container>
         <Text mt='12px'><b>Farm for Coins</b></Text>
         <TableContainer>
@@ -7437,11 +7437,11 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         src='https://static.wikia.nocookie.net/4thewords/images/4/40/Kuikas.png/'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Kuikas</Text>
-      {CutoutIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYCutout_KuikasQty}</text>}
-      {MaskIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYMask_KuikasQty}</text>}
-      {StatueIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYStatue_KuikasQty}</text>}
-     	{BalloonIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYBalloon_KuikasQty}</text>}
-    	{BookIsShown && GrenadeIsShown && <text align='center'>{totalMasteryMonsterLoleYBook_KuikasQty}</text>}
+      {CutoutIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYCutout_KuikasQty}</text>}
+      {MaskIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYMask_KuikasQty}</text>}
+      {StatueIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYStatue_KuikasQty}</text>}
+     	{BalloonIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYBalloon_KuikasQty}</text>}
+    	{BookIsShown && BlastIsShown && <text align='center'>{totalMasteryMonsterLoleYBook_KuikasQty}</text>}
       </VStack>
   </Box>
         </Td>
@@ -7452,7 +7452,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
 </Container> }
 
 
-{BlastIsShown &&
+{GrenadeIsShown &&
 <Container>
   <Text>
 <b>Note:</b> This guide estimates the coin cost of large creature mastery by combining potion coin costs + coins
@@ -7461,7 +7461,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
 </Container>
 }
 
-{BlastIsShown &&
+{GrenadeIsShown &&
 <Accordion allowMultiple w={350}>
   <AccordionItem>
   <h2>
@@ -8415,7 +8415,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
 </Box></Container>}
 
 
-    {TesvenIsShown && BlastIsShown &&
+    {TesvenIsShown && GrenadeIsShown &&
 <Container align='center'>
       <Box align='center' h='100px' overflowY='scroll'>
 
@@ -8440,7 +8440,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
           </Box>
           </Container>}
 
-    {AzadiIsShown && BlastIsShown &&
+    {AzadiIsShown && GrenadeIsShown &&
 <Container align='center'>
       <Box align='center' h='100px' overflowY='scroll'>
 
@@ -8465,33 +8465,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
           </Box>
           </Container>}
 
-    {DustSuwoIsShown && BlastIsShown &&
-<Container align='center'>
-      <Box align='center' h='100px' overflowY='scroll'>
-
-            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
-       <HStack> 
-       <Image
-        ml='24px'
-        mt='20px'
-        align='center' 
-        boxSize='4rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
-        mr='5px'        />
-      <VStack align='center'> 
-        <Text fontSize='sm' align='center'>Coins</Text>
-        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
-  <NumberInputField id='Musya' onInput={(e) => handleCoinsChange(e.target.value)} />
-</NumberInput>
-      </VStack>
-      </HStack>
-            </Box>            
-          </Box>
-          </Container>}
-
-
-    {SuwoIsShown && BlastIsShown &&
+    {DustSuwoIsShown && GrenadeIsShown &&
 <Container align='center'>
       <Box align='center' h='100px' overflowY='scroll'>
 
@@ -8517,7 +8491,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
           </Container>}
 
 
-    {DarkReflectionIsShown && BlastIsShown &&
+    {SuwoIsShown && GrenadeIsShown &&
 <Container align='center'>
       <Box align='center' h='100px' overflowY='scroll'>
 
@@ -8543,7 +8517,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
           </Container>}
 
 
-    {ReflectionIsShown && BlastIsShown &&
+    {DarkReflectionIsShown && GrenadeIsShown &&
 <Container align='center'>
       <Box align='center' h='100px' overflowY='scroll'>
 
@@ -8569,7 +8543,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
           </Container>}
 
 
-    {CaravanIsShown && BlastIsShown &&
+    {ReflectionIsShown && GrenadeIsShown &&
 <Container align='center'>
       <Box align='center' h='100px' overflowY='scroll'>
 
@@ -8595,7 +8569,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
           </Container>}
 
 
-    {KultalvaIsShown && BlastIsShown &&
+    {CaravanIsShown && GrenadeIsShown &&
 <Container align='center'>
       <Box align='center' h='100px' overflowY='scroll'>
 
@@ -8621,7 +8595,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
           </Container>}
 
 
-    {RiverGoddessIsShown && BlastIsShown &&
+    {KultalvaIsShown && GrenadeIsShown &&
 <Container align='center'>
       <Box align='center' h='100px' overflowY='scroll'>
 
@@ -8646,7 +8620,33 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
           </Box>
           </Container>}
 
-          {VelsounIsShown && BlastIsShown &&
+
+    {RiverGoddessIsShown && GrenadeIsShown &&
+<Container align='center'>
+      <Box align='center' h='100px' overflowY='scroll'>
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Coins</Text>
+        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
+  <NumberInputField id='Musya' onInput={(e) => handleCoinsChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>            
+          </Box>
+          </Container>}
+
+          {VelsounIsShown && GrenadeIsShown &&
 <Container align='center'>
 
       <Box align='center' h='300px' overflowY='scroll'>
@@ -8747,7 +8747,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
           </Box>
           </Container>}
 
-  {AlphaTamboIsShown && BlastIsShown &&
+  {AlphaTamboIsShown && GrenadeIsShown &&
 <Container align='center'>
 
       <Box align='center' h='200px' overflowY='scroll'>
@@ -8792,7 +8792,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
           </Box>
           </Container>}
 
-       {BabuIsShown && BlastIsShown &&
+       {BabuIsShown && GrenadeIsShown &&
 <Container align='center'>
 
       <Box align='center' h='300px' overflowY='scroll'>
@@ -9047,7 +9047,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
           </Container>}
 
 
-  {RakstalIsShown && BlastIsShown &&
+  {RakstalIsShown && GrenadeIsShown &&
 <Container align='center'>
 
       <Box align='center' h='200px' overflowY='scroll'>
@@ -9092,7 +9092,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
           </Box>
           </Container>}
 
-       {BabuIsShown && BlastIsShown &&
+       {BabuIsShown && GrenadeIsShown &&
 <Container align='center'>
 
       <Box align='center' h='300px' overflowY='scroll'>
@@ -9355,7 +9355,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
   </Accordion>}
  
 
-{NullIsShown && BlastIsShown &&
+{NullIsShown && GrenadeIsShown &&
   <Container align='center'>
     <VStack>
 <Text><b>Dusted Luzia</b> has a battle cost (1 Steel Axe + 1 Steel Shield)<br></br> Select a source for farming battle cost:</Text><br></br>
@@ -9393,7 +9393,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
 </VStack>
 </Container>}
 
-{NullIsShown && BlastIsShown &&
+{NullIsShown && GrenadeIsShown &&
         <Accordion allowMultiple w={350}>
 <AccordionItem>
   <h2>
@@ -9538,7 +9538,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
 <Spacer></Spacer>
           </VStack>
 <Divider />
-{BlastIsShown &&
+{GrenadeIsShown &&
 <Container>
 <br></br>
 <Heading>Quick View</Heading><br></br>
@@ -10126,7 +10126,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           </VStack>
             </Box>}
 
-{TesvenIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown && 
+{TesvenIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown && 
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -10154,8 +10154,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TesvenWCLoleYCutoutComma}
           </Text>
         <Divider w='250px' />
-        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
+        <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_GrenadePotionsNeededComma}</Text>
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleYCutoutResourcesComma}</Text>
         <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10170,7 +10170,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           </VStack>
             </Box>}
 
-{TesvenIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown && 
+{TesvenIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown && 
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -10198,8 +10198,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TesvenWCLoleNCutoutComma}
           </Text>
         <Divider w='250px' />
-        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleN_BlastPotionsNeededComma}</Text>
+        <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleN_GrenadePotionsNeededComma}</Text>
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleNCutoutResourcesComma}</Text>
         <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10214,7 +10214,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           </VStack>
             </Box>}
 
-{TesvenIsShown && BlastIsShown && LoleYIsShown && MaskIsShown && 
+{TesvenIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown && 
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -10242,8 +10242,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TesvenWCLoleYMaskComma}
           </Text>
         <Divider w='250px' />
-        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleY_BlastPotionsNeededComma}</Text>
+        <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleY_GrenadePotionsNeededComma}</Text>
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleYMaskResourcesComma}</Text>
         <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10258,7 +10258,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           </VStack>
             </Box>}
 
-{TesvenIsShown && BlastIsShown && LoleNIsShown && MaskIsShown && 
+{TesvenIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown && 
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: TesvenActive ? "#15391E" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -10286,8 +10286,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TesvenWCLoleNMaskComma}
           </Text>
         <Divider w='250px' />
-        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+        <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_GrenadePotionsNeededComma}</Text>
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleNMaskResourcesComma}</Text>
         <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10304,7 +10304,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 
 
 
-{AzadiIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown &&
+{AzadiIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: AzadiActive ? "#2b0707" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -10332,8 +10332,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{AzadiWCLoleYCutoutComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10348,7 +10348,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{AzadiIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown &&
+{AzadiIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: AzadiActive ? "#2b0707" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -10376,8 +10376,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{0}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleN_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10392,7 +10392,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{AzadiIsShown && BlastIsShown && LoleYIsShown && MaskIsShown &&
+{AzadiIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: AzadiActive ? "#2b0707" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -10420,8 +10420,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{AzadiWCLoleYMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10436,7 +10436,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{AzadiIsShown && BlastIsShown && LoleNIsShown && MaskIsShown &&
+{AzadiIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: AzadiActive ? "#2b0707" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -10464,8 +10464,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{AzadiWCLoleNMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10481,7 +10481,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}     
 
 
-          {DustSuwoIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown &&
+          {DustSuwoIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: DustSuwoActive ? "#2b0723" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -10509,8 +10509,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{DustSuwoWCLoleYCutoutComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10525,7 +10525,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{DustSuwoIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown &&
+{DustSuwoIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: DustSuwoActive ? "#2b0723" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -10553,8 +10553,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{0}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleN_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10569,7 +10569,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{DustSuwoIsShown && BlastIsShown && LoleYIsShown && MaskIsShown &&
+{DustSuwoIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: DustSuwoActive ? "#2b0723" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -10597,8 +10597,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{DustSuwoWCLoleYMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10613,7 +10613,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{DustSuwoIsShown && BlastIsShown && LoleNIsShown && MaskIsShown &&
+{DustSuwoIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: DustSuwoActive ? "#2b0723" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -10641,8 +10641,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{DustSuwoWCLoleNMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10659,7 +10659,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 
 
 
-          {SuwoIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown &&
+          {SuwoIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: SuwoActive ? "#18292b" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -10687,8 +10687,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{SuwoWCLoleYCutoutComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10703,7 +10703,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{SuwoIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown &&
+{SuwoIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: SuwoActive ? "#18292b" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -10731,8 +10731,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{0}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleN_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10747,7 +10747,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{SuwoIsShown && BlastIsShown && LoleYIsShown && MaskIsShown &&
+{SuwoIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: SuwoActive ? "#18292b" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -10775,8 +10775,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{SuwoWCLoleYMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10791,7 +10791,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{SuwoIsShown && BlastIsShown && LoleNIsShown && MaskIsShown &&
+{SuwoIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: SuwoActive ? "#18292b" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -10819,8 +10819,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{SuwoWCLoleNMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10835,7 +10835,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}        	
 
-{DarkReflectionIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown &&
+{DarkReflectionIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: DarkReflectionActive ? "#0d030f" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -10863,8 +10863,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{DarkReflectionWCLoleYCutoutComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10879,7 +10879,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{DarkReflectionIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown &&
+{DarkReflectionIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: DarkReflectionActive ? "#0d030f" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -10907,8 +10907,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{0}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleN_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10923,7 +10923,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{DarkReflectionIsShown && BlastIsShown && LoleYIsShown && MaskIsShown &&
+{DarkReflectionIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: DarkReflectionActive ? "#0d030f" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -10951,8 +10951,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{DarkReflectionWCLoleYMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10967,7 +10967,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{DarkReflectionIsShown && BlastIsShown && LoleNIsShown && MaskIsShown &&
+{DarkReflectionIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: DarkReflectionActive ? "#0d030f" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -10995,8 +10995,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{DarkReflectionWCLoleNMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -11011,7 +11011,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}        	
 
-          {ReflectionIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown &&
+          {ReflectionIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: ReflectionActive ? "#0d211f" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -11039,8 +11039,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{DarkReflectionWCLoleYCutoutComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -11055,7 +11055,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{ReflectionIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown &&
+{ReflectionIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: ReflectionActive ? "#0d211f" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -11083,8 +11083,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{0}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleN_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -11099,7 +11099,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{ReflectionIsShown && BlastIsShown && LoleYIsShown && MaskIsShown &&
+{ReflectionIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: ReflectionActive ? "#0d211f" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -11127,8 +11127,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{DarkReflectionWCLoleYMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -11143,7 +11143,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{ReflectionIsShown && BlastIsShown && LoleNIsShown && MaskIsShown &&
+{ReflectionIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: ReflectionActive ? "#0d211f" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -11171,8 +11171,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{DarkReflectionWCLoleNMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -11188,7 +11188,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}        
 
 
-          {CaravanIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown &&
+          {CaravanIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: CaravanActive ? "#423222" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -11216,8 +11216,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{CaravanWCLoleYCutoutComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -11232,7 +11232,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{CaravanIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown &&
+{CaravanIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: CaravanActive ? "#423222" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -11260,8 +11260,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{0}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleN_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -11276,7 +11276,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{CaravanIsShown && BlastIsShown && LoleYIsShown && MaskIsShown &&
+{CaravanIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: CaravanActive ? "#423222" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -11304,8 +11304,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{CaravanWCLoleYMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -11320,7 +11320,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{CaravanIsShown && BlastIsShown && LoleNIsShown && MaskIsShown &&
+{CaravanIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: CaravanActive ? "#423222" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -11348,8 +11348,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{CaravanWCLoleNMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -11364,7 +11364,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}      
 
-          {RiverGoddessIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown &&
+          {RiverGoddessIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: RiverGoddessActive ? "#171321" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -11392,8 +11392,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{RiverGoddessWCLoleYCutoutComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -11408,7 +11408,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{RiverGoddessIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown &&
+{RiverGoddessIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: RiverGoddessActive ? "#171321" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -11436,8 +11436,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{0}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleN_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -11452,7 +11452,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{RiverGoddessIsShown && BlastIsShown && LoleYIsShown && MaskIsShown &&
+{RiverGoddessIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: RiverGoddessActive ? "#171321" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -11480,8 +11480,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{RiverGoddessWCLoleYMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -11496,7 +11496,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{RiverGoddessIsShown && BlastIsShown && LoleNIsShown && MaskIsShown &&
+{RiverGoddessIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: RiverGoddessActive ? "#171321" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -11524,8 +11524,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{RiverGoddessWCLoleNMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_GrenadePotionsNeededComma}</Text>
 
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
@@ -11542,7 +11542,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}     
 
 
-            {KultalvaIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown &&
+            {KultalvaIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: KultalvaActive ? "#191b21" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -11570,8 +11570,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{KultalvaWCLoleYCutoutComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -11586,7 +11586,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{KultalvaIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown &&
+{KultalvaIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: KultalvaActive ? "#191b21" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -11614,8 +11614,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{0}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleN_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -11630,7 +11630,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{KultalvaIsShown && BlastIsShown && LoleYIsShown && MaskIsShown &&
+{KultalvaIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: KultalvaActive ? "#191b21" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -11658,8 +11658,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{KultalvaWCLoleYMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -11674,7 +11674,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{KultalvaIsShown && BlastIsShown && LoleNIsShown && MaskIsShown &&
+{KultalvaIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='660px' pb={5} style={{ backgroundColor: KultalvaActive ? "#191b21" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -11702,8 +11702,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{KultalvaWCLoleNMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_GrenadePotionsNeededComma}</Text>
 
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
@@ -11719,7 +11719,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}        	
 
-{VelsounIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown && 
+{VelsounIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown && 
 <Box rounded='lg'  w='290px' h='735px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -11747,8 +11747,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TotalLoleYCutoutVelsounWCComma}
           </Text>
         <Divider w='250px' />
-        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
+        <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_GrenadePotionsNeededComma}</Text>
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleYCutoutResourcesComma}</Text>
         <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -11768,7 +11768,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             </Box>}
 
 
-{VelsounIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown && 
+{VelsounIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown && 
 <Box rounded='lg'  w='290px' h='735px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -11796,8 +11796,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TotalLoleNCutoutVelsounWCComma}
           </Text>
         <Divider w='250px' />
-        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleN_BlastPotionsNeededComma}</Text>
+        <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleN_GrenadePotionsNeededComma}</Text>
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleNCutoutResourcesComma}</Text>
         <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -11815,7 +11815,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           </VStack>
             </Box>}
 
-{VelsounIsShown && BlastIsShown && LoleYIsShown && MaskIsShown && 
+{VelsounIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown && 
 <Box rounded='lg'  w='290px' h='735px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -11843,8 +11843,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TotalLoleYMaskVelsounWCComma}
           </Text>
         <Divider w='250px' />
-        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleY_BlastPotionsNeededComma}</Text>
+        <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleY_GrenadePotionsNeededComma}</Text>
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleYMaskResourcesComma}</Text>
         <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -11862,7 +11862,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           </VStack>
             </Box>}
 
-{VelsounIsShown && BlastIsShown && LoleNIsShown && MaskIsShown && 
+{VelsounIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown && 
 <Box rounded='lg'  w='290px' h='735px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -11890,8 +11890,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TotalLoleNMaskVelsounWCComma}
           </Text>
         <Divider w='250px' />
-        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+        <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_GrenadePotionsNeededComma}</Text>
 
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleNMaskResourcesComma}</Text>
@@ -11911,7 +11911,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             </Box>}
 
 
-{AlphaTamboIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown && 
+{AlphaTamboIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown && 
 <Box rounded='lg'  w='290px' h='730px' pb={5} style={{ backgroundColor: AlphaTamboActive ? "#512F30" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -11939,8 +11939,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TotalLoleYCutoutAlphaTamboWCComma}
           </Text>
         <Divider w='250px' />
-        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
+        <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_GrenadePotionsNeededComma}</Text>
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleYCutoutResourcesComma}</Text>
         <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -11958,7 +11958,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           </VStack>
             </Box>}
 
-{AlphaTamboIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown && 
+{AlphaTamboIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown && 
 <Box rounded='lg'  w='290px' h='730px' pb={5} style={{ backgroundColor: AlphaTamboActive ? "#512F30" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -11986,8 +11986,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TotalLoleNCutoutAlphaTamboWCComma}
           </Text>
         <Divider w='250px' />
-        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleN_BlastPotionsNeededComma}</Text>
+        <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleN_GrenadePotionsNeededComma}</Text>
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleYCutoutResourcesComma}</Text>
         <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -12005,7 +12005,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           </VStack>
             </Box>}
 
-{AlphaTamboIsShown && BlastIsShown && LoleYIsShown && MaskIsShown && 
+{AlphaTamboIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown && 
 <Box rounded='lg'  w='290px' h='730px' pb={5} style={{ backgroundColor: AlphaTamboActive ? "#512F30" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -12033,8 +12033,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TotalLoleYMaskAlphaTamboWCComma}
           </Text>
         <Divider w='250px' />
-        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleY_BlastPotionsNeededComma}</Text>
+        <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleY_GrenadePotionsNeededComma}</Text>
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleYMaskResourcesComma}</Text>
         <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -12055,7 +12055,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           </VStack>
             </Box>}
 
-{AlphaTamboIsShown && BlastIsShown && LoleNIsShown && MaskIsShown && 
+{AlphaTamboIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown && 
 <Box rounded='lg'  w='290px' h='730px' pb={5} style={{ backgroundColor: AlphaTamboActive ? "#512F30" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -12083,8 +12083,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TotalLoleNMaskAlphaTamboWCComma}
           </Text>
         <Divider w='250px' />
-        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+        <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_GrenadePotionsNeededComma}</Text>
 
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleNMaskResourcesComma}</Text>
@@ -12107,7 +12107,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             </Box>}
 
 
-{RakstalIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown && 
+{RakstalIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown && 
 <Box rounded='lg'  w='290px' h='730px' pb={5} style={{ backgroundColor: RakstalActive ? "#27445e" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -12135,8 +12135,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TotalLoleYCutoutRakstalWCComma}
           </Text>
         <Divider w='250px' />
-        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
+        <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_GrenadePotionsNeededComma}</Text>
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleYCutoutResourcesComma}</Text>
         <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -12154,7 +12154,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           </VStack>
             </Box>}
 
-{RakstalIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown && 
+{RakstalIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown && 
 <Box rounded='lg'  w='290px' h='730px' pb={5} style={{ backgroundColor: RakstalActive ? "#27445e" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -12182,8 +12182,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TotalLoleNCutoutRakstalWCComma}
           </Text>
         <Divider w='250px' />
-        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleN_BlastPotionsNeededComma}</Text>
+        <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleN_GrenadePotionsNeededComma}</Text>
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleYCutoutResourcesComma}</Text>
         <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -12201,7 +12201,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           </VStack>
             </Box>}
 
-{RakstalIsShown && BlastIsShown && LoleYIsShown && MaskIsShown && 
+{RakstalIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown && 
 <Box rounded='lg'  w='290px' h='730px' pb={5} style={{ backgroundColor: RakstalActive ? "#27445e" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -12229,8 +12229,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TotalLoleYMaskRakstalWCComma}
           </Text>
         <Divider w='250px' />
-        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleY_BlastPotionsNeededComma}</Text>
+        <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleY_GrenadePotionsNeededComma}</Text>
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleYMaskResourcesComma}</Text>
         <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -12248,7 +12248,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           </VStack>
             </Box>}
 
-{RakstalIsShown && BlastIsShown && LoleNIsShown && MaskIsShown && 
+{RakstalIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown && 
 <Box rounded='lg'  w='290px' h='730px' pb={5} style={{ backgroundColor: RakstalActive ? "#27445e" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -12276,8 +12276,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TotalLoleNMaskRakstalWCComma}
           </Text>
         <Divider w='250px' />
-        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+        <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_GrenadePotionsNeededComma}</Text>
 
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleNMaskResourcesComma}</Text>
@@ -12297,7 +12297,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             </Box>}
 
 
-          {TareitIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown &&
+          {TareitIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='735px' pb={5} style={{ backgroundColor: TareitActive ? "#4f2e49" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -12325,8 +12325,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{TareitWCLoleYCutoutComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -12342,7 +12342,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{TareitIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown &&
+{TareitIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='735px' pb={5} style={{ backgroundColor: TareitActive ? "#4f2e49" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -12370,8 +12370,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{0}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleN_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -12387,7 +12387,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{TareitIsShown && BlastIsShown && LoleYIsShown && MaskIsShown &&
+{TareitIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='735px' pb={5} style={{ backgroundColor: TareitActive ? "#4f2e49" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -12415,8 +12415,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{TareitWCLoleYMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -12432,7 +12432,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{TareitIsShown && BlastIsShown && LoleNIsShown && MaskIsShown &&
+{TareitIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='735px' pb={5} style={{ backgroundColor: TareitActive ? "#4f2e49" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -12460,8 +12460,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{TareitWCLoleNMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_GrenadePotionsNeededComma}</Text>
 
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
@@ -12478,7 +12478,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}        	
 
-{BabuIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown &&
+{BabuIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='775px' pb={5} style={{ backgroundColor: BabuActive ? "#4f2e49" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -12506,8 +12506,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{BabuWCLoleYCutoutComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -12526,7 +12526,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{BabuIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown &&
+{BabuIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='775px' pb={5} style={{ backgroundColor: BabuActive ? "#4f2e49" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -12554,8 +12554,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{0}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleN_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -12574,7 +12574,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{BabuIsShown && BlastIsShown && LoleYIsShown && MaskIsShown &&
+{BabuIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='775px' pb={5} style={{ backgroundColor: BabuActive ? "#4f2e49" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -12602,8 +12602,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{BabuWCLoleYMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -12622,7 +12622,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{BabuIsShown && BlastIsShown && LoleNIsShown && MaskIsShown &&
+{BabuIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='775px' pb={5} style={{ backgroundColor: BabuActive ? "#4f2e49" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -12650,8 +12650,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{BabuWCLoleNMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_GrenadePotionsNeededComma}</Text>
 
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
@@ -12671,7 +12671,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}        	
 
-          {MiclanIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown &&
+          {MiclanIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='775px' pb={5} style={{ backgroundColor: MiclanActive ? "#072627" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -12699,8 +12699,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{MiclanWCLoleYCutoutComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -12719,7 +12719,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{MiclanIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown &&
+{MiclanIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='775px' pb={5} style={{ backgroundColor: MiclanActive ? "#072627" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -12747,8 +12747,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{0}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleN_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -12767,7 +12767,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{MiclanIsShown && BlastIsShown && LoleYIsShown && MaskIsShown &&
+{MiclanIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='775px' pb={5} style={{ backgroundColor: MiclanActive ? "#072627" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -12795,8 +12795,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{MiclanWCLoleYMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -12815,7 +12815,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{MiclanIsShown && BlastIsShown && LoleNIsShown && MaskIsShown &&
+{MiclanIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='775px' pb={5} style={{ backgroundColor: MiclanActive ? "#072627" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -12843,11 +12843,11 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{MiclanWCLoleNMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_GrenadePotionsNeededComma}</Text>
 
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -12866,7 +12866,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}        	
 
-{ShamanLuziaIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown &&
+{ShamanLuziaIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: ShamanLuziaActive ? "#403954" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -12894,8 +12894,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{ShamanLuziaWCLoleYCutoutComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -12913,7 +12913,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{ShamanLuziaIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown &&
+{ShamanLuziaIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: ShamanLuziaActive ? "#403954" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -12941,8 +12941,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{0}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleN_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -12960,7 +12960,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{ShamanLuziaIsShown && BlastIsShown && LoleYIsShown && MaskIsShown &&
+{ShamanLuziaIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: ShamanLuziaActive ? "#403954" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -12988,8 +12988,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{ShamanLuziaWCLoleYMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -13007,7 +13007,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{ShamanLuziaIsShown && BlastIsShown && LoleNIsShown && MaskIsShown &&
+{ShamanLuziaIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: ShamanLuziaActive ? "#403954" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -13035,8 +13035,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{ShamanLuziaWCLoleNMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_GrenadePotionsNeededComma}</Text>
 
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
@@ -13055,7 +13055,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-          {KingMaiIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown &&
+          {KingMaiIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: KingMaiActive ? "#0b1d2d" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -13083,8 +13083,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{KingMaiWCLoleYCutoutComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -13102,7 +13102,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{KingMaiIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown &&
+{KingMaiIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: KingMaiActive ? "#0b1d2d" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -13130,8 +13130,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{0}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleN_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -13149,7 +13149,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{KingMaiIsShown && BlastIsShown && LoleYIsShown && MaskIsShown &&
+{KingMaiIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: KingMaiActive ? "#0b1d2d" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -13177,8 +13177,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{KingMaiWCLoleYMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -13196,7 +13196,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{KingMaiIsShown && BlastIsShown && LoleNIsShown && MaskIsShown &&
+{KingMaiIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: KingMaiActive ? "#0b1d2d" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -13224,8 +13224,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{KingMaiWCLoleNMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_GrenadePotionsNeededComma}</Text>
 
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
@@ -13244,7 +13244,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}        	
 
-          {DustedLuziaIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown &&
+          {DustedLuziaIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='760px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -13290,7 +13290,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{DustedLuziaIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown &&
+{DustedLuziaIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='760px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -13318,8 +13318,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{0}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleN_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -13338,7 +13338,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{DustedLuziaIsShown && BlastIsShown && LoleYIsShown && MaskIsShown &&
+{DustedLuziaIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='760px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -13366,8 +13366,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{DustedLuziaWCLoleYMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -13386,7 +13386,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{DustedLuziaIsShown && BlastIsShown && LoleNIsShown && MaskIsShown &&
+{DustedLuziaIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='760px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -13414,8 +13414,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{DustedLuziaWCLoleNMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_GrenadePotionsNeededComma}</Text>
 
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
@@ -13436,7 +13436,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}        	
 
 
-{DustedLuziaIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown && CoinsIsShown &&
+{DustedLuziaIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown && CoinsIsShown &&
 <Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -13482,7 +13482,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           </VStack>
             </Box>}
 
-{DustedLuziaIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown && CoinsIsShown &&
+{DustedLuziaIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown && CoinsIsShown &&
 <Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -13528,7 +13528,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           </VStack>
             </Box>}
 
-      {DustedLuziaIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown && ComboIsShown &&
+      {DustedLuziaIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown && ComboIsShown &&
         <Box rounded='lg'  w='290px' h='750px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -13556,8 +13556,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TotalWCLoleYCutoutDLComboComma}
           </Text>
         <Divider w='250px' />
-        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
+        <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_GrenadePotionsNeededComma}</Text>
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleYCutoutResourcesComma}</Text>
         <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -13576,7 +13576,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           </VStack>
             </Box>}
 
-            {DustedLuziaIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown && ComboIsShown &&
+            {DustedLuziaIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown && ComboIsShown &&
         <Box rounded='lg'  w='290px' h='750px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -13622,7 +13622,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           </VStack>
             </Box>}
 
-            {DustedLuziaIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown && BattleIsShown &&
+            {DustedLuziaIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown && BattleIsShown &&
         <Box rounded='lg'  w='290px' h='750px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -13650,8 +13650,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TotalWCLoleYCutoutDLBattleComma}
           </Text>
         <Divider w='250px' />
-        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
+        <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_GrenadePotionsNeededComma}</Text>
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleYCutoutResourcesComma}</Text>
         <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -13670,7 +13670,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           </VStack>
             </Box>}
 
-            {DustedLuziaIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown && BattleIsShown &&
+            {DustedLuziaIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown && BattleIsShown &&
         <Box rounded='lg'  w='290px' h='750px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -13716,7 +13716,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           </VStack>
             </Box>}
             
-  {DustedLuziaIsShown && BlastIsShown && LoleYIsShown && MaskIsShown && CoinsIsShown &&
+  {DustedLuziaIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown && CoinsIsShown &&
       <Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -13744,8 +13744,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TotalWCLoleYMaskDLCoinsComma}
           </Text>
         <Divider w='250px' />
-        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleY_BlastPotionsNeededComma}</Text>
+        <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleY_GrenadePotionsNeededComma}</Text>
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleYMaskResourcesComma}</Text>
         <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -13764,7 +13764,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           </VStack>
             </Box>}
 
-{DustedLuziaIsShown && BlastIsShown && LoleNIsShown && MaskIsShown && CoinsIsShown &&
+{DustedLuziaIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown && CoinsIsShown &&
 <Box rounded='lg'  w='290px' h='700px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -13810,7 +13810,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           </VStack>
             </Box>}
 
-      {DustedLuziaIsShown && BlastIsShown && LoleYIsShown && MaskIsShown && ComboIsShown &&
+      {DustedLuziaIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown && ComboIsShown &&
         <Box rounded='lg'  w='290px' h='750px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -13838,8 +13838,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TotalWCLoleYMaskDLComboComma}
           </Text>
         <Divider w='250px' />
-        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleY_BlastPotionsNeededComma}</Text>
+        <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleY_GrenadePotionsNeededComma}</Text>
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleYMaskResourcesComma}</Text>
         <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -13858,7 +13858,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           </VStack>
             </Box>}
 
-            {DustedLuziaIsShown && BlastIsShown && LoleNIsShown && MaskIsShown && ComboIsShown &&
+            {DustedLuziaIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown && ComboIsShown &&
         <Box rounded='lg'  w='290px' h='750px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -13904,7 +13904,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           </VStack>
             </Box>}
 
-            {DustedLuziaIsShown && BlastIsShown && LoleYIsShown && MaskIsShown && BattleIsShown &&
+            {DustedLuziaIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown && BattleIsShown &&
         <Box rounded='lg'  w='290px' h='750px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -13932,8 +13932,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TotalWCLoleYMaskDLBattleComma}
           </Text>
         <Divider w='250px' />
-        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleY_BlastPotionsNeededComma}</Text>
+        <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleY_GrenadePotionsNeededComma}</Text>
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleYMaskResourcesComma}</Text>
         <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -13952,7 +13952,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
           </VStack>
             </Box>}
 
-            {DustedLuziaIsShown && BlastIsShown && LoleNIsShown && MaskIsShown && BattleIsShown &&
+            {DustedLuziaIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown && BattleIsShown &&
         <Box rounded='lg'  w='290px' h='750px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
@@ -13999,7 +13999,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             </Box>}
 
 
-            {DustyKingMaiIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown &&
+            {DustyKingMaiIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: DustyKingMaiActive ? "#1c1138" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -14027,8 +14027,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{DustyKingMaiWCLoleYCutoutComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -14046,7 +14046,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{DustyKingMaiIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown &&
+{DustyKingMaiIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
 <Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: DustyKingMaiActive ? "#1c1138" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -14074,8 +14074,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{0}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesCutoutLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesCutoutLoleN_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNCutoutResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -14093,7 +14093,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{DustyKingMaiIsShown && BlastIsShown && LoleYIsShown && MaskIsShown &&
+{DustyKingMaiIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: DustyKingMaiActive ? "#1c1138" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -14121,8 +14121,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{DustyKingMaiWCLoleYMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleY_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleY_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleYMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -14140,7 +14140,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</VStack>
         	</Box>}
 
-{DustyKingMaiIsShown && BlastIsShown && LoleNIsShown && MaskIsShown &&
+{DustyKingMaiIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
 <Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: DustyKingMaiActive ? "#1c1138" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
@@ -14168,8 +14168,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{DustyKingMaiWCLoleNMaskComma}
       	</Text>
     	<Divider w='250px' />
-      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
-        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+      <Text fontSize='md'><b>Grenade Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_GrenadePotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -14335,11 +14335,11 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/f/f7/OdysOdees.png/'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Odees</Text>
-      {CutoutIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalFinalOdees}</text>}
-      {MaskIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalFinalOdeesMask}</text>}
+      {CutoutIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalFinalOdees}</text>}
+      {MaskIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalFinalOdeesMask}</text>}
 
-      {CutoutIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalFinalOdeesLoleN}            </text>}
-      {MaskIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalFinalOdeesLoleNMask}      </text>}
+      {CutoutIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalFinalOdeesLoleN}            </text>}
+      {MaskIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalFinalOdeesLoleNMask}      </text>}
       </VStack>
   </Box>
         </Td>
@@ -14353,11 +14353,11 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/3/33/Musya.png/'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Musya</Text>
-      {CutoutIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalActualMusya}</text>}
-      {MaskIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalActualMusyaMask}      </text>}
+      {CutoutIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalActualMusya}</text>}
+      {MaskIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalActualMusyaMask}      </text>}
 
-      {CutoutIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalActualMusyaLoleN}</text>}
-      {MaskIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalActualMusyaMaskLoleN}</text>}
+      {CutoutIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalActualMusyaLoleN}</text>}
+      {MaskIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalActualMusyaMaskLoleN}</text>}
       </VStack>
   </Box>
         </Td>
@@ -14371,11 +14371,11 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/8/85/Quaruk.png'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Quaruk</Text>
-      {CutoutIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalActualQuaruk}</text>}
-      {MaskIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalActualQuarukMask}</text>}
+      {CutoutIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalActualQuaruk}</text>}
+      {MaskIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalActualQuarukMask}</text>}
 
-      {CutoutIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalActualQuarukLoleN}      </text>}
-      {MaskIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalActualQuarukMaskLoleN}      </text>}
+      {CutoutIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalActualQuarukLoleN}      </text>}
+      {MaskIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalActualQuarukMaskLoleN}      </text>}
       </VStack>
   </Box>
         </Td>
@@ -14392,11 +14392,11 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/2/24/Knuff.png/'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Knuff</Text>
-      {CutoutIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalActualKnuff}</text>}
-      {MaskIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalActualKnuffMask}</text>}
+      {CutoutIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalActualKnuff}</text>}
+      {MaskIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalActualKnuffMask}</text>}
 
-      {CutoutIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalActualKnuffLoleN}</text>}
-      {MaskIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalActualKnuffMaskLoleN}</text>}
+      {CutoutIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalActualKnuffLoleN}</text>}
+      {MaskIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalActualKnuffMaskLoleN}</text>}
       </VStack>
   </Box>
         </Td>
@@ -14411,11 +14411,11 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://media.4thewords.com/public/monsters/image_1708469171.png'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Sopoi</Text>
-      {CutoutIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalActualSopoi}      </text>}
-      {MaskIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalActualSopoiMask}</text>}
+      {CutoutIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalActualSopoi}      </text>}
+      {MaskIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalActualSopoiMask}</text>}
 
-      {CutoutIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalActualSopoiLoleN}      </text>}
-      {MaskIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalActualSopoiMaskLoleN}</text>}
+      {CutoutIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalActualSopoiLoleN}      </text>}
+      {MaskIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalActualSopoiMaskLoleN}</text>}
       </VStack>
   </Box>
         </Td>
@@ -14430,11 +14430,11 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/b/b2/Mibloom.png/'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Mibloom</Text>
-      {CutoutIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalActualMibloomAdjusted}</text>}
-      {MaskIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalMibloomMaskActual}</text>}
+      {CutoutIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalActualMibloomAdjusted}</text>}
+      {MaskIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalMibloomMaskActual}</text>}
 
-      {CutoutIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalActualMibloomLoleNAdjusted}</text>}
-      {MaskIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalMibloomMaskLoleNActual}
+      {CutoutIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalActualMibloomLoleNAdjusted}</text>}
+      {MaskIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalMibloomMaskLoleNActual}
       </text>}
       </VStack>
   </Box>
@@ -14453,11 +14453,11 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/6/65/Kinguz.png/'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Kinguz</Text>
-      {CutoutIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalActualKinguz}      </text>}
-      {MaskIsShown && LoleYIsShown && BlastIsShown && <text align='center'>{totalActualKinguzMask}</text>}
+      {CutoutIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalActualKinguz}      </text>}
+      {MaskIsShown && LoleYIsShown && GrenadeIsShown && <text align='center'>{totalActualKinguzMask}</text>}
 
-      {CutoutIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalActualKinguzLoleN}      </text>}
-      {MaskIsShown && LoleNIsShown && BlastIsShown && <text align='center'>{totalActualKinguzMaskLoleN}</text>}
+      {CutoutIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalActualKinguzLoleN}      </text>}
+      {MaskIsShown && LoleNIsShown && GrenadeIsShown && <text align='center'>{totalActualKinguzMaskLoleN}</text>}
       </VStack>
   </Box>
         </Td>
@@ -14488,8 +14488,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/4/40/Kuikas.png/'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Kuikas</Text>
-      {CutoutIsShown && BlastIsShown && <text align='center'>{totalLoleBothCutoutKuikas}</text>}
-      {MaskIsShown && BlastIsShown && <text align='center'>{totalLoleBothMaskKuikas}</text>}
+      {CutoutIsShown && GrenadeIsShown && <text align='center'>{totalLoleBothCutoutKuikas}</text>}
+      {MaskIsShown && GrenadeIsShown && <text align='center'>{totalLoleBothMaskKuikas}</text>}
       </VStack>
   </Box>
         </Td>
@@ -14499,7 +14499,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 </TableContainer>
 </Container> }
 
-{BlastIsShown && TesvenIsShown &&
+{GrenadeIsShown && TesvenIsShown &&
 <Container>
         <Text mt='12px'><b>Farm for Coins</b></Text>
         <TableContainer>
@@ -14516,8 +14516,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/4/40/Kuikas.png/'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Kuikas</Text>
-      {CutoutIsShown && BlastIsShown && <text align='center'>{totalTesvenKuikasQtyCutout}</text>}
-      {MaskIsShown && BlastIsShown && <text align='center'>{totalTesvenKuikasQtyMask}</text>}
+      {CutoutIsShown && GrenadeIsShown && <text align='center'>{totalTesvenKuikasQtyCutout}</text>}
+      {MaskIsShown && GrenadeIsShown && <text align='center'>{totalTesvenKuikasQtyMask}</text>}
       </VStack>
   </Box>
         </Td>
@@ -14527,7 +14527,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 </TableContainer>
 </Container> }
 
-{BlastIsShown && AzadiIsShown &&
+{GrenadeIsShown && AzadiIsShown &&
 <Container>
     	<Text mt='12px'><b>Farm for Coins</b></Text>
     	<TableContainer>
@@ -14544,8 +14544,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     	src='https://static.wikia.nocookie.net/4thewords/images/4/40/Kuikas.png/'
     	mr='5px'
   	/> <Text fontSize='lg' align='center'>Kuikas</Text>
-  	{CutoutIsShown && BlastIsShown && <text align='center'>{totalAzadiKuikasQtyCutout}</text>}
-  	{MaskIsShown && BlastIsShown && <text align='center'>{totalAzadiKuikasQtyMask}</text>}
+  	{CutoutIsShown && GrenadeIsShown && <text align='center'>{totalAzadiKuikasQtyCutout}</text>}
+  	{MaskIsShown && GrenadeIsShown && <text align='center'>{totalAzadiKuikasQtyMask}</text>}
   	</VStack>
   </Box>
     	</Td>
@@ -14555,7 +14555,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 </TableContainer>
 </Container> }
 
-{BlastIsShown && DustSuwoIsShown &&
+{GrenadeIsShown && DustSuwoIsShown &&
 <Container>
     	<Text mt='12px'><b>Farm for Coins</b></Text>
     	<TableContainer>
@@ -14572,8 +14572,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     	src='https://static.wikia.nocookie.net/4thewords/images/4/40/Kuikas.png/'
     	mr='5px'
   	/> <Text fontSize='lg' align='center'>Kuikas</Text>
-  	{CutoutIsShown && BlastIsShown && <text align='center'>{totalDustSuwoKuikasQtyCutout}</text>}
-  	{MaskIsShown && BlastIsShown && <text align='center'>{totalDustSuwoKuikasQtyMask}</text>}
+  	{CutoutIsShown && GrenadeIsShown && <text align='center'>{totalDustSuwoKuikasQtyCutout}</text>}
+  	{MaskIsShown && GrenadeIsShown && <text align='center'>{totalDustSuwoKuikasQtyMask}</text>}
   	</VStack>
   </Box>
     	</Td>
@@ -14584,7 +14584,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 </Container> }
 
 
-{BlastIsShown && SuwoIsShown &&
+{GrenadeIsShown && SuwoIsShown &&
 <Container>
     	<Text mt='12px'><b>Farm for Coins</b></Text>
     	<TableContainer>
@@ -14601,8 +14601,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     	src='https://static.wikia.nocookie.net/4thewords/images/4/40/Kuikas.png/'
     	mr='5px'
   	/> <Text fontSize='lg' align='center'>Kuikas</Text>
-  	{CutoutIsShown && BlastIsShown && <text align='center'>{totalSuwoKuikasQtyCutout}</text>}
-  	{MaskIsShown && BlastIsShown && <text align='center'>{totalSuwoKuikasQtyMask}</text>}
+  	{CutoutIsShown && GrenadeIsShown && <text align='center'>{totalSuwoKuikasQtyCutout}</text>}
+  	{MaskIsShown && GrenadeIsShown && <text align='center'>{totalSuwoKuikasQtyMask}</text>}
   	</VStack>
   </Box>
     	</Td>
@@ -14614,7 +14614,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 
 
 
-{BlastIsShown && DarkReflectionIsShown &&
+{GrenadeIsShown && DarkReflectionIsShown &&
 <Container>
     	<Text mt='12px'><b>Farm for Coins</b></Text>
     	<TableContainer>
@@ -14631,8 +14631,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     	src='https://static.wikia.nocookie.net/4thewords/images/4/40/Kuikas.png/'
     	mr='5px'
   	/> <Text fontSize='lg' align='center'>Kuikas</Text>
-  	{CutoutIsShown && BlastIsShown && <text align='center'>{totalDarkReflectionKuikasQtyCutout}</text>}
-  	{MaskIsShown && BlastIsShown && <text align='center'>{totalDarkReflectionKuikasQtyMask}</text>}
+  	{CutoutIsShown && GrenadeIsShown && <text align='center'>{totalDarkReflectionKuikasQtyCutout}</text>}
+  	{MaskIsShown && GrenadeIsShown && <text align='center'>{totalDarkReflectionKuikasQtyMask}</text>}
   	</VStack>
   </Box>
     	</Td>
@@ -14642,7 +14642,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 </TableContainer>
 </Container> }
 
-{BlastIsShown && ReflectionIsShown &&
+{GrenadeIsShown && ReflectionIsShown &&
 <Container>
     	<Text mt='12px'><b>Farm for Coins</b></Text>
     	<TableContainer>
@@ -14659,8 +14659,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     	src='https://static.wikia.nocookie.net/4thewords/images/4/40/Kuikas.png/'
     	mr='5px'
   	/> <Text fontSize='lg' align='center'>Kuikas</Text>
-  	{CutoutIsShown && BlastIsShown && <text align='center'>{totalDarkReflectionKuikasQtyCutout}</text>}
-  	{MaskIsShown && BlastIsShown && <text align='center'>{totalDarkReflectionKuikasQtyMask}</text>}
+  	{CutoutIsShown && GrenadeIsShown && <text align='center'>{totalDarkReflectionKuikasQtyCutout}</text>}
+  	{MaskIsShown && GrenadeIsShown && <text align='center'>{totalDarkReflectionKuikasQtyMask}</text>}
   	</VStack>
   </Box>
     	</Td>
@@ -14671,7 +14671,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 </Container> }
 
 
-{BlastIsShown && CaravanIsShown &&
+{GrenadeIsShown && CaravanIsShown &&
 <Container>
     	<Text mt='12px'><b>Farm for Coins</b></Text>
     	<TableContainer>
@@ -14688,8 +14688,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     	src='https://static.wikia.nocookie.net/4thewords/images/4/40/Kuikas.png/'
     	mr='5px'
   	/> <Text fontSize='lg' align='center'>Kuikas</Text>
-  	{CutoutIsShown && BlastIsShown && <text align='center'>{totalCaravanKuikasQtyCutout}</text>}
-  	{MaskIsShown && BlastIsShown && <text align='center'>{totalCaravanKuikasQtyMask}</text>}
+  	{CutoutIsShown && GrenadeIsShown && <text align='center'>{totalCaravanKuikasQtyCutout}</text>}
+  	{MaskIsShown && GrenadeIsShown && <text align='center'>{totalCaravanKuikasQtyMask}</text>}
   	</VStack>
   </Box>
     	</Td>
@@ -14699,7 +14699,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 </TableContainer>
 </Container> }
 
-{BlastIsShown && KultalvaIsShown &&
+{GrenadeIsShown && KultalvaIsShown &&
 <Container>
     	<Text mt='12px'><b>Farm for Coins</b></Text>
     	<TableContainer>
@@ -14716,8 +14716,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     	src='https://static.wikia.nocookie.net/4thewords/images/4/40/Kuikas.png/'
     	mr='5px'
   	/> <Text fontSize='lg' align='center'>Kuikas</Text>
-  	{CutoutIsShown && BlastIsShown && <text align='center'>{totalKultalvaKuikasQtyCutout}</text>}
-  	{MaskIsShown && BlastIsShown && <text align='center'>{totalKultalvaKuikasQtyMask}</text>}
+  	{CutoutIsShown && GrenadeIsShown && <text align='center'>{totalKultalvaKuikasQtyCutout}</text>}
+  	{MaskIsShown && GrenadeIsShown && <text align='center'>{totalKultalvaKuikasQtyMask}</text>}
   	</VStack>
   </Box>
     	</Td>
@@ -14727,7 +14727,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 </TableContainer>
 </Container> }
 
-{BlastIsShown && RiverGoddessIsShown &&
+{GrenadeIsShown && RiverGoddessIsShown &&
 <Container>
     	<Text mt='12px'><b>Farm for Coins</b></Text>
     	<TableContainer>
@@ -14744,8 +14744,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     	src='https://static.wikia.nocookie.net/4thewords/images/4/40/Kuikas.png/'
     	mr='5px'
   	/> <Text fontSize='lg' align='center'>Kuikas</Text>
-  	{CutoutIsShown && BlastIsShown && <text align='center'>{totalRiverGoddessKuikasQtyCutout}</text>}
-  	{MaskIsShown && BlastIsShown && <text align='center'>{totalRiverGoddessKuikasQtyMask}</text>}
+  	{CutoutIsShown && GrenadeIsShown && <text align='center'>{totalRiverGoddessKuikasQtyCutout}</text>}
+  	{MaskIsShown && GrenadeIsShown && <text align='center'>{totalRiverGoddessKuikasQtyMask}</text>}
   	</VStack>
   </Box>
     	</Td>
@@ -14757,7 +14757,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 
 
 
-{BlastIsShown && VelsounIsShown &&
+{GrenadeIsShown && VelsounIsShown &&
   <Container>
         <Text mt='12px'><b>Farm for Coins</b></Text>
         <TableContainer>
@@ -14774,8 +14774,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/4/40/Kuikas.png/'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Kuikas</Text>
-      {CutoutIsShown && BlastIsShown && <text align='center'>{totalVelsounKuikasQtyCutout}</text>}
-      {MaskIsShown && BlastIsShown && <text align='center'>{totalVelsounKuikasQtyMask}</text>}
+      {CutoutIsShown && GrenadeIsShown && <text align='center'>{totalVelsounKuikasQtyCutout}</text>}
+      {MaskIsShown && GrenadeIsShown && <text align='center'>{totalVelsounKuikasQtyMask}</text>}
       </VStack>
   </Box>
         </Td>
@@ -14785,7 +14785,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 </TableContainer>
 </Container> }
 
-{BlastIsShown && VelsounIsShown && 
+{GrenadeIsShown && VelsounIsShown && 
 <Container align='center'>
 <Text mt='20px' mb='12px' fontSize='2xl'><u><b>Materials to Gather</b></u></Text>
 <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
@@ -14825,9 +14825,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/a/a6/Spiderlegs_md.png/'
         mr='5px'
       /> 
-      {CutoutIsShown && BlastIsShown && 
+      {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalVelsounLoleBothCutoutSpiderLegs} Spider Legs</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalVelsounLoleBothMaskSpiderLegs} Spider Legs</Text>}
       </HStack>
 
@@ -14840,9 +14840,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/f/f9/Feathers_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalVelsounLoleBothCutoutFeathers} Feathers</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalVelsounLoleBothMaskFeathers} Feathers</Text>}
       </HStack>
 
@@ -14855,9 +14855,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/f/fc/Leaves_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalVelsounLoleBothCutoutLeaves} Leaves</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalVelsounLoleBothMaskLeaves} Leaves</Text>}
       </HStack>
 
@@ -14870,9 +14870,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/2/24/Tyluclaws_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalVelsounLoleBothCutoutClaws} Claws</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalVelsounLoleBothMaskClaws} Claws</Text>}
       </HStack>
 
@@ -14885,9 +14885,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalVelsounLoleBothCutoutCoinsLBP} Coins</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalVelsounLoleBothMaskCoinsLBP} Coins</Text>}
       </HStack>
       
@@ -14895,7 +14895,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             </Box>   
 </Container> } 
 
-{BlastIsShown && AlphaTamboIsShown &&
+{GrenadeIsShown && AlphaTamboIsShown &&
   <Container>
         <Text mt='12px'><b>Farm for Roberries</b></Text>
         <TableContainer>
@@ -14912,8 +14912,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/f/f1/Wizell.png/'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Wizell</Text>
-      {CutoutIsShown && BlastIsShown && <text align='center'>{totalRoberriesCutoutAT}</text>}
-      {MaskIsShown && BlastIsShown && <text align='center'>{totalRoberriesMaskAT}</text>}
+      {CutoutIsShown && GrenadeIsShown && <text align='center'>{totalRoberriesCutoutAT}</text>}
+      {MaskIsShown && GrenadeIsShown && <text align='center'>{totalRoberriesMaskAT}</text>}
       </VStack>
   </Box>
         </Td>
@@ -14923,7 +14923,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 </TableContainer>
 </Container> }
 
-{BlastIsShown && AlphaTamboIsShown && 
+{GrenadeIsShown && AlphaTamboIsShown && 
   <Container align='center'>
 <Text mt='20px' mb='12px' fontSize='2xl'><u><b>Materials to Gather</b></u></Text>
 <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
@@ -14947,7 +14947,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             </Box>   
 </Container> } 
 
-{BlastIsShown && TareitIsShown &&
+{GrenadeIsShown && TareitIsShown &&
 <Container>
     	<Text mt='12px'><b>Farm for Coins</b></Text>
     	<TableContainer>
@@ -14965,8 +14965,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     	src='https://static.wikia.nocookie.net/4thewords/images/4/40/Kuikas.png/'
     	mr='5px'
   	/> <Text fontSize='lg' align='center'>Kuikas</Text>
-  	{CutoutIsShown && BlastIsShown && <text align='center'>{totalTareitKuikasQtyCutout}</text>}
-  	{MaskIsShown && BlastIsShown && <text align='center'>{totalTareitKuikasQtyMask}</text>}
+  	{CutoutIsShown && GrenadeIsShown && <text align='center'>{totalTareitKuikasQtyCutout}</text>}
+  	{MaskIsShown && GrenadeIsShown && <text align='center'>{totalTareitKuikasQtyMask}</text>}
   	</VStack>
   </Box>
     	</Td>
@@ -14978,7 +14978,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 
 
 
-{BlastIsShown && TareitIsShown && 
+{GrenadeIsShown && TareitIsShown && 
 <Container align='center'>
 <Text mt='20px' mb='12px' fontSize='2xl'><u><b>Materials to Gather</b></u></Text>
 <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
@@ -15018,9 +15018,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/8/8b/Rustypendant_md.png/'
         mr='5px'
       /> 
-      {CutoutIsShown && BlastIsShown && 
+      {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalRustyPenCutout} Rusty Pendant</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalRustyPenMask} Rusty Pendant</Text>}
       </HStack>
 
@@ -15033,9 +15033,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/d/d5/Glass_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalGlassTareitCutout} Glass Bar</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalGlassTareitMask} Glass Bar</Text>}
       </HStack>
 
@@ -15048,9 +15048,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalMasteryMonsterCutout} Steel</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalMasteryMonsterMask} Steel</Text>}
       </HStack>
 
@@ -15063,9 +15063,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalCoinsTareitCutout} Coins</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalCoinsTareitMask} Coins</Text>}
       </HStack>
       
@@ -15074,7 +15074,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 </Container> } 
 
 
-{BlastIsShown && BabuIsShown &&
+{GrenadeIsShown && BabuIsShown &&
 <Container>
     	<Text mt='12px'><b>Farm for Coins</b></Text>
     	<TableContainer>
@@ -15092,8 +15092,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     	src='https://static.wikia.nocookie.net/4thewords/images/4/40/Kuikas.png/'
     	mr='5px'
   	/> <Text fontSize='lg' align='center'>Kuikas</Text>
-  	{CutoutIsShown && BlastIsShown && <text align='center'>{totalBabuKuikasQtyCutout}</text>}
-  	{MaskIsShown && BlastIsShown && <text align='center'>{totalBabuKuikasQtyMask}</text>}
+  	{CutoutIsShown && GrenadeIsShown && <text align='center'>{totalBabuKuikasQtyCutout}</text>}
+  	{MaskIsShown && GrenadeIsShown && <text align='center'>{totalBabuKuikasQtyMask}</text>}
   	</VStack>
   </Box>
     	</Td>
@@ -15104,7 +15104,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 </Container> }
 
 
-{BlastIsShown && BabuIsShown && 
+{GrenadeIsShown && BabuIsShown && 
 <Container align='center'>
 <Text mt='20px' mb='12px' fontSize='2xl'><u><b>Materials to Gather</b></u></Text>
 <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
@@ -15144,9 +15144,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png/'
         mr='5px'
       /> 
-      {CutoutIsShown && BlastIsShown && 
+      {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalBabuBattleCostCutoutNine} Steel</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalBabuBattleCostMaskNine} Steel</Text>}
       </HStack>
 
@@ -15159,9 +15159,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/b/b2/Kuaywood_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalBabuBattleCostCutoutNine} Wood</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalBabuBattleCostMaskNine} Wood</Text>}
       </HStack>
       </VStack>
@@ -15208,9 +15208,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/a/a6/Dried-pulp.png'
         mr='5px'
       /> 
-      {CutoutIsShown && BlastIsShown && 
+      {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalBabuBattleCostCutoutSix} Dried Pulp</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalBabuBattleCostMaskSix} Dried Pulp</Text>}
       </HStack>
 
@@ -15223,9 +15223,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/b/b3/Dust_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalBabuBattleCostCutoutSix} Dust</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalBabuBattleCostMaskSix} Dust</Text>}
       </HStack>
 
@@ -15238,9 +15238,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/b/b2/Kuaywood_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalBabuBattleCostCutoutSix} Wood</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalBabuBattleCostMaskSix} Wood</Text>}
       </HStack>
 
@@ -15286,9 +15286,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/d/d5/Glass_md.png/'
         mr='5px'
       /> 
-      {CutoutIsShown && BlastIsShown && 
+      {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalBabuBlueEssInkCutout} Glass Bar</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalBabuBlueEssInkMask} Glass Bar</Text>}
       </HStack>
 
@@ -15301,9 +15301,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/1/19/Wignowessence_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalBabuBlueEssInkCutout} Essence</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalBabuBlueEssInkMask} Essence</Text>}
       </HStack>
 
@@ -15316,9 +15316,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/e/e2/Refined-dust.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalBabuSteelChainsCutout} Refined Dust</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalBabuSteelChainsMask} Refined Dust</Text>}
       </HStack>
 
@@ -15328,7 +15328,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 
 
 
-{BlastIsShown && MiclanIsShown &&
+{GrenadeIsShown && MiclanIsShown &&
 <Container>
     	<Text mt='12px'><b>Farm for Coins</b></Text>
     	<TableContainer>
@@ -15346,8 +15346,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     	src='https://static.wikia.nocookie.net/4thewords/images/4/40/Kuikas.png/'
     	mr='5px'
   	/> <Text fontSize='lg' align='center'>Kuikas</Text>
-  	{CutoutIsShown && BlastIsShown && <text align='center'>{totalMiclanKuikasQtyCutout}</text>}
-  	{MaskIsShown && BlastIsShown && <text align='center'>{totalMiclanKuikasQtyMask}</text>}
+  	{CutoutIsShown && GrenadeIsShown && <text align='center'>{totalMiclanKuikasQtyCutout}</text>}
+  	{MaskIsShown && GrenadeIsShown && <text align='center'>{totalMiclanKuikasQtyMask}</text>}
   	</VStack>
   </Box>
     	</Td>
@@ -15358,7 +15358,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 </Container> }
 
 
-{BlastIsShown && MiclanIsShown && 
+{GrenadeIsShown && MiclanIsShown && 
 <Container align='center'>
 <Text mt='20px' mb='12px' fontSize='2xl'><u><b>Materials to Gather</b></u></Text>
 <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
@@ -15398,9 +15398,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png/'
         mr='5px'
       /> 
-      {CutoutIsShown && BlastIsShown && 
+      {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalMiclanSteelChainsCutout} Steel</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalMiclanSteelChainsMask} Steel</Text>}
       </HStack>
 
@@ -15413,9 +15413,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/b/b2/Kuaywood_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalMiclanBattleCostCutoutFifteen} Wood</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalMiclanBattleCostMaskFifteen} Wood</Text>}
       </HStack>
       </VStack>
@@ -15462,9 +15462,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/a/a6/Dried-pulp.png'
         mr='5px'
       /> 
-      {CutoutIsShown && BlastIsShown && 
+      {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalMiclanBattleCostCutoutNine} Dried Pulp</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalMiclanBattleCostMaskNine} Dried Pulp</Text>}
       </HStack>
 
@@ -15477,9 +15477,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/b/b3/Dust_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalMiclanBattleCostCutoutNine} Dust</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalMiclanBattleCostMaskNine} Dust</Text>}
       </HStack>
 
@@ -15492,9 +15492,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/b/b2/Kuaywood_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalMiclanBattleCostCutoutNine} Wood</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalMiclanBattleCostMaskNine} Wood</Text>}
       </HStack>
 
@@ -15540,9 +15540,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/d/d5/Glass_md.png/'
         mr='5px'
       /> 
-      {CutoutIsShown && BlastIsShown && 
+      {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalMiclanBlueEssInkCutout} Glass Bar</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalMiclanBlueEssInkMask} Glass Bar</Text>}
       </HStack>
 
@@ -15555,9 +15555,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/1/19/Wignowessence_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalMiclanBlueEssInkCutout} Essence</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalMiclanBlueEssInkMask} Essence</Text>}
       </HStack>
 
@@ -15570,9 +15570,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/e/e2/Refined-dust.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalMiclanSteelChainsCutout} Refined Dust</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalMiclanSteelChainsMask} Refined Dust</Text>}
       </HStack>
 
@@ -15580,7 +15580,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             </Box>   
 </Container> } 
 
-{BlastIsShown && RakstalIsShown &&
+{GrenadeIsShown && RakstalIsShown &&
   <Container>
         <Text mt='12px'><b>Farm for Swamp Moss</b></Text>
         <TableContainer>
@@ -15597,8 +15597,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/7/76/Heliodae.png/'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Heliodae</Text>
-      {CutoutIsShown && BlastIsShown && <text align='center'>{totalSwampMossCutoutRakstal}</text>}
-      {MaskIsShown && BlastIsShown && <text align='center'>{totalSwampMossMaskRakstal}</text>}
+      {CutoutIsShown && GrenadeIsShown && <text align='center'>{totalSwampMossCutoutRakstal}</text>}
+      {MaskIsShown && GrenadeIsShown && <text align='center'>{totalSwampMossMaskRakstal}</text>}
       </VStack>
   </Box>
         </Td>
@@ -15610,7 +15610,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 
 
 
-{BlastIsShown && RakstalIsShown && 
+{GrenadeIsShown && RakstalIsShown && 
 <Container align='center'>
 <Text mt='20px' mb='12px' fontSize='2xl'><u><b>Materials to Gather</b></u></Text>
 <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
@@ -15634,7 +15634,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             </Box>   
 </Container> } 
 
-{BlastIsShown && ShamanLuziaIsShown &&
+{GrenadeIsShown && ShamanLuziaIsShown &&
 <Container>
     	<Text mt='12px'><b>Farm for Coins</b></Text>
     	<TableContainer>
@@ -15652,8 +15652,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     	src='https://static.wikia.nocookie.net/4thewords/images/4/40/Kuikas.png/'
     	mr='5px'
   	/> <Text fontSize='lg' align='center'>Kuikas</Text>
-  	{CutoutIsShown && BlastIsShown && <text align='center'>{totalShamanLuziaKuikasQtyCutout}</text>}
-  	{MaskIsShown && BlastIsShown && <text align='center'>{totalShamanLuziaKuikasQtyMask}</text>}
+  	{CutoutIsShown && GrenadeIsShown && <text align='center'>{totalShamanLuziaKuikasQtyCutout}</text>}
+  	{MaskIsShown && GrenadeIsShown && <text align='center'>{totalShamanLuziaKuikasQtyMask}</text>}
   	</VStack>
   </Box>
     	</Td>
@@ -15664,7 +15664,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 </Container> }
 
 
-{BlastIsShown && ShamanLuziaIsShown && 
+{GrenadeIsShown && ShamanLuziaIsShown && 
 <Container align='center'>
 <Text mt='20px' mb='12px' fontSize='2xl'><u><b>Materials to Gather</b></u></Text>
 
@@ -15705,9 +15705,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/f/f3/Leafhelmet_md.png/'
         mr='5px'
       /> 
-      {CutoutIsShown && BlastIsShown && 
+      {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalLeafHelmetCutout} Leaf Helmet</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalLeafHelmetMask} Leaf Helmet</Text>}
       </HStack>
 
@@ -15720,9 +15720,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/6/61/RawFabric.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalRawFabricCutout} Raw Fabric</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalRawFabricMask} Raw Fabric</Text>}
       </HStack>
 
@@ -15735,9 +15735,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/0/0b/Finefabric_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalFineFabricCutout} Fine Fabric</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalFineFabricMask} Fine Fabric</Text>}
       </HStack>
 
@@ -15750,9 +15750,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalSteelShaLuzCutout} Steel</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalSteelShaLuzMask} Steel</Text>}
       </HStack>
 
@@ -15765,9 +15765,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalCoinsShaLuzCutout} Coins</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalCoinsShaLuzMask} Coins</Text>}
       </HStack>
       
@@ -15809,9 +15809,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/a/ac/Woodspear_md.png/'
         mr='5px'
       /> 
-      {CutoutIsShown && BlastIsShown && 
+      {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalWoodSpearCutout} Wood Spear</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalWoodSpearMask} Wood Spear</Text>}
       </HStack>
 
@@ -15824,9 +15824,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/6/61/RawFabric.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalRawFabricSteelSpearCutout} Raw Fabric</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalRawFabricSteelSpearMask} Raw Fabric</Text>}
       </HStack>
 
@@ -15839,9 +15839,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalSteelShaLuzCutout} Steel</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalSteelShaLuzMask} Steel</Text>}
       </HStack>
 
@@ -15854,9 +15854,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalCoinsShaLuzSteelSpearCutout} Coins</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalCoinsShaLuzSteelSpearMask} Coins</Text>}
       </HStack>
       
@@ -15865,7 +15865,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 
 </Container> } 
 
-{BlastIsShown && KingMaiIsShown &&
+{GrenadeIsShown && KingMaiIsShown &&
 <Container>
     	<Text mt='12px'><b>Farm for Coins</b></Text>
     	<TableContainer>
@@ -15883,8 +15883,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     	src='https://static.wikia.nocookie.net/4thewords/images/4/40/Kuikas.png/'
     	mr='5px'
   	/> <Text fontSize='lg' align='center'>Kuikas</Text>
-  	{CutoutIsShown && BlastIsShown && <text align='center'>{totalKingMaiKuikasQtyCutout}</text>}
-  	{MaskIsShown && BlastIsShown && <text align='center'>{totalKingMaiKuikasQtyMask}</text>}
+  	{CutoutIsShown && GrenadeIsShown && <text align='center'>{totalKingMaiKuikasQtyCutout}</text>}
+  	{MaskIsShown && GrenadeIsShown && <text align='center'>{totalKingMaiKuikasQtyMask}</text>}
   	</VStack>
   </Box>
     	</Td>
@@ -15895,7 +15895,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 </Container> }
 
 
-{BlastIsShown && KingMaiIsShown && 
+{GrenadeIsShown && KingMaiIsShown && 
 <Container align='center'>
 <Text mt='20px' mb='12px' fontSize='2xl'><u><b>Materials to Gather</b></u></Text>
 
@@ -15936,9 +15936,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/6/60/Leafbreastplate_md.png/'
         mr='5px'
       /> 
-      {CutoutIsShown && BlastIsShown && 
+      {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalLeafBreastplateKingMaiCutout} Leaf Breastplate</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalLeafBreastplateKingMaiMask} Leaf Breastplate</Text>}
       </HStack>
 
@@ -15951,9 +15951,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/6/61/RawFabric.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalRawFabricFBPCutout} Raw Fabric</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalRawFabricFBPMask} Raw Fabric</Text>}
       </HStack>
 
@@ -15966,9 +15966,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/0/0b/Finefabric_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalFineFabricFBPCutout} Fine Fabric</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalFineFabricFBPMask} Fine Fabric</Text>}
       </HStack>
 
@@ -15981,9 +15981,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalSteelKingMaiCutout} Steel</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalSteelKingMaiMask} Steel</Text>}
       </HStack>
 
@@ -15996,9 +15996,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalCoinsKingMaiCutout} Coins</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalCoinsKingMaiMask} Coins</Text>}
       </HStack>
       
@@ -16040,9 +16040,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/7/7b/Woodsword_md.png/'
         mr='5px'
       /> 
-      {CutoutIsShown && BlastIsShown && 
+      {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalWoodSwordCutout} Wood Sword</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalWoodSwordMask} Wood Sword</Text>}
       </HStack>
 
@@ -16055,9 +16055,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/0/0b/Finefabric_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalFineFabricSteelSwordCutout} Fine Fabric</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalFineFabricSteelSwordMask} Fine Fabric</Text>}
       </HStack>
 
@@ -16070,9 +16070,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalSteelKingMaiCutout} Steel</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalSteelKingMaiMask} Steel</Text>}
       </HStack>
 
@@ -16085,9 +16085,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalCoinsKingMaiSteelSwordCutout} Coins</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalCoinsKingMaiSteelSwordMask} Coins</Text>}
       </HStack>
       
@@ -16096,7 +16096,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 
 </Container> } 
 
-{BlastIsShown && DustedLuziaIsShown &&
+{GrenadeIsShown && DustedLuziaIsShown &&
 <Container>
     	<Text mt='12px'><b>Farm for Materials</b></Text>
     	<TableContainer>
@@ -16114,8 +16114,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     	src='https://static.wikia.nocookie.net/4thewords/images/4/40/Kuikas.png/'
     	mr='5px'
   	/> <Text fontSize='lg' align='center'>Kuikas</Text>
-  	{CutoutIsShown && BlastIsShown && <text align='center'>{totalDustedLuziaKuikasQtyCutout}</text>}
-  	{MaskIsShown && BlastIsShown && <text align='center'>{totalDustedLuziaKuikasQtyMask}</text>}
+  	{CutoutIsShown && GrenadeIsShown && <text align='center'>{totalDustedLuziaKuikasQtyCutout}</text>}
+  	{MaskIsShown && GrenadeIsShown && <text align='center'>{totalDustedLuziaKuikasQtyMask}</text>}
   	</VStack>
   </Box>
     	</Td>
@@ -16130,8 +16130,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     	src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Scofin.png/'
     	mr='5px'
   	/> <Text fontSize='lg' align='center'>Scofin</Text>
-  	{CutoutIsShown && BlastIsShown && <text align='center'>{totalDustedLuziaScofinQtyCutout}</text>}
-  	{MaskIsShown && BlastIsShown && <text align='center'>{totalDustedLuziaScofinQtyMask}</text>}
+  	{CutoutIsShown && GrenadeIsShown && <text align='center'>{totalDustedLuziaScofinQtyCutout}</text>}
+  	{MaskIsShown && GrenadeIsShown && <text align='center'>{totalDustedLuziaScofinQtyMask}</text>}
   	</VStack>
   </Box>
     	</Td>
@@ -16142,7 +16142,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 </Container> }
 
 
-{BlastIsShown && DustedLuziaIsShown && 
+{GrenadeIsShown && DustedLuziaIsShown && 
 <Container align='center'>
 <Text mt='20px' mb='12px' fontSize='2xl'><u><b>Materials to Gather</b></u></Text>
 
@@ -16184,9 +16184,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalSteelShieldDLSteelCutout} Steel</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalSteelShieldDLSteelMask} Steel</Text>}
       </HStack>
 
@@ -16199,9 +16199,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/0/0c/Hardwood_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalSteelShieldDLHardwoodCutout} Hardwood</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalSteelShieldDLHardwoodMask} Hardwood</Text>}
       </HStack>
 
@@ -16215,9 +16215,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/e/ea/Rivergrass_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalSteelShieldDLRGCutout} River Grass</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalSteelShieldDLRGMask} River Grass</Text>}
       </HStack>
       
@@ -16262,9 +16262,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalSteelAxeDLSteelCutout} Steel</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalSteelAxeDLSteelMask} Steel</Text>}
       </HStack>
 
@@ -16277,9 +16277,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/0/0c/Hardwood_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalSteelAxeDLHardwoodCutout} Hardwood</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalSteelAxeDLHardwoodMask} Hardwood</Text>}
       </HStack>
 
@@ -16293,9 +16293,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/e/ea/Rivergrass_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalSteelAxeDLRGCutout} River Grass</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalSteelAxeDLRGMask} River Grass</Text>}
       </HStack>
       
@@ -16323,8 +16323,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/4/40/Kuikas.png/'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Kuikas</Text>
-      {CutoutIsShown && BlastIsShown && <text align='center'>{totalKuikasCoinsCutoutDL}</text>}
-      {MaskIsShown && BlastIsShown && <text align='center'>{totalKuikasCoinsMaskDL}</text>}
+      {CutoutIsShown && GrenadeIsShown && <text align='center'>{totalKuikasCoinsCutoutDL}</text>}
+      {MaskIsShown && GrenadeIsShown && <text align='center'>{totalKuikasCoinsMaskDL}</text>}
       </VStack>
   </Box>
         </Td>
@@ -16353,8 +16353,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/4/40/Kuikas.png/'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Kuikas</Text>
-      {CutoutIsShown && BlastIsShown && <text align='center'>{totalKuikasFarmComboCutoutDL}</text>}
-      {MaskIsShown && BlastIsShown && <text align='center'>{totalKuikasFarmComboMaskDL}</text>}
+      {CutoutIsShown && GrenadeIsShown && <text align='center'>{totalKuikasFarmComboCutoutDL}</text>}
+      {MaskIsShown && GrenadeIsShown && <text align='center'>{totalKuikasFarmComboMaskDL}</text>}
       </VStack>
   </Box>
         </Td>
@@ -16368,8 +16368,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/2/26/Jeso.png/'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Jeso</Text>
-      {CutoutIsShown && BlastIsShown && <text align='center'>{totalJesoNeededCutoutDL}</text>}
-      {MaskIsShown && BlastIsShown && <text align='center'>{totalJesoNeededMaskDL}</text>}
+      {CutoutIsShown && GrenadeIsShown && <text align='center'>{totalJesoNeededCutoutDL}</text>}
+      {MaskIsShown && GrenadeIsShown && <text align='center'>{totalJesoNeededMaskDL}</text>}
       </VStack>
   </Box>
         </Td>
@@ -16397,8 +16397,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/4/40/Kuikas.png/'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Kuikas</Text>
-      {CutoutIsShown && BlastIsShown && <text align='center'>{totalKuikasFarmBattleCutoutDL}</text>}
-      {MaskIsShown && BlastIsShown && <text align='center'>{totalKuikasFarmBattleMaskDL}</text>}
+      {CutoutIsShown && GrenadeIsShown && <text align='center'>{totalKuikasFarmBattleCutoutDL}</text>}
+      {MaskIsShown && GrenadeIsShown && <text align='center'>{totalKuikasFarmBattleMaskDL}</text>}
       </VStack>
   </Box>
         </Td>
@@ -16413,8 +16413,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/6/60/Jaaje.png/'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Jaaje</Text>
-      {CutoutIsShown && BlastIsShown && <text align='center'>{totalHWCutoutDL}</text>}
-      {MaskIsShown && BlastIsShown && <text align='center'>{totalHWMaskDL}</text>}
+      {CutoutIsShown && GrenadeIsShown && <text align='center'>{totalHWCutoutDL}</text>}
+      {MaskIsShown && GrenadeIsShown && <text align='center'>{totalHWMaskDL}</text>}
       </VStack>
   </Box>
         </Td>
@@ -16428,8 +16428,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/0/0e/Olea.png/'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Olea</Text>
-      {CutoutIsShown && BlastIsShown && <text align='center'>{totalRGBattleCutoutDL}</text>}
-      {MaskIsShown && BlastIsShown && <text align='center'>{totalRGBattleMaskDL}</text>}
+      {CutoutIsShown && GrenadeIsShown && <text align='center'>{totalRGBattleCutoutDL}</text>}
+      {MaskIsShown && GrenadeIsShown && <text align='center'>{totalRGBattleMaskDL}</text>}
       </VStack>
   </Box>
         </Td>
@@ -16446,8 +16446,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Scofin.png/'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Scofin</Text>
-      {CutoutIsShown && BlastIsShown && <text align='center'>{totalScofinSteelCutoutDL}</text>}
-      {MaskIsShown && BlastIsShown && <text align='center'>{totalScofinSteelMaskDL}</text>}
+      {CutoutIsShown && GrenadeIsShown && <text align='center'>{totalScofinSteelCutoutDL}</text>}
+      {MaskIsShown && GrenadeIsShown && <text align='center'>{totalScofinSteelMaskDL}</text>}
       </VStack>
   </Box>
         </Td>
@@ -16461,8 +16461,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/7/78/Xin.png/'
         mr='5px'
       /> <Text fontSize='lg' align='center'>Xin</Text>
-      {CutoutIsShown && BlastIsShown && <text align='center'>{totalLeavesNeededCutoutDL}</text>}
-      {MaskIsShown && BlastIsShown && <text align='center'>{totalLeavesNeededMaskDL}</text>}
+      {CutoutIsShown && GrenadeIsShown && <text align='center'>{totalLeavesNeededCutoutDL}</text>}
+      {MaskIsShown && GrenadeIsShown && <text align='center'>{totalLeavesNeededMaskDL}</text>}
       </VStack>
   </Box>
         </Td>
@@ -16475,7 +16475,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 
 
 
-{BlastIsShown && KingMaiIsShown &&
+{GrenadeIsShown && KingMaiIsShown &&
 <Container>
     	<Text mt='12px'><b>Farm for Coins</b></Text>
     	<TableContainer>
@@ -16493,8 +16493,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     	src='https://static.wikia.nocookie.net/4thewords/images/4/40/Kuikas.png/'
     	mr='5px'
   	/> <Text fontSize='lg' align='center'>Kuikas</Text>
-  	{CutoutIsShown && BlastIsShown && <text align='center'>{totalKingMaiKuikasQtyCutout}</text>}
-  	{MaskIsShown && BlastIsShown && <text align='center'>{totalKingMaiKuikasQtyMask}</text>}
+  	{CutoutIsShown && GrenadeIsShown && <text align='center'>{totalKingMaiKuikasQtyCutout}</text>}
+  	{MaskIsShown && GrenadeIsShown && <text align='center'>{totalKingMaiKuikasQtyMask}</text>}
   	</VStack>
   </Box>
     	</Td>
@@ -16505,7 +16505,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 </Container> }
 
 
-{BlastIsShown && DustyKingMaiIsShown &&
+{GrenadeIsShown && DustyKingMaiIsShown &&
 <Container>
     	<Text mt='12px'><b>Farm for Coins</b></Text>
     	<TableContainer>
@@ -16523,8 +16523,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     	src='https://static.wikia.nocookie.net/4thewords/images/4/40/Kuikas.png/'
     	mr='5px'
   	/> <Text fontSize='lg' align='center'>Kuikas</Text>
-  	{CutoutIsShown && BlastIsShown && <text align='center'>{totalDustyKingMaiKuikasQtyCutout}</text>}
-  	{MaskIsShown && BlastIsShown && <text align='center'>{totalDustyKingMaiKuikasQtyMask}</text>}
+  	{CutoutIsShown && GrenadeIsShown && <text align='center'>{totalDustyKingMaiKuikasQtyCutout}</text>}
+  	{MaskIsShown && GrenadeIsShown && <text align='center'>{totalDustyKingMaiKuikasQtyMask}</text>}
   	</VStack>
   </Box>
     	</Td>
@@ -16534,7 +16534,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 </TableContainer>
 </Container> }
 
-{BlastIsShown && DustyKingMaiIsShown && 
+{GrenadeIsShown && DustyKingMaiIsShown && 
 <Container align='center'>
 <Text mt='20px' mb='12px' fontSize='2xl'><u><b>Materials to Gather</b></u></Text>
 
@@ -16575,9 +16575,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png/'
         mr='5px'
       /> 
-      {CutoutIsShown && BlastIsShown && 
+      {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalDustyKingMaiCutoutQtyEight} Fusion Glass</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalDustyKingMaiMaskQtyEight} Fusion Glass</Text>}
       </HStack>
 
@@ -16590,9 +16590,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalDustyKingMaiCutoutQtyFifteen} Steel</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalDustyKingMaiMaskQtyFifteen} Steel</Text>}
       </HStack>
 
@@ -16605,9 +16605,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalDustyKingMaiCutoutQtyFour} D-R Elixir</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalDustyKingMaiMaskQtyFour} D-R Elixir</Text>}
       </HStack>
 
@@ -16620,9 +16620,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/0/0b/Finefabric_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalDustyKingMaiCutoutQtyFour} Fine Fabric</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalDustyKingMaiMaskQtyFour} Fine Fabric</Text>}
       </HStack>
 
@@ -16636,9 +16636,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalDustyKingMaiCutoutQtyFiveHundo} Coins</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalDustyKingMaiMaskQtyFiveHundo} Coins</Text>}
       </HStack>
       
@@ -16683,9 +16683,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png/'
         mr='5px'
       /> 
-      {CutoutIsShown && BlastIsShown && 
+      {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalDustyKingMaiCutoutQtyTen} Fusion Glass</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalDustyKingMaiMaskQtyTen} Fusion Glass</Text>}
       </HStack>
 
@@ -16698,9 +16698,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalDustyKingMaiCutoutQtyEight} Steel</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalDustyKingMaiMaskQtyEight} Steel</Text>}
       </HStack>
 
@@ -16713,9 +16713,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalDustyKingMaiCutoutQtyTwo} D-R Elixir</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalDustyKingMaiMaskQtyTwo} D-R Elixir</Text>}
       </HStack>
 
@@ -16729,9 +16729,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
         mr='5px'
       /> 
-            {CutoutIsShown && BlastIsShown && 
+            {CutoutIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalDustyKingMaiCutoutQtyOneK} Coins</Text>}
-      {MaskIsShown && BlastIsShown && 
+      {MaskIsShown && GrenadeIsShown && 
       <Text fontSize='lg' align='center'>{totalDustyKingMaiMaskQtyOneK} Coins</Text>}
       </HStack>
       
