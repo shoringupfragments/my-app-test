@@ -13725,7 +13725,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}        	
 
           {DustedLuziaIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='760px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='830px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -13766,12 +13766,15 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     	<Text fontSize='md'><b>Coins Needed:<br></br></b>{DustedLuziaCoinsNeededCutoutComma}
       	<br></br></Text>
     	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
-      	{DustyLuzMasteryCutoutComma}</Text>
+      	{DustedLuziaKuikasWCCutoutComma}</Text>
+        <Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{DustyLuzMasteryCutoutComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {DustedLuziaIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='760px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='830px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -13813,13 +13816,16 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     	<Divider mt='3px' w='250px' />
     	<Text fontSize='md'><b>Coins Needed:<br></br></b>{DustedLuziaCoinsNeededCutoutComma}
       	<br></br></Text>
-    	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
-      	{DustyLuzMasteryCutoutComma}</Text>
+        <Text fontSize='md'><b>Monster Word Count:</b><br></br>
+      	{DustedLuziaKuikasWCCutoutComma}</Text>
+        <Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{DustyLuzMasteryCutoutComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {DustedLuziaIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='760px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='830px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -13861,13 +13867,16 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     	<Divider mt='3px' w='250px' />
     	<Text fontSize='md'><b>Coins Needed:<br></br></b>{DustedLuziaCoinsNeededMaskComma}
       	<br></br></Text>
-    	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
-      	{DustyLuzMasteryMaskComma}</Text>
+        <Text fontSize='md'><b>Monster Word Count:</b><br></br>
+      	{DustedLuziaKuikasWCMaskComma}</Text>
+        <Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{DustyLuzMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {DustedLuziaIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='760px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='830px' pb={5} style={{ backgroundColor: DustedLuziaActive ? "#1c1138" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -13910,8 +13919,11 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     	<Divider mt='3px' w='250px' />
     	<Text fontSize='md'><b>Coins Needed:<br></br></b>{DustedLuziaCoinsNeededMaskComma}
       	<br></br></Text>
-    	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
-      	{DustyLuzMasteryMaskComma}</Text>
+        <Text fontSize='md'><b>Monster Word Count:</b><br></br>
+      	{DustedLuziaKuikasWCMaskComma}</Text>
+        <Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{DustyLuzMasteryMaskComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}        	
 
@@ -14480,7 +14492,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 
 
             {DustyKingMaiIsShown && GrenadeIsShown && LoleYIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='750px' pb={5} style={{ backgroundColor: DustyKingMaiActive ? "#1c1138" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='815px' pb={5} style={{ backgroundColor: DustyKingMaiActive ? "#1c1138" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -14521,13 +14533,16 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
     	<Divider mt='3px' w='250px' />
     	<Text fontSize='md'><b>Coins Needed:<br></br></b>{DustyKingMaiCoinsNeededCutoutComma}
       	<br></br></Text>
-    	<Text fontSize='md'><b>Monster Word Count:</b><br></br>
-      	{DustyKingMaiMasteryCutoutComma}</Text>
+        <Text fontSize='md'><b>Monster Word Count:</b><br></br>
+      	{DustyKingMaiKuikasWCCutoutComma}</Text>
+        <Text fontSize='md'><b>Typical Mastery Cost:<br></br></b>
+    	{DustyKingMaiMasteryCutoutComma}
+      	<br></br></Text>
       	</VStack>
         	</Box>}
 
 {DustyKingMaiIsShown && GrenadeIsShown && LoleNIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='750px' pb={5} style={{ backgroundColor: DustyKingMaiActive ? "#1c1138" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='815px' pb={5} style={{ backgroundColor: DustyKingMaiActive ? "#1c1138" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -14578,7 +14593,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}
 
 {DustyKingMaiIsShown && GrenadeIsShown && LoleYIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='750px' pb={5} style={{ backgroundColor: DustyKingMaiActive ? "#1c1138" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='815px' pb={5} style={{ backgroundColor: DustyKingMaiActive ? "#1c1138" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -14629,7 +14644,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}
 
 {DustyKingMaiIsShown && GrenadeIsShown && LoleNIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='750px' pb={5} style={{ backgroundColor: DustyKingMaiActive ? "#1c1138" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='815px' pb={5} style={{ backgroundColor: DustyKingMaiActive ? "#1c1138" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
