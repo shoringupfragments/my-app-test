@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState, useEffect, useId } from "react";
 import {
-  props,
   Accordion,
   AccordionItem,
   AccordionButton,
