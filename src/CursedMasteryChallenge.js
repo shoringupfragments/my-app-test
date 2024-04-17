@@ -4081,9 +4081,11 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
 
 //GRENADE POTIONS
 
+const inputName = props.inputName;
+const inputWCMonster = props.inputWCMonster;
 
   const id = useId();
-  const [input, setInput] = useState(props?.value ?? '');
+  const [input, setInput] = useState({inputName}?.value ?? '');
   
 
   const [MonsterWC, setMonsterWC] = useState(0); // Or any other non-zero value
@@ -4095,7 +4097,7 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
   };
 
   const idWC = useId();
-  const [inputWC, setInputWC] = useState(props?.value ?? '');
+  const [inputWC, setInputWC] = useState({inputWCMonster}?.value ?? '');
 
 
 
@@ -10453,6 +10455,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{AzadiWCLoleNMaskComma}
       	</Text>
     	<Divider w='250px' />
+      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10628,6 +10632,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{DustSuwoWCLoleNMaskComma}
       	</Text>
     	<Divider w='250px' />
+      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10804,6 +10810,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{SuwoWCLoleNMaskComma}
       	</Text>
     	<Divider w='250px' />
+      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -10978,6 +10986,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{DarkReflectionWCLoleNMaskComma}
       	</Text>
     	<Divider w='250px' />
+      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -11152,6 +11162,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{DarkReflectionWCLoleNMaskComma}
       	</Text>
     	<Divider w='250px' />
+      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -11327,6 +11339,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{CaravanWCLoleNMaskComma}
       	</Text>
     	<Divider w='250px' />
+      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -11501,6 +11515,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{RiverGoddessWCLoleNMaskComma}
       	</Text>
     	<Divider w='250px' />
+      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -11676,6 +11693,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{KultalvaWCLoleNMaskComma}
       	</Text>
     	<Divider w='250px' />
+      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -11691,7 +11711,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}        	
 
 {VelsounIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown && 
-<Box rounded='lg'  w='290px' h='680px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='735px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -11740,7 +11760,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 
 
 {VelsounIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown && 
-<Box rounded='lg'  w='290px' h='680px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='735px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -11787,7 +11807,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             </Box>}
 
 {VelsounIsShown && BlastIsShown && LoleYIsShown && MaskIsShown && 
-<Box rounded='lg'  w='290px' h='680px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='735px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -11834,7 +11854,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             </Box>}
 
 {VelsounIsShown && BlastIsShown && LoleNIsShown && MaskIsShown && 
-<Box rounded='lg'  w='290px' h='680px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='735px' pb={5} style={{ backgroundColor: VelsounActive ? "#1e0628" : "#2D3748" }}>
        <VStack>
        <Box mr='220px' mb='225px'>
         <Image
@@ -11861,6 +11881,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TotalLoleNMaskVelsounWCComma}
           </Text>
         <Divider w='250px' />
+        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleNMaskResourcesComma}</Text>
         <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -12051,6 +12074,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TotalLoleNMaskAlphaTamboWCComma}
           </Text>
         <Divider w='250px' />
+        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleNMaskResourcesComma}</Text>
         <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -12241,6 +12267,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
             Total Word Count:<br></br>{TotalLoleNMaskRakstalWCComma}
           </Text>
         <Divider w='250px' />
+        <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+
         <Text fontSize='md'><b>Potion Resources Needed:</b><br></br> 
         {LoleNMaskResourcesComma}</Text>
         <Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -12260,7 +12289,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 
 
           {TareitIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='680px' pb={5} style={{ backgroundColor: TareitActive ? "#4f2e49" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='735px' pb={5} style={{ backgroundColor: TareitActive ? "#4f2e49" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -12305,7 +12334,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}
 
 {TareitIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='680px' pb={5} style={{ backgroundColor: TareitActive ? "#4f2e49" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='735px' pb={5} style={{ backgroundColor: TareitActive ? "#4f2e49" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -12350,7 +12379,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}
 
 {TareitIsShown && BlastIsShown && LoleYIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='680px' pb={5} style={{ backgroundColor: TareitActive ? "#4f2e49" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='735px' pb={5} style={{ backgroundColor: TareitActive ? "#4f2e49" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -12395,7 +12424,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}
 
 {TareitIsShown && BlastIsShown && LoleNIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='680px' pb={5} style={{ backgroundColor: TareitActive ? "#4f2e49" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='735px' pb={5} style={{ backgroundColor: TareitActive ? "#4f2e49" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -12422,6 +12451,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{TareitWCLoleNMaskComma}
       	</Text>
     	<Divider w='250px' />
+      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -12438,7 +12470,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}        	
 
 {BabuIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='720px' pb={5} style={{ backgroundColor: BabuActive ? "#4f2e49" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='775px' pb={5} style={{ backgroundColor: BabuActive ? "#4f2e49" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -12486,7 +12518,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}
 
 {BabuIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='720px' pb={5} style={{ backgroundColor: BabuActive ? "#4f2e49" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='775px' pb={5} style={{ backgroundColor: BabuActive ? "#4f2e49" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -12534,7 +12566,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}
 
 {BabuIsShown && BlastIsShown && LoleYIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='720px' pb={5} style={{ backgroundColor: BabuActive ? "#4f2e49" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='775px' pb={5} style={{ backgroundColor: BabuActive ? "#4f2e49" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -12582,7 +12614,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}
 
 {BabuIsShown && BlastIsShown && LoleNIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='720px' pb={5} style={{ backgroundColor: BabuActive ? "#4f2e49" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='775px' pb={5} style={{ backgroundColor: BabuActive ? "#4f2e49" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -12609,6 +12641,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{BabuWCLoleNMaskComma}
       	</Text>
     	<Divider w='250px' />
+      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -12628,7 +12663,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}        	
 
           {MiclanIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='720px' pb={5} style={{ backgroundColor: MiclanActive ? "#072627" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='775px' pb={5} style={{ backgroundColor: MiclanActive ? "#072627" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -12676,7 +12711,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}
 
 {MiclanIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='720px' pb={5} style={{ backgroundColor: MiclanActive ? "#072627" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='775px' pb={5} style={{ backgroundColor: MiclanActive ? "#072627" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -12724,7 +12759,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}
 
 {MiclanIsShown && BlastIsShown && LoleYIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='720px' pb={5} style={{ backgroundColor: MiclanActive ? "#072627" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='775px' pb={5} style={{ backgroundColor: MiclanActive ? "#072627" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -12772,7 +12807,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}
 
 {MiclanIsShown && BlastIsShown && LoleNIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='720px' pb={5} style={{ backgroundColor: MiclanActive ? "#072627" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='775px' pb={5} style={{ backgroundColor: MiclanActive ? "#072627" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -12800,6 +12835,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
       	</Text>
     	<Divider w='250px' />
       <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+
+      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
         {ResourcesMaskLoleY_BlastPotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
@@ -12820,7 +12858,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}        	
 
 {ShamanLuziaIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='710px' pb={5} style={{ backgroundColor: ShamanLuziaActive ? "#403954" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: ShamanLuziaActive ? "#403954" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -12867,7 +12905,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}
 
 {ShamanLuziaIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='710px' pb={5} style={{ backgroundColor: ShamanLuziaActive ? "#403954" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: ShamanLuziaActive ? "#403954" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -12914,7 +12952,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}
 
 {ShamanLuziaIsShown && BlastIsShown && LoleYIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='710px' pb={5} style={{ backgroundColor: ShamanLuziaActive ? "#403954" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: ShamanLuziaActive ? "#403954" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -12961,7 +12999,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}
 
 {ShamanLuziaIsShown && BlastIsShown && LoleNIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='710px' pb={5} style={{ backgroundColor: ShamanLuziaActive ? "#403954" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: ShamanLuziaActive ? "#403954" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -12988,6 +13026,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{ShamanLuziaWCLoleNMaskComma}
       	</Text>
     	<Divider w='250px' />
+      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -13006,7 +13047,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}
 
           {KingMaiIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='710px' pb={5} style={{ backgroundColor: KingMaiActive ? "#0b1d2d" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: KingMaiActive ? "#0b1d2d" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -13053,7 +13094,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}
 
 {KingMaiIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='710px' pb={5} style={{ backgroundColor: KingMaiActive ? "#0b1d2d" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: KingMaiActive ? "#0b1d2d" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -13100,7 +13141,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}
 
 {KingMaiIsShown && BlastIsShown && LoleYIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='710px' pb={5} style={{ backgroundColor: KingMaiActive ? "#0b1d2d" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: KingMaiActive ? "#0b1d2d" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -13147,7 +13188,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}
 
 {KingMaiIsShown && BlastIsShown && LoleNIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='710px' pb={5} style={{ backgroundColor: KingMaiActive ? "#0b1d2d" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: KingMaiActive ? "#0b1d2d" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -13174,6 +13215,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{KingMaiWCLoleNMaskComma}
       	</Text>
     	<Divider w='250px' />
+      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -13361,6 +13405,9 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{DustedLuziaWCLoleNMaskComma}
       	</Text>
     	<Divider w='250px' />
+      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
+
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -13944,7 +13991,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 
 
             {DustyKingMaiIsShown && BlastIsShown && LoleYIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='710px' pb={5} style={{ backgroundColor: DustyKingMaiActive ? "#1c1138" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: DustyKingMaiActive ? "#1c1138" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -13991,7 +14038,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}
 
 {DustyKingMaiIsShown && BlastIsShown && LoleNIsShown && CutoutIsShown &&
-<Box rounded='lg'  w='290px' h='710px' pb={5} style={{ backgroundColor: DustyKingMaiActive ? "#1c1138" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: DustyKingMaiActive ? "#1c1138" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -14038,7 +14085,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}
 
 {DustyKingMaiIsShown && BlastIsShown && LoleYIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='710px' pb={5} style={{ backgroundColor: DustyKingMaiActive ? "#1c1138" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: DustyKingMaiActive ? "#1c1138" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -14085,7 +14132,7 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	</Box>}
 
 {DustyKingMaiIsShown && BlastIsShown && LoleNIsShown && MaskIsShown &&
-<Box rounded='lg'  w='290px' h='710px' pb={5} style={{ backgroundColor: DustyKingMaiActive ? "#1c1138" : "#2D3748" }}>
+<Box rounded='lg'  w='290px' h='765px' pb={5} style={{ backgroundColor: DustyKingMaiActive ? "#1c1138" : "#2D3748" }}>
    	<VStack>
    	<Box mr='220px' mb='225px'>
     	<Image
@@ -14112,6 +14159,8 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
         	Total Word Count:<br></br>{DustyKingMaiWCLoleNMaskComma}
       	</Text>
     	<Divider w='250px' />
+      <Text fontSize='md'><b>Blast Potions Needed:</b><br></br> 
+        {ResourcesMaskLoleN_BlastPotionsNeededComma}</Text>
     	<Text fontSize='md'><b>Potion Resources Needed:</b><br></br>
     	{LoleNMaskResourcesComma}</Text>
     	<Text fontSize='md'><b>Mastery Word Count:</b><br></br>
@@ -16695,4 +16744,3 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
 }
 
 export default App;
-export { props } from "react";
