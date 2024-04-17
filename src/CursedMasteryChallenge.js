@@ -4083,8 +4083,16 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
 
 
   const id = useId();
-  const [input, setInput] = useState(props?.value ?? '');
-  
+
+  const [input, setInput] = useState(null)
+
+  const MyComponent = props => {
+    const [input, setInput] = useState(props.name || '')
+    return (
+      {input}
+    )
+  }
+
 
   const [MonsterWC, setMonsterWC] = useState(0); // Or any other non-zero value
 
@@ -4097,11 +4105,13 @@ const [attackStat, setAttackStat] = useState(0); // Or any other non-zero value
   const idWC = useId();
   const [inputWC, setInputWC] = useState(props?.value ?? '');
 
+  const MyComponentWC = props => {
+    const [inputWC, setInputWC] = useState(props.name || '')
+    return (
+      {inputWC}
+    )
+  }
 
-
-
-
-  
   
   const [MasteryMonsterQtyPerPotion, setMasteryMonsterQtyPerPotion] = useState(0);
   const totalMasteryMonsterQtyPerPotion = Math.max (1000/inputWC, 0)
@@ -16741,4 +16751,18 @@ RiverGoddessActive ? "#171321" : "#1A202C" }}>
   );
 }
 
+
 export default App;
+export   const MyComponent = props => {
+  const [input, setInput] = useState(props.name || '')
+  return (
+    {input}
+  )
+}
+
+export   const MyComponentWC = props => {
+  const [inputWC, setInputWC] = useState(props.name || '')
+  return (
+    {inputWC}
+  )
+}
