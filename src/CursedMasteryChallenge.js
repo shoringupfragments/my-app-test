@@ -1499,16 +1499,81 @@ const handleMasteryMonsterChange = (valueString) => {
     setMasteryMonster(value);
   };
 
+  const [Spellfire, setSpellfire] = useState(0); // Or any other non-zero value
+
+  const handleSpellfireChange = (valueString) => {
+    const value = parseFloat(valueString);
+      setSpellfire(value);
+    };
+
+  const [Stardust, setStardust] = useState(0); // Or any other non-zero value
+
+  const handleStardustChange = (valueString) => {
+    const value = parseFloat(valueString);
+      setStardust(value);
+    };
+
+  const [Scroll, setScroll] = useState(0); // Or any other non-zero value
+
+  const handleScrollChange = (valueString) => {
+    const value = parseFloat(valueString);
+      setScroll(value);
+    };
+    
+  const [Dewberry, setDewberry] = useState(0); // Or any other non-zero value
+
+  const handleDewberryChange = (valueString) => {
+    const value = parseFloat(valueString);
+      setDewberry(value);
+    };    
+
+    const [DropCoins, setDropCoins] = useState(0); // Or any other non-zero value
+
+    const handleDropCoinsChange = (valueString) => {
+      const value = parseFloat(valueString);
+        setDropCoins(value);
+      };    
+
+
+
+  const [HaveSpellfire, setHaveSpellfire] = useState(0); // Or any other non-zero value
+
+  const handleHaveSpellfireChange = (valueString) => {
+    const value = parseFloat(valueString);
+      setHaveSpellfire(value);
+    };
+
+  const [HaveStardust, setHaveStardust] = useState(0); // Or any other non-zero value
+
+  const handleHaveStardustChange = (valueString) => {
+    const value = parseFloat(valueString);
+      setHaveStardust(value);
+    };
+
+  const [HaveScroll, setHaveScroll] = useState(0); // Or any other non-zero value
+
+  const handleHaveScrollChange = (valueString) => {
+    const value = parseFloat(valueString);
+      setHaveScroll(value);
+    };
+    
+  const [HaveDewberry, setHaveDewberry] = useState(0); // Or any other non-zero value
+
+  const handleHaveDewberryChange = (valueString) => {
+    const value = parseFloat(valueString);
+      setHaveDewberry(value);
+    };    
+
 
 
 //Grenade potion calc
 
-const totalResourcesCutoutLoleY = Math.max (20000-(MasteryMonster*40), 0)
+const totalResourcesCutoutLoleY = Math.max (20000-(MasteryMonster*40)-(HaveSpellfire + HaveStardust + HaveScroll + HaveDewberry), 0)
 const totalResourcesCutoutLoleYMusya = Math.max (totalResourcesCutoutLoleY-10000,0)
 const totalResourcesCutoutLoleYOdees = Math.max (totalResourcesCutoutLoleY-totalResourcesCutoutLoleYMusya, 0)
 
 
-const totalResourcesMaskLoleY = Math.max (40000-(MasteryMonster*40),0)
+const totalResourcesMaskLoleY = Math.max (40000-(MasteryMonster*40)-(HaveSpellfire + HaveStardust + HaveScroll + HaveDewberry),0)
 const totalResourcesMaskLoleYKnuff = Math.max (totalResourcesMaskLoleY-30000,0)
 const totalResourcesMaskLoleYKnuQua = Math.max (totalResourcesMaskLoleY-totalResourcesMaskLoleYKnuff,0)
 const totalResourcesMaskLoleYQuaruk = Math.max (totalResourcesMaskLoleYKnuQua-20000,0 )
@@ -1516,14 +1581,14 @@ const totalResourcesMaskLoleYQuaMus = Math.max (totalResourcesMaskLoleYKnuQua-to
 const totalResourcesMaskLoleYMusya = Math.max (totalResourcesMaskLoleYQuaMus-10000,0)
 const totalResourcesMaskLoleYOdees = Math.max (totalResourcesMaskLoleYQuaMus-totalResourcesMaskLoleYMusya,0)
 
-const totalResourcesCutoutLoleN = Math.max (30000-(MasteryMonster*60), 0)
+const totalResourcesCutoutLoleN = Math.max (30000-(MasteryMonster*60)-(HaveSpellfire + HaveStardust + HaveScroll + HaveDewberry), 0)
 const totalResourcesCutoutLoleNQuaruk = Math.max (totalResourcesCutoutLoleN-20000,0 )
 const totalResourcesCutoutLoleNQuaMus = Math.max (totalResourcesCutoutLoleN-totalResourcesCutoutLoleNQuaruk,0)
 const totalResourcesCutoutLoleNMusya = Math.max (totalResourcesCutoutLoleNQuaMus-10000,0)
 const totalResourcesCutoutLoleNOdees = Math.max (totalResourcesCutoutLoleNQuaMus-totalResourcesCutoutLoleNMusya, 0)
 
 
-const totalResourcesMaskLoleN = Math.max (60000-(MasteryMonster*60), 0)
+const totalResourcesMaskLoleN = Math.max (60000-(MasteryMonster*60)-(HaveSpellfire + HaveStardust + HaveScroll + HaveDewberry), 0)
 const totalResourcesMaskLoleNMibloom = Math.max (totalResourcesMaskLoleN-40000,0)
 const totalResourcesMaskLoleNMiKnu = Math.max (totalResourcesMaskLoleN-totalResourcesMaskLoleNMibloom,0)
 const totalResourcesMaskLoleNKnuff = Math.max (totalResourcesMaskLoleN-30000,0)
@@ -4152,10 +4217,42 @@ const totalDustyKingMaiMasteryMaskAttack = Math.round (totalDustyKingMaiMasteryM
     )
   }
 
+
   
   const [MasteryMonsterQtyPerPotion, setMasteryMonsterQtyPerPotion] = useState(0);
   const totalMasteryMonsterQtyPerPotion = Math.max (1000/inputWC, 0)
   
+  //resources math//
+
+const [DropResourcesCutout, setDropResourcesCutout] = useState(0);
+const totalDropResourcesCutout = Math.max (((Spellfire+Stardust+Dewberry+Scroll)*totalMasteryMonsterCutout),0)
+
+const [DropResourcesMask, setDropResourcesMask] = useState(0);
+const totalDropResourcesMask = Math.max ((Spellfire+Stardust+Dewberry+Scroll)*totalMasteryMonsterMask,0)
+
+const [DropResourcesStatue, setDropResourcesStatue] = useState(0);
+const totalDropResourcesStatue = Math.max ((Spellfire+Stardust+Dewberry+Scroll)*totalMasteryMonsterStatue,0)
+
+const [DropResourcesBalloon, setDropResourcesBalloon] = useState(0);
+const totalDropResourcesBalloon = Math.max ((Spellfire+Stardust+Dewberry+Scroll)*totalMasteryMonsterBalloon,0)
+
+const [DropResourcesBook, setDropResourcesBook] = useState(0);
+const totalDropResourcesBook = Math.max ((Spellfire+Stardust+Dewberry+Scroll)*totalMasteryMonsterBook,0)
+
+const [DropCoinsCutout, setDropCoinsCutout] = useState(0);
+const totalDropCoinsCutout = Math.max (DropCoins * totalMasteryMonsterCutout)
+
+const [DropCoinsMask, setDropCoinsMask] = useState(0);
+const totalDropCoinsMask = Math.max (DropCoins * totalMasteryMonsterMask)
+
+const [DropCoinsStatue, setDropCoinsStatue] = useState(0);
+const totalDropCoinsStatue = Math.max (DropCoins * totalMasteryMonsterStatue)
+
+const [DropCoinsBalloon, setDropCoinsBalloon] = useState(0);
+const totalDropCoinsBalloon = Math.max (DropCoins * totalMasteryMonsterBalloon)
+
+const [DropCoinsBook, setDropCoinsBook] = useState(0);
+const totalDropCoinsBook = Math.max (DropCoins * totalMasteryMonsterBook)
 
 //lole yes - cutout + mask
 
@@ -4163,46 +4260,46 @@ const totalDustyKingMaiMasteryMaskAttack = Math.round (totalDustyKingMaiMasteryM
   const totalMasteryMonsterLoleYCutoutPotionsNeeded = Math.ceil (totalMasteryMonsterCutout/totalMasteryMonsterQtyPerPotion)
 
   const [MasteryMonsterLoleYCutoutResourcesNeeded, setMasteryMonsterLoleYCutoutResourcesNeeded] = useState(0);
-  const totalMasteryMonsterLoleYCutoutResourcesNeeded = Math.max (totalMasteryMonsterLoleYCutoutPotionsNeeded*20)
+  const totalMasteryMonsterLoleYCutoutResourcesNeeded = Math.max ((totalMasteryMonsterLoleYCutoutPotionsNeeded*20)-totalDropResourcesCutout-(HaveSpellfire + HaveStardust + HaveScroll + HaveDewberry),0)
 
   const [MasteryMonsterLoleYCutoutCoinsNeeded, setMasteryMonsterLoleYCutoutCoinsNeeded] = useState(0);
-  const totalMasteryMonsterLoleYCutoutCoinsNeeded = Math.max (totalMasteryMonsterLoleYCutoutPotionsNeeded*375)
+  const totalMasteryMonsterLoleYCutoutCoinsNeeded = Math.max ((totalMasteryMonsterLoleYCutoutPotionsNeeded*375)-(totalDropCoinsCutout+Coins),0)
 
   const [MasteryMonsterLoleYMaskPotionsNeeded, setMasteryMonsterLoleYMaskPotionsNeeded] = useState(0);
   const totalMasteryMonsterLoleYMaskPotionsNeeded = Math.ceil (totalMasteryMonsterMask/totalMasteryMonsterQtyPerPotion)
 
   const [MasteryMonsterLoleYMaskResourcesNeeded, setMasteryMonsterLoleYMaskResourcesNeeded] = useState(0);
-  const totalMasteryMonsterLoleYMaskResourcesNeeded = Math.max (totalMasteryMonsterLoleYMaskPotionsNeeded*20)
+  const totalMasteryMonsterLoleYMaskResourcesNeeded = Math.max ((totalMasteryMonsterLoleYMaskPotionsNeeded*20)-totalDropResourcesMask-(HaveSpellfire + HaveStardust + HaveScroll + HaveDewberry),0)
 
   const [MasteryMonsterLoleYMaskCoinsNeeded, setMasteryMonsterLoleYMaskCoinsNeeded] = useState(0);
-  const totalMasteryMonsterLoleYMaskCoinsNeeded = Math.max (totalMasteryMonsterLoleYMaskPotionsNeeded*375)
+  const totalMasteryMonsterLoleYMaskCoinsNeeded = Math.max ((totalMasteryMonsterLoleYMaskPotionsNeeded*375)-(totalDropCoinsMask+Coins),0)
 
   const [MasteryMonsterLoleYStatuePotionsNeeded, setMasteryMonsterLoleYStatuePotionsNeeded] = useState(0);
   const totalMasteryMonsterLoleYStatuePotionsNeeded = Math.ceil (totalMasteryMonsterStatue/totalMasteryMonsterQtyPerPotion)
 
   const [MasteryMonsterLoleYStatueResourcesNeeded, setMasteryMonsterLoleYStatueResourcesNeeded] = useState(0);
-  const totalMasteryMonsterLoleYStatueResourcesNeeded = Math.max (totalMasteryMonsterLoleYStatuePotionsNeeded*20)
+  const totalMasteryMonsterLoleYStatueResourcesNeeded = Math.max ((totalMasteryMonsterLoleYStatuePotionsNeeded*20)-totalDropResourcesStatue-(HaveSpellfire + HaveStardust + HaveScroll + HaveDewberry),0)
 
   const [MasteryMonsterLoleYStatueCoinsNeeded, setMasteryMonsterLoleYStatueCoinsNeeded] = useState(0);
-  const totalMasteryMonsterLoleYStatueCoinsNeeded = Math.max (totalMasteryMonsterLoleYStatuePotionsNeeded*375)
+  const totalMasteryMonsterLoleYStatueCoinsNeeded = Math.max ((totalMasteryMonsterLoleYStatuePotionsNeeded*375)-(totalDropCoinsStatue+Coins),0)
 
   const [MasteryMonsterLoleYBalloonPotionsNeeded, setMasteryMonsterLoleYBalloonPotionsNeeded] = useState(0);
   const totalMasteryMonsterLoleYBalloonPotionsNeeded = Math.ceil (totalMasteryMonsterBalloon/totalMasteryMonsterQtyPerPotion)
 
   const [MasteryMonsterLoleYBalloonResourcesNeeded, setMasteryMonsterLoleYBalloonResourcesNeeded] = useState(0);
-  const totalMasteryMonsterLoleYBalloonResourcesNeeded = Math.max (totalMasteryMonsterLoleYBalloonPotionsNeeded*20)
+  const totalMasteryMonsterLoleYBalloonResourcesNeeded = Math.max ((totalMasteryMonsterLoleYBalloonPotionsNeeded*20)-totalDropResourcesBalloon-(HaveSpellfire + HaveStardust + HaveScroll + HaveDewberry),0)
 
   const [MasteryMonsterLoleYBalloonCoinsNeeded, setMasteryMonsterLoleYBalloonCoinsNeeded] = useState(0);
-  const totalMasteryMonsterLoleYBalloonCoinsNeeded = Math.max (totalMasteryMonsterLoleYBalloonPotionsNeeded*375)
+  const totalMasteryMonsterLoleYBalloonCoinsNeeded = Math.max ((totalMasteryMonsterLoleYBalloonPotionsNeeded*375)-(totalDropCoinsBalloon+Coins),0)
 
   const [MasteryMonsterLoleYBookPotionsNeeded, setMasteryMonsterLoleYBookPotionsNeeded] = useState(0);
   const totalMasteryMonsterLoleYBookPotionsNeeded = Math.ceil (totalMasteryMonsterBook/totalMasteryMonsterQtyPerPotion)
 
   const [MasteryMonsterLoleYBookResourcesNeeded, setMasteryMonsterLoleYBookResourcesNeeded] = useState(0);
-  const totalMasteryMonsterLoleYBookResourcesNeeded = Math.max (totalMasteryMonsterLoleYBookPotionsNeeded*20)
+  const totalMasteryMonsterLoleYBookResourcesNeeded = Math.max ((totalMasteryMonsterLoleYBookPotionsNeeded*20)-totalDropResourcesBook-(HaveSpellfire + HaveStardust + HaveScroll + HaveDewberry),0)
 
   const [MasteryMonsterLoleYBookCoinsNeeded, setMasteryMonsterLoleYBookCoinsNeeded] = useState(0);
-  const totalMasteryMonsterLoleYBookCoinsNeeded = Math.max (totalMasteryMonsterLoleYBookPotionsNeeded*375)
+  const totalMasteryMonsterLoleYBookCoinsNeeded = Math.max ((totalMasteryMonsterLoleYBookPotionsNeeded*375)-(totalDropCoinsBook+Coins),0)
 
 
 
@@ -4212,46 +4309,46 @@ const totalDustyKingMaiMasteryMaskAttack = Math.round (totalDustyKingMaiMasteryM
   const totalMasteryMonsterLoleNCutoutPotionsNeeded = Math.ceil (totalMasteryMonsterCutout/totalMasteryMonsterQtyPerPotion)
 
   const [MasteryMonsterLoleNCutoutResourcesNeeded, setMasteryMonsterLoleNCutoutResourcesNeeded] = useState(0);
-  const totalMasteryMonsterLoleNCutoutResourcesNeeded = Math.max (totalMasteryMonsterLoleNCutoutPotionsNeeded*26)
+  const totalMasteryMonsterLoleNCutoutResourcesNeeded = Math.max ((totalMasteryMonsterLoleNCutoutPotionsNeeded*26)-totalDropResourcesCutout-(HaveSpellfire + HaveStardust + HaveScroll + HaveDewberry),0)
 
   const [MasteryMonsterLoleNCutoutCoinsNeeded, setMasteryMonsterLoleNCutoutCoinsNeeded] = useState(0);
-  const totalMasteryMonsterLoleNCutoutCoinsNeeded = Math.max (totalMasteryMonsterLoleNCutoutPotionsNeeded*375)
+  const totalMasteryMonsterLoleNCutoutCoinsNeeded = Math.max ((totalMasteryMonsterLoleNCutoutPotionsNeeded*375)-(totalDropCoinsCutout+Coins),0)
 
   const [MasteryMonsterLoleNMaskPotionsNeeded, setMasteryMonsterLoleNMaskPotionsNeeded] = useState(0);
   const totalMasteryMonsterLoleNMaskPotionsNeeded = Math.ceil (totalMasteryMonsterMask/totalMasteryMonsterQtyPerPotion)
 
   const [MasteryMonsterLoleNMaskResourcesNeeded, setMasteryMonsterLoleNMaskResourcesNeeded] = useState(0);
-  const totalMasteryMonsterLoleNMaskResourcesNeeded = Math.max (totalMasteryMonsterLoleNMaskPotionsNeeded*26)
+  const totalMasteryMonsterLoleNMaskResourcesNeeded = Math.max ((totalMasteryMonsterLoleNMaskPotionsNeeded*26)-totalDropResourcesMask-(HaveSpellfire + HaveStardust + HaveScroll + HaveDewberry),0)
 
   const [MasteryMonsterLoleNMaskCoinsNeeded, setMasteryMonsterLoleNMaskCoinsNeeded] = useState(0);
-  const totalMasteryMonsterLoleNMaskCoinsNeeded = Math.max (totalMasteryMonsterLoleNMaskPotionsNeeded*375)
+  const totalMasteryMonsterLoleNMaskCoinsNeeded = Math.max ((totalMasteryMonsterLoleNMaskPotionsNeeded*375)-(totalDropCoinsMask+Coins),0)
 
   const [MasteryMonsterLoleNStatuePotionsNeeded, setMasteryMonsterLoleNStatuePotionsNeeded] = useState(0);
   const totalMasteryMonsterLoleNStatuePotionsNeeded = Math.ceil (totalMasteryMonsterStatue/totalMasteryMonsterQtyPerPotion)
 
   const [MasteryMonsterLoleNStatueResourcesNeeded, setMasteryMonsterLoleNStatueResourcesNeeded] = useState(0);
-  const totalMasteryMonsterLoleNStatueResourcesNeeded = Math.max (totalMasteryMonsterLoleNStatuePotionsNeeded*26)
+  const totalMasteryMonsterLoleNStatueResourcesNeeded = Math.max ((totalMasteryMonsterLoleNStatuePotionsNeeded*26)-totalDropResourcesStatue-(HaveSpellfire + HaveStardust + HaveScroll + HaveDewberry),0)
 
   const [MasteryMonsterLoleNStatueCoinsNeeded, setMasteryMonsterLoleNStatueCoinsNeeded] = useState(0);
-  const totalMasteryMonsterLoleNStatueCoinsNeeded = Math.max (totalMasteryMonsterLoleNStatuePotionsNeeded*375)
+  const totalMasteryMonsterLoleNStatueCoinsNeeded = Math.max ((totalMasteryMonsterLoleNStatuePotionsNeeded*375)-(totalDropCoinsStatue+Coins),0)
 
   const [MasteryMonsterLoleNBalloonPotionsNeeded, setMasteryMonsterLoleNBalloonPotionsNeeded] = useState(0);
   const totalMasteryMonsterLoleNBalloonPotionsNeeded = Math.ceil (totalMasteryMonsterBalloon/totalMasteryMonsterQtyPerPotion)
 
   const [MasteryMonsterLoleNBalloonResourcesNeeded, setMasteryMonsterLoleNBalloonResourcesNeeded] = useState(0);
-  const totalMasteryMonsterLoleNBalloonResourcesNeeded = Math.max (totalMasteryMonsterLoleNBalloonPotionsNeeded*26)
+  const totalMasteryMonsterLoleNBalloonResourcesNeeded = Math.max ((totalMasteryMonsterLoleNBalloonPotionsNeeded*26)-totalDropResourcesBalloon-(HaveSpellfire + HaveStardust + HaveScroll + HaveDewberry),0)
 
   const [MasteryMonsterLoleNBalloonCoinsNeeded, setMasteryMonsterLoleNBalloonCoinsNeeded] = useState(0);
-  const totalMasteryMonsterLoleNBalloonCoinsNeeded = Math.max (totalMasteryMonsterLoleNBalloonPotionsNeeded*375)
+  const totalMasteryMonsterLoleNBalloonCoinsNeeded = Math.max ((totalMasteryMonsterLoleNBalloonPotionsNeeded*375)-(totalDropCoinsBalloon+Coins),0)
 
   const [MasteryMonsterLoleNBookPotionsNeeded, setMasteryMonsterLoleNBookPotionsNeeded] = useState(0);
   const totalMasteryMonsterLoleNBookPotionsNeeded = Math.ceil (totalMasteryMonsterBook/totalMasteryMonsterQtyPerPotion)
 
   const [MasteryMonsterLoleNBookResourcesNeeded, setMasteryMonsterLoleNBookResourcesNeeded] = useState(0);
-  const totalMasteryMonsterLoleNBookResourcesNeeded = Math.max (totalMasteryMonsterLoleNBookPotionsNeeded*26)
+  const totalMasteryMonsterLoleNBookResourcesNeeded = Math.max ((totalMasteryMonsterLoleNBookPotionsNeeded*26)-totalDropResourcesBook-(HaveSpellfire + HaveStardust + HaveScroll + HaveDewberry),0)
 
   const [MasteryMonsterLoleNBookCoinsNeeded, setMasteryMonsterLoleNBookCoinsNeeded] = useState(0);
-  const totalMasteryMonsterLoleNBookCoinsNeeded = Math.max (totalMasteryMonsterLoleNBookPotionsNeeded*375)
+  const totalMasteryMonsterLoleNBookCoinsNeeded = Math.max ((totalMasteryMonsterLoleNBookPotionsNeeded*375)-(totalDropCoinsBook+Coins),0)
 
 
 
@@ -6436,10 +6533,6 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
 <NumberInput defaultValue={0} min={0} max={9999} size='md'>
 <NumberInputField id='atk' onInput={(e) => handleAttackStatChange(e.target.value)} />
 </NumberInput>
-<Container mt='20px'>How many coins do you have?</Container>
-<NumberInput defaultValue={0} min={0} max={10000000} size='md'>
-<NumberInputField id='atk' onInput={(e) => handleCoinsChange(e.target.value)} />
-</NumberInput>
 </VStack>
 
             <HStack><text ml='10px'>Do you have </text> 
@@ -6473,7 +6566,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
 
       <VStack>
         <text mr='10px' ml='10px'>What is the word count of the monster you're mastering?<br></br>
-        Note: the 2000+ words monsters section contains many late game monster spoilers<br></br><br></br></text> 
+        <i>Note: the 2000+ words section contains many late game monster spoilers</i><br></br><br></br></text> 
     
         <Container><Wrap justify='center'>
         <WrapItem>
@@ -6564,6 +6657,123 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
       </VStack>
       </HStack>
             </Box>
+          </Box>
+      <br></br>
+    </AccordionPanel>
+  </AccordionItem>
+
+  <AccordionItem>
+  <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='center' p={3}>
+        <Heading as='h3' size='lg'>Mastery Monster: Resource Drops</Heading>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+
+      <Box align='center' h='300px' overflowY='scroll'>
+        <Text>
+          List the average resource drops per <b>one</b> battle with that monster.
+          <br></br> 
+            If it's a range like 4-5, add the minimum and maximum drop and divide by two 
+            for the average (e.g. (4+5/2) = 4.5).
+        
+        </Text>
+      <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/50/Spellfire_(Spells).png'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Spellfire</Text>
+        <NumberInput defaultValue={0} min={0} max={15000} size='md' w='100px'>
+        <NumberInputField id='alreadyfought' onInput={(e) => handleSpellfireChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/c/c7/Stardust_(Astrology).png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Stardust</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='alreadyfought' onInput={(e) => handleStardustChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>   
+            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/67/Scrolls_%28Knowledge%29.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text id='monstername' fontSize='sm' align='center'>Scrolls</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='alreadyfought' onInput={(e) => handleScrollChange(e.target.value)} />
+</NumberInput>      </VStack>
+      </HStack>
+            </Box>
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/a4/Dew_Berry_%28Alchemy%29.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text id='monstername' fontSize='sm' align='center'>Dewberries</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='alreadyfought' onInput={(e) => handleDewberryChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>
+
+       <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text id='monstername' fontSize='sm' align='center'>Coins</Text>
+        <NumberInput defaultValue={0} min={0} max={10000} size='md' w='100px'>
+  <NumberInputField id='alreadyfought' onInput={(e) => handleDropCoinsChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>
+
           </Box>
       <br></br>
     </AccordionPanel>
@@ -6814,6 +7024,120 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
       <br></br>
     </AccordionPanel>
   </AccordionItem>
+
+  <AccordionItem>
+  <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='center' p={3}>
+        <Heading as='h3' size='lg'>Resources Already Owned</Heading>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+<Container align='center'>
+
+      <Box align='center' h='300px' overflowY='scroll'>
+
+      <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/50/Spellfire_(Spells).png'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Spellfire</Text>
+        <NumberInput defaultValue={0} min={0} max={1000000} size='md' w='100px'>
+        <NumberInputField onInput={(e) => handleHaveSpellfireChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/c/c7/Stardust_(Astrology).png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Stardust</Text>
+        <NumberInput defaultValue={0} min={0} max={1000000} size='md' w='100px'>
+  <NumberInputField onInput={(e) => handleHaveStardustChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>   
+            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/67/Scrolls_%28Knowledge%29.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text id='monstername' fontSize='sm' align='center'>Scrolls</Text>
+        <NumberInput defaultValue={0} min={0} max={1000000} size='md' w='100px'>
+  <NumberInputField onInput={(e) => handleHaveScrollChange(e.target.value)} />
+</NumberInput>      </VStack>
+      </HStack>
+            </Box>
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/a4/Dew_Berry_%28Alchemy%29.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text id='monstername' fontSize='sm' align='center'>Dewberries</Text>
+        <NumberInput defaultValue={0} min={0} max={1000000} size='md' w='100px'>
+  <NumberInputField onInput={(e) => handleHaveDewberryChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>
+
+       <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text id='monstername' fontSize='sm' align='center'>Coins</Text>
+        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
+  <NumberInputField id='alreadyfought' onInput={(e) => handleCoinsChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>
+
+          </Box>
+          </Container>
+      <br></br>
+    </AccordionPanel>
+  </AccordionItem>
+
   </Accordion> }
 
   {BlastIsShown && LoleYIsShown && CutoutIsShown &&
@@ -8594,6 +8918,119 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
       </HStack>
             </Box>    
 
+
+          </Box>
+          </Container>
+      <br></br>
+    </AccordionPanel>
+  </AccordionItem>
+
+  <AccordionItem>
+  <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='center' p={3}>
+        <Heading as='h3' size='lg'>Resources Already Owned</Heading>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+<Container align='center'>
+
+      <Box align='center' h='300px' overflowY='scroll'>
+
+      <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/50/Spellfire_(Spells).png'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Spellfire</Text>
+        <NumberInput defaultValue={0} min={0} max={1000000} size='md' w='100px'>
+        <NumberInputField id='alreadyfought' onInput={(e) => handleHaveSpellfireChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/c/c7/Stardust_(Astrology).png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text fontSize='sm' align='center'>Stardust</Text>
+        <NumberInput defaultValue={0} min={0} max={1000000} size='md' w='100px'>
+  <NumberInputField id='alreadyfought' onInput={(e) => handleHaveStardustChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>   
+            <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/67/Scrolls_%28Knowledge%29.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text id='monstername' fontSize='sm' align='center'>Scrolls</Text>
+        <NumberInput defaultValue={0} min={0} max={1000000} size='md' w='100px'>
+  <NumberInputField id='alreadyfought' onInput={(e) => handleHaveScrollChange(e.target.value)} />
+</NumberInput>      </VStack>
+      </HStack>
+            </Box>
+
+            <Box w='250px' h='100px' pb={5} backgroundColor='#2D3748'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/a4/Dew_Berry_%28Alchemy%29.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text id='monstername' fontSize='sm' align='center'>Dewberries</Text>
+        <NumberInput defaultValue={0} min={0} max={1000000} size='md' w='100px'>
+  <NumberInputField id='alreadyfought' onInput={(e) => handleHaveDewberryChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>
+
+       <Box w='250px' h='100px' pb={5} backgroundColor='#1A202C'>
+       <HStack> 
+       <Image
+        ml='24px'
+        mt='20px'
+        align='center' 
+        boxSize='4rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Coin_md.png/'
+        mr='5px'        />
+      <VStack align='center'> 
+        <Text id='monstername' fontSize='sm' align='center'>Coins</Text>
+        <NumberInput defaultValue={0} min={0} max={10000000} size='md' w='100px'>
+  <NumberInputField id='alreadyfought' onInput={(e) => handleCoinsChange(e.target.value)} />
+</NumberInput>
+      </VStack>
+      </HStack>
+            </Box>
 
           </Box>
           </Container>
