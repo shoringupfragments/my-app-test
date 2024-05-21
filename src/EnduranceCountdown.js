@@ -4260,7 +4260,7 @@ const DelayComponentVanstraLoop4x = () => {
         <Container height='100px' mt='-20px' align='center' style={{backgroundColor: '#000000'
       }} >
           <Text mt='15px' pt='25px' fontSize='md'><span>
-            When you see the </span><span style={{color: '#B794F4'}}><b>x4 multiplier</b></span><span>, <u><i>type</i></u> at least 1 word</span></Text>
+            When you see the </span><span style={{color: '#B794F4'}}><b>x4 multiplier</b></span><span>, <b><i>type</i></b> at least 1 word</span></Text>
         </Container>
       </React.Fragment>
     )}
@@ -5149,7 +5149,7 @@ const DelayComponentViLoop4x = () => {
         <Container height='100px' mt='-20px' align='center' style={{backgroundColor: '#000000'
       }} >
           <Text mt='15px' pt='25px' fontSize='md'><span>
-            When you see the </span><span style={{color: '#B794F4'}}><b>x4 multiplier</b></span><span>, <u><i>type</i></u> at least 1 word</span></Text>
+            When you see the </span><span style={{color: '#B794F4'}}><b>x4 multiplier</b></span><span>, <b><i>type</i></b> at least 1 word</span></Text>
         </Container>
       </React.Fragment>
     )}
@@ -5847,7 +5847,7 @@ const DelayComponent55Loop4x = () => {
         <Container height='100px' mt='-20px' align='center' style={{backgroundColor: '#000000'
       }} >
           <Text mt='15px' pt='25px' fontSize='md'><span>
-            When you see the </span><span style={{color: '#B794F4'}}><b>x4 multiplier</b></span><span>, <u><i>type</i></u> at least 1 word</span></Text>
+            When you see the </span><span style={{color: '#B794F4'}}><b>x4 multiplier</b></span><span>, <b><i>type</i></b> at least 1 word</span></Text>
         </Container>
       </React.Fragment>
     )}
@@ -10987,7 +10987,7 @@ direction="backward"
     <React.Fragment>
       <Container height='100px' mt='-20px' align='center' style={{backgroundColor: '#000000'
     }} >
-        <Text mt='15px' pt='25px' fontSize='md'><span>When you see the </span><span style={{color: '#B794F4'}}><b>x4 multiplier</b></span><span>, <u><i>type</i></u> at least 1 word</span></Text>
+        <Text mt='15px' pt='25px' fontSize='md'><span>When you see the </span><span style={{color: '#B794F4'}}><b>x4 multiplier</b></span><span>, <b><i>type</i></b> at least 1 word</span></Text>
       </Container>
     </React.Fragment>
   )}
@@ -16492,7 +16492,7 @@ direction="backward"
     <React.Fragment>
       <Container height='100px' mt='-20px' align='center' style={{backgroundColor: '#000000'
     }} >
-        <Text mt='15px' pt='25px' fontSize='md'><span>When you see the </span><span style={{color: '#B794F4'}}><b>x4 multiplier</b></span><span>, <u><i>type</i></u> at least 1 word</span></Text>
+        <Text mt='15px' pt='25px' fontSize='md'><span>When you see the </span><span style={{color: '#B794F4'}}><b>x4 multiplier</b></span><span>, <b><i>type</i></b> at least 1 word</span></Text>
       </Container>
     </React.Fragment>
   )}
@@ -16520,7 +16520,7 @@ const DelayComponentViyuLoopFinal = () => {
   	  <div>
   	  <Text mb='8px' fontSize='md'>
 		  <b>Final Loop: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
-		  <Text mb='8px' fontSize='md'><span>When you see the </span><span style={{color: '#B794F4'}}><b>x4 multiplier</b></span><span>, <u><i>type</i></u> at least 1 word</span></Text>
+		  <Text mb='8px' fontSize='md'><span>When you see the </span><span style={{color: '#B794F4'}}><b>x4 multiplier</b></span><span>, <b><i>type</i></b> at least 1 word</span></Text>
   	  </div>
   	</React.Fragment>
 	)}
@@ -25376,7 +25376,7 @@ direction="backward"
     <React.Fragment>
       <Container height='100px' mt='-20px' align='center' style={{backgroundColor: '#000000'
     }} >
-        <Text mt='15px' pt='25px' fontSize='md'><span>When you see the </span><span style={{color: '#B794F4'}}><b>x4 multiplier</b></span><span>, <u><i>type</i></u> at least 1 word</span></Text>
+        <Text mt='15px' pt='25px' fontSize='md'><span>When you see the </span><span style={{color: '#B794F4'}}><b>x4 multiplier</b></span><span>, <b><i>type</i></b> at least 1 word</span></Text>
       </Container>
     </React.Fragment>
   )}
@@ -28663,7 +28663,7 @@ direction="backward"
     <React.Fragment>
       <Container height='100px' mt='-20px' align='center' style={{backgroundColor: '#000000'
     }} >
-        <Text mt='15px' pt='25px' fontSize='md'><span>When you see the </span><span style={{color: '#B794F4'}}><b>x4 multiplier</b></span><span>, <u><i>type</i></u> at least 1 word</span></Text>
+        <Text mt='15px' pt='25px' fontSize='md'><span>When you see the </span><span style={{color: '#B794F4'}}><b>x4 multiplier</b></span><span>, <b><i>type</i></b> at least 1 word</span></Text>
       </Container>
     </React.Fragment>
   )}
@@ -28691,7 +28691,7 @@ const DelayComponentVanvriLoopFinal = () => {
   	  <div>
   	  <Text mb='8px' fontSize='md'>
 		  <b>Final Loop: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
-		  <Text mb='8px' fontSize='md'><span>When you see the </span><span style={{color: '#B794F4'}}><b>x4 multiplier</b></span><span>, <u><i>type</i></u> at least 1 word</span></Text>
+		  <Text mb='8px' fontSize='md'><span>When you see the </span><span style={{color: '#B794F4'}}><b>x4 multiplier</b></span><span>, <b><i>type</i></b> at least 1 word</span></Text>
   	  </div>
   	</React.Fragment>
 	)}
@@ -38446,7 +38446,7 @@ direction="backward"
     <React.Fragment>
       <Container height='100px' mt='-20px' align='center' style={{backgroundColor: '#000000'
     }} >
-        <Text mt='15px' pt='25px' fontSize='md'><span>When you see the </span><span style={{color: '#B794F4'}}><b>x4 multiplier</b></span><span>, <u><i>type</i></u> at least 1 word</span></Text>
+        <Text mt='15px' pt='25px' fontSize='md'><span>When you see the </span><span style={{color: '#B794F4'}}><b>x4 multiplier</b></span><span>, <b><i>type</i></b> at least 1 word</span></Text>
       </Container>
     </React.Fragment>
   )}
@@ -38474,7 +38474,7 @@ const DelayComponentViyusaLoopFinal = () => {
   	  <div>
   	  <Text mb='8px' fontSize='md'>
 		  <b>Final Loop: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
-		  <Text mb='8px' fontSize='md'><span>When you see the </span><span style={{color: '#B794F4'}}><b>x4 multiplier</b></span><span>, <u><i>type</i></u> at least 1 word</span></Text>
+		  <Text mb='8px' fontSize='md'><span>When you see the </span><span style={{color: '#B794F4'}}><b>x4 multiplier</b></span><span>, <b><i>type</i></b> at least 1 word</span></Text>
   	  </div>
   	</React.Fragment>
 	)}
@@ -49124,7 +49124,7 @@ direction="backward"
     <React.Fragment>
       <Container height='100px' mt='-20px' align='center' style={{backgroundColor: '#000000'
     }} >
-        <Text mt='15px' pt='25px' fontSize='md'><span>When you see the </span><span style={{color: '#B794F4'}}><b>x4 multiplier</b></span><span>, <u><i>type</i></u> at least 1 word</span></Text>
+        <Text mt='15px' pt='25px' fontSize='md'><span>When you see the </span><span style={{color: '#B794F4'}}><b>x4 multiplier</b></span><span>, <b><i>type</i></b> at least 1 word</span></Text>
       </Container>
     </React.Fragment>
   )}
@@ -60279,10 +60279,21 @@ const VoidWignow60Def = () => {
 
 </VStack>
                 <br></br>
-                <Text><b>Select Your Endurance Monster: </b></Text>
                 <br></br>
-                <Container align='center'>
-                <Wrap>
+                <Container>
+                <Accordion defaultIndex={[0]} allowMultiple>
+  <AccordionItem>
+  <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='center' p={3}>
+        <Heading as='h3' size='lg'>Select Your Endurance Monster</Heading>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+
+    <Wrap ml='15px'>
             <WrapItem>
             <Button w='100px' h='150px' pb={5} onClick={handleVanstraClick} style={{ backgroundColor: VanstraActive ? "#1A1521" : "#2D3748" }}>
        <VStack> 
@@ -60429,6 +60440,12 @@ const VoidWignow60Def = () => {
             </Button>
             </WrapItem>
           </Wrap>
+
+      <br></br>
+    </AccordionPanel>
+  </AccordionItem>
+
+  </Accordion>
           </Container>
                 <br></br>
                 </Container>
@@ -61660,7 +61677,7 @@ Scroll down for detailed instructions and tips for use
 {(VanstraIsShown || ViIsShown || VoidWignowIsShown || LucerebIsShown || ProfBartIsShown || ViyuIsShown || 
 ViyusaIsShown || VanspiIsShown ||  VanvriIsShown || ViradiseIsShown) && Tab2IsShown && (DefenseStat>=99) &&
 
-<Text pt='25px'>
+<Text pt='25px' mb='100px'>
 Due to a bug that disallows typing above 100 HP, it's impossible to get a 4x multiplier at this defense.
 </Text>
 }
@@ -61684,7 +61701,7 @@ ViyusaIsShown || VanspiIsShown ||  VanvriIsShown || ViradiseIsShown) && Tab2IsSh
 <Text textAlign={'left'} fontSize='md'>
 - Toggling loop, copying a monster, or adding/deleting a monster from the battle list during a battle all reset the monster's health to max HP, but also resets the multiplier to 1x. Fine in the first few seconds, bad at the end.
 </Text>
-<Text>Toggling auto-start, however, has no impact on the battle.</Text>
+<Text textAlign={'left'} fontSize='md'>Toggling auto-start, however, has no impact on the battle.</Text>
 <Text textAlign={'left'} fontSize='md' mt='8px'>
 - Refreshing the page resets the health to max, but also resets the score multiplier to 1x. 
 </Text>
@@ -62798,7 +62815,7 @@ Scroll down for detailed instructions and tips for use
   <Text mb='8px' textAlign='left' fontSize='md'>
   5. Paste the word count specified when each loop's timer hits zero (no need to paste on the final loop)</Text>
 <Text mb='8px' textAlign='left' fontSize='md'>
-  6. <u><i>type</i></u> at least one word when the multiplier shows x4
+  6. <b><i>Type</i></b> at least one word when the multiplier shows x4
 </Text>
 <Text mb='15px' mt='25px'><b>Extra Tips:</b><br></br></Text>
 	<Text mb='8px' textAlign='left' fontSize='md'>
