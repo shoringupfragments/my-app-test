@@ -1,7 +1,6 @@
 import React from 'react';
 import {createRoot} from 'react-dom/client';
 import { renderToString } from 'react-dom/server';
-import Countdown from 'react-countdown';
 import { useState,useEffect, useRef } from "react";
 import {
   ChakraProvider,
@@ -46,8 +45,6 @@ import {
   Tbody,
 } from '@chakra-ui/react';
 import Timer from "react-compound-timerv2-ocuco";
-import {useAudio} from "react-use-audio";
-import testSound from "../src/alert.mp3";
 
 function App() {
 
@@ -3747,7 +3744,7 @@ const DelayComponentVanstraLoop2 = () => {
   }, [show])
   if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}>
 	<b>Loop 2: </b>{totalVanstraMins75} minutes and {totalVanstraSecsAdj75} seconds </Text>)
-  return (   <Timer onShow={play} initialTime={totalLoopTime2SecPerHPTimeVal2}
+  return (   <Timer initialTime={totalLoopTime2SecPerHPTimeVal2}
   direction="backward"
   	timeToUpdate={10}>
 	{({ start, resume, pause, stop, reset, timerState }) => (
@@ -60122,14 +60119,6 @@ const VoidWignow60Def = () => {
   )
 }
 
-const [SoundToggleIsShown, setSoundToggleIsShown] = useState(0)
-const [SoundToggleActive, setSoundToggleActive] = useState(0)
-
-const handleSoundToggleClick = event => {
-  setSoundToggleIsShown (current => !SoundToggleIsShown);
-  setSoundToggleActive (current => !SoundToggleActive);  };
-
-  const { play } = useAudio(testSound);
 
   return (
       <Box textAlign="center" fontSize="xl">
@@ -60143,7 +60132,7 @@ const handleSoundToggleClick = event => {
                 <br></br>
                 <br></br>
                 </p>
-                <Accordion allowMultiple>
+                <Accordion width='350px' allowMultiple>
   <AccordionItem>
   <h2>
       <AccordionButton>
@@ -61713,13 +61702,6 @@ style={{ backgroundColor: GuidedCountdownActive ? "#1A1521" : "#B794F4",
 color: GuidedCountdownActive ? "#B794F4" : "#1A1521",
 }}>
   {GuidedCountdownActive ? 'Stop Guided Countdown' : 'Start Guided Countdown'}</Button>
-<br></br>
-
-<Button mt='25px' mb='15px' onClick={play}
-style={{ backgroundColor: SoundToggleActive ? "#B794F4" : "#1A1521",
-color: SoundToggleActive ? "#1A1521" : "#B794F4",
-}}>
-  {SoundToggleActive ? 'Turn Audio Alert Off' : 'Turn Audio Alert On'}</Button>
 <br></br>
 
 {!GuidedCountdownIsShown && 
