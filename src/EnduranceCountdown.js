@@ -61182,7 +61182,7 @@ ViyusaIsShown || VanspiIsShown ||  VanvriIsShown || ViradiseIsShown) && (Defense
 
 <Container align='center' mt='12px' width='300px' padding='12px' rounded='10px' style={{backgroundColor: 'rgba(0,0,0,0.36'}}>
 <Text fontSize='md'>psst - your defense stat is currently 0 </Text>
-<Text mt='12px' fontSize='md'>please input a defense stat to use the guided countdown</Text>
+<Text mt='12px' fontSize='md'  mb='100px'>please input a defense stat to use the guided countdown</Text>
 </Container>
 }
 
