@@ -60292,8 +60292,8 @@ const VoidWignow60Def = () => {
       </AccordionButton>
     </h2>
     <AccordionPanel pb={4}>
-
-    <Wrap ml='15px'>
+    <Box alignItems='center'>
+    <Wrap>
             <WrapItem>
             <Button w='100px' h='150px' pb={5} onClick={handleVanstraClick} style={{ backgroundColor: VanstraActive ? "#1A1521" : "#2D3748" }}>
        <VStack> 
@@ -60440,7 +60440,7 @@ const VoidWignow60Def = () => {
             </Button>
             </WrapItem>
           </Wrap>
-
+          </Box>
       <br></br>
     </AccordionPanel>
   </AccordionItem>
