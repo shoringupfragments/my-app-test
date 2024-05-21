@@ -759,7 +759,7 @@ const totalSpellfireSDR4 = Math.max (totalSDR1_1_SFSDR4 + totalOniCombo_SF + tot
     <Box textAlign="center" fontSize="xl">
         <Grid w='100%' minH="100vh">
           <VStack spacing={8}>
-            <Heading>"Defend Your Thesis" Aurilis Academy Quests</Heading>
+            <Heading mt='-50px'>"Defend Your Thesis" Aurilis Academy Quests</Heading>
             <Container><p>This page calculates quest overlap for the large Aurilis Academy "Thesis" quests, based upon your progress so far. <br></br> <br></br> Make sure you complete the
               various Side Quests and Dungeon Chains you want to get done, because this page doesn't account for all Aurilis quests — only the most efficient repeatables.
             </p>

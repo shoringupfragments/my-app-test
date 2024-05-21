@@ -1464,7 +1464,7 @@ const totalFinalWCResult = (totalXaeyWCLoot + totalXaeyWCCraft + totalDustWignow
       <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh">
           <VStack spacing={8}>
-            <Heading pt={3}>City of Light</Heading>
+            <Heading mt='-50px'>City of Light</Heading>
             <Container><p>This page calculates what monsters you need for City of Light materials and battle items, based on average loot drops.</p></Container>
             <Container><Divider></Divider></Container>
 

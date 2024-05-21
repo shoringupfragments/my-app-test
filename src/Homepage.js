@@ -10,10 +10,15 @@ import {
   Container,
   Link,
   Divider,
+  List,
+  Text,
+  UnorderedList,
+  Image
 } from '@chakra-ui/react';
 
 
 function App() {
+  const [hover, setHover] = useState(false);
 
 
 
@@ -21,7 +26,36 @@ function App() {
       <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh">
           <VStack spacing={8}>
-          <Heading pt={3}>About This Site</Heading>
+          <Heading mt='-50px'>All Current Guides</Heading>
+            <Container>
+            <UnorderedList>
+  <Text mb='15px'><b>General Gameplay / All Areas</b></Text>
+
+  <Text mt='8px' textAlign='left'>🍃 <span><Link color='teal.500'   
+        _hover={{  color: "teal.300",  }} href='/quickwccalc'>
+    Quick Word Count Calculator</Link></span>: input your attack stat and target word count to see how 
+    many words you need to type/paste at your attack</Text>
+    <Text mt='15px' textAlign='left'>🍃 <span><Link color='teal.500'   
+        _hover={{  color: "teal.300",  }} href='/endurance'>
+    Endurance Monster Planner</Link></span>: calculate the timing to win endurance battles. Includes a visual timer to 
+    run alongside the battle and guarantee 4x reward multipliers</Text>
+  <Text mt='50px' mb='15px'><b>Aurilis Magic Academy</b></Text>
+  <Text mt='8px' textAlign='left'>⭐ <span><Link color='teal.500'   
+        _hover={{  color: "teal.300",  }} href='/mastery-potions'>
+    Potion Mastery Calculator</Link></span>: earn masteries of low word count Aurilis creatures to invest their resource drops into 
+    potions to master high word count creatures</Text>
+    <Text mt='15px' textAlign='left'>⭐ <span><Link color='teal.500'   
+        _hover={{  color: "teal.300",  }} href='/aurilis-thesis'>
+    Defend Your Thesis Quest Tracker</Link></span>: plan for repeatable quest overlap with the Year 1 thesis quests (Year 2 coming soon)</Text>
+    <Text mt='50px' mb='15px'><b>Late Game</b></Text>
+  <Text mt='8px' textAlign='left'>⚔️ <span><Link color='teal.500'   
+        _hover={{  color: "teal.300",  }} href='/cityoflight'>
+    City of Light</Link></span>: calculate resources needed for City of Light battle items</Text>
+</UnorderedList>
+
+                <Divider mt='50px' /></Container>
+
+          <Heading>About This Site</Heading>
             <Container><p>This is a work-in-progress 4theWords guide, intended to help you spend 
                 less time planning and more time writing.
                 <br></br>

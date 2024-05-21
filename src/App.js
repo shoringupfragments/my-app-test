@@ -11,7 +11,9 @@ import RemoveImages from './removeimages';
 import darkTheme from './theme';
 import FanEdits from './fanedits';
 import CursedMasteryChallenge from './CursedMasteryChallenge';
-import AurilisMain from './AurilisMain'
+import AurilisMain from './AurilisMain';
+import AurilisPotionCalculator from './AurilisPotionCalculator';
+import EnduranceCountdown from './EnduranceCountdown';
 
 function App() {
 
@@ -27,6 +29,10 @@ function App() {
       <Route path="fanedits" element={ <FanEdits/> } />
       <Route path="mastery-potions" element={ <CursedMasteryChallenge /> } />
       <Route path="aurilis" element={ <AurilisMain /> } />
+      <Route path="potion-calculator" element={ <AurilisPotionCalculator /> } />
+      <Route path="endurance" element={ <EnduranceCountdown /> } />
+
+
       </Routes>
     </ChakraProvider>
   );

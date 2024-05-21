@@ -53,7 +53,7 @@ const fixWcResult = USformatter.format(number);
       <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh">
           <VStack spacing={8}>
-          <Heading pt={3}>Word Count Calculator</Heading>
+          <Heading mt='-50px'>Word Count Calculator</Heading>
             <Container><p>Type your attack stat and your target word count below to quickly calculate the attack-adjusted word count.</p></Container>
 
 <VStack>

@@ -1640,7 +1640,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
     <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh">
           <VStack spacing={8}>
-            <Heading pt={3}>City of Light</Heading>
+            <Heading mt='-50px'>City of Light</Heading>
             <Container><p>This page calculates what monsters you need for City of Light materials and battle items, based on average loot drops.
               <br></br><br></br>
               Fusion Glass and Mushroom sources <i>must</i> be selected for the page to work, but your attack stat is optional.</p>

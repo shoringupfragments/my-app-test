@@ -23,7 +23,7 @@ function App() {
       <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh">
           <VStack spacing={8}>
-          <Heading pt={3}>Aurilis Guides</Heading>
+          <Heading mt='-50px'>Aurilis Guides</Heading>
             <Container><p>Here are the Aurilis Guides available so far:
                 <br></br>
                 <br></br>

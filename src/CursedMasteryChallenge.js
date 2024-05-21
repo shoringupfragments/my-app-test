@@ -4217,7 +4217,8 @@ const totalDustyKingMaiMasteryMaskAttack = Math.round (totalDustyKingMaiMasteryM
     )
   }
 
-
+const [testWC, setTestWC] = useState(null)
+const totalTestWC = Math.max (inputWC+30)
   
   const [MasteryMonsterQtyPerPotion, setMasteryMonsterQtyPerPotion] = useState(0);
   const totalMasteryMonsterQtyPerPotion = Math.max (1000/inputWC, 0)
@@ -6689,7 +6690,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         align='center' 
         boxSize='4rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/5/50/Spellfire_(Spells).png'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/ff/Spellfire.png/'
         mr='5px'        />
       <VStack align='center'> 
         <Text fontSize='sm' align='center'>Spellfire</Text>
@@ -6708,7 +6709,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         align='center' 
         boxSize='4rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/c/c7/Stardust_(Astrology).png/'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/65/Stardust.png/'
         mr='5px'        />
       <VStack align='center'> 
         <Text fontSize='sm' align='center'>Stardust</Text>
@@ -6726,7 +6727,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         align='center' 
         boxSize='4rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/6/67/Scrolls_%28Knowledge%29.png/'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/83/Scrolls.png/'
         mr='5px'        />
       <VStack align='center'> 
         <Text id='monstername' fontSize='sm' align='center'>Scrolls</Text>
@@ -6744,7 +6745,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         align='center' 
         boxSize='4rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/a/a4/Dew_Berry_%28Alchemy%29.png/'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Dew_Berry.png/'
         mr='5px'        />
       <VStack align='center'> 
         <Text id='monstername' fontSize='sm' align='center'>Dewberries</Text>
@@ -7047,7 +7048,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         align='center' 
         boxSize='4rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/5/50/Spellfire_(Spells).png'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/ff/Spellfire.png/'
         mr='5px'        />
       <VStack align='center'> 
         <Text fontSize='sm' align='center'>Spellfire</Text>
@@ -7066,7 +7067,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         align='center' 
         boxSize='4rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/c/c7/Stardust_(Astrology).png/'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/65/Stardust.png/'
         mr='5px'        />
       <VStack align='center'> 
         <Text fontSize='sm' align='center'>Stardust</Text>
@@ -7084,7 +7085,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         align='center' 
         boxSize='4rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/6/67/Scrolls_%28Knowledge%29.png/'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/83/Scrolls.png/'
         mr='5px'        />
       <VStack align='center'> 
         <Text id='monstername' fontSize='sm' align='center'>Scrolls</Text>
@@ -7102,7 +7103,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         align='center' 
         boxSize='4rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/a/a4/Dew_Berry_%28Alchemy%29.png/'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Dew_Berry.png/'
         mr='5px'        />
       <VStack align='center'> 
         <Text id='monstername' fontSize='sm' align='center'>Dewberries</Text>
@@ -7156,7 +7157,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         h='100px'
         align='center'>
             <Text align='center'>
-            {inputWC}-word monster
+            {totalTestWC}-word monster
             </Text>
         </Box>
 
@@ -8947,7 +8948,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         align='center' 
         boxSize='4rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/5/50/Spellfire_(Spells).png'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/ff/Spellfire.png/'
         mr='5px'        />
       <VStack align='center'> 
         <Text fontSize='sm' align='center'>Spellfire</Text>
@@ -8966,7 +8967,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         align='center' 
         boxSize='4rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/c/c7/Stardust_(Astrology).png/'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/65/Stardust.png/'
         mr='5px'        />
       <VStack align='center'> 
         <Text fontSize='sm' align='center'>Stardust</Text>
@@ -8984,7 +8985,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         align='center' 
         boxSize='4rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/6/67/Scrolls_%28Knowledge%29.png/'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/83/Scrolls.png/'
         mr='5px'        />
       <VStack align='center'> 
         <Text id='monstername' fontSize='sm' align='center'>Scrolls</Text>
@@ -9002,7 +9003,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         align='center' 
         boxSize='4rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/a/a4/Dew_Berry_%28Alchemy%29.png/'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Dew_Berry.png/'
         mr='5px'        />
       <VStack align='center'> 
         <Text id='monstername' fontSize='sm' align='center'>Dewberries</Text>

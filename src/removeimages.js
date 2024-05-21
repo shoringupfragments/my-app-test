@@ -31,7 +31,7 @@ function App() {
       <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh">
           <VStack spacing={8}>
-          <Heading pt={3}>How to Replace Images on 4theWords</Heading>
+          <Heading mt='-50px'>How to Replace Images on 4theWords</Heading>
             <Container><p>This page was created to de-spooder 
                 4theWords' November 2023 event. 
                 <br></br>

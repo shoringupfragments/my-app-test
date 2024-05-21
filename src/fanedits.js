@@ -36,7 +36,7 @@ function App() {
       <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh">
           <VStack spacing={8}>
-          <Heading pt={3}>4theWords Fan Edits</Heading>
+          <Heading mt='-50px'>4theWords Fan Edits</Heading>
             <Container><p>This page lists all currently available fan edits 
                 of the 4theWords site and its corresponding wiki pages. 
                 <br></br>
