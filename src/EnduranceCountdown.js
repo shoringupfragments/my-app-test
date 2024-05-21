@@ -60028,7 +60028,7 @@ const HPBug = () => {
     return(
     
     <Container align='center'>
-<Box mt='12px' width='300px' padding='12px' rounded='10px' style={{backgroundColor: 'rgba(0,0,0,0.36'}}>
+<Box mt='12px' width='200px' padding='12px' rounded='10px' style={{backgroundColor: 'rgba(0,0,0,0.36'}}>
 <Text fontSize='lg'><b>May 10, 2024 Note: </b></Text> 
 <Text fontSize='md'>In most cases, it's not worth going above 70 Defense at this time.</Text>
 <Text mt='12px' fontSize='md'>There's a bug with the monster's health resetting to 100 HP, 
@@ -60036,7 +60036,7 @@ but still calculating requirements for reward multipliers based on the bonus hea
 </Box>
 <br></br> 
 <Accordion allowMultiple>
-  <AccordionItem width='350px'>
+  <AccordionItem>
   <h2>
       <AccordionButton>
         <Box as="span" flex='1' textAlign='center' p={3}>
