@@ -60132,7 +60132,7 @@ const VoidWignow60Def = () => {
                 <br></br>
                 <br></br>
                 </p>
-                <Accordion width='350px' allowMultiple>
+                <Accordion allowMultiple>
   <AccordionItem>
   <h2>
       <AccordionButton>
@@ -60281,9 +60281,7 @@ const VoidWignow60Def = () => {
                 <br></br>
                 <Text><b>Select Your Endurance Monster: </b></Text>
                 <br></br>
-                <Container marginLeft={35} style={{display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center'}}>
+                <Container align='center'>
                 <Wrap>
             <WrapItem>
             <Button w='100px' h='150px' pb={5} onClick={handleVanstraClick} style={{ backgroundColor: VanstraActive ? "#1A1521" : "#2D3748" }}>
