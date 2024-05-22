@@ -60292,7 +60292,7 @@ const VoidWignow60Def = () => {
       </AccordionButton>
     </h2>
     <AccordionPanel pb={4}>
-    <Box alignItems='center'>
+    <Container align='center'>
     <Wrap>
             <WrapItem>
             <Button w='100px' h='150px' pb={5} onClick={handleVanstraClick} style={{ backgroundColor: VanstraActive ? "#1A1521" : "#2D3748" }}>
@@ -60440,7 +60440,7 @@ const VoidWignow60Def = () => {
             </Button>
             </WrapItem>
           </Wrap>
-          </Box>
+          </Container>
       <br></br>
     </AccordionPanel>
   </AccordionItem>
@@ -61180,9 +61180,9 @@ const VoidWignow60Def = () => {
 {(VanstraIsShown || ViIsShown || LucerebIsShown || ProfBartIsShown || ViyuIsShown || 
 ViyusaIsShown || VanspiIsShown ||  VanvriIsShown || ViradiseIsShown) && (DefenseStat === 0) &&
 
-<Container align='center' mt='12px' width='300px' padding='12px' rounded='10px' style={{backgroundColor: 'rgba(0,0,0,0.36'}}>
+<Container align='center' mt='12px' pb='100px' width='300px' padding='12px' rounded='10px' style={{backgroundColor: 'rgba(0,0,0,0.36'}}>
 <Text fontSize='md'>psst - your defense stat is currently 0 </Text>
-<Text mt='12px' fontSize='md'  mb='100px'>please input a defense stat to use the guided countdown</Text>
+<Text mt='12px' fontSize='md'>please input a defense stat to use the guided countdown</Text>
 </Container>
 }
 
