@@ -60028,7 +60028,7 @@ const HPBug = () => {
     return(
     
     <Container align='center'>
-<Box mt='12px' width='222px' padding='12px' rounded='10px' style={{backgroundColor: 'rgba(0,0,0,0.36'}}>
+<Box mt='12px' width='250px' padding='12px' rounded='10px' style={{backgroundColor: 'rgba(0,0,0,0.36'}}>
 <Text fontSize='lg'><b>May 10, 2024 Note: </b></Text> 
 <Text fontSize='md'>In most cases, it's not worth going above 70 Defense at this time.</Text>
 <Text mt='12px' fontSize='md'>There's a bug with the monster's health resetting to 100 HP, 
@@ -60137,7 +60137,7 @@ const VoidWignow60Def = () => {
   <h2>
       <AccordionButton>
         <Box as="span" flex='1' textAlign='center' p={3}>
-        <Heading as='h3' size='lg'>Endurance Monsters Explained</Heading>
+        <Text fontSize='2xl'><b>Endurance Monsters Explained</b></Text>
         </Box>
         <AccordionIcon />
       </AccordionButton>
@@ -60220,7 +60220,7 @@ const VoidWignow60Def = () => {
   <h2>
       <AccordionButton>
         <Box as="span" flex='1' textAlign='center' p={3}>
-        <Heading as='h3' size='lg'>The Math: 4x Multiplier</Heading>
+        <Text fontSize='2xl'><b>The Math: 4x Multiplier</b></Text>
         </Box>
         <AccordionIcon />
       </AccordionButton>
@@ -60266,6 +60266,68 @@ const VoidWignow60Def = () => {
           </Text>
     </AccordionPanel>
   </AccordionItem>
+  <AccordionItem>
+  <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='center' p={3}>
+        <Text fontSize='2xl'><b>Current Endurance Bugs</b></Text>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+          <Text fontSize='md'>
+          - Toggling the loop button, copying a monster, or adding/deleting a monster from the battle list all reset the health to max, but also resets the score multiplier to 1x. Toggling autostart has no effect on the endurance battle.
+          </Text>
+          <Text fontSize='md' mt='8px'>
+          - Refreshing the page resets the health to max, but also resets the score multiplier to 1x
+          </Text>
+          <Text fontSize='md' mt='8px'>
+          - Having multiple tabs open can cause a random loss, usually because of the battle hitting 0 HP in another tab
+          </Text>
+          <Text fontSize='md' mt='8px'>
+          - The HP bar doesn't allow input above 100 HP if the user has copy/pasted during that day, but still calculates multiplier requirements from the overall HP. With high enough defense, it's impossible to get multipliers because 75% of the overall HP is above 100. While this bug is active, 70 Defense is the maximum effective defense stat.
+          </Text>
+    </AccordionPanel>
+  </AccordionItem>
+  <AccordionItem>
+  <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='center' p={3}>
+        <Text fontSize='2xl'><b>Guided Countdown Instructions</b></Text>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+	<Text mb='8px' textAlign='left' fontSize='md'>
+ 1. Put your endurance monster in your battle list </Text>
+ <Text mb='8px' textAlign='left' fontSize='md'>
+  2. Double-check your copy-paste settings on 4theWords, if necessary</Text>
+  <Text mb='8px' textAlign='left' fontSize='md'>
+  3. Start the battle on 4theWords</Text>
+  <Text mb='8px' textAlign='left' fontSize='md'>
+  4. Start the Guided Countdown on this site</Text>
+  <Text mb='8px' textAlign='left' fontSize='md'>
+  5. Paste the word count specified when each loop's timer hits zero (no need to paste on the final loop)</Text>
+<Text mb='8px' textAlign='left' fontSize='md'>
+  6. For getting 4x rewards: <b><i>type</i></b> at least one word when the multiplier shows x4
+</Text>
+<Text mb='15px' mt='25px'><b>Extra Tips:</b><br></br></Text>
+	<Text mb='8px' textAlign='left' fontSize='md'>
+  - 1 HP = 1 typed or pasted word. So if you're at 75 HP, you need 25 words to regenerate to 100 HP.</Text>
+ <Text mb='8px' textAlign='left' fontSize='md'>
+ - If you paste too early, paste again at the end of the loop, regardless of what the HP is. This will bring you back into sync with the timer.
+   </Text>
+   <Text mb='8px' textAlign='left' fontSize='md'>
+  - If you paste too late, just bring your monster's HP back to its max HP (1 HP = 1 word). Then paste at the end 
+  of the loop as normal, regardless of what the HP is.
+  </Text>
+  <Text mb='50px' textAlign='left' fontSize='md'>
+  - If your battle refreshed to its starting base HP (known bug), reset the guided countdown while at that starting HP to sync the timer again. 
+  </Text>
+    </AccordionPanel>
+  </AccordionItem>
   </Accordion>
          <br></br>
                 <VStack>
@@ -60280,20 +60342,9 @@ const VoidWignow60Def = () => {
 </VStack>
                 <br></br>
                 <br></br>
-                <Container>
-                <Accordion defaultIndex={[0]} allowMultiple>
-  <AccordionItem>
-  <h2>
-      <AccordionButton>
-        <Box as="span" flex='1' textAlign='center' p={3}>
-        <Heading as='h3' size='lg'>Select Your Endurance Monster</Heading>
-        </Box>
-        <AccordionIcon />
-      </AccordionButton>
-    </h2>
-    <AccordionPanel pb={4}>
     <Container align='center'>
-    <Wrap style={{justifyContent: 'middle', alignItems:'center'}}>
+      <Text mb='8px'><b>Select Your Endurance Monster:</b></Text>
+    <Wrap justify='center'>
             <WrapItem>
             <Button w='100px' h='150px' pb={5} onClick={handleVanstraClick} style={{ backgroundColor: VanstraActive ? "#1A1521" : "#2D3748" }}>
        <VStack> 
@@ -60440,12 +60491,6 @@ const VoidWignow60Def = () => {
             </Button>
             </WrapItem>
           </Wrap>
-          </Container>
-      <br></br>
-    </AccordionPanel>
-  </AccordionItem>
-
-  </Accordion>
           </Container>
                 <br></br>
                 </Container>
@@ -61162,7 +61207,7 @@ const VoidWignow60Def = () => {
 {(VanstraIsShown || ViIsShown || LucerebIsShown || ProfBartIsShown || ViyuIsShown || 
 ViyusaIsShown || VanspiIsShown ||  VanvriIsShown || ViradiseIsShown) && (DefenseStat === 0) &&
 
-<Container align='center' mt='12px' width='300px' padding='12px' rounded='10px' style={{backgroundColor: 'rgba(0,0,0,0.36'}}>
+<Container align='center' mt='12px' width='275px' padding='12px' rounded='10px' style={{backgroundColor: 'rgba(0,0,0,0.36'}}>
 <Text fontSize='md'>psst - your defense stat is currently 0 </Text>
 <Text mt='12px' fontSize='md'>please input a defense stat to use the guided countdown</Text>
 </Container>
@@ -61172,35 +61217,6 @@ ViyusaIsShown || VanspiIsShown ||  VanvriIsShown || ViradiseIsShown) && (Defense
 ViyusaIsShown || VanspiIsShown ||  VanvriIsShown || ViradiseIsShown) && !Tab2IsShown && (DefenseStat>0) &&
 
 <Container mt='15px'>
-  <Accordion allowMultiple>
-  <AccordionItem width='300px'>
-  <h2>
-      <AccordionButton>
-        <Box as="span" flex='1' textAlign='center' p={3}>
-        <Text>Important bugs to know about</Text>
-        </Box>
-        <AccordionIcon />
-      </AccordionButton>
-    </h2>
-    <AccordionPanel pb={4}>
-    <Text>
-  <b>Good Endurance Bugs:</b>
-</Text>
-<Text fontSize='md' mt='8px'>
-👍 Toggling the loop button, copying a monster, or adding/deleting a monster from the battle list all reset the health to max, but also resets the score multiplier to 1x
-</Text>
-<Text fontSize='md' mt='8px'>
-👍 Refreshing the page resets the health to max, but also resets the score multiplier to 1x
-</Text>
-<Text mt='15px'>
-  <b>Bad Endurance Bugs:</b>
-</Text> 
-<Text fontSize='md' mt='8px'>
-👎 Having multiple tabs open can cause a random loss, usually because of the battle hitting 0 HP in another tab
-</Text>
-    </AccordionPanel>
-  </AccordionItem>
-  </Accordion>
 
 <Button mt='25px' mb='15px' onClick={handleGuidedCountdownMinClick}
 style={{ backgroundColor: GuidedCountdownMinActive ? "#1A1521" : "#B794F4",
@@ -61539,32 +61555,8 @@ Scroll down for detailed instructions and tips for use
   <VanspiProfBTimerMin9 />
   </Container>
   }
-<Divider mt='15px' mb='15px' />
-	<Text mb='8px' mt='8px'><b>Guided Countdown Instructions: </b><br></br></Text>
-	<Text mb='8px' textAlign='left' fontSize='md'>
- 1. Put your endurance monster in your battle list </Text>
- <Text mb='8px' textAlign='left' fontSize='md'>
-  2. Double-check your copy-paste settings on 4theWords, if necessary</Text>
-  <Text mb='8px' textAlign='left' fontSize='md'>
-  3. Start the battle on 4theWords</Text>
-  <Text mb='8px' textAlign='left' fontSize='md'>
-  4. Start the Guided Countdown on this site</Text>
-  <Text mb='8px' textAlign='left' fontSize='md'>
-  5. Paste the word count specified when each loop's timer hits zero (no need to paste on the final loop)</Text>
 
-<Text mb='15px' mt='25px'><b>Extra Tips:</b><br></br></Text>
-	<Text mb='8px' textAlign='left' fontSize='md'>
-  - 1 HP = 1 typed or pasted word. So if you're at 10 HP, you need 90 words to regenerate to 100 HP.</Text>
- <Text mb='8px' textAlign='left' fontSize='md'>
- - If you paste too early, paste again at the end of the loop, regardless of what the HP is. This will bring you back into sync with the timer.
-   </Text>
-   <Text mb='8px' textAlign='left' fontSize='md'>
-  - If you paste too late, just bring your monster's HP back to its max HP (1 HP = 1 word). Then paste at the end 
-  of the loop as normal, regardless of what the HP is.
-  </Text>
-  <Text mb='50px' textAlign='left' fontSize='md'>
-  - If your battle refreshed to its starting base HP (known bug), reset the guided countdown while at that starting HP to sync the timer again. 
-  </Text>
+<Box height='100px'></Box>
 
 </Container>
 }
@@ -61624,32 +61616,7 @@ Scroll down for detailed instructions and tips for use
   </Container>
   }
 
-<Divider mt='15px' mb='15px' />
-	<Text mb='8px' mt='8px'><b>Guided Countdown Instructions: </b><br></br></Text>
-	<Text mb='8px' textAlign='left' fontSize='md'>
- 1. Put your endurance monster in your battle list </Text>
- <Text mb='8px' textAlign='left' fontSize='md'>
-  2. Double-check your copy-paste settings on 4theWords, if necessary</Text>
-  <Text mb='8px' textAlign='left' fontSize='md'>
-  3. Start the battle on 4theWords</Text>
-  <Text mb='8px' textAlign='left' fontSize='md'>
-  4. Start the Guided Countdown on this site</Text>
-  <Text mb='8px' textAlign='left' fontSize='md'>
-  5. Paste the word count specified when each loop's timer hits zero (no need to paste on the final loop)</Text>
-
-<Text mb='15px' mt='25px'><b>Extra Tips:</b><br></br></Text>
-	<Text mb='8px' textAlign='left' fontSize='md'>
-  - 1 HP = 1 typed or pasted word. So if you're at 75 HP, you need 25 words to regenerate to 100 HP.</Text>
- <Text mb='8px' textAlign='left' fontSize='md'>
- - If you paste too early, paste again at the end of the loop, regardless of what the HP is. This will bring you back into sync with the timer.
-   </Text>
-   <Text mb='8px' textAlign='left' fontSize='md'>
-  - If you paste too late, just bring your monster's HP back to its max HP (1 HP = 1 word). Then paste at the end 
-  of the loop as normal, regardless of what the HP is.
-  </Text>
-  <Text mb='50px' textAlign='left' fontSize='md'>
-  - If your battle refreshed to its starting base HP (known bug), reset the guided countdown while at max HP to sync the timer again. 
-  </Text>
+<Box height='100px'></Box>
 
 </Container>
 }
@@ -61668,31 +61635,6 @@ Due to a bug that disallows typing above 100 HP, it's impossible to get a 4x mul
 ViyusaIsShown || VanspiIsShown ||  VanvriIsShown || ViradiseIsShown) && Tab2IsShown && (DefenseStat<=99) && (DefenseStat>0) &&
 
 <Container align='center' mt='15px'>
-
-<Accordion allowMultiple>
-  <AccordionItem width='300px'>
-  <h2>
-      <AccordionButton>
-        <Box as="span" flex='1' textAlign='center' p={3}>
-        <Text>Important bugs to know about</Text>
-        </Box>
-        <AccordionIcon />
-      </AccordionButton>
-    </h2>
-    <AccordionPanel pb={4}>
-<Text textAlign={'left'} fontSize='md'>
-- Toggling loop, copying a monster, or adding/deleting a monster from the battle list during a battle all reset the monster's health to max HP, but also resets the multiplier to 1x. Fine in the first few seconds, bad at the end.
-</Text>
-<Text textAlign={'left'} fontSize='md'>Toggling auto-start, however, has no impact on the battle.</Text>
-<Text textAlign={'left'} fontSize='md' mt='8px'>
-- Refreshing the page resets the health to max, but also resets the score multiplier to 1x. 
-</Text>
-<Text textAlign={'left'} fontSize='md' mt='8px'>
-- Having multiple windows open can cause a random loss, usually because of the battle hitting 0 HP in another tab.
-</Text>
-    </AccordionPanel>
-  </AccordionItem>
-  </Accordion> 
 
 <Button mt='25px' mb='15px' onClick={handleGuidedCountdownClick}
 style={{ backgroundColor: GuidedCountdownActive ? "#1A1521" : "#B794F4",
@@ -62783,35 +62725,7 @@ Scroll down for detailed instructions and tips for use
   <DelayComponentViradiseLoop4x mt='-20px' style={{position: 'absolute',}} />
 }
 
-
-<Divider mt='15px' mb='15px' />
-	<Text mb='8px' mt='8px'><b>Guided Countdown Instructions: </b><br></br></Text>
-	<Text mb='8px' textAlign='left' fontSize='md'>
- 1. Put your endurance monster in your battle list </Text>
- <Text mb='8px' textAlign='left' fontSize='md'>
-  2. Double-check your copy-paste settings on 4theWords, if necessary</Text>
-  <Text mb='8px' textAlign='left' fontSize='md'>
-  3. Start the battle on 4theWords</Text>
-  <Text mb='8px' textAlign='left' fontSize='md'>
-  4. Start the Guided Countdown on this site</Text>
-  <Text mb='8px' textAlign='left' fontSize='md'>
-  5. Paste the word count specified when each loop's timer hits zero (no need to paste on the final loop)</Text>
-<Text mb='8px' textAlign='left' fontSize='md'>
-  6. <b><i>Type</i></b> at least one word when the multiplier shows x4
-</Text>
-<Text mb='15px' mt='25px'><b>Extra Tips:</b><br></br></Text>
-	<Text mb='8px' textAlign='left' fontSize='md'>
-  - 1 HP = 1 typed or pasted word. So if you're at 75 HP, you need 25 words to regenerate to 100 HP.</Text>
- <Text mb='8px' textAlign='left' fontSize='md'>
- - If you paste too early, paste again at the end of the loop, regardless of what the HP is. This will bring you back into sync with the timer.
-   </Text>
-   <Text mb='8px' textAlign='left' fontSize='md'>
-  - If you paste too late, just bring your monster's HP back to its max HP (1 HP = 1 word). Then paste at the end 
-  of the loop as normal, regardless of what the HP is.
-  </Text>
-  <Text mb='50px' textAlign='left' fontSize='md'>
-  - If your battle refreshed to its starting base HP (known bug), reset the guided countdown while at that starting HP to sync the timer again. 
-  </Text>
+<Box height='100px'></Box>
 </Container>}
 
 
