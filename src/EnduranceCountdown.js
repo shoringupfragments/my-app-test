@@ -61172,7 +61172,7 @@ ViyusaIsShown || VanspiIsShown ||  VanvriIsShown || ViradiseIsShown) && (Defense
 ViyusaIsShown || VanspiIsShown ||  VanvriIsShown || ViradiseIsShown) && !Tab2IsShown && (DefenseStat>0) &&
 
 <Container mt='15px'>
-  <Accordion defaultIndex={[0]} ml='-20px' allowMultiple>
+  <Accordion allowMultiple>
   <AccordionItem width='300px'>
   <h2>
       <AccordionButton>
@@ -61667,9 +61667,9 @@ Due to a bug that disallows typing above 100 HP, it's impossible to get a 4x mul
 {(VanstraIsShown || ViIsShown || VoidWignowIsShown || LucerebIsShown || ProfBartIsShown || ViyuIsShown || 
 ViyusaIsShown || VanspiIsShown ||  VanvriIsShown || ViradiseIsShown) && Tab2IsShown && (DefenseStat<=99) && (DefenseStat>0) &&
 
-<Container mt='15px'>
+<Container align='center' mt='15px'>
 
-<Accordion ml='-20px' align='center' defaultIndex={[0]} allowMultiple>
+<Accordion allowMultiple>
   <AccordionItem width='300px'>
   <h2>
       <AccordionButton>
