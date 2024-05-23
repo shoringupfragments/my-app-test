@@ -43,6 +43,7 @@ import {
   Th,
   Thead,
   Tbody,
+  AbsoluteCenter,
 } from '@chakra-ui/react';
 import Timer from "react-compound-timerv2-ocuco";
 
@@ -60653,7 +60654,9 @@ const VoidWignow60Def = () => {
   	/>
   	<br></br>
   	<Text fontSize='lg'>calculated at {DefenseStat} Defense</Text><br></br>
-      <Divider align='center' width='200px'></Divider>
+      <div>
+      <Divider align='center' width='200px' style={{position:AbsoluteCenter}}></Divider>
+      </div>
   	<Text fontSize='lg'><i>paste or write</i></Text>
   	<Text mt='-8px'><b>{totalViBackTo100} words</b></Text>
     <Text fontSize='lg'><i>approx. every</i></Text>
