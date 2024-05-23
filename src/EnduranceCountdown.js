@@ -60618,8 +60618,7 @@ const VoidWignow60Def = () => {
     	borderRadius='full'
     	src='https://static.wikia.nocookie.net/4thewords/images/c/cf/Vi.png'
   	/>
-  	<br></br>      
-    <div>
+  	<br></br>
   	<Text fontSize='lg'>calculated at {DefenseStat} Defense</Text><br></br>
       <Divider align='center' width='200px'></Divider>
   	<Text fontSize='lg'><i>paste or write</i></Text>
@@ -60628,7 +60627,6 @@ const VoidWignow60Def = () => {
   	<Text mt='-8px'><b>{totalViMins10} mins {totalViSecs10} secs</b></Text>
   	<Text fontSize='lg'><i>to keep Vi at or above</i></Text>
   	<Text mt='-8px'><b>{totalViDownTo10} HP</b></Text>
-    </div>
 
 
   	</VStack>	 
@@ -60654,7 +60652,6 @@ const VoidWignow60Def = () => {
     	src='https://static.wikia.nocookie.net/4thewords/images/c/cf/Vi.png'
   	/>
   	<br></br>
-    <div>
   	<Text fontSize='lg'>calculated at {DefenseStat} Defense</Text><br></br>
       <Divider align='center' width='200px'></Divider>
   	<Text fontSize='lg'><i>paste or write</i></Text>
@@ -60663,7 +60660,6 @@ const VoidWignow60Def = () => {
   	<Text mt='-8px'><b>{totalViMins75} mins {totalViSecsAdj75} secs</b></Text>
   	<Text fontSize='lg'><i>to keep Vi at or above</i></Text>
   	<Text mt='-8px'><b>{totalVi75} HP</b></Text>
-    </div>
   	</VStack>	 
 	</TabPanel>
   </TabPanels>
