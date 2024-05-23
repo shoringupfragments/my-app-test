@@ -60620,7 +60620,9 @@ const VoidWignow60Def = () => {
   	/>
   	<br></br>
   	<Text fontSize='lg'>calculated at {DefenseStat} Defense</Text><br></br>
-  	<Divider width='200px'></Divider>
+      <div>
+      <Divider align='center' width='200px'></Divider>
+      </div>
   	<Text fontSize='lg'><i>paste or write</i></Text>
   	<Text mt='-8px'><b>{totalViHPToLose} words</b></Text>
     <Text fontSize='lg'><i>approx. every</i></Text>
@@ -60653,7 +60655,9 @@ const VoidWignow60Def = () => {
   	/>
   	<br></br>
   	<Text fontSize='lg'>calculated at {DefenseStat} Defense</Text><br></br>
-  	<Divider width='200px'></Divider>
+      <div>
+      <Divider align='center' width='200px'></Divider>
+      </div>
   	<Text fontSize='lg'><i>paste or write</i></Text>
   	<Text mt='-8px'><b>{totalViBackTo100} words</b></Text>
     <Text fontSize='lg'><i>approx. every</i></Text>
@@ -60689,7 +60693,9 @@ const VoidWignow60Def = () => {
       />
       <br></br>
       <Text fontSize='lg'>calculated at {DefenseStat} Defense</Text><br></br>
+      <div>
       <Divider align='center' width='200px'></Divider>
+      </div>
       <VoidWignowLowerDef />
       <VoidWignow60Def />
       </VStack>       
@@ -60716,7 +60722,9 @@ const VoidWignow60Def = () => {
       />
       <br></br>
       <Text fontSize='lg'>calculated at {DefenseStat} Defense</Text><br></br>
-      <Divider width='200px'></Divider>
+      <div>
+      <Divider align='center' width='200px'></Divider>
+      </div>
       <Text fontSize='lg'><i>paste or write</i></Text>
       <Text mt='-8px'><b>{totalVoidWignowBackTo100} words</b></Text>
       <Text fontSize='lg'><i>approx. every</i></Text>
@@ -60752,7 +60760,9 @@ const VoidWignow60Def = () => {
       />
       <br></br>
       <Text fontSize='lg'>calculated at {DefenseStat} Defense</Text><br></br>
-      <Divider width='200px'></Divider>
+      <div>
+      <Divider align='center' width='200px'></Divider>
+      </div>
       <Text fontSize='lg'><i>paste or write</i></Text>
       <Text mt='-8px'><b>{totalLucerebHPToLose} words</b></Text>
       <Text fontSize='lg'><i>approx. every</i></Text>
@@ -60783,7 +60793,9 @@ const VoidWignow60Def = () => {
       />
       <br></br>
       <Text fontSize='lg'>calculated at {DefenseStat} Defense</Text><br></br>
-      <Divider width='200px'></Divider>
+      <div>
+      <Divider align='center' width='200px'></Divider>
+      </div>
       <Text fontSize='lg'><i>paste or write</i></Text>
       <Text mt='-8px'><b>{totalLucerebBackTo100} words</b></Text>
       <Text fontSize='lg'><i>approx. every</i></Text>
@@ -60819,7 +60831,9 @@ const VoidWignow60Def = () => {
       />
       <br></br>
       <Text fontSize='lg'>calculated at {DefenseStat} Defense</Text><br></br>
-      <Divider width='200px'></Divider>
+      <div>
+      <Divider align='center' width='200px'></Divider>
+      </div>
       <Text fontSize='lg'><i>paste or write</i></Text>
       <Text mt='-8px'><b>{totalProfBartHPToLose} words</b></Text>
       <Text fontSize='lg'><i>approx. every</i></Text>
@@ -60851,7 +60865,9 @@ const VoidWignow60Def = () => {
       />
       <br></br>
       <Text fontSize='lg'>calculated at {DefenseStat} Defense</Text><br></br>
-      <Divider width='200px'></Divider>
+      <div>
+      <Divider align='center' width='200px'></Divider>
+      </div>
       <Text fontSize='lg'><i>paste or write</i></Text>
       <Text mt='-8px'><b>{totalProfBartBackTo100} words</b></Text>
       <Text fontSize='lg'><i>approx. every</i></Text>
@@ -60887,7 +60903,9 @@ const VoidWignow60Def = () => {
       />
       <br></br>
       <Text fontSize='lg'>calculated at {DefenseStat} Defense</Text><br></br>
-      <Divider width='200px'></Divider>
+      <div>
+      <Divider align='center' width='200px'></Divider>
+      </div>
       <Text fontSize='lg'><i>paste or write</i></Text>
       <Text mt='-8px'><b>{totalVanspiHPToLose} words</b></Text>
       <Text fontSize='lg'><i>approx. every</i></Text>
@@ -60918,7 +60936,9 @@ const VoidWignow60Def = () => {
       />
       <br></br>
       <Text fontSize='lg'>calculated at {DefenseStat} Defense</Text><br></br>
-      <Divider width='200px'></Divider>
+      <div>
+      <Divider align='center' width='200px'></Divider>
+      </div>
       <Text fontSize='lg'><i>paste or write</i></Text>
       <Text mt='-8px'><b>{totalVanspiBackTo100} words</b></Text>
       <Text fontSize='lg'><i>approx. every</i></Text>
@@ -60954,7 +60974,9 @@ const VoidWignow60Def = () => {
       />
       <br></br>
       <Text fontSize='lg'>calculated at {DefenseStat} Defense</Text><br></br>
-      <Divider width='200px'></Divider>
+      <div>
+      <Divider align='center' width='200px'></Divider>
+      </div>
       <Text fontSize='lg'><i>paste or write</i></Text>
       <Text mt='-8px'><b>{totalViyuHPToLose} words</b></Text>
       <Text fontSize='lg'><i>approx. every</i></Text>
@@ -60986,7 +61008,9 @@ const VoidWignow60Def = () => {
       />
       <br></br>
       <Text fontSize='lg'>calculated at {DefenseStat} Defense</Text><br></br>
-      <Divider width='200px'></Divider>
+      <div>
+      <Divider align='center' width='200px'></Divider>
+      </div>
       <Text fontSize='lg'><i>paste or write</i></Text>
       <Text mt='-8px'><b>{totalViyuBackTo100} words</b></Text>
       <Text fontSize='lg'><i>approx. every</i></Text>
@@ -61025,7 +61049,9 @@ const VoidWignow60Def = () => {
       />
       <br></br>
       <Text fontSize='lg'>calculated at {DefenseStat} Defense</Text><br></br>
-      <Divider width='200px'></Divider>
+      <div>
+      <Divider align='center' width='200px'></Divider>
+      </div>
       <Text fontSize='lg'><i>paste or write</i></Text>
       <Text mt='-8px'><b>{totalVanvriHPToLose} words</b></Text>
       <Text fontSize='lg'><i>approx. every</i></Text>
@@ -61056,7 +61082,9 @@ const VoidWignow60Def = () => {
       />
       <br></br>
       <Text fontSize='lg'>calculated at {DefenseStat} Defense</Text><br></br>
-      <Divider width='200px'></Divider>
+      <div>
+      <Divider align='center' width='200px'></Divider>
+      </div>
       <Text fontSize='lg'><i>paste or write</i></Text>
       <Text mt='-8px'><b>{totalVanvriBackTo100} words</b></Text>
       <Text fontSize='lg'><i>approx. every</i></Text>
@@ -61093,7 +61121,9 @@ const VoidWignow60Def = () => {
       />
       <br></br>
       <Text fontSize='lg'>calculated at {DefenseStat} Defense</Text><br></br>
-      <Divider width='200px'></Divider>
+      <div>
+      <Divider align='center' width='200px'></Divider>
+      </div>
       <Text fontSize='lg'><i>paste or write</i></Text>
       <Text mt='-8px'><b>{totalViyusaHPToLose} words</b></Text>
       <Text fontSize='lg'><i>approx. every</i></Text>
@@ -61125,7 +61155,9 @@ const VoidWignow60Def = () => {
       />
       <br></br>
       <Text fontSize='lg'>calculated at {DefenseStat} Defense</Text><br></br>
-      <Divider width='200px'></Divider>
+      <div>
+      <Divider align='center' width='200px'></Divider>
+      </div>
       <Text fontSize='lg'><i>paste or write</i></Text>
       <Text mt='-8px'><b>{totalViyusaBackTo100} words</b></Text>
       <Text fontSize='lg'><i>approx. every</i></Text>
@@ -61160,7 +61192,9 @@ const VoidWignow60Def = () => {
       />
       <br></br>
       <Text fontSize='lg'>calculated at {DefenseStat} Defense</Text><br></br>
-      <Divider width='200px'></Divider>
+      <div>
+      <Divider align='center' width='200px'></Divider>
+      </div>
       <Text fontSize='lg'><i>paste or write</i></Text>
       <Text mt='-8px'><b>{totalViradiseHPToLose} words</b></Text>
       <Text fontSize='lg'><i>approx. every</i></Text>
@@ -61191,7 +61225,9 @@ const VoidWignow60Def = () => {
       />
       <br></br>
       <Text fontSize='lg'>calculated at {DefenseStat} Defense</Text><br></br>
-      <Divider width='200px'></Divider>
+      <div>
+      <Divider align='center' width='200px'></Divider>
+      </div>
       <Text fontSize='lg'><i>paste or write</i></Text>
       <Text mt='-8px'><b>{totalViradiseBackTo100} words</b></Text>
       <Text fontSize='lg'><i>approx. every</i></Text>

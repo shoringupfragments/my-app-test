@@ -14,6 +14,8 @@ import CursedMasteryChallenge from './CursedMasteryChallenge';
 import AurilisMain from './AurilisMain';
 import AurilisPotionCalculator from './AurilisPotionCalculator';
 import EnduranceCountdown from './EnduranceCountdown';
+import BattleItems from './BattleItems';
+
 
 function App() {
 
