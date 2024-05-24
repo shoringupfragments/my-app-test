@@ -61200,7 +61200,7 @@ const VoidWignow60Def = () => {
 }
 </Tabs>
 
-{(VanstraIsShown || ViIsShown || LucerebIsShown || ProfBartIsShown || ViyuIsShown || 
+{(VanstraIsShown || ViIsShown || VoidWignowIsShown || LucerebIsShown || ProfBartIsShown || ViyuIsShown || 
 ViyusaIsShown || VanspiIsShown ||  VanvriIsShown || ViradiseIsShown) && (DefenseStat === 0) &&
 
 <Container align='center' mt='12px' width='275px' padding='12px' rounded='10px' style={{backgroundColor: 'rgba(0,0,0,0.36'}}>
@@ -61240,7 +61240,7 @@ Scroll down for detailed instructions and tips for use
 </Container>
 }
 
-{!GuidedCountdownMinIsShown &&
+{!Tab2IsShown &&
   <Container align='center' mt='25px'>
 <Text fontSize='xl' mt='35px'><b>Guided Countdown Instructions</b></Text>
 	<Text mb='8px' textAlign='left' fontSize='md'>
@@ -61616,7 +61616,7 @@ Scroll down for detailed instructions and tips for use
 </Container>
 }
 
-{!GuidedCountdownMinIsShown &&
+{VoidWignowIsShown && !Tab2IsShown &&
   <Container align='center' mt='25px'>
 <Text fontSize='xl' mt='35px' mb='8px'><b>Guided Countdown Instructions</b></Text>
 	<Text mb='8px' textAlign='left' fontSize='md'>
@@ -61715,7 +61715,7 @@ Scroll down for detailed instructions and tips for use
 </Container>
 }
 
-{!GuidedCountdownIsShown &&
+{!Tab1IsShown &&
   <Container align='center' mt='25px'>
 <Text fontSize='xl' mt='35px'><b>Guided Countdown Instructions</b></Text>
 	<Text mb='8px' textAlign='left' fontSize='md'>
