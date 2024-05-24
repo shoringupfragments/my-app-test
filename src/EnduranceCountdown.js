@@ -60291,44 +60291,6 @@ const VoidWignow60Def = () => {
           </Text>
     </AccordionPanel>
   </AccordionItem>
-  <AccordionItem>
-  <h2>
-      <AccordionButton>
-        <Box as="span" flex='1' textAlign='center' p={3}>
-        <Text fontSize='2xl'><b>Guided Countdown Instructions</b></Text>
-        </Box>
-        <AccordionIcon />
-      </AccordionButton>
-    </h2>
-    <AccordionPanel pb={4}>
-	<Text mb='8px' textAlign='left' fontSize='md'>
- 1. Put your endurance monster in your battle list </Text>
- <Text mb='8px' textAlign='left' fontSize='md'>
-  2. Double-check your copy-paste settings on 4theWords, if necessary</Text>
-  <Text mb='8px' textAlign='left' fontSize='md'>
-  3. Start the battle on 4theWords</Text>
-  <Text mb='8px' textAlign='left' fontSize='md'>
-  4. Start the Guided Countdown on this site</Text>
-  <Text mb='8px' textAlign='left' fontSize='md'>
-  5. Paste the word count specified when each loop's timer hits zero (no need to paste on the final loop)</Text>
-<Text mb='8px' textAlign='left' fontSize='md'>
-  6. For getting 4x rewards: <b><i>type</i></b> at least one word when the multiplier shows x4
-</Text>
-<Text mb='15px' mt='25px'><b>Extra Tips:</b><br></br></Text>
-	<Text mb='8px' textAlign='left' fontSize='md'>
-  - 1 HP = 1 typed or pasted word. So if you're at 75 HP, you need 25 words to regenerate to 100 HP.</Text>
- <Text mb='8px' textAlign='left' fontSize='md'>
- - If you paste too early, paste again at the end of the loop, regardless of what the HP is. This will bring you back into sync with the timer.
-   </Text>
-   <Text mb='8px' textAlign='left' fontSize='md'>
-  - If you paste too late, just bring your monster's HP back to its max HP (1 HP = 1 word). Then paste at the end 
-  of the loop as normal, regardless of what the HP is.
-  </Text>
-  <Text mb='50px' textAlign='left' fontSize='md'>
-  - If your battle refreshed to its starting base HP (known bug), reset the guided countdown while at that starting HP to sync the timer again. 
-  </Text>
-    </AccordionPanel>
-  </AccordionItem>
   </Accordion>
          <br></br>
                 <VStack>
@@ -60886,7 +60848,6 @@ const VoidWignow60Def = () => {
           <span style={{color: '#B794F4'}}><b>{totalMaxHP} HP</b></span><span> | </span>
             <span style={{color: '#B794F4'}}><b>10 mins</b></span>
             </Text>
-     <Text mt='-8px' style={{color:'#B794F4'}}><b>{totalMaxHP} HP</b></Text>
      <Text mt='-8px' mb='3px' fontSize='md'>
           <span>loses </span>
           <span style={{color: '#B794F4'}}><b>2 HP</b></span><span> every </span>
@@ -61279,6 +61240,37 @@ Scroll down for detailed instructions and tips for use
 </Container>
 }
 
+{!GuidedCountdownMinIsShown &&
+  <Container align='center' mt='25px'>
+<Text fontSize='xl' mt='35px'><b>Guided Countdown Instructions</b></Text>
+	<Text mb='8px' textAlign='left' fontSize='md'>
+ 1. Put your endurance monster in your battle list </Text>
+ <Text mb='8px' textAlign='left' fontSize='md'>
+  2. Double-check your copy-paste settings on 4theWords, if necessary</Text>
+  <Text mb='8px' textAlign='left' fontSize='md'>
+  3. Start the battle on 4theWords</Text>
+  <Text mb='8px' textAlign='left' fontSize='md'>
+  4. Start the Guided Countdown on this site</Text>
+  <Text mb='8px' textAlign='left' fontSize='md'>
+  5. Paste the word count specified when each loop's timer hits zero (no need to paste on the final loop)</Text>
+
+<Text mb='15px' mt='25px'><b>Extra Tips:</b><br></br></Text>
+	<Text mb='8px' textAlign='left' fontSize='md'>
+  - 1 HP = 1 typed or pasted word. So if you're at 75 HP, you need 25 words to regenerate to 100 HP.</Text>
+ <Text mb='8px' textAlign='left' fontSize='md'>
+ - If you paste too early, paste again at the end of the loop, regardless of what the HP is. This will bring you back into sync with the timer.
+   </Text>
+   <Text mb='8px' textAlign='left' fontSize='md'>
+  - If you paste too late, just bring your monster's HP back to its max HP (1 HP = 1 word). Then paste at the end 
+  of the loop as normal, regardless of what the HP is.
+  </Text>
+  <Text mb='50px' textAlign='left' fontSize='md'>
+  - If your battle refreshed to its starting base HP (known bug), reset the guided countdown while at that starting HP to sync the timer again. 
+  </Text>
+</Container>
+
+}
+
 {GuidedCountdownMinIsShown && VanstraIsShown &&
     <Container height='180px' align='center' style={{backgroundColor: '#000000'
     }} >
@@ -61624,6 +61616,36 @@ Scroll down for detailed instructions and tips for use
 </Container>
 }
 
+{!GuidedCountdownMinIsShown &&
+  <Container align='center' mt='25px'>
+<Text fontSize='xl' mt='35px' mb='8px'><b>Guided Countdown Instructions</b></Text>
+	<Text mb='8px' textAlign='left' fontSize='md'>
+ 1. Put your endurance monster in your battle list </Text>
+ <Text mb='8px' textAlign='left' fontSize='md'>
+  2. Double-check your copy-paste settings on 4theWords, if necessary</Text>
+  <Text mb='8px' textAlign='left' fontSize='md'>
+  3. Start the battle on 4theWords</Text>
+  <Text mb='8px' textAlign='left' fontSize='md'>
+  4. Start the Guided Countdown on this site</Text>
+  <Text mb='8px' textAlign='left' fontSize='md'>
+  5. Paste the word count specified when each loop's timer hits zero (no need to paste on the final loop)</Text>
+
+<Text mb='15px' mt='25px'><b>Extra Tips:</b><br></br></Text>
+	<Text mb='8px' textAlign='left' fontSize='md'>
+  - 1 HP = 1 typed or pasted word. So if you're at 75 HP, you need 25 words to regenerate to 100 HP.</Text>
+ <Text mb='8px' textAlign='left' fontSize='md'>
+ - If you paste too early, paste again at the end of the loop, regardless of what the HP is. This will bring you back into sync with the timer.
+   </Text>
+   <Text mb='8px' textAlign='left' fontSize='md'>
+  - If you paste too late, just bring your monster's HP back to its max HP (1 HP = 1 word). Then paste at the end 
+  of the loop as normal, regardless of what the HP is.
+  </Text>
+  <Text mb='50px' textAlign='left' fontSize='md'>
+  - If your battle refreshed to its starting base HP (known bug), reset the guided countdown while at that starting HP to sync the timer again. 
+  </Text>
+</Container>
+}
+
 {GuidedCountdownMinIsShown && VoidWignowIsShown &&
     <Container height='180px' align='center' style={{backgroundColor: '#000000'
     }} >
@@ -61690,6 +61712,38 @@ Don't forget to check your copy/paste settings on 4theWords <br/>
 <Text mt='15px' fontSize='md'>
 Scroll down for detailed instructions and tips for use
 </Text>
+</Container>
+}
+
+{!GuidedCountdownIsShown &&
+  <Container align='center' mt='25px'>
+<Text fontSize='xl' mt='35px'><b>Guided Countdown Instructions</b></Text>
+	<Text mb='8px' textAlign='left' fontSize='md'>
+ 1. Put your endurance monster in your battle list </Text>
+ <Text mb='8px' textAlign='left' fontSize='md'>
+  2. Double-check your copy-paste settings on 4theWords, if necessary</Text>
+  <Text mb='8px' textAlign='left' fontSize='md'>
+  3. Start the battle on 4theWords</Text>
+  <Text mb='8px' textAlign='left' fontSize='md'>
+  4. Start the Guided Countdown on this site</Text>
+  <Text mb='8px' textAlign='left' fontSize='md'>
+  5. Paste the word count specified when each loop's timer hits zero (no need to paste on the final loop)</Text>
+<Text mb='8px' textAlign='left' fontSize='md'>
+  6. For getting 4x rewards: <b><i>type</i></b> at least one word when the multiplier shows x4
+</Text>
+<Text mb='15px' mt='25px'><b>Extra Tips:</b><br></br></Text>
+	<Text mb='8px' textAlign='left' fontSize='md'>
+  - 1 HP = 1 typed or pasted word. So if you're at 75 HP, you need 25 words to regenerate to 100 HP.</Text>
+ <Text mb='8px' textAlign='left' fontSize='md'>
+ - If you paste too early, paste again at the end of the loop, regardless of what the HP is. This will bring you back into sync with the timer.
+   </Text>
+   <Text mb='8px' textAlign='left' fontSize='md'>
+  - If you paste too late, just bring your monster's HP back to its max HP (1 HP = 1 word). Then paste at the end 
+  of the loop as normal, regardless of what the HP is.
+  </Text>
+  <Text mb='50px' textAlign='left' fontSize='md'>
+  - If your battle refreshed to its starting base HP (known bug), reset the guided countdown while at that starting HP to sync the timer again. 
+  </Text>
 </Container>
 }
 
@@ -62762,7 +62816,6 @@ Scroll down for detailed instructions and tips for use
 
 <Box height='100px'></Box>
 </Container>}
-
 
       </Box>
           </VStack>
