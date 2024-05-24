@@ -61588,7 +61588,7 @@ Scroll down for detailed instructions and tips for use
 </Container>
 }
 
-{VoidWignowIsShown && !Tab2IsShown && (DefenseStat<=59) &&
+{VoidWignowIsShown && !Tab2IsShown && (DefenseStat<=59) && (DefenseStat>0) &&
 
 <Container mt='15px'>
 <Button mt='25px' mb='15px' onClick={handleGuidedCountdownMinClick}
