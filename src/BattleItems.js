@@ -2,6 +2,11 @@ import React from 'react';
 import { useState,useEffect } from "react";
 import {
   ChakraProvider,
+  Accordion,
+  AccordionButton,
+  AccordionIcon,
+  AccordionItem,
+  AccordionPanel,
   Box,
   Button,
   Heading,
@@ -96,6 +101,16 @@ const [NivaliIsShown, setNivaliIsShown] = useState(false)
 const [NivaliActive, setNivaliActive] = useState(false)
 
 
+const [DesertRegionAllSideRegionsIsShown, setDesertRegionAllSideRegionsIsShown] = useState(false)
+const [DesertRegionAllSideRegionsActive, setDesertRegionAllSideRegionsActive] = useState(false)
+const [WaterRegionAllSideRegionsIsShown, setWaterRegionAllSideRegionsIsShown] = useState(false)
+const [WaterRegionAllSideRegionsActive, setWaterRegionAllSideRegionsActive] = useState(false)
+const [DustRegionAllSideRegionsIsShown, setDustRegionAllSideRegionsIsShown] = useState(false)
+const [DustRegionAllSideRegionsActive, setDustRegionAllSideRegionsActive] = useState(false)
+const [LightRegionAllSideRegionsIsShown, setLightRegionAllSideRegionsIsShown] = useState(false)
+const [LightRegionAllSideRegionsActive, setLightRegionAllSideRegionsActive] = useState(false)
+const [World2RegionAllSideRegionsIsShown, setWorld2RegionAllSideRegionsIsShown] = useState(false)
+const [World2RegionAllSideRegionsActive, setWorld2RegionAllSideRegionsActive] = useState(false)
 
 const handleForestRegionClick = event => {
 setForestRegionIsShown (current => !ForestRegionIsShown);
@@ -110,6 +125,16 @@ setLightRegionIsShown (current => false);
 setLightRegionActive (current => false);
 setWorld2RegionIsShown (current => false);
 setWorld2RegionActive (current => false);
+setDesertRegionAllSideRegionsIsShown (current => false);
+setDesertRegionAllSideRegionsActive (current => false);
+setWaterRegionAllSideRegionsIsShown (current => false);
+setWaterRegionAllSideRegionsActive (current => false);
+setDustRegionAllSideRegionsIsShown (current => false);
+setDustRegionAllSideRegionsActive (current => false);
+setLightRegionAllSideRegionsIsShown (current => false);
+setLightRegionAllSideRegionsActive (current => false);
+setWorld2RegionAllSideRegionsIsShown (current => false);
+setWorld2RegionAllSideRegionsActive (current => false);
 setLuciolaForestIsShown (current => false);
 setLuciolaForestActive (current => false);
 setMamaTreeIsShown (current => false);
@@ -155,6 +180,16 @@ setLightRegionIsShown (current => false);
 setLightRegionActive (current => false);
 setWorld2RegionIsShown (current => false);
 setWorld2RegionActive (current => false);
+setDesertRegionAllSideRegionsIsShown (current => false);
+setDesertRegionAllSideRegionsActive (current => false);
+setWaterRegionAllSideRegionsIsShown (current => false);
+setWaterRegionAllSideRegionsActive (current => false);
+setDustRegionAllSideRegionsIsShown (current => false);
+setDustRegionAllSideRegionsActive (current => false);
+setLightRegionAllSideRegionsIsShown (current => false);
+setLightRegionAllSideRegionsActive (current => false);
+setWorld2RegionAllSideRegionsIsShown (current => false);
+setWorld2RegionAllSideRegionsActive (current => false);
 setLuciolaForestIsShown (current => false);
 setLuciolaForestActive (current => false);
 setMamaTreeIsShown (current => false);
@@ -200,6 +235,14 @@ setLightRegionIsShown (current => false);
 setLightRegionActive (current => false);
 setWorld2RegionIsShown (current => false);
 setWorld2RegionActive (current => false);
+setWaterRegionAllSideRegionsIsShown (current => false);
+setWaterRegionAllSideRegionsActive (current => false);
+setDustRegionAllSideRegionsIsShown (current => false);
+setDustRegionAllSideRegionsActive (current => false);
+setLightRegionAllSideRegionsIsShown (current => false);
+setLightRegionAllSideRegionsActive (current => false);
+setWorld2RegionAllSideRegionsIsShown (current => false);
+setWorld2RegionAllSideRegionsActive (current => false);
 setLuciolaForestIsShown (current => false);
 setLuciolaForestActive (current => false);
 setMamaTreeIsShown (current => false);
@@ -245,6 +288,12 @@ setLightRegionIsShown (current => false);
 setLightRegionActive (current => false);
 setWorld2RegionIsShown (current => false);
 setWorld2RegionActive (current => false);
+setDustRegionAllSideRegionsIsShown (current => false);
+setDustRegionAllSideRegionsActive (current => false);
+setLightRegionAllSideRegionsIsShown (current => false);
+setLightRegionAllSideRegionsActive (current => false);
+setWorld2RegionAllSideRegionsIsShown (current => false);
+setWorld2RegionAllSideRegionsActive (current => false);
 setLuciolaForestIsShown (current => false);
 setLuciolaForestActive (current => false);
 setMamaTreeIsShown (current => false);
@@ -290,6 +339,10 @@ setForestRegionIsShown (current => false);
 setForestRegionActive (current => false);
 setWorld2RegionIsShown (current => false);
 setWorld2RegionActive (current => false);
+setLightRegionAllSideRegionsIsShown (current => false);
+setLightRegionAllSideRegionsActive (current => false);
+setWorld2RegionAllSideRegionsIsShown (current => false);
+setWorld2RegionAllSideRegionsActive (current => false);
 setLuciolaForestIsShown (current => false);
 setLuciolaForestActive (current => false);
 setMamaTreeIsShown (current => false);
@@ -335,6 +388,8 @@ setLightRegionIsShown (current => false);
 setLightRegionActive (current => false);
 setForestRegionIsShown (current => false);
 setForestRegionActive (current => false);
+setWorld2RegionAllSideRegionsIsShown (current => false);
+setWorld2RegionAllSideRegionsActive (current => false);
 setLuciolaForestIsShown (current => false);
 setLuciolaForestActive (current => false);
 setMamaTreeIsShown (current => false);
@@ -440,6 +495,61 @@ const handleNivaliClick = event =>{
 };
 
 
+const handleDesertRegionAllSideRegionsClick = event =>{
+  setAurilisIsShown (current => true);
+  setAurilisActive (current => true);
+  setDragonLairIsShown (current => true);
+  setDragonLairActive (current => true);
+};
+
+const handleWaterRegionAllSideRegionsClick = event =>{
+  setAurilisIsShown (current => true);
+  setAurilisActive (current => true);
+  setDragonLairIsShown (current => true);
+  setDragonLairActive (current => true);
+  setRainaIsShown (current => true);
+  setRainaActive (current => true);
+  setCloudsIsShown (current => true);
+  setCloudsActive (current => true);
+  setDawnIsShown (current => true);
+  setDawnActive (current => true);
+  setTempestIsShown (current => true);
+  setTempestActive (current => true);
+};
+
+const handleDustRegionAllSideRegionsClick = event =>{
+  setAurilisIsShown (current => true);
+  setAurilisActive (current => true);
+  setDragonLairIsShown (current => true);
+  setDragonLairActive (current => true);
+  setRainaIsShown (current => true);
+  setRainaActive (current => true);
+  setCloudsIsShown (current => true);
+  setCloudsActive (current => true);
+  setDawnIsShown (current => true);
+  setDawnActive (current => true);
+  setTempestIsShown (current => true);
+  setTempestActive (current => true);
+  setGardenIsShown (current => true);
+  setGardenActive (current => true);
+};
+
+const handleWorld2RegionAllSideRegionsClick = event =>{
+  setAurilisIsShown (current => true);
+  setAurilisActive (current => true);
+  setDragonLairIsShown (current => true);
+  setDragonLairActive (current => true);
+  setRainaIsShown (current => true);
+  setRainaActive (current => true);
+  setCloudsIsShown (current => true);
+  setCloudsActive (current => true);
+  setDawnIsShown (current => true);
+  setDawnActive (current => true);
+  setTempestIsShown (current => true);
+  setTempestActive (current => true);
+  setGardenIsShown (current => true);
+  setGardenActive (current => true);
+};
 
 
 //hunt yes/no//
@@ -611,12 +721,12 @@ const totalNivaliDef = Math.max (MountainMaceDef + NivaliBreastplateDef, 0)
   return (
       <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh">
-            <Heading>Battle Items Planner</Heading>
-            <Container><p>This page shows the best builds for each battle stat, specific to your progress in the game. You can see builds possible for your region of the game or specific to the battle items you currently have.</p></Container>
-            <Container><Divider></Divider></Container>
-            <Container align='center'>
+        <Container align='center'>
+            <Heading mt='-50px'>Battle Items Planner</Heading>
+            <Text>This page shows the best builds for each battle stat, specific to your progress in the game. You can see builds possible for your region of the game or specific to the battle items you currently have.</Text>
+            <Divider mt='15px' />
 
-            <Text mb='8px'>What item builds do you want to see?</Text>
+            <Text mt='25px' mb='8px'>What item builds do you want to see?</Text>
             <VStack>
             <Button variant='outline' onClick= {handleAllClick} style={{ backgroundColor: AllActive ? "#2d1b59" : "transparent" }}>
               All possible for the regions I've unlocked</Button>
@@ -625,6 +735,211 @@ const totalNivaliDef = Math.max (MountainMaceDef + NivaliBreastplateDef, 0)
               </Button>
 
             </VStack>
+
+  <Accordion mt='25px' allowMultiple w={350}>
+  <AccordionItem>
+  <h2>
+      <AccordionButton>
+        <Box as="span" flex='1' textAlign='center' p={3}>
+        <Heading as='h3' size='lg'>Game Progress</Heading>
+        </Box>
+        <AccordionIcon />
+      </AccordionButton>
+    </h2>
+    <AccordionPanel pb={4}>
+      <Box h='400px' overflowY='scroll'>
+        <Text mb='15px'><b>What is the furthest region you've unlocked?</b></Text>
+          <Wrap>
+            <WrapItem>
+            <Button w='100px' h='100px' pb={5} onClick={handleForestRegionClick} style={{ backgroundColor: ForestRegionActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/73/Winter_Cordu_Cutout.png'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Forest Region</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+            <WrapItem>
+            <Button w='100px' h='100px' pb={5} onClick={handleDesertRegionClick} style={{ backgroundColor: DesertRegionActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/90/Winter_Cordu_Wardrobe_Mask.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Desert Region</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+
+            <WrapItem>
+            <Button w='100px' h='100px' pb={5} onClick={handleWaterRegionClick} style={{ backgroundColor: WaterRegionActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/40/Winter_Cordu_Statue.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Water Region</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+            
+
+            <WrapItem>
+            <Button w='100px' h='100px' pb={5} onClick={handleDustRegionClick} style={{ backgroundColor: DustRegionActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/a2/Winter_Cordu_Wardrobe_Balloon.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Dust Region</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+
+            <WrapItem>
+            <Button w='100px' h='100px' pb={5} onClick={handleLightRegionClick} style={{ backgroundColor: LightRegionActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/94/Winter_Cordu_Book_Wardrobe.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Light Region</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+
+            <WrapItem>
+            <Button w='100px' h='100px' pb={5} onClick={handleWorld2RegionClick} style={{ backgroundColor: World2RegionActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/94/Winter_Cordu_Book_Wardrobe.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>World 2</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+
+          </Wrap>
+
+          <Text mt='25px' mb='15px'><b>What is the furthest main location you've unlocked?</b></Text>
+          <Wrap>
+            <WrapItem>
+            <Button w='100px' h='100px' pb={5} onClick={handleForestRegionClick} style={{ backgroundColor: ForestRegionActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/73/Winter_Cordu_Cutout.png'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Forest Region</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+            <WrapItem>
+            <Button w='100px' h='100px' pb={5} onClick={handleDesertRegionClick} style={{ backgroundColor: DesertRegionActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/90/Winter_Cordu_Wardrobe_Mask.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Desert Region</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+
+            <WrapItem>
+            <Button w='100px' h='100px' pb={5} onClick={handleWaterRegionClick} style={{ backgroundColor: WaterRegionActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/40/Winter_Cordu_Statue.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Water Region</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+            
+
+            <WrapItem>
+            <Button w='100px' h='100px' pb={5} onClick={handleDustRegionClick} style={{ backgroundColor: DustRegionActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/a2/Winter_Cordu_Wardrobe_Balloon.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Dust Region</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+
+            <WrapItem>
+            <Button w='100px' h='100px' pb={5} onClick={handleLightRegionClick} style={{ backgroundColor: LightRegionActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/94/Winter_Cordu_Book_Wardrobe.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Light Region</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+
+            <WrapItem>
+            <Button w='100px' h='100px' pb={5} onClick={handleWorld2RegionClick} style={{ backgroundColor: World2RegionActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/94/Winter_Cordu_Book_Wardrobe.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>World 2</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+
+          </Wrap>
+          </Box>
+      <br></br>
+    </AccordionPanel>
+  </AccordionItem>
+  </Accordion>
 
               <Text mt='25px' mb='8px'>How far into the game are you?</Text>
               <Wrap justify='center'>
@@ -694,7 +1009,7 @@ const totalNivaliDef = Math.max (MountainMaceDef + NivaliBreastplateDef, 0)
               <Text mt='25px' mb='8px'>Which locations do you have unlocked?</Text>
 
               {!ForestRegionIsShown && !DesertRegionIsShown && !WaterRegionIsShown && !DustRegionIsShown && !LightRegionIsShown && !World2RegionIsShown &&
-              <Text mb='30px' fontSize='md'><i>Select a region to show all available main and side areas</i></Text>
+              <Text mb='30px' fontSize='md'><i>Select a region to show all available main areas</i></Text>
               }
 
               {ForestRegionIsShown &&
@@ -820,6 +1135,11 @@ mr='12px'
 <Text mt='25px' mb='8px'>Which side area(s) do you have unlocked?</Text>
 }
 
+{!ForestRegionIsShown && !DesertRegionIsShown && !WaterRegionIsShown && !DustRegionIsShown && !LightRegionIsShown && !World2RegionIsShown &&
+              <Text mb='30px' fontSize='md'><i>Select a region to show all available side areas</i></Text>
+              }
+
+
 {ForestRegionIsShown &&
 <Button variant='outline' onClick= {handleAurilisClick} style={{ backgroundColor: AurilisActive ? "#2d1b59" : "transparent" }}>
 <Image
@@ -851,6 +1171,16 @@ src='https://i.imgur.com/x3k39BC.png'
 mr='12px'
 />      
 <span>Dragon Lair</span></Button>
+</WrapItem>
+<WrapItem>
+<Button variant='outline' onClick= {handleDesertRegionAllSideRegionsClick} style={{ backgroundColor: TempestActive ? "#2d1b59" : "transparent" }}>
+<Image
+boxSize='2rem'
+borderRadius='full'
+src='https://i.imgur.com/x3k39BC.png'
+mr='12px'
+/>      
+<span>All Areas Unlocked</span></Button>
 </WrapItem>
 </Wrap>
 }
@@ -916,6 +1246,16 @@ src='https://i.imgur.com/x3k39BC.png'
 mr='12px'
 />      
 <span>Tempest</span></Button>
+</WrapItem>
+<WrapItem>
+<Button variant='outline' onClick= {handleWaterRegionAllSideRegionsClick} style={{ backgroundColor: TempestActive ? "#2d1b59" : "transparent" }}>
+<Image
+boxSize='2rem'
+borderRadius='full'
+src='https://i.imgur.com/x3k39BC.png'
+mr='12px'
+/>      
+<span>All Areas Unlocked</span></Button>
 </WrapItem>
 </Wrap>
 }
@@ -991,6 +1331,185 @@ src='https://i.imgur.com/x3k39BC.png'
 mr='12px'
 />      
 <span>Tempest</span></Button>
+</WrapItem>
+<WrapItem>
+<Button variant='outline' onClick= {handleDustRegionAllSideRegionsClick} style={{ backgroundColor: TempestActive ? "#2d1b59" : "transparent" }}>
+<Image
+boxSize='2rem'
+borderRadius='full'
+src='https://i.imgur.com/x3k39BC.png'
+mr='12px'
+/>      
+<span>All Areas Unlocked</span></Button>
+</WrapItem>
+</Wrap>
+}
+{LightRegionIsShown &&
+  <Wrap justify='center'>
+  <WrapItem>
+<Button variant='outline' onClick= {handleAurilisClick} style={{ backgroundColor: AurilisActive ? "#2d1b59" : "transparent" }}>
+<Image
+boxSize='2rem'
+borderRadius='full'
+src='https://i.imgur.com/x3k39BC.png'
+mr='12px'
+/>      
+<span>Aurilis Magic Academy</span></Button>
+</WrapItem>
+<WrapItem>
+<Button variant='outline' onClick= {handleDragonLairClick} style={{ backgroundColor: DragonLairActive ? "#2d1b59" : "transparent" }}>
+<Image
+boxSize='2rem'
+borderRadius='full'
+src='https://i.imgur.com/x3k39BC.png'
+mr='12px'
+/>      
+<span>Dragon Lair</span></Button>
+</WrapItem>
+<WrapItem>
+<Button variant='outline' onClick= {handleRainaClick} style={{ backgroundColor: RainaActive ? "#2d1b59" : "transparent" }}>
+<Image
+boxSize='2rem'
+borderRadius='full'
+src='https://i.imgur.com/x3k39BC.png'
+mr='12px'
+/>      
+<span>Raina</span></Button>
+</WrapItem>
+<WrapItem>
+<Button variant='outline' onClick= {handleCloudsClick} style={{ backgroundColor: CloudsActive ? "#2d1b59" : "transparent" }}>
+<Image
+boxSize='2rem'
+borderRadius='full'
+src='https://i.imgur.com/x3k39BC.png'
+mr='12px'
+/>      
+<span>Clouds</span></Button>
+</WrapItem>
+<WrapItem>
+<Button variant='outline' onClick= {handleDawnClick} style={{ backgroundColor: DawnActive ? "#2d1b59" : "transparent" }}>
+<Image
+boxSize='2rem'
+borderRadius='full'
+src='https://i.imgur.com/x3k39BC.png'
+mr='12px'
+/>      
+<span>Dawn</span></Button>
+</WrapItem>
+<WrapItem>
+<Button variant='outline' onClick= {handleGardenClick} style={{ backgroundColor: GardenActive ? "#2d1b59" : "transparent" }}>
+<Image
+boxSize='2rem'
+borderRadius='full'
+src='https://i.imgur.com/x3k39BC.png'
+mr='12px'
+/>      
+<span>Caretaker's Garden</span></Button>
+</WrapItem>
+<WrapItem>
+<Button variant='outline' onClick= {handleTempestClick} style={{ backgroundColor: TempestActive ? "#2d1b59" : "transparent" }}>
+<Image
+boxSize='2rem'
+borderRadius='full'
+src='https://i.imgur.com/x3k39BC.png'
+mr='12px'
+/>      
+<span>Tempest</span></Button>
+</WrapItem>
+<WrapItem>
+<Button variant='outline' onClick= {handleDustRegionAllSideRegionsClick} style={{ backgroundColor: TempestActive ? "#2d1b59" : "transparent" }}>
+<Image
+boxSize='2rem'
+borderRadius='full'
+src='https://i.imgur.com/x3k39BC.png'
+mr='12px'
+/>      
+<span>All Areas Unlocked</span></Button>
+</WrapItem>
+</Wrap>
+}
+
+{World2RegionIsShown &&
+  <Wrap justify='center'>
+  <WrapItem>
+<Button variant='outline' onClick= {handleAurilisClick} style={{ backgroundColor: AurilisActive ? "#2d1b59" : "transparent" }}>
+<Image
+boxSize='2rem'
+borderRadius='full'
+src='https://i.imgur.com/x3k39BC.png'
+mr='12px'
+/>      
+<span>Aurilis Magic Academy</span></Button>
+</WrapItem>
+<WrapItem>
+<Button variant='outline' onClick= {handleDragonLairClick} style={{ backgroundColor: DragonLairActive ? "#2d1b59" : "transparent" }}>
+<Image
+boxSize='2rem'
+borderRadius='full'
+src='https://i.imgur.com/x3k39BC.png'
+mr='12px'
+/>      
+<span>Dragon Lair</span></Button>
+</WrapItem>
+<WrapItem>
+<Button variant='outline' onClick= {handleRainaClick} style={{ backgroundColor: RainaActive ? "#2d1b59" : "transparent" }}>
+<Image
+boxSize='2rem'
+borderRadius='full'
+src='https://i.imgur.com/x3k39BC.png'
+mr='12px'
+/>      
+<span>Raina</span></Button>
+</WrapItem>
+<WrapItem>
+<Button variant='outline' onClick= {handleCloudsClick} style={{ backgroundColor: CloudsActive ? "#2d1b59" : "transparent" }}>
+<Image
+boxSize='2rem'
+borderRadius='full'
+src='https://i.imgur.com/x3k39BC.png'
+mr='12px'
+/>      
+<span>Clouds</span></Button>
+</WrapItem>
+<WrapItem>
+<Button variant='outline' onClick= {handleDawnClick} style={{ backgroundColor: DawnActive ? "#2d1b59" : "transparent" }}>
+<Image
+boxSize='2rem'
+borderRadius='full'
+src='https://i.imgur.com/x3k39BC.png'
+mr='12px'
+/>      
+<span>Dawn</span></Button>
+</WrapItem>
+<WrapItem>
+<Button variant='outline' onClick= {handleGardenClick} style={{ backgroundColor: GardenActive ? "#2d1b59" : "transparent" }}>
+<Image
+boxSize='2rem'
+borderRadius='full'
+src='https://i.imgur.com/x3k39BC.png'
+mr='12px'
+/>      
+<span>Caretaker's Garden</span></Button>
+</WrapItem>
+<WrapItem>
+<Button variant='outline' onClick= {handleTempestClick} style={{ backgroundColor: TempestActive ? "#2d1b59" : "transparent" }}>
+<Image
+boxSize='2rem'
+borderRadius='full'
+src='https://i.imgur.com/x3k39BC.png'
+mr='12px'
+/>      
+<span>Tempest</span></Button>
+</WrapItem>
+<WrapItem>
+<Button variant='outline' onClick= {handleWorld2RegionAllSideRegionsClick} style={{ backgroundColor: TempestActive ? "#2d1b59" : "transparent" }}>
+<Image
+boxSize='2rem'
+borderRadius='full'
+src='https://i.imgur.com/x3k39BC.png'
+mr='12px'
+/>      
+<span>All Areas Unlocked</span></Button>
 </WrapItem>
 </Wrap>
 }
