@@ -61240,37 +61240,6 @@ Scroll down for detailed instructions and tips for use
 </Container>
 }
 
-{!Tab2IsShown &&
-  <Container align='center' mt='25px'>
-<Text fontSize='xl' mt='35px'><b>Guided Countdown Instructions</b></Text>
-	<Text mb='8px' textAlign='left' fontSize='md'>
- 1. Put your endurance monster in your battle list </Text>
- <Text mb='8px' textAlign='left' fontSize='md'>
-  2. Double-check your copy-paste settings on 4theWords, if necessary</Text>
-  <Text mb='8px' textAlign='left' fontSize='md'>
-  3. Start the battle on 4theWords</Text>
-  <Text mb='8px' textAlign='left' fontSize='md'>
-  4. Start the Guided Countdown on this site</Text>
-  <Text mb='8px' textAlign='left' fontSize='md'>
-  5. Paste the word count specified when each loop's timer hits zero (no need to paste on the final loop)</Text>
-
-<Text mb='15px' mt='25px'><b>Extra Tips:</b><br></br></Text>
-	<Text mb='8px' textAlign='left' fontSize='md'>
-  - 1 HP = 1 typed or pasted word. So if you're at 75 HP, you need 25 words to regenerate to 100 HP.</Text>
- <Text mb='8px' textAlign='left' fontSize='md'>
- - If you paste too early, paste again at the end of the loop, regardless of what the HP is. This will bring you back into sync with the timer.
-   </Text>
-   <Text mb='8px' textAlign='left' fontSize='md'>
-  - If you paste too late, just bring your monster's HP back to its max HP (1 HP = 1 word). Then paste at the end 
-  of the loop as normal, regardless of what the HP is.
-  </Text>
-  <Text mb='50px' textAlign='left' fontSize='md'>
-  - If your battle refreshed to its starting base HP (known bug), reset the guided countdown while at that starting HP to sync the timer again. 
-  </Text>
-</Container>
-
-}
-
 
 {GuidedCountdownMinIsShown && ViIsShown &&
     <Container height='180px' align='center' style={{backgroundColor: '#000000'
@@ -61557,6 +61526,36 @@ Scroll down for detailed instructions and tips for use
   </Container>
   }
 
+{!Tab2IsShown &&
+  <Container align='center' mt='25px'>
+<Text fontSize='xl' mt='35px'><b>Guided Countdown Instructions</b></Text>
+	<Text mb='8px' textAlign='left' fontSize='md'>
+ 1. Put your endurance monster in your battle list </Text>
+ <Text mb='8px' textAlign='left' fontSize='md'>
+  2. Double-check your copy-paste settings on 4theWords, if necessary</Text>
+  <Text mb='8px' textAlign='left' fontSize='md'>
+  3. Start the battle on 4theWords</Text>
+  <Text mb='8px' textAlign='left' fontSize='md'>
+  4. Start the Guided Countdown on this site</Text>
+  <Text mb='8px' textAlign='left' fontSize='md'>
+  5. Paste the word count specified when each loop's timer hits zero (no need to paste on the final loop)</Text>
+
+<Text mb='15px' mt='25px'><b>Extra Tips:</b><br></br></Text>
+	<Text mb='8px' textAlign='left' fontSize='md'>
+  - 1 HP = 1 typed or pasted word. So if you're at 75 HP, you need 25 words to regenerate to 100 HP.</Text>
+ <Text mb='8px' textAlign='left' fontSize='md'>
+ - If you paste too early, paste again at the end of the loop, regardless of what the HP is. This will bring you back into sync with the timer.
+   </Text>
+   <Text mb='8px' textAlign='left' fontSize='md'>
+  - If you paste too late, just bring your monster's HP back to its max HP (1 HP = 1 word). Then paste at the end 
+  of the loop as normal, regardless of what the HP is.
+  </Text>
+  <Text mb='50px' textAlign='left' fontSize='md'>
+  - If your battle refreshed to its starting base HP (known bug), reset the guided countdown while at that starting HP to sync the timer again. 
+  </Text>
+</Container>
+}
+
 <Box height='100px'></Box>
 
 </Container>
@@ -61590,6 +61589,34 @@ Scroll down for detailed instructions and tips for use
 </Container>
 }
 
+
+{GuidedCountdownMinIsShown && VanstraIsShown &&
+    <Container height='180px' align='center' style={{backgroundColor: '#000000'
+    }} >
+            <Text pt='15px' mt='20px' mb='3px' fontSize='md'>
+          <span>Paste </span>
+          <span style={{color: '#B794F4'}}><b>{totalVanstraHPToLose} words</b></span><br/><span> every </span>
+            <span style={{color: '#B794F4'}}><b>{totalVanstraMins10}m {totalVanstraSecs10}s</b></span>
+          <br/>
+          <span> to stay at or above </span>
+            <span style={{color: '#B794F4'}}><b>{totalVanstraDownTo10} HP</b></span>
+            </Text> 
+            <HStack>
+  <Button mt='15px' mb='15px' height='50px' onClick={setGuidedCountdownActive}>Reset<br/>Battle</Button>
+            <Vanstra26 /><Vanstra28 /><Vanstra30 /><Vanstra32 /><Vanstra34 /><Vanstra36 /><Vanstra38 /><Vanstra40 /><Vanstra42 /><Vanstra44 />
+            <Vanstra46 /><Vanstra48 /><Vanstra50 /><Vanstra52 /><Vanstra54 /><Vanstra56 /><Vanstra58 /><Vanstra60 /><Vanstra62 /><Vanstra64 />
+            <Vanstra66 /><Vanstra68 /><Vanstra70 /><Vanstra72 /><Vanstra74 /><Vanstra76 /><Vanstra78 /><Vanstra80 /><Vanstra82 /><Vanstra84 />
+            <Vanstra86 /><Vanstra88 /><Vanstra90 />
+            </HStack>
+          </Container>}
+  {GuidedCountdownMinIsShown && VanstraIsShown &&
+    <Container mt='-10px' pb='50px' overflowY='scroll' height='475px' style={{backgroundColor: '#00000080'}}>
+  <VanstraTimerMin />
+  <VanstraTimerMin2 />
+  <VanstraTimerMin3 />
+  </Container>
+  }
+
 {VanstraIsShown && !Tab2IsShown &&
   <Container align='center' mt='25px'>
 <Text fontSize='xl' mt='35px' mb='8px'><b>Guided Countdown Instructions</b></Text>
@@ -61619,33 +61646,6 @@ Scroll down for detailed instructions and tips for use
   </Text>
 </Container>
 }
-
-{GuidedCountdownMinIsShown && VanstraIsShown &&
-    <Container height='180px' align='center' style={{backgroundColor: '#000000'
-    }} >
-            <Text pt='15px' mt='20px' mb='3px' fontSize='md'>
-          <span>Paste </span>
-          <span style={{color: '#B794F4'}}><b>{totalVanstraHPToLose} words</b></span><br/><span> every </span>
-            <span style={{color: '#B794F4'}}><b>{totalVanstraMins10}m {totalVanstraSecs10}s</b></span>
-          <br/>
-          <span> to stay at or above </span>
-            <span style={{color: '#B794F4'}}><b>{totalVanstraDownTo10} HP</b></span>
-            </Text> 
-            <HStack>
-  <Button mt='15px' mb='15px' height='50px' onClick={setGuidedCountdownActive}>Reset<br/>Battle</Button>
-            <Vanstra26 /><Vanstra28 /><Vanstra30 /><Vanstra32 /><Vanstra34 /><Vanstra36 /><Vanstra38 /><Vanstra40 /><Vanstra42 /><Vanstra44 />
-            <Vanstra46 /><Vanstra48 /><Vanstra50 /><Vanstra52 /><Vanstra54 /><Vanstra56 /><Vanstra58 /><Vanstra60 /><Vanstra62 /><Vanstra64 />
-            <Vanstra66 /><Vanstra68 /><Vanstra70 /><Vanstra72 /><Vanstra74 /><Vanstra76 /><Vanstra78 /><Vanstra80 /><Vanstra82 /><Vanstra84 />
-            <Vanstra86 /><Vanstra88 /><Vanstra90 />
-            </HStack>
-          </Container>}
-  {GuidedCountdownMinIsShown && VanstraIsShown &&
-    <Container mt='-10px' pb='50px' overflowY='scroll' height='475px' style={{backgroundColor: '#00000080'}}>
-  <VanstraTimerMin />
-  <VanstraTimerMin2 />
-  <VanstraTimerMin3 />
-  </Container>
-  }
 
 <Box height='100px'></Box>
 
@@ -61680,6 +61680,34 @@ Scroll down for detailed instructions and tips for use
 </Container>
 }
 
+
+{GuidedCountdownMinIsShown && VoidWignowIsShown &&
+    <Container height='180px' align='center' style={{backgroundColor: '#000000'
+    }} >
+            <Text pt='15px' mt='20px' mb='3px' fontSize='md'>
+          <span>Paste </span>
+          <span style={{color: '#B794F4'}}><b>{totalVoidWignowHPToLose} words</b></span><br/><span> every </span>
+            <span style={{color: '#B794F4'}}><b>{totalVoidWignowMins10}m {totalVoidWignowSecs10}s</b></span>
+          <br/>
+          <span> to stay at or above </span>
+            <span style={{color: '#B794F4'}}><b>{totalVoidWignowDownTo10} HP</b></span>
+            </Text>
+            <HStack>
+  <Button mt='15px' mb='15px' height='50px' onClick={setGuidedCountdownActive}>Reset<br/>Battle</Button>  
+            <VoidWignow26 /><VoidWignow28 /><VoidWignow30 /><VoidWignow32 /><VoidWignow34 /><VoidWignow36 /><VoidWignow38 /><VoidWignow40 /><VoidWignow42 /><VoidWignow44 />
+            <VoidWignow46 /><VoidWignow48 /><VoidWignow50 /><VoidWignow52 /><VoidWignow54 /><VoidWignow56 /><VoidWignow58 /><VoidWignow60 /><VoidWignow62 /><VoidWignow64 />
+            <VoidWignow66 /><VoidWignow68 /><VoidWignow70 /><VoidWignow72 /><VoidWignow74 /><VoidWignow76 /><VoidWignow78 /><VoidWignow80 /><VoidWignow82 /><VoidWignow84 />
+            <VoidWignow86 /><VoidWignow88 /><VoidWignow90 />
+            </HStack>
+          </Container>}
+  {GuidedCountdownMinIsShown && VoidWignowIsShown &&
+    <Container mt='-10px' pb='50px' overflowY='scroll' height='475px' style={{backgroundColor: '#00000080'}}>
+  <VoidWignowTimerMin />
+  <VoidWignowTimerMin2 />
+  <VoidWignowTimerMin3 />
+  </Container>
+  }
+
 {VoidWignowIsShown && !Tab2IsShown &&
   <Container align='center' mt='25px'>
 <Text fontSize='xl' mt='35px' mb='8px'><b>Guided Countdown Instructions</b></Text>
@@ -61709,33 +61737,6 @@ Scroll down for detailed instructions and tips for use
   </Text>
 </Container>
 }
-
-{GuidedCountdownMinIsShown && VoidWignowIsShown &&
-    <Container height='180px' align='center' style={{backgroundColor: '#000000'
-    }} >
-            <Text pt='15px' mt='20px' mb='3px' fontSize='md'>
-          <span>Paste </span>
-          <span style={{color: '#B794F4'}}><b>{totalVoidWignowHPToLose} words</b></span><br/><span> every </span>
-            <span style={{color: '#B794F4'}}><b>{totalVoidWignowMins10}m {totalVoidWignowSecs10}s</b></span>
-          <br/>
-          <span> to stay at or above </span>
-            <span style={{color: '#B794F4'}}><b>{totalVoidWignowDownTo10} HP</b></span>
-            </Text>
-            <HStack>
-  <Button mt='15px' mb='15px' height='50px' onClick={setGuidedCountdownActive}>Reset<br/>Battle</Button>  
-            <VoidWignow26 /><VoidWignow28 /><VoidWignow30 /><VoidWignow32 /><VoidWignow34 /><VoidWignow36 /><VoidWignow38 /><VoidWignow40 /><VoidWignow42 /><VoidWignow44 />
-            <VoidWignow46 /><VoidWignow48 /><VoidWignow50 /><VoidWignow52 /><VoidWignow54 /><VoidWignow56 /><VoidWignow58 /><VoidWignow60 /><VoidWignow62 /><VoidWignow64 />
-            <VoidWignow66 /><VoidWignow68 /><VoidWignow70 /><VoidWignow72 /><VoidWignow74 /><VoidWignow76 /><VoidWignow78 /><VoidWignow80 /><VoidWignow82 /><VoidWignow84 />
-            <VoidWignow86 /><VoidWignow88 /><VoidWignow90 />
-            </HStack>
-          </Container>}
-  {GuidedCountdownMinIsShown && VoidWignowIsShown &&
-    <Container mt='-10px' pb='50px' overflowY='scroll' height='475px' style={{backgroundColor: '#00000080'}}>
-  <VoidWignowTimerMin />
-  <VoidWignowTimerMin2 />
-  <VoidWignowTimerMin3 />
-  </Container>
-  }
 
 <Box height='100px'></Box>
 
@@ -61776,38 +61777,6 @@ Don't forget to check your copy/paste settings on 4theWords <br/>
 <Text mt='15px' fontSize='md'>
 Scroll down for detailed instructions and tips for use
 </Text>
-</Container>
-}
-
-{!Tab1IsShown &&
-  <Container align='center' mt='25px'>
-<Text fontSize='xl' mt='35px'><b>Guided Countdown Instructions</b></Text>
-	<Text mb='8px' textAlign='left' fontSize='md'>
- 1. Put your endurance monster in your battle list </Text>
- <Text mb='8px' textAlign='left' fontSize='md'>
-  2. Double-check your copy-paste settings on 4theWords, if necessary</Text>
-  <Text mb='8px' textAlign='left' fontSize='md'>
-  3. Start the battle on 4theWords</Text>
-  <Text mb='8px' textAlign='left' fontSize='md'>
-  4. Start the Guided Countdown on this site</Text>
-  <Text mb='8px' textAlign='left' fontSize='md'>
-  5. Paste the word count specified when each loop's timer hits zero (no need to paste on the final loop)</Text>
-<Text mb='8px' textAlign='left' fontSize='md'>
-  6. For getting 4x rewards: <b><i>type</i></b> at least one word when the multiplier shows x4
-</Text>
-<Text mb='15px' mt='25px'><b>Extra Tips:</b><br></br></Text>
-	<Text mb='8px' textAlign='left' fontSize='md'>
-  - 1 HP = 1 typed or pasted word. So if you're at 75 HP, you need 25 words to regenerate to 100 HP.</Text>
- <Text mb='8px' textAlign='left' fontSize='md'>
- - If you paste too early, paste again at the end of the loop, regardless of what the HP is. This will bring you back into sync with the timer.
-   </Text>
-   <Text mb='8px' textAlign='left' fontSize='md'>
-  - If you paste too late, just bring your monster's HP back to its max HP (1 HP = 1 word). Then paste at the end 
-  of the loop as normal, regardless of what the HP is.
-  </Text>
-  <Text mb='50px' textAlign='left' fontSize='md'>
-  - If your battle refreshed to its starting base HP (known bug), reset the guided countdown while at that starting HP to sync the timer again. 
-  </Text>
 </Container>
 }
 
@@ -62877,6 +62846,39 @@ Scroll down for detailed instructions and tips for use
 {GuidedCountdownIsShown && ViradiseIsShown &&
   <DelayComponentViradiseLoop4x mt='-20px' style={{position: 'absolute',}} />
 }
+
+{!Tab1IsShown &&
+  <Container align='center' mt='25px'>
+<Text fontSize='xl' mt='35px'><b>Guided Countdown Instructions</b></Text>
+	<Text mb='8px' textAlign='left' fontSize='md'>
+ 1. Put your endurance monster in your battle list </Text>
+ <Text mb='8px' textAlign='left' fontSize='md'>
+  2. Double-check your copy-paste settings on 4theWords, if necessary</Text>
+  <Text mb='8px' textAlign='left' fontSize='md'>
+  3. Start the battle on 4theWords</Text>
+  <Text mb='8px' textAlign='left' fontSize='md'>
+  4. Start the Guided Countdown on this site</Text>
+  <Text mb='8px' textAlign='left' fontSize='md'>
+  5. Paste the word count specified when each loop's timer hits zero (no need to paste on the final loop)</Text>
+<Text mb='8px' textAlign='left' fontSize='md'>
+  6. For getting 4x rewards: <b><i>type</i></b> at least one word when the multiplier shows x4
+</Text>
+<Text mb='15px' mt='25px'><b>Extra Tips:</b><br></br></Text>
+	<Text mb='8px' textAlign='left' fontSize='md'>
+  - 1 HP = 1 typed or pasted word. So if you're at 75 HP, you need 25 words to regenerate to 100 HP.</Text>
+ <Text mb='8px' textAlign='left' fontSize='md'>
+ - If you paste too early, paste again at the end of the loop, regardless of what the HP is. This will bring you back into sync with the timer.
+   </Text>
+   <Text mb='8px' textAlign='left' fontSize='md'>
+  - If you paste too late, just bring your monster's HP back to its max HP (1 HP = 1 word). Then paste at the end 
+  of the loop as normal, regardless of what the HP is.
+  </Text>
+  <Text mb='50px' textAlign='left' fontSize='md'>
+  - If your battle refreshed to its starting base HP (known bug), reset the guided countdown while at that starting HP to sync the timer again. 
+  </Text>
+</Container>
+}
+
 
 <Box height='100px'></Box>
 </Container>}
