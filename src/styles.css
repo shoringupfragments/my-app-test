@@ -1,67 +1,57 @@
-const handleDesertRegionNoneSideRegionsClick = event =>{
-  setDesertRegionNoneSideRegionsIsShown (current => false);
-  setDesertRegionNoneSideRegionsActive (current => false);
-  setAurilisIsShown (current => false);
-  setAurilisActive (current => false);
-  setDragonLairIsShown (current => false);
-  setDragonLairActive (current => false);
-};
+{(CoLIsShown || DCIsShown || World2RegionIsShown) && !FlowerSlingshotIsShown &&
+  <WrapItem>
+<Button w='100px' h='110px' pb={5} onClick={handleFlowerSlingshotClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/b/b6/FlowerSlingshot.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Flower<br/>Slingshot</Text>
+</VStack>
+  </Button>
+  </WrapItem>}
+  {(CoLIsShown || DCIsShown || World2RegionIsShown) && FlowerSlingshotIsShown &&
+  <WrapItem>
+<Button w='100px' h='110px' pb={5} onClick={handleFlowerSlingshotNoClick} style={{ backgroundColor: "#2d1b59"}}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/b/b6/FlowerSlingshot.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Flower<br/>Slingshot</Text>
+</VStack>
+  </Button>
+  </WrapItem>}
 
-const handleWaterRegionNoneSideRegionsClick = event =>{
-  setWaterRegionNoneSideRegionsIsShown (current => false);
-  setWaterRegionNoneSideRegionsActive (current => false);
-  setAurilisIsShown (current => false);
-  setAurilisActive (current => false);
-  setDragonLairIsShown (current => false);
-  setDragonLairActive (current => false);
-  setRainaIsShown (current => false);
-  setRainaActive (current => false);
-  setCloudsIsShown (current => false);
-  setCloudsActive (current => false);
-  setDawnIsShown (current => false);
-  setDawnActive (current => false);
-  setTempestIsShown (current => false);
-  setTempestActive (current => false);
-};
-
-const handleDustRegionNoneSideRegionsClick = event =>{
-  setDustRegionNoneSideRegionsIsShown (current => false);
-  setDustRegionNoneSideRegionsActive (current => false);
-  setAurilisIsShown (current => false);
-  setAurilisActive (current => false);
-  setDragonLairIsShown (current => false);
-  setDragonLairActive (current => false);
-  setRainaIsShown (current => false);
-  setRainaActive (current => false);
-  setCloudsIsShown (current => false);
-  setCloudsActive (current => false);
-  setDawnIsShown (current => false);
-  setDawnActive (current => false);
-  setTempestIsShown (current => false);
-  setTempestActive (current => false);
-  setGardenIsShown (current => false);
-  setGardenActive (current => false);
-};
-
-const handleWorld2RegionNoneSideRegionsClick = event =>{
-  setWorld2RegionNoneSideRegionsIsShown (current => false);
-  setWorld2RegionNoneSideRegionsActive (current => false);
-  setAurilisIsShown (current => false);
-  setAurilisActive (current => false);
-  setDragonLairIsShown (current => false);
-  setDragonLairActive (current => false);
-  setRainaIsShown (current => false);
-  setRainaActive (current => false);
-  setCloudsIsShown (current => false);
-  setCloudsActive (current => false);
-  setDawnIsShown (current => false);
-  setDawnActive (current => false);
-  setTempestIsShown (current => false);
-  setTempestActive (current => false);
-  setGardenIsShown (current => false);
-  setGardenActive (current => false);
-  setEarlyCoLIsShown (current => false);
-  setEarlyCoLActive (current => false);
-  setLateCoLIsShown (current => false);
-  setLateCoLActive (current => false);
-};
+  {(CoLIsShown || DCIsShown || World2RegionIsShown) && !FusionSwordIsShown &&
+  <WrapItem>
+<Button w='100px' h='110px' pb={5} onClick={handleFusionSwordClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/c/c6/FusionSword.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Fusion<br/>Sword</Text>
+</VStack>
+  </Button>
+  </WrapItem>}
+  {(CoLIsShown || DCIsShown || World2RegionIsShown) && FusionSwordIsShown &&
+  <WrapItem>
+<Button w='100px' h='110px' pb={5} onClick={handleFusionSwordNoClick} style={{ backgroundColor: "#2d1b59"}}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/c/c6/FusionSword.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Fusion<br/>Sword</Text>
+</VStack>
+  </Button>
+  </WrapItem>}
