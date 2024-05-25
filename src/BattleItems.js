@@ -22,7 +22,7 @@ import {
   WrapItem,
   AbsoluteCenter,
 } from '@chakra-ui/react';
-import { FaHourglassEnd } from 'react-icons/fa';
+import { FaBullseye, FaHourglassEnd } from 'react-icons/fa';
 
 function App() {
 
@@ -950,11 +950,614 @@ const handleStoriedHornsClick = event => {
   setStoriedHornsLuck (value => 0);
   };
 
+//companion slots//
+
+const [NoCompanionIsShown, setNoCompanionIsShown] = useState(false)
+const [NoCompanionActive, setNoCompanionActive] = useState(false)
+
+const [SuwoIsShown, setSuwoIsShown] = useState(false)
+const [SuwoActive, setSuwoActive] = useState(false)
+const [SuwoAtk, setSuwoAtk] = useState(0)
+const [SuwoDef, setSuwoDef] = useState(0)
+const [SuwoLuck, setSuwoLuck] = useState(0)
+
+const [AzadiIsShown, setAzadiIsShown] = useState(false)
+const [AzadiActive, setAzadiActive] = useState(false)
+const [AzadiAtk, setAzadiAtk] = useState(0)
+const [AzadiDef, setAzadiDef] = useState(0)
+const [AzadiLuck, setAzadiLuck] = useState(0)
+
+const [LodoIsShown, setLodoIsShown] = useState(false)
+const [LodoActive, setLodoActive] = useState(false)
+const [LodoAtk, setLodoAtk] = useState(0)
+const [LodoDef, setLodoDef] = useState(0)
+const [LodoLuck, setLodoLuck] = useState(0)
+
+const [NoanzaIsShown, setNoanzaIsShown] = useState(false)
+const [NoanzaActive, setNoanzaActive] = useState(false)
+const [NoanzaAtk, setNoanzaAtk] = useState(0)
+const [NoanzaDef, setNoanzaDef] = useState(0)
+const [NoanzaLuck, setNoanzaLuck] = useState(0)
+
+const [KaiszarIsShown, setKaiszarIsShown] = useState(false)
+const [KaiszarActive, setKaiszarActive] = useState(false)
+const [KaiszarAtk, setKaiszarAtk] = useState(0)
+const [KaiszarDef, setKaiszarDef] = useState(0)
+const [KaiszarLuck, setKaiszarLuck] = useState(0)
+
+const [LoksiIsShown, setLoksiIsShown] = useState(false)
+const [LoksiActive, setLoksiActive] = useState(false)
+const [LoksiAtk, setLoksiAtk] = useState(0)
+const [LoksiDef, setLoksiDef] = useState(0)
+const [LoksiLuck, setLoksiLuck] = useState(0)
+
+const [ThalamarisIsShown, setThalamarisIsShown] = useState(false)
+const [ThalamarisActive, setThalamarisActive] = useState(false)
+const [ThalamarisAtk, setThalamarisAtk] = useState(0)
+const [ThalamarisDef, setThalamarisDef] = useState(0)
+const [ThalamarisLuck, setThalamarisLuck] = useState(0)
+
+const [ValkosIsShown, setValkosIsShown] = useState(false)
+const [ValkosActive, setValkosActive] = useState(false)
+const [ValkosAtk, setValkosAtk] = useState(0)
+const [ValkosDef, setValkosDef] = useState(0)
+const [ValkosLuck, setValkosLuck] = useState(0)
+
+const [EenrisIsShown, setEenrisIsShown] = useState(false)
+const [EenrisActive, setEenrisActive] = useState(false)
+const [EenrisAtk, setEenrisAtk] = useState(0)
+const [EenrisDef, setEenrisDef] = useState(0)
+const [EenrisLuck, setEenrisLuck] = useState(0)
+
+const [RairaselIsShown, setRairaselIsShown] = useState(false)
+const [RairaselActive, setRairaselActive] = useState(false)
+const [RairaselAtk, setRairaselAtk] = useState(0)
+const [RairaselDef, setRairaselDef] = useState(0)
+const [RairaselLuck, setRairaselLuck] = useState(0)
+
+const [AlderbamIsShown, setAlderbamIsShown] = useState(false)
+const [AlderbamActive, setAlderbamActive] = useState(false)
+const [AlderbamAtk, setAlderbamAtk] = useState(0)
+const [AlderbamDef, setAlderbamDef] = useState(0)
+const [AlderbamLuck, setAlderbamLuck] = useState(0)
+
+const [ChysisIsShown, setChysisIsShown] = useState(false)
+const [ChysisActive, setChysisActive] = useState(false)
+const [ChysisAtk, setChysisAtk] = useState(0)
+const [ChysisDef, setChysisDef] = useState(0)
+const [ChysisLuck, setChysisLuck] = useState(0)
+
+const [MundIsShown, setMundIsShown] = useState(false)
+const [MundActive, setMundActive] = useState(false)
+const [MundAtk, setMundAtk] = useState(0)
+const [MundDef, setMundDef] = useState(0)
+const [MundLuck, setMundLuck] = useState(0)
+
+const [WhodiniIsShown, setWhodiniIsShown] = useState(false)
+const [WhodiniActive, setWhodiniActive] = useState(false)
+const [WhodiniAtk, setWhodiniAtk] = useState(0)
+const [WhodiniDef, setWhodiniDef] = useState(0)
+const [WhodiniLuck, setWhodiniLuck] = useState(0)
+
+const [AtkKaiszarIsShown, setAtkKaiszarIsShown] = useState(false)
+const [AtkKaiszarActive, setAtkKaiszarActive] = useState(false)
+const [AtkKaiszarAtk, setAtkKaiszarAtk] = useState(0)
+const [AtkKaiszarDef, setAtkKaiszarDef] = useState(0)
+const [AtkKaiszarLuck, setAtkKaiszarLuck] = useState(0)
+
+const [DefKaiszarIsShown, setDefKaiszarIsShown] = useState(false)
+const [DefKaiszarActive, setDefKaiszarActive] = useState(false)
+const [DefKaiszarAtk, setDefKaiszarAtk] = useState(0)
+const [DefKaiszarDef, setDefKaiszarDef] = useState(0)
+const [DefKaiszarLuck, setDefKaiszarLuck] = useState(0)
+
+const [LuckKaiszarIsShown, setLuckKaiszarIsShown] = useState(false)
+const [LuckKaiszarActive, setLuckKaiszarActive] = useState(false)
+const [LuckKaiszarAtk, setLuckKaiszarAtk] = useState(0)
+const [LuckKaiszarDef, setLuckKaiszarDef] = useState(0)
+const [LuckKaiszarLuck, setLuckKaiszarLuck] = useState(0)
+
+const [AtkLoksiIsShown, setAtkLoksiIsShown] = useState(false)
+const [AtkLoksiActive, setAtkLoksiActive] = useState(false)
+const [AtkLoksiAtk, setAtkLoksiAtk] = useState(0)
+const [AtkLoksiDef, setAtkLoksiDef] = useState(0)
+const [AtkLoksiLuck, setAtkLoksiLuck] = useState(0)
+
+const [DefLoksiIsShown, setDefLoksiIsShown] = useState(false)
+const [DefLoksiActive, setDefLoksiActive] = useState(false)
+const [DefLoksiAtk, setDefLoksiAtk] = useState(0)
+const [DefLoksiDef, setDefLoksiDef] = useState(0)
+const [DefLoksiLuck, setDefLoksiLuck] = useState(0)
+
+const [LuckLoksiIsShown, setLuckLoksiIsShown] = useState(false)
+const [LuckLoksiActive, setLuckLoksiActive] = useState(false)
+const [LuckLoksiAtk, setLuckLoksiAtk] = useState(0)
+const [LuckLoksiDef, setLuckLoksiDef] = useState(0)
+const [LuckLoksiLuck, setLuckLoksiLuck] = useState(0)
+
+const [AtkThalamarisIsShown, setAtkThalamarisIsShown] = useState(false)
+const [AtkThalamarisActive, setAtkThalamarisActive] = useState(false)
+const [AtkThalamarisAtk, setAtkThalamarisAtk] = useState(0)
+const [AtkThalamarisDef, setAtkThalamarisDef] = useState(0)
+const [AtkThalamarisLuck, setAtkThalamarisLuck] = useState(0)
+
+const [DefThalamarisIsShown, setDefThalamarisIsShown] = useState(false)
+const [DefThalamarisActive, setDefThalamarisActive] = useState(false)
+const [DefThalamarisAtk, setDefThalamarisAtk] = useState(0)
+const [DefThalamarisDef, setDefThalamarisDef] = useState(0)
+const [DefThalamarisLuck, setDefThalamarisLuck] = useState(0)
+
+const [LuckThalamarisIsShown, setLuckThalamarisIsShown] = useState(false)
+const [LuckThalamarisActive, setLuckThalamarisActive] = useState(false)
+const [LuckThalamarisAtk, setLuckThalamarisAtk] = useState(0)
+const [LuckThalamarisDef, setLuckThalamarisDef] = useState(0)
+const [LuckThalamarisLuck, setLuckThalamarisLuck] = useState(0)
+
+const [AtkValkosIsShown, setAtkValkosIsShown] = useState(false)
+const [AtkValkosActive, setAtkValkosActive] = useState(false)
+const [AtkValkosAtk, setAtkValkosAtk] = useState(0)
+const [AtkValkosDef, setAtkValkosDef] = useState(0)
+const [AtkValkosLuck, setAtkValkosLuck] = useState(0)
+
+const [DefValkosIsShown, setDefValkosIsShown] = useState(false)
+const [DefValkosActive, setDefValkosActive] = useState(false)
+const [DefValkosAtk, setDefValkosAtk] = useState(0)
+const [DefValkosDef, setDefValkosDef] = useState(0)
+const [DefValkosLuck, setDefValkosLuck] = useState(0)
+
+const [LuckValkosIsShown, setLuckValkosIsShown] = useState(false)
+const [LuckValkosActive, setLuckValkosActive] = useState(false)
+const [LuckValkosAtk, setLuckValkosAtk] = useState(0)
+const [LuckValkosDef, setLuckValkosDef] = useState(0)
+const [LuckValkosLuck, setLuckValkosLuck] = useState(0)
+
+const [AtkEenrisIsShown, setAtkEenrisIsShown] = useState(false)
+const [AtkEenrisActive, setAtkEenrisActive] = useState(false)
+const [AtkEenrisAtk, setAtkEenrisAtk] = useState(0)
+const [AtkEenrisDef, setAtkEenrisDef] = useState(0)
+const [AtkEenrisLuck, setAtkEenrisLuck] = useState(0)
+
+const [DefEenrisIsShown, setDefEenrisIsShown] = useState(false)
+const [DefEenrisActive, setDefEenrisActive] = useState(false)
+const [DefEenrisAtk, setDefEenrisAtk] = useState(0)
+const [DefEenrisDef, setDefEenrisDef] = useState(0)
+const [DefEenrisLuck, setDefEenrisLuck] = useState(0)
+
+const [LuckEenrisIsShown, setLuckEenrisIsShown] = useState(false)
+const [LuckEenrisActive, setLuckEenrisActive] = useState(false)
+const [LuckEenrisAtk, setLuckEenrisAtk] = useState(0)
+const [LuckEenrisDef, setLuckEenrisDef] = useState(0)
+const [LuckEenrisLuck, setLuckEenrisLuck] = useState(0)
+
+const [AtkRairaselIsShown, setAtkRairaselIsShown] = useState(false)
+const [AtkRairaselActive, setAtkRairaselActive] = useState(false)
+const [AtkRairaselAtk, setAtkRairaselAtk] = useState(0)
+const [AtkRairaselDef, setAtkRairaselDef] = useState(0)
+const [AtkRairaselLuck, setAtkRairaselLuck] = useState(0)
+
+const [DefRairaselIsShown, setDefRairaselIsShown] = useState(false)
+const [DefRairaselActive, setDefRairaselActive] = useState(false)
+const [DefRairaselAtk, setDefRairaselAtk] = useState(0)
+const [DefRairaselDef, setDefRairaselDef] = useState(0)
+const [DefRairaselLuck, setDefRairaselLuck] = useState(0)
+
+const [LuckRairaselIsShown, setLuckRairaselIsShown] = useState(false)
+const [LuckRairaselActive, setLuckRairaselActive] = useState(false)
+const [LuckRairaselAtk, setLuckRairaselAtk] = useState(0)
+const [LuckRairaselDef, setLuckRairaselDef] = useState(0)
+const [LuckRairaselLuck, setLuckRairaselLuck] = useState(0)
+
+const handleKaiszarClick = event => {
+  setKaiszarIsShown (current => !KaiszarIsShown);
+  setKaiszarActive (current => !KaiszarActive);
+  setKaiszarAtk (value => 16);
+  setKaiszarDef (value => 0);
+  setKaiszarLuck (value => 0);
+  setAtkKaiszarIsShown (current => false);
+  setAtkKaiszarActive (current => false);
+  setDefKaiszarIsShown (current => false);
+  setDefKaiszarActive (current => false);
+  setLuckKaiszarIsShown (current => false);
+  setLuckKaiszarActive (current => false);
+  };
+
+const handleAtkKaiszarClick = event => {
+  setAtkKaiszarIsShown (current => !AtkKaiszarIsShown);
+  setAtkKaiszarActive (current => !AtkKaiszarIsShown);
+  setAtkKaiszarAtk (value => 16);
+  setAtkKaiszarDef (value => 0);
+  setAtkKaiszarLuck (value => 0);
+  setKaiszarIsShown (current => true);
+  setKaiszarActive (current => true);
+  setDefKaiszarIsShown (current => false);
+  setDefKaiszarActive (current => false);
+  setLuckKaiszarIsShown (current => false);
+  setLuckKaiszarActive (current => false);
+  };
+
+const handleDefKaiszarClick = event => {
+  setDefKaiszarIsShown (current => !DefKaiszarIsShown);
+  setDefKaiszarActive (current => !DefKaiszarIsShown);
+  setDefKaiszarAtk (value => 12);
+  setDefKaiszarDef (value => 4);
+  setDefKaiszarLuck (value => 0);
+  setAtkKaiszarIsShown (current => false);
+  setAtkKaiszarActive (current => false);
+  setLuckKaiszarIsShown (current => false);
+  setLuckKaiszarActive (current => false);
+  setKaiszarIsShown (current => true);
+  setKaiszarActive (current => true);
+  };
+
+const handleLuckKaiszarClick = event => {
+  setLuckKaiszarIsShown (current => !LuckKaiszarIsShown);
+  setLuckKaiszarActive (current => !LuckKaiszarIsShown);
+  setLuckKaiszarAtk (value => 12);
+  setLuckKaiszarDef (value => 0);
+  setLuckKaiszarLuck (value => 4);
+  setAtkKaiszarIsShown (current => false);
+  setAtkKaiszarActive (current => false);
+  setDefKaiszarIsShown (current => false);
+  setDefKaiszarActive (current => false);
+  setKaiszarIsShown (current => true);
+  setKaiszarActive (current => true);
+  };
+
+const handleLoksiClick = event => {
+  setLoksiIsShown (current => !LoksiIsShown);
+  setLoksiActive (current => !LoksiActive);
+  setLoksiAtk (value => 0);
+  setLoksiDef (value => 12);
+  setLoksiLuck (value => 0);
+  setAtkLoksiIsShown (current => false);
+  setAtkLoksiActive (current => false);
+  setDefLoksiIsShown (current => false);
+  setDefLoksiActive (current => false);
+  setLuckLoksiIsShown (current => false);
+  setLuckLoksiActive (current => false);
+  };
+
+const handleAtkLoksiClick = event => {
+  setAtkLoksiIsShown (current => !AtkLoksiIsShown);
+  setAtkLoksiActive (current => !AtkLoksiIsShown);
+  setAtkLoksiAtk (value => 4);
+  setAtkLoksiDef (value => 12);
+  setAtkLoksiLuck (value => 0);
+  setLoksiIsShown (current => true);
+  setLoksiActive (current => true);
+  setDefLoksiIsShown (current => false);
+  setDefLoksiActive (current => false);
+  setLuckLoksiIsShown (current => false);
+  setLuckLoksiActive (current => false);
+  };
+
+const handleDefLoksiClick = event => {
+  setDefLoksiIsShown (current => !DefLoksiIsShown);
+  setDefLoksiActive (current => !DefLoksiIsShown);
+  setDefLoksiAtk (value => 0);
+  setDefLoksiDef (value => 16);
+  setDefLoksiLuck (value => 0);
+  setAtkLoksiIsShown (current => false);
+  setAtkLoksiActive (current => false);
+  setLuckLoksiIsShown (current => false);
+  setLuckLoksiActive (current => false);
+  setLoksiIsShown (current => true);
+  setLoksiActive (current => true);
+  };
+
+const handleLuckLoksiClick = event => {
+  setLuckLoksiIsShown (current => !LuckLoksiIsShown);
+  setLuckLoksiActive (current => !LuckLoksiIsShown);
+  setLuckLoksiAtk (value => 0);
+  setLuckLoksiDef (value => 12);
+  setLuckLoksiLuck (value => 4);
+  setAtkLoksiIsShown (current => false);
+  setAtkLoksiActive (current => false);
+  setDefLoksiIsShown (current => false);
+  setDefLoksiActive (current => false);
+  setLoksiIsShown (current => true);
+  setLoksiActive (current => true);
+  };
+
+const handleThalamarisClick = event => {
+  setThalamarisIsShown (current => !ThalamarisIsShown);
+  setThalamarisActive (current => !ThalamarisActive);
+  setThalamarisAtk (value => 0);
+  setThalamarisDef (value => 0);
+  setThalamarisLuck (value => 12);
+  setAtkThalamarisIsShown (current => false);
+  setAtkThalamarisActive (current => false);
+  setDefThalamarisIsShown (current => false);
+  setDefThalamarisActive (current => false);
+  setLuckThalamarisIsShown (current => false);
+  setLuckThalamarisActive (current => false);
+  };
+
+const handleAtkThalamarisClick = event => {
+  setAtkThalamarisIsShown (current => !AtkThalamarisIsShown);
+  setAtkThalamarisActive (current => !AtkThalamarisIsShown);
+  setAtkThalamarisAtk (value => 4);
+  setAtkThalamarisDef (value => 0);
+  setAtkThalamarisLuck (value => 12);
+  setThalamarisIsShown (current => true);
+  setThalamarisActive (current => true);
+  setDefThalamarisIsShown (current => false);
+  setDefThalamarisActive (current => false);
+  setLuckThalamarisIsShown (current => false);
+  setLuckThalamarisActive (current => false);
+  };
+
+const handleDefThalamarisClick = event => {
+  setDefThalamarisIsShown (current => !DefThalamarisIsShown);
+  setDefThalamarisActive (current => !DefThalamarisIsShown);
+  setDefThalamarisAtk (value => 0);
+  setDefThalamarisDef (value => 4);
+  setDefThalamarisLuck (value => 12);
+  setAtkThalamarisIsShown (current => false);
+  setAtkThalamarisActive (current => false);
+  setLuckThalamarisIsShown (current => false);
+  setLuckThalamarisActive (current => false);
+  setThalamarisIsShown (current => true);
+  setThalamarisActive (current => true);
+  };
+
+const handleLuckThalamarisClick = event => {
+  setLuckThalamarisIsShown (current => !LuckThalamarisIsShown);
+  setLuckThalamarisActive (current => !LuckThalamarisIsShown);
+  setLuckThalamarisAtk (value => 0);
+  setLuckThalamarisDef (value => 0);
+  setLuckThalamarisLuck (value => 16);
+  setAtkThalamarisIsShown (current => false);
+  setAtkThalamarisActive (current => false);
+  setDefThalamarisIsShown (current => false);
+  setDefThalamarisActive (current => false);
+  setThalamarisIsShown (current => true);
+  setThalamarisActive (current => true);
+  };
+
+const handleValkosClick = event => {
+  setValkosIsShown (current => !ValkosIsShown);
+  setValkosActive (current => !ValkosActive);
+  setValkosAtk (value => 4);
+  setValkosDef (value => 4);
+  setValkosLuck (value => 4);
+  setAtkValkosIsShown (current => false);
+  setAtkValkosActive (current => false);
+  setDefValkosIsShown (current => false);
+  setDefValkosActive (current => false);
+  setLuckValkosIsShown (current => false);
+  setLuckValkosActive (current => false);
+  };
+
+const handleAtkValkosClick = event => {
+  setAtkValkosIsShown (current => !AtkValkosIsShown);
+  setAtkValkosActive (current => !AtkValkosIsShown);
+  setAtkValkosAtk (value => 8);
+  setAtkValkosDef (value => 4);
+  setAtkValkosLuck (value => 4);
+  setValkosIsShown (current => true);
+  setValkosActive (current => true);
+  setDefValkosIsShown (current => false);
+  setDefValkosActive (current => false);
+  setLuckValkosIsShown (current => false);
+  setLuckValkosActive (current => false);
+  };
+
+const handleDefValkosClick = event => {
+  setDefValkosIsShown (current => !DefValkosIsShown);
+  setDefValkosActive (current => !DefValkosIsShown);
+  setDefValkosAtk (value => 4);
+  setDefValkosDef (value => 8);
+  setDefValkosLuck (value => 4);
+  setAtkValkosIsShown (current => false);
+  setAtkValkosActive (current => false);
+  setLuckValkosIsShown (current => false);
+  setLuckValkosActive (current => false);
+  setValkosIsShown (current => true);
+  setValkosActive (current => true);
+  };
+
+const handleLuckValkosClick = event => {
+  setLuckValkosIsShown (current => !LuckValkosIsShown);
+  setLuckValkosActive (current => !LuckValkosIsShown);
+  setLuckValkosAtk (value => 4);
+  setLuckValkosDef (value => 4);
+  setLuckValkosLuck (value => 8);
+  setAtkValkosIsShown (current => false);
+  setAtkValkosActive (current => false);
+  setDefValkosIsShown (current => false);
+  setDefValkosActive (current => false);
+  setValkosIsShown (current => true);
+  setValkosActive (current => true);
+  };
+
+const handleEenrisClick = event => {
+  setEenrisIsShown (current => !EenrisIsShown);
+  setEenrisActive (current => !EenrisActive);
+  setEenrisAtk (value => 3);
+  setEenrisDef (value => 6);
+  setEenrisLuck (value => 9);
+  setAtkEenrisIsShown (current => false);
+  setAtkEenrisActive (current => false);
+  setDefEenrisIsShown (current => false);
+  setDefEenrisActive (current => false);
+  setLuckEenrisIsShown (current => false);
+  setLuckEenrisActive (current => false);
+  };
+
+const handleAtkEenrisClick = event => {
+  setAtkEenrisIsShown (current => !AtkEenrisIsShown);
+  setAtkEenrisActive (current => !AtkEenrisIsShown);
+  setAtkEenrisAtk (value => 7);
+  setAtkEenrisDef (value => 6);
+  setAtkEenrisLuck (value => 9);
+  setEenrisIsShown (current => true);
+  setEenrisActive (current => true);
+  setDefEenrisIsShown (current => false);
+  setDefEenrisActive (current => false);
+  setLuckEenrisIsShown (current => false);
+  setLuckEenrisActive (current => false);
+  };
+
+const handleDefEenrisClick = event => {
+  setDefEenrisIsShown (current => !DefEenrisIsShown);
+  setDefEenrisActive (current => !DefEenrisIsShown);
+  setDefEenrisAtk (value => 3);
+  setDefEenrisDef (value => 10);
+  setDefEenrisLuck (value => 3);
+  setAtkEenrisIsShown (current => false);
+  setAtkEenrisActive (current => false);
+  setLuckEenrisIsShown (current => false);
+  setLuckEenrisActive (current => false);
+  setEenrisIsShown (current => true);
+  setEenrisActive (current => true);
+  };
+
+const handleLuckEenrisClick = event => {
+  setLuckEenrisIsShown (current => !LuckEenrisIsShown);
+  setLuckEenrisActive (current => !LuckEenrisIsShown);
+  setLuckEenrisAtk (value => 3);
+  setLuckEenrisDef (value => 6);
+  setLuckEenrisLuck (value => 7);
+  setAtkEenrisIsShown (current => false);
+  setAtkEenrisActive (current => false);
+  setDefEenrisIsShown (current => false);
+  setDefEenrisActive (current => false);
+  setEenrisIsShown (current => true);
+  setEenrisActive (current => true);
+  };
+
+const handleRairaselClick = event => {
+  setRairaselIsShown (current => !RairaselIsShown);
+  setRairaselActive (current => !RairaselActive);
+  setRairaselAtk (value => 6);
+  setRairaselDef (value => 0);
+  setRairaselLuck (value => 6);
+  setAtkRairaselIsShown (current => false);
+  setAtkRairaselActive (current => false);
+  setDefRairaselIsShown (current => false);
+  setDefRairaselActive (current => false);
+  setLuckRairaselIsShown (current => false);
+  setLuckRairaselActive (current => false);
+  };
+
+const handleAtkRairaselClick = event => {
+  setAtkRairaselIsShown (current => !AtkRairaselIsShown);
+  setAtkRairaselActive (current => !AtkRairaselIsShown);
+  setAtkRairaselAtk (value => 10);
+  setAtkRairaselDef (value => 0);
+  setAtkRairaselLuck (value => 6);
+  setRairaselIsShown (current => true);
+  setRairaselActive (current => true);
+  setDefRairaselIsShown (current => false);
+  setDefRairaselActive (current => false);
+  setLuckRairaselIsShown (current => false);
+  setLuckRairaselActive (current => false);
+  };
+
+const handleDefRairaselClick = event => {
+  setDefRairaselIsShown (current => !DefRairaselIsShown);
+  setDefRairaselActive (current => !DefRairaselIsShown);
+  setDefRairaselAtk (value => 6);
+  setDefRairaselDef (value => 4);
+  setDefRairaselLuck (value => 6);
+  setAtkRairaselIsShown (current => false);
+  setAtkRairaselActive (current => false);
+  setLuckRairaselIsShown (current => false);
+  setLuckRairaselActive (current => false);
+  setRairaselIsShown (current => true);
+  setRairaselActive (current => true);
+  };
+
+const handleLuckRairaselClick = event => {
+  setLuckRairaselIsShown (current => !LuckRairaselIsShown);
+  setLuckRairaselActive (current => !LuckRairaselIsShown);
+  setLuckRairaselAtk (value => 6);
+  setLuckRairaselDef (value => 0);
+  setLuckRairaselLuck (value => 10);
+  setAtkRairaselIsShown (current => false);
+  setAtkRairaselActive (current => false);
+  setDefRairaselIsShown (current => false);
+  setDefRairaselActive (current => false);
+  setRairaselIsShown (current => true);
+  setRairaselActive (current => true);
+  };
+
+  const handleSuwoClick = event => {
+  setSuwoIsShown (current => !SuwoIsShown);
+  setSuwoActive (current => !SuwoActive);
+  setSuwoAtk (value => 3);
+  setSuwoDef (value => 7);
+  setSuwoLuck (value => 2);
+  };
+
+const handleAzadiClick = event => {
+  setAzadiIsShown (current => !AzadiIsShown);
+  setAzadiActive (current => !AzadiActive);
+  setAzadiAtk (value => 5);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 10);
+  };
+
+const handleLodoClick = event => {
+  setLodoIsShown (current => !LodoIsShown);
+  setLodoActive (current => !LodoActive);
+  setLodoAtk (value => 12);
+  setLodoDef (value => 2);
+  setLodoLuck (value => 0);
+  };
+
+const handleNoanzaClick = event => {
+  setNoanzaIsShown (current => !NoanzaIsShown);
+  setNoanzaActive (current => !NoanzaActive);
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 14);
+  setNoanzaLuck (value => 6);
+  };
+
+const handleAlderbamClick = event => {
+  setAlderbamIsShown (current => !AlderbamIsShown);
+  setAlderbamActive (current => !AlderbamActive);
+  setAlderbamAtk (value => 0);
+  setAlderbamDef (value => 0);
+  setAlderbamLuck (value => 12);
+  };
+
+const handleChysisClick = event => {
+  setChysisIsShown (current => !ChysisIsShown);
+  setChysisActive (current => !ChysisActive);
+  setChysisAtk (value => 12);
+  setChysisDef (value => 0);
+  setChysisLuck (value => 0);
+  };
+
+const handleMundClick = event => {
+  setMundIsShown (current => !MundIsShown);
+  setMundActive (current => !MundActive);
+  setMundAtk (value => 4);
+  setMundDef (value => 4);
+  setMundLuck (value => 4);
+  };
+
+const handleWhodiniClick = event => {
+  setWhodiniIsShown (current => !WhodiniIsShown);
+  setWhodiniActive (current => !WhodiniActive);
+  setWhodiniAtk (value => 0);
+  setWhodiniDef (value => 12);
+  setWhodiniLuck (value => 0);
+  };
+
 //Weapon1 battle items//
 
-const [NoWeapon1, setNoWeapon1] = useState(0)
 const [NoWeapon1IsShown, setNoWeapon1IsShown] = useState(false)
 const [NoWeapon1Active, setNoWeapon1Active] = useState(false)
+
+const [MonsterIsShown, setMonsterIsShown] = useState(false)
+const [MonsterActive, setMonsterActive] = useState(false)
+const [MonsterAtk, setMonsterAtk] = useState(0)
+const [MonsterDef, setMonsterDef] = useState(0)
+const [MonsterLuck, setMonsterLuck] = useState(0)
+
 
 //Weapon2 battle items//
 
@@ -1707,18 +2310,18 @@ const totalNivaliDef = Math.max (MountainMaceDef + NivaliBreastplateDef, 0)
     </h2>
     <AccordionPanel pb={4}>
       <Box h='400px' overflowY='scroll'>
-          <Text fontSize='md' mt='25px' mb='15px'><b>Companions:</b></Text>
+          <Text fontSize='md' mt='25px' mb='15px'><b>Main Quest Companions:</b></Text>
                 <Wrap>
             {(DCIsShown || World2RegionIsShown) &&
                 <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleForestRegionClick} style={{ backgroundColor: ForestRegionActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='100px' h='110px' pb={5} onClick={handleNoanzaClick} style={{ backgroundColor: NoanzaActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
         align='center' 
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/7/73/Winter_Cordu_Cutout.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png/'
         mr='5px'
       /> <Text fontSize='sm' align='center'>Noanza</Text>
       </VStack>
@@ -1726,14 +2329,14 @@ const totalNivaliDef = Math.max (MountainMaceDef + NivaliBreastplateDef, 0)
             </WrapItem>}
 {(FloatingCityIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && 
             <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleForestRegionClick} style={{ backgroundColor: ForestRegionActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='100px' h='110px' pb={5} onClick={handleLodoClick} style={{ backgroundColor: LodoActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
         align='center' 
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/7/73/Winter_Cordu_Cutout.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e6/Lodo.png/'
         mr='5px'
       /> <Text fontSize='sm' align='center'>Lodo</Text>
       </VStack>
@@ -1741,41 +2344,480 @@ const totalNivaliDef = Math.max (MountainMaceDef + NivaliBreastplateDef, 0)
             </WrapItem>}
 {(ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) &&
             <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleForestRegionClick} style={{ backgroundColor: ForestRegionActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='100px' h='110px' pb={5} onClick={handleAzadiClick} style={{ backgroundColor: AzadiActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
         align='center' 
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/7/73/Winter_Cordu_Cutout.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png/'
         mr='5px'
       /> <Text fontSize='sm' align='center'>Azadi</Text>
       </VStack>
             </Button>
             </WrapItem>
 }
-{MamaTreeIsShown && 
+{(MamaTreeIsShown || ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && 
             <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleForestRegionClick} style={{ backgroundColor: ForestRegionActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='100px' h='110px' pb={5} onClick={handleSuwoClick} style={{ backgroundColor: SuwoActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
         align='center' 
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/7/73/Winter_Cordu_Cutout.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
         mr='5px'
       /> <Text fontSize='sm' align='center'>Suwo</Text>
       </VStack>
             </Button>
             </WrapItem>
           }
+      </Wrap>
+{DragonLairIsShown &&
+          <Text fontSize='md' mt='25px' mb='15px'><b>Dragon Companions:</b></Text>
+
+}
+{DragonLairIsShown &&
+           <Wrap>
+           <WrapItem>
+            <Button w='315px' h='110px' pb={5} onClick={handleKaiszarClick} style={{ backgroundColor: KaiszarActive ? "#2d1b59" : "#2D3748" }}>
+       <HStack> 
+       <Image
+       ml='-15px'
+        mt='12px'
+        align='center' 
+        boxSize='6rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/fa/Kaiszar.png/'
+        mr='5px'
+      /> 
+      <VStack>
+      <Text fontSize='md' mt='15px' align='center'><b>Kaiszar</b></Text>
+      <Text fontSize='sm' align='center'>+12 Atk / +0 Def / +0 Luck </Text>
+      </VStack>
+      </HStack>
+            </Button>
+            </WrapItem>
+            <WrapItem>
+            <Button w='100px' h='110px' pb={5} onClick={handleAtkKaiszarClick} style={{ backgroundColor: AtkKaiszarActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Kaiszar:<br/>Attack Boost</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+           <WrapItem>
+            <Button w='100px' h='110px' pb={5} onClick={handleDefKaiszarClick} style={{ backgroundColor: DefKaiszarActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Kaiszar:<br/>Defense Boost</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+           <WrapItem>
+            <Button w='100px' h='110px' pb={5} onClick={handleLuckKaiszarClick} style={{ backgroundColor: LuckKaiszarActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Kaiszar:<br/>Luck Boost</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+           <WrapItem>
+            <Button w='315px' h='110px' pb={5} onClick={handleLoksiClick} style={{ backgroundColor: LoksiActive ? "#2d1b59" : "#2D3748" }}>
+            <HStack> 
+       <Image
+       ml='-15px'
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/75/Loksi.png'
+        mr='5px'
+      /> 
+      <VStack>
+      <Text fontSize='md' mt='15px' align='center'><b>Loksi</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk / +12 Def / +0 Luck </Text>
+      </VStack>
+      </HStack>
+            </Button>
+            </WrapItem>
+            <WrapItem>
+            <Button w='100px' h='110px' pb={5} onClick={handleAtkLoksiClick} style={{ backgroundColor: AtkLoksiActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Loksi:<br/>Attack Boost</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+           <WrapItem>
+            <Button w='100px' h='110px' pb={5} onClick={handleDefLoksiClick} style={{ backgroundColor: DefLoksiActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Loksi:<br/>Defense Boost</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+           <WrapItem>
+            <Button w='100px' h='110px' pb={5} onClick={handleLuckLoksiClick} style={{ backgroundColor: LuckLoksiActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Loksi:<br/>Luck Boost</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+           <WrapItem>
+            <Button w='315px' h='110px' pb={5} onClick={handleThalamarisClick} style={{ backgroundColor: ThalamarisActive ? "#2d1b59" : "#2D3748" }}>
+            <HStack> 
+       <Image
+       ml='-15px'
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/4a/Thalamaris.png/'
+        mr='5px'
+      /> 
+      <VStack>
+      <Text fontSize='md' mt='15px' align='center'><b>Thalamaris</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk / +0 Def / +12 Luck </Text>
+      </VStack>
+      </HStack>
+
+            </Button>
+            </WrapItem>
+            <WrapItem>
+            <Button w='100px' h='110px' pb={5} onClick={handleAtkThalamarisClick} style={{ backgroundColor: AtkThalamarisActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Thalamaris:<br/>Attack Boost</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+           <WrapItem>
+            <Button w='100px' h='110px' pb={5} onClick={handleDefThalamarisClick} style={{ backgroundColor: DefThalamarisActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Thalamaris:<br/>Defense Boost</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+           <WrapItem>
+            <Button w='100px' h='110px' pb={5} onClick={handleLuckThalamarisClick} style={{ backgroundColor: LuckThalamarisActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Thalamaris:<br/>Luck Boost</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+           <WrapItem>
+            <Button w='315px' h='110px' pb={5} onClick={handleValkosClick} style={{ backgroundColor: ValkosActive ? "#2d1b59" : "#2D3748" }}>
+            <HStack> 
+       <Image
+       ml='-15px'
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/63/Valkos.png'
+        mr='5px'
+      /> 
+      <VStack>
+      <Text fontSize='md' mt='15px' align='center'><b>Valkos</b></Text>
+      <Text fontSize='sm' align='center'>+4 Atk / +4 Def / +4 Luck </Text>
+      </VStack>
+      </HStack>
+            </Button>
+            </WrapItem>
+            <WrapItem>
+            <Button w='100px' h='110px' pb={5} onClick={handleAtkValkosClick} style={{ backgroundColor: AtkValkosActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Valkos:<br/>Attack Boost</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+           <WrapItem>
+            <Button w='100px' h='110px' pb={5} onClick={handleDefValkosClick} style={{ backgroundColor: DefValkosActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Valkos:<br/>Defense Boost</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+           <WrapItem>
+            <Button w='100px' h='110px' pb={5} onClick={handleLuckValkosClick} style={{ backgroundColor: LuckValkosActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Valkos:<br/>Luck Boost</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+            <WrapItem>
+            <Button w='315px' h='110px' pb={5} onClick={handleEenrisClick} style={{ backgroundColor: EenrisActive ? "#2d1b59" : "#2D3748" }}>
+            <HStack> 
+       <Image
+       ml='-15px'
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1d/Eenris.png/'
+        mr='5px'
+      /> 
+      <VStack>
+      <Text fontSize='md' mt='15px' align='center'><b>Eenris</b></Text>
+      <Text fontSize='sm' align='center'>+3 Atk / +6 Def / +3 Luck </Text>
+      </VStack>
+      </HStack>
+
+            </Button>
+            </WrapItem>
+            <WrapItem>
+            <Button w='100px' h='110px' pb={5} onClick={handleAtkEenrisClick} style={{ backgroundColor: AtkEenrisActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Eenris:<br/>Attack Boost</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+           <WrapItem>
+            <Button w='100px' h='110px' pb={5} onClick={handleDefEenrisClick} style={{ backgroundColor: DefEenrisActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Eenris:<br/>Defense Boost</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+           <WrapItem>
+            <Button w='100px' h='110px' pb={5} onClick={handleLuckEenrisClick} style={{ backgroundColor: LuckEenrisActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Eenris:<br/>Luck Boost</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+            <WrapItem>
+            <Button w='315px' h='110px' pb={5} onClick={handleRairaselClick} style={{ backgroundColor: RairaselActive ? "#2d1b59" : "#2D3748" }}>
+            <HStack> 
+       <Image
+       ml='-15px'
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/fc/Rairasel.png/'
+        mr='5px'
+      /> 
+      <VStack>
+      <Text fontSize='md' mt='15px' align='center'><b>Rairasel</b></Text>
+      <Text fontSize='sm' align='center'>+6 Atk / +0 Def / +6 Luck </Text>
+      </VStack>
+      </HStack>
+
+            </Button>
+            </WrapItem>
+            <WrapItem>
+            <Button w='100px' h='110px' pb={5} onClick={handleAtkRairaselClick} style={{ backgroundColor: AtkRairaselActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Rairasel:<br/>Attack Boost</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+           <WrapItem>
+            <Button w='100px' h='110px' pb={5} onClick={handleDefRairaselClick} style={{ backgroundColor: DefRairaselActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Rairasel:<br/>Defense Boost</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+           <WrapItem>
+            <Button w='100px' h='110px' pb={5} onClick={handleLuckRairaselClick} style={{ backgroundColor: LuckRairaselActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Rairasel:<br/>Luck Boost</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+            </Wrap>
+}
+
+{AurilisIsShown &&
+<Text fontSize='md' mt='25px' mb='15px'><b>Aurilis Companions:</b></Text>
+}
+
+{AurilisIsShown &&
+                <Wrap>
+                <WrapItem>
+            <Button w='100px' h='110px' pb={5} onClick={handleAlderbamClick} style={{ backgroundColor: AlderbamActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/95/Alderbam.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Alderbam</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+            <WrapItem>
+            <Button w='100px' h='110px' pb={5} onClick={handleChysisClick} style={{ backgroundColor: ChysisActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/97/Chysis.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Chysis</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+            <WrapItem>
+            <Button w='100px' h='110px' pb={5} onClick={handleMundClick} style={{ backgroundColor: MundActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e3/Mund.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Mund</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+            <WrapItem>
+            <Button w='100px' h='110px' pb={5} onClick={handleWhodiniClick} style={{ backgroundColor: WhodiniActive ? "#2d1b59" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/d5/Whodini.png/'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Whodini</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+            </Wrap>}
 
 
-
-
-        </Wrap>
       </Box>
     </AccordionPanel>
   </AccordionItem>
