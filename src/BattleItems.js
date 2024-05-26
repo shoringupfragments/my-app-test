@@ -6241,7 +6241,7 @@ const TopAttackCompanion12 = () => {
 
   return (
       <Box textAlign="center" fontSize="xl">
-        <Grid minH="100vh" minW='100vh'>
+        <Grid minH="100vh" maxW='100%'>
         <Container align='center'>
             <Heading mt='-50px'>Battle Items Planner</Heading>
             <Text mt='15px'>This page shows the best builds for each battle stat, specific to your progress in the game. You can see builds possible for your region of the game or specific to the battle items you currently have.</Text>
@@ -7428,7 +7428,7 @@ mr='5px'
    </WrapItem>}
 
    <WrapItem>
-   {!AtkThalamarisIsShown && !DefThalamarisIsShown && !LuckThalamarisIsShown &&
+   {!ThalamarisIsShown && !AtkThalamarisIsShown && !DefThalamarisIsShown && !LuckThalamarisIsShown &&
      <Button w='315px' h='110px' pb={5} onClick={handleThalamarisClick} style={{ backgroundColor: "#2D3748" }}>  
 <HStack> 
 <Image
@@ -7445,7 +7445,25 @@ mr='5px'
 </VStack>
 </HStack>
 </Button>}
-<Button w='315px' h='110px' pb={5} onClick={handleThalamarisNoClick} style={{ backgroundColor: "#2d1b59" }}>  
+
+{ThalamarisIsShown &&
+<Button w='315px' h='110px' pb={5} onClick={handleThalamarisNoClick} style={{ backgroundColor: "#2d1b59" }}> 
+{!AtkThalamarisIsShown && !DefThalamarisIsShown && !LuckThalamarisIsShown &&
+<HStack> 
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='6rem'
+src='https://static.wikia.nocookie.net/4thewords/images/4/4a/Thalamaris.png/'
+mr='5px'
+/> 
+<VStack>
+  <Text fontSize='md' mt='15px' align='center'><b>Thalamaris</b></Text>
+  <Text fontSize='sm' align='center'>+0 Atk / +0 Def / +12 Luck </Text>
+</VStack>
+</HStack>}
+
 {AtkThalamarisIsShown && !DefThalamarisIsShown && !LuckThalamarisIsShown &&
 <HStack> 
 <Image
@@ -7491,30 +7509,9 @@ mr='5px'
 <Text fontSize='sm' align='center'>+0 Atk / +0 Def / +16 Luck </Text>
 </VStack>
 </HStack>}
-   </Button>
+   </Button>}
    </WrapItem>
 
- 
-
-{ThalamarisIsShown && !AtkLoksiIsShown && !DefLoksiIsShown && !LuckLoksiIsShown &&
-  <WrapItem>
-   <Button w='315px' h='110px' pb={5} onClick={handleThalamarisNoClick} style={{ backgroundColor: "#2d1b59"}}>
-<HStack> 
-<Image
-ml='-15px'
-mt='12px'
-align='center' 
-boxSize='6rem'
-src='https://static.wikia.nocookie.net/4thewords/images/4/4a/Thalamaris.png/'
-mr='5px'
-/> 
-<VStack>
-  <Text fontSize='md' mt='15px' align='center'><b>Thalamaris</b></Text>
-  <Text fontSize='sm' align='center'>+0 Atk / +0 Def / +12 Luck </Text>
-</VStack>
-</HStack>
-   </Button>
-   </WrapItem>}
 
 {!AtkThalamarisIsShown &&
    <WrapItem>
@@ -7605,6 +7602,7 @@ mr='5px'
 </VStack>
    </Button>
    </WrapItem>}
+   
    {!ValkosIsShown &&
   <WrapItem>
    <Button w='315px' h='110px' pb={5} onClick={handleValkosClick} style={{ backgroundColor: "#2D3748" }}>
@@ -7975,7 +7973,7 @@ mr='5px'
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='6rem'
+boxSize='5rem'
 src='https://static.wikia.nocookie.net/4thewords/images/f/fc/Rairasel.png/'
 mr='5px'
 /> 
