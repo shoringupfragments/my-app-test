@@ -6270,34 +6270,34 @@ const TopAttackCompanion12 = () => {
     <AccordionPanel pb={4}>
       <Box h='400px' overflowY='scroll'>
           <Text fontSize='md' mt='25px' mb='15px'><b>Your furthest main region:</b></Text>
-                <Wrap>
+                <Wrap justify='center'>
             <WrapItem>
-            <Button w='100px' h='60px' pb={5} onClick={handleForestRegionClick} style={{ backgroundColor: ForestRegionActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='60px' pb={5} onClick={handleForestRegionClick} style={{ backgroundColor: ForestRegionActive ? "#2d1b59" : "#2D3748" }}>
           <Text fontSize='md' align='center' pt='18px'>Forest<br/>Region</Text>
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='100px' h='60px' pb={5} onClick={handleDesertRegionClick} style={{ backgroundColor: DesertRegionActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='60px' pb={5} onClick={handleDesertRegionClick} style={{ backgroundColor: DesertRegionActive ? "#2d1b59" : "#2D3748" }}>
         <Text fontSize='md' align='center' pt='18px'>Desert<br/>Region</Text>
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='100px' h='60px' pb={5} onClick={handleWaterRegionClick} style={{ backgroundColor: WaterRegionActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='60px' pb={5} onClick={handleWaterRegionClick} style={{ backgroundColor: WaterRegionActive ? "#2d1b59" : "#2D3748" }}>
         <Text fontSize='md' align='center' pt='18px'>Water<br/>Region</Text>
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='100px' h='60px' pb={5} onClick={handleDustRegionClick} style={{ backgroundColor: DustRegionActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='60px' pb={5} onClick={handleDustRegionClick} style={{ backgroundColor: DustRegionActive ? "#2d1b59" : "#2D3748" }}>
         <Text fontSize='md' align='center' pt='18px'>Dust<br/>Region</Text>
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='100px' h='60px' pb={5} onClick={handleLightRegionClick} style={{ backgroundColor: LightRegionActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='60px' pb={5} onClick={handleLightRegionClick} style={{ backgroundColor: LightRegionActive ? "#2d1b59" : "#2D3748" }}>
         <Text fontSize='md' align='center' pt='18px'>Light<br/>Region</Text>
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='100px' h='60px' pb={5} onClick={handleWorld2RegionClick} style={{ backgroundColor: World2RegionActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='60px' pb={5} onClick={handleWorld2RegionClick} style={{ backgroundColor: World2RegionActive ? "#2d1b59" : "#2D3748" }}>
         <Text fontSize='md' align='center' pt='18px'>World 2</Text>
             </Button>
             </WrapItem>
@@ -6308,9 +6308,9 @@ const TopAttackCompanion12 = () => {
           <Text fontSize='md' mt='25px' mb='15px'><b>Your furthest main location:</b></Text>
           }
 {ForestRegionIsShown &&
-          <Wrap>
+          <Wrap justify='center'>
           <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleLuciolaForestClick} style={{ backgroundColor: LuciolaForestActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleLuciolaForestClick} style={{ backgroundColor: LuciolaForestActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6318,13 +6318,12 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/2/2a/Medalluciola_sm.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Luciola Forest</Text>
       </VStack>
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleMamaTreeClick} style={{ backgroundColor: MamaTreeActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleMamaTreeClick} style={{ backgroundColor: MamaTreeActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6332,7 +6331,6 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/8/8d/Medalmamatree_sm.png'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Mama Tree</Text>
       </VStack>
             </Button>
@@ -6343,9 +6341,9 @@ const TopAttackCompanion12 = () => {
           <Text fontSize='md' mt='25px' mb='15px'><b>Your furthest main location:</b></Text>
         }
 {WaterRegionIsShown &&
-          <Wrap>
+          <Wrap justify='center'>
             <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleRizaRivertownClick} style={{ backgroundColor: RizaRivertownActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleRizaRivertownClick} style={{ backgroundColor: RizaRivertownActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6353,13 +6351,12 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/c/cb/Medalrisa_md.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Riza<br/>Rivertown</Text>
       </VStack>
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleFloatingCityClick} style={{ backgroundColor: FloatingCityActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleFloatingCityClick} style={{ backgroundColor: FloatingCityActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6367,7 +6364,6 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/b/b5/Medalbalance_md.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Floating City<br />of Balance</Text>
       </VStack>
             </Button>
@@ -6378,9 +6374,9 @@ const TopAttackCompanion12 = () => {
           <Text fontSize='md' mt='25px' mb='15px'><b>Your furthest main location:</b></Text>
         }
 {LightRegionIsShown &&
-          <Wrap>
+          <Wrap justify='center'>
             <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleEarlyCoLClick} style={{ backgroundColor: EarlyCoLActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleEarlyCoLClick} style={{ backgroundColor: EarlyCoLActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6388,13 +6384,12 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/9/98/CityOfLightIcon.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Early CoL</Text>
       </VStack>
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleLateCoLClick} style={{ backgroundColor: LateCoLActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleLateCoLClick} style={{ backgroundColor: LateCoLActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6402,13 +6397,12 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/3/31/You_want_what.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Mid-CoL</Text>
       </VStack>
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleDCClick} style={{ backgroundColor: DCActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleDCClick} style={{ backgroundColor: DCActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6416,7 +6410,6 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/8/86/Dusted_Castle.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Dusted Castle</Text>
       </VStack>
             </Button>
@@ -6428,9 +6421,9 @@ const TopAttackCompanion12 = () => {
           <Text fontSize='md' mt='25px' mb='15px'><b>Your furthest main location:</b></Text>
         }
 {World2RegionIsShown &&
-          <Wrap>
+          <Wrap justify='center'>
             <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleNivaliClick} style={{ backgroundColor: NivaliActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleNivaliClick} style={{ backgroundColor: NivaliActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6438,7 +6431,6 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/b/ba/NivaliCampIcon.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Nivali<br/>Camp</Text>
       </VStack>
             </Button>
@@ -6450,9 +6442,9 @@ const TopAttackCompanion12 = () => {
           }
 
 {LuciolaForestIsShown &&
-          <Wrap>
+          <Wrap justify='center'>
           <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleAurilisClick} style={{ backgroundColor: AurilisActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleAurilisClick} style={{ backgroundColor: AurilisActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6460,7 +6452,6 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/a/a9/AssemblyHallIcon.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Aurilis Magic<br/> Academy</Text>
       </VStack>
             </Button>
@@ -6472,9 +6463,9 @@ const TopAttackCompanion12 = () => {
           }
 
 {MamaTreeIsShown &&
-          <Wrap>
+          <Wrap justify='center'>
           <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleAurilisClick} style={{ backgroundColor: AurilisActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleAurilisClick} style={{ backgroundColor: AurilisActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6482,13 +6473,12 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/a/a9/AssemblyHallIcon.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Aurilis Magic<br/> Academy</Text>
       </VStack>
             </Button>
             </WrapItem>
           <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleElderLibraryClick} style={{ backgroundColor: ElderLibraryActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleElderLibraryClick} style={{ backgroundColor: ElderLibraryActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6496,7 +6486,6 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e2/Icon_elder-library.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Elder Library</Text>
       </VStack>
             </Button>
@@ -6507,21 +6496,21 @@ const TopAttackCompanion12 = () => {
           <Text fontSize='md' mt='25px' mb='15px'><b>Your unlocked side locations:</b></Text>
           }
 {DesertRegionIsShown &&
-          <Wrap>
+          <Wrap justify='center'>
             {!DesertRegionAllSideRegionsIsShown &&
           <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleDesertRegionAllSideRegionsClick} style={{ backgroundColor: DesertRegionAllSideRegionsActive ? "#2D3748" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleDesertRegionAllSideRegionsClick} style={{ backgroundColor: DesertRegionAllSideRegionsActive ? "#2D3748" : "#2D3748" }}>
             <Text fontSize='md' mt='35px' mb='15px'><b>Select All</b></Text>
             </Button>
             </WrapItem>}
             {DesertRegionAllSideRegionsIsShown && 
           <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleDesertRegionNoneSideRegionsClick} style={{ backgroundColor: DesertRegionNoneSideRegionsActive ? "#2d1b59" : "#2D3748" }}>
-            <Text fontSize='md' mt='35px' mb='15px'><b>Unselect All</b></Text>
+            <Button w='90px' h='110px' pb={5} onClick={handleDesertRegionNoneSideRegionsClick} style={{ backgroundColor: DesertRegionNoneSideRegionsActive ? "#2d1b59" : "#2D3748" }}>
+            <Text fontSize='md' mt='35px' mb='15px'><b>Unselect<br/>All</b></Text>
             </Button>
             </WrapItem>}
             <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleAurilisClick} style={{ backgroundColor: AurilisActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleAurilisClick} style={{ backgroundColor: AurilisActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6529,13 +6518,12 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/a/a9/AssemblyHallIcon.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Aurilis Magic<br/> Academy</Text>
       </VStack>
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleElderLibraryClick} style={{ backgroundColor: ElderLibraryActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleElderLibraryClick} style={{ backgroundColor: ElderLibraryActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6543,13 +6531,12 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e2/Icon_elder-library.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Elder Library</Text>
       </VStack>
             </Button>
             </WrapItem>
           <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleDragonLairClick} style={{ backgroundColor: DragonLairActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleDragonLairClick} style={{ backgroundColor: DragonLairActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6557,7 +6544,6 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/d/dd/Dragon_Lair_Icon.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Dragon Lair</Text>
       </VStack>
             </Button>
@@ -6568,21 +6554,21 @@ const TopAttackCompanion12 = () => {
           <Text fontSize='md' mt='25px' mb='15px'><b>Your unlocked side locations:</b></Text>
           }
 {RizaRivertownIsShown &&
-          <Wrap>
+          <Wrap justify='center'>
            {!RizaRivertownAllSideRegionsIsShown &&
           <WrapItem>
-        <Button w='100px' h='110px' pb={5} onClick={handleRizaRivertownAllSideRegionsClick} style={{ backgroundColor: RizaRivertownAllSideRegionsActive ? "#2D3748" : "#2D3748" }}>
+        <Button w='90px' h='110px' pb={5} onClick={handleRizaRivertownAllSideRegionsClick} style={{ backgroundColor: RizaRivertownAllSideRegionsActive ? "#2D3748" : "#2D3748" }}>
         <Text fontSize='md' mt='35px' mb='15px'><b>Select All</b></Text>
             </Button>
             </WrapItem>}
           {RizaRivertownAllSideRegionsIsShown &&
             <WrapItem>
-        <Button w='100px' h='110px' pb={5} onClick={handleRizaRivertownNoneSideRegionsClick} style={{ backgroundColor: RizaRivertownAllSideRegionsActive ? "#2D3748" : "#2D3748" }}>
-        <Text fontSize='md' mt='35px' mb='15px'><b>Unselect all</b></Text>
+        <Button w='90px' h='110px' pb={5} onClick={handleRizaRivertownNoneSideRegionsClick} style={{ backgroundColor: RizaRivertownAllSideRegionsActive ? "#2D3748" : "#2D3748" }}>
+        <Text fontSize='md' mt='35px' mb='15px'><b>Unselect<br/>all</b></Text>
             </Button>
             </WrapItem>}
           <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleAurilisClick} style={{ backgroundColor: AurilisActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleAurilisClick} style={{ backgroundColor: AurilisActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6590,13 +6576,12 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/a/a9/AssemblyHallIcon.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Aurilis Magic<br/> Academy</Text>
       </VStack>
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleElderLibraryClick} style={{ backgroundColor: ElderLibraryActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleElderLibraryClick} style={{ backgroundColor: ElderLibraryActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6604,13 +6589,12 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e2/Icon_elder-library.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Elder Library</Text>
       </VStack>
             </Button>
             </WrapItem>
           <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleDragonLairClick} style={{ backgroundColor: DragonLairActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleDragonLairClick} style={{ backgroundColor: DragonLairActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6618,13 +6602,12 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/d/dd/Dragon_Lair_Icon.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Dragon Lair</Text>
       </VStack>
             </Button>
             </WrapItem>
           <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleRainaClick} style={{ backgroundColor: RainaActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleRainaClick} style={{ backgroundColor: RainaActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6632,7 +6615,6 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/2/22/Raina-surface-camp.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Raina<br/>Surface Camp</Text>
       </VStack>
             </Button>
@@ -6643,22 +6625,22 @@ const TopAttackCompanion12 = () => {
           <Text fontSize='md' mt='25px' mb='15px'><b>Your unlocked side locations:</b></Text>
           }
 {FloatingCityIsShown &&
-          <Wrap>
+          <Wrap justify='center'>
           {!WaterRegionAllSideRegionsIsShown &&
           <WrapItem>
-        <Button w='100px' h='110px' pb={5} onClick={handleWaterRegionAllSideRegionsClick} style={{ backgroundColor: WaterRegionAllSideRegionsActive ? "#2D3748" : "#2D3748" }}>
+        <Button w='90px' h='110px' pb={5} onClick={handleWaterRegionAllSideRegionsClick} style={{ backgroundColor: WaterRegionAllSideRegionsActive ? "#2D3748" : "#2D3748" }}>
         <Text fontSize='md' mt='35px' mb='15px'><b>Select All</b></Text>
             </Button>
             </WrapItem>}
           {WaterRegionAllSideRegionsIsShown &&
             <WrapItem>
-        <Button w='100px' h='110px' pb={5} onClick={handleWaterRegionNoneSideRegionsClick} style={{ backgroundColor: WaterRegionAllSideRegionsActive ? "#2D3748" : "#2D3748" }}>
-        <Text fontSize='md' mt='35px' mb='15px'><b>Unselect All</b></Text>
+        <Button w='90px' h='110px' pb={5} onClick={handleWaterRegionNoneSideRegionsClick} style={{ backgroundColor: WaterRegionAllSideRegionsActive ? "#2D3748" : "#2D3748" }}>
+        <Text fontSize='md' mt='35px' mb='15px'><b>Unselect<br/>all</b></Text>
 
             </Button>
             </WrapItem>}
           <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleAurilisClick} style={{ backgroundColor: AurilisActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleAurilisClick} style={{ backgroundColor: AurilisActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6666,13 +6648,12 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/a/a9/AssemblyHallIcon.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Aurilis Magic<br/> Academy</Text>
       </VStack>
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleElderLibraryClick} style={{ backgroundColor: ElderLibraryActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleElderLibraryClick} style={{ backgroundColor: ElderLibraryActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6680,13 +6661,12 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e2/Icon_elder-library.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Elder Library</Text>
       </VStack>
             </Button>
             </WrapItem>
           <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleDragonLairClick} style={{ backgroundColor: DragonLairActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleDragonLairClick} style={{ backgroundColor: DragonLairActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6694,13 +6674,12 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/d/dd/Dragon_Lair_Icon.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Dragon Lair</Text>
       </VStack>
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleRainaClick} style={{ backgroundColor: RainaActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleRainaClick} style={{ backgroundColor: RainaActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6708,13 +6687,12 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/2/22/Raina-surface-camp.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Raina<br/>Surface Camp</Text>
       </VStack>
             </Button>
             </WrapItem>
           <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleCloudsClick} style={{ backgroundColor: CloudsActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleCloudsClick} style={{ backgroundColor: CloudsActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6722,13 +6700,12 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/4/44/Icon_bg_clouds.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Clouds</Text>
       </VStack>
             </Button>
             </WrapItem>
           <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleDawnClick} style={{ backgroundColor: DawnActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleDawnClick} style={{ backgroundColor: DawnActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6736,13 +6713,12 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/5/5d/Icon_bg_dawn.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Dawn</Text>
       </VStack>
             </Button>
             </WrapItem>
           <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleTempestClick} style={{ backgroundColor: TempestActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleTempestClick} style={{ backgroundColor: TempestActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6750,7 +6726,6 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/4/4c/Icon_bg_tempest.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Tempest</Text>
       </VStack>
             </Button>
@@ -6761,20 +6736,20 @@ const TopAttackCompanion12 = () => {
           <Text fontSize='md' mt='25px' mb='15px'><b>Your unlocked side locations:</b></Text>
           }
 {(DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) &&
-          <Wrap>
+          <Wrap justify='center'>
           <WrapItem>
   {!DustRegionAllSideRegionsIsShown &&
-            <Button w='100px' h='110px' pb={5} onClick={handleDustRegionAllSideRegionsClick} style={{ backgroundColor: DustRegionAllSideRegionsActive ? "#2D3748" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleDustRegionAllSideRegionsClick} style={{ backgroundColor: DustRegionAllSideRegionsActive ? "#2D3748" : "#2D3748" }}>
         <Text fontSize='md' mt='35px' mb='15px'><b>Select All</b></Text>
             </Button>}
   {DustRegionAllSideRegionsIsShown &&
-            <Button w='100px' h='110px' pb={5} onClick={handleDustRegionNoneSideRegionsClick} style={{ backgroundColor: DustRegionAllSideRegionsActive ? "#2D3748" : "#2D3748" }}>
-        <Text fontSize='md' mt='35px' mb='15px'><b>Unselect All</b></Text>
+            <Button w='90px' h='110px' pb={5} onClick={handleDustRegionNoneSideRegionsClick} style={{ backgroundColor: DustRegionAllSideRegionsActive ? "#2D3748" : "#2D3748" }}>
+        <Text fontSize='md' mt='35px' mb='15px'><b>Unselect<br/>all</b></Text>
 
             </Button>}
             </WrapItem>
           <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleAurilisClick} style={{ backgroundColor: AurilisActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleAurilisClick} style={{ backgroundColor: AurilisActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6782,13 +6757,12 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/a/a9/AssemblyHallIcon.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Aurilis Magic<br/> Academy</Text>
       </VStack>
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleElderLibraryClick} style={{ backgroundColor: ElderLibraryActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleElderLibraryClick} style={{ backgroundColor: ElderLibraryActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6796,13 +6770,12 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e2/Icon_elder-library.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Elder Library</Text>
       </VStack>
             </Button>
             </WrapItem>
           <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleDragonLairClick} style={{ backgroundColor: DragonLairActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleDragonLairClick} style={{ backgroundColor: DragonLairActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6810,13 +6783,12 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/d/dd/Dragon_Lair_Icon.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Dragon Lair</Text>
       </VStack>
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleRainaClick} style={{ backgroundColor: RainaActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleRainaClick} style={{ backgroundColor: RainaActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6824,13 +6796,12 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/2/22/Raina-surface-camp.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Raina<br/>Surface Camp</Text>
       </VStack>
             </Button>
             </WrapItem>
           <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleCloudsClick} style={{ backgroundColor: CloudsActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleCloudsClick} style={{ backgroundColor: CloudsActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6838,13 +6809,12 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/4/44/Icon_bg_clouds.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Clouds</Text>
       </VStack>
             </Button>
             </WrapItem>
           <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleDawnClick} style={{ backgroundColor: DawnActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleDawnClick} style={{ backgroundColor: DawnActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6852,13 +6822,12 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/5/5d/Icon_bg_dawn.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Dawn</Text>
       </VStack>
             </Button>
             </WrapItem>
           <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleTempestClick} style={{ backgroundColor: TempestActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleTempestClick} style={{ backgroundColor: TempestActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6866,13 +6835,12 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/4/4c/Icon_bg_tempest.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Tempest</Text>
       </VStack>
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleGardenClick} style={{ backgroundColor: GardenActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleGardenClick} style={{ backgroundColor: GardenActive ? "#2d1b59" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6880,7 +6848,6 @@ const TopAttackCompanion12 = () => {
         boxSize='3rem'
         borderRadius='full'
         src='https://static.wikia.nocookie.net/4thewords/images/7/7c/HealedGardenIcon.png'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Caretaker's<br/>Garden</Text>
       </VStack>
             </Button>
@@ -6906,19 +6873,17 @@ const TopAttackCompanion12 = () => {
     <AccordionPanel pb={4}>
       <Box h='400px' overflowY='scroll'>
           <Text fontSize='md' mt='25px' mb='15px'><b>Main Quest Companions:</b></Text>
-                <Wrap>
+                <Wrap justify='center'>
 
    {(DCIsShown || World2RegionIsShown) && !NoanzaIsShown &&
            <WrapItem>
-            <Button w='315px' h='110px' pb={5} onClick={handleNoanzaClick} style={{ backgroundColor: "#2D3748" }}>
-       <HStack> 
+            <Button w='290px' h='110px' pb={5} onClick={handleNoanzaClick} style={{ backgroundColor: "#2D3748" }}>
+       <HStack justify='center'>  
        <Image
-       ml='-15px'
         mt='12px'
         align='center' 
-        boxSize='5rem'
+        boxSize='4rem'
         src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png/'
-        mr='5px'
       /> 
       <VStack>
       <Text fontSize='md' mt='15px' align='center'><b>Noanza</b></Text>
@@ -6930,15 +6895,13 @@ const TopAttackCompanion12 = () => {
 
    {(DCIsShown || World2RegionIsShown) && NoanzaIsShown &&
            <WrapItem>
-            <Button w='315px' h='110px' pb={5} onClick={handleNoanzaNoClick} style={{ backgroundColor: "#2d1b59"}}>
-      <HStack> 
+            <Button w='290px' h='110px' pb={5} onClick={handleNoanzaNoClick} style={{ backgroundColor: "#2d1b59"}}>
+      <HStack justify='center'>  
        <Image
-       ml='-15px'
         mt='12px'
         align='center' 
-        boxSize='5rem'
+        boxSize='4rem'
         src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png/'
-        mr='5px'
       /> 
       <VStack>
   <Text fontSize='md' mt='15px' align='center'><b>Noanza</b></Text>
@@ -6951,14 +6914,13 @@ const TopAttackCompanion12 = () => {
 
 {(FloatingCityIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !LodoIsShown &&
             <WrapItem>
-            <Button w='315px' h='110px' pb={5} onClick={handleLodoClick} style={{ backgroundColor: "#2D3748" }}>
-    <HStack>
+            <Button w='290px' h='110px' pb={5} onClick={handleLodoClick} style={{ backgroundColor: "#2D3748" }}>
+    <HStack justify='center'> 
        <Image
         mt='12px'
         align='center' 
-        boxSize='5rem'
+        boxSize='4rem'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e6/Lodo.png/'
-        mr='5px'
       /> 
       <VStack>
       <Text fontSize='md' align='center'><b>Lodo</b></Text>
@@ -6970,14 +6932,13 @@ const TopAttackCompanion12 = () => {
 
 {(FloatingCityIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && LodoIsShown &&
             <WrapItem>
-            <Button w='315px' h='110px' pb={5} onClick={handleLodoNoClick} style={{ backgroundColor: "#2d1b59" }}>
-       <HStack> 
+            <Button w='290px' h='110px' pb={5} onClick={handleLodoNoClick} style={{ backgroundColor: "#2d1b59" }}>
+       <HStack justify='center'>  
        <Image
         mt='12px'
         align='center' 
-        boxSize='5rem'
+        boxSize='4rem'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e6/Lodo.png/'
-        mr='5px'
       /> 
       <VStack>
       <Text fontSize='md' align='center'><b>Lodo</b></Text>
@@ -6989,14 +6950,13 @@ const TopAttackCompanion12 = () => {
 
 {(ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !AzadiIsShown &&
             <WrapItem>
-            <Button w='315px' h='110px' pb={5} onClick={handleAzadiClick} style={{ backgroundColor: "#2D3748" }}>
-    <HStack>
+            <Button w='290px' h='110px' pb={5} onClick={handleAzadiClick} style={{ backgroundColor: "#2D3748" }}>
+    <HStack justify='center'> 
        <Image
         mt='12px'
         align='center' 
-        boxSize='5rem'
+        boxSize='4rem'
         src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png/'
-        mr='5px'
       /> 
       <VStack>
       <Text fontSize='md' align='center'><b>Azadi</b></Text>
@@ -7008,14 +6968,13 @@ const TopAttackCompanion12 = () => {
 
 {(ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && AzadiIsShown &&
             <WrapItem>
-            <Button w='315px' h='110px' pb={5} onClick={handleAzadiNoClick} style={{ backgroundColor: "#2d1b59" }}>
-       <HStack> 
+            <Button w='290px' h='110px' pb={5} onClick={handleAzadiNoClick} style={{ backgroundColor: "#2d1b59" }}>
+       <HStack justify='center'>  
        <Image
         mt='12px'
         align='center' 
-        boxSize='5rem'
+        boxSize='4rem'
         src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png/'
-        mr='5px'
       /> 
       <VStack>
       <Text fontSize='md' align='center'><b>Azadi</b></Text>
@@ -7027,14 +6986,13 @@ const TopAttackCompanion12 = () => {
 
 {(MamaTreeIsShown || ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !SuwoIsShown &&
             <WrapItem>
-            <Button w='315px' h='110px' pb={5} onClick={handleSuwoClick} style={{ backgroundColor: "#2D3748" }}>
-    <HStack>
+            <Button w='290px' h='110px' pb={5} onClick={handleSuwoClick} style={{ backgroundColor: "#2D3748" }}>
+    <HStack justify='center'> 
        <Image
         mt='12px'
         align='center' 
-        boxSize='5rem'
+        boxSize='4rem'
         src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
-        mr='5px'
       /> 
       <VStack>
       <Text fontSize='md' align='center'><b>Suwo</b></Text>
@@ -7046,14 +7004,13 @@ const TopAttackCompanion12 = () => {
 
 {(MamaTreeIsShown || ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && SuwoIsShown &&
             <WrapItem>
-            <Button w='315px' h='110px' pb={5} onClick={handleSuwoNoClick} style={{ backgroundColor: "#2d1b59" }}>
-       <HStack> 
+            <Button w='290px' h='110px' pb={5} onClick={handleSuwoNoClick} style={{ backgroundColor: "#2d1b59" }}>
+       <HStack justify='center'>  
        <Image
         mt='12px'
         align='center' 
-        boxSize='5rem'
+        boxSize='4rem'
         src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
-        mr='5px'
       /> 
       <VStack>
       <Text fontSize='md' align='center'><b>Suwo</b></Text>
@@ -7068,18 +7025,16 @@ const TopAttackCompanion12 = () => {
 
 }
 {DragonLairIsShown &&
-           <Wrap>
+           <Wrap justify='center'>
 {!KaiszarIsShown &&
            <WrapItem>
-            <Button w='315px' h='110px' pb={5} onClick={handleKaiszarClick} style={{ backgroundColor: "#2D3748" }}>
-       <HStack> 
+            <Button w='290px' h='110px' pb={5} onClick={handleKaiszarClick} style={{ backgroundColor: "#2D3748" }}>
+       <HStack justify='center'> 
        <Image
-       ml='-15px'
         mt='12px'
         align='center' 
-        boxSize='6rem'
-                src='https://static.wikia.nocookie.net/4thewords/images/f/fa/Kaiszar.png/'
-        mr='5px'
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/fa/Kaiszar.png/'
       /> 
       <VStack>
       <Text fontSize='md' mt='15px' align='center'><b>Kaiszar</b></Text>
@@ -7091,16 +7046,14 @@ const TopAttackCompanion12 = () => {
 
 {KaiszarIsShown &&
            <WrapItem>
-            <Button w='315px' h='110px' pb={5} onClick={handleKaiszarNoClick} style={{ backgroundColor: "#2d1b59"}}>
+            <Button w='290px' h='110px' pb={5} onClick={handleKaiszarNoClick} style={{ backgroundColor: "#2d1b59"}}>
        {!AtkKaiszarIsShown && !DefKaiszarIsShown && !LuckKaiszarIsShown &&
-      <HStack> 
+       <HStack justify='center'> 
        <Image
-       ml='-15px'
         mt='12px'
         align='center' 
-        boxSize='6rem'
+        boxSize='5rem'
                 src='https://static.wikia.nocookie.net/4thewords/images/f/fa/Kaiszar.png/'
-        mr='5px'
       /> 
       <VStack>
   <Text fontSize='md' mt='15px' align='center'><b>Kaiszar</b></Text>
@@ -7109,14 +7062,12 @@ const TopAttackCompanion12 = () => {
       </VStack>
       </HStack>}
 {AtkKaiszarIsShown && !DefKaiszarIsShown && !LuckKaiszarIsShown &&
-      <HStack>
+      <HStack justify='center'> 
        <Image
-       ml='-15px'
         mt='12px'
         align='center' 
-        boxSize='5rem'
+        boxSize='4rem'
         src='https://i.imgur.com/gbuo4mt.png'
-        mr='5px'
       /> 
   <VStack>
   <Text fontSize='md' mt='15px' align='center'><b>Attack Kaiszar</b></Text>
@@ -7126,14 +7077,12 @@ const TopAttackCompanion12 = () => {
   </HStack>
   }
   {!AtkKaiszarIsShown && DefKaiszarIsShown && !LuckKaiszarIsShown &&
-  <HStack>
+  <HStack justify='center'> 
        <Image
-       ml='-15px'
         mt='12px'
         align='center' 
-        boxSize='5rem'
+        boxSize='4rem'
         src='https://i.imgur.com/LGazi9x.png'
-        mr='5px'
       /> 
   <VStack>    
   <Text fontSize='md' mt='15px' align='center'><b>Defense Kaiszar</b></Text>
@@ -7142,14 +7091,12 @@ const TopAttackCompanion12 = () => {
   </HStack>
   }
          {!AtkKaiszarIsShown && !DefKaiszarIsShown && LuckKaiszarIsShown &&
-         <HStack>
+         <HStack justify='center'> 
        <Image
-       ml='-15px'
         mt='12px'
         align='center' 
-        boxSize='5rem'
+        boxSize='4rem'
         src='https://i.imgur.com/gbpdG0f.png'
-        mr='5px'
       /> 
   <VStack>
   <Text fontSize='md' mt='15px' align='center'><b>Luck Kaiszar</b></Text>
@@ -7162,14 +7109,13 @@ const TopAttackCompanion12 = () => {
 
 {!AtkKaiszarIsShown &&
             <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleAtkKaiszarClick} style={{ backgroundColor: "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleAtkKaiszarClick} style={{ backgroundColor: "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
         align='center' 
         boxSize='3rem'
                 src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Kaiszar:<br/>Attack Boost</Text>
       </VStack>
             </Button>
@@ -7177,14 +7123,13 @@ const TopAttackCompanion12 = () => {
 
 {AtkKaiszarIsShown &&
             <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleAtkKaiszarNoClick} style={{ backgroundColor: "#2d1b59"}}>
+            <Button w='90px' h='110px' pb={5} onClick={handleAtkKaiszarNoClick} style={{ backgroundColor: "#2d1b59"}}>
        <VStack> 
        <Image
         mt='12px'
         align='center' 
         boxSize='3rem'
                 src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Kaiszar:<br/>Attack Boost</Text>
       </VStack>
             </Button>
@@ -7192,44 +7137,41 @@ const TopAttackCompanion12 = () => {
 
 {!DefKaiszarIsShown &&
            <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleDefKaiszarClick} style={{ backgroundColor: "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleDefKaiszarClick} style={{ backgroundColor: "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
         align='center' 
         boxSize='3rem'
                 src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
-        mr='5px'
-      /> <Text fontSize='sm' align='center'>Kaiszar:<br/>Defense Boost</Text>
+      /> <Text fontSize='sm' align='center'>Kaiszar:<br/>Def. Boost</Text>
       </VStack>
             </Button>
             </WrapItem>}
 
 {DefKaiszarIsShown &&
            <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleDefKaiszarNoClick} style={{ backgroundColor: "#2d1b59" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleDefKaiszarNoClick} style={{ backgroundColor: "#2d1b59" }}>
        <VStack> 
        <Image
         mt='12px'
         align='center' 
         boxSize='3rem'
                 src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
-        mr='5px'
-      /> <Text fontSize='sm' align='center'>Kaiszar:<br/>Defense Boost</Text>
+      /> <Text fontSize='sm' align='center'>Kaiszar:<br/>Def. Boost</Text>
       </VStack>
             </Button>
             </WrapItem>}            
 
 {!LuckKaiszarIsShown &&
            <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleLuckKaiszarClick} style={{ backgroundColor: "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleLuckKaiszarClick} style={{ backgroundColor: "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
         align='center' 
         boxSize='3rem'
                 src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Kaiszar:<br/>Luck Boost</Text>
       </VStack>
             </Button>
@@ -7237,14 +7179,13 @@ const TopAttackCompanion12 = () => {
 
 {LuckKaiszarIsShown &&
            <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleLuckKaiszarNoClick} style={{ backgroundColor: "#2d1b59" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleLuckKaiszarNoClick} style={{ backgroundColor: "#2d1b59" }}>
        <VStack> 
        <Image
         mt='12px'
         align='center' 
         boxSize='3rem'
                 src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
-        mr='5px'
       /> <Text fontSize='sm' align='center'>Kaiszar:<br/>Luck Boost</Text>
       </VStack>
             </Button>
@@ -7252,13 +7193,13 @@ const TopAttackCompanion12 = () => {
 
             {!LoksiIsShown &&
   <WrapItem>
-   <Button w='315px' h='110px' pb={5} onClick={handleLoksiClick} style={{ backgroundColor: "#2D3748" }}>
-<HStack> 
+   <Button w='290px' h='110px' pb={5} onClick={handleLoksiClick} style={{ backgroundColor: "#2D3748" }}>
+<HStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='5rem'
+boxSize='4rem'
 src='https://static.wikia.nocookie.net/4thewords/images/7/75/Loksi.png'
 mr='5px'
 /> 
@@ -7271,14 +7212,14 @@ mr='5px'
    </WrapItem>}
 {LoksiIsShown && 
   <WrapItem>
-   <Button w='315px' h='110px' pb={5} onClick={handleLoksiNoClick} style={{ backgroundColor: "#2d1b59"}}>
+   <Button w='290px' h='110px' pb={5} onClick={handleLoksiNoClick} style={{ backgroundColor: "#2d1b59"}}>
    {!AtkLoksiIsShown && !DefLoksiIsShown && !LuckLoksiIsShown &&
-<HStack> 
+<HStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='5rem'
+boxSize='4rem'
 src='https://static.wikia.nocookie.net/4thewords/images/7/75/Loksi.png'
 mr='5px'
 /> 
@@ -7288,12 +7229,12 @@ mr='5px'
 </VStack>
 </HStack>}
 {AtkLoksiIsShown && !DefLoksiIsShown && !LuckLoksiIsShown &&
-<HStack> 
+<HStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='5rem'
+boxSize='4rem'
 src='https://i.imgur.com/Zb1N51B.png'
 mr='5px'
 /> 
@@ -7303,12 +7244,12 @@ mr='5px'
 </VStack>
 </HStack>}
 {!AtkLoksiIsShown && DefLoksiIsShown && !LuckLoksiIsShown &&
-<HStack> 
+<HStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='5rem'
+boxSize='4rem'
 src='https://i.imgur.com/zGo6cCD.png'
 mr='5px'
 /> 
@@ -7318,12 +7259,12 @@ mr='5px'
 </VStack>
 </HStack>}
 {!AtkLoksiIsShown && !DefLoksiIsShown && LuckLoksiIsShown &&
-<HStack> 
+<HStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='5rem'
+boxSize='4rem'
 src='https://i.imgur.com/bgb1J58.png'
 mr='5px'
 /> 
@@ -7339,7 +7280,7 @@ mr='5px'
 
 {!AtkLoksiIsShown &&
    <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleAtkLoksiClick} style={{ backgroundColor: "#2D3748" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleAtkLoksiClick} style={{ backgroundColor: "#2D3748" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -7354,7 +7295,7 @@ mr='5px'
 
 {AtkLoksiIsShown &&
    <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleAtkLoksiNoClick} style={{ backgroundColor: "#2d1b59"}}>
+   <Button w='90px' h='110px' pb={5} onClick={handleAtkLoksiNoClick} style={{ backgroundColor: "#2d1b59"}}>
 <VStack> 
 <Image
 mt='12px'
@@ -7369,7 +7310,7 @@ mr='5px'
 
 {!DefLoksiIsShown &&
   <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleDefLoksiClick} style={{ backgroundColor: "#2D3748" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleDefLoksiClick} style={{ backgroundColor: "#2D3748" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -7377,14 +7318,14 @@ align='center'
 boxSize='3rem'
 src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
 mr='5px'
-/> <Text fontSize='sm' align='center'>Loksi:<br/>Defense Boost</Text>
+/> <Text fontSize='sm' align='center'>Loksi:<br/>Def. Boost</Text>
 </VStack>
    </Button>
    </WrapItem>}
 
 {DefLoksiIsShown &&
   <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleDefLoksiNoClick} style={{ backgroundColor: "#2d1b59" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleDefLoksiNoClick} style={{ backgroundColor: "#2d1b59" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -7392,14 +7333,14 @@ align='center'
 boxSize='3rem'
 src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
 mr='5px'
-/> <Text fontSize='sm' align='center'>Loksi:<br/>Defense Boost</Text>
+/> <Text fontSize='sm' align='center'>Loksi:<br/>Def. Boost</Text>
 </VStack>
    </Button>
    </WrapItem>}            
 
 {!LuckLoksiIsShown &&
   <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleLuckLoksiClick} style={{ backgroundColor: "#2D3748" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleLuckLoksiClick} style={{ backgroundColor: "#2D3748" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -7414,7 +7355,7 @@ mr='5px'
 
 {LuckLoksiIsShown &&
   <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleLuckLoksiNoClick} style={{ backgroundColor: "#2d1b59" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleLuckLoksiNoClick} style={{ backgroundColor: "#2d1b59" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -7429,13 +7370,13 @@ mr='5px'
 
    <WrapItem>
    {!ThalamarisIsShown && !AtkThalamarisIsShown && !DefThalamarisIsShown && !LuckThalamarisIsShown &&
-     <Button w='315px' h='110px' pb={5} onClick={handleThalamarisClick} style={{ backgroundColor: "#2D3748" }}>  
-<HStack> 
+     <Button w='290px' h='110px' pb={5} onClick={handleThalamarisClick} style={{ backgroundColor: "#2D3748" }}>  
+<HStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='6rem'
+boxSize='5rem'
 src='https://static.wikia.nocookie.net/4thewords/images/4/4a/Thalamaris.png/'
 mr='5px'
 /> 
@@ -7447,14 +7388,14 @@ mr='5px'
 </Button>}
 
 {ThalamarisIsShown &&
-<Button w='315px' h='110px' pb={5} onClick={handleThalamarisNoClick} style={{ backgroundColor: "#2d1b59" }}> 
+<Button w='290px' h='110px' pb={5} onClick={handleThalamarisNoClick} style={{ backgroundColor: "#2d1b59" }}> 
 {!AtkThalamarisIsShown && !DefThalamarisIsShown && !LuckThalamarisIsShown &&
-<HStack> 
+<HStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='6rem'
+boxSize='5rem'
 src='https://static.wikia.nocookie.net/4thewords/images/4/4a/Thalamaris.png/'
 mr='5px'
 /> 
@@ -7465,12 +7406,12 @@ mr='5px'
 </HStack>}
 
 {AtkThalamarisIsShown && !DefThalamarisIsShown && !LuckThalamarisIsShown &&
-<HStack> 
+<HStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='5rem'
+boxSize='4rem'
 src='https://i.imgur.com/fe9fXNc.png'
 mr='5px'
 /> 
@@ -7480,12 +7421,12 @@ mr='5px'
 </VStack>
 </HStack>}
 {!AtkThalamarisIsShown && DefThalamarisIsShown && !LuckThalamarisIsShown &&
-<HStack> 
+<HStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='5rem'
+boxSize='4rem'
 src='https://i.imgur.com/1G7xegk.png'
 mr='5px'
 /> 
@@ -7495,12 +7436,12 @@ mr='5px'
 </VStack>
 </HStack>}
 {!AtkThalamarisIsShown && !DefThalamarisIsShown && LuckThalamarisIsShown &&
-<HStack> 
+<HStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='5rem'
+boxSize='4rem'
 src='https://i.imgur.com/VpveKDD.png'
 mr='5px'
 /> 
@@ -7515,7 +7456,7 @@ mr='5px'
 
 {!AtkThalamarisIsShown &&
    <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleAtkThalamarisClick} style={{ backgroundColor: "#2D3748" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleAtkThalamarisClick} style={{ backgroundColor: "#2D3748" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -7530,7 +7471,7 @@ mr='5px'
 
 {AtkThalamarisIsShown &&
    <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleAtkThalamarisNoClick} style={{ backgroundColor: "#2d1b59"}}>
+   <Button w='90px' h='110px' pb={5} onClick={handleAtkThalamarisNoClick} style={{ backgroundColor: "#2d1b59"}}>
 <VStack> 
 <Image
 mt='12px'
@@ -7545,7 +7486,7 @@ mr='5px'
 
 {!DefThalamarisIsShown &&
   <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleDefThalamarisClick} style={{ backgroundColor: "#2D3748" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleDefThalamarisClick} style={{ backgroundColor: "#2D3748" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -7553,14 +7494,14 @@ align='center'
 boxSize='3rem'
 src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
 mr='5px'
-/> <Text fontSize='sm' align='center'>Thalamaris:<br/>Defense Boost</Text>
+/> <Text fontSize='sm' align='center'>Thalamaris:<br/>Def. Boost</Text>
 </VStack>
    </Button>
    </WrapItem>}
 
 {DefThalamarisIsShown &&
   <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleDefThalamarisNoClick} style={{ backgroundColor: "#2d1b59" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleDefThalamarisNoClick} style={{ backgroundColor: "#2d1b59" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -7568,14 +7509,14 @@ align='center'
 boxSize='3rem'
 src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
 mr='5px'
-/> <Text fontSize='sm' align='center'>Thalamaris:<br/>Defense Boost</Text>
+/> <Text fontSize='sm' align='center'>Thalamaris:<br/>Def. Boost</Text>
 </VStack>
    </Button>
    </WrapItem>}            
 
 {!LuckThalamarisIsShown &&
   <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleLuckThalamarisClick} style={{ backgroundColor: "#2D3748" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleLuckThalamarisClick} style={{ backgroundColor: "#2D3748" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -7590,7 +7531,7 @@ mr='5px'
 
 {LuckThalamarisIsShown &&
   <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleLuckThalamarisNoClick} style={{ backgroundColor: "#2d1b59" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleLuckThalamarisNoClick} style={{ backgroundColor: "#2d1b59" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -7605,13 +7546,13 @@ mr='5px'
    
    {!ValkosIsShown &&
   <WrapItem>
-   <Button w='315px' h='110px' pb={5} onClick={handleValkosClick} style={{ backgroundColor: "#2D3748" }}>
-<HStack> 
+   <Button w='290px' h='110px' pb={5} onClick={handleValkosClick} style={{ backgroundColor: "#2D3748" }}>
+<HStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='5rem'
+boxSize='4rem'
 src='https://static.wikia.nocookie.net/4thewords/images/6/63/Valkos.png'
 mr='5px'
 /> 
@@ -7625,14 +7566,14 @@ mr='5px'
 
 {ValkosIsShown &&
   <WrapItem>
-   <Button w='315px' h='110px' pb={5} onClick={handleValkosNoClick} style={{ backgroundColor: "#2d1b59"}}>
+   <Button w='290px' h='110px' pb={5} onClick={handleValkosNoClick} style={{ backgroundColor: "#2d1b59"}}>
    {!AtkValkosIsShown && !DefValkosIsShown && !LuckValkosIsShown &&
-<HStack> 
+<HStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='5rem'
+boxSize='4rem'
 src='https://static.wikia.nocookie.net/4thewords/images/6/63/Valkos.png'
 mr='5px'
 /> 
@@ -7643,12 +7584,12 @@ mr='5px'
 </VStack>
 </HStack>}
 {AtkValkosIsShown && !DefValkosIsShown && !LuckValkosIsShown &&
-<HStack> 
+<HStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='5rem'
+boxSize='4rem'
 src='https://i.imgur.com/Ci51Pa1.png'
 mr='5px'
 /> 
@@ -7659,12 +7600,12 @@ mr='5px'
 </VStack>
 </HStack>}
 {!AtkValkosIsShown && DefValkosIsShown && !LuckValkosIsShown &&
-<HStack> 
+<HStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='5rem'
+boxSize='4rem'
 src='https://i.imgur.com/1sMl04A.png'
 mr='5px'
 /> 
@@ -7675,12 +7616,12 @@ mr='5px'
 </VStack>
 </HStack>}
 {!AtkValkosIsShown && !DefValkosIsShown && LuckValkosIsShown &&
-<HStack> 
+<HStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='5rem'
+boxSize='4rem'
 src='https://i.imgur.com/pGyg8DO.png'
 mr='5px'
 /> 
@@ -7698,7 +7639,7 @@ mr='5px'
 
 {!AtkValkosIsShown &&
    <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleAtkValkosClick} style={{ backgroundColor: "#2D3748" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleAtkValkosClick} style={{ backgroundColor: "#2D3748" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -7713,7 +7654,7 @@ mr='5px'
 
 {AtkValkosIsShown &&
    <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleAtkValkosNoClick} style={{ backgroundColor: "#2d1b59"}}>
+   <Button w='90px' h='110px' pb={5} onClick={handleAtkValkosNoClick} style={{ backgroundColor: "#2d1b59"}}>
 <VStack> 
 <Image
 mt='12px'
@@ -7728,7 +7669,7 @@ mr='5px'
 
 {!DefValkosIsShown &&
   <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleDefValkosClick} style={{ backgroundColor: "#2D3748" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleDefValkosClick} style={{ backgroundColor: "#2D3748" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -7736,14 +7677,14 @@ align='center'
 boxSize='3rem'
 src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
 mr='5px'
-/> <Text fontSize='sm' align='center'>Valkos:<br/>Defense Boost</Text>
+/> <Text fontSize='sm' align='center'>Valkos:<br/>Def. Boost</Text>
 </VStack>
    </Button>
    </WrapItem>}
 
 {DefValkosIsShown &&
   <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleDefValkosNoClick} style={{ backgroundColor: "#2d1b59" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleDefValkosNoClick} style={{ backgroundColor: "#2d1b59" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -7751,14 +7692,14 @@ align='center'
 boxSize='3rem'
 src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
 mr='5px'
-/> <Text fontSize='sm' align='center'>Valkos:<br/>Defense Boost</Text>
+/> <Text fontSize='sm' align='center'>Valkos:<br/>Def. Boost</Text>
 </VStack>
    </Button>
    </WrapItem>}            
 
 {!LuckValkosIsShown &&
   <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleLuckValkosClick} style={{ backgroundColor: "#2D3748" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleLuckValkosClick} style={{ backgroundColor: "#2D3748" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -7773,7 +7714,7 @@ mr='5px'
 
 {LuckValkosIsShown &&
   <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleLuckValkosNoClick} style={{ backgroundColor: "#2d1b59" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleLuckValkosNoClick} style={{ backgroundColor: "#2d1b59" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -7788,13 +7729,13 @@ mr='5px'
 
 {!EenrisIsShown && !AtkEenrisIsShown && !DefEenrisIsShown && !LuckEenrisIsShown &&
   <WrapItem>
-   <Button w='315px' h='110px' pb={5} onClick={handleEenrisClick} style={{ backgroundColor: "#2D3748" }}>
-<HStack> 
+   <Button w='290px' h='110px' pb={5} onClick={handleEenrisClick} style={{ backgroundColor: "#2D3748" }}>
+<HStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='5rem'
+boxSize='4rem'
 src='https://static.wikia.nocookie.net/4thewords/images/1/1d/Eenris.png/'
 mr='5px'
 /> 
@@ -7808,14 +7749,14 @@ mr='5px'
 
 {EenrisIsShown && 
   <WrapItem>
-   <Button w='315px' h='110px' pb={5} onClick={handleEenrisNoClick} style={{ backgroundColor: "#2d1b59"}}>
+   <Button w='290px' h='110px' pb={5} onClick={handleEenrisNoClick} style={{ backgroundColor: "#2d1b59"}}>
 {!AtkEenrisIsShown && !DefEenrisIsShown && !LuckEenrisIsShown &&
-<HStack> 
+<HStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='5rem'
+boxSize='4rem'
 src='https://static.wikia.nocookie.net/4thewords/images/1/1d/Eenris.png/'
 mr='5px'
 /> 
@@ -7825,12 +7766,12 @@ mr='5px'
 </VStack>
 </HStack>}
 {AtkEenrisIsShown && !DefEenrisIsShown && !LuckEenrisIsShown &&
-<HStack> 
+<HStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='5rem'
+boxSize='4rem'
 src='https://i.imgur.com/lU6zkfR.png'
 mr='5px'
 /> 
@@ -7840,12 +7781,12 @@ mr='5px'
 </VStack>
 </HStack>}
 {!AtkEenrisIsShown && DefEenrisIsShown && !LuckEenrisIsShown &&
-<HStack> 
+<HStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='5rem'
+boxSize='4rem'
 src='https://i.imgur.com/5sRBeCz.png'
 mr='5px'
 /> 
@@ -7855,12 +7796,12 @@ mr='5px'
 </VStack>
 </HStack>}
 {!AtkEenrisIsShown && !DefEenrisIsShown && LuckEenrisIsShown &&
-<HStack> 
+<HStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='5rem'
+boxSize='4rem'
 src='https://i.imgur.com/exqGLIN.png'
 mr='5px'
 /> 
@@ -7877,7 +7818,7 @@ mr='5px'
 
 {!AtkEenrisIsShown &&
    <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleAtkEenrisClick} style={{ backgroundColor: "#2D3748" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleAtkEenrisClick} style={{ backgroundColor: "#2D3748" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -7892,7 +7833,7 @@ mr='5px'
 
 {AtkEenrisIsShown &&
    <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleAtkEenrisNoClick} style={{ backgroundColor: "#2d1b59"}}>
+   <Button w='90px' h='110px' pb={5} onClick={handleAtkEenrisNoClick} style={{ backgroundColor: "#2d1b59"}}>
 <VStack> 
 <Image
 mt='12px'
@@ -7907,7 +7848,7 @@ mr='5px'
 
 {!DefEenrisIsShown &&
   <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleDefEenrisClick} style={{ backgroundColor: "#2D3748" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleDefEenrisClick} style={{ backgroundColor: "#2D3748" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -7915,14 +7856,14 @@ align='center'
 boxSize='3rem'
 src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
 mr='5px'
-/> <Text fontSize='sm' align='center'>Eenris:<br/>Defense Boost</Text>
+/> <Text fontSize='sm' align='center'>Eenris:<br/>Def. Boost</Text>
 </VStack>
    </Button>
    </WrapItem>}
 
 {DefEenrisIsShown &&
   <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleDefEenrisNoClick} style={{ backgroundColor: "#2d1b59" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleDefEenrisNoClick} style={{ backgroundColor: "#2d1b59" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -7930,14 +7871,14 @@ align='center'
 boxSize='3rem'
 src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
 mr='5px'
-/> <Text fontSize='sm' align='center'>Eenris:<br/>Defense Boost</Text>
+/> <Text fontSize='sm' align='center'>Eenris:<br/>Def. Boost</Text>
 </VStack>
    </Button>
    </WrapItem>}            
 
 {!LuckEenrisIsShown &&
   <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleLuckEenrisClick} style={{ backgroundColor: "#2D3748" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleLuckEenrisClick} style={{ backgroundColor: "#2D3748" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -7952,7 +7893,7 @@ mr='5px'
 
 {LuckEenrisIsShown &&
   <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleLuckEenrisNoClick} style={{ backgroundColor: "#2d1b59" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleLuckEenrisNoClick} style={{ backgroundColor: "#2d1b59" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -7967,13 +7908,13 @@ mr='5px'
 
 {!RairaselIsShown && !AtkRairaselIsShown && !DefRairaselIsShown && !LuckRairaselIsShown &&
   <WrapItem>
-   <Button w='315px' h='110px' pb={5} onClick={handleRairaselClick} style={{ backgroundColor: "#2D3748" }}>
-<HStack> 
+   <Button w='290px' h='110px' pb={5} onClick={handleRairaselClick} style={{ backgroundColor: "#2D3748" }}>
+<HStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='5rem'
+boxSize='4rem'
 src='https://static.wikia.nocookie.net/4thewords/images/f/fc/Rairasel.png/'
 mr='5px'
 /> 
@@ -7987,14 +7928,14 @@ mr='5px'
 
 {RairaselIsShown &&
   <WrapItem>
-   <Button w='315px' h='110px' pb={5} onClick={handleRairaselNoClick} style={{ backgroundColor: "#2d1b59"}}>
+   <Button w='290px' h='110px' pb={5} onClick={handleRairaselNoClick} style={{ backgroundColor: "#2d1b59"}}>
 {!AtkRairaselIsShown && !DefRairaselIsShown && !LuckRairaselIsShown &&
-<HStack> 
+<HStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='5rem'
+boxSize='4rem'
 src='https://static.wikia.nocookie.net/4thewords/images/f/fc/Rairasel.png/'
 mr='5px'
 /> 
@@ -8004,12 +7945,12 @@ mr='5px'
 </VStack>
 </HStack>}
 {AtkRairaselIsShown && !DefRairaselIsShown && !LuckRairaselIsShown &&
-<HStack> 
+<HStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='5rem'
+boxSize='4rem'
 src='https://i.imgur.com/YB3iqt7.png'
 mr='5px'
 /> 
@@ -8019,12 +7960,12 @@ mr='5px'
 </VStack>
 </HStack>}
 {!AtkRairaselIsShown && DefRairaselIsShown && !LuckRairaselIsShown &&
-<HStack> 
+<HStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='5rem'
+boxSize='4rem'
 src='https://i.imgur.com/vgropoV.png'
 mr='5px'
 /> 
@@ -8034,12 +7975,12 @@ mr='5px'
 </VStack>
 </HStack>}
 {!AtkRairaselIsShown && !DefRairaselIsShown && LuckRairaselIsShown &&
-<HStack> 
+<HStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='5rem'
+boxSize='4rem'
 src='https://i.imgur.com/3GrgauN.png'
 mr='5px'
 /> 
@@ -8055,7 +7996,7 @@ mr='5px'
 
 {!AtkRairaselIsShown &&
    <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleAtkRairaselClick} style={{ backgroundColor: "#2D3748" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleAtkRairaselClick} style={{ backgroundColor: "#2D3748" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -8070,7 +8011,7 @@ mr='5px'
 
 {AtkRairaselIsShown &&
    <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleAtkRairaselNoClick} style={{ backgroundColor: "#2d1b59"}}>
+   <Button w='90px' h='110px' pb={5} onClick={handleAtkRairaselNoClick} style={{ backgroundColor: "#2d1b59"}}>
 <VStack> 
 <Image
 mt='12px'
@@ -8085,7 +8026,7 @@ mr='5px'
 
 {!DefRairaselIsShown &&
   <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleDefRairaselClick} style={{ backgroundColor: "#2D3748" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleDefRairaselClick} style={{ backgroundColor: "#2D3748" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -8093,14 +8034,14 @@ align='center'
 boxSize='3rem'
 src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
 mr='5px'
-/> <Text fontSize='sm' align='center'>Rairasel:<br/>Defense Boost</Text>
+/> <Text fontSize='sm' align='center'>Rairasel:<br/>Def. Boost</Text>
 </VStack>
    </Button>
    </WrapItem>}
 
 {DefRairaselIsShown &&
   <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleDefRairaselNoClick} style={{ backgroundColor: "#2d1b59" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleDefRairaselNoClick} style={{ backgroundColor: "#2d1b59" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -8108,14 +8049,14 @@ align='center'
 boxSize='3rem'
 src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
 mr='5px'
-/> <Text fontSize='sm' align='center'>Rairasel:<br/>Defense Boost</Text>
+/> <Text fontSize='sm' align='center'>Rairasel:<br/>Def. Boost</Text>
 </VStack>
    </Button>
    </WrapItem>}            
 
 {!LuckRairaselIsShown &&
   <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleLuckRairaselClick} style={{ backgroundColor: "#2D3748" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleLuckRairaselClick} style={{ backgroundColor: "#2D3748" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -8130,7 +8071,7 @@ mr='5px'
 
 {LuckRairaselIsShown &&
   <WrapItem>
-   <Button w='100px' h='110px' pb={5} onClick={handleLuckRairaselNoClick} style={{ backgroundColor: "#2d1b59" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleLuckRairaselNoClick} style={{ backgroundColor: "#2d1b59" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -8150,17 +8091,16 @@ mr='5px'
 }
 
 {AurilisIsShown &&
-                <Wrap>
+                <Wrap justify='center'>
           {!AlderbamIsShown &&
             <WrapItem>
-            <Button w='315px' h='110px' pb={5} onClick={handleAlderbamClick} style={{ backgroundColor: "#2D3748" }}>
-    <HStack>
+            <Button w='290px' h='110px' pb={5} onClick={handleAlderbamClick} style={{ backgroundColor: "#2D3748" }}>
+    <HStack justify='center'> 
        <Image
         mt='12px'
         align='center' 
-        boxSize='5rem'
+        boxSize='4rem'
         src='https://static.wikia.nocookie.net/4thewords/images/9/95/Alderbam.png/'
-        mr='5px'
       /> 
       <VStack>
       <Text fontSize='md' align='center'><b>Alderbam</b></Text>
@@ -8172,14 +8112,13 @@ mr='5px'
 
             {AlderbamIsShown &&
             <WrapItem>
-            <Button w='315px' h='110px' pb={5} onClick={handleAlderbamNoClick} style={{ backgroundColor: "#2d1b59" }}>
-       <HStack> 
+            <Button w='290px' h='110px' pb={5} onClick={handleAlderbamNoClick} style={{ backgroundColor: "#2d1b59" }}>
+       <HStack justify='center'>  
        <Image
         mt='12px'
         align='center' 
-        boxSize='5rem'
+        boxSize='4rem'
         src='https://static.wikia.nocookie.net/4thewords/images/9/95/Alderbam.png/'
-        mr='5px'
       /> 
       <VStack>
       <Text fontSize='md' align='center'><b>Alderbam</b></Text>
@@ -8190,14 +8129,13 @@ mr='5px'
             </WrapItem>}
           {!ChysisIsShown &&
             <WrapItem>
-            <Button w='315px' h='110px' pb={5} onClick={handleChysisClick} style={{ backgroundColor: "#2D3748" }}>
-    <HStack>
+            <Button w='290px' h='110px' pb={5} onClick={handleChysisClick} style={{ backgroundColor: "#2D3748" }}>
+    <HStack justify='center'> 
        <Image
         mt='12px'
         align='center' 
-        boxSize='5rem'
+        boxSize='4rem'
         src='https://static.wikia.nocookie.net/4thewords/images/9/97/Chysis.png/'
-        mr='5px'
       /> 
       <VStack>
       <Text fontSize='md' align='center'><b>Chysis</b></Text>
@@ -8209,14 +8147,13 @@ mr='5px'
 
             {ChysisIsShown &&
             <WrapItem>
-            <Button w='315px' h='110px' pb={5} onClick={handleChysisNoClick} style={{ backgroundColor: "#2d1b59" }}>
-       <HStack> 
+            <Button w='290px' h='110px' pb={5} onClick={handleChysisNoClick} style={{ backgroundColor: "#2d1b59" }}>
+       <HStack justify='center'>  
        <Image
         mt='12px'
         align='center' 
-        boxSize='5rem'
+        boxSize='4rem'
         src='https://static.wikia.nocookie.net/4thewords/images/9/97/Chysis.png/'
-        mr='5px'
       /> 
       <VStack>
       <Text fontSize='md' align='center'><b>Chysis</b></Text>
@@ -8228,14 +8165,13 @@ mr='5px'
 
     {!MundIsShown &&
             <WrapItem>
-            <Button w='315px' h='110px' pb={5} onClick={handleMundClick} style={{ backgroundColor: "#2D3748" }}>
-    <HStack>
+            <Button w='290px' h='110px' pb={5} onClick={handleMundClick} style={{ backgroundColor: "#2D3748" }}>
+    <HStack justify='center'> 
        <Image
         mt='12px'
         align='center' 
-        boxSize='5rem'
+        boxSize='4rem'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e3/Mund.png/'
-        mr='5px'
       /> 
       <VStack>
       <Text fontSize='md' align='center'><b>Mund</b></Text>
@@ -8247,14 +8183,13 @@ mr='5px'
 
             {MundIsShown &&
             <WrapItem>
-            <Button w='315px' h='110px' pb={5} onClick={handleMundNoClick} style={{ backgroundColor: "#2d1b59" }}>
-       <HStack> 
+            <Button w='290px' h='110px' pb={5} onClick={handleMundNoClick} style={{ backgroundColor: "#2d1b59" }}>
+       <HStack justify='center'>  
        <Image
         mt='12px'
         align='center' 
-        boxSize='5rem'
+        boxSize='4rem'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e3/Mund.png/'
-        mr='5px'
       /> 
       <VStack>
       <Text fontSize='md' align='center'><b>Mund</b></Text>
@@ -8266,14 +8201,13 @@ mr='5px'
 
      {!WhodiniIsShown &&
             <WrapItem>
-            <Button w='315px' h='110px' pb={5} onClick={handleWhodiniClick} style={{ backgroundColor: "#2D3748" }}>
-    <HStack>
+            <Button w='290px' h='110px' pb={5} onClick={handleWhodiniClick} style={{ backgroundColor: "#2D3748" }}>
+    <HStack justify='center'> 
        <Image
         mt='12px'
         align='center' 
-        boxSize='5rem'
+        boxSize='4rem'
         src='https://static.wikia.nocookie.net/4thewords/images/d/d5/Whodini.png/'
-        mr='5px'
       /> 
       <VStack>
       <Text fontSize='md' align='center'><b>Whodini</b></Text>
@@ -8285,14 +8219,13 @@ mr='5px'
 
             {WhodiniIsShown &&
             <WrapItem>
-            <Button w='315px' h='110px' pb={5} onClick={handleWhodiniNoClick} style={{ backgroundColor: "#2d1b59" }}>
-       <HStack> 
+            <Button w='290px' h='110px' pb={5} onClick={handleWhodiniNoClick} style={{ backgroundColor: "#2d1b59" }}>
+       <HStack justify='center'>  
        <Image
         mt='12px'
         align='center' 
-        boxSize='5rem'
+        boxSize='4rem'
         src='https://static.wikia.nocookie.net/4thewords/images/d/d5/Whodini.png/'
-        mr='5px'
       /> 
       <VStack>
       <Text fontSize='md' align='center'><b>Whodini</b></Text>
@@ -8321,10 +8254,10 @@ mr='5px'
     <AccordionPanel pb={4}>
       <Box h='400px' overflowY='scroll'>
           <Text fontSize='md' mb='15px'><b>Weapon 1 Items:</b></Text>
-                <Wrap>
+                <Wrap justify='center'>
                 {(DCIsShown || World2RegionIsShown) && !KingMaiSwordIsShown &&
   <WrapItem>
-<Button w='100px' h='110px' pb={5} onClick={handleKingMaiSwordClick} style={{ backgroundColor: "#2D3748" }}>
+<Button w='90px' h='110px' pb={5} onClick={handleKingMaiSwordClick} style={{ backgroundColor: "#2D3748" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -8338,7 +8271,7 @@ mr='5px'
   </WrapItem>}
   {(DCIsShown || World2RegionIsShown) && KingMaiSwordIsShown &&
   <WrapItem>
-<Button w='100px' h='110px' pb={5} onClick={handleKingMaiSwordNoClick} style={{ backgroundColor: "#2d1b59"}}>
+<Button w='90px' h='110px' pb={5} onClick={handleKingMaiSwordNoClick} style={{ backgroundColor: "#2d1b59"}}>
 <VStack> 
 <Image
 mt='12px'
@@ -8353,7 +8286,7 @@ mr='5px'
 
   {(DCIsShown || World2RegionIsShown) && !MercurialSwordIsShown &&
     <WrapItem>
-  <Button w='100px' h='110px' pb={5} onClick={handleMercurialSwordClick} style={{ backgroundColor: "#2D3748" }}>
+  <Button w='90px' h='110px' pb={5} onClick={handleMercurialSwordClick} style={{ backgroundColor: "#2D3748" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -8367,7 +8300,7 @@ mr='5px'
     </WrapItem>}
     {(DCIsShown || World2RegionIsShown) && MercurialSwordIsShown &&
     <WrapItem>
-  <Button w='100px' h='110px' pb={5} onClick={handleMercurialSwordNoClick} style={{ backgroundColor: "#2d1b59"}}>
+  <Button w='90px' h='110px' pb={5} onClick={handleMercurialSwordNoClick} style={{ backgroundColor: "#2d1b59"}}>
 <VStack> 
 <Image
 mt='12px'
@@ -8381,7 +8314,7 @@ mr='5px'
     </WrapItem>}
     {(CoLIsShown || DCIsShown || World2RegionIsShown) && !FlowerSlingshotIsShown &&
   <WrapItem>
-<Button w='100px' h='110px' pb={5} onClick={handleFlowerSlingshotClick} style={{ backgroundColor: "#2D3748" }}>
+<Button w='90px' h='110px' pb={5} onClick={handleFlowerSlingshotClick} style={{ backgroundColor: "#2D3748" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -8395,7 +8328,7 @@ mr='5px'
   </WrapItem>}
   {(CoLIsShown || DCIsShown || World2RegionIsShown) && FlowerSlingshotIsShown &&
   <WrapItem>
-<Button w='100px' h='110px' pb={5} onClick={handleFlowerSlingshotNoClick} style={{ backgroundColor: "#2d1b59"}}>
+<Button w='90px' h='110px' pb={5} onClick={handleFlowerSlingshotNoClick} style={{ backgroundColor: "#2d1b59"}}>
 <VStack> 
 <Image
 mt='12px'
@@ -8410,7 +8343,7 @@ mr='5px'
 
   {(CoLIsShown || DCIsShown || World2RegionIsShown) && !FusionSwordIsShown &&
   <WrapItem>
-<Button w='100px' h='110px' pb={5} onClick={handleFusionSwordClick} style={{ backgroundColor: "#2D3748" }}>
+<Button w='90px' h='110px' pb={5} onClick={handleFusionSwordClick} style={{ backgroundColor: "#2D3748" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -8424,7 +8357,7 @@ mr='5px'
   </WrapItem>}
   {(CoLIsShown || DCIsShown || World2RegionIsShown) && FusionSwordIsShown &&
   <WrapItem>
-<Button w='100px' h='110px' pb={5} onClick={handleFusionSwordNoClick} style={{ backgroundColor: "#2d1b59"}}>
+<Button w='90px' h='110px' pb={5} onClick={handleFusionSwordNoClick} style={{ backgroundColor: "#2d1b59"}}>
 <VStack> 
 <Image
 mt='12px'
@@ -8439,10 +8372,10 @@ mr='5px'
             </Wrap>
 
           <Text fontSize='md' mt='25px' mb='15px'><b>Weapon 2 Items:</b></Text>
-  <Wrap>
+  <Wrap justify='center'>
   {World2RegionIsShown && !NivaliBowIsShown &&
     <WrapItem>
-    <Button w='100px' h='110px' pb={5} onClick={handleNivaliBowClick} style={{ backgroundColor: "#2D3748" }}>
+    <Button w='90px' h='110px' pb={5} onClick={handleNivaliBowClick} style={{ backgroundColor: "#2D3748" }}>
     <VStack> 
     <Image
     mt='12px'
@@ -8457,7 +8390,7 @@ mr='5px'
 
 {World2RegionIsShown && NivaliBowIsShown &&
     <WrapItem>
-    <Button w='100px' h='110px' pb={5} onClick={handleNivaliBowNoClick} style={{ backgroundColor: "#2d1b59"}}>
+    <Button w='90px' h='110px' pb={5} onClick={handleNivaliBowNoClick} style={{ backgroundColor: "#2d1b59"}}>
     <VStack> 
     <Image
     mt='12px'
@@ -8472,7 +8405,7 @@ mr='5px'
 
   {World2RegionIsShown && !NivaliSlingshotIsShown &&
     <WrapItem>
-    <Button w='100px' h='110px' pb={5} onClick={handleNivaliSlingshotClick} style={{ backgroundColor: "#2D3748" }}>
+    <Button w='90px' h='110px' pb={5} onClick={handleNivaliSlingshotClick} style={{ backgroundColor: "#2D3748" }}>
     <VStack> 
     <Image
     mt='12px'
@@ -8487,7 +8420,7 @@ mr='5px'
 
 {World2RegionIsShown && NivaliSlingshotIsShown &&
     <WrapItem>
-    <Button w='100px' h='110px' pb={5} onClick={handleNivaliSlingshotNoClick} style={{ backgroundColor: "#2d1b59"}}>
+    <Button w='90px' h='110px' pb={5} onClick={handleNivaliSlingshotNoClick} style={{ backgroundColor: "#2d1b59"}}>
     <VStack> 
     <Image
     mt='12px'
@@ -8502,7 +8435,7 @@ mr='5px'
 
       {(DCIsShown || World2RegionIsShown) && !MountainMaceIsShown &&
     <WrapItem>
-    <Button w='100px' h='110px' pb={5} onClick={handleMountainMaceClick} style={{ backgroundColor: "#2D3748" }}>
+    <Button w='90px' h='110px' pb={5} onClick={handleMountainMaceClick} style={{ backgroundColor: "#2D3748" }}>
     <VStack> 
     <Image
     mt='12px'
@@ -8517,7 +8450,7 @@ mr='5px'
 
   {(DCIsShown || World2RegionIsShown) && MountainMaceIsShown &&
     <WrapItem>
-    <Button w='100px' h='110px' pb={5} onClick={handleMountainMaceNoClick} style={{ backgroundColor: "#2d1b59"}}>
+    <Button w='90px' h='110px' pb={5} onClick={handleMountainMaceNoClick} style={{ backgroundColor: "#2d1b59"}}>
     <VStack> 
     <Image
     mt='12px'
@@ -8532,7 +8465,7 @@ mr='5px'
 
   {(CoLIsShown || DCIsShown || World2RegionIsShown) && !FusionCrossbowIsShown &&
     <WrapItem>
-    <Button w='100px' h='110px' pb={5} onClick={handleFusionCrossbowClick} style={{ backgroundColor: "#2D3748" }}>
+    <Button w='90px' h='110px' pb={5} onClick={handleFusionCrossbowClick} style={{ backgroundColor: "#2D3748" }}>
     <VStack> 
     <Image
     mt='12px'
@@ -8547,7 +8480,7 @@ mr='5px'
 
   {(CoLIsShown || DCIsShown || World2RegionIsShown) && FusionCrossbowIsShown &&
     <WrapItem>
-    <Button w='100px' h='110px' pb={5} onClick={handleFusionCrossbowNoClick} style={{ backgroundColor: "#2d1b59"}}>
+    <Button w='90px' h='110px' pb={5} onClick={handleFusionCrossbowNoClick} style={{ backgroundColor: "#2d1b59"}}>
     <VStack> 
     <Image
     mt='12px'
@@ -8562,7 +8495,7 @@ mr='5px'
 
   {(CoLIsShown || DCIsShown || World2RegionIsShown) && !PoePickIsShown &&
     <WrapItem>
-    <Button w='100px' h='110px' pb={5} onClick={handlePoePickClick} style={{ backgroundColor: "#2D3748" }}>
+    <Button w='90px' h='110px' pb={5} onClick={handlePoePickClick} style={{ backgroundColor: "#2D3748" }}>
     <VStack> 
     <Image
     mt='12px'
@@ -8577,7 +8510,7 @@ mr='5px'
 
   {(CoLIsShown || DCIsShown || World2RegionIsShown) && PoePickIsShown &&
     <WrapItem>
-    <Button w='100px' h='110px' pb={5} onClick={handlePoePickNoClick} style={{ backgroundColor: "#2d1b59"}}>
+    <Button w='90px' h='110px' pb={5} onClick={handlePoePickNoClick} style={{ backgroundColor: "#2d1b59"}}>
     <VStack> 
     <Image
     mt='12px'
