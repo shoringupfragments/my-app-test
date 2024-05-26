@@ -6257,7 +6257,7 @@ const TopAttackCompanion12 = () => {
 
             </VStack>
 
-  <Accordion with='290px' mt='25px' allowMultiple w={350}>
+  <Accordion with='275px' mt='25px' allowMultiple w={350}>
   <AccordionItem>
   <h2>
       <AccordionButton>
@@ -6915,8 +6915,7 @@ const TopAttackCompanion12 = () => {
         mt='12px'
         align='center' 
         boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png/'
+                src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png/'
         mr='5px'
       /> <Text fontSize='sm' align='center'>Noanza</Text>
       </VStack>
@@ -6930,8 +6929,7 @@ const TopAttackCompanion12 = () => {
         mt='12px'
         align='center' 
         boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png/'
+                src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png/'
         mr='5px'
       /> <Text fontSize='sm' align='center'>Noanza</Text>
       </VStack>
@@ -6945,8 +6943,7 @@ const TopAttackCompanion12 = () => {
         mt='12px'
         align='center' 
         boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/e/e6/Lodo.png/'
+                src='https://static.wikia.nocookie.net/4thewords/images/e/e6/Lodo.png/'
         mr='5px'
       /> <Text fontSize='sm' align='center'>Lodo</Text>
       </VStack>
@@ -6960,8 +6957,7 @@ const TopAttackCompanion12 = () => {
         mt='12px'
         align='center' 
         boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/e/e6/Lodo.png/'
+                src='https://static.wikia.nocookie.net/4thewords/images/e/e6/Lodo.png/'
         mr='5px'
       /> <Text fontSize='sm' align='center'>Lodo</Text>
       </VStack>
@@ -6975,8 +6971,7 @@ const TopAttackCompanion12 = () => {
         mt='12px'
         align='center' 
         boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png/'
+                src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png/'
         mr='5px'
       /> <Text fontSize='sm' align='center'>Azadi</Text>
       </VStack>
@@ -6991,8 +6986,7 @@ const TopAttackCompanion12 = () => {
         mt='12px'
         align='center' 
         boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png/'
+                src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png/'
         mr='5px'
       /> <Text fontSize='sm' align='center'>Azadi</Text>
       </VStack>
@@ -7007,8 +7001,7 @@ const TopAttackCompanion12 = () => {
         mt='12px'
         align='center' 
         boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
+                src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
         mr='5px'
       /> <Text fontSize='sm' align='center'>Suwo</Text>
       </VStack>
@@ -7023,8 +7016,7 @@ const TopAttackCompanion12 = () => {
         mt='12px'
         align='center' 
         boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
+                src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
         mr='5px'
       /> <Text fontSize='sm' align='center'>Suwo</Text>
       </VStack>
@@ -7047,8 +7039,7 @@ const TopAttackCompanion12 = () => {
         mt='12px'
         align='center' 
         boxSize='6rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/f/fa/Kaiszar.png/'
+                src='https://static.wikia.nocookie.net/4thewords/images/f/fa/Kaiszar.png/'
         mr='5px'
       /> 
       <VStack>
@@ -7062,43 +7053,71 @@ const TopAttackCompanion12 = () => {
 {KaiszarIsShown &&
            <WrapItem>
             <Button w='315px' h='110px' pb={5} onClick={handleKaiszarNoClick} style={{ backgroundColor: "#2d1b59"}}>
-       <HStack> 
+       {!AtkKaiszarIsShown && !DefKaiszarIsShown && !LuckKaiszarIsShown &&
+      <HStack> 
        <Image
        ml='-15px'
         mt='12px'
         align='center' 
         boxSize='6rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/f/fa/Kaiszar.png/'
+                src='https://static.wikia.nocookie.net/4thewords/images/f/fa/Kaiszar.png/'
         mr='5px'
       /> 
       <VStack>
-      {!AtkKaiszarIsShown && !DefKaiszarIsShown && !LuckKaiszarIsShown &&
   <Text fontSize='md' mt='15px' align='center'><b>Kaiszar</b></Text>
-  }
-  {!AtkKaiszarIsShown && !DefKaiszarIsShown && !LuckKaiszarIsShown &&
   <Text fontSize='sm' align='center'>+12 Atk / +0 Def / +0 Luck </Text>
-  }
-  {AtkKaiszarIsShown && !DefKaiszarIsShown && !LuckKaiszarIsShown &&
-  <Text fontSize='md' mt='15px' align='center'><b>Attack Kaiszar</b></Text>
-  }
-  {AtkKaiszarIsShown && !DefKaiszarIsShown && !LuckKaiszarIsShown &&
-  <Text fontSize='sm' align='center'>+16 Atk / +0 Def / +0 Luck </Text>
-  }
-  {!AtkKaiszarIsShown && DefKaiszarIsShown && !LuckKaiszarIsShown &&
-  <Text fontSize='md' mt='15px' align='center'><b>Defense Kaiszar</b></Text>
-  }
-  {!AtkKaiszarIsShown && DefKaiszarIsShown && !LuckKaiszarIsShown &&
-  <Text fontSize='sm' align='center'>+12 Atk / +4 Def / +0 Luck </Text>
-  }
-  {!AtkKaiszarIsShown && !DefKaiszarIsShown && LuckKaiszarIsShown &&
-  <Text fontSize='md' mt='15px' align='center'><b>Luck Kaiszar</b></Text>
-  }
-  {!AtkKaiszarIsShown && !DefKaiszarIsShown && LuckKaiszarIsShown &&
-  <Text fontSize='sm' align='center'>+12 Atk / +0 Def / +4 Luck </Text>
-  }
+  
       </VStack>
-      </HStack>
+      </HStack>}
+{AtkKaiszarIsShown && !DefKaiszarIsShown && !LuckKaiszarIsShown &&
+      <HStack>
+       <Image
+       ml='-15px'
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        src='https://i.imgur.com/gbuo4mt.png'
+        mr='5px'
+      /> 
+  <VStack>
+  <Text fontSize='md' mt='15px' align='center'><b>Attack Kaiszar</b></Text>
+  <Text fontSize='sm' align='center'>+16 Atk / +0 Def / +0 Luck </Text>
+
+  </VStack>
+  </HStack>
+  }
+  {!AtkKaiszarIsShown && DefKaiszarIsShown && !LuckKaiszarIsShown &&
+  <HStack>
+       <Image
+       ml='-15px'
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        src='https://i.imgur.com/LGazi9x.png'
+        mr='5px'
+      /> 
+  <VStack>    
+  <Text fontSize='md' mt='15px' align='center'><b>Defense Kaiszar</b></Text>
+  <Text fontSize='sm' align='center'>+12 Atk / +4 Def / +0 Luck </Text>
+  </VStack>
+  </HStack>
+  }
+         {!AtkKaiszarIsShown && !DefKaiszarIsShown && LuckKaiszarIsShown &&
+         <HStack>
+       <Image
+       ml='-15px'
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        src='https://i.imgur.com/gbpdG0f.png'
+        mr='5px'
+      /> 
+  <VStack>
+  <Text fontSize='md' mt='15px' align='center'><b>Luck Kaiszar</b></Text>
+  <Text fontSize='sm' align='center'>+12 Atk / +0 Def / +4 Luck </Text>
+  </VStack> 
+  </HStack>}
+
             </Button>
             </WrapItem>}
 
@@ -7110,8 +7129,7 @@ const TopAttackCompanion12 = () => {
         mt='12px'
         align='center' 
         boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
+                src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
         mr='5px'
       /> <Text fontSize='sm' align='center'>Kaiszar:<br/>Attack Boost</Text>
       </VStack>
@@ -7126,8 +7144,7 @@ const TopAttackCompanion12 = () => {
         mt='12px'
         align='center' 
         boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
+                src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
         mr='5px'
       /> <Text fontSize='sm' align='center'>Kaiszar:<br/>Attack Boost</Text>
       </VStack>
@@ -7142,8 +7159,7 @@ const TopAttackCompanion12 = () => {
         mt='12px'
         align='center' 
         boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
+                src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
         mr='5px'
       /> <Text fontSize='sm' align='center'>Kaiszar:<br/>Defense Boost</Text>
       </VStack>
@@ -7158,8 +7174,7 @@ const TopAttackCompanion12 = () => {
         mt='12px'
         align='center' 
         boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
+                src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
         mr='5px'
       /> <Text fontSize='sm' align='center'>Kaiszar:<br/>Defense Boost</Text>
       </VStack>
@@ -7174,8 +7189,7 @@ const TopAttackCompanion12 = () => {
         mt='12px'
         align='center' 
         boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
+                src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
         mr='5px'
       /> <Text fontSize='sm' align='center'>Kaiszar:<br/>Luck Boost</Text>
       </VStack>
@@ -7190,8 +7204,7 @@ const TopAttackCompanion12 = () => {
         mt='12px'
         align='center' 
         boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
+                src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
         mr='5px'
       /> <Text fontSize='sm' align='center'>Kaiszar:<br/>Luck Boost</Text>
       </VStack>
@@ -7207,7 +7220,6 @@ ml='-15px'
 mt='12px'
 align='center' 
 boxSize='5rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/7/75/Loksi.png'
 mr='5px'
 /> 
@@ -7218,49 +7230,73 @@ mr='5px'
 </HStack>
    </Button>
    </WrapItem>}
-
-{LoksiIsShown &&
+{LoksiIsShown && 
   <WrapItem>
    <Button w='315px' h='110px' pb={5} onClick={handleLoksiNoClick} style={{ backgroundColor: "#2d1b59"}}>
+   {!AtkLoksiIsShown && !DefLoksiIsShown && !LuckLoksiIsShown &&
 <HStack> 
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
 boxSize='5rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/7/75/Loksi.png'
 mr='5px'
 /> 
 <VStack>
-{!AtkLoksiIsShown && !DefLoksiIsShown && !LuckLoksiIsShown &&
   <Text fontSize='md' mt='15px' align='center'><b>Loksi</b></Text>
-  }
-  {!AtkLoksiIsShown && !DefLoksiIsShown && !LuckLoksiIsShown &&
   <Text fontSize='sm' align='center'>+0 Atk / +12 Def / +0 Luck </Text>
-  }
-  {AtkLoksiIsShown && !DefLoksiIsShown && !LuckLoksiIsShown &&
-  <Text fontSize='md' mt='15px' align='center'><b>Attack Loksi</b></Text>
-  }
-  {AtkLoksiIsShown && !DefLoksiIsShown && !LuckLoksiIsShown &&
-  <Text fontSize='sm' align='center'>+4 Atk / +12 Def / +0 Luck </Text>
-  }
-  {!AtkLoksiIsShown && DefLoksiIsShown && !LuckLoksiIsShown &&
-  <Text fontSize='md' mt='15px' align='center'><b>Defense Loksi</b></Text>
-  }
-  {!AtkLoksiIsShown && DefLoksiIsShown && !LuckLoksiIsShown &&
-  <Text fontSize='sm' align='center'>+0 Atk / +16 Def / +0 Luck </Text>
-  }
-  {!AtkLoksiIsShown && !DefLoksiIsShown && LuckLoksiIsShown &&
-  <Text fontSize='md' mt='15px' align='center'><b>Luck Loksi</b></Text>
-  }
-  {!AtkLoksiIsShown && !DefLoksiIsShown && LuckLoksiIsShown &&
-  <Text fontSize='sm' align='center'>+0 Atk / +12 Def / +4 Luck </Text>
-  }
 </VStack>
-</HStack>
-   </Button>
-   </WrapItem>}
+</HStack>}
+{AtkLoksiIsShown && !DefLoksiIsShown && !LuckLoksiIsShown &&
+<HStack> 
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://i.imgur.com/Zb1N51B.png'
+mr='5px'
+/> 
+<VStack>
+<Text fontSize='md' mt='15px' align='center'><b>Attack Loksi</b></Text>
+<Text fontSize='sm' align='center'>+4 Atk / +12 Def / +0 Luck </Text>
+</VStack>
+</HStack>}
+{!AtkLoksiIsShown && DefLoksiIsShown && !LuckLoksiIsShown &&
+<HStack> 
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://i.imgur.com/zGo6cCD.png'
+mr='5px'
+/> 
+<VStack>
+<Text fontSize='md' mt='15px' align='center'><b>Defense Loksi</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk / +16 Def / +0 Luck </Text>
+</VStack>
+</HStack>}
+{!AtkLoksiIsShown && !DefLoksiIsShown && LuckLoksiIsShown &&
+<HStack> 
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://i.imgur.com/bgb1J58.png'
+mr='5px'
+/> 
+<VStack>
+<Text fontSize='md' mt='15px' align='center'><b>Luck Loksi</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk / +12 Def / +4 Luck </Text>
+</VStack>
+</HStack>}
+
+</Button>
+</WrapItem>}
+
 
 {!AtkLoksiIsShown &&
    <WrapItem>
@@ -7270,7 +7306,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Loksi:<br/>Attack Boost</Text>
@@ -7286,7 +7321,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Loksi:<br/>Attack Boost</Text>
@@ -7302,7 +7336,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Loksi:<br/>Defense Boost</Text>
@@ -7318,7 +7351,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Loksi:<br/>Defense Boost</Text>
@@ -7334,7 +7366,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Loksi:<br/>Luck Boost</Text>
@@ -7350,7 +7381,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Loksi:<br/>Luck Boost</Text>
@@ -7358,16 +7388,15 @@ mr='5px'
    </Button>
    </WrapItem>}
 
-   {!ThalamarisIsShown &&
-  <WrapItem>
-   <Button w='315px' h='110px' pb={5} onClick={handleThalamarisClick} style={{ backgroundColor: "#2D3748" }}>
+   <WrapItem>
+   {!AtkThalamarisIsShown && !DefThalamarisIsShown && !LuckThalamarisIsShown &&
+     <Button w='315px' h='110px' pb={5} onClick={handleThalamarisClick} style={{ backgroundColor: "#2D3748" }}>  
 <HStack> 
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
 boxSize='6rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/4/4a/Thalamaris.png/'
 mr='5px'
 /> 
@@ -7376,10 +7405,59 @@ mr='5px'
 <Text fontSize='sm' align='center'>+0 Atk / +0 Def / +12 Luck </Text>
 </VStack>
 </HStack>
+</Button>}
+<Button w='315px' h='110px' pb={5} onClick={handleThalamarisNoClick} style={{ backgroundColor: "#2d1b59" }}>  
+{AtkThalamarisIsShown && !DefThalamarisIsShown && !LuckThalamarisIsShown &&
+<HStack> 
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://i.imgur.com/fe9fXNc.png'
+mr='5px'
+/> 
+<VStack>
+<Text fontSize='md' mt='15px' align='center'><b>Attack Thalamaris</b></Text>
+<Text fontSize='sm' align='center'>+4 Atk / +0 Def / +12 Luck </Text>
+</VStack>
+</HStack>}
+{!AtkThalamarisIsShown && DefThalamarisIsShown && !LuckThalamarisIsShown &&
+<HStack> 
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://i.imgur.com/1G7xegk.png'
+mr='5px'
+/> 
+<VStack>
+<Text fontSize='md' mt='15px' align='center'><b>Defense Thalamaris</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk / +4 Def / +12 Luck </Text>
+</VStack>
+</HStack>}
+{!AtkThalamarisIsShown && !DefThalamarisIsShown && LuckThalamarisIsShown &&
+<HStack> 
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://i.imgur.com/VpveKDD.png'
+mr='5px'
+/> 
+<VStack>
+<Text fontSize='md' mt='15px' align='center'><b>Luck Thalamaris</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk / +0 Def / +16 Luck </Text>
+</VStack>
+</HStack>}
    </Button>
-   </WrapItem>}
+   </WrapItem>
 
-{ThalamarisIsShown &&
+ 
+
+{ThalamarisIsShown && !AtkLoksiIsShown && !DefLoksiIsShown && !LuckLoksiIsShown &&
   <WrapItem>
    <Button w='315px' h='110px' pb={5} onClick={handleThalamarisNoClick} style={{ backgroundColor: "#2d1b59"}}>
 <HStack> 
@@ -7388,35 +7466,12 @@ ml='-15px'
 mt='12px'
 align='center' 
 boxSize='6rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/4/4a/Thalamaris.png/'
 mr='5px'
 /> 
 <VStack>
-{!AtkThalamarisIsShown && !DefThalamarisIsShown && !LuckThalamarisIsShown &&
   <Text fontSize='md' mt='15px' align='center'><b>Thalamaris</b></Text>
-  }
-  {!AtkThalamarisIsShown && !DefThalamarisIsShown && !LuckThalamarisIsShown &&
   <Text fontSize='sm' align='center'>+0 Atk / +0 Def / +12 Luck </Text>
-  }
-  {AtkThalamarisIsShown && !DefThalamarisIsShown && !LuckThalamarisIsShown &&
-  <Text fontSize='md' mt='15px' align='center'><b>Attack Thalamaris</b></Text>
-  }
-  {AtkThalamarisIsShown && !DefThalamarisIsShown && !LuckThalamarisIsShown &&
-  <Text fontSize='sm' align='center'>+4 Atk / +0 Def / +12 Luck </Text>
-  }
-  {!AtkThalamarisIsShown && DefThalamarisIsShown && !LuckThalamarisIsShown &&
-  <Text fontSize='md' mt='15px' align='center'><b>Defense Thalamaris</b></Text>
-  }
-  {!AtkThalamarisIsShown && DefThalamarisIsShown && !LuckThalamarisIsShown &&
-  <Text fontSize='sm' align='center'>+0 Atk / +4 Def / +12 Luck </Text>
-  }
-  {!AtkThalamarisIsShown && !DefThalamarisIsShown && LuckThalamarisIsShown &&
-  <Text fontSize='md' mt='15px' align='center'><b>Luck Thalamaris</b></Text>
-  }
-  {!AtkThalamarisIsShown && !DefThalamarisIsShown && LuckThalamarisIsShown &&
-  <Text fontSize='sm' align='center'>+0 Atk / +0 Def / +16 Luck </Text>
-  }
 </VStack>
 </HStack>
    </Button>
@@ -7430,7 +7485,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Thalamaris:<br/>Attack Boost</Text>
@@ -7446,7 +7500,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Thalamaris:<br/>Attack Boost</Text>
@@ -7462,7 +7515,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Thalamaris:<br/>Defense Boost</Text>
@@ -7478,7 +7530,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Thalamaris:<br/>Defense Boost</Text>
@@ -7494,7 +7545,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Thalamaris:<br/>Luck Boost</Text>
@@ -7510,7 +7560,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Thalamaris:<br/>Luck Boost</Text>
@@ -7525,8 +7574,7 @@ mr='5px'
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='6rem'
-borderRadius='full'
+boxSize='5rem'
 src='https://static.wikia.nocookie.net/4thewords/images/6/63/Valkos.png'
 mr='5px'
 /> 
@@ -7541,45 +7589,75 @@ mr='5px'
 {ValkosIsShown &&
   <WrapItem>
    <Button w='315px' h='110px' pb={5} onClick={handleValkosNoClick} style={{ backgroundColor: "#2d1b59"}}>
+   {!AtkValkosIsShown && !DefValkosIsShown && !LuckValkosIsShown &&
 <HStack> 
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='6rem'
-borderRadius='full'
+boxSize='5rem'
 src='https://static.wikia.nocookie.net/4thewords/images/6/63/Valkos.png'
 mr='5px'
 /> 
 <VStack>
-{!AtkValkosIsShown && !DefValkosIsShown && !LuckValkosIsShown &&
-  <Text fontSize='md' mt='15px' align='center'><b>Valkos</b></Text>
-  }
-  {!AtkValkosIsShown && !DefValkosIsShown && !LuckValkosIsShown &&
-  <Text fontSize='sm' align='center'>+4 Atk / +4 Def / +4 Luck </Text>
-  }
-  {AtkValkosIsShown && !DefValkosIsShown && !LuckValkosIsShown &&
-  <Text fontSize='md' mt='15px' align='center'><b>Attack Valkos</b></Text>
-  }
-  {AtkValkosIsShown && !DefValkosIsShown && !LuckValkosIsShown &&
-  <Text fontSize='sm' align='center'>+8 Atk / +4 Def / +4 Luck </Text>
-  }
-  {!AtkValkosIsShown && DefValkosIsShown && !LuckValkosIsShown &&
-  <Text fontSize='md' mt='15px' align='center'><b>Defense Valkos</b></Text>
-  }
-  {!AtkValkosIsShown && DefValkosIsShown && !LuckValkosIsShown &&
-  <Text fontSize='sm' align='center'>+4 Atk / +8 Def / +4 Luck </Text>
-  }
-  {!AtkValkosIsShown && !DefValkosIsShown && LuckValkosIsShown &&
-  <Text fontSize='md' mt='15px' align='center'><b>Luck Valkos</b></Text>
-  }
-  {!AtkValkosIsShown && !DefValkosIsShown && LuckValkosIsShown &&
-  <Text fontSize='sm' align='center'>+4 Atk / +4 Def / +8 Luck </Text>
-  }
+<Text fontSize='md' mt='15px' align='center'><b>Valkos</b></Text>
+<Text fontSize='sm' align='center'>+4 Atk / +4 Def / +4 Luck </Text>
+  
 </VStack>
-</HStack>
+</HStack>}
+{AtkValkosIsShown && !DefValkosIsShown && !LuckValkosIsShown &&
+<HStack> 
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://i.imgur.com/Ci51Pa1.png'
+mr='5px'
+/> 
+<VStack>
+<Text fontSize='md' mt='15px' align='center'><b>Attack Valkos</b></Text>
+<Text fontSize='sm' align='center'>+8 Atk / +4 Def / +4 Luck </Text>
+  
+</VStack>
+</HStack>}
+{!AtkValkosIsShown && DefValkosIsShown && !LuckValkosIsShown &&
+<HStack> 
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://i.imgur.com/1sMl04A.png'
+mr='5px'
+/> 
+<VStack>
+<Text fontSize='md' mt='15px' align='center'><b>Defense Valkos</b></Text>
+<Text fontSize='sm' align='center'>+4 Atk / +8 Def / +4 Luck </Text>
+  
+</VStack>
+</HStack>}
+{!AtkValkosIsShown && !DefValkosIsShown && LuckValkosIsShown &&
+<HStack> 
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://i.imgur.com/pGyg8DO.png'
+mr='5px'
+/> 
+<VStack>
+<Text fontSize='md' mt='15px' align='center'><b>Luck Valkos</b></Text>
+<Text fontSize='sm' align='center'>+4 Atk / +4 Def / +8 Luck </Text>
+  
+</VStack>
+</HStack>}
    </Button>
    </WrapItem>}
+
+
+
 
 {!AtkValkosIsShown &&
    <WrapItem>
@@ -7589,7 +7667,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Valkos:<br/>Attack Boost</Text>
@@ -7605,7 +7682,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Valkos:<br/>Attack Boost</Text>
@@ -7621,7 +7697,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Valkos:<br/>Defense Boost</Text>
@@ -7637,7 +7712,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Valkos:<br/>Defense Boost</Text>
@@ -7653,7 +7727,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Valkos:<br/>Luck Boost</Text>
@@ -7669,7 +7742,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Valkos:<br/>Luck Boost</Text>
@@ -7677,7 +7749,7 @@ mr='5px'
    </Button>
    </WrapItem>}
 
-{!EenrisIsShown &&
+{!EenrisIsShown && !AtkEenrisIsShown && !DefEenrisIsShown && !LuckEenrisIsShown &&
   <WrapItem>
    <Button w='315px' h='110px' pb={5} onClick={handleEenrisClick} style={{ backgroundColor: "#2D3748" }}>
 <HStack> 
@@ -7685,8 +7757,7 @@ mr='5px'
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='6rem'
-borderRadius='full'
+boxSize='5rem'
 src='https://static.wikia.nocookie.net/4thewords/images/1/1d/Eenris.png/'
 mr='5px'
 /> 
@@ -7698,47 +7769,74 @@ mr='5px'
    </Button>
    </WrapItem>}
 
-{EenrisIsShown &&
+{EenrisIsShown && 
   <WrapItem>
    <Button w='315px' h='110px' pb={5} onClick={handleEenrisNoClick} style={{ backgroundColor: "#2d1b59"}}>
+{!AtkEenrisIsShown && !DefEenrisIsShown && !LuckEenrisIsShown &&
 <HStack> 
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='6rem'
-borderRadius='full'
+boxSize='5rem'
 src='https://static.wikia.nocookie.net/4thewords/images/1/1d/Eenris.png/'
 mr='5px'
 /> 
 <VStack>
-{!AtkEenrisIsShown && !DefEenrisIsShown && !LuckEenrisIsShown &&
-  <Text fontSize='md' mt='15px' align='center'><b>Eenris</b></Text>
-  }
-  {!AtkEenrisIsShown && !DefEenrisIsShown && !LuckEenrisIsShown &&
-  <Text fontSize='sm' align='center'>+3 Atk / +6 Def / +3 Luck </Text>
-  }
-  {AtkEenrisIsShown && !DefEenrisIsShown && !LuckEenrisIsShown &&
+<Text fontSize='md' mt='15px' align='center'><b>Eenris</b></Text>
+<Text fontSize='sm' align='center'>+3 Atk / +6 Def / +3 Luck </Text>
+</VStack>
+</HStack>}
+{AtkEenrisIsShown && !DefEenrisIsShown && !LuckEenrisIsShown &&
+<HStack> 
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://i.imgur.com/lU6zkfR.png'
+mr='5px'
+/> 
+<VStack>
   <Text fontSize='md' mt='15px' align='center'><b>Attack Eenris</b></Text>
-  }
-  {AtkEenrisIsShown && !DefEenrisIsShown && !LuckEenrisIsShown &&
   <Text fontSize='sm' align='center'>+7 Atk / +6 Def / +3 Luck </Text>
-  }
-  {!AtkEenrisIsShown && DefEenrisIsShown && !LuckEenrisIsShown &&
+</VStack>
+</HStack>}
+{!AtkEenrisIsShown && DefEenrisIsShown && !LuckEenrisIsShown &&
+<HStack> 
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://i.imgur.com/5sRBeCz.png'
+mr='5px'
+/> 
+<VStack>
   <Text fontSize='md' mt='15px' align='center'><b>Defense Eenris</b></Text>
-  }
-  {!AtkEenrisIsShown && DefEenrisIsShown && !LuckEenrisIsShown &&
   <Text fontSize='sm' align='center'>+3 Atk / +10 Def / +3 Luck </Text>
-  }
-  {!AtkEenrisIsShown && !DefEenrisIsShown && LuckEenrisIsShown &&
+</VStack>
+</HStack>}
+{!AtkEenrisIsShown && !DefEenrisIsShown && LuckEenrisIsShown &&
+<HStack> 
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://i.imgur.com/exqGLIN.png'
+mr='5px'
+/> 
+<VStack>
   <Text fontSize='md' mt='15px' align='center'><b>Luck Eenris</b></Text>
-  }
-  {!AtkEenrisIsShown && !DefEenrisIsShown && LuckEenrisIsShown &&
   <Text fontSize='sm' align='center'>+3 Atk / +6 Def / +7 Luck </Text>
-  }</VStack>
-</HStack>
+</VStack>
+</HStack>}
+
    </Button>
    </WrapItem>}
+
+
 
 {!AtkEenrisIsShown &&
    <WrapItem>
@@ -7748,7 +7846,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Eenris:<br/>Attack Boost</Text>
@@ -7764,7 +7861,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Eenris:<br/>Attack Boost</Text>
@@ -7780,7 +7876,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Eenris:<br/>Defense Boost</Text>
@@ -7796,7 +7891,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Eenris:<br/>Defense Boost</Text>
@@ -7812,7 +7906,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Eenris:<br/>Luck Boost</Text>
@@ -7828,7 +7921,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Eenris:<br/>Luck Boost</Text>
@@ -7836,7 +7928,7 @@ mr='5px'
    </Button>
    </WrapItem>}
 
-{!RairaselIsShown &&
+{!RairaselIsShown && !AtkRairaselIsShown && !DefRairaselIsShown && !LuckRairaselIsShown &&
   <WrapItem>
    <Button w='315px' h='110px' pb={5} onClick={handleRairaselClick} style={{ backgroundColor: "#2D3748" }}>
 <HStack> 
@@ -7845,7 +7937,6 @@ ml='-15px'
 mt='12px'
 align='center' 
 boxSize='6rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/f/fc/Rairasel.png/'
 mr='5px'
 /> 
@@ -7860,45 +7951,70 @@ mr='5px'
 {RairaselIsShown &&
   <WrapItem>
    <Button w='315px' h='110px' pb={5} onClick={handleRairaselNoClick} style={{ backgroundColor: "#2d1b59"}}>
+{!AtkRairaselIsShown && !DefRairaselIsShown && !LuckRairaselIsShown &&
 <HStack> 
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='6rem'
-borderRadius='full'
+boxSize='5rem'
 src='https://static.wikia.nocookie.net/4thewords/images/f/fc/Rairasel.png/'
 mr='5px'
 /> 
 <VStack>
-{!AtkRairaselIsShown && !DefRairaselIsShown && !LuckRairaselIsShown &&
 <Text fontSize='md' mt='15px' align='center'><b>Rairasel</b></Text>
-}
-{!AtkRairaselIsShown && !DefRairaselIsShown && !LuckRairaselIsShown &&
 <Text fontSize='sm' align='center'>+6 Atk / +0 Def / +6 Luck </Text>
-}
-{AtkRairaselIsShown && !DefRairaselIsShown && !LuckRairaselIsShown &&
-<Text fontSize='md' mt='15px' align='center'><b>Attack Rairasel</b></Text>
-}
-{AtkRairaselIsShown && !DefRairaselIsShown && !LuckRairaselIsShown &&
-<Text fontSize='sm' align='center'>+10 Atk / +0 Def / +6 Luck </Text>
-}
-{!AtkRairaselIsShown && DefRairaselIsShown && !LuckRairaselIsShown &&
-<Text fontSize='md' mt='15px' align='center'><b>Defense Rairasel</b></Text>
-}
-{!AtkRairaselIsShown && DefRairaselIsShown && !LuckRairaselIsShown &&
-<Text fontSize='sm' align='center'>+6 Atk / +4 Def / +6 Luck </Text>
-}
-{!AtkRairaselIsShown && !DefRairaselIsShown && LuckRairaselIsShown &&
-<Text fontSize='md' mt='15px' align='center'><b>Luck Rairasel</b></Text>
-}
-{!AtkRairaselIsShown && !DefRairaselIsShown && LuckRairaselIsShown &&
-<Text fontSize='sm' align='center'>+6 Atk / +0 Def / +10 Luck </Text>
-}
 </VStack>
-</HStack>
+</HStack>}
+{AtkRairaselIsShown && !DefRairaselIsShown && !LuckRairaselIsShown &&
+<HStack> 
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://i.imgur.com/YB3iqt7.png'
+mr='5px'
+/> 
+<VStack>
+<Text fontSize='md' mt='15px' align='center'><b>Attack Rairasel</b></Text>
+<Text fontSize='sm' align='center'>+10 Atk / +0 Def / +6 Luck </Text>
+</VStack>
+</HStack>}
+{!AtkRairaselIsShown && DefRairaselIsShown && !LuckRairaselIsShown &&
+<HStack> 
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://i.imgur.com/vgropoV.png'
+mr='5px'
+/> 
+<VStack>
+<Text fontSize='md' mt='15px' align='center'><b>Defense Rairasel</b></Text>
+<Text fontSize='sm' align='center'>+6 Atk / +4 Def / +6 Luck </Text>
+</VStack>
+</HStack>}
+{!AtkRairaselIsShown && !DefRairaselIsShown && LuckRairaselIsShown &&
+<HStack> 
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://i.imgur.com/3GrgauN.png'
+mr='5px'
+/> 
+<VStack>
+<Text fontSize='md' mt='15px' align='center'><b>Luck Rairasel</b></Text>
+<Text fontSize='sm' align='center'>+6 Atk / +0 Def / +10 Luck </Text>
+</VStack>
+</HStack>}
+
    </Button>
    </WrapItem>}
+
 
 {!AtkRairaselIsShown &&
    <WrapItem>
@@ -7908,7 +8024,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Rairasel:<br/>Attack Boost</Text>
@@ -7924,7 +8039,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Rairasel:<br/>Attack Boost</Text>
@@ -7940,7 +8054,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Rairasel:<br/>Defense Boost</Text>
@@ -7956,7 +8069,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Rairasel:<br/>Defense Boost</Text>
@@ -7972,7 +8084,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Rairasel:<br/>Luck Boost</Text>
@@ -7988,7 +8099,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Rairasel:<br/>Luck Boost</Text>
@@ -8012,8 +8122,7 @@ mr='5px'
         mt='12px'
         align='center' 
         boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/9/95/Alderbam.png/'
+                src='https://static.wikia.nocookie.net/4thewords/images/9/95/Alderbam.png/'
         mr='5px'
       /> <Text fontSize='sm' align='center'>Alderbam</Text>
       </VStack>
@@ -8027,8 +8136,7 @@ mr='5px'
         mt='12px'
         align='center' 
         boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/9/95/Alderbam.png/'
+                src='https://static.wikia.nocookie.net/4thewords/images/9/95/Alderbam.png/'
         mr='5px'
       /> <Text fontSize='sm' align='center'>Alderbam</Text>
       </VStack>
@@ -8043,7 +8151,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/9/97/Chysis.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Chysis</Text>
@@ -8058,7 +8165,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/9/97/Chysis.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Chysis</Text>
@@ -8074,7 +8180,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/e/e3/Mund.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Mund</Text>
@@ -8089,7 +8194,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/e/e3/Mund.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Mund</Text>
@@ -8105,7 +8209,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/d/d5/Whodini.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Whodini</Text>
@@ -8120,7 +8223,6 @@ mr='5px'
 mt='12px'
 align='center' 
 boxSize='3rem'
-borderRadius='full'
 src='https://static.wikia.nocookie.net/4thewords/images/d/d5/Whodini.png/'
 mr='5px'
 /> <Text fontSize='sm' align='center'>Whodini</Text>
