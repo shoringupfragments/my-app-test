@@ -9007,7 +9007,7 @@ const VoidWignow26 = () => {
   if (totalVoidWignowHPToLose == 26)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel ante quam. Nulla egestas auctor enim non rhoncus. Maecenas feugiat dapibus lacus nec graVoidWignowda. Quisque dictum.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel ante quam. Nulla egestas auctor enim non rhoncus. Maecenas feugiat dapibus lacus nec gravida. Quisque dictum.')}}>
 Copy {totalVoidWignowHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -9015,7 +9015,7 @@ const VoidWignow28 = () => {
   if (totalVoidWignowHPToLose == 28)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non purus feugiat, graVoidWignowda dolor eget, porta mi. Aliquam iaculis elit diam. Ut id blandit dui. Nulla et dolor.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non purus feugiat, gravida dolor eget, porta mi. Aliquam iaculis elit diam. Ut id blandit dui. Nulla et dolor.')}}>
 Copy {totalVoidWignowHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -9039,7 +9039,7 @@ const VoidWignow34 = () => {
   if (totalVoidWignowHPToLose == 34)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus diam tellus, volutpat VoidWignowtae dapibus vel, convallis auctor tellus. Cras fringilla tincidunt lorem, quis sagittis odio accumsan at. Sed nec dictum diam. Cras ac pulVoidWignownar.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus diam tellus, volutpat vitae dapibus vel, convallis auctor tellus. Cras fringilla tincidunt lorem, quis sagittis odio accumsan at. Sed nec dictum diam. Cras ac pulVoidWignownar.')}}>
 Copy {totalVoidWignowHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -9047,7 +9047,7 @@ const VoidWignow36 = () => {
   if (totalVoidWignowHPToLose == 36)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis egestas ex. VoidWignowvamus tempus neque odio, nec scelerisque ipsum vehicula sit amet. Duis nisl dolor, posuere sed ante vel, euismod faucibus nisi. Donec nulla leo, aliquet.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis egestas ex. Vivamus tempus neque odio, nec scelerisque ipsum vehicula sit amet. Duis nisl dolor, posuere sed ante vel, euismod faucibus nisi. Donec nulla leo, aliquet.')}}>
 Copy {totalVoidWignowHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -9063,7 +9063,7 @@ const VoidWignow40 = () => {
   if (totalVoidWignowHPToLose == 40)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. VoidWignowvamus at est et ipsum suscipit lacinia nec sit amet turpis. Vestibulum nec ex nibh. Etiam consequat et justo sit amet commodo. Suspendisse mattis semper arcu eget fermentum. Donec eu nisi elementum.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at est et ipsum suscipit lacinia nec sit amet turpis. Vestibulum nec ex nibh. Etiam consequat et justo sit amet commodo. Suspendisse mattis semper arcu eget fermentum. Donec eu nisi elementum.')}}>
 Copy {totalVoidWignowHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -9071,7 +9071,7 @@ const VoidWignow42 = () => {
   if (totalVoidWignowHPToLose == 42)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac aliquam nunc. Sed VoidWignowtae tellus a tellus dictum condimentum. Nunc volutpat feugiat justo. Fusce vulputate ligula nisl, sed ullamcorper libero imperdiet sit amet. In fermentum sed metus nec pellentesque. Duis eget tellus. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac aliquam nunc. Sed vitae tellus a tellus dictum condimentum. Nunc volutpat feugiat justo. Fusce vulputate ligula nisl, sed ullamcorper libero imperdiet sit amet. In fermentum sed metus nec pellentesque. Duis eget tellus. ')}}>
 Copy {totalVoidWignowHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -9103,7 +9103,7 @@ const VoidWignow50 = () => {
   if (totalVoidWignowHPToLose == 50)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat blandit eros, pellentesque vulputate tortor imperdiet et. In hac habitasse platea dictumst. Aenean non dapibus diam, VoidWignowtae suscipit augue. Phasellus ut aliquam magna, nec efficitur lacus. Pellentesque lacus sapien, vulputate in blandit at, venenatis vestibulum magna. Nullam quis facilisis dui. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat blandit eros, pellentesque vulputate tortor imperdiet et. In hac habitasse platea dictumst. Aenean non dapibus diam, vitae suscipit augue. Phasellus ut aliquam magna, nec efficitur lacus. Pellentesque lacus sapien, vulputate in blandit at, venenatis vestibulum magna. Nullam quis facilisis dui. ')}}>
 Copy {totalVoidWignowHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -9111,7 +9111,7 @@ const VoidWignow52 = () => {
   if (totalVoidWignowHPToLose == 52)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros odio, pellentesque quis tellus at, consectetur lobortis sem. Etiam turpis libero, VoidWignowverra at malesuada ac, fringilla consectetur orci. Etiam sed convallis magna. Morbi feugiat rutrum metus VoidWignowtae placerat. Cras fermentum convallis posuere. VoidWignowvamus hendrerit neque id pharetra consectetur. Etiam fringilla augue et. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros odio, pellentesque quis tellus at, consectetur lobortis sem. Etiam turpis libero, VoidWignowverra at malesuada ac, fringilla consectetur orci. Etiam sed convallis magna. Morbi feugiat rutrum metus vitae placerat. Cras fermentum convallis posuere. Vivamus hendrerit neque id pharetra consectetur. Etiam fringilla augue et. ')}}>
 Copy {totalVoidWignowHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -9119,7 +9119,7 @@ const VoidWignow54 = () => {
   if (totalVoidWignowHPToLose == 54)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id posuere est, a ultrices nisi. In porttitor ligula vel arcu dapibus, vel interdum magna ultricies. Aenean odio ante, ultrices VoidWignowtae fermentum sed, aliquam eu tellus. Vestibulum mattis dignissim sollicitudin. Integer mollis, lorem et convallis elementum, lorem nisi vehicula dolor, congue vulputate metus eros id. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id posuere est, a ultrices nisi. In porttitor ligula vel arcu dapibus, vel interdum magna ultricies. Aenean odio ante, ultrices vitae fermentum sed, aliquam eu tellus. Vestibulum mattis dignissim sollicitudin. Integer mollis, lorem et convallis elementum, lorem nisi vehicula dolor, congue vulputate metus eros id. ')}}>
 Copy {totalVoidWignowHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -9135,7 +9135,7 @@ const VoidWignow58 = () => {
   if (totalVoidWignowHPToLose == 58)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat erat libero, et auctor lorem maximus et. Nam vel massa sed eros luctus finibus nec VoidWignowtae augue. In pellentesque tortor vel pulVoidWignownar efficitur. Aenean non nunc volutpat, semper lacus quis, dignissim erat. Phasellus dignissim, leo et finibus maximus, nunc est dignissim augue, quis placerat urna ligula sit amet. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat erat libero, et auctor lorem maximus et. Nam vel massa sed eros luctus finibus nec vitae augue. In pellentesque tortor vel pulVoidWignownar efficitur. Aenean non nunc volutpat, semper lacus quis, dignissim erat. Phasellus dignissim, leo et finibus maximus, nunc est dignissim augue, quis placerat urna ligula sit amet. ')}}>
 Copy {totalVoidWignowHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -9143,7 +9143,7 @@ const VoidWignow60 = () => {
   if (totalVoidWignowHPToLose == 60)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut sapien ac lacus porttitor aliquam at at nulla. VoidWignowvamus pharetra pulVoidWignownar elementum. Nullam imperdiet augue vel eros imperdiet eleifend. Suspendisse rutrum, tortor id volutpat sagittis, elit urna luctus odio, ut congue massa felis eu ligula. Maecenas tempor, urna in eleifend eleifend, eros ante vehicula odio, VoidWignowtae maximus ipsum sapien sed.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut sapien ac lacus porttitor aliquam at at nulla. Vivamus pharetra pulVoidWignownar elementum. Nullam imperdiet augue vel eros imperdiet eleifend. Suspendisse rutrum, tortor id volutpat sagittis, elit urna luctus odio, ut congue massa felis eu ligula. Maecenas tempor, urna in eleifend eleifend, eros ante vehicula odio, vitae maximus ipsum sapien sed.')}}>
 Copy {totalVoidWignowHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -9159,7 +9159,7 @@ const VoidWignow64 = () => {
   if (totalVoidWignowHPToLose == 64)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu elementum odio. Nulla imperdiet sit amet risus nec pharetra. Duis auctor, justo et sodales posuere, risus sapien maximus enim, at convallis lorem ex eu orci. Donec imperdiet dictum ex, semper fermentum diam auctor sit amet. In suscipit nec odio VoidWignowtae VoidWignowverra. Nullam VoidWignowtae hendrerit lectus, at accumsan mauris. Suspendisse facilisis quam eu imperdiet interdum. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu elementum odio. Nulla imperdiet sit amet risus nec pharetra. Duis auctor, justo et sodales posuere, risus sapien maximus enim, at convallis lorem ex eu orci. Donec imperdiet dictum ex, semper fermentum diam auctor sit amet. In suscipit nec odio vitae VoidWignowverra. Nullam vitae hendrerit lectus, at accumsan mauris. Suspendisse facilisis quam eu imperdiet interdum. ')}}>
 Copy {totalVoidWignowHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -9167,7 +9167,7 @@ const VoidWignow66 = () => {
   if (totalVoidWignowHPToLose == 66)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo rutrum ultrices. Nullam dapibus nisi ut nisl placerat malesuada. Proin luctus dignissim dui, VoidWignowtae lacinia velit graVoidWignowda ac. Proin et nisi ac mi ultricies blandit ac ac sem. Nullam id mattis libero. Sed euismod metus ut odio tincidunt, sed sodales metus blandit. Phasellus aliquam elit in lacinia ornare. Nullam suscipit ipsum ac auctor convallis. Donec tempor. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo rutrum ultrices. Nullam dapibus nisi ut nisl placerat malesuada. Proin luctus dignissim dui, vitae lacinia velit gravida ac. Proin et nisi ac mi ultricies blandit ac ac sem. Nullam id mattis libero. Sed euismod metus ut odio tincidunt, sed sodales metus blandit. Phasellus aliquam elit in lacinia ornare. Nullam suscipit ipsum ac auctor convallis. Donec tempor. ')}}>
 Copy {totalVoidWignowHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -9175,7 +9175,7 @@ const VoidWignow68 = () => {
   if (totalVoidWignowHPToLose == 68)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac dolor lobortis ante ornare scelerisque. Ut finibus luctus purus sit amet accumsan. Duis vel suscipit erat, nec molestie enim. Nullam bibendum odio nunc. VoidWignowvamus mollis fermentum ex, in dictum eros blandit nec. Sed sollicitudin quis tortor ac pharetra. Sed consectetur, turpis eu eleifend rutrum, nibh urna condimentum leo, eget interdum urna est nec sapien. Interdum et malesuada fames. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac dolor lobortis ante ornare scelerisque. Ut finibus luctus purus sit amet accumsan. Duis vel suscipit erat, nec molestie enim. Nullam bibendum odio nunc. Vivamus mollis fermentum ex, in dictum eros blandit nec. Sed sollicitudin quis tortor ac pharetra. Sed consectetur, turpis eu eleifend rutrum, nibh urna condimentum leo, eget interdum urna est nec sapien. Interdum et malesuada fames. ')}}>
 Copy {totalVoidWignowHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -9183,7 +9183,7 @@ const VoidWignow70 = () => {
   if (totalVoidWignowHPToLose == 70)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra purus elementum auctor varius. Morbi elementum mi nec iaculis pretium. Cras nec porta turpis. Nullam vehicula urna VoidWignowtae volutpat sollicitudin. Aliquam erat volutpat. In vehicula ex in augue scelerisque bibendum. Suspendisse cursus neque at mauris feugiat mattis. Ut at congue justo. Phasellus elementum aliquet graVoidWignowda. Aliquam rhoncus vulputate est eget efficitur. Cras tristique elit non tellus consequat iaculis. Nunc sit. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra purus elementum auctor varius. Morbi elementum mi nec iaculis pretium. Cras nec porta turpis. Nullam vehicula urna vitae volutpat sollicitudin. Aliquam erat volutpat. In vehicula ex in augue scelerisque bibendum. Suspendisse cursus neque at mauris feugiat mattis. Ut at congue justo. Phasellus elementum aliquet gravida. Aliquam rhoncus vulputate est eget efficitur. Cras tristique elit non tellus consequat iaculis. Nunc sit. ')}}>
 Copy {totalVoidWignowHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -9191,7 +9191,7 @@ const VoidWignow72 = () => {
   if (totalVoidWignowHPToLose == 72)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales, elit sed posuere laoreet, ante mi maximus velit, vel accumsan sem metus vel justo. Curabitur nec tincidunt tellus, at laoreet felis. Fusce eu luctus felis. Morbi varius, turpis eu aliquam auctor, magna ante interdum nulla, quis maximus magna felis nec nisl. VoidWignowvamus VoidWignowtae ullamcorper dolor. Donec feugiat in dolor in maximus. Integer VoidWignowverra dui sit amet nulla tristique, sit amet suscipit leo. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales, elit sed posuere laoreet, ante mi maximus velit, vel accumsan sem metus vel justo. Curabitur nec tincidunt tellus, at laoreet felis. Fusce eu luctus felis. Morbi varius, turpis eu aliquam auctor, magna ante interdum nulla, quis maximus magna felis nec nisl. Vivamus vitae ullamcorper dolor. Donec feugiat in dolor in maximus. Integer VoidWignowverra dui sit amet nulla tristique, sit amet suscipit leo. ')}}>
 Copy {totalVoidWignowHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -9199,7 +9199,7 @@ const VoidWignow74 = () => {
   if (totalVoidWignowHPToLose == 74)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis magna a justo bibendum dictum sit amet sit amet ex. Aenean quis hendrerit urna, ut ullamcorper nisi. Aenean a nunc consectetur, pharetra lectus non, rhoncus sapien. Sed quis nulla graVoidWignowda, interdum turpis a, faucibus est. Curabitur a odio VoidWignowtae ex tristique luctus VoidWignowtae a sem. Nulla congue vel lacus eget varius. Aliquam fermentum nibh quis diam dictum, vel porta justo rhoncus. Morbi at rhoncus. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis magna a justo bibendum dictum sit amet sit amet ex. Aenean quis hendrerit urna, ut ullamcorper nisi. Aenean a nunc consectetur, pharetra lectus non, rhoncus sapien. Sed quis nulla gravida, interdum turpis a, faucibus est. Curabitur a odio vitae ex tristique luctus vitae a sem. Nulla congue vel lacus eget varius. Aliquam fermentum nibh quis diam dictum, vel porta justo rhoncus. Morbi at rhoncus. ')}}>
 Copy {totalVoidWignowHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -9207,7 +9207,7 @@ const VoidWignow76 = () => {
   if (totalVoidWignowHPToLose == 76)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec euismod est. Cras tincidunt tempus blandit. Vestibulum vel tortor sed ligula vestibulum aliquet sit amet vel tellus. Mauris VoidWignowtae ultricies nibh. Integer eu augue non nulla consectetur cursus. Fusce diam purus, faucibus non interdum sed, varius eget tellus. Suspendisse vehicula justo diam, ac fringilla eros sagittis sit amet. Suspendisse non justo lacinia, tempor libero pulVoidWignownar, efficitur arcu. Nunc VoidWignowtae enim vestibulum massa interdum volutpat sit amet. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec euismod est. Cras tincidunt tempus blandit. Vestibulum vel tortor sed ligula vestibulum aliquet sit amet vel tellus. Mauris vitae ultricies nibh. Integer eu augue non nulla consectetur cursus. Fusce diam purus, faucibus non interdum sed, varius eget tellus. Suspendisse vehicula justo diam, ac fringilla eros sagittis sit amet. Suspendisse non justo lacinia, tempor libero pulVoidWignownar, efficitur arcu. Nunc vitae enim vestibulum massa interdum volutpat sit amet. ')}}>
 Copy {totalVoidWignowHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -9215,7 +9215,7 @@ const VoidWignow78 = () => {
   if (totalVoidWignowHPToLose == 78)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue arcu, fringilla VoidWignowtae tempus vel, ultricies commodo turpis. Pellentesque ut risus luctus, accumsan dolor eget, luctus felis. Suspendisse ac egestas nunc. Sed VoidWignowverra felis nec lectus tempor feugiat. Nunc tincidunt finibus turpis non luctus. Nullam orci nisl, porttitor ut neque in, malesuada porta nisi. Phasellus sollicitudin magna faucibus est lobortis, ornare mollis lacus sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue arcu, fringilla vitae tempus vel, ultricies commodo turpis. Pellentesque ut risus luctus, accumsan dolor eget, luctus felis. Suspendisse ac egestas nunc. Sed VoidWignowverra felis nec lectus tempor feugiat. Nunc tincidunt finibus turpis non luctus. Nullam orci nisl, porttitor ut neque in, malesuada porta nisi. Phasellus sollicitudin magna faucibus est lobortis, ornare mollis lacus sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent. ')}}>
 Copy {totalVoidWignowHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -9223,7 +9223,7 @@ const VoidWignow80 = () => {
   if (totalVoidWignowHPToLose == 80)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue dignissim cursus. VoidWignowvamus id nulla ut risus pellentesque semper. Pellentesque lobortis augue eget ultrices molestie. Nunc euismod massa a lectus varius sollicitudin. Sed dictum quis est placerat porta. Ut malesuada feugiat nisi et accumsan. Morbi et pulVoidWignownar nunc. Proin fringilla condimentum metus, id blandit mauris egestas in. Fusce tincidunt, nisi eget ornare fermentum, elit erat dictum nulla, tristique iaculis leo massa in orci. Ut aliquam efficitur lacus, in commodo nibh.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue dignissim cursus. Vivamus id nulla ut risus pellentesque semper. Pellentesque lobortis augue eget ultrices molestie. Nunc euismod massa a lectus varius sollicitudin. Sed dictum quis est placerat porta. Ut malesuada feugiat nisi et accumsan. Morbi et pulVoidWignownar nunc. Proin fringilla condimentum metus, id blandit mauris egestas in. Fusce tincidunt, nisi eget ornare fermentum, elit erat dictum nulla, tristique iaculis leo massa in orci. Ut aliquam efficitur lacus, in commodo nibh.')}}>
 Copy {totalVoidWignowHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -9231,7 +9231,7 @@ const VoidWignow82 = () => {
   if (totalVoidWignowHPToLose == 82)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor felis ligula, sit amet pulVoidWignownar arcu porta quis. Mauris ultrices tristique neque, id ullamcorper nisi pharetra sit amet. Nam commodo leo sit amet sollicitudin vehicula. Morbi congue tellus risus, eu dapibus ex consequat id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque vestibulum arcu diam, non ornare dui volutpat sollicitudin. Nunc VoidWignowtae massa in leo volutpat fermentum nec eu lectus. Sed sit amet finibus dui, sed. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor felis ligula, sit amet pulVoidWignownar arcu porta quis. Mauris ultrices tristique neque, id ullamcorper nisi pharetra sit amet. Nam commodo leo sit amet sollicitudin vehicula. Morbi congue tellus risus, eu dapibus ex consequat id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque vestibulum arcu diam, non ornare dui volutpat sollicitudin. Nunc vitae massa in leo volutpat fermentum nec eu lectus. Sed sit amet finibus dui, sed. ')}}>
 Copy {totalVoidWignowHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -9239,7 +9239,7 @@ const VoidWignow84 = () => {
   if (totalVoidWignowHPToLose == 84)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum velit VoidWignowtae nunc ultrices, non sagittis eros euismod. Donec mattis leo id tempor tristique. In dignissim tempus augue, et posuere eros tempus sed. Suspendisse in ex felis. Ut faucibus blandit imperdiet. Sed convallis quam quis augue VoidWignowverra rutrum. Ut sapien orci, scelerisque blandit nulla sit amet, malesuada sollicitudin justo. Proin et nulla consequat, fermentum eros non, rutrum orci. Suspendisse porttitor VoidWignowverra tortor sed consequat. Etiam et augue ac metus condimentum finibus. Nunc vel dictum. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum velit vitae nunc ultrices, non sagittis eros euismod. Donec mattis leo id tempor tristique. In dignissim tempus augue, et posuere eros tempus sed. Suspendisse in ex felis. Ut faucibus blandit imperdiet. Sed convallis quam quis augue VoidWignowverra rutrum. Ut sapien orci, scelerisque blandit nulla sit amet, malesuada sollicitudin justo. Proin et nulla consequat, fermentum eros non, rutrum orci. Suspendisse porttitor VoidWignowverra tortor sed consequat. Etiam et augue ac metus condimentum finibus. Nunc vel dictum. ')}}>
 Copy {totalVoidWignowHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -9247,7 +9247,7 @@ const VoidWignow86 = () => {
   if (totalVoidWignowHPToLose == 86)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum lorem, vel congue libero. Maecenas egestas tincidunt mauris, ut interdum turpis eleifend id. Mauris consectetur metus id eros consectetur graVoidWignowda. VoidWignowvamus eget velit ipsum. Nunc porta tortor eu est imperdiet fringilla. Curabitur vel nibh ac odio imperdiet ultricies. Donec tempus ante non libero euismod dapibus. Aenean faucibus consectetur bibendum. Morbi sollicitudin, enim id congue laoreet, elit dui volutpat metus, non egestas ante tortor sit amet ex. Mauris sagittis pulVoidWignownar finibus. Integer non vehicula lectus, ut. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum lorem, vel congue libero. Maecenas egestas tincidunt mauris, ut interdum turpis eleifend id. Mauris consectetur metus id eros consectetur gravida. Vivamus eget velit ipsum. Nunc porta tortor eu est imperdiet fringilla. Curabitur vel nibh ac odio imperdiet ultricies. Donec tempus ante non libero euismod dapibus. Aenean faucibus consectetur bibendum. Morbi sollicitudin, enim id congue laoreet, elit dui volutpat metus, non egestas ante tortor sit amet ex. Mauris sagittis pulVoidWignownar finibus. Integer non vehicula lectus, ut. ')}}>
 Copy {totalVoidWignowHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -9255,7 +9255,7 @@ const VoidWignow88 = () => {
   if (totalVoidWignowHPToLose == 88)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu odio, vulputate eu tortor ac, convallis convallis ipsum. Proin imperdiet luctus odio id vehicula. Sed congue posuere tristique. VoidWignowvamus accumsan luctus tellus. Mauris porttitor leo et metus convallis elementum. Suspendisse in urna pharetra, eleifend arcu et, porttitor lectus. VoidWignowvamus eros tellus, volutpat in est accumsan, bibendum congue est. Phasellus dignissim consequat sem, in rutrum lorem interdum nec. Phasellus facilisis lectus eu eros condimentum, vel luctus justo eleifend. Fusce venenatis ipsum ut ante tincidunt commodo. Suspendisse potenti. Sed volutpat. .')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu odio, vulputate eu tortor ac, convallis convallis ipsum. Proin imperdiet luctus odio id vehicula. Sed congue posuere tristique. Vivamus accumsan luctus tellus. Mauris porttitor leo et metus convallis elementum. Suspendisse in urna pharetra, eleifend arcu et, porttitor lectus. Vivamus eros tellus, volutpat in est accumsan, bibendum congue est. Phasellus dignissim consequat sem, in rutrum lorem interdum nec. Phasellus facilisis lectus eu eros condimentum, vel luctus justo eleifend. Fusce venenatis ipsum ut ante tincidunt commodo. Suspendisse potenti. Sed volutpat. .')}}>
 Copy {totalVoidWignowHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -9263,7 +9263,7 @@ const VoidWignow90 = () => {
   if (totalVoidWignowHPToLose == 90)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu dignissim neque. Quisque a commodo diam. Cras in accumsan nisl. Maecenas VoidWignowtae scelerisque arcu, at pretium ipsum. Nam tincidunt ullamcorper congue. Donec scelerisque, augue nec hendrerit vehicula, erat dui pellentesque odio, et VoidWignowverra dolor felis nec sem. Praesent a lorem vel tellus feugiat ultricies. Etiam lacinia, sapien quis vulputate tincidunt, nisi lacus ornare augue, elementum efficitur elit diam in nibh. Suspendisse ullamcorper mollis purus, at tincidunt odio porta rhoncus. Quisque efficitur nisl nibh, id auctor libero VoidWignowverra ac. In hac. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu dignissim neque. Quisque a commodo diam. Cras in accumsan nisl. Maecenas vitae scelerisque arcu, at pretium ipsum. Nam tincidunt ullamcorper congue. Donec scelerisque, augue nec hendrerit vehicula, erat dui pellentesque odio, et VoidWignowverra dolor felis nec sem. Praesent a lorem vel tellus feugiat ultricies. Etiam lacinia, sapien quis vulputate tincidunt, nisi lacus ornare augue, elementum efficitur elit diam in nibh. Suspendisse ullamcorper mollis purus, at tincidunt odio porta rhoncus. Quisque efficitur nisl nibh, id auctor libero VoidWignowverra ac. In hac. ')}}>
 Copy {totalVoidWignowHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -13689,7 +13689,7 @@ const VanspiProfB26 = () => {
   if (totalVanspiHPToLose == 26)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel ante quam. Nulla egestas auctor enim non rhoncus. Maecenas feugiat dapibus lacus nec graVanspiProfBda. Quisque dictum.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel ante quam. Nulla egestas auctor enim non rhoncus. Maecenas feugiat dapibus lacus nec gravida. Quisque dictum.')}}>
 Copy {totalVanspiHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -13697,7 +13697,7 @@ const VanspiProfB28 = () => {
   if (totalVanspiHPToLose == 28)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non purus feugiat, graVanspiProfBda dolor eget, porta mi. Aliquam iaculis elit diam. Ut id blandit dui. Nulla et dolor.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non purus feugiat, gravida dolor eget, porta mi. Aliquam iaculis elit diam. Ut id blandit dui. Nulla et dolor.')}}>
 Copy {totalVanspiHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -13721,7 +13721,7 @@ const VanspiProfB34 = () => {
   if (totalVanspiHPToLose == 34)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus diam tellus, volutpat VanspiProfBtae dapibus vel, convallis auctor tellus. Cras fringilla tincidunt lorem, quis sagittis odio accumsan at. Sed nec dictum diam. Cras ac pulVanspiProfBnar.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus diam tellus, volutpat vitae dapibus vel, convallis auctor tellus. Cras fringilla tincidunt lorem, quis sagittis odio accumsan at. Sed nec dictum diam. Cras ac pulVanspiProfBnar.')}}>
 Copy {totalVanspiHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -13729,7 +13729,7 @@ const VanspiProfB36 = () => {
   if (totalVanspiHPToLose == 36)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis egestas ex. VanspiProfBvamus tempus neque odio, nec scelerisque ipsum vehicula sit amet. Duis nisl dolor, posuere sed ante vel, euismod faucibus nisi. Donec nulla leo, aliquet.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis egestas ex. Vivamus tempus neque odio, nec scelerisque ipsum vehicula sit amet. Duis nisl dolor, posuere sed ante vel, euismod faucibus nisi. Donec nulla leo, aliquet.')}}>
 Copy {totalVanspiHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -13745,7 +13745,7 @@ const VanspiProfB40 = () => {
   if (totalVanspiHPToLose == 40)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. VanspiProfBvamus at est et ipsum suscipit lacinia nec sit amet turpis. Vestibulum nec ex nibh. Etiam consequat et justo sit amet commodo. Suspendisse mattis semper arcu eget fermentum. Donec eu nisi elementum.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at est et ipsum suscipit lacinia nec sit amet turpis. Vestibulum nec ex nibh. Etiam consequat et justo sit amet commodo. Suspendisse mattis semper arcu eget fermentum. Donec eu nisi elementum.')}}>
 Copy {totalVanspiHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -13753,7 +13753,7 @@ const VanspiProfB42 = () => {
   if (totalVanspiHPToLose == 42)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac aliquam nunc. Sed VanspiProfBtae tellus a tellus dictum condimentum. Nunc volutpat feugiat justo. Fusce vulputate ligula nisl, sed ullamcorper libero imperdiet sit amet. In fermentum sed metus nec pellentesque. Duis eget tellus. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac aliquam nunc. Sed vitae tellus a tellus dictum condimentum. Nunc volutpat feugiat justo. Fusce vulputate ligula nisl, sed ullamcorper libero imperdiet sit amet. In fermentum sed metus nec pellentesque. Duis eget tellus. ')}}>
 Copy {totalVanspiHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -13785,7 +13785,7 @@ const VanspiProfB50 = () => {
   if (totalVanspiHPToLose == 50)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat blandit eros, pellentesque vulputate tortor imperdiet et. In hac habitasse platea dictumst. Aenean non dapibus diam, VanspiProfBtae suscipit augue. Phasellus ut aliquam magna, nec efficitur lacus. Pellentesque lacus sapien, vulputate in blandit at, venenatis vestibulum magna. Nullam quis facilisis dui. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat blandit eros, pellentesque vulputate tortor imperdiet et. In hac habitasse platea dictumst. Aenean non dapibus diam, vitae suscipit augue. Phasellus ut aliquam magna, nec efficitur lacus. Pellentesque lacus sapien, vulputate in blandit at, venenatis vestibulum magna. Nullam quis facilisis dui. ')}}>
 Copy {totalVanspiHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -13793,7 +13793,7 @@ const VanspiProfB52 = () => {
   if (totalVanspiHPToLose == 52)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros odio, pellentesque quis tellus at, consectetur lobortis sem. Etiam turpis libero, VanspiProfBverra at malesuada ac, fringilla consectetur orci. Etiam sed convallis magna. Morbi feugiat rutrum metus VanspiProfBtae placerat. Cras fermentum convallis posuere. VanspiProfBvamus hendrerit neque id pharetra consectetur. Etiam fringilla augue et. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros odio, pellentesque quis tellus at, consectetur lobortis sem. Etiam turpis libero, VanspiProfBverra at malesuada ac, fringilla consectetur orci. Etiam sed convallis magna. Morbi feugiat rutrum metus vitae placerat. Cras fermentum convallis posuere. Vivamus hendrerit neque id pharetra consectetur. Etiam fringilla augue et. ')}}>
 Copy {totalVanspiHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -13801,7 +13801,7 @@ const VanspiProfB54 = () => {
   if (totalVanspiHPToLose == 54)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id posuere est, a ultrices nisi. In porttitor ligula vel arcu dapibus, vel interdum magna ultricies. Aenean odio ante, ultrices VanspiProfBtae fermentum sed, aliquam eu tellus. Vestibulum mattis dignissim sollicitudin. Integer mollis, lorem et convallis elementum, lorem nisi vehicula dolor, congue vulputate metus eros id. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id posuere est, a ultrices nisi. In porttitor ligula vel arcu dapibus, vel interdum magna ultricies. Aenean odio ante, ultrices vitae fermentum sed, aliquam eu tellus. Vestibulum mattis dignissim sollicitudin. Integer mollis, lorem et convallis elementum, lorem nisi vehicula dolor, congue vulputate metus eros id. ')}}>
 Copy {totalVanspiHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -13817,7 +13817,7 @@ const VanspiProfB58 = () => {
   if (totalVanspiHPToLose == 58)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat erat libero, et auctor lorem maximus et. Nam vel massa sed eros luctus finibus nec VanspiProfBtae augue. In pellentesque tortor vel pulVanspiProfBnar efficitur. Aenean non nunc volutpat, semper lacus quis, dignissim erat. Phasellus dignissim, leo et finibus maximus, nunc est dignissim augue, quis placerat urna ligula sit amet. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat erat libero, et auctor lorem maximus et. Nam vel massa sed eros luctus finibus nec vitae augue. In pellentesque tortor vel pulVanspiProfBnar efficitur. Aenean non nunc volutpat, semper lacus quis, dignissim erat. Phasellus dignissim, leo et finibus maximus, nunc est dignissim augue, quis placerat urna ligula sit amet. ')}}>
 Copy {totalVanspiHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -13825,7 +13825,7 @@ const VanspiProfB60 = () => {
   if (totalVanspiHPToLose == 60)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut sapien ac lacus porttitor aliquam at at nulla. VanspiProfBvamus pharetra pulVanspiProfBnar elementum. Nullam imperdiet augue vel eros imperdiet eleifend. Suspendisse rutrum, tortor id volutpat sagittis, elit urna luctus odio, ut congue massa felis eu ligula. Maecenas tempor, urna in eleifend eleifend, eros ante vehicula odio, VanspiProfBtae maximus ipsum sapien sed.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut sapien ac lacus porttitor aliquam at at nulla. Vivamus pharetra pulVanspiProfBnar elementum. Nullam imperdiet augue vel eros imperdiet eleifend. Suspendisse rutrum, tortor id volutpat sagittis, elit urna luctus odio, ut congue massa felis eu ligula. Maecenas tempor, urna in eleifend eleifend, eros ante vehicula odio, vitae maximus ipsum sapien sed.')}}>
 Copy {totalVanspiHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -13841,7 +13841,7 @@ const VanspiProfB64 = () => {
   if (totalVanspiHPToLose == 64)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu elementum odio. Nulla imperdiet sit amet risus nec pharetra. Duis auctor, justo et sodales posuere, risus sapien maximus enim, at convallis lorem ex eu orci. Donec imperdiet dictum ex, semper fermentum diam auctor sit amet. In suscipit nec odio VanspiProfBtae VanspiProfBverra. Nullam VanspiProfBtae hendrerit lectus, at accumsan mauris. Suspendisse facilisis quam eu imperdiet interdum. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu elementum odio. Nulla imperdiet sit amet risus nec pharetra. Duis auctor, justo et sodales posuere, risus sapien maximus enim, at convallis lorem ex eu orci. Donec imperdiet dictum ex, semper fermentum diam auctor sit amet. In suscipit nec odio vitae VanspiProfBverra. Nullam vitae hendrerit lectus, at accumsan mauris. Suspendisse facilisis quam eu imperdiet interdum. ')}}>
 Copy {totalVanspiHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -13849,7 +13849,7 @@ const VanspiProfB66 = () => {
   if (totalVanspiHPToLose == 66)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo rutrum ultrices. Nullam dapibus nisi ut nisl placerat malesuada. Proin luctus dignissim dui, VanspiProfBtae lacinia velit graVanspiProfBda ac. Proin et nisi ac mi ultricies blandit ac ac sem. Nullam id mattis libero. Sed euismod metus ut odio tincidunt, sed sodales metus blandit. Phasellus aliquam elit in lacinia ornare. Nullam suscipit ipsum ac auctor convallis. Donec tempor. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo rutrum ultrices. Nullam dapibus nisi ut nisl placerat malesuada. Proin luctus dignissim dui, vitae lacinia velit gravida ac. Proin et nisi ac mi ultricies blandit ac ac sem. Nullam id mattis libero. Sed euismod metus ut odio tincidunt, sed sodales metus blandit. Phasellus aliquam elit in lacinia ornare. Nullam suscipit ipsum ac auctor convallis. Donec tempor. ')}}>
 Copy {totalVanspiHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -13857,7 +13857,7 @@ const VanspiProfB68 = () => {
   if (totalVanspiHPToLose == 68)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac dolor lobortis ante ornare scelerisque. Ut finibus luctus purus sit amet accumsan. Duis vel suscipit erat, nec molestie enim. Nullam bibendum odio nunc. VanspiProfBvamus mollis fermentum ex, in dictum eros blandit nec. Sed sollicitudin quis tortor ac pharetra. Sed consectetur, turpis eu eleifend rutrum, nibh urna condimentum leo, eget interdum urna est nec sapien. Interdum et malesuada fames. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac dolor lobortis ante ornare scelerisque. Ut finibus luctus purus sit amet accumsan. Duis vel suscipit erat, nec molestie enim. Nullam bibendum odio nunc. Vivamus mollis fermentum ex, in dictum eros blandit nec. Sed sollicitudin quis tortor ac pharetra. Sed consectetur, turpis eu eleifend rutrum, nibh urna condimentum leo, eget interdum urna est nec sapien. Interdum et malesuada fames. ')}}>
 Copy {totalVanspiHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -13865,7 +13865,7 @@ const VanspiProfB70 = () => {
   if (totalVanspiHPToLose == 70)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra purus elementum auctor varius. Morbi elementum mi nec iaculis pretium. Cras nec porta turpis. Nullam vehicula urna VanspiProfBtae volutpat sollicitudin. Aliquam erat volutpat. In vehicula ex in augue scelerisque bibendum. Suspendisse cursus neque at mauris feugiat mattis. Ut at congue justo. Phasellus elementum aliquet graVanspiProfBda. Aliquam rhoncus vulputate est eget efficitur. Cras tristique elit non tellus consequat iaculis. Nunc sit. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra purus elementum auctor varius. Morbi elementum mi nec iaculis pretium. Cras nec porta turpis. Nullam vehicula urna vitae volutpat sollicitudin. Aliquam erat volutpat. In vehicula ex in augue scelerisque bibendum. Suspendisse cursus neque at mauris feugiat mattis. Ut at congue justo. Phasellus elementum aliquet gravida. Aliquam rhoncus vulputate est eget efficitur. Cras tristique elit non tellus consequat iaculis. Nunc sit. ')}}>
 Copy {totalVanspiHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -13873,7 +13873,7 @@ const VanspiProfB72 = () => {
   if (totalVanspiHPToLose == 72)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales, elit sed posuere laoreet, ante mi maximus velit, vel accumsan sem metus vel justo. Curabitur nec tincidunt tellus, at laoreet felis. Fusce eu luctus felis. Morbi varius, turpis eu aliquam auctor, magna ante interdum nulla, quis maximus magna felis nec nisl. VanspiProfBvamus VanspiProfBtae ullamcorper dolor. Donec feugiat in dolor in maximus. Integer VanspiProfBverra dui sit amet nulla tristique, sit amet suscipit leo. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales, elit sed posuere laoreet, ante mi maximus velit, vel accumsan sem metus vel justo. Curabitur nec tincidunt tellus, at laoreet felis. Fusce eu luctus felis. Morbi varius, turpis eu aliquam auctor, magna ante interdum nulla, quis maximus magna felis nec nisl. Vivamus vitae ullamcorper dolor. Donec feugiat in dolor in maximus. Integer VanspiProfBverra dui sit amet nulla tristique, sit amet suscipit leo. ')}}>
 Copy {totalVanspiHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -13881,7 +13881,7 @@ const VanspiProfB74 = () => {
   if (totalVanspiHPToLose == 74)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis magna a justo bibendum dictum sit amet sit amet ex. Aenean quis hendrerit urna, ut ullamcorper nisi. Aenean a nunc consectetur, pharetra lectus non, rhoncus sapien. Sed quis nulla graVanspiProfBda, interdum turpis a, faucibus est. Curabitur a odio VanspiProfBtae ex tristique luctus VanspiProfBtae a sem. Nulla congue vel lacus eget varius. Aliquam fermentum nibh quis diam dictum, vel porta justo rhoncus. Morbi at rhoncus. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis magna a justo bibendum dictum sit amet sit amet ex. Aenean quis hendrerit urna, ut ullamcorper nisi. Aenean a nunc consectetur, pharetra lectus non, rhoncus sapien. Sed quis nulla gravida, interdum turpis a, faucibus est. Curabitur a odio vitae ex tristique luctus vitae a sem. Nulla congue vel lacus eget varius. Aliquam fermentum nibh quis diam dictum, vel porta justo rhoncus. Morbi at rhoncus. ')}}>
 Copy {totalVanspiHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -13889,7 +13889,7 @@ const VanspiProfB76 = () => {
   if (totalVanspiHPToLose == 76)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec euismod est. Cras tincidunt tempus blandit. Vestibulum vel tortor sed ligula vestibulum aliquet sit amet vel tellus. Mauris VanspiProfBtae ultricies nibh. Integer eu augue non nulla consectetur cursus. Fusce diam purus, faucibus non interdum sed, varius eget tellus. Suspendisse vehicula justo diam, ac fringilla eros sagittis sit amet. Suspendisse non justo lacinia, tempor libero pulVanspiProfBnar, efficitur arcu. Nunc VanspiProfBtae enim vestibulum massa interdum volutpat sit amet. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec euismod est. Cras tincidunt tempus blandit. Vestibulum vel tortor sed ligula vestibulum aliquet sit amet vel tellus. Mauris vitae ultricies nibh. Integer eu augue non nulla consectetur cursus. Fusce diam purus, faucibus non interdum sed, varius eget tellus. Suspendisse vehicula justo diam, ac fringilla eros sagittis sit amet. Suspendisse non justo lacinia, tempor libero pulVanspiProfBnar, efficitur arcu. Nunc vitae enim vestibulum massa interdum volutpat sit amet. ')}}>
 Copy {totalVanspiHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -13897,7 +13897,7 @@ const VanspiProfB78 = () => {
   if (totalVanspiHPToLose == 78)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue arcu, fringilla VanspiProfBtae tempus vel, ultricies commodo turpis. Pellentesque ut risus luctus, accumsan dolor eget, luctus felis. Suspendisse ac egestas nunc. Sed VanspiProfBverra felis nec lectus tempor feugiat. Nunc tincidunt finibus turpis non luctus. Nullam orci nisl, porttitor ut neque in, malesuada porta nisi. Phasellus sollicitudin magna faucibus est lobortis, ornare mollis lacus sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue arcu, fringilla vitae tempus vel, ultricies commodo turpis. Pellentesque ut risus luctus, accumsan dolor eget, luctus felis. Suspendisse ac egestas nunc. Sed VanspiProfBverra felis nec lectus tempor feugiat. Nunc tincidunt finibus turpis non luctus. Nullam orci nisl, porttitor ut neque in, malesuada porta nisi. Phasellus sollicitudin magna faucibus est lobortis, ornare mollis lacus sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent. ')}}>
 Copy {totalVanspiHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -13905,7 +13905,7 @@ const VanspiProfB80 = () => {
   if (totalVanspiHPToLose == 80)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue dignissim cursus. VanspiProfBvamus id nulla ut risus pellentesque semper. Pellentesque lobortis augue eget ultrices molestie. Nunc euismod massa a lectus varius sollicitudin. Sed dictum quis est placerat porta. Ut malesuada feugiat nisi et accumsan. Morbi et pulVanspiProfBnar nunc. Proin fringilla condimentum metus, id blandit mauris egestas in. Fusce tincidunt, nisi eget ornare fermentum, elit erat dictum nulla, tristique iaculis leo massa in orci. Ut aliquam efficitur lacus, in commodo nibh.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue dignissim cursus. Vivamus id nulla ut risus pellentesque semper. Pellentesque lobortis augue eget ultrices molestie. Nunc euismod massa a lectus varius sollicitudin. Sed dictum quis est placerat porta. Ut malesuada feugiat nisi et accumsan. Morbi et pulVanspiProfBnar nunc. Proin fringilla condimentum metus, id blandit mauris egestas in. Fusce tincidunt, nisi eget ornare fermentum, elit erat dictum nulla, tristique iaculis leo massa in orci. Ut aliquam efficitur lacus, in commodo nibh.')}}>
 Copy {totalVanspiHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -13913,7 +13913,7 @@ const VanspiProfB82 = () => {
   if (totalVanspiHPToLose == 82)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor felis ligula, sit amet pulVanspiProfBnar arcu porta quis. Mauris ultrices tristique neque, id ullamcorper nisi pharetra sit amet. Nam commodo leo sit amet sollicitudin vehicula. Morbi congue tellus risus, eu dapibus ex consequat id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque vestibulum arcu diam, non ornare dui volutpat sollicitudin. Nunc VanspiProfBtae massa in leo volutpat fermentum nec eu lectus. Sed sit amet finibus dui, sed. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor felis ligula, sit amet pulVanspiProfBnar arcu porta quis. Mauris ultrices tristique neque, id ullamcorper nisi pharetra sit amet. Nam commodo leo sit amet sollicitudin vehicula. Morbi congue tellus risus, eu dapibus ex consequat id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque vestibulum arcu diam, non ornare dui volutpat sollicitudin. Nunc vitae massa in leo volutpat fermentum nec eu lectus. Sed sit amet finibus dui, sed. ')}}>
 Copy {totalVanspiHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -13921,7 +13921,7 @@ const VanspiProfB84 = () => {
   if (totalVanspiHPToLose == 84)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum velit VanspiProfBtae nunc ultrices, non sagittis eros euismod. Donec mattis leo id tempor tristique. In dignissim tempus augue, et posuere eros tempus sed. Suspendisse in ex felis. Ut faucibus blandit imperdiet. Sed convallis quam quis augue VanspiProfBverra rutrum. Ut sapien orci, scelerisque blandit nulla sit amet, malesuada sollicitudin justo. Proin et nulla consequat, fermentum eros non, rutrum orci. Suspendisse porttitor VanspiProfBverra tortor sed consequat. Etiam et augue ac metus condimentum finibus. Nunc vel dictum. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum velit vitae nunc ultrices, non sagittis eros euismod. Donec mattis leo id tempor tristique. In dignissim tempus augue, et posuere eros tempus sed. Suspendisse in ex felis. Ut faucibus blandit imperdiet. Sed convallis quam quis augue VanspiProfBverra rutrum. Ut sapien orci, scelerisque blandit nulla sit amet, malesuada sollicitudin justo. Proin et nulla consequat, fermentum eros non, rutrum orci. Suspendisse porttitor VanspiProfBverra tortor sed consequat. Etiam et augue ac metus condimentum finibus. Nunc vel dictum. ')}}>
 Copy {totalVanspiHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -13929,7 +13929,7 @@ const VanspiProfB86 = () => {
   if (totalVanspiHPToLose == 86)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum lorem, vel congue libero. Maecenas egestas tincidunt mauris, ut interdum turpis eleifend id. Mauris consectetur metus id eros consectetur graVanspiProfBda. VanspiProfBvamus eget velit ipsum. Nunc porta tortor eu est imperdiet fringilla. Curabitur vel nibh ac odio imperdiet ultricies. Donec tempus ante non libero euismod dapibus. Aenean faucibus consectetur bibendum. Morbi sollicitudin, enim id congue laoreet, elit dui volutpat metus, non egestas ante tortor sit amet ex. Mauris sagittis pulVanspiProfBnar finibus. Integer non vehicula lectus, ut. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum lorem, vel congue libero. Maecenas egestas tincidunt mauris, ut interdum turpis eleifend id. Mauris consectetur metus id eros consectetur gravida. Vivamus eget velit ipsum. Nunc porta tortor eu est imperdiet fringilla. Curabitur vel nibh ac odio imperdiet ultricies. Donec tempus ante non libero euismod dapibus. Aenean faucibus consectetur bibendum. Morbi sollicitudin, enim id congue laoreet, elit dui volutpat metus, non egestas ante tortor sit amet ex. Mauris sagittis pulVanspiProfBnar finibus. Integer non vehicula lectus, ut. ')}}>
 Copy {totalVanspiHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -13937,7 +13937,7 @@ const VanspiProfB88 = () => {
   if (totalVanspiHPToLose == 88)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu odio, vulputate eu tortor ac, convallis convallis ipsum. Proin imperdiet luctus odio id vehicula. Sed congue posuere tristique. VanspiProfBvamus accumsan luctus tellus. Mauris porttitor leo et metus convallis elementum. Suspendisse in urna pharetra, eleifend arcu et, porttitor lectus. VanspiProfBvamus eros tellus, volutpat in est accumsan, bibendum congue est. Phasellus dignissim consequat sem, in rutrum lorem interdum nec. Phasellus facilisis lectus eu eros condimentum, vel luctus justo eleifend. Fusce venenatis ipsum ut ante tincidunt commodo. Suspendisse potenti. Sed volutpat. .')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu odio, vulputate eu tortor ac, convallis convallis ipsum. Proin imperdiet luctus odio id vehicula. Sed congue posuere tristique. Vivamus accumsan luctus tellus. Mauris porttitor leo et metus convallis elementum. Suspendisse in urna pharetra, eleifend arcu et, porttitor lectus. Vivamus eros tellus, volutpat in est accumsan, bibendum congue est. Phasellus dignissim consequat sem, in rutrum lorem interdum nec. Phasellus facilisis lectus eu eros condimentum, vel luctus justo eleifend. Fusce venenatis ipsum ut ante tincidunt commodo. Suspendisse potenti. Sed volutpat. .')}}>
 Copy {totalVanspiHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -13945,7 +13945,7 @@ const VanspiProfB90 = () => {
   if (totalVanspiHPToLose == 90)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu dignissim neque. Quisque a commodo diam. Cras in accumsan nisl. Maecenas VanspiProfBtae scelerisque arcu, at pretium ipsum. Nam tincidunt ullamcorper congue. Donec scelerisque, augue nec hendrerit vehicula, erat dui pellentesque odio, et VanspiProfBverra dolor felis nec sem. Praesent a lorem vel tellus feugiat ultricies. Etiam lacinia, sapien quis vulputate tincidunt, nisi lacus ornare augue, elementum efficitur elit diam in nibh. Suspendisse ullamcorper mollis purus, at tincidunt odio porta rhoncus. Quisque efficitur nisl nibh, id auctor libero VanspiProfBverra ac. In hac. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu dignissim neque. Quisque a commodo diam. Cras in accumsan nisl. Maecenas vitae scelerisque arcu, at pretium ipsum. Nam tincidunt ullamcorper congue. Donec scelerisque, augue nec hendrerit vehicula, erat dui pellentesque odio, et VanspiProfBverra dolor felis nec sem. Praesent a lorem vel tellus feugiat ultricies. Etiam lacinia, sapien quis vulputate tincidunt, nisi lacus ornare augue, elementum efficitur elit diam in nibh. Suspendisse ullamcorper mollis purus, at tincidunt odio porta rhoncus. Quisque efficitur nisl nibh, id auctor libero VanspiProfBverra ac. In hac. ')}}>
 Copy {totalVanspiHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -23684,7 +23684,7 @@ const Viyu26 = () => {
   if (totalViyuHPToLose == 26)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel ante quam. Nulla egestas auctor enim non rhoncus. Maecenas feugiat dapibus lacus nec graViyuda. Quisque dictum.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel ante quam. Nulla egestas auctor enim non rhoncus. Maecenas feugiat dapibus lacus nec gravida. Quisque dictum.')}}>
 Copy {totalViyuHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -23692,7 +23692,7 @@ const Viyu28 = () => {
   if (totalViyuHPToLose == 28)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non purus feugiat, graViyuda dolor eget, porta mi. Aliquam iaculis elit diam. Ut id blandit dui. Nulla et dolor.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non purus feugiat, gravida dolor eget, porta mi. Aliquam iaculis elit diam. Ut id blandit dui. Nulla et dolor.')}}>
 Copy {totalViyuHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -23724,7 +23724,7 @@ const Viyu36 = () => {
   if (totalViyuHPToLose == 36)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis egestas ex. Viyuvamus tempus neque odio, nec scelerisque ipsum vehicula sit amet. Duis nisl dolor, posuere sed ante vel, euismod faucibus nisi. Donec nulla leo, aliquet.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis egestas ex. Vivamus tempus neque odio, nec scelerisque ipsum vehicula sit amet. Duis nisl dolor, posuere sed ante vel, euismod faucibus nisi. Donec nulla leo, aliquet.')}}>
 Copy {totalViyuHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -23740,7 +23740,7 @@ const Viyu40 = () => {
   if (totalViyuHPToLose == 40)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viyuvamus at est et ipsum suscipit lacinia nec sit amet turpis. Vestibulum nec ex nibh. Etiam consequat et justo sit amet commodo. Suspendisse mattis semper arcu eget fermentum. Donec eu nisi elementum.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at est et ipsum suscipit lacinia nec sit amet turpis. Vestibulum nec ex nibh. Etiam consequat et justo sit amet commodo. Suspendisse mattis semper arcu eget fermentum. Donec eu nisi elementum.')}}>
 Copy {totalViyuHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -23788,7 +23788,7 @@ const Viyu52 = () => {
   if (totalViyuHPToLose == 52)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros odio, pellentesque quis tellus at, consectetur lobortis sem. Etiam turpis libero, viverra at malesuada ac, fringilla consectetur orci. Etiam sed convallis magna. Morbi feugiat rutrum metus vitae placerat. Cras fermentum convallis posuere. Viyuvamus hendrerit neque id pharetra consectetur. Etiam fringilla augue et. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros odio, pellentesque quis tellus at, consectetur lobortis sem. Etiam turpis libero, viverra at malesuada ac, fringilla consectetur orci. Etiam sed convallis magna. Morbi feugiat rutrum metus vitae placerat. Cras fermentum convallis posuere. Vivamus hendrerit neque id pharetra consectetur. Etiam fringilla augue et. ')}}>
 Copy {totalViyuHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -23820,7 +23820,7 @@ const Viyu60 = () => {
   if (totalViyuHPToLose == 60)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut sapien ac lacus porttitor aliquam at at nulla. Viyuvamus pharetra pulViyunar elementum. Nullam imperdiet augue vel eros imperdiet eleifend. Suspendisse rutrum, tortor id volutpat sagittis, elit urna luctus odio, ut congue massa felis eu ligula. Maecenas tempor, urna in eleifend eleifend, eros ante vehicula odio, vitae maximus ipsum sapien sed.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut sapien ac lacus porttitor aliquam at at nulla. Vivamus pharetra pulViyunar elementum. Nullam imperdiet augue vel eros imperdiet eleifend. Suspendisse rutrum, tortor id volutpat sagittis, elit urna luctus odio, ut congue massa felis eu ligula. Maecenas tempor, urna in eleifend eleifend, eros ante vehicula odio, vitae maximus ipsum sapien sed.')}}>
 Copy {totalViyuHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -23844,7 +23844,7 @@ const Viyu66 = () => {
   if (totalViyuHPToLose == 66)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo rutrum ultrices. Nullam dapibus nisi ut nisl placerat malesuada. Proin luctus dignissim dui, vitae lacinia velit graViyuda ac. Proin et nisi ac mi ultricies blandit ac ac sem. Nullam id mattis libero. Sed euismod metus ut odio tincidunt, sed sodales metus blandit. Phasellus aliquam elit in lacinia ornare. Nullam suscipit ipsum ac auctor convallis. Donec tempor. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo rutrum ultrices. Nullam dapibus nisi ut nisl placerat malesuada. Proin luctus dignissim dui, vitae lacinia velit gravida ac. Proin et nisi ac mi ultricies blandit ac ac sem. Nullam id mattis libero. Sed euismod metus ut odio tincidunt, sed sodales metus blandit. Phasellus aliquam elit in lacinia ornare. Nullam suscipit ipsum ac auctor convallis. Donec tempor. ')}}>
 Copy {totalViyuHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -23852,7 +23852,7 @@ const Viyu68 = () => {
   if (totalViyuHPToLose == 68)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac dolor lobortis ante ornare scelerisque. Ut finibus luctus purus sit amet accumsan. Duis vel suscipit erat, nec molestie enim. Nullam bibendum odio nunc. Viyuvamus mollis fermentum ex, in dictum eros blandit nec. Sed sollicitudin quis tortor ac pharetra. Sed consectetur, turpis eu eleifend rutrum, nibh urna condimentum leo, eget interdum urna est nec sapien. Interdum et malesuada fames. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac dolor lobortis ante ornare scelerisque. Ut finibus luctus purus sit amet accumsan. Duis vel suscipit erat, nec molestie enim. Nullam bibendum odio nunc. Vivamus mollis fermentum ex, in dictum eros blandit nec. Sed sollicitudin quis tortor ac pharetra. Sed consectetur, turpis eu eleifend rutrum, nibh urna condimentum leo, eget interdum urna est nec sapien. Interdum et malesuada fames. ')}}>
 Copy {totalViyuHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -23860,7 +23860,7 @@ const Viyu70 = () => {
   if (totalViyuHPToLose == 70)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra purus elementum auctor varius. Morbi elementum mi nec iaculis pretium. Cras nec porta turpis. Nullam vehicula urna vitae volutpat sollicitudin. Aliquam erat volutpat. In vehicula ex in augue scelerisque bibendum. Suspendisse cursus neque at mauris feugiat mattis. Ut at congue justo. Phasellus elementum aliquet graViyuda. Aliquam rhoncus vulputate est eget efficitur. Cras tristique elit non tellus consequat iaculis. Nunc sit. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra purus elementum auctor varius. Morbi elementum mi nec iaculis pretium. Cras nec porta turpis. Nullam vehicula urna vitae volutpat sollicitudin. Aliquam erat volutpat. In vehicula ex in augue scelerisque bibendum. Suspendisse cursus neque at mauris feugiat mattis. Ut at congue justo. Phasellus elementum aliquet gravida. Aliquam rhoncus vulputate est eget efficitur. Cras tristique elit non tellus consequat iaculis. Nunc sit. ')}}>
 Copy {totalViyuHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -23868,7 +23868,7 @@ const Viyu72 = () => {
   if (totalViyuHPToLose == 72)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales, elit sed posuere laoreet, ante mi maximus velit, vel accumsan sem metus vel justo. Curabitur nec tincidunt tellus, at laoreet felis. Fusce eu luctus felis. Morbi varius, turpis eu aliquam auctor, magna ante interdum nulla, quis maximus magna felis nec nisl. Viyuvamus vitae ullamcorper dolor. Donec feugiat in dolor in maximus. Integer viverra dui sit amet nulla tristique, sit amet suscipit leo. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales, elit sed posuere laoreet, ante mi maximus velit, vel accumsan sem metus vel justo. Curabitur nec tincidunt tellus, at laoreet felis. Fusce eu luctus felis. Morbi varius, turpis eu aliquam auctor, magna ante interdum nulla, quis maximus magna felis nec nisl. Vivamus vitae ullamcorper dolor. Donec feugiat in dolor in maximus. Integer viverra dui sit amet nulla tristique, sit amet suscipit leo. ')}}>
 Copy {totalViyuHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -23876,7 +23876,7 @@ const Viyu74 = () => {
   if (totalViyuHPToLose == 74)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis magna a justo bibendum dictum sit amet sit amet ex. Aenean quis hendrerit urna, ut ullamcorper nisi. Aenean a nunc consectetur, pharetra lectus non, rhoncus sapien. Sed quis nulla graViyuda, interdum turpis a, faucibus est. Curabitur a odio vitae ex tristique luctus vitae a sem. Nulla congue vel lacus eget varius. Aliquam fermentum nibh quis diam dictum, vel porta justo rhoncus. Morbi at rhoncus. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis magna a justo bibendum dictum sit amet sit amet ex. Aenean quis hendrerit urna, ut ullamcorper nisi. Aenean a nunc consectetur, pharetra lectus non, rhoncus sapien. Sed quis nulla gravida, interdum turpis a, faucibus est. Curabitur a odio vitae ex tristique luctus vitae a sem. Nulla congue vel lacus eget varius. Aliquam fermentum nibh quis diam dictum, vel porta justo rhoncus. Morbi at rhoncus. ')}}>
 Copy {totalViyuHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -23900,7 +23900,7 @@ const Viyu80 = () => {
   if (totalViyuHPToLose == 80)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue dignissim cursus. Viyuvamus id nulla ut risus pellentesque semper. Pellentesque lobortis augue eget ultrices molestie. Nunc euismod massa a lectus varius sollicitudin. Sed dictum quis est placerat porta. Ut malesuada feugiat nisi et accumsan. Morbi et pulViyunar nunc. Proin fringilla condimentum metus, id blandit mauris egestas in. Fusce tincidunt, nisi eget ornare fermentum, elit erat dictum nulla, tristique iaculis leo massa in orci. Ut aliquam efficitur lacus, in commodo nibh.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue dignissim cursus. Vivamus id nulla ut risus pellentesque semper. Pellentesque lobortis augue eget ultrices molestie. Nunc euismod massa a lectus varius sollicitudin. Sed dictum quis est placerat porta. Ut malesuada feugiat nisi et accumsan. Morbi et pulViyunar nunc. Proin fringilla condimentum metus, id blandit mauris egestas in. Fusce tincidunt, nisi eget ornare fermentum, elit erat dictum nulla, tristique iaculis leo massa in orci. Ut aliquam efficitur lacus, in commodo nibh.')}}>
 Copy {totalViyuHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -23924,7 +23924,7 @@ const Viyu86 = () => {
   if (totalViyuHPToLose == 86)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum lorem, vel congue libero. Maecenas egestas tincidunt mauris, ut interdum turpis eleifend id. Mauris consectetur metus id eros consectetur graViyuda. Viyuvamus eget velit ipsum. Nunc porta tortor eu est imperdiet fringilla. Curabitur vel nibh ac odio imperdiet ultricies. Donec tempus ante non libero euismod dapibus. Aenean faucibus consectetur bibendum. Morbi sollicitudin, enim id congue laoreet, elit dui volutpat metus, non egestas ante tortor sit amet ex. Mauris sagittis pulViyunar finibus. Integer non vehicula lectus, ut. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum lorem, vel congue libero. Maecenas egestas tincidunt mauris, ut interdum turpis eleifend id. Mauris consectetur metus id eros consectetur gravida. Vivamus eget velit ipsum. Nunc porta tortor eu est imperdiet fringilla. Curabitur vel nibh ac odio imperdiet ultricies. Donec tempus ante non libero euismod dapibus. Aenean faucibus consectetur bibendum. Morbi sollicitudin, enim id congue laoreet, elit dui volutpat metus, non egestas ante tortor sit amet ex. Mauris sagittis pulViyunar finibus. Integer non vehicula lectus, ut. ')}}>
 Copy {totalViyuHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -23932,7 +23932,7 @@ const Viyu88 = () => {
   if (totalViyuHPToLose == 88)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu odio, vulputate eu tortor ac, convallis convallis ipsum. Proin imperdiet luctus odio id vehicula. Sed congue posuere tristique. Viyuvamus accumsan luctus tellus. Mauris porttitor leo et metus convallis elementum. Suspendisse in urna pharetra, eleifend arcu et, porttitor lectus. Viyuvamus eros tellus, volutpat in est accumsan, bibendum congue est. Phasellus dignissim consequat sem, in rutrum lorem interdum nec. Phasellus facilisis lectus eu eros condimentum, vel luctus justo eleifend. Fusce venenatis ipsum ut ante tincidunt commodo. Suspendisse potenti. Sed volutpat. .')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu odio, vulputate eu tortor ac, convallis convallis ipsum. Proin imperdiet luctus odio id vehicula. Sed congue posuere tristique. Vivamus accumsan luctus tellus. Mauris porttitor leo et metus convallis elementum. Suspendisse in urna pharetra, eleifend arcu et, porttitor lectus. Vivamus eros tellus, volutpat in est accumsan, bibendum congue est. Phasellus dignissim consequat sem, in rutrum lorem interdum nec. Phasellus facilisis lectus eu eros condimentum, vel luctus justo eleifend. Fusce venenatis ipsum ut ante tincidunt commodo. Suspendisse potenti. Sed volutpat. .')}}>
 Copy {totalViyuHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -25568,7 +25568,7 @@ const Lucereb26 = () => {
   if (totalLucerebHPToLose == 26)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel ante quam. Nulla egestas auctor enim non rhoncus. Maecenas feugiat dapibus lacus nec graLucerebda. Quisque dictum.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel ante quam. Nulla egestas auctor enim non rhoncus. Maecenas feugiat dapibus lacus nec gravida. Quisque dictum.')}}>
 Copy {totalLucerebHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -25576,7 +25576,7 @@ const Lucereb28 = () => {
   if (totalLucerebHPToLose == 28)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non purus feugiat, graLucerebda dolor eget, porta mi. Aliquam iaculis elit diam. Ut id blandit dui. Nulla et dolor.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non purus feugiat, gravida dolor eget, porta mi. Aliquam iaculis elit diam. Ut id blandit dui. Nulla et dolor.')}}>
 Copy {totalLucerebHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -25600,7 +25600,7 @@ const Lucereb34 = () => {
   if (totalLucerebHPToLose == 34)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus diam tellus, volutpat Lucerebtae dapibus vel, convallis auctor tellus. Cras fringilla tincidunt lorem, quis sagittis odio accumsan at. Sed nec dictum diam. Cras ac pulLucerebnar.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus diam tellus, volutpat vitae dapibus vel, convallis auctor tellus. Cras fringilla tincidunt lorem, quis sagittis odio accumsan at. Sed nec dictum diam. Cras ac pulLucerebnar.')}}>
 Copy {totalLucerebHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -25608,7 +25608,7 @@ const Lucereb36 = () => {
   if (totalLucerebHPToLose == 36)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis egestas ex. Lucerebvamus tempus neque odio, nec scelerisque ipsum vehicula sit amet. Duis nisl dolor, posuere sed ante vel, euismod faucibus nisi. Donec nulla leo, aliquet.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis egestas ex. Vivamus tempus neque odio, nec scelerisque ipsum vehicula sit amet. Duis nisl dolor, posuere sed ante vel, euismod faucibus nisi. Donec nulla leo, aliquet.')}}>
 Copy {totalLucerebHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -25624,7 +25624,7 @@ const Lucereb40 = () => {
   if (totalLucerebHPToLose == 40)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lucerebvamus at est et ipsum suscipit lacinia nec sit amet turpis. Vestibulum nec ex nibh. Etiam consequat et justo sit amet commodo. Suspendisse mattis semper arcu eget fermentum. Donec eu nisi elementum.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at est et ipsum suscipit lacinia nec sit amet turpis. Vestibulum nec ex nibh. Etiam consequat et justo sit amet commodo. Suspendisse mattis semper arcu eget fermentum. Donec eu nisi elementum.')}}>
 Copy {totalLucerebHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -25632,7 +25632,7 @@ const Lucereb42 = () => {
   if (totalLucerebHPToLose == 42)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac aliquam nunc. Sed Lucerebtae tellus a tellus dictum condimentum. Nunc volutpat feugiat justo. Fusce vulputate ligula nisl, sed ullamcorper libero imperdiet sit amet. In fermentum sed metus nec pellentesque. Duis eget tellus. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac aliquam nunc. Sed vitae tellus a tellus dictum condimentum. Nunc volutpat feugiat justo. Fusce vulputate ligula nisl, sed ullamcorper libero imperdiet sit amet. In fermentum sed metus nec pellentesque. Duis eget tellus. ')}}>
 Copy {totalLucerebHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -25664,7 +25664,7 @@ const Lucereb50 = () => {
   if (totalLucerebHPToLose == 50)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat blandit eros, pellentesque vulputate tortor imperdiet et. In hac habitasse platea dictumst. Aenean non dapibus diam, Lucerebtae suscipit augue. Phasellus ut aliquam magna, nec efficitur lacus. Pellentesque lacus sapien, vulputate in blandit at, venenatis vestibulum magna. Nullam quis facilisis dui. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat blandit eros, pellentesque vulputate tortor imperdiet et. In hac habitasse platea dictumst. Aenean non dapibus diam, vitae suscipit augue. Phasellus ut aliquam magna, nec efficitur lacus. Pellentesque lacus sapien, vulputate in blandit at, venenatis vestibulum magna. Nullam quis facilisis dui. ')}}>
 Copy {totalLucerebHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -25672,7 +25672,7 @@ const Lucereb52 = () => {
   if (totalLucerebHPToLose == 52)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros odio, pellentesque quis tellus at, consectetur lobortis sem. Etiam turpis libero, Lucerebverra at malesuada ac, fringilla consectetur orci. Etiam sed convallis magna. Morbi feugiat rutrum metus Lucerebtae placerat. Cras fermentum convallis posuere. Lucerebvamus hendrerit neque id pharetra consectetur. Etiam fringilla augue et. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros odio, pellentesque quis tellus at, consectetur lobortis sem. Etiam turpis libero, Lucerebverra at malesuada ac, fringilla consectetur orci. Etiam sed convallis magna. Morbi feugiat rutrum metus vitae placerat. Cras fermentum convallis posuere. Vivamus hendrerit neque id pharetra consectetur. Etiam fringilla augue et. ')}}>
 Copy {totalLucerebHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -25680,7 +25680,7 @@ const Lucereb54 = () => {
   if (totalLucerebHPToLose == 54)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id posuere est, a ultrices nisi. In porttitor ligula vel arcu dapibus, vel interdum magna ultricies. Aenean odio ante, ultrices Lucerebtae fermentum sed, aliquam eu tellus. Vestibulum mattis dignissim sollicitudin. Integer mollis, lorem et convallis elementum, lorem nisi vehicula dolor, congue vulputate metus eros id. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id posuere est, a ultrices nisi. In porttitor ligula vel arcu dapibus, vel interdum magna ultricies. Aenean odio ante, ultrices vitae fermentum sed, aliquam eu tellus. Vestibulum mattis dignissim sollicitudin. Integer mollis, lorem et convallis elementum, lorem nisi vehicula dolor, congue vulputate metus eros id. ')}}>
 Copy {totalLucerebHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -25696,7 +25696,7 @@ const Lucereb58 = () => {
   if (totalLucerebHPToLose == 58)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat erat libero, et auctor lorem maximus et. Nam vel massa sed eros luctus finibus nec Lucerebtae augue. In pellentesque tortor vel pulLucerebnar efficitur. Aenean non nunc volutpat, semper lacus quis, dignissim erat. Phasellus dignissim, leo et finibus maximus, nunc est dignissim augue, quis placerat urna ligula sit amet. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat erat libero, et auctor lorem maximus et. Nam vel massa sed eros luctus finibus nec vitae augue. In pellentesque tortor vel pulLucerebnar efficitur. Aenean non nunc volutpat, semper lacus quis, dignissim erat. Phasellus dignissim, leo et finibus maximus, nunc est dignissim augue, quis placerat urna ligula sit amet. ')}}>
 Copy {totalLucerebHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -25704,7 +25704,7 @@ const Lucereb60 = () => {
   if (totalLucerebHPToLose == 60)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut sapien ac lacus porttitor aliquam at at nulla. Lucerebvamus pharetra pulLucerebnar elementum. Nullam imperdiet augue vel eros imperdiet eleifend. Suspendisse rutrum, tortor id volutpat sagittis, elit urna luctus odio, ut congue massa felis eu ligula. Maecenas tempor, urna in eleifend eleifend, eros ante vehicula odio, Lucerebtae maximus ipsum sapien sed.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut sapien ac lacus porttitor aliquam at at nulla. Vivamus pharetra pulLucerebnar elementum. Nullam imperdiet augue vel eros imperdiet eleifend. Suspendisse rutrum, tortor id volutpat sagittis, elit urna luctus odio, ut congue massa felis eu ligula. Maecenas tempor, urna in eleifend eleifend, eros ante vehicula odio, vitae maximus ipsum sapien sed.')}}>
 Copy {totalLucerebHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -25720,7 +25720,7 @@ const Lucereb64 = () => {
   if (totalLucerebHPToLose == 64)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu elementum odio. Nulla imperdiet sit amet risus nec pharetra. Duis auctor, justo et sodales posuere, risus sapien maximus enim, at convallis lorem ex eu orci. Donec imperdiet dictum ex, semper fermentum diam auctor sit amet. In suscipit nec odio Lucerebtae Lucerebverra. Nullam Lucerebtae hendrerit lectus, at accumsan mauris. Suspendisse facilisis quam eu imperdiet interdum. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu elementum odio. Nulla imperdiet sit amet risus nec pharetra. Duis auctor, justo et sodales posuere, risus sapien maximus enim, at convallis lorem ex eu orci. Donec imperdiet dictum ex, semper fermentum diam auctor sit amet. In suscipit nec odio vitae Lucerebverra. Nullam vitae hendrerit lectus, at accumsan mauris. Suspendisse facilisis quam eu imperdiet interdum. ')}}>
 Copy {totalLucerebHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -25728,7 +25728,7 @@ const Lucereb66 = () => {
   if (totalLucerebHPToLose == 66)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo rutrum ultrices. Nullam dapibus nisi ut nisl placerat malesuada. Proin luctus dignissim dui, Lucerebtae lacinia velit graLucerebda ac. Proin et nisi ac mi ultricies blandit ac ac sem. Nullam id mattis libero. Sed euismod metus ut odio tincidunt, sed sodales metus blandit. Phasellus aliquam elit in lacinia ornare. Nullam suscipit ipsum ac auctor convallis. Donec tempor. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo rutrum ultrices. Nullam dapibus nisi ut nisl placerat malesuada. Proin luctus dignissim dui, vitae lacinia velit gravida ac. Proin et nisi ac mi ultricies blandit ac ac sem. Nullam id mattis libero. Sed euismod metus ut odio tincidunt, sed sodales metus blandit. Phasellus aliquam elit in lacinia ornare. Nullam suscipit ipsum ac auctor convallis. Donec tempor. ')}}>
 Copy {totalLucerebHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -25736,7 +25736,7 @@ const Lucereb68 = () => {
   if (totalLucerebHPToLose == 68)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac dolor lobortis ante ornare scelerisque. Ut finibus luctus purus sit amet accumsan. Duis vel suscipit erat, nec molestie enim. Nullam bibendum odio nunc. Lucerebvamus mollis fermentum ex, in dictum eros blandit nec. Sed sollicitudin quis tortor ac pharetra. Sed consectetur, turpis eu eleifend rutrum, nibh urna condimentum leo, eget interdum urna est nec sapien. Interdum et malesuada fames. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac dolor lobortis ante ornare scelerisque. Ut finibus luctus purus sit amet accumsan. Duis vel suscipit erat, nec molestie enim. Nullam bibendum odio nunc. Vivamus mollis fermentum ex, in dictum eros blandit nec. Sed sollicitudin quis tortor ac pharetra. Sed consectetur, turpis eu eleifend rutrum, nibh urna condimentum leo, eget interdum urna est nec sapien. Interdum et malesuada fames. ')}}>
 Copy {totalLucerebHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -25744,7 +25744,7 @@ const Lucereb70 = () => {
   if (totalLucerebHPToLose == 70)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra purus elementum auctor varius. Morbi elementum mi nec iaculis pretium. Cras nec porta turpis. Nullam vehicula urna Lucerebtae volutpat sollicitudin. Aliquam erat volutpat. In vehicula ex in augue scelerisque bibendum. Suspendisse cursus neque at mauris feugiat mattis. Ut at congue justo. Phasellus elementum aliquet graLucerebda. Aliquam rhoncus vulputate est eget efficitur. Cras tristique elit non tellus consequat iaculis. Nunc sit. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra purus elementum auctor varius. Morbi elementum mi nec iaculis pretium. Cras nec porta turpis. Nullam vehicula urna vitae volutpat sollicitudin. Aliquam erat volutpat. In vehicula ex in augue scelerisque bibendum. Suspendisse cursus neque at mauris feugiat mattis. Ut at congue justo. Phasellus elementum aliquet gravida. Aliquam rhoncus vulputate est eget efficitur. Cras tristique elit non tellus consequat iaculis. Nunc sit. ')}}>
 Copy {totalLucerebHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -25752,7 +25752,7 @@ const Lucereb72 = () => {
   if (totalLucerebHPToLose == 72)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales, elit sed posuere laoreet, ante mi maximus velit, vel accumsan sem metus vel justo. Curabitur nec tincidunt tellus, at laoreet felis. Fusce eu luctus felis. Morbi varius, turpis eu aliquam auctor, magna ante interdum nulla, quis maximus magna felis nec nisl. Lucerebvamus Lucerebtae ullamcorper dolor. Donec feugiat in dolor in maximus. Integer Lucerebverra dui sit amet nulla tristique, sit amet suscipit leo. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales, elit sed posuere laoreet, ante mi maximus velit, vel accumsan sem metus vel justo. Curabitur nec tincidunt tellus, at laoreet felis. Fusce eu luctus felis. Morbi varius, turpis eu aliquam auctor, magna ante interdum nulla, quis maximus magna felis nec nisl. Vivamus vitae ullamcorper dolor. Donec feugiat in dolor in maximus. Integer Lucerebverra dui sit amet nulla tristique, sit amet suscipit leo. ')}}>
 Copy {totalLucerebHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -25760,7 +25760,7 @@ const Lucereb74 = () => {
   if (totalLucerebHPToLose == 74)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis magna a justo bibendum dictum sit amet sit amet ex. Aenean quis hendrerit urna, ut ullamcorper nisi. Aenean a nunc consectetur, pharetra lectus non, rhoncus sapien. Sed quis nulla graLucerebda, interdum turpis a, faucibus est. Curabitur a odio Lucerebtae ex tristique luctus Lucerebtae a sem. Nulla congue vel lacus eget varius. Aliquam fermentum nibh quis diam dictum, vel porta justo rhoncus. Morbi at rhoncus. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis magna a justo bibendum dictum sit amet sit amet ex. Aenean quis hendrerit urna, ut ullamcorper nisi. Aenean a nunc consectetur, pharetra lectus non, rhoncus sapien. Sed quis nulla gravida, interdum turpis a, faucibus est. Curabitur a odio vitae ex tristique luctus vitae a sem. Nulla congue vel lacus eget varius. Aliquam fermentum nibh quis diam dictum, vel porta justo rhoncus. Morbi at rhoncus. ')}}>
 Copy {totalLucerebHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -25768,7 +25768,7 @@ const Lucereb76 = () => {
   if (totalLucerebHPToLose == 76)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec euismod est. Cras tincidunt tempus blandit. Vestibulum vel tortor sed ligula vestibulum aliquet sit amet vel tellus. Mauris Lucerebtae ultricies nibh. Integer eu augue non nulla consectetur cursus. Fusce diam purus, faucibus non interdum sed, varius eget tellus. Suspendisse vehicula justo diam, ac fringilla eros sagittis sit amet. Suspendisse non justo lacinia, tempor libero pulLucerebnar, efficitur arcu. Nunc Lucerebtae enim vestibulum massa interdum volutpat sit amet. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec euismod est. Cras tincidunt tempus blandit. Vestibulum vel tortor sed ligula vestibulum aliquet sit amet vel tellus. Mauris vitae ultricies nibh. Integer eu augue non nulla consectetur cursus. Fusce diam purus, faucibus non interdum sed, varius eget tellus. Suspendisse vehicula justo diam, ac fringilla eros sagittis sit amet. Suspendisse non justo lacinia, tempor libero pulLucerebnar, efficitur arcu. Nunc vitae enim vestibulum massa interdum volutpat sit amet. ')}}>
 Copy {totalLucerebHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -25776,7 +25776,7 @@ const Lucereb78 = () => {
   if (totalLucerebHPToLose == 78)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue arcu, fringilla Lucerebtae tempus vel, ultricies commodo turpis. Pellentesque ut risus luctus, accumsan dolor eget, luctus felis. Suspendisse ac egestas nunc. Sed Lucerebverra felis nec lectus tempor feugiat. Nunc tincidunt finibus turpis non luctus. Nullam orci nisl, porttitor ut neque in, malesuada porta nisi. Phasellus sollicitudin magna faucibus est lobortis, ornare mollis lacus sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue arcu, fringilla vitae tempus vel, ultricies commodo turpis. Pellentesque ut risus luctus, accumsan dolor eget, luctus felis. Suspendisse ac egestas nunc. Sed Lucerebverra felis nec lectus tempor feugiat. Nunc tincidunt finibus turpis non luctus. Nullam orci nisl, porttitor ut neque in, malesuada porta nisi. Phasellus sollicitudin magna faucibus est lobortis, ornare mollis lacus sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent. ')}}>
 Copy {totalLucerebHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -25784,7 +25784,7 @@ const Lucereb80 = () => {
   if (totalLucerebHPToLose == 80)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue dignissim cursus. Lucerebvamus id nulla ut risus pellentesque semper. Pellentesque lobortis augue eget ultrices molestie. Nunc euismod massa a lectus varius sollicitudin. Sed dictum quis est placerat porta. Ut malesuada feugiat nisi et accumsan. Morbi et pulLucerebnar nunc. Proin fringilla condimentum metus, id blandit mauris egestas in. Fusce tincidunt, nisi eget ornare fermentum, elit erat dictum nulla, tristique iaculis leo massa in orci. Ut aliquam efficitur lacus, in commodo nibh.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue dignissim cursus. Vivamus id nulla ut risus pellentesque semper. Pellentesque lobortis augue eget ultrices molestie. Nunc euismod massa a lectus varius sollicitudin. Sed dictum quis est placerat porta. Ut malesuada feugiat nisi et accumsan. Morbi et pulLucerebnar nunc. Proin fringilla condimentum metus, id blandit mauris egestas in. Fusce tincidunt, nisi eget ornare fermentum, elit erat dictum nulla, tristique iaculis leo massa in orci. Ut aliquam efficitur lacus, in commodo nibh.')}}>
 Copy {totalLucerebHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -25792,7 +25792,7 @@ const Lucereb82 = () => {
   if (totalLucerebHPToLose == 82)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor felis ligula, sit amet pulLucerebnar arcu porta quis. Mauris ultrices tristique neque, id ullamcorper nisi pharetra sit amet. Nam commodo leo sit amet sollicitudin vehicula. Morbi congue tellus risus, eu dapibus ex consequat id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque vestibulum arcu diam, non ornare dui volutpat sollicitudin. Nunc Lucerebtae massa in leo volutpat fermentum nec eu lectus. Sed sit amet finibus dui, sed. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor felis ligula, sit amet pulLucerebnar arcu porta quis. Mauris ultrices tristique neque, id ullamcorper nisi pharetra sit amet. Nam commodo leo sit amet sollicitudin vehicula. Morbi congue tellus risus, eu dapibus ex consequat id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque vestibulum arcu diam, non ornare dui volutpat sollicitudin. Nunc vitae massa in leo volutpat fermentum nec eu lectus. Sed sit amet finibus dui, sed. ')}}>
 Copy {totalLucerebHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -25800,7 +25800,7 @@ const Lucereb84 = () => {
   if (totalLucerebHPToLose == 84)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum velit Lucerebtae nunc ultrices, non sagittis eros euismod. Donec mattis leo id tempor tristique. In dignissim tempus augue, et posuere eros tempus sed. Suspendisse in ex felis. Ut faucibus blandit imperdiet. Sed convallis quam quis augue Lucerebverra rutrum. Ut sapien orci, scelerisque blandit nulla sit amet, malesuada sollicitudin justo. Proin et nulla consequat, fermentum eros non, rutrum orci. Suspendisse porttitor Lucerebverra tortor sed consequat. Etiam et augue ac metus condimentum finibus. Nunc vel dictum. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum velit vitae nunc ultrices, non sagittis eros euismod. Donec mattis leo id tempor tristique. In dignissim tempus augue, et posuere eros tempus sed. Suspendisse in ex felis. Ut faucibus blandit imperdiet. Sed convallis quam quis augue Lucerebverra rutrum. Ut sapien orci, scelerisque blandit nulla sit amet, malesuada sollicitudin justo. Proin et nulla consequat, fermentum eros non, rutrum orci. Suspendisse porttitor Lucerebverra tortor sed consequat. Etiam et augue ac metus condimentum finibus. Nunc vel dictum. ')}}>
 Copy {totalLucerebHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -25808,7 +25808,7 @@ const Lucereb86 = () => {
   if (totalLucerebHPToLose == 86)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum lorem, vel congue libero. Maecenas egestas tincidunt mauris, ut interdum turpis eleifend id. Mauris consectetur metus id eros consectetur graLucerebda. Lucerebvamus eget velit ipsum. Nunc porta tortor eu est imperdiet fringilla. Curabitur vel nibh ac odio imperdiet ultricies. Donec tempus ante non libero euismod dapibus. Aenean faucibus consectetur bibendum. Morbi sollicitudin, enim id congue laoreet, elit dui volutpat metus, non egestas ante tortor sit amet ex. Mauris sagittis pulLucerebnar finibus. Integer non vehicula lectus, ut. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum lorem, vel congue libero. Maecenas egestas tincidunt mauris, ut interdum turpis eleifend id. Mauris consectetur metus id eros consectetur gravida. Vivamus eget velit ipsum. Nunc porta tortor eu est imperdiet fringilla. Curabitur vel nibh ac odio imperdiet ultricies. Donec tempus ante non libero euismod dapibus. Aenean faucibus consectetur bibendum. Morbi sollicitudin, enim id congue laoreet, elit dui volutpat metus, non egestas ante tortor sit amet ex. Mauris sagittis pulLucerebnar finibus. Integer non vehicula lectus, ut. ')}}>
 Copy {totalLucerebHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -25816,7 +25816,7 @@ const Lucereb88 = () => {
   if (totalLucerebHPToLose == 88)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu odio, vulputate eu tortor ac, convallis convallis ipsum. Proin imperdiet luctus odio id vehicula. Sed congue posuere tristique. Lucerebvamus accumsan luctus tellus. Mauris porttitor leo et metus convallis elementum. Suspendisse in urna pharetra, eleifend arcu et, porttitor lectus. Lucerebvamus eros tellus, volutpat in est accumsan, bibendum congue est. Phasellus dignissim consequat sem, in rutrum lorem interdum nec. Phasellus facilisis lectus eu eros condimentum, vel luctus justo eleifend. Fusce venenatis ipsum ut ante tincidunt commodo. Suspendisse potenti. Sed volutpat. .')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu odio, vulputate eu tortor ac, convallis convallis ipsum. Proin imperdiet luctus odio id vehicula. Sed congue posuere tristique. Vivamus accumsan luctus tellus. Mauris porttitor leo et metus convallis elementum. Suspendisse in urna pharetra, eleifend arcu et, porttitor lectus. Vivamus eros tellus, volutpat in est accumsan, bibendum congue est. Phasellus dignissim consequat sem, in rutrum lorem interdum nec. Phasellus facilisis lectus eu eros condimentum, vel luctus justo eleifend. Fusce venenatis ipsum ut ante tincidunt commodo. Suspendisse potenti. Sed volutpat. .')}}>
 Copy {totalLucerebHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -25824,7 +25824,7 @@ const Lucereb90 = () => {
   if (totalLucerebHPToLose == 90)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu dignissim neque. Quisque a commodo diam. Cras in accumsan nisl. Maecenas Lucerebtae scelerisque arcu, at pretium ipsum. Nam tincidunt ullamcorper congue. Donec scelerisque, augue nec hendrerit vehicula, erat dui pellentesque odio, et Lucerebverra dolor felis nec sem. Praesent a lorem vel tellus feugiat ultricies. Etiam lacinia, sapien quis vulputate tincidunt, nisi lacus ornare augue, elementum efficitur elit diam in nibh. Suspendisse ullamcorper mollis purus, at tincidunt odio porta rhoncus. Quisque efficitur nisl nibh, id auctor libero Lucerebverra ac. In hac. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu dignissim neque. Quisque a commodo diam. Cras in accumsan nisl. Maecenas vitae scelerisque arcu, at pretium ipsum. Nam tincidunt ullamcorper congue. Donec scelerisque, augue nec hendrerit vehicula, erat dui pellentesque odio, et Lucerebverra dolor felis nec sem. Praesent a lorem vel tellus feugiat ultricies. Etiam lacinia, sapien quis vulputate tincidunt, nisi lacus ornare augue, elementum efficitur elit diam in nibh. Suspendisse ullamcorper mollis purus, at tincidunt odio porta rhoncus. Quisque efficitur nisl nibh, id auctor libero Lucerebverra ac. In hac. ')}}>
 Copy {totalLucerebHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -35157,7 +35157,7 @@ const Vanvri26 = () => {
   if (totalVanvriHPToLose == 26)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel ante quam. Nulla egestas auctor enim non rhoncus. Maecenas feugiat dapibus lacus nec graVanvrida. Quisque dictum.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel ante quam. Nulla egestas auctor enim non rhoncus. Maecenas feugiat dapibus lacus nec gravida. Quisque dictum.')}}>
 Copy {totalVanvriHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -35165,7 +35165,7 @@ const Vanvri28 = () => {
   if (totalVanvriHPToLose == 28)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non purus feugiat, graVanvrida dolor eget, porta mi. Aliquam iaculis elit diam. Ut id blandit dui. Nulla et dolor.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non purus feugiat, gravida dolor eget, porta mi. Aliquam iaculis elit diam. Ut id blandit dui. Nulla et dolor.')}}>
 Copy {totalVanvriHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -35189,7 +35189,7 @@ const Vanvri34 = () => {
   if (totalVanvriHPToLose == 34)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus diam tellus, volutpat Vanvritae dapibus vel, convallis auctor tellus. Cras fringilla tincidunt lorem, quis sagittis odio accumsan at. Sed nec dictum diam. Cras ac pulVanvrinar.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus diam tellus, volutpat vitae dapibus vel, convallis auctor tellus. Cras fringilla tincidunt lorem, quis sagittis odio accumsan at. Sed nec dictum diam. Cras ac pulVanvrinar.')}}>
 Copy {totalVanvriHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -35197,7 +35197,7 @@ const Vanvri36 = () => {
   if (totalVanvriHPToLose == 36)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis egestas ex. Vanvrivamus tempus neque odio, nec scelerisque ipsum vehicula sit amet. Duis nisl dolor, posuere sed ante vel, euismod faucibus nisi. Donec nulla leo, aliquet.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis egestas ex. Vivamus tempus neque odio, nec scelerisque ipsum vehicula sit amet. Duis nisl dolor, posuere sed ante vel, euismod faucibus nisi. Donec nulla leo, aliquet.')}}>
 Copy {totalVanvriHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -35213,7 +35213,7 @@ const Vanvri40 = () => {
   if (totalVanvriHPToLose == 40)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vanvrivamus at est et ipsum suscipit lacinia nec sit amet turpis. Vestibulum nec ex nibh. Etiam consequat et justo sit amet commodo. Suspendisse mattis semper arcu eget fermentum. Donec eu nisi elementum.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at est et ipsum suscipit lacinia nec sit amet turpis. Vestibulum nec ex nibh. Etiam consequat et justo sit amet commodo. Suspendisse mattis semper arcu eget fermentum. Donec eu nisi elementum.')}}>
 Copy {totalVanvriHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -35221,7 +35221,7 @@ const Vanvri42 = () => {
   if (totalVanvriHPToLose == 42)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac aliquam nunc. Sed Vanvritae tellus a tellus dictum condimentum. Nunc volutpat feugiat justo. Fusce vulputate ligula nisl, sed ullamcorper libero imperdiet sit amet. In fermentum sed metus nec pellentesque. Duis eget tellus. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac aliquam nunc. Sed vitae tellus a tellus dictum condimentum. Nunc volutpat feugiat justo. Fusce vulputate ligula nisl, sed ullamcorper libero imperdiet sit amet. In fermentum sed metus nec pellentesque. Duis eget tellus. ')}}>
 Copy {totalVanvriHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -35253,7 +35253,7 @@ const Vanvri50 = () => {
   if (totalVanvriHPToLose == 50)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat blandit eros, pellentesque vulputate tortor imperdiet et. In hac habitasse platea dictumst. Aenean non dapibus diam, Vanvritae suscipit augue. Phasellus ut aliquam magna, nec efficitur lacus. Pellentesque lacus sapien, vulputate in blandit at, venenatis vestibulum magna. Nullam quis facilisis dui. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat blandit eros, pellentesque vulputate tortor imperdiet et. In hac habitasse platea dictumst. Aenean non dapibus diam, vitae suscipit augue. Phasellus ut aliquam magna, nec efficitur lacus. Pellentesque lacus sapien, vulputate in blandit at, venenatis vestibulum magna. Nullam quis facilisis dui. ')}}>
 Copy {totalVanvriHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -35261,7 +35261,7 @@ const Vanvri52 = () => {
   if (totalVanvriHPToLose == 52)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros odio, pellentesque quis tellus at, consectetur lobortis sem. Etiam turpis libero, Vanvriverra at malesuada ac, fringilla consectetur orci. Etiam sed convallis magna. Morbi feugiat rutrum metus Vanvritae placerat. Cras fermentum convallis posuere. Vanvrivamus hendrerit neque id pharetra consectetur. Etiam fringilla augue et. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros odio, pellentesque quis tellus at, consectetur lobortis sem. Etiam turpis libero, Vanvriverra at malesuada ac, fringilla consectetur orci. Etiam sed convallis magna. Morbi feugiat rutrum metus vitae placerat. Cras fermentum convallis posuere. Vivamus hendrerit neque id pharetra consectetur. Etiam fringilla augue et. ')}}>
 Copy {totalVanvriHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -35269,7 +35269,7 @@ const Vanvri54 = () => {
   if (totalVanvriHPToLose == 54)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id posuere est, a ultrices nisi. In porttitor ligula vel arcu dapibus, vel interdum magna ultricies. Aenean odio ante, ultrices Vanvritae fermentum sed, aliquam eu tellus. Vestibulum mattis dignissim sollicitudin. Integer mollis, lorem et convallis elementum, lorem nisi vehicula dolor, congue vulputate metus eros id. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id posuere est, a ultrices nisi. In porttitor ligula vel arcu dapibus, vel interdum magna ultricies. Aenean odio ante, ultrices vitae fermentum sed, aliquam eu tellus. Vestibulum mattis dignissim sollicitudin. Integer mollis, lorem et convallis elementum, lorem nisi vehicula dolor, congue vulputate metus eros id. ')}}>
 Copy {totalVanvriHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -35285,7 +35285,7 @@ const Vanvri58 = () => {
   if (totalVanvriHPToLose == 58)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat erat libero, et auctor lorem maximus et. Nam vel massa sed eros luctus finibus nec Vanvritae augue. In pellentesque tortor vel pulVanvrinar efficitur. Aenean non nunc volutpat, semper lacus quis, dignissim erat. Phasellus dignissim, leo et finibus maximus, nunc est dignissim augue, quis placerat urna ligula sit amet. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat erat libero, et auctor lorem maximus et. Nam vel massa sed eros luctus finibus nec vitae augue. In pellentesque tortor vel pulVanvrinar efficitur. Aenean non nunc volutpat, semper lacus quis, dignissim erat. Phasellus dignissim, leo et finibus maximus, nunc est dignissim augue, quis placerat urna ligula sit amet. ')}}>
 Copy {totalVanvriHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -35293,7 +35293,7 @@ const Vanvri60 = () => {
   if (totalVanvriHPToLose == 60)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut sapien ac lacus porttitor aliquam at at nulla. Vanvrivamus pharetra pulVanvrinar elementum. Nullam imperdiet augue vel eros imperdiet eleifend. Suspendisse rutrum, tortor id volutpat sagittis, elit urna luctus odio, ut congue massa felis eu ligula. Maecenas tempor, urna in eleifend eleifend, eros ante vehicula odio, Vanvritae maximus ipsum sapien sed.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut sapien ac lacus porttitor aliquam at at nulla. Vivamus pharetra pulVanvrinar elementum. Nullam imperdiet augue vel eros imperdiet eleifend. Suspendisse rutrum, tortor id volutpat sagittis, elit urna luctus odio, ut congue massa felis eu ligula. Maecenas tempor, urna in eleifend eleifend, eros ante vehicula odio, vitae maximus ipsum sapien sed.')}}>
 Copy {totalVanvriHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -35309,7 +35309,7 @@ const Vanvri64 = () => {
   if (totalVanvriHPToLose == 64)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu elementum odio. Nulla imperdiet sit amet risus nec pharetra. Duis auctor, justo et sodales posuere, risus sapien maximus enim, at convallis lorem ex eu orci. Donec imperdiet dictum ex, semper fermentum diam auctor sit amet. In suscipit nec odio Vanvritae Vanvriverra. Nullam Vanvritae hendrerit lectus, at accumsan mauris. Suspendisse facilisis quam eu imperdiet interdum. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu elementum odio. Nulla imperdiet sit amet risus nec pharetra. Duis auctor, justo et sodales posuere, risus sapien maximus enim, at convallis lorem ex eu orci. Donec imperdiet dictum ex, semper fermentum diam auctor sit amet. In suscipit nec odio vitae Vanvriverra. Nullam vitae hendrerit lectus, at accumsan mauris. Suspendisse facilisis quam eu imperdiet interdum. ')}}>
 Copy {totalVanvriHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -35317,7 +35317,7 @@ const Vanvri66 = () => {
   if (totalVanvriHPToLose == 66)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo rutrum ultrices. Nullam dapibus nisi ut nisl placerat malesuada. Proin luctus dignissim dui, Vanvritae lacinia velit graVanvrida ac. Proin et nisi ac mi ultricies blandit ac ac sem. Nullam id mattis libero. Sed euismod metus ut odio tincidunt, sed sodales metus blandit. Phasellus aliquam elit in lacinia ornare. Nullam suscipit ipsum ac auctor convallis. Donec tempor. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo rutrum ultrices. Nullam dapibus nisi ut nisl placerat malesuada. Proin luctus dignissim dui, vitae lacinia velit gravida ac. Proin et nisi ac mi ultricies blandit ac ac sem. Nullam id mattis libero. Sed euismod metus ut odio tincidunt, sed sodales metus blandit. Phasellus aliquam elit in lacinia ornare. Nullam suscipit ipsum ac auctor convallis. Donec tempor. ')}}>
 Copy {totalVanvriHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -35325,7 +35325,7 @@ const Vanvri68 = () => {
   if (totalVanvriHPToLose == 68)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac dolor lobortis ante ornare scelerisque. Ut finibus luctus purus sit amet accumsan. Duis vel suscipit erat, nec molestie enim. Nullam bibendum odio nunc. Vanvrivamus mollis fermentum ex, in dictum eros blandit nec. Sed sollicitudin quis tortor ac pharetra. Sed consectetur, turpis eu eleifend rutrum, nibh urna condimentum leo, eget interdum urna est nec sapien. Interdum et malesuada fames. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac dolor lobortis ante ornare scelerisque. Ut finibus luctus purus sit amet accumsan. Duis vel suscipit erat, nec molestie enim. Nullam bibendum odio nunc. Vivamus mollis fermentum ex, in dictum eros blandit nec. Sed sollicitudin quis tortor ac pharetra. Sed consectetur, turpis eu eleifend rutrum, nibh urna condimentum leo, eget interdum urna est nec sapien. Interdum et malesuada fames. ')}}>
 Copy {totalVanvriHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -35333,7 +35333,7 @@ const Vanvri70 = () => {
   if (totalVanvriHPToLose == 70)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra purus elementum auctor varius. Morbi elementum mi nec iaculis pretium. Cras nec porta turpis. Nullam vehicula urna Vanvritae volutpat sollicitudin. Aliquam erat volutpat. In vehicula ex in augue scelerisque bibendum. Suspendisse cursus neque at mauris feugiat mattis. Ut at congue justo. Phasellus elementum aliquet graVanvrida. Aliquam rhoncus vulputate est eget efficitur. Cras tristique elit non tellus consequat iaculis. Nunc sit. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra purus elementum auctor varius. Morbi elementum mi nec iaculis pretium. Cras nec porta turpis. Nullam vehicula urna vitae volutpat sollicitudin. Aliquam erat volutpat. In vehicula ex in augue scelerisque bibendum. Suspendisse cursus neque at mauris feugiat mattis. Ut at congue justo. Phasellus elementum aliquet gravida. Aliquam rhoncus vulputate est eget efficitur. Cras tristique elit non tellus consequat iaculis. Nunc sit. ')}}>
 Copy {totalVanvriHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -35341,7 +35341,7 @@ const Vanvri72 = () => {
   if (totalVanvriHPToLose == 72)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales, elit sed posuere laoreet, ante mi maximus velit, vel accumsan sem metus vel justo. Curabitur nec tincidunt tellus, at laoreet felis. Fusce eu luctus felis. Morbi varius, turpis eu aliquam auctor, magna ante interdum nulla, quis maximus magna felis nec nisl. Vanvrivamus Vanvritae ullamcorper dolor. Donec feugiat in dolor in maximus. Integer Vanvriverra dui sit amet nulla tristique, sit amet suscipit leo. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales, elit sed posuere laoreet, ante mi maximus velit, vel accumsan sem metus vel justo. Curabitur nec tincidunt tellus, at laoreet felis. Fusce eu luctus felis. Morbi varius, turpis eu aliquam auctor, magna ante interdum nulla, quis maximus magna felis nec nisl. Vivamus vitae ullamcorper dolor. Donec feugiat in dolor in maximus. Integer Vanvriverra dui sit amet nulla tristique, sit amet suscipit leo. ')}}>
 Copy {totalVanvriHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -35349,7 +35349,7 @@ const Vanvri74 = () => {
   if (totalVanvriHPToLose == 74)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis magna a justo bibendum dictum sit amet sit amet ex. Aenean quis hendrerit urna, ut ullamcorper nisi. Aenean a nunc consectetur, pharetra lectus non, rhoncus sapien. Sed quis nulla graVanvrida, interdum turpis a, faucibus est. Curabitur a odio Vanvritae ex tristique luctus Vanvritae a sem. Nulla congue vel lacus eget varius. Aliquam fermentum nibh quis diam dictum, vel porta justo rhoncus. Morbi at rhoncus. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis magna a justo bibendum dictum sit amet sit amet ex. Aenean quis hendrerit urna, ut ullamcorper nisi. Aenean a nunc consectetur, pharetra lectus non, rhoncus sapien. Sed quis nulla gravida, interdum turpis a, faucibus est. Curabitur a odio vitae ex tristique luctus vitae a sem. Nulla congue vel lacus eget varius. Aliquam fermentum nibh quis diam dictum, vel porta justo rhoncus. Morbi at rhoncus. ')}}>
 Copy {totalVanvriHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -35357,7 +35357,7 @@ const Vanvri76 = () => {
   if (totalVanvriHPToLose == 76)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec euismod est. Cras tincidunt tempus blandit. Vestibulum vel tortor sed ligula vestibulum aliquet sit amet vel tellus. Mauris Vanvritae ultricies nibh. Integer eu augue non nulla consectetur cursus. Fusce diam purus, faucibus non interdum sed, varius eget tellus. Suspendisse vehicula justo diam, ac fringilla eros sagittis sit amet. Suspendisse non justo lacinia, tempor libero pulVanvrinar, efficitur arcu. Nunc Vanvritae enim vestibulum massa interdum volutpat sit amet. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec euismod est. Cras tincidunt tempus blandit. Vestibulum vel tortor sed ligula vestibulum aliquet sit amet vel tellus. Mauris vitae ultricies nibh. Integer eu augue non nulla consectetur cursus. Fusce diam purus, faucibus non interdum sed, varius eget tellus. Suspendisse vehicula justo diam, ac fringilla eros sagittis sit amet. Suspendisse non justo lacinia, tempor libero pulVanvrinar, efficitur arcu. Nunc vitae enim vestibulum massa interdum volutpat sit amet. ')}}>
 Copy {totalVanvriHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -35365,7 +35365,7 @@ const Vanvri78 = () => {
   if (totalVanvriHPToLose == 78)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue arcu, fringilla Vanvritae tempus vel, ultricies commodo turpis. Pellentesque ut risus luctus, accumsan dolor eget, luctus felis. Suspendisse ac egestas nunc. Sed Vanvriverra felis nec lectus tempor feugiat. Nunc tincidunt finibus turpis non luctus. Nullam orci nisl, porttitor ut neque in, malesuada porta nisi. Phasellus sollicitudin magna faucibus est lobortis, ornare mollis lacus sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue arcu, fringilla vitae tempus vel, ultricies commodo turpis. Pellentesque ut risus luctus, accumsan dolor eget, luctus felis. Suspendisse ac egestas nunc. Sed Vanvriverra felis nec lectus tempor feugiat. Nunc tincidunt finibus turpis non luctus. Nullam orci nisl, porttitor ut neque in, malesuada porta nisi. Phasellus sollicitudin magna faucibus est lobortis, ornare mollis lacus sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent. ')}}>
 Copy {totalVanvriHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -35373,7 +35373,7 @@ const Vanvri80 = () => {
   if (totalVanvriHPToLose == 80)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue dignissim cursus. Vanvrivamus id nulla ut risus pellentesque semper. Pellentesque lobortis augue eget ultrices molestie. Nunc euismod massa a lectus varius sollicitudin. Sed dictum quis est placerat porta. Ut malesuada feugiat nisi et accumsan. Morbi et pulVanvrinar nunc. Proin fringilla condimentum metus, id blandit mauris egestas in. Fusce tincidunt, nisi eget ornare fermentum, elit erat dictum nulla, tristique iaculis leo massa in orci. Ut aliquam efficitur lacus, in commodo nibh.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue dignissim cursus. Vivamus id nulla ut risus pellentesque semper. Pellentesque lobortis augue eget ultrices molestie. Nunc euismod massa a lectus varius sollicitudin. Sed dictum quis est placerat porta. Ut malesuada feugiat nisi et accumsan. Morbi et pulVanvrinar nunc. Proin fringilla condimentum metus, id blandit mauris egestas in. Fusce tincidunt, nisi eget ornare fermentum, elit erat dictum nulla, tristique iaculis leo massa in orci. Ut aliquam efficitur lacus, in commodo nibh.')}}>
 Copy {totalVanvriHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -35381,7 +35381,7 @@ const Vanvri82 = () => {
   if (totalVanvriHPToLose == 82)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor felis ligula, sit amet pulVanvrinar arcu porta quis. Mauris ultrices tristique neque, id ullamcorper nisi pharetra sit amet. Nam commodo leo sit amet sollicitudin vehicula. Morbi congue tellus risus, eu dapibus ex consequat id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque vestibulum arcu diam, non ornare dui volutpat sollicitudin. Nunc Vanvritae massa in leo volutpat fermentum nec eu lectus. Sed sit amet finibus dui, sed. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor felis ligula, sit amet pulVanvrinar arcu porta quis. Mauris ultrices tristique neque, id ullamcorper nisi pharetra sit amet. Nam commodo leo sit amet sollicitudin vehicula. Morbi congue tellus risus, eu dapibus ex consequat id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque vestibulum arcu diam, non ornare dui volutpat sollicitudin. Nunc vitae massa in leo volutpat fermentum nec eu lectus. Sed sit amet finibus dui, sed. ')}}>
 Copy {totalVanvriHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -35389,7 +35389,7 @@ const Vanvri84 = () => {
   if (totalVanvriHPToLose == 84)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum velit Vanvritae nunc ultrices, non sagittis eros euismod. Donec mattis leo id tempor tristique. In dignissim tempus augue, et posuere eros tempus sed. Suspendisse in ex felis. Ut faucibus blandit imperdiet. Sed convallis quam quis augue Vanvriverra rutrum. Ut sapien orci, scelerisque blandit nulla sit amet, malesuada sollicitudin justo. Proin et nulla consequat, fermentum eros non, rutrum orci. Suspendisse porttitor Vanvriverra tortor sed consequat. Etiam et augue ac metus condimentum finibus. Nunc vel dictum. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum velit vitae nunc ultrices, non sagittis eros euismod. Donec mattis leo id tempor tristique. In dignissim tempus augue, et posuere eros tempus sed. Suspendisse in ex felis. Ut faucibus blandit imperdiet. Sed convallis quam quis augue Vanvriverra rutrum. Ut sapien orci, scelerisque blandit nulla sit amet, malesuada sollicitudin justo. Proin et nulla consequat, fermentum eros non, rutrum orci. Suspendisse porttitor Vanvriverra tortor sed consequat. Etiam et augue ac metus condimentum finibus. Nunc vel dictum. ')}}>
 Copy {totalVanvriHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -35397,7 +35397,7 @@ const Vanvri86 = () => {
   if (totalVanvriHPToLose == 86)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum lorem, vel congue libero. Maecenas egestas tincidunt mauris, ut interdum turpis eleifend id. Mauris consectetur metus id eros consectetur graVanvrida. Vanvrivamus eget velit ipsum. Nunc porta tortor eu est imperdiet fringilla. Curabitur vel nibh ac odio imperdiet ultricies. Donec tempus ante non libero euismod dapibus. Aenean faucibus consectetur bibendum. Morbi sollicitudin, enim id congue laoreet, elit dui volutpat metus, non egestas ante tortor sit amet ex. Mauris sagittis pulVanvrinar finibus. Integer non vehicula lectus, ut. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum lorem, vel congue libero. Maecenas egestas tincidunt mauris, ut interdum turpis eleifend id. Mauris consectetur metus id eros consectetur gravida. Vivamus eget velit ipsum. Nunc porta tortor eu est imperdiet fringilla. Curabitur vel nibh ac odio imperdiet ultricies. Donec tempus ante non libero euismod dapibus. Aenean faucibus consectetur bibendum. Morbi sollicitudin, enim id congue laoreet, elit dui volutpat metus, non egestas ante tortor sit amet ex. Mauris sagittis pulVanvrinar finibus. Integer non vehicula lectus, ut. ')}}>
 Copy {totalVanvriHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -35405,7 +35405,7 @@ const Vanvri88 = () => {
   if (totalVanvriHPToLose == 88)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu odio, vulputate eu tortor ac, convallis convallis ipsum. Proin imperdiet luctus odio id vehicula. Sed congue posuere tristique. Vanvrivamus accumsan luctus tellus. Mauris porttitor leo et metus convallis elementum. Suspendisse in urna pharetra, eleifend arcu et, porttitor lectus. Vanvrivamus eros tellus, volutpat in est accumsan, bibendum congue est. Phasellus dignissim consequat sem, in rutrum lorem interdum nec. Phasellus facilisis lectus eu eros condimentum, vel luctus justo eleifend. Fusce venenatis ipsum ut ante tincidunt commodo. Suspendisse potenti. Sed volutpat. .')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu odio, vulputate eu tortor ac, convallis convallis ipsum. Proin imperdiet luctus odio id vehicula. Sed congue posuere tristique. Vivamus accumsan luctus tellus. Mauris porttitor leo et metus convallis elementum. Suspendisse in urna pharetra, eleifend arcu et, porttitor lectus. Vivamus eros tellus, volutpat in est accumsan, bibendum congue est. Phasellus dignissim consequat sem, in rutrum lorem interdum nec. Phasellus facilisis lectus eu eros condimentum, vel luctus justo eleifend. Fusce venenatis ipsum ut ante tincidunt commodo. Suspendisse potenti. Sed volutpat. .')}}>
 Copy {totalVanvriHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -35413,7 +35413,7 @@ const Vanvri90 = () => {
   if (totalVanvriHPToLose == 90)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu dignissim neque. Quisque a commodo diam. Cras in accumsan nisl. Maecenas Vanvritae scelerisque arcu, at pretium ipsum. Nam tincidunt ullamcorper congue. Donec scelerisque, augue nec hendrerit vehicula, erat dui pellentesque odio, et Vanvriverra dolor felis nec sem. Praesent a lorem vel tellus feugiat ultricies. Etiam lacinia, sapien quis vulputate tincidunt, nisi lacus ornare augue, elementum efficitur elit diam in nibh. Suspendisse ullamcorper mollis purus, at tincidunt odio porta rhoncus. Quisque efficitur nisl nibh, id auctor libero Vanvriverra ac. In hac. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu dignissim neque. Quisque a commodo diam. Cras in accumsan nisl. Maecenas vitae scelerisque arcu, at pretium ipsum. Nam tincidunt ullamcorper congue. Donec scelerisque, augue nec hendrerit vehicula, erat dui pellentesque odio, et Vanvriverra dolor felis nec sem. Praesent a lorem vel tellus feugiat ultricies. Etiam lacinia, sapien quis vulputate tincidunt, nisi lacus ornare augue, elementum efficitur elit diam in nibh. Suspendisse ullamcorper mollis purus, at tincidunt odio porta rhoncus. Quisque efficitur nisl nibh, id auctor libero Vanvriverra ac. In hac. ')}}>
 Copy {totalVanvriHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -45769,7 +45769,7 @@ const Viyusa26 = () => {
   if (totalViyusaHPToLose == 26)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel ante quam. Nulla egestas auctor enim non rhoncus. Maecenas feugiat dapibus lacus nec graViyusada. Quisque dictum.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel ante quam. Nulla egestas auctor enim non rhoncus. Maecenas feugiat dapibus lacus nec gravida. Quisque dictum.')}}>
 Copy {totalViyusaHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -45777,7 +45777,7 @@ const Viyusa28 = () => {
   if (totalViyusaHPToLose == 28)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non purus feugiat, graViyusada dolor eget, porta mi. Aliquam iaculis elit diam. Ut id blandit dui. Nulla et dolor.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non purus feugiat, gravida dolor eget, porta mi. Aliquam iaculis elit diam. Ut id blandit dui. Nulla et dolor.')}}>
 Copy {totalViyusaHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -45801,7 +45801,7 @@ const Viyusa34 = () => {
   if (totalViyusaHPToLose == 34)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus diam tellus, volutpat Viyusatae dapibus vel, convallis auctor tellus. Cras fringilla tincidunt lorem, quis sagittis odio accumsan at. Sed nec dictum diam. Cras ac pulViyusanar.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus diam tellus, volutpat vitae dapibus vel, convallis auctor tellus. Cras fringilla tincidunt lorem, quis sagittis odio accumsan at. Sed nec dictum diam. Cras ac pulViyusanar.')}}>
 Copy {totalViyusaHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -45809,7 +45809,7 @@ const Viyusa36 = () => {
   if (totalViyusaHPToLose == 36)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis egestas ex. Viyusavamus tempus neque odio, nec scelerisque ipsum vehicula sit amet. Duis nisl dolor, posuere sed ante vel, euismod faucibus nisi. Donec nulla leo, aliquet.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis egestas ex. Vivamus tempus neque odio, nec scelerisque ipsum vehicula sit amet. Duis nisl dolor, posuere sed ante vel, euismod faucibus nisi. Donec nulla leo, aliquet.')}}>
 Copy {totalViyusaHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -45825,7 +45825,7 @@ const Viyusa40 = () => {
   if (totalViyusaHPToLose == 40)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viyusavamus at est et ipsum suscipit lacinia nec sit amet turpis. Vestibulum nec ex nibh. Etiam consequat et justo sit amet commodo. Suspendisse mattis semper arcu eget fermentum. Donec eu nisi elementum.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at est et ipsum suscipit lacinia nec sit amet turpis. Vestibulum nec ex nibh. Etiam consequat et justo sit amet commodo. Suspendisse mattis semper arcu eget fermentum. Donec eu nisi elementum.')}}>
 Copy {totalViyusaHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -45833,7 +45833,7 @@ const Viyusa42 = () => {
   if (totalViyusaHPToLose == 42)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac aliquam nunc. Sed Viyusatae tellus a tellus dictum condimentum. Nunc volutpat feugiat justo. Fusce vulputate ligula nisl, sed ullamcorper libero imperdiet sit amet. In fermentum sed metus nec pellentesque. Duis eget tellus. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac aliquam nunc. Sed vitae tellus a tellus dictum condimentum. Nunc volutpat feugiat justo. Fusce vulputate ligula nisl, sed ullamcorper libero imperdiet sit amet. In fermentum sed metus nec pellentesque. Duis eget tellus. ')}}>
 Copy {totalViyusaHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -45865,7 +45865,7 @@ const Viyusa50 = () => {
   if (totalViyusaHPToLose == 50)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat blandit eros, pellentesque vulputate tortor imperdiet et. In hac habitasse platea dictumst. Aenean non dapibus diam, Viyusatae suscipit augue. Phasellus ut aliquam magna, nec efficitur lacus. Pellentesque lacus sapien, vulputate in blandit at, venenatis vestibulum magna. Nullam quis facilisis dui. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat blandit eros, pellentesque vulputate tortor imperdiet et. In hac habitasse platea dictumst. Aenean non dapibus diam, vitae suscipit augue. Phasellus ut aliquam magna, nec efficitur lacus. Pellentesque lacus sapien, vulputate in blandit at, venenatis vestibulum magna. Nullam quis facilisis dui. ')}}>
 Copy {totalViyusaHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -45873,7 +45873,7 @@ const Viyusa52 = () => {
   if (totalViyusaHPToLose == 52)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros odio, pellentesque quis tellus at, consectetur lobortis sem. Etiam turpis libero, Viyusaverra at malesuada ac, fringilla consectetur orci. Etiam sed convallis magna. Morbi feugiat rutrum metus Viyusatae placerat. Cras fermentum convallis posuere. Viyusavamus hendrerit neque id pharetra consectetur. Etiam fringilla augue et. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros odio, pellentesque quis tellus at, consectetur lobortis sem. Etiam turpis libero, Viyusaverra at malesuada ac, fringilla consectetur orci. Etiam sed convallis magna. Morbi feugiat rutrum metus vitae placerat. Cras fermentum convallis posuere. Vivamus hendrerit neque id pharetra consectetur. Etiam fringilla augue et. ')}}>
 Copy {totalViyusaHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -45881,7 +45881,7 @@ const Viyusa54 = () => {
   if (totalViyusaHPToLose == 54)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id posuere est, a ultrices nisi. In porttitor ligula vel arcu dapibus, vel interdum magna ultricies. Aenean odio ante, ultrices Viyusatae fermentum sed, aliquam eu tellus. Vestibulum mattis dignissim sollicitudin. Integer mollis, lorem et convallis elementum, lorem nisi vehicula dolor, congue vulputate metus eros id. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id posuere est, a ultrices nisi. In porttitor ligula vel arcu dapibus, vel interdum magna ultricies. Aenean odio ante, ultrices vitae fermentum sed, aliquam eu tellus. Vestibulum mattis dignissim sollicitudin. Integer mollis, lorem et convallis elementum, lorem nisi vehicula dolor, congue vulputate metus eros id. ')}}>
 Copy {totalViyusaHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -45897,7 +45897,7 @@ const Viyusa58 = () => {
   if (totalViyusaHPToLose == 58)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat erat libero, et auctor lorem maximus et. Nam vel massa sed eros luctus finibus nec Viyusatae augue. In pellentesque tortor vel pulViyusanar efficitur. Aenean non nunc volutpat, semper lacus quis, dignissim erat. Phasellus dignissim, leo et finibus maximus, nunc est dignissim augue, quis placerat urna ligula sit amet. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat erat libero, et auctor lorem maximus et. Nam vel massa sed eros luctus finibus nec vitae augue. In pellentesque tortor vel pulViyusanar efficitur. Aenean non nunc volutpat, semper lacus quis, dignissim erat. Phasellus dignissim, leo et finibus maximus, nunc est dignissim augue, quis placerat urna ligula sit amet. ')}}>
 Copy {totalViyusaHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -45905,7 +45905,7 @@ const Viyusa60 = () => {
   if (totalViyusaHPToLose == 60)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut sapien ac lacus porttitor aliquam at at nulla. Viyusavamus pharetra pulViyusanar elementum. Nullam imperdiet augue vel eros imperdiet eleifend. Suspendisse rutrum, tortor id volutpat sagittis, elit urna luctus odio, ut congue massa felis eu ligula. Maecenas tempor, urna in eleifend eleifend, eros ante vehicula odio, Viyusatae maximus ipsum sapien sed.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut sapien ac lacus porttitor aliquam at at nulla. Vivamus pharetra pulViyusanar elementum. Nullam imperdiet augue vel eros imperdiet eleifend. Suspendisse rutrum, tortor id volutpat sagittis, elit urna luctus odio, ut congue massa felis eu ligula. Maecenas tempor, urna in eleifend eleifend, eros ante vehicula odio, vitae maximus ipsum sapien sed.')}}>
 Copy {totalViyusaHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -45921,7 +45921,7 @@ const Viyusa64 = () => {
   if (totalViyusaHPToLose == 64)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu elementum odio. Nulla imperdiet sit amet risus nec pharetra. Duis auctor, justo et sodales posuere, risus sapien maximus enim, at convallis lorem ex eu orci. Donec imperdiet dictum ex, semper fermentum diam auctor sit amet. In suscipit nec odio Viyusatae Viyusaverra. Nullam Viyusatae hendrerit lectus, at accumsan mauris. Suspendisse facilisis quam eu imperdiet interdum. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu elementum odio. Nulla imperdiet sit amet risus nec pharetra. Duis auctor, justo et sodales posuere, risus sapien maximus enim, at convallis lorem ex eu orci. Donec imperdiet dictum ex, semper fermentum diam auctor sit amet. In suscipit nec odio vitae Viyusaverra. Nullam vitae hendrerit lectus, at accumsan mauris. Suspendisse facilisis quam eu imperdiet interdum. ')}}>
 Copy {totalViyusaHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -45929,7 +45929,7 @@ const Viyusa66 = () => {
   if (totalViyusaHPToLose == 66)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo rutrum ultrices. Nullam dapibus nisi ut nisl placerat malesuada. Proin luctus dignissim dui, Viyusatae lacinia velit graViyusada ac. Proin et nisi ac mi ultricies blandit ac ac sem. Nullam id mattis libero. Sed euismod metus ut odio tincidunt, sed sodales metus blandit. Phasellus aliquam elit in lacinia ornare. Nullam suscipit ipsum ac auctor convallis. Donec tempor. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo rutrum ultrices. Nullam dapibus nisi ut nisl placerat malesuada. Proin luctus dignissim dui, vitae lacinia velit gravida ac. Proin et nisi ac mi ultricies blandit ac ac sem. Nullam id mattis libero. Sed euismod metus ut odio tincidunt, sed sodales metus blandit. Phasellus aliquam elit in lacinia ornare. Nullam suscipit ipsum ac auctor convallis. Donec tempor. ')}}>
 Copy {totalViyusaHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -45937,7 +45937,7 @@ const Viyusa68 = () => {
   if (totalViyusaHPToLose == 68)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac dolor lobortis ante ornare scelerisque. Ut finibus luctus purus sit amet accumsan. Duis vel suscipit erat, nec molestie enim. Nullam bibendum odio nunc. Viyusavamus mollis fermentum ex, in dictum eros blandit nec. Sed sollicitudin quis tortor ac pharetra. Sed consectetur, turpis eu eleifend rutrum, nibh urna condimentum leo, eget interdum urna est nec sapien. Interdum et malesuada fames. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac dolor lobortis ante ornare scelerisque. Ut finibus luctus purus sit amet accumsan. Duis vel suscipit erat, nec molestie enim. Nullam bibendum odio nunc. Vivamus mollis fermentum ex, in dictum eros blandit nec. Sed sollicitudin quis tortor ac pharetra. Sed consectetur, turpis eu eleifend rutrum, nibh urna condimentum leo, eget interdum urna est nec sapien. Interdum et malesuada fames. ')}}>
 Copy {totalViyusaHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -45945,7 +45945,7 @@ const Viyusa70 = () => {
   if (totalViyusaHPToLose == 70)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra purus elementum auctor varius. Morbi elementum mi nec iaculis pretium. Cras nec porta turpis. Nullam vehicula urna Viyusatae volutpat sollicitudin. Aliquam erat volutpat. In vehicula ex in augue scelerisque bibendum. Suspendisse cursus neque at mauris feugiat mattis. Ut at congue justo. Phasellus elementum aliquet graViyusada. Aliquam rhoncus vulputate est eget efficitur. Cras tristique elit non tellus consequat iaculis. Nunc sit. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra purus elementum auctor varius. Morbi elementum mi nec iaculis pretium. Cras nec porta turpis. Nullam vehicula urna vitae volutpat sollicitudin. Aliquam erat volutpat. In vehicula ex in augue scelerisque bibendum. Suspendisse cursus neque at mauris feugiat mattis. Ut at congue justo. Phasellus elementum aliquet gravida. Aliquam rhoncus vulputate est eget efficitur. Cras tristique elit non tellus consequat iaculis. Nunc sit. ')}}>
 Copy {totalViyusaHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -45953,7 +45953,7 @@ const Viyusa72 = () => {
   if (totalViyusaHPToLose == 72)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales, elit sed posuere laoreet, ante mi maximus velit, vel accumsan sem metus vel justo. Curabitur nec tincidunt tellus, at laoreet felis. Fusce eu luctus felis. Morbi varius, turpis eu aliquam auctor, magna ante interdum nulla, quis maximus magna felis nec nisl. Viyusavamus Viyusatae ullamcorper dolor. Donec feugiat in dolor in maximus. Integer Viyusaverra dui sit amet nulla tristique, sit amet suscipit leo. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales, elit sed posuere laoreet, ante mi maximus velit, vel accumsan sem metus vel justo. Curabitur nec tincidunt tellus, at laoreet felis. Fusce eu luctus felis. Morbi varius, turpis eu aliquam auctor, magna ante interdum nulla, quis maximus magna felis nec nisl. Vivamus vitae ullamcorper dolor. Donec feugiat in dolor in maximus. Integer Viyusaverra dui sit amet nulla tristique, sit amet suscipit leo. ')}}>
 Copy {totalViyusaHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -45961,7 +45961,7 @@ const Viyusa74 = () => {
   if (totalViyusaHPToLose == 74)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis magna a justo bibendum dictum sit amet sit amet ex. Aenean quis hendrerit urna, ut ullamcorper nisi. Aenean a nunc consectetur, pharetra lectus non, rhoncus sapien. Sed quis nulla graViyusada, interdum turpis a, faucibus est. Curabitur a odio Viyusatae ex tristique luctus Viyusatae a sem. Nulla congue vel lacus eget varius. Aliquam fermentum nibh quis diam dictum, vel porta justo rhoncus. Morbi at rhoncus. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis magna a justo bibendum dictum sit amet sit amet ex. Aenean quis hendrerit urna, ut ullamcorper nisi. Aenean a nunc consectetur, pharetra lectus non, rhoncus sapien. Sed quis nulla gravida, interdum turpis a, faucibus est. Curabitur a odio vitae ex tristique luctus vitae a sem. Nulla congue vel lacus eget varius. Aliquam fermentum nibh quis diam dictum, vel porta justo rhoncus. Morbi at rhoncus. ')}}>
 Copy {totalViyusaHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -45969,7 +45969,7 @@ const Viyusa76 = () => {
   if (totalViyusaHPToLose == 76)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec euismod est. Cras tincidunt tempus blandit. Vestibulum vel tortor sed ligula vestibulum aliquet sit amet vel tellus. Mauris Viyusatae ultricies nibh. Integer eu augue non nulla consectetur cursus. Fusce diam purus, faucibus non interdum sed, varius eget tellus. Suspendisse vehicula justo diam, ac fringilla eros sagittis sit amet. Suspendisse non justo lacinia, tempor libero pulViyusanar, efficitur arcu. Nunc Viyusatae enim vestibulum massa interdum volutpat sit amet. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec euismod est. Cras tincidunt tempus blandit. Vestibulum vel tortor sed ligula vestibulum aliquet sit amet vel tellus. Mauris vitae ultricies nibh. Integer eu augue non nulla consectetur cursus. Fusce diam purus, faucibus non interdum sed, varius eget tellus. Suspendisse vehicula justo diam, ac fringilla eros sagittis sit amet. Suspendisse non justo lacinia, tempor libero pulViyusanar, efficitur arcu. Nunc vitae enim vestibulum massa interdum volutpat sit amet. ')}}>
 Copy {totalViyusaHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -45977,7 +45977,7 @@ const Viyusa78 = () => {
   if (totalViyusaHPToLose == 78)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue arcu, fringilla Viyusatae tempus vel, ultricies commodo turpis. Pellentesque ut risus luctus, accumsan dolor eget, luctus felis. Suspendisse ac egestas nunc. Sed Viyusaverra felis nec lectus tempor feugiat. Nunc tincidunt finibus turpis non luctus. Nullam orci nisl, porttitor ut neque in, malesuada porta nisi. Phasellus sollicitudin magna faucibus est lobortis, ornare mollis lacus sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue arcu, fringilla vitae tempus vel, ultricies commodo turpis. Pellentesque ut risus luctus, accumsan dolor eget, luctus felis. Suspendisse ac egestas nunc. Sed Viyusaverra felis nec lectus tempor feugiat. Nunc tincidunt finibus turpis non luctus. Nullam orci nisl, porttitor ut neque in, malesuada porta nisi. Phasellus sollicitudin magna faucibus est lobortis, ornare mollis lacus sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent. ')}}>
 Copy {totalViyusaHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -45985,7 +45985,7 @@ const Viyusa80 = () => {
   if (totalViyusaHPToLose == 80)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue dignissim cursus. Viyusavamus id nulla ut risus pellentesque semper. Pellentesque lobortis augue eget ultrices molestie. Nunc euismod massa a lectus varius sollicitudin. Sed dictum quis est placerat porta. Ut malesuada feugiat nisi et accumsan. Morbi et pulViyusanar nunc. Proin fringilla condimentum metus, id blandit mauris egestas in. Fusce tincidunt, nisi eget ornare fermentum, elit erat dictum nulla, tristique iaculis leo massa in orci. Ut aliquam efficitur lacus, in commodo nibh.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue dignissim cursus. Vivamus id nulla ut risus pellentesque semper. Pellentesque lobortis augue eget ultrices molestie. Nunc euismod massa a lectus varius sollicitudin. Sed dictum quis est placerat porta. Ut malesuada feugiat nisi et accumsan. Morbi et pulViyusanar nunc. Proin fringilla condimentum metus, id blandit mauris egestas in. Fusce tincidunt, nisi eget ornare fermentum, elit erat dictum nulla, tristique iaculis leo massa in orci. Ut aliquam efficitur lacus, in commodo nibh.')}}>
 Copy {totalViyusaHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -45993,7 +45993,7 @@ const Viyusa82 = () => {
   if (totalViyusaHPToLose == 82)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor felis ligula, sit amet pulViyusanar arcu porta quis. Mauris ultrices tristique neque, id ullamcorper nisi pharetra sit amet. Nam commodo leo sit amet sollicitudin vehicula. Morbi congue tellus risus, eu dapibus ex consequat id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque vestibulum arcu diam, non ornare dui volutpat sollicitudin. Nunc Viyusatae massa in leo volutpat fermentum nec eu lectus. Sed sit amet finibus dui, sed. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor felis ligula, sit amet pulViyusanar arcu porta quis. Mauris ultrices tristique neque, id ullamcorper nisi pharetra sit amet. Nam commodo leo sit amet sollicitudin vehicula. Morbi congue tellus risus, eu dapibus ex consequat id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque vestibulum arcu diam, non ornare dui volutpat sollicitudin. Nunc vitae massa in leo volutpat fermentum nec eu lectus. Sed sit amet finibus dui, sed. ')}}>
 Copy {totalViyusaHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -46001,7 +46001,7 @@ const Viyusa84 = () => {
   if (totalViyusaHPToLose == 84)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum velit Viyusatae nunc ultrices, non sagittis eros euismod. Donec mattis leo id tempor tristique. In dignissim tempus augue, et posuere eros tempus sed. Suspendisse in ex felis. Ut faucibus blandit imperdiet. Sed convallis quam quis augue Viyusaverra rutrum. Ut sapien orci, scelerisque blandit nulla sit amet, malesuada sollicitudin justo. Proin et nulla consequat, fermentum eros non, rutrum orci. Suspendisse porttitor Viyusaverra tortor sed consequat. Etiam et augue ac metus condimentum finibus. Nunc vel dictum. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum velit vitae nunc ultrices, non sagittis eros euismod. Donec mattis leo id tempor tristique. In dignissim tempus augue, et posuere eros tempus sed. Suspendisse in ex felis. Ut faucibus blandit imperdiet. Sed convallis quam quis augue Viyusaverra rutrum. Ut sapien orci, scelerisque blandit nulla sit amet, malesuada sollicitudin justo. Proin et nulla consequat, fermentum eros non, rutrum orci. Suspendisse porttitor Viyusaverra tortor sed consequat. Etiam et augue ac metus condimentum finibus. Nunc vel dictum. ')}}>
 Copy {totalViyusaHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -46009,7 +46009,7 @@ const Viyusa86 = () => {
   if (totalViyusaHPToLose == 86)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum lorem, vel congue libero. Maecenas egestas tincidunt mauris, ut interdum turpis eleifend id. Mauris consectetur metus id eros consectetur graViyusada. Viyusavamus eget velit ipsum. Nunc porta tortor eu est imperdiet fringilla. Curabitur vel nibh ac odio imperdiet ultricies. Donec tempus ante non libero euismod dapibus. Aenean faucibus consectetur bibendum. Morbi sollicitudin, enim id congue laoreet, elit dui volutpat metus, non egestas ante tortor sit amet ex. Mauris sagittis pulViyusanar finibus. Integer non vehicula lectus, ut. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum lorem, vel congue libero. Maecenas egestas tincidunt mauris, ut interdum turpis eleifend id. Mauris consectetur metus id eros consectetur gravida. Vivamus eget velit ipsum. Nunc porta tortor eu est imperdiet fringilla. Curabitur vel nibh ac odio imperdiet ultricies. Donec tempus ante non libero euismod dapibus. Aenean faucibus consectetur bibendum. Morbi sollicitudin, enim id congue laoreet, elit dui volutpat metus, non egestas ante tortor sit amet ex. Mauris sagittis pulViyusanar finibus. Integer non vehicula lectus, ut. ')}}>
 Copy {totalViyusaHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -46017,7 +46017,7 @@ const Viyusa88 = () => {
   if (totalViyusaHPToLose == 88)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu odio, vulputate eu tortor ac, convallis convallis ipsum. Proin imperdiet luctus odio id vehicula. Sed congue posuere tristique. Viyusavamus accumsan luctus tellus. Mauris porttitor leo et metus convallis elementum. Suspendisse in urna pharetra, eleifend arcu et, porttitor lectus. Viyusavamus eros tellus, volutpat in est accumsan, bibendum congue est. Phasellus dignissim consequat sem, in rutrum lorem interdum nec. Phasellus facilisis lectus eu eros condimentum, vel luctus justo eleifend. Fusce venenatis ipsum ut ante tincidunt commodo. Suspendisse potenti. Sed volutpat. .')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu odio, vulputate eu tortor ac, convallis convallis ipsum. Proin imperdiet luctus odio id vehicula. Sed congue posuere tristique. Vivamus accumsan luctus tellus. Mauris porttitor leo et metus convallis elementum. Suspendisse in urna pharetra, eleifend arcu et, porttitor lectus. Vivamus eros tellus, volutpat in est accumsan, bibendum congue est. Phasellus dignissim consequat sem, in rutrum lorem interdum nec. Phasellus facilisis lectus eu eros condimentum, vel luctus justo eleifend. Fusce venenatis ipsum ut ante tincidunt commodo. Suspendisse potenti. Sed volutpat. .')}}>
 Copy {totalViyusaHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -46025,7 +46025,7 @@ const Viyusa90 = () => {
   if (totalViyusaHPToLose == 90)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu dignissim neque. Quisque a commodo diam. Cras in accumsan nisl. Maecenas Viyusatae scelerisque arcu, at pretium ipsum. Nam tincidunt ullamcorper congue. Donec scelerisque, augue nec hendrerit vehicula, erat dui pellentesque odio, et Viyusaverra dolor felis nec sem. Praesent a lorem vel tellus feugiat ultricies. Etiam lacinia, sapien quis vulputate tincidunt, nisi lacus ornare augue, elementum efficitur elit diam in nibh. Suspendisse ullamcorper mollis purus, at tincidunt odio porta rhoncus. Quisque efficitur nisl nibh, id auctor libero Viyusaverra ac. In hac. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu dignissim neque. Quisque a commodo diam. Cras in accumsan nisl. Maecenas vitae scelerisque arcu, at pretium ipsum. Nam tincidunt ullamcorper congue. Donec scelerisque, augue nec hendrerit vehicula, erat dui pellentesque odio, et Viyusaverra dolor felis nec sem. Praesent a lorem vel tellus feugiat ultricies. Etiam lacinia, sapien quis vulputate tincidunt, nisi lacus ornare augue, elementum efficitur elit diam in nibh. Suspendisse ullamcorper mollis purus, at tincidunt odio porta rhoncus. Quisque efficitur nisl nibh, id auctor libero Viyusaverra ac. In hac. ')}}>
 Copy {totalViyusaHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -59761,7 +59761,7 @@ const Viradise26 = () => {
   if (totalViradiseHPToLose == 26)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel ante quam. Nulla egestas auctor enim non rhoncus. Maecenas feugiat dapibus lacus nec graViradiseda. Quisque dictum.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel ante quam. Nulla egestas auctor enim non rhoncus. Maecenas feugiat dapibus lacus nec gravida. Quisque dictum.')}}>
 Copy {totalViradiseHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -59769,7 +59769,7 @@ const Viradise28 = () => {
   if (totalViradiseHPToLose == 28)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non purus feugiat, graViradiseda dolor eget, porta mi. Aliquam iaculis elit diam. Ut id blandit dui. Nulla et dolor.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non purus feugiat, gravida dolor eget, porta mi. Aliquam iaculis elit diam. Ut id blandit dui. Nulla et dolor.')}}>
 Copy {totalViradiseHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -59793,7 +59793,7 @@ const Viradise34 = () => {
   if (totalViradiseHPToLose == 34)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus diam tellus, volutpat Viradisetae dapibus vel, convallis auctor tellus. Cras fringilla tincidunt lorem, quis sagittis odio accumsan at. Sed nec dictum diam. Cras ac pulViradisenar.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus diam tellus, volutpat vitae dapibus vel, convallis auctor tellus. Cras fringilla tincidunt lorem, quis sagittis odio accumsan at. Sed nec dictum diam. Cras ac pulViradisenar.')}}>
 Copy {totalViradiseHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -59801,7 +59801,7 @@ const Viradise36 = () => {
   if (totalViradiseHPToLose == 36)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis egestas ex. Viradisevamus tempus neque odio, nec scelerisque ipsum vehicula sit amet. Duis nisl dolor, posuere sed ante vel, euismod faucibus nisi. Donec nulla leo, aliquet.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis egestas ex. Vivamus tempus neque odio, nec scelerisque ipsum vehicula sit amet. Duis nisl dolor, posuere sed ante vel, euismod faucibus nisi. Donec nulla leo, aliquet.')}}>
 Copy {totalViradiseHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -59817,7 +59817,7 @@ const Viradise40 = () => {
   if (totalViradiseHPToLose == 40)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viradisevamus at est et ipsum suscipit lacinia nec sit amet turpis. Vestibulum nec ex nibh. Etiam consequat et justo sit amet commodo. Suspendisse mattis semper arcu eget fermentum. Donec eu nisi elementum.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at est et ipsum suscipit lacinia nec sit amet turpis. Vestibulum nec ex nibh. Etiam consequat et justo sit amet commodo. Suspendisse mattis semper arcu eget fermentum. Donec eu nisi elementum.')}}>
 Copy {totalViradiseHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -59825,7 +59825,7 @@ const Viradise42 = () => {
   if (totalViradiseHPToLose == 42)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac aliquam nunc. Sed Viradisetae tellus a tellus dictum condimentum. Nunc volutpat feugiat justo. Fusce vulputate ligula nisl, sed ullamcorper libero imperdiet sit amet. In fermentum sed metus nec pellentesque. Duis eget tellus. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac aliquam nunc. Sed vitae tellus a tellus dictum condimentum. Nunc volutpat feugiat justo. Fusce vulputate ligula nisl, sed ullamcorper libero imperdiet sit amet. In fermentum sed metus nec pellentesque. Duis eget tellus. ')}}>
 Copy {totalViradiseHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -59857,7 +59857,7 @@ const Viradise50 = () => {
   if (totalViradiseHPToLose == 50)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat blandit eros, pellentesque vulputate tortor imperdiet et. In hac habitasse platea dictumst. Aenean non dapibus diam, Viradisetae suscipit augue. Phasellus ut aliquam magna, nec efficitur lacus. Pellentesque lacus sapien, vulputate in blandit at, venenatis vestibulum magna. Nullam quis facilisis dui. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat blandit eros, pellentesque vulputate tortor imperdiet et. In hac habitasse platea dictumst. Aenean non dapibus diam, vitae suscipit augue. Phasellus ut aliquam magna, nec efficitur lacus. Pellentesque lacus sapien, vulputate in blandit at, venenatis vestibulum magna. Nullam quis facilisis dui. ')}}>
 Copy {totalViradiseHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -59865,7 +59865,7 @@ const Viradise52 = () => {
   if (totalViradiseHPToLose == 52)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros odio, pellentesque quis tellus at, consectetur lobortis sem. Etiam turpis libero, Viradiseverra at malesuada ac, fringilla consectetur orci. Etiam sed convallis magna. Morbi feugiat rutrum metus Viradisetae placerat. Cras fermentum convallis posuere. Viradisevamus hendrerit neque id pharetra consectetur. Etiam fringilla augue et. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros odio, pellentesque quis tellus at, consectetur lobortis sem. Etiam turpis libero, Viradiseverra at malesuada ac, fringilla consectetur orci. Etiam sed convallis magna. Morbi feugiat rutrum metus vitae placerat. Cras fermentum convallis posuere. Vivamus hendrerit neque id pharetra consectetur. Etiam fringilla augue et. ')}}>
 Copy {totalViradiseHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -59873,7 +59873,7 @@ const Viradise54 = () => {
   if (totalViradiseHPToLose == 54)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id posuere est, a ultrices nisi. In porttitor ligula vel arcu dapibus, vel interdum magna ultricies. Aenean odio ante, ultrices Viradisetae fermentum sed, aliquam eu tellus. Vestibulum mattis dignissim sollicitudin. Integer mollis, lorem et convallis elementum, lorem nisi vehicula dolor, congue vulputate metus eros id. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id posuere est, a ultrices nisi. In porttitor ligula vel arcu dapibus, vel interdum magna ultricies. Aenean odio ante, ultrices vitae fermentum sed, aliquam eu tellus. Vestibulum mattis dignissim sollicitudin. Integer mollis, lorem et convallis elementum, lorem nisi vehicula dolor, congue vulputate metus eros id. ')}}>
 Copy {totalViradiseHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -59889,7 +59889,7 @@ const Viradise58 = () => {
   if (totalViradiseHPToLose == 58)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat erat libero, et auctor lorem maximus et. Nam vel massa sed eros luctus finibus nec Viradisetae augue. In pellentesque tortor vel pulViradisenar efficitur. Aenean non nunc volutpat, semper lacus quis, dignissim erat. Phasellus dignissim, leo et finibus maximus, nunc est dignissim augue, quis placerat urna ligula sit amet. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat erat libero, et auctor lorem maximus et. Nam vel massa sed eros luctus finibus nec vitae augue. In pellentesque tortor vel pulViradisenar efficitur. Aenean non nunc volutpat, semper lacus quis, dignissim erat. Phasellus dignissim, leo et finibus maximus, nunc est dignissim augue, quis placerat urna ligula sit amet. ')}}>
 Copy {totalViradiseHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -59897,7 +59897,7 @@ const Viradise60 = () => {
   if (totalViradiseHPToLose == 60)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut sapien ac lacus porttitor aliquam at at nulla. Viradisevamus pharetra pulViradisenar elementum. Nullam imperdiet augue vel eros imperdiet eleifend. Suspendisse rutrum, tortor id volutpat sagittis, elit urna luctus odio, ut congue massa felis eu ligula. Maecenas tempor, urna in eleifend eleifend, eros ante vehicula odio, Viradisetae maximus ipsum sapien sed.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut sapien ac lacus porttitor aliquam at at nulla. Vivamus pharetra pulViradisenar elementum. Nullam imperdiet augue vel eros imperdiet eleifend. Suspendisse rutrum, tortor id volutpat sagittis, elit urna luctus odio, ut congue massa felis eu ligula. Maecenas tempor, urna in eleifend eleifend, eros ante vehicula odio, vitae maximus ipsum sapien sed.')}}>
 Copy {totalViradiseHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -59913,7 +59913,7 @@ const Viradise64 = () => {
   if (totalViradiseHPToLose == 64)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu elementum odio. Nulla imperdiet sit amet risus nec pharetra. Duis auctor, justo et sodales posuere, risus sapien maximus enim, at convallis lorem ex eu orci. Donec imperdiet dictum ex, semper fermentum diam auctor sit amet. In suscipit nec odio Viradisetae Viradiseverra. Nullam Viradisetae hendrerit lectus, at accumsan mauris. Suspendisse facilisis quam eu imperdiet interdum. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu elementum odio. Nulla imperdiet sit amet risus nec pharetra. Duis auctor, justo et sodales posuere, risus sapien maximus enim, at convallis lorem ex eu orci. Donec imperdiet dictum ex, semper fermentum diam auctor sit amet. In suscipit nec odio vitae Viradiseverra. Nullam vitae hendrerit lectus, at accumsan mauris. Suspendisse facilisis quam eu imperdiet interdum. ')}}>
 Copy {totalViradiseHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -59921,7 +59921,7 @@ const Viradise66 = () => {
   if (totalViradiseHPToLose == 66)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo rutrum ultrices. Nullam dapibus nisi ut nisl placerat malesuada. Proin luctus dignissim dui, Viradisetae lacinia velit graViradiseda ac. Proin et nisi ac mi ultricies blandit ac ac sem. Nullam id mattis libero. Sed euismod metus ut odio tincidunt, sed sodales metus blandit. Phasellus aliquam elit in lacinia ornare. Nullam suscipit ipsum ac auctor convallis. Donec tempor. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo rutrum ultrices. Nullam dapibus nisi ut nisl placerat malesuada. Proin luctus dignissim dui, vitae lacinia velit gravida ac. Proin et nisi ac mi ultricies blandit ac ac sem. Nullam id mattis libero. Sed euismod metus ut odio tincidunt, sed sodales metus blandit. Phasellus aliquam elit in lacinia ornare. Nullam suscipit ipsum ac auctor convallis. Donec tempor. ')}}>
 Copy {totalViradiseHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -59929,7 +59929,7 @@ const Viradise68 = () => {
   if (totalViradiseHPToLose == 68)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac dolor lobortis ante ornare scelerisque. Ut finibus luctus purus sit amet accumsan. Duis vel suscipit erat, nec molestie enim. Nullam bibendum odio nunc. Viradisevamus mollis fermentum ex, in dictum eros blandit nec. Sed sollicitudin quis tortor ac pharetra. Sed consectetur, turpis eu eleifend rutrum, nibh urna condimentum leo, eget interdum urna est nec sapien. Interdum et malesuada fames. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac dolor lobortis ante ornare scelerisque. Ut finibus luctus purus sit amet accumsan. Duis vel suscipit erat, nec molestie enim. Nullam bibendum odio nunc. Vivamus mollis fermentum ex, in dictum eros blandit nec. Sed sollicitudin quis tortor ac pharetra. Sed consectetur, turpis eu eleifend rutrum, nibh urna condimentum leo, eget interdum urna est nec sapien. Interdum et malesuada fames. ')}}>
 Copy {totalViradiseHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -59937,7 +59937,7 @@ const Viradise70 = () => {
   if (totalViradiseHPToLose == 70)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra purus elementum auctor varius. Morbi elementum mi nec iaculis pretium. Cras nec porta turpis. Nullam vehicula urna Viradisetae volutpat sollicitudin. Aliquam erat volutpat. In vehicula ex in augue scelerisque bibendum. Suspendisse cursus neque at mauris feugiat mattis. Ut at congue justo. Phasellus elementum aliquet graViradiseda. Aliquam rhoncus vulputate est eget efficitur. Cras tristique elit non tellus consequat iaculis. Nunc sit. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra purus elementum auctor varius. Morbi elementum mi nec iaculis pretium. Cras nec porta turpis. Nullam vehicula urna vitae volutpat sollicitudin. Aliquam erat volutpat. In vehicula ex in augue scelerisque bibendum. Suspendisse cursus neque at mauris feugiat mattis. Ut at congue justo. Phasellus elementum aliquet gravida. Aliquam rhoncus vulputate est eget efficitur. Cras tristique elit non tellus consequat iaculis. Nunc sit. ')}}>
 Copy {totalViradiseHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -59945,7 +59945,7 @@ const Viradise72 = () => {
   if (totalViradiseHPToLose == 72)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales, elit sed posuere laoreet, ante mi maximus velit, vel accumsan sem metus vel justo. Curabitur nec tincidunt tellus, at laoreet felis. Fusce eu luctus felis. Morbi varius, turpis eu aliquam auctor, magna ante interdum nulla, quis maximus magna felis nec nisl. Viradisevamus Viradisetae ullamcorper dolor. Donec feugiat in dolor in maximus. Integer Viradiseverra dui sit amet nulla tristique, sit amet suscipit leo. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales, elit sed posuere laoreet, ante mi maximus velit, vel accumsan sem metus vel justo. Curabitur nec tincidunt tellus, at laoreet felis. Fusce eu luctus felis. Morbi varius, turpis eu aliquam auctor, magna ante interdum nulla, quis maximus magna felis nec nisl. Vivamus vitae ullamcorper dolor. Donec feugiat in dolor in maximus. Integer Viradiseverra dui sit amet nulla tristique, sit amet suscipit leo. ')}}>
 Copy {totalViradiseHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -59953,7 +59953,7 @@ const Viradise74 = () => {
   if (totalViradiseHPToLose == 74)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis magna a justo bibendum dictum sit amet sit amet ex. Aenean quis hendrerit urna, ut ullamcorper nisi. Aenean a nunc consectetur, pharetra lectus non, rhoncus sapien. Sed quis nulla graViradiseda, interdum turpis a, faucibus est. Curabitur a odio Viradisetae ex tristique luctus Viradisetae a sem. Nulla congue vel lacus eget varius. Aliquam fermentum nibh quis diam dictum, vel porta justo rhoncus. Morbi at rhoncus. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis magna a justo bibendum dictum sit amet sit amet ex. Aenean quis hendrerit urna, ut ullamcorper nisi. Aenean a nunc consectetur, pharetra lectus non, rhoncus sapien. Sed quis nulla gravida, interdum turpis a, faucibus est. Curabitur a odio vitae ex tristique luctus vitae a sem. Nulla congue vel lacus eget varius. Aliquam fermentum nibh quis diam dictum, vel porta justo rhoncus. Morbi at rhoncus. ')}}>
 Copy {totalViradiseHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -59961,7 +59961,7 @@ const Viradise76 = () => {
   if (totalViradiseHPToLose == 76)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec euismod est. Cras tincidunt tempus blandit. Vestibulum vel tortor sed ligula vestibulum aliquet sit amet vel tellus. Mauris Viradisetae ultricies nibh. Integer eu augue non nulla consectetur cursus. Fusce diam purus, faucibus non interdum sed, varius eget tellus. Suspendisse vehicula justo diam, ac fringilla eros sagittis sit amet. Suspendisse non justo lacinia, tempor libero pulViradisenar, efficitur arcu. Nunc Viradisetae enim vestibulum massa interdum volutpat sit amet. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec euismod est. Cras tincidunt tempus blandit. Vestibulum vel tortor sed ligula vestibulum aliquet sit amet vel tellus. Mauris vitae ultricies nibh. Integer eu augue non nulla consectetur cursus. Fusce diam purus, faucibus non interdum sed, varius eget tellus. Suspendisse vehicula justo diam, ac fringilla eros sagittis sit amet. Suspendisse non justo lacinia, tempor libero pulViradisenar, efficitur arcu. Nunc vitae enim vestibulum massa interdum volutpat sit amet. ')}}>
 Copy {totalViradiseHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -59969,7 +59969,7 @@ const Viradise78 = () => {
   if (totalViradiseHPToLose == 78)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue arcu, fringilla Viradisetae tempus vel, ultricies commodo turpis. Pellentesque ut risus luctus, accumsan dolor eget, luctus felis. Suspendisse ac egestas nunc. Sed Viradiseverra felis nec lectus tempor feugiat. Nunc tincidunt finibus turpis non luctus. Nullam orci nisl, porttitor ut neque in, malesuada porta nisi. Phasellus sollicitudin magna faucibus est lobortis, ornare mollis lacus sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue arcu, fringilla vitae tempus vel, ultricies commodo turpis. Pellentesque ut risus luctus, accumsan dolor eget, luctus felis. Suspendisse ac egestas nunc. Sed Viradiseverra felis nec lectus tempor feugiat. Nunc tincidunt finibus turpis non luctus. Nullam orci nisl, porttitor ut neque in, malesuada porta nisi. Phasellus sollicitudin magna faucibus est lobortis, ornare mollis lacus sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent. ')}}>
 Copy {totalViradiseHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -59977,7 +59977,7 @@ const Viradise80 = () => {
   if (totalViradiseHPToLose == 80)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue dignissim cursus. Viradisevamus id nulla ut risus pellentesque semper. Pellentesque lobortis augue eget ultrices molestie. Nunc euismod massa a lectus varius sollicitudin. Sed dictum quis est placerat porta. Ut malesuada feugiat nisi et accumsan. Morbi et pulViradisenar nunc. Proin fringilla condimentum metus, id blandit mauris egestas in. Fusce tincidunt, nisi eget ornare fermentum, elit erat dictum nulla, tristique iaculis leo massa in orci. Ut aliquam efficitur lacus, in commodo nibh.')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue dignissim cursus. Vivamus id nulla ut risus pellentesque semper. Pellentesque lobortis augue eget ultrices molestie. Nunc euismod massa a lectus varius sollicitudin. Sed dictum quis est placerat porta. Ut malesuada feugiat nisi et accumsan. Morbi et pulViradisenar nunc. Proin fringilla condimentum metus, id blandit mauris egestas in. Fusce tincidunt, nisi eget ornare fermentum, elit erat dictum nulla, tristique iaculis leo massa in orci. Ut aliquam efficitur lacus, in commodo nibh.')}}>
 Copy {totalViradiseHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -59985,7 +59985,7 @@ const Viradise82 = () => {
   if (totalViradiseHPToLose == 82)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor felis ligula, sit amet pulViradisenar arcu porta quis. Mauris ultrices tristique neque, id ullamcorper nisi pharetra sit amet. Nam commodo leo sit amet sollicitudin vehicula. Morbi congue tellus risus, eu dapibus ex consequat id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque vestibulum arcu diam, non ornare dui volutpat sollicitudin. Nunc Viradisetae massa in leo volutpat fermentum nec eu lectus. Sed sit amet finibus dui, sed. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor felis ligula, sit amet pulViradisenar arcu porta quis. Mauris ultrices tristique neque, id ullamcorper nisi pharetra sit amet. Nam commodo leo sit amet sollicitudin vehicula. Morbi congue tellus risus, eu dapibus ex consequat id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque vestibulum arcu diam, non ornare dui volutpat sollicitudin. Nunc vitae massa in leo volutpat fermentum nec eu lectus. Sed sit amet finibus dui, sed. ')}}>
 Copy {totalViradiseHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -59993,7 +59993,7 @@ const Viradise84 = () => {
   if (totalViradiseHPToLose == 84)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum velit Viradisetae nunc ultrices, non sagittis eros euismod. Donec mattis leo id tempor tristique. In dignissim tempus augue, et posuere eros tempus sed. Suspendisse in ex felis. Ut faucibus blandit imperdiet. Sed convallis quam quis augue Viradiseverra rutrum. Ut sapien orci, scelerisque blandit nulla sit amet, malesuada sollicitudin justo. Proin et nulla consequat, fermentum eros non, rutrum orci. Suspendisse porttitor Viradiseverra tortor sed consequat. Etiam et augue ac metus condimentum finibus. Nunc vel dictum. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum velit vitae nunc ultrices, non sagittis eros euismod. Donec mattis leo id tempor tristique. In dignissim tempus augue, et posuere eros tempus sed. Suspendisse in ex felis. Ut faucibus blandit imperdiet. Sed convallis quam quis augue Viradiseverra rutrum. Ut sapien orci, scelerisque blandit nulla sit amet, malesuada sollicitudin justo. Proin et nulla consequat, fermentum eros non, rutrum orci. Suspendisse porttitor Viradiseverra tortor sed consequat. Etiam et augue ac metus condimentum finibus. Nunc vel dictum. ')}}>
 Copy {totalViradiseHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -60001,7 +60001,7 @@ const Viradise86 = () => {
   if (totalViradiseHPToLose == 86)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum lorem, vel congue libero. Maecenas egestas tincidunt mauris, ut interdum turpis eleifend id. Mauris consectetur metus id eros consectetur graViradiseda. Viradisevamus eget velit ipsum. Nunc porta tortor eu est imperdiet fringilla. Curabitur vel nibh ac odio imperdiet ultricies. Donec tempus ante non libero euismod dapibus. Aenean faucibus consectetur bibendum. Morbi sollicitudin, enim id congue laoreet, elit dui volutpat metus, non egestas ante tortor sit amet ex. Mauris sagittis pulViradisenar finibus. Integer non vehicula lectus, ut. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum lorem, vel congue libero. Maecenas egestas tincidunt mauris, ut interdum turpis eleifend id. Mauris consectetur metus id eros consectetur gravida. Vivamus eget velit ipsum. Nunc porta tortor eu est imperdiet fringilla. Curabitur vel nibh ac odio imperdiet ultricies. Donec tempus ante non libero euismod dapibus. Aenean faucibus consectetur bibendum. Morbi sollicitudin, enim id congue laoreet, elit dui volutpat metus, non egestas ante tortor sit amet ex. Mauris sagittis pulViradisenar finibus. Integer non vehicula lectus, ut. ')}}>
 Copy {totalViradiseHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -60009,7 +60009,7 @@ const Viradise88 = () => {
   if (totalViradiseHPToLose == 88)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu odio, vulputate eu tortor ac, convallis convallis ipsum. Proin imperdiet luctus odio id vehicula. Sed congue posuere tristique. Viradisevamus accumsan luctus tellus. Mauris porttitor leo et metus convallis elementum. Suspendisse in urna pharetra, eleifend arcu et, porttitor lectus. Viradisevamus eros tellus, volutpat in est accumsan, bibendum congue est. Phasellus dignissim consequat sem, in rutrum lorem interdum nec. Phasellus facilisis lectus eu eros condimentum, vel luctus justo eleifend. Fusce venenatis ipsum ut ante tincidunt commodo. Suspendisse potenti. Sed volutpat. .')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu odio, vulputate eu tortor ac, convallis convallis ipsum. Proin imperdiet luctus odio id vehicula. Sed congue posuere tristique. Vivamus accumsan luctus tellus. Mauris porttitor leo et metus convallis elementum. Suspendisse in urna pharetra, eleifend arcu et, porttitor lectus. Vivamus eros tellus, volutpat in est accumsan, bibendum congue est. Phasellus dignissim consequat sem, in rutrum lorem interdum nec. Phasellus facilisis lectus eu eros condimentum, vel luctus justo eleifend. Fusce venenatis ipsum ut ante tincidunt commodo. Suspendisse potenti. Sed volutpat. .')}}>
 Copy {totalViradiseHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
@@ -60017,7 +60017,7 @@ const Viradise90 = () => {
   if (totalViradiseHPToLose == 90)
     return(
 <Button mt='15px' mb='15px' height='50px'
-onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu dignissim neque. Quisque a commodo diam. Cras in accumsan nisl. Maecenas Viradisetae scelerisque arcu, at pretium ipsum. Nam tincidunt ullamcorper congue. Donec scelerisque, augue nec hendrerit vehicula, erat dui pellentesque odio, et Viradiseverra dolor felis nec sem. Praesent a lorem vel tellus feugiat ultricies. Etiam lacinia, sapien quis vulputate tincidunt, nisi lacus ornare augue, elementum efficitur elit diam in nibh. Suspendisse ullamcorper mollis purus, at tincidunt odio porta rhoncus. Quisque efficitur nisl nibh, id auctor libero Viradiseverra ac. In hac. ')}}>
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu dignissim neque. Quisque a commodo diam. Cras in accumsan nisl. Maecenas vitae scelerisque arcu, at pretium ipsum. Nam tincidunt ullamcorper congue. Donec scelerisque, augue nec hendrerit vehicula, erat dui pellentesque odio, et Viradiseverra dolor felis nec sem. Praesent a lorem vel tellus feugiat ultricies. Etiam lacinia, sapien quis vulputate tincidunt, nisi lacus ornare augue, elementum efficitur elit diam in nibh. Suspendisse ullamcorper mollis purus, at tincidunt odio porta rhoncus. Quisque efficitur nisl nibh, id auctor libero Viradiseverra ac. In hac. ')}}>
 Copy {totalViradiseHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 

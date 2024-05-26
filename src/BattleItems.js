@@ -14,8 +14,12 @@ import {
   theme,
   Container,
   Divider,
-  HStack,
   Image,
+  Tab,
+  Tabs,
+  TabList,
+  TabPanel,
+  TabPanels,
   Text,
   VStack,
   Wrap,
@@ -1269,6 +1273,27 @@ const handleLuckRairaselNoClick = event => {
 //dragons select//
 
 const handleKaiszarSwitchClick = event => {
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 0);
+  setNoanzaLuck (value => 0);
+  setLodoAtk (value => 0);
+  setLodoDef (value => 0);
+  setLodoLuck (value => 0);
+  setAzadiAtk (value => 0);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 0);
+  setSuwoAtk (value => 0);
+  setSuwoDef (value => 0);
+  setSuwoLuck (value => 0);
+
+  setNoanzaIsShown (current => false);
+  setNoanzaActive (current => false);
+  setLodoIsShown (current => false)
+  setLodoIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setSuwoIsShown (current => false)
+  setSuwoIsShown (current => false)
   setKaiszarIsShown (current => !KaiszarIsShown);
   setKaiszarActive (current => !KaiszarActive);
   setKaiszarAtk (value => 12);
@@ -1395,6 +1420,28 @@ const handleKaiszarSwitchClick = event => {
   };
 
 const handleAtkKaiszarSwitchClick = event => {
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 0);
+  setNoanzaLuck (value => 0);
+  setLodoAtk (value => 0);
+  setLodoDef (value => 0);
+  setLodoLuck (value => 0);
+  setAzadiAtk (value => 0);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 0);
+  setSuwoAtk (value => 0);
+  setSuwoDef (value => 0);
+  setSuwoLuck (value => 0);
+
+  setNoanzaIsShown (current => false);
+  setNoanzaActive (current => false);
+  setLodoIsShown (current => false)
+  setLodoIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setSuwoIsShown (current => false)
+  setSuwoIsShown (current => false)
+
   setDefKaiszarIsShown (current => false);
   setDefKaiszarActive (current => false);
   setKaiszarAtk (value => 0);
@@ -1519,6 +1566,28 @@ const handleAtkKaiszarSwitchClick = event => {
   };
 
   const handleDefKaiszarSwitchClick = event => {
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 0);
+  setNoanzaLuck (value => 0);
+  setLodoAtk (value => 0);
+  setLodoDef (value => 0);
+  setLodoLuck (value => 0);
+  setAzadiAtk (value => 0);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 0);
+  setSuwoAtk (value => 0);
+  setSuwoDef (value => 0);
+  setSuwoLuck (value => 0);
+
+  setNoanzaIsShown (current => false);
+  setNoanzaActive (current => false);
+  setLodoIsShown (current => false)
+  setLodoIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setSuwoIsShown (current => false)
+  setSuwoIsShown (current => false)
+
   setDefKaiszarIsShown (current => !DefKaiszarIsShown);
   setDefKaiszarActive (current => !DefKaiszarIsShown);
   setKaiszarAtk (value => 0);
@@ -1643,6 +1712,28 @@ const handleAtkKaiszarSwitchClick = event => {
   };
 
 const handleLuckKaiszarSwitchClick = event => {
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 0);
+  setNoanzaLuck (value => 0);
+  setLodoAtk (value => 0);
+  setLodoDef (value => 0);
+  setLodoLuck (value => 0);
+  setAzadiAtk (value => 0);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 0);
+  setSuwoAtk (value => 0);
+  setSuwoDef (value => 0);
+  setSuwoLuck (value => 0);
+
+  setNoanzaIsShown (current => false);
+  setNoanzaActive (current => false);
+  setLodoIsShown (current => false)
+  setLodoIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setSuwoIsShown (current => false)
+  setSuwoIsShown (current => false)
+
   setLuckKaiszarIsShown (current => !LuckKaiszarIsShown);
   setLuckKaiszarActive (current => !LuckKaiszarIsShown);
   setKaiszarAtk (value => 0);
@@ -1767,6 +1858,28 @@ const handleLuckKaiszarSwitchClick = event => {
   };
 
 const handleLoksiSwitchClick = event => {
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 0);
+  setNoanzaLuck (value => 0);
+  setLodoAtk (value => 0);
+  setLodoDef (value => 0);
+  setLodoLuck (value => 0);
+  setAzadiAtk (value => 0);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 0);
+  setSuwoAtk (value => 0);
+  setSuwoDef (value => 0);
+  setSuwoLuck (value => 0);
+
+  setNoanzaIsShown (current => false);
+  setNoanzaActive (current => false);
+  setLodoIsShown (current => false)
+  setLodoIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setSuwoIsShown (current => false)
+  setSuwoIsShown (current => false)
+
   setLoksiIsShown (current => !LoksiIsShown);
   setLoksiActive (current => !LoksiActive);
   setKaiszarAtk (value => 0);
@@ -1891,6 +2004,28 @@ const handleLoksiSwitchClick = event => {
   };
 
 const handleAtkLoksiSwitchClick = event => {
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 0);
+  setNoanzaLuck (value => 0);
+  setLodoAtk (value => 0);
+  setLodoDef (value => 0);
+  setLodoLuck (value => 0);
+  setAzadiAtk (value => 0);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 0);
+  setSuwoAtk (value => 0);
+  setSuwoDef (value => 0);
+  setSuwoLuck (value => 0);
+
+  setNoanzaIsShown (current => false);
+  setNoanzaActive (current => false);
+  setLodoIsShown (current => false)
+  setLodoIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setSuwoIsShown (current => false)
+  setSuwoIsShown (current => false)
+
   setAtkLoksiIsShown (current => !AtkLoksiIsShown);
   setAtkLoksiActive (current => !AtkLoksiIsShown);
   setKaiszarAtk (value => 0);
@@ -2015,6 +2150,28 @@ const handleAtkLoksiSwitchClick = event => {
   };
 
 const handleDefLoksiSwitchClick = event => {
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 0);
+  setNoanzaLuck (value => 0);
+  setLodoAtk (value => 0);
+  setLodoDef (value => 0);
+  setLodoLuck (value => 0);
+  setAzadiAtk (value => 0);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 0);
+  setSuwoAtk (value => 0);
+  setSuwoDef (value => 0);
+  setSuwoLuck (value => 0);
+
+  setNoanzaIsShown (current => false);
+  setNoanzaActive (current => false);
+  setLodoIsShown (current => false)
+  setLodoIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setSuwoIsShown (current => false)
+  setSuwoIsShown (current => false)
+
   setKaiszarAtk (value => 0);
   setKaiszarDef (value => 0);
   setKaiszarLuck (value => 0);
@@ -2137,6 +2294,28 @@ const handleDefLoksiSwitchClick = event => {
   };
 
 const handleLuckLoksiSwitchClick = event => {
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 0);
+  setNoanzaLuck (value => 0);
+  setLodoAtk (value => 0);
+  setLodoDef (value => 0);
+  setLodoLuck (value => 0);
+  setAzadiAtk (value => 0);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 0);
+  setSuwoAtk (value => 0);
+  setSuwoDef (value => 0);
+  setSuwoLuck (value => 0);
+
+  setNoanzaIsShown (current => false);
+  setNoanzaActive (current => false);
+  setLodoIsShown (current => false)
+  setLodoIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setSuwoIsShown (current => false)
+  setSuwoIsShown (current => false)
+
   setLuckLoksiIsShown (current => !LuckLoksiIsShown);
   setLuckLoksiActive (current => !LuckLoksiIsShown);
   setKaiszarAtk (value => 0);
@@ -2261,6 +2440,28 @@ const handleLuckLoksiSwitchClick = event => {
   };
 
 const handleThalamarisSwitchClick = event => {
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 0);
+  setNoanzaLuck (value => 0);
+  setLodoAtk (value => 0);
+  setLodoDef (value => 0);
+  setLodoLuck (value => 0);
+  setAzadiAtk (value => 0);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 0);
+  setSuwoAtk (value => 0);
+  setSuwoDef (value => 0);
+  setSuwoLuck (value => 0);
+
+  setNoanzaIsShown (current => false);
+  setNoanzaActive (current => false);
+  setLodoIsShown (current => false)
+  setLodoIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setSuwoIsShown (current => false)
+  setSuwoIsShown (current => false)
+
   setThalamarisIsShown (current => !ThalamarisIsShown);
   setThalamarisActive (current => !ThalamarisActive);
   setKaiszarAtk (value => 0);
@@ -2385,6 +2586,28 @@ const handleThalamarisSwitchClick = event => {
   };
 
 const handleAtkThalamarisSwitchClick = event => {
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 0);
+  setNoanzaLuck (value => 0);
+  setLodoAtk (value => 0);
+  setLodoDef (value => 0);
+  setLodoLuck (value => 0);
+  setAzadiAtk (value => 0);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 0);
+  setSuwoAtk (value => 0);
+  setSuwoDef (value => 0);
+  setSuwoLuck (value => 0);
+
+  setNoanzaIsShown (current => false);
+  setNoanzaActive (current => false);
+  setLodoIsShown (current => false)
+  setLodoIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setSuwoIsShown (current => false)
+  setSuwoIsShown (current => false)
+
   setAtkThalamarisIsShown (current => !AtkThalamarisIsShown);
   setAtkThalamarisActive (current => !AtkThalamarisIsShown);
   setKaiszarAtk (value => 0);
@@ -2509,6 +2732,28 @@ const handleAtkThalamarisSwitchClick = event => {
   };
 
 const handleDefThalamarisSwitchClick = event => {
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 0);
+  setNoanzaLuck (value => 0);
+  setLodoAtk (value => 0);
+  setLodoDef (value => 0);
+  setLodoLuck (value => 0);
+  setAzadiAtk (value => 0);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 0);
+  setSuwoAtk (value => 0);
+  setSuwoDef (value => 0);
+  setSuwoLuck (value => 0);
+
+  setNoanzaIsShown (current => false);
+  setNoanzaActive (current => false);
+  setLodoIsShown (current => false)
+  setLodoIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setSuwoIsShown (current => false)
+  setSuwoIsShown (current => false)
+
   setDefThalamarisIsShown (current => !DefThalamarisIsShown);
   setDefThalamarisActive (current => !DefThalamarisIsShown);
   setKaiszarAtk (value => 0);
@@ -2633,6 +2878,28 @@ const handleDefThalamarisSwitchClick = event => {
   };
 
 const handleLuckThalamarisSwitchClick = event => {
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 0);
+  setNoanzaLuck (value => 0);
+  setLodoAtk (value => 0);
+  setLodoDef (value => 0);
+  setLodoLuck (value => 0);
+  setAzadiAtk (value => 0);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 0);
+  setSuwoAtk (value => 0);
+  setSuwoDef (value => 0);
+  setSuwoLuck (value => 0);
+
+  setNoanzaIsShown (current => false);
+  setNoanzaActive (current => false);
+  setLodoIsShown (current => false)
+  setLodoIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setSuwoIsShown (current => false)
+  setSuwoIsShown (current => false)
+
   setKaiszarAtk (value => 0);
   setKaiszarDef (value => 0);
   setKaiszarLuck (value => 0);
@@ -2755,6 +3022,28 @@ const handleLuckThalamarisSwitchClick = event => {
   };
 
 const handleValkosSwitchClick = event => {
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 0);
+  setNoanzaLuck (value => 0);
+  setLodoAtk (value => 0);
+  setLodoDef (value => 0);
+  setLodoLuck (value => 0);
+  setAzadiAtk (value => 0);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 0);
+  setSuwoAtk (value => 0);
+  setSuwoDef (value => 0);
+  setSuwoLuck (value => 0);
+
+  setNoanzaIsShown (current => false);
+  setNoanzaActive (current => false);
+  setLodoIsShown (current => false)
+  setLodoIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setSuwoIsShown (current => false)
+  setSuwoIsShown (current => false)
+
   setValkosIsShown (current => !ValkosIsShown);
   setValkosActive (current => !ValkosActive);
   setKaiszarAtk (value => 0);
@@ -2879,6 +3168,28 @@ const handleValkosSwitchClick = event => {
   };
 
 const handleAtkValkosSwitchClick = event => {
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 0);
+  setNoanzaLuck (value => 0);
+  setLodoAtk (value => 0);
+  setLodoDef (value => 0);
+  setLodoLuck (value => 0);
+  setAzadiAtk (value => 0);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 0);
+  setSuwoAtk (value => 0);
+  setSuwoDef (value => 0);
+  setSuwoLuck (value => 0);
+
+  setNoanzaIsShown (current => false);
+  setNoanzaActive (current => false);
+  setLodoIsShown (current => false)
+  setLodoIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setSuwoIsShown (current => false)
+  setSuwoIsShown (current => false)
+
   setKaiszarAtk (value => 0);
   setKaiszarDef (value => 0);
   setKaiszarLuck (value => 0);
@@ -3001,6 +3312,28 @@ const handleAtkValkosSwitchClick = event => {
   };
 
 const handleDefValkosSwitchClick = event => {
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 0);
+  setNoanzaLuck (value => 0);
+  setLodoAtk (value => 0);
+  setLodoDef (value => 0);
+  setLodoLuck (value => 0);
+  setAzadiAtk (value => 0);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 0);
+  setSuwoAtk (value => 0);
+  setSuwoDef (value => 0);
+  setSuwoLuck (value => 0);
+
+  setNoanzaIsShown (current => false);
+  setNoanzaActive (current => false);
+  setLodoIsShown (current => false)
+  setLodoIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setSuwoIsShown (current => false)
+  setSuwoIsShown (current => false)
+
   setDefValkosIsShown (current => !DefValkosIsShown);
   setDefValkosActive (current => !DefValkosIsShown);
   setKaiszarAtk (value => 0);
@@ -3125,6 +3458,28 @@ const handleDefValkosSwitchClick = event => {
   };
 
 const handleLuckValkosSwitchClick = event => {
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 0);
+  setNoanzaLuck (value => 0);
+  setLodoAtk (value => 0);
+  setLodoDef (value => 0);
+  setLodoLuck (value => 0);
+  setAzadiAtk (value => 0);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 0);
+  setSuwoAtk (value => 0);
+  setSuwoDef (value => 0);
+  setSuwoLuck (value => 0);
+
+  setNoanzaIsShown (current => false);
+  setNoanzaActive (current => false);
+  setLodoIsShown (current => false)
+  setLodoIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setSuwoIsShown (current => false)
+  setSuwoIsShown (current => false)
+
   setLuckValkosIsShown (current => !LuckValkosIsShown);
   setLuckValkosActive (current => !LuckValkosIsShown);
   setKaiszarAtk (value => 0);
@@ -3249,6 +3604,28 @@ const handleLuckValkosSwitchClick = event => {
   };
 
 const handleEenrisSwitchClick = event => {
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 0);
+  setNoanzaLuck (value => 0);
+  setLodoAtk (value => 0);
+  setLodoDef (value => 0);
+  setLodoLuck (value => 0);
+  setAzadiAtk (value => 0);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 0);
+  setSuwoAtk (value => 0);
+  setSuwoDef (value => 0);
+  setSuwoLuck (value => 0);
+
+  setNoanzaIsShown (current => false);
+  setNoanzaActive (current => false);
+  setLodoIsShown (current => false)
+  setLodoIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setSuwoIsShown (current => false)
+  setSuwoIsShown (current => false)
+
   setEenrisIsShown (current => !EenrisIsShown);
   setEenrisActive (current => !EenrisIsShown);
   setKaiszarAtk (value => 0);
@@ -3373,6 +3750,28 @@ const handleEenrisSwitchClick = event => {
   };
 
 const handleAtkEenrisSwitchClick = event => {
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 0);
+  setNoanzaLuck (value => 0);
+  setLodoAtk (value => 0);
+  setLodoDef (value => 0);
+  setLodoLuck (value => 0);
+  setAzadiAtk (value => 0);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 0);
+  setSuwoAtk (value => 0);
+  setSuwoDef (value => 0);
+  setSuwoLuck (value => 0);
+
+  setNoanzaIsShown (current => false);
+  setNoanzaActive (current => false);
+  setLodoIsShown (current => false)
+  setLodoIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setSuwoIsShown (current => false)
+  setSuwoIsShown (current => false)
+
   setAtkEenrisIsShown (current => !AtkEenrisIsShown);
   setAtkEenrisActive (current => !AtkEenrisIsShown);
   setKaiszarAtk (value => 0);
@@ -3497,6 +3896,28 @@ const handleAtkEenrisSwitchClick = event => {
   };
 
 const handleDefEenrisSwitchClick = event => {
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 0);
+  setNoanzaLuck (value => 0);
+  setLodoAtk (value => 0);
+  setLodoDef (value => 0);
+  setLodoLuck (value => 0);
+  setAzadiAtk (value => 0);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 0);
+  setSuwoAtk (value => 0);
+  setSuwoDef (value => 0);
+  setSuwoLuck (value => 0);
+
+  setNoanzaIsShown (current => false);
+  setNoanzaActive (current => false);
+  setLodoIsShown (current => false)
+  setLodoIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setSuwoIsShown (current => false)
+  setSuwoIsShown (current => false)
+
   setDefEenrisIsShown (current => !DefEenrisIsShown);
   setDefEenrisActive (current => !DefEenrisIsShown);
   setKaiszarAtk (value => 0);
@@ -3621,6 +4042,28 @@ const handleDefEenrisSwitchClick = event => {
   };
 
 const handleLuckEenrisSwitchClick = event => {
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 0);
+  setNoanzaLuck (value => 0);
+  setLodoAtk (value => 0);
+  setLodoDef (value => 0);
+  setLodoLuck (value => 0);
+  setAzadiAtk (value => 0);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 0);
+  setSuwoAtk (value => 0);
+  setSuwoDef (value => 0);
+  setSuwoLuck (value => 0);
+
+  setNoanzaIsShown (current => false);
+  setNoanzaActive (current => false);
+  setLodoIsShown (current => false)
+  setLodoIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setSuwoIsShown (current => false)
+  setSuwoIsShown (current => false)
+
   setLuckEenrisIsShown (current => !LuckEenrisIsShown);
   setLuckEenrisActive (current => !LuckEenrisIsShown);
   setKaiszarAtk (value => 0);
@@ -3745,6 +4188,28 @@ const handleLuckEenrisSwitchClick = event => {
   };
 
 const handleRairaselSwitchClick = event => {
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 0);
+  setNoanzaLuck (value => 0);
+  setLodoAtk (value => 0);
+  setLodoDef (value => 0);
+  setLodoLuck (value => 0);
+  setAzadiAtk (value => 0);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 0);
+  setSuwoAtk (value => 0);
+  setSuwoDef (value => 0);
+  setSuwoLuck (value => 0);
+
+  setNoanzaIsShown (current => false);
+  setNoanzaActive (current => false);
+  setLodoIsShown (current => false)
+  setLodoIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setSuwoIsShown (current => false)
+  setSuwoIsShown (current => false)
+
   setRairaselIsShown (current => !RairaselIsShown);
   setRairaselActive (current => !RairaselActive);
   setKaiszarAtk (value => 0);
@@ -3869,6 +4334,28 @@ const handleRairaselSwitchClick = event => {
   };
 
 const handleAtkRairaselSwitchClick = event => {
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 0);
+  setNoanzaLuck (value => 0);
+  setLodoAtk (value => 0);
+  setLodoDef (value => 0);
+  setLodoLuck (value => 0);
+  setAzadiAtk (value => 0);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 0);
+  setSuwoAtk (value => 0);
+  setSuwoDef (value => 0);
+  setSuwoLuck (value => 0);
+
+  setNoanzaIsShown (current => false);
+  setNoanzaActive (current => false);
+  setLodoIsShown (current => false)
+  setLodoIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setSuwoIsShown (current => false)
+  setSuwoIsShown (current => false)
+
   setAtkRairaselIsShown (current => !AtkRairaselIsShown);
   setAtkRairaselActive (current => !AtkRairaselIsShown);
   setKaiszarAtk (value => 0);
@@ -3993,6 +4480,28 @@ const handleAtkRairaselSwitchClick = event => {
   };
 
 const handleDefRairaselSwitchClick = event => {
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 0);
+  setNoanzaLuck (value => 0);
+  setLodoAtk (value => 0);
+  setLodoDef (value => 0);
+  setLodoLuck (value => 0);
+  setAzadiAtk (value => 0);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 0);
+  setSuwoAtk (value => 0);
+  setSuwoDef (value => 0);
+  setSuwoLuck (value => 0);
+
+  setNoanzaIsShown (current => false);
+  setNoanzaActive (current => false);
+  setLodoIsShown (current => false)
+  setLodoIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setSuwoIsShown (current => false)
+  setSuwoIsShown (current => false)
+
   setDefRairaselIsShown (current => !DefRairaselIsShown);
   setDefRairaselActive (current => !DefRairaselIsShown);
   setKaiszarAtk (value => 0);
@@ -4117,6 +4626,28 @@ const handleDefRairaselSwitchClick = event => {
   };
 
 const handleLuckRairaselSwitchClick = event => {
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 0);
+  setNoanzaLuck (value => 0);
+  setLodoAtk (value => 0);
+  setLodoDef (value => 0);
+  setLodoLuck (value => 0);
+  setAzadiAtk (value => 0);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 0);
+  setSuwoAtk (value => 0);
+  setSuwoDef (value => 0);
+  setSuwoLuck (value => 0);
+
+  setNoanzaIsShown (current => false);
+  setNoanzaActive (current => false);
+  setLodoIsShown (current => false)
+  setLodoIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setSuwoIsShown (current => false)
+  setSuwoIsShown (current => false)
+
   setLuckRairaselIsShown (current => !LuckRairaselIsShown);
   setLuckRairaselActive (current => !LuckRairaselIsShown);
   setKaiszarAtk (value => 0);
@@ -4557,6 +5088,765 @@ const handleWhodiniClick = event => {
 const handleWhodiniNoClick = event => {
   setWhodiniIsShown (current => !WhodiniIsShown);
   setWhodiniActive (current => !WhodiniActive);
+  setWhodiniAtk (value => 0);
+  setWhodiniDef (value => 0);
+  setWhodiniLuck (value => 0);
+  };
+
+const handleNoanzaSwitchClick = event => {
+  setNoanzaIsShown (current => !NoanzaIsShown);
+  setNoanzaActive (current => !NoanzaActive);
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 14);
+  setNoanzaLuck (value => 6);
+  setLodoAtk (value => 0);
+  setLodoDef (value => 0);
+  setLodoLuck (value => 0);
+  setAzadiAtk (value => 0);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 0);
+  setSuwoAtk (value => 0);
+  setSuwoDef (value => 0);
+  setSuwoLuck (value => 0);
+
+  setLodoIsShown (current => false)
+  setLodoIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setSuwoIsShown (current => false)
+  setSuwoIsShown (current => false)
+
+  setNoanzaIsShown (current => !NoanzaIsShown);
+  setNoanzaActive (current => !NoanzaActive);
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 14);
+  setNoanzaLuck (value => 6);
+  setLodoAtk (value => 0);
+  setLodoDef (value => 0);
+  setLodoLuck (value => 0);
+  setAzadiAtk (value => 0);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 0);
+  setSuwoAtk (value => 0);
+  setSuwoDef (value => 0);
+  setSuwoLuck (value => 0);
+
+  setLodoIsShown (current => false)
+  setLodoIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setSuwoIsShown (current => false)
+  setSuwoIsShown (current => false)
+
+  setAlderbamAtk (value => 0);
+  setAlderbamDef (value => 0);
+  setAlderbamLuck (value => 0);
+  setChysisAtk (value => 0);
+  setChysisDef (value => 0);
+  setChysisLuck (value => 0);
+  setMundAtk (value => 0);
+  setMundDef (value => 0);
+  setMundLuck (value => 0);
+  setWhodiniAtk (value => 0);
+  setWhodiniDef (value => 0);
+  setWhodiniLuck (value => 0);
+
+  setAlderbamIsShown (current => false)
+  setAlderbamIsShown (current => false)
+  setChysisIsShown (current => false)
+  setChysisIsShown (current => false)
+  setMundIsShown (current => false)
+  setMundIsShown (current => false)
+  setWhodiniIsShown (current => false)
+  setWhodiniIsShown (current => false)
+
+  setKaiszarAtk (value => 0);
+  setKaiszarDef (value => 0);
+  setKaiszarLuck (value => 0);
+  setAtkKaiszarAtk (value => 0);
+  setAtkKaiszarDef (value => 0);
+  setAtkKaiszarLuck (value => 0);
+  setDefKaiszarAtk (value => 0);
+  setDefKaiszarDef (value => 0);
+  setDefKaiszarLuck (value => 0);
+  setLuckKaiszarAtk (value => 0);
+  setLuckKaiszarDef (value => 0);
+  setLuckKaiszarLuck (value => 0);
+  setLoksiAtk (value => 0);
+  setLoksiDef (value => 0);
+  setLoksiLuck (value => 0);
+  setAtkLoksiAtk (value => 0);
+  setAtkLoksiDef (value => 0);
+  setAtkLoksiLuck (value => 0);
+  setDefLoksiAtk (value => 0);
+  setDefLoksiDef (value => 0);
+  setDefLoksiLuck (value => 0);
+  setLuckLoksiAtk (value => 0);
+  setLuckLoksiDef (value => 0);
+  setLuckLoksiLuck (value => 0);
+  setThalamarisAtk (value => 0);
+  setThalamarisDef (value => 0);
+  setThalamarisLuck (value => 0);
+  setAtkThalamarisAtk (value => 0);
+  setAtkThalamarisDef (value => 0);
+  setAtkThalamarisLuck (value => 0);
+  setDefThalamarisAtk (value => 0);
+  setDefThalamarisDef (value => 0);
+  setDefThalamarisLuck (value => 0);
+  setLuckThalamarisAtk (value => 0);
+  setLuckThalamarisDef (value => 0);
+  setLuckThalamarisLuck (value => 0);
+  setValkosAtk (value => 0);
+  setValkosDef (value => 0);
+  setValkosLuck (value => 0);
+  setAtkValkosAtk (value => 0);
+  setAtkValkosDef (value => 0);
+  setAtkValkosLuck (value => 0);
+  setDefValkosAtk (value => 0);
+  setDefValkosDef (value => 0);
+  setDefValkosLuck (value => 0);
+  setLuckValkosAtk (value => 0);
+  setLuckValkosDef (value => 0);
+  setLuckValkosLuck (value => 0);
+  setEenrisAtk (value => 0);
+  setEenrisDef (value => 0);
+  setEenrisLuck (value => 0);
+  setAtkEenrisAtk (value => 0);
+  setAtkEenrisDef (value => 0);
+  setAtkEenrisLuck (value => 0);
+  setDefEenrisAtk (value => 0);
+  setDefEenrisDef (value => 0);
+  setDefEenrisLuck (value => 0);
+  setLuckEenrisAtk (value => 0);
+  setLuckEenrisDef (value => 0);
+  setLuckEenrisLuck (value => 0);
+  setRairaselAtk (value => 0);
+  setRairaselDef (value => 0);
+  setRairaselLuck (value => 0);
+  setAtkRairaselAtk (value => 0);
+  setAtkRairaselDef (value => 0);
+  setAtkRairaselLuck (value => 0);
+  setDefRairaselAtk (value => 0);
+  setDefRairaselDef (value => 0);
+  setDefRairaselLuck (value => 0);
+  setLuckRairaselAtk (value => 0);
+  setLuckRairaselDef (value => 0);
+  setLuckRairaselLuck (value => 0);
+
+  setKaiszarIsShown (current => false);
+  setKaiszarActive (current => false);
+  setAtkKaiszarIsShown (current => false);
+  setAtkKaiszarActive (current => false);
+  setDefKaiszarIsShown (current => false);
+  setDefKaiszarActive (current => false);
+  setLuckKaiszarIsShown (current => false);
+  setLuckKaiszarActive (current => false);
+  setLoksiIsShown (current => false);
+  setLoksiActive (current => false);
+  setAtkLoksiIsShown (current => false);
+  setAtkLoksiActive (current => false);
+  setDefLoksiIsShown (current => false);
+  setDefLoksiActive (current => false);
+  setLuckLoksiIsShown (current => false);
+  setLuckLoksiActive (current => false);
+  setThalamarisIsShown (current => false);
+  setThalamarisActive (current => false);
+  setAtkThalamarisIsShown (current => false);
+  setAtkThalamarisActive (current => false);
+  setDefThalamarisIsShown (current => false);
+  setDefThalamarisActive (current => false);
+  setLuckThalamarisIsShown (current => false);
+  setLuckThalamarisActive (current => false);
+  setValkosIsShown (current => false);
+  setValkosActive (current => false);
+  setAtkValkosIsShown (current => false);
+  setAtkValkosActive (current => false);
+  setDefValkosIsShown (current => false);
+  setDefValkosActive (current => false);
+  setLuckValkosIsShown (current => false);
+  setLuckValkosActive (current => false);
+  setEenrisIsShown (current => false);
+  setEenrisActive (current => false);
+  setAtkEenrisIsShown (current => false);
+  setAtkEenrisActive (current => false);
+  setDefEenrisIsShown (current => false);
+  setDefEenrisActive (current => false);
+  setLuckEenrisIsShown (current => false);
+  setLuckEenrisActive (current => false);
+  setRairaselIsShown (current => false);
+  setRairaselActive (current => false);
+  setAtkRairaselIsShown (current => false);
+  setAtkRairaselActive (current => false);
+  setDefRairaselIsShown (current => false);
+  setDefRairaselActive (current => false);
+  setLuckRairaselIsShown (current => false);
+  setLuckRairaselActive (current => false);
+  };
+
+const handleLodoSwitchClick = event => {
+  setLodoIsShown (current => !LodoIsShown);
+  setLodoActive (current => !LodoActive);
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 0);
+  setNoanzaLuck (value => 0);
+  setLodoAtk (value => 12);
+  setLodoDef (value => 2);
+  setLodoLuck (value => 0);
+  setAzadiAtk (value => 0);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 0);
+  setSuwoAtk (value => 0);
+  setSuwoDef (value => 0);
+  setSuwoLuck (value => 0);
+
+  setNoanzaIsShown (current => false)
+  setNoanzaIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setSuwoIsShown (current => false)
+  setSuwoIsShown (current => false)
+
+  setAlderbamAtk (value => 0);
+  setAlderbamDef (value => 0);
+  setAlderbamLuck (value => 0);
+  setChysisAtk (value => 0);
+  setChysisDef (value => 0);
+  setChysisLuck (value => 0);
+  setMundAtk (value => 0);
+  setMundDef (value => 0);
+  setMundLuck (value => 0);
+  setWhodiniAtk (value => 0);
+  setWhodiniDef (value => 0);
+  setWhodiniLuck (value => 0);
+
+  setAlderbamIsShown (current => false)
+  setAlderbamIsShown (current => false)
+  setChysisIsShown (current => false)
+  setChysisIsShown (current => false)
+  setMundIsShown (current => false)
+  setMundIsShown (current => false)
+  setWhodiniIsShown (current => false)
+  setWhodiniIsShown (current => false)
+
+  setKaiszarAtk (value => 0);
+  setKaiszarDef (value => 0);
+  setKaiszarLuck (value => 0);
+  setAtkKaiszarAtk (value => 0);
+  setAtkKaiszarDef (value => 0);
+  setAtkKaiszarLuck (value => 0);
+  setDefKaiszarAtk (value => 0);
+  setDefKaiszarDef (value => 0);
+  setDefKaiszarLuck (value => 0);
+  setLuckKaiszarAtk (value => 0);
+  setLuckKaiszarDef (value => 0);
+  setLuckKaiszarLuck (value => 0);
+  setLoksiAtk (value => 0);
+  setLoksiDef (value => 0);
+  setLoksiLuck (value => 0);
+  setAtkLoksiAtk (value => 0);
+  setAtkLoksiDef (value => 0);
+  setAtkLoksiLuck (value => 0);
+  setDefLoksiAtk (value => 0);
+  setDefLoksiDef (value => 0);
+  setDefLoksiLuck (value => 0);
+  setLuckLoksiAtk (value => 0);
+  setLuckLoksiDef (value => 0);
+  setLuckLoksiLuck (value => 0);
+  setThalamarisAtk (value => 0);
+  setThalamarisDef (value => 0);
+  setThalamarisLuck (value => 0);
+  setAtkThalamarisAtk (value => 0);
+  setAtkThalamarisDef (value => 0);
+  setAtkThalamarisLuck (value => 0);
+  setDefThalamarisAtk (value => 0);
+  setDefThalamarisDef (value => 0);
+  setDefThalamarisLuck (value => 0);
+  setLuckThalamarisAtk (value => 0);
+  setLuckThalamarisDef (value => 0);
+  setLuckThalamarisLuck (value => 0);
+  setValkosAtk (value => 0);
+  setValkosDef (value => 0);
+  setValkosLuck (value => 0);
+  setAtkValkosAtk (value => 0);
+  setAtkValkosDef (value => 0);
+  setAtkValkosLuck (value => 0);
+  setDefValkosAtk (value => 0);
+  setDefValkosDef (value => 0);
+  setDefValkosLuck (value => 0);
+  setLuckValkosAtk (value => 0);
+  setLuckValkosDef (value => 0);
+  setLuckValkosLuck (value => 0);
+  setEenrisAtk (value => 0);
+  setEenrisDef (value => 0);
+  setEenrisLuck (value => 0);
+  setAtkEenrisAtk (value => 0);
+  setAtkEenrisDef (value => 0);
+  setAtkEenrisLuck (value => 0);
+  setDefEenrisAtk (value => 0);
+  setDefEenrisDef (value => 0);
+  setDefEenrisLuck (value => 0);
+  setLuckEenrisAtk (value => 0);
+  setLuckEenrisDef (value => 0);
+  setLuckEenrisLuck (value => 0);
+  setRairaselAtk (value => 0);
+  setRairaselDef (value => 0);
+  setRairaselLuck (value => 0);
+  setAtkRairaselAtk (value => 0);
+  setAtkRairaselDef (value => 0);
+  setAtkRairaselLuck (value => 0);
+  setDefRairaselAtk (value => 0);
+  setDefRairaselDef (value => 0);
+  setDefRairaselLuck (value => 0);
+  setLuckRairaselAtk (value => 0);
+  setLuckRairaselDef (value => 0);
+  setLuckRairaselLuck (value => 0);
+
+  setKaiszarIsShown (current => false);
+  setKaiszarActive (current => false);
+  setAtkKaiszarIsShown (current => false);
+  setAtkKaiszarActive (current => false);
+  setDefKaiszarIsShown (current => false);
+  setDefKaiszarActive (current => false);
+  setLuckKaiszarIsShown (current => false);
+  setLuckKaiszarActive (current => false);
+  setLoksiIsShown (current => false);
+  setLoksiActive (current => false);
+  setAtkLoksiIsShown (current => false);
+  setAtkLoksiActive (current => false);
+  setDefLoksiIsShown (current => false);
+  setDefLoksiActive (current => false);
+  setLuckLoksiIsShown (current => false);
+  setLuckLoksiActive (current => false);
+  setThalamarisIsShown (current => false);
+  setThalamarisActive (current => false);
+  setAtkThalamarisIsShown (current => false);
+  setAtkThalamarisActive (current => false);
+  setDefThalamarisIsShown (current => false);
+  setDefThalamarisActive (current => false);
+  setLuckThalamarisIsShown (current => false);
+  setLuckThalamarisActive (current => false);
+  setValkosIsShown (current => false);
+  setValkosActive (current => false);
+  setAtkValkosIsShown (current => false);
+  setAtkValkosActive (current => false);
+  setDefValkosIsShown (current => false);
+  setDefValkosActive (current => false);
+  setLuckValkosIsShown (current => false);
+  setLuckValkosActive (current => false);
+  setEenrisIsShown (current => false);
+  setEenrisActive (current => false);
+  setAtkEenrisIsShown (current => false);
+  setAtkEenrisActive (current => false);
+  setDefEenrisIsShown (current => false);
+  setDefEenrisActive (current => false);
+  setLuckEenrisIsShown (current => false);
+  setLuckEenrisActive (current => false);
+  setRairaselIsShown (current => false);
+  setRairaselActive (current => false);
+  setAtkRairaselIsShown (current => false);
+  setAtkRairaselActive (current => false);
+  setDefRairaselIsShown (current => false);
+  setDefRairaselActive (current => false);
+  setLuckRairaselIsShown (current => false);
+  setLuckRairaselActive (current => false);
+  };
+  
+const handleAzadiSwitchClick = event => {
+  setAzadiIsShown (current => !AzadiIsShown);
+  setAzadiActive (current => !AzadiActive);
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 0);
+  setNoanzaLuck (value => 0);
+  setLodoAtk (value => 0);
+  setLodoDef (value => 0);
+  setLodoLuck (value => 0);
+  setAzadiAtk (value => 5);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 10);
+  setSuwoAtk (value => 0);
+  setSuwoDef (value => 0);
+  setSuwoLuck (value => 0);
+
+  setNoanzaIsShown (current => false)
+  setNoanzaIsShown (current => false)
+  setLodoIsShown (current => false)
+  setLodoIsShown (current => false)
+  setSuwoIsShown (current => false)
+  setSuwoIsShown (current => false)
+
+  setAlderbamAtk (value => 0);
+  setAlderbamDef (value => 0);
+  setAlderbamLuck (value => 0);
+  setChysisAtk (value => 0);
+  setChysisDef (value => 0);
+  setChysisLuck (value => 0);
+  setMundAtk (value => 0);
+  setMundDef (value => 0);
+  setMundLuck (value => 0);
+  setWhodiniAtk (value => 0);
+  setWhodiniDef (value => 0);
+  setWhodiniLuck (value => 0);
+
+  setAlderbamIsShown (current => false)
+  setAlderbamIsShown (current => false)
+  setChysisIsShown (current => false)
+  setChysisIsShown (current => false)
+  setMundIsShown (current => false)
+  setMundIsShown (current => false)
+  setWhodiniIsShown (current => false)
+  setWhodiniIsShown (current => false)
+
+  setKaiszarAtk (value => 0);
+  setKaiszarDef (value => 0);
+  setKaiszarLuck (value => 0);
+  setAtkKaiszarAtk (value => 0);
+  setAtkKaiszarDef (value => 0);
+  setAtkKaiszarLuck (value => 0);
+  setDefKaiszarAtk (value => 0);
+  setDefKaiszarDef (value => 0);
+  setDefKaiszarLuck (value => 0);
+  setLuckKaiszarAtk (value => 0);
+  setLuckKaiszarDef (value => 0);
+  setLuckKaiszarLuck (value => 0);
+  setLoksiAtk (value => 0);
+  setLoksiDef (value => 0);
+  setLoksiLuck (value => 0);
+  setAtkLoksiAtk (value => 0);
+  setAtkLoksiDef (value => 0);
+  setAtkLoksiLuck (value => 0);
+  setDefLoksiAtk (value => 0);
+  setDefLoksiDef (value => 0);
+  setDefLoksiLuck (value => 0);
+  setLuckLoksiAtk (value => 0);
+  setLuckLoksiDef (value => 0);
+  setLuckLoksiLuck (value => 0);
+  setThalamarisAtk (value => 0);
+  setThalamarisDef (value => 0);
+  setThalamarisLuck (value => 0);
+  setAtkThalamarisAtk (value => 0);
+  setAtkThalamarisDef (value => 0);
+  setAtkThalamarisLuck (value => 0);
+  setDefThalamarisAtk (value => 0);
+  setDefThalamarisDef (value => 0);
+  setDefThalamarisLuck (value => 0);
+  setLuckThalamarisAtk (value => 0);
+  setLuckThalamarisDef (value => 0);
+  setLuckThalamarisLuck (value => 0);
+  setValkosAtk (value => 0);
+  setValkosDef (value => 0);
+  setValkosLuck (value => 0);
+  setAtkValkosAtk (value => 0);
+  setAtkValkosDef (value => 0);
+  setAtkValkosLuck (value => 0);
+  setDefValkosAtk (value => 0);
+  setDefValkosDef (value => 0);
+  setDefValkosLuck (value => 0);
+  setLuckValkosAtk (value => 0);
+  setLuckValkosDef (value => 0);
+  setLuckValkosLuck (value => 0);
+  setEenrisAtk (value => 0);
+  setEenrisDef (value => 0);
+  setEenrisLuck (value => 0);
+  setAtkEenrisAtk (value => 0);
+  setAtkEenrisDef (value => 0);
+  setAtkEenrisLuck (value => 0);
+  setDefEenrisAtk (value => 0);
+  setDefEenrisDef (value => 0);
+  setDefEenrisLuck (value => 0);
+  setLuckEenrisAtk (value => 0);
+  setLuckEenrisDef (value => 0);
+  setLuckEenrisLuck (value => 0);
+  setRairaselAtk (value => 0);
+  setRairaselDef (value => 0);
+  setRairaselLuck (value => 0);
+  setAtkRairaselAtk (value => 0);
+  setAtkRairaselDef (value => 0);
+  setAtkRairaselLuck (value => 0);
+  setDefRairaselAtk (value => 0);
+  setDefRairaselDef (value => 0);
+  setDefRairaselLuck (value => 0);
+  setLuckRairaselAtk (value => 0);
+  setLuckRairaselDef (value => 0);
+  setLuckRairaselLuck (value => 0);
+
+  setKaiszarIsShown (current => false);
+  setKaiszarActive (current => false);
+  setAtkKaiszarIsShown (current => false);
+  setAtkKaiszarActive (current => false);
+  setDefKaiszarIsShown (current => false);
+  setDefKaiszarActive (current => false);
+  setLuckKaiszarIsShown (current => false);
+  setLuckKaiszarActive (current => false);
+  setLoksiIsShown (current => false);
+  setLoksiActive (current => false);
+  setAtkLoksiIsShown (current => false);
+  setAtkLoksiActive (current => false);
+  setDefLoksiIsShown (current => false);
+  setDefLoksiActive (current => false);
+  setLuckLoksiIsShown (current => false);
+  setLuckLoksiActive (current => false);
+  setThalamarisIsShown (current => false);
+  setThalamarisActive (current => false);
+  setAtkThalamarisIsShown (current => false);
+  setAtkThalamarisActive (current => false);
+  setDefThalamarisIsShown (current => false);
+  setDefThalamarisActive (current => false);
+  setLuckThalamarisIsShown (current => false);
+  setLuckThalamarisActive (current => false);
+  setValkosIsShown (current => false);
+  setValkosActive (current => false);
+  setAtkValkosIsShown (current => false);
+  setAtkValkosActive (current => false);
+  setDefValkosIsShown (current => false);
+  setDefValkosActive (current => false);
+  setLuckValkosIsShown (current => false);
+  setLuckValkosActive (current => false);
+  setEenrisIsShown (current => false);
+  setEenrisActive (current => false);
+  setAtkEenrisIsShown (current => false);
+  setAtkEenrisActive (current => false);
+  setDefEenrisIsShown (current => false);
+  setDefEenrisActive (current => false);
+  setLuckEenrisIsShown (current => false);
+  setLuckEenrisActive (current => false);
+  setRairaselIsShown (current => false);
+  setRairaselActive (current => false);
+  setAtkRairaselIsShown (current => false);
+  setAtkRairaselActive (current => false);
+  setDefRairaselIsShown (current => false);
+  setDefRairaselActive (current => false);
+  setLuckRairaselIsShown (current => false);
+  setLuckRairaselActive (current => false);
+  };  
+
+const handleSuwoSwitchClick = event => {
+  setSuwoIsShown (current => !SuwoIsShown);
+  setSuwoActive (current => !SuwoActive);
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 0);
+  setNoanzaLuck (value => 0);
+  setLodoAtk (value => 0);
+  setLodoDef (value => 0);
+  setLodoLuck (value => 0);
+  setAzadiAtk (value => 0);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 0);
+  setSuwoAtk (value => 3);
+  setSuwoDef (value => 7);
+  setSuwoLuck (value => 2);
+
+  setNoanzaIsShown (current => false)
+  setNoanzaIsShown (current => false)
+  setLodoIsShown (current => false)
+  setLodoIsShown (current => false)
+  setAzadiIsShown (current => false)
+  setAzadiIsShown (current => false)
+
+  setAlderbamAtk (value => 0);
+  setAlderbamDef (value => 0);
+  setAlderbamLuck (value => 0);
+  setChysisAtk (value => 0);
+  setChysisDef (value => 0);
+  setChysisLuck (value => 0);
+  setMundAtk (value => 0);
+  setMundDef (value => 0);
+  setMundLuck (value => 0);
+  setWhodiniAtk (value => 0);
+  setWhodiniDef (value => 0);
+  setWhodiniLuck (value => 0);
+
+  setAlderbamIsShown (current => false)
+  setAlderbamIsShown (current => false)
+  setChysisIsShown (current => false)
+  setChysisIsShown (current => false)
+  setMundIsShown (current => false)
+  setMundIsShown (current => false)
+  setWhodiniIsShown (current => false)
+  setWhodiniIsShown (current => false)
+
+  setKaiszarAtk (value => 0);
+  setKaiszarDef (value => 0);
+  setKaiszarLuck (value => 0);
+  setAtkKaiszarAtk (value => 0);
+  setAtkKaiszarDef (value => 0);
+  setAtkKaiszarLuck (value => 0);
+  setDefKaiszarAtk (value => 0);
+  setDefKaiszarDef (value => 0);
+  setDefKaiszarLuck (value => 0);
+  setLuckKaiszarAtk (value => 0);
+  setLuckKaiszarDef (value => 0);
+  setLuckKaiszarLuck (value => 0);
+  setLoksiAtk (value => 0);
+  setLoksiDef (value => 0);
+  setLoksiLuck (value => 0);
+  setAtkLoksiAtk (value => 0);
+  setAtkLoksiDef (value => 0);
+  setAtkLoksiLuck (value => 0);
+  setDefLoksiAtk (value => 0);
+  setDefLoksiDef (value => 0);
+  setDefLoksiLuck (value => 0);
+  setLuckLoksiAtk (value => 0);
+  setLuckLoksiDef (value => 0);
+  setLuckLoksiLuck (value => 0);
+  setThalamarisAtk (value => 0);
+  setThalamarisDef (value => 0);
+  setThalamarisLuck (value => 0);
+  setAtkThalamarisAtk (value => 0);
+  setAtkThalamarisDef (value => 0);
+  setAtkThalamarisLuck (value => 0);
+  setDefThalamarisAtk (value => 0);
+  setDefThalamarisDef (value => 0);
+  setDefThalamarisLuck (value => 0);
+  setLuckThalamarisAtk (value => 0);
+  setLuckThalamarisDef (value => 0);
+  setLuckThalamarisLuck (value => 0);
+  setValkosAtk (value => 0);
+  setValkosDef (value => 0);
+  setValkosLuck (value => 0);
+  setAtkValkosAtk (value => 0);
+  setAtkValkosDef (value => 0);
+  setAtkValkosLuck (value => 0);
+  setDefValkosAtk (value => 0);
+  setDefValkosDef (value => 0);
+  setDefValkosLuck (value => 0);
+  setLuckValkosAtk (value => 0);
+  setLuckValkosDef (value => 0);
+  setLuckValkosLuck (value => 0);
+  setEenrisAtk (value => 0);
+  setEenrisDef (value => 0);
+  setEenrisLuck (value => 0);
+  setAtkEenrisAtk (value => 0);
+  setAtkEenrisDef (value => 0);
+  setAtkEenrisLuck (value => 0);
+  setDefEenrisAtk (value => 0);
+  setDefEenrisDef (value => 0);
+  setDefEenrisLuck (value => 0);
+  setLuckEenrisAtk (value => 0);
+  setLuckEenrisDef (value => 0);
+  setLuckEenrisLuck (value => 0);
+  setRairaselAtk (value => 0);
+  setRairaselDef (value => 0);
+  setRairaselLuck (value => 0);
+  setAtkRairaselAtk (value => 0);
+  setAtkRairaselDef (value => 0);
+  setAtkRairaselLuck (value => 0);
+  setDefRairaselAtk (value => 0);
+  setDefRairaselDef (value => 0);
+  setDefRairaselLuck (value => 0);
+  setLuckRairaselAtk (value => 0);
+  setLuckRairaselDef (value => 0);
+  setLuckRairaselLuck (value => 0);
+
+  setKaiszarIsShown (current => false);
+  setKaiszarActive (current => false);
+  setAtkKaiszarIsShown (current => false);
+  setAtkKaiszarActive (current => false);
+  setDefKaiszarIsShown (current => false);
+  setDefKaiszarActive (current => false);
+  setLuckKaiszarIsShown (current => false);
+  setLuckKaiszarActive (current => false);
+  setLoksiIsShown (current => false);
+  setLoksiActive (current => false);
+  setAtkLoksiIsShown (current => false);
+  setAtkLoksiActive (current => false);
+  setDefLoksiIsShown (current => false);
+  setDefLoksiActive (current => false);
+  setLuckLoksiIsShown (current => false);
+  setLuckLoksiActive (current => false);
+  setThalamarisIsShown (current => false);
+  setThalamarisActive (current => false);
+  setAtkThalamarisIsShown (current => false);
+  setAtkThalamarisActive (current => false);
+  setDefThalamarisIsShown (current => false);
+  setDefThalamarisActive (current => false);
+  setLuckThalamarisIsShown (current => false);
+  setLuckThalamarisActive (current => false);
+  setValkosIsShown (current => false);
+  setValkosActive (current => false);
+  setAtkValkosIsShown (current => false);
+  setAtkValkosActive (current => false);
+  setDefValkosIsShown (current => false);
+  setDefValkosActive (current => false);
+  setLuckValkosIsShown (current => false);
+  setLuckValkosActive (current => false);
+  setEenrisIsShown (current => false);
+  setEenrisActive (current => false);
+  setAtkEenrisIsShown (current => false);
+  setAtkEenrisActive (current => false);
+  setDefEenrisIsShown (current => false);
+  setDefEenrisActive (current => false);
+  setLuckEenrisIsShown (current => false);
+  setLuckEenrisActive (current => false);
+  setRairaselIsShown (current => false);
+  setRairaselActive (current => false);
+  setAtkRairaselIsShown (current => false);
+  setAtkRairaselActive (current => false);
+  setDefRairaselIsShown (current => false);
+  setDefRairaselActive (current => false);
+  setLuckRairaselIsShown (current => false);
+  setLuckRairaselActive (current => false);
+  };
+
+
+const handleNoanzaSwitchNoClick = event => {
+  setNoanzaIsShown (current => !NoanzaIsShown);
+  setNoanzaActive (current => !NoanzaIsShown);
+  setNoanzaAtk (value => 0);
+  setNoanzaDef (value => 0);
+  setNoanzaLuck (value => 0);
+  };
+
+const handleLodoSwitchNoClick = event => {
+  setLodoIsShown (current => !LodoIsShown);
+  setLodoActive (current => !LodoIsShown);
+  setLodoAtk (value => 0);
+  setLodoDef (value => 0);
+  setLodoLuck (value => 0);
+  };
+
+const handleAzadiSwitchNoClick = event => {
+  setAzadiIsShown (current => !AzadiIsShown);
+  setAzadiActive (current => !AzadiIsShown);
+  setAzadiAtk (value => 0);
+  setAzadiDef (value => 0);
+  setAzadiLuck (value => 0);
+  };
+
+const handleSuwoSwitchNoClick = event => {
+  setSuwoIsShown (current => !SuwoIsShown);
+  setSuwoActive (current => !SuwoIsShown);
+  setSuwoAtk (value => 0);
+  setSuwoDef (value => 0);
+  setSuwoLuck (value => 0);
+  };
+
+  const handleAlderbamSwitchNoClick = event => {
+  setAlderbamIsShown (current => !AlderbamIsShown);
+  setAlderbamActive (current => !AlderbamIsShown);
+  setAlderbamAtk (value => 0);
+  setAlderbamDef (value => 0);
+  setAlderbamLuck (value => 0);
+  };
+
+  const handleChysisSwitchNoClick = event => {
+  setChysisIsShown (current => !ChysisIsShown);
+  setChysisActive (current => !ChysisIsShown);
+  setChysisAtk (value => 0);
+  setChysisDef (value => 0);
+  setChysisLuck (value => 0);
+  };
+
+  const handleMundSwitchNoClick = event => {
+  setMundIsShown (current => !MundIsShown);
+  setMundActive (current => !MundIsShown);
+  setMundAtk (value => 0);
+  setMundDef (value => 0);
+  setMundLuck (value => 0);
+  };
+
+  const handleWhodiniSwitchNoClick = event => {
+  setWhodiniIsShown (current => !WhodiniIsShown);
+  setWhodiniActive (current => !WhodiniIsShown);
   setWhodiniAtk (value => 0);
   setWhodiniDef (value => 0);
   setWhodiniLuck (value => 0);
@@ -6249,9 +7539,9 @@ const TopAttackCompanion12 = () => {
 
             <Text mt='25px' mb='8px'>What item builds do you want to see?</Text>
             <VStack>
-            <Button variant='outline' onClick= {handleAllClick} style={{ backgroundColor: AllActive ? "#2d1b59" : "transparent" }}>
+            <Button variant='outline' onClick= {handleAllClick} style={{ backgroundColor: AllActive ? "#211742" : "transparent" }}>
               All possible for the regions I've unlocked</Button>
-            <Button variant='outline' onClick= {handleOwnedClick} style={{ backgroundColor: OwnedActive ? "#2d1b59" : "transparent" }}>
+            <Button variant='outline' onClick= {handleOwnedClick} style={{ backgroundColor: OwnedActive ? "#211742" : "transparent" }}>
             Specific to the battle items I own
               </Button>
 
@@ -6272,32 +7562,32 @@ const TopAttackCompanion12 = () => {
           <Text fontSize='md' mt='25px' mb='15px'><b>Your furthest main region:</b></Text>
                 <Wrap justify='center'>
             <WrapItem>
-            <Button w='90px' h='60px' pb={5} onClick={handleForestRegionClick} style={{ backgroundColor: ForestRegionActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='60px' pb={5} onClick={handleForestRegionClick} style={{ backgroundColor: ForestRegionActive ? "#211742" : "#2D3748" }}>
           <Text fontSize='md' align='center' pt='18px'>Forest<br/>Region</Text>
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='90px' h='60px' pb={5} onClick={handleDesertRegionClick} style={{ backgroundColor: DesertRegionActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='60px' pb={5} onClick={handleDesertRegionClick} style={{ backgroundColor: DesertRegionActive ? "#211742" : "#2D3748" }}>
         <Text fontSize='md' align='center' pt='18px'>Desert<br/>Region</Text>
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='90px' h='60px' pb={5} onClick={handleWaterRegionClick} style={{ backgroundColor: WaterRegionActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='60px' pb={5} onClick={handleWaterRegionClick} style={{ backgroundColor: WaterRegionActive ? "#211742" : "#2D3748" }}>
         <Text fontSize='md' align='center' pt='18px'>Water<br/>Region</Text>
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='90px' h='60px' pb={5} onClick={handleDustRegionClick} style={{ backgroundColor: DustRegionActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='60px' pb={5} onClick={handleDustRegionClick} style={{ backgroundColor: DustRegionActive ? "#211742" : "#2D3748" }}>
         <Text fontSize='md' align='center' pt='18px'>Dust<br/>Region</Text>
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='90px' h='60px' pb={5} onClick={handleLightRegionClick} style={{ backgroundColor: LightRegionActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='60px' pb={5} onClick={handleLightRegionClick} style={{ backgroundColor: LightRegionActive ? "#211742" : "#2D3748" }}>
         <Text fontSize='md' align='center' pt='18px'>Light<br/>Region</Text>
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='90px' h='60px' pb={5} onClick={handleWorld2RegionClick} style={{ backgroundColor: World2RegionActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='60px' pb={5} onClick={handleWorld2RegionClick} style={{ backgroundColor: World2RegionActive ? "#211742" : "#2D3748" }}>
         <Text fontSize='md' align='center' pt='18px'>World 2</Text>
             </Button>
             </WrapItem>
@@ -6310,7 +7600,7 @@ const TopAttackCompanion12 = () => {
 {ForestRegionIsShown &&
           <Wrap justify='center'>
           <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleLuciolaForestClick} style={{ backgroundColor: LuciolaForestActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleLuciolaForestClick} style={{ backgroundColor: LuciolaForestActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6323,7 +7613,7 @@ const TopAttackCompanion12 = () => {
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleMamaTreeClick} style={{ backgroundColor: MamaTreeActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleMamaTreeClick} style={{ backgroundColor: MamaTreeActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6343,7 +7633,7 @@ const TopAttackCompanion12 = () => {
 {WaterRegionIsShown &&
           <Wrap justify='center'>
             <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleRizaRivertownClick} style={{ backgroundColor: RizaRivertownActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleRizaRivertownClick} style={{ backgroundColor: RizaRivertownActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6356,7 +7646,7 @@ const TopAttackCompanion12 = () => {
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleFloatingCityClick} style={{ backgroundColor: FloatingCityActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleFloatingCityClick} style={{ backgroundColor: FloatingCityActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6376,7 +7666,7 @@ const TopAttackCompanion12 = () => {
 {LightRegionIsShown &&
           <Wrap justify='center'>
             <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleEarlyCoLClick} style={{ backgroundColor: EarlyCoLActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleEarlyCoLClick} style={{ backgroundColor: EarlyCoLActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6389,7 +7679,7 @@ const TopAttackCompanion12 = () => {
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleLateCoLClick} style={{ backgroundColor: LateCoLActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleLateCoLClick} style={{ backgroundColor: LateCoLActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6402,7 +7692,7 @@ const TopAttackCompanion12 = () => {
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleDCClick} style={{ backgroundColor: DCActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleDCClick} style={{ backgroundColor: DCActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6423,7 +7713,7 @@ const TopAttackCompanion12 = () => {
 {World2RegionIsShown &&
           <Wrap justify='center'>
             <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleNivaliClick} style={{ backgroundColor: NivaliActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleNivaliClick} style={{ backgroundColor: NivaliActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6444,7 +7734,7 @@ const TopAttackCompanion12 = () => {
 {LuciolaForestIsShown &&
           <Wrap justify='center'>
           <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleAurilisClick} style={{ backgroundColor: AurilisActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleAurilisClick} style={{ backgroundColor: AurilisActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6465,7 +7755,7 @@ const TopAttackCompanion12 = () => {
 {MamaTreeIsShown &&
           <Wrap justify='center'>
           <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleAurilisClick} style={{ backgroundColor: AurilisActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleAurilisClick} style={{ backgroundColor: AurilisActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6478,7 +7768,7 @@ const TopAttackCompanion12 = () => {
             </Button>
             </WrapItem>
           <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleElderLibraryClick} style={{ backgroundColor: ElderLibraryActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleElderLibraryClick} style={{ backgroundColor: ElderLibraryActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6505,12 +7795,12 @@ const TopAttackCompanion12 = () => {
             </WrapItem>}
             {DesertRegionAllSideRegionsIsShown && 
           <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleDesertRegionNoneSideRegionsClick} style={{ backgroundColor: DesertRegionNoneSideRegionsActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleDesertRegionNoneSideRegionsClick} style={{ backgroundColor: DesertRegionNoneSideRegionsActive ? "#211742" : "#2D3748" }}>
             <Text fontSize='md' mt='35px' mb='15px'><b>Unselect<br/>All</b></Text>
             </Button>
             </WrapItem>}
             <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleAurilisClick} style={{ backgroundColor: AurilisActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleAurilisClick} style={{ backgroundColor: AurilisActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6523,7 +7813,7 @@ const TopAttackCompanion12 = () => {
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleElderLibraryClick} style={{ backgroundColor: ElderLibraryActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleElderLibraryClick} style={{ backgroundColor: ElderLibraryActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6536,7 +7826,7 @@ const TopAttackCompanion12 = () => {
             </Button>
             </WrapItem>
           <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleDragonLairClick} style={{ backgroundColor: DragonLairActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleDragonLairClick} style={{ backgroundColor: DragonLairActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6568,7 +7858,7 @@ const TopAttackCompanion12 = () => {
             </Button>
             </WrapItem>}
           <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleAurilisClick} style={{ backgroundColor: AurilisActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleAurilisClick} style={{ backgroundColor: AurilisActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6581,7 +7871,7 @@ const TopAttackCompanion12 = () => {
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleElderLibraryClick} style={{ backgroundColor: ElderLibraryActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleElderLibraryClick} style={{ backgroundColor: ElderLibraryActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6594,7 +7884,7 @@ const TopAttackCompanion12 = () => {
             </Button>
             </WrapItem>
           <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleDragonLairClick} style={{ backgroundColor: DragonLairActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleDragonLairClick} style={{ backgroundColor: DragonLairActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6607,7 +7897,7 @@ const TopAttackCompanion12 = () => {
             </Button>
             </WrapItem>
           <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleRainaClick} style={{ backgroundColor: RainaActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleRainaClick} style={{ backgroundColor: RainaActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6640,7 +7930,7 @@ const TopAttackCompanion12 = () => {
             </Button>
             </WrapItem>}
           <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleAurilisClick} style={{ backgroundColor: AurilisActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleAurilisClick} style={{ backgroundColor: AurilisActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6653,7 +7943,7 @@ const TopAttackCompanion12 = () => {
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleElderLibraryClick} style={{ backgroundColor: ElderLibraryActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleElderLibraryClick} style={{ backgroundColor: ElderLibraryActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6666,7 +7956,7 @@ const TopAttackCompanion12 = () => {
             </Button>
             </WrapItem>
           <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleDragonLairClick} style={{ backgroundColor: DragonLairActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleDragonLairClick} style={{ backgroundColor: DragonLairActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6679,7 +7969,7 @@ const TopAttackCompanion12 = () => {
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleRainaClick} style={{ backgroundColor: RainaActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleRainaClick} style={{ backgroundColor: RainaActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6692,7 +7982,7 @@ const TopAttackCompanion12 = () => {
             </Button>
             </WrapItem>
           <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleCloudsClick} style={{ backgroundColor: CloudsActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleCloudsClick} style={{ backgroundColor: CloudsActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6705,7 +7995,7 @@ const TopAttackCompanion12 = () => {
             </Button>
             </WrapItem>
           <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleDawnClick} style={{ backgroundColor: DawnActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleDawnClick} style={{ backgroundColor: DawnActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6718,7 +8008,7 @@ const TopAttackCompanion12 = () => {
             </Button>
             </WrapItem>
           <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleTempestClick} style={{ backgroundColor: TempestActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleTempestClick} style={{ backgroundColor: TempestActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6749,7 +8039,7 @@ const TopAttackCompanion12 = () => {
             </Button>}
             </WrapItem>
           <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleAurilisClick} style={{ backgroundColor: AurilisActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleAurilisClick} style={{ backgroundColor: AurilisActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6762,7 +8052,7 @@ const TopAttackCompanion12 = () => {
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleElderLibraryClick} style={{ backgroundColor: ElderLibraryActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleElderLibraryClick} style={{ backgroundColor: ElderLibraryActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6775,7 +8065,7 @@ const TopAttackCompanion12 = () => {
             </Button>
             </WrapItem>
           <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleDragonLairClick} style={{ backgroundColor: DragonLairActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleDragonLairClick} style={{ backgroundColor: DragonLairActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6788,7 +8078,7 @@ const TopAttackCompanion12 = () => {
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleRainaClick} style={{ backgroundColor: RainaActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleRainaClick} style={{ backgroundColor: RainaActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6801,7 +8091,7 @@ const TopAttackCompanion12 = () => {
             </Button>
             </WrapItem>
           <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleCloudsClick} style={{ backgroundColor: CloudsActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleCloudsClick} style={{ backgroundColor: CloudsActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6814,7 +8104,7 @@ const TopAttackCompanion12 = () => {
             </Button>
             </WrapItem>
           <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleDawnClick} style={{ backgroundColor: DawnActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleDawnClick} style={{ backgroundColor: DawnActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6827,7 +8117,7 @@ const TopAttackCompanion12 = () => {
             </Button>
             </WrapItem>
           <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleTempestClick} style={{ backgroundColor: TempestActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleTempestClick} style={{ backgroundColor: TempestActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6840,7 +8130,7 @@ const TopAttackCompanion12 = () => {
             </Button>
             </WrapItem>
             <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleGardenClick} style={{ backgroundColor: GardenActive ? "#2d1b59" : "#2D3748" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleGardenClick} style={{ backgroundColor: GardenActive ? "#211742" : "#2D3748" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -6874,149 +8164,135 @@ const TopAttackCompanion12 = () => {
       <Box h='400px' overflowY='scroll'>
           <Text fontSize='md' mt='25px' mb='15px'><b>Main Quest Companions:</b></Text>
                 <Wrap justify='center'>
-
    {(DCIsShown || World2RegionIsShown) && !NoanzaIsShown &&
            <WrapItem>
-            <Button w='290px' h='110px' pb={5} onClick={handleNoanzaClick} style={{ backgroundColor: "#2D3748" }}>
-       <HStack justify='center'>  
+            <Button w='110px' h='170px' pb={5} onClick={handleNoanzaClick} style={{ backgroundColor: "#2D3748" }}>
+       <VStack justify='center'>  
        <Image
         mt='12px'
         align='center' 
-        boxSize='4rem'
+        boxSize='5rem'
         src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png/'
       /> 
-      <VStack>
       <Text fontSize='md' mt='15px' align='center'><b>Noanza</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk / +14 Def / +6 Luck </Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br/>+14 Def<br/>+6 Luck </Text>
       </VStack>
-      </HStack>
+
             </Button>
             </WrapItem>}
 
    {(DCIsShown || World2RegionIsShown) && NoanzaIsShown &&
            <WrapItem>
-            <Button w='290px' h='110px' pb={5} onClick={handleNoanzaNoClick} style={{ backgroundColor: "#2d1b59"}}>
-      <HStack justify='center'>  
+            <Button w='110px' h='170px' pb={5} onClick={handleNoanzaNoClick} style={{ backgroundColor: "#211742"}}>
+      <VStack justify='center'>  
        <Image
         mt='12px'
         align='center' 
-        boxSize='4rem'
+        boxSize='5rem'
         src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png/'
       /> 
-      <VStack>
   <Text fontSize='md' mt='15px' align='center'><b>Noanza</b></Text>
-  <Text fontSize='sm' align='center'>+0 Atk / +14 Def / +6 Luck </Text>
+  <Text fontSize='sm' align='center'>+0 Atk<br/>+14 Def<br/>+6 Luck </Text>
       </VStack>
-      </HStack>
+
       </Button>
       </WrapItem>}
 
 
 {(FloatingCityIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !LodoIsShown &&
             <WrapItem>
-            <Button w='290px' h='110px' pb={5} onClick={handleLodoClick} style={{ backgroundColor: "#2D3748" }}>
-    <HStack justify='center'> 
+            <Button w='110px' h='170px' pb={5} onClick={handleLodoClick} style={{ backgroundColor: "#2D3748" }}>
+      <VStack justify='center'>  
        <Image
         mt='12px'
         align='center' 
-        boxSize='4rem'
+        boxSize='5rem'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e6/Lodo.png/'
       /> 
-      <VStack>
-      <Text fontSize='md' align='center'><b>Lodo</b></Text>
-      <Text fontSize='sm' align='center'>+12 Atk / +2 Def / +0 Luck </Text>
+      <Text mt='-8px' fontSize='md' align='center'><b>Lodo</b></Text>
+      <Text fontSize='sm' align='center'>+12 Atk<br/>+2 Def<br/>+0 Luck </Text>
       </VStack>
-      </HStack>
             </Button>
             </WrapItem>}
 
 {(FloatingCityIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && LodoIsShown &&
             <WrapItem>
-            <Button w='290px' h='110px' pb={5} onClick={handleLodoNoClick} style={{ backgroundColor: "#2d1b59" }}>
-       <HStack justify='center'>  
+            <Button w='110px' h='170px' pb={5} onClick={handleLodoNoClick} style={{ backgroundColor: "#211742" }}>
+       <VStack justify='center'>  
        <Image
         mt='12px'
         align='center' 
-        boxSize='4rem'
+        boxSize='5rem'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e6/Lodo.png/'
       /> 
-      <VStack>
-      <Text fontSize='md' align='center'><b>Lodo</b></Text>
-      <Text fontSize='sm' align='center'>+12 Atk / +2 Def / +0 Luck </Text>
+      <Text mt='-8px' fontSize='md' align='center'><b>Lodo</b></Text>
+      <Text fontSize='sm' align='center'>+12 Atk<br/>+2 Def<br/>+0 Luck </Text>
       </VStack>
-      </HStack>
+
             </Button>
             </WrapItem>}
 
 {(ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !AzadiIsShown &&
             <WrapItem>
-            <Button w='290px' h='110px' pb={5} onClick={handleAzadiClick} style={{ backgroundColor: "#2D3748" }}>
-    <HStack justify='center'> 
+            <Button w='110px' h='170px' pb={5} onClick={handleAzadiClick} style={{ backgroundColor: "#2D3748" }}>
+      <VStack justify='center'>  
        <Image
         mt='12px'
         align='center' 
-        boxSize='4rem'
+        boxSize='5rem'
         src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png/'
       /> 
-      <VStack>
-      <Text fontSize='md' align='center'><b>Azadi</b></Text>
-      <Text fontSize='sm' align='center'>+5 Atk / +0 Def / +10 Luck </Text>
+      <Text mt='-8px' fontSize='md' align='center'><b>Azadi</b></Text>
+      <Text fontSize='sm' align='center'>+5 Atk<br/>+0 Def<br/>+10 Luck </Text>
       </VStack>
-      </HStack>
             </Button>
             </WrapItem>}
 
 {(ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && AzadiIsShown &&
             <WrapItem>
-            <Button w='290px' h='110px' pb={5} onClick={handleAzadiNoClick} style={{ backgroundColor: "#2d1b59" }}>
-       <HStack justify='center'>  
+            <Button w='110px' h='170px' pb={5} onClick={handleAzadiNoClick} style={{ backgroundColor: "#211742" }}>
+       <VStack justify='center'>  
        <Image
         mt='12px'
         align='center' 
-        boxSize='4rem'
+        boxSize='5rem'
         src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png/'
       /> 
-      <VStack>
-      <Text fontSize='md' align='center'><b>Azadi</b></Text>
-      <Text fontSize='sm' align='center'>+5 Atk / +0 Def / +10 Luck </Text>
+      <Text mt='-8px' fontSize='md' align='center'><b>Azadi</b></Text>
+      <Text fontSize='sm' align='center'>+5 Atk<br/>+0 Def<br/>+10 Luck </Text>
       </VStack>
-      </HStack>
             </Button>
             </WrapItem>}
 
 {(MamaTreeIsShown || ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !SuwoIsShown &&
             <WrapItem>
-            <Button w='290px' h='110px' pb={5} onClick={handleSuwoClick} style={{ backgroundColor: "#2D3748" }}>
-    <HStack justify='center'> 
+            <Button w='110px' h='170px' pb={5} onClick={handleSuwoClick} style={{ backgroundColor: "#2D3748" }}>
+      <VStack justify='center'>  
        <Image
         mt='12px'
         align='center' 
-        boxSize='4rem'
+        boxSize='5rem'
         src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
       /> 
-      <VStack>
-      <Text fontSize='md' align='center'><b>Suwo</b></Text>
-      <Text fontSize='sm' align='center'>+3 Atk / +7 Def / +2 Luck </Text>
+      <Text mt='-8px' fontSize='md' align='center'><b>Suwo</b></Text>
+      <Text fontSize='sm' align='center'>+3 Atk<br/>+7 Def<br/>+2 Luck </Text>
       </VStack>
-      </HStack>
             </Button>
             </WrapItem>}
 
 {(MamaTreeIsShown || ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && SuwoIsShown &&
             <WrapItem>
-            <Button w='290px' h='110px' pb={5} onClick={handleSuwoNoClick} style={{ backgroundColor: "#2d1b59" }}>
-       <HStack justify='center'>  
+            <Button w='110px' h='170px' pb={5} onClick={handleSuwoNoClick} style={{ backgroundColor: "#211742" }}>
+       <VStack justify='center'>  
        <Image
         mt='12px'
         align='center' 
-        boxSize='4rem'
+        boxSize='5rem'
         src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
       /> 
-      <VStack>
-      <Text fontSize='md' align='center'><b>Suwo</b></Text>
-      <Text fontSize='sm' align='center'>+3 Atk / +7 Def / +2 Luck </Text>
+      <Text mt='-8px' fontSize='md' align='center'><b>Suwo</b></Text>
+      <Text fontSize='sm' align='center'>+3 Atk<br/>+7 Def<br/>+2 Luck </Text>
       </VStack>
-      </HStack>
             </Button>
             </WrapItem>}
       </Wrap>
@@ -7028,81 +8304,73 @@ const TopAttackCompanion12 = () => {
            <Wrap justify='center'>
 {!KaiszarIsShown &&
            <WrapItem>
-            <Button w='290px' h='110px' pb={5} onClick={handleKaiszarClick} style={{ backgroundColor: "#2D3748" }}>
-       <HStack justify='center'> 
+            <Button w='110px' h='170px' pb={5} onClick={handleKaiszarClick} style={{ backgroundColor: "#2D3748" }}>
+         <VStack justify='center'>  
        <Image
         mt='12px'
         align='center' 
         boxSize='5rem'
         src='https://static.wikia.nocookie.net/4thewords/images/f/fa/Kaiszar.png/'
       /> 
-      <VStack>
       <Text fontSize='md' mt='15px' align='center'><b>Kaiszar</b></Text>
-      <Text fontSize='sm' align='center'>+12 Atk / +0 Def / +0 Luck </Text>
+      <Text fontSize='sm' align='center'>+12 Atk<br/>+0 Def<br/>+0 Luck </Text>
       </VStack>
-      </HStack>
             </Button>
             </WrapItem>}
 
 {KaiszarIsShown &&
            <WrapItem>
-            <Button w='290px' h='110px' pb={5} onClick={handleKaiszarNoClick} style={{ backgroundColor: "#2d1b59"}}>
+            <Button w='110px' h='170px' pb={5} onClick={handleKaiszarNoClick} style={{ backgroundColor: "#211742"}}>
        {!AtkKaiszarIsShown && !DefKaiszarIsShown && !LuckKaiszarIsShown &&
-       <HStack justify='center'> 
+         <VStack justify='center'>  
        <Image
         mt='12px'
         align='center' 
         boxSize='5rem'
                 src='https://static.wikia.nocookie.net/4thewords/images/f/fa/Kaiszar.png/'
       /> 
-      <VStack>
   <Text fontSize='md' mt='15px' align='center'><b>Kaiszar</b></Text>
-  <Text fontSize='sm' align='center'>+12 Atk / +0 Def / +0 Luck </Text>
+  <Text fontSize='sm' align='center'>+12 Atk<br/>+0 Def<br/>+0 Luck </Text>
   
       </VStack>
-      </HStack>}
+      }
 {AtkKaiszarIsShown && !DefKaiszarIsShown && !LuckKaiszarIsShown &&
-      <HStack justify='center'> 
+        <VStack justify='center'>  
        <Image
         mt='12px'
         align='center' 
-        boxSize='4rem'
+        boxSize='5rem'
         src='https://i.imgur.com/gbuo4mt.png'
       /> 
-  <VStack>
   <Text fontSize='md' mt='15px' align='center'><b>Attack Kaiszar</b></Text>
-  <Text fontSize='sm' align='center'>+16 Atk / +0 Def / +0 Luck </Text>
+  <Text fontSize='sm' align='center'>+16 Atk<br/>+0 Def<br/>+0 Luck </Text>
 
   </VStack>
-  </HStack>
   }
   {!AtkKaiszarIsShown && DefKaiszarIsShown && !LuckKaiszarIsShown &&
-  <HStack justify='center'> 
+  <VStack justify='center'> 
        <Image
         mt='12px'
         align='center' 
-        boxSize='4rem'
+        boxSize='5rem'
         src='https://i.imgur.com/LGazi9x.png'
       /> 
-  <VStack>    
   <Text fontSize='md' mt='15px' align='center'><b>Defense Kaiszar</b></Text>
-  <Text fontSize='sm' align='center'>+12 Atk / +4 Def / +0 Luck </Text>
+  <Text fontSize='sm' align='center'>+12 Atk<br/>+4 Def<br/>+0 Luck </Text>
   </VStack>
-  </HStack>
   }
          {!AtkKaiszarIsShown && !DefKaiszarIsShown && LuckKaiszarIsShown &&
-         <HStack justify='center'> 
+           <VStack justify='center'>  
        <Image
         mt='12px'
         align='center' 
-        boxSize='4rem'
+        boxSize='5rem'
         src='https://i.imgur.com/gbpdG0f.png'
       /> 
-  <VStack>
   <Text fontSize='md' mt='15px' align='center'><b>Luck Kaiszar</b></Text>
-  <Text fontSize='sm' align='center'>+12 Atk / +0 Def / +4 Luck </Text>
+  <Text fontSize='sm' align='center'>+12 Atk<br/>+0 Def<br/>+4 Luck </Text>
   </VStack> 
-  </HStack>}
+    }
 
             </Button>
             </WrapItem>}
@@ -7123,7 +8391,7 @@ const TopAttackCompanion12 = () => {
 
 {AtkKaiszarIsShown &&
             <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleAtkKaiszarNoClick} style={{ backgroundColor: "#2d1b59"}}>
+            <Button w='90px' h='110px' pb={5} onClick={handleAtkKaiszarNoClick} style={{ backgroundColor: "#211742"}}>
        <VStack> 
        <Image
         mt='12px'
@@ -7151,7 +8419,7 @@ const TopAttackCompanion12 = () => {
 
 {DefKaiszarIsShown &&
            <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleDefKaiszarNoClick} style={{ backgroundColor: "#2d1b59" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleDefKaiszarNoClick} style={{ backgroundColor: "#211742" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -7179,7 +8447,7 @@ const TopAttackCompanion12 = () => {
 
 {LuckKaiszarIsShown &&
            <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleLuckKaiszarNoClick} style={{ backgroundColor: "#2d1b59" }}>
+            <Button w='90px' h='110px' pb={5} onClick={handleLuckKaiszarNoClick} style={{ backgroundColor: "#211742" }}>
        <VStack> 
        <Image
         mt='12px'
@@ -7193,86 +8461,76 @@ const TopAttackCompanion12 = () => {
 
             {!LoksiIsShown &&
   <WrapItem>
-   <Button w='290px' h='110px' pb={5} onClick={handleLoksiClick} style={{ backgroundColor: "#2D3748" }}>
-<HStack justify='center'>  
+   <Button w='110px' h='170px' pb={5} onClick={handleLoksiClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='4rem'
+boxSize='5rem'
 src='https://static.wikia.nocookie.net/4thewords/images/7/75/Loksi.png'
 mr='5px'
 /> 
-<VStack>
 <Text fontSize='md' mt='15px' align='center'><b>Loksi</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk / +12 Def / +0 Luck </Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+12 Def<br/>+0 Luck </Text>
 </VStack>
-</HStack>
    </Button>
    </WrapItem>}
 {LoksiIsShown && 
   <WrapItem>
-   <Button w='290px' h='110px' pb={5} onClick={handleLoksiNoClick} style={{ backgroundColor: "#2d1b59"}}>
+   <Button w='110px' h='170px' pb={5} onClick={handleLoksiNoClick} style={{ backgroundColor: "#211742"}}>
    {!AtkLoksiIsShown && !DefLoksiIsShown && !LuckLoksiIsShown &&
-<HStack justify='center'>  
+<VStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='4rem'
+boxSize='5rem'
 src='https://static.wikia.nocookie.net/4thewords/images/7/75/Loksi.png'
 mr='5px'
 /> 
-<VStack>
   <Text fontSize='md' mt='15px' align='center'><b>Loksi</b></Text>
-  <Text fontSize='sm' align='center'>+0 Atk / +12 Def / +0 Luck </Text>
-</VStack>
-</HStack>}
+  <Text fontSize='sm' align='center'>+0 Atk<br/>+12 Def<br/>+0 Luck </Text>
+</VStack>}
 {AtkLoksiIsShown && !DefLoksiIsShown && !LuckLoksiIsShown &&
-<HStack justify='center'>  
+<VStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='4rem'
+boxSize='5rem'
 src='https://i.imgur.com/Zb1N51B.png'
 mr='5px'
 /> 
-<VStack>
 <Text fontSize='md' mt='15px' align='center'><b>Attack Loksi</b></Text>
-<Text fontSize='sm' align='center'>+4 Atk / +12 Def / +0 Luck </Text>
-</VStack>
-</HStack>}
+<Text fontSize='sm' align='center'>+4 Atk<br/>+12 Def<br/>+0 Luck </Text>
+</VStack>}
 {!AtkLoksiIsShown && DefLoksiIsShown && !LuckLoksiIsShown &&
-<HStack justify='center'>  
+<VStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='4rem'
+boxSize='5rem'
 src='https://i.imgur.com/zGo6cCD.png'
 mr='5px'
 /> 
-<VStack>
 <Text fontSize='md' mt='15px' align='center'><b>Defense Loksi</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk / +16 Def / +0 Luck </Text>
-</VStack>
-</HStack>}
+<Text fontSize='sm' align='center'>+0 Atk<br/>+16 Def<br/>+0 Luck </Text>
+</VStack>}
 {!AtkLoksiIsShown && !DefLoksiIsShown && LuckLoksiIsShown &&
-<HStack justify='center'>  
+<VStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='4rem'
+boxSize='5rem'
 src='https://i.imgur.com/bgb1J58.png'
 mr='5px'
 /> 
-<VStack>
 <Text fontSize='md' mt='15px' align='center'><b>Luck Loksi</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk / +12 Def / +4 Luck </Text>
-</VStack>
-</HStack>}
+<Text fontSize='sm' align='center'>+0 Atk<br/>+12 Def<br/>+4 Luck </Text>
+</VStack>}
 
 </Button>
 </WrapItem>}
@@ -7295,7 +8553,7 @@ mr='5px'
 
 {AtkLoksiIsShown &&
    <WrapItem>
-   <Button w='90px' h='110px' pb={5} onClick={handleAtkLoksiNoClick} style={{ backgroundColor: "#2d1b59"}}>
+   <Button w='90px' h='110px' pb={5} onClick={handleAtkLoksiNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack> 
 <Image
 mt='12px'
@@ -7325,7 +8583,7 @@ mr='5px'
 
 {DefLoksiIsShown &&
   <WrapItem>
-   <Button w='90px' h='110px' pb={5} onClick={handleDefLoksiNoClick} style={{ backgroundColor: "#2d1b59" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleDefLoksiNoClick} style={{ backgroundColor: "#211742" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -7355,7 +8613,7 @@ mr='5px'
 
 {LuckLoksiIsShown &&
   <WrapItem>
-   <Button w='90px' h='110px' pb={5} onClick={handleLuckLoksiNoClick} style={{ backgroundColor: "#2d1b59" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleLuckLoksiNoClick} style={{ backgroundColor: "#211742" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -7370,8 +8628,8 @@ mr='5px'
 
    <WrapItem>
    {!ThalamarisIsShown && !AtkThalamarisIsShown && !DefThalamarisIsShown && !LuckThalamarisIsShown &&
-     <Button w='290px' h='110px' pb={5} onClick={handleThalamarisClick} style={{ backgroundColor: "#2D3748" }}>  
-<HStack justify='center'>  
+     <Button w='110px' h='170px' pb={5} onClick={handleThalamarisClick} style={{ backgroundColor: "#2D3748" }}>  
+<VStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
@@ -7380,17 +8638,15 @@ boxSize='5rem'
 src='https://static.wikia.nocookie.net/4thewords/images/4/4a/Thalamaris.png/'
 mr='5px'
 /> 
-<VStack>
 <Text fontSize='md' mt='15px' align='center'><b>Thalamaris</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk / +0 Def / +12 Luck </Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+12 Luck </Text>
 </VStack>
-</HStack>
 </Button>}
 
 {ThalamarisIsShown &&
-<Button w='290px' h='110px' pb={5} onClick={handleThalamarisNoClick} style={{ backgroundColor: "#2d1b59" }}> 
+<Button w='110px' h='170px' pb={5} onClick={handleThalamarisNoClick} style={{ backgroundColor: "#211742" }}> 
 {!AtkThalamarisIsShown && !DefThalamarisIsShown && !LuckThalamarisIsShown &&
-<HStack justify='center'>  
+<VStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
@@ -7399,14 +8655,12 @@ boxSize='5rem'
 src='https://static.wikia.nocookie.net/4thewords/images/4/4a/Thalamaris.png/'
 mr='5px'
 /> 
-<VStack>
   <Text fontSize='md' mt='15px' align='center'><b>Thalamaris</b></Text>
-  <Text fontSize='sm' align='center'>+0 Atk / +0 Def / +12 Luck </Text>
-</VStack>
-</HStack>}
+  <Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+12 Luck </Text>
+</VStack>}
 
 {AtkThalamarisIsShown && !DefThalamarisIsShown && !LuckThalamarisIsShown &&
-<HStack justify='center'>  
+<VStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
@@ -7415,28 +8669,24 @@ boxSize='4rem'
 src='https://i.imgur.com/fe9fXNc.png'
 mr='5px'
 /> 
-<VStack>
 <Text fontSize='md' mt='15px' align='center'><b>Attack Thalamaris</b></Text>
-<Text fontSize='sm' align='center'>+4 Atk / +0 Def / +12 Luck </Text>
-</VStack>
-</HStack>}
+<Text fontSize='sm' align='center'>+4 Atk<br/>+0 Def<br/>+12 Luck </Text>
+</VStack>}
 {!AtkThalamarisIsShown && DefThalamarisIsShown && !LuckThalamarisIsShown &&
-<HStack justify='center'>  
+<VStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='4rem'
+boxSize='5rem'
 src='https://i.imgur.com/1G7xegk.png'
-mr='5px'
+mr='4px'
 /> 
-<VStack>
 <Text fontSize='md' mt='15px' align='center'><b>Defense Thalamaris</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk / +4 Def / +12 Luck </Text>
-</VStack>
-</HStack>}
+<Text fontSize='sm' align='center'>+0 Atk<br/>+4 Def<br/>+12 Luck </Text>
+</VStack>}
 {!AtkThalamarisIsShown && !DefThalamarisIsShown && LuckThalamarisIsShown &&
-<HStack justify='center'>  
+<VStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
@@ -7445,11 +8695,9 @@ boxSize='4rem'
 src='https://i.imgur.com/VpveKDD.png'
 mr='5px'
 /> 
-<VStack>
 <Text fontSize='md' mt='15px' align='center'><b>Luck Thalamaris</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk / +0 Def / +16 Luck </Text>
-</VStack>
-</HStack>}
+<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+16 Luck </Text>
+</VStack>}
    </Button>}
    </WrapItem>
 
@@ -7471,7 +8719,7 @@ mr='5px'
 
 {AtkThalamarisIsShown &&
    <WrapItem>
-   <Button w='90px' h='110px' pb={5} onClick={handleAtkThalamarisNoClick} style={{ backgroundColor: "#2d1b59"}}>
+   <Button w='90px' h='110px' pb={5} onClick={handleAtkThalamarisNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack> 
 <Image
 mt='12px'
@@ -7501,7 +8749,7 @@ mr='5px'
 
 {DefThalamarisIsShown &&
   <WrapItem>
-   <Button w='90px' h='110px' pb={5} onClick={handleDefThalamarisNoClick} style={{ backgroundColor: "#2d1b59" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleDefThalamarisNoClick} style={{ backgroundColor: "#211742" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -7531,7 +8779,7 @@ mr='5px'
 
 {LuckThalamarisIsShown &&
   <WrapItem>
-   <Button w='90px' h='110px' pb={5} onClick={handleLuckThalamarisNoClick} style={{ backgroundColor: "#2d1b59" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleLuckThalamarisNoClick} style={{ backgroundColor: "#211742" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -7546,91 +8794,81 @@ mr='5px'
    
    {!ValkosIsShown &&
   <WrapItem>
-   <Button w='290px' h='110px' pb={5} onClick={handleValkosClick} style={{ backgroundColor: "#2D3748" }}>
-<HStack justify='center'>  
+   <Button w='110px' h='170px' pb={5} onClick={handleValkosClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='4rem'
+boxSize='5rem'
 src='https://static.wikia.nocookie.net/4thewords/images/6/63/Valkos.png'
 mr='5px'
 /> 
-<VStack>
 <Text fontSize='md' mt='15px' align='center'><b>Valkos</b></Text>
-<Text fontSize='sm' align='center'>+4 Atk / +4 Def / +4 Luck </Text>
+<Text fontSize='sm' align='center'>+4 Atk<br/>+4 Def<br/>+4 Luck </Text>
 </VStack>
-</HStack>
    </Button>
    </WrapItem>}
 
 {ValkosIsShown &&
   <WrapItem>
-   <Button w='290px' h='110px' pb={5} onClick={handleValkosNoClick} style={{ backgroundColor: "#2d1b59"}}>
+   <Button w='110px' h='170px' pb={5} onClick={handleValkosNoClick} style={{ backgroundColor: "#211742"}}>
    {!AtkValkosIsShown && !DefValkosIsShown && !LuckValkosIsShown &&
-<HStack justify='center'>  
+<VStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='4rem'
+boxSize='5rem'
 src='https://static.wikia.nocookie.net/4thewords/images/6/63/Valkos.png'
 mr='5px'
 /> 
-<VStack>
 <Text fontSize='md' mt='15px' align='center'><b>Valkos</b></Text>
-<Text fontSize='sm' align='center'>+4 Atk / +4 Def / +4 Luck </Text>
+<Text fontSize='sm' align='center'>+4 Atk<br/>+4 Def<br/>+4 Luck </Text>
   
-</VStack>
-</HStack>}
+</VStack>}
 {AtkValkosIsShown && !DefValkosIsShown && !LuckValkosIsShown &&
-<HStack justify='center'>  
+<VStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='4rem'
+boxSize='5rem'
 src='https://i.imgur.com/Ci51Pa1.png'
 mr='5px'
 /> 
-<VStack>
 <Text fontSize='md' mt='15px' align='center'><b>Attack Valkos</b></Text>
-<Text fontSize='sm' align='center'>+8 Atk / +4 Def / +4 Luck </Text>
+<Text fontSize='sm' align='center'>+8 Atk<br/>+4 Def<br/>+4 Luck </Text>
   
-</VStack>
-</HStack>}
+</VStack>}
 {!AtkValkosIsShown && DefValkosIsShown && !LuckValkosIsShown &&
-<HStack justify='center'>  
+<VStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='4rem'
+boxSize='5rem'
 src='https://i.imgur.com/1sMl04A.png'
 mr='5px'
 /> 
-<VStack>
 <Text fontSize='md' mt='15px' align='center'><b>Defense Valkos</b></Text>
-<Text fontSize='sm' align='center'>+4 Atk / +8 Def / +4 Luck </Text>
+<Text fontSize='sm' align='center'>+4 Atk<br/>+8 Def<br/>+4 Luck </Text>
   
-</VStack>
-</HStack>}
+</VStack>}
 {!AtkValkosIsShown && !DefValkosIsShown && LuckValkosIsShown &&
-<HStack justify='center'>  
+<VStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='4rem'
+boxSize='5rem'
 src='https://i.imgur.com/pGyg8DO.png'
 mr='5px'
 /> 
-<VStack>
 <Text fontSize='md' mt='15px' align='center'><b>Luck Valkos</b></Text>
-<Text fontSize='sm' align='center'>+4 Atk / +4 Def / +8 Luck </Text>
+<Text fontSize='sm' align='center'>+4 Atk<br/>+4 Def<br/>+8 Luck </Text>
   
-</VStack>
-</HStack>}
+</VStack>}
    </Button>
    </WrapItem>}
 
@@ -7654,7 +8892,7 @@ mr='5px'
 
 {AtkValkosIsShown &&
    <WrapItem>
-   <Button w='90px' h='110px' pb={5} onClick={handleAtkValkosNoClick} style={{ backgroundColor: "#2d1b59"}}>
+   <Button w='90px' h='110px' pb={5} onClick={handleAtkValkosNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack> 
 <Image
 mt='12px'
@@ -7684,7 +8922,7 @@ mr='5px'
 
 {DefValkosIsShown &&
   <WrapItem>
-   <Button w='90px' h='110px' pb={5} onClick={handleDefValkosNoClick} style={{ backgroundColor: "#2d1b59" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleDefValkosNoClick} style={{ backgroundColor: "#211742" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -7714,7 +8952,7 @@ mr='5px'
 
 {LuckValkosIsShown &&
   <WrapItem>
-   <Button w='90px' h='110px' pb={5} onClick={handleLuckValkosNoClick} style={{ backgroundColor: "#2d1b59" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleLuckValkosNoClick} style={{ backgroundColor: "#211742" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -7729,87 +8967,77 @@ mr='5px'
 
 {!EenrisIsShown && !AtkEenrisIsShown && !DefEenrisIsShown && !LuckEenrisIsShown &&
   <WrapItem>
-   <Button w='290px' h='110px' pb={5} onClick={handleEenrisClick} style={{ backgroundColor: "#2D3748" }}>
-<HStack justify='center'>  
+   <Button w='110px' h='170px' pb={5} onClick={handleEenrisClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='4rem'
+boxSize='5rem'
 src='https://static.wikia.nocookie.net/4thewords/images/1/1d/Eenris.png/'
 mr='5px'
 /> 
-<VStack>
 <Text fontSize='md' mt='15px' align='center'><b>Eenris</b></Text>
-<Text fontSize='sm' align='center'>+3 Atk / +6 Def / +3 Luck </Text>
+<Text fontSize='sm' align='center'>+3 Atk<br/>+6 Def<br/>+3 Luck </Text>
 </VStack>
-</HStack>
    </Button>
    </WrapItem>}
 
 {EenrisIsShown && 
   <WrapItem>
-   <Button w='290px' h='110px' pb={5} onClick={handleEenrisNoClick} style={{ backgroundColor: "#2d1b59"}}>
+   <Button w='110px' h='170px' pb={5} onClick={handleEenrisNoClick} style={{ backgroundColor: "#211742"}}>
 {!AtkEenrisIsShown && !DefEenrisIsShown && !LuckEenrisIsShown &&
-<HStack justify='center'>  
+<VStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='4rem'
+boxSize='5rem'
 src='https://static.wikia.nocookie.net/4thewords/images/1/1d/Eenris.png/'
 mr='5px'
 /> 
-<VStack>
 <Text fontSize='md' mt='15px' align='center'><b>Eenris</b></Text>
-<Text fontSize='sm' align='center'>+3 Atk / +6 Def / +3 Luck </Text>
-</VStack>
-</HStack>}
+<Text fontSize='sm' align='center'>+3 Atk<br/>+6 Def<br/>+3 Luck </Text>
+</VStack>}
 {AtkEenrisIsShown && !DefEenrisIsShown && !LuckEenrisIsShown &&
-<HStack justify='center'>  
+<VStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='4rem'
+boxSize='5rem'
 src='https://i.imgur.com/lU6zkfR.png'
 mr='5px'
 /> 
-<VStack>
   <Text fontSize='md' mt='15px' align='center'><b>Attack Eenris</b></Text>
-  <Text fontSize='sm' align='center'>+7 Atk / +6 Def / +3 Luck </Text>
-</VStack>
-</HStack>}
+  <Text fontSize='sm' align='center'>+7 Atk<br/>+6 Def<br/>+3 Luck </Text>
+</VStack>}
 {!AtkEenrisIsShown && DefEenrisIsShown && !LuckEenrisIsShown &&
-<HStack justify='center'>  
+<VStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='4rem'
+boxSize='5rem'
 src='https://i.imgur.com/5sRBeCz.png'
 mr='5px'
 /> 
-<VStack>
   <Text fontSize='md' mt='15px' align='center'><b>Defense Eenris</b></Text>
-  <Text fontSize='sm' align='center'>+3 Atk / +10 Def / +3 Luck </Text>
-</VStack>
-</HStack>}
+  <Text fontSize='sm' align='center'>+3 Atk<br/>+10 Def<br/>+3 Luck </Text>
+</VStack>}
 {!AtkEenrisIsShown && !DefEenrisIsShown && LuckEenrisIsShown &&
-<HStack justify='center'>  
+<VStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='4rem'
+boxSize='5rem'
 src='https://i.imgur.com/exqGLIN.png'
 mr='5px'
 /> 
-<VStack>
   <Text fontSize='md' mt='15px' align='center'><b>Luck Eenris</b></Text>
-  <Text fontSize='sm' align='center'>+3 Atk / +6 Def / +7 Luck </Text>
-</VStack>
-</HStack>}
+  <Text fontSize='sm' align='center'>+3 Atk<br/>+6 Def<br/>+7 Luck </Text>
+</VStack>}
 
    </Button>
    </WrapItem>}
@@ -7833,7 +9061,7 @@ mr='5px'
 
 {AtkEenrisIsShown &&
    <WrapItem>
-   <Button w='90px' h='110px' pb={5} onClick={handleAtkEenrisNoClick} style={{ backgroundColor: "#2d1b59"}}>
+   <Button w='90px' h='110px' pb={5} onClick={handleAtkEenrisNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack> 
 <Image
 mt='12px'
@@ -7863,7 +9091,7 @@ mr='5px'
 
 {DefEenrisIsShown &&
   <WrapItem>
-   <Button w='90px' h='110px' pb={5} onClick={handleDefEenrisNoClick} style={{ backgroundColor: "#2d1b59" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleDefEenrisNoClick} style={{ backgroundColor: "#211742" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -7893,7 +9121,7 @@ mr='5px'
 
 {LuckEenrisIsShown &&
   <WrapItem>
-   <Button w='90px' h='110px' pb={5} onClick={handleLuckEenrisNoClick} style={{ backgroundColor: "#2d1b59" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleLuckEenrisNoClick} style={{ backgroundColor: "#211742" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -7908,87 +9136,77 @@ mr='5px'
 
 {!RairaselIsShown && !AtkRairaselIsShown && !DefRairaselIsShown && !LuckRairaselIsShown &&
   <WrapItem>
-   <Button w='290px' h='110px' pb={5} onClick={handleRairaselClick} style={{ backgroundColor: "#2D3748" }}>
-<HStack justify='center'>  
+   <Button w='110px' h='170px' pb={5} onClick={handleRairaselClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='4rem'
+boxSize='5rem'
 src='https://static.wikia.nocookie.net/4thewords/images/f/fc/Rairasel.png/'
 mr='5px'
 /> 
-<VStack>
 <Text fontSize='md' mt='15px' align='center'><b>Rairasel</b></Text>
-<Text fontSize='sm' align='center'>+6 Atk / +0 Def / +6 Luck </Text>
+<Text fontSize='sm' align='center'>+6 Atk<br/>+0 Def<br/>+6 Luck </Text>
 </VStack>
-</HStack>
    </Button>
    </WrapItem>}
 
 {RairaselIsShown &&
   <WrapItem>
-   <Button w='290px' h='110px' pb={5} onClick={handleRairaselNoClick} style={{ backgroundColor: "#2d1b59"}}>
+   <Button w='110px' h='170px' pb={5} onClick={handleRairaselNoClick} style={{ backgroundColor: "#211742"}}>
 {!AtkRairaselIsShown && !DefRairaselIsShown && !LuckRairaselIsShown &&
-<HStack justify='center'>  
+<VStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='4rem'
+boxSize='5rem'
 src='https://static.wikia.nocookie.net/4thewords/images/f/fc/Rairasel.png/'
 mr='5px'
 /> 
-<VStack>
 <Text fontSize='md' mt='15px' align='center'><b>Rairasel</b></Text>
-<Text fontSize='sm' align='center'>+6 Atk / +0 Def / +6 Luck </Text>
-</VStack>
-</HStack>}
+<Text fontSize='sm' align='center'>+6 Atk<br/>+0 Def<br/>+6 Luck </Text>
+</VStack>}
 {AtkRairaselIsShown && !DefRairaselIsShown && !LuckRairaselIsShown &&
-<HStack justify='center'>  
+<VStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='4rem'
+boxSize='5rem'
 src='https://i.imgur.com/YB3iqt7.png'
 mr='5px'
 /> 
-<VStack>
 <Text fontSize='md' mt='15px' align='center'><b>Attack Rairasel</b></Text>
-<Text fontSize='sm' align='center'>+10 Atk / +0 Def / +6 Luck </Text>
-</VStack>
-</HStack>}
+<Text fontSize='sm' align='center'>+10 Atk<br/>+0 Def<br/>+6 Luck </Text>
+</VStack>}
 {!AtkRairaselIsShown && DefRairaselIsShown && !LuckRairaselIsShown &&
-<HStack justify='center'>  
+<VStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='4rem'
+boxSize='5rem'
 src='https://i.imgur.com/vgropoV.png'
 mr='5px'
 /> 
-<VStack>
 <Text fontSize='md' mt='15px' align='center'><b>Defense Rairasel</b></Text>
-<Text fontSize='sm' align='center'>+6 Atk / +4 Def / +6 Luck </Text>
-</VStack>
-</HStack>}
+<Text fontSize='sm' align='center'>+6 Atk<br/>+4 Def<br/>+6 Luck </Text>
+</VStack>}
 {!AtkRairaselIsShown && !DefRairaselIsShown && LuckRairaselIsShown &&
-<HStack justify='center'>  
+<VStack justify='center'>  
 <Image
 ml='-15px'
 mt='12px'
 align='center' 
-boxSize='4rem'
+boxSize='5rem'
 src='https://i.imgur.com/3GrgauN.png'
 mr='5px'
 /> 
-<VStack>
 <Text fontSize='md' mt='15px' align='center'><b>Luck Rairasel</b></Text>
-<Text fontSize='sm' align='center'>+6 Atk / +0 Def / +10 Luck </Text>
-</VStack>
-</HStack>}
+<Text fontSize='sm' align='center'>+6 Atk<br/>+0 Def<br/>+10 Luck </Text>
+</VStack>}
 
    </Button>
    </WrapItem>}
@@ -8011,7 +9229,7 @@ mr='5px'
 
 {AtkRairaselIsShown &&
    <WrapItem>
-   <Button w='90px' h='110px' pb={5} onClick={handleAtkRairaselNoClick} style={{ backgroundColor: "#2d1b59"}}>
+   <Button w='90px' h='110px' pb={5} onClick={handleAtkRairaselNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack> 
 <Image
 mt='12px'
@@ -8041,7 +9259,7 @@ mr='5px'
 
 {DefRairaselIsShown &&
   <WrapItem>
-   <Button w='90px' h='110px' pb={5} onClick={handleDefRairaselNoClick} style={{ backgroundColor: "#2d1b59" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleDefRairaselNoClick} style={{ backgroundColor: "#211742" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -8071,7 +9289,7 @@ mr='5px'
 
 {LuckRairaselIsShown &&
   <WrapItem>
-   <Button w='90px' h='110px' pb={5} onClick={handleLuckRairaselNoClick} style={{ backgroundColor: "#2d1b59" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleLuckRairaselNoClick} style={{ backgroundColor: "#211742" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -8094,150 +9312,137 @@ mr='5px'
                 <Wrap justify='center'>
           {!AlderbamIsShown &&
             <WrapItem>
-            <Button w='290px' h='110px' pb={5} onClick={handleAlderbamClick} style={{ backgroundColor: "#2D3748" }}>
-    <HStack justify='center'> 
+            <Button w='110px' h='170px' pb={5} onClick={handleAlderbamClick} style={{ backgroundColor: "#2D3748" }}>
+      <VStack justify='center'>  
        <Image
         mt='12px'
         align='center' 
-        boxSize='4rem'
+        boxSize='5rem'
         src='https://static.wikia.nocookie.net/4thewords/images/9/95/Alderbam.png/'
       /> 
-      <VStack>
-      <Text fontSize='md' align='center'><b>Alderbam</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk / +0 Def / +12 Luck </Text>
+      <Text mt='-8px' fontSize='md' align='center'><b>Alderbam</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+12 Luck </Text>
       </VStack>
-      </HStack>
             </Button>
             </WrapItem>}
 
             {AlderbamIsShown &&
             <WrapItem>
-            <Button w='290px' h='110px' pb={5} onClick={handleAlderbamNoClick} style={{ backgroundColor: "#2d1b59" }}>
-       <HStack justify='center'>  
+            <Button w='110px' h='170px' pb={5} onClick={handleAlderbamNoClick} style={{ backgroundColor: "#211742" }}>
+       <VStack justify='center'>  
        <Image
         mt='12px'
         align='center' 
-        boxSize='4rem'
+        boxSize='5rem'
         src='https://static.wikia.nocookie.net/4thewords/images/9/95/Alderbam.png/'
       /> 
-      <VStack>
-      <Text fontSize='md' align='center'><b>Alderbam</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk / +0 Def / +12 Luck </Text>
+      <Text mt='-8px' fontSize='md' align='center'><b>Alderbam</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+12 Luck </Text>
       </VStack>
-      </HStack>
+
             </Button>
             </WrapItem>}
           {!ChysisIsShown &&
             <WrapItem>
-            <Button w='290px' h='110px' pb={5} onClick={handleChysisClick} style={{ backgroundColor: "#2D3748" }}>
-    <HStack justify='center'> 
+            <Button w='110px' h='170px' pb={5} onClick={handleChysisClick} style={{ backgroundColor: "#2D3748" }}>
+      <VStack justify='center'>  
        <Image
         mt='12px'
         align='center' 
-        boxSize='4rem'
+        boxSize='5rem'
         src='https://static.wikia.nocookie.net/4thewords/images/9/97/Chysis.png/'
       /> 
-      <VStack>
-      <Text fontSize='md' align='center'><b>Chysis</b></Text>
-      <Text fontSize='sm' align='center'>+12 Atk / +0 Def / +0 Luck </Text>
+      <Text mt='-8px' fontSize='md' align='center'><b>Chysis</b></Text>
+      <Text fontSize='sm' align='center'>+12 Atk<br/>+0 Def<br/>+0 Luck </Text>
       </VStack>
-      </HStack>
             </Button>
             </WrapItem>}
 
             {ChysisIsShown &&
             <WrapItem>
-            <Button w='290px' h='110px' pb={5} onClick={handleChysisNoClick} style={{ backgroundColor: "#2d1b59" }}>
-       <HStack justify='center'>  
+            <Button w='110px' h='170px' pb={5} onClick={handleChysisNoClick} style={{ backgroundColor: "#211742" }}>
+       <VStack justify='center'>  
        <Image
         mt='12px'
         align='center' 
-        boxSize='4rem'
+        boxSize='5rem'
         src='https://static.wikia.nocookie.net/4thewords/images/9/97/Chysis.png/'
       /> 
-      <VStack>
-      <Text fontSize='md' align='center'><b>Chysis</b></Text>
-      <Text fontSize='sm' align='center'>+12 Atk / +0 Def / +0 Luck </Text>
+      <Text mt='-8px' fontSize='md' align='center'><b>Chysis</b></Text>
+      <Text fontSize='sm' align='center'>+12 Atk<br/>+0 Def<br/>+0 Luck </Text>
       </VStack>
-      </HStack>
             </Button>
             </WrapItem>}                  
 
     {!MundIsShown &&
             <WrapItem>
-            <Button w='290px' h='110px' pb={5} onClick={handleMundClick} style={{ backgroundColor: "#2D3748" }}>
-    <HStack justify='center'> 
+            <Button w='110px' h='170px' pb={5} onClick={handleMundClick} style={{ backgroundColor: "#2D3748" }}>
+      <VStack justify='center'>  
        <Image
         mt='12px'
         align='center' 
-        boxSize='4rem'
+        boxSize='5rem'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e3/Mund.png/'
       /> 
-      <VStack>
-      <Text fontSize='md' align='center'><b>Mund</b></Text>
-      <Text fontSize='sm' align='center'>+4 Atk / +4 Def / +4 Luck </Text>
+      <Text mt='-8px' fontSize='md' align='center'><b>Mund</b></Text>
+      <Text fontSize='sm' align='center'>+4 Atk<br/>+4 Def<br/>+4 Luck </Text>
       </VStack>
-      </HStack>
+
             </Button>
             </WrapItem>}
 
             {MundIsShown &&
             <WrapItem>
-            <Button w='290px' h='110px' pb={5} onClick={handleMundNoClick} style={{ backgroundColor: "#2d1b59" }}>
-       <HStack justify='center'>  
+            <Button w='110px' h='170px' pb={5} onClick={handleMundNoClick} style={{ backgroundColor: "#211742" }}>
+       <VStack justify='center'>  
        <Image
         mt='12px'
         align='center' 
-        boxSize='4rem'
+        boxSize='5rem'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e3/Mund.png/'
       /> 
-      <VStack>
-      <Text fontSize='md' align='center'><b>Mund</b></Text>
-      <Text fontSize='sm' align='center'>+4 Atk / +4 Def / +4 Luck </Text>
+      <Text mt='-8px' fontSize='md' align='center'><b>Mund</b></Text>
+      <Text fontSize='sm' align='center'>+4 Atk<br/>+4 Def<br/>+4 Luck </Text>
       </VStack>
-      </HStack>
+
             </Button>
             </WrapItem>}
 
      {!WhodiniIsShown &&
             <WrapItem>
-            <Button w='290px' h='110px' pb={5} onClick={handleWhodiniClick} style={{ backgroundColor: "#2D3748" }}>
-    <HStack justify='center'> 
+            <Button w='110px' h='170px' pb={5} onClick={handleWhodiniClick} style={{ backgroundColor: "#2D3748" }}>
+      <VStack justify='center'>  
        <Image
         mt='12px'
         align='center' 
-        boxSize='4rem'
+        boxSize='5rem'
         src='https://static.wikia.nocookie.net/4thewords/images/d/d5/Whodini.png/'
       /> 
-      <VStack>
-      <Text fontSize='md' align='center'><b>Whodini</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk / +12 Def / +0 Luck </Text>
+      <Text mt='-8px' fontSize='md' align='center'><b>Whodini</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br/>+12 Def<br/>+0 Luck </Text>
       </VStack>
-      </HStack>
+
             </Button>
             </WrapItem>}
 
             {WhodiniIsShown &&
             <WrapItem>
-            <Button w='290px' h='110px' pb={5} onClick={handleWhodiniNoClick} style={{ backgroundColor: "#2d1b59" }}>
-       <HStack justify='center'>  
+            <Button w='110px' h='170px' pb={5} onClick={handleWhodiniNoClick} style={{ backgroundColor: "#211742" }}>
+       <VStack justify='center'>  
        <Image
         mt='12px'
         align='center' 
-        boxSize='4rem'
+        boxSize='5rem'
         src='https://static.wikia.nocookie.net/4thewords/images/d/d5/Whodini.png/'
       /> 
-      <VStack>
-      <Text fontSize='md' align='center'><b>Whodini</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk / +12 Def / +0 Luck </Text>
+      <Text mt='-8px' fontSize='md' align='center'><b>Whodini</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br/>+12 Def<br/>+0 Luck </Text>
       </VStack>
-      </HStack>
+
             </Button>
             </WrapItem>}
 
             </Wrap>}
-
-
       </Box>
     </AccordionPanel>
   </AccordionItem>
@@ -8271,7 +9476,7 @@ mr='5px'
   </WrapItem>}
   {(DCIsShown || World2RegionIsShown) && KingMaiSwordIsShown &&
   <WrapItem>
-<Button w='90px' h='110px' pb={5} onClick={handleKingMaiSwordNoClick} style={{ backgroundColor: "#2d1b59"}}>
+<Button w='90px' h='110px' pb={5} onClick={handleKingMaiSwordNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack> 
 <Image
 mt='12px'
@@ -8300,7 +9505,7 @@ mr='5px'
     </WrapItem>}
     {(DCIsShown || World2RegionIsShown) && MercurialSwordIsShown &&
     <WrapItem>
-  <Button w='90px' h='110px' pb={5} onClick={handleMercurialSwordNoClick} style={{ backgroundColor: "#2d1b59"}}>
+  <Button w='90px' h='110px' pb={5} onClick={handleMercurialSwordNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack> 
 <Image
 mt='12px'
@@ -8328,7 +9533,7 @@ mr='5px'
   </WrapItem>}
   {(CoLIsShown || DCIsShown || World2RegionIsShown) && FlowerSlingshotIsShown &&
   <WrapItem>
-<Button w='90px' h='110px' pb={5} onClick={handleFlowerSlingshotNoClick} style={{ backgroundColor: "#2d1b59"}}>
+<Button w='90px' h='110px' pb={5} onClick={handleFlowerSlingshotNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack> 
 <Image
 mt='12px'
@@ -8357,7 +9562,7 @@ mr='5px'
   </WrapItem>}
   {(CoLIsShown || DCIsShown || World2RegionIsShown) && FusionSwordIsShown &&
   <WrapItem>
-<Button w='90px' h='110px' pb={5} onClick={handleFusionSwordNoClick} style={{ backgroundColor: "#2d1b59"}}>
+<Button w='90px' h='110px' pb={5} onClick={handleFusionSwordNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack> 
 <Image
 mt='12px'
@@ -8390,7 +9595,7 @@ mr='5px'
 
 {World2RegionIsShown && NivaliBowIsShown &&
     <WrapItem>
-    <Button w='90px' h='110px' pb={5} onClick={handleNivaliBowNoClick} style={{ backgroundColor: "#2d1b59"}}>
+    <Button w='90px' h='110px' pb={5} onClick={handleNivaliBowNoClick} style={{ backgroundColor: "#211742"}}>
     <VStack> 
     <Image
     mt='12px'
@@ -8420,7 +9625,7 @@ mr='5px'
 
 {World2RegionIsShown && NivaliSlingshotIsShown &&
     <WrapItem>
-    <Button w='90px' h='110px' pb={5} onClick={handleNivaliSlingshotNoClick} style={{ backgroundColor: "#2d1b59"}}>
+    <Button w='90px' h='110px' pb={5} onClick={handleNivaliSlingshotNoClick} style={{ backgroundColor: "#211742"}}>
     <VStack> 
     <Image
     mt='12px'
@@ -8450,7 +9655,7 @@ mr='5px'
 
   {(DCIsShown || World2RegionIsShown) && MountainMaceIsShown &&
     <WrapItem>
-    <Button w='90px' h='110px' pb={5} onClick={handleMountainMaceNoClick} style={{ backgroundColor: "#2d1b59"}}>
+    <Button w='90px' h='110px' pb={5} onClick={handleMountainMaceNoClick} style={{ backgroundColor: "#211742"}}>
     <VStack> 
     <Image
     mt='12px'
@@ -8480,7 +9685,7 @@ mr='5px'
 
   {(CoLIsShown || DCIsShown || World2RegionIsShown) && FusionCrossbowIsShown &&
     <WrapItem>
-    <Button w='90px' h='110px' pb={5} onClick={handleFusionCrossbowNoClick} style={{ backgroundColor: "#2d1b59"}}>
+    <Button w='90px' h='110px' pb={5} onClick={handleFusionCrossbowNoClick} style={{ backgroundColor: "#211742"}}>
     <VStack> 
     <Image
     mt='12px'
@@ -8510,7 +9715,7 @@ mr='5px'
 
   {(CoLIsShown || DCIsShown || World2RegionIsShown) && PoePickIsShown &&
     <WrapItem>
-    <Button w='90px' h='110px' pb={5} onClick={handlePoePickNoClick} style={{ backgroundColor: "#2d1b59"}}>
+    <Button w='90px' h='110px' pb={5} onClick={handlePoePickNoClick} style={{ backgroundColor: "#211742"}}>
     <VStack> 
     <Image
     mt='12px'
@@ -8534,6 +9739,1329 @@ mr='5px'
          </AccordionPanel>
        </AccordionItem>
      </Accordion>
+     <Tabs mt='50px' variant='soft-rounded' colorScheme='purple'>
+  <TabList>
+    <Wrap justify='center'>
+    <WrapItem>
+    <Tab>Companions</Tab>
+    </WrapItem>
+    <WrapItem>
+    <Tab>Weapon 1</Tab>
+    </WrapItem>
+    <WrapItem>
+    <Tab>Weapon 2</Tab>
+    </WrapItem>
+    <WrapItem>
+    <Tab>Accessory</Tab>
+    </WrapItem>
+    <WrapItem>
+    <Tab>Head</Tab>
+    </WrapItem>
+    <WrapItem>
+    <Tab>Chest</Tab>
+    </WrapItem>
+    <WrapItem>
+    <Tab>Feet</Tab>
+    </WrapItem>
+    </Wrap>
+  </TabList>
+  <TabPanels>
+    <TabPanel>
+    <Text fontSize='md' mt='25px' mb='15px'><b>Main Quest Companions:</b></Text>
+                <Wrap justify='center'>
+   {(DCIsShown || World2RegionIsShown) && !NoanzaIsShown &&
+           <WrapItem>
+            <Button w='110px' h='170px' pb={5} onClick={handleNoanzaSwitchClick} style={{ backgroundColor: "#2D3748" }}>
+       <VStack justify='center'>  
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png/'
+      /> 
+      <Text fontSize='md' mt='-15px' align='center'><b>Noanza</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br/>+14 Def<br/>+6 Luck </Text>
+      </VStack>
+            </Button>
+            </WrapItem>}
+
+   {(DCIsShown || World2RegionIsShown) && NoanzaIsShown &&
+           <WrapItem>
+            <Button w='110px' h='170px' pb={5} onClick={handleNoanzaSwitchNoClick} style={{ backgroundColor: "#211742"}}>
+      <VStack justify='center'>  
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png/'
+      /> 
+  <Text fontSize='md' mt='-15px' align='center'><b>Noanza</b></Text>
+  <Text fontSize='sm' align='center'>+0 Atk<br/>+14 Def<br/>+6 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+
+
+{(FloatingCityIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !LodoIsShown &&
+            <WrapItem>
+            <Button w='110px' h='170px' pb={5} onClick={handleLodoSwitchClick} style={{ backgroundColor: "#2D3748" }}>
+      <VStack justify='center'>  
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e6/Lodo.png/'
+      /> 
+      <Text mt='-8px' fontSize='md' align='center'><b>Lodo</b></Text>
+      <Text fontSize='sm' align='center'>+12 Atk<br />2 Def<br />0 Luck </Text>
+      </VStack>
+
+            </Button>
+            </WrapItem>}
+
+{(FloatingCityIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && LodoIsShown &&
+            <WrapItem>
+            <Button w='110px' h='170px' pb={5} onClick={handleLodoSwitchNoClick} style={{ backgroundColor: "#211742" }}>
+       <VStack justify='center'>  
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e6/Lodo.png/'
+      /> 
+      <Text mt='-8px' fontSize='md' align='center'><b>Lodo</b></Text>
+      <Text fontSize='sm' align='center'>+12 Atk<br />2 Def<br />0 Luck </Text>
+      </VStack>
+
+            </Button>
+            </WrapItem>}
+
+{(ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !AzadiIsShown &&
+            <WrapItem>
+            <Button w='110px' h='170px' pb={5} onClick={handleAzadiSwitchClick} style={{ backgroundColor: "#2D3748" }}>
+      <VStack justify='center'>  
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png/'
+      /> 
+      <Text mt='-8px' fontSize='md' align='center'><b>Azadi</b></Text>
+      <Text fontSize='sm' align='center'>+5 Atk<br />0 Def<br />10 Luck </Text>
+      </VStack>
+
+            </Button>
+            </WrapItem>}
+
+{(ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && AzadiIsShown &&
+            <WrapItem>
+            <Button w='110px' h='170px' pb={5} onClick={handleAzadiSwitchNoClick} style={{ backgroundColor: "#211742" }}>
+       <VStack justify='center'>  
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png/'
+      /> 
+      <Text mt='-8px' fontSize='md' align='center'><b>Azadi</b></Text>
+      <Text fontSize='sm' align='center'>+5 Atk<br />0 Def<br />10 Luck </Text>
+      </VStack>
+
+            </Button>
+            </WrapItem>}
+
+{(MamaTreeIsShown || ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !SuwoIsShown &&
+            <WrapItem>
+            <Button w='110px' h='170px' pb={5} onClick={handleSuwoSwitchClick} style={{ backgroundColor: "#2D3748" }}>
+      <VStack justify='center'>  
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
+      /> 
+      <Text mt='-8px' fontSize='md' align='center'><b>Suwo</b></Text>
+      <Text fontSize='sm' align='center'>+3 Atk<br />7 Def<br />2 Luck </Text>
+      </VStack>
+
+            </Button>
+            </WrapItem>}
+
+{(MamaTreeIsShown || ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && SuwoIsShown &&
+            <WrapItem>
+            <Button w='110px' h='170px' pb={5} onClick={handleSuwoSwitchNoClick} style={{ backgroundColor: "#211742" }}>
+       <VStack justify='center'>  
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
+      /> 
+      <Text mt='-8px' fontSize='md' align='center'><b>Suwo</b></Text>
+      <Text fontSize='sm' align='center'>+3 Atk<br />7 Def<br />2 Luck </Text>
+      </VStack>
+
+            </Button>
+            </WrapItem>}
+      </Wrap>
+{DragonLairIsShown &&
+          <Text fontSize='md' mt='25px' mb='15px'><b>Dragon Companions:</b></Text>
+
+}
+{DragonLairIsShown &&
+           <Wrap justify='center'>
+{!KaiszarIsShown &&
+           <WrapItem>
+            <Button w='110px' h='170px' pb={5} onClick={handleKaiszarSwitchClick} style={{ backgroundColor: "#2D3748" }}>
+         <VStack justify='center'>  
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/fa/Kaiszar.png/'
+      /> 
+      <Text fontSize='md' mt='15px' align='center'><b>Kaiszar</b></Text>
+      <Text fontSize='sm' align='center'>+12 Atk<br />0 Def<br />0 Luck </Text>
+      </VStack>
+
+            </Button>
+            </WrapItem>}
+
+{KaiszarIsShown &&
+           <WrapItem>
+            <Button w='110px' h='170px' pb={5} onClick={handleKaiszarSwitchNoClick} style={{ backgroundColor: "#211742"}}>
+       {!AtkKaiszarIsShown && !DefKaiszarIsShown && !LuckKaiszarIsShown &&
+         <VStack justify='center'>  
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+                src='https://static.wikia.nocookie.net/4thewords/images/f/fa/Kaiszar.png/'
+      /> 
+  <Text fontSize='md' mt='15px' align='center'><b>Kaiszar</b></Text>
+  <Text fontSize='sm' align='center'>+12 Atk<br />0 Def<br />0 Luck </Text>
+  
+      </VStack>
+}
+{AtkKaiszarIsShown && !DefKaiszarIsShown && !LuckKaiszarIsShown &&
+        <VStack justify='center'>  
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        src='https://i.imgur.com/gbuo4mt.png'
+      /> 
+  <Text fontSize='md' mt='15px' align='center'><b>Attack Kaiszar</b></Text>
+  <Text fontSize='sm' align='center'>+16 Atk<br />0 Def<br />0 Luck </Text>
+
+  </VStack>
+  }
+  {!AtkKaiszarIsShown && DefKaiszarIsShown && !LuckKaiszarIsShown &&
+  <VStack justify='center'> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        src='https://i.imgur.com/LGazi9x.png'
+      />     
+  <Text fontSize='md' mt='15px' align='center'><b>Defense Kaiszar</b></Text>
+  <Text fontSize='sm' align='center'>+12 Atk<br />4 Def<br />0 Luck </Text>
+  </VStack>
+  }
+         {!AtkKaiszarIsShown && !DefKaiszarIsShown && LuckKaiszarIsShown &&
+           <VStack justify='center'>  
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        src='https://i.imgur.com/gbpdG0f.png'
+      /> 
+  <Text fontSize='md' mt='15px' align='center'><b>Luck Kaiszar</b></Text>
+  <Text fontSize='sm' align='center'>+12 Atk<br />0 Def<br />4 Luck </Text>
+  </VStack> 
+  }
+
+            </Button>
+            </WrapItem>}
+
+{!AtkKaiszarIsShown &&
+            <WrapItem>
+            <Button w='90px' h='110px' pb={5} onClick={handleAtkKaiszarSwitchClick} style={{ backgroundColor: "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+                src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
+      /> <Text fontSize='sm' align='center'>Kaiszar:<br/>Attack Boost</Text>
+      </VStack>
+            </Button>
+            </WrapItem>}
+
+{AtkKaiszarIsShown &&
+            <WrapItem>
+            <Button w='90px' h='110px' pb={5} onClick={handleAtkKaiszarSwitchNoClick} style={{ backgroundColor: "#211742"}}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+                src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
+      /> <Text fontSize='sm' align='center'>Kaiszar:<br/>Attack Boost</Text>
+      </VStack>
+            </Button>
+            </WrapItem>}
+
+{!DefKaiszarIsShown &&
+           <WrapItem>
+            <Button w='90px' h='110px' pb={5} onClick={handleDefKaiszarSwitchClick} style={{ backgroundColor: "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+                src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
+      /> <Text fontSize='sm' align='center'>Kaiszar:<br/>Def. Boost</Text>
+      </VStack>
+            </Button>
+            </WrapItem>}
+
+{DefKaiszarIsShown &&
+           <WrapItem>
+            <Button w='90px' h='110px' pb={5} onClick={handleDefKaiszarSwitchNoClick} style={{ backgroundColor: "#211742" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+                src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
+      /> <Text fontSize='sm' align='center'>Kaiszar:<br/>Def. Boost</Text>
+      </VStack>
+            </Button>
+            </WrapItem>}            
+
+{!LuckKaiszarIsShown &&
+           <WrapItem>
+            <Button w='90px' h='110px' pb={5} onClick={handleLuckKaiszarSwitchClick} style={{ backgroundColor: "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+                src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
+      /> <Text fontSize='sm' align='center'>Kaiszar:<br/>Luck Boost</Text>
+      </VStack>
+            </Button>
+            </WrapItem>}
+
+{LuckKaiszarIsShown &&
+           <WrapItem>
+            <Button w='90px' h='110px' pb={5} onClick={handleLuckKaiszarSwitchNoClick} style={{ backgroundColor: "#211742" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='3rem'
+                src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
+      /> <Text fontSize='sm' align='center'>Kaiszar:<br/>Luck Boost</Text>
+      </VStack>
+            </Button>
+            </WrapItem>}
+
+            {!LoksiIsShown &&
+  <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleLoksiClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack justify='center'>  
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/75/Loksi.png'
+mr='5px'
+/> 
+<Text fontSize='md' mt='15px' align='center'><b>Loksi</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br />12 Def<br />0 Luck </Text>
+</VStack>
+   </Button>
+   </WrapItem>}
+{LoksiIsShown && 
+  <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleLoksiSwitchNoClick} style={{ backgroundColor: "#211742"}}>
+   {!AtkLoksiIsShown && !DefLoksiIsShown && !LuckLoksiIsShown &&
+<VStack justify='center'>  
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/75/Loksi.png'
+mr='5px'
+/> 
+  <Text fontSize='md' mt='15px' align='center'><b>Loksi</b></Text>
+  <Text fontSize='sm' align='center'>+0 Atk<br />12 Def<br />0 Luck </Text>
+</VStack>}
+{AtkLoksiIsShown && !DefLoksiIsShown && !LuckLoksiIsShown &&
+<VStack justify='center'>  
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://i.imgur.com/Zb1N51B.png'
+mr='5px'
+/> 
+<Text fontSize='md' mt='15px' align='center'><b>Attack Loksi</b></Text>
+<Text fontSize='sm' align='center'>+4 Atk<br />12 Def<br />0 Luck </Text>
+</VStack>}
+{!AtkLoksiIsShown && DefLoksiIsShown && !LuckLoksiIsShown &&
+<VStack justify='center'>  
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://i.imgur.com/zGo6cCD.png'
+mr='5px'
+/> 
+<Text fontSize='md' mt='15px' align='center'><b>Defense Loksi</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br />16 Def<br />0 Luck </Text>
+</VStack>}
+{!AtkLoksiIsShown && !DefLoksiIsShown && LuckLoksiIsShown &&
+<VStack justify='center'>  
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://i.imgur.com/bgb1J58.png'
+mr='5px'
+/> 
+<Text fontSize='md' mt='15px' align='center'><b>Luck Loksi</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br />12 Def<br />4 Luck </Text>
+</VStack>}
+
+</Button>
+</WrapItem>}
+
+
+{!AtkLoksiIsShown &&
+   <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleAtkLoksiClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Loksi:<br/>Attack Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}
+
+{AtkLoksiIsShown &&
+   <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleAtkLoksiSwitchNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Loksi:<br/>Attack Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}
+
+{!DefLoksiIsShown &&
+  <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleDefLoksiClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Loksi:<br/>Def. Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}
+
+{DefLoksiIsShown &&
+  <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleDefLoksiSwitchNoClick} style={{ backgroundColor: "#211742" }}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Loksi:<br/>Def. Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}            
+
+{!LuckLoksiIsShown &&
+  <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleLuckLoksiClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Loksi:<br/>Luck Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}
+
+{LuckLoksiIsShown &&
+  <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleLuckLoksiSwitchNoClick} style={{ backgroundColor: "#211742" }}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Loksi:<br/>Luck Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}
+
+   <WrapItem>
+   {!ThalamarisIsShown && 
+     <Button w='110px' h='170px' pb={5} onClick={handleThalamarisClick} style={{ backgroundColor: "#2D3748" }}>  
+  {!AtkThalamarisIsShown && !DefThalamarisIsShown && !LuckThalamarisIsShown &&
+<VStack justify='center'>  
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/4/4a/Thalamaris.png/'
+mr='5px'
+/> 
+<Text fontSize='md' mt='15px' align='center'><b>Thalamaris</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br />0 Def<br />12 Luck </Text>
+</VStack>}
+</Button>}
+
+{ThalamarisIsShown &&
+<Button w='110px' h='170px' pb={5} onClick={handleThalamarisSwitchNoClick} style={{ backgroundColor: "#211742" }}> 
+{!AtkThalamarisIsShown && !DefThalamarisIsShown && !LuckThalamarisIsShown &&
+<VStack justify='center'>  
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/4/4a/Thalamaris.png/'
+mr='5px'
+/> 
+  <Text fontSize='md' mt='15px' align='center'><b>Thalamaris</b></Text>
+  <Text fontSize='sm' align='center'>+0 Atk<br />0 Def<br />12 Luck </Text>
+</VStack>}
+
+{AtkThalamarisIsShown && !DefThalamarisIsShown && !LuckThalamarisIsShown &&
+<VStack justify='center'>  
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://i.imgur.com/fe9fXNc.png'
+mr='5px'
+/> 
+<Text fontSize='md' mt='15px' align='center'><b>Attack Thalamaris</b></Text>
+<Text fontSize='sm' align='center'>+4 Atk<br />0 Def<br />12 Luck </Text>
+</VStack>}
+{!AtkThalamarisIsShown && DefThalamarisIsShown && !LuckThalamarisIsShown &&
+<VStack justify='center'>  
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://i.imgur.com/1G7xegk.png'
+mr='5px'
+/> 
+<Text fontSize='md' mt='15px' align='center'><b>Defense Thalamaris</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br />4 Def<br />12 Luck </Text>
+</VStack>}
+{!AtkThalamarisIsShown && !DefThalamarisIsShown && LuckThalamarisIsShown &&
+<VStack justify='center'>  
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://i.imgur.com/VpveKDD.png'
+mr='5px'
+/> 
+<Text fontSize='md' mt='15px' align='center'><b>Luck Thalamaris</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br />0 Def<br />16 Luck </Text>
+</VStack>}
+   </Button>}
+   </WrapItem>
+
+
+{!AtkThalamarisIsShown &&
+   <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleAtkThalamarisClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Thalamaris:<br/>Attack Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}
+
+{AtkThalamarisIsShown &&
+   <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleAtkThalamarisSwitchNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Thalamaris:<br/>Attack Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}
+
+{!DefThalamarisIsShown &&
+  <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleDefThalamarisClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Thalamaris:<br/>Def. Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}
+
+{DefThalamarisIsShown &&
+  <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleDefThalamarisSwitchNoClick} style={{ backgroundColor: "#211742" }}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Thalamaris:<br/>Def. Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}            
+
+{!LuckThalamarisIsShown &&
+  <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleLuckThalamarisClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Thalamaris:<br/>Luck Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}
+
+{LuckThalamarisIsShown &&
+  <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleLuckThalamarisSwitchNoClick} style={{ backgroundColor: "#211742" }}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Thalamaris:<br/>Luck Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}
+   
+   {!ValkosIsShown &&
+  <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleValkosClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack justify='center'>  
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/6/63/Valkos.png'
+mr='5px'
+/> 
+<Text fontSize='md' mt='15px' align='center'><b>Valkos</b></Text>
+<Text fontSize='sm' align='center'>+4 Atk<br />4 Def<br />4 Luck </Text>
+</VStack>
+   </Button>
+   </WrapItem>}
+
+{ValkosIsShown &&
+  <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleValkosSwitchNoClick} style={{ backgroundColor: "#211742"}}>
+   {!AtkValkosIsShown && !DefValkosIsShown && !LuckValkosIsShown &&
+<VStack justify='center'>  
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/6/63/Valkos.png'
+mr='5px'
+/> 
+<Text fontSize='md' mt='15px' align='center'><b>Valkos</b></Text>
+<Text fontSize='sm' align='center'>+4 Atk<br />4 Def<br />4 Luck </Text>
+  
+</VStack>}
+{AtkValkosIsShown && !DefValkosIsShown && !LuckValkosIsShown &&
+<VStack justify='center'>  
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://i.imgur.com/Ci51Pa1.png'
+mr='5px'
+/> 
+<Text fontSize='md' mt='15px' align='center'><b>Attack Valkos</b></Text>
+<Text fontSize='sm' align='center'>+8 Atk<br />4 Def<br />4 Luck </Text>
+  
+</VStack>}
+{!AtkValkosIsShown && DefValkosIsShown && !LuckValkosIsShown &&
+<VStack justify='center'>  
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://i.imgur.com/1sMl04A.png'
+mr='5px'
+/> 
+<Text fontSize='md' mt='15px' align='center'><b>Defense Valkos</b></Text>
+<Text fontSize='sm' align='center'>+4 Atk<br />8 Def<br />4 Luck </Text>
+  
+</VStack>}
+{!AtkValkosIsShown && !DefValkosIsShown && LuckValkosIsShown &&
+<VStack justify='center'>  
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://i.imgur.com/pGyg8DO.png'
+mr='5px'
+/> 
+<Text fontSize='md' mt='15px' align='center'><b>Luck Valkos</b></Text>
+<Text fontSize='sm' align='center'>+4 Atk<br />4 Def<br />8 Luck </Text>
+  
+</VStack>}
+   </Button>
+   </WrapItem>}
+
+
+
+
+{!AtkValkosIsShown &&
+   <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleAtkValkosClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Valkos:<br/>Attack Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}
+
+{AtkValkosIsShown &&
+   <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleAtkValkosSwitchNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Valkos:<br/>Attack Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}
+
+{!DefValkosIsShown &&
+  <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleDefValkosClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Valkos:<br/>Def. Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}
+
+{DefValkosIsShown &&
+  <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleDefValkosSwitchNoClick} style={{ backgroundColor: "#211742" }}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Valkos:<br/>Def. Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}            
+
+{!LuckValkosIsShown &&
+  <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleLuckValkosClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Valkos:<br/>Luck Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}
+
+{LuckValkosIsShown &&
+  <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleLuckValkosSwitchNoClick} style={{ backgroundColor: "#211742" }}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Valkos:<br/>Luck Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}
+
+{!EenrisIsShown && !AtkEenrisIsShown && !DefEenrisIsShown && !LuckEenrisIsShown &&
+  <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleEenrisClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack justify='center'>  
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/1/1d/Eenris.png/'
+mr='5px'
+/> 
+<Text fontSize='md' mt='15px' align='center'><b>Eenris</b></Text>
+<Text fontSize='sm' align='center'>+3 Atk<br />6 Def<br />3 Luck </Text>
+</VStack>
+   </Button>
+   </WrapItem>}
+
+{EenrisIsShown && 
+  <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleEenrisSwitchNoClick} style={{ backgroundColor: "#211742"}}>
+{!AtkEenrisIsShown && !DefEenrisIsShown && !LuckEenrisIsShown &&
+<VStack justify='center'>  
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/1/1d/Eenris.png/'
+mr='5px'
+/> 
+<Text fontSize='md' mt='15px' align='center'><b>Eenris</b></Text>
+<Text fontSize='sm' align='center'>+3 Atk<br />6 Def<br />3 Luck </Text>
+</VStack>}
+{AtkEenrisIsShown && !DefEenrisIsShown && !LuckEenrisIsShown &&
+<VStack justify='center'>  
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://i.imgur.com/lU6zkfR.png'
+mr='5px'
+/> 
+  <Text fontSize='md' mt='15px' align='center'><b>Attack Eenris</b></Text>
+  <Text fontSize='sm' align='center'>+7 Atk<br />6 Def<br />3 Luck </Text>
+</VStack>}
+{!AtkEenrisIsShown && DefEenrisIsShown && !LuckEenrisIsShown &&
+<VStack justify='center'>  
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://i.imgur.com/5sRBeCz.png'
+mr='5px'
+/> 
+  <Text fontSize='md' mt='15px' align='center'><b>Defense Eenris</b></Text>
+  <Text fontSize='sm' align='center'>+3 Atk<br />10 Def<br />3 Luck </Text>
+</VStack>}
+{!AtkEenrisIsShown && !DefEenrisIsShown && LuckEenrisIsShown &&
+<VStack justify='center'>  
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://i.imgur.com/exqGLIN.png'
+mr='5px'
+/> 
+  <Text fontSize='md' mt='15px' align='center'><b>Luck Eenris</b></Text>
+  <Text fontSize='sm' align='center'>+3 Atk<br />6 Def<br />7 Luck </Text>
+</VStack>}
+
+   </Button>
+   </WrapItem>}
+
+
+
+{!AtkEenrisIsShown &&
+   <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleAtkEenrisClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Eenris:<br/>Attack Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}
+
+{AtkEenrisIsShown &&
+   <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleAtkEenrisSwitchNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Eenris:<br/>Attack Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}
+
+{!DefEenrisIsShown &&
+  <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleDefEenrisClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Eenris:<br/>Def. Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}
+
+{DefEenrisIsShown &&
+  <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleDefEenrisSwitchNoClick} style={{ backgroundColor: "#211742" }}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Eenris:<br/>Def. Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}            
+
+{!LuckEenrisIsShown &&
+  <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleLuckEenrisClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Eenris:<br/>Luck Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}
+
+{LuckEenrisIsShown &&
+  <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleLuckEenrisSwitchNoClick} style={{ backgroundColor: "#211742" }}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Eenris:<br/>Luck Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}
+
+{!RairaselIsShown && !AtkRairaselIsShown && !DefRairaselIsShown && !LuckRairaselIsShown &&
+  <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleRairaselClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack justify='center'>  
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/f/fc/Rairasel.png/'
+mr='5px'
+/> 
+<Text fontSize='md' mt='15px' align='center'><b>Rairasel</b></Text>
+<Text fontSize='sm' align='center'>+6 Atk<br />0 Def<br />6 Luck </Text>
+</VStack>
+   </Button>
+   </WrapItem>}
+
+{RairaselIsShown &&
+  <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleRairaselSwitchNoClick} style={{ backgroundColor: "#211742"}}>
+{!AtkRairaselIsShown && !DefRairaselIsShown && !LuckRairaselIsShown &&
+<VStack justify='center'>  
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/f/fc/Rairasel.png/'
+mr='5px'
+/> 
+<Text fontSize='md' mt='15px' align='center'><b>Rairasel</b></Text>
+<Text fontSize='sm' align='center'>+6 Atk<br />0 Def<br />6 Luck </Text>
+</VStack>}
+{AtkRairaselIsShown && !DefRairaselIsShown && !LuckRairaselIsShown &&
+<VStack justify='center'>  
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://i.imgur.com/YB3iqt7.png'
+mr='5px'
+/> 
+<Text fontSize='md' mt='15px' align='center'><b>Attack Rairasel</b></Text>
+<Text fontSize='sm' align='center'>+10 Atk<br />0 Def<br />6 Luck </Text>
+</VStack>}
+{!AtkRairaselIsShown && DefRairaselIsShown && !LuckRairaselIsShown &&
+<VStack justify='center'>  
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://i.imgur.com/vgropoV.png'
+mr='5px'
+/> 
+<Text fontSize='md' mt='15px' align='center'><b>Defense Rairasel</b></Text>
+<Text fontSize='sm' align='center'>+6 Atk<br />4 Def<br />6 Luck </Text>
+</VStack>}
+{!AtkRairaselIsShown && !DefRairaselIsShown && LuckRairaselIsShown &&
+<VStack justify='center'>  
+<Image
+ml='-15px'
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://i.imgur.com/3GrgauN.png'
+mr='5px'
+/> 
+<Text fontSize='md' mt='15px' align='center'><b>Luck Rairasel</b></Text>
+<Text fontSize='sm' align='center'>+6 Atk<br />0 Def<br />10 Luck </Text>
+</VStack>}
+
+   </Button>
+   </WrapItem>}
+
+
+{!AtkRairaselIsShown &&
+   <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleAtkRairaselClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Rairasel:<br/>Attack Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}
+
+{AtkRairaselIsShown &&
+   <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleAtkRairaselSwitchNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Rairasel:<br/>Attack Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}
+
+{!DefRairaselIsShown &&
+  <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleDefRairaselClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Rairasel:<br/>Def. Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}
+
+{DefRairaselIsShown &&
+  <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleDefRairaselSwitchNoClick} style={{ backgroundColor: "#211742" }}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Rairasel:<br/>Def. Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}            
+
+{!LuckRairaselIsShown &&
+  <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleLuckRairaselClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Rairasel:<br/>Luck Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}
+
+{LuckRairaselIsShown &&
+  <WrapItem>
+   <Button w='90px' h='110px' pb={5} onClick={handleLuckRairaselSwitchNoClick} style={{ backgroundColor: "#211742" }}>
+<VStack> 
+<Image
+mt='12px'
+align='center' 
+boxSize='3rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
+mr='5px'
+/> <Text fontSize='sm' align='center'>Rairasel:<br/>Luck Boost</Text>
+</VStack>
+   </Button>
+   </WrapItem>}
+            </Wrap>
+}
+
+{AurilisIsShown &&
+<Text fontSize='md' mt='25px' mb='15px'><b>Aurilis Companions:</b></Text>
+}
+
+{AurilisIsShown &&
+                <Wrap justify='center'>
+          {!AlderbamIsShown &&
+            <WrapItem>
+            <Button w='110px' h='170px' pb={5} onClick={handleAlderbamClick} style={{ backgroundColor: "#2D3748" }}>
+      <VStack justify='center'>  
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/95/Alderbam.png/'
+      /> 
+      <Text mt='-8px' fontSize='md' align='center'><b>Alderbam</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br />0 Def<br />12 Luck </Text>
+      </VStack>
+
+            </Button>
+            </WrapItem>}
+
+            {AlderbamIsShown &&
+            <WrapItem>
+            <Button w='110px' h='170px' pb={5} onClick={handleAlderbamSwitchNoClick} style={{ backgroundColor: "#211742" }}>
+       <VStack justify='center'>  
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/95/Alderbam.png/'
+      /> 
+      <Text mt='-8px' fontSize='md' align='center'><b>Alderbam</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br />0 Def<br />12 Luck </Text>
+      </VStack>
+
+            </Button>
+            </WrapItem>}
+          {!ChysisIsShown &&
+            <WrapItem>
+            <Button w='110px' h='170px' pb={5} onClick={handleChysisClick} style={{ backgroundColor: "#2D3748" }}>
+      <VStack justify='center'>  
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/97/Chysis.png/'
+      /> 
+      <Text mt='-8px' fontSize='md' align='center'><b>Chysis</b></Text>
+      <Text fontSize='sm' align='center'>+12 Atk<br />0 Def<br />0 Luck </Text>
+      </VStack>
+
+            </Button>
+            </WrapItem>}
+
+            {ChysisIsShown &&
+            <WrapItem>
+            <Button w='110px' h='170px' pb={5} onClick={handleChysisSwitchNoClick} style={{ backgroundColor: "#211742" }}>
+       <VStack justify='center'>  
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/97/Chysis.png/'
+      /> 
+      <Text mt='-8px' fontSize='md' align='center'><b>Chysis</b></Text>
+      <Text fontSize='sm' align='center'>+12 Atk<br />0 Def<br />0 Luck </Text>
+      </VStack>
+
+            </Button>
+            </WrapItem>}                  
+
+    {!MundIsShown &&
+            <WrapItem>
+            <Button w='110px' h='170px' pb={5} onClick={handleMundClick} style={{ backgroundColor: "#2D3748" }}>
+      <VStack justify='center'>  
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e3/Mund.png/'
+      /> 
+      <Text mt='-8px' fontSize='md' align='center'><b>Mund</b></Text>
+      <Text fontSize='sm' align='center'>+4 Atk<br />4 Def<br />4 Luck </Text>
+      </VStack>
+
+            </Button>
+            </WrapItem>}
+
+            {MundIsShown &&
+            <WrapItem>
+            <Button w='110px' h='170px' pb={5} onClick={handleMundSwitchNoClick} style={{ backgroundColor: "#211742" }}>
+       <VStack justify='center'>  
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e3/Mund.png/'
+      /> 
+      <Text mt='-8px' fontSize='md' align='center'><b>Mund</b></Text>
+      <Text fontSize='sm' align='center'>+4 Atk<br />4 Def<br />4 Luck </Text>
+      </VStack>
+
+            </Button>
+            </WrapItem>}
+
+     {!WhodiniIsShown &&
+            <WrapItem>
+            <Button w='110px' h='170px' pb={5} onClick={handleWhodiniClick} style={{ backgroundColor: "#2D3748" }}>
+      <VStack justify='center'>  
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/d5/Whodini.png/'
+      /> 
+      <Text mt='-8px' fontSize='md' align='center'><b>Whodini</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br />12 Def<br />0 Luck </Text>
+      </VStack>
+
+            </Button>
+            </WrapItem>}
+
+            {WhodiniIsShown &&
+            <WrapItem>
+            <Button w='110px' h='170px' pb={5} onClick={handleWhodiniSwitchNoClick} style={{ backgroundColor: "#211742" }}>
+       <VStack justify='center'>  
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/d5/Whodini.png/'
+      /> 
+      <Text mt='-8px' fontSize='md' align='center'><b>Whodini</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br />12 Def<br />0 Luck </Text>
+      </VStack>
+
+            </Button>
+            </WrapItem>}
+
+            </Wrap>}
+                </TabPanel>
+    <TabPanel>
+      <p>two!</p>
+    </TabPanel>
+  </TabPanels>
+</Tabs>
   <Text><b>Equation Tests</b></Text>
   <TopAttackCompanion16 />
   <TopAttackCompanion12 />
