@@ -6257,7 +6257,7 @@ const TopAttackCompanion12 = () => {
 
             </VStack>
 
-  <Accordion with='275px' mt='25px' allowMultiple w={350}>
+  <Accordion with='290px' mt='25px' allowMultiple w={350}>
   <AccordionItem>
   <h2>
       <AccordionButton>
@@ -6907,122 +6907,161 @@ const TopAttackCompanion12 = () => {
       <Box h='400px' overflowY='scroll'>
           <Text fontSize='md' mt='25px' mb='15px'><b>Main Quest Companions:</b></Text>
                 <Wrap>
-            {(DCIsShown || World2RegionIsShown) && !NoanzaIsShown &&
-            <WrapItem>
-          <Button w='100px' h='110px' pb={5} onClick={handleNoanzaClick} style={{ backgroundColor: "#2D3748" }}>
-       <VStack> 
+
+   {(DCIsShown || World2RegionIsShown) && !NoanzaIsShown &&
+           <WrapItem>
+            <Button w='315px' h='110px' pb={5} onClick={handleNoanzaClick} style={{ backgroundColor: "#2D3748" }}>
+       <HStack> 
        <Image
+       ml='-15px'
         mt='12px'
         align='center' 
-        boxSize='3rem'
-                src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png/'
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png/'
         mr='5px'
-      /> <Text fontSize='sm' align='center'>Noanza</Text>
+      /> 
+      <VStack>
+      <Text fontSize='md' mt='15px' align='center'><b>Noanza</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk / +14 Def / +6 Luck </Text>
       </VStack>
+      </HStack>
             </Button>
             </WrapItem>}
-            {(DCIsShown || World2RegionIsShown) && NoanzaIsShown &&
-            <WrapItem>
-          <Button w='100px' h='110px' pb={5} onClick={handleNoanzaNoClick} style={{ backgroundColor: "#2d1b59"}}>
-       <VStack> 
+
+   {(DCIsShown || World2RegionIsShown) && NoanzaIsShown &&
+           <WrapItem>
+            <Button w='315px' h='110px' pb={5} onClick={handleNoanzaNoClick} style={{ backgroundColor: "#2d1b59"}}>
+      <HStack> 
        <Image
+       ml='-15px'
         mt='12px'
         align='center' 
-        boxSize='3rem'
-                src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png/'
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png/'
         mr='5px'
-      /> <Text fontSize='sm' align='center'>Noanza</Text>
+      /> 
+      <VStack>
+  <Text fontSize='md' mt='15px' align='center'><b>Noanza</b></Text>
+  <Text fontSize='sm' align='center'>+0 Atk / +14 Def / +6 Luck </Text>
       </VStack>
-            </Button>
-            </WrapItem>}
+      </HStack>
+      </Button>
+      </WrapItem>}
+
+
 {(FloatingCityIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !LodoIsShown &&
             <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleLodoClick} style={{ backgroundColor: "#2D3748" }}>
-       <VStack> 
+            <Button w='315px' h='110px' pb={5} onClick={handleLodoClick} style={{ backgroundColor: "#2D3748" }}>
+    <HStack>
        <Image
         mt='12px'
         align='center' 
-        boxSize='3rem'
-                src='https://static.wikia.nocookie.net/4thewords/images/e/e6/Lodo.png/'
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e6/Lodo.png/'
         mr='5px'
-      /> <Text fontSize='sm' align='center'>Lodo</Text>
+      /> 
+      <VStack>
+      <Text fontSize='md' align='center'><b>Lodo</b></Text>
+      <Text fontSize='sm' align='center'>+12 Atk / +2 Def / +0 Luck </Text>
       </VStack>
+      </HStack>
             </Button>
             </WrapItem>}
+
 {(FloatingCityIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && LodoIsShown &&
             <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleLodoNoClick} style={{ backgroundColor: "#2d1b59" }}>
-       <VStack> 
+            <Button w='315px' h='110px' pb={5} onClick={handleLodoNoClick} style={{ backgroundColor: "#2d1b59" }}>
+       <HStack> 
        <Image
         mt='12px'
         align='center' 
-        boxSize='3rem'
-                src='https://static.wikia.nocookie.net/4thewords/images/e/e6/Lodo.png/'
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e6/Lodo.png/'
         mr='5px'
-      /> <Text fontSize='sm' align='center'>Lodo</Text>
+      /> 
+      <VStack>
+      <Text fontSize='md' align='center'><b>Lodo</b></Text>
+      <Text fontSize='sm' align='center'>+12 Atk / +2 Def / +0 Luck </Text>
       </VStack>
+      </HStack>
             </Button>
             </WrapItem>}
+
 {(ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !AzadiIsShown &&
             <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleAzadiClick} style={{ backgroundColor: "#2D3748" }}>
-       <VStack> 
+            <Button w='315px' h='110px' pb={5} onClick={handleAzadiClick} style={{ backgroundColor: "#2D3748" }}>
+    <HStack>
        <Image
         mt='12px'
         align='center' 
-        boxSize='3rem'
-                src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png/'
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png/'
         mr='5px'
-      /> <Text fontSize='sm' align='center'>Azadi</Text>
+      /> 
+      <VStack>
+      <Text fontSize='md' align='center'><b>Azadi</b></Text>
+      <Text fontSize='sm' align='center'>+5 Atk / +0 Def / +10 Luck </Text>
       </VStack>
+      </HStack>
             </Button>
-            </WrapItem>
-}
+            </WrapItem>}
+
 {(ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && AzadiIsShown &&
             <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleAzadiNoClick} style={{ backgroundColor: "#2d1b59"}}>
-       <VStack> 
+            <Button w='315px' h='110px' pb={5} onClick={handleAzadiNoClick} style={{ backgroundColor: "#2d1b59" }}>
+       <HStack> 
        <Image
         mt='12px'
         align='center' 
-        boxSize='3rem'
-                src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png/'
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png/'
         mr='5px'
-      /> <Text fontSize='sm' align='center'>Azadi</Text>
+      /> 
+      <VStack>
+      <Text fontSize='md' align='center'><b>Azadi</b></Text>
+      <Text fontSize='sm' align='center'>+5 Atk / +0 Def / +10 Luck </Text>
       </VStack>
+      </HStack>
             </Button>
-            </WrapItem>
-}
+            </WrapItem>}
+
 {(MamaTreeIsShown || ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !SuwoIsShown &&
             <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleSuwoClick} style={{ backgroundColor: "#2D3748" }}>
-       <VStack> 
+            <Button w='315px' h='110px' pb={5} onClick={handleSuwoClick} style={{ backgroundColor: "#2D3748" }}>
+    <HStack>
        <Image
         mt='12px'
         align='center' 
-        boxSize='3rem'
-                src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
         mr='5px'
-      /> <Text fontSize='sm' align='center'>Suwo</Text>
+      /> 
+      <VStack>
+      <Text fontSize='md' align='center'><b>Suwo</b></Text>
+      <Text fontSize='sm' align='center'>+3 Atk / +7 Def / +2 Luck </Text>
       </VStack>
+      </HStack>
             </Button>
-            </WrapItem>
-          }
+            </WrapItem>}
+
 {(MamaTreeIsShown || ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && SuwoIsShown &&
             <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleSuwoNoClick} style={{ backgroundColor: "#2d1b59" }}>
-       <VStack> 
+            <Button w='315px' h='110px' pb={5} onClick={handleSuwoNoClick} style={{ backgroundColor: "#2d1b59" }}>
+       <HStack> 
        <Image
         mt='12px'
         align='center' 
-        boxSize='3rem'
-                src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
         mr='5px'
-      /> <Text fontSize='sm' align='center'>Suwo</Text>
+      /> 
+      <VStack>
+      <Text fontSize='md' align='center'><b>Suwo</b></Text>
+      <Text fontSize='sm' align='center'>+3 Atk / +7 Def / +2 Luck </Text>
       </VStack>
+      </HStack>
             </Button>
-            </WrapItem>
-          }
+            </WrapItem>}
       </Wrap>
 {DragonLairIsShown &&
           <Text fontSize='md' mt='25px' mb='15px'><b>Dragon Companions:</b></Text>
@@ -8114,122 +8153,157 @@ mr='5px'
 
 {AurilisIsShown &&
                 <Wrap>
-              {!AlderbamIsShown &&
-                <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleAlderbamClick} style={{ backgroundColor: "#2D3748"}}>
-       <VStack> 
+          {!AlderbamIsShown &&
+            <WrapItem>
+            <Button w='315px' h='110px' pb={5} onClick={handleAlderbamClick} style={{ backgroundColor: "#2D3748" }}>
+    <HStack>
        <Image
         mt='12px'
         align='center' 
-        boxSize='3rem'
-                src='https://static.wikia.nocookie.net/4thewords/images/9/95/Alderbam.png/'
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/95/Alderbam.png/'
         mr='5px'
-      /> <Text fontSize='sm' align='center'>Alderbam</Text>
+      /> 
+      <VStack>
+      <Text fontSize='md' align='center'><b>Alderbam</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk / +0 Def / +12 Luck </Text>
       </VStack>
+      </HStack>
             </Button>
             </WrapItem>}
+
             {AlderbamIsShown &&
             <WrapItem>
-            <Button w='100px' h='110px' pb={5} onClick={handleAlderbamNoClick} style={{ backgroundColor: "#2d1b59" }}>
-       <VStack> 
+            <Button w='315px' h='110px' pb={5} onClick={handleAlderbamNoClick} style={{ backgroundColor: "#2d1b59" }}>
+       <HStack> 
        <Image
         mt='12px'
         align='center' 
-        boxSize='3rem'
-                src='https://static.wikia.nocookie.net/4thewords/images/9/95/Alderbam.png/'
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/95/Alderbam.png/'
         mr='5px'
-      /> <Text fontSize='sm' align='center'>Alderbam</Text>
+      /> 
+      <VStack>
+      <Text fontSize='md' align='center'><b>Alderbam</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk / +0 Def / +12 Luck </Text>
       </VStack>
+      </HStack>
             </Button>
-            </WrapItem>
-            }
-{!ChysisIsShown &&
-  <WrapItem>
-<Button w='100px' h='110px' pb={5} onClick={handleChysisClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack> 
-<Image
-mt='12px'
-align='center' 
-boxSize='3rem'
-src='https://static.wikia.nocookie.net/4thewords/images/9/97/Chysis.png/'
-mr='5px'
-/> <Text fontSize='sm' align='center'>Chysis</Text>
-</VStack>
-</Button>
-</WrapItem>}
-{ChysisIsShown &&
-<WrapItem>
-<Button w='100px' h='110px' pb={5} onClick={handleChysisNoClick} style={{ backgroundColor: "#2d1b59" }}>
-<VStack> 
-<Image
-mt='12px'
-align='center' 
-boxSize='3rem'
-src='https://static.wikia.nocookie.net/4thewords/images/9/97/Chysis.png/'
-mr='5px'
-/> <Text fontSize='sm' align='center'>Chysis</Text>
-</VStack>
-</Button>
-</WrapItem>
-}
-{!MundIsShown &&
-  <WrapItem>
-<Button w='100px' h='110px' pb={5} onClick={handleMundClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack> 
-<Image
-mt='12px'
-align='center' 
-boxSize='3rem'
-src='https://static.wikia.nocookie.net/4thewords/images/e/e3/Mund.png/'
-mr='5px'
-/> <Text fontSize='sm' align='center'>Mund</Text>
-</VStack>
-</Button>
-</WrapItem>}
-{MundIsShown &&
-<WrapItem>
-<Button w='100px' h='110px' pb={5} onClick={handleMundNoClick} style={{ backgroundColor: "#2d1b59" }}>
-<VStack> 
-<Image
-mt='12px'
-align='center' 
-boxSize='3rem'
-src='https://static.wikia.nocookie.net/4thewords/images/e/e3/Mund.png/'
-mr='5px'
-/> <Text fontSize='sm' align='center'>Mund</Text>
-</VStack>
-</Button>
-</WrapItem>
-}
-{!WhodiniIsShown &&
-  <WrapItem>
-<Button w='100px' h='110px' pb={5} onClick={handleWhodiniClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack> 
-<Image
-mt='12px'
-align='center' 
-boxSize='3rem'
-src='https://static.wikia.nocookie.net/4thewords/images/d/d5/Whodini.png/'
-mr='5px'
-/> <Text fontSize='sm' align='center'>Whodini</Text>
-</VStack>
-</Button>
-</WrapItem>}
-{WhodiniIsShown &&
-<WrapItem>
-<Button w='100px' h='110px' pb={5} onClick={handleWhodiniNoClick} style={{ backgroundColor: "#2d1b59" }}>
-<VStack> 
-<Image
-mt='12px'
-align='center' 
-boxSize='3rem'
-src='https://static.wikia.nocookie.net/4thewords/images/d/d5/Whodini.png/'
-mr='5px'
-/> <Text fontSize='sm' align='center'>Whodini</Text>
-</VStack>
-</Button>
-</WrapItem>
-}
+            </WrapItem>}
+          {!ChysisIsShown &&
+            <WrapItem>
+            <Button w='315px' h='110px' pb={5} onClick={handleChysisClick} style={{ backgroundColor: "#2D3748" }}>
+    <HStack>
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/97/Chysis.png/'
+        mr='5px'
+      /> 
+      <VStack>
+      <Text fontSize='md' align='center'><b>Chysis</b></Text>
+      <Text fontSize='sm' align='center'>+12 Atk / +0 Def / +0 Luck </Text>
+      </VStack>
+      </HStack>
+            </Button>
+            </WrapItem>}
+
+            {ChysisIsShown &&
+            <WrapItem>
+            <Button w='315px' h='110px' pb={5} onClick={handleChysisNoClick} style={{ backgroundColor: "#2d1b59" }}>
+       <HStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/97/Chysis.png/'
+        mr='5px'
+      /> 
+      <VStack>
+      <Text fontSize='md' align='center'><b>Chysis</b></Text>
+      <Text fontSize='sm' align='center'>+12 Atk / +0 Def / +0 Luck </Text>
+      </VStack>
+      </HStack>
+            </Button>
+            </WrapItem>}                  
+
+    {!MundIsShown &&
+            <WrapItem>
+            <Button w='315px' h='110px' pb={5} onClick={handleMundClick} style={{ backgroundColor: "#2D3748" }}>
+    <HStack>
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e3/Mund.png/'
+        mr='5px'
+      /> 
+      <VStack>
+      <Text fontSize='md' align='center'><b>Mund</b></Text>
+      <Text fontSize='sm' align='center'>+4 Atk / +4 Def / +4 Luck </Text>
+      </VStack>
+      </HStack>
+            </Button>
+            </WrapItem>}
+
+            {MundIsShown &&
+            <WrapItem>
+            <Button w='315px' h='110px' pb={5} onClick={handleMundNoClick} style={{ backgroundColor: "#2d1b59" }}>
+       <HStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e3/Mund.png/'
+        mr='5px'
+      /> 
+      <VStack>
+      <Text fontSize='md' align='center'><b>Mund</b></Text>
+      <Text fontSize='sm' align='center'>+4 Atk / +4 Def / +4 Luck </Text>
+      </VStack>
+      </HStack>
+            </Button>
+            </WrapItem>}
+
+     {!WhodiniIsShown &&
+            <WrapItem>
+            <Button w='315px' h='110px' pb={5} onClick={handleWhodiniClick} style={{ backgroundColor: "#2D3748" }}>
+    <HStack>
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/d5/Whodini.png/'
+        mr='5px'
+      /> 
+      <VStack>
+      <Text fontSize='md' align='center'><b>Whodini</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk / +12 Def / +0 Luck </Text>
+      </VStack>
+      </HStack>
+            </Button>
+            </WrapItem>}
+
+            {WhodiniIsShown &&
+            <WrapItem>
+            <Button w='315px' h='110px' pb={5} onClick={handleWhodiniNoClick} style={{ backgroundColor: "#2d1b59" }}>
+       <HStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/d5/Whodini.png/'
+        mr='5px'
+      /> 
+      <VStack>
+      <Text fontSize='md' align='center'><b>Whodini</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk / +12 Def / +0 Luck </Text>
+      </VStack>
+      </HStack>
+            </Button>
+            </WrapItem>}
+
             </Wrap>}
 
 
