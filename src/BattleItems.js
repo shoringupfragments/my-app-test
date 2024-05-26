@@ -6241,7 +6241,7 @@ const TopAttackCompanion12 = () => {
 
   return (
       <Box textAlign="center" fontSize="xl">
-        <Grid minH="100vh">
+        <Grid minH="100vh" minW='100vh'>
         <Container align='center'>
             <Heading mt='-50px'>Battle Items Planner</Heading>
             <Text mt='15px'>This page shows the best builds for each battle stat, specific to your progress in the game. You can see builds possible for your region of the game or specific to the battle items you currently have.</Text>
