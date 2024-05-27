@@ -16,6 +16,7 @@ import {
   Container,
   Divider,
   Image,
+  Show,
   Tab,
   Tabs,
   TabList,
@@ -27,7 +28,7 @@ import {
   WrapItem,
   AbsoluteCenter,
 } from '@chakra-ui/react';
-import { FaBullseye, FaHourglassEnd } from 'react-icons/fa';
+
 
 function App() {
 
@@ -5862,21 +5863,24 @@ const totalCompanionTopAtk = Math.max (SuwoAtk, AzadiAtk, LodoAtk, NoanzaAtk,
   AtkKaiszarAtk, AtkLoksiAtk, AtkThalamarisAtk, AtkValkosAtk, AtkEenrisAtk, 
   AtkRairaselAtk, DefKaiszarAtk, DefLoksiAtk, DefThalamarisAtk, DefValkosAtk, 
   DefEenrisAtk, DefRairaselAtk, LuckKaiszarAtk, LuckLoksiAtk, LuckThalamarisAtk, 
-  LuckValkosAtk, LuckEenrisAtk, LuckRairaselAtk, AlderbamAtk, ChysisAtk, MundAtk, WhodiniAtk)
+  LuckValkosAtk, LuckEenrisAtk, LuckRairaselAtk, 
+  AlderbamAtk, ChysisAtk, MundAtk, WhodiniAtk)
 
 const totalCompanionTopDef = Math.max (SuwoDef, AzadiDef, LodoDef, NoanzaDef, 
   KaiszarDef, LoksiDef, ThalamarisDef, ValkosDef, EenrisDef, RairaselDef, 
   AtkKaiszarDef, AtkLoksiDef, AtkThalamarisDef, AtkValkosDef, AtkEenrisDef, 
   AtkRairaselDef, DefKaiszarDef, DefLoksiDef, DefThalamarisDef, DefValkosDef, 
   DefEenrisDef, DefRairaselDef, LuckKaiszarDef, LuckLoksiDef, LuckThalamarisDef, 
-  LuckValkosDef, LuckEenrisDef, LuckRairaselDef, AlderbamDef, ChysisDef, MundDef, WhodiniDef)
+  LuckValkosDef, LuckEenrisDef, LuckRairaselDef, 
+  AlderbamDef, ChysisDef, MundDef, WhodiniDef)
 
 const totalCompanionTopLuck = Math.max (SuwoLuck, AzadiLuck, LodoLuck, NoanzaLuck, 
   KaiszarLuck, LoksiLuck, ThalamarisLuck, ValkosLuck, EenrisLuck, RairaselLuck, 
   AtkKaiszarLuck, AtkLoksiLuck, AtkThalamarisLuck, AtkValkosLuck, AtkEenrisLuck, 
   AtkRairaselLuck, DefKaiszarLuck, DefLoksiLuck, DefThalamarisLuck, DefValkosLuck, 
   DefEenrisLuck, DefRairaselLuck, LuckKaiszarLuck, LuckLoksiLuck, LuckThalamarisLuck, 
-  LuckValkosLuck, LuckEenrisLuck, LuckRairaselLuck, AlderbamLuck, ChysisLuck, MundLuck, WhodiniLuck)
+  LuckValkosLuck, LuckEenrisLuck, LuckRairaselLuck, 
+  AlderbamLuck, ChysisLuck, MundLuck, WhodiniLuck)
 
   //Weapon1 battle items//
 
@@ -6555,6 +6559,12 @@ const totalBestDefChest = Math.max (NivaliBreastplateDef)
 
 const totalNivaliDef = Math.max (MountainMaceDef + NivaliBreastplateDef, 0)
 
+//totals//
+
+const totalAtk = Math.max (totalCompanionTopAtk)
+const totalDef = Math.max (totalCompanionTopDef)
+const totalLuck = Math.max (totalCompanionTopLuck)
+
   //region clicks//
 
 const [ForestRegionIsShown, setForestRegionIsShown] = useState(false)
@@ -6707,26 +6717,7 @@ setAurilisIsShown (current => false);
 setAurilisActive (current => false);
 setElderLibraryIsShown (current => false);
 setElderLibraryActive (current => false);
-setSuwoIsShown (current => false);
-setSuwoActive (current => false);
-setSuwoAtk (value => 0);
-setSuwoDef (value => 0);
-setSuwoLuck (value => 0);
-setAzadiIsShown (current => false);
-setAzadiActive (current => false);
-setAzadiAtk (value => 0);
-setAzadiDef (value => 0);
-setAzadiLuck (value => 0);
-setLodoIsShown (current => false);
-setLodoActive (current => false);
-setLodoAtk (value => 0);
-setLodoDef (value => 0);
-setLodoLuck (value => 0);
-setNoanzaIsShown (current => false);
-setNoanzaActive (current => false);
-setNoanzaAtk (value => 0);
-setNoanzaDef (value => 0);
-setNoanzaLuck (value => 0);
+
 };
 
 const handleDesertRegionClick = event => {
@@ -6790,26 +6781,6 @@ setAurilisIsShown (current => false);
 setAurilisActive (current => false);
 setElderLibraryIsShown (current => false);
 setElderLibraryActive (current => false);
-setSuwoIsShown (current => true);
-setSuwoActive (current => true);
-setSuwoAtk (value => 3);
-setSuwoDef (value => 7);
-setSuwoLuck (value => 2);
-setAzadiIsShown (current => true);
-setAzadiActive (current => true);
-setAzadiAtk (value => 5);
-setAzadiDef (value => 0);
-setAzadiLuck (value => 10);
-setLodoIsShown (current => false);
-setLodoActive (current => false);
-setLodoAtk (value => 0);
-setLodoDef (value => 0);
-setLodoLuck (value => 0);
-setNoanzaIsShown (current => false);
-setNoanzaActive (current => false);
-setNoanzaAtk (value => 0);
-setNoanzaDef (value => 0);
-setNoanzaLuck (value => 0);
 };
 
 const handleWaterRegionClick = event => {
@@ -6871,26 +6842,6 @@ setAurilisIsShown (current => false);
 setAurilisActive (current => false);
 setElderLibraryIsShown (current => false);
 setElderLibraryActive (current => false);
-setSuwoIsShown (current => true);
-setSuwoActive (current => true);
-setSuwoAtk (value => 3);
-setSuwoDef (value => 7);
-setSuwoLuck (value => 2);
-setAzadiIsShown (current => true);
-setAzadiActive (current => true);
-setAzadiAtk (value => 5);
-setAzadiDef (value => 0);
-setAzadiLuck (value => 10);
-setLodoIsShown (current => true);
-setLodoActive (current => true);
-setLodoAtk (value => 12);
-setLodoDef (value => 2);
-setLodoLuck (value => 0);
-setNoanzaIsShown (current => false);
-setNoanzaActive (current => false);
-setNoanzaAtk (value => 0);
-setNoanzaDef (value => 0);
-setNoanzaLuck (value => 0);
 };
 
 const handleDustRegionClick = event => {
@@ -6950,26 +6901,6 @@ setAurilisIsShown (current => false);
 setAurilisActive (current => false);
 setElderLibraryIsShown (current => false);
 setElderLibraryActive (current => false);
-setSuwoIsShown (current => true);
-setSuwoActive (current => true);
-setSuwoAtk (value => 3);
-setSuwoDef (value => 7);
-setSuwoLuck (value => 2);
-setAzadiIsShown (current => true);
-setAzadiActive (current => true);
-setAzadiAtk (value => 5);
-setAzadiDef (value => 0);
-setAzadiLuck (value => 10);
-setLodoIsShown (current => true);
-setLodoActive (current => true);
-setLodoAtk (value => 12);
-setLodoDef (value => 2);
-setLodoLuck (value => 0);
-setNoanzaIsShown (current => false);
-setNoanzaActive (current => false);
-setNoanzaAtk (value => 0);
-setNoanzaDef (value => 0);
-setNoanzaLuck (value => 0);
 };
 
 const handleLightRegionClick = event => {
@@ -7027,26 +6958,6 @@ setAurilisIsShown (current => false);
 setAurilisActive (current => false);
 setElderLibraryIsShown (current => false);
 setElderLibraryActive (current => false);
-setSuwoIsShown (current => true);
-setSuwoActive (current => true);
-setSuwoAtk (value => 3);
-setSuwoDef (value => 7);
-setSuwoLuck (value => 2);
-setAzadiIsShown (current => true);
-setAzadiActive (current => true);
-setAzadiAtk (value => 5);
-setAzadiDef (value => 0);
-setAzadiLuck (value => 10);
-setLodoIsShown (current => true);
-setLodoActive (current => true);
-setLodoAtk (value => 12);
-setLodoDef (value => 2);
-setLodoLuck (value => 0);
-setNoanzaIsShown (current => false);
-setNoanzaActive (current => false);
-setNoanzaAtk (value => 0);
-setNoanzaDef (value => 0);
-setNoanzaLuck (value => 0);
 };
 
 const handleWorld2RegionClick = event => {
@@ -7102,26 +7013,6 @@ setAurilisIsShown (current => false);
 setAurilisActive (current => false);
 setElderLibraryIsShown (current => false);
 setElderLibraryActive (current => false);
-setSuwoIsShown (current => true);
-setSuwoActive (current => true);
-setSuwoAtk (value => 3);
-setSuwoDef (value => 7);
-setSuwoLuck (value => 2);
-setAzadiIsShown (current => true);
-setAzadiActive (current => true);
-setAzadiAtk (value => 5);
-setAzadiDef (value => 0);
-setAzadiLuck (value => 10);
-setLodoIsShown (current => true);
-setLodoActive (current => true);
-setLodoAtk (value => 12);
-setLodoDef (value => 2);
-setLodoLuck (value => 0);
-setNoanzaIsShown (current => true);
-setNoanzaActive (current => true);
-setNoanzaAtk (value => 0);
-setNoanzaDef (value => 14);
-setNoanzaLuck (value => 6);
 };
 
 // ^^^ change the nivali one when new world 2 region releases//
@@ -7528,6 +7419,48 @@ const TopAttackCompanion12 = () => {
   <Text>Kaiszar, Defense Kaiszar, Luck Kaiszar, Chysis, Lodo</Text>
   )
 };
+
+const GreyAtk = () => {
+  if (totalCompanionTopAtk === 0)
+	return(
+<Image boxSize='1.5rem' align='center' src='https://i.imgur.com/hbcvJHt.png' />
+  )
+}
+
+const ColorAtk = () => {
+  if (totalCompanionTopAtk > 0)
+	return(
+<Image boxSize='1.5rem' align='center' src='https://i.imgur.com/cPrPVxc.png' />
+  )
+}
+
+const GreyDef = () => {
+  if (totalCompanionTopDef === 0)
+	return(
+<Image boxSize='1.5rem' align='center' src='https://i.imgur.com/6Pw8bpA.png' />
+  )
+}
+
+const ColorDef = () => {
+  if (totalCompanionTopDef > 0)
+	return(
+<Image boxSize='1.5rem' align='center' src='https://i.imgur.com/eXyDuR9.png' />
+  )
+}
+
+const GreyLuck = () => {
+  if (totalCompanionTopLuck === 0)
+	return(
+<Image boxSize='1.5rem' align='center' src='https://i.imgur.com/SsdiAg9.png' />
+  )
+}
+
+const ColorLuck = () => {
+  if (totalCompanionTopLuck > 0)
+	return(
+<Image boxSize='1.5rem' align='center' src='https://i.imgur.com/9e2WZyS.png' />
+  )
+}
 
 
   return (
@@ -8152,64 +8085,12 @@ const TopAttackCompanion12 = () => {
   </AccordionItem>
      </Accordion>
 
-<Wrap mt='35px' justify='center'>
+<Wrap mt='45px' justify='center'>
+
   <WrapItem>
-    <Box width='380px' height='200px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
+    <Box width='190px' height='220px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
       <VStack>
-        <Text fontSiz='md' mt='5px'>
-          <b>Current Stats</b>
-        </Text>
-        <HStack>
-          <Text><b>Attack</b></Text>
-        <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/hbcvJHt.png' />
-          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
-        </HStack>
-      </VStack>
-    </Box>
-  </WrapItem>
-<WrapItem>
-    <Box width='190px' height='200px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
-      <VStack>
-        <Text fontSiz='md' mt='5px'>
-          <b>Companion</b>
-        </Text>
-        <Image
-        style={{position:'absolute'}}
-        mt='55px'
-        align='center' 
-        boxSize='5rem'
-        src='https://i.imgur.com/gR84XcP.png'
-      />
-      <Text>
-        <HStack
-        style={{position:'absolute'}}
-        mt='115px'
-        ml='-80px'
-        >
-        <span>
-          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
-          <span>
-          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
-        </span>
-        <span>
-          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
-          <span>
-          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
-        </span>
-        <span>
-          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
-          <span>
-          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
-        </span>
-        </HStack>
-      </Text>
-      </VStack>
-    </Box>
-  </WrapItem>
-  <WrapItem>
-    <Box width='190px' height='200px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
-      <VStack>
-        <Text fontSiz='md' mt='5px'>
+        <Text fontSiz='md' mt='8px'>
           <b>Weapon 1</b>
         </Text>
         <Image
@@ -8219,11 +8100,14 @@ const TopAttackCompanion12 = () => {
         boxSize='5rem'
         src='https://i.imgur.com/5FfZ6Yl.png'
       />
-      <Text>
+        <Text        
+        style={{position:'absolute'}}
+        mt='145px'
+        fontSize='md'>
+          No item</Text>
         <HStack
         style={{position:'absolute'}}
-        mt='115px'
-        ml='-80px'
+        mt='175px'
         >
         <span>
           <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
@@ -8241,15 +8125,13 @@ const TopAttackCompanion12 = () => {
           <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
         </span>
         </HStack>
-      </Text>
       </VStack>
     </Box>
   </WrapItem>
-
   <WrapItem>
-    <Box width='190px' height='200px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
+    <Box width='190px' height='220px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
       <VStack>
-        <Text fontSiz='md' mt='5px'>
+        <Text fontSiz='md' mt='8px'>
           <b>Weapon 2</b>
         </Text>
         <Image
@@ -8259,11 +8141,14 @@ const TopAttackCompanion12 = () => {
         boxSize='5rem'
         src='https://i.imgur.com/E5GuYRW.png'
       />
-      <Text>
+        <Text        
+        style={{position:'absolute'}}
+        mt='145px'
+        fontSize='md'>
+          No item</Text>
         <HStack
         style={{position:'absolute'}}
-        mt='115px'
-        ml='-80px'
+        mt='175px'
         >
         <span>
           <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
@@ -8281,15 +8166,14 @@ const TopAttackCompanion12 = () => {
           <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
         </span>
         </HStack>
-      </Text>
       </VStack>
     </Box>
   </WrapItem>
 
   <WrapItem>
-    <Box width='190px' height='200px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
+    <Box width='190px' height='220px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
       <VStack>
-        <Text fontSiz='md' mt='5px'>
+        <Text fontSiz='md' mt='8px'>
           <b>Accessory</b>
         </Text>
         <Image
@@ -8299,11 +8183,14 @@ const TopAttackCompanion12 = () => {
         boxSize='5rem'
         src='https://i.imgur.com/6J2IXDf.png'
       />
-      <Text>
+        <Text        
+        style={{position:'absolute'}}
+        mt='145px'
+        fontSize='md'>
+          No item</Text>
         <HStack
         style={{position:'absolute'}}
-        mt='115px'
-        ml='-80px'
+        mt='175px'
         >
         <span>
           <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
@@ -8321,15 +8208,14 @@ const TopAttackCompanion12 = () => {
           <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
         </span>
         </HStack>
-      </Text>
       </VStack>
     </Box>
   </WrapItem>
 
   <WrapItem>
-    <Box width='190px' height='200px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
+    <Box width='190px' height='220px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
       <VStack>
-        <Text fontSiz='md' mt='5px'>
+        <Text fontSiz='md' mt='8px'>
           <b>Head</b>
         </Text>
         <Image
@@ -8339,11 +8225,14 @@ const TopAttackCompanion12 = () => {
         boxSize='5rem'
         src='https://i.imgur.com/T9o4YqE.png'
       />
-      <Text>
+        <Text        
+        style={{position:'absolute'}}
+        mt='145px'
+        fontSize='md'>
+          No item</Text>
         <HStack
         style={{position:'absolute'}}
-        mt='115px'
-        ml='-80px'
+        mt='175px'
         >
         <span>
           <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
@@ -8361,15 +8250,14 @@ const TopAttackCompanion12 = () => {
           <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
         </span>
         </HStack>
-      </Text>
       </VStack>
     </Box>
   </WrapItem>
 
   <WrapItem>
-    <Box width='190px' height='200px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
+    <Box width='190px' height='220px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
       <VStack>
-        <Text fontSiz='md' mt='5px'>
+        <Text fontSiz='md' mt='8px'>
           <b>Chest</b>
         </Text>
         <Image
@@ -8379,11 +8267,14 @@ const TopAttackCompanion12 = () => {
         boxSize='5rem'
         src='https://i.imgur.com/yQLgdcB.png'
       />
-      <Text>
+        <Text        
+        style={{position:'absolute'}}
+        mt='145px'
+        fontSize='md'>
+          No item</Text>
         <HStack
         style={{position:'absolute'}}
-        mt='115px'
-        ml='-80px'
+        mt='175px'
         >
         <span>
           <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
@@ -8401,14 +8292,14 @@ const TopAttackCompanion12 = () => {
           <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
         </span>
         </HStack>
-      </Text>
       </VStack>
     </Box>
   </WrapItem>
+
   <WrapItem>
-    <Box width='190px' height='200px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
+    <Box width='190px' height='220px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
       <VStack>
-        <Text fontSiz='md' mt='5px'>
+        <Text fontSiz='md' mt='8px'>
           <b>Feet</b>
         </Text>
         <Image
@@ -8418,11 +8309,14 @@ const TopAttackCompanion12 = () => {
         boxSize='5rem'
         src='https://i.imgur.com/qMNT5k8.png'
       />
-      <Text>
+        <Text        
+        style={{position:'absolute'}}
+        mt='145px'
+        fontSize='md'>
+          No item</Text>
         <HStack
         style={{position:'absolute'}}
-        mt='115px'
-        ml='-80px'
+        mt='175px'
         >
         <span>
           <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
@@ -8440,7 +8334,177 @@ const TopAttackCompanion12 = () => {
           <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
         </span>
         </HStack>
-      </Text>
+      </VStack>
+    </Box>
+  </WrapItem>
+  </Wrap>
+  <Wrap pt='8px' justify='center'>
+  <WrapItem>
+    <Box width='190px' height='220px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
+      <VStack>
+        <Text fontSiz='md' mt='8px'>
+          <b>Companion</b>
+        </Text>
+        {(!SuwoIsShown && !AzadiIsShown && !LodoIsShown && !NoanzaIsShown && 
+  !KaiszarIsShown && !LoksiIsShown && !ThalamarisIsShown && !ValkosIsShown && !EenrisIsShown && !RairaselIsShown && 
+  !AtkKaiszarIsShown && !AtkLoksiIsShown && !AtkThalamarisIsShown && !AtkValkosIsShown && !AtkEenrisIsShown && !AtkRairaselIsShown && 
+  !DefKaiszarIsShown && !DefLoksiIsShown && !DefThalamarisIsShown && !DefValkosIsShown && !DefEenrisIsShown && !DefRairaselIsShown && 
+  !LuckKaiszarIsShown && !LuckLoksiIsShown && !LuckThalamarisIsShown && !LuckValkosIsShown && !LuckEenrisIsShown && !LuckRairaselIsShown 
+  && !AlderbamIsShown && !ChysisIsShown && !MundIsShown && !WhodiniIsShown) &&        
+        <Image
+        style={{position:'absolute'}}
+        mt='55px'
+        align='center' 
+        boxSize='5rem'
+        src='https://i.imgur.com/gR84XcP.png'
+      />}
+    {(!SuwoIsShown && !AzadiIsShown && !LodoIsShown && !NoanzaIsShown && 
+  !KaiszarIsShown && !LoksiIsShown && !ThalamarisIsShown && !ValkosIsShown && !EenrisIsShown && !RairaselIsShown && 
+  !AtkKaiszarIsShown && !AtkLoksiIsShown && !AtkThalamarisIsShown && !AtkValkosIsShown && !AtkEenrisIsShown && !AtkRairaselIsShown && 
+  !DefKaiszarIsShown && !DefLoksiIsShown && !DefThalamarisIsShown && !DefValkosIsShown && !DefEenrisIsShown && !DefRairaselIsShown && 
+  !LuckKaiszarIsShown && !LuckLoksiIsShown && !LuckThalamarisIsShown && !LuckValkosIsShown && !LuckEenrisIsShown && !LuckRairaselIsShown 
+  && !AlderbamIsShown && !ChysisIsShown && !MundIsShown && !WhodiniIsShown) &&        
+        <Text        
+        style={{position:'absolute'}}
+        mt='145px'
+        fontSize='md'>
+          No item</Text>
+          }
+        {NoanzaIsShown &&        
+        <Image
+        style={{position:'absolute'}}
+        mt='55px'
+        align='center' 
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png/'
+      />}
+        {NoanzaIsShown &&        
+        <Text        
+        style={{position:'absolute'}}
+        mt='145px'
+        fontSize='md'>
+          Noanza</Text>
+          }
+        {LodoIsShown &&        
+        <Image
+        style={{position:'absolute'}}
+        mt='55px'
+        align='center' 
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/e6/Lodo.png/'
+      />}
+        {LodoIsShown &&        
+        <Text        
+        style={{position:'absolute'}}
+        mt='145px'
+        fontSize='md'>
+          Lodo</Text>
+          }
+        {AzadiIsShown &&        
+        <Image
+        style={{position:'absolute'}}
+        mt='55px'
+        align='center' 
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png/'
+      />}
+        {AzadiIsShown &&        
+        <Text        
+        style={{position:'absolute'}}
+        mt='145px'
+        fontSize='md'>
+          Azadi</Text>
+          }
+        {SuwoIsShown &&        
+        <Image
+        style={{position:'absolute'}}
+        mt='55px'
+        align='center' 
+        boxSize='5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
+      />}
+        {SuwoIsShown &&        
+        <Text        
+        style={{position:'absolute'}}
+        mt='145px'
+        fontSize='md'>
+          Suwo</Text>
+          }
+
+        <HStack
+        style={{position:'absolute'}}
+        mt='175px'
+        >
+        <span>
+          <GreyAtk />
+          <ColorAtk />
+          </span>
+          <span>
+          <Text ml='-6px' mr='3px' fontSize='md'>+{totalCompanionTopAtk}</Text>
+        </span>
+        <span>
+        <GreyDef />
+        <ColorDef />
+        </span>
+          <span>
+          <Text ml='-6px' mr='3px' fontSize='md'>+{totalCompanionTopDef}</Text>
+        </span>
+        <span>
+        <GreyLuck />
+        <ColorLuck />
+        </span>
+          <span>
+          <Text ml='-6px' mr='3px' fontSize='md'>+{totalCompanionTopLuck}</Text>
+        </span>
+        </HStack>
+      </VStack>
+
+    </Box>
+  </WrapItem>
+
+  <WrapItem>
+    <Box width='190px' height='220px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
+      <VStack>
+        <Text fontSiz='md' mt='8px'>
+          <b> Battle Stats</b>
+        </Text>
+        <HStack
+        mt='20px'
+        >
+        <span>
+          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/cPrPVxc.png' /></span>
+        <span>
+          <Text><b>Attack:</b></Text>
+        </span>
+          <span>
+          <Text ml='5px' mr='3px'>{totalAtk}</Text>
+        </span>
+        </HStack>
+        <HStack
+        mt='5px'
+        >
+        <span>
+          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/eXyDuR9.png' /></span>
+        <span>
+          <Text><b>Defense:</b></Text>
+        </span>
+          <span>
+          <Text ml='5px' mr='3px'>{totalDef}</Text>
+        </span>
+        </HStack>
+
+        <HStack
+        mt='5px'
+        >
+        <span>
+          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/9e2WZyS.png' /></span>
+        <span>
+          <Text><b>Luck:</b></Text>
+        </span>
+          <span>
+          <Text ml='5px' mr='3px'>{totalLuck}</Text>
+        </span>
+        </HStack>
       </VStack>
     </Box>
   </WrapItem>
@@ -8516,11 +8580,11 @@ const TopAttackCompanion12 = () => {
        <Image
         mt='12px'
         align='center' 
-        boxSize='5rem'
+        boxSize='4.5rem'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e6/Lodo.png/'
       /> 
       <Text mt='-8px' fontSize='md' align='center'><b>Lodo</b></Text>
-      <Text fontSize='sm' align='center'>+12 Atk<br />2 Def<br />0 Luck </Text>
+      <Text fontSize='sm' align='center'>+12 Atk<br />+2 Def<br />+0 Luck </Text>
       </VStack>
 
             </Button>
@@ -8533,11 +8597,11 @@ const TopAttackCompanion12 = () => {
        <Image
         mt='12px'
         align='center' 
-        boxSize='5rem'
+        boxSize='4.5rem'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e6/Lodo.png/'
       /> 
       <Text mt='-8px' fontSize='md' align='center'><b>Lodo</b></Text>
-      <Text fontSize='sm' align='center'>+12 Atk<br />2 Def<br />0 Luck </Text>
+      <Text fontSize='sm' align='center'>+12 Atk<br />+2 Def<br />+0 Luck </Text>
       </VStack>
 
             </Button>
@@ -8554,7 +8618,7 @@ const TopAttackCompanion12 = () => {
         src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png/'
       /> 
       <Text mt='-8px' fontSize='md' align='center'><b>Azadi</b></Text>
-      <Text fontSize='sm' align='center'>+5 Atk<br />0 Def<br />10 Luck </Text>
+      <Text fontSize='sm' align='center'>+5 Atk<br />+0 Def<br />+10 Luck </Text>
       </VStack>
 
             </Button>
@@ -8571,7 +8635,7 @@ const TopAttackCompanion12 = () => {
         src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png/'
       /> 
       <Text mt='-8px' fontSize='md' align='center'><b>Azadi</b></Text>
-      <Text fontSize='sm' align='center'>+5 Atk<br />0 Def<br />10 Luck </Text>
+      <Text fontSize='sm' align='center'>+5 Atk<br />+0 Def<br />+10 Luck </Text>
       </VStack>
 
             </Button>
@@ -8588,7 +8652,7 @@ const TopAttackCompanion12 = () => {
         src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
       /> 
       <Text mt='-8px' fontSize='md' align='center'><b>Suwo</b></Text>
-      <Text fontSize='sm' align='center'>+3 Atk<br />7 Def<br />2 Luck </Text>
+      <Text fontSize='sm' align='center'>+3 Atk<br />+7 Def<br />+2 Luck </Text>
       </VStack>
 
             </Button>
@@ -8605,7 +8669,7 @@ const TopAttackCompanion12 = () => {
         src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
       /> 
       <Text mt='-8px' fontSize='md' align='center'><b>Suwo</b></Text>
-      <Text fontSize='sm' align='center'>+3 Atk<br />7 Def<br />2 Luck </Text>
+      <Text fontSize='sm' align='center'>+3 Atk<br />+7 Def<br />+2 Luck </Text>
       </VStack>
 
             </Button>
@@ -8628,7 +8692,7 @@ const TopAttackCompanion12 = () => {
         src='https://static.wikia.nocookie.net/4thewords/images/f/fa/Kaiszar.png/'
       /> 
       <Text fontSize='md' mt='15px' align='center'><b>Kaiszar</b></Text>
-      <Text fontSize='sm' align='center'>+12 Atk<br />0 Def<br />0 Luck </Text>
+      <Text fontSize='sm' align='center'>+12 Atk<br />+0 Def<br />+0 Luck </Text>
       </VStack>
 
             </Button>
@@ -8646,7 +8710,7 @@ const TopAttackCompanion12 = () => {
                 src='https://static.wikia.nocookie.net/4thewords/images/f/fa/Kaiszar.png/'
       /> 
   <Text fontSize='md' mt='15px' align='center'><b>Kaiszar</b></Text>
-  <Text fontSize='sm' align='center'>+12 Atk<br />0 Def<br />0 Luck </Text>
+  <Text fontSize='sm' align='center'>+12 Atk<br />+0 Def<br />+0 Luck </Text>
   
       </VStack>
 }
@@ -8659,7 +8723,7 @@ const TopAttackCompanion12 = () => {
         src='https://i.imgur.com/gbuo4mt.png'
       /> 
   <Text fontSize='md' mt='15px' align='center'><b>Attack Kaiszar</b></Text>
-  <Text fontSize='sm' align='center'>+16 Atk<br />0 Def<br />0 Luck </Text>
+  <Text fontSize='sm' align='center'>+16 Atk<br />+0 Def<br />+0 Luck </Text>
 
   </VStack>
   }
@@ -8672,7 +8736,7 @@ const TopAttackCompanion12 = () => {
         src='https://i.imgur.com/LGazi9x.png'
       />     
   <Text fontSize='md' mt='15px' align='center'><b>Defense Kaiszar</b></Text>
-  <Text fontSize='sm' align='center'>+12 Atk<br />4 Def<br />0 Luck </Text>
+  <Text fontSize='sm' align='center'>+12 Atk<br />+4 Def<br />+0 Luck </Text>
   </VStack>
   }
          {!AtkKaiszarIsShown && !DefKaiszarIsShown && LuckKaiszarIsShown &&
@@ -8684,7 +8748,7 @@ const TopAttackCompanion12 = () => {
         src='https://i.imgur.com/gbpdG0f.png'
       /> 
   <Text fontSize='md' mt='15px' align='center'><b>Luck Kaiszar</b></Text>
-  <Text fontSize='sm' align='center'>+12 Atk<br />0 Def<br />4 Luck </Text>
+  <Text fontSize='sm' align='center'>+12 Atk<br />+0 Def<br />+4 Luck </Text>
   </VStack> 
   }
 
@@ -8788,7 +8852,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/7/75/Loksi.png'
 mr='5px'
 /> 
 <Text fontSize='md' mt='15px' align='center'><b>Loksi</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br />12 Def<br />0 Luck </Text>
+<Text fontSize='sm' align='center'>+0 Atk<br />+12 Def<br />+0 Luck </Text>
 </VStack>
    </Button>
    </WrapItem>}
@@ -8806,7 +8870,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/7/75/Loksi.png'
 mr='5px'
 /> 
   <Text fontSize='md' mt='15px' align='center'><b>Loksi</b></Text>
-  <Text fontSize='sm' align='center'>+0 Atk<br />12 Def<br />0 Luck </Text>
+  <Text fontSize='sm' align='center'>+0 Atk<br />+12 Def<br />+0 Luck </Text>
 </VStack>}
 {AtkLoksiIsShown && !DefLoksiIsShown && !LuckLoksiIsShown &&
 <VStack justify='center'>  
@@ -8819,7 +8883,7 @@ src='https://i.imgur.com/Zb1N51B.png'
 mr='5px'
 /> 
 <Text fontSize='md' mt='15px' align='center'><b>Attack Loksi</b></Text>
-<Text fontSize='sm' align='center'>+4 Atk<br />12 Def<br />0 Luck </Text>
+<Text fontSize='sm' align='center'>+4 Atk<br />+12 Def<br />+0 Luck </Text>
 </VStack>}
 {!AtkLoksiIsShown && DefLoksiIsShown && !LuckLoksiIsShown &&
 <VStack justify='center'>  
@@ -8832,7 +8896,7 @@ src='https://i.imgur.com/zGo6cCD.png'
 mr='5px'
 /> 
 <Text fontSize='md' mt='15px' align='center'><b>Defense Loksi</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br />16 Def<br />0 Luck </Text>
+<Text fontSize='sm' align='center'>+0 Atk<br />+16 Def<br />+0 Luck </Text>
 </VStack>}
 {!AtkLoksiIsShown && !DefLoksiIsShown && LuckLoksiIsShown &&
 <VStack justify='center'>  
@@ -8845,7 +8909,7 @@ src='https://i.imgur.com/bgb1J58.png'
 mr='5px'
 /> 
 <Text fontSize='md' mt='15px' align='center'><b>Luck Loksi</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br />12 Def<br />4 Luck </Text>
+<Text fontSize='sm' align='center'>+0 Atk<br />+12 Def<br />+4 Luck </Text>
 </VStack>}
 
 </Button>
@@ -8956,7 +9020,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/4/4a/Thalamaris.png/'
 mr='5px'
 /> 
 <Text fontSize='md' mt='15px' align='center'><b>Thalamaris</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br />0 Def<br />12 Luck </Text>
+<Text fontSize='sm' align='center'>+0 Atk<br />+0 Def<br />+12 Luck </Text>
 </VStack>}
 </Button>}
 
@@ -8973,7 +9037,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/4/4a/Thalamaris.png/'
 mr='5px'
 /> 
   <Text fontSize='md' mt='15px' align='center'><b>Thalamaris</b></Text>
-  <Text fontSize='sm' align='center'>+0 Atk<br />0 Def<br />12 Luck </Text>
+  <Text fontSize='sm' align='center'>+0 Atk<br />+0 Def<br />+12 Luck </Text>
 </VStack>}
 
 {AtkThalamarisIsShown && !DefThalamarisIsShown && !LuckThalamarisIsShown &&
@@ -8987,7 +9051,7 @@ src='https://i.imgur.com/fe9fXNc.png'
 mr='5px'
 /> 
 <Text fontSize='md' mt='15px' align='center'><b>Attack Thalamaris</b></Text>
-<Text fontSize='sm' align='center'>+4 Atk<br />0 Def<br />12 Luck </Text>
+<Text fontSize='sm' align='center'>+4 Atk<br />+0 Def<br />+12 Luck </Text>
 </VStack>}
 {!AtkThalamarisIsShown && DefThalamarisIsShown && !LuckThalamarisIsShown &&
 <VStack justify='center'>  
@@ -9000,7 +9064,7 @@ src='https://i.imgur.com/1G7xegk.png'
 mr='5px'
 /> 
 <Text fontSize='md' mt='15px' align='center'><b>Defense Thalamaris</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br />4 Def<br />12 Luck </Text>
+<Text fontSize='sm' align='center'>+0 Atk<br />+4 Def<br />+12 Luck </Text>
 </VStack>}
 {!AtkThalamarisIsShown && !DefThalamarisIsShown && LuckThalamarisIsShown &&
 <VStack justify='center'>  
@@ -9013,7 +9077,7 @@ src='https://i.imgur.com/VpveKDD.png'
 mr='5px'
 /> 
 <Text fontSize='md' mt='15px' align='center'><b>Luck Thalamaris</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br />0 Def<br />16 Luck </Text>
+<Text fontSize='sm' align='center'>+0 Atk<br />+0 Def<br />+16 Luck </Text>
 </VStack>}
    </Button>}
    </WrapItem>
@@ -9122,7 +9186,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/6/63/Valkos.png'
 mr='5px'
 /> 
 <Text fontSize='md' mt='15px' align='center'><b>Valkos</b></Text>
-<Text fontSize='sm' align='center'>+4 Atk<br />4 Def<br />4 Luck </Text>
+<Text fontSize='sm' align='center'>+4 Atk<br />+4 Def<br />+4 Luck </Text>
 </VStack>
    </Button>
    </WrapItem>}
@@ -9141,7 +9205,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/6/63/Valkos.png'
 mr='5px'
 /> 
 <Text fontSize='md' mt='15px' align='center'><b>Valkos</b></Text>
-<Text fontSize='sm' align='center'>+4 Atk<br />4 Def<br />4 Luck </Text>
+<Text fontSize='sm' align='center'>+4 Atk<br />+4 Def<br />+4 Luck </Text>
   
 </VStack>}
 {AtkValkosIsShown && !DefValkosIsShown && !LuckValkosIsShown &&
@@ -9155,7 +9219,7 @@ src='https://i.imgur.com/Ci51Pa1.png'
 mr='5px'
 /> 
 <Text fontSize='md' mt='15px' align='center'><b>Attack Valkos</b></Text>
-<Text fontSize='sm' align='center'>+8 Atk<br />4 Def<br />4 Luck </Text>
+<Text fontSize='sm' align='center'>+8 Atk<br />+4 Def<br />+4 Luck </Text>
   
 </VStack>}
 {!AtkValkosIsShown && DefValkosIsShown && !LuckValkosIsShown &&
@@ -9169,7 +9233,7 @@ src='https://i.imgur.com/1sMl04A.png'
 mr='5px'
 /> 
 <Text fontSize='md' mt='15px' align='center'><b>Defense Valkos</b></Text>
-<Text fontSize='sm' align='center'>+4 Atk<br />8 Def<br />4 Luck </Text>
+<Text fontSize='sm' align='center'>+4 Atk<br />+8 Def<br />+4 Luck </Text>
   
 </VStack>}
 {!AtkValkosIsShown && !DefValkosIsShown && LuckValkosIsShown &&
@@ -9183,7 +9247,7 @@ src='https://i.imgur.com/pGyg8DO.png'
 mr='5px'
 /> 
 <Text fontSize='md' mt='15px' align='center'><b>Luck Valkos</b></Text>
-<Text fontSize='sm' align='center'>+4 Atk<br />4 Def<br />8 Luck </Text>
+<Text fontSize='sm' align='center'>+4 Atk<br />+4 Def<br />+8 Luck </Text>
   
 </VStack>}
    </Button>
@@ -9295,7 +9359,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/1/1d/Eenris.png/'
 mr='5px'
 /> 
 <Text fontSize='md' mt='15px' align='center'><b>Eenris</b></Text>
-<Text fontSize='sm' align='center'>+3 Atk<br />6 Def<br />3 Luck </Text>
+<Text fontSize='sm' align='center'>+3 Atk<br />+6 Def<br />+3 Luck </Text>
 </VStack>
    </Button>
    </WrapItem>}
@@ -9314,7 +9378,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/1/1d/Eenris.png/'
 mr='5px'
 /> 
 <Text fontSize='md' mt='15px' align='center'><b>Eenris</b></Text>
-<Text fontSize='sm' align='center'>+3 Atk<br />6 Def<br />3 Luck </Text>
+<Text fontSize='sm' align='center'>+3 Atk<br />+6 Def<br />+3 Luck </Text>
 </VStack>}
 {AtkEenrisIsShown && !DefEenrisIsShown && !LuckEenrisIsShown &&
 <VStack justify='center'>  
@@ -9327,7 +9391,7 @@ src='https://i.imgur.com/lU6zkfR.png'
 mr='5px'
 /> 
   <Text fontSize='md' mt='15px' align='center'><b>Attack Eenris</b></Text>
-  <Text fontSize='sm' align='center'>+7 Atk<br />6 Def<br />3 Luck </Text>
+  <Text fontSize='sm' align='center'>+7 Atk<br />+6 Def<br />+3 Luck </Text>
 </VStack>}
 {!AtkEenrisIsShown && DefEenrisIsShown && !LuckEenrisIsShown &&
 <VStack justify='center'>  
@@ -9340,7 +9404,7 @@ src='https://i.imgur.com/5sRBeCz.png'
 mr='5px'
 /> 
   <Text fontSize='md' mt='15px' align='center'><b>Defense Eenris</b></Text>
-  <Text fontSize='sm' align='center'>+3 Atk<br />10 Def<br />3 Luck </Text>
+  <Text fontSize='sm' align='center'>+3 Atk<br />+10 Def<br />+3 Luck </Text>
 </VStack>}
 {!AtkEenrisIsShown && !DefEenrisIsShown && LuckEenrisIsShown &&
 <VStack justify='center'>  
@@ -9353,7 +9417,7 @@ src='https://i.imgur.com/exqGLIN.png'
 mr='5px'
 /> 
   <Text fontSize='md' mt='15px' align='center'><b>Luck Eenris</b></Text>
-  <Text fontSize='sm' align='center'>+3 Atk<br />6 Def<br />7 Luck </Text>
+  <Text fontSize='sm' align='center'>+3 Atk<br />+6 Def<br />+7 Luck </Text>
 </VStack>}
 
    </Button>
@@ -9464,7 +9528,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/f/fc/Rairasel.png/'
 mr='5px'
 /> 
 <Text fontSize='md' mt='15px' align='center'><b>Rairasel</b></Text>
-<Text fontSize='sm' align='center'>+6 Atk<br />0 Def<br />6 Luck </Text>
+<Text fontSize='sm' align='center'>+6 Atk<br />+0 Def<br />+6 Luck </Text>
 </VStack>
    </Button>
    </WrapItem>}
@@ -9483,7 +9547,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/f/fc/Rairasel.png/'
 mr='5px'
 /> 
 <Text fontSize='md' mt='15px' align='center'><b>Rairasel</b></Text>
-<Text fontSize='sm' align='center'>+6 Atk<br />0 Def<br />6 Luck </Text>
+<Text fontSize='sm' align='center'>+6 Atk<br />+0 Def<br />+6 Luck </Text>
 </VStack>}
 {AtkRairaselIsShown && !DefRairaselIsShown && !LuckRairaselIsShown &&
 <VStack justify='center'>  
@@ -9496,7 +9560,7 @@ src='https://i.imgur.com/YB3iqt7.png'
 mr='5px'
 /> 
 <Text fontSize='md' mt='15px' align='center'><b>Attack Rairasel</b></Text>
-<Text fontSize='sm' align='center'>+10 Atk<br />0 Def<br />6 Luck </Text>
+<Text fontSize='sm' align='center'>+10 Atk<br />+0 Def<br />+6 Luck </Text>
 </VStack>}
 {!AtkRairaselIsShown && DefRairaselIsShown && !LuckRairaselIsShown &&
 <VStack justify='center'>  
@@ -9509,7 +9573,7 @@ src='https://i.imgur.com/vgropoV.png'
 mr='5px'
 /> 
 <Text fontSize='md' mt='15px' align='center'><b>Defense Rairasel</b></Text>
-<Text fontSize='sm' align='center'>+6 Atk<br />4 Def<br />6 Luck </Text>
+<Text fontSize='sm' align='center'>+6 Atk<br />+4 Def<br />+6 Luck </Text>
 </VStack>}
 {!AtkRairaselIsShown && !DefRairaselIsShown && LuckRairaselIsShown &&
 <VStack justify='center'>  
@@ -9522,7 +9586,7 @@ src='https://i.imgur.com/3GrgauN.png'
 mr='5px'
 /> 
 <Text fontSize='md' mt='15px' align='center'><b>Luck Rairasel</b></Text>
-<Text fontSize='sm' align='center'>+6 Atk<br />0 Def<br />10 Luck </Text>
+<Text fontSize='sm' align='center'>+6 Atk<br />+0 Def<br />+10 Luck </Text>
 </VStack>}
 
    </Button>
@@ -9638,7 +9702,7 @@ mr='5px'
         src='https://static.wikia.nocookie.net/4thewords/images/9/95/Alderbam.png/'
       /> 
       <Text mt='-8px' fontSize='md' align='center'><b>Alderbam</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br />0 Def<br />12 Luck </Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br />+0 Def<br />+12 Luck </Text>
       </VStack>
 
             </Button>
@@ -9655,7 +9719,7 @@ mr='5px'
         src='https://static.wikia.nocookie.net/4thewords/images/9/95/Alderbam.png/'
       /> 
       <Text mt='-8px' fontSize='md' align='center'><b>Alderbam</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br />0 Def<br />12 Luck </Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br />+0 Def<br />+12 Luck </Text>
       </VStack>
 
             </Button>
@@ -9671,7 +9735,7 @@ mr='5px'
         src='https://static.wikia.nocookie.net/4thewords/images/9/97/Chysis.png/'
       /> 
       <Text mt='-8px' fontSize='md' align='center'><b>Chysis</b></Text>
-      <Text fontSize='sm' align='center'>+12 Atk<br />0 Def<br />0 Luck </Text>
+      <Text fontSize='sm' align='center'>+12 Atk<br />+0 Def<br />+0 Luck </Text>
       </VStack>
 
             </Button>
@@ -9688,7 +9752,7 @@ mr='5px'
         src='https://static.wikia.nocookie.net/4thewords/images/9/97/Chysis.png/'
       /> 
       <Text mt='-8px' fontSize='md' align='center'><b>Chysis</b></Text>
-      <Text fontSize='sm' align='center'>+12 Atk<br />0 Def<br />0 Luck </Text>
+      <Text fontSize='sm' align='center'>+12 Atk<br />+0 Def<br />+0 Luck </Text>
       </VStack>
 
             </Button>
@@ -9705,7 +9769,7 @@ mr='5px'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e3/Mund.png/'
       /> 
       <Text mt='-8px' fontSize='md' align='center'><b>Mund</b></Text>
-      <Text fontSize='sm' align='center'>+4 Atk<br />4 Def<br />4 Luck </Text>
+      <Text fontSize='sm' align='center'>+4 Atk<br />+4 Def<br />+4 Luck </Text>
       </VStack>
 
             </Button>
@@ -9722,7 +9786,7 @@ mr='5px'
         src='https://static.wikia.nocookie.net/4thewords/images/e/e3/Mund.png/'
       /> 
       <Text mt='-8px' fontSize='md' align='center'><b>Mund</b></Text>
-      <Text fontSize='sm' align='center'>+4 Atk<br />4 Def<br />4 Luck </Text>
+      <Text fontSize='sm' align='center'>+4 Atk<br />+4 Def<br />+4 Luck </Text>
       </VStack>
 
             </Button>
@@ -9739,7 +9803,7 @@ mr='5px'
         src='https://static.wikia.nocookie.net/4thewords/images/d/d5/Whodini.png/'
       /> 
       <Text mt='-8px' fontSize='md' align='center'><b>Whodini</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br />12 Def<br />0 Luck </Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br />+12 Def<br />+0 Luck </Text>
       </VStack>
 
             </Button>
@@ -9756,7 +9820,7 @@ mr='5px'
         src='https://static.wikia.nocookie.net/4thewords/images/d/d5/Whodini.png/'
       /> 
       <Text mt='-8px' fontSize='md' align='center'><b>Whodini</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br />12 Def<br />0 Luck </Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br />+12 Def<br />+0 Luck </Text>
       </VStack>
 
             </Button>
