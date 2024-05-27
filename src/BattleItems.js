@@ -7547,7 +7547,7 @@ const TopAttackCompanion12 = () => {
 
             </VStack>
 
-  <Accordion with='290px' mt='25px' allowMultiple w={350}>
+  <Accordion mt='25px' allowMultiple w={350}>
   <AccordionItem>
   <h2>
       <AccordionButton>
@@ -8152,7 +8152,7 @@ const TopAttackCompanion12 = () => {
 
      </Accordion>
      <Tabs mt='50px' variant='soft-rounded' colorScheme='purple'>
-  <TabList>
+  <TabList p={5}>
     <Wrap justify='center'>
     <WrapItem>
     <Tab>Companions</Tab>
