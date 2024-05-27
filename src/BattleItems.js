@@ -10,6 +10,7 @@ import {
   Box,
   Button,
   Heading,
+  HStack,
   Grid,
   theme,
   Container,
@@ -8149,8 +8150,302 @@ const TopAttackCompanion12 = () => {
       <br></br>
     </AccordionPanel>
   </AccordionItem>
-
      </Accordion>
+
+<Wrap mt='35px' justify='center'>
+  <WrapItem>
+    <Box width='380px' height='200px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
+      <VStack>
+        <Text fontSiz='md' mt='5px'>
+          <b>Current Stats</b>
+        </Text>
+        <HStack>
+          <Text><b>Attack</b></Text>
+        <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/hbcvJHt.png' />
+          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+        </HStack>
+      </VStack>
+    </Box>
+  </WrapItem>
+<WrapItem>
+    <Box width='190px' height='200px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
+      <VStack>
+        <Text fontSiz='md' mt='5px'>
+          <b>Companion</b>
+        </Text>
+        <Image
+        style={{position:'absolute'}}
+        mt='55px'
+        align='center' 
+        boxSize='5rem'
+        src='https://i.imgur.com/gR84XcP.png'
+      />
+      <Text>
+        <HStack
+        style={{position:'absolute'}}
+        mt='115px'
+        ml='-80px'
+        >
+        <span>
+          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
+          <span>
+          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+        </span>
+        <span>
+          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
+          <span>
+          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+        </span>
+        <span>
+          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
+          <span>
+          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+        </span>
+        </HStack>
+      </Text>
+      </VStack>
+    </Box>
+  </WrapItem>
+  <WrapItem>
+    <Box width='190px' height='200px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
+      <VStack>
+        <Text fontSiz='md' mt='5px'>
+          <b>Weapon 1</b>
+        </Text>
+        <Image
+        style={{position:'absolute'}}
+        mt='55px'
+        align='center' 
+        boxSize='5rem'
+        src='https://i.imgur.com/5FfZ6Yl.png'
+      />
+      <Text>
+        <HStack
+        style={{position:'absolute'}}
+        mt='115px'
+        ml='-80px'
+        >
+        <span>
+          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
+          <span>
+          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+        </span>
+        <span>
+          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
+          <span>
+          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+        </span>
+        <span>
+          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
+          <span>
+          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+        </span>
+        </HStack>
+      </Text>
+      </VStack>
+    </Box>
+  </WrapItem>
+
+  <WrapItem>
+    <Box width='190px' height='200px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
+      <VStack>
+        <Text fontSiz='md' mt='5px'>
+          <b>Weapon 2</b>
+        </Text>
+        <Image
+        style={{position:'absolute'}}
+        mt='55px'
+        align='center' 
+        boxSize='5rem'
+        src='https://i.imgur.com/E5GuYRW.png'
+      />
+      <Text>
+        <HStack
+        style={{position:'absolute'}}
+        mt='115px'
+        ml='-80px'
+        >
+        <span>
+          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
+          <span>
+          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+        </span>
+        <span>
+          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
+          <span>
+          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+        </span>
+        <span>
+          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
+          <span>
+          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+        </span>
+        </HStack>
+      </Text>
+      </VStack>
+    </Box>
+  </WrapItem>
+
+  <WrapItem>
+    <Box width='190px' height='200px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
+      <VStack>
+        <Text fontSiz='md' mt='5px'>
+          <b>Accessory</b>
+        </Text>
+        <Image
+        style={{position:'absolute'}}
+        mt='55px'
+        align='center' 
+        boxSize='5rem'
+        src='https://i.imgur.com/6J2IXDf.png'
+      />
+      <Text>
+        <HStack
+        style={{position:'absolute'}}
+        mt='115px'
+        ml='-80px'
+        >
+        <span>
+          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
+          <span>
+          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+        </span>
+        <span>
+          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
+          <span>
+          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+        </span>
+        <span>
+          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
+          <span>
+          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+        </span>
+        </HStack>
+      </Text>
+      </VStack>
+    </Box>
+  </WrapItem>
+
+  <WrapItem>
+    <Box width='190px' height='200px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
+      <VStack>
+        <Text fontSiz='md' mt='5px'>
+          <b>Head</b>
+        </Text>
+        <Image
+        style={{position:'absolute'}}
+        mt='55px'
+        align='center' 
+        boxSize='5rem'
+        src='https://i.imgur.com/T9o4YqE.png'
+      />
+      <Text>
+        <HStack
+        style={{position:'absolute'}}
+        mt='115px'
+        ml='-80px'
+        >
+        <span>
+          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
+          <span>
+          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+        </span>
+        <span>
+          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
+          <span>
+          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+        </span>
+        <span>
+          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
+          <span>
+          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+        </span>
+        </HStack>
+      </Text>
+      </VStack>
+    </Box>
+  </WrapItem>
+
+  <WrapItem>
+    <Box width='190px' height='200px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
+      <VStack>
+        <Text fontSiz='md' mt='5px'>
+          <b>Chest</b>
+        </Text>
+        <Image
+        style={{position:'absolute'}}
+        mt='55px'
+        align='center' 
+        boxSize='5rem'
+        src='https://i.imgur.com/yQLgdcB.png'
+      />
+      <Text>
+        <HStack
+        style={{position:'absolute'}}
+        mt='115px'
+        ml='-80px'
+        >
+        <span>
+          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
+          <span>
+          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+        </span>
+        <span>
+          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
+          <span>
+          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+        </span>
+        <span>
+          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
+          <span>
+          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+        </span>
+        </HStack>
+      </Text>
+      </VStack>
+    </Box>
+  </WrapItem>
+  <WrapItem>
+    <Box width='190px' height='200px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
+      <VStack>
+        <Text fontSiz='md' mt='5px'>
+          <b>Feet</b>
+        </Text>
+        <Image
+        style={{position:'absolute'}}
+        mt='55px'
+        align='center' 
+        boxSize='5rem'
+        src='https://i.imgur.com/qMNT5k8.png'
+      />
+      <Text>
+        <HStack
+        style={{position:'absolute'}}
+        mt='115px'
+        ml='-80px'
+        >
+        <span>
+          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
+          <span>
+          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+        </span>
+        <span>
+          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
+          <span>
+          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+        </span>
+        <span>
+          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
+          <span>
+          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+        </span>
+        </HStack>
+      </Text>
+      </VStack>
+    </Box>
+  </WrapItem>
+</Wrap>
+
      <Tabs mt='50px' variant='soft-rounded' colorScheme='purple'>
   <TabList p={5}>
     <Wrap justify='center'>
