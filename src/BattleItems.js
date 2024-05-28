@@ -1442,8 +1442,6 @@ const handleAtkKaiszarSwitchClick = event => {
   setSuwoIsShown (current => false)
   setSuwoIsShown (current => false)
 
-  setDefKaiszarIsShown (current => false);
-  setDefKaiszarActive (current => false);
   setKaiszarAtk (value => 0);
   setKaiszarDef (value => 0);
   setKaiszarLuck (value => 0);
@@ -1518,8 +1516,12 @@ const handleAtkKaiszarSwitchClick = event => {
   setLuckRairaselLuck (value => 0);
 
 
+  setKaiszarIsShown (current => true);
+  setKaiszarActive (current => true);
   setAtkKaiszarIsShown (current => !AtkKaiszarIsShown);
   setAtkKaiszarActive (current => !AtkKaiszarActive);
+  setDefKaiszarIsShown (current => false);
+  setDefKaiszarActive (current => false);
   setLuckKaiszarIsShown (current => false);
   setLuckKaiszarActive (current => false);
   setLoksiIsShown (current => false);
@@ -1662,7 +1664,8 @@ const handleAtkKaiszarSwitchClick = event => {
   setLuckRairaselDef (value => 0);
   setLuckRairaselLuck (value => 0);
 
-
+  setKaiszarIsShown (current => true);
+  setKaiszarActive (current => true);
   setAtkKaiszarIsShown (current => false);
   setAtkKaiszarActive (current => false);
   setLuckKaiszarIsShown (current => false);
@@ -1733,7 +1736,7 @@ const handleLuckKaiszarSwitchClick = event => {
   setSuwoIsShown (current => false)
 
   setLuckKaiszarIsShown (current => !LuckKaiszarIsShown);
-  setLuckKaiszarActive (current => !LuckKaiszarIsShown);
+  setLuckKaiszarActive (current => !LuckKaiszarActive);
   setKaiszarAtk (value => 0);
   setKaiszarDef (value => 0);
   setKaiszarLuck (value => 0);
@@ -1807,7 +1810,8 @@ const handleLuckKaiszarSwitchClick = event => {
   setLuckRairaselDef (value => 0);
   setLuckRairaselLuck (value => 0);
 
-
+  setKaiszarIsShown (current => true);
+  setKaiszarActive (current => true);
   setAtkKaiszarIsShown (current => false);
   setAtkKaiszarActive (current => false);
   setDefKaiszarIsShown (current => false);
@@ -4783,6 +4787,9 @@ const handleAtkKaiszarSwitchNoClick = event => {
   setAtkKaiszarActive (current => !AtkKaiszarIsShown);
   setKaiszarIsShown (current => false);
   setKaiszarActive (current => false);
+  setKaiszarAtk (value => 0);
+  setKaiszarDef (value => 0);
+  setKaiszarLuck (value => 0);
   setAtkKaiszarAtk (value => 0);
   setAtkKaiszarDef (value => 0);
   setAtkKaiszarLuck (value => 0);
@@ -4793,6 +4800,9 @@ const handleDefKaiszarSwitchNoClick = event => {
   setDefKaiszarActive (current => !DefKaiszarIsShown);
   setKaiszarIsShown (current => false);
   setKaiszarActive (current => false);
+  setKaiszarAtk (value => 0);
+  setKaiszarDef (value => 0);
+  setKaiszarLuck (value => 0);
   setDefKaiszarAtk (value => 0);
   setDefKaiszarDef (value => 0);
   setDefKaiszarLuck (value => 0);
@@ -4803,6 +4813,9 @@ const handleLuckKaiszarSwitchNoClick = event => {
   setLuckKaiszarActive (current => !LuckKaiszarIsShown);
   setKaiszarIsShown (current => false);
   setKaiszarActive (current => false);
+  setKaiszarAtk (value => 0);
+  setKaiszarDef (value => 0);
+  setKaiszarLuck (value => 0);
   setLuckKaiszarAtk (value => 0);
   setLuckKaiszarDef (value => 0);
   setLuckKaiszarLuck (value => 0);
@@ -8671,8 +8684,8 @@ const ColorLuck = () => {
            <Wrap justify='center'>
 {!KaiszarIsShown &&
            <WrapItem>
-            <Button w='110px' h='170px' pb={5} onClick={handleKaiszarSwitchClick} style={{ backgroundColor: "#2D3748" }}>
-         <VStack justify='center'>  
+          <Button w='110px' h='170px' borderTopRightRadius={0} pb={5} onClick={handleKaiszarSwitchClick} style={{ backgroundColor: "#2D3748" }}>
+         <VStack justify='center'>    
        <Image
         mt='12px'
         align='center' 
@@ -8682,14 +8695,14 @@ const ColorLuck = () => {
       <Text fontSize='md' mt='-8px' align='center'><b>Kaiszar</b></Text>
       <Text fontSize='sm' align='center'>+12 Atk<br />+0 Def<br />+0 Luck </Text>
       </VStack>
-
-            </Button>
+          </Button>
             </WrapItem>}
 
-{KaiszarIsShown &&
+
+{KaiszarIsShown && 
            <WrapItem>
-            <Button w='110px' h='170px' pb={5} onClick={handleKaiszarSwitchNoClick} style={{ backgroundColor: "#211742"}}>
        {!AtkKaiszarIsShown && !DefKaiszarIsShown && !LuckKaiszarIsShown &&
+            <Button w='110px' h='170px' pb={5} onClick={handleKaiszarSwitchNoClick} style={{ backgroundColor: "#211742"}}>
          <VStack justify='center'>  
        <Image
         mt='12px'
@@ -8699,180 +8712,136 @@ const ColorLuck = () => {
       /> 
   <Text fontSize='md' mt='-8px' align='center'><b>Kaiszar</b></Text>
   <Text fontSize='sm' align='center'>+12 Atk<br />+0 Def<br />+0 Luck </Text>
-  
       </VStack>
+    </Button>
 }
 {AtkKaiszarIsShown && !DefKaiszarIsShown && !LuckKaiszarIsShown &&
-        <VStack justify='center'>  
+            <Button w='110px' h='170px' pb={5} onClick={handleAtkKaiszarSwitchNoClick} style={{ backgroundColor: "#211742"}}>
+         <VStack justify='center'>  
        <Image
         mt='12px'
         align='center' 
-        boxSize='5rem'
+        boxSize='4rem'
         src='https://i.imgur.com/gbuo4mt.png'
       /> 
-  <Text fontSize='md' mt='15px' align='center'><b>Attack Kaiszar</b></Text>
+  <Text fontSize='md' mt='-8px' align='center'><b>Attack<br/>Kaiszar</b></Text>
   <Text fontSize='sm' align='center'>+16 Atk<br />+0 Def<br />+0 Luck </Text>
+      </VStack>
+    </Button>
+}
 
-  </VStack>
-  }
   {!AtkKaiszarIsShown && DefKaiszarIsShown && !LuckKaiszarIsShown &&
+  <Button w='110px' h='170px' pb={5} onClick={handleDefKaiszarSwitchNoClick} style={{ backgroundColor: "#211742"}}>
   <VStack justify='center'> 
        <Image
         mt='12px'
         align='center' 
-        boxSize='5rem'
+        boxSize='4rem'
         src='https://i.imgur.com/LGazi9x.png'
       />     
-  <Text fontSize='md' mt='15px' align='center'><b>Defense Kaiszar</b></Text>
+  <Text fontSize='md' mt='-8px' align='center'><b>Defense<br/>Kaiszar</b></Text>
   <Text fontSize='sm' align='center'>+12 Atk<br />+4 Def<br />+0 Luck </Text>
   </VStack>
+  </Button>
   }
          {!AtkKaiszarIsShown && !DefKaiszarIsShown && LuckKaiszarIsShown &&
-           <VStack justify='center'>  
+<Button w='110px' h='170px' pb={5} onClick={handleLuckKaiszarSwitchNoClick} style={{ backgroundColor: "#211742"}}>
+      <VStack justify='center'>  
        <Image
-        mt='12px'
+        mt='18px'
         align='center' 
-        boxSize='5rem'
+        boxSize='4rem'
         src='https://i.imgur.com/gbpdG0f.png'
       /> 
-  <Text fontSize='md' mt='15px' align='center'><b>Luck Kaiszar</b></Text>
+  <Text fontSize='md' mt='-8px' align='center'><b>Luck Kaiszar</b></Text>
   <Text fontSize='sm' align='center'>+12 Atk<br />+0 Def<br />+4 Luck </Text>
   </VStack> 
+  </Button>
   }
-
-            </Button>
             </WrapItem>}
 
-{DragonLairIsShown &&
-           <WrapItem>
-            <Box w='110px' h='170px' pb={5} borderRadius='10%' style={{ backgroundColor: "#2D3748" }}>
-              <Text mt='8px' fontSize='md'><b>Add Armor:</b></Text>
-            <Wrap mt='8px' justify='center'>
-{!AtkKaiszarIsShown && 
-              <WrapItem>
-              <Button w='85px' h='30px' pb={5} onClick={handleAtkKaiszarSwitchClick} style={{ backgroundColor: "#1A202C" }}>
-      <Text fontSize='sm' pt='15px' align='center'>Attack</Text>
-            </Button>
-              </WrapItem>}
-{AtkKaiszarIsShown && 
-              <WrapItem>
-              <Button w='85px' h='30px' pb={5} onClick={handleAtkKaiszarSwitchNoClick} style={{ backgroundColor: "#211742" }}>
-      <Text fontSize='sm' pt='15px' align='center'>Attack</Text>
-            </Button>
-              </WrapItem>}
-{!DefKaiszarIsShown && 
-              <WrapItem>
-              <Button w='85px' h='30px' pb={5} onClick={handleDefKaiszarSwitchClick} style={{ backgroundColor: "#1A202C" }}>
-      <Text fontSize='sm' pt='15px' align='center'>Defense</Text>
-            </Button>
-              </WrapItem>}
-{DefKaiszarIsShown && 
-              <WrapItem>
-              <Button w='85px' h='30px' pb={5} onClick={handleDefKaiszarSwitchNoClick} style={{ backgroundColor: "#211742" }}>
-      <Text fontSize='sm' pt='15px' align='center'>Defense</Text>
-            </Button>
-              </WrapItem>}
-{!LuckKaiszarIsShown && 
-              <WrapItem>
-              <Button w='85px' h='30px' pb={5} onClick={handleLuckKaiszarSwitchClick} style={{ backgroundColor: "#1A202C" }}>
-      <Text fontSize='sm' pt='15px' align='center'>Luck</Text>
-            </Button>
-              </WrapItem>}
-{LuckKaiszarIsShown && 
-              <WrapItem>
-              <Button w='85px' h='30px' pb={5} onClick={handleLuckKaiszarSwitchNoClick} style={{ backgroundColor: "#211742" }}>
-      <Text fontSize='sm' pt='15px' align='center'>Luck</Text>
-            </Button>
-              </WrapItem>}
-
-            </Wrap>
-
-            </Box>
-            </WrapItem>}
-
-{!AtkKaiszarIsShown &&
+{!KaiszarIsShown && !AtkKaiszarIsShown && !DefKaiszarIsShown && !LuckKaiszarIsShown &&
             <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleAtkKaiszarSwitchClick} style={{ backgroundColor: "#2D3748" }}>
-       <VStack> 
+            <VStack>
+          <Button p={0} w='40px' h='40px' ml='-10px' borderTopLeftRadius={0} borderBottomLeftRadius={0} onClick={handleAtkKaiszarSwitchClick} style={{ backgroundColor: "#2D3748" }}>
        <Image
-        mt='12px'
         align='center' 
-        boxSize='3rem'
-                src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
-      /> <Text fontSize='sm' align='center'>Kaiszar:<br/>Attack Boost</Text>
-      </VStack>
-            </Button>
+        boxSize='1.75rem'
+        src='https://i.imgur.com/cPrPVxc.png'
+      /> 
+          </Button>
+          <Button p={0} w='40px' h='40px' ml='-10px' borderTopLeftRadius={0} borderBottomLeftRadius={0} onClick={handleDefKaiszarSwitchClick} style={{ backgroundColor: "#2D3748" }}>
+       <Image
+        align='center' 
+        boxSize='1.75rem'
+        src='https://i.imgur.com/eXyDuR9.png'
+      /> 
+          </Button>
+          <Button p={0} w='40px' h='40px' ml='-10px' borderTopLeftRadius={0} borderBottomLeftRadius={0} onClick={handleLuckKaiszarSwitchClick} style={{ backgroundColor: "#2D3748" }}>
+       <Image
+        align='center' 
+        boxSize='1.75rem'
+        src='https://i.imgur.com/9e2WZyS.png'
+      /> 
+          </Button>
+          </VStack>
             </WrapItem>}
 
-{AtkKaiszarIsShown &&
+{KaiszarIsShown && 
             <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleAtkKaiszarSwitchNoClick} style={{ backgroundColor: "#211742"}}>
-       <VStack> 
+            <VStack>
+          {!AtkKaiszarIsShown &&
+          <Button p={0} w='40px' h='40px' ml='-10px' borderTopLeftRadius={0} borderBottomLeftRadius={0} onClick={handleAtkKaiszarSwitchClick} style={{ backgroundColor: "#2D3748" }}>
        <Image
-        mt='12px'
         align='center' 
-        boxSize='3rem'
-                src='https://static.wikia.nocookie.net/4thewords/images/1/1d/AttackUpgrade.png/'
-      /> <Text fontSize='sm' align='center'>Kaiszar:<br/>Attack Boost</Text>
-      </VStack>
-            </Button>
+        boxSize='1.75rem'
+        src='https://i.imgur.com/cPrPVxc.png'
+      /> 
+          </Button>}
+          {AtkKaiszarIsShown &&
+          <Button p={0} w='40px' h='40px' ml='-10px' borderTopLeftRadius={0} borderBottomLeftRadius={0} onClick={handleAtkKaiszarSwitchNoClick} style={{ backgroundColor: "#211742" }}>
+       <Image
+        align='center' 
+        boxSize='1.75rem'
+        src='https://i.imgur.com/cPrPVxc.png'
+      /> 
+          </Button>}
+          {!DefKaiszarIsShown && 
+          <Button p={0} w='40px' h='40px' ml='-10px' borderTopLeftRadius={0} borderBottomLeftRadius={0} onClick={handleDefKaiszarSwitchClick} style={{ backgroundColor: "#2D3748" }}>
+       <Image
+        align='center' 
+        boxSize='1.75rem'
+        src='https://i.imgur.com/eXyDuR9.png'
+      /> 
+          </Button>}
+          {DefKaiszarIsShown && 
+          <Button p={0} w='40px' h='40px' ml='-10px' borderTopLeftRadius={0} borderBottomLeftRadius={0} onClick={handleDefKaiszarSwitchNoClick} style={{ backgroundColor: "#211742" }}>
+       <Image
+        align='center' 
+        boxSize='1.75rem'
+        src='https://i.imgur.com/eXyDuR9.png'
+      /> 
+          </Button>}
+        {LuckKaiszarIsShown &&
+          <Button p={0} w='40px' h='40px' ml='-10px' borderTopLeftRadius={0} borderBottomLeftRadius={0} onClick={handleLuckKaiszarSwitchClick} style={{ backgroundColor: "#211742" }}>
+       <Image
+        align='center' 
+        boxSize='1.75rem'
+        src='https://i.imgur.com/9e2WZyS.png'
+      /> 
+          </Button>}
+          {!LuckKaiszarIsShown &&
+          <Button p={0} w='40px' h='40px' ml='-10px' borderTopLeftRadius={0} borderBottomLeftRadius={0} onClick={handleLuckKaiszarSwitchNoClick} style={{ backgroundColor: "#2D3748" }}>
+       <Image
+        align='center' 
+        boxSize='1.75rem'
+        src='https://i.imgur.com/9e2WZyS.png'
+      /> 
+          </Button>}
+          </VStack>
             </WrapItem>}
 
-{!DefKaiszarIsShown &&
-           <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleDefKaiszarSwitchClick} style={{ backgroundColor: "#2D3748" }}>
-       <VStack> 
-       <Image
-        mt='12px'
-        align='center' 
-        boxSize='3rem'
-                src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
-      /> <Text fontSize='sm' align='center'>Kaiszar:<br/>Def. Boost</Text>
-      </VStack>
-            </Button>
-            </WrapItem>}
 
-{DefKaiszarIsShown &&
-           <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleDefKaiszarSwitchNoClick} style={{ backgroundColor: "#211742" }}>
-       <VStack> 
-       <Image
-        mt='12px'
-        align='center' 
-        boxSize='3rem'
-                src='https://static.wikia.nocookie.net/4thewords/images/b/b4/DefenseUpgrade.png/'
-      /> <Text fontSize='sm' align='center'>Kaiszar:<br/>Def. Boost</Text>
-      </VStack>
-            </Button>
-            </WrapItem>}            
-
-{!LuckKaiszarIsShown &&
-           <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleLuckKaiszarSwitchClick} style={{ backgroundColor: "#2D3748" }}>
-       <VStack> 
-       <Image
-        mt='12px'
-        align='center' 
-        boxSize='3rem'
-                src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
-      /> <Text fontSize='sm' align='center'>Kaiszar:<br/>Luck Boost</Text>
-      </VStack>
-            </Button>
-            </WrapItem>}
-
-{LuckKaiszarIsShown &&
-           <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleLuckKaiszarSwitchNoClick} style={{ backgroundColor: "#211742" }}>
-       <VStack> 
-       <Image
-        mt='12px'
-        align='center' 
-        boxSize='3rem'
-                src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
-      /> <Text fontSize='sm' align='center'>Kaiszar:<br/>Luck Boost</Text>
-      </VStack>
-            </Button>
-            </WrapItem>}
 
             {!LoksiIsShown &&
   <WrapItem>
