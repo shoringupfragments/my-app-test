@@ -10,6 +10,7 @@ import {
   Box,
   Button,
   Heading,
+  Hide,
   HStack,
   Grid,
   theme,
@@ -8085,8 +8086,12 @@ const ColorLuck = () => {
   </AccordionItem>
      </Accordion>
 
-<Wrap mt='45px' justify='center'>
+<Show breakpoint='(max-width: 400px)'>
+  <text>test test test</text>
+</Show>
 
+<Hide breakpoint='(min-width: 400px)'>
+<Wrap mt='45px' justify='center'>
   <WrapItem>
     <Box width='190px' height='220px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
       <VStack>
@@ -8338,6 +8343,7 @@ const ColorLuck = () => {
     </Box>
   </WrapItem>
   </Wrap>
+  </Hide>
   <Wrap pt='8px' justify='center'>
   <WrapItem>
     <Box width='190px' height='220px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
