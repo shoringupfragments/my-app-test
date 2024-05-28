@@ -10,7 +10,6 @@ import {
   Box,
   Button,
   Heading,
-  Hide,
   HStack,
   Grid,
   theme,
@@ -7424,42 +7423,42 @@ const TopAttackCompanion12 = () => {
 const GreyAtk = () => {
   if (totalCompanionTopAtk === 0)
 	return(
-<Image boxSize='1.5rem' align='center' src='https://i.imgur.com/hbcvJHt.png' />
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/hbcvJHt.png' />
   )
 }
 
 const ColorAtk = () => {
   if (totalCompanionTopAtk > 0)
 	return(
-<Image boxSize='1.5rem' align='center' src='https://i.imgur.com/cPrPVxc.png' />
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/cPrPVxc.png' />
   )
 }
 
 const GreyDef = () => {
   if (totalCompanionTopDef === 0)
 	return(
-<Image boxSize='1.5rem' align='center' src='https://i.imgur.com/6Pw8bpA.png' />
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/6Pw8bpA.png' />
   )
 }
 
 const ColorDef = () => {
   if (totalCompanionTopDef > 0)
 	return(
-<Image boxSize='1.5rem' align='center' src='https://i.imgur.com/eXyDuR9.png' />
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/eXyDuR9.png' />
   )
 }
 
 const GreyLuck = () => {
   if (totalCompanionTopLuck === 0)
 	return(
-<Image boxSize='1.5rem' align='center' src='https://i.imgur.com/SsdiAg9.png' />
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/SsdiAg9.png' />
   )
 }
 
 const ColorLuck = () => {
   if (totalCompanionTopLuck > 0)
 	return(
-<Image boxSize='1.5rem' align='center' src='https://i.imgur.com/9e2WZyS.png' />
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/9e2WZyS.png' />
   )
 }
 
@@ -7482,7 +7481,7 @@ const ColorLuck = () => {
 
             </VStack>
 
-  <Accordion mt='25px' allowMultiple w={350}>
+  <Accordion mt='25px' allowMultiple>
   <AccordionItem>
   <h2>
       <AccordionButton>
@@ -7640,26 +7639,6 @@ const ColorLuck = () => {
             </Button>
             </WrapItem>
             
-          </Wrap>}
-
-          {World2RegionIsShown &&
-          <Text fontSize='md' mt='25px' mb='15px'><b>Your furthest main location:</b></Text>
-        }
-{World2RegionIsShown &&
-          <Wrap justify='center'>
-            <WrapItem>
-            <Button w='90px' h='110px' pb={5} onClick={handleNivaliClick} style={{ backgroundColor: NivaliActive ? "#211742" : "#2D3748" }}>
-       <VStack> 
-       <Image
-        mt='12px'
-        align='center' 
-        boxSize='3rem'
-        borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/b/ba/NivaliCampIcon.png/'
-      /> <Text fontSize='sm' align='center'>Nivali<br/>Camp</Text>
-      </VStack>
-            </Button>
-            </WrapItem>            
           </Wrap>}
 
 {LuciolaForestIsShown &&
@@ -8086,46 +8065,42 @@ const ColorLuck = () => {
   </AccordionItem>
      </Accordion>
 
-<Show breakpoint='(max-width: 400px)'>
-  <text>test test test</text>
-</Show>
-
-<Hide breakpoint='(min-width: 400px)'>
 <Wrap mt='45px' justify='center'>
+
   <WrapItem>
-    <Box width='190px' height='220px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
+    <Box w={[150, 170, 190]} h={[170, 200, 220]} borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
       <VStack>
-        <Text fontSiz='md' mt='8px'>
+        <Text fontSize={['md', 'lg', 'lg']} mt={['4px', '6px', '8px']}>
           <b>Weapon 1</b>
         </Text>
         <Image
         style={{position:'absolute'}}
-        mt='55px'
+        mt={['37px', '47px', '55px']}
         align='center' 
-        boxSize='5rem'
+        boxSize={['4rem', '4.5rem', '5rem']}
         src='https://i.imgur.com/5FfZ6Yl.png'
       />
         <Text        
         style={{position:'absolute'}}
-        mt='145px'
-        fontSize='md'>
+        mt={['110px', '130px', '145px']}
+        fontSize={['sm', 'md', 'md']}>
           No item</Text>
         <HStack
         style={{position:'absolute'}}
-        mt='175px'
+        mt={['135px', '160px', '175px']}
         >
         <span>
-          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
+          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
           <span>
           <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
         </span>
         <span>
-          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
+          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
           <span>
           <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
         </span>
         <span>
-          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
+          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
           <span>
           <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
         </span>
@@ -8133,40 +8108,41 @@ const ColorLuck = () => {
       </VStack>
     </Box>
   </WrapItem>
+
   <WrapItem>
-    <Box width='190px' height='220px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
+    <Box w={[150, 170, 190]} h={[170, 200, 220]} borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
       <VStack>
-        <Text fontSiz='md' mt='8px'>
+        <Text fontSize={['md', 'lg', 'lg']} mt={['4px', '6px', '8px']}>
           <b>Weapon 2</b>
         </Text>
         <Image
         style={{position:'absolute'}}
-        mt='55px'
+        mt={['37px', '47px', '55px']}
         align='center' 
-        boxSize='5rem'
+        boxSize={['4rem', '4.5rem', '5rem']}
         src='https://i.imgur.com/E5GuYRW.png'
       />
         <Text        
         style={{position:'absolute'}}
-        mt='145px'
-        fontSize='md'>
+        mt={['110px', '130px', '145px']}
+        fontSize={['sm', 'md', 'md']}>
           No item</Text>
         <HStack
         style={{position:'absolute'}}
-        mt='175px'
+        mt={['135px', '160px', '175px']}
         >
         <span>
-          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
+          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
           <span>
           <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
         </span>
         <span>
-          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
+          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
           <span>
           <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
         </span>
         <span>
-          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
+          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
           <span>
           <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
         </span>
@@ -8176,39 +8152,39 @@ const ColorLuck = () => {
   </WrapItem>
 
   <WrapItem>
-    <Box width='190px' height='220px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
+    <Box w={[150, 170, 190]} h={[170, 200, 220]} borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
       <VStack>
-        <Text fontSiz='md' mt='8px'>
+        <Text fontSize={['md', 'lg', 'lg']} mt={['4px', '6px', '8px']}>
           <b>Accessory</b>
         </Text>
         <Image
         style={{position:'absolute'}}
-        mt='55px'
+        mt={['37px', '47px', '55px']}
         align='center' 
-        boxSize='5rem'
+        boxSize={['4rem', '4.5rem', '5rem']}
         src='https://i.imgur.com/6J2IXDf.png'
       />
         <Text        
         style={{position:'absolute'}}
-        mt='145px'
-        fontSize='md'>
+        mt={['110px', '130px', '145px']}
+        fontSize={['sm', 'md', 'md']}>
           No item</Text>
         <HStack
         style={{position:'absolute'}}
-        mt='175px'
+        mt={['135px', '160px', '175px']}
         >
         <span>
-          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
+          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
           <span>
           <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
         </span>
         <span>
-          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
+          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
           <span>
           <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
         </span>
         <span>
-          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
+          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
           <span>
           <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
         </span>
@@ -8218,39 +8194,39 @@ const ColorLuck = () => {
   </WrapItem>
 
   <WrapItem>
-    <Box width='190px' height='220px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
+    <Box w={[150, 170, 190]} h={[170, 200, 220]} borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
       <VStack>
-        <Text fontSiz='md' mt='8px'>
+        <Text fontSize={['md', 'lg', 'lg']} mt={['4px', '6px', '8px']}>
           <b>Head</b>
         </Text>
         <Image
         style={{position:'absolute'}}
-        mt='55px'
+        mt={['37px', '47px', '55px']}
         align='center' 
-        boxSize='5rem'
+        boxSize={['4rem', '4.5rem', '5rem']}
         src='https://i.imgur.com/T9o4YqE.png'
       />
         <Text        
         style={{position:'absolute'}}
-        mt='145px'
-        fontSize='md'>
+        mt={['110px', '130px', '145px']}
+        fontSize={['sm', 'md', 'md']}>
           No item</Text>
         <HStack
         style={{position:'absolute'}}
-        mt='175px'
+        mt={['135px', '160px', '175px']}
         >
         <span>
-          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
+          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
           <span>
           <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
         </span>
         <span>
-          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
+          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
           <span>
           <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
         </span>
         <span>
-          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
+          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
           <span>
           <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
         </span>
@@ -8260,39 +8236,39 @@ const ColorLuck = () => {
   </WrapItem>
 
   <WrapItem>
-    <Box width='190px' height='220px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
+    <Box w={[150, 170, 190]} h={[170, 200, 220]} borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
       <VStack>
-        <Text fontSiz='md' mt='8px'>
+        <Text fontSize={['md', 'lg', 'lg']} mt={['4px', '6px', '8px']}>
           <b>Chest</b>
         </Text>
         <Image
         style={{position:'absolute'}}
-        mt='55px'
+        mt={['37px', '47px', '55px']}
         align='center' 
-        boxSize='5rem'
+        boxSize={['4rem', '4.5rem', '5rem']}
         src='https://i.imgur.com/yQLgdcB.png'
       />
         <Text        
         style={{position:'absolute'}}
-        mt='145px'
-        fontSize='md'>
+        mt={['110px', '130px', '145px']}
+        fontSize={['sm', 'md', 'md']}>
           No item</Text>
         <HStack
         style={{position:'absolute'}}
-        mt='175px'
+        mt={['135px', '160px', '175px']}
         >
         <span>
-          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
+          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
           <span>
           <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
         </span>
         <span>
-          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
+          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
           <span>
           <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
         </span>
         <span>
-          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
+          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
           <span>
           <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
         </span>
@@ -8302,39 +8278,39 @@ const ColorLuck = () => {
   </WrapItem>
 
   <WrapItem>
-    <Box width='190px' height='220px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
+    <Box w={[150, 170, 190]} h={[170, 200, 220]} borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
       <VStack>
-        <Text fontSiz='md' mt='8px'>
+        <Text fontSize={['md', 'lg', 'lg']} mt={['4px', '6px', '8px']}>
           <b>Feet</b>
         </Text>
         <Image
         style={{position:'absolute'}}
-        mt='55px'
+        mt={['37px', '47px', '55px']}
         align='center' 
-        boxSize='5rem'
+        boxSize={['4rem', '4.5rem', '5rem']}
         src='https://i.imgur.com/qMNT5k8.png'
       />
         <Text        
         style={{position:'absolute'}}
-        mt='145px'
-        fontSize='md'>
+        mt={['110px', '130px', '145px']}
+        fontSize={['sm', 'md', 'md']}>
           No item</Text>
         <HStack
         style={{position:'absolute'}}
-        mt='175px'
+        mt={['135px', '160px', '175px']}
         >
         <span>
-          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
+          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
           <span>
           <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
         </span>
         <span>
-          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
+          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
           <span>
           <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
         </span>
         <span>
-          <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
+          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
           <span>
           <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
         </span>
@@ -8342,15 +8318,18 @@ const ColorLuck = () => {
       </VStack>
     </Box>
   </WrapItem>
+
+
   </Wrap>
-  </Hide>
   <Wrap pt='8px' justify='center'>
   <WrapItem>
-    <Box width='190px' height='220px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
+    <Box w={[150, 170, 190]} h={[170, 200, 220]} borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
       <VStack>
-        <Text fontSiz='md' mt='8px'>
+        <Text fontSize={['md', 'lg', 'lg']} mt={['4px', '6px', '8px']}>
           <b>Companion</b>
         </Text>
+
+
         {(!SuwoIsShown && !AzadiIsShown && !LodoIsShown && !NoanzaIsShown && 
   !KaiszarIsShown && !LoksiIsShown && !ThalamarisIsShown && !ValkosIsShown && !EenrisIsShown && !RairaselIsShown && 
   !AtkKaiszarIsShown && !AtkLoksiIsShown && !AtkThalamarisIsShown && !AtkValkosIsShown && !AtkEenrisIsShown && !AtkRairaselIsShown && 
@@ -8359,9 +8338,9 @@ const ColorLuck = () => {
   && !AlderbamIsShown && !ChysisIsShown && !MundIsShown && !WhodiniIsShown) &&        
         <Image
         style={{position:'absolute'}}
-        mt='55px'
+        mt={['37px', '47px', '55px']}
         align='center' 
-        boxSize='5rem'
+        boxSize={['4rem', '4.5rem', '5rem']}
         src='https://i.imgur.com/gR84XcP.png'
       />}
     {(!SuwoIsShown && !AzadiIsShown && !LodoIsShown && !NoanzaIsShown && 
@@ -8372,74 +8351,74 @@ const ColorLuck = () => {
   && !AlderbamIsShown && !ChysisIsShown && !MundIsShown && !WhodiniIsShown) &&        
         <Text        
         style={{position:'absolute'}}
-        mt='145px'
-        fontSize='md'>
+        mt={['110px', '130px', '145px']}
+        fontSize={['sm', 'md', 'md']}>
           No item</Text>
           }
+
         {NoanzaIsShown &&        
         <Image
         style={{position:'absolute'}}
-        mt='55px'
+        mt={['37px', '47px', '55px']}
         align='center' 
-        boxSize='5rem'
+        boxSize={['4rem', '4.5rem', '5rem']}
         src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png/'
       />}
         {NoanzaIsShown &&        
         <Text        
         style={{position:'absolute'}}
-        mt='145px'
-        fontSize='md'>
+        mt={['110px', '130px', '145px']}
+        fontSize={['sm', 'md', 'md']}>
           Noanza</Text>
           }
         {LodoIsShown &&        
         <Image
         style={{position:'absolute'}}
-        mt='55px'
+        mt={['37px', '47px', '55px']}
         align='center' 
-        boxSize='5rem'
+        boxSize={['4rem', '4.5rem', '5rem']}
         src='https://static.wikia.nocookie.net/4thewords/images/e/e6/Lodo.png/'
       />}
         {LodoIsShown &&        
         <Text        
         style={{position:'absolute'}}
-        mt='145px'
-        fontSize='md'>
+        mt={['110px', '130px', '145px']}
+        fontSize={['sm', 'md', 'md']}>
           Lodo</Text>
           }
         {AzadiIsShown &&        
         <Image
         style={{position:'absolute'}}
-        mt='55px'
+        mt={['37px', '47px', '55px']}
         align='center' 
-        boxSize='5rem'
+        boxSize={['4rem', '4.5rem', '5rem']}
         src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png/'
       />}
         {AzadiIsShown &&        
         <Text        
         style={{position:'absolute'}}
-        mt='145px'
-        fontSize='md'>
+        mt={['110px', '130px', '145px']}
+        fontSize={['sm', 'md', 'md']}>
           Azadi</Text>
           }
         {SuwoIsShown &&        
         <Image
         style={{position:'absolute'}}
-        mt='55px'
+        mt={['37px', '47px', '55px']}
         align='center' 
-        boxSize='5rem'
+        boxSize={['4rem', '4.5rem', '5rem']}
         src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
       />}
         {SuwoIsShown &&        
         <Text        
         style={{position:'absolute'}}
-        mt='145px'
-        fontSize='md'>
+        mt={['110px', '130px', '145px']}
+        fontSize={['sm', 'md', 'md']}>
           Suwo</Text>
           }
-
         <HStack
         style={{position:'absolute'}}
-        mt='175px'
+        mt={['135px', '160px', '175px']}
         >
         <span>
           <GreyAtk />
@@ -8469,21 +8448,21 @@ const ColorLuck = () => {
   </WrapItem>
 
   <WrapItem>
-    <Box width='190px' height='220px' borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
+    <Box w={[150, 170, 190]} h={[170, 200, 220]} borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
       <VStack>
-        <Text fontSiz='md' mt='8px'>
+        <Text fontSize={['md', 'lg', 'lg']} mt='8px'>
           <b> Battle Stats</b>
         </Text>
         <HStack
-        mt='20px'
+        mt={['6px','18px','20px']}
         >
         <span>
           <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/cPrPVxc.png' /></span>
         <span>
-          <Text><b>Attack:</b></Text>
+          <Text fontSize={['md', 'md', 'lg']}><b>Attack:</b></Text>
         </span>
           <span>
-          <Text ml='5px' mr='3px'>{totalAtk}</Text>
+          <Text fontSize={['md', 'md', 'lg']} ml={['2px', '4px', '5px']} mr='3px'>{totalAtk}</Text>
         </span>
         </HStack>
         <HStack
@@ -8492,10 +8471,10 @@ const ColorLuck = () => {
         <span>
           <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/eXyDuR9.png' /></span>
         <span>
-          <Text><b>Defense:</b></Text>
+          <Text fontSize={['md', 'md', 'lg']}><b>Defense:</b></Text>
         </span>
           <span>
-          <Text ml='5px' mr='3px'>{totalDef}</Text>
+          <Text fontSize={['md', 'md', 'lg']}  ml={['2px', '4px', '5px']} mr='3px'>{totalDef}</Text>
         </span>
         </HStack>
 
@@ -8505,10 +8484,10 @@ const ColorLuck = () => {
         <span>
           <Image boxSize='1.5rem' align='center' src='https://i.imgur.com/9e2WZyS.png' /></span>
         <span>
-          <Text><b>Luck:</b></Text>
+          <Text fontSize={['md', 'md', 'lg']}><b>Luck:</b></Text>
         </span>
           <span>
-          <Text ml='5px' mr='3px'>{totalLuck}</Text>
+          <Text fontSize={['md', 'md', 'lg']}  ml={['2px', '4px', '5px']} mr='3px'>{totalLuck}</Text>
         </span>
         </HStack>
       </VStack>
