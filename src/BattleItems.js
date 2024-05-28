@@ -1371,8 +1371,6 @@ const handleKaiszarSwitchClick = event => {
   setLuckRairaselDef (value => 0);
   setLuckRairaselLuck (value => 0);
 
-  setKaiszarIsShown (current => false);
-  setKaiszarActive (current => false);
   setAtkKaiszarIsShown (current => false);
   setAtkKaiszarActive (current => false);
   setDefKaiszarIsShown (current => false);
@@ -1519,8 +1517,7 @@ const handleAtkKaiszarSwitchClick = event => {
   setLuckRairaselDef (value => 0);
   setLuckRairaselLuck (value => 0);
 
-  setKaiszarIsShown (current => false);
-  setKaiszarActive (current => false);
+
   setAtkKaiszarIsShown (current => !AtkKaiszarIsShown);
   setAtkKaiszarActive (current => !AtkKaiszarActive);
   setLuckKaiszarIsShown (current => false);
@@ -1665,8 +1662,7 @@ const handleAtkKaiszarSwitchClick = event => {
   setLuckRairaselDef (value => 0);
   setLuckRairaselLuck (value => 0);
 
-  setKaiszarIsShown (current => false);
-  setKaiszarActive (current => false);
+
   setAtkKaiszarIsShown (current => false);
   setAtkKaiszarActive (current => false);
   setLuckKaiszarIsShown (current => false);
@@ -1811,8 +1807,7 @@ const handleLuckKaiszarSwitchClick = event => {
   setLuckRairaselDef (value => 0);
   setLuckRairaselLuck (value => 0);
 
-  setKaiszarIsShown (current => false);
-  setKaiszarActive (current => false);
+
   setAtkKaiszarIsShown (current => false);
   setAtkKaiszarActive (current => false);
   setDefKaiszarIsShown (current => false);
@@ -2111,8 +2106,6 @@ const handleAtkLoksiSwitchClick = event => {
   setDefKaiszarActive (current => false);
   setLuckKaiszarIsShown (current => false);
   setLuckKaiszarActive (current => false);
-  setLoksiIsShown (current => false);
-  setLoksiActive (current => false);
   setDefLoksiIsShown (current => false);
   setDefLoksiActive (current => false);
   setLuckLoksiIsShown (current => false);
@@ -2255,10 +2248,13 @@ const handleDefLoksiSwitchClick = event => {
   setDefKaiszarActive (current => false);
   setLuckKaiszarIsShown (current => false);
   setLuckKaiszarActive (current => false);
-  setLoksiIsShown (current => false);
-  setLoksiActive (current => false);
+
+  setLoksiIsShown (current => true)
+  setLoksiActive (current => true)
   setAtkLoksiIsShown (current => false);
   setAtkLoksiActive (current => false);
+  setDefLoksiIsShown (current => !DefLoksiIsShown);
+  setDefLoksiActive (current => !DefLoksiActive);
   setLuckLoksiIsShown (current => false);
   setLuckLoksiActive (current => false);
   setThalamarisIsShown (current => false);
@@ -2401,8 +2397,9 @@ const handleLuckLoksiSwitchClick = event => {
   setDefKaiszarActive (current => false);
   setLuckKaiszarIsShown (current => false);
   setLuckKaiszarActive (current => false);
-  setLoksiIsShown (current => false);
-  setLoksiActive (current => false);
+
+  setLoksiIsShown (current => true);
+  setLoksiActive (current => true);
   setAtkLoksiIsShown (current => false);
   setAtkLoksiActive (current => false);
   setDefLoksiIsShown (current => false);
@@ -2701,8 +2698,8 @@ const handleAtkThalamarisSwitchClick = event => {
   setDefLoksiActive (current => false);
   setLuckLoksiIsShown (current => false);
   setLuckLoksiActive (current => false);
-  setThalamarisIsShown (current => false);
-  setThalamarisActive (current => false);
+  setThalamarisIsShown (current => true);
+  setThalamarisActive (current => true);
   setDefThalamarisIsShown (current => false);
   setDefThalamarisActive (current => false);
   setLuckThalamarisIsShown (current => false);
@@ -2847,8 +2844,8 @@ const handleDefThalamarisSwitchClick = event => {
   setDefLoksiActive (current => false);
   setLuckLoksiIsShown (current => false);
   setLuckLoksiActive (current => false);
-  setThalamarisIsShown (current => false);
-  setThalamarisActive (current => false);
+  setThalamarisIsShown (current => true);
+  setThalamarisActive (current => true);
   setAtkThalamarisIsShown (current => false);
   setAtkThalamarisActive (current => false);
   setLuckThalamarisIsShown (current => false);
@@ -2991,8 +2988,8 @@ const handleLuckThalamarisSwitchClick = event => {
   setDefLoksiActive (current => false);
   setLuckLoksiIsShown (current => false);
   setLuckLoksiActive (current => false);
-  setThalamarisIsShown (current => false);
-  setThalamarisActive (current => false);
+  setThalamarisIsShown (current => true);
+  setThalamarisActive (current => true);
   setAtkThalamarisIsShown (current => false);
   setAtkThalamarisActive (current => false);
   setDefThalamarisIsShown (current => false);
@@ -3289,8 +3286,8 @@ const handleAtkValkosSwitchClick = event => {
   setDefThalamarisActive (current => false);
   setLuckThalamarisIsShown (current => false);
   setLuckThalamarisActive (current => false);
-  setValkosIsShown (current => false);
-  setValkosActive (current => false);
+  setValkosIsShown (current => true);
+  setValkosActive (current => true);
   setDefValkosIsShown (current => false);
   setDefValkosActive (current => false);
   setLuckValkosIsShown (current => false);
@@ -3435,8 +3432,8 @@ const handleDefValkosSwitchClick = event => {
   setDefThalamarisActive (current => false);
   setLuckThalamarisIsShown (current => false);
   setLuckThalamarisActive (current => false);
-  setValkosIsShown (current => false);
-  setValkosActive (current => false);
+  setValkosIsShown (current => true);
+  setValkosActive (current => true);
   setAtkValkosIsShown (current => false);
   setAtkValkosActive (current => false);
   setLuckValkosIsShown (current => false);
@@ -3581,8 +3578,8 @@ const handleLuckValkosSwitchClick = event => {
   setDefThalamarisActive (current => false);
   setLuckThalamarisIsShown (current => false);
   setLuckThalamarisActive (current => false);
-  setValkosIsShown (current => false);
-  setValkosActive (current => false);
+  setValkosIsShown (current => true);
+  setValkosActive (current => true);
   setAtkValkosIsShown (current => false);
   setAtkValkosActive (current => false);
   setDefValkosIsShown (current => false);
@@ -3881,8 +3878,8 @@ const handleAtkEenrisSwitchClick = event => {
   setDefValkosActive (current => false);
   setLuckValkosIsShown (current => false);
   setLuckValkosActive (current => false);
-  setEenrisIsShown (current => false);
-  setEenrisActive (current => false);
+  setEenrisIsShown (current => true);
+  setEenrisActive (current => true);
   setDefEenrisIsShown (current => false);
   setDefEenrisActive (current => false);
   setLuckEenrisIsShown (current => false);
@@ -4027,8 +4024,8 @@ const handleDefEenrisSwitchClick = event => {
   setDefValkosActive (current => false);
   setLuckValkosIsShown (current => false);
   setLuckValkosActive (current => false);
-  setEenrisIsShown (current => false);
-  setEenrisActive (current => false);
+  setEenrisIsShown (current => true);
+  setEenrisActive (current => true);
   setAtkEenrisIsShown (current => false);
   setAtkEenrisActive (current => false);
   setLuckEenrisIsShown (current => false);
@@ -4173,8 +4170,8 @@ const handleLuckEenrisSwitchClick = event => {
   setDefValkosActive (current => false);
   setLuckValkosIsShown (current => false);
   setLuckValkosActive (current => false);
-  setEenrisIsShown (current => false);
-  setEenrisActive (current => false);
+  setEenrisIsShown (current => true);
+  setEenrisActive (current => true);
   setAtkEenrisIsShown (current => false);
   setAtkEenrisActive (current => false);
   setDefEenrisIsShown (current => false);
@@ -4473,8 +4470,8 @@ const handleAtkRairaselSwitchClick = event => {
   setDefEenrisActive (current => false);
   setLuckEenrisIsShown (current => false);
   setLuckEenrisActive (current => false);
-  setRairaselIsShown (current => false);
-  setRairaselActive (current => false);
+  setRairaselIsShown (current => true);
+  setRairaselActive (current => true);
   setDefRairaselIsShown (current => false);
   setDefRairaselActive (current => false);
   setLuckRairaselIsShown (current => false);
@@ -4619,8 +4616,8 @@ const handleDefRairaselSwitchClick = event => {
   setDefEenrisActive (current => false);
   setLuckEenrisIsShown (current => false);
   setLuckEenrisActive (current => false);
-  setRairaselIsShown (current => false);
-  setRairaselActive (current => false);
+  setRairaselIsShown (current => true);
+  setRairaselActive (current => true);
   setAtkRairaselIsShown (current => false);
   setAtkRairaselActive (current => false);
   setLuckRairaselIsShown (current => false);
@@ -4765,8 +4762,8 @@ const handleLuckRairaselSwitchClick = event => {
   setDefEenrisActive (current => false);
   setLuckEenrisIsShown (current => false);
   setLuckEenrisActive (current => false);
-  setRairaselIsShown (current => false);
-  setRairaselActive (current => false);
+  setRairaselIsShown (current => true);
+  setRairaselActive (current => true);
   setAtkRairaselIsShown (current => false);
   setAtkRairaselActive (current => false);
   setDefRairaselIsShown (current => false);
@@ -4784,6 +4781,8 @@ const handleLuckRairaselSwitchClick = event => {
 const handleAtkKaiszarSwitchNoClick = event => {
   setAtkKaiszarIsShown (current => !AtkKaiszarIsShown);
   setAtkKaiszarActive (current => !AtkKaiszarIsShown);
+  setKaiszarIsShown (current => false);
+  setKaiszarActive (current => false);
   setAtkKaiszarAtk (value => 0);
   setAtkKaiszarDef (value => 0);
   setAtkKaiszarLuck (value => 0);
@@ -4792,6 +4791,8 @@ const handleAtkKaiszarSwitchNoClick = event => {
 const handleDefKaiszarSwitchNoClick = event => {
   setDefKaiszarIsShown (current => !DefKaiszarIsShown);
   setDefKaiszarActive (current => !DefKaiszarIsShown);
+  setKaiszarIsShown (current => false);
+  setKaiszarActive (current => false);
   setDefKaiszarAtk (value => 0);
   setDefKaiszarDef (value => 0);
   setDefKaiszarLuck (value => 0);
@@ -4800,6 +4801,8 @@ const handleDefKaiszarSwitchNoClick = event => {
 const handleLuckKaiszarSwitchNoClick = event => {
   setLuckKaiszarIsShown (current => !LuckKaiszarIsShown);
   setLuckKaiszarActive (current => !LuckKaiszarIsShown);
+  setKaiszarIsShown (current => false);
+  setKaiszarActive (current => false);
   setLuckKaiszarAtk (value => 0);
   setLuckKaiszarDef (value => 0);
   setLuckKaiszarLuck (value => 0);
@@ -8448,7 +8451,7 @@ const ColorLuck = () => {
   </WrapItem>
 
   <WrapItem>
-    <Box w={[150, 170, 190]} h={[170, 200, 220]} borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
+    <Box w={[150, 170, 390]} h={[170, 200, 220]} borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
       <VStack>
         <Text fontSize={['md', 'lg', 'lg']} mt='8px'>
           <b> Battle Stats</b>
@@ -8599,7 +8602,7 @@ const ColorLuck = () => {
        <Image
         mt='12px'
         align='center' 
-        boxSize='5rem'
+        boxSize='4.5rem'
         src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png/'
       /> 
       <Text mt='-8px' fontSize='md' align='center'><b>Azadi</b></Text>
@@ -8616,7 +8619,7 @@ const ColorLuck = () => {
        <Image
         mt='12px'
         align='center' 
-        boxSize='5rem'
+        boxSize='4.5rem'
         src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png/'
       /> 
       <Text mt='-8px' fontSize='md' align='center'><b>Azadi</b></Text>
@@ -8633,7 +8636,7 @@ const ColorLuck = () => {
        <Image
         mt='12px'
         align='center' 
-        boxSize='5rem'
+        boxSize='4.5rem'
         src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
       /> 
       <Text mt='-8px' fontSize='md' align='center'><b>Suwo</b></Text>
@@ -8650,7 +8653,7 @@ const ColorLuck = () => {
        <Image
         mt='12px'
         align='center' 
-        boxSize='5rem'
+        boxSize='4.5rem'
         src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
       /> 
       <Text mt='-8px' fontSize='md' align='center'><b>Suwo</b></Text>
@@ -8676,7 +8679,7 @@ const ColorLuck = () => {
         boxSize='5rem'
         src='https://static.wikia.nocookie.net/4thewords/images/f/fa/Kaiszar.png/'
       /> 
-      <Text fontSize='md' mt='15px' align='center'><b>Kaiszar</b></Text>
+      <Text fontSize='md' mt='-8px' align='center'><b>Kaiszar</b></Text>
       <Text fontSize='sm' align='center'>+12 Atk<br />+0 Def<br />+0 Luck </Text>
       </VStack>
 
@@ -8694,7 +8697,7 @@ const ColorLuck = () => {
         boxSize='5rem'
                 src='https://static.wikia.nocookie.net/4thewords/images/f/fa/Kaiszar.png/'
       /> 
-  <Text fontSize='md' mt='15px' align='center'><b>Kaiszar</b></Text>
+  <Text fontSize='md' mt='-8px' align='center'><b>Kaiszar</b></Text>
   <Text fontSize='sm' align='center'>+12 Atk<br />+0 Def<br />+0 Luck </Text>
   
       </VStack>
@@ -8738,6 +8741,53 @@ const ColorLuck = () => {
   }
 
             </Button>
+            </WrapItem>}
+
+{DragonLairIsShown &&
+           <WrapItem>
+            <Box w='110px' h='170px' pb={5} borderRadius='10%' style={{ backgroundColor: "#2D3748" }}>
+              <Text mt='8px' fontSize='md'><b>Add Armor:</b></Text>
+            <Wrap mt='8px' justify='center'>
+{!AtkKaiszarIsShown && 
+              <WrapItem>
+              <Button w='85px' h='30px' pb={5} onClick={handleAtkKaiszarSwitchClick} style={{ backgroundColor: "#1A202C" }}>
+      <Text fontSize='sm' pt='15px' align='center'>Attack</Text>
+            </Button>
+              </WrapItem>}
+{AtkKaiszarIsShown && 
+              <WrapItem>
+              <Button w='85px' h='30px' pb={5} onClick={handleAtkKaiszarSwitchNoClick} style={{ backgroundColor: "#211742" }}>
+      <Text fontSize='sm' pt='15px' align='center'>Attack</Text>
+            </Button>
+              </WrapItem>}
+{!DefKaiszarIsShown && 
+              <WrapItem>
+              <Button w='85px' h='30px' pb={5} onClick={handleDefKaiszarSwitchClick} style={{ backgroundColor: "#1A202C" }}>
+      <Text fontSize='sm' pt='15px' align='center'>Defense</Text>
+            </Button>
+              </WrapItem>}
+{DefKaiszarIsShown && 
+              <WrapItem>
+              <Button w='85px' h='30px' pb={5} onClick={handleDefKaiszarSwitchNoClick} style={{ backgroundColor: "#211742" }}>
+      <Text fontSize='sm' pt='15px' align='center'>Defense</Text>
+            </Button>
+              </WrapItem>}
+{!LuckKaiszarIsShown && 
+              <WrapItem>
+              <Button w='85px' h='30px' pb={5} onClick={handleLuckKaiszarSwitchClick} style={{ backgroundColor: "#1A202C" }}>
+      <Text fontSize='sm' pt='15px' align='center'>Luck</Text>
+            </Button>
+              </WrapItem>}
+{LuckKaiszarIsShown && 
+              <WrapItem>
+              <Button w='85px' h='30px' pb={5} onClick={handleLuckKaiszarSwitchNoClick} style={{ backgroundColor: "#211742" }}>
+      <Text fontSize='sm' pt='15px' align='center'>Luck</Text>
+            </Button>
+              </WrapItem>}
+
+            </Wrap>
+
+            </Box>
             </WrapItem>}
 
 {!AtkKaiszarIsShown &&
@@ -8826,7 +8876,7 @@ const ColorLuck = () => {
 
             {!LoksiIsShown &&
   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleLoksiClick} style={{ backgroundColor: "#2D3748" }}>
+   <Button w='110px' h='170px' pb={5} onClick={handleLoksiSwitchClick} style={{ backgroundColor: "#2D3748" }}>
 <VStack justify='center'>  
 <Image
 ml='-15px'
@@ -8903,7 +8953,7 @@ mr='5px'
 
 {!AtkLoksiIsShown &&
    <WrapItem>
-   <Button w='90px' h='110px' pb={5} onClick={handleAtkLoksiClick} style={{ backgroundColor: "#2D3748" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleAtkLoksiSwitchClick} style={{ backgroundColor: "#2D3748" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -8933,7 +8983,7 @@ mr='5px'
 
 {!DefLoksiIsShown &&
   <WrapItem>
-   <Button w='90px' h='110px' pb={5} onClick={handleDefLoksiClick} style={{ backgroundColor: "#2D3748" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleDefLoksiSwitchClick} style={{ backgroundColor: "#2D3748" }}>
 <VStack> 
 <Image
 mt='12px'
@@ -8963,7 +9013,7 @@ mr='5px'
 
 {!LuckLoksiIsShown &&
   <WrapItem>
-   <Button w='90px' h='110px' pb={5} onClick={handleLuckLoksiClick} style={{ backgroundColor: "#2D3748" }}>
+   <Button w='90px' h='110px' pb={5} onClick={handleLuckLoksiSwitchClick} style={{ backgroundColor: "#2D3748" }}>
 <VStack> 
 <Image
 mt='12px'
