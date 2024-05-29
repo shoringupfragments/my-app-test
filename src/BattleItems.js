@@ -6094,13 +6094,13 @@ const [MercurialSwordAtk, setMercurialSwordAtk] = useState(0)
 const [MercurialSwordDef, setMercurialSwordDef] = useState(0)
 const [MercurialSwordLuck, setMercurialSwordLuck] = useState(0)
 
-const [LeagsungWoodenSwordIsShown, setLeagsungWoodenSwordIsShown] = useState(false)
-const [LeagsungWoodenSwordActive, setLeagsungWoodenSwordActive] = useState(false)
-const [LeagsungWoodenSwordNoIsShown, setLeagsungWoodenSwordNoIsShown] = useState(false)
-const [LeagsungWoodenSwordNoActive, setLeagsungWoodenSwordNoActive] = useState(false)
-const [LeagsungWoodenSwordAtk, setLeagsungWoodenSwordAtk] = useState(0)
-const [LeagsungWoodenSwordDef, setLeagsungWoodenSwordDef] = useState(0)
-const [LeagsungWoodenSwordLuck, setLeagsungWoodenSwordLuck] = useState(0)
+const [LeafsungWoodenSwordIsShown, setLeafsungWoodenSwordIsShown] = useState(false)
+const [LeafsungWoodenSwordActive, setLeafsungWoodenSwordActive] = useState(false)
+const [LeafsungWoodenSwordNoIsShown, setLeafsungWoodenSwordNoIsShown] = useState(false)
+const [LeafsungWoodenSwordNoActive, setLeafsungWoodenSwordNoActive] = useState(false)
+const [LeafsungWoodenSwordAtk, setLeafsungWoodenSwordAtk] = useState(0)
+const [LeafsungWoodenSwordDef, setLeafsungWoodenSwordDef] = useState(0)
+const [LeafsungWoodenSwordLuck, setLeafsungWoodenSwordLuck] = useState(0)
 
 const [KingMaiSwordIsShown, setKingMaiSwordIsShown] = useState(false)
 const [KingMaiSwordActive, setKingMaiSwordActive] = useState(false)
@@ -6180,6 +6180,120 @@ const handleWoodSwordClick = event => {
   setWoodSwordAtk (value => 1);
   setWoodSwordDef (value => 0);
   setWoodSwordLuck (value => 0);
+  
+ setWoodSpearIsShown (current => false);
+ setWoodSpearActive (current => false);
+ setWoodSpearAtk (value => 0);
+ setWoodSpearDef (value => 0);
+ setWoodSpearLuck (value => 0);
+
+ setSteelSwordIsShown (current => false);
+ setSteelSwordActive (current => false);
+ setSteelSwordAtk (value => 0);
+ setSteelSwordDef (value => 0);
+ setSteelSwordLuck (value => 0);
+
+ setSteelMaceIsShown (current => false);
+ setSteelMaceActive (current => false);
+ setSteelMaceAtk (value => 0);
+ setSteelMaceDef (value => 0);
+ setSteelMaceLuck (value => 0);
+
+ setSteelDaggerIsShown (current => false);
+ setSteelDaggerActive (current => false);
+ setSteelDaggerAtk (value => 0);
+ setSteelDaggerDef (value => 0);
+ setSteelDaggerLuck (value => 0);
+
+ setSpellfireSwordIsShown (current => false);
+ setSpellfireSwordActive (current => false);
+ setSpellfireSwordAtk (value => 0);
+ setSpellfireSwordDef (value => 0);
+ setSpellfireSwordLuck (value => 0);
+
+ setRainaSwordIsShown (current => false);
+ setRainaSwordActive (current => false);
+ setRainaSwordAtk (value => 0);
+ setRainaSwordDef (value => 0);
+ setRainaSwordLuck (value => 0);
+
+ setOozeSwordIsShown (current => false);
+ setOozeSwordActive (current => false);
+ setOozeSwordAtk (value => 0);
+ setOozeSwordDef (value => 0);
+ setOozeSwordLuck (value => 0);
+
+ setNiftraSwordIsShown (current => false);
+ setNiftraSwordActive (current => false);
+ setNiftraSwordAtk (value => 0);
+ setNiftraSwordDef (value => 0);
+ setNiftraSwordLuck (value => 0);
+
+ setMercurialSwordIsShown (current => false);
+ setMercurialSwordActive (current => false);
+ setMercurialSwordAtk (value => 0);
+ setMercurialSwordDef (value => 0);
+ setMercurialSwordLuck (value => 0);
+
+ setLeafsungWoodenSwordIsShown (current => false);
+ setLeafsungWoodenSwordActive (current => false);
+ setLeafsungWoodenSwordAtk (value => 0);
+ setLeafsungWoodenSwordDef (value => 0);
+ setLeafsungWoodenSwordLuck (value => 0);
+
+ setKingMaiSwordIsShown (current => false);
+ setKingMaiSwordActive (current => false);
+ setKingMaiSwordAtk (value => 0);
+ setKingMaiSwordDef (value => 0);
+ setKingMaiSwordLuck (value => 0);
+
+ setGlassScimitarIsShown (current => false);
+ setGlassScimitarActive (current => false);
+ setGlassScimitarAtk (value => 0);
+ setGlassScimitarDef (value => 0);
+ setGlassScimitarLuck (value => 0);
+
+ setFusionSwordIsShown (current => false);
+ setFusionSwordActive (current => false);
+ setFusionSwordAtk (value => 0);
+ setFusionSwordDef (value => 0);
+ setFusionSwordLuck (value => 0);
+
+ setFlowerSlingshotIsShown (current => false);
+ setFlowerSlingshotActive (current => false);
+ setFlowerSlingshotAtk (value => 0);
+ setFlowerSlingshotDef (value => 0);
+ setFlowerSlingshotLuck (value => 0);
+
+ setDragonTailSwordIsShown (current => false);
+ setDragonTailSwordActive (current => false);
+ setDragonTailSwordAtk (value => 0);
+ setDragonTailSwordDef (value => 0);
+ setDragonTailSwordLuck (value => 0);
+
+ setDragonClawHookIsShown (current => false);
+ setDragonClawHookActive (current => false);
+ setDragonClawHookAtk (value => 0);
+ setDragonClawHookDef (value => 0);
+ setDragonClawHookLuck (value => 0);
+
+ setDawnSwordIsShown (current => false);
+ setDawnSwordActive (current => false);
+ setDawnSwordAtk (value => 0);
+ setDawnSwordDef (value => 0);
+ setDawnSwordLuck (value => 0);
+
+ setDarkForestSwordOldIsShown (current => false);
+ setDarkForestSwordOldActive (current => false);
+ setDarkForestSwordOldAtk (value => 0);
+ setDarkForestSwordOldDef (value => 0);
+ setDarkForestSwordOldLuck (value => 0);
+
+ setDarkForestSwordIsShown (current => false);
+ setDarkForestSwordActive (current => false);
+ setDarkForestSwordAtk (value => 0);
+ setDarkForestSwordDef (value => 0);
+ setDarkForestSwordLuck (value => 0);
   };
 
   const handleWoodSpearClick = event => {
@@ -6188,6 +6302,120 @@ const handleWoodSwordClick = event => {
   setWoodSpearAtk (value => 4);
   setWoodSpearDef (value => 1);
   setWoodSpearLuck (value => 0);
+
+  setWoodSwordIsShown (current => false);
+   setWoodSwordActive (current => false);
+   setWoodSwordAtk (value => 0);
+   setWoodSwordDef (value => 0);
+   setWoodSwordLuck (value => 0);
+
+  setSteelSwordIsShown (current => false);
+  setSteelSwordActive (current => false);
+  setSteelSwordAtk (value => 0);
+  setSteelSwordDef (value => 0);
+  setSteelSwordLuck (value => 0);
+
+  setSteelMaceIsShown (current => false);
+  setSteelMaceActive (current => false);
+  setSteelMaceAtk (value => 0);
+  setSteelMaceDef (value => 0);
+  setSteelMaceLuck (value => 0);
+
+  setSteelDaggerIsShown (current => false);
+  setSteelDaggerActive (current => false);
+  setSteelDaggerAtk (value => 0);
+  setSteelDaggerDef (value => 0);
+  setSteelDaggerLuck (value => 0);
+
+  setSpellfireSwordIsShown (current => false);
+  setSpellfireSwordActive (current => false);
+  setSpellfireSwordAtk (value => 0);
+  setSpellfireSwordDef (value => 0);
+  setSpellfireSwordLuck (value => 0);
+
+  setRainaSwordIsShown (current => false);
+  setRainaSwordActive (current => false);
+  setRainaSwordAtk (value => 0);
+  setRainaSwordDef (value => 0);
+  setRainaSwordLuck (value => 0);
+
+  setOozeSwordIsShown (current => false);
+  setOozeSwordActive (current => false);
+  setOozeSwordAtk (value => 0);
+  setOozeSwordDef (value => 0);
+  setOozeSwordLuck (value => 0);
+
+  setNiftraSwordIsShown (current => false);
+  setNiftraSwordActive (current => false);
+  setNiftraSwordAtk (value => 0);
+  setNiftraSwordDef (value => 0);
+  setNiftraSwordLuck (value => 0);
+
+  setMercurialSwordIsShown (current => false);
+  setMercurialSwordActive (current => false);
+  setMercurialSwordAtk (value => 0);
+  setMercurialSwordDef (value => 0);
+  setMercurialSwordLuck (value => 0);
+
+  setLeafsungWoodenSwordIsShown (current => false);
+  setLeafsungWoodenSwordActive (current => false);
+  setLeafsungWoodenSwordAtk (value => 0);
+  setLeafsungWoodenSwordDef (value => 0);
+  setLeafsungWoodenSwordLuck (value => 0);
+
+  setKingMaiSwordIsShown (current => false);
+  setKingMaiSwordActive (current => false);
+  setKingMaiSwordAtk (value => 0);
+  setKingMaiSwordDef (value => 0);
+  setKingMaiSwordLuck (value => 0);
+
+  setGlassScimitarIsShown (current => false);
+  setGlassScimitarActive (current => false);
+  setGlassScimitarAtk (value => 0);
+  setGlassScimitarDef (value => 0);
+  setGlassScimitarLuck (value => 0);
+
+  setFusionSwordIsShown (current => false);
+  setFusionSwordActive (current => false);
+  setFusionSwordAtk (value => 0);
+  setFusionSwordDef (value => 0);
+  setFusionSwordLuck (value => 0);
+
+  setFlowerSlingshotIsShown (current => false);
+  setFlowerSlingshotActive (current => false);
+  setFlowerSlingshotAtk (value => 0);
+  setFlowerSlingshotDef (value => 0);
+  setFlowerSlingshotLuck (value => 0);
+
+  setDragonTailSwordIsShown (current => false);
+  setDragonTailSwordActive (current => false);
+  setDragonTailSwordAtk (value => 0);
+  setDragonTailSwordDef (value => 0);
+  setDragonTailSwordLuck (value => 0);
+
+  setDragonClawHookIsShown (current => false);
+  setDragonClawHookActive (current => false);
+  setDragonClawHookAtk (value => 0);
+  setDragonClawHookDef (value => 0);
+  setDragonClawHookLuck (value => 0);
+
+  setDawnSwordIsShown (current => false);
+  setDawnSwordActive (current => false);
+  setDawnSwordAtk (value => 0);
+  setDawnSwordDef (value => 0);
+  setDawnSwordLuck (value => 0);
+
+  setDarkForestSwordOldIsShown (current => false);
+  setDarkForestSwordOldActive (current => false);
+  setDarkForestSwordOldAtk (value => 0);
+  setDarkForestSwordOldDef (value => 0);
+  setDarkForestSwordOldLuck (value => 0);
+
+  setDarkForestSwordIsShown (current => false);
+  setDarkForestSwordActive (current => false);
+  setDarkForestSwordAtk (value => 0);
+  setDarkForestSwordDef (value => 0);
+  setDarkForestSwordLuck (value => 0);
   };
 
   const handleSteelSwordClick = event => {
@@ -6196,6 +6424,120 @@ const handleWoodSwordClick = event => {
   setSteelSwordAtk (value => 10);
   setSteelSwordDef (value => 0);
   setSteelSwordLuck (value => 0);
+
+  setWoodSwordIsShown (current => false);
+  setWoodSwordActive (current => false);
+  setWoodSwordAtk (value => 0);
+  setWoodSwordDef (value => 0);
+  setWoodSwordLuck (value => 0);
+  
+ setWoodSpearIsShown (current => false);
+ setWoodSpearActive (current => false);
+ setWoodSpearAtk (value => 0);
+ setWoodSpearDef (value => 0);
+ setWoodSpearLuck (value => 0);
+
+ setSteelMaceIsShown (current => false);
+ setSteelMaceActive (current => false);
+ setSteelMaceAtk (value => 0);
+ setSteelMaceDef (value => 0);
+ setSteelMaceLuck (value => 0);
+
+ setSteelDaggerIsShown (current => false);
+ setSteelDaggerActive (current => false);
+ setSteelDaggerAtk (value => 0);
+ setSteelDaggerDef (value => 0);
+ setSteelDaggerLuck (value => 0);
+
+ setSpellfireSwordIsShown (current => false);
+ setSpellfireSwordActive (current => false);
+ setSpellfireSwordAtk (value => 0);
+ setSpellfireSwordDef (value => 0);
+ setSpellfireSwordLuck (value => 0);
+
+ setRainaSwordIsShown (current => false);
+ setRainaSwordActive (current => false);
+ setRainaSwordAtk (value => 0);
+ setRainaSwordDef (value => 0);
+ setRainaSwordLuck (value => 0);
+
+ setOozeSwordIsShown (current => false);
+ setOozeSwordActive (current => false);
+ setOozeSwordAtk (value => 0);
+ setOozeSwordDef (value => 0);
+ setOozeSwordLuck (value => 0);
+
+ setNiftraSwordIsShown (current => false);
+ setNiftraSwordActive (current => false);
+ setNiftraSwordAtk (value => 0);
+ setNiftraSwordDef (value => 0);
+ setNiftraSwordLuck (value => 0);
+
+ setMercurialSwordIsShown (current => false);
+ setMercurialSwordActive (current => false);
+ setMercurialSwordAtk (value => 0);
+ setMercurialSwordDef (value => 0);
+ setMercurialSwordLuck (value => 0);
+
+ setLeafsungWoodenSwordIsShown (current => false);
+ setLeafsungWoodenSwordActive (current => false);
+ setLeafsungWoodenSwordAtk (value => 0);
+ setLeafsungWoodenSwordDef (value => 0);
+ setLeafsungWoodenSwordLuck (value => 0);
+
+ setKingMaiSwordIsShown (current => false);
+ setKingMaiSwordActive (current => false);
+ setKingMaiSwordAtk (value => 0);
+ setKingMaiSwordDef (value => 0);
+ setKingMaiSwordLuck (value => 0);
+
+ setGlassScimitarIsShown (current => false);
+ setGlassScimitarActive (current => false);
+ setGlassScimitarAtk (value => 0);
+ setGlassScimitarDef (value => 0);
+ setGlassScimitarLuck (value => 0);
+
+ setFusionSwordIsShown (current => false);
+ setFusionSwordActive (current => false);
+ setFusionSwordAtk (value => 0);
+ setFusionSwordDef (value => 0);
+ setFusionSwordLuck (value => 0);
+
+ setFlowerSlingshotIsShown (current => false);
+ setFlowerSlingshotActive (current => false);
+ setFlowerSlingshotAtk (value => 0);
+ setFlowerSlingshotDef (value => 0);
+ setFlowerSlingshotLuck (value => 0);
+
+ setDragonTailSwordIsShown (current => false);
+ setDragonTailSwordActive (current => false);
+ setDragonTailSwordAtk (value => 0);
+ setDragonTailSwordDef (value => 0);
+ setDragonTailSwordLuck (value => 0);
+
+ setDragonClawHookIsShown (current => false);
+ setDragonClawHookActive (current => false);
+ setDragonClawHookAtk (value => 0);
+ setDragonClawHookDef (value => 0);
+ setDragonClawHookLuck (value => 0);
+
+ setDawnSwordIsShown (current => false);
+ setDawnSwordActive (current => false);
+ setDawnSwordAtk (value => 0);
+ setDawnSwordDef (value => 0);
+ setDawnSwordLuck (value => 0);
+
+ setDarkForestSwordOldIsShown (current => false);
+ setDarkForestSwordOldActive (current => false);
+ setDarkForestSwordOldAtk (value => 0);
+ setDarkForestSwordOldDef (value => 0);
+ setDarkForestSwordOldLuck (value => 0);
+
+ setDarkForestSwordIsShown (current => false);
+ setDarkForestSwordActive (current => false);
+ setDarkForestSwordAtk (value => 0);
+ setDarkForestSwordDef (value => 0);
+ setDarkForestSwordLuck (value => 0);
   };
 
   const handleSteelMaceClick = event => {
@@ -6204,6 +6546,120 @@ const handleWoodSwordClick = event => {
   setSteelMaceAtk (value => 15);
   setSteelMaceDef (value => 0);
   setSteelMaceLuck (value => 0);
+
+  setWoodSwordIsShown (current => false);
+  setWoodSwordActive (current => false);
+  setWoodSwordAtk (value => 0);
+  setWoodSwordDef (value => 0);
+  setWoodSwordLuck (value => 0);
+  
+ setWoodSpearIsShown (current => false);
+ setWoodSpearActive (current => false);
+ setWoodSpearAtk (value => 0);
+ setWoodSpearDef (value => 0);
+ setWoodSpearLuck (value => 0);
+
+ setSteelSwordIsShown (current => false);
+ setSteelSwordActive (current => false);
+ setSteelSwordAtk (value => 0);
+ setSteelSwordDef (value => 0);
+ setSteelSwordLuck (value => 0);
+
+ setSteelDaggerIsShown (current => false);
+ setSteelDaggerActive (current => false);
+ setSteelDaggerAtk (value => 0);
+ setSteelDaggerDef (value => 0);
+ setSteelDaggerLuck (value => 0);
+
+ setSpellfireSwordIsShown (current => false);
+ setSpellfireSwordActive (current => false);
+ setSpellfireSwordAtk (value => 0);
+ setSpellfireSwordDef (value => 0);
+ setSpellfireSwordLuck (value => 0);
+
+ setRainaSwordIsShown (current => false);
+ setRainaSwordActive (current => false);
+ setRainaSwordAtk (value => 0);
+ setRainaSwordDef (value => 0);
+ setRainaSwordLuck (value => 0);
+
+ setOozeSwordIsShown (current => false);
+ setOozeSwordActive (current => false);
+ setOozeSwordAtk (value => 0);
+ setOozeSwordDef (value => 0);
+ setOozeSwordLuck (value => 0);
+
+ setNiftraSwordIsShown (current => false);
+ setNiftraSwordActive (current => false);
+ setNiftraSwordAtk (value => 0);
+ setNiftraSwordDef (value => 0);
+ setNiftraSwordLuck (value => 0);
+
+ setMercurialSwordIsShown (current => false);
+ setMercurialSwordActive (current => false);
+ setMercurialSwordAtk (value => 0);
+ setMercurialSwordDef (value => 0);
+ setMercurialSwordLuck (value => 0);
+
+ setLeafsungWoodenSwordIsShown (current => false);
+ setLeafsungWoodenSwordActive (current => false);
+ setLeafsungWoodenSwordAtk (value => 0);
+ setLeafsungWoodenSwordDef (value => 0);
+ setLeafsungWoodenSwordLuck (value => 0);
+
+ setKingMaiSwordIsShown (current => false);
+ setKingMaiSwordActive (current => false);
+ setKingMaiSwordAtk (value => 0);
+ setKingMaiSwordDef (value => 0);
+ setKingMaiSwordLuck (value => 0);
+
+ setGlassScimitarIsShown (current => false);
+ setGlassScimitarActive (current => false);
+ setGlassScimitarAtk (value => 0);
+ setGlassScimitarDef (value => 0);
+ setGlassScimitarLuck (value => 0);
+
+ setFusionSwordIsShown (current => false);
+ setFusionSwordActive (current => false);
+ setFusionSwordAtk (value => 0);
+ setFusionSwordDef (value => 0);
+ setFusionSwordLuck (value => 0);
+
+ setFlowerSlingshotIsShown (current => false);
+ setFlowerSlingshotActive (current => false);
+ setFlowerSlingshotAtk (value => 0);
+ setFlowerSlingshotDef (value => 0);
+ setFlowerSlingshotLuck (value => 0);
+
+ setDragonTailSwordIsShown (current => false);
+ setDragonTailSwordActive (current => false);
+ setDragonTailSwordAtk (value => 0);
+ setDragonTailSwordDef (value => 0);
+ setDragonTailSwordLuck (value => 0);
+
+ setDragonClawHookIsShown (current => false);
+ setDragonClawHookActive (current => false);
+ setDragonClawHookAtk (value => 0);
+ setDragonClawHookDef (value => 0);
+ setDragonClawHookLuck (value => 0);
+
+ setDawnSwordIsShown (current => false);
+ setDawnSwordActive (current => false);
+ setDawnSwordAtk (value => 0);
+ setDawnSwordDef (value => 0);
+ setDawnSwordLuck (value => 0);
+
+ setDarkForestSwordOldIsShown (current => false);
+ setDarkForestSwordOldActive (current => false);
+ setDarkForestSwordOldAtk (value => 0);
+ setDarkForestSwordOldDef (value => 0);
+ setDarkForestSwordOldLuck (value => 0);
+
+ setDarkForestSwordIsShown (current => false);
+ setDarkForestSwordActive (current => false);
+ setDarkForestSwordAtk (value => 0);
+ setDarkForestSwordDef (value => 0);
+ setDarkForestSwordLuck (value => 0);
   };
 
   const handleSteelDaggerClick = event => {
@@ -6212,6 +6668,120 @@ const handleWoodSwordClick = event => {
   setSteelDaggerAtk (value => 4);
   setSteelDaggerDef (value => 0);
   setSteelDaggerLuck (value => 1);
+
+  setWoodSwordIsShown (current => false);
+  setWoodSwordActive (current => false);
+  setWoodSwordAtk (value => 0);
+  setWoodSwordDef (value => 0);
+  setWoodSwordLuck (value => 0);
+  
+ setWoodSpearIsShown (current => false);
+ setWoodSpearActive (current => false);
+ setWoodSpearAtk (value => 0);
+ setWoodSpearDef (value => 0);
+ setWoodSpearLuck (value => 0);
+
+ setSteelSwordIsShown (current => false);
+ setSteelSwordActive (current => false);
+ setSteelSwordAtk (value => 0);
+ setSteelSwordDef (value => 0);
+ setSteelSwordLuck (value => 0);
+
+ setSteelMaceIsShown (current => false);
+ setSteelMaceActive (current => false);
+ setSteelMaceAtk (value => 0);
+ setSteelMaceDef (value => 0);
+ setSteelMaceLuck (value => 0);
+
+ setSpellfireSwordIsShown (current => false);
+ setSpellfireSwordActive (current => false);
+ setSpellfireSwordAtk (value => 0);
+ setSpellfireSwordDef (value => 0);
+ setSpellfireSwordLuck (value => 0);
+
+ setRainaSwordIsShown (current => false);
+ setRainaSwordActive (current => false);
+ setRainaSwordAtk (value => 0);
+ setRainaSwordDef (value => 0);
+ setRainaSwordLuck (value => 0);
+
+ setOozeSwordIsShown (current => false);
+ setOozeSwordActive (current => false);
+ setOozeSwordAtk (value => 0);
+ setOozeSwordDef (value => 0);
+ setOozeSwordLuck (value => 0);
+
+ setNiftraSwordIsShown (current => false);
+ setNiftraSwordActive (current => false);
+ setNiftraSwordAtk (value => 0);
+ setNiftraSwordDef (value => 0);
+ setNiftraSwordLuck (value => 0);
+
+ setMercurialSwordIsShown (current => false);
+ setMercurialSwordActive (current => false);
+ setMercurialSwordAtk (value => 0);
+ setMercurialSwordDef (value => 0);
+ setMercurialSwordLuck (value => 0);
+
+ setLeafsungWoodenSwordIsShown (current => false);
+ setLeafsungWoodenSwordActive (current => false);
+ setLeafsungWoodenSwordAtk (value => 0);
+ setLeafsungWoodenSwordDef (value => 0);
+ setLeafsungWoodenSwordLuck (value => 0);
+
+ setKingMaiSwordIsShown (current => false);
+ setKingMaiSwordActive (current => false);
+ setKingMaiSwordAtk (value => 0);
+ setKingMaiSwordDef (value => 0);
+ setKingMaiSwordLuck (value => 0);
+
+ setGlassScimitarIsShown (current => false);
+ setGlassScimitarActive (current => false);
+ setGlassScimitarAtk (value => 0);
+ setGlassScimitarDef (value => 0);
+ setGlassScimitarLuck (value => 0);
+
+ setFusionSwordIsShown (current => false);
+ setFusionSwordActive (current => false);
+ setFusionSwordAtk (value => 0);
+ setFusionSwordDef (value => 0);
+ setFusionSwordLuck (value => 0);
+
+ setFlowerSlingshotIsShown (current => false);
+ setFlowerSlingshotActive (current => false);
+ setFlowerSlingshotAtk (value => 0);
+ setFlowerSlingshotDef (value => 0);
+ setFlowerSlingshotLuck (value => 0);
+
+ setDragonTailSwordIsShown (current => false);
+ setDragonTailSwordActive (current => false);
+ setDragonTailSwordAtk (value => 0);
+ setDragonTailSwordDef (value => 0);
+ setDragonTailSwordLuck (value => 0);
+
+ setDragonClawHookIsShown (current => false);
+ setDragonClawHookActive (current => false);
+ setDragonClawHookAtk (value => 0);
+ setDragonClawHookDef (value => 0);
+ setDragonClawHookLuck (value => 0);
+
+ setDawnSwordIsShown (current => false);
+ setDawnSwordActive (current => false);
+ setDawnSwordAtk (value => 0);
+ setDawnSwordDef (value => 0);
+ setDawnSwordLuck (value => 0);
+
+ setDarkForestSwordOldIsShown (current => false);
+ setDarkForestSwordOldActive (current => false);
+ setDarkForestSwordOldAtk (value => 0);
+ setDarkForestSwordOldDef (value => 0);
+ setDarkForestSwordOldLuck (value => 0);
+
+ setDarkForestSwordIsShown (current => false);
+ setDarkForestSwordActive (current => false);
+ setDarkForestSwordAtk (value => 0);
+ setDarkForestSwordDef (value => 0);
+ setDarkForestSwordLuck (value => 0);
   };
 
   const handleSpellfireSwordClick = event => {
@@ -6220,6 +6790,120 @@ const handleWoodSwordClick = event => {
   setSpellfireSwordAtk (value => 14);
   setSpellfireSwordDef (value => 0);
   setSpellfireSwordLuck (value => 0);
+
+  setWoodSwordIsShown (current => false);
+  setWoodSwordActive (current => false);
+  setWoodSwordAtk (value => 0);
+  setWoodSwordDef (value => 0);
+  setWoodSwordLuck (value => 0);
+  
+ setWoodSpearIsShown (current => false);
+ setWoodSpearActive (current => false);
+ setWoodSpearAtk (value => 0);
+ setWoodSpearDef (value => 0);
+ setWoodSpearLuck (value => 0);
+
+ setSteelSwordIsShown (current => false);
+ setSteelSwordActive (current => false);
+ setSteelSwordAtk (value => 0);
+ setSteelSwordDef (value => 0);
+ setSteelSwordLuck (value => 0);
+
+ setSteelMaceIsShown (current => false);
+ setSteelMaceActive (current => false);
+ setSteelMaceAtk (value => 0);
+ setSteelMaceDef (value => 0);
+ setSteelMaceLuck (value => 0);
+
+ setSteelDaggerIsShown (current => false);
+ setSteelDaggerActive (current => false);
+ setSteelDaggerAtk (value => 0);
+ setSteelDaggerDef (value => 0);
+ setSteelDaggerLuck (value => 0);
+
+ setRainaSwordIsShown (current => false);
+ setRainaSwordActive (current => false);
+ setRainaSwordAtk (value => 0);
+ setRainaSwordDef (value => 0);
+ setRainaSwordLuck (value => 0);
+
+ setOozeSwordIsShown (current => false);
+ setOozeSwordActive (current => false);
+ setOozeSwordAtk (value => 0);
+ setOozeSwordDef (value => 0);
+ setOozeSwordLuck (value => 0);
+
+ setNiftraSwordIsShown (current => false);
+ setNiftraSwordActive (current => false);
+ setNiftraSwordAtk (value => 0);
+ setNiftraSwordDef (value => 0);
+ setNiftraSwordLuck (value => 0);
+
+ setMercurialSwordIsShown (current => false);
+ setMercurialSwordActive (current => false);
+ setMercurialSwordAtk (value => 0);
+ setMercurialSwordDef (value => 0);
+ setMercurialSwordLuck (value => 0);
+
+ setLeafsungWoodenSwordIsShown (current => false);
+ setLeafsungWoodenSwordActive (current => false);
+ setLeafsungWoodenSwordAtk (value => 0);
+ setLeafsungWoodenSwordDef (value => 0);
+ setLeafsungWoodenSwordLuck (value => 0);
+
+ setKingMaiSwordIsShown (current => false);
+ setKingMaiSwordActive (current => false);
+ setKingMaiSwordAtk (value => 0);
+ setKingMaiSwordDef (value => 0);
+ setKingMaiSwordLuck (value => 0);
+
+ setGlassScimitarIsShown (current => false);
+ setGlassScimitarActive (current => false);
+ setGlassScimitarAtk (value => 0);
+ setGlassScimitarDef (value => 0);
+ setGlassScimitarLuck (value => 0);
+
+ setFusionSwordIsShown (current => false);
+ setFusionSwordActive (current => false);
+ setFusionSwordAtk (value => 0);
+ setFusionSwordDef (value => 0);
+ setFusionSwordLuck (value => 0);
+
+ setFlowerSlingshotIsShown (current => false);
+ setFlowerSlingshotActive (current => false);
+ setFlowerSlingshotAtk (value => 0);
+ setFlowerSlingshotDef (value => 0);
+ setFlowerSlingshotLuck (value => 0);
+
+ setDragonTailSwordIsShown (current => false);
+ setDragonTailSwordActive (current => false);
+ setDragonTailSwordAtk (value => 0);
+ setDragonTailSwordDef (value => 0);
+ setDragonTailSwordLuck (value => 0);
+
+ setDragonClawHookIsShown (current => false);
+ setDragonClawHookActive (current => false);
+ setDragonClawHookAtk (value => 0);
+ setDragonClawHookDef (value => 0);
+ setDragonClawHookLuck (value => 0);
+
+ setDawnSwordIsShown (current => false);
+ setDawnSwordActive (current => false);
+ setDawnSwordAtk (value => 0);
+ setDawnSwordDef (value => 0);
+ setDawnSwordLuck (value => 0);
+
+ setDarkForestSwordOldIsShown (current => false);
+ setDarkForestSwordOldActive (current => false);
+ setDarkForestSwordOldAtk (value => 0);
+ setDarkForestSwordOldDef (value => 0);
+ setDarkForestSwordOldLuck (value => 0);
+
+ setDarkForestSwordIsShown (current => false);
+ setDarkForestSwordActive (current => false);
+ setDarkForestSwordAtk (value => 0);
+ setDarkForestSwordDef (value => 0);
+ setDarkForestSwordLuck (value => 0);
   };
 
   const handleRainaSwordClick = event => {
@@ -6228,6 +6912,120 @@ const handleWoodSwordClick = event => {
   setRainaSwordAtk (value => 11);
   setRainaSwordDef (value => 0);
   setRainaSwordLuck (value => 8);
+
+  setWoodSwordIsShown (current => false);
+  setWoodSwordActive (current => false);
+  setWoodSwordAtk (value => 0);
+  setWoodSwordDef (value => 0);
+  setWoodSwordLuck (value => 0);
+  
+ setWoodSpearIsShown (current => false);
+ setWoodSpearActive (current => false);
+ setWoodSpearAtk (value => 0);
+ setWoodSpearDef (value => 0);
+ setWoodSpearLuck (value => 0);
+
+ setSteelSwordIsShown (current => false);
+ setSteelSwordActive (current => false);
+ setSteelSwordAtk (value => 0);
+ setSteelSwordDef (value => 0);
+ setSteelSwordLuck (value => 0);
+
+ setSteelMaceIsShown (current => false);
+ setSteelMaceActive (current => false);
+ setSteelMaceAtk (value => 0);
+ setSteelMaceDef (value => 0);
+ setSteelMaceLuck (value => 0);
+
+ setSteelDaggerIsShown (current => false);
+ setSteelDaggerActive (current => false);
+ setSteelDaggerAtk (value => 0);
+ setSteelDaggerDef (value => 0);
+ setSteelDaggerLuck (value => 0);
+
+ setSpellfireSwordIsShown (current => false);
+ setSpellfireSwordActive (current => false);
+ setSpellfireSwordAtk (value => 0);
+ setSpellfireSwordDef (value => 0);
+ setSpellfireSwordLuck (value => 0);
+
+ setOozeSwordIsShown (current => false);
+ setOozeSwordActive (current => false);
+ setOozeSwordAtk (value => 0);
+ setOozeSwordDef (value => 0);
+ setOozeSwordLuck (value => 0);
+
+ setNiftraSwordIsShown (current => false);
+ setNiftraSwordActive (current => false);
+ setNiftraSwordAtk (value => 0);
+ setNiftraSwordDef (value => 0);
+ setNiftraSwordLuck (value => 0);
+
+ setMercurialSwordIsShown (current => false);
+ setMercurialSwordActive (current => false);
+ setMercurialSwordAtk (value => 0);
+ setMercurialSwordDef (value => 0);
+ setMercurialSwordLuck (value => 0);
+
+ setLeafsungWoodenSwordIsShown (current => false);
+ setLeafsungWoodenSwordActive (current => false);
+ setLeafsungWoodenSwordAtk (value => 0);
+ setLeafsungWoodenSwordDef (value => 0);
+ setLeafsungWoodenSwordLuck (value => 0);
+
+ setKingMaiSwordIsShown (current => false);
+ setKingMaiSwordActive (current => false);
+ setKingMaiSwordAtk (value => 0);
+ setKingMaiSwordDef (value => 0);
+ setKingMaiSwordLuck (value => 0);
+
+ setGlassScimitarIsShown (current => false);
+ setGlassScimitarActive (current => false);
+ setGlassScimitarAtk (value => 0);
+ setGlassScimitarDef (value => 0);
+ setGlassScimitarLuck (value => 0);
+
+ setFusionSwordIsShown (current => false);
+ setFusionSwordActive (current => false);
+ setFusionSwordAtk (value => 0);
+ setFusionSwordDef (value => 0);
+ setFusionSwordLuck (value => 0);
+
+ setFlowerSlingshotIsShown (current => false);
+ setFlowerSlingshotActive (current => false);
+ setFlowerSlingshotAtk (value => 0);
+ setFlowerSlingshotDef (value => 0);
+ setFlowerSlingshotLuck (value => 0);
+
+ setDragonTailSwordIsShown (current => false);
+ setDragonTailSwordActive (current => false);
+ setDragonTailSwordAtk (value => 0);
+ setDragonTailSwordDef (value => 0);
+ setDragonTailSwordLuck (value => 0);
+
+ setDragonClawHookIsShown (current => false);
+ setDragonClawHookActive (current => false);
+ setDragonClawHookAtk (value => 0);
+ setDragonClawHookDef (value => 0);
+ setDragonClawHookLuck (value => 0);
+
+ setDawnSwordIsShown (current => false);
+ setDawnSwordActive (current => false);
+ setDawnSwordAtk (value => 0);
+ setDawnSwordDef (value => 0);
+ setDawnSwordLuck (value => 0);
+
+ setDarkForestSwordOldIsShown (current => false);
+ setDarkForestSwordOldActive (current => false);
+ setDarkForestSwordOldAtk (value => 0);
+ setDarkForestSwordOldDef (value => 0);
+ setDarkForestSwordOldLuck (value => 0);
+
+ setDarkForestSwordIsShown (current => false);
+ setDarkForestSwordActive (current => false);
+ setDarkForestSwordAtk (value => 0);
+ setDarkForestSwordDef (value => 0);
+ setDarkForestSwordLuck (value => 0);
   };
 
   const handleOozeSwordClick = event => {
@@ -6236,6 +7034,120 @@ const handleWoodSwordClick = event => {
   setOozeSwordAtk (value => 10);
   setOozeSwordDef (value => 10);
   setOozeSwordLuck (value => 5);
+
+  setWoodSwordIsShown (current => false);
+  setWoodSwordActive (current => false);
+  setWoodSwordAtk (value => 0);
+  setWoodSwordDef (value => 0);
+  setWoodSwordLuck (value => 0);
+  
+ setWoodSpearIsShown (current => false);
+ setWoodSpearActive (current => false);
+ setWoodSpearAtk (value => 0);
+ setWoodSpearDef (value => 0);
+ setWoodSpearLuck (value => 0);
+
+ setSteelSwordIsShown (current => false);
+ setSteelSwordActive (current => false);
+ setSteelSwordAtk (value => 0);
+ setSteelSwordDef (value => 0);
+ setSteelSwordLuck (value => 0);
+
+ setSteelMaceIsShown (current => false);
+ setSteelMaceActive (current => false);
+ setSteelMaceAtk (value => 0);
+ setSteelMaceDef (value => 0);
+ setSteelMaceLuck (value => 0);
+
+ setSteelDaggerIsShown (current => false);
+ setSteelDaggerActive (current => false);
+ setSteelDaggerAtk (value => 0);
+ setSteelDaggerDef (value => 0);
+ setSteelDaggerLuck (value => 0);
+
+ setSpellfireSwordIsShown (current => false);
+ setSpellfireSwordActive (current => false);
+ setSpellfireSwordAtk (value => 0);
+ setSpellfireSwordDef (value => 0);
+ setSpellfireSwordLuck (value => 0);
+
+ setRainaSwordIsShown (current => false);
+ setRainaSwordActive (current => false);
+ setRainaSwordAtk (value => 0);
+ setRainaSwordDef (value => 0);
+ setRainaSwordLuck (value => 0);
+
+ setNiftraSwordIsShown (current => false);
+ setNiftraSwordActive (current => false);
+ setNiftraSwordAtk (value => 0);
+ setNiftraSwordDef (value => 0);
+ setNiftraSwordLuck (value => 0);
+
+ setMercurialSwordIsShown (current => false);
+ setMercurialSwordActive (current => false);
+ setMercurialSwordAtk (value => 0);
+ setMercurialSwordDef (value => 0);
+ setMercurialSwordLuck (value => 0);
+
+ setLeafsungWoodenSwordIsShown (current => false);
+ setLeafsungWoodenSwordActive (current => false);
+ setLeafsungWoodenSwordAtk (value => 0);
+ setLeafsungWoodenSwordDef (value => 0);
+ setLeafsungWoodenSwordLuck (value => 0);
+
+ setKingMaiSwordIsShown (current => false);
+ setKingMaiSwordActive (current => false);
+ setKingMaiSwordAtk (value => 0);
+ setKingMaiSwordDef (value => 0);
+ setKingMaiSwordLuck (value => 0);
+
+ setGlassScimitarIsShown (current => false);
+ setGlassScimitarActive (current => false);
+ setGlassScimitarAtk (value => 0);
+ setGlassScimitarDef (value => 0);
+ setGlassScimitarLuck (value => 0);
+
+ setFusionSwordIsShown (current => false);
+ setFusionSwordActive (current => false);
+ setFusionSwordAtk (value => 0);
+ setFusionSwordDef (value => 0);
+ setFusionSwordLuck (value => 0);
+
+ setFlowerSlingshotIsShown (current => false);
+ setFlowerSlingshotActive (current => false);
+ setFlowerSlingshotAtk (value => 0);
+ setFlowerSlingshotDef (value => 0);
+ setFlowerSlingshotLuck (value => 0);
+
+ setDragonTailSwordIsShown (current => false);
+ setDragonTailSwordActive (current => false);
+ setDragonTailSwordAtk (value => 0);
+ setDragonTailSwordDef (value => 0);
+ setDragonTailSwordLuck (value => 0);
+
+ setDragonClawHookIsShown (current => false);
+ setDragonClawHookActive (current => false);
+ setDragonClawHookAtk (value => 0);
+ setDragonClawHookDef (value => 0);
+ setDragonClawHookLuck (value => 0);
+
+ setDawnSwordIsShown (current => false);
+ setDawnSwordActive (current => false);
+ setDawnSwordAtk (value => 0);
+ setDawnSwordDef (value => 0);
+ setDawnSwordLuck (value => 0);
+
+ setDarkForestSwordOldIsShown (current => false);
+ setDarkForestSwordOldActive (current => false);
+ setDarkForestSwordOldAtk (value => 0);
+ setDarkForestSwordOldDef (value => 0);
+ setDarkForestSwordOldLuck (value => 0);
+
+ setDarkForestSwordIsShown (current => false);
+ setDarkForestSwordActive (current => false);
+ setDarkForestSwordAtk (value => 0);
+ setDarkForestSwordDef (value => 0);
+ setDarkForestSwordLuck (value => 0);
   };
 
   const handleNiftraSwordClick = event => {
@@ -6244,6 +7156,120 @@ const handleWoodSwordClick = event => {
   setNiftraSwordAtk (value => 18);
   setNiftraSwordDef (value => 0);
   setNiftraSwordLuck (value => 0);
+
+  setWoodSwordIsShown (current => false);
+  setWoodSwordActive (current => false);
+  setWoodSwordAtk (value => 0);
+  setWoodSwordDef (value => 0);
+  setWoodSwordLuck (value => 0);
+  
+ setWoodSpearIsShown (current => false);
+ setWoodSpearActive (current => false);
+ setWoodSpearAtk (value => 0);
+ setWoodSpearDef (value => 0);
+ setWoodSpearLuck (value => 0);
+
+ setSteelSwordIsShown (current => false);
+ setSteelSwordActive (current => false);
+ setSteelSwordAtk (value => 0);
+ setSteelSwordDef (value => 0);
+ setSteelSwordLuck (value => 0);
+
+ setSteelMaceIsShown (current => false);
+ setSteelMaceActive (current => false);
+ setSteelMaceAtk (value => 0);
+ setSteelMaceDef (value => 0);
+ setSteelMaceLuck (value => 0);
+
+ setSteelDaggerIsShown (current => false);
+ setSteelDaggerActive (current => false);
+ setSteelDaggerAtk (value => 0);
+ setSteelDaggerDef (value => 0);
+ setSteelDaggerLuck (value => 0);
+
+ setSpellfireSwordIsShown (current => false);
+ setSpellfireSwordActive (current => false);
+ setSpellfireSwordAtk (value => 0);
+ setSpellfireSwordDef (value => 0);
+ setSpellfireSwordLuck (value => 0);
+
+ setRainaSwordIsShown (current => false);
+ setRainaSwordActive (current => false);
+ setRainaSwordAtk (value => 0);
+ setRainaSwordDef (value => 0);
+ setRainaSwordLuck (value => 0);
+
+ setOozeSwordIsShown (current => false);
+ setOozeSwordActive (current => false);
+ setOozeSwordAtk (value => 0);
+ setOozeSwordDef (value => 0);
+ setOozeSwordLuck (value => 0);
+
+ setMercurialSwordIsShown (current => false);
+ setMercurialSwordActive (current => false);
+ setMercurialSwordAtk (value => 0);
+ setMercurialSwordDef (value => 0);
+ setMercurialSwordLuck (value => 0);
+
+ setLeafsungWoodenSwordIsShown (current => false);
+ setLeafsungWoodenSwordActive (current => false);
+ setLeafsungWoodenSwordAtk (value => 0);
+ setLeafsungWoodenSwordDef (value => 0);
+ setLeafsungWoodenSwordLuck (value => 0);
+
+ setKingMaiSwordIsShown (current => false);
+ setKingMaiSwordActive (current => false);
+ setKingMaiSwordAtk (value => 0);
+ setKingMaiSwordDef (value => 0);
+ setKingMaiSwordLuck (value => 0);
+
+ setGlassScimitarIsShown (current => false);
+ setGlassScimitarActive (current => false);
+ setGlassScimitarAtk (value => 0);
+ setGlassScimitarDef (value => 0);
+ setGlassScimitarLuck (value => 0);
+
+ setFusionSwordIsShown (current => false);
+ setFusionSwordActive (current => false);
+ setFusionSwordAtk (value => 0);
+ setFusionSwordDef (value => 0);
+ setFusionSwordLuck (value => 0);
+
+ setFlowerSlingshotIsShown (current => false);
+ setFlowerSlingshotActive (current => false);
+ setFlowerSlingshotAtk (value => 0);
+ setFlowerSlingshotDef (value => 0);
+ setFlowerSlingshotLuck (value => 0);
+
+ setDragonTailSwordIsShown (current => false);
+ setDragonTailSwordActive (current => false);
+ setDragonTailSwordAtk (value => 0);
+ setDragonTailSwordDef (value => 0);
+ setDragonTailSwordLuck (value => 0);
+
+ setDragonClawHookIsShown (current => false);
+ setDragonClawHookActive (current => false);
+ setDragonClawHookAtk (value => 0);
+ setDragonClawHookDef (value => 0);
+ setDragonClawHookLuck (value => 0);
+
+ setDawnSwordIsShown (current => false);
+ setDawnSwordActive (current => false);
+ setDawnSwordAtk (value => 0);
+ setDawnSwordDef (value => 0);
+ setDawnSwordLuck (value => 0);
+
+ setDarkForestSwordOldIsShown (current => false);
+ setDarkForestSwordOldActive (current => false);
+ setDarkForestSwordOldAtk (value => 0);
+ setDarkForestSwordOldDef (value => 0);
+ setDarkForestSwordOldLuck (value => 0);
+
+ setDarkForestSwordIsShown (current => false);
+ setDarkForestSwordActive (current => false);
+ setDarkForestSwordAtk (value => 0);
+ setDarkForestSwordDef (value => 0);
+ setDarkForestSwordLuck (value => 0);
   };
 
   const handleMercurialSwordClick = event => {
@@ -6252,14 +7278,242 @@ const handleWoodSwordClick = event => {
   setMercurialSwordAtk (value => 11);
   setMercurialSwordDef (value => 11);
   setMercurialSwordLuck (value => 4);
+
+  setWoodSwordIsShown (current => false);
+  setWoodSwordActive (current => false);
+  setWoodSwordAtk (value => 0);
+  setWoodSwordDef (value => 0);
+  setWoodSwordLuck (value => 0);
+  
+ setWoodSpearIsShown (current => false);
+ setWoodSpearActive (current => false);
+ setWoodSpearAtk (value => 0);
+ setWoodSpearDef (value => 0);
+ setWoodSpearLuck (value => 0);
+
+ setSteelSwordIsShown (current => false);
+ setSteelSwordActive (current => false);
+ setSteelSwordAtk (value => 0);
+ setSteelSwordDef (value => 0);
+ setSteelSwordLuck (value => 0);
+
+ setSteelMaceIsShown (current => false);
+ setSteelMaceActive (current => false);
+ setSteelMaceAtk (value => 0);
+ setSteelMaceDef (value => 0);
+ setSteelMaceLuck (value => 0);
+
+ setSteelDaggerIsShown (current => false);
+ setSteelDaggerActive (current => false);
+ setSteelDaggerAtk (value => 0);
+ setSteelDaggerDef (value => 0);
+ setSteelDaggerLuck (value => 0);
+
+ setSpellfireSwordIsShown (current => false);
+ setSpellfireSwordActive (current => false);
+ setSpellfireSwordAtk (value => 0);
+ setSpellfireSwordDef (value => 0);
+ setSpellfireSwordLuck (value => 0);
+
+ setRainaSwordIsShown (current => false);
+ setRainaSwordActive (current => false);
+ setRainaSwordAtk (value => 0);
+ setRainaSwordDef (value => 0);
+ setRainaSwordLuck (value => 0);
+
+ setOozeSwordIsShown (current => false);
+ setOozeSwordActive (current => false);
+ setOozeSwordAtk (value => 0);
+ setOozeSwordDef (value => 0);
+ setOozeSwordLuck (value => 0);
+
+ setNiftraSwordIsShown (current => false);
+ setNiftraSwordActive (current => false);
+ setNiftraSwordAtk (value => 0);
+ setNiftraSwordDef (value => 0);
+ setNiftraSwordLuck (value => 0);
+
+ setLeafsungWoodenSwordIsShown (current => false);
+ setLeafsungWoodenSwordActive (current => false);
+ setLeafsungWoodenSwordAtk (value => 0);
+ setLeafsungWoodenSwordDef (value => 0);
+ setLeafsungWoodenSwordLuck (value => 0);
+
+ setKingMaiSwordIsShown (current => false);
+ setKingMaiSwordActive (current => false);
+ setKingMaiSwordAtk (value => 0);
+ setKingMaiSwordDef (value => 0);
+ setKingMaiSwordLuck (value => 0);
+
+ setGlassScimitarIsShown (current => false);
+ setGlassScimitarActive (current => false);
+ setGlassScimitarAtk (value => 0);
+ setGlassScimitarDef (value => 0);
+ setGlassScimitarLuck (value => 0);
+
+ setFusionSwordIsShown (current => false);
+ setFusionSwordActive (current => false);
+ setFusionSwordAtk (value => 0);
+ setFusionSwordDef (value => 0);
+ setFusionSwordLuck (value => 0);
+
+ setFlowerSlingshotIsShown (current => false);
+ setFlowerSlingshotActive (current => false);
+ setFlowerSlingshotAtk (value => 0);
+ setFlowerSlingshotDef (value => 0);
+ setFlowerSlingshotLuck (value => 0);
+
+ setDragonTailSwordIsShown (current => false);
+ setDragonTailSwordActive (current => false);
+ setDragonTailSwordAtk (value => 0);
+ setDragonTailSwordDef (value => 0);
+ setDragonTailSwordLuck (value => 0);
+
+ setDragonClawHookIsShown (current => false);
+ setDragonClawHookActive (current => false);
+ setDragonClawHookAtk (value => 0);
+ setDragonClawHookDef (value => 0);
+ setDragonClawHookLuck (value => 0);
+
+ setDawnSwordIsShown (current => false);
+ setDawnSwordActive (current => false);
+ setDawnSwordAtk (value => 0);
+ setDawnSwordDef (value => 0);
+ setDawnSwordLuck (value => 0);
+
+ setDarkForestSwordOldIsShown (current => false);
+ setDarkForestSwordOldActive (current => false);
+ setDarkForestSwordOldAtk (value => 0);
+ setDarkForestSwordOldDef (value => 0);
+ setDarkForestSwordOldLuck (value => 0);
+
+ setDarkForestSwordIsShown (current => false);
+ setDarkForestSwordActive (current => false);
+ setDarkForestSwordAtk (value => 0);
+ setDarkForestSwordDef (value => 0);
+ setDarkForestSwordLuck (value => 0);
   };
 
-  const handleLeagsungWoodenSwordClick = event => {
-  setLeagsungWoodenSwordIsShown (current => !LeagsungWoodenSwordIsShown);
-  setLeagsungWoodenSwordActive (current => !LeagsungWoodenSwordActive);
-  setLeagsungWoodenSwordAtk (value => 3);
-  setLeagsungWoodenSwordDef (value => 0);
-  setLeagsungWoodenSwordLuck (value => 1);
+  const handleLeafsungWoodenSwordClick = event => {
+  setLeafsungWoodenSwordIsShown (current => !LeafsungWoodenSwordIsShown);
+  setLeafsungWoodenSwordActive (current => !LeafsungWoodenSwordActive);
+  setLeafsungWoodenSwordAtk (value => 3);
+  setLeafsungWoodenSwordDef (value => 0);
+  setLeafsungWoodenSwordLuck (value => 1);
+
+  setWoodSwordIsShown (current => false);
+  setWoodSwordActive (current => false);
+  setWoodSwordAtk (value => 0);
+  setWoodSwordDef (value => 0);
+  setWoodSwordLuck (value => 0);
+  
+ setWoodSpearIsShown (current => false);
+ setWoodSpearActive (current => false);
+ setWoodSpearAtk (value => 0);
+ setWoodSpearDef (value => 0);
+ setWoodSpearLuck (value => 0);
+
+ setSteelSwordIsShown (current => false);
+ setSteelSwordActive (current => false);
+ setSteelSwordAtk (value => 0);
+ setSteelSwordDef (value => 0);
+ setSteelSwordLuck (value => 0);
+
+ setSteelMaceIsShown (current => false);
+ setSteelMaceActive (current => false);
+ setSteelMaceAtk (value => 0);
+ setSteelMaceDef (value => 0);
+ setSteelMaceLuck (value => 0);
+
+ setSteelDaggerIsShown (current => false);
+ setSteelDaggerActive (current => false);
+ setSteelDaggerAtk (value => 0);
+ setSteelDaggerDef (value => 0);
+ setSteelDaggerLuck (value => 0);
+
+ setSpellfireSwordIsShown (current => false);
+ setSpellfireSwordActive (current => false);
+ setSpellfireSwordAtk (value => 0);
+ setSpellfireSwordDef (value => 0);
+ setSpellfireSwordLuck (value => 0);
+
+ setRainaSwordIsShown (current => false);
+ setRainaSwordActive (current => false);
+ setRainaSwordAtk (value => 0);
+ setRainaSwordDef (value => 0);
+ setRainaSwordLuck (value => 0);
+
+ setOozeSwordIsShown (current => false);
+ setOozeSwordActive (current => false);
+ setOozeSwordAtk (value => 0);
+ setOozeSwordDef (value => 0);
+ setOozeSwordLuck (value => 0);
+
+ setNiftraSwordIsShown (current => false);
+ setNiftraSwordActive (current => false);
+ setNiftraSwordAtk (value => 0);
+ setNiftraSwordDef (value => 0);
+ setNiftraSwordLuck (value => 0);
+
+ setMercurialSwordIsShown (current => false);
+ setMercurialSwordActive (current => false);
+ setMercurialSwordAtk (value => 0);
+ setMercurialSwordDef (value => 0);
+ setMercurialSwordLuck (value => 0);
+
+ setKingMaiSwordIsShown (current => false);
+ setKingMaiSwordActive (current => false);
+ setKingMaiSwordAtk (value => 0);
+ setKingMaiSwordDef (value => 0);
+ setKingMaiSwordLuck (value => 0);
+
+ setGlassScimitarIsShown (current => false);
+ setGlassScimitarActive (current => false);
+ setGlassScimitarAtk (value => 0);
+ setGlassScimitarDef (value => 0);
+ setGlassScimitarLuck (value => 0);
+
+ setFusionSwordIsShown (current => false);
+ setFusionSwordActive (current => false);
+ setFusionSwordAtk (value => 0);
+ setFusionSwordDef (value => 0);
+ setFusionSwordLuck (value => 0);
+
+ setFlowerSlingshotIsShown (current => false);
+ setFlowerSlingshotActive (current => false);
+ setFlowerSlingshotAtk (value => 0);
+ setFlowerSlingshotDef (value => 0);
+ setFlowerSlingshotLuck (value => 0);
+
+ setDragonTailSwordIsShown (current => false);
+ setDragonTailSwordActive (current => false);
+ setDragonTailSwordAtk (value => 0);
+ setDragonTailSwordDef (value => 0);
+ setDragonTailSwordLuck (value => 0);
+
+ setDragonClawHookIsShown (current => false);
+ setDragonClawHookActive (current => false);
+ setDragonClawHookAtk (value => 0);
+ setDragonClawHookDef (value => 0);
+ setDragonClawHookLuck (value => 0);
+
+ setDawnSwordIsShown (current => false);
+ setDawnSwordActive (current => false);
+ setDawnSwordAtk (value => 0);
+ setDawnSwordDef (value => 0);
+ setDawnSwordLuck (value => 0);
+
+ setDarkForestSwordOldIsShown (current => false);
+ setDarkForestSwordOldActive (current => false);
+ setDarkForestSwordOldAtk (value => 0);
+ setDarkForestSwordOldDef (value => 0);
+ setDarkForestSwordOldLuck (value => 0);
+
+ setDarkForestSwordIsShown (current => false);
+ setDarkForestSwordActive (current => false);
+ setDarkForestSwordAtk (value => 0);
+ setDarkForestSwordDef (value => 0);
+ setDarkForestSwordLuck (value => 0);
   };
 
   const handleKingMaiSwordClick = event => {
@@ -6268,6 +7522,120 @@ const handleWoodSwordClick = event => {
   setKingMaiSwordAtk (value => 28);
   setKingMaiSwordDef (value => 5);
   setKingMaiSwordLuck (value => 2);
+
+  setWoodSwordIsShown (current => false);
+  setWoodSwordActive (current => false);
+  setWoodSwordAtk (value => 0);
+  setWoodSwordDef (value => 0);
+  setWoodSwordLuck (value => 0);
+  
+ setWoodSpearIsShown (current => false);
+ setWoodSpearActive (current => false);
+ setWoodSpearAtk (value => 0);
+ setWoodSpearDef (value => 0);
+ setWoodSpearLuck (value => 0);
+
+ setSteelSwordIsShown (current => false);
+ setSteelSwordActive (current => false);
+ setSteelSwordAtk (value => 0);
+ setSteelSwordDef (value => 0);
+ setSteelSwordLuck (value => 0);
+
+ setSteelMaceIsShown (current => false);
+ setSteelMaceActive (current => false);
+ setSteelMaceAtk (value => 0);
+ setSteelMaceDef (value => 0);
+ setSteelMaceLuck (value => 0);
+
+ setSteelDaggerIsShown (current => false);
+ setSteelDaggerActive (current => false);
+ setSteelDaggerAtk (value => 0);
+ setSteelDaggerDef (value => 0);
+ setSteelDaggerLuck (value => 0);
+
+ setSpellfireSwordIsShown (current => false);
+ setSpellfireSwordActive (current => false);
+ setSpellfireSwordAtk (value => 0);
+ setSpellfireSwordDef (value => 0);
+ setSpellfireSwordLuck (value => 0);
+
+ setRainaSwordIsShown (current => false);
+ setRainaSwordActive (current => false);
+ setRainaSwordAtk (value => 0);
+ setRainaSwordDef (value => 0);
+ setRainaSwordLuck (value => 0);
+
+ setOozeSwordIsShown (current => false);
+ setOozeSwordActive (current => false);
+ setOozeSwordAtk (value => 0);
+ setOozeSwordDef (value => 0);
+ setOozeSwordLuck (value => 0);
+
+ setNiftraSwordIsShown (current => false);
+ setNiftraSwordActive (current => false);
+ setNiftraSwordAtk (value => 0);
+ setNiftraSwordDef (value => 0);
+ setNiftraSwordLuck (value => 0);
+
+ setMercurialSwordIsShown (current => false);
+ setMercurialSwordActive (current => false);
+ setMercurialSwordAtk (value => 0);
+ setMercurialSwordDef (value => 0);
+ setMercurialSwordLuck (value => 0);
+
+ setLeafsungWoodenSwordIsShown (current => false);
+ setLeafsungWoodenSwordActive (current => false);
+ setLeafsungWoodenSwordAtk (value => 0);
+ setLeafsungWoodenSwordDef (value => 0);
+ setLeafsungWoodenSwordLuck (value => 0);
+
+ setGlassScimitarIsShown (current => false);
+ setGlassScimitarActive (current => false);
+ setGlassScimitarAtk (value => 0);
+ setGlassScimitarDef (value => 0);
+ setGlassScimitarLuck (value => 0);
+
+ setFusionSwordIsShown (current => false);
+ setFusionSwordActive (current => false);
+ setFusionSwordAtk (value => 0);
+ setFusionSwordDef (value => 0);
+ setFusionSwordLuck (value => 0);
+
+ setFlowerSlingshotIsShown (current => false);
+ setFlowerSlingshotActive (current => false);
+ setFlowerSlingshotAtk (value => 0);
+ setFlowerSlingshotDef (value => 0);
+ setFlowerSlingshotLuck (value => 0);
+
+ setDragonTailSwordIsShown (current => false);
+ setDragonTailSwordActive (current => false);
+ setDragonTailSwordAtk (value => 0);
+ setDragonTailSwordDef (value => 0);
+ setDragonTailSwordLuck (value => 0);
+
+ setDragonClawHookIsShown (current => false);
+ setDragonClawHookActive (current => false);
+ setDragonClawHookAtk (value => 0);
+ setDragonClawHookDef (value => 0);
+ setDragonClawHookLuck (value => 0);
+
+ setDawnSwordIsShown (current => false);
+ setDawnSwordActive (current => false);
+ setDawnSwordAtk (value => 0);
+ setDawnSwordDef (value => 0);
+ setDawnSwordLuck (value => 0);
+
+ setDarkForestSwordOldIsShown (current => false);
+ setDarkForestSwordOldActive (current => false);
+ setDarkForestSwordOldAtk (value => 0);
+ setDarkForestSwordOldDef (value => 0);
+ setDarkForestSwordOldLuck (value => 0);
+
+ setDarkForestSwordIsShown (current => false);
+ setDarkForestSwordActive (current => false);
+ setDarkForestSwordAtk (value => 0);
+ setDarkForestSwordDef (value => 0);
+ setDarkForestSwordLuck (value => 0);
   };
 
   const handleGlassScimitarClick = event => {
@@ -6276,6 +7644,120 @@ const handleWoodSwordClick = event => {
   setGlassScimitarAtk (value => 9);
   setGlassScimitarDef (value => 0);
   setGlassScimitarLuck (value => 4);
+
+  setWoodSwordIsShown (current => false);
+  setWoodSwordActive (current => false);
+  setWoodSwordAtk (value => 0);
+  setWoodSwordDef (value => 0);
+  setWoodSwordLuck (value => 0);
+  
+ setWoodSpearIsShown (current => false);
+ setWoodSpearActive (current => false);
+ setWoodSpearAtk (value => 0);
+ setWoodSpearDef (value => 0);
+ setWoodSpearLuck (value => 0);
+
+ setSteelSwordIsShown (current => false);
+ setSteelSwordActive (current => false);
+ setSteelSwordAtk (value => 0);
+ setSteelSwordDef (value => 0);
+ setSteelSwordLuck (value => 0);
+
+ setSteelMaceIsShown (current => false);
+ setSteelMaceActive (current => false);
+ setSteelMaceAtk (value => 0);
+ setSteelMaceDef (value => 0);
+ setSteelMaceLuck (value => 0);
+
+ setSteelDaggerIsShown (current => false);
+ setSteelDaggerActive (current => false);
+ setSteelDaggerAtk (value => 0);
+ setSteelDaggerDef (value => 0);
+ setSteelDaggerLuck (value => 0);
+
+ setSpellfireSwordIsShown (current => false);
+ setSpellfireSwordActive (current => false);
+ setSpellfireSwordAtk (value => 0);
+ setSpellfireSwordDef (value => 0);
+ setSpellfireSwordLuck (value => 0);
+
+ setRainaSwordIsShown (current => false);
+ setRainaSwordActive (current => false);
+ setRainaSwordAtk (value => 0);
+ setRainaSwordDef (value => 0);
+ setRainaSwordLuck (value => 0);
+
+ setOozeSwordIsShown (current => false);
+ setOozeSwordActive (current => false);
+ setOozeSwordAtk (value => 0);
+ setOozeSwordDef (value => 0);
+ setOozeSwordLuck (value => 0);
+
+ setNiftraSwordIsShown (current => false);
+ setNiftraSwordActive (current => false);
+ setNiftraSwordAtk (value => 0);
+ setNiftraSwordDef (value => 0);
+ setNiftraSwordLuck (value => 0);
+
+ setMercurialSwordIsShown (current => false);
+ setMercurialSwordActive (current => false);
+ setMercurialSwordAtk (value => 0);
+ setMercurialSwordDef (value => 0);
+ setMercurialSwordLuck (value => 0);
+
+ setLeafsungWoodenSwordIsShown (current => false);
+ setLeafsungWoodenSwordActive (current => false);
+ setLeafsungWoodenSwordAtk (value => 0);
+ setLeafsungWoodenSwordDef (value => 0);
+ setLeafsungWoodenSwordLuck (value => 0);
+
+ setKingMaiSwordIsShown (current => false);
+ setKingMaiSwordActive (current => false);
+ setKingMaiSwordAtk (value => 0);
+ setKingMaiSwordDef (value => 0);
+ setKingMaiSwordLuck (value => 0);
+
+ setFusionSwordIsShown (current => false);
+ setFusionSwordActive (current => false);
+ setFusionSwordAtk (value => 0);
+ setFusionSwordDef (value => 0);
+ setFusionSwordLuck (value => 0);
+
+ setFlowerSlingshotIsShown (current => false);
+ setFlowerSlingshotActive (current => false);
+ setFlowerSlingshotAtk (value => 0);
+ setFlowerSlingshotDef (value => 0);
+ setFlowerSlingshotLuck (value => 0);
+
+ setDragonTailSwordIsShown (current => false);
+ setDragonTailSwordActive (current => false);
+ setDragonTailSwordAtk (value => 0);
+ setDragonTailSwordDef (value => 0);
+ setDragonTailSwordLuck (value => 0);
+
+ setDragonClawHookIsShown (current => false);
+ setDragonClawHookActive (current => false);
+ setDragonClawHookAtk (value => 0);
+ setDragonClawHookDef (value => 0);
+ setDragonClawHookLuck (value => 0);
+
+ setDawnSwordIsShown (current => false);
+ setDawnSwordActive (current => false);
+ setDawnSwordAtk (value => 0);
+ setDawnSwordDef (value => 0);
+ setDawnSwordLuck (value => 0);
+
+ setDarkForestSwordOldIsShown (current => false);
+ setDarkForestSwordOldActive (current => false);
+ setDarkForestSwordOldAtk (value => 0);
+ setDarkForestSwordOldDef (value => 0);
+ setDarkForestSwordOldLuck (value => 0);
+
+ setDarkForestSwordIsShown (current => false);
+ setDarkForestSwordActive (current => false);
+ setDarkForestSwordAtk (value => 0);
+ setDarkForestSwordDef (value => 0);
+ setDarkForestSwordLuck (value => 0);
   };
 
   const handleFusionSwordClick = event => {
@@ -6284,6 +7766,120 @@ const handleWoodSwordClick = event => {
   setFusionSwordAtk (value => 25);
   setFusionSwordDef (value => 0);
   setFusionSwordLuck (value => 0);
+
+  setWoodSwordIsShown (current => false);
+  setWoodSwordActive (current => false);
+  setWoodSwordAtk (value => 0);
+  setWoodSwordDef (value => 0);
+  setWoodSwordLuck (value => 0);
+  
+ setWoodSpearIsShown (current => false);
+ setWoodSpearActive (current => false);
+ setWoodSpearAtk (value => 0);
+ setWoodSpearDef (value => 0);
+ setWoodSpearLuck (value => 0);
+
+ setSteelSwordIsShown (current => false);
+ setSteelSwordActive (current => false);
+ setSteelSwordAtk (value => 0);
+ setSteelSwordDef (value => 0);
+ setSteelSwordLuck (value => 0);
+
+ setSteelMaceIsShown (current => false);
+ setSteelMaceActive (current => false);
+ setSteelMaceAtk (value => 0);
+ setSteelMaceDef (value => 0);
+ setSteelMaceLuck (value => 0);
+
+ setSteelDaggerIsShown (current => false);
+ setSteelDaggerActive (current => false);
+ setSteelDaggerAtk (value => 0);
+ setSteelDaggerDef (value => 0);
+ setSteelDaggerLuck (value => 0);
+
+ setSpellfireSwordIsShown (current => false);
+ setSpellfireSwordActive (current => false);
+ setSpellfireSwordAtk (value => 0);
+ setSpellfireSwordDef (value => 0);
+ setSpellfireSwordLuck (value => 0);
+
+ setRainaSwordIsShown (current => false);
+ setRainaSwordActive (current => false);
+ setRainaSwordAtk (value => 0);
+ setRainaSwordDef (value => 0);
+ setRainaSwordLuck (value => 0);
+
+ setOozeSwordIsShown (current => false);
+ setOozeSwordActive (current => false);
+ setOozeSwordAtk (value => 0);
+ setOozeSwordDef (value => 0);
+ setOozeSwordLuck (value => 0);
+
+ setNiftraSwordIsShown (current => false);
+ setNiftraSwordActive (current => false);
+ setNiftraSwordAtk (value => 0);
+ setNiftraSwordDef (value => 0);
+ setNiftraSwordLuck (value => 0);
+
+ setMercurialSwordIsShown (current => false);
+ setMercurialSwordActive (current => false);
+ setMercurialSwordAtk (value => 0);
+ setMercurialSwordDef (value => 0);
+ setMercurialSwordLuck (value => 0);
+
+ setLeafsungWoodenSwordIsShown (current => false);
+ setLeafsungWoodenSwordActive (current => false);
+ setLeafsungWoodenSwordAtk (value => 0);
+ setLeafsungWoodenSwordDef (value => 0);
+ setLeafsungWoodenSwordLuck (value => 0);
+
+ setKingMaiSwordIsShown (current => false);
+ setKingMaiSwordActive (current => false);
+ setKingMaiSwordAtk (value => 0);
+ setKingMaiSwordDef (value => 0);
+ setKingMaiSwordLuck (value => 0);
+
+ setGlassScimitarIsShown (current => false);
+ setGlassScimitarActive (current => false);
+ setGlassScimitarAtk (value => 0);
+ setGlassScimitarDef (value => 0);
+ setGlassScimitarLuck (value => 0);
+
+ setFlowerSlingshotIsShown (current => false);
+ setFlowerSlingshotActive (current => false);
+ setFlowerSlingshotAtk (value => 0);
+ setFlowerSlingshotDef (value => 0);
+ setFlowerSlingshotLuck (value => 0);
+
+ setDragonTailSwordIsShown (current => false);
+ setDragonTailSwordActive (current => false);
+ setDragonTailSwordAtk (value => 0);
+ setDragonTailSwordDef (value => 0);
+ setDragonTailSwordLuck (value => 0);
+
+ setDragonClawHookIsShown (current => false);
+ setDragonClawHookActive (current => false);
+ setDragonClawHookAtk (value => 0);
+ setDragonClawHookDef (value => 0);
+ setDragonClawHookLuck (value => 0);
+
+ setDawnSwordIsShown (current => false);
+ setDawnSwordActive (current => false);
+ setDawnSwordAtk (value => 0);
+ setDawnSwordDef (value => 0);
+ setDawnSwordLuck (value => 0);
+
+ setDarkForestSwordOldIsShown (current => false);
+ setDarkForestSwordOldActive (current => false);
+ setDarkForestSwordOldAtk (value => 0);
+ setDarkForestSwordOldDef (value => 0);
+ setDarkForestSwordOldLuck (value => 0);
+
+ setDarkForestSwordIsShown (current => false);
+ setDarkForestSwordActive (current => false);
+ setDarkForestSwordAtk (value => 0);
+ setDarkForestSwordDef (value => 0);
+ setDarkForestSwordLuck (value => 0);
   };
 
   const handleFlowerSlingshotClick = event => {
@@ -6292,6 +7888,120 @@ const handleWoodSwordClick = event => {
   setFlowerSlingshotAtk (value => 17);
   setFlowerSlingshotDef (value => 0);
   setFlowerSlingshotLuck (value => 8);
+
+  setWoodSwordIsShown (current => false);
+  setWoodSwordActive (current => false);
+  setWoodSwordAtk (value => 0);
+  setWoodSwordDef (value => 0);
+  setWoodSwordLuck (value => 0);
+  
+ setWoodSpearIsShown (current => false);
+ setWoodSpearActive (current => false);
+ setWoodSpearAtk (value => 0);
+ setWoodSpearDef (value => 0);
+ setWoodSpearLuck (value => 0);
+
+ setSteelSwordIsShown (current => false);
+ setSteelSwordActive (current => false);
+ setSteelSwordAtk (value => 0);
+ setSteelSwordDef (value => 0);
+ setSteelSwordLuck (value => 0);
+
+ setSteelMaceIsShown (current => false);
+ setSteelMaceActive (current => false);
+ setSteelMaceAtk (value => 0);
+ setSteelMaceDef (value => 0);
+ setSteelMaceLuck (value => 0);
+
+ setSteelDaggerIsShown (current => false);
+ setSteelDaggerActive (current => false);
+ setSteelDaggerAtk (value => 0);
+ setSteelDaggerDef (value => 0);
+ setSteelDaggerLuck (value => 0);
+
+ setSpellfireSwordIsShown (current => false);
+ setSpellfireSwordActive (current => false);
+ setSpellfireSwordAtk (value => 0);
+ setSpellfireSwordDef (value => 0);
+ setSpellfireSwordLuck (value => 0);
+
+ setRainaSwordIsShown (current => false);
+ setRainaSwordActive (current => false);
+ setRainaSwordAtk (value => 0);
+ setRainaSwordDef (value => 0);
+ setRainaSwordLuck (value => 0);
+
+ setOozeSwordIsShown (current => false);
+ setOozeSwordActive (current => false);
+ setOozeSwordAtk (value => 0);
+ setOozeSwordDef (value => 0);
+ setOozeSwordLuck (value => 0);
+
+ setNiftraSwordIsShown (current => false);
+ setNiftraSwordActive (current => false);
+ setNiftraSwordAtk (value => 0);
+ setNiftraSwordDef (value => 0);
+ setNiftraSwordLuck (value => 0);
+
+ setMercurialSwordIsShown (current => false);
+ setMercurialSwordActive (current => false);
+ setMercurialSwordAtk (value => 0);
+ setMercurialSwordDef (value => 0);
+ setMercurialSwordLuck (value => 0);
+
+ setLeafsungWoodenSwordIsShown (current => false);
+ setLeafsungWoodenSwordActive (current => false);
+ setLeafsungWoodenSwordAtk (value => 0);
+ setLeafsungWoodenSwordDef (value => 0);
+ setLeafsungWoodenSwordLuck (value => 0);
+
+ setKingMaiSwordIsShown (current => false);
+ setKingMaiSwordActive (current => false);
+ setKingMaiSwordAtk (value => 0);
+ setKingMaiSwordDef (value => 0);
+ setKingMaiSwordLuck (value => 0);
+
+ setGlassScimitarIsShown (current => false);
+ setGlassScimitarActive (current => false);
+ setGlassScimitarAtk (value => 0);
+ setGlassScimitarDef (value => 0);
+ setGlassScimitarLuck (value => 0);
+
+ setFusionSwordIsShown (current => false);
+ setFusionSwordActive (current => false);
+ setFusionSwordAtk (value => 0);
+ setFusionSwordDef (value => 0);
+ setFusionSwordLuck (value => 0);
+
+ setDragonTailSwordIsShown (current => false);
+ setDragonTailSwordActive (current => false);
+ setDragonTailSwordAtk (value => 0);
+ setDragonTailSwordDef (value => 0);
+ setDragonTailSwordLuck (value => 0);
+
+ setDragonClawHookIsShown (current => false);
+ setDragonClawHookActive (current => false);
+ setDragonClawHookAtk (value => 0);
+ setDragonClawHookDef (value => 0);
+ setDragonClawHookLuck (value => 0);
+
+ setDawnSwordIsShown (current => false);
+ setDawnSwordActive (current => false);
+ setDawnSwordAtk (value => 0);
+ setDawnSwordDef (value => 0);
+ setDawnSwordLuck (value => 0);
+
+ setDarkForestSwordOldIsShown (current => false);
+ setDarkForestSwordOldActive (current => false);
+ setDarkForestSwordOldAtk (value => 0);
+ setDarkForestSwordOldDef (value => 0);
+ setDarkForestSwordOldLuck (value => 0);
+
+ setDarkForestSwordIsShown (current => false);
+ setDarkForestSwordActive (current => false);
+ setDarkForestSwordAtk (value => 0);
+ setDarkForestSwordDef (value => 0);
+ setDarkForestSwordLuck (value => 0);
   };
 
   const handleDragonTailSwordClick = event => {
@@ -6300,6 +8010,120 @@ const handleWoodSwordClick = event => {
   setDragonTailSwordAtk (value => 10);
   setDragonTailSwordDef (value => 4);
   setDragonTailSwordLuck (value => 4);
+
+  setWoodSwordIsShown (current => false);
+  setWoodSwordActive (current => false);
+  setWoodSwordAtk (value => 0);
+  setWoodSwordDef (value => 0);
+  setWoodSwordLuck (value => 0);
+  
+ setWoodSpearIsShown (current => false);
+ setWoodSpearActive (current => false);
+ setWoodSpearAtk (value => 0);
+ setWoodSpearDef (value => 0);
+ setWoodSpearLuck (value => 0);
+
+ setSteelSwordIsShown (current => false);
+ setSteelSwordActive (current => false);
+ setSteelSwordAtk (value => 0);
+ setSteelSwordDef (value => 0);
+ setSteelSwordLuck (value => 0);
+
+ setSteelMaceIsShown (current => false);
+ setSteelMaceActive (current => false);
+ setSteelMaceAtk (value => 0);
+ setSteelMaceDef (value => 0);
+ setSteelMaceLuck (value => 0);
+
+ setSteelDaggerIsShown (current => false);
+ setSteelDaggerActive (current => false);
+ setSteelDaggerAtk (value => 0);
+ setSteelDaggerDef (value => 0);
+ setSteelDaggerLuck (value => 0);
+
+ setSpellfireSwordIsShown (current => false);
+ setSpellfireSwordActive (current => false);
+ setSpellfireSwordAtk (value => 0);
+ setSpellfireSwordDef (value => 0);
+ setSpellfireSwordLuck (value => 0);
+
+ setRainaSwordIsShown (current => false);
+ setRainaSwordActive (current => false);
+ setRainaSwordAtk (value => 0);
+ setRainaSwordDef (value => 0);
+ setRainaSwordLuck (value => 0);
+
+ setOozeSwordIsShown (current => false);
+ setOozeSwordActive (current => false);
+ setOozeSwordAtk (value => 0);
+ setOozeSwordDef (value => 0);
+ setOozeSwordLuck (value => 0);
+
+ setNiftraSwordIsShown (current => false);
+ setNiftraSwordActive (current => false);
+ setNiftraSwordAtk (value => 0);
+ setNiftraSwordDef (value => 0);
+ setNiftraSwordLuck (value => 0);
+
+ setMercurialSwordIsShown (current => false);
+ setMercurialSwordActive (current => false);
+ setMercurialSwordAtk (value => 0);
+ setMercurialSwordDef (value => 0);
+ setMercurialSwordLuck (value => 0);
+
+ setLeafsungWoodenSwordIsShown (current => false);
+ setLeafsungWoodenSwordActive (current => false);
+ setLeafsungWoodenSwordAtk (value => 0);
+ setLeafsungWoodenSwordDef (value => 0);
+ setLeafsungWoodenSwordLuck (value => 0);
+
+ setKingMaiSwordIsShown (current => false);
+ setKingMaiSwordActive (current => false);
+ setKingMaiSwordAtk (value => 0);
+ setKingMaiSwordDef (value => 0);
+ setKingMaiSwordLuck (value => 0);
+
+ setGlassScimitarIsShown (current => false);
+ setGlassScimitarActive (current => false);
+ setGlassScimitarAtk (value => 0);
+ setGlassScimitarDef (value => 0);
+ setGlassScimitarLuck (value => 0);
+
+ setFusionSwordIsShown (current => false);
+ setFusionSwordActive (current => false);
+ setFusionSwordAtk (value => 0);
+ setFusionSwordDef (value => 0);
+ setFusionSwordLuck (value => 0);
+
+ setFlowerSlingshotIsShown (current => false);
+ setFlowerSlingshotActive (current => false);
+ setFlowerSlingshotAtk (value => 0);
+ setFlowerSlingshotDef (value => 0);
+ setFlowerSlingshotLuck (value => 0);
+
+ setDragonClawHookIsShown (current => false);
+ setDragonClawHookActive (current => false);
+ setDragonClawHookAtk (value => 0);
+ setDragonClawHookDef (value => 0);
+ setDragonClawHookLuck (value => 0);
+
+ setDawnSwordIsShown (current => false);
+ setDawnSwordActive (current => false);
+ setDawnSwordAtk (value => 0);
+ setDawnSwordDef (value => 0);
+ setDawnSwordLuck (value => 0);
+
+ setDarkForestSwordOldIsShown (current => false);
+ setDarkForestSwordOldActive (current => false);
+ setDarkForestSwordOldAtk (value => 0);
+ setDarkForestSwordOldDef (value => 0);
+ setDarkForestSwordOldLuck (value => 0);
+
+ setDarkForestSwordIsShown (current => false);
+ setDarkForestSwordActive (current => false);
+ setDarkForestSwordAtk (value => 0);
+ setDarkForestSwordDef (value => 0);
+ setDarkForestSwordLuck (value => 0);
   };
 
   const handleDragonClawHookClick = event => {
@@ -6308,6 +8132,120 @@ const handleWoodSwordClick = event => {
   setDragonClawHookAtk (value => 14);
   setDragonClawHookDef (value => 2);
   setDragonClawHookLuck (value => 0);
+
+  setWoodSwordIsShown (current => false);
+  setWoodSwordActive (current => false);
+  setWoodSwordAtk (value => 0);
+  setWoodSwordDef (value => 0);
+  setWoodSwordLuck (value => 0);
+  
+ setWoodSpearIsShown (current => false);
+ setWoodSpearActive (current => false);
+ setWoodSpearAtk (value => 0);
+ setWoodSpearDef (value => 0);
+ setWoodSpearLuck (value => 0);
+
+ setSteelSwordIsShown (current => false);
+ setSteelSwordActive (current => false);
+ setSteelSwordAtk (value => 0);
+ setSteelSwordDef (value => 0);
+ setSteelSwordLuck (value => 0);
+
+ setSteelMaceIsShown (current => false);
+ setSteelMaceActive (current => false);
+ setSteelMaceAtk (value => 0);
+ setSteelMaceDef (value => 0);
+ setSteelMaceLuck (value => 0);
+
+ setSteelDaggerIsShown (current => false);
+ setSteelDaggerActive (current => false);
+ setSteelDaggerAtk (value => 0);
+ setSteelDaggerDef (value => 0);
+ setSteelDaggerLuck (value => 0);
+
+ setSpellfireSwordIsShown (current => false);
+ setSpellfireSwordActive (current => false);
+ setSpellfireSwordAtk (value => 0);
+ setSpellfireSwordDef (value => 0);
+ setSpellfireSwordLuck (value => 0);
+
+ setRainaSwordIsShown (current => false);
+ setRainaSwordActive (current => false);
+ setRainaSwordAtk (value => 0);
+ setRainaSwordDef (value => 0);
+ setRainaSwordLuck (value => 0);
+
+ setOozeSwordIsShown (current => false);
+ setOozeSwordActive (current => false);
+ setOozeSwordAtk (value => 0);
+ setOozeSwordDef (value => 0);
+ setOozeSwordLuck (value => 0);
+
+ setNiftraSwordIsShown (current => false);
+ setNiftraSwordActive (current => false);
+ setNiftraSwordAtk (value => 0);
+ setNiftraSwordDef (value => 0);
+ setNiftraSwordLuck (value => 0);
+
+ setMercurialSwordIsShown (current => false);
+ setMercurialSwordActive (current => false);
+ setMercurialSwordAtk (value => 0);
+ setMercurialSwordDef (value => 0);
+ setMercurialSwordLuck (value => 0);
+
+ setLeafsungWoodenSwordIsShown (current => false);
+ setLeafsungWoodenSwordActive (current => false);
+ setLeafsungWoodenSwordAtk (value => 0);
+ setLeafsungWoodenSwordDef (value => 0);
+ setLeafsungWoodenSwordLuck (value => 0);
+
+ setKingMaiSwordIsShown (current => false);
+ setKingMaiSwordActive (current => false);
+ setKingMaiSwordAtk (value => 0);
+ setKingMaiSwordDef (value => 0);
+ setKingMaiSwordLuck (value => 0);
+
+ setGlassScimitarIsShown (current => false);
+ setGlassScimitarActive (current => false);
+ setGlassScimitarAtk (value => 0);
+ setGlassScimitarDef (value => 0);
+ setGlassScimitarLuck (value => 0);
+
+ setFusionSwordIsShown (current => false);
+ setFusionSwordActive (current => false);
+ setFusionSwordAtk (value => 0);
+ setFusionSwordDef (value => 0);
+ setFusionSwordLuck (value => 0);
+
+ setFlowerSlingshotIsShown (current => false);
+ setFlowerSlingshotActive (current => false);
+ setFlowerSlingshotAtk (value => 0);
+ setFlowerSlingshotDef (value => 0);
+ setFlowerSlingshotLuck (value => 0);
+
+ setDragonTailSwordIsShown (current => false);
+ setDragonTailSwordActive (current => false);
+ setDragonTailSwordAtk (value => 0);
+ setDragonTailSwordDef (value => 0);
+ setDragonTailSwordLuck (value => 0);
+
+ setDawnSwordIsShown (current => false);
+ setDawnSwordActive (current => false);
+ setDawnSwordAtk (value => 0);
+ setDawnSwordDef (value => 0);
+ setDawnSwordLuck (value => 0);
+
+ setDarkForestSwordOldIsShown (current => false);
+ setDarkForestSwordOldActive (current => false);
+ setDarkForestSwordOldAtk (value => 0);
+ setDarkForestSwordOldDef (value => 0);
+ setDarkForestSwordOldLuck (value => 0);
+
+ setDarkForestSwordIsShown (current => false);
+ setDarkForestSwordActive (current => false);
+ setDarkForestSwordAtk (value => 0);
+ setDarkForestSwordDef (value => 0);
+ setDarkForestSwordLuck (value => 0);
   };
 
   const handleDawnSwordClick = event => {
@@ -6316,6 +8254,120 @@ const handleWoodSwordClick = event => {
   setDawnSwordAtk (value => 16);
   setDawnSwordDef (value => 0);
   setDawnSwordLuck (value => 2);
+
+  setWoodSwordIsShown (current => false);
+  setWoodSwordActive (current => false);
+  setWoodSwordAtk (value => 0);
+  setWoodSwordDef (value => 0);
+  setWoodSwordLuck (value => 0);
+  
+ setWoodSpearIsShown (current => false);
+ setWoodSpearActive (current => false);
+ setWoodSpearAtk (value => 0);
+ setWoodSpearDef (value => 0);
+ setWoodSpearLuck (value => 0);
+
+ setSteelSwordIsShown (current => false);
+ setSteelSwordActive (current => false);
+ setSteelSwordAtk (value => 0);
+ setSteelSwordDef (value => 0);
+ setSteelSwordLuck (value => 0);
+
+ setSteelMaceIsShown (current => false);
+ setSteelMaceActive (current => false);
+ setSteelMaceAtk (value => 0);
+ setSteelMaceDef (value => 0);
+ setSteelMaceLuck (value => 0);
+
+ setSteelDaggerIsShown (current => false);
+ setSteelDaggerActive (current => false);
+ setSteelDaggerAtk (value => 0);
+ setSteelDaggerDef (value => 0);
+ setSteelDaggerLuck (value => 0);
+
+ setSpellfireSwordIsShown (current => false);
+ setSpellfireSwordActive (current => false);
+ setSpellfireSwordAtk (value => 0);
+ setSpellfireSwordDef (value => 0);
+ setSpellfireSwordLuck (value => 0);
+
+ setRainaSwordIsShown (current => false);
+ setRainaSwordActive (current => false);
+ setRainaSwordAtk (value => 0);
+ setRainaSwordDef (value => 0);
+ setRainaSwordLuck (value => 0);
+
+ setOozeSwordIsShown (current => false);
+ setOozeSwordActive (current => false);
+ setOozeSwordAtk (value => 0);
+ setOozeSwordDef (value => 0);
+ setOozeSwordLuck (value => 0);
+
+ setNiftraSwordIsShown (current => false);
+ setNiftraSwordActive (current => false);
+ setNiftraSwordAtk (value => 0);
+ setNiftraSwordDef (value => 0);
+ setNiftraSwordLuck (value => 0);
+
+ setMercurialSwordIsShown (current => false);
+ setMercurialSwordActive (current => false);
+ setMercurialSwordAtk (value => 0);
+ setMercurialSwordDef (value => 0);
+ setMercurialSwordLuck (value => 0);
+
+ setLeafsungWoodenSwordIsShown (current => false);
+ setLeafsungWoodenSwordActive (current => false);
+ setLeafsungWoodenSwordAtk (value => 0);
+ setLeafsungWoodenSwordDef (value => 0);
+ setLeafsungWoodenSwordLuck (value => 0);
+
+ setKingMaiSwordIsShown (current => false);
+ setKingMaiSwordActive (current => false);
+ setKingMaiSwordAtk (value => 0);
+ setKingMaiSwordDef (value => 0);
+ setKingMaiSwordLuck (value => 0);
+
+ setGlassScimitarIsShown (current => false);
+ setGlassScimitarActive (current => false);
+ setGlassScimitarAtk (value => 0);
+ setGlassScimitarDef (value => 0);
+ setGlassScimitarLuck (value => 0);
+
+ setFusionSwordIsShown (current => false);
+ setFusionSwordActive (current => false);
+ setFusionSwordAtk (value => 0);
+ setFusionSwordDef (value => 0);
+ setFusionSwordLuck (value => 0);
+
+ setFlowerSlingshotIsShown (current => false);
+ setFlowerSlingshotActive (current => false);
+ setFlowerSlingshotAtk (value => 0);
+ setFlowerSlingshotDef (value => 0);
+ setFlowerSlingshotLuck (value => 0);
+
+ setDragonTailSwordIsShown (current => false);
+ setDragonTailSwordActive (current => false);
+ setDragonTailSwordAtk (value => 0);
+ setDragonTailSwordDef (value => 0);
+ setDragonTailSwordLuck (value => 0);
+
+ setDragonClawHookIsShown (current => false);
+ setDragonClawHookActive (current => false);
+ setDragonClawHookAtk (value => 0);
+ setDragonClawHookDef (value => 0);
+ setDragonClawHookLuck (value => 0);
+
+ setDarkForestSwordOldIsShown (current => false);
+ setDarkForestSwordOldActive (current => false);
+ setDarkForestSwordOldAtk (value => 0);
+ setDarkForestSwordOldDef (value => 0);
+ setDarkForestSwordOldLuck (value => 0);
+
+ setDarkForestSwordIsShown (current => false);
+ setDarkForestSwordActive (current => false);
+ setDarkForestSwordAtk (value => 0);
+ setDarkForestSwordDef (value => 0);
+ setDarkForestSwordLuck (value => 0);
   };
 
   const handleDarkForestSwordOldClick = event => {
@@ -6324,6 +8376,120 @@ const handleWoodSwordClick = event => {
   setDarkForestSwordOldAtk (value => 12);
   setDarkForestSwordOldDef (value => 0);
   setDarkForestSwordOldLuck (value => 12);
+
+  setWoodSwordIsShown (current => false);
+  setWoodSwordActive (current => false);
+  setWoodSwordAtk (value => 0);
+  setWoodSwordDef (value => 0);
+  setWoodSwordLuck (value => 0);
+  
+ setWoodSpearIsShown (current => false);
+ setWoodSpearActive (current => false);
+ setWoodSpearAtk (value => 0);
+ setWoodSpearDef (value => 0);
+ setWoodSpearLuck (value => 0);
+
+ setSteelSwordIsShown (current => false);
+ setSteelSwordActive (current => false);
+ setSteelSwordAtk (value => 0);
+ setSteelSwordDef (value => 0);
+ setSteelSwordLuck (value => 0);
+
+ setSteelMaceIsShown (current => false);
+ setSteelMaceActive (current => false);
+ setSteelMaceAtk (value => 0);
+ setSteelMaceDef (value => 0);
+ setSteelMaceLuck (value => 0);
+
+ setSteelDaggerIsShown (current => false);
+ setSteelDaggerActive (current => false);
+ setSteelDaggerAtk (value => 0);
+ setSteelDaggerDef (value => 0);
+ setSteelDaggerLuck (value => 0);
+
+ setSpellfireSwordIsShown (current => false);
+ setSpellfireSwordActive (current => false);
+ setSpellfireSwordAtk (value => 0);
+ setSpellfireSwordDef (value => 0);
+ setSpellfireSwordLuck (value => 0);
+
+ setRainaSwordIsShown (current => false);
+ setRainaSwordActive (current => false);
+ setRainaSwordAtk (value => 0);
+ setRainaSwordDef (value => 0);
+ setRainaSwordLuck (value => 0);
+
+ setOozeSwordIsShown (current => false);
+ setOozeSwordActive (current => false);
+ setOozeSwordAtk (value => 0);
+ setOozeSwordDef (value => 0);
+ setOozeSwordLuck (value => 0);
+
+ setNiftraSwordIsShown (current => false);
+ setNiftraSwordActive (current => false);
+ setNiftraSwordAtk (value => 0);
+ setNiftraSwordDef (value => 0);
+ setNiftraSwordLuck (value => 0);
+
+ setMercurialSwordIsShown (current => false);
+ setMercurialSwordActive (current => false);
+ setMercurialSwordAtk (value => 0);
+ setMercurialSwordDef (value => 0);
+ setMercurialSwordLuck (value => 0);
+
+ setLeafsungWoodenSwordIsShown (current => false);
+ setLeafsungWoodenSwordActive (current => false);
+ setLeafsungWoodenSwordAtk (value => 0);
+ setLeafsungWoodenSwordDef (value => 0);
+ setLeafsungWoodenSwordLuck (value => 0);
+
+ setKingMaiSwordIsShown (current => false);
+ setKingMaiSwordActive (current => false);
+ setKingMaiSwordAtk (value => 0);
+ setKingMaiSwordDef (value => 0);
+ setKingMaiSwordLuck (value => 0);
+
+ setGlassScimitarIsShown (current => false);
+ setGlassScimitarActive (current => false);
+ setGlassScimitarAtk (value => 0);
+ setGlassScimitarDef (value => 0);
+ setGlassScimitarLuck (value => 0);
+
+ setFusionSwordIsShown (current => false);
+ setFusionSwordActive (current => false);
+ setFusionSwordAtk (value => 0);
+ setFusionSwordDef (value => 0);
+ setFusionSwordLuck (value => 0);
+
+ setFlowerSlingshotIsShown (current => false);
+ setFlowerSlingshotActive (current => false);
+ setFlowerSlingshotAtk (value => 0);
+ setFlowerSlingshotDef (value => 0);
+ setFlowerSlingshotLuck (value => 0);
+
+ setDragonTailSwordIsShown (current => false);
+ setDragonTailSwordActive (current => false);
+ setDragonTailSwordAtk (value => 0);
+ setDragonTailSwordDef (value => 0);
+ setDragonTailSwordLuck (value => 0);
+
+ setDragonClawHookIsShown (current => false);
+ setDragonClawHookActive (current => false);
+ setDragonClawHookAtk (value => 0);
+ setDragonClawHookDef (value => 0);
+ setDragonClawHookLuck (value => 0);
+
+ setDawnSwordIsShown (current => false);
+ setDawnSwordActive (current => false);
+ setDawnSwordAtk (value => 0);
+ setDawnSwordDef (value => 0);
+ setDawnSwordLuck (value => 0);
+
+ setDarkForestSwordIsShown (current => false);
+ setDarkForestSwordActive (current => false);
+ setDarkForestSwordAtk (value => 0);
+ setDarkForestSwordDef (value => 0);
+ setDarkForestSwordLuck (value => 0);
   };
 
   const handleDarkForestSwordClick = event => {
@@ -6332,6 +8498,120 @@ const handleWoodSwordClick = event => {
   setDarkForestSwordAtk (value => 15);
   setDarkForestSwordDef (value => 0);
   setDarkForestSwordLuck (value => 2);
+
+  setWoodSwordIsShown (current => false);
+  setWoodSwordActive (current => false);
+  setWoodSwordAtk (value => 0);
+  setWoodSwordDef (value => 0);
+  setWoodSwordLuck (value => 0);
+  
+ setWoodSpearIsShown (current => false);
+ setWoodSpearActive (current => false);
+ setWoodSpearAtk (value => 0);
+ setWoodSpearDef (value => 0);
+ setWoodSpearLuck (value => 0);
+
+ setSteelSwordIsShown (current => false);
+ setSteelSwordActive (current => false);
+ setSteelSwordAtk (value => 0);
+ setSteelSwordDef (value => 0);
+ setSteelSwordLuck (value => 0);
+
+ setSteelMaceIsShown (current => false);
+ setSteelMaceActive (current => false);
+ setSteelMaceAtk (value => 0);
+ setSteelMaceDef (value => 0);
+ setSteelMaceLuck (value => 0);
+
+ setSteelDaggerIsShown (current => false);
+ setSteelDaggerActive (current => false);
+ setSteelDaggerAtk (value => 0);
+ setSteelDaggerDef (value => 0);
+ setSteelDaggerLuck (value => 0);
+
+ setSpellfireSwordIsShown (current => false);
+ setSpellfireSwordActive (current => false);
+ setSpellfireSwordAtk (value => 0);
+ setSpellfireSwordDef (value => 0);
+ setSpellfireSwordLuck (value => 0);
+
+ setRainaSwordIsShown (current => false);
+ setRainaSwordActive (current => false);
+ setRainaSwordAtk (value => 0);
+ setRainaSwordDef (value => 0);
+ setRainaSwordLuck (value => 0);
+
+ setOozeSwordIsShown (current => false);
+ setOozeSwordActive (current => false);
+ setOozeSwordAtk (value => 0);
+ setOozeSwordDef (value => 0);
+ setOozeSwordLuck (value => 0);
+
+ setNiftraSwordIsShown (current => false);
+ setNiftraSwordActive (current => false);
+ setNiftraSwordAtk (value => 0);
+ setNiftraSwordDef (value => 0);
+ setNiftraSwordLuck (value => 0);
+
+ setMercurialSwordIsShown (current => false);
+ setMercurialSwordActive (current => false);
+ setMercurialSwordAtk (value => 0);
+ setMercurialSwordDef (value => 0);
+ setMercurialSwordLuck (value => 0);
+
+ setLeafsungWoodenSwordIsShown (current => false);
+ setLeafsungWoodenSwordActive (current => false);
+ setLeafsungWoodenSwordAtk (value => 0);
+ setLeafsungWoodenSwordDef (value => 0);
+ setLeafsungWoodenSwordLuck (value => 0);
+
+ setKingMaiSwordIsShown (current => false);
+ setKingMaiSwordActive (current => false);
+ setKingMaiSwordAtk (value => 0);
+ setKingMaiSwordDef (value => 0);
+ setKingMaiSwordLuck (value => 0);
+
+ setGlassScimitarIsShown (current => false);
+ setGlassScimitarActive (current => false);
+ setGlassScimitarAtk (value => 0);
+ setGlassScimitarDef (value => 0);
+ setGlassScimitarLuck (value => 0);
+
+ setFusionSwordIsShown (current => false);
+ setFusionSwordActive (current => false);
+ setFusionSwordAtk (value => 0);
+ setFusionSwordDef (value => 0);
+ setFusionSwordLuck (value => 0);
+
+ setFlowerSlingshotIsShown (current => false);
+ setFlowerSlingshotActive (current => false);
+ setFlowerSlingshotAtk (value => 0);
+ setFlowerSlingshotDef (value => 0);
+ setFlowerSlingshotLuck (value => 0);
+
+ setDragonTailSwordIsShown (current => false);
+ setDragonTailSwordActive (current => false);
+ setDragonTailSwordAtk (value => 0);
+ setDragonTailSwordDef (value => 0);
+ setDragonTailSwordLuck (value => 0);
+
+ setDragonClawHookIsShown (current => false);
+ setDragonClawHookActive (current => false);
+ setDragonClawHookAtk (value => 0);
+ setDragonClawHookDef (value => 0);
+ setDragonClawHookLuck (value => 0);
+
+ setDawnSwordIsShown (current => false);
+ setDawnSwordActive (current => false);
+ setDawnSwordAtk (value => 0);
+ setDawnSwordDef (value => 0);
+ setDawnSwordLuck (value => 0);
+
+ setDarkForestSwordOldIsShown (current => false);
+ setDarkForestSwordOldActive (current => false);
+ setDarkForestSwordOldAtk (value => 0);
+ setDarkForestSwordOldDef (value => 0);
+ setDarkForestSwordOldLuck (value => 0);
   };
 
 const handleWoodSwordNoClick = event => {
@@ -6414,12 +8694,12 @@ const handleWoodSwordNoClick = event => {
   setMercurialSwordLuck (value => 0);
   };
 
-  const handleLeagsungWoodenSwordNoClick = event => {
-  setLeagsungWoodenSwordIsShown (current => !LeagsungWoodenSwordIsShown);
-  setLeagsungWoodenSwordActive (current => !LeagsungWoodenSwordActive);
-  setLeagsungWoodenSwordAtk (value => 0);
-  setLeagsungWoodenSwordDef (value => 0);
-  setLeagsungWoodenSwordLuck (value => 0);
+  const handleLeafsungWoodenSwordNoClick = event => {
+  setLeafsungWoodenSwordIsShown (current => !LeafsungWoodenSwordIsShown);
+  setLeafsungWoodenSwordActive (current => !LeafsungWoodenSwordActive);
+  setLeafsungWoodenSwordAtk (value => 0);
+  setLeafsungWoodenSwordDef (value => 0);
+  setLeafsungWoodenSwordLuck (value => 0);
   };
 
   const handleKingMaiSwordNoClick = event => {
@@ -6494,7 +8774,25 @@ const handleWoodSwordNoClick = event => {
   setDarkForestSwordLuck (value => 0);
   };
 
+//weapon1 equations//
 
+const totalWeapon1TopAtk = Math.max (WoodSwordAtk, WoodSpearAtk, SteelSwordAtk, SteelMaceAtk, 
+SteelDaggerAtk, SpellfireSwordAtk, RainaSwordAtk, OozeSwordAtk, NiftraSwordAtk, 
+MercurialSwordAtk, LeafsungWoodenSwordAtk, KingMaiSwordAtk, GlassScimitarAtk, FusionSwordAtk, 
+FlowerSlingshotAtk, DragonTailSwordAtk, DragonClawHookAtk, DawnSwordAtk, DarkForestSwordOldAtk, 
+DarkForestSwordAtk)
+
+const totalWeapon1TopDef = Math.max (WoodSwordDef, WoodSpearDef, SteelSwordDef, SteelMaceDef, 
+SteelDaggerDef, SpellfireSwordDef, RainaSwordDef, OozeSwordDef, NiftraSwordDef, 
+MercurialSwordDef, LeafsungWoodenSwordDef, KingMaiSwordDef, GlassScimitarDef, FusionSwordDef, 
+FlowerSlingshotDef, DragonTailSwordDef, DragonClawHookDef, DawnSwordDef, DarkForestSwordOldDef, 
+DarkForestSwordDef)
+
+const totalWeapon1TopLuck = Math.max (WoodSwordLuck, WoodSpearLuck, SteelSwordLuck, SteelMaceLuck, 
+  SteelDaggerLuck, SpellfireSwordLuck, RainaSwordLuck, OozeSwordLuck, NiftraSwordLuck, 
+  MercurialSwordLuck, LeafsungWoodenSwordLuck, KingMaiSwordLuck, GlassScimitarLuck, FusionSwordLuck, 
+  FlowerSlingshotLuck, DragonTailSwordLuck, DragonClawHookLuck, DawnSwordLuck, DarkForestSwordOldLuck, 
+  DarkForestSwordLuck)
 
 //Weapon2 battle items//
 
@@ -6688,9 +8986,9 @@ const totalNivaliDef = Math.max (MountainMaceDef + NivaliBreastplateDef, 0)
 
 //totals//
 
-const totalAtk = Math.max (totalCompanionTopAtk)
-const totalDef = Math.max (totalCompanionTopDef)
-const totalLuck = Math.max (totalCompanionTopLuck)
+const totalAtk = Math.max (totalCompanionTopAtk + totalWeapon1TopAtk)
+const totalDef = Math.max (totalCompanionTopDef + totalWeapon1TopDef)
+const totalLuck = Math.max (totalCompanionTopLuck + totalWeapon1TopLuck)
 
   //region clicks//
 
@@ -7533,58 +9831,87 @@ const [HuntNone, setHuntNone] = useState(0)
 const [HuntNoneIsShown, setHuntNoneIsShown] = useState(false)
 const [HuntNoneActive, setHuntNoneActive] = useState(false)
 
-const TopAttackCompanion16 = () => {
-  if (totalCompanionTopAtk === 16)
-    return (
-  <Text>Attack-Armor Kaiszar</Text>
-  )
-};
 
-const TopAttackCompanion12 = () => {
-  if (totalCompanionTopAtk === 12)
-    return (
-  <Text>Kaiszar, Defense Kaiszar, Luck Kaiszar, Chysis, Lodo</Text>
-  )
-};
-
-const GreyAtk = () => {
+const GreyAtkCompanion = () => {
   if (totalCompanionTopAtk === 0)
 	return(
 <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/hbcvJHt.png' />
   )
 }
 
-const ColorAtk = () => {
+const ColorAtkCompanion = () => {
   if (totalCompanionTopAtk > 0)
 	return(
 <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/cPrPVxc.png' />
   )
 }
 
-const GreyDef = () => {
+const GreyDefCompanion = () => {
   if (totalCompanionTopDef === 0)
 	return(
 <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/6Pw8bpA.png' />
   )
 }
 
-const ColorDef = () => {
+const ColorDefCompanion = () => {
   if (totalCompanionTopDef > 0)
 	return(
 <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/eXyDuR9.png' />
   )
 }
 
-const GreyLuck = () => {
+const GreyLuckCompanion = () => {
   if (totalCompanionTopLuck === 0)
 	return(
 <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/SsdiAg9.png' />
   )
 }
 
-const ColorLuck = () => {
+const ColorLuckCompanion = () => {
   if (totalCompanionTopLuck > 0)
 	return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/9e2WZyS.png' />
+  )
+}
+
+const GreyAtkWeapon1 = () => {
+  if (totalWeapon1TopAtk === 0)
+   return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/hbcvJHt.png' />
+  )
+}
+
+const ColorAtkWeapon1 = () => {
+  if (totalWeapon1TopAtk > 0)
+   return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/cPrPVxc.png' />
+  )
+}
+
+const GreyDefWeapon1 = () => {
+  if (totalWeapon1TopDef === 0)
+   return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/6Pw8bpA.png' />
+  )
+}
+
+const ColorDefWeapon1 = () => {
+  if (totalWeapon1TopDef > 0)
+   return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/eXyDuR9.png' />
+  )
+}
+
+const GreyLuckWeapon1 = () => {
+  if (totalWeapon1TopLuck === 0)
+   return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/SsdiAg9.png' />
+  )
+}
+
+const ColorLuckWeapon1 = () => {
+  if (totalWeapon1TopLuck > 0)
+   return(
 <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/9e2WZyS.png' />
   )
 }
@@ -8200,38 +10527,376 @@ const ColorLuck = () => {
         <Text fontSize={['md', 'lg', 'lg']} mt={['4px', '6px', '8px']}>
           <b>Weapon 1</b>
         </Text>
-        <Image
+        {!WoodSwordIsShown && !WoodSpearIsShown && !SteelSwordIsShown && !SteelMaceIsShown && !SteelDaggerIsShown &&
+  !SpellfireSwordIsShown && !RainaSwordIsShown && !OozeSwordIsShown && !NiftraSwordIsShown && !MercurialSwordIsShown &&
+  !LeafsungWoodenSwordIsShown && !KingMaiSwordIsShown && !GlassScimitarIsShown && !FusionSwordIsShown && 
+  !FlowerSlingshotIsShown && !DragonTailSwordIsShown && !DragonClawHookIsShown && !DawnSwordIsShown && 
+  !DarkForestSwordOldIsShown && !DarkForestSwordIsShown &&
+          <Image
         style={{position:'absolute'}}
         mt={['37px', '47px', '55px']}
         align='center' 
         boxSize={['4rem', '4.5rem', '5rem']}
         src='https://i.imgur.com/5FfZ6Yl.png'
-      />
+      />}
+        {!WoodSwordIsShown && !WoodSpearIsShown && !SteelSwordIsShown && !SteelMaceIsShown && !SteelDaggerIsShown &&
+  !SpellfireSwordIsShown && !RainaSwordIsShown && !OozeSwordIsShown && !NiftraSwordIsShown && !MercurialSwordIsShown &&
+  !LeafsungWoodenSwordIsShown && !KingMaiSwordIsShown && !GlassScimitarIsShown && !FusionSwordIsShown && 
+  !FlowerSlingshotIsShown && !DragonTailSwordIsShown && !DragonClawHookIsShown && !DawnSwordIsShown && 
+  !DarkForestSwordOldIsShown && !DarkForestSwordIsShown &&
         <Text        
         style={{position:'absolute'}}
         mt={['110px', '130px', '145px']}
         fontSize={['sm', 'md', 'md']}>
-          No item</Text>
-        <HStack
-        style={{position:'absolute'}}
-        mt={['135px', '160px', '175px']}
-        >
-        <span>
-          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
-          <span>
-          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
-        </span>
-        <span>
-          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
-          <span>
-          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
-        </span>
-        <span>
-          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
-          <span>
-          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
-        </span>
-        </HStack>
+          No item</Text>}
+
+          {WoodSwordIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/7/7b/Woodsword_md.png/'
+   />}
+   {WoodSwordIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Wood Sword</Text>
+     }
+
+{WoodSpearIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/a/ac/Woodspear_md.png/'
+   />}
+   {WoodSpearIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Wood Spear</Text>
+     }
+
+{SteelSwordIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/1/10/Steelsword_md.png/'
+   />}
+   {SteelSwordIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Steel Sword</Text>
+     }
+
+{SteelMaceIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/8/85/Steelmace_md.png/'
+ />}
+   {SteelMaceIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Steel Mace</Text>
+     }
+
+{SteelDaggerIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/a/ac/Steeldagger_md.png/'
+   />}
+   {SteelDaggerIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Steel Dagger</Text>
+     }
+
+{SpellfireSwordIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/d/da/Spellfire_Sword.png/'
+ />}
+   {SpellfireSwordIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Spellfire Sword</Text>
+     }
+
+{RainaSwordIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/7/72/Raina_sword.png/'
+   />}
+   {RainaSwordIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Raina Sword</Text>
+     }
+
+{OozeSwordIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/8/88/Ooze-sword.png'
+   />}
+   {OozeSwordIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Ooze Sword</Text>
+     }
+
+{NiftraSwordIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/8/8e/Niftras-sword.png/'
+ />}
+   {NiftraSwordIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Niftra's Sword</Text>
+     }
+
+{MercurialSwordIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/d/d7/MercurialSword.png'
+   />}
+   {MercurialSwordIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Mercurial Sword</Text>
+     }
+
+{LeafsungWoodenSwordIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/2/20/Leafsungwoodensword_md.png/'
+   />}
+   {LeafsungWoodenSwordIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Leafsung Sword</Text>
+     }
+
+{KingMaiSwordIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/7/7c/KingMaiSword.png/'
+   />}
+   {KingMaiSwordIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     King Mai's Sword</Text>
+     }
+
+{GlassScimitarIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/e/e2/Glassscimitar_md.png/'
+   />}
+   {GlassScimitarIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Glass Scimitar</Text>
+     }
+
+{FusionSwordIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/c/c6/FusionSword.png'
+   />}
+   {FusionSwordIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Fusion Sword</Text>
+     }
+
+{FlowerSlingshotIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/b/b6/FlowerSlingshot.png/'
+   />}
+   {FlowerSlingshotIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Flower Slingshot</Text>
+     }
+
+{DragonTailSwordIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/7/78/DragonsTailSword.png/'
+   />}
+   {DragonTailSwordIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Dragon's Tail Sword</Text>
+     }
+
+{DragonClawHookIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/3/32/DragonsClawHook.png/'
+   />}
+   {DragonClawHookIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Dragon's Claw Hook</Text>
+     }
+
+{DawnSwordIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/3/37/Dawn-sword.png'
+   />}
+   {DawnSwordIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Dawn Sword</Text>
+     }
+
+{DarkForestSwordOldIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/b/bf/DarkForestSword.png/'
+   />}
+   {DarkForestSwordOldIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Dark Forest Sword</Text>
+     }
+
+{DarkForestSwordIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/8/87/Dark_forest_sword.png/'
+   />}
+   {DarkForestSwordIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Dark Forest Sword</Text>
+     }
+
+ <HStack
+ style={{position:'absolute'}}
+ mt={['135px', '160px', '175px']}
+ >
+ <span>
+   <GreyAtkWeapon1 />
+   <ColorAtkWeapon1 />
+   </span>
+   <span>
+   <Text ml='-7px' fontSize='md'>+{totalWeapon1TopAtk}</Text>
+ </span>
+ <span>
+ <GreyDefWeapon1 />
+ <ColorDefWeapon1 />
+ </span>
+   <span>
+   <Text ml='-7px' fontSize='md'>+{totalWeapon1TopDef}</Text>
+ </span>
+ <span>
+ <GreyLuckWeapon1 />
+ <ColorLuckWeapon1 />
+ </span>
+   <span>
+   <Text ml='-7px' fontSize='md'>+{totalWeapon1TopLuck}</Text>
+ </span>
+ </HStack>
+
       </VStack>
     </Box>
   </WrapItem>
@@ -8261,17 +10926,17 @@ const ColorLuck = () => {
         <span>
           <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
           <span>
-          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+          <Text ml='-7px' fontSize='md'>+0</Text>
         </span>
         <span>
           <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
           <span>
-          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+          <Text ml='-7px' fontSize='md'>+0</Text>
         </span>
         <span>
           <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
           <span>
-          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+          <Text ml='-7px' fontSize='md'>+0</Text>
         </span>
         </HStack>
       </VStack>
@@ -8303,17 +10968,17 @@ const ColorLuck = () => {
         <span>
           <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
           <span>
-          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+          <Text ml='-7px' fontSize='md'>+0</Text>
         </span>
         <span>
           <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
           <span>
-          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+          <Text ml='-7px' fontSize='md'>+0</Text>
         </span>
         <span>
           <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
           <span>
-          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+          <Text ml='-7px' fontSize='md'>+0</Text>
         </span>
         </HStack>
       </VStack>
@@ -8345,17 +11010,17 @@ const ColorLuck = () => {
         <span>
           <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
           <span>
-          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+          <Text ml='-7px' fontSize='md'>+0</Text>
         </span>
         <span>
           <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
           <span>
-          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+          <Text ml='-7px' fontSize='md'>+0</Text>
         </span>
         <span>
           <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
           <span>
-          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+          <Text ml='-7px' fontSize='md'>+0</Text>
         </span>
         </HStack>
       </VStack>
@@ -8387,17 +11052,17 @@ const ColorLuck = () => {
         <span>
           <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
           <span>
-          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+          <Text ml='-7px' fontSize='md'>+0</Text>
         </span>
         <span>
           <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
           <span>
-          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+          <Text ml='-7px' fontSize='md'>+0</Text>
         </span>
         <span>
           <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
           <span>
-          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+          <Text ml='-7px' fontSize='md'>+0</Text>
         </span>
         </HStack>
       </VStack>
@@ -8429,17 +11094,17 @@ const ColorLuck = () => {
         <span>
           <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
           <span>
-          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+          <Text ml='-7px' fontSize='md'>+0</Text>
         </span>
         <span>
           <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
           <span>
-          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+          <Text ml='-7px' fontSize='md'>+0</Text>
         </span>
         <span>
           <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
           <span>
-          <Text ml='-6px' mr='3px' fontSize='md'>+0</Text>
+          <Text ml='-7px' fontSize='md'>+0</Text>
         </span>
         </HStack>
       </VStack>
@@ -8928,6 +11593,70 @@ const ColorLuck = () => {
      Luck Rairasel</Text>
      }
 
+{AlderbamIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/9/95/Alderbam.png/'
+ />}
+   {AlderbamIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Alderbam</Text>
+     }
+     
+{ChysisIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/9/97/Chysis.png/'
+ />}
+   {ChysisIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Chysis</Text>
+     }
+     
+{MundIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/e/e3/Mund.png/'
+ />}
+   {MundIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Mund</Text>
+     }
+     
+{WhodiniIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/d/d5/Whodini.png/'
+ />}
+   {WhodiniIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Whodini</Text>
+     }
+     
 
           
         <HStack
@@ -8935,25 +11664,25 @@ const ColorLuck = () => {
         mt={['135px', '160px', '175px']}
         >
         <span>
-          <GreyAtk />
-          <ColorAtk />
+          <GreyAtkCompanion />
+          <ColorAtkCompanion />
           </span>
           <span>
-          <Text ml='-6px' mr='3px' fontSize='md'>+{totalCompanionTopAtk}</Text>
+          <Text ml='-7px' fontSize='md'>+{totalCompanionTopAtk}</Text>
         </span>
         <span>
-        <GreyDef />
-        <ColorDef />
+        <GreyDefCompanion />
+        <ColorDefCompanion />
         </span>
           <span>
-          <Text ml='-6px' mr='3px' fontSize='md'>+{totalCompanionTopDef}</Text>
+          <Text ml='-7px' fontSize='md'>+{totalCompanionTopDef}</Text>
         </span>
         <span>
-        <GreyLuck />
-        <ColorLuck />
+        <GreyLuckCompanion />
+        <ColorLuckCompanion />
         </span>
           <span>
-          <Text ml='-6px' mr='3px' fontSize='md'>+{totalCompanionTopLuck}</Text>
+          <Text ml='-7px' fontSize='md'>+{totalCompanionTopLuck}</Text>
         </span>
         </HStack>
       </VStack>
@@ -9627,9 +12356,14 @@ src='https://i.imgur.com/3GrgauN.png'
             </Wrap>
 }
 
-<Text fontSize='md' mt='25px' mb='15px'><b>Select Armor Boost:</b></Text>
-<Wrap justify='center'>
+{DragonLairIsShown && 
+<Text fontSize='md' mt='25px' mb='15px'><b>Select Armor Boost:</b></Text>}
 
+{DragonLairIsShown && !KaiszarIsShown && !LoksiIsShown && !ThalamarisIsShown && !ValkosIsShown && !EenrisIsShown && !RairaselIsShown &&
+  <Text fontSize='md' mt='25px' mb='15px'><i>select a dragon to show armor options</i></Text>
+}
+
+<Wrap justify='center'>
 {!AtkKaiszarIsShown && KaiszarIsShown &&
    <WrapItem>
    <Button w='90px' h='110px' pb={5} onClick={handleAtkKaiszarSwitchClick} style={{ backgroundColor: "#2D3748" }}>
@@ -10316,16 +13050,658 @@ src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
             </Wrap>}
                 </TabPanel>
     <TabPanel>
-      <p>two!</p>
+    <Text fontSize='md' mt='25px' mb='15px'><b>Main Quest Battle Items:</b></Text>
+      <Wrap justify='center'>
+      {(DCIsShown || World2RegionIsShown) && !KingMaiSwordIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleKingMaiSwordClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/7c/KingMaiSword.png/'
+/> 
+<Text fontSize='sm' align='center'><b>King Mai's<br/>Sword</b></Text>
+<Text fontSize='sm' align='center'>+28 Atk<br/>+5 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(DCIsShown || World2RegionIsShown) && KingMaiSwordIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleKingMaiSwordNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/7c/KingMaiSword.png/'
+/> 
+<Text fontSize='sm' align='center'><b>King Mai's<br/>Sword</b></Text>
+<Text fontSize='sm' align='center'>+28 Atk<br/>+5 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+      {(DCIsShown || World2RegionIsShown) && !MercurialSwordIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleMercurialSwordClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/d/d7/MercurialSword.png'
+/> 
+<Text fontSize='sm' align='center'><b>Mercurial<br/>Sword</b></Text>
+<Text fontSize='sm' align='center'>+11 Atk<br/>+11 Def<br/>+4 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(DCIsShown || World2RegionIsShown) && MercurialSwordIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleMercurialSwordNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/d/d7/MercurialSword.png'
+/> 
+<Text fontSize='sm' align='center'><b>Mercurial<br/>Sword</b></Text>
+<Text fontSize='sm' align='center'>+11 Atk<br/>+11 Def<br/>+4 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(LightRegionIsShown || World2RegionIsShown) && !FusionSwordIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleFusionSwordClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/c/c6/FusionSword.png'
+/> 
+<Text fontSize='md' align='center'><b>Fusion Sword</b></Text>
+<Text fontSize='sm' align='center'>+25 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(LightRegionIsShown || World2RegionIsShown) && FusionSwordIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleFusionSwordNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/c/c6/FusionSword.png'
+/> 
+<Text fontSize='md' align='center'><b>Fusion Sword</b></Text>
+<Text fontSize='sm' align='center'>+25 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(LightRegionIsShown || World2RegionIsShown) && !FlowerSlingshotIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleFlowerSlingshotClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/b/b6/FlowerSlingshot.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Flower<br/>Slingshot</b></Text>
+<Text fontSize='sm' align='center'>+17 Atk<br/>+0 Def<br/>+8 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(LightRegionIsShown || World2RegionIsShown) && FlowerSlingshotIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleFlowerSlingshotNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/b/b6/FlowerSlingshot.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Flower<br/>Slingshot</b></Text>
+<Text fontSize='sm' align='center'>+17 Atk<br/>+0 Def<br/>+8 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{DawnIsShown && !DawnSwordIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleDawnSwordClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/3/37/Dawn-sword.png'
+/> 
+<Text fontSize='md' align='center'><b>Dawn Sword</b></Text>
+<Text fontSize='sm' align='center'>+16 Atk<br/>+0 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{DawnIsShown && DawnSwordIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleDawnSwordNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/3/37/Dawn-sword.png'
+/> 
+<Text fontSize='md' align='center'><b>Dawn Sword</b></Text>
+<Text fontSize='sm' align='center'>+16 Atk<br/>+0 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !DarkForestSwordIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleDarkForestSwordClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/87/Dark_forest_sword.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Dark Forest<br/>Sword</b></Text>
+<Text fontSize='sm' align='center'>+15 Atk<br/>+0 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && DarkForestSwordIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleDarkForestSwordNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/87/Dark_forest_sword.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Dark Forest<br/>Sword</b></Text>
+<Text fontSize='sm' align='center'>+15 Atk<br/>+0 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+      {(WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !SteelMaceIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleSteelMaceClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/85/Steelmace_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Steel Mace</b></Text>
+<Text fontSize='sm' align='center'>+15 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && SteelMaceIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleSteelMaceNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/85/Steelmace_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Steel Mace</b></Text>
+<Text fontSize='sm' align='center'>+15 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{RainaIsShown && !RainaSwordIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleRainaSwordClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/72/Raina_sword.png/'
+/> 
+<Text fontSize='md' align='center'><b>Raina Sword</b></Text>
+<Text fontSize='sm' align='center'>+11 Atk<br/>+0 Def<br/>+8 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{RainaIsShown && RainaSwordIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleRainaSwordNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/72/Raina_sword.png/'
+/> 
+<Text fontSize='md' align='center'><b>Raina Sword</b></Text>
+<Text fontSize='sm' align='center'>+11 Atk<br/>+0 Def<br/>+8 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && AurilisIsShown && !SpellfireSwordIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleSpellfireSwordClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/d/da/Spellfire_Sword.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Spellfire Sword</b></Text>
+<Text fontSize='sm' align='center'>+14 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && AurilisIsShown && SpellfireSwordIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleSpellfireSwordNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/d/da/Spellfire_Sword.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Spellfire Sword</b></Text>
+<Text fontSize='sm' align='center'>+14 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+      {(DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !SteelSwordIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleSteelSwordClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/1/10/Steelsword_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Steel Sword</b></Text>
+<Text fontSize='sm' align='center'>+10 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && SteelSwordIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleSteelSwordNoClick} style={{ backgroundColor: "#211742" }}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/1/10/Steelsword_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Steel Sword</b></Text>
+<Text fontSize='sm' align='center'>+10 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !GlassScimitarIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleGlassScimitarClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/e/e2/Glassscimitar_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Glass Scimitar</b></Text>
+<Text fontSize='sm' align='center'>+9 Atk<br/>+0 Def<br/>+4 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && GlassScimitarIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleGlassScimitarNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/e/e2/Glassscimitar_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Glass Scimitar</b></Text>
+<Text fontSize='sm' align='center'>+9 Atk<br/>+0 Def<br/>+4 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !SteelDaggerIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleSteelDaggerClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/a/ac/Steeldagger_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Steel Dagger</b></Text>
+<Text fontSize='sm' align='center'>+4 Atk<br/>+0 Def<br/>+1 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && SteelDaggerIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleSteelDaggerNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/a/ac/Steeldagger_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Steel Dagger</b></Text>
+<Text fontSize='sm' align='center'>+4 Atk<br/>+0 Def<br/>+1 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !WoodSpearIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleWoodSpearClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/a/ac/Woodspear_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Wood Spear</b></Text>
+<Text fontSize='sm' align='center'>+4 Atk<br/>+1 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>
+}
+
+{(ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && WoodSpearIsShown &&
+   <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleWoodSpearNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/a/ac/Woodspear_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Wood Spear</b></Text>
+<Text fontSize='sm' align='center'>+4 Atk<br/>+1 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !LeafsungWoodenSwordIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleLeafsungWoodenSwordClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='16px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/2/20/Leafsungwoodensword_md.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Leafsung<br/>Wooden Sword</b></Text>
+<Text fontSize='sm' align='center'>+3 Atk<br/>+0 Def<br/>+1 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && LeafsungWoodenSwordIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleLeafsungWoodenSwordNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='16px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/2/20/Leafsungwoodensword_md.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Leafsung<br/>Wooden Sword</b></Text>
+<Text fontSize='sm' align='center'>+3 Atk<br/>+0 Def<br/>+1 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !WoodSwordIsShown &&
+      <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleWoodSwordClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/7b/Woodsword_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Wood Sword</b></Text>
+<Text fontSize='sm' align='center'>+1 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+    </Button>
+    </WrapItem>}
+
+    {(ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && WoodSwordIsShown &&
+      <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleWoodSwordNoClick} style={{ backgroundColor: "#211742" }}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/7b/Woodsword_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Wood Sword</b></Text>
+<Text fontSize='sm' align='center'>+1 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+    </Button>
+    </WrapItem>}
+      </Wrap>
+      <Text fontSize='md' mt='25px' mb='15px'><b>Past Event Battle Items:</b></Text>
+<Wrap justify='center'>
+
+{!DragonClawHookIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleDragonClawHookClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/3/32/DragonsClawHook.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Dragon's Claw<br/>Hook</b></Text>
+<Text fontSize='sm' align='center'>+14 Atk<br/>+2 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{DragonClawHookIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleDragonClawHookNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/3/32/DragonsClawHook.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Dragon's Claw<br/>Hook</b></Text>
+<Text fontSize='sm' align='center'>+14 Atk<br/>+2 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{!DragonTailSwordIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleDragonTailSwordClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/78/DragonsTailSword.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Dragon's Tail<br/>Sword</b></Text>
+<Text fontSize='sm' align='center'>+10 Atk<br/>+4 Def<br/>+4 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{DragonTailSwordIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleDragonTailSwordNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/78/DragonsTailSword.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Dragon's Tail<br/>Sword</b></Text>
+<Text fontSize='sm' align='center'>+10 Atk<br/>+4 Def<br/>+4 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{!NiftraSwordIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleNiftraSwordClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/8e/Niftras-sword.png'
+/> 
+<Text fontSize='sm' align='center'><b>Niftra's Sword</b></Text>
+<Text fontSize='sm' align='center'>+18 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{NiftraSwordIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleNiftraSwordNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/8e/Niftras-sword.png'
+/> 
+<Text fontSize='sm' align='center'><b>Niftra's Sword</b></Text>
+<Text fontSize='sm' align='center'>+18 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{!OozeSwordIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleOozeSwordClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/88/Ooze-sword.png'
+/> 
+<Text fontSize='md' align='center'><b>Ooze Sword</b></Text>
+<Text fontSize='sm' align='center'>+10 Atk<br/>+10 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{OozeSwordIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleOozeSwordNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/88/Ooze-sword.png'
+/> 
+<Text fontSize='md' align='center'><b>Ooze Sword</b></Text>
+<Text fontSize='sm' align='center'>+10 Atk<br/>+10 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{!DarkForestSwordOldIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleDarkForestSwordOldClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/b/bf/DarkForestSword.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Dark Forest<br/>Sword (2017)</b></Text>
+<Text fontSize='sm' align='center'>+12 Atk<br/>+0 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{DarkForestSwordOldIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleDarkForestSwordOldNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/b/bf/DarkForestSword.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Dark Forest<br/>Sword (2017)</b></Text>
+<Text fontSize='sm' align='center'>+12 Atk<br/>+0 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+
+</Wrap>
     </TabPanel>
   </TabPanels>
 </Tabs>
-  <Text><b>Equation Tests</b></Text>
-  <TopAttackCompanion16 />
-  <TopAttackCompanion12 />
-  <Text>Companion Atk: {totalCompanionTopAtk} </Text>
-  <Text>Companion Def: {totalCompanionTopDef} </Text>
-  <Text>Companion Luck: {totalCompanionTopLuck} </Text>
+<Box h='100px' />
             </Container>
         </Grid>
       </Box>
