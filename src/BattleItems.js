@@ -18790,45 +18790,1007 @@ const [NoChestIsShown, setNoChestIsShown] = useState(false)
 const [NoChestActive, setNoChestActive] = useState(false)
 
 
-const [NivaliBreastplate, setNivaliBreastplate] = useState(0)
+const handleNoChestClick = event => {
+  setNoChestIsShown (current => !NoChestIsShown);
+  setNoChestActive (current => !NoChestActive);
+};
+
+const [AmidalaChestpieceIsShown, setAmidalaChestpieceIsShown] = useState(false)
+const [AmidalaChestpieceActive, setAmidalaChestpieceActive] = useState(false)
+const [AmidalaChestpieceAtk, setAmidalaChestpieceAtk] = useState(0)
+const [AmidalaChestpieceDef, setAmidalaChestpieceDef] = useState(0)
+const [AmidalaChestpieceLuck, setAmidalaChestpieceLuck] = useState(0)
+
+
+const handleAmidalaChestpieceClick = event => {
+
+   setAmidalaChestpieceIsShown (current => !AmidalaChestpieceIsShown);
+   setAmidalaChestpieceActive (current => !AmidalaChestpieceActive);
+   setAmidalaChestpieceAtk (value => 6);
+   setAmidalaChestpieceDef (value => 6);
+   setAmidalaChestpieceLuck (value => 2);
+
+   setCloudChestPlateIsShown (current => false);
+   setCloudChestPlateActive (current => false);
+   setCloudChestPlateAtk (value => 0);
+   setCloudChestPlateDef (value => 0);
+   setCloudChestPlateLuck (value => 0);
+   setDragonScaleArmorIsShown (current => false);
+   setDragonScaleArmorActive (current => false);
+   setDragonScaleArmorAtk (value => 0);
+   setDragonScaleArmorDef (value => 0);
+   setDragonScaleArmorLuck (value => 0);
+   setFabricBreastplateIsShown (current => false);
+   setFabricBreastplateActive (current => false);
+   setFabricBreastplateAtk (value => 0);
+   setFabricBreastplateDef (value => 0);
+   setFabricBreastplateLuck (value => 0);
+   setFusionCuirassIsShown (current => false);
+   setFusionCuirassActive (current => false);
+   setFusionCuirassAtk (value => 0);
+   setFusionCuirassDef (value => 0);
+   setFusionCuirassLuck (value => 0);
+   setKingBreastplateIsShown (current => false);
+   setKingBreastplateActive (current => false);
+   setKingBreastplateAtk (value => 0);
+   setKingBreastplateDef (value => 0);
+   setKingBreastplateLuck (value => 0);
+   setLeafBreastplateIsShown (current => false);
+   setLeafBreastplateActive (current => false);
+   setLeafBreastplateAtk (value => 0);
+   setLeafBreastplateDef (value => 0);
+   setLeafBreastplateLuck (value => 0);
+   setLeatherCuirassIsShown (current => false);
+   setLeatherCuirassActive (current => false);
+   setLeatherCuirassAtk (value => 0);
+   setLeatherCuirassDef (value => 0);
+   setLeatherCuirassLuck (value => 0);
+   setMarionetteBodyArmorIsShown (current => false);
+   setMarionetteBodyArmorActive (current => false);
+   setMarionetteBodyArmorAtk (value => 0);
+   setMarionetteBodyArmorDef (value => 0);
+   setMarionetteBodyArmorLuck (value => 0);
+   setNivaliBreastplateIsShown (current => false);
+   setNivaliBreastplateActive (current => false);
+   setNivaliBreastplateAtk (value => 0);
+   setNivaliBreastplateDef (value => 0);
+   setNivaliBreastplateLuck (value => 0);
+   setReinforcedSteelBreastplateIsShown (current => false);
+   setReinforcedSteelBreastplateActive (current => false);
+   setReinforcedSteelBreastplateAtk (value => 0);
+   setReinforcedSteelBreastplateDef (value => 0);
+   setReinforcedSteelBreastplateLuck (value => 0);
+   setRobotTorsoIsShown (current => false);
+   setRobotTorsoActive (current => false);
+   setRobotTorsoAtk (value => 0);
+   setRobotTorsoDef (value => 0);
+   setRobotTorsoLuck (value => 0);
+
+}
+
+const handleAmidalaChestpieceNoClick = event => {
+   setAmidalaChestpieceIsShown (current => false);
+   setAmidalaChestpieceActive (current => false);
+   setAmidalaChestpieceAtk (value => 0);
+   setAmidalaChestpieceDef (value => 0);
+   setAmidalaChestpieceLuck (value => 0);
+}
+
+const [CloudChestPlateIsShown, setCloudChestPlateIsShown] = useState(false)
+const [CloudChestPlateActive, setCloudChestPlateActive] = useState(false)
+const [CloudChestPlateAtk, setCloudChestPlateAtk] = useState(0)
+const [CloudChestPlateDef, setCloudChestPlateDef] = useState(0)
+const [CloudChestPlateLuck, setCloudChestPlateLuck] = useState(0)
+
+
+const handleCloudChestPlateClick = event => {
+
+
+
+   setCloudChestPlateIsShown (current => !CloudChestPlateIsShown);
+   setCloudChestPlateActive (current => !CloudChestPlateActive);
+   setCloudChestPlateAtk (value => 0);
+   setCloudChestPlateDef (value => 18);
+   setCloudChestPlateLuck (value => 2);
+ 
+   setAmidalaChestpieceIsShown (current => false);
+   setAmidalaChestpieceActive (current => false);
+   setAmidalaChestpieceAtk (value => 0);
+   setAmidalaChestpieceDef (value => 0);
+   setAmidalaChestpieceLuck (value => 0);
+   setDragonScaleArmorIsShown (current => false);
+   setDragonScaleArmorActive (current => false);
+   setDragonScaleArmorAtk (value => 0);
+   setDragonScaleArmorDef (value => 0);
+   setDragonScaleArmorLuck (value => 0);
+   setFabricBreastplateIsShown (current => false);
+   setFabricBreastplateActive (current => false);
+   setFabricBreastplateAtk (value => 0);
+   setFabricBreastplateDef (value => 0);
+   setFabricBreastplateLuck (value => 0);
+   setFusionCuirassIsShown (current => false);
+   setFusionCuirassActive (current => false);
+   setFusionCuirassAtk (value => 0);
+   setFusionCuirassDef (value => 0);
+   setFusionCuirassLuck (value => 0);
+   setKingBreastplateIsShown (current => false);
+   setKingBreastplateActive (current => false);
+   setKingBreastplateAtk (value => 0);
+   setKingBreastplateDef (value => 0);
+   setKingBreastplateLuck (value => 0);
+   setLeafBreastplateIsShown (current => false);
+   setLeafBreastplateActive (current => false);
+   setLeafBreastplateAtk (value => 0);
+   setLeafBreastplateDef (value => 0);
+   setLeafBreastplateLuck (value => 0);
+   setLeatherCuirassIsShown (current => false);
+   setLeatherCuirassActive (current => false);
+   setLeatherCuirassAtk (value => 0);
+   setLeatherCuirassDef (value => 0);
+   setLeatherCuirassLuck (value => 0);
+   setMarionetteBodyArmorIsShown (current => false);
+   setMarionetteBodyArmorActive (current => false);
+   setMarionetteBodyArmorAtk (value => 0);
+   setMarionetteBodyArmorDef (value => 0);
+   setMarionetteBodyArmorLuck (value => 0);
+   setNivaliBreastplateIsShown (current => false);
+   setNivaliBreastplateActive (current => false);
+   setNivaliBreastplateAtk (value => 0);
+   setNivaliBreastplateDef (value => 0);
+   setNivaliBreastplateLuck (value => 0);
+   setReinforcedSteelBreastplateIsShown (current => false);
+   setReinforcedSteelBreastplateActive (current => false);
+   setReinforcedSteelBreastplateAtk (value => 0);
+   setReinforcedSteelBreastplateDef (value => 0);
+   setReinforcedSteelBreastplateLuck (value => 0);
+   setRobotTorsoIsShown (current => false);
+   setRobotTorsoActive (current => false);
+   setRobotTorsoAtk (value => 0);
+   setRobotTorsoDef (value => 0);
+   setRobotTorsoLuck (value => 0);
+
+}
+
+const handleCloudChestPlateNoClick = event => {
+   setCloudChestPlateIsShown (current => false);
+   setCloudChestPlateActive (current => false);
+   setCloudChestPlateAtk (value => 0);
+   setCloudChestPlateDef (value => 0);
+   setCloudChestPlateLuck (value => 0);
+}
+
+const [DragonScaleArmorIsShown, setDragonScaleArmorIsShown] = useState(false)
+const [DragonScaleArmorActive, setDragonScaleArmorActive] = useState(false)
+const [DragonScaleArmorAtk, setDragonScaleArmorAtk] = useState(0)
+const [DragonScaleArmorDef, setDragonScaleArmorDef] = useState(0)
+const [DragonScaleArmorLuck, setDragonScaleArmorLuck] = useState(0)
+
+
+const handleDragonScaleArmorClick = event => {
+
+
+
+   setDragonScaleArmorIsShown (current => !DragonScaleArmorIsShown);
+   setDragonScaleArmorActive (current => !DragonScaleArmorActive);
+   setDragonScaleArmorAtk (value => 2);
+   setDragonScaleArmorDef (value => 12);
+   setDragonScaleArmorLuck (value => 2);
+   
+   setAmidalaChestpieceIsShown (current => false);
+   setAmidalaChestpieceActive (current => false);
+   setAmidalaChestpieceAtk (value => 0);
+   setAmidalaChestpieceDef (value => 0);
+   setAmidalaChestpieceLuck (value => 0);
+   setCloudChestPlateIsShown (current => false);
+   setCloudChestPlateActive (current => false);
+   setCloudChestPlateAtk (value => 0);
+   setCloudChestPlateDef (value => 0);
+   setCloudChestPlateLuck (value => 0);
+   setFabricBreastplateIsShown (current => false);
+   setFabricBreastplateActive (current => false);
+   setFabricBreastplateAtk (value => 0);
+   setFabricBreastplateDef (value => 0);
+   setFabricBreastplateLuck (value => 0);
+   setFusionCuirassIsShown (current => false);
+   setFusionCuirassActive (current => false);
+   setFusionCuirassAtk (value => 0);
+   setFusionCuirassDef (value => 0);
+   setFusionCuirassLuck (value => 0);
+   setKingBreastplateIsShown (current => false);
+   setKingBreastplateActive (current => false);
+   setKingBreastplateAtk (value => 0);
+   setKingBreastplateDef (value => 0);
+   setKingBreastplateLuck (value => 0);
+   setLeafBreastplateIsShown (current => false);
+   setLeafBreastplateActive (current => false);
+   setLeafBreastplateAtk (value => 0);
+   setLeafBreastplateDef (value => 0);
+   setLeafBreastplateLuck (value => 0);
+   setLeatherCuirassIsShown (current => false);
+   setLeatherCuirassActive (current => false);
+   setLeatherCuirassAtk (value => 0);
+   setLeatherCuirassDef (value => 0);
+   setLeatherCuirassLuck (value => 0);
+   setMarionetteBodyArmorIsShown (current => false);
+   setMarionetteBodyArmorActive (current => false);
+   setMarionetteBodyArmorAtk (value => 0);
+   setMarionetteBodyArmorDef (value => 0);
+   setMarionetteBodyArmorLuck (value => 0);
+   setNivaliBreastplateIsShown (current => false);
+   setNivaliBreastplateActive (current => false);
+   setNivaliBreastplateAtk (value => 0);
+   setNivaliBreastplateDef (value => 0);
+   setNivaliBreastplateLuck (value => 0);
+   setReinforcedSteelBreastplateIsShown (current => false);
+   setReinforcedSteelBreastplateActive (current => false);
+   setReinforcedSteelBreastplateAtk (value => 0);
+   setReinforcedSteelBreastplateDef (value => 0);
+   setReinforcedSteelBreastplateLuck (value => 0);
+   setRobotTorsoIsShown (current => false);
+   setRobotTorsoActive (current => false);
+   setRobotTorsoAtk (value => 0);
+   setRobotTorsoDef (value => 0);
+   setRobotTorsoLuck (value => 0);
+
+}
+
+const handleDragonScaleArmorNoClick = event => {
+   setDragonScaleArmorIsShown (current => false);
+   setDragonScaleArmorActive (current => false);
+   setDragonScaleArmorAtk (value => 0);
+   setDragonScaleArmorDef (value => 0);
+   setDragonScaleArmorLuck (value => 0);
+}
+
+const [FabricBreastplateIsShown, setFabricBreastplateIsShown] = useState(false)
+const [FabricBreastplateActive, setFabricBreastplateActive] = useState(false)
+const [FabricBreastplateAtk, setFabricBreastplateAtk] = useState(0)
+const [FabricBreastplateDef, setFabricBreastplateDef] = useState(0)
+const [FabricBreastplateLuck, setFabricBreastplateLuck] = useState(0)
+
+
+const handleFabricBreastplateClick = event => {
+
+
+
+   setFabricBreastplateIsShown (current => !FabricBreastplateIsShown);
+   setFabricBreastplateActive (current => !FabricBreastplateActive);
+   setFabricBreastplateAtk (value => 0);
+   setFabricBreastplateDef (value => 10);
+   setFabricBreastplateLuck (value => 0);
+   
+   setAmidalaChestpieceIsShown (current => false);
+   setAmidalaChestpieceActive (current => false);
+   setAmidalaChestpieceAtk (value => 0);
+   setAmidalaChestpieceDef (value => 0);
+   setAmidalaChestpieceLuck (value => 0);
+   setCloudChestPlateIsShown (current => false);
+   setCloudChestPlateActive (current => false);
+   setCloudChestPlateAtk (value => 0);
+   setCloudChestPlateDef (value => 0);
+   setCloudChestPlateLuck (value => 0);
+   setDragonScaleArmorIsShown (current => false);
+   setDragonScaleArmorActive (current => false);
+   setDragonScaleArmorAtk (value => 0);
+   setDragonScaleArmorDef (value => 0);
+   setDragonScaleArmorLuck (value => 0);
+   setFusionCuirassIsShown (current => false);
+   setFusionCuirassActive (current => false);
+   setFusionCuirassAtk (value => 0);
+   setFusionCuirassDef (value => 0);
+   setFusionCuirassLuck (value => 0);
+   setKingBreastplateIsShown (current => false);
+   setKingBreastplateActive (current => false);
+   setKingBreastplateAtk (value => 0);
+   setKingBreastplateDef (value => 0);
+   setKingBreastplateLuck (value => 0);
+   setLeafBreastplateIsShown (current => false);
+   setLeafBreastplateActive (current => false);
+   setLeafBreastplateAtk (value => 0);
+   setLeafBreastplateDef (value => 0);
+   setLeafBreastplateLuck (value => 0);
+   setLeatherCuirassIsShown (current => false);
+   setLeatherCuirassActive (current => false);
+   setLeatherCuirassAtk (value => 0);
+   setLeatherCuirassDef (value => 0);
+   setLeatherCuirassLuck (value => 0);
+   setMarionetteBodyArmorIsShown (current => false);
+   setMarionetteBodyArmorActive (current => false);
+   setMarionetteBodyArmorAtk (value => 0);
+   setMarionetteBodyArmorDef (value => 0);
+   setMarionetteBodyArmorLuck (value => 0);
+   setNivaliBreastplateIsShown (current => false);
+   setNivaliBreastplateActive (current => false);
+   setNivaliBreastplateAtk (value => 0);
+   setNivaliBreastplateDef (value => 0);
+   setNivaliBreastplateLuck (value => 0);
+   setReinforcedSteelBreastplateIsShown (current => false);
+   setReinforcedSteelBreastplateActive (current => false);
+   setReinforcedSteelBreastplateAtk (value => 0);
+   setReinforcedSteelBreastplateDef (value => 0);
+   setReinforcedSteelBreastplateLuck (value => 0);
+   setRobotTorsoIsShown (current => false);
+   setRobotTorsoActive (current => false);
+   setRobotTorsoAtk (value => 0);
+   setRobotTorsoDef (value => 0);
+   setRobotTorsoLuck (value => 0);
+
+}
+
+const handleFabricBreastplateNoClick = event => {
+   setFabricBreastplateIsShown (current => false);
+   setFabricBreastplateActive (current => false);
+   setFabricBreastplateAtk (value => 0);
+   setFabricBreastplateDef (value => 0);
+   setFabricBreastplateLuck (value => 0);
+}
+
+const [FusionCuirassIsShown, setFusionCuirassIsShown] = useState(false)
+const [FusionCuirassActive, setFusionCuirassActive] = useState(false)
+const [FusionCuirassAtk, setFusionCuirassAtk] = useState(0)
+const [FusionCuirassDef, setFusionCuirassDef] = useState(0)
+const [FusionCuirassLuck, setFusionCuirassLuck] = useState(0)
+
+
+const handleFusionCuirassClick = event => {
+
+
+   setFusionCuirassIsShown (current => !FusionCuirassIsShown);
+   setFusionCuirassActive (current => !FusionCuirassActive);
+   setFusionCuirassAtk (value => 8);
+   setFusionCuirassDef (value => 20);
+   setFusionCuirassLuck (value => 0);
+   
+   setAmidalaChestpieceIsShown (current => false);
+   setAmidalaChestpieceActive (current => false);
+   setAmidalaChestpieceAtk (value => 0);
+   setAmidalaChestpieceDef (value => 0);
+   setAmidalaChestpieceLuck (value => 0);
+   setCloudChestPlateIsShown (current => false);
+   setCloudChestPlateActive (current => false);
+   setCloudChestPlateAtk (value => 0);
+   setCloudChestPlateDef (value => 0);
+   setCloudChestPlateLuck (value => 0);
+   setDragonScaleArmorIsShown (current => false);
+   setDragonScaleArmorActive (current => false);
+   setDragonScaleArmorAtk (value => 0);
+   setDragonScaleArmorDef (value => 0);
+   setDragonScaleArmorLuck (value => 0);
+   setFabricBreastplateIsShown (current => false);
+   setFabricBreastplateActive (current => false);
+   setFabricBreastplateAtk (value => 0);
+   setFabricBreastplateDef (value => 0);
+   setFabricBreastplateLuck (value => 0);
+   setKingBreastplateIsShown (current => false);
+   setKingBreastplateActive (current => false);
+   setKingBreastplateAtk (value => 0);
+   setKingBreastplateDef (value => 0);
+   setKingBreastplateLuck (value => 0);
+   setLeafBreastplateIsShown (current => false);
+   setLeafBreastplateActive (current => false);
+   setLeafBreastplateAtk (value => 0);
+   setLeafBreastplateDef (value => 0);
+   setLeafBreastplateLuck (value => 0);
+   setLeatherCuirassIsShown (current => false);
+   setLeatherCuirassActive (current => false);
+   setLeatherCuirassAtk (value => 0);
+   setLeatherCuirassDef (value => 0);
+   setLeatherCuirassLuck (value => 0);
+   setMarionetteBodyArmorIsShown (current => false);
+   setMarionetteBodyArmorActive (current => false);
+   setMarionetteBodyArmorAtk (value => 0);
+   setMarionetteBodyArmorDef (value => 0);
+   setMarionetteBodyArmorLuck (value => 0);
+   setNivaliBreastplateIsShown (current => false);
+   setNivaliBreastplateActive (current => false);
+   setNivaliBreastplateAtk (value => 0);
+   setNivaliBreastplateDef (value => 0);
+   setNivaliBreastplateLuck (value => 0);
+   setReinforcedSteelBreastplateIsShown (current => false);
+   setReinforcedSteelBreastplateActive (current => false);
+   setReinforcedSteelBreastplateAtk (value => 0);
+   setReinforcedSteelBreastplateDef (value => 0);
+   setReinforcedSteelBreastplateLuck (value => 0);
+   setRobotTorsoIsShown (current => false);
+   setRobotTorsoActive (current => false);
+   setRobotTorsoAtk (value => 0);
+   setRobotTorsoDef (value => 0);
+   setRobotTorsoLuck (value => 0);
+
+}
+
+const handleFusionCuirassNoClick = event => {
+   setFusionCuirassIsShown (current => false);
+   setFusionCuirassActive (current => false);
+   setFusionCuirassAtk (value => 0);
+   setFusionCuirassDef (value => 0);
+   setFusionCuirassLuck (value => 0);
+}
+
+const [KingBreastplateIsShown, setKingBreastplateIsShown] = useState(false)
+const [KingBreastplateActive, setKingBreastplateActive] = useState(false)
+const [KingBreastplateAtk, setKingBreastplateAtk] = useState(0)
+const [KingBreastplateDef, setKingBreastplateDef] = useState(0)
+const [KingBreastplateLuck, setKingBreastplateLuck] = useState(0)
+
+
+const handleKingBreastplateClick = event => {
+
+
+   setKingBreastplateIsShown (current => !KingBreastplateIsShown);
+   setKingBreastplateActive (current => !KingBreastplateActive);
+   setKingBreastplateAtk (value => 5);
+   setKingBreastplateDef (value => 25);
+   setKingBreastplateLuck (value => 0);
+   
+   setAmidalaChestpieceIsShown (current => false);
+   setAmidalaChestpieceActive (current => false);
+   setAmidalaChestpieceAtk (value => 0);
+   setAmidalaChestpieceDef (value => 0);
+   setAmidalaChestpieceLuck (value => 0);
+   setCloudChestPlateIsShown (current => false);
+   setCloudChestPlateActive (current => false);
+   setCloudChestPlateAtk (value => 0);
+   setCloudChestPlateDef (value => 0);
+   setCloudChestPlateLuck (value => 0);
+   setDragonScaleArmorIsShown (current => false);
+   setDragonScaleArmorActive (current => false);
+   setDragonScaleArmorAtk (value => 0);
+   setDragonScaleArmorDef (value => 0);
+   setDragonScaleArmorLuck (value => 0);
+   setFabricBreastplateIsShown (current => false);
+   setFabricBreastplateActive (current => false);
+   setFabricBreastplateAtk (value => 0);
+   setFabricBreastplateDef (value => 0);
+   setFabricBreastplateLuck (value => 0);
+   setFusionCuirassIsShown (current => false);
+   setFusionCuirassActive (current => false);
+   setFusionCuirassAtk (value => 0);
+   setFusionCuirassDef (value => 0);
+   setFusionCuirassLuck (value => 0);
+   setLeafBreastplateIsShown (current => false);
+   setLeafBreastplateActive (current => false);
+   setLeafBreastplateAtk (value => 0);
+   setLeafBreastplateDef (value => 0);
+   setLeafBreastplateLuck (value => 0);
+   setLeatherCuirassIsShown (current => false);
+   setLeatherCuirassActive (current => false);
+   setLeatherCuirassAtk (value => 0);
+   setLeatherCuirassDef (value => 0);
+   setLeatherCuirassLuck (value => 0);
+   setMarionetteBodyArmorIsShown (current => false);
+   setMarionetteBodyArmorActive (current => false);
+   setMarionetteBodyArmorAtk (value => 0);
+   setMarionetteBodyArmorDef (value => 0);
+   setMarionetteBodyArmorLuck (value => 0);
+   setNivaliBreastplateIsShown (current => false);
+   setNivaliBreastplateActive (current => false);
+   setNivaliBreastplateAtk (value => 0);
+   setNivaliBreastplateDef (value => 0);
+   setNivaliBreastplateLuck (value => 0);
+   setReinforcedSteelBreastplateIsShown (current => false);
+   setReinforcedSteelBreastplateActive (current => false);
+   setReinforcedSteelBreastplateAtk (value => 0);
+   setReinforcedSteelBreastplateDef (value => 0);
+   setReinforcedSteelBreastplateLuck (value => 0);
+   setRobotTorsoIsShown (current => false);
+   setRobotTorsoActive (current => false);
+   setRobotTorsoAtk (value => 0);
+   setRobotTorsoDef (value => 0);
+   setRobotTorsoLuck (value => 0);
+
+}
+
+const handleKingBreastplateNoClick = event => {
+   setKingBreastplateIsShown (current => false);
+   setKingBreastplateActive (current => false);
+   setKingBreastplateAtk (value => 0);
+   setKingBreastplateDef (value => 0);
+   setKingBreastplateLuck (value => 0);
+}
+
+const [LeafBreastplateIsShown, setLeafBreastplateIsShown] = useState(false)
+const [LeafBreastplateActive, setLeafBreastplateActive] = useState(false)
+const [LeafBreastplateAtk, setLeafBreastplateAtk] = useState(0)
+const [LeafBreastplateDef, setLeafBreastplateDef] = useState(0)
+const [LeafBreastplateLuck, setLeafBreastplateLuck] = useState(0)
+
+
+const handleLeafBreastplateClick = event => {
+
+
+   setLeafBreastplateIsShown (current => !LeafBreastplateIsShown);
+   setLeafBreastplateActive (current => !LeafBreastplateActive);
+   setLeafBreastplateAtk (value => 0);
+   setLeafBreastplateDef (value => 2);
+   setLeafBreastplateLuck (value => 0);
+   
+   setAmidalaChestpieceIsShown (current => false);
+   setAmidalaChestpieceActive (current => false);
+   setAmidalaChestpieceAtk (value => 0);
+   setAmidalaChestpieceDef (value => 0);
+   setAmidalaChestpieceLuck (value => 0);
+   setCloudChestPlateIsShown (current => false);
+   setCloudChestPlateActive (current => false);
+   setCloudChestPlateAtk (value => 0);
+   setCloudChestPlateDef (value => 0);
+   setCloudChestPlateLuck (value => 0);
+   setDragonScaleArmorIsShown (current => false);
+   setDragonScaleArmorActive (current => false);
+   setDragonScaleArmorAtk (value => 0);
+   setDragonScaleArmorDef (value => 0);
+   setDragonScaleArmorLuck (value => 0);
+   setFabricBreastplateIsShown (current => false);
+   setFabricBreastplateActive (current => false);
+   setFabricBreastplateAtk (value => 0);
+   setFabricBreastplateDef (value => 0);
+   setFabricBreastplateLuck (value => 0);
+   setFusionCuirassIsShown (current => false);
+   setFusionCuirassActive (current => false);
+   setFusionCuirassAtk (value => 0);
+   setFusionCuirassDef (value => 0);
+   setFusionCuirassLuck (value => 0);
+   setKingBreastplateIsShown (current => false);
+   setKingBreastplateActive (current => false);
+   setKingBreastplateAtk (value => 0);
+   setKingBreastplateDef (value => 0);
+   setKingBreastplateLuck (value => 0);
+   setLeatherCuirassIsShown (current => false);
+   setLeatherCuirassActive (current => false);
+   setLeatherCuirassAtk (value => 0);
+   setLeatherCuirassDef (value => 0);
+   setLeatherCuirassLuck (value => 0);
+   setMarionetteBodyArmorIsShown (current => false);
+   setMarionetteBodyArmorActive (current => false);
+   setMarionetteBodyArmorAtk (value => 0);
+   setMarionetteBodyArmorDef (value => 0);
+   setMarionetteBodyArmorLuck (value => 0);
+   setNivaliBreastplateIsShown (current => false);
+   setNivaliBreastplateActive (current => false);
+   setNivaliBreastplateAtk (value => 0);
+   setNivaliBreastplateDef (value => 0);
+   setNivaliBreastplateLuck (value => 0);
+   setReinforcedSteelBreastplateIsShown (current => false);
+   setReinforcedSteelBreastplateActive (current => false);
+   setReinforcedSteelBreastplateAtk (value => 0);
+   setReinforcedSteelBreastplateDef (value => 0);
+   setReinforcedSteelBreastplateLuck (value => 0);
+   setRobotTorsoIsShown (current => false);
+   setRobotTorsoActive (current => false);
+   setRobotTorsoAtk (value => 0);
+   setRobotTorsoDef (value => 0);
+   setRobotTorsoLuck (value => 0);
+
+}
+
+const handleLeafBreastplateNoClick = event => {
+   setLeafBreastplateIsShown (current => false);
+   setLeafBreastplateActive (current => false);
+   setLeafBreastplateAtk (value => 0);
+   setLeafBreastplateDef (value => 0);
+   setLeafBreastplateLuck (value => 0);
+}
+
+const [LeatherCuirassIsShown, setLeatherCuirassIsShown] = useState(false)
+const [LeatherCuirassActive, setLeatherCuirassActive] = useState(false)
+const [LeatherCuirassAtk, setLeatherCuirassAtk] = useState(0)
+const [LeatherCuirassDef, setLeatherCuirassDef] = useState(0)
+const [LeatherCuirassLuck, setLeatherCuirassLuck] = useState(0)
+
+
+const handleLeatherCuirassClick = event => {
+
+
+   setLeatherCuirassIsShown (current => !LeatherCuirassIsShown);
+   setLeatherCuirassActive (current => !LeatherCuirassActive);
+   setLeatherCuirassAtk (value => 0);
+   setLeatherCuirassDef (value => 20);
+   setLeatherCuirassLuck (value => 5);
+   
+   setAmidalaChestpieceIsShown (current => false);
+   setAmidalaChestpieceActive (current => false);
+   setAmidalaChestpieceAtk (value => 0);
+   setAmidalaChestpieceDef (value => 0);
+   setAmidalaChestpieceLuck (value => 0);
+   setCloudChestPlateIsShown (current => false);
+   setCloudChestPlateActive (current => false);
+   setCloudChestPlateAtk (value => 0);
+   setCloudChestPlateDef (value => 0);
+   setCloudChestPlateLuck (value => 0);
+   setDragonScaleArmorIsShown (current => false);
+   setDragonScaleArmorActive (current => false);
+   setDragonScaleArmorAtk (value => 0);
+   setDragonScaleArmorDef (value => 0);
+   setDragonScaleArmorLuck (value => 0);
+   setFabricBreastplateIsShown (current => false);
+   setFabricBreastplateActive (current => false);
+   setFabricBreastplateAtk (value => 0);
+   setFabricBreastplateDef (value => 0);
+   setFabricBreastplateLuck (value => 0);
+   setFusionCuirassIsShown (current => false);
+   setFusionCuirassActive (current => false);
+   setFusionCuirassAtk (value => 0);
+   setFusionCuirassDef (value => 0);
+   setFusionCuirassLuck (value => 0);
+   setKingBreastplateIsShown (current => false);
+   setKingBreastplateActive (current => false);
+   setKingBreastplateAtk (value => 0);
+   setKingBreastplateDef (value => 0);
+   setKingBreastplateLuck (value => 0);
+   setLeafBreastplateIsShown (current => false);
+   setLeafBreastplateActive (current => false);
+   setLeafBreastplateAtk (value => 0);
+   setLeafBreastplateDef (value => 0);
+   setLeafBreastplateLuck (value => 0);
+   setMarionetteBodyArmorIsShown (current => false);
+   setMarionetteBodyArmorActive (current => false);
+   setMarionetteBodyArmorAtk (value => 0);
+   setMarionetteBodyArmorDef (value => 0);
+   setMarionetteBodyArmorLuck (value => 0);
+   setNivaliBreastplateIsShown (current => false);
+   setNivaliBreastplateActive (current => false);
+   setNivaliBreastplateAtk (value => 0);
+   setNivaliBreastplateDef (value => 0);
+   setNivaliBreastplateLuck (value => 0);
+   setReinforcedSteelBreastplateIsShown (current => false);
+   setReinforcedSteelBreastplateActive (current => false);
+   setReinforcedSteelBreastplateAtk (value => 0);
+   setReinforcedSteelBreastplateDef (value => 0);
+   setReinforcedSteelBreastplateLuck (value => 0);
+   setRobotTorsoIsShown (current => false);
+   setRobotTorsoActive (current => false);
+   setRobotTorsoAtk (value => 0);
+   setRobotTorsoDef (value => 0);
+   setRobotTorsoLuck (value => 0);
+
+}
+
+const handleLeatherCuirassNoClick = event => {
+   setLeatherCuirassIsShown (current => false);
+   setLeatherCuirassActive (current => false);
+   setLeatherCuirassAtk (value => 0);
+   setLeatherCuirassDef (value => 0);
+   setLeatherCuirassLuck (value => 0);
+}
+
+const [MarionetteBodyArmorIsShown, setMarionetteBodyArmorIsShown] = useState(false)
+const [MarionetteBodyArmorActive, setMarionetteBodyArmorActive] = useState(false)
+const [MarionetteBodyArmorAtk, setMarionetteBodyArmorAtk] = useState(0)
+const [MarionetteBodyArmorDef, setMarionetteBodyArmorDef] = useState(0)
+const [MarionetteBodyArmorLuck, setMarionetteBodyArmorLuck] = useState(0)
+
+
+const handleMarionetteBodyArmorClick = event => {
+
+
+   setMarionetteBodyArmorIsShown (current => !MarionetteBodyArmorIsShown);
+   setMarionetteBodyArmorActive (current => !MarionetteBodyArmorActive);
+   setMarionetteBodyArmorAtk (value => 0);
+   setMarionetteBodyArmorDef (value => 18);
+   setMarionetteBodyArmorLuck (value => 0);
+   
+   setAmidalaChestpieceIsShown (current => false);
+   setAmidalaChestpieceActive (current => false);
+   setAmidalaChestpieceAtk (value => 0);
+   setAmidalaChestpieceDef (value => 0);
+   setAmidalaChestpieceLuck (value => 0);
+   setCloudChestPlateIsShown (current => false);
+   setCloudChestPlateActive (current => false);
+   setCloudChestPlateAtk (value => 0);
+   setCloudChestPlateDef (value => 0);
+   setCloudChestPlateLuck (value => 0);
+   setDragonScaleArmorIsShown (current => false);
+   setDragonScaleArmorActive (current => false);
+   setDragonScaleArmorAtk (value => 0);
+   setDragonScaleArmorDef (value => 0);
+   setDragonScaleArmorLuck (value => 0);
+   setFabricBreastplateIsShown (current => false);
+   setFabricBreastplateActive (current => false);
+   setFabricBreastplateAtk (value => 0);
+   setFabricBreastplateDef (value => 0);
+   setFabricBreastplateLuck (value => 0);
+   setFusionCuirassIsShown (current => false);
+   setFusionCuirassActive (current => false);
+   setFusionCuirassAtk (value => 0);
+   setFusionCuirassDef (value => 0);
+   setFusionCuirassLuck (value => 0);
+   setKingBreastplateIsShown (current => false);
+   setKingBreastplateActive (current => false);
+   setKingBreastplateAtk (value => 0);
+   setKingBreastplateDef (value => 0);
+   setKingBreastplateLuck (value => 0);
+   setLeafBreastplateIsShown (current => false);
+   setLeafBreastplateActive (current => false);
+   setLeafBreastplateAtk (value => 0);
+   setLeafBreastplateDef (value => 0);
+   setLeafBreastplateLuck (value => 0);
+   setLeatherCuirassIsShown (current => false);
+   setLeatherCuirassActive (current => false);
+   setLeatherCuirassAtk (value => 0);
+   setLeatherCuirassDef (value => 0);
+   setLeatherCuirassLuck (value => 0);
+   setNivaliBreastplateIsShown (current => false);
+   setNivaliBreastplateActive (current => false);
+   setNivaliBreastplateAtk (value => 0);
+   setNivaliBreastplateDef (value => 0);
+   setNivaliBreastplateLuck (value => 0);
+   setReinforcedSteelBreastplateIsShown (current => false);
+   setReinforcedSteelBreastplateActive (current => false);
+   setReinforcedSteelBreastplateAtk (value => 0);
+   setReinforcedSteelBreastplateDef (value => 0);
+   setReinforcedSteelBreastplateLuck (value => 0);
+   setRobotTorsoIsShown (current => false);
+   setRobotTorsoActive (current => false);
+   setRobotTorsoAtk (value => 0);
+   setRobotTorsoDef (value => 0);
+   setRobotTorsoLuck (value => 0);
+
+}
+
+const handleMarionetteBodyArmorNoClick = event => {
+   setMarionetteBodyArmorIsShown (current => false);
+   setMarionetteBodyArmorActive (current => false);
+   setMarionetteBodyArmorAtk (value => 0);
+   setMarionetteBodyArmorDef (value => 0);
+   setMarionetteBodyArmorLuck (value => 0);
+}
+
 const [NivaliBreastplateIsShown, setNivaliBreastplateIsShown] = useState(false)
 const [NivaliBreastplateActive, setNivaliBreastplateActive] = useState(false)
 const [NivaliBreastplateAtk, setNivaliBreastplateAtk] = useState(0)
 const [NivaliBreastplateDef, setNivaliBreastplateDef] = useState(0)
 const [NivaliBreastplateLuck, setNivaliBreastplateLuck] = useState(0)
 
-const handleNoChestClick = event => {
-  setNoChestIsShown (current => !NoChestIsShown);
-  setNoChestActive (current => !NoChestActive);
-  setNivaliBreastplateIsShown (current => false);
-  setNivaliBreastplateActive (current => false);
-  setNivaliBreastplateAtk (value => 0);
-  setNivaliBreastplateDef (value => 0);
-  setNivaliBreastplateLuck (value => 0);
-};
-
 
 const handleNivaliBreastplateClick = event => {
-  setNivaliBreastplateIsShown (current => !NivaliBreastplateIsShown);
-  setNivaliBreastplateActive (current => !NivaliBreastplateActive);
-  setNivaliBreastplateAtk (value => 0);
-  setNivaliBreastplateDef (value => 22);
-  setNivaliBreastplateLuck (value => 8);
-};
 
 
-const NivaliBreastplateClick = event => {
-  if (!NivaliBreastplateIsShown)
-    return (
-      setNivaliBreastplateAtk (value => 0),
-      setNivaliBreastplateDef (value => 0),
-      setNivaliBreastplateLuck (value => 0)
-  )
-};
+   setNivaliBreastplateIsShown (current => !NivaliBreastplateIsShown);
+   setNivaliBreastplateActive (current => !NivaliBreastplateActive);
+   setNivaliBreastplateAtk (value => 0);
+   setNivaliBreastplateDef (value => 22);
+   setNivaliBreastplateLuck (value => 8);
+   
+   setAmidalaChestpieceIsShown (current => false);
+   setAmidalaChestpieceActive (current => false);
+   setAmidalaChestpieceAtk (value => 0);
+   setAmidalaChestpieceDef (value => 0);
+   setAmidalaChestpieceLuck (value => 0);
+   setCloudChestPlateIsShown (current => false);
+   setCloudChestPlateActive (current => false);
+   setCloudChestPlateAtk (value => 0);
+   setCloudChestPlateDef (value => 0);
+   setCloudChestPlateLuck (value => 0);
+   setDragonScaleArmorIsShown (current => false);
+   setDragonScaleArmorActive (current => false);
+   setDragonScaleArmorAtk (value => 0);
+   setDragonScaleArmorDef (value => 0);
+   setDragonScaleArmorLuck (value => 0);
+   setFabricBreastplateIsShown (current => false);
+   setFabricBreastplateActive (current => false);
+   setFabricBreastplateAtk (value => 0);
+   setFabricBreastplateDef (value => 0);
+   setFabricBreastplateLuck (value => 0);
+   setFusionCuirassIsShown (current => false);
+   setFusionCuirassActive (current => false);
+   setFusionCuirassAtk (value => 0);
+   setFusionCuirassDef (value => 0);
+   setFusionCuirassLuck (value => 0);
+   setKingBreastplateIsShown (current => false);
+   setKingBreastplateActive (current => false);
+   setKingBreastplateAtk (value => 0);
+   setKingBreastplateDef (value => 0);
+   setKingBreastplateLuck (value => 0);
+   setLeafBreastplateIsShown (current => false);
+   setLeafBreastplateActive (current => false);
+   setLeafBreastplateAtk (value => 0);
+   setLeafBreastplateDef (value => 0);
+   setLeafBreastplateLuck (value => 0);
+   setLeatherCuirassIsShown (current => false);
+   setLeatherCuirassActive (current => false);
+   setLeatherCuirassAtk (value => 0);
+   setLeatherCuirassDef (value => 0);
+   setLeatherCuirassLuck (value => 0);
+   setMarionetteBodyArmorIsShown (current => false);
+   setMarionetteBodyArmorActive (current => false);
+   setMarionetteBodyArmorAtk (value => 0);
+   setMarionetteBodyArmorDef (value => 0);
+   setMarionetteBodyArmorLuck (value => 0);
+   setReinforcedSteelBreastplateIsShown (current => false);
+   setReinforcedSteelBreastplateActive (current => false);
+   setReinforcedSteelBreastplateAtk (value => 0);
+   setReinforcedSteelBreastplateDef (value => 0);
+   setReinforcedSteelBreastplateLuck (value => 0);
+   setRobotTorsoIsShown (current => false);
+   setRobotTorsoActive (current => false);
+   setRobotTorsoAtk (value => 0);
+   setRobotTorsoDef (value => 0);
+   setRobotTorsoLuck (value => 0);
 
-const totalChestTopAtk = Math.max (0)
-const totalChestTopDef = Math.max (0)
-const totalChestTopLuck = Math.max (0)
+}
+
+const handleNivaliBreastplateNoClick = event => {
+   setNivaliBreastplateIsShown (current => false);
+   setNivaliBreastplateActive (current => false);
+   setNivaliBreastplateAtk (value => 0);
+   setNivaliBreastplateDef (value => 0);
+   setNivaliBreastplateLuck (value => 0);
+}
+
+const [ReinforcedSteelBreastplateIsShown, setReinforcedSteelBreastplateIsShown] = useState(false)
+const [ReinforcedSteelBreastplateActive, setReinforcedSteelBreastplateActive] = useState(false)
+const [ReinforcedSteelBreastplateAtk, setReinforcedSteelBreastplateAtk] = useState(0)
+const [ReinforcedSteelBreastplateDef, setReinforcedSteelBreastplateDef] = useState(0)
+const [ReinforcedSteelBreastplateLuck, setReinforcedSteelBreastplateLuck] = useState(0)
+
+
+const handleReinforcedSteelBreastplateClick = event => {
+
+
+   setReinforcedSteelBreastplateIsShown (current => !ReinforcedSteelBreastplateIsShown);
+   setReinforcedSteelBreastplateActive (current => !ReinforcedSteelBreastplateActive);
+   setReinforcedSteelBreastplateAtk (value => 0);
+   setReinforcedSteelBreastplateDef (value => 15);
+   setReinforcedSteelBreastplateLuck (value => 0);
+   
+   setAmidalaChestpieceIsShown (current => false);
+   setAmidalaChestpieceActive (current => false);
+   setAmidalaChestpieceAtk (value => 0);
+   setAmidalaChestpieceDef (value => 0);
+   setAmidalaChestpieceLuck (value => 0);
+   setCloudChestPlateIsShown (current => false);
+   setCloudChestPlateActive (current => false);
+   setCloudChestPlateAtk (value => 0);
+   setCloudChestPlateDef (value => 0);
+   setCloudChestPlateLuck (value => 0);
+   setDragonScaleArmorIsShown (current => false);
+   setDragonScaleArmorActive (current => false);
+   setDragonScaleArmorAtk (value => 0);
+   setDragonScaleArmorDef (value => 0);
+   setDragonScaleArmorLuck (value => 0);
+   setFabricBreastplateIsShown (current => false);
+   setFabricBreastplateActive (current => false);
+   setFabricBreastplateAtk (value => 0);
+   setFabricBreastplateDef (value => 0);
+   setFabricBreastplateLuck (value => 0);
+   setFusionCuirassIsShown (current => false);
+   setFusionCuirassActive (current => false);
+   setFusionCuirassAtk (value => 0);
+   setFusionCuirassDef (value => 0);
+   setFusionCuirassLuck (value => 0);
+   setKingBreastplateIsShown (current => false);
+   setKingBreastplateActive (current => false);
+   setKingBreastplateAtk (value => 0);
+   setKingBreastplateDef (value => 0);
+   setKingBreastplateLuck (value => 0);
+   setLeafBreastplateIsShown (current => false);
+   setLeafBreastplateActive (current => false);
+   setLeafBreastplateAtk (value => 0);
+   setLeafBreastplateDef (value => 0);
+   setLeafBreastplateLuck (value => 0);
+   setLeatherCuirassIsShown (current => false);
+   setLeatherCuirassActive (current => false);
+   setLeatherCuirassAtk (value => 0);
+   setLeatherCuirassDef (value => 0);
+   setLeatherCuirassLuck (value => 0);
+   setMarionetteBodyArmorIsShown (current => false);
+   setMarionetteBodyArmorActive (current => false);
+   setMarionetteBodyArmorAtk (value => 0);
+   setMarionetteBodyArmorDef (value => 0);
+   setMarionetteBodyArmorLuck (value => 0);
+   setNivaliBreastplateIsShown (current => false);
+   setNivaliBreastplateActive (current => false);
+   setNivaliBreastplateAtk (value => 0);
+   setNivaliBreastplateDef (value => 0);
+   setNivaliBreastplateLuck (value => 0);
+   setRobotTorsoIsShown (current => false);
+   setRobotTorsoActive (current => false);
+   setRobotTorsoAtk (value => 0);
+   setRobotTorsoDef (value => 0);
+   setRobotTorsoLuck (value => 0);
+
+}
+
+const handleReinforcedSteelBreastplateNoClick = event => {
+   setReinforcedSteelBreastplateIsShown (current => false);
+   setReinforcedSteelBreastplateActive (current => false);
+   setReinforcedSteelBreastplateAtk (value => 0);
+   setReinforcedSteelBreastplateDef (value => 0);
+   setReinforcedSteelBreastplateLuck (value => 0);
+}
+
+const [RobotTorsoIsShown, setRobotTorsoIsShown] = useState(false)
+const [RobotTorsoActive, setRobotTorsoActive] = useState(false)
+const [RobotTorsoAtk, setRobotTorsoAtk] = useState(0)
+const [RobotTorsoDef, setRobotTorsoDef] = useState(0)
+const [RobotTorsoLuck, setRobotTorsoLuck] = useState(0)
+
+
+const handleRobotTorsoClick = event => {
+
+
+   setRobotTorsoIsShown (current => !RobotTorsoIsShown);
+   setRobotTorsoActive (current => !RobotTorsoActive);
+   setRobotTorsoAtk (value => 0);
+   setRobotTorsoDef (value => 16);
+   setRobotTorsoLuck (value => 2);
+   
+   setAmidalaChestpieceIsShown (current => false);
+   setAmidalaChestpieceActive (current => false);
+   setAmidalaChestpieceAtk (value => 0);
+   setAmidalaChestpieceDef (value => 0);
+   setAmidalaChestpieceLuck (value => 0);
+   setCloudChestPlateIsShown (current => false);
+   setCloudChestPlateActive (current => false);
+   setCloudChestPlateAtk (value => 0);
+   setCloudChestPlateDef (value => 0);
+   setCloudChestPlateLuck (value => 0);
+   setDragonScaleArmorIsShown (current => false);
+   setDragonScaleArmorActive (current => false);
+   setDragonScaleArmorAtk (value => 0);
+   setDragonScaleArmorDef (value => 0);
+   setDragonScaleArmorLuck (value => 0);
+   setFabricBreastplateIsShown (current => false);
+   setFabricBreastplateActive (current => false);
+   setFabricBreastplateAtk (value => 0);
+   setFabricBreastplateDef (value => 0);
+   setFabricBreastplateLuck (value => 0);
+   setFusionCuirassIsShown (current => false);
+   setFusionCuirassActive (current => false);
+   setFusionCuirassAtk (value => 0);
+   setFusionCuirassDef (value => 0);
+   setFusionCuirassLuck (value => 0);
+   setKingBreastplateIsShown (current => false);
+   setKingBreastplateActive (current => false);
+   setKingBreastplateAtk (value => 0);
+   setKingBreastplateDef (value => 0);
+   setKingBreastplateLuck (value => 0);
+   setLeafBreastplateIsShown (current => false);
+   setLeafBreastplateActive (current => false);
+   setLeafBreastplateAtk (value => 0);
+   setLeafBreastplateDef (value => 0);
+   setLeafBreastplateLuck (value => 0);
+   setLeatherCuirassIsShown (current => false);
+   setLeatherCuirassActive (current => false);
+   setLeatherCuirassAtk (value => 0);
+   setLeatherCuirassDef (value => 0);
+   setLeatherCuirassLuck (value => 0);
+   setMarionetteBodyArmorIsShown (current => false);
+   setMarionetteBodyArmorActive (current => false);
+   setMarionetteBodyArmorAtk (value => 0);
+   setMarionetteBodyArmorDef (value => 0);
+   setMarionetteBodyArmorLuck (value => 0);
+   setNivaliBreastplateIsShown (current => false);
+   setNivaliBreastplateActive (current => false);
+   setNivaliBreastplateAtk (value => 0);
+   setNivaliBreastplateDef (value => 0);
+   setNivaliBreastplateLuck (value => 0);
+   setReinforcedSteelBreastplateIsShown (current => false);
+   setReinforcedSteelBreastplateActive (current => false);
+   setReinforcedSteelBreastplateAtk (value => 0);
+   setReinforcedSteelBreastplateDef (value => 0);
+   setReinforcedSteelBreastplateLuck (value => 0);
+
+}
+
+const handleRobotTorsoNoClick = event => {
+   setRobotTorsoIsShown (current => false);
+   setRobotTorsoActive (current => false);
+   setRobotTorsoAtk (value => 0);
+   setRobotTorsoDef (value => 0);
+   setRobotTorsoLuck (value => 0);
+}
+
+
+const totalChestTopAtk = Math.max (AmidalaChestpieceAtk, CloudChestPlateAtk, DragonScaleArmorAtk, FabricBreastplateAtk, 
+  FusionCuirassAtk, KingBreastplateAtk, LeafBreastplateAtk, LeatherCuirassAtk, MarionetteBodyArmorAtk, NivaliBreastplateAtk, 
+  ReinforcedSteelBreastplateAtk, RobotTorsoAtk)
+const totalChestTopDef = Math.max (AmidalaChestpieceDef, CloudChestPlateDef, DragonScaleArmorDef, FabricBreastplateDef, 
+  FusionCuirassDef, KingBreastplateDef, LeafBreastplateDef, LeatherCuirassDef, MarionetteBodyArmorDef, NivaliBreastplateDef, 
+  ReinforcedSteelBreastplateDef, RobotTorsoDef)
+const totalChestTopLuck = Math.max (AmidalaChestpieceLuck, CloudChestPlateLuck, DragonScaleArmorLuck, FabricBreastplateLuck, 
+  FusionCuirassLuck, KingBreastplateLuck, LeafBreastplateLuck, LeatherCuirassLuck, MarionetteBodyArmorLuck, NivaliBreastplateLuck, 
+  ReinforcedSteelBreastplateLuck, RobotTorsoLuck)
 
 //Feet battle items//
 
@@ -18836,13 +19798,866 @@ const [NoFeet, setNoFeet] = useState(0)
 const [NoFeetIsShown, setNoFeetIsShown] = useState(false)
 const [NoFeetActive, setNoFeetActive] = useState(false)
 
-const totalBestDefChest = Math.max (NivaliBreastplateDef)
+const [AgelessBootsIsShown, setAgelessBootsIsShown] = useState(false)
+const [AgelessBootsActive, setAgelessBootsActive] = useState(false)
+const [AgelessBootsAtk, setAgelessBootsAtk] = useState(0)
+const [AgelessBootsDef, setAgelessBootsDef] = useState(0)
+const [AgelessBootsLuck, setAgelessBootsLuck] = useState(0)
 
-const totalNivaliDef = Math.max (MountainMaceDef + NivaliBreastplateDef, 0)
 
-const totalFeetTopAtk = Math.max (0)
-const totalFeetTopDef = Math.max (0)
-const totalFeetTopLuck = Math.max (0)
+const handleAgelessBootsClick = event => {
+
+   setAgelessBootsIsShown (current => !AgelessBootsIsShown);
+   setAgelessBootsActive (current => !AgelessBootsActive);
+   setAgelessBootsAtk (value => 2);
+   setAgelessBootsDef (value => 14);
+   setAgelessBootsLuck (value => 2);
+
+   setAlchemyBootsIsShown (current => false);
+   setAlchemyBootsActive (current => false);
+   setAlchemyBootsAtk (value => 0);
+   setAlchemyBootsDef (value => 0);
+   setAlchemyBootsLuck (value => 0);
+   setClimbingBootsIsShown (current => false);
+   setClimbingBootsActive (current => false);
+   setClimbingBootsAtk (value => 0);
+   setClimbingBootsDef (value => 0);
+   setClimbingBootsLuck (value => 0);
+   setDarkForestBootsIsShown (current => false);
+   setDarkForestBootsActive (current => false);
+   setDarkForestBootsAtk (value => 0);
+   setDarkForestBootsDef (value => 0);
+   setDarkForestBootsLuck (value => 0);
+   setFabricBootsIsShown (current => false);
+   setFabricBootsActive (current => false);
+   setFabricBootsAtk (value => 0);
+   setFabricBootsDef (value => 0);
+   setFabricBootsLuck (value => 0);
+   setLeafBootsIsShown (current => false);
+   setLeafBootsActive (current => false);
+   setLeafBootsAtk (value => 0);
+   setLeafBootsDef (value => 0);
+   setLeafBootsLuck (value => 0);
+   setLeafsungBootsIsShown (current => false);
+   setLeafsungBootsActive (current => false);
+   setLeafsungBootsAtk (value => 0);
+   setLeafsungBootsDef (value => 0);
+   setLeafsungBootsLuck (value => 0);
+   setLeatherTurnshoeIsShown (current => false);
+   setLeatherTurnshoeActive (current => false);
+   setLeatherTurnshoeAtk (value => 0);
+   setLeatherTurnshoeDef (value => 0);
+   setLeatherTurnshoeLuck (value => 0);
+   setScalyDragonTalonsIsShown (current => false);
+   setScalyDragonTalonsActive (current => false);
+   setScalyDragonTalonsAtk (value => 0);
+   setScalyDragonTalonsDef (value => 0);
+   setScalyDragonTalonsLuck (value => 0);
+   setSteelBootsIsShown (current => false);
+   setSteelBootsActive (current => false);
+   setSteelBootsAtk (value => 0);
+   setSteelBootsDef (value => 0);
+   setSteelBootsLuck (value => 0);
+   setWoodenGardenBootsIsShown (current => false);
+   setWoodenGardenBootsActive (current => false);
+   setWoodenGardenBootsAtk (value => 0);
+   setWoodenGardenBootsDef (value => 0);
+   setWoodenGardenBootsLuck (value => 0);
+
+}
+
+const handleAgelessBootsNoClick = event => {
+   setAgelessBootsIsShown (current => false);
+   setAgelessBootsActive (current => false);
+   setAgelessBootsAtk (value => 0);
+   setAgelessBootsDef (value => 0);
+   setAgelessBootsLuck (value => 0);
+}
+
+const [AlchemyBootsIsShown, setAlchemyBootsIsShown] = useState(false)
+const [AlchemyBootsActive, setAlchemyBootsActive] = useState(false)
+const [AlchemyBootsAtk, setAlchemyBootsAtk] = useState(0)
+const [AlchemyBootsDef, setAlchemyBootsDef] = useState(0)
+const [AlchemyBootsLuck, setAlchemyBootsLuck] = useState(0)
+
+
+const handleAlchemyBootsClick = event => {
+
+
+
+   setAlchemyBootsIsShown (current => !AlchemyBootsIsShown);
+   setAlchemyBootsActive (current => !AlchemyBootsActive);
+   setAlchemyBootsAtk (value => 2);
+   setAlchemyBootsDef (value => 10);
+   setAlchemyBootsLuck (value => 2);
+ 
+   setAgelessBootsIsShown (current => false);
+   setAgelessBootsActive (current => false);
+   setAgelessBootsAtk (value => 0);
+   setAgelessBootsDef (value => 0);
+   setAgelessBootsLuck (value => 0);
+   setClimbingBootsIsShown (current => false);
+   setClimbingBootsActive (current => false);
+   setClimbingBootsAtk (value => 0);
+   setClimbingBootsDef (value => 0);
+   setClimbingBootsLuck (value => 0);
+   setDarkForestBootsIsShown (current => false);
+   setDarkForestBootsActive (current => false);
+   setDarkForestBootsAtk (value => 0);
+   setDarkForestBootsDef (value => 0);
+   setDarkForestBootsLuck (value => 0);
+   setFabricBootsIsShown (current => false);
+   setFabricBootsActive (current => false);
+   setFabricBootsAtk (value => 0);
+   setFabricBootsDef (value => 0);
+   setFabricBootsLuck (value => 0);
+   setLeafBootsIsShown (current => false);
+   setLeafBootsActive (current => false);
+   setLeafBootsAtk (value => 0);
+   setLeafBootsDef (value => 0);
+   setLeafBootsLuck (value => 0);
+   setLeafsungBootsIsShown (current => false);
+   setLeafsungBootsActive (current => false);
+   setLeafsungBootsAtk (value => 0);
+   setLeafsungBootsDef (value => 0);
+   setLeafsungBootsLuck (value => 0);
+   setLeatherTurnshoeIsShown (current => false);
+   setLeatherTurnshoeActive (current => false);
+   setLeatherTurnshoeAtk (value => 0);
+   setLeatherTurnshoeDef (value => 0);
+   setLeatherTurnshoeLuck (value => 0);
+   setScalyDragonTalonsIsShown (current => false);
+   setScalyDragonTalonsActive (current => false);
+   setScalyDragonTalonsAtk (value => 0);
+   setScalyDragonTalonsDef (value => 0);
+   setScalyDragonTalonsLuck (value => 0);
+   setSteelBootsIsShown (current => false);
+   setSteelBootsActive (current => false);
+   setSteelBootsAtk (value => 0);
+   setSteelBootsDef (value => 0);
+   setSteelBootsLuck (value => 0);
+   setWoodenGardenBootsIsShown (current => false);
+   setWoodenGardenBootsActive (current => false);
+   setWoodenGardenBootsAtk (value => 0);
+   setWoodenGardenBootsDef (value => 0);
+   setWoodenGardenBootsLuck (value => 0);
+
+}
+
+const handleAlchemyBootsNoClick = event => {
+   setAlchemyBootsIsShown (current => false);
+   setAlchemyBootsActive (current => false);
+   setAlchemyBootsAtk (value => 0);
+   setAlchemyBootsDef (value => 0);
+   setAlchemyBootsLuck (value => 0);
+}
+
+const [ClimbingBootsIsShown, setClimbingBootsIsShown] = useState(false)
+const [ClimbingBootsActive, setClimbingBootsActive] = useState(false)
+const [ClimbingBootsAtk, setClimbingBootsAtk] = useState(0)
+const [ClimbingBootsDef, setClimbingBootsDef] = useState(0)
+const [ClimbingBootsLuck, setClimbingBootsLuck] = useState(0)
+
+
+const handleClimbingBootsClick = event => {
+
+
+
+   setClimbingBootsIsShown (current => !ClimbingBootsIsShown);
+   setClimbingBootsActive (current => !ClimbingBootsActive);
+   setClimbingBootsAtk (value => 12);
+   setClimbingBootsDef (value => 0);
+   setClimbingBootsLuck (value => 0);
+   
+   setAgelessBootsIsShown (current => false);
+   setAgelessBootsActive (current => false);
+   setAgelessBootsAtk (value => 0);
+   setAgelessBootsDef (value => 0);
+   setAgelessBootsLuck (value => 0);
+   setAlchemyBootsIsShown (current => false);
+   setAlchemyBootsActive (current => false);
+   setAlchemyBootsAtk (value => 0);
+   setAlchemyBootsDef (value => 0);
+   setAlchemyBootsLuck (value => 0);
+   setDarkForestBootsIsShown (current => false);
+   setDarkForestBootsActive (current => false);
+   setDarkForestBootsAtk (value => 0);
+   setDarkForestBootsDef (value => 0);
+   setDarkForestBootsLuck (value => 0);
+   setFabricBootsIsShown (current => false);
+   setFabricBootsActive (current => false);
+   setFabricBootsAtk (value => 0);
+   setFabricBootsDef (value => 0);
+   setFabricBootsLuck (value => 0);
+   setLeafBootsIsShown (current => false);
+   setLeafBootsActive (current => false);
+   setLeafBootsAtk (value => 0);
+   setLeafBootsDef (value => 0);
+   setLeafBootsLuck (value => 0);
+   setLeafsungBootsIsShown (current => false);
+   setLeafsungBootsActive (current => false);
+   setLeafsungBootsAtk (value => 0);
+   setLeafsungBootsDef (value => 0);
+   setLeafsungBootsLuck (value => 0);
+   setLeatherTurnshoeIsShown (current => false);
+   setLeatherTurnshoeActive (current => false);
+   setLeatherTurnshoeAtk (value => 0);
+   setLeatherTurnshoeDef (value => 0);
+   setLeatherTurnshoeLuck (value => 0);
+   setScalyDragonTalonsIsShown (current => false);
+   setScalyDragonTalonsActive (current => false);
+   setScalyDragonTalonsAtk (value => 0);
+   setScalyDragonTalonsDef (value => 0);
+   setScalyDragonTalonsLuck (value => 0);
+   setSteelBootsIsShown (current => false);
+   setSteelBootsActive (current => false);
+   setSteelBootsAtk (value => 0);
+   setSteelBootsDef (value => 0);
+   setSteelBootsLuck (value => 0);
+   setWoodenGardenBootsIsShown (current => false);
+   setWoodenGardenBootsActive (current => false);
+   setWoodenGardenBootsAtk (value => 0);
+   setWoodenGardenBootsDef (value => 0);
+   setWoodenGardenBootsLuck (value => 0);
+
+}
+
+const handleClimbingBootsNoClick = event => {
+   setClimbingBootsIsShown (current => false);
+   setClimbingBootsActive (current => false);
+   setClimbingBootsAtk (value => 0);
+   setClimbingBootsDef (value => 0);
+   setClimbingBootsLuck (value => 0);
+}
+
+const [DarkForestBootsIsShown, setDarkForestBootsIsShown] = useState(false)
+const [DarkForestBootsActive, setDarkForestBootsActive] = useState(false)
+const [DarkForestBootsAtk, setDarkForestBootsAtk] = useState(0)
+const [DarkForestBootsDef, setDarkForestBootsDef] = useState(0)
+const [DarkForestBootsLuck, setDarkForestBootsLuck] = useState(0)
+
+
+const handleDarkForestBootsClick = event => {
+
+
+
+   setDarkForestBootsIsShown (current => !DarkForestBootsIsShown);
+   setDarkForestBootsActive (current => !DarkForestBootsActive);
+   setDarkForestBootsAtk (value => 0);
+   setDarkForestBootsDef (value => 8);
+   setDarkForestBootsLuck (value => 5);
+   
+   setAgelessBootsIsShown (current => false);
+   setAgelessBootsActive (current => false);
+   setAgelessBootsAtk (value => 0);
+   setAgelessBootsDef (value => 0);
+   setAgelessBootsLuck (value => 0);
+   setAlchemyBootsIsShown (current => false);
+   setAlchemyBootsActive (current => false);
+   setAlchemyBootsAtk (value => 0);
+   setAlchemyBootsDef (value => 0);
+   setAlchemyBootsLuck (value => 0);
+   setClimbingBootsIsShown (current => false);
+   setClimbingBootsActive (current => false);
+   setClimbingBootsAtk (value => 0);
+   setClimbingBootsDef (value => 0);
+   setClimbingBootsLuck (value => 0);
+   setFabricBootsIsShown (current => false);
+   setFabricBootsActive (current => false);
+   setFabricBootsAtk (value => 0);
+   setFabricBootsDef (value => 0);
+   setFabricBootsLuck (value => 0);
+   setLeafBootsIsShown (current => false);
+   setLeafBootsActive (current => false);
+   setLeafBootsAtk (value => 0);
+   setLeafBootsDef (value => 0);
+   setLeafBootsLuck (value => 0);
+   setLeafsungBootsIsShown (current => false);
+   setLeafsungBootsActive (current => false);
+   setLeafsungBootsAtk (value => 0);
+   setLeafsungBootsDef (value => 0);
+   setLeafsungBootsLuck (value => 0);
+   setLeatherTurnshoeIsShown (current => false);
+   setLeatherTurnshoeActive (current => false);
+   setLeatherTurnshoeAtk (value => 0);
+   setLeatherTurnshoeDef (value => 0);
+   setLeatherTurnshoeLuck (value => 0);
+   setScalyDragonTalonsIsShown (current => false);
+   setScalyDragonTalonsActive (current => false);
+   setScalyDragonTalonsAtk (value => 0);
+   setScalyDragonTalonsDef (value => 0);
+   setScalyDragonTalonsLuck (value => 0);
+   setSteelBootsIsShown (current => false);
+   setSteelBootsActive (current => false);
+   setSteelBootsAtk (value => 0);
+   setSteelBootsDef (value => 0);
+   setSteelBootsLuck (value => 0);
+   setWoodenGardenBootsIsShown (current => false);
+   setWoodenGardenBootsActive (current => false);
+   setWoodenGardenBootsAtk (value => 0);
+   setWoodenGardenBootsDef (value => 0);
+   setWoodenGardenBootsLuck (value => 0);
+
+}
+
+const handleDarkForestBootsNoClick = event => {
+   setDarkForestBootsIsShown (current => false);
+   setDarkForestBootsActive (current => false);
+   setDarkForestBootsAtk (value => 0);
+   setDarkForestBootsDef (value => 0);
+   setDarkForestBootsLuck (value => 0);
+}
+
+const [FabricBootsIsShown, setFabricBootsIsShown] = useState(false)
+const [FabricBootsActive, setFabricBootsActive] = useState(false)
+const [FabricBootsAtk, setFabricBootsAtk] = useState(0)
+const [FabricBootsDef, setFabricBootsDef] = useState(0)
+const [FabricBootsLuck, setFabricBootsLuck] = useState(0)
+
+
+const handleFabricBootsClick = event => {
+
+
+   setFabricBootsIsShown (current => !FabricBootsIsShown);
+   setFabricBootsActive (current => !FabricBootsActive);
+   setFabricBootsAtk (value => 0);
+   setFabricBootsDef (value => 6);
+   setFabricBootsLuck (value => 0);
+   
+   setAgelessBootsIsShown (current => false);
+   setAgelessBootsActive (current => false);
+   setAgelessBootsAtk (value => 0);
+   setAgelessBootsDef (value => 0);
+   setAgelessBootsLuck (value => 0);
+   setAlchemyBootsIsShown (current => false);
+   setAlchemyBootsActive (current => false);
+   setAlchemyBootsAtk (value => 0);
+   setAlchemyBootsDef (value => 0);
+   setAlchemyBootsLuck (value => 0);
+   setClimbingBootsIsShown (current => false);
+   setClimbingBootsActive (current => false);
+   setClimbingBootsAtk (value => 0);
+   setClimbingBootsDef (value => 0);
+   setClimbingBootsLuck (value => 0);
+   setDarkForestBootsIsShown (current => false);
+   setDarkForestBootsActive (current => false);
+   setDarkForestBootsAtk (value => 0);
+   setDarkForestBootsDef (value => 0);
+   setDarkForestBootsLuck (value => 0);
+   setLeafBootsIsShown (current => false);
+   setLeafBootsActive (current => false);
+   setLeafBootsAtk (value => 0);
+   setLeafBootsDef (value => 0);
+   setLeafBootsLuck (value => 0);
+   setLeafsungBootsIsShown (current => false);
+   setLeafsungBootsActive (current => false);
+   setLeafsungBootsAtk (value => 0);
+   setLeafsungBootsDef (value => 0);
+   setLeafsungBootsLuck (value => 0);
+   setLeatherTurnshoeIsShown (current => false);
+   setLeatherTurnshoeActive (current => false);
+   setLeatherTurnshoeAtk (value => 0);
+   setLeatherTurnshoeDef (value => 0);
+   setLeatherTurnshoeLuck (value => 0);
+   setScalyDragonTalonsIsShown (current => false);
+   setScalyDragonTalonsActive (current => false);
+   setScalyDragonTalonsAtk (value => 0);
+   setScalyDragonTalonsDef (value => 0);
+   setScalyDragonTalonsLuck (value => 0);
+   setSteelBootsIsShown (current => false);
+   setSteelBootsActive (current => false);
+   setSteelBootsAtk (value => 0);
+   setSteelBootsDef (value => 0);
+   setSteelBootsLuck (value => 0);
+   setWoodenGardenBootsIsShown (current => false);
+   setWoodenGardenBootsActive (current => false);
+   setWoodenGardenBootsAtk (value => 0);
+   setWoodenGardenBootsDef (value => 0);
+   setWoodenGardenBootsLuck (value => 0);
+
+}
+
+const handleFabricBootsNoClick = event => {
+   setFabricBootsIsShown (current => false);
+   setFabricBootsActive (current => false);
+   setFabricBootsAtk (value => 0);
+   setFabricBootsDef (value => 0);
+   setFabricBootsLuck (value => 0);
+}
+
+const [LeafBootsIsShown, setLeafBootsIsShown] = useState(false)
+const [LeafBootsActive, setLeafBootsActive] = useState(false)
+const [LeafBootsAtk, setLeafBootsAtk] = useState(0)
+const [LeafBootsDef, setLeafBootsDef] = useState(0)
+const [LeafBootsLuck, setLeafBootsLuck] = useState(0)
+
+
+const handleLeafBootsClick = event => {
+
+
+   setLeafBootsIsShown (current => !LeafBootsIsShown);
+   setLeafBootsActive (current => !LeafBootsActive);
+   setLeafBootsAtk (value => 0);
+   setLeafBootsDef (value => 1);
+   setLeafBootsLuck (value => 1);
+   
+   setAgelessBootsIsShown (current => false);
+   setAgelessBootsActive (current => false);
+   setAgelessBootsAtk (value => 0);
+   setAgelessBootsDef (value => 0);
+   setAgelessBootsLuck (value => 0);
+   setAlchemyBootsIsShown (current => false);
+   setAlchemyBootsActive (current => false);
+   setAlchemyBootsAtk (value => 0);
+   setAlchemyBootsDef (value => 0);
+   setAlchemyBootsLuck (value => 0);
+   setClimbingBootsIsShown (current => false);
+   setClimbingBootsActive (current => false);
+   setClimbingBootsAtk (value => 0);
+   setClimbingBootsDef (value => 0);
+   setClimbingBootsLuck (value => 0);
+   setDarkForestBootsIsShown (current => false);
+   setDarkForestBootsActive (current => false);
+   setDarkForestBootsAtk (value => 0);
+   setDarkForestBootsDef (value => 0);
+   setDarkForestBootsLuck (value => 0);
+   setFabricBootsIsShown (current => false);
+   setFabricBootsActive (current => false);
+   setFabricBootsAtk (value => 0);
+   setFabricBootsDef (value => 0);
+   setFabricBootsLuck (value => 0);
+   setLeafsungBootsIsShown (current => false);
+   setLeafsungBootsActive (current => false);
+   setLeafsungBootsAtk (value => 0);
+   setLeafsungBootsDef (value => 0);
+   setLeafsungBootsLuck (value => 0);
+   setLeatherTurnshoeIsShown (current => false);
+   setLeatherTurnshoeActive (current => false);
+   setLeatherTurnshoeAtk (value => 0);
+   setLeatherTurnshoeDef (value => 0);
+   setLeatherTurnshoeLuck (value => 0);
+   setScalyDragonTalonsIsShown (current => false);
+   setScalyDragonTalonsActive (current => false);
+   setScalyDragonTalonsAtk (value => 0);
+   setScalyDragonTalonsDef (value => 0);
+   setScalyDragonTalonsLuck (value => 0);
+   setSteelBootsIsShown (current => false);
+   setSteelBootsActive (current => false);
+   setSteelBootsAtk (value => 0);
+   setSteelBootsDef (value => 0);
+   setSteelBootsLuck (value => 0);
+   setWoodenGardenBootsIsShown (current => false);
+   setWoodenGardenBootsActive (current => false);
+   setWoodenGardenBootsAtk (value => 0);
+   setWoodenGardenBootsDef (value => 0);
+   setWoodenGardenBootsLuck (value => 0);
+
+}
+
+const handleLeafBootsNoClick = event => {
+   setLeafBootsIsShown (current => false);
+   setLeafBootsActive (current => false);
+   setLeafBootsAtk (value => 0);
+   setLeafBootsDef (value => 0);
+   setLeafBootsLuck (value => 0);
+}
+
+
+const [LeafsungBootsIsShown, setLeafsungBootsIsShown] = useState(false)
+const [LeafsungBootsActive, setLeafsungBootsActive] = useState(false)
+const [LeafsungBootsAtk, setLeafsungBootsAtk] = useState(0)
+const [LeafsungBootsDef, setLeafsungBootsDef] = useState(0)
+const [LeafsungBootsLuck, setLeafsungBootsLuck] = useState(0)
+
+
+const handleLeafsungBootsClick = event => {
+
+
+   setLeafsungBootsIsShown (current => !LeafsungBootsIsShown);
+   setLeafsungBootsActive (current => !LeafsungBootsActive);
+   setLeafsungBootsAtk (value => 0);
+   setLeafsungBootsDef (value => 3);
+   setLeafsungBootsLuck (value => 2);
+   
+   setAgelessBootsIsShown (current => false);
+   setAgelessBootsActive (current => false);
+   setAgelessBootsAtk (value => 0);
+   setAgelessBootsDef (value => 0);
+   setAgelessBootsLuck (value => 0);
+   setAlchemyBootsIsShown (current => false);
+   setAlchemyBootsActive (current => false);
+   setAlchemyBootsAtk (value => 0);
+   setAlchemyBootsDef (value => 0);
+   setAlchemyBootsLuck (value => 0);
+   setClimbingBootsIsShown (current => false);
+   setClimbingBootsActive (current => false);
+   setClimbingBootsAtk (value => 0);
+   setClimbingBootsDef (value => 0);
+   setClimbingBootsLuck (value => 0);
+   setDarkForestBootsIsShown (current => false);
+   setDarkForestBootsActive (current => false);
+   setDarkForestBootsAtk (value => 0);
+   setDarkForestBootsDef (value => 0);
+   setDarkForestBootsLuck (value => 0);
+   setFabricBootsIsShown (current => false);
+   setFabricBootsActive (current => false);
+   setFabricBootsAtk (value => 0);
+   setFabricBootsDef (value => 0);
+   setFabricBootsLuck (value => 0);
+   setLeafBootsIsShown (current => false);
+   setLeafBootsActive (current => false);
+   setLeafBootsAtk (value => 0);
+   setLeafBootsDef (value => 0);
+   setLeafBootsLuck (value => 0);
+   setLeatherTurnshoeIsShown (current => false);
+   setLeatherTurnshoeActive (current => false);
+   setLeatherTurnshoeAtk (value => 0);
+   setLeatherTurnshoeDef (value => 0);
+   setLeatherTurnshoeLuck (value => 0);
+   setScalyDragonTalonsIsShown (current => false);
+   setScalyDragonTalonsActive (current => false);
+   setScalyDragonTalonsAtk (value => 0);
+   setScalyDragonTalonsDef (value => 0);
+   setScalyDragonTalonsLuck (value => 0);
+   setSteelBootsIsShown (current => false);
+   setSteelBootsActive (current => false);
+   setSteelBootsAtk (value => 0);
+   setSteelBootsDef (value => 0);
+   setSteelBootsLuck (value => 0);
+   setWoodenGardenBootsIsShown (current => false);
+   setWoodenGardenBootsActive (current => false);
+   setWoodenGardenBootsAtk (value => 0);
+   setWoodenGardenBootsDef (value => 0);
+   setWoodenGardenBootsLuck (value => 0);
+
+}
+
+const handleLeafsungBootsNoClick = event => {
+   setLeafsungBootsIsShown (current => false);
+   setLeafsungBootsActive (current => false);
+   setLeafsungBootsAtk (value => 0);
+   setLeafsungBootsDef (value => 0);
+   setLeafsungBootsLuck (value => 0);
+}
+
+const [LeatherTurnshoeIsShown, setLeatherTurnshoeIsShown] = useState(false)
+const [LeatherTurnshoeActive, setLeatherTurnshoeActive] = useState(false)
+const [LeatherTurnshoeAtk, setLeatherTurnshoeAtk] = useState(0)
+const [LeatherTurnshoeDef, setLeatherTurnshoeDef] = useState(0)
+const [LeatherTurnshoeLuck, setLeatherTurnshoeLuck] = useState(0)
+
+
+const handleLeatherTurnshoeClick = event => {
+
+
+   setLeatherTurnshoeIsShown (current => !LeatherTurnshoeIsShown);
+   setLeatherTurnshoeActive (current => !LeatherTurnshoeActive);
+   setLeatherTurnshoeAtk (value => 0);
+   setLeatherTurnshoeDef (value => 10);
+   setLeatherTurnshoeLuck (value => 5);
+   
+   setAgelessBootsIsShown (current => false);
+   setAgelessBootsActive (current => false);
+   setAgelessBootsAtk (value => 0);
+   setAgelessBootsDef (value => 0);
+   setAgelessBootsLuck (value => 0);
+   setAlchemyBootsIsShown (current => false);
+   setAlchemyBootsActive (current => false);
+   setAlchemyBootsAtk (value => 0);
+   setAlchemyBootsDef (value => 0);
+   setAlchemyBootsLuck (value => 0);
+   setClimbingBootsIsShown (current => false);
+   setClimbingBootsActive (current => false);
+   setClimbingBootsAtk (value => 0);
+   setClimbingBootsDef (value => 0);
+   setClimbingBootsLuck (value => 0);
+   setDarkForestBootsIsShown (current => false);
+   setDarkForestBootsActive (current => false);
+   setDarkForestBootsAtk (value => 0);
+   setDarkForestBootsDef (value => 0);
+   setDarkForestBootsLuck (value => 0);
+   setFabricBootsIsShown (current => false);
+   setFabricBootsActive (current => false);
+   setFabricBootsAtk (value => 0);
+   setFabricBootsDef (value => 0);
+   setFabricBootsLuck (value => 0);
+   setLeafBootsIsShown (current => false);
+   setLeafBootsActive (current => false);
+   setLeafBootsAtk (value => 0);
+   setLeafBootsDef (value => 0);
+   setLeafBootsLuck (value => 0);
+   setLeafsungBootsIsShown (current => false);
+   setLeafsungBootsActive (current => false);
+   setLeafsungBootsAtk (value => 0);
+   setLeafsungBootsDef (value => 0);
+   setLeafsungBootsLuck (value => 0);
+   setScalyDragonTalonsIsShown (current => false);
+   setScalyDragonTalonsActive (current => false);
+   setScalyDragonTalonsAtk (value => 0);
+   setScalyDragonTalonsDef (value => 0);
+   setScalyDragonTalonsLuck (value => 0);
+   setSteelBootsIsShown (current => false);
+   setSteelBootsActive (current => false);
+   setSteelBootsAtk (value => 0);
+   setSteelBootsDef (value => 0);
+   setSteelBootsLuck (value => 0);
+   setWoodenGardenBootsIsShown (current => false);
+   setWoodenGardenBootsActive (current => false);
+   setWoodenGardenBootsAtk (value => 0);
+   setWoodenGardenBootsDef (value => 0);
+   setWoodenGardenBootsLuck (value => 0);
+
+}
+
+const handleLeatherTurnshoeNoClick = event => {
+   setLeatherTurnshoeIsShown (current => false);
+   setLeatherTurnshoeActive (current => false);
+   setLeatherTurnshoeAtk (value => 0);
+   setLeatherTurnshoeDef (value => 0);
+   setLeatherTurnshoeLuck (value => 0);
+}
+
+const [ScalyDragonTalonsIsShown, setScalyDragonTalonsIsShown] = useState(false)
+const [ScalyDragonTalonsActive, setScalyDragonTalonsActive] = useState(false)
+const [ScalyDragonTalonsAtk, setScalyDragonTalonsAtk] = useState(0)
+const [ScalyDragonTalonsDef, setScalyDragonTalonsDef] = useState(0)
+const [ScalyDragonTalonsLuck, setScalyDragonTalonsLuck] = useState(0)
+
+
+const handleScalyDragonTalonsClick = event => {
+
+
+   setScalyDragonTalonsIsShown (current => !ScalyDragonTalonsIsShown);
+   setScalyDragonTalonsActive (current => !ScalyDragonTalonsActive);
+   setScalyDragonTalonsAtk (value => 12);
+   setScalyDragonTalonsDef (value => 4);
+   setScalyDragonTalonsLuck (value => 4);
+   
+   setAgelessBootsIsShown (current => false);
+   setAgelessBootsActive (current => false);
+   setAgelessBootsAtk (value => 0);
+   setAgelessBootsDef (value => 0);
+   setAgelessBootsLuck (value => 0);
+   setAlchemyBootsIsShown (current => false);
+   setAlchemyBootsActive (current => false);
+   setAlchemyBootsAtk (value => 0);
+   setAlchemyBootsDef (value => 0);
+   setAlchemyBootsLuck (value => 0);
+   setClimbingBootsIsShown (current => false);
+   setClimbingBootsActive (current => false);
+   setClimbingBootsAtk (value => 0);
+   setClimbingBootsDef (value => 0);
+   setClimbingBootsLuck (value => 0);
+   setDarkForestBootsIsShown (current => false);
+   setDarkForestBootsActive (current => false);
+   setDarkForestBootsAtk (value => 0);
+   setDarkForestBootsDef (value => 0);
+   setDarkForestBootsLuck (value => 0);
+   setFabricBootsIsShown (current => false);
+   setFabricBootsActive (current => false);
+   setFabricBootsAtk (value => 0);
+   setFabricBootsDef (value => 0);
+   setFabricBootsLuck (value => 0);
+   setLeafBootsIsShown (current => false);
+   setLeafBootsActive (current => false);
+   setLeafBootsAtk (value => 0);
+   setLeafBootsDef (value => 0);
+   setLeafBootsLuck (value => 0);
+   setLeafsungBootsIsShown (current => false);
+   setLeafsungBootsActive (current => false);
+   setLeafsungBootsAtk (value => 0);
+   setLeafsungBootsDef (value => 0);
+   setLeafsungBootsLuck (value => 0);
+   setLeatherTurnshoeIsShown (current => false);
+   setLeatherTurnshoeActive (current => false);
+   setLeatherTurnshoeAtk (value => 0);
+   setLeatherTurnshoeDef (value => 0);
+   setLeatherTurnshoeLuck (value => 0);
+   setSteelBootsIsShown (current => false);
+   setSteelBootsActive (current => false);
+   setSteelBootsAtk (value => 0);
+   setSteelBootsDef (value => 0);
+   setSteelBootsLuck (value => 0);
+   setWoodenGardenBootsIsShown (current => false);
+   setWoodenGardenBootsActive (current => false);
+   setWoodenGardenBootsAtk (value => 0);
+   setWoodenGardenBootsDef (value => 0);
+   setWoodenGardenBootsLuck (value => 0);
+
+}
+
+const handleScalyDragonTalonsNoClick = event => {
+   setScalyDragonTalonsIsShown (current => false);
+   setScalyDragonTalonsActive (current => false);
+   setScalyDragonTalonsAtk (value => 0);
+   setScalyDragonTalonsDef (value => 0);
+   setScalyDragonTalonsLuck (value => 0);
+}
+
+const [SteelBootsIsShown, setSteelBootsIsShown] = useState(false)
+const [SteelBootsActive, setSteelBootsActive] = useState(false)
+const [SteelBootsAtk, setSteelBootsAtk] = useState(0)
+const [SteelBootsDef, setSteelBootsDef] = useState(0)
+const [SteelBootsLuck, setSteelBootsLuck] = useState(0)
+
+
+const handleSteelBootsClick = event => {
+
+
+   setSteelBootsIsShown (current => !SteelBootsIsShown);
+   setSteelBootsActive (current => !SteelBootsActive);
+   setSteelBootsAtk (value => 0);
+   setSteelBootsDef (value => 9);
+   setSteelBootsLuck (value => 0);
+   
+   setAgelessBootsIsShown (current => false);
+   setAgelessBootsActive (current => false);
+   setAgelessBootsAtk (value => 0);
+   setAgelessBootsDef (value => 0);
+   setAgelessBootsLuck (value => 0);
+   setAlchemyBootsIsShown (current => false);
+   setAlchemyBootsActive (current => false);
+   setAlchemyBootsAtk (value => 0);
+   setAlchemyBootsDef (value => 0);
+   setAlchemyBootsLuck (value => 0);
+   setClimbingBootsIsShown (current => false);
+   setClimbingBootsActive (current => false);
+   setClimbingBootsAtk (value => 0);
+   setClimbingBootsDef (value => 0);
+   setClimbingBootsLuck (value => 0);
+   setDarkForestBootsIsShown (current => false);
+   setDarkForestBootsActive (current => false);
+   setDarkForestBootsAtk (value => 0);
+   setDarkForestBootsDef (value => 0);
+   setDarkForestBootsLuck (value => 0);
+   setFabricBootsIsShown (current => false);
+   setFabricBootsActive (current => false);
+   setFabricBootsAtk (value => 0);
+   setFabricBootsDef (value => 0);
+   setFabricBootsLuck (value => 0);
+   setLeafBootsIsShown (current => false);
+   setLeafBootsActive (current => false);
+   setLeafBootsAtk (value => 0);
+   setLeafBootsDef (value => 0);
+   setLeafBootsLuck (value => 0);
+   setLeafsungBootsIsShown (current => false);
+   setLeafsungBootsActive (current => false);
+   setLeafsungBootsAtk (value => 0);
+   setLeafsungBootsDef (value => 0);
+   setLeafsungBootsLuck (value => 0);
+   setLeatherTurnshoeIsShown (current => false);
+   setLeatherTurnshoeActive (current => false);
+   setLeatherTurnshoeAtk (value => 0);
+   setLeatherTurnshoeDef (value => 0);
+   setLeatherTurnshoeLuck (value => 0);
+   setScalyDragonTalonsIsShown (current => false);
+   setScalyDragonTalonsActive (current => false);
+   setScalyDragonTalonsAtk (value => 0);
+   setScalyDragonTalonsDef (value => 0);
+   setScalyDragonTalonsLuck (value => 0);
+   setWoodenGardenBootsIsShown (current => false);
+   setWoodenGardenBootsActive (current => false);
+   setWoodenGardenBootsAtk (value => 0);
+   setWoodenGardenBootsDef (value => 0);
+   setWoodenGardenBootsLuck (value => 0);
+
+}
+
+const handleSteelBootsNoClick = event => {
+   setSteelBootsIsShown (current => false);
+   setSteelBootsActive (current => false);
+   setSteelBootsAtk (value => 0);
+   setSteelBootsDef (value => 0);
+   setSteelBootsLuck (value => 0);
+}
+
+const [WoodenGardenBootsIsShown, setWoodenGardenBootsIsShown] = useState(false)
+const [WoodenGardenBootsActive, setWoodenGardenBootsActive] = useState(false)
+const [WoodenGardenBootsAtk, setWoodenGardenBootsAtk] = useState(0)
+const [WoodenGardenBootsDef, setWoodenGardenBootsDef] = useState(0)
+const [WoodenGardenBootsLuck, setWoodenGardenBootsLuck] = useState(0)
+
+
+const handleWoodenGardenBootsClick = event => {
+
+
+   setWoodenGardenBootsIsShown (current => !WoodenGardenBootsIsShown);
+   setWoodenGardenBootsActive (current => !WoodenGardenBootsActive);
+   setWoodenGardenBootsAtk (value => 2);
+   setWoodenGardenBootsDef (value => 12);
+   setWoodenGardenBootsLuck (value => 0);
+   
+   setAgelessBootsIsShown (current => false);
+   setAgelessBootsActive (current => false);
+   setAgelessBootsAtk (value => 0);
+   setAgelessBootsDef (value => 0);
+   setAgelessBootsLuck (value => 0);
+   setAlchemyBootsIsShown (current => false);
+   setAlchemyBootsActive (current => false);
+   setAlchemyBootsAtk (value => 0);
+   setAlchemyBootsDef (value => 0);
+   setAlchemyBootsLuck (value => 0);
+   setClimbingBootsIsShown (current => false);
+   setClimbingBootsActive (current => false);
+   setClimbingBootsAtk (value => 0);
+   setClimbingBootsDef (value => 0);
+   setClimbingBootsLuck (value => 0);
+   setDarkForestBootsIsShown (current => false);
+   setDarkForestBootsActive (current => false);
+   setDarkForestBootsAtk (value => 0);
+   setDarkForestBootsDef (value => 0);
+   setDarkForestBootsLuck (value => 0);
+   setFabricBootsIsShown (current => false);
+   setFabricBootsActive (current => false);
+   setFabricBootsAtk (value => 0);
+   setFabricBootsDef (value => 0);
+   setFabricBootsLuck (value => 0);
+   setLeafBootsIsShown (current => false);
+   setLeafBootsActive (current => false);
+   setLeafBootsAtk (value => 0);
+   setLeafBootsDef (value => 0);
+   setLeafBootsLuck (value => 0);
+   setLeafsungBootsIsShown (current => false);
+   setLeafsungBootsActive (current => false);
+   setLeafsungBootsAtk (value => 0);
+   setLeafsungBootsDef (value => 0);
+   setLeafsungBootsLuck (value => 0);
+   setLeatherTurnshoeIsShown (current => false);
+   setLeatherTurnshoeActive (current => false);
+   setLeatherTurnshoeAtk (value => 0);
+   setLeatherTurnshoeDef (value => 0);
+   setLeatherTurnshoeLuck (value => 0);
+   setScalyDragonTalonsIsShown (current => false);
+   setScalyDragonTalonsActive (current => false);
+   setScalyDragonTalonsAtk (value => 0);
+   setScalyDragonTalonsDef (value => 0);
+   setScalyDragonTalonsLuck (value => 0);
+   setSteelBootsIsShown (current => false);
+   setSteelBootsActive (current => false);
+   setSteelBootsAtk (value => 0);
+   setSteelBootsDef (value => 0);
+   setSteelBootsLuck (value => 0);
+
+}
+
+const handleWoodenGardenBootsNoClick = event => {
+   setWoodenGardenBootsIsShown (current => false);
+   setWoodenGardenBootsActive (current => false);
+   setWoodenGardenBootsAtk (value => 0);
+   setWoodenGardenBootsDef (value => 0);
+   setWoodenGardenBootsLuck (value => 0);
+}
+
+
+const totalFeetTopAtk = Math.max (AgelessBootsAtk, AlchemyBootsAtk, ClimbingBootsAtk, DarkForestBootsAtk, 
+  FabricBootsAtk, LeafBootsAtk, LeafsungBootsAtk, LeatherTurnshoeAtk, ScalyDragonTalonsAtk, 
+  SteelBootsAtk, WoodenGardenBootsAtk)
+const totalFeetTopDef = Math.max (AgelessBootsDef, AlchemyBootsDef, ClimbingBootsDef, DarkForestBootsDef, 
+  FabricBootsDef, LeafBootsDef, LeafsungBootsDef, LeatherTurnshoeDef, ScalyDragonTalonsDef, 
+  SteelBootsDef, WoodenGardenBootsDef)
+const totalFeetTopLuck = Math.max (AgelessBootsLuck, AlchemyBootsLuck, ClimbingBootsLuck, DarkForestBootsLuck, 
+  FabricBootsLuck, LeafBootsLuck, LeafsungBootsLuck, LeatherTurnshoeLuck, ScalyDragonTalonsLuck, 
+  SteelBootsLuck, WoodenGardenBootsLuck)
 
 //totals//
 
@@ -22423,18 +24238,217 @@ mt={['135px', '160px', '175px']}
         <Text fontSize={['md', 'lg', 'lg']} mt={['4px', '6px', '8px']}>
           <b>Chest</b>
         </Text>
+        {!AmidalaChestpieceIsShown && !CloudChestPlateIsShown && !DragonScaleArmorIsShown && !FabricBreastplateIsShown && 
+   !FusionCuirassIsShown && !KingBreastplateIsShown && !LeafBreastplateIsShown && !LeatherCuirassIsShown && 
+   !MarionetteBodyArmorIsShown && !NivaliBreastplateIsShown && !ReinforcedSteelBreastplateIsShown && !RobotTorsoIsShown && 
         <Image
         style={{position:'absolute'}}
         mt={['37px', '47px', '55px']}
         align='center' 
         boxSize={['4rem', '4.5rem', '5rem']}
         src='https://i.imgur.com/yQLgdcB.png'
-      />
+      />}
+      {!AmidalaChestpieceIsShown && !CloudChestPlateIsShown && !DragonScaleArmorIsShown && !FabricBreastplateIsShown && 
+   !FusionCuirassIsShown && !KingBreastplateIsShown && !LeafBreastplateIsShown && !LeatherCuirassIsShown && 
+   !MarionetteBodyArmorIsShown && !NivaliBreastplateIsShown && !ReinforcedSteelBreastplateIsShown && !RobotTorsoIsShown && 
         <Text        
         style={{position:'absolute'}}
         mt={['110px', '130px', '145px']}
         fontSize={['sm', 'md', 'md']}>
-          No item</Text>
+          No item</Text>}
+
+          {AmidalaChestpieceIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/3/37/Amidala_Chestpiece.png/'
+   />}
+   {AmidalaChestpieceIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Amidala Chestpiece</Text>
+     }
+
+{CloudChestPlateIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/7/75/Cloud-chest-plate.png/'
+   />}
+   {CloudChestPlateIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Cloud Chest Plate</Text>
+     }
+
+{DragonScaleArmorIsShown &&        
+      <Image
+      style={{position:'absolute'}}
+      mt={['37px', '47px', '55px']}
+      align='center' 
+      boxSize={['4rem', '4.5rem', '5rem']}
+      src='https://static.wikia.nocookie.net/4thewords/images/c/c5/DragonScaleArmor.png/'
+      />}
+      {DragonScaleArmorIsShown &&        
+      <Text        
+      style={{position:'absolute'}}
+      mt={['110px', '130px', '145px']}
+      fontSize={['sm', 'md', 'md']}>
+        Dragon Scale Armor</Text>
+        }
+   
+{FabricBreastplateIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/3/31/Fabricbreastplate_md.png/'
+   />}
+   {FabricBreastplateIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Fabric Breastplate</Text>
+     }
+
+{FusionCuirassIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/f/fa/FusionCuirass.png/'
+   />}
+   {FusionCuirassIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Fusion Cuirass</Text>
+     }
+
+{KingBreastplateIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/6/6b/KingsBreastplate.png/'
+   />}
+   {KingBreastplateIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     King's Breastplate</Text>
+     }
+
+{LeafBreastplateIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/6/60/Leafbreastplate_md.png/'
+      />}
+   {LeafBreastplateIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Leaf Breastplate</Text>
+     }
+
+{LeatherCuirassIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/d/db/LeatherCuriass.png/'
+   />}
+   {LeatherCuirassIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Leather Cuirass</Text>
+     }
+   
+{MarionetteBodyArmorIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Maronettearmor.png/'
+   />}
+   {MarionetteBodyArmorIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Marionette Body Armor</Text>
+     }
+
+{NivaliBreastplateIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/3/39/Nivali_Breastplate.png/'
+   />}
+   {NivaliBreastplateIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Nivali Breastplate</Text>
+     }
+
+{ReinforcedSteelBreastplateIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['27px', '37px', '45px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Reinforced-steel-breastplate.png/'
+   />}
+   {ReinforcedSteelBreastplateIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['90px', '105px', '120px']}
+   fontSize={['sm', 'md', 'md']}>
+     Reinforced Steel<br/>Breastplate</Text>
+     }
+
+{RobotTorsoIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/1/1b/Robot-torso.png/'
+   />}
+   {RobotTorsoIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Robot Torso</Text>
+     }
+
           <HStack
 style={{position:'absolute'}}
 mt={['135px', '160px', '175px']}
@@ -22471,18 +24485,203 @@ mt={['135px', '160px', '175px']}
         <Text fontSize={['md', 'lg', 'lg']} mt={['4px', '6px', '8px']}>
           <b>Feet</b>
         </Text>
+        {!AgelessBootsIsShown && !AlchemyBootsIsShown && !ClimbingBootsIsShown && !DarkForestBootsIsShown && 
+   !FabricBootsIsShown && !LeafBootsIsShown && !LeafsungBootsIsShown && 
+   !LeatherTurnshoeIsShown && !ScalyDragonTalonsIsShown && !SteelBootsIsShown && !WoodenGardenBootsIsShown && 
         <Image
         style={{position:'absolute'}}
         mt={['37px', '47px', '55px']}
         align='center' 
         boxSize={['4rem', '4.5rem', '5rem']}
         src='https://i.imgur.com/qMNT5k8.png'
-      />
+      />}
+{!AgelessBootsIsShown && !AlchemyBootsIsShown && !ClimbingBootsIsShown && !DarkForestBootsIsShown && 
+   !FabricBootsIsShown && !LeafBootsIsShown && !LeafsungBootsIsShown && 
+   !LeatherTurnshoeIsShown && !ScalyDragonTalonsIsShown && !SteelBootsIsShown && !WoodenGardenBootsIsShown && 
         <Text        
         style={{position:'absolute'}}
         mt={['110px', '130px', '145px']}
         fontSize={['sm', 'md', 'md']}>
-          No item</Text>
+          No item</Text>}
+          {AgelessBootsIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/5/5f/AgelessBoots.png/'
+   />}
+   {AgelessBootsIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Ageless Boots</Text>
+     }
+
+{AlchemyBootsIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/7/74/Alchemy_Boots.png/'
+   />}
+   {AlchemyBootsIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Alchemy Boots</Text>
+     }
+
+{ClimbingBootsIsShown &&        
+      <Image
+      style={{position:'absolute'}}
+      mt={['37px', '47px', '55px']}
+      align='center' 
+      boxSize={['4rem', '4.5rem', '5rem']}
+      src='https://static.wikia.nocookie.net/4thewords/images/7/7d/ClimbingBoots.png/'
+      />}
+      {ClimbingBootsIsShown &&        
+      <Text        
+      style={{position:'absolute'}}
+      mt={['110px', '130px', '145px']}
+      fontSize={['sm', 'md', 'md']}>
+        Climbing Boots</Text>
+        }
+   
+{DarkForestBootsIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/6/64/Dark-forest-boots_battle.png/'
+   />}
+   {DarkForestBootsIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Dark Forest Boots</Text>
+     }
+
+{FabricBootsIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/7/7c/Fabricboots_md.png/'
+   />}
+   {FabricBootsIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Fabric Boots</Text>
+     }
+
+{LeafBootsIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/3/30/Leafboots_md.png/'
+   />}
+   {LeafBootsIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Leaf Boots</Text>
+     }
+
+
+
+{LeafsungBootsIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/b/b5/Leafsungboots_md.png/'
+   />}
+   {LeafsungBootsIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Leafsung Boots</Text>
+     }
+   
+{LeatherTurnshoeIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/f/f6/LeatherTurnshoe.png/'
+   />}
+   {LeatherTurnshoeIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Leather Turnshoe</Text>
+     }
+
+{ScalyDragonTalonsIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/0/05/ScalyDragonsTalons.png/'
+   />}
+   {ScalyDragonTalonsIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Scaly Dragon's Talons</Text>
+     }
+
+{WoodenGardenBootsIsShown &&   
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/1/14/WoodenGardenBoots.png/'
+   />}
+   {WoodenGardenBootsIsShown &&
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Wooden Garden Boots</Text>
+     }
+
+     
+{SteelBootsIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/d/d8/Steelboots_md.png/'
+   />}
+{SteelBootsIsShown &&        
+      <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Robot Torso</Text>
+     }
+
           <HStack
 style={{position:'absolute'}}
 mt={['135px', '160px', '175px']}
@@ -23169,7 +25368,8 @@ mt={['135px', '160px', '175px']}
   </TabList>
   <TabPanels>
     <TabPanel>
-    <Text fontSize='md' mt='25px' mb='15px'><b>Main Quest Companions:</b></Text>
+    {(AllIsShown || ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) &&
+    <Text fontSize='md' mb='15px'><b>Main Quest Companions:</b></Text>}
                 <Wrap justify='center'>
    {(AllIsShown || DCIsShown || World2RegionIsShown) && !NoanzaIsShown &&
            <WrapItem>
@@ -25106,9 +27306,9 @@ src='https://static.wikia.nocookie.net/4thewords/images/b/bf/DarkForestSword.png
     </TabPanel>
   <TabPanel>
   {(AllIsShown || AllIsShown || ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) &&
-    <Text fontSize='md' mt='25px' mb='15px'><b>Main Quest Battle Items:</b></Text>}
+    <Text fontSize='md' mb='15px'><b>Main Quest Battle Items:</b></Text>}
     <Wrap justify='center'>
-    {World2RegionIsShown && !NivaliBowIsShown &&
+    {(AllIsShown || World2RegionIsShown) && !NivaliBowIsShown &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleNivaliBowClick} style={{ backgroundColor: "#2D3748"}}>
 <VStack justify='center'>  
@@ -25124,7 +27324,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/8/88/Nivali_Bow.png/'
 </Button>
 </WrapItem>}
 
-{World2RegionIsShown && NivaliBowIsShown &&
+{(AllIsShown || World2RegionIsShown) && NivaliBowIsShown &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleNivaliBowNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack justify='center'>  
@@ -25987,7 +28187,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/8/8a/Tentacle-whip.png/'
   </TabPanel>
 <TabPanel>
 {(AllIsShown || ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) &&
-    <Text fontSize='md' mt='25px' mb='15px'><b>Main Quest Battle Items:</b></Text>}
+    <Text fontSize='md' mb='15px'><b>Main Quest Battle Items:</b></Text>}
 
 <Wrap justify='center'>
 
@@ -27368,6 +29568,729 @@ src='https://static.wikia.nocookie.net/4thewords/images/e/e5/DragonsHornedHelmet
       </Button>
       </WrapItem>}
       </Wrap>
+</TabPanel>
+<TabPanel>
+{(AllIsShown || ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) &&
+    <Text fontSize='md' mb='15px'><b>Main Quest Battle Items:</b></Text>}
+  <Wrap justify='center'>
+
+{(AllIsShown || World2RegionIsShown) && !NivaliBreastplateIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleNivaliBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/3/39/Nivali_Breastplate.png/'
+/> 
+<Text fontSize='md' align='center'><b>Nivali<br/>Breastplate</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+22 Def<br/>+8 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown) && NivaliBreastplateIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleNivaliBreastplateNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/3/39/Nivali_Breastplate.png/'
+/> 
+<Text fontSize='md' align='center'><b>Nivali<br/>Breastplate</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+22 Def<br/>+8 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || DCIsShown) && !KingBreastplateIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleKingBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/6/6b/KingsBreastplate.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>King's<br/>Breastplate</b></Text>
+   <Text fontSize='sm' align='center'>+5 Atk<br/>+25 Def<br/>+0 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   
+   {(AllIsShown || World2RegionIsShown || DCIsShown) && KingBreastplateIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleKingBreastplateNoClick} style={{ backgroundColor: "#211742"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/6/6b/KingsBreastplate.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>King's<br/>Breastplate</b></Text>
+   <Text fontSize='sm' align='center'>+5 Atk<br/>+25 Def<br/>+0 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !FusionCuirassIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleFusionCuirassClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/f/fa/FusionCuirass.png/'
+/> 
+<Text fontSize='md' align='center'><b>Fusion Cuirass</b></Text>
+<Text fontSize='sm' align='center'>+8 Atk<br/>+20 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && FusionCuirassIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleFusionCuirassNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/f/fa/FusionCuirass.png/'
+/> 
+<Text fontSize='md' align='center'><b>Fusion Cuirass</b></Text>
+<Text fontSize='sm' align='center'>+8 Atk<br/>+20 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !LeatherCuirassIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleLeatherCuirassClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/d/db/LeatherCuriass.png/'
+/> 
+<Text fontSize='md' align='center'><b>Leather<br/>Cuirass</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+20 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && LeatherCuirassIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleLeatherCuirassNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/d/db/LeatherCuriass.png/'
+/> 
+<Text fontSize='md' align='center'><b>Leather<br/>Cuirass</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+20 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || CloudsIsShown) && !CloudChestPlateIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleCloudChestPlateClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/75/Cloud-chest-plate.png/'
+/> 
+<Text fontSize='md' align='center'><b>Cloud<br/>Chest Plate</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+18 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || CloudsIsShown) && CloudChestPlateIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleCloudChestPlateNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/75/Cloud-chest-plate.png/'
+/> 
+<Text fontSize='md' align='center'><b>Cloud<br/>Chest Plate</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+18 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && !ReinforcedSteelBreastplateIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleReinforcedSteelBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Reinforced-steel-breastplate.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Reinforced Steel<br/>Breastplate</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+15 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && ReinforcedSteelBreastplateIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleReinforcedSteelBreastplateNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Reinforced-steel-breastplate.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Reinforced Steel<br/>Breastplate</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+15 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && !FabricBreastplateIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleFabricBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/3/31/Fabricbreastplate_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Fabric<br/>Breastplate</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && FabricBreastplateIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleFabricBreastplateNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/3/31/Fabricbreastplate_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Fabric<br/>Breastplate</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || AurilisIsShown) && !AmidalaChestpieceIsShown &&
+  <WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleAmidalaChestpieceClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/3/37/Amidala_Chestpiece.png/'
+/> 
+<Text fontSize='md' align='center'><b>Amidala<br/>Chestpiece</b></Text>
+<Text fontSize='sm' align='center'>+6 Atk<br/>+6 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || AurilisIsShown) && AmidalaChestpieceIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleAmidalaChestpieceNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/3/37/Amidala_Chestpiece.png/'
+/> 
+<Text fontSize='md' align='center'><b>Amidala<br/>Chestpiece</b></Text>
+<Text fontSize='sm' align='center'>+6 Atk<br/>+6 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && !LeafBreastplateIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleLeafBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
+      <VStack justify='center'>  
+      <Image
+      mt='18px'
+      align='center' 
+      boxSize='3.5rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/6/60/Leafbreastplate_md.png/'
+      /> 
+      <Text fontSize='md' align='center'><b>Leaf<br/>Breastplate</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br/>+2 Def<br/>+0 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+      
+      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && LeafBreastplateIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleLeafBreastplateNoClick} style={{ backgroundColor: "#211742"}}>
+      <VStack justify='center'>  
+      <Image
+      mt='18px'
+      align='center' 
+      boxSize='3.5rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/6/60/Leafbreastplate_md.png/'
+      /> 
+      <Text fontSize='md' align='center'><b>Leaf<br/>Breastplate</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br/>+2 Def<br/>+0 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+  </Wrap>
+  {(AllIsShown ||  PastEventsIsShown) && 
+      <Text fontSize='md' mt='25px' mb='15px'><b>Past Event Battle Items:</b></Text>}
+      <Wrap justify='center'>
+      {(AllIsShown || PastEventsIsShown) && !DragonScaleArmorIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleDragonScaleArmorClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/c/c5/DragonScaleArmor.png/'
+/> 
+<Text fontSize='md' align='center'><b>Dragon Scale<br/>Armor</b></Text>
+<Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || PastEventsIsShown) && DragonScaleArmorIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleDragonScaleArmorNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/c/c5/DragonScaleArmor.png/'
+/> 
+<Text fontSize='md' align='center'><b>Dragon Scale<br/>Armor</b></Text>
+<Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || PastEventsIsShown) && !MarionetteBodyArmorIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleMarionetteBodyArmorClick} style={{ backgroundColor: "#2D3748"}}>
+      <VStack justify='center'>  
+      <Image
+      mt='18px'
+      align='center' 
+      boxSize='3.5rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Maronettearmor.png/'
+      /> 
+      <Text fontSize='md' align='center'><b>Marionette<br/>Body Armor</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br/>+18 Def<br/>+0 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+      
+      {(AllIsShown || PastEventsIsShown) && MarionetteBodyArmorIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleMarionetteBodyArmorNoClick} style={{ backgroundColor: "#211742"}}>
+      <VStack justify='center'>  
+      <Image
+      mt='18px'
+      align='center' 
+      boxSize='3.5rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Maronettearmor.png/'
+      /> 
+      <Text fontSize='md' align='center'><b>Marionette<br/>Body Armor</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br/>+18 Def<br/>+0 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+      {(AllIsShown || PastEventsIsShown) && !RobotTorsoIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleRobotTorsoClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/1/1b/Robot-torso.png/'
+/> 
+<Text fontSize='md' align='center'><b>Robot Torso</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+16 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || PastEventsIsShown) && RobotTorsoIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleRobotTorsoNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/1/1b/Robot-torso.png/'
+/> 
+<Text fontSize='md' align='center'><b>Robot Torso</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+16 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+      </Wrap>
+</TabPanel>
+<TabPanel>
+{(AllIsShown || ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) &&
+    <Text fontSize='md' mb='15px'><b>Main Quest Battle Items:</b></Text>}
+  <Wrap justify='center'>
+  {(AllIsShown || World2RegionIsShown || DCIsShown) && !AgelessBootsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleAgelessBootsClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/5/5f/AgelessBoots.png/'
+/> 
+<Text fontSize='md' align='center'><b>Ageless<br/>Boots</b></Text>
+<Text fontSize='sm' align='center'>+2 Atk<br/>+14 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || DCIsShown) && AgelessBootsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleAgelessBootsNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/5/5f/AgelessBoots.png/'
+/> 
+<Text fontSize='md' align='center'><b>Ageless<br/>Boots</b></Text>
+<Text fontSize='sm' align='center'>+2 Atk<br/>+14 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !ClimbingBootsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleClimbingBootsClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/7d/ClimbingBoots.png/'
+/> 
+<Text fontSize='md' align='center'><b>Climbing<br/>Boots</b></Text>
+<Text fontSize='sm' align='center'>+12 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && ClimbingBootsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleClimbingBootsNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/7d/ClimbingBoots.png/'
+/> 
+<Text fontSize='md' align='center'><b>Climbing<br/>Boots</b></Text>
+<Text fontSize='sm' align='center'>+12 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !LeatherTurnshoeIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleLeatherTurnshoeClick} style={{ backgroundColor: "#2D3748"}}>
+      <VStack justify='center'>  
+      <Image
+      mt='18px'
+      align='center' 
+      boxSize='3.5rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/f/f6/LeatherTurnshoe.png/'
+      /> 
+      <Text fontSize='md' align='center'><b>Leather<br/>Turnshoe</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+5 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+      
+      {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && LeatherTurnshoeIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleLeatherTurnshoeNoClick} style={{ backgroundColor: "#211742"}}>
+      <VStack justify='center'>  
+      <Image
+      mt='18px'
+      align='center' 
+      boxSize='3.5rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/f/f6/LeatherTurnshoe.png/'
+      /> 
+      <Text fontSize='md' align='center'><b>Leather<br/>Turnshoe</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+5 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+
+      {(AllIsShown || GardenIsShown) && !WoodenGardenBootsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleWoodenGardenBootsClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/1/14/WoodenGardenBoots.png/'
+/> 
+<Text fontSize='md' align='center'><b>Wooden<br/>Garden Boots</b></Text>
+<Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || GardenIsShown) && WoodenGardenBootsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleWoodenGardenBootsNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/1/14/WoodenGardenBoots.png/'
+/> 
+<Text fontSize='md' align='center'><b>Wooden<br/>Garden Boots</b></Text>
+<Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) && !DarkForestBootsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleDarkForestBootsClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/6/64/Dark-forest-boots_battle.png/'
+/> 
+<Text fontSize='md' align='center'><b>Dark Forest<br/>Boots</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+8 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) && DarkForestBootsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleDarkForestBootsNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/6/64/Dark-forest-boots_battle.png/'
+/> 
+<Text fontSize='md' align='center'><b>Dark Forest<br/>Boots</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+8 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && !SteelBootsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleSteelBootsClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/d/d8/Steelboots_md.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Steel Boots</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+9 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && SteelBootsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleSteelBootsNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/d/d8/Steelboots_md.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Steel Boots</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+9 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && !FabricBootsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleFabricBootsClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/7c/Fabricboots_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Fabric Boots</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+6 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && FabricBootsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleFabricBootsNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/7c/Fabricboots_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Fabric Boots</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+6 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && !LeafsungBootsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleLeafsungBootsClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/b/b5/Leafsungboots_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Leafsung<br/>Boots</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && LeafsungBootsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleLeafsungBootsNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/b/b5/Leafsungboots_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Leafsung<br/>Boots</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) && !LeafBootsIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleLeafBootsClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='4rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/3/30/Leafboots_md.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Leaf Boots</b></Text>
+   <Text fontSize='sm' align='center'>+0 Atk<br/>+1 Def<br/>+1 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) && LeafBootsIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleLeafBootsNoClick} style={{ backgroundColor: "#211742"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='4rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/3/30/Leafboots_md.png/'
+      /> 
+   <Text fontSize='md' align='center'><b>Leaf Boots</b></Text>
+   <Text fontSize='sm' align='center'>+0 Atk<br/>+1 Def<br/>+1 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+
+  </Wrap>
+  {(AllIsShown ||  PastEventsIsShown) && 
+      <Text fontSize='md' mt='25px' mb='15px'><b>Past Event Battle Items:</b></Text>}
+  <Wrap justify='center'>
+  {(AllIsShown || PastEventsIsShown) && !ScalyDragonTalonsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleScalyDragonTalonsClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/0/05/ScalyDragonsTalons.png/'
+/> 
+<Text fontSize='md' align='center'><b>Scaly<br/>Dragon's Talon</b></Text>
+<Text fontSize='sm' align='center'>+12 Atk<br/>+4 Def<br/>+4 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || PastEventsIsShown) && ScalyDragonTalonsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleScalyDragonTalonsNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/0/05/ScalyDragonsTalons.png/'
+/> 
+<Text fontSize='md' align='center'><b>Scaly<br/>Dragon's Talon</b></Text>
+<Text fontSize='sm' align='center'>+12 Atk<br/>+4 Def<br/>+4 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+  </Wrap>
 </TabPanel>
   </TabPanels>
 </Tabs>
