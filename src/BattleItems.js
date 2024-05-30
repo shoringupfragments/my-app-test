@@ -36,23 +36,47 @@ const [All, setAll] = useState(false)
 const [AllIsShown, setAllIsShown] = useState(false)
 const [AllActive, setAllActive] = useState(false)
 
-const [Owned, setOwned] = useState(false)
-const [OwnedIsShown, setOwnedIsShown] = useState(false)
-const [OwnedActive, setOwnedActive] = useState(false)
+const [Select, setSelect] = useState(false)
+const [SelectIsShown, setSelectIsShown] = useState(false)
+const [SelectActive, setSelectActive] = useState(false)
+
+const [PastEvents, setPastEvents] = useState(false)
+const [PastEventsIsShown, setPastEventsIsShown] = useState(false)
+const [PastEventsActive, setPastEventsActive] = useState(false)
+
+const [Hunt, setHunt] = useState(false)
+const [HuntIsShown, setHuntIsShown] = useState(false)
+const [HuntActive, setHuntActive] = useState(false)
 
 const handleAllClick = event => {
-  setAllIsShown (current => true);
+  setAllIsShown (current => !AllIsShown);
   setAllActive (current => !AllActive);
-  setOwnedIsShown (current => false);
-  setOwnedActive (current => false);
+  setSelectIsShown (current => false);
+  setSelectActive (current => false);
+  setPastEventsIsShown (current => false);
+  setPastEventsActive (current => false);
+  setHuntIsShown (current => false);
+  setHuntActive (current => false);
   };
 
-  const handleOwnedClick = event => {
-    setOwnedIsShown (current => true);
-    setOwnedActive (current => !OwnedActive);
+  const handleSelectClick = event => {
+    setSelectIsShown (current => !SelectIsShown);
+    setSelectActive (current => !SelectActive);
     setAllIsShown (current => false);
     setAllActive (current => false);
     };
+
+const handlePastEventsClick = event => {
+  setPastEventsIsShown (current => !PastEventsIsShown);
+  setPastEventsActive (current => !PastEventsActive);
+  };
+
+  const handleHuntClick = event => {
+  setHuntIsShown (current => !HuntIsShown);
+  setHuntActive (current => !HuntActive);
+  };
+
+
 
 const [HornsofWisdom, setHornsofWisdom] = useState(0)
 const [HornsofWisdomIsShown, setHornsofWisdomIsShown] = useState(false)
@@ -9616,7 +9640,40 @@ const [NivaliSlingshotAtk, setNivaliSlingshotAtk] = useState(0)
 const [NivaliSlingshotDef, setNivaliSlingshotDef] = useState(0)
 const [NivaliSlingshotLuck, setNivaliSlingshotLuck] = useState(0)
 
+const [LoveWand, setLoveWand] = useState(0)
+const [LoveWandIsShown, setLoveWandIsShown] = useState(false)
+const [LoveWandActive, setLoveWandActive] = useState(false)
+const [LoveWandAtk, setLoveWandAtk] = useState(0)
+const [LoveWandDef, setLoveWandDef] = useState(0)
+const [LoveWandLuck, setLoveWandLuck] = useState(0)
 
+const [DragonFangBow, setDragonFangBow] = useState(0)
+const [DragonFangBowIsShown, setDragonFangBowIsShown] = useState(false)
+const [DragonFangBowActive, setDragonFangBowActive] = useState(false)
+const [DragonFangBowAtk, setDragonFangBowAtk] = useState(0)
+const [DragonFangBowDef, setDragonFangBowDef] = useState(0)
+const [DragonFangBowLuck, setDragonFangBowLuck] = useState(0)
+
+const [WitchStaff, setWitchStaff] = useState(0)
+const [WitchStaffIsShown, setWitchStaffIsShown] = useState(false)
+const [WitchStaffActive, setWitchStaffActive] = useState(false)
+const [WitchStaffAtk, setWitchStaffAtk] = useState(0)
+const [WitchStaffDef, setWitchStaffDef] = useState(0)
+const [WitchStaffLuck, setWitchStaffLuck] = useState(0)
+
+const [TentacleShield, setTentacleShield] = useState(0)
+const [TentacleShieldIsShown, setTentacleShieldIsShown] = useState(false)
+const [TentacleShieldActive, setTentacleShieldActive] = useState(false)
+const [TentacleShieldAtk, setTentacleShieldAtk] = useState(0)
+const [TentacleShieldDef, setTentacleShieldDef] = useState(0)
+const [TentacleShieldLuck, setTentacleShieldLuck] = useState(0)
+
+const [TentacleWhip, setTentacleWhip] = useState(0)
+const [TentacleWhipIsShown, setTentacleWhipIsShown] = useState(false)
+const [TentacleWhipActive, setTentacleWhipActive] = useState(false)
+const [TentacleWhipAtk, setTentacleWhipAtk] = useState(0)
+const [TentacleWhipDef, setTentacleWhipDef] = useState(0)
+const [TentacleWhipLuck, setTentacleWhipLuck] = useState(0)
 
 const handleFusionCrossbowClick = event => {
   setFusionCrossbowIsShown (current => !FusionCrossbowIsShown);
@@ -9732,7 +9789,7 @@ const handlePoePickClick = event => {
   setPoePickActive (current => !PoePickActive);
   setPoePickAtk (value => 15);
   setPoePickDef (value => 5);
-  setPoePickLuck (value => 8);
+  setPoePickLuck (value => 0);
   
   setFusionCrossbowIsShown (current => false);
   setFusionCrossbowActive (current => false);
@@ -10201,8 +10258,8 @@ const handleMountainMaceClick = event => {
     setNivaliSlingshotLuck (value => 0);
     setWoodenGardenHornIsShown (current => !WoodenGardenHornIsShown);
     setWoodenGardenHornActive (current => !WoodenGardenHornActive);
-    setWoodenGardenHornAtk (value => 0);
-    setWoodenGardenHornDef (value => 0);
+    setWoodenGardenHornAtk (value => 12);
+    setWoodenGardenHornDef (value => 2);
     setWoodenGardenHornLuck (value => 0);
     setStaffOfTheDeadIsShown (current => false);
     setStaffOfTheDeadActive (current => false);
@@ -10284,9 +10341,9 @@ const handleMountainMaceClick = event => {
  const handleStaffOfTheDeadClick = event => {
     setStaffOfTheDeadIsShown (current => !StaffOfTheDeadIsShown);
     setStaffOfTheDeadActive (current => !StaffOfTheDeadActive);
-    setStaffOfTheDeadAtk (value => 0);
+    setStaffOfTheDeadAtk (value => 5);
     setStaffOfTheDeadDef (value => 0);
-    setStaffOfTheDeadLuck (value => 0);
+    setStaffOfTheDeadLuck (value => 10);
  
     setFusionCrossbowIsShown (current => false);
     setFusionCrossbowActive (current => false);
@@ -10313,8 +10370,8 @@ const handleMountainMaceClick = event => {
     setNivaliSlingshotAtk (value => 0);
     setNivaliSlingshotDef (value => 0);
     setNivaliSlingshotLuck (value => 0);
-    setWoodenGardenHornIsShown (current => !WoodenGardenHornIsShown);
-    setWoodenGardenHornActive (current => !WoodenGardenHornActive);
+    setWoodenGardenHornIsShown (current => false);
+    setWoodenGardenHornActive (current => false);
     setWoodenGardenHornAtk (value => 0);
     setWoodenGardenHornDef (value => 0);
     setWoodenGardenHornLuck (value => 0);
@@ -10393,9 +10450,9 @@ const handleMountainMaceClick = event => {
  const handleTempestYoYoClick = event => {
    setTempestYoYoIsShown (current => !TempestYoYoIsShown);
    setTempestYoYoActive (current => !TempestYoYoActive);
-   setTempestYoYoAtk (value => 0);
+   setTempestYoYoAtk (value => 4);
    setTempestYoYoDef (value => 0);
-   setTempestYoYoLuck (value => 0);
+   setTempestYoYoLuck (value => 14);
  
    setFusionCrossbowIsShown (current => false);
    setFusionCrossbowActive (current => false);
@@ -10422,8 +10479,8 @@ const handleMountainMaceClick = event => {
    setNivaliSlingshotAtk (value => 0);
    setNivaliSlingshotDef (value => 0);
    setNivaliSlingshotLuck (value => 0);
-    setWoodenGardenHornIsShown (current => !WoodenGardenHornIsShown);
-    setWoodenGardenHornActive (current => !WoodenGardenHornActive);
+    setWoodenGardenHornIsShown (current => false);
+    setWoodenGardenHornActive (current => false);
     setWoodenGardenHornAtk (value => 0);
     setWoodenGardenHornDef (value => 0);
     setWoodenGardenHornLuck (value => 0);
@@ -10503,7 +10560,7 @@ const handleMountainMaceClick = event => {
    setSteelShieldIsShown (current => !SteelShieldIsShown);
    setSteelShieldActive (current => !SteelShieldActive);
    setSteelShieldAtk (value => 0);
-   setSteelShieldDef (value => 0);
+   setSteelShieldDef (value => 12);
    setSteelShieldLuck (value => 0);
  
    setFusionCrossbowIsShown (current => false);
@@ -10531,8 +10588,8 @@ const handleMountainMaceClick = event => {
    setNivaliSlingshotAtk (value => 0);
    setNivaliSlingshotDef (value => 0);
    setNivaliSlingshotLuck (value => 0);
-    setWoodenGardenHornIsShown (current => !WoodenGardenHornIsShown);
-    setWoodenGardenHornActive (current => !WoodenGardenHornActive);
+    setWoodenGardenHornIsShown (current => false);
+    setWoodenGardenHornActive (current => false);
     setWoodenGardenHornAtk (value => 0);
     setWoodenGardenHornDef (value => 0);
     setWoodenGardenHornLuck (value => 0);
@@ -10611,8 +10668,8 @@ const handleMountainMaceClick = event => {
  const handleSteelAxeClick = event => {
    setSteelAxeIsShown (current => !SteelAxeIsShown);
    setSteelAxeActive (current => !SteelAxeActive);
-   setSteelAxeAtk (value => 0);
-   setSteelAxeDef (value => 0);
+   setSteelAxeAtk (value => 10);
+   setSteelAxeDef (value => 2);
    setSteelAxeLuck (value => 0);
  
    setFusionCrossbowIsShown (current => false);
@@ -10640,8 +10697,8 @@ const handleMountainMaceClick = event => {
    setNivaliSlingshotAtk (value => 0);
    setNivaliSlingshotDef (value => 0);
    setNivaliSlingshotLuck (value => 0);
-    setWoodenGardenHornIsShown (current => !WoodenGardenHornIsShown);
-    setWoodenGardenHornActive (current => !WoodenGardenHornActive);
+    setWoodenGardenHornIsShown (current => false);
+    setWoodenGardenHornActive (current => false);
     setWoodenGardenHornAtk (value => 0);
     setWoodenGardenHornDef (value => 0);
     setWoodenGardenHornLuck (value => 0);
@@ -10720,8 +10777,8 @@ const handleMountainMaceClick = event => {
  const handleHarpoonClick = event => {
    setHarpoonIsShown (current => !HarpoonIsShown);
    setHarpoonActive (current => !HarpoonActive);
-   setHarpoonAtk (value => 0);
-   setHarpoonDef (value => 0);
+   setHarpoonAtk (value => 8);
+   setHarpoonDef (value => 8);
    setHarpoonLuck (value => 0);
  
    setFusionCrossbowIsShown (current => false);
@@ -10749,8 +10806,8 @@ const handleMountainMaceClick = event => {
    setNivaliSlingshotAtk (value => 0);
    setNivaliSlingshotDef (value => 0);
    setNivaliSlingshotLuck (value => 0);
-    setWoodenGardenHornIsShown (current => !WoodenGardenHornIsShown);
-    setWoodenGardenHornActive (current => !WoodenGardenHornActive);
+    setWoodenGardenHornIsShown (current => false);
+    setWoodenGardenHornActive (current => false);
     setWoodenGardenHornAtk (value => 0);
     setWoodenGardenHornDef (value => 0);
     setWoodenGardenHornLuck (value => 0);
@@ -10829,8 +10886,8 @@ const handleMountainMaceClick = event => {
  const handleStoneHammerClick = event => {
    setStoneHammerIsShown (current => !StoneHammerIsShown);
    setStoneHammerActive (current => !StoneHammerActive);
-   setStoneHammerAtk (value => 0);
-   setStoneHammerDef (value => 0);
+   setStoneHammerAtk (value => 7);
+   setStoneHammerDef (value => 4);
    setStoneHammerLuck (value => 0);
  
    setFusionCrossbowIsShown (current => false);
@@ -10858,8 +10915,8 @@ const handleMountainMaceClick = event => {
    setNivaliSlingshotAtk (value => 0);
    setNivaliSlingshotDef (value => 0);
    setNivaliSlingshotLuck (value => 0);
-    setWoodenGardenHornIsShown (current => !WoodenGardenHornIsShown);
-    setWoodenGardenHornActive (current => !WoodenGardenHornActive);
+    setWoodenGardenHornIsShown (current => false);
+    setWoodenGardenHornActive (current => false);
     setWoodenGardenHornAtk (value => 0);
     setWoodenGardenHornDef (value => 0);
     setWoodenGardenHornLuck (value => 0);
@@ -10938,8 +10995,8 @@ const handleMountainMaceClick = event => {
  const handleSteelSpearClick = event => {
    setSteelSpearIsShown (current => !SteelSpearIsShown);
    setSteelSpearActive (current => !SteelSpearActive);
-   setSteelSpearAtk (value => 0);
-   setSteelSpearDef (value => 0);
+   setSteelSpearAtk (value => 6);
+   setSteelSpearDef (value => 2);
    setSteelSpearLuck (value => 0);
  
    setFusionCrossbowIsShown (current => false);
@@ -10967,8 +11024,8 @@ const handleMountainMaceClick = event => {
    setNivaliSlingshotAtk (value => 0);
    setNivaliSlingshotDef (value => 0);
    setNivaliSlingshotLuck (value => 0);
-      setWoodenGardenHornIsShown (current => !WoodenGardenHornIsShown);
-    setWoodenGardenHornActive (current => !WoodenGardenHornActive);
+      setWoodenGardenHornIsShown (current => false);
+    setWoodenGardenHornActive (current => false);
     setWoodenGardenHornAtk (value => 0);
     setWoodenGardenHornDef (value => 0);
     setWoodenGardenHornLuck (value => 0);
@@ -11047,9 +11104,9 @@ const handleMountainMaceClick = event => {
  const handleNetClick = event => {
    setNetIsShown (current => !NetIsShown);
    setNetActive (current => !NetActive);
-   setNetAtk (value => 0);
+   setNetAtk (value => 4);
    setNetDef (value => 0);
-   setNetLuck (value => 0);
+   setNetLuck (value => 2);
  
    setFusionCrossbowIsShown (current => false);
    setFusionCrossbowActive (current => false);
@@ -11076,8 +11133,8 @@ const handleMountainMaceClick = event => {
    setNivaliSlingshotAtk (value => 0);
    setNivaliSlingshotDef (value => 0);
    setNivaliSlingshotLuck (value => 0);
-    setWoodenGardenHornIsShown (current => !WoodenGardenHornIsShown);
-    setWoodenGardenHornActive (current => !WoodenGardenHornActive);
+    setWoodenGardenHornIsShown (current => false);
+    setWoodenGardenHornActive (current => false);
     setWoodenGardenHornAtk (value => 0);
     setWoodenGardenHornDef (value => 0);
     setWoodenGardenHornLuck (value => 0);
@@ -11156,9 +11213,9 @@ const handleMountainMaceClick = event => {
  const handleGlassStaffClick = event => {
    setGlassStaffIsShown (current => !GlassStaffIsShown);
    setGlassStaffActive (current => !GlassStaffActive);
-   setGlassStaffAtk (value => 0);
+   setGlassStaffAtk (value => 5);
    setGlassStaffDef (value => 0);
-   setGlassStaffLuck (value => 0);
+   setGlassStaffLuck (value => 5);
  
    setFusionCrossbowIsShown (current => false);
    setFusionCrossbowActive (current => false);
@@ -11185,8 +11242,8 @@ const handleMountainMaceClick = event => {
    setNivaliSlingshotAtk (value => 0);
    setNivaliSlingshotDef (value => 0);
    setNivaliSlingshotLuck (value => 0);
-    setWoodenGardenHornIsShown (current => !WoodenGardenHornIsShown);
-    setWoodenGardenHornActive (current => !WoodenGardenHornActive);
+    setWoodenGardenHornIsShown (current => false);
+    setWoodenGardenHornActive (current => false);
     setWoodenGardenHornAtk (value => 0);
     setWoodenGardenHornDef (value => 0);
     setWoodenGardenHornLuck (value => 0);
@@ -11265,7 +11322,7 @@ const handleMountainMaceClick = event => {
  const handleCrossbowClick = event => {
    setCrossbowIsShown (current => !CrossbowIsShown);
    setCrossbowActive (current => !CrossbowActive);
-   setCrossbowAtk (value => 0);
+   setCrossbowAtk (value => 10);
    setCrossbowDef (value => 0);
    setCrossbowLuck (value => 0);
  
@@ -11294,8 +11351,8 @@ const handleMountainMaceClick = event => {
    setNivaliSlingshotAtk (value => 0);
    setNivaliSlingshotDef (value => 0);
    setNivaliSlingshotLuck (value => 0);
-    setWoodenGardenHornIsShown (current => !WoodenGardenHornIsShown);
-    setWoodenGardenHornActive (current => !WoodenGardenHornActive);
+    setWoodenGardenHornIsShown (current => false);
+    setWoodenGardenHornActive (current => false);
     setWoodenGardenHornAtk (value => 0);
     setWoodenGardenHornDef (value => 0);
     setWoodenGardenHornLuck (value => 0);
@@ -11374,7 +11431,7 @@ const handleMountainMaceClick = event => {
  const handleWoodenBowClick = event => {
    setWoodenBowIsShown (current => !WoodenBowIsShown);
    setWoodenBowActive (current => !WoodenBowActive);
-   setWoodenBowAtk (value => 0);
+   setWoodenBowAtk (value => 6);
    setWoodenBowDef (value => 0);
    setWoodenBowLuck (value => 0);
  
@@ -11403,8 +11460,8 @@ const handleMountainMaceClick = event => {
    setNivaliSlingshotAtk (value => 0);
    setNivaliSlingshotDef (value => 0);
    setNivaliSlingshotLuck (value => 0);
-      setWoodenGardenHornIsShown (current => !WoodenGardenHornIsShown);
-    setWoodenGardenHornActive (current => !WoodenGardenHornActive);
+      setWoodenGardenHornIsShown (current => false);
+    setWoodenGardenHornActive (current => false);
     setWoodenGardenHornAtk (value => 0);
     setWoodenGardenHornDef (value => 0);
     setWoodenGardenHornLuck (value => 0);
@@ -11484,7 +11541,7 @@ const handleMountainMaceClick = event => {
    setWoodHammerIsShown (current => !WoodHammerIsShown);
    setWoodHammerActive (current => !WoodHammerActive);
    setWoodHammerAtk (value => 0);
-   setWoodHammerDef (value => 0);
+   setWoodHammerDef (value => 2);
    setWoodHammerLuck (value => 0);
  
    setFusionCrossbowIsShown (current => false);
@@ -11512,8 +11569,8 @@ const handleMountainMaceClick = event => {
    setNivaliSlingshotAtk (value => 0);
    setNivaliSlingshotDef (value => 0);
    setNivaliSlingshotLuck (value => 0);
-      setWoodenGardenHornIsShown (current => !WoodenGardenHornIsShown);
-    setWoodenGardenHornActive (current => !WoodenGardenHornActive);
+      setWoodenGardenHornIsShown (current => false);
+    setWoodenGardenHornActive (current => false);
     setWoodenGardenHornAtk (value => 0);
     setWoodenGardenHornDef (value => 0);
     setWoodenGardenHornLuck (value => 0);
@@ -11592,7 +11649,7 @@ const handleMountainMaceClick = event => {
  const handleVineNetClick = event => {
    setVineNetIsShown (current => !VineNetIsShown);
    setVineNetActive (current => !VineNetActive);
-   setVineNetAtk (value => 0);
+   setVineNetAtk (value => 2);
    setVineNetDef (value => 0);
    setVineNetLuck (value => 0);
  
@@ -11621,8 +11678,8 @@ const handleMountainMaceClick = event => {
    setNivaliSlingshotAtk (value => 0);
    setNivaliSlingshotDef (value => 0);
    setNivaliSlingshotLuck (value => 0);
-    setWoodenGardenHornIsShown (current => !WoodenGardenHornIsShown);
-    setWoodenGardenHornActive (current => !WoodenGardenHornActive);
+    setWoodenGardenHornIsShown (current => false);
+    setWoodenGardenHornActive (current => false);
     setWoodenGardenHornAtk (value => 0);
     setWoodenGardenHornDef (value => 0);
     setWoodenGardenHornLuck (value => 0);
@@ -11701,7 +11758,7 @@ const handleMountainMaceClick = event => {
  const handleOldStaffClick = event => {
    setOldStaffIsShown (current => !OldStaffIsShown);
    setOldStaffActive (current => !OldStaffActive);
-   setOldStaffAtk (value => 0);
+   setOldStaffAtk (value => 3);
    setOldStaffDef (value => 0);
    setOldStaffLuck (value => 0);
  
@@ -11730,8 +11787,8 @@ const handleMountainMaceClick = event => {
    setNivaliSlingshotAtk (value => 0);
    setNivaliSlingshotDef (value => 0);
    setNivaliSlingshotLuck (value => 0);
-      setWoodenGardenHornIsShown (current => !WoodenGardenHornIsShown);
-    setWoodenGardenHornActive (current => !WoodenGardenHornActive);
+      setWoodenGardenHornIsShown (current => false);
+    setWoodenGardenHornActive (current => false);
     setWoodenGardenHornAtk (value => 0);
     setWoodenGardenHornDef (value => 0);
     setWoodenGardenHornLuck (value => 0);
@@ -11810,7 +11867,7 @@ const handleMountainMaceClick = event => {
    const handleSpiderBowClick = event => {
    setSpiderBowIsShown (current => !SpiderBowIsShown);
    setSpiderBowActive (current => !SpiderBowActive);
-   setSpiderBowAtk (value => 0);
+   setSpiderBowAtk (value => 3);
    setSpiderBowDef (value => 0);
    setSpiderBowLuck (value => 0);
  
@@ -11839,8 +11896,8 @@ const handleMountainMaceClick = event => {
     setNivaliSlingshotAtk (value => 0);
     setNivaliSlingshotDef (value => 0);
     setNivaliSlingshotLuck (value => 0);
-    setWoodenGardenHornIsShown (current => !WoodenGardenHornIsShown);
-    setWoodenGardenHornActive (current => !WoodenGardenHornActive);
+    setWoodenGardenHornIsShown (current => false);
+    setWoodenGardenHornActive (current => false);
     setWoodenGardenHornAtk (value => 0);
     setWoodenGardenHornDef (value => 0);
     setWoodenGardenHornLuck (value => 0);
@@ -11915,6 +11972,681 @@ const handleMountainMaceClick = event => {
    setOldStaffDef (value => 0);
    setOldStaffLuck (value => 0);
    };
+
+const handleLoveWandClick = event => {
+  setLoveWandIsShown (current => !LoveWandIsShown);
+  setLoveWandActive (current => !LoveWandActive);
+  setLoveWandAtk (value => 2);
+  setLoveWandDef (value => 5);
+  setLoveWandLuck (value => 6);
+  setDragonFangBowIsShown (current => false);
+  setDragonFangBowActive (current => false);
+  setDragonFangBowAtk (value => 0);
+  setDragonFangBowDef (value => 0);
+  setDragonFangBowLuck (value => 0);
+  setWitchStaffIsShown (current => false);
+  setWitchStaffActive (current => false);
+  setWitchStaffAtk (value => 0);
+  setWitchStaffDef (value => 0);
+  setWitchStaffLuck (value => 0);
+  setTentacleShieldIsShown (current => false);
+  setTentacleShieldActive (current => false);
+  setTentacleShieldAtk (value => 0);
+  setTentacleShieldDef (value => 0);
+  setTentacleShieldLuck (value => 0);
+  setTentacleWhipIsShown (current => false);
+  setTentacleWhipActive (current => false);
+  setTentacleWhipAtk (value => 0);
+  setTentacleWhipDef (value => 0);
+  setTentacleWhipLuck (value => 0);
+  
+  setNivaliBowIsShown (current => false);
+  setNivaliBowActive (current => false);
+  setNivaliBowAtk (value => 0);
+  setNivaliBowDef (value => 0);
+  setNivaliBowLuck (value => 0);
+  setFusionCrossbowIsShown (current => false);
+  setFusionCrossbowActive (current => false);
+  setFusionCrossbowAtk (value => 0);
+  setFusionCrossbowDef (value => 0);
+  setFusionCrossbowLuck (value => 0);
+  setPoePickIsShown (current => false);
+  setPoePickActive (current => false);
+  setPoePickAtk (value => 0);
+  setPoePickDef (value => 0);
+  setPoePickLuck (value => 0);
+  setMountainMaceIsShown (current => false);
+  setMountainMaceActive (current => false);
+  setMountainMaceAtk (value => 0);
+  setMountainMaceDef (value => 0);
+  setMountainMaceLuck (value => 0);
+  setNivaliSlingshotIsShown (current => false);
+  setNivaliSlingshotActive (current => false);
+  setNivaliSlingshotAtk (value => 0);
+  setNivaliSlingshotDef (value => 0);
+  setNivaliSlingshotLuck (value => 0);
+  setWoodenGardenHornIsShown (current => false);
+  setWoodenGardenHornActive (current => false);
+  setWoodenGardenHornAtk (value => 0);
+  setWoodenGardenHornDef (value => 0);
+  setWoodenGardenHornLuck (value => 0);
+  setStaffOfTheDeadIsShown (current => false);
+  setStaffOfTheDeadActive (current => false);
+  setStaffOfTheDeadAtk (value => 0);
+  setStaffOfTheDeadDef (value => 0);
+  setStaffOfTheDeadLuck (value => 0);
+ setTempestYoYoIsShown (current => false);
+ setTempestYoYoActive (current => false);
+ setTempestYoYoAtk (value => 0);
+ setTempestYoYoDef (value => 0);
+ setTempestYoYoLuck (value => 0);
+ setSteelShieldIsShown (current => false);
+ setSteelShieldActive (current => false);
+ setSteelShieldAtk (value => 0);
+ setSteelShieldDef (value => 0);
+ setSteelShieldLuck (value => 0);
+ setSteelAxeIsShown (current => false);
+ setSteelAxeActive (current => false);
+ setSteelAxeAtk (value => 0);
+ setSteelAxeDef (value => 0);
+ setSteelAxeLuck (value => 0);
+ setHarpoonIsShown (current => false);
+ setHarpoonActive (current => false);
+ setHarpoonAtk (value => 0);
+ setHarpoonDef (value => 0);
+ setHarpoonLuck (value => 0);
+ setStoneHammerIsShown (current => false);
+ setStoneHammerActive (current => false);
+ setStoneHammerAtk (value => 0);
+ setStoneHammerDef (value => 0);
+ setStoneHammerLuck (value => 0);
+ setSteelSpearIsShown (current => false);
+ setSteelSpearActive (current => false);
+ setSteelSpearAtk (value => 0);
+ setSteelSpearDef (value => 0);
+ setSteelSpearLuck (value => 0);
+ setNetIsShown (current => false);
+ setNetActive (current => false);
+ setNetAtk (value => 0);
+ setNetDef (value => 0);
+ setNetLuck (value => 0);
+ setGlassStaffIsShown (current => false);
+ setGlassStaffActive (current => false);
+ setGlassStaffAtk (value => 0);
+ setGlassStaffDef (value => 0);
+ setGlassStaffLuck (value => 0);
+ setCrossbowIsShown (current => false);
+ setCrossbowActive (current => false);
+ setCrossbowAtk (value => 0);
+ setCrossbowDef (value => 0);
+ setCrossbowLuck (value => 0);
+ setWoodenBowIsShown (current => false);
+ setWoodenBowActive (current => false);
+ setWoodenBowAtk (value => 0);
+ setWoodenBowDef (value => 0);
+ setWoodenBowLuck (value => 0);
+ setWoodHammerIsShown (current => false);
+ setWoodHammerActive (current => false);
+ setWoodHammerAtk (value => 0);
+ setWoodHammerDef (value => 0);
+ setWoodHammerLuck (value => 0);
+ setVineNetIsShown (current => false);
+ setVineNetActive (current => false);
+ setVineNetAtk (value => 0);
+ setVineNetDef (value => 0);
+ setVineNetLuck (value => 0);
+ setOldStaffIsShown (current => false);
+ setOldStaffActive (current => false);
+ setOldStaffAtk (value => 0);
+ setOldStaffDef (value => 0);
+ setOldStaffLuck (value => 0);
+ setSpiderBowIsShown (current => false);
+ setSpiderBowActive (current => false);
+ setSpiderBowAtk (value => 0);
+ setSpiderBowDef (value => 0);
+ setSpiderBowLuck (value => 0);
+  };
+
+const handleDragonFangBowClick = event => {
+setDragonFangBowIsShown (current => !DragonFangBowIsShown);
+setDragonFangBowActive (current => !DragonFangBowActive);
+setDragonFangBowAtk (value => 2);
+setDragonFangBowDef (value => 10);
+setDragonFangBowLuck (value => 2);   
+setLoveWandIsShown (current => false);
+setLoveWandActive (current => false);
+setLoveWandAtk (value => 0);
+setLoveWandDef (value => 0);
+setLoveWandLuck (value => 0);
+setWitchStaffIsShown (current => false);
+setWitchStaffActive (current => false);
+setWitchStaffAtk (value => 0);
+setWitchStaffDef (value => 0);
+setWitchStaffLuck (value => 0);
+setTentacleShieldIsShown (current => false);
+setTentacleShieldActive (current => false);
+setTentacleShieldAtk (value => 0);
+setTentacleShieldDef (value => 0);
+setTentacleShieldLuck (value => 0);
+setTentacleWhipIsShown (current => false);
+setTentacleWhipActive (current => false);
+setTentacleWhipAtk (value => 0);
+setTentacleWhipDef (value => 0);
+setTentacleWhipLuck (value => 0);
+
+setNivaliBowIsShown (current => false);
+setNivaliBowActive (current => false);
+setNivaliBowAtk (value => 0);
+setNivaliBowDef (value => 0);
+setNivaliBowLuck (value => 0);
+setFusionCrossbowIsShown (current => false);
+setFusionCrossbowActive (current => false);
+setFusionCrossbowAtk (value => 0);
+setFusionCrossbowDef (value => 0);
+setFusionCrossbowLuck (value => 0);
+setPoePickIsShown (current => false);
+setPoePickActive (current => false);
+setPoePickAtk (value => 0);
+setPoePickDef (value => 0);
+setPoePickLuck (value => 0);
+setMountainMaceIsShown (current => false);
+setMountainMaceActive (current => false);
+setMountainMaceAtk (value => 0);
+setMountainMaceDef (value => 0);
+setMountainMaceLuck (value => 0);
+setNivaliSlingshotIsShown (current => false);
+setNivaliSlingshotActive (current => false);
+setNivaliSlingshotAtk (value => 0);
+setNivaliSlingshotDef (value => 0);
+setNivaliSlingshotLuck (value => 0);
+setWoodenGardenHornIsShown (current => false);
+setWoodenGardenHornActive (current => false);
+setWoodenGardenHornAtk (value => 0);
+setWoodenGardenHornDef (value => 0);
+setWoodenGardenHornLuck (value => 0);
+setStaffOfTheDeadIsShown (current => false);
+setStaffOfTheDeadActive (current => false);
+setStaffOfTheDeadAtk (value => 0);
+setStaffOfTheDeadDef (value => 0);
+setStaffOfTheDeadLuck (value => 0);
+setTempestYoYoIsShown (current => false);
+setTempestYoYoActive (current => false);
+setTempestYoYoAtk (value => 0);
+setTempestYoYoDef (value => 0);
+setTempestYoYoLuck (value => 0);
+setSteelShieldIsShown (current => false);
+setSteelShieldActive (current => false);
+setSteelShieldAtk (value => 0);
+setSteelShieldDef (value => 0);
+setSteelShieldLuck (value => 0);
+setSteelAxeIsShown (current => false);
+setSteelAxeActive (current => false);
+setSteelAxeAtk (value => 0);
+setSteelAxeDef (value => 0);
+setSteelAxeLuck (value => 0);
+setHarpoonIsShown (current => false);
+setHarpoonActive (current => false);
+setHarpoonAtk (value => 0);
+setHarpoonDef (value => 0);
+setHarpoonLuck (value => 0);
+setStoneHammerIsShown (current => false);
+setStoneHammerActive (current => false);
+setStoneHammerAtk (value => 0);
+setStoneHammerDef (value => 0);
+setStoneHammerLuck (value => 0);
+setSteelSpearIsShown (current => false);
+setSteelSpearActive (current => false);
+setSteelSpearAtk (value => 0);
+setSteelSpearDef (value => 0);
+setSteelSpearLuck (value => 0);
+setNetIsShown (current => false);
+setNetActive (current => false);
+setNetAtk (value => 0);
+setNetDef (value => 0);
+setNetLuck (value => 0);
+setGlassStaffIsShown (current => false);
+setGlassStaffActive (current => false);
+setGlassStaffAtk (value => 0);
+setGlassStaffDef (value => 0);
+setGlassStaffLuck (value => 0);
+setCrossbowIsShown (current => false);
+setCrossbowActive (current => false);
+setCrossbowAtk (value => 0);
+setCrossbowDef (value => 0);
+setCrossbowLuck (value => 0);
+setWoodenBowIsShown (current => false);
+setWoodenBowActive (current => false);
+setWoodenBowAtk (value => 0);
+setWoodenBowDef (value => 0);
+setWoodenBowLuck (value => 0);
+setWoodHammerIsShown (current => false);
+setWoodHammerActive (current => false);
+setWoodHammerAtk (value => 0);
+setWoodHammerDef (value => 0);
+setWoodHammerLuck (value => 0);
+setVineNetIsShown (current => false);
+setVineNetActive (current => false);
+setVineNetAtk (value => 0);
+setVineNetDef (value => 0);
+setVineNetLuck (value => 0);
+setOldStaffIsShown (current => false);
+setOldStaffActive (current => false);
+setOldStaffAtk (value => 0);
+setOldStaffDef (value => 0);
+setOldStaffLuck (value => 0);
+setSpiderBowIsShown (current => false);
+setSpiderBowActive (current => false);
+setSpiderBowAtk (value => 0);
+setSpiderBowDef (value => 0);
+setSpiderBowLuck (value => 0);
+};
+
+const handleTentacleWhipClick = event => {
+  setTentacleWhipIsShown (current => !TentacleWhipIsShown);
+  setTentacleWhipActive (current => !TentacleWhipActive);
+  setTentacleWhipAtk (value => 9);
+  setTentacleWhipDef (value => 1);
+  setTentacleWhipLuck (value => 0);
+
+setLoveWandIsShown (current => false);
+setLoveWandActive (current => false);
+setLoveWandAtk (value => 0);
+setLoveWandDef (value => 0);
+setLoveWandLuck (value => 0);
+setDragonFangBowIsShown (current => false);
+setDragonFangBowActive (current => false);
+setDragonFangBowAtk (value => 0);
+setDragonFangBowDef (value => 0);
+setDragonFangBowLuck (value => 0);
+setWitchStaffIsShown (current => false);
+setWitchStaffActive (current => false);
+setWitchStaffAtk (value => 0);
+setWitchStaffDef (value => 0);
+setWitchStaffLuck (value => 0);
+setTentacleShieldIsShown (current => false);
+setTentacleShieldActive (current => false);
+setTentacleShieldAtk (value => 0);
+setTentacleShieldDef (value => 0);
+setTentacleShieldLuck (value => 0);
+
+setNivaliBowIsShown (current => false);
+setNivaliBowActive (current => false);
+setNivaliBowAtk (value => 0);
+setNivaliBowDef (value => 0);
+setNivaliBowLuck (value => 0);
+setFusionCrossbowIsShown (current => false);
+setFusionCrossbowActive (current => false);
+setFusionCrossbowAtk (value => 0);
+setFusionCrossbowDef (value => 0);
+setFusionCrossbowLuck (value => 0);
+setPoePickIsShown (current => false);
+setPoePickActive (current => false);
+setPoePickAtk (value => 0);
+setPoePickDef (value => 0);
+setPoePickLuck (value => 0);
+setMountainMaceIsShown (current => false);
+setMountainMaceActive (current => false);
+setMountainMaceAtk (value => 0);
+setMountainMaceDef (value => 0);
+setMountainMaceLuck (value => 0);
+setNivaliSlingshotIsShown (current => false);
+setNivaliSlingshotActive (current => false);
+setNivaliSlingshotAtk (value => 0);
+setNivaliSlingshotDef (value => 0);
+setNivaliSlingshotLuck (value => 0);
+setWoodenGardenHornIsShown (current => false);
+setWoodenGardenHornActive (current => false);
+setWoodenGardenHornAtk (value => 0);
+setWoodenGardenHornDef (value => 0);
+setWoodenGardenHornLuck (value => 0);
+setStaffOfTheDeadIsShown (current => false);
+setStaffOfTheDeadActive (current => false);
+setStaffOfTheDeadAtk (value => 0);
+setStaffOfTheDeadDef (value => 0);
+setStaffOfTheDeadLuck (value => 0);
+setTempestYoYoIsShown (current => false);
+setTempestYoYoActive (current => false);
+setTempestYoYoAtk (value => 0);
+setTempestYoYoDef (value => 0);
+setTempestYoYoLuck (value => 0);
+setSteelShieldIsShown (current => false);
+setSteelShieldActive (current => false);
+setSteelShieldAtk (value => 0);
+setSteelShieldDef (value => 0);
+setSteelShieldLuck (value => 0);
+setSteelAxeIsShown (current => false);
+setSteelAxeActive (current => false);
+setSteelAxeAtk (value => 0);
+setSteelAxeDef (value => 0);
+setSteelAxeLuck (value => 0);
+setHarpoonIsShown (current => false);
+setHarpoonActive (current => false);
+setHarpoonAtk (value => 0);
+setHarpoonDef (value => 0);
+setHarpoonLuck (value => 0);
+setStoneHammerIsShown (current => false);
+setStoneHammerActive (current => false);
+setStoneHammerAtk (value => 0);
+setStoneHammerDef (value => 0);
+setStoneHammerLuck (value => 0);
+setSteelSpearIsShown (current => false);
+setSteelSpearActive (current => false);
+setSteelSpearAtk (value => 0);
+setSteelSpearDef (value => 0);
+setSteelSpearLuck (value => 0);
+setNetIsShown (current => false);
+setNetActive (current => false);
+setNetAtk (value => 0);
+setNetDef (value => 0);
+setNetLuck (value => 0);
+setGlassStaffIsShown (current => false);
+setGlassStaffActive (current => false);
+setGlassStaffAtk (value => 0);
+setGlassStaffDef (value => 0);
+setGlassStaffLuck (value => 0);
+setCrossbowIsShown (current => false);
+setCrossbowActive (current => false);
+setCrossbowAtk (value => 0);
+setCrossbowDef (value => 0);
+setCrossbowLuck (value => 0);
+setWoodenBowIsShown (current => false);
+setWoodenBowActive (current => false);
+setWoodenBowAtk (value => 0);
+setWoodenBowDef (value => 0);
+setWoodenBowLuck (value => 0);
+setWoodHammerIsShown (current => false);
+setWoodHammerActive (current => false);
+setWoodHammerAtk (value => 0);
+setWoodHammerDef (value => 0);
+setWoodHammerLuck (value => 0);
+setVineNetIsShown (current => false);
+setVineNetActive (current => false);
+setVineNetAtk (value => 0);
+setVineNetDef (value => 0);
+setVineNetLuck (value => 0);
+setOldStaffIsShown (current => false);
+setOldStaffActive (current => false);
+setOldStaffAtk (value => 0);
+setOldStaffDef (value => 0);
+setOldStaffLuck (value => 0);
+setSpiderBowIsShown (current => false);
+setSpiderBowActive (current => false);
+setSpiderBowAtk (value => 0);
+setSpiderBowDef (value => 0);
+setSpiderBowLuck (value => 0);
+};
+
+const handleWitchStaffClick = event => {
+  setWitchStaffIsShown (current => !WitchStaffIsShown);
+  setWitchStaffActive (current => !WitchStaffActive);
+  setWitchStaffAtk (value => 6);
+  setWitchStaffDef (value => 4);
+  setWitchStaffLuck (value => 10);
+
+
+setLoveWandIsShown (current => false);
+setLoveWandActive (current => false);
+setLoveWandAtk (value => 0);
+setLoveWandDef (value => 0);
+setLoveWandLuck (value => 0);
+setDragonFangBowIsShown (current => false);
+setDragonFangBowActive (current => false);
+setDragonFangBowAtk (value => 0);
+setDragonFangBowDef (value => 0);
+setDragonFangBowLuck (value => 0);
+setTentacleShieldIsShown (current => false);
+setTentacleShieldActive (current => false);
+setTentacleShieldAtk (value => 0);
+setTentacleShieldDef (value => 0);
+setTentacleShieldLuck (value => 0);
+setTentacleWhipIsShown (current => false);
+setTentacleWhipActive (current => false);
+setTentacleWhipAtk (value => 0);
+setTentacleWhipDef (value => 0);
+setTentacleWhipLuck (value => 0);
+
+setNivaliBowIsShown (current => false);
+setNivaliBowActive (current => false);
+setNivaliBowAtk (value => 0);
+setNivaliBowDef (value => 0);
+setNivaliBowLuck (value => 0);
+setFusionCrossbowIsShown (current => false);
+setFusionCrossbowActive (current => false);
+setFusionCrossbowAtk (value => 0);
+setFusionCrossbowDef (value => 0);
+setFusionCrossbowLuck (value => 0);
+setPoePickIsShown (current => false);
+setPoePickActive (current => false);
+setPoePickAtk (value => 0);
+setPoePickDef (value => 0);
+setPoePickLuck (value => 0);
+setMountainMaceIsShown (current => false);
+setMountainMaceActive (current => false);
+setMountainMaceAtk (value => 0);
+setMountainMaceDef (value => 0);
+setMountainMaceLuck (value => 0);
+setNivaliSlingshotIsShown (current => false);
+setNivaliSlingshotActive (current => false);
+setNivaliSlingshotAtk (value => 0);
+setNivaliSlingshotDef (value => 0);
+setNivaliSlingshotLuck (value => 0);
+setWoodenGardenHornIsShown (current => false);
+setWoodenGardenHornActive (current => false);
+setWoodenGardenHornAtk (value => 0);
+setWoodenGardenHornDef (value => 0);
+setWoodenGardenHornLuck (value => 0);
+setStaffOfTheDeadIsShown (current => false);
+setStaffOfTheDeadActive (current => false);
+setStaffOfTheDeadAtk (value => 0);
+setStaffOfTheDeadDef (value => 0);
+setStaffOfTheDeadLuck (value => 0);
+setTempestYoYoIsShown (current => false);
+setTempestYoYoActive (current => false);
+setTempestYoYoAtk (value => 0);
+setTempestYoYoDef (value => 0);
+setTempestYoYoLuck (value => 0);
+setSteelShieldIsShown (current => false);
+setSteelShieldActive (current => false);
+setSteelShieldAtk (value => 0);
+setSteelShieldDef (value => 0);
+setSteelShieldLuck (value => 0);
+setSteelAxeIsShown (current => false);
+setSteelAxeActive (current => false);
+setSteelAxeAtk (value => 0);
+setSteelAxeDef (value => 0);
+setSteelAxeLuck (value => 0);
+setHarpoonIsShown (current => false);
+setHarpoonActive (current => false);
+setHarpoonAtk (value => 0);
+setHarpoonDef (value => 0);
+setHarpoonLuck (value => 0);
+setStoneHammerIsShown (current => false);
+setStoneHammerActive (current => false);
+setStoneHammerAtk (value => 0);
+setStoneHammerDef (value => 0);
+setStoneHammerLuck (value => 0);
+setSteelSpearIsShown (current => false);
+setSteelSpearActive (current => false);
+setSteelSpearAtk (value => 0);
+setSteelSpearDef (value => 0);
+setSteelSpearLuck (value => 0);
+setNetIsShown (current => false);
+setNetActive (current => false);
+setNetAtk (value => 0);
+setNetDef (value => 0);
+setNetLuck (value => 0);
+setGlassStaffIsShown (current => false);
+setGlassStaffActive (current => false);
+setGlassStaffAtk (value => 0);
+setGlassStaffDef (value => 0);
+setGlassStaffLuck (value => 0);
+setCrossbowIsShown (current => false);
+setCrossbowActive (current => false);
+setCrossbowAtk (value => 0);
+setCrossbowDef (value => 0);
+setCrossbowLuck (value => 0);
+setWoodenBowIsShown (current => false);
+setWoodenBowActive (current => false);
+setWoodenBowAtk (value => 0);
+setWoodenBowDef (value => 0);
+setWoodenBowLuck (value => 0);
+setWoodHammerIsShown (current => false);
+setWoodHammerActive (current => false);
+setWoodHammerAtk (value => 0);
+setWoodHammerDef (value => 0);
+setWoodHammerLuck (value => 0);
+setVineNetIsShown (current => false);
+setVineNetActive (current => false);
+setVineNetAtk (value => 0);
+setVineNetDef (value => 0);
+setVineNetLuck (value => 0);
+setOldStaffIsShown (current => false);
+setOldStaffActive (current => false);
+setOldStaffAtk (value => 0);
+setOldStaffDef (value => 0);
+setOldStaffLuck (value => 0);
+setSpiderBowIsShown (current => false);
+setSpiderBowActive (current => false);
+setSpiderBowAtk (value => 0);
+setSpiderBowDef (value => 0);
+setSpiderBowLuck (value => 0);
+};
+
+const handleTentacleShieldClick = event => {
+  setTentacleShieldIsShown (current => !TentacleShieldIsShown);
+  setTentacleShieldActive (current => !TentacleShieldActive);
+  setTentacleShieldAtk (value => 3);
+  setTentacleShieldDef (value => 4);
+  setTentacleShieldLuck (value => 2);
+
+setLoveWandIsShown (current => false);
+setLoveWandActive (current => false);
+setLoveWandAtk (value => 0);
+setLoveWandDef (value => 0);
+setLoveWandLuck (value => 0);
+setDragonFangBowIsShown (current => false);
+setDragonFangBowActive (current => false);
+setDragonFangBowAtk (value => 0);
+setDragonFangBowDef (value => 0);
+setDragonFangBowLuck (value => 0);
+setWitchStaffIsShown (current => false);
+setWitchStaffActive (current => false);
+setWitchStaffAtk (value => 0);
+setWitchStaffDef (value => 0);
+setWitchStaffLuck (value => 0);
+setTentacleWhipIsShown (current => false);
+setTentacleWhipActive (current => false);
+setTentacleWhipAtk (value => 0);
+setTentacleWhipDef (value => 0);
+setTentacleWhipLuck (value => 0);
+
+setNivaliBowIsShown (current => false);
+setNivaliBowActive (current => false);
+setNivaliBowAtk (value => 0);
+setNivaliBowDef (value => 0);
+setNivaliBowLuck (value => 0);
+setFusionCrossbowIsShown (current => false);
+setFusionCrossbowActive (current => false);
+setFusionCrossbowAtk (value => 0);
+setFusionCrossbowDef (value => 0);
+setFusionCrossbowLuck (value => 0);
+setPoePickIsShown (current => false);
+setPoePickActive (current => false);
+setPoePickAtk (value => 0);
+setPoePickDef (value => 0);
+setPoePickLuck (value => 0);
+setMountainMaceIsShown (current => false);
+setMountainMaceActive (current => false);
+setMountainMaceAtk (value => 0);
+setMountainMaceDef (value => 0);
+setMountainMaceLuck (value => 0);
+setNivaliSlingshotIsShown (current => false);
+setNivaliSlingshotActive (current => false);
+setNivaliSlingshotAtk (value => 0);
+setNivaliSlingshotDef (value => 0);
+setNivaliSlingshotLuck (value => 0);
+setWoodenGardenHornIsShown (current => false);
+setWoodenGardenHornActive (current => false);
+setWoodenGardenHornAtk (value => 0);
+setWoodenGardenHornDef (value => 0);
+setWoodenGardenHornLuck (value => 0);
+setStaffOfTheDeadIsShown (current => false);
+setStaffOfTheDeadActive (current => false);
+setStaffOfTheDeadAtk (value => 0);
+setStaffOfTheDeadDef (value => 0);
+setStaffOfTheDeadLuck (value => 0);
+setTempestYoYoIsShown (current => false);
+setTempestYoYoActive (current => false);
+setTempestYoYoAtk (value => 0);
+setTempestYoYoDef (value => 0);
+setTempestYoYoLuck (value => 0);
+setSteelShieldIsShown (current => false);
+setSteelShieldActive (current => false);
+setSteelShieldAtk (value => 0);
+setSteelShieldDef (value => 0);
+setSteelShieldLuck (value => 0);
+setSteelAxeIsShown (current => false);
+setSteelAxeActive (current => false);
+setSteelAxeAtk (value => 0);
+setSteelAxeDef (value => 0);
+setSteelAxeLuck (value => 0);
+setHarpoonIsShown (current => false);
+setHarpoonActive (current => false);
+setHarpoonAtk (value => 0);
+setHarpoonDef (value => 0);
+setHarpoonLuck (value => 0);
+setStoneHammerIsShown (current => false);
+setStoneHammerActive (current => false);
+setStoneHammerAtk (value => 0);
+setStoneHammerDef (value => 0);
+setStoneHammerLuck (value => 0);
+setSteelSpearIsShown (current => false);
+setSteelSpearActive (current => false);
+setSteelSpearAtk (value => 0);
+setSteelSpearDef (value => 0);
+setSteelSpearLuck (value => 0);
+setNetIsShown (current => false);
+setNetActive (current => false);
+setNetAtk (value => 0);
+setNetDef (value => 0);
+setNetLuck (value => 0);
+setGlassStaffIsShown (current => false);
+setGlassStaffActive (current => false);
+setGlassStaffAtk (value => 0);
+setGlassStaffDef (value => 0);
+setGlassStaffLuck (value => 0);
+setCrossbowIsShown (current => false);
+setCrossbowActive (current => false);
+setCrossbowAtk (value => 0);
+setCrossbowDef (value => 0);
+setCrossbowLuck (value => 0);
+setWoodenBowIsShown (current => false);
+setWoodenBowActive (current => false);
+setWoodenBowAtk (value => 0);
+setWoodenBowDef (value => 0);
+setWoodenBowLuck (value => 0);
+setWoodHammerIsShown (current => false);
+setWoodHammerActive (current => false);
+setWoodHammerAtk (value => 0);
+setWoodHammerDef (value => 0);
+setWoodHammerLuck (value => 0);
+setVineNetIsShown (current => false);
+setVineNetActive (current => false);
+setVineNetAtk (value => 0);
+setVineNetDef (value => 0);
+setVineNetLuck (value => 0);
+setOldStaffIsShown (current => false);
+setOldStaffActive (current => false);
+setOldStaffAtk (value => 0);
+setOldStaffDef (value => 0);
+setOldStaffLuck (value => 0);
+setSpiderBowIsShown (current => false);
+setSpiderBowActive (current => false);
+setSpiderBowAtk (value => 0);
+setSpiderBowDef (value => 0);
+setSpiderBowLuck (value => 0);
+};
+
 
 const handleWoodenGardenHornNoClick = event => {
    setWoodenGardenHornIsShown (current => false);
@@ -12078,6 +12810,73 @@ const handleNivaliSlingshotNoClick = event => {
   setNivaliSlingshotLuck (value => 0);
     };
 
+const handleLoveWandNoClick = event => {
+  setLoveWandIsShown (current => false);
+  setLoveWandActive (current => false);
+  setLoveWandAtk (value => 0);
+  setLoveWandDef (value => 0);
+  setLoveWandLuck (value => 0);
+    };
+
+
+const handleDragonFangBowNoClick = event => {
+  setDragonFangBowIsShown (current => false);
+  setDragonFangBowActive (current => false);
+  setDragonFangBowAtk (value => 0);
+  setDragonFangBowDef (value => 0);
+  setDragonFangBowLuck (value => 0);
+    };
+
+const handleWitchStaffNoClick = event => {
+  setWitchStaffIsShown (current => false);
+  setWitchStaffActive (current => false);
+  setWitchStaffAtk (value => 0);
+  setWitchStaffDef (value => 0);
+  setWitchStaffLuck (value => 0);
+    }; 
+
+
+const handleTentacleShieldNoClick = event => {
+  setTentacleShieldIsShown (current => false);
+  setTentacleShieldActive (current => false);
+  setTentacleShieldAtk (value => 0);
+  setTentacleShieldDef (value => 0);
+  setTentacleShieldLuck (value => 0);
+    };
+
+const handleTentacleWhipNoClick = event => {
+   setTentacleWhipIsShown (current => false);
+   setTentacleWhipActive (current => false);
+   setTentacleWhipAtk (value => 0);
+   setTentacleWhipDef (value => 0);
+   setTentacleWhipLuck (value => 0);
+};
+
+//weapon 2 equations//
+
+const totalWeapon2TopAtk = Math.max (SpiderBowAtk, OldStaffAtk, VineNetAtk, WoodHammerAtk, 
+  WoodenBowAtk, CrossbowAtk, GlassStaffAtk, NetAtk, SteelSpearAtk, StoneHammerAtk,
+  HarpoonAtk, SteelAxeAtk, SteelShieldAtk, TempestYoYoAtk, StaffOfTheDeadAtk, 
+  WoodenGardenHornAtk, FusionCrossbowAtk, PoePickAtk, MountainMaceAtk, NivaliBowAtk, 
+  NivaliSlingshotAtk, LoveWandAtk, DragonFangBowAtk, WitchStaffAtk, TentacleShieldAtk, 
+  TentacleWhipAtk)
+  
+const totalWeapon2TopDef = Math.max (SpiderBowDef, OldStaffDef, VineNetDef, WoodHammerDef, 
+WoodenBowDef, CrossbowDef, GlassStaffDef, NetDef, SteelSpearDef, StoneHammerDef,
+HarpoonDef, SteelAxeDef, SteelShieldDef, TempestYoYoDef, StaffOfTheDeadDef, 
+WoodenGardenHornDef, FusionCrossbowDef, PoePickDef, MountainMaceDef, NivaliBowDef, 
+NivaliSlingshotDef, LoveWandDef, DragonFangBowDef, WitchStaffDef, TentacleShieldDef, 
+TentacleWhipDef)
+
+const totalWeapon2TopLuck = Math.max (SpiderBowLuck, OldStaffLuck, VineNetLuck, WoodHammerLuck, 
+WoodenBowLuck, CrossbowLuck, GlassStaffLuck, NetLuck, SteelSpearLuck, StoneHammerLuck,
+HarpoonLuck, SteelAxeLuck, SteelShieldLuck, TempestYoYoLuck, StaffOfTheDeadLuck, 
+WoodenGardenHornLuck, FusionCrossbowLuck, PoePickLuck, MountainMaceLuck, NivaliBowLuck, 
+NivaliSlingshotLuck, LoveWandLuck, DragonFangBowLuck, WitchStaffLuck, TentacleShieldLuck, 
+TentacleWhipLuck)
+
+
+
 //Accessory battle items//
 
 const [NoAccessory, setNoAccessory] = useState(0)
@@ -12145,9 +12944,9 @@ const totalNivaliDef = Math.max (MountainMaceDef + NivaliBreastplateDef, 0)
 
 //totals//
 
-const totalAtk = Math.max (totalCompanionTopAtk + totalWeapon1TopAtk)
-const totalDef = Math.max (totalCompanionTopDef + totalWeapon1TopDef)
-const totalLuck = Math.max (totalCompanionTopLuck + totalWeapon1TopLuck)
+const totalAtk = Math.max (totalCompanionTopAtk + totalWeapon1TopAtk + totalWeapon2TopAtk)
+const totalDef = Math.max (totalCompanionTopDef + totalWeapon1TopDef + totalWeapon2TopDef)
+const totalLuck = Math.max (totalCompanionTopLuck + totalWeapon1TopLuck + totalWeapon2TopLuck)
 
   //region clicks//
 
@@ -13234,7 +14033,47 @@ const ColorLuckWeapon1 = () => {
   )
 }
 
-
+const GreyAtkWeapon2 = () => {
+   if (totalWeapon2TopAtk === 0)
+    return(
+ <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/hbcvJHt.png' />
+   )
+ }
+ 
+ const ColorAtkWeapon2 = () => {
+   if (totalWeapon2TopAtk > 0)
+    return(
+ <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/cPrPVxc.png' />
+   )
+ }
+ 
+ const GreyDefWeapon2 = () => {
+   if (totalWeapon2TopDef === 0)
+    return(
+ <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/6Pw8bpA.png' />
+   )
+ }
+ 
+ const ColorDefWeapon2 = () => {
+   if (totalWeapon2TopDef > 0)
+    return(
+ <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/eXyDuR9.png' />
+   )
+ }
+ 
+ const GreyLuckWeapon2 = () => {
+   if (totalWeapon2TopLuck === 0)
+    return(
+ <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/SsdiAg9.png' />
+   )
+ }
+ 
+ const ColorLuckWeapon2 = () => {
+   if (totalWeapon2TopLuck > 0)
+    return(
+ <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/9e2WZyS.png' />
+   )
+ }
   return (
       <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh" maxW='100%'>
@@ -13243,16 +14082,16 @@ const ColorLuckWeapon1 = () => {
             <Text mt='15px'>This page shows the best builds for each battle stat, specific to your progress in the game. You can see builds possible for your region of the game or specific to the battle items you currently have.</Text>
             <Divider mt='15px' />
 
-            <Text mt='25px' mb='8px'>What battle items do you want to see?</Text>
+            <Text mt='25px' mb='8px'>What battle items do you want to include?</Text>
             <VStack>
-            <Button variant='outline' onClick= {handleAllClick} style={{ backgroundColor: AllActive ? "#211742" : "transparent" }}>
-              All available battle items</Button>
-            <Button variant='outline' onClick= {handleOwnedClick} style={{ backgroundColor: OwnedActive ? "#211742" : "transparent" }}>
-            Specific to the regions I've unlocked
+            <Button variant='outline' onClick= {handleSelectClick} style={{ backgroundColor: SelectActive ? "#211742" : "transparent" }}>
+            Select sources (no spoilers)
               </Button>
-
+              <Button variant='outline' onClick= {handleAllClick} style={{ backgroundColor: AllActive ? "#211742" : "transparent" }}>
+              Show all (contains spoilers)</Button>
             </VStack>
 
+{SelectIsShown && 
   <Accordion mt='25px' allowMultiple>
   <AccordionItem>
   <h2>
@@ -13265,6 +14104,18 @@ const ColorLuckWeapon1 = () => {
     </h2>
     <AccordionPanel pb={4}>
       <Box h='400px' overflowY='scroll'>
+      <Text fontSize='md' mb='15px'><b>Select optional weapons to include:</b></Text>
+      <Wrap justify='center'>
+        <WrapItem>
+          <Button variant='outline' h='60px' onClick= {handleHuntClick} style={{ backgroundColor: HuntActive ?  "#211742" : "#2D3748" }}>
+            Hunt for the Ancients<br/>(late game)</Button>
+            </WrapItem>
+        <WrapItem>
+        <Button variant='outline' h='60px' onClick= {handlePastEventsClick} style={{ backgroundColor: PastEventsActive ?  "#211742" : "#2D3748" }}>
+            Past Event Items</Button>
+        </WrapItem>
+      </Wrap>
+
           <Text fontSize='md' mt='25px' mb='15px'><b>Your furthest main region:</b></Text>
                 <Wrap justify='center'>
             <WrapItem>
@@ -13829,16 +14680,16 @@ const ColorLuckWeapon1 = () => {
             </Button>
             </WrapItem>
           </Wrap>}
-
-
           </Box>
       <br></br>
     </AccordionPanel>
   </AccordionItem>
-     </Accordion>
+     </Accordion>}
+
+{!SelectIsShown &&     <Divider mt='50px' justify='center'/>}
+
 
 <Wrap mt='45px' justify='center'>
-
   <WrapItem>
     <Box w={[150, 170, 190]} h={[170, 200, 220]} borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
       <VStack>
@@ -13868,7 +14719,7 @@ const ColorLuckWeapon1 = () => {
         fontSize={['sm', 'md', 'md']}>
           No item</Text>}
 
-          {WoodSwordIsShown &&        
+   {WoodSwordIsShown &&        
    <Image
    style={{position:'absolute'}}
    mt={['37px', '47px', '55px']}
@@ -14225,41 +15076,397 @@ const ColorLuckWeapon1 = () => {
         <Text fontSize={['md', 'lg', 'lg']} mt={['4px', '6px', '8px']}>
           <b>Weapon 2</b>
         </Text>
-        <Image
-        style={{position:'absolute'}}
-        mt={['37px', '47px', '55px']}
-        align='center' 
-        boxSize={['4rem', '4.5rem', '5rem']}
-        src='https://i.imgur.com/E5GuYRW.png'
-      />
-        <Text        
-        style={{position:'absolute'}}
-        mt={['110px', '130px', '145px']}
-        fontSize={['sm', 'md', 'md']}>
-          No item</Text>
-        <HStack
-        style={{position:'absolute'}}
-        mt={['135px', '160px', '175px']}
-        >
-        <span>
-          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
-          <span>
-          <Text ml='-7px' fontSize='md'>+0</Text>
-        </span>
-        <span>
-          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
-          <span>
-          <Text ml='-7px' fontSize='md'>+0</Text>
-        </span>
-        <span>
-          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
-          <span>
-          <Text ml='-7px' fontSize='md'>+0</Text>
-        </span>
-        </HStack>
-      </VStack>
-    </Box>
-  </WrapItem>
+
+{!SpiderBowIsShown && !OldStaffIsShown && !VineNetIsShown && !WoodHammerIsShown && !WoodenBowIsShown &&
+   !CrossbowIsShown && !GlassStaffIsShown && !NetIsShown && !SteelSpearIsShown && !StoneHammerIsShown &&
+   !HarpoonIsShown && !SteelAxeIsShown && !SteelShieldIsShown && !TempestYoYoIsShown && 
+   !StaffOfTheDeadIsShown && !WoodenGardenHornIsShown && !FusionCrossbowIsShown && !PoePickIsShown && 
+   !MountainMaceIsShown && !NivaliBowIsShown && !NivaliSlingshotIsShown &&
+           <Image
+         style={{position:'absolute'}}
+         mt={['37px', '47px', '55px']}
+         align='center' 
+         boxSize={['4rem', '4.5rem', '5rem']}
+         src='https://i.imgur.com/E5GuYRW.png'
+         />}
+         {!SpiderBowIsShown && !OldStaffIsShown && !VineNetIsShown && !WoodHammerIsShown && !WoodenBowIsShown &&
+   !CrossbowIsShown && !GlassStaffIsShown && !NetIsShown && !SteelSpearIsShown && !StoneHammerIsShown &&
+   !HarpoonIsShown && !SteelAxeIsShown && !SteelShieldIsShown && !TempestYoYoIsShown && 
+   !StaffOfTheDeadIsShown && !WoodenGardenHornIsShown && !FusionCrossbowIsShown && !PoePickIsShown && 
+   !MountainMaceIsShown && !NivaliBowIsShown && !NivaliSlingshotIsShown &&
+         <Text        
+         style={{position:'absolute'}}
+         mt={['110px', '130px', '145px']}
+         fontSize={['sm', 'md', 'md']}>
+           No item</Text>}
+ 
+    {SpiderBowIsShown &&        
+    <Image
+    style={{position:'absolute'}}
+    mt={['37px', '47px', '55px']}
+    align='center' 
+    boxSize={['4rem', '4.5rem', '5rem']}
+    src='https://static.wikia.nocookie.net/4thewords/images/6/6c/Spiderbow_md.png/'
+    />}
+    {SpiderBowIsShown &&        
+    <Text        
+    style={{position:'absolute'}}
+    mt={['110px', '130px', '145px']}
+    fontSize={['sm', 'md', 'md']}>
+      Spider Bow</Text>
+      }
+ 
+ {OldStaffIsShown &&        
+    <Image
+    style={{position:'absolute'}}
+    mt={['37px', '47px', '55px']}
+    align='center' 
+    boxSize={['4rem', '4.5rem', '5rem']}
+    src='https://static.wikia.nocookie.net/4thewords/images/e/ed/Oldstaff_md.png/'
+    />}
+    {OldStaffIsShown &&        
+    <Text        
+    style={{position:'absolute'}}
+    mt={['110px', '130px', '145px']}
+    fontSize={['sm', 'md', 'md']}>
+      Old Staff</Text>
+      }
+ 
+ {VineNetIsShown &&        
+    <Image
+    style={{position:'absolute'}}
+    mt={['37px', '47px', '55px']}
+    align='center' 
+    boxSize={['4rem', '4.5rem', '5rem']}
+    src='https://static.wikia.nocookie.net/4thewords/images/7/7a/Vinenet_md.png/'
+    />}
+    {VineNetIsShown &&        
+    <Text        
+    style={{position:'absolute'}}
+    mt={['110px', '130px', '145px']}
+    fontSize={['sm', 'md', 'md']}>
+      Vine Net</Text>
+      }
+ 
+ {WoodHammerIsShown &&        
+    <Image
+    style={{position:'absolute'}}
+    mt={['37px', '47px', '55px']}
+    align='center' 
+    boxSize={['4rem', '4.5rem', '5rem']}
+    src='https://static.wikia.nocookie.net/4thewords/images/3/36/Woodhammer_md.png/'
+    />}
+    {WoodHammerIsShown &&        
+    <Text        
+    style={{position:'absolute'}}
+    mt={['110px', '130px', '145px']}
+    fontSize={['sm', 'md', 'md']}>
+      Wood Hammer</Text>
+      }
+ 
+ {WoodenBowIsShown &&        
+    <Image
+    style={{position:'absolute'}}
+    mt={['37px', '47px', '55px']}
+    align='center' 
+    boxSize={['4rem', '4.5rem', '5rem']}
+    src='https://static.wikia.nocookie.net/4thewords/images/9/97/Woodenbow_md.png/'
+    />}
+    {WoodenBowIsShown &&        
+    <Text        
+    style={{position:'absolute'}}
+    mt={['110px', '130px', '145px']}
+    fontSize={['sm', 'md', 'md']}>
+      Wooden Bow</Text>
+      }
+ 
+ {CrossbowIsShown &&        
+    <Image
+    style={{position:'absolute'}}
+    mt={['37px', '47px', '55px']}
+    align='center' 
+    boxSize={['4rem', '4.5rem', '5rem']}
+    src='https://static.wikia.nocookie.net/4thewords/images/a/a1/Crossbow_md.png/'
+  />}
+    {CrossbowIsShown &&        
+    <Text        
+    style={{position:'absolute'}}
+    mt={['110px', '130px', '145px']}
+    fontSize={['sm', 'md', 'md']}>
+      Crossbow</Text>
+      }
+ 
+ {GlassStaffIsShown &&        
+    <Image
+    style={{position:'absolute'}}
+    mt={['37px', '47px', '55px']}
+    align='center' 
+    boxSize={['4rem', '4.5rem', '5rem']}
+    src='https://static.wikia.nocookie.net/4thewords/images/2/29/Glassstaff_md.png/'
+    />}
+    {GlassStaffIsShown &&        
+    <Text        
+    style={{position:'absolute'}}
+    mt={['110px', '130px', '145px']}
+    fontSize={['sm', 'md', 'md']}>
+      Glass Staff</Text>
+      }
+ 
+ {NetIsShown &&        
+    <Image
+    style={{position:'absolute'}}
+    mt={['37px', '47px', '55px']}
+    align='center' 
+    boxSize={['4rem', '4.5rem', '5rem']}
+    src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Net_md.png/'
+    />}
+    {NetIsShown &&        
+    <Text        
+    style={{position:'absolute'}}
+    mt={['110px', '130px', '145px']}
+    fontSize={['sm', 'md', 'md']}>
+      Net</Text>
+      }
+ 
+ {SteelSpearIsShown &&        
+    <Image
+    style={{position:'absolute'}}
+    mt={['37px', '47px', '55px']}
+    align='center' 
+    boxSize={['4rem', '4.5rem', '5rem']}
+    src='https://static.wikia.nocookie.net/4thewords/images/7/7d/Steelspear_md.png/'
+  />}
+    {SteelSpearIsShown &&        
+    <Text        
+    style={{position:'absolute'}}
+    mt={['110px', '130px', '145px']}
+    fontSize={['sm', 'md', 'md']}>
+      Steel Spear</Text>
+      }
+ 
+ {StoneHammerIsShown &&        
+    <Image
+    style={{position:'absolute'}}
+    mt={['37px', '47px', '55px']}
+    align='center' 
+    boxSize={['4rem', '4.5rem', '5rem']}
+    src='https://static.wikia.nocookie.net/4thewords/images/1/17/Stonehammer_md.png/'
+    />}
+    {StoneHammerIsShown &&        
+    <Text        
+    style={{position:'absolute'}}
+    mt={['110px', '130px', '145px']}
+    fontSize={['sm', 'md', 'md']}>
+      Stone Hammer</Text>
+      }
+ 
+ {HarpoonIsShown &&        
+    <Image
+    style={{position:'absolute'}}
+    mt={['37px', '47px', '55px']}
+    align='center' 
+    boxSize={['4rem', '4.5rem', '5rem']}
+    src='https://static.wikia.nocookie.net/4thewords/images/9/9e/Harpoon_lg.png/'
+    />}
+    {HarpoonIsShown &&        
+    <Text        
+    style={{position:'absolute'}}
+    mt={['110px', '130px', '145px']}
+    fontSize={['sm', 'md', 'md']}>
+     Harpoon</Text>
+      }
+ 
+ {SteelAxeIsShown &&        
+    <Image
+    style={{position:'absolute'}}
+    mt={['37px', '47px', '55px']}
+    align='center' 
+    boxSize={['4rem', '4.5rem', '5rem']}
+    src='https://static.wikia.nocookie.net/4thewords/images/4/4b/Steelaxe_md.png/'
+    />}
+    {SteelAxeIsShown &&        
+    <Text        
+    style={{position:'absolute'}}
+    mt={['110px', '130px', '145px']}
+    fontSize={['sm', 'md', 'md']}>
+      Steel Axe</Text>
+      }
+ 
+ {SteelShieldIsShown &&        
+    <Image
+    style={{position:'absolute'}}
+    mt={['37px', '47px', '55px']}
+    align='center' 
+    boxSize={['4rem', '4.5rem', '5rem']}
+    src='https://static.wikia.nocookie.net/4thewords/images/b/b9/Steelshield_md.png/'
+    />}
+    {SteelShieldIsShown &&        
+    <Text        
+    style={{position:'absolute'}}
+    mt={['110px', '130px', '145px']}
+    fontSize={['sm', 'md', 'md']}>
+      Steel Shield</Text>
+      }
+ 
+ {TempestYoYoIsShown &&        
+    <Image
+    style={{position:'absolute'}}
+    mt={['37px', '47px', '55px']}
+    align='center' 
+    boxSize={['4rem', '4.5rem', '5rem']}
+    src='https://static.wikia.nocookie.net/4thewords/images/3/3f/Tempest-yo-yo.png/'
+    />}
+    {TempestYoYoIsShown &&        
+    <Text        
+    style={{position:'absolute'}}
+    mt={['110px', '130px', '145px']}
+    fontSize={['sm', 'md', 'md']}>
+      Tempest Yo-Yo</Text>
+      }
+ 
+ {StaffOfTheDeadIsShown &&        
+    <Image
+    style={{position:'absolute'}}
+    mt={['37px', '47px', '55px']}
+    align='center' 
+    boxSize={['4rem', '4.5rem', '5rem']}
+    src='https://static.wikia.nocookie.net/4thewords/images/f/fc/Staff_of_the_dead.png/'
+    />}
+    {StaffOfTheDeadIsShown &&        
+    <Text        
+    style={{position:'absolute'}}
+    mt={['110px', '130px', '145px']}
+    fontSize={['sm', 'md', 'md']}>
+      Staff of the Dead</Text>
+      }
+ 
+ {WoodenGardenHornIsShown &&        
+    <Image
+    style={{position:'absolute'}}
+    mt={['37px', '47px', '55px']}
+    align='center' 
+    boxSize={['4rem', '4.5rem', '5rem']}
+    src='https://static.wikia.nocookie.net/4thewords/images/c/c5/WoodenGardenHorn.png/'
+    />}
+    {WoodenGardenHornIsShown &&        
+    <Text        
+    style={{position:'absolute'}}
+    mt={['110px', '130px', '145px']}
+    fontSize={['sm', 'md', 'md']}>
+      Wooden Garden Horn</Text>
+      }
+ 
+ {FusionCrossbowIsShown &&        
+    <Image
+    style={{position:'absolute'}}
+    mt={['37px', '47px', '55px']}
+    align='center' 
+    boxSize={['4rem', '4.5rem', '5rem']}
+    src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Fusion_Crossbow.png/'
+    />}
+    {FusionCrossbowIsShown &&        
+    <Text        
+    style={{position:'absolute'}}
+    mt={['110px', '130px', '145px']}
+    fontSize={['sm', 'md', 'md']}>
+      Fusion Crossbow</Text>
+      }
+ 
+ {PoePickIsShown &&        
+    <Image
+    style={{position:'absolute'}}
+    mt={['37px', '47px', '55px']}
+    align='center' 
+    boxSize={['4rem', '4.5rem', '5rem']}
+    src='https://static.wikia.nocookie.net/4thewords/images/f/f0/PoePick.png/'
+    />}
+    {PoePickIsShown &&        
+    <Text        
+    style={{position:'absolute'}}
+    mt={['110px', '130px', '145px']}
+    fontSize={['sm', 'md', 'md']}>
+      Poe Pick</Text>
+      }
+ 
+ {MountainMaceIsShown &&        
+    <Image
+    style={{position:'absolute'}}
+    mt={['37px', '47px', '55px']}
+    align='center' 
+    boxSize={['4rem', '4.5rem', '5rem']}
+    src='https://static.wikia.nocookie.net/4thewords/images/7/7f/MountainMace.png/'
+    />}
+    {MountainMaceIsShown &&        
+    <Text        
+    style={{position:'absolute'}}
+    mt={['110px', '130px', '145px']}
+    fontSize={['sm', 'md', 'md']}>
+      Mountain Mace</Text>
+      }
+ 
+ {NivaliBowIsShown &&        
+    <Image
+    style={{position:'absolute'}}
+    mt={['37px', '47px', '55px']}
+    align='center' 
+    boxSize={['4rem', '4.5rem', '5rem']}
+    src='https://static.wikia.nocookie.net/4thewords/images/8/88/Nivali_Bow.png/'
+    />}
+    {NivaliBowIsShown &&        
+    <Text        
+    style={{position:'absolute'}}
+    mt={['110px', '130px', '145px']}
+    fontSize={['sm', 'md', 'md']}>
+      Nivali Bow</Text>
+      }
+
+ {NivaliSlingshotIsShown &&        
+    <Image
+    style={{position:'absolute'}}
+    mt={['37px', '47px', '55px']}
+    align='center' 
+    boxSize={['4rem', '4.5rem', '5rem']}
+    src='https://static.wikia.nocookie.net/4thewords/images/2/20/Nivali_Slingshot.png/'
+    />}
+    {NivaliSlingshotIsShown &&        
+    <Text        
+    style={{position:'absolute'}}
+    mt={['110px', '130px', '145px']}
+    fontSize={['sm', 'md', 'md']}>
+      Nivali Slingshot</Text>
+      }
+ 
+ <HStack
+style={{position:'absolute'}}
+mt={['135px', '160px', '175px']}
+>
+<span>
+  <GreyAtkWeapon2 />
+  <ColorAtkWeapon2 />
+  </span>
+  <span>
+  <Text ml='-7px' fontSize='md'>+{totalWeapon2TopAtk}</Text>
+</span>
+<span>
+<GreyDefWeapon2 />
+<ColorDefWeapon2 />
+</span>
+  <span>
+  <Text ml='-7px' fontSize='md'>+{totalWeapon2TopDef}</Text>
+</span>
+<span>
+<GreyLuckWeapon2 />
+<ColorLuckWeapon2 />
+</span>
+  <span>
+  <Text ml='-7px' fontSize='md'>+{totalWeapon2TopLuck}</Text>
+</span>
+</HStack>
+ 
+       </VStack>
+     </Box>
+   </WrapItem>
+
 
   <WrapItem>
     <Box w={[150, 170, 190]} h={[170, 200, 220]} borderRadius='10%' style={{backgroundColor: "#191E27", borderColor: '#20293A', borderWidth: '2px'}}>
@@ -15086,7 +16293,7 @@ const ColorLuckWeapon1 = () => {
     <TabPanel>
     <Text fontSize='md' mt='25px' mb='15px'><b>Main Quest Companions:</b></Text>
                 <Wrap justify='center'>
-   {(DCIsShown || World2RegionIsShown) && !NoanzaIsShown &&
+   {(AllIsShown || DCIsShown || World2RegionIsShown) && !NoanzaIsShown &&
            <WrapItem>
             <Button w='110px' h='170px' pb={5} onClick={handleNoanzaSwitchClick} style={{ backgroundColor: "#2D3748" }}>
        <VStack justify='center'>  
@@ -15102,7 +16309,7 @@ const ColorLuckWeapon1 = () => {
             </Button>
             </WrapItem>}
 
-   {(DCIsShown || World2RegionIsShown) && NoanzaIsShown &&
+   {(AllIsShown || DCIsShown || World2RegionIsShown) && NoanzaIsShown &&
            <WrapItem>
             <Button w='110px' h='170px' pb={5} onClick={handleNoanzaSwitchNoClick} style={{ backgroundColor: "#211742"}}>
       <VStack justify='center'>  
@@ -15119,7 +16326,7 @@ const ColorLuckWeapon1 = () => {
       </WrapItem>}
 
 
-{(FloatingCityIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !LodoIsShown &&
+{(AllIsShown || FloatingCityIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !LodoIsShown &&
             <WrapItem>
             <Button w='110px' h='170px' pb={5} onClick={handleLodoSwitchClick} style={{ backgroundColor: "#2D3748" }}>
       <VStack justify='center'>  
@@ -15136,7 +16343,7 @@ const ColorLuckWeapon1 = () => {
             </Button>
             </WrapItem>}
 
-{(FloatingCityIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && LodoIsShown &&
+{(AllIsShown || FloatingCityIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && LodoIsShown &&
             <WrapItem>
             <Button w='110px' h='170px' pb={5} onClick={handleLodoSwitchNoClick} style={{ backgroundColor: "#211742" }}>
        <VStack justify='center'>  
@@ -15153,7 +16360,7 @@ const ColorLuckWeapon1 = () => {
             </Button>
             </WrapItem>}
 
-{(ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !AzadiIsShown &&
+{(AllIsShown || ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !AzadiIsShown &&
             <WrapItem>
             <Button w='110px' h='170px' pb={5} onClick={handleAzadiSwitchClick} style={{ backgroundColor: "#2D3748" }}>
       <VStack justify='center'>  
@@ -15170,7 +16377,7 @@ const ColorLuckWeapon1 = () => {
             </Button>
             </WrapItem>}
 
-{(ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && AzadiIsShown &&
+{(AllIsShown || ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && AzadiIsShown &&
             <WrapItem>
             <Button w='110px' h='170px' pb={5} onClick={handleAzadiSwitchNoClick} style={{ backgroundColor: "#211742" }}>
        <VStack justify='center'>  
@@ -15187,7 +16394,7 @@ const ColorLuckWeapon1 = () => {
             </Button>
             </WrapItem>}
 
-{(MamaTreeIsShown || ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !SuwoIsShown &&
+{(AllIsShown || MamaTreeIsShown || ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !SuwoIsShown &&
             <WrapItem>
             <Button w='110px' h='170px' pb={5} onClick={handleSuwoSwitchClick} style={{ backgroundColor: "#2D3748" }}>
       <VStack justify='center'>  
@@ -15204,7 +16411,7 @@ const ColorLuckWeapon1 = () => {
             </Button>
             </WrapItem>}
 
-{(MamaTreeIsShown || ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && SuwoIsShown &&
+{(AllIsShown || MamaTreeIsShown || ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && SuwoIsShown &&
             <WrapItem>
             <Button w='110px' h='170px' pb={5} onClick={handleSuwoSwitchNoClick} style={{ backgroundColor: "#211742" }}>
        <VStack justify='center'>  
@@ -15221,11 +16428,11 @@ const ColorLuckWeapon1 = () => {
             </Button>
             </WrapItem>}
       </Wrap>
-{DragonLairIsShown &&
+{(AllIsShown ||  DragonLairIsShown) &&
           <Text fontSize='md' mt='25px' mb='15px'><b>Dragon Companions:</b></Text>
 
 }
-{DragonLairIsShown &&
+{(AllIsShown ||  DragonLairIsShown) &&
            <Wrap justify='center'>
 
 {!KaiszarIsShown &&
@@ -15674,10 +16881,10 @@ src='https://i.imgur.com/3GrgauN.png'
             </Wrap>
 }
 
-{DragonLairIsShown && 
+{(AllIsShown ||  DragonLairIsShown) && 
 <Text fontSize='md' mt='25px' mb='15px'><b>Select Armor Boost:</b></Text>}
 
-{DragonLairIsShown && !KaiszarIsShown && !LoksiIsShown && !ThalamarisIsShown && !ValkosIsShown && !EenrisIsShown && !RairaselIsShown &&
+{(AllIsShown ||  DragonLairIsShown) && !KaiszarIsShown && !LoksiIsShown && !ThalamarisIsShown && !ValkosIsShown && !EenrisIsShown && !RairaselIsShown &&
   <Text fontSize='md' mt='25px' mb='15px'><i>select a dragon to show armor options</i></Text>
 }
 
@@ -16224,11 +17431,11 @@ src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
 
 </Wrap>
 
-{AurilisIsShown &&
+{(AllIsShown ||  AurilisIsShown) &&
 <Text fontSize='md' mt='25px' mb='15px'><b>Aurilis Companions:</b></Text>
 }
 
-{AurilisIsShown &&
+{(AllIsShown ||  AurilisIsShown) &&
                 <Wrap justify='center'>
           {!AlderbamIsShown &&
             <WrapItem>
@@ -16368,9 +17575,10 @@ src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
             </Wrap>}
                 </TabPanel>
     <TabPanel>
-    <Text fontSize='md' mt='25px' mb='15px'><b>Main Quest Battle Items:</b></Text>
+{(AllIsShown || ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) &&
+    <Text fontSize='md' mt='25px' mb='15px'><b>Main Quest Battle Items:</b></Text>}
       <Wrap justify='center'>
-      {(DCIsShown || World2RegionIsShown) && !KingMaiSwordIsShown &&
+      {(AllIsShown || DCIsShown || World2RegionIsShown) && !KingMaiSwordIsShown &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleKingMaiSwordClick} style={{ backgroundColor: "#2D3748"}}>
 <VStack justify='center'>  
@@ -16386,7 +17594,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/7/7c/KingMaiSword.png/'
 </Button>
 </WrapItem>}
 
-{(DCIsShown || World2RegionIsShown) && KingMaiSwordIsShown &&
+{(AllIsShown || DCIsShown || World2RegionIsShown) && KingMaiSwordIsShown &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleKingMaiSwordNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack justify='center'>  
@@ -16402,7 +17610,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/7/7c/KingMaiSword.png/'
 </Button>
 </WrapItem>}
 
-      {(DCIsShown || World2RegionIsShown) && !MercurialSwordIsShown &&
+      {(AllIsShown || DCIsShown || World2RegionIsShown) && !MercurialSwordIsShown &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleMercurialSwordClick} style={{ backgroundColor: "#2D3748"}}>
 <VStack justify='center'>  
@@ -16418,7 +17626,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/d/d7/MercurialSword.png'
 </Button>
 </WrapItem>}
 
-{(DCIsShown || World2RegionIsShown) && MercurialSwordIsShown &&
+{(AllIsShown || DCIsShown || World2RegionIsShown) && MercurialSwordIsShown &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleMercurialSwordNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack justify='center'>  
@@ -16434,7 +17642,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/d/d7/MercurialSword.png'
 </Button>
 </WrapItem>}
 
-{(LightRegionIsShown || World2RegionIsShown) && !FusionSwordIsShown &&
+{(AllIsShown || LightRegionIsShown || World2RegionIsShown) && !FusionSwordIsShown &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleFusionSwordClick} style={{ backgroundColor: "#2D3748"}}>
 <VStack justify='center'>  
@@ -16450,7 +17658,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/c/c6/FusionSword.png'
 </Button>
 </WrapItem>}
 
-{(LightRegionIsShown || World2RegionIsShown) && FusionSwordIsShown &&
+{(AllIsShown || LightRegionIsShown || World2RegionIsShown) && FusionSwordIsShown &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleFusionSwordNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack justify='center'>  
@@ -16466,7 +17674,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/c/c6/FusionSword.png'
 </Button>
 </WrapItem>}
 
-{(LightRegionIsShown || World2RegionIsShown) && !FlowerSlingshotIsShown &&
+{(AllIsShown || LightRegionIsShown || World2RegionIsShown) && !FlowerSlingshotIsShown &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleFlowerSlingshotClick} style={{ backgroundColor: "#2D3748"}}>
 <VStack justify='center'>  
@@ -16482,7 +17690,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/b/b6/FlowerSlingshot.png
 </Button>
 </WrapItem>}
 
-{(LightRegionIsShown || World2RegionIsShown) && FlowerSlingshotIsShown &&
+{(AllIsShown || LightRegionIsShown || World2RegionIsShown) && FlowerSlingshotIsShown &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleFlowerSlingshotNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack justify='center'>  
@@ -16530,7 +17738,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/3/37/Dawn-sword.png'
 </Button>
 </WrapItem>}
 
-{(DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !DarkForestSwordIsShown &&
+{(AllIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !DarkForestSwordIsShown &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleDarkForestSwordClick} style={{ backgroundColor: "#2D3748"}}>
 <VStack justify='center'>  
@@ -16546,7 +17754,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/8/87/Dark_forest_sword.p
 </Button>
 </WrapItem>}
 
-{(DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && DarkForestSwordIsShown &&
+{(AllIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && DarkForestSwordIsShown &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleDarkForestSwordNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack justify='center'>  
@@ -16562,7 +17770,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/8/87/Dark_forest_sword.p
 </Button>
 </WrapItem>}
 
-      {(WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !SteelMaceIsShown &&
+      {(AllIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !SteelMaceIsShown &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleSteelMaceClick} style={{ backgroundColor: "#2D3748"}}>
 <VStack justify='center'>  
@@ -16578,7 +17786,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/8/85/Steelmace_md.png/'
 </Button>
 </WrapItem>}
 
-{(WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && SteelMaceIsShown &&
+{(AllIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && SteelMaceIsShown &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleSteelMaceNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack justify='center'>  
@@ -16626,7 +17834,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/7/72/Raina_sword.png/'
 </Button>
 </WrapItem>}
 
-{(ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && AurilisIsShown && !SpellfireSwordIsShown &&
+{(AllIsShown || ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && AurilisIsShown && !SpellfireSwordIsShown &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleSpellfireSwordClick} style={{ backgroundColor: "#2D3748"}}>
 <VStack justify='center'>  
@@ -16642,7 +17850,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/d/da/Spellfire_Sword.png
 </Button>
 </WrapItem>}
 
-{(ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && AurilisIsShown && SpellfireSwordIsShown &&
+{(AllIsShown || ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && AurilisIsShown && SpellfireSwordIsShown &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleSpellfireSwordNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack justify='center'>  
@@ -16658,7 +17866,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/d/da/Spellfire_Sword.png
 </Button>
 </WrapItem>}
 
-      {(DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !SteelSwordIsShown &&
+      {(AllIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !SteelSwordIsShown &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleSteelSwordClick} style={{ backgroundColor: "#2D3748" }}>
 <VStack justify='center'>  
@@ -16674,7 +17882,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/1/10/Steelsword_md.png/'
 </Button>
 </WrapItem>}
 
-{(DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && SteelSwordIsShown &&
+{(AllIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && SteelSwordIsShown &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleSteelSwordNoClick} style={{ backgroundColor: "#211742" }}>
 <VStack justify='center'>  
@@ -16690,7 +17898,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/1/10/Steelsword_md.png/'
 </Button>
 </WrapItem>}
 
-{(DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !GlassScimitarIsShown &&
+{(AllIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !GlassScimitarIsShown &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleGlassScimitarClick} style={{ backgroundColor: "#2D3748"}}>
 <VStack justify='center'>  
@@ -16706,7 +17914,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/e/e2/Glassscimitar_md.pn
 </Button>
 </WrapItem>}
 
-{(DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && GlassScimitarIsShown &&
+{(AllIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && GlassScimitarIsShown &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleGlassScimitarNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack justify='center'>  
@@ -16722,7 +17930,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/e/e2/Glassscimitar_md.pn
 </Button>
 </WrapItem>}
 
-{(DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !SteelDaggerIsShown &&
+{(AllIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !SteelDaggerIsShown &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleSteelDaggerClick} style={{ backgroundColor: "#2D3748"}}>
 <VStack justify='center'>  
@@ -16738,7 +17946,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/a/ac/Steeldagger_md.png/
 </Button>
 </WrapItem>}
 
-{(DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && SteelDaggerIsShown &&
+{(AllIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && SteelDaggerIsShown &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleSteelDaggerNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack justify='center'>  
@@ -16754,7 +17962,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/a/ac/Steeldagger_md.png/
 </Button>
 </WrapItem>}
 
-{(ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !WoodSpearIsShown &&
+{(AllIsShown || ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !WoodSpearIsShown &&
    <WrapItem>
    <Button w='110px' h='170px' pb={5} onClick={handleWoodSpearClick} style={{ backgroundColor: "#2D3748"}}>
 <VStack justify='center'>  
@@ -16771,7 +17979,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/a/ac/Woodspear_md.png/'
 </WrapItem>
 }
 
-{(ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && WoodSpearIsShown &&
+{(AllIsShown || ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && WoodSpearIsShown &&
    <WrapItem>
     <Button w='110px' h='170px' pb={5} onClick={handleWoodSpearNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack justify='center'>  
@@ -16787,7 +17995,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/a/ac/Woodspear_md.png/'
 </Button>
 </WrapItem>}
 
-{(ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !LeafsungWoodenSwordIsShown &&
+{(AllIsShown || ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !LeafsungWoodenSwordIsShown &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleLeafsungWoodenSwordClick} style={{ backgroundColor: "#2D3748"}}>
 <VStack justify='center'>  
@@ -16803,7 +18011,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/2/20/Leafsungwoodensword
 </Button>
 </WrapItem>}
 
-{(ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && LeafsungWoodenSwordIsShown &&
+{(AllIsShown || ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && LeafsungWoodenSwordIsShown &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleLeafsungWoodenSwordNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack justify='center'>  
@@ -16819,7 +18027,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/2/20/Leafsungwoodensword
 </Button>
 </WrapItem>}
 
-{(ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !WoodSwordIsShown &&
+{(AllIsShown || ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !WoodSwordIsShown &&
       <WrapItem>
     <Button w='110px' h='170px' pb={5} onClick={handleWoodSwordClick} style={{ backgroundColor: "#2D3748" }}>
 <VStack justify='center'>  
@@ -16835,7 +18043,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/7/7b/Woodsword_md.png/'
     </Button>
     </WrapItem>}
 
-    {(ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && WoodSwordIsShown &&
+    {(AllIsShown || ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && WoodSwordIsShown &&
       <WrapItem>
     <Button w='110px' h='170px' pb={5} onClick={handleWoodSwordNoClick} style={{ backgroundColor: "#211742" }}>
 <VStack justify='center'>  
@@ -16851,10 +18059,11 @@ src='https://static.wikia.nocookie.net/4thewords/images/7/7b/Woodsword_md.png/'
     </Button>
     </WrapItem>}
       </Wrap>
-      <Text fontSize='md' mt='25px' mb='15px'><b>Past Event Battle Items:</b></Text>
+{(AllIsShown ||  PastEventsIsShown) && 
+      <Text fontSize='md' mt='25px' mb='15px'><b>Past Event Battle Items:</b></Text>}
 <Wrap justify='center'>
 
-{!DragonClawHookIsShown &&
+{!DragonClawHookIsShown && (AllIsShown ||  PastEventsIsShown) &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleDragonClawHookClick} style={{ backgroundColor: "#2D3748"}}>
 <VStack justify='center'>  
@@ -16870,7 +18079,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/3/32/DragonsClawHook.png
 </Button>
 </WrapItem>}
 
-{DragonClawHookIsShown &&
+{DragonClawHookIsShown && (AllIsShown ||  PastEventsIsShown) &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleDragonClawHookNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack justify='center'>  
@@ -16886,7 +18095,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/3/32/DragonsClawHook.png
 </Button>
 </WrapItem>}
 
-{!DragonTailSwordIsShown &&
+{!DragonTailSwordIsShown && (AllIsShown ||  PastEventsIsShown) &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleDragonTailSwordClick} style={{ backgroundColor: "#2D3748"}}>
 <VStack justify='center'>  
@@ -16902,7 +18111,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/7/78/DragonsTailSword.pn
 </Button>
 </WrapItem>}
 
-{DragonTailSwordIsShown &&
+{DragonTailSwordIsShown && (AllIsShown ||  PastEventsIsShown) &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleDragonTailSwordNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack justify='center'>  
@@ -16918,7 +18127,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/7/78/DragonsTailSword.pn
 </Button>
 </WrapItem>}
 
-{!NiftraSwordIsShown &&
+{!NiftraSwordIsShown && (AllIsShown ||  PastEventsIsShown) &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleNiftraSwordClick} style={{ backgroundColor: "#2D3748"}}>
 <VStack justify='center'>  
@@ -16934,7 +18143,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/8/8e/Niftras-sword.png'
 </Button>
 </WrapItem>}
 
-{NiftraSwordIsShown &&
+{NiftraSwordIsShown && (AllIsShown ||  PastEventsIsShown) &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleNiftraSwordNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack justify='center'>  
@@ -16950,7 +18159,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/8/8e/Niftras-sword.png'
 </Button>
 </WrapItem>}
 
-{!OozeSwordIsShown &&
+{!OozeSwordIsShown && (AllIsShown ||  PastEventsIsShown) &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleOozeSwordClick} style={{ backgroundColor: "#2D3748"}}>
 <VStack justify='center'>  
@@ -16966,7 +18175,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/8/88/Ooze-sword.png'
 </Button>
 </WrapItem>}
 
-{OozeSwordIsShown &&
+{OozeSwordIsShown && (AllIsShown ||  PastEventsIsShown) &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleOozeSwordNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack justify='center'>  
@@ -16982,7 +18191,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/8/88/Ooze-sword.png'
 </Button>
 </WrapItem>}
 
-{!DarkForestSwordOldIsShown &&
+{!DarkForestSwordOldIsShown && (AllIsShown ||  PastEventsIsShown) &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleDarkForestSwordOldClick} style={{ backgroundColor: "#2D3748"}}>
 <VStack justify='center'>  
@@ -16998,7 +18207,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/b/bf/DarkForestSword.png
 </Button>
 </WrapItem>}
 
-{DarkForestSwordOldIsShown &&
+{DarkForestSwordOldIsShown && (AllIsShown ||  PastEventsIsShown) &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleDarkForestSwordOldNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack justify='center'>  
@@ -17017,6 +18226,858 @@ src='https://static.wikia.nocookie.net/4thewords/images/b/bf/DarkForestSword.png
 
 </Wrap>
     </TabPanel>
+  <TabPanel>
+  {(AllIsShown || AllIsShown || ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) &&
+    <Text fontSize='md' mt='25px' mb='15px'><b>Main Quest Battle Items:</b></Text>}
+    <Wrap justify='center'>
+    {World2RegionIsShown && !NivaliBowIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleNivaliBowClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/88/Nivali_Bow.png/'
+/> 
+<Text fontSize='md' align='center'><b>Nivali Bow</b></Text>
+<Text fontSize='sm' align='center'>+28 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{World2RegionIsShown && NivaliBowIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleNivaliBowNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/88/Nivali_Bow.png/'
+/> 
+<Text fontSize='md' align='center'><b>Nivali Bow</b></Text>
+<Text fontSize='sm' align='center'>+28 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{World2RegionIsShown && !NivaliSlingshotIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleNivaliSlingshotClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/2/20/Nivali_Slingshot.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Nivali Slingshot</b></Text>
+<Text fontSize='sm' align='center'>+10 Atk<br/>+10 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{World2RegionIsShown && NivaliSlingshotIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleNivaliSlingshotNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/2/20/Nivali_Slingshot.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Nivali Slingshot</b></Text>
+<Text fontSize='sm' align='center'>+10 Atk<br/>+10 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}      
+
+{(AllIsShown || DCIsShown || NivaliIsShown) && !MountainMaceIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleMountainMaceClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/7f/MountainMace.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Mountain Mace</b></Text>
+<Text fontSize='sm' align='center'>+2 Atk<br/>+20 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || DCIsShown || NivaliIsShown) && MountainMaceIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleMountainMaceNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/7f/MountainMace.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Mountain Mace</b></Text>
+<Text fontSize='sm' align='center'>+2 Atk<br/>+20 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || LateCoLIsShown || DCIsShown || World2RegionIsShown) && !FusionCrossbowIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleFusionCrossbowClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Fusion_Crossbow.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Fusion<br/>Crossbow</b></Text>
+<Text fontSize='sm' align='center'>+20 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || LateCoLIsShown || DCIsShown || World2RegionIsShown) && FusionCrossbowIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleFusionCrossbowNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Fusion_Crossbow.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Fusion<br/>Crossbow</b></Text>
+<Text fontSize='sm' align='center'>+20 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || LateCoLIsShown || DCIsShown || World2RegionIsShown) && !PoePickIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handlePoePickClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/f/f0/PoePick.png/'
+/> 
+<Text fontSize='md' align='center'><b>Poe Pick</b></Text>
+<Text fontSize='sm' align='center'>+15 Atk<br/>+5 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || LateCoLIsShown  || DCIsShown || World2RegionIsShown) && PoePickIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handlePoePickNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/f/f0/PoePick.png/'
+/> 
+<Text fontSize='md' align='center'><b>Poe Pick</b></Text>
+<Text fontSize='sm' align='center'>+15 Atk<br/>+5 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !StaffOfTheDeadIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleStaffOfTheDeadClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/f/fc/Staff_of_the_dead.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Staff of the<br/>Dead</b></Text>
+<Text fontSize='sm' align='center'>+5 Atk<br/>+0 Def<br/>+10 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && StaffOfTheDeadIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleStaffOfTheDeadNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/f/fc/Staff_of_the_dead.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Staff of the<br/>Dead</b></Text>
+<Text fontSize='sm' align='center'>+5 Atk<br/>+0 Def<br/>+10 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{GardenIsShown && !WoodenGardenHornIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleWoodenGardenHornClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/c/c5/WoodenGardenHorn.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Wooden<br/>Garden Horn</b></Text>
+<Text fontSize='sm' align='center'>+12 Atk<br/>+2 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{GardenIsShown && WoodenGardenHornIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleWoodenGardenHornNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/c/c5/WoodenGardenHorn.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Wooden<br/>Garden Horn</b></Text>
+<Text fontSize='sm' align='center'>+12 Atk<br/>+2 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+
+
+{(AllIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !HarpoonIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleHarpoonClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='16px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/9/9e/Harpoon_lg.png/'
+/> 
+<Text fontSize='md' align='center'><b>Harpoon</b></Text>
+<Text fontSize='sm' align='center'>+8 Atk<br/>+8 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && HarpoonIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleHarpoonNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='16px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/9/9e/Harpoon_lg.png/'
+/> 
+<Text fontSize='md' align='center'><b>Harpoon</b></Text>
+<Text fontSize='sm' align='center'>+8 Atk<br/>+8 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+    {(AllIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !SteelAxeIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleSteelAxeClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/4/4b/Steelaxe_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Steel Axe</b></Text>
+<Text fontSize='sm' align='center'>+10 Atk<br/>+2 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && SteelAxeIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleSteelAxeNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/4/4b/Steelaxe_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Steel Axe</b></Text>
+<Text fontSize='sm' align='center'>+10 Atk<br/>+2 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !SteelShieldIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleSteelShieldClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/b/b9/Steelshield_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Steel Shield</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+12 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && SteelShieldIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleSteelShieldNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/b/b9/Steelshield_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Steel Shield</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+12 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+      {(AllIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !StoneHammerIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleStoneHammerClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/1/17/Stonehammer_md.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Stone Hammer</b></Text>
+<Text fontSize='sm' align='center'>+7 Atk<br/>+4 Def<br/>+4 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && StoneHammerIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleStoneHammerNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/1/17/Stonehammer_md.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Stone Hammer</b></Text>
+<Text fontSize='sm' align='center'>+7 Atk<br/>+4 Def<br/>+4 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{TempestIsShown && !TempestYoYoIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleTempestYoYoClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/3/3f/Tempest-yo-yo.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Tempest Yo-Yo</b></Text>
+<Text fontSize='sm' align='center'>+4 Atk<br/>+0 Def<br/>+14 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{TempestIsShown && TempestYoYoIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleTempestYoYoNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/3/3f/Tempest-yo-yo.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Tempest Yo-Yo</b></Text>
+<Text fontSize='sm' align='center'>+4 Atk<br/>+0 Def<br/>+14 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && AurilisIsShown && !CrossbowIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleCrossbowClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/a/a1/Crossbow_md.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Crossbow</b></Text>
+<Text fontSize='sm' align='center'>+10 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && AurilisIsShown && CrossbowIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleCrossbowNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/a/a1/Crossbow_md.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Crossbow</b></Text>
+<Text fontSize='sm' align='center'>+10 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !GlassStaffIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleGlassStaffClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/2/29/Glassstaff_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Glass Staff</b></Text>
+<Text fontSize='sm' align='center'>+5 Atk<br/>+0 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && GlassStaffIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleGlassStaffNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/2/29/Glassstaff_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Glass Staff</b></Text>
+<Text fontSize='sm' align='center'>+5 Atk<br/>+0 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+
+{(AllIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !NetIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleNetClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Net_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Net</b></Text>
+<Text fontSize='sm' align='center'>+4 Atk<br/>+0 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && NetIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleNetNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/5/5a/Net_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Net</b></Text>
+<Text fontSize='sm' align='center'>+4 Atk<br/>+0 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !SteelSpearIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleSteelSpearClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/7d/Steelspear_md.png'
+/> 
+<Text fontSize='sm' align='center'><b>Steel Spear</b></Text>
+<Text fontSize='sm' align='center'>+6 Atk<br/>+2 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && SteelSpearIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleSteelSpearNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/7d/Steelspear_md.png'
+/> 
+<Text fontSize='sm' align='center'><b>Steel Spear</b></Text>
+<Text fontSize='sm' align='center'>+6 Atk<br/>+2 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || MamaTreeIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !OldStaffIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleOldStaffClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/e/ed/Oldstaff_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Old Staff</b></Text>
+<Text fontSize='sm' align='center'>+3 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>
+}
+
+{(AllIsShown || MamaTreeIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && OldStaffIsShown &&
+   <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleOldStaffNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/e/ed/Oldstaff_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Old Staff</b></Text>
+<Text fontSize='sm' align='center'>+3 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || MamaTreeIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !VineNetIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleVineNetClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/7a/Vinenet_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Vine Net</b></Text>
+<Text fontSize='sm' align='center'>+2 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || MamaTreeIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && VineNetIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleVineNetNoClick} style={{ backgroundColor: "#211742" }}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/7a/Vinenet_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Vine Net</b></Text>
+<Text fontSize='sm' align='center'>+2 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+
+{(AllIsShown || MamaTreeIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !WoodenBowIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleWoodenBowClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/9/97/Woodenbow_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Wooden Bow</b></Text>
+<Text fontSize='sm' align='center'>+6 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || MamaTreeIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && WoodenBowIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleWoodenBowNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/9/97/Woodenbow_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Wooden Bow</b></Text>
+<Text fontSize='sm' align='center'>+6 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+
+{(AllIsShown || ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !SpiderBowIsShown &&
+      <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleSpiderBowClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/6/6c/Spiderbow_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Spider Bow</b></Text>
+<Text fontSize='sm' align='center'>+3 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+    </Button>
+    </WrapItem>}
+
+    {(AllIsShown || ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && SpiderBowIsShown &&
+      <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleSpiderBowNoClick} style={{ backgroundColor: "#211742" }}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/6/6c/Spiderbow_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Spider Bow</b></Text>
+<Text fontSize='sm' align='center'>+3 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+    </Button>
+    </WrapItem>}
+
+
+{(AllIsShown || ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !WoodHammerIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleWoodHammerClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/3/36/Woodhammer_md.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Wood Hammer</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+2 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && WoodHammerIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleWoodHammerNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/3/36/Woodhammer_md.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Wood Hammer</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+2 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+    </Wrap>
+
+{(AllIsShown ||  PastEventsIsShown) && 
+      <Text fontSize='md' mt='25px' mb='15px'><b>Past Event Battle Items:</b></Text>}
+<Wrap justify='center'>
+
+{!LoveWandIsShown && (AllIsShown ||  PastEventsIsShown) &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleLoveWandClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/6/68/Love-wand.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Love Wand</b></Text>
+<Text fontSize='sm' align='center'>+2 Atk<br/>+5 Def<br/>+6 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{LoveWandIsShown && (AllIsShown ||  PastEventsIsShown) &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleLoveWandNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/6/68/Love-wand.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Love Wand</b></Text>
+<Text fontSize='sm' align='center'>+2 Atk<br/>+5 Def<br/>+6 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{!DragonFangBowIsShown && (AllIsShown ||  PastEventsIsShown) &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleDragonFangBowClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/3/38/DragonsFangBow.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Dragon's<br/>Fang Bow</b></Text>
+<Text fontSize='sm' align='center'>+2 Atk<br/>+10 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{DragonFangBowIsShown && (AllIsShown ||  PastEventsIsShown) &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleDragonFangBowNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/3/38/DragonsFangBow.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Dragon's<br/>Fang Bow</b></Text>
+<Text fontSize='sm' align='center'>+2 Atk<br/>+10 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{!WitchStaffIsShown && (AllIsShown ||  PastEventsIsShown) &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleWitchStaffClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/8e/Niftras-sword.png'
+/> 
+<Text fontSize='sm' align='center'><b>Witch's Staff</b></Text>
+<Text fontSize='sm' align='center'>+6 Atk<br/>+4 Def<br/>+10 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{WitchStaffIsShown && (AllIsShown ||  PastEventsIsShown) &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleWitchStaffNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/8e/Niftras-sword.png'
+/> 
+<Text fontSize='sm' align='center'><b>Witch's Staff</b></Text>
+<Text fontSize='sm' align='center'>+6 Atk<br/>+4 Def<br/>+10 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{!TentacleShieldIsShown && (AllIsShown ||  PastEventsIsShown) &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleTentacleShieldClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/4/4e/Tentacle-shield.png/'
+/> 
+<Text fontSize='md' align='center'><b>Tentacle<br/>Shield</b></Text>
+<Text fontSize='sm' align='center'>+3 Atk<br/>+8 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{TentacleShieldIsShown && (AllIsShown ||  PastEventsIsShown) &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleTentacleShieldNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/4/4e/Tentacle-shield.png/'
+/> 
+<Text fontSize='md' align='center'><b>Tentacle<br/>Shield</b></Text>
+<Text fontSize='sm' align='center'>+3 Atk<br/>+8 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{!TentacleWhipIsShown && (AllIsShown ||  PastEventsIsShown) &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleTentacleWhipClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/8a/Tentacle-whip.png/'
+/> 
+<Text fontSize='md' align='center'><b>Tentacle<br/>Whip</b></Text>
+<Text fontSize='sm' align='center'>+9 Atk<br/>+1 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{TentacleWhipIsShown && (AllIsShown ||  PastEventsIsShown) &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleTentacleWhipNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/8a/Tentacle-whip.png/'
+/> 
+<Text fontSize='md' align='center'><b>Tentacle<br/>Whip</b></Text>
+<Text fontSize='sm' align='center'>+9 Atk<br/>+1 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+
+</Wrap>
+  </TabPanel>
   </TabPanels>
 </Tabs>
 <Box h='100px' />
