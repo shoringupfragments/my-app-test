@@ -93,13 +93,6 @@ const [HeadpieceofOldGoldAtk, setHeadpieceofOldGoldAtk] = useState(0)
 const [HeadpieceofOldGoldDef, setHeadpieceofOldGoldDef] = useState(0)
 const [HeadpieceofOldGoldLuck, setHeadpieceofOldGoldLuck] = useState(0)
 
-const [BraceletsofWater, setBraceletsofWater] = useState(0)
-const [BraceletsofWaterIsShown, setBraceletsofWaterIsShown] = useState(false)
-const [BraceletsofWaterActive, setBraceletsofWaterActive] = useState(false)
-const [BraceletsofWaterAtk, setBraceletsofWaterAtk] = useState(0)
-const [BraceletsofWaterDef, setBraceletsofWaterDef] = useState(0)
-const [BraceletsofWaterLuck, setBraceletsofWaterLuck] = useState(0)
-
 const [StoriedHorns, setStoriedHorns] = useState(0)
 const [StoriedHornsIsShown, setStoriedHornsIsShown] = useState(false)
 const [StoriedHornsActive, setStoriedHornsActive] = useState(false)
@@ -123,13 +116,6 @@ const handleHeadpieceofOldGoldClick = event => {
   setHeadpieceofOldGoldLuck (value => 2);
   };
 
-const handleBraceletsofWaterClick = event => {
-  setBraceletsofWaterIsShown (current => true);
-  setBraceletsofWaterActive (current => true);
-  setBraceletsofWaterAtk (value => 2);
-  setBraceletsofWaterDef (value => 14);
-  setBraceletsofWaterLuck (value => 0);
-  };
 
 const handleStoriedHornsClick = event => {
   setStoriedHornsIsShown (current => true);
@@ -146,34 +132,24 @@ const [NoCompanionActive, setNoCompanionActive] = useState(false)
 
 const [SuwoIsShown, setSuwoIsShown] = useState(false)
 const [SuwoActive, setSuwoActive] = useState(false)
-const [SuwoNoIsShown, setSuwoNoIsShown] = useState(false)
-const [SuwoNoActive, setSuwoNoActive] = useState(false)
 const [SuwoAtk, setSuwoAtk] = useState(0)
 const [SuwoDef, setSuwoDef] = useState(0)
 const [SuwoLuck, setSuwoLuck] = useState(0)
 
 const [AzadiIsShown, setAzadiIsShown] = useState(false)
 const [AzadiActive, setAzadiActive] = useState(false)
-const [AzadiNoIsShown, setAzadiNoIsShown] = useState(false)
-const [AzadiNoActive, setAzadiNoActive] = useState(false)
-
 const [AzadiAtk, setAzadiAtk] = useState(0)
 const [AzadiDef, setAzadiDef] = useState(0)
 const [AzadiLuck, setAzadiLuck] = useState(0)
 
 const [LodoIsShown, setLodoIsShown] = useState(false)
 const [LodoActive, setLodoActive] = useState(false)
-const [LodoNoIsShown, setLodoNoIsShown] = useState(false)
-const [LodoNoActive, setLodoNoActive] = useState(false)
 const [LodoAtk, setLodoAtk] = useState(0)
 const [LodoDef, setLodoDef] = useState(0)
 const [LodoLuck, setLodoLuck] = useState(0)
 
 const [NoanzaIsShown, setNoanzaIsShown] = useState(false)
 const [NoanzaActive, setNoanzaActive] = useState(false)
-const [NoanzaNoIsShown, setNoanzaNoIsShown] = useState(false)
-const [NoanzaNoActive, setNoanzaNoActive] = useState(false)
-
 const [NoanzaAtk, setNoanzaAtk] = useState(0)
 const [NoanzaDef, setNoanzaDef] = useState(0)
 const [NoanzaLuck, setNoanzaLuck] = useState(0)
@@ -9563,56 +9539,42 @@ const [CrossbowLuck, setCrossbowLuck] = useState(0)
 
 const [WoodenBowIsShown, setWoodenBowIsShown] = useState(false)
 const [WoodenBowActive, setWoodenBowActive] = useState(false)
-const [WoodenBowNoIsShown, setWoodenBowNoIsShown] = useState(false)
-const [WoodenBowNoActive, setWoodenBowNoActive] = useState(false)
 const [WoodenBowAtk, setWoodenBowAtk] = useState(0)
 const [WoodenBowDef, setWoodenBowDef] = useState(0)
 const [WoodenBowLuck, setWoodenBowLuck] = useState(0)
 
 const [WoodHammerIsShown, setWoodHammerIsShown] = useState(false)
 const [WoodHammerActive, setWoodHammerActive] = useState(false)
-const [WoodHammerNoIsShown, setWoodHammerNoIsShown] = useState(false)
-const [WoodHammerNoActive, setWoodHammerNoActive] = useState(false)
 const [WoodHammerAtk, setWoodHammerAtk] = useState(0)
 const [WoodHammerDef, setWoodHammerDef] = useState(0)
 const [WoodHammerLuck, setWoodHammerLuck] = useState(0)
 
 const [VineNetIsShown, setVineNetIsShown] = useState(false)
 const [VineNetActive, setVineNetActive] = useState(false)
-const [VineNetNoIsShown, setVineNetNoIsShown] = useState(false)
-const [VineNetNoActive, setVineNetNoActive] = useState(false)
 const [VineNetAtk, setVineNetAtk] = useState(0)
 const [VineNetDef, setVineNetDef] = useState(0)
 const [VineNetLuck, setVineNetLuck] = useState(0)
 
 const [OldStaffIsShown, setOldStaffIsShown] = useState(false)
 const [OldStaffActive, setOldStaffActive] = useState(false)
-const [OldStaffNoIsShown, setOldStaffNoIsShown] = useState(false)
-const [OldStaffNoActive, setOldStaffNoActive] = useState(false)
 const [OldStaffAtk, setOldStaffAtk] = useState(0)
 const [OldStaffDef, setOldStaffDef] = useState(0)
 const [OldStaffLuck, setOldStaffLuck] = useState(0)
 
 const [SpiderBowIsShown, setSpiderBowIsShown] = useState(false)
 const [SpiderBowActive, setSpiderBowActive] = useState(false)
-const [SpiderBowNoIsShown, setSpiderBowNoIsShown] = useState(false)
-const [SpiderBowNoActive, setSpiderBowNoActive] = useState(false)
 const [SpiderBowAtk, setSpiderBowAtk] = useState(0)
 const [SpiderBowDef, setSpiderBowDef] = useState(0)
 const [SpiderBowLuck, setSpiderBowLuck] = useState(0)
 
 const [FusionCrossbowIsShown, setFusionCrossbowIsShown] = useState(false)
 const [FusionCrossbowActive, setFusionCrossbowActive] = useState(false)
-const [FusionCrossbowNoIsShown, setFusionCrossbowNoIsShown] = useState(false)
-const [FusionCrossbowNoActive, setFusionCrossbowNoActive] = useState(false)
 const [FusionCrossbowAtk, setFusionCrossbowAtk] = useState(0)
 const [FusionCrossbowDef, setFusionCrossbowDef] = useState(0)
 const [FusionCrossbowLuck, setFusionCrossbowLuck] = useState(0)
 
 const [PoePickIsShown, setPoePickIsShown] = useState(false)
 const [PoePickActive, setPoePickActive] = useState(false)
-const [PoePickNoIsShown, setPoePickNoIsShown] = useState(false)
-const [PoePickNoActive, setPoePickNoActive] = useState(false)
 const [PoePickAtk, setPoePickAtk] = useState(0)
 const [PoePickDef, setPoePickDef] = useState(0)
 const [PoePickLuck, setPoePickLuck] = useState(0)
@@ -9782,6 +9744,11 @@ const handleFusionCrossbowClick = event => {
  setSpiderBowAtk (value => 0);
  setSpiderBowDef (value => 0);
  setSpiderBowLuck (value => 0);
+ setBraceletsofWaterIsShown (current => false);
+ setBraceletsofWaterActive (current => false);
+ setBraceletsofWaterAtk (value => 0);
+ setBraceletsofWaterDef (value => 0);
+ setBraceletsofWaterLuck (value => 0);
   };
 
 const handlePoePickClick = event => {
@@ -9891,6 +9858,11 @@ const handlePoePickClick = event => {
  setSpiderBowAtk (value => 0);
  setSpiderBowDef (value => 0);
  setSpiderBowLuck (value => 0);
+ setBraceletsofWaterIsShown (current => false);
+ setBraceletsofWaterActive (current => false);
+ setBraceletsofWaterAtk (value => 0);
+ setBraceletsofWaterDef (value => 0);
+ setBraceletsofWaterLuck (value => 0);
     };
 
 const handleFusionCrossbowNoClick = event => {
@@ -10008,6 +9980,11 @@ const handleNivaliBowClick = event => {
  setSpiderBowAtk (value => 0);
  setSpiderBowDef (value => 0);
  setSpiderBowLuck (value => 0);
+ setBraceletsofWaterIsShown (current => false);
+ setBraceletsofWaterActive (current => false);
+ setBraceletsofWaterAtk (value => 0);
+ setBraceletsofWaterDef (value => 0);
+ setBraceletsofWaterLuck (value => 0);
   };
 
  
@@ -10118,6 +10095,11 @@ const handleNivaliSlingshotClick = event => {
  setSpiderBowAtk (value => 0);
  setSpiderBowDef (value => 0);
  setSpiderBowLuck (value => 0);
+ setBraceletsofWaterIsShown (current => false);
+ setBraceletsofWaterActive (current => false);
+ setBraceletsofWaterAtk (value => 0);
+ setBraceletsofWaterDef (value => 0);
+ setBraceletsofWaterLuck (value => 0);
     };
 
 const handleMountainMaceClick = event => {
@@ -10228,6 +10210,11 @@ const handleMountainMaceClick = event => {
  setSpiderBowAtk (value => 0);
  setSpiderBowDef (value => 0);
  setSpiderBowLuck (value => 0);
+ setBraceletsofWaterIsShown (current => false);
+ setBraceletsofWaterActive (current => false);
+ setBraceletsofWaterAtk (value => 0);
+ setBraceletsofWaterDef (value => 0);
+ setBraceletsofWaterLuck (value => 0);
   };
 
   const handleWoodenGardenHornClick = event => {
@@ -10336,6 +10323,11 @@ const handleMountainMaceClick = event => {
    setSpiderBowAtk (value => 0);
    setSpiderBowDef (value => 0);
    setSpiderBowLuck (value => 0);
+   setBraceletsofWaterIsShown (current => false);
+   setBraceletsofWaterActive (current => false);
+   setBraceletsofWaterAtk (value => 0);
+   setBraceletsofWaterDef (value => 0);
+   setBraceletsofWaterLuck (value => 0);
  }
  
  const handleStaffOfTheDeadClick = event => {
@@ -10445,6 +10437,11 @@ const handleMountainMaceClick = event => {
    setSpiderBowAtk (value => 0);
    setSpiderBowDef (value => 0);
    setSpiderBowLuck (value => 0);
+   setBraceletsofWaterIsShown (current => false);
+   setBraceletsofWaterActive (current => false);
+   setBraceletsofWaterAtk (value => 0);
+   setBraceletsofWaterDef (value => 0);
+   setBraceletsofWaterLuck (value => 0);
     };
  
  const handleTempestYoYoClick = event => {
@@ -10554,6 +10551,11 @@ const handleMountainMaceClick = event => {
    setSpiderBowAtk (value => 0);
    setSpiderBowDef (value => 0);
    setSpiderBowLuck (value => 0);
+   setBraceletsofWaterIsShown (current => false);
+   setBraceletsofWaterActive (current => false);
+   setBraceletsofWaterAtk (value => 0);
+   setBraceletsofWaterDef (value => 0);
+   setBraceletsofWaterLuck (value => 0);
    };
  
  const handleSteelShieldClick = event => {
@@ -10663,6 +10665,11 @@ const handleMountainMaceClick = event => {
    setSpiderBowAtk (value => 0);
    setSpiderBowDef (value => 0);
    setSpiderBowLuck (value => 0);
+   setBraceletsofWaterIsShown (current => false);
+   setBraceletsofWaterActive (current => false);
+   setBraceletsofWaterAtk (value => 0);
+   setBraceletsofWaterDef (value => 0);
+   setBraceletsofWaterLuck (value => 0);
    };
  
  const handleSteelAxeClick = event => {
@@ -10772,6 +10779,11 @@ const handleMountainMaceClick = event => {
    setSpiderBowAtk (value => 0);
    setSpiderBowDef (value => 0);
    setSpiderBowLuck (value => 0);
+   setBraceletsofWaterIsShown (current => false);
+   setBraceletsofWaterActive (current => false);
+   setBraceletsofWaterAtk (value => 0);
+   setBraceletsofWaterDef (value => 0);
+   setBraceletsofWaterLuck (value => 0);
    };
  
  const handleHarpoonClick = event => {
@@ -10881,6 +10893,11 @@ const handleMountainMaceClick = event => {
    setSpiderBowAtk (value => 0);
    setSpiderBowDef (value => 0);
    setSpiderBowLuck (value => 0);
+   setBraceletsofWaterIsShown (current => false);
+   setBraceletsofWaterActive (current => false);
+   setBraceletsofWaterAtk (value => 0);
+   setBraceletsofWaterDef (value => 0);
+   setBraceletsofWaterLuck (value => 0);
    };
  
  const handleStoneHammerClick = event => {
@@ -10990,6 +11007,11 @@ const handleMountainMaceClick = event => {
    setSpiderBowAtk (value => 0);
    setSpiderBowDef (value => 0);
    setSpiderBowLuck (value => 0);
+   setBraceletsofWaterIsShown (current => false);
+   setBraceletsofWaterActive (current => false);
+   setBraceletsofWaterAtk (value => 0);
+   setBraceletsofWaterDef (value => 0);
+   setBraceletsofWaterLuck (value => 0);
    };
  
  const handleSteelSpearClick = event => {
@@ -11099,6 +11121,11 @@ const handleMountainMaceClick = event => {
    setSpiderBowAtk (value => 0);
    setSpiderBowDef (value => 0);
    setSpiderBowLuck (value => 0);
+   setBraceletsofWaterIsShown (current => false);
+   setBraceletsofWaterActive (current => false);
+   setBraceletsofWaterAtk (value => 0);
+   setBraceletsofWaterDef (value => 0);
+   setBraceletsofWaterLuck (value => 0);
    };
  
  const handleNetClick = event => {
@@ -11208,6 +11235,11 @@ const handleMountainMaceClick = event => {
    setSpiderBowAtk (value => 0);
    setSpiderBowDef (value => 0);
    setSpiderBowLuck (value => 0);
+   setBraceletsofWaterIsShown (current => false);
+   setBraceletsofWaterActive (current => false);
+   setBraceletsofWaterAtk (value => 0);
+   setBraceletsofWaterDef (value => 0);
+   setBraceletsofWaterLuck (value => 0);
    };
  
  const handleGlassStaffClick = event => {
@@ -11317,6 +11349,11 @@ const handleMountainMaceClick = event => {
    setSpiderBowAtk (value => 0);
    setSpiderBowDef (value => 0);
    setSpiderBowLuck (value => 0);
+   setBraceletsofWaterIsShown (current => false);
+   setBraceletsofWaterActive (current => false);
+   setBraceletsofWaterAtk (value => 0);
+   setBraceletsofWaterDef (value => 0);
+   setBraceletsofWaterLuck (value => 0);
    };
  
  const handleCrossbowClick = event => {
@@ -11426,6 +11463,11 @@ const handleMountainMaceClick = event => {
    setSpiderBowAtk (value => 0);
    setSpiderBowDef (value => 0);
    setSpiderBowLuck (value => 0);
+   setBraceletsofWaterIsShown (current => false);
+   setBraceletsofWaterActive (current => false);
+   setBraceletsofWaterAtk (value => 0);
+   setBraceletsofWaterDef (value => 0);
+   setBraceletsofWaterLuck (value => 0);
    };
  
  const handleWoodenBowClick = event => {
@@ -11535,6 +11577,11 @@ const handleMountainMaceClick = event => {
    setSpiderBowAtk (value => 0);
    setSpiderBowDef (value => 0);
    setSpiderBowLuck (value => 0);
+   setBraceletsofWaterIsShown (current => false);
+   setBraceletsofWaterActive (current => false);
+   setBraceletsofWaterAtk (value => 0);
+   setBraceletsofWaterDef (value => 0);
+   setBraceletsofWaterLuck (value => 0);
    };
  
  const handleWoodHammerClick = event => {
@@ -11644,6 +11691,11 @@ const handleMountainMaceClick = event => {
    setSpiderBowAtk (value => 0);
    setSpiderBowDef (value => 0);
    setSpiderBowLuck (value => 0);
+   setBraceletsofWaterIsShown (current => false);
+   setBraceletsofWaterActive (current => false);
+   setBraceletsofWaterAtk (value => 0);
+   setBraceletsofWaterDef (value => 0);
+   setBraceletsofWaterLuck (value => 0);
    };
  
  const handleVineNetClick = event => {
@@ -11753,6 +11805,11 @@ const handleMountainMaceClick = event => {
    setSpiderBowAtk (value => 0);
    setSpiderBowDef (value => 0);
    setSpiderBowLuck (value => 0);
+   setBraceletsofWaterIsShown (current => false);
+   setBraceletsofWaterActive (current => false);
+   setBraceletsofWaterAtk (value => 0);
+   setBraceletsofWaterDef (value => 0);
+   setBraceletsofWaterLuck (value => 0);
    };
  
  const handleOldStaffClick = event => {
@@ -11862,6 +11919,11 @@ const handleMountainMaceClick = event => {
    setSpiderBowAtk (value => 0);
    setSpiderBowDef (value => 0);
    setSpiderBowLuck (value => 0);
+   setBraceletsofWaterIsShown (current => false);
+   setBraceletsofWaterActive (current => false);
+   setBraceletsofWaterAtk (value => 0);
+   setBraceletsofWaterDef (value => 0);
+   setBraceletsofWaterLuck (value => 0);
    };
  
    const handleSpiderBowClick = event => {
@@ -11971,6 +12033,11 @@ const handleMountainMaceClick = event => {
    setOldStaffAtk (value => 0);
    setOldStaffDef (value => 0);
    setOldStaffLuck (value => 0);
+   setBraceletsofWaterIsShown (current => false);
+   setBraceletsofWaterActive (current => false);
+   setBraceletsofWaterAtk (value => 0);
+   setBraceletsofWaterDef (value => 0);
+   setBraceletsofWaterLuck (value => 0);
    };
 
 const handleLoveWandClick = event => {
@@ -12105,6 +12172,11 @@ const handleLoveWandClick = event => {
  setSpiderBowAtk (value => 0);
  setSpiderBowDef (value => 0);
  setSpiderBowLuck (value => 0);
+ setBraceletsofWaterIsShown (current => false);
+ setBraceletsofWaterActive (current => false);
+ setBraceletsofWaterAtk (value => 0);
+ setBraceletsofWaterDef (value => 0);
+ setBraceletsofWaterLuck (value => 0);
   };
 
 const handleDragonFangBowClick = event => {
@@ -12239,6 +12311,11 @@ setSpiderBowActive (current => false);
 setSpiderBowAtk (value => 0);
 setSpiderBowDef (value => 0);
 setSpiderBowLuck (value => 0);
+setBraceletsofWaterIsShown (current => false);
+setBraceletsofWaterActive (current => false);
+setBraceletsofWaterAtk (value => 0);
+setBraceletsofWaterDef (value => 0);
+setBraceletsofWaterLuck (value => 0);
 };
 
 const handleTentacleWhipClick = event => {
@@ -12374,6 +12451,11 @@ setSpiderBowActive (current => false);
 setSpiderBowAtk (value => 0);
 setSpiderBowDef (value => 0);
 setSpiderBowLuck (value => 0);
+setBraceletsofWaterIsShown (current => false);
+setBraceletsofWaterActive (current => false);
+setBraceletsofWaterAtk (value => 0);
+setBraceletsofWaterDef (value => 0);
+setBraceletsofWaterLuck (value => 0);
 };
 
 const handleWitchStaffClick = event => {
@@ -12510,6 +12592,11 @@ setSpiderBowActive (current => false);
 setSpiderBowAtk (value => 0);
 setSpiderBowDef (value => 0);
 setSpiderBowLuck (value => 0);
+setBraceletsofWaterIsShown (current => false);
+setBraceletsofWaterActive (current => false);
+setBraceletsofWaterAtk (value => 0);
+setBraceletsofWaterDef (value => 0);
+setBraceletsofWaterLuck (value => 0);
 };
 
 const handleTentacleShieldClick = event => {
@@ -12645,6 +12732,12 @@ setSpiderBowActive (current => false);
 setSpiderBowAtk (value => 0);
 setSpiderBowDef (value => 0);
 setSpiderBowLuck (value => 0);
+
+setBraceletsofWaterIsShown (current => false);
+setBraceletsofWaterActive (current => false);
+setBraceletsofWaterAtk (value => 0);
+setBraceletsofWaterDef (value => 0);
+setBraceletsofWaterLuck (value => 0);
 };
 
 
@@ -12852,6 +12945,162 @@ const handleTentacleWhipNoClick = event => {
    setTentacleWhipLuck (value => 0);
 };
 
+const [BraceletsofWater, setBraceletsofWater] = useState(0)
+const [BraceletsofWaterIsShown, setBraceletsofWaterIsShown] = useState(false)
+const [BraceletsofWaterActive, setBraceletsofWaterActive] = useState(false)
+const [BraceletsofWaterAtk, setBraceletsofWaterAtk] = useState(0)
+const [BraceletsofWaterDef, setBraceletsofWaterDef] = useState(0)
+const [BraceletsofWaterLuck, setBraceletsofWaterLuck] = useState(0)
+
+const handleBraceletsofWaterClick = event => {
+  setBraceletsofWaterIsShown (current => true);
+  setBraceletsofWaterActive (current => true);
+  setBraceletsofWaterAtk (value => 2);
+  setBraceletsofWaterDef (value => 14);
+  setBraceletsofWaterLuck (value => 0);
+
+  setTentacleShieldIsShown (current => false);
+  setTentacleShieldActive (current => false);
+  setTentacleShieldAtk (value => 0);
+  setTentacleShieldDef (value => 0);
+  setTentacleShieldLuck (value => 0);
+
+setLoveWandIsShown (current => false);
+setLoveWandActive (current => false);
+setLoveWandAtk (value => 0);
+setLoveWandDef (value => 0);
+setLoveWandLuck (value => 0);
+setDragonFangBowIsShown (current => false);
+setDragonFangBowActive (current => false);
+setDragonFangBowAtk (value => 0);
+setDragonFangBowDef (value => 0);
+setDragonFangBowLuck (value => 0);
+setWitchStaffIsShown (current => false);
+setWitchStaffActive (current => false);
+setWitchStaffAtk (value => 0);
+setWitchStaffDef (value => 0);
+setWitchStaffLuck (value => 0);
+setTentacleWhipIsShown (current => false);
+setTentacleWhipActive (current => false);
+setTentacleWhipAtk (value => 0);
+setTentacleWhipDef (value => 0);
+setTentacleWhipLuck (value => 0);
+
+setNivaliBowIsShown (current => false);
+setNivaliBowActive (current => false);
+setNivaliBowAtk (value => 0);
+setNivaliBowDef (value => 0);
+setNivaliBowLuck (value => 0);
+setFusionCrossbowIsShown (current => false);
+setFusionCrossbowActive (current => false);
+setFusionCrossbowAtk (value => 0);
+setFusionCrossbowDef (value => 0);
+setFusionCrossbowLuck (value => 0);
+setPoePickIsShown (current => false);
+setPoePickActive (current => false);
+setPoePickAtk (value => 0);
+setPoePickDef (value => 0);
+setPoePickLuck (value => 0);
+setMountainMaceIsShown (current => false);
+setMountainMaceActive (current => false);
+setMountainMaceAtk (value => 0);
+setMountainMaceDef (value => 0);
+setMountainMaceLuck (value => 0);
+setNivaliSlingshotIsShown (current => false);
+setNivaliSlingshotActive (current => false);
+setNivaliSlingshotAtk (value => 0);
+setNivaliSlingshotDef (value => 0);
+setNivaliSlingshotLuck (value => 0);
+setWoodenGardenHornIsShown (current => false);
+setWoodenGardenHornActive (current => false);
+setWoodenGardenHornAtk (value => 0);
+setWoodenGardenHornDef (value => 0);
+setWoodenGardenHornLuck (value => 0);
+setStaffOfTheDeadIsShown (current => false);
+setStaffOfTheDeadActive (current => false);
+setStaffOfTheDeadAtk (value => 0);
+setStaffOfTheDeadDef (value => 0);
+setStaffOfTheDeadLuck (value => 0);
+setTempestYoYoIsShown (current => false);
+setTempestYoYoActive (current => false);
+setTempestYoYoAtk (value => 0);
+setTempestYoYoDef (value => 0);
+setTempestYoYoLuck (value => 0);
+setSteelShieldIsShown (current => false);
+setSteelShieldActive (current => false);
+setSteelShieldAtk (value => 0);
+setSteelShieldDef (value => 0);
+setSteelShieldLuck (value => 0);
+setSteelAxeIsShown (current => false);
+setSteelAxeActive (current => false);
+setSteelAxeAtk (value => 0);
+setSteelAxeDef (value => 0);
+setSteelAxeLuck (value => 0);
+setHarpoonIsShown (current => false);
+setHarpoonActive (current => false);
+setHarpoonAtk (value => 0);
+setHarpoonDef (value => 0);
+setHarpoonLuck (value => 0);
+setStoneHammerIsShown (current => false);
+setStoneHammerActive (current => false);
+setStoneHammerAtk (value => 0);
+setStoneHammerDef (value => 0);
+setStoneHammerLuck (value => 0);
+setSteelSpearIsShown (current => false);
+setSteelSpearActive (current => false);
+setSteelSpearAtk (value => 0);
+setSteelSpearDef (value => 0);
+setSteelSpearLuck (value => 0);
+setNetIsShown (current => false);
+setNetActive (current => false);
+setNetAtk (value => 0);
+setNetDef (value => 0);
+setNetLuck (value => 0);
+setGlassStaffIsShown (current => false);
+setGlassStaffActive (current => false);
+setGlassStaffAtk (value => 0);
+setGlassStaffDef (value => 0);
+setGlassStaffLuck (value => 0);
+setCrossbowIsShown (current => false);
+setCrossbowActive (current => false);
+setCrossbowAtk (value => 0);
+setCrossbowDef (value => 0);
+setCrossbowLuck (value => 0);
+setWoodenBowIsShown (current => false);
+setWoodenBowActive (current => false);
+setWoodenBowAtk (value => 0);
+setWoodenBowDef (value => 0);
+setWoodenBowLuck (value => 0);
+setWoodHammerIsShown (current => false);
+setWoodHammerActive (current => false);
+setWoodHammerAtk (value => 0);
+setWoodHammerDef (value => 0);
+setWoodHammerLuck (value => 0);
+setVineNetIsShown (current => false);
+setVineNetActive (current => false);
+setVineNetAtk (value => 0);
+setVineNetDef (value => 0);
+setVineNetLuck (value => 0);
+setOldStaffIsShown (current => false);
+setOldStaffActive (current => false);
+setOldStaffAtk (value => 0);
+setOldStaffDef (value => 0);
+setOldStaffLuck (value => 0);
+setSpiderBowIsShown (current => false);
+setSpiderBowActive (current => false);
+setSpiderBowAtk (value => 0);
+setSpiderBowDef (value => 0);
+setSpiderBowLuck (value => 0);
+  };
+
+  const handleBraceletsofWaterNoClick = event => {
+  setBraceletsofWaterIsShown (current => false);
+  setBraceletsofWaterActive (current => false);
+  setBraceletsofWaterAtk (value => 0);
+  setBraceletsofWaterDef (value => 0);
+  setBraceletsofWaterLuck (value => 0);
+  };
+
 //weapon 2 equations//
 
 const totalWeapon2TopAtk = Math.max (SpiderBowAtk, OldStaffAtk, VineNetAtk, WoodHammerAtk, 
@@ -12859,21 +13108,21 @@ const totalWeapon2TopAtk = Math.max (SpiderBowAtk, OldStaffAtk, VineNetAtk, Wood
   HarpoonAtk, SteelAxeAtk, SteelShieldAtk, TempestYoYoAtk, StaffOfTheDeadAtk, 
   WoodenGardenHornAtk, FusionCrossbowAtk, PoePickAtk, MountainMaceAtk, NivaliBowAtk, 
   NivaliSlingshotAtk, LoveWandAtk, DragonFangBowAtk, WitchStaffAtk, TentacleShieldAtk, 
-  TentacleWhipAtk)
+  TentacleWhipAtk, BraceletsofWaterAtk)
   
 const totalWeapon2TopDef = Math.max (SpiderBowDef, OldStaffDef, VineNetDef, WoodHammerDef, 
 WoodenBowDef, CrossbowDef, GlassStaffDef, NetDef, SteelSpearDef, StoneHammerDef,
 HarpoonDef, SteelAxeDef, SteelShieldDef, TempestYoYoDef, StaffOfTheDeadDef, 
 WoodenGardenHornDef, FusionCrossbowDef, PoePickDef, MountainMaceDef, NivaliBowDef, 
 NivaliSlingshotDef, LoveWandDef, DragonFangBowDef, WitchStaffDef, TentacleShieldDef, 
-TentacleWhipDef)
+TentacleWhipDef, BraceletsofWaterDef)
 
 const totalWeapon2TopLuck = Math.max (SpiderBowLuck, OldStaffLuck, VineNetLuck, WoodHammerLuck, 
 WoodenBowLuck, CrossbowLuck, GlassStaffLuck, NetLuck, SteelSpearLuck, StoneHammerLuck,
 HarpoonLuck, SteelAxeLuck, SteelShieldLuck, TempestYoYoLuck, StaffOfTheDeadLuck, 
 WoodenGardenHornLuck, FusionCrossbowLuck, PoePickLuck, MountainMaceLuck, NivaliBowLuck, 
 NivaliSlingshotLuck, LoveWandLuck, DragonFangBowLuck, WitchStaffLuck, TentacleShieldLuck, 
-TentacleWhipLuck)
+TentacleWhipLuck, BraceletsofWaterLuck)
 
 
 
@@ -12883,11 +13132,4223 @@ const [NoAccessory, setNoAccessory] = useState(0)
 const [NoAccessoryIsShown, setNoAccessoryIsShown] = useState(false)
 const [NoAccessoryActive, setNoAccessoryActive] = useState(false)
 
-//Helmet battle items//
+const [PirateAccordionIsShown, setPirateAccordionIsShown] = useState(false)
+const [PirateAccordionActive, setPirateAccordionActive] = useState(false)
+const [PirateAccordionAtk, setPirateAccordionAtk] = useState(0)
+const [PirateAccordionDef, setPirateAccordionDef] = useState(0)
+const [PirateAccordionLuck, setPirateAccordionLuck] = useState(0)
 
-const [NoHelmet, setNoHelmet] = useState(0)
-const [NoHelmetIsShown, setNoHelmetIsShown] = useState(false)
-const [NoHelmetActive, setNoHelmetActive] = useState(false)
+
+const handlePirateAccordionClick = event => {
+   setGradScrollVoidIsShown (current => false);
+   setGradScrollVoidActive (current => false);
+   setGradScrollVoidAtk (value => 0);
+   setGradScrollVoidDef (value => 0);
+   setGradScrollVoidLuck (value => 0);
+
+   setPirateAccordionIsShown (current => !PirateAccordionIsShown);
+   setPirateAccordionActive (current => !PirateAccordionActive);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 3);
+   setPirateAccordionLuck (value => 6);
+
+   setAstrolabeIsShown (current => false);
+   setAstrolabeActive (current => false);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 0);
+   setBardNoteIsShown (current => false);
+   setBardNoteActive (current => false);
+   setBardNoteAtk (value => 0);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 0);
+   setDarkForestAmuletIsShown (current => false);
+   setDarkForestAmuletActive (current => false);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 0);
+   setFeatherNecklaceIsShown (current => false);
+   setFeatherNecklaceActive (current => false);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 0);
+   setFeatherNecklaceLuck (value => 0);
+   setGlassNecklaceIsShown (current => false);
+   setGlassNecklaceActive (current => false);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 0);
+   setGlassNecklaceLuck (value => 0);
+   setGoldenDragonTiaraIsShown (current => false);
+   setGoldenDragonTiaraActive (current => false);
+   setGoldenDragonTiaraAtk (value => 0);
+   setGoldenDragonTiaraDef (value => 0);
+   setGoldenDragonTiaraLuck (value => 0);
+   setHauntedNecklaceIsShown (current => false);
+   setHauntedNecklaceActive (current => false);
+   setHauntedNecklaceAtk (value => 0);
+   setHauntedNecklaceDef (value => 0);
+   setHauntedNecklaceLuck (value => 0);
+   setHopeLightIsShown (current => false);
+   setHopeLightActive (current => false);
+   setHopeLightAtk (value => 0);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+   setLightBloomIsShown (current => false);
+   setLightBloomActive (current => false);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 0);
+   setLightBloomLuck (value => 0);
+   setMushroomGrenadeIsShown (current => false);
+   setMushroomGrenadeActive (current => false);
+   setMushroomGrenadeAtk (value => 0);
+   setMushroomGrenadeDef (value => 0);
+   setMushroomGrenadeLuck (value => 0);
+   setNivaliGlovesIsShown (current => false);
+   setNivaliGlovesActive (current => false);
+   setNivaliGlovesAtk (value => 0);
+   setNivaliGlovesDef (value => 0);
+   setNivaliGlovesLuck (value => 0);
+   setNivaliPantsIsShown (current => false);
+   setNivaliPantsActive (current => false);
+   setNivaliPantsAtk (value => 0);
+   setNivaliPantsDef (value => 0);
+   setNivaliPantsLuck (value => 0);
+   setNivaliShieldIsShown (current => false);
+   setNivaliShieldActive (current => false);
+   setNivaliShieldAtk (value => 0);
+   setNivaliShieldDef (value => 0);
+   setNivaliShieldLuck (value => 0);
+   setRainaBraceletIsShown (current => false);
+   setRainaBraceletActive (current => false);
+   setRainaBraceletAtk (value => 0);
+   setRainaBraceletDef (value => 0);
+   setRainaBraceletLuck (value => 0);
+   setRustyAmuletIsShown (current => false);
+   setRustyAmuletActive (current => false);
+   setRustyAmuletAtk (value => 0);
+   setRustyAmuletDef (value => 0);
+   setRustyAmuletLuck (value => 0);
+   setRustyPendantIsShown (current => false);
+   setRustyPendantActive (current => false);
+   setRustyPendantAtk (value => 0);
+   setRustyPendantDef (value => 0);
+   setRustyPendantLuck (value => 0);
+   setSandsRingIsShown (current => false);
+   setSandsRingActive (current => false);
+   setSandsRingAtk (value => 0);
+   setSandsRingDef (value => 0);
+   setSandsRingLuck (value => 0);
+   setVictorianFanIsShown (current => false);
+   setVictorianFanActive (current => false);
+   setVictorianFanAtk (value => 0);
+   setVictorianFanDef (value => 0);
+   setVictorianFanLuck (value => 0);
+   setGradScrollAstrologyIsShown (current => false);
+   setGradScrollAstrologyActive (current => false);
+   setGradScrollAstrologyAtk (value => 0);
+   setGradScrollAstrologyDef (value => 0);
+   setGradScrollAstrologyLuck (value => 0);
+   setGradScrollAlchemyIsShown (current => false);
+   setGradScrollAlchemyActive (current => false);
+   setGradScrollAlchemyAtk (value => 0);
+   setGradScrollAlchemyDef (value => 0);
+   setGradScrollAlchemyLuck (value => 0);
+   setGradScrollAKIsShown (current => false);
+   setGradScrollAKActive (current => false);
+   setGradScrollAKAtk (value => 0);
+   setGradScrollAKDef (value => 0);
+   setGradScrollAKLuck (value => 0);
+   setGradScrollSpellsIsShown (current => false);
+   setGradScrollSpellsActive (current => false);
+   setGradScrollSpellsAtk (value => 0);
+   setGradScrollSpellsDef (value => 0);
+   setGradScrollSpellsLuck (value => 0);
+   setGradScrollMirrorsIsShown (current => false);
+   setGradScrollMirrorsActive (current => false);
+   setGradScrollMirrorsAtk (value => 0);
+   setGradScrollMirrorsDef (value => 0);
+   setGradScrollMirrorsLuck (value => 0);
+   setGradScrollFungiIsShown (current => false);
+   setGradScrollFungiActive (current => false);
+   setGradScrollFungiAtk (value => 0);
+   setGradScrollFungiDef (value => 0);
+   setGradScrollFungiLuck (value => 0);
+   setGradScrollThreadsIsShown (current => false);
+   setGradScrollThreadsActive (current => false);
+   setGradScrollThreadsAtk (value => 0);
+   setGradScrollThreadsDef (value => 0);
+   setGradScrollThreadsLuck (value => 0);  
+}
+
+const handlePirateAccordionNoClick = event => {
+   setPirateAccordionIsShown (current => false);
+   setPirateAccordionActive (current => false);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 0);
+   setPirateAccordionLuck (value => 0);
+}
+
+const [AstrolabeIsShown, setAstrolabeIsShown] = useState(false)
+const [AstrolabeActive, setAstrolabeActive] = useState(false)
+const [AstrolabeAtk, setAstrolabeAtk] = useState(0)
+const [AstrolabeDef, setAstrolabeDef] = useState(0)
+const [AstrolabeLuck, setAstrolabeLuck] = useState(0)
+
+
+const handleAstrolabeClick = event => {
+   setGradScrollVoidIsShown (current => false);
+   setGradScrollVoidActive (current => false);
+   setGradScrollVoidAtk (value => 0);
+   setGradScrollVoidDef (value => 0);
+   setGradScrollVoidLuck (value => 0);
+
+
+   setAstrolabeIsShown (current => !AstrolabeIsShown);
+   setAstrolabeActive (current => !AstrolabeActive);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 5);
+ 
+   setPirateAccordionIsShown (current => false);
+   setPirateAccordionActive (current => false);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 0);
+   setPirateAccordionLuck (value => 0);
+   setBardNoteIsShown (current => false);
+   setBardNoteActive (current => false);
+   setBardNoteAtk (value => 0);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 0);
+   setDarkForestAmuletIsShown (current => false);
+   setDarkForestAmuletActive (current => false);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 0);
+   setFeatherNecklaceIsShown (current => false);
+   setFeatherNecklaceActive (current => false);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 0);
+   setFeatherNecklaceLuck (value => 0);
+   setGlassNecklaceIsShown (current => false);
+   setGlassNecklaceActive (current => false);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 0);
+   setGlassNecklaceLuck (value => 0);
+   setGoldenDragonTiaraIsShown (current => false);
+   setGoldenDragonTiaraActive (current => false);
+   setGoldenDragonTiaraAtk (value => 0);
+   setGoldenDragonTiaraDef (value => 0);
+   setGoldenDragonTiaraLuck (value => 0);
+   setHauntedNecklaceIsShown (current => false);
+   setHauntedNecklaceActive (current => false);
+   setHauntedNecklaceAtk (value => 0);
+   setHauntedNecklaceDef (value => 0);
+   setHauntedNecklaceLuck (value => 0);
+   setHopeLightIsShown (current => false);
+   setHopeLightActive (current => false);
+   setHopeLightAtk (value => 0);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+   setLightBloomIsShown (current => false);
+   setLightBloomActive (current => false);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 0);
+   setLightBloomLuck (value => 0);
+   setMushroomGrenadeIsShown (current => false);
+   setMushroomGrenadeActive (current => false);
+   setMushroomGrenadeAtk (value => 0);
+   setMushroomGrenadeDef (value => 0);
+   setMushroomGrenadeLuck (value => 0);
+   setNivaliGlovesIsShown (current => false);
+   setNivaliGlovesActive (current => false);
+   setNivaliGlovesAtk (value => 0);
+   setNivaliGlovesDef (value => 0);
+   setNivaliGlovesLuck (value => 0);
+   setNivaliPantsIsShown (current => false);
+   setNivaliPantsActive (current => false);
+   setNivaliPantsAtk (value => 0);
+   setNivaliPantsDef (value => 0);
+   setNivaliPantsLuck (value => 0);
+   setNivaliShieldIsShown (current => false);
+   setNivaliShieldActive (current => false);
+   setNivaliShieldAtk (value => 0);
+   setNivaliShieldDef (value => 0);
+   setNivaliShieldLuck (value => 0);
+   setRainaBraceletIsShown (current => false);
+   setRainaBraceletActive (current => false);
+   setRainaBraceletAtk (value => 0);
+   setRainaBraceletDef (value => 0);
+   setRainaBraceletLuck (value => 0);
+   setRustyAmuletIsShown (current => false);
+   setRustyAmuletActive (current => false);
+   setRustyAmuletAtk (value => 0);
+   setRustyAmuletDef (value => 0);
+   setRustyAmuletLuck (value => 0);
+   setRustyPendantIsShown (current => false);
+   setRustyPendantActive (current => false);
+   setRustyPendantAtk (value => 0);
+   setRustyPendantDef (value => 0);
+   setRustyPendantLuck (value => 0);
+   setSandsRingIsShown (current => false);
+   setSandsRingActive (current => false);
+   setSandsRingAtk (value => 0);
+   setSandsRingDef (value => 0);
+   setSandsRingLuck (value => 0);
+   setVictorianFanIsShown (current => false);
+   setVictorianFanActive (current => false);
+   setVictorianFanAtk (value => 0);
+   setVictorianFanDef (value => 0);
+   setVictorianFanLuck (value => 0);
+   setGradScrollAstrologyIsShown (current => false);
+   setGradScrollAstrologyActive (current => false);
+   setGradScrollAstrologyAtk (value => 0);
+   setGradScrollAstrologyDef (value => 0);
+   setGradScrollAstrologyLuck (value => 0);
+   setGradScrollAlchemyIsShown (current => false);
+   setGradScrollAlchemyActive (current => false);
+   setGradScrollAlchemyAtk (value => 0);
+   setGradScrollAlchemyDef (value => 0);
+   setGradScrollAlchemyLuck (value => 0);
+   setGradScrollAKIsShown (current => false);
+   setGradScrollAKActive (current => false);
+   setGradScrollAKAtk (value => 0);
+   setGradScrollAKDef (value => 0);
+   setGradScrollAKLuck (value => 0);
+   setGradScrollSpellsIsShown (current => false);
+   setGradScrollSpellsActive (current => false);
+   setGradScrollSpellsAtk (value => 0);
+   setGradScrollSpellsDef (value => 0);
+   setGradScrollSpellsLuck (value => 0);
+   setGradScrollMirrorsIsShown (current => false);
+   setGradScrollMirrorsActive (current => false);
+   setGradScrollMirrorsAtk (value => 0);
+   setGradScrollMirrorsDef (value => 0);
+   setGradScrollMirrorsLuck (value => 0);
+   setGradScrollFungiIsShown (current => false);
+   setGradScrollFungiActive (current => false);
+   setGradScrollFungiAtk (value => 0);
+   setGradScrollFungiDef (value => 0);
+   setGradScrollFungiLuck (value => 0);
+   setGradScrollThreadsIsShown (current => false);
+   setGradScrollThreadsActive (current => false);
+   setGradScrollThreadsAtk (value => 0);
+   setGradScrollThreadsDef (value => 0);
+   setGradScrollThreadsLuck (value => 0);  
+}
+
+const handleAstrolabeNoClick = event => {
+   setAstrolabeIsShown (current => false);
+   setAstrolabeActive (current => false);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 0);
+}
+
+const [BardNoteIsShown, setBardNoteIsShown] = useState(false)
+const [BardNoteActive, setBardNoteActive] = useState(false)
+const [BardNoteAtk, setBardNoteAtk] = useState(0)
+const [BardNoteDef, setBardNoteDef] = useState(0)
+const [BardNoteLuck, setBardNoteLuck] = useState(0)
+
+
+const handleBardNoteClick = event => {
+   setGradScrollVoidIsShown (current => false);
+   setGradScrollVoidActive (current => false);
+   setGradScrollVoidAtk (value => 0);
+   setGradScrollVoidDef (value => 0);
+   setGradScrollVoidLuck (value => 0);
+
+
+   setBardNoteIsShown (current => !BardNoteIsShown);
+   setBardNoteActive (current => !BardNoteActive);
+   setBardNoteAtk (value => 14);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 2);
+   
+   setPirateAccordionIsShown (current => false);
+   setPirateAccordionActive (current => false);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 0);
+   setPirateAccordionLuck (value => 0);
+   setAstrolabeIsShown (current => false);
+   setAstrolabeActive (current => false);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 0);
+   setDarkForestAmuletIsShown (current => false);
+   setDarkForestAmuletActive (current => false);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 0);
+   setFeatherNecklaceIsShown (current => false);
+   setFeatherNecklaceActive (current => false);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 0);
+   setFeatherNecklaceLuck (value => 0);
+   setGlassNecklaceIsShown (current => false);
+   setGlassNecklaceActive (current => false);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 0);
+   setGlassNecklaceLuck (value => 0);
+   setGoldenDragonTiaraIsShown (current => false);
+   setGoldenDragonTiaraActive (current => false);
+   setGoldenDragonTiaraAtk (value => 0);
+   setGoldenDragonTiaraDef (value => 0);
+   setGoldenDragonTiaraLuck (value => 0);
+   setHauntedNecklaceIsShown (current => false);
+   setHauntedNecklaceActive (current => false);
+   setHauntedNecklaceAtk (value => 0);
+   setHauntedNecklaceDef (value => 0);
+   setHauntedNecklaceLuck (value => 0);
+   setHopeLightIsShown (current => false);
+   setHopeLightActive (current => false);
+   setHopeLightAtk (value => 0);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+   setLightBloomIsShown (current => false);
+   setLightBloomActive (current => false);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 0);
+   setLightBloomLuck (value => 0);
+   setMushroomGrenadeIsShown (current => false);
+   setMushroomGrenadeActive (current => false);
+   setMushroomGrenadeAtk (value => 0);
+   setMushroomGrenadeDef (value => 0);
+   setMushroomGrenadeLuck (value => 0);
+   setNivaliGlovesIsShown (current => false);
+   setNivaliGlovesActive (current => false);
+   setNivaliGlovesAtk (value => 0);
+   setNivaliGlovesDef (value => 0);
+   setNivaliGlovesLuck (value => 0);
+   setNivaliPantsIsShown (current => false);
+   setNivaliPantsActive (current => false);
+   setNivaliPantsAtk (value => 0);
+   setNivaliPantsDef (value => 0);
+   setNivaliPantsLuck (value => 0);
+   setNivaliShieldIsShown (current => false);
+   setNivaliShieldActive (current => false);
+   setNivaliShieldAtk (value => 0);
+   setNivaliShieldDef (value => 0);
+   setNivaliShieldLuck (value => 0);
+   setRainaBraceletIsShown (current => false);
+   setRainaBraceletActive (current => false);
+   setRainaBraceletAtk (value => 0);
+   setRainaBraceletDef (value => 0);
+   setRainaBraceletLuck (value => 0);
+   setRustyAmuletIsShown (current => false);
+   setRustyAmuletActive (current => false);
+   setRustyAmuletAtk (value => 0);
+   setRustyAmuletDef (value => 0);
+   setRustyAmuletLuck (value => 0);
+   setRustyPendantIsShown (current => false);
+   setRustyPendantActive (current => false);
+   setRustyPendantAtk (value => 0);
+   setRustyPendantDef (value => 0);
+   setRustyPendantLuck (value => 0);
+   setSandsRingIsShown (current => false);
+   setSandsRingActive (current => false);
+   setSandsRingAtk (value => 0);
+   setSandsRingDef (value => 0);
+   setSandsRingLuck (value => 0);
+   setVictorianFanIsShown (current => false);
+   setVictorianFanActive (current => false);
+   setVictorianFanAtk (value => 0);
+   setVictorianFanDef (value => 0);
+   setVictorianFanLuck (value => 0);
+   setGradScrollAstrologyIsShown (current => false);
+   setGradScrollAstrologyActive (current => false);
+   setGradScrollAstrologyAtk (value => 0);
+   setGradScrollAstrologyDef (value => 0);
+   setGradScrollAstrologyLuck (value => 0);
+   setGradScrollAlchemyIsShown (current => false);
+   setGradScrollAlchemyActive (current => false);
+   setGradScrollAlchemyAtk (value => 0);
+   setGradScrollAlchemyDef (value => 0);
+   setGradScrollAlchemyLuck (value => 0);
+   setGradScrollAKIsShown (current => false);
+   setGradScrollAKActive (current => false);
+   setGradScrollAKAtk (value => 0);
+   setGradScrollAKDef (value => 0);
+   setGradScrollAKLuck (value => 0);
+   setGradScrollSpellsIsShown (current => false);
+   setGradScrollSpellsActive (current => false);
+   setGradScrollSpellsAtk (value => 0);
+   setGradScrollSpellsDef (value => 0);
+   setGradScrollSpellsLuck (value => 0);
+   setGradScrollMirrorsIsShown (current => false);
+   setGradScrollMirrorsActive (current => false);
+   setGradScrollMirrorsAtk (value => 0);
+   setGradScrollMirrorsDef (value => 0);
+   setGradScrollMirrorsLuck (value => 0);
+   setGradScrollFungiIsShown (current => false);
+   setGradScrollFungiActive (current => false);
+   setGradScrollFungiAtk (value => 0);
+   setGradScrollFungiDef (value => 0);
+   setGradScrollFungiLuck (value => 0);
+   setGradScrollThreadsIsShown (current => false);
+   setGradScrollThreadsActive (current => false);
+   setGradScrollThreadsAtk (value => 0);
+   setGradScrollThreadsDef (value => 0);
+   setGradScrollThreadsLuck (value => 0);  
+}
+
+const handleBardNoteNoClick = event => {
+   setBardNoteIsShown (current => false);
+   setBardNoteActive (current => false);
+   setBardNoteAtk (value => 0);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 0);
+}
+
+const [DarkForestAmuletIsShown, setDarkForestAmuletIsShown] = useState(false)
+const [DarkForestAmuletActive, setDarkForestAmuletActive] = useState(false)
+const [DarkForestAmuletAtk, setDarkForestAmuletAtk] = useState(0)
+const [DarkForestAmuletDef, setDarkForestAmuletDef] = useState(0)
+const [DarkForestAmuletLuck, setDarkForestAmuletLuck] = useState(0)
+
+
+const handleDarkForestAmuletClick = event => {
+
+   setGradScrollVoidIsShown (current => false);
+   setGradScrollVoidActive (current => false);
+   setGradScrollVoidAtk (value => 0);
+   setGradScrollVoidDef (value => 0);
+   setGradScrollVoidLuck (value => 0);
+
+   setDarkForestAmuletIsShown (current => !DarkForestAmuletIsShown);
+   setDarkForestAmuletActive (current => !DarkForestAmuletActive);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 10);
+   
+   setPirateAccordionIsShown (current => false);
+   setPirateAccordionActive (current => false);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 0);
+   setPirateAccordionLuck (value => 0);
+   setAstrolabeIsShown (current => false);
+   setAstrolabeActive (current => false);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 0);
+   setBardNoteIsShown (current => false);
+   setBardNoteActive (current => false);
+   setBardNoteAtk (value => 0);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 0);
+   setFeatherNecklaceIsShown (current => false);
+   setFeatherNecklaceActive (current => false);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 0);
+   setFeatherNecklaceLuck (value => 0);
+   setGlassNecklaceIsShown (current => false);
+   setGlassNecklaceActive (current => false);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 0);
+   setGlassNecklaceLuck (value => 0);
+   setGoldenDragonTiaraIsShown (current => false);
+   setGoldenDragonTiaraActive (current => false);
+   setGoldenDragonTiaraAtk (value => 0);
+   setGoldenDragonTiaraDef (value => 0);
+   setGoldenDragonTiaraLuck (value => 0);
+   setHauntedNecklaceIsShown (current => false);
+   setHauntedNecklaceActive (current => false);
+   setHauntedNecklaceAtk (value => 0);
+   setHauntedNecklaceDef (value => 0);
+   setHauntedNecklaceLuck (value => 0);
+   setHopeLightIsShown (current => false);
+   setHopeLightActive (current => false);
+   setHopeLightAtk (value => 0);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+   setLightBloomIsShown (current => false);
+   setLightBloomActive (current => false);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 0);
+   setLightBloomLuck (value => 0);
+   setMushroomGrenadeIsShown (current => false);
+   setMushroomGrenadeActive (current => false);
+   setMushroomGrenadeAtk (value => 0);
+   setMushroomGrenadeDef (value => 0);
+   setMushroomGrenadeLuck (value => 0);
+   setNivaliGlovesIsShown (current => false);
+   setNivaliGlovesActive (current => false);
+   setNivaliGlovesAtk (value => 0);
+   setNivaliGlovesDef (value => 0);
+   setNivaliGlovesLuck (value => 0);
+   setNivaliPantsIsShown (current => false);
+   setNivaliPantsActive (current => false);
+   setNivaliPantsAtk (value => 0);
+   setNivaliPantsDef (value => 0);
+   setNivaliPantsLuck (value => 0);
+   setNivaliShieldIsShown (current => false);
+   setNivaliShieldActive (current => false);
+   setNivaliShieldAtk (value => 0);
+   setNivaliShieldDef (value => 0);
+   setNivaliShieldLuck (value => 0);
+   setRainaBraceletIsShown (current => false);
+   setRainaBraceletActive (current => false);
+   setRainaBraceletAtk (value => 0);
+   setRainaBraceletDef (value => 0);
+   setRainaBraceletLuck (value => 0);
+   setRustyAmuletIsShown (current => false);
+   setRustyAmuletActive (current => false);
+   setRustyAmuletAtk (value => 0);
+   setRustyAmuletDef (value => 0);
+   setRustyAmuletLuck (value => 0);
+   setRustyPendantIsShown (current => false);
+   setRustyPendantActive (current => false);
+   setRustyPendantAtk (value => 0);
+   setRustyPendantDef (value => 0);
+   setRustyPendantLuck (value => 0);
+   setSandsRingIsShown (current => false);
+   setSandsRingActive (current => false);
+   setSandsRingAtk (value => 0);
+   setSandsRingDef (value => 0);
+   setSandsRingLuck (value => 0);
+   setVictorianFanIsShown (current => false);
+   setVictorianFanActive (current => false);
+   setVictorianFanAtk (value => 0);
+   setVictorianFanDef (value => 0);
+   setVictorianFanLuck (value => 0);
+   setGradScrollAstrologyIsShown (current => false);
+   setGradScrollAstrologyActive (current => false);
+   setGradScrollAstrologyAtk (value => 0);
+   setGradScrollAstrologyDef (value => 0);
+   setGradScrollAstrologyLuck (value => 0);
+   setGradScrollAlchemyIsShown (current => false);
+   setGradScrollAlchemyActive (current => false);
+   setGradScrollAlchemyAtk (value => 0);
+   setGradScrollAlchemyDef (value => 0);
+   setGradScrollAlchemyLuck (value => 0);
+   setGradScrollAKIsShown (current => false);
+   setGradScrollAKActive (current => false);
+   setGradScrollAKAtk (value => 0);
+   setGradScrollAKDef (value => 0);
+   setGradScrollAKLuck (value => 0);
+   setGradScrollSpellsIsShown (current => false);
+   setGradScrollSpellsActive (current => false);
+   setGradScrollSpellsAtk (value => 0);
+   setGradScrollSpellsDef (value => 0);
+   setGradScrollSpellsLuck (value => 0);
+   setGradScrollMirrorsIsShown (current => false);
+   setGradScrollMirrorsActive (current => false);
+   setGradScrollMirrorsAtk (value => 0);
+   setGradScrollMirrorsDef (value => 0);
+   setGradScrollMirrorsLuck (value => 0);
+   setGradScrollFungiIsShown (current => false);
+   setGradScrollFungiActive (current => false);
+   setGradScrollFungiAtk (value => 0);
+   setGradScrollFungiDef (value => 0);
+   setGradScrollFungiLuck (value => 0);
+   setGradScrollThreadsIsShown (current => false);
+   setGradScrollThreadsActive (current => false);
+   setGradScrollThreadsAtk (value => 0);
+   setGradScrollThreadsDef (value => 0);
+   setGradScrollThreadsLuck (value => 0);  
+}
+
+const handleDarkForestAmuletNoClick = event => {
+   setDarkForestAmuletIsShown (current => false);
+   setDarkForestAmuletActive (current => false);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 0);
+}
+
+const [FeatherNecklaceIsShown, setFeatherNecklaceIsShown] = useState(false)
+const [FeatherNecklaceActive, setFeatherNecklaceActive] = useState(false)
+const [FeatherNecklaceAtk, setFeatherNecklaceAtk] = useState(0)
+const [FeatherNecklaceDef, setFeatherNecklaceDef] = useState(0)
+const [FeatherNecklaceLuck, setFeatherNecklaceLuck] = useState(0)
+
+
+const handleFeatherNecklaceClick = event => {
+   setGradScrollVoidIsShown (current => false);
+   setGradScrollVoidActive (current => false);
+   setGradScrollVoidAtk (value => 0);
+   setGradScrollVoidDef (value => 0);
+   setGradScrollVoidLuck (value => 0);
+
+   setFeatherNecklaceIsShown (current => !FeatherNecklaceIsShown);
+   setFeatherNecklaceActive (current => !FeatherNecklaceActive);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 4);
+   setFeatherNecklaceLuck (value => 12);
+   
+   setPirateAccordionIsShown (current => false);
+   setPirateAccordionActive (current => false);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 0);
+   setPirateAccordionLuck (value => 0);
+   setAstrolabeIsShown (current => false);
+   setAstrolabeActive (current => false);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 0);
+   setBardNoteIsShown (current => false);
+   setBardNoteActive (current => false);
+   setBardNoteAtk (value => 0);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 0);
+   setDarkForestAmuletIsShown (current => false);
+   setDarkForestAmuletActive (current => false);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 0);
+   setGlassNecklaceIsShown (current => false);
+   setGlassNecklaceActive (current => false);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 0);
+   setGlassNecklaceLuck (value => 0);
+   setGoldenDragonTiaraIsShown (current => false);
+   setGoldenDragonTiaraActive (current => false);
+   setGoldenDragonTiaraAtk (value => 0);
+   setGoldenDragonTiaraDef (value => 0);
+   setGoldenDragonTiaraLuck (value => 0);
+   setHauntedNecklaceIsShown (current => false);
+   setHauntedNecklaceActive (current => false);
+   setHauntedNecklaceAtk (value => 0);
+   setHauntedNecklaceDef (value => 0);
+   setHauntedNecklaceLuck (value => 0);
+   setHopeLightIsShown (current => false);
+   setHopeLightActive (current => false);
+   setHopeLightAtk (value => 0);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+   setLightBloomIsShown (current => false);
+   setLightBloomActive (current => false);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 0);
+   setLightBloomLuck (value => 0);
+   setMushroomGrenadeIsShown (current => false);
+   setMushroomGrenadeActive (current => false);
+   setMushroomGrenadeAtk (value => 0);
+   setMushroomGrenadeDef (value => 0);
+   setMushroomGrenadeLuck (value => 0);
+   setNivaliGlovesIsShown (current => false);
+   setNivaliGlovesActive (current => false);
+   setNivaliGlovesAtk (value => 0);
+   setNivaliGlovesDef (value => 0);
+   setNivaliGlovesLuck (value => 0);
+   setNivaliPantsIsShown (current => false);
+   setNivaliPantsActive (current => false);
+   setNivaliPantsAtk (value => 0);
+   setNivaliPantsDef (value => 0);
+   setNivaliPantsLuck (value => 0);
+   setNivaliShieldIsShown (current => false);
+   setNivaliShieldActive (current => false);
+   setNivaliShieldAtk (value => 0);
+   setNivaliShieldDef (value => 0);
+   setNivaliShieldLuck (value => 0);
+   setRainaBraceletIsShown (current => false);
+   setRainaBraceletActive (current => false);
+   setRainaBraceletAtk (value => 0);
+   setRainaBraceletDef (value => 0);
+   setRainaBraceletLuck (value => 0);
+   setRustyAmuletIsShown (current => false);
+   setRustyAmuletActive (current => false);
+   setRustyAmuletAtk (value => 0);
+   setRustyAmuletDef (value => 0);
+   setRustyAmuletLuck (value => 0);
+   setRustyPendantIsShown (current => false);
+   setRustyPendantActive (current => false);
+   setRustyPendantAtk (value => 0);
+   setRustyPendantDef (value => 0);
+   setRustyPendantLuck (value => 0);
+   setSandsRingIsShown (current => false);
+   setSandsRingActive (current => false);
+   setSandsRingAtk (value => 0);
+   setSandsRingDef (value => 0);
+   setSandsRingLuck (value => 0);
+   setVictorianFanIsShown (current => false);
+   setVictorianFanActive (current => false);
+   setVictorianFanAtk (value => 0);
+   setVictorianFanDef (value => 0);
+   setVictorianFanLuck (value => 0);
+   setGradScrollAstrologyIsShown (current => false);
+   setGradScrollAstrologyActive (current => false);
+   setGradScrollAstrologyAtk (value => 0);
+   setGradScrollAstrologyDef (value => 0);
+   setGradScrollAstrologyLuck (value => 0);
+   setGradScrollAlchemyIsShown (current => false);
+   setGradScrollAlchemyActive (current => false);
+   setGradScrollAlchemyAtk (value => 0);
+   setGradScrollAlchemyDef (value => 0);
+   setGradScrollAlchemyLuck (value => 0);
+   setGradScrollAKIsShown (current => false);
+   setGradScrollAKActive (current => false);
+   setGradScrollAKAtk (value => 0);
+   setGradScrollAKDef (value => 0);
+   setGradScrollAKLuck (value => 0);
+   setGradScrollSpellsIsShown (current => false);
+   setGradScrollSpellsActive (current => false);
+   setGradScrollSpellsAtk (value => 0);
+   setGradScrollSpellsDef (value => 0);
+   setGradScrollSpellsLuck (value => 0);
+   setGradScrollMirrorsIsShown (current => false);
+   setGradScrollMirrorsActive (current => false);
+   setGradScrollMirrorsAtk (value => 0);
+   setGradScrollMirrorsDef (value => 0);
+   setGradScrollMirrorsLuck (value => 0);
+   setGradScrollFungiIsShown (current => false);
+   setGradScrollFungiActive (current => false);
+   setGradScrollFungiAtk (value => 0);
+   setGradScrollFungiDef (value => 0);
+   setGradScrollFungiLuck (value => 0);
+   setGradScrollThreadsIsShown (current => false);
+   setGradScrollThreadsActive (current => false);
+   setGradScrollThreadsAtk (value => 0);
+   setGradScrollThreadsDef (value => 0);
+   setGradScrollThreadsLuck (value => 0);  
+}
+
+const handleFeatherNecklaceNoClick = event => {
+   setFeatherNecklaceIsShown (current => false);
+   setFeatherNecklaceActive (current => false);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 0);
+   setFeatherNecklaceLuck (value => 0);
+}
+
+const [GlassNecklaceIsShown, setGlassNecklaceIsShown] = useState(false)
+const [GlassNecklaceActive, setGlassNecklaceActive] = useState(false)
+const [GlassNecklaceAtk, setGlassNecklaceAtk] = useState(0)
+const [GlassNecklaceDef, setGlassNecklaceDef] = useState(0)
+const [GlassNecklaceLuck, setGlassNecklaceLuck] = useState(0)
+
+
+const handleGlassNecklaceClick = event => {
+   setGradScrollVoidIsShown (current => false);
+   setGradScrollVoidActive (current => false);
+   setGradScrollVoidAtk (value => 0);
+   setGradScrollVoidDef (value => 0);
+   setGradScrollVoidLuck (value => 0);
+
+   setGlassNecklaceIsShown (current => !GlassNecklaceIsShown);
+   setGlassNecklaceActive (current => !GlassNecklaceActive);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 3);
+   setGlassNecklaceLuck (value => 6);
+   
+   setPirateAccordionIsShown (current => false);
+   setPirateAccordionActive (current => false);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 0);
+   setPirateAccordionLuck (value => 0);
+   setAstrolabeIsShown (current => false);
+   setAstrolabeActive (current => false);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 0);
+   setBardNoteIsShown (current => false);
+   setBardNoteActive (current => false);
+   setBardNoteAtk (value => 0);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 0);
+   setDarkForestAmuletIsShown (current => false);
+   setDarkForestAmuletActive (current => false);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 0);
+   setFeatherNecklaceIsShown (current => false);
+   setFeatherNecklaceActive (current => false);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 0);
+   setFeatherNecklaceLuck (value => 0);
+   setGoldenDragonTiaraIsShown (current => false);
+   setGoldenDragonTiaraActive (current => false);
+   setGoldenDragonTiaraAtk (value => 0);
+   setGoldenDragonTiaraDef (value => 0);
+   setGoldenDragonTiaraLuck (value => 0);
+   setHauntedNecklaceIsShown (current => false);
+   setHauntedNecklaceActive (current => false);
+   setHauntedNecklaceAtk (value => 0);
+   setHauntedNecklaceDef (value => 0);
+   setHauntedNecklaceLuck (value => 0);
+   setHopeLightIsShown (current => false);
+   setHopeLightActive (current => false);
+   setHopeLightAtk (value => 0);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+   setLightBloomIsShown (current => false);
+   setLightBloomActive (current => false);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 0);
+   setLightBloomLuck (value => 0);
+   setMushroomGrenadeIsShown (current => false);
+   setMushroomGrenadeActive (current => false);
+   setMushroomGrenadeAtk (value => 0);
+   setMushroomGrenadeDef (value => 0);
+   setMushroomGrenadeLuck (value => 0);
+   setNivaliGlovesIsShown (current => false);
+   setNivaliGlovesActive (current => false);
+   setNivaliGlovesAtk (value => 0);
+   setNivaliGlovesDef (value => 0);
+   setNivaliGlovesLuck (value => 0);
+   setNivaliPantsIsShown (current => false);
+   setNivaliPantsActive (current => false);
+   setNivaliPantsAtk (value => 0);
+   setNivaliPantsDef (value => 0);
+   setNivaliPantsLuck (value => 0);
+   setNivaliShieldIsShown (current => false);
+   setNivaliShieldActive (current => false);
+   setNivaliShieldAtk (value => 0);
+   setNivaliShieldDef (value => 0);
+   setNivaliShieldLuck (value => 0);
+   setRainaBraceletIsShown (current => false);
+   setRainaBraceletActive (current => false);
+   setRainaBraceletAtk (value => 0);
+   setRainaBraceletDef (value => 0);
+   setRainaBraceletLuck (value => 0);
+   setRustyAmuletIsShown (current => false);
+   setRustyAmuletActive (current => false);
+   setRustyAmuletAtk (value => 0);
+   setRustyAmuletDef (value => 0);
+   setRustyAmuletLuck (value => 0);
+   setRustyPendantIsShown (current => false);
+   setRustyPendantActive (current => false);
+   setRustyPendantAtk (value => 0);
+   setRustyPendantDef (value => 0);
+   setRustyPendantLuck (value => 0);
+   setSandsRingIsShown (current => false);
+   setSandsRingActive (current => false);
+   setSandsRingAtk (value => 0);
+   setSandsRingDef (value => 0);
+   setSandsRingLuck (value => 0);
+   setVictorianFanIsShown (current => false);
+   setVictorianFanActive (current => false);
+   setVictorianFanAtk (value => 0);
+   setVictorianFanDef (value => 0);
+   setVictorianFanLuck (value => 0);
+   setGradScrollAstrologyIsShown (current => false);
+   setGradScrollAstrologyActive (current => false);
+   setGradScrollAstrologyAtk (value => 0);
+   setGradScrollAstrologyDef (value => 0);
+   setGradScrollAstrologyLuck (value => 0);
+   setGradScrollAlchemyIsShown (current => false);
+   setGradScrollAlchemyActive (current => false);
+   setGradScrollAlchemyAtk (value => 0);
+   setGradScrollAlchemyDef (value => 0);
+   setGradScrollAlchemyLuck (value => 0);
+   setGradScrollAKIsShown (current => false);
+   setGradScrollAKActive (current => false);
+   setGradScrollAKAtk (value => 0);
+   setGradScrollAKDef (value => 0);
+   setGradScrollAKLuck (value => 0);
+   setGradScrollSpellsIsShown (current => false);
+   setGradScrollSpellsActive (current => false);
+   setGradScrollSpellsAtk (value => 0);
+   setGradScrollSpellsDef (value => 0);
+   setGradScrollSpellsLuck (value => 0);
+   setGradScrollMirrorsIsShown (current => false);
+   setGradScrollMirrorsActive (current => false);
+   setGradScrollMirrorsAtk (value => 0);
+   setGradScrollMirrorsDef (value => 0);
+   setGradScrollMirrorsLuck (value => 0);
+   setGradScrollFungiIsShown (current => false);
+   setGradScrollFungiActive (current => false);
+   setGradScrollFungiAtk (value => 0);
+   setGradScrollFungiDef (value => 0);
+   setGradScrollFungiLuck (value => 0);
+   setGradScrollThreadsIsShown (current => false);
+   setGradScrollThreadsActive (current => false);
+   setGradScrollThreadsAtk (value => 0);
+   setGradScrollThreadsDef (value => 0);
+   setGradScrollThreadsLuck (value => 0);  
+}
+
+const handleGlassNecklaceNoClick = event => {
+   setGlassNecklaceIsShown (current => false);
+   setGlassNecklaceActive (current => false);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 0);
+   setGlassNecklaceLuck (value => 0);
+}
+
+const [GoldenDragonTiaraIsShown, setGoldenDragonTiaraIsShown] = useState(false)
+const [GoldenDragonTiaraActive, setGoldenDragonTiaraActive] = useState(false)
+const [GoldenDragonTiaraAtk, setGoldenDragonTiaraAtk] = useState(0)
+const [GoldenDragonTiaraDef, setGoldenDragonTiaraDef] = useState(0)
+const [GoldenDragonTiaraLuck, setGoldenDragonTiaraLuck] = useState(0)
+
+
+const handleGoldenDragonTiaraClick = event => {
+   setGradScrollVoidIsShown (current => false);
+   setGradScrollVoidActive (current => false);
+   setGradScrollVoidAtk (value => 0);
+   setGradScrollVoidDef (value => 0);
+   setGradScrollVoidLuck (value => 0);
+
+   setGoldenDragonTiaraIsShown (current => !GoldenDragonTiaraIsShown);
+   setGoldenDragonTiaraActive (current => !GoldenDragonTiaraActive);
+   setGoldenDragonTiaraAtk (value => 2);
+   setGoldenDragonTiaraDef (value => 2);
+   setGoldenDragonTiaraLuck (value => 8);
+   
+   setPirateAccordionIsShown (current => false);
+   setPirateAccordionActive (current => false);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 0);
+   setPirateAccordionLuck (value => 0);
+   setAstrolabeIsShown (current => false);
+   setAstrolabeActive (current => false);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 0);
+   setBardNoteIsShown (current => false);
+   setBardNoteActive (current => false);
+   setBardNoteAtk (value => 0);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 0);
+   setDarkForestAmuletIsShown (current => false);
+   setDarkForestAmuletActive (current => false);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 0);
+   setFeatherNecklaceIsShown (current => false);
+   setFeatherNecklaceActive (current => false);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 0);
+   setFeatherNecklaceLuck (value => 0);
+   setGlassNecklaceIsShown (current => false);
+   setGlassNecklaceActive (current => false);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 0);
+   setGlassNecklaceLuck (value => 0);
+   setHauntedNecklaceIsShown (current => false);
+   setHauntedNecklaceActive (current => false);
+   setHauntedNecklaceAtk (value => 0);
+   setHauntedNecklaceDef (value => 0);
+   setHauntedNecklaceLuck (value => 0);
+   setHopeLightIsShown (current => false);
+   setHopeLightActive (current => false);
+   setHopeLightAtk (value => 0);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+   setLightBloomIsShown (current => false);
+   setLightBloomActive (current => false);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 0);
+   setLightBloomLuck (value => 0);
+   setMushroomGrenadeIsShown (current => false);
+   setMushroomGrenadeActive (current => false);
+   setMushroomGrenadeAtk (value => 0);
+   setMushroomGrenadeDef (value => 0);
+   setMushroomGrenadeLuck (value => 0);
+   setNivaliGlovesIsShown (current => false);
+   setNivaliGlovesActive (current => false);
+   setNivaliGlovesAtk (value => 0);
+   setNivaliGlovesDef (value => 0);
+   setNivaliGlovesLuck (value => 0);
+   setNivaliPantsIsShown (current => false);
+   setNivaliPantsActive (current => false);
+   setNivaliPantsAtk (value => 0);
+   setNivaliPantsDef (value => 0);
+   setNivaliPantsLuck (value => 0);
+   setNivaliShieldIsShown (current => false);
+   setNivaliShieldActive (current => false);
+   setNivaliShieldAtk (value => 0);
+   setNivaliShieldDef (value => 0);
+   setNivaliShieldLuck (value => 0);
+   setRainaBraceletIsShown (current => false);
+   setRainaBraceletActive (current => false);
+   setRainaBraceletAtk (value => 0);
+   setRainaBraceletDef (value => 0);
+   setRainaBraceletLuck (value => 0);
+   setRustyAmuletIsShown (current => false);
+   setRustyAmuletActive (current => false);
+   setRustyAmuletAtk (value => 0);
+   setRustyAmuletDef (value => 0);
+   setRustyAmuletLuck (value => 0);
+   setRustyPendantIsShown (current => false);
+   setRustyPendantActive (current => false);
+   setRustyPendantAtk (value => 0);
+   setRustyPendantDef (value => 0);
+   setRustyPendantLuck (value => 0);
+   setSandsRingIsShown (current => false);
+   setSandsRingActive (current => false);
+   setSandsRingAtk (value => 0);
+   setSandsRingDef (value => 0);
+   setSandsRingLuck (value => 0);
+   setVictorianFanIsShown (current => false);
+   setVictorianFanActive (current => false);
+   setVictorianFanAtk (value => 0);
+   setVictorianFanDef (value => 0);
+   setVictorianFanLuck (value => 0);
+   setGradScrollAstrologyIsShown (current => false);
+   setGradScrollAstrologyActive (current => false);
+   setGradScrollAstrologyAtk (value => 0);
+   setGradScrollAstrologyDef (value => 0);
+   setGradScrollAstrologyLuck (value => 0);
+   setGradScrollAlchemyIsShown (current => false);
+   setGradScrollAlchemyActive (current => false);
+   setGradScrollAlchemyAtk (value => 0);
+   setGradScrollAlchemyDef (value => 0);
+   setGradScrollAlchemyLuck (value => 0);
+   setGradScrollAKIsShown (current => false);
+   setGradScrollAKActive (current => false);
+   setGradScrollAKAtk (value => 0);
+   setGradScrollAKDef (value => 0);
+   setGradScrollAKLuck (value => 0);
+   setGradScrollSpellsIsShown (current => false);
+   setGradScrollSpellsActive (current => false);
+   setGradScrollSpellsAtk (value => 0);
+   setGradScrollSpellsDef (value => 0);
+   setGradScrollSpellsLuck (value => 0);
+   setGradScrollMirrorsIsShown (current => false);
+   setGradScrollMirrorsActive (current => false);
+   setGradScrollMirrorsAtk (value => 0);
+   setGradScrollMirrorsDef (value => 0);
+   setGradScrollMirrorsLuck (value => 0);
+   setGradScrollFungiIsShown (current => false);
+   setGradScrollFungiActive (current => false);
+   setGradScrollFungiAtk (value => 0);
+   setGradScrollFungiDef (value => 0);
+   setGradScrollFungiLuck (value => 0);
+   setGradScrollThreadsIsShown (current => false);
+   setGradScrollThreadsActive (current => false);
+   setGradScrollThreadsAtk (value => 0);
+   setGradScrollThreadsDef (value => 0);
+   setGradScrollThreadsLuck (value => 0);  
+}
+
+const handleGoldenDragonTiaraNoClick = event => {
+   setGoldenDragonTiaraIsShown (current => false);
+   setGoldenDragonTiaraActive (current => false);
+   setGoldenDragonTiaraAtk (value => 0);
+   setGoldenDragonTiaraDef (value => 0);
+   setGoldenDragonTiaraLuck (value => 0);
+}
+
+const [HauntedNecklaceIsShown, setHauntedNecklaceIsShown] = useState(false)
+const [HauntedNecklaceActive, setHauntedNecklaceActive] = useState(false)
+const [HauntedNecklaceAtk, setHauntedNecklaceAtk] = useState(0)
+const [HauntedNecklaceDef, setHauntedNecklaceDef] = useState(0)
+const [HauntedNecklaceLuck, setHauntedNecklaceLuck] = useState(0)
+
+
+const handleHauntedNecklaceClick = event => {
+   setGradScrollVoidIsShown (current => false);
+   setGradScrollVoidActive (current => false);
+   setGradScrollVoidAtk (value => 0);
+   setGradScrollVoidDef (value => 0);
+   setGradScrollVoidLuck (value => 0);
+
+   setHauntedNecklaceIsShown (current => !HauntedNecklaceIsShown);
+   setHauntedNecklaceActive (current => !HauntedNecklaceActive);
+   setHauntedNecklaceAtk (value => 5);
+   setHauntedNecklaceDef (value => 10);
+   setHauntedNecklaceLuck (value => 5);
+   
+   setPirateAccordionIsShown (current => false);
+   setPirateAccordionActive (current => false);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 0);
+   setPirateAccordionLuck (value => 0);
+   setAstrolabeIsShown (current => false);
+   setAstrolabeActive (current => false);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 0);
+   setBardNoteIsShown (current => false);
+   setBardNoteActive (current => false);
+   setBardNoteAtk (value => 0);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 0);
+   setDarkForestAmuletIsShown (current => false);
+   setDarkForestAmuletActive (current => false);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 0);
+   setFeatherNecklaceIsShown (current => false);
+   setFeatherNecklaceActive (current => false);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 0);
+   setFeatherNecklaceLuck (value => 0);
+   setGlassNecklaceIsShown (current => false);
+   setGlassNecklaceActive (current => false);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 0);
+   setGlassNecklaceLuck (value => 0);
+   setGoldenDragonTiaraIsShown (current => false);
+   setGoldenDragonTiaraActive (current => false);
+   setGoldenDragonTiaraAtk (value => 0);
+   setGoldenDragonTiaraDef (value => 0);
+   setGoldenDragonTiaraLuck (value => 0);
+   setHopeLightIsShown (current => false);
+   setHopeLightActive (current => false);
+   setHopeLightAtk (value => 0);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+   setLightBloomIsShown (current => false);
+   setLightBloomActive (current => false);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 0);
+   setLightBloomLuck (value => 0);
+   setMushroomGrenadeIsShown (current => false);
+   setMushroomGrenadeActive (current => false);
+   setMushroomGrenadeAtk (value => 0);
+   setMushroomGrenadeDef (value => 0);
+   setMushroomGrenadeLuck (value => 0);
+   setNivaliGlovesIsShown (current => false);
+   setNivaliGlovesActive (current => false);
+   setNivaliGlovesAtk (value => 0);
+   setNivaliGlovesDef (value => 0);
+   setNivaliGlovesLuck (value => 0);
+   setNivaliPantsIsShown (current => false);
+   setNivaliPantsActive (current => false);
+   setNivaliPantsAtk (value => 0);
+   setNivaliPantsDef (value => 0);
+   setNivaliPantsLuck (value => 0);
+   setNivaliShieldIsShown (current => false);
+   setNivaliShieldActive (current => false);
+   setNivaliShieldAtk (value => 0);
+   setNivaliShieldDef (value => 0);
+   setNivaliShieldLuck (value => 0);
+   setRainaBraceletIsShown (current => false);
+   setRainaBraceletActive (current => false);
+   setRainaBraceletAtk (value => 0);
+   setRainaBraceletDef (value => 0);
+   setRainaBraceletLuck (value => 0);
+   setRustyAmuletIsShown (current => false);
+   setRustyAmuletActive (current => false);
+   setRustyAmuletAtk (value => 0);
+   setRustyAmuletDef (value => 0);
+   setRustyAmuletLuck (value => 0);
+   setRustyPendantIsShown (current => false);
+   setRustyPendantActive (current => false);
+   setRustyPendantAtk (value => 0);
+   setRustyPendantDef (value => 0);
+   setRustyPendantLuck (value => 0);
+   setSandsRingIsShown (current => false);
+   setSandsRingActive (current => false);
+   setSandsRingAtk (value => 0);
+   setSandsRingDef (value => 0);
+   setSandsRingLuck (value => 0);
+   setVictorianFanIsShown (current => false);
+   setVictorianFanActive (current => false);
+   setVictorianFanAtk (value => 0);
+   setVictorianFanDef (value => 0);
+   setVictorianFanLuck (value => 0);
+   setGradScrollAstrologyIsShown (current => false);
+   setGradScrollAstrologyActive (current => false);
+   setGradScrollAstrologyAtk (value => 0);
+   setGradScrollAstrologyDef (value => 0);
+   setGradScrollAstrologyLuck (value => 0);
+   setGradScrollAlchemyIsShown (current => false);
+   setGradScrollAlchemyActive (current => false);
+   setGradScrollAlchemyAtk (value => 0);
+   setGradScrollAlchemyDef (value => 0);
+   setGradScrollAlchemyLuck (value => 0);
+   setGradScrollAKIsShown (current => false);
+   setGradScrollAKActive (current => false);
+   setGradScrollAKAtk (value => 0);
+   setGradScrollAKDef (value => 0);
+   setGradScrollAKLuck (value => 0);
+   setGradScrollSpellsIsShown (current => false);
+   setGradScrollSpellsActive (current => false);
+   setGradScrollSpellsAtk (value => 0);
+   setGradScrollSpellsDef (value => 0);
+   setGradScrollSpellsLuck (value => 0);
+   setGradScrollMirrorsIsShown (current => false);
+   setGradScrollMirrorsActive (current => false);
+   setGradScrollMirrorsAtk (value => 0);
+   setGradScrollMirrorsDef (value => 0);
+   setGradScrollMirrorsLuck (value => 0);
+   setGradScrollFungiIsShown (current => false);
+   setGradScrollFungiActive (current => false);
+   setGradScrollFungiAtk (value => 0);
+   setGradScrollFungiDef (value => 0);
+   setGradScrollFungiLuck (value => 0);
+   setGradScrollThreadsIsShown (current => false);
+   setGradScrollThreadsActive (current => false);
+   setGradScrollThreadsAtk (value => 0);
+   setGradScrollThreadsDef (value => 0);
+   setGradScrollThreadsLuck (value => 0);  
+}
+
+const handleHauntedNecklaceNoClick = event => {
+   setHauntedNecklaceIsShown (current => false);
+   setHauntedNecklaceActive (current => false);
+   setHauntedNecklaceAtk (value => 0);
+   setHauntedNecklaceDef (value => 0);
+   setHauntedNecklaceLuck (value => 0);
+}
+
+const [HopeLightIsShown, setHopeLightIsShown] = useState(false)
+const [HopeLightActive, setHopeLightActive] = useState(false)
+const [HopeLightAtk, setHopeLightAtk] = useState(0)
+const [HopeLightDef, setHopeLightDef] = useState(0)
+const [HopeLightLuck, setHopeLightLuck] = useState(0)
+
+
+const handleHopeLightClick = event => {
+   setGradScrollVoidIsShown (current => false);
+   setGradScrollVoidActive (current => false);
+   setGradScrollVoidAtk (value => 0);
+   setGradScrollVoidDef (value => 0);
+   setGradScrollVoidLuck (value => 0);
+
+   setHopeLightIsShown (current => !HopeLightIsShown);
+   setHopeLightActive (current => !HopeLightActive);
+   setHopeLightAtk (value => 15);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+   
+   setPirateAccordionIsShown (current => false);
+   setPirateAccordionActive (current => false);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 0);
+   setPirateAccordionLuck (value => 0);
+   setAstrolabeIsShown (current => false);
+   setAstrolabeActive (current => false);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 0);
+   setBardNoteIsShown (current => false);
+   setBardNoteActive (current => false);
+   setBardNoteAtk (value => 0);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 0);
+   setDarkForestAmuletIsShown (current => false);
+   setDarkForestAmuletActive (current => false);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 0);
+   setFeatherNecklaceIsShown (current => false);
+   setFeatherNecklaceActive (current => false);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 0);
+   setFeatherNecklaceLuck (value => 0);
+   setGlassNecklaceIsShown (current => false);
+   setGlassNecklaceActive (current => false);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 0);
+   setGlassNecklaceLuck (value => 0);
+   setGoldenDragonTiaraIsShown (current => false);
+   setGoldenDragonTiaraActive (current => false);
+   setGoldenDragonTiaraAtk (value => 0);
+   setGoldenDragonTiaraDef (value => 0);
+   setGoldenDragonTiaraLuck (value => 0);
+   setHauntedNecklaceIsShown (current => false);
+   setHauntedNecklaceActive (current => false);
+   setHauntedNecklaceAtk (value => 0);
+   setHauntedNecklaceDef (value => 0);
+   setHauntedNecklaceLuck (value => 0);
+   setLightBloomIsShown (current => false);
+   setLightBloomActive (current => false);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 0);
+   setLightBloomLuck (value => 0);
+   setMushroomGrenadeIsShown (current => false);
+   setMushroomGrenadeActive (current => false);
+   setMushroomGrenadeAtk (value => 0);
+   setMushroomGrenadeDef (value => 0);
+   setMushroomGrenadeLuck (value => 0);
+   setNivaliGlovesIsShown (current => false);
+   setNivaliGlovesActive (current => false);
+   setNivaliGlovesAtk (value => 0);
+   setNivaliGlovesDef (value => 0);
+   setNivaliGlovesLuck (value => 0);
+   setNivaliPantsIsShown (current => false);
+   setNivaliPantsActive (current => false);
+   setNivaliPantsAtk (value => 0);
+   setNivaliPantsDef (value => 0);
+   setNivaliPantsLuck (value => 0);
+   setNivaliShieldIsShown (current => false);
+   setNivaliShieldActive (current => false);
+   setNivaliShieldAtk (value => 0);
+   setNivaliShieldDef (value => 0);
+   setNivaliShieldLuck (value => 0);
+   setRainaBraceletIsShown (current => false);
+   setRainaBraceletActive (current => false);
+   setRainaBraceletAtk (value => 0);
+   setRainaBraceletDef (value => 0);
+   setRainaBraceletLuck (value => 0);
+   setRustyAmuletIsShown (current => false);
+   setRustyAmuletActive (current => false);
+   setRustyAmuletAtk (value => 0);
+   setRustyAmuletDef (value => 0);
+   setRustyAmuletLuck (value => 0);
+   setRustyPendantIsShown (current => false);
+   setRustyPendantActive (current => false);
+   setRustyPendantAtk (value => 0);
+   setRustyPendantDef (value => 0);
+   setRustyPendantLuck (value => 0);
+   setSandsRingIsShown (current => false);
+   setSandsRingActive (current => false);
+   setSandsRingAtk (value => 0);
+   setSandsRingDef (value => 0);
+   setSandsRingLuck (value => 0);
+   setVictorianFanIsShown (current => false);
+   setVictorianFanActive (current => false);
+   setVictorianFanAtk (value => 0);
+   setVictorianFanDef (value => 0);
+   setVictorianFanLuck (value => 0);
+   setGradScrollAstrologyIsShown (current => false);
+   setGradScrollAstrologyActive (current => false);
+   setGradScrollAstrologyAtk (value => 0);
+   setGradScrollAstrologyDef (value => 0);
+   setGradScrollAstrologyLuck (value => 0);
+   setGradScrollAlchemyIsShown (current => false);
+   setGradScrollAlchemyActive (current => false);
+   setGradScrollAlchemyAtk (value => 0);
+   setGradScrollAlchemyDef (value => 0);
+   setGradScrollAlchemyLuck (value => 0);
+   setGradScrollAKIsShown (current => false);
+   setGradScrollAKActive (current => false);
+   setGradScrollAKAtk (value => 0);
+   setGradScrollAKDef (value => 0);
+   setGradScrollAKLuck (value => 0);
+   setGradScrollSpellsIsShown (current => false);
+   setGradScrollSpellsActive (current => false);
+   setGradScrollSpellsAtk (value => 0);
+   setGradScrollSpellsDef (value => 0);
+   setGradScrollSpellsLuck (value => 0);
+   setGradScrollMirrorsIsShown (current => false);
+   setGradScrollMirrorsActive (current => false);
+   setGradScrollMirrorsAtk (value => 0);
+   setGradScrollMirrorsDef (value => 0);
+   setGradScrollMirrorsLuck (value => 0);
+   setGradScrollFungiIsShown (current => false);
+   setGradScrollFungiActive (current => false);
+   setGradScrollFungiAtk (value => 0);
+   setGradScrollFungiDef (value => 0);
+   setGradScrollFungiLuck (value => 0);
+   setGradScrollThreadsIsShown (current => false);
+   setGradScrollThreadsActive (current => false);
+   setGradScrollThreadsAtk (value => 0);
+   setGradScrollThreadsDef (value => 0);
+   setGradScrollThreadsLuck (value => 0);  
+}
+
+const handleHopeLightNoClick = event => {
+   setHopeLightIsShown (current => false);
+   setHopeLightActive (current => false);
+   setHopeLightAtk (value => 0);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+}
+
+const [LightBloomIsShown, setLightBloomIsShown] = useState(false)
+const [LightBloomActive, setLightBloomActive] = useState(false)
+const [LightBloomAtk, setLightBloomAtk] = useState(0)
+const [LightBloomDef, setLightBloomDef] = useState(0)
+const [LightBloomLuck, setLightBloomLuck] = useState(0)
+
+
+const handleLightBloomClick = event => {
+   setGradScrollVoidIsShown (current => false);
+   setGradScrollVoidActive (current => false);
+   setGradScrollVoidAtk (value => 0);
+   setGradScrollVoidDef (value => 0);
+   setGradScrollVoidLuck (value => 0);
+
+   setLightBloomIsShown (current => !LightBloomIsShown);
+   setLightBloomActive (current => !LightBloomActive);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 15);
+   setLightBloomLuck (value => 0);
+   
+   setPirateAccordionIsShown (current => false);
+   setPirateAccordionActive (current => false);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 0);
+   setPirateAccordionLuck (value => 0);
+   setAstrolabeIsShown (current => false);
+   setAstrolabeActive (current => false);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 0);
+   setBardNoteIsShown (current => false);
+   setBardNoteActive (current => false);
+   setBardNoteAtk (value => 0);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 0);
+   setDarkForestAmuletIsShown (current => false);
+   setDarkForestAmuletActive (current => false);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 0);
+   setFeatherNecklaceIsShown (current => false);
+   setFeatherNecklaceActive (current => false);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 0);
+   setFeatherNecklaceLuck (value => 0);
+   setGlassNecklaceIsShown (current => false);
+   setGlassNecklaceActive (current => false);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 0);
+   setGlassNecklaceLuck (value => 0);
+   setGoldenDragonTiaraIsShown (current => false);
+   setGoldenDragonTiaraActive (current => false);
+   setGoldenDragonTiaraAtk (value => 0);
+   setGoldenDragonTiaraDef (value => 0);
+   setGoldenDragonTiaraLuck (value => 0);
+   setHauntedNecklaceIsShown (current => false);
+   setHauntedNecklaceActive (current => false);
+   setHauntedNecklaceAtk (value => 0);
+   setHauntedNecklaceDef (value => 0);
+   setHauntedNecklaceLuck (value => 0);
+   setHopeLightIsShown (current => false);
+   setHopeLightActive (current => false);
+   setHopeLightAtk (value => 0);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+   setMushroomGrenadeIsShown (current => false);
+   setMushroomGrenadeActive (current => false);
+   setMushroomGrenadeAtk (value => 0);
+   setMushroomGrenadeDef (value => 0);
+   setMushroomGrenadeLuck (value => 0);
+   setNivaliGlovesIsShown (current => false);
+   setNivaliGlovesActive (current => false);
+   setNivaliGlovesAtk (value => 0);
+   setNivaliGlovesDef (value => 0);
+   setNivaliGlovesLuck (value => 0);
+   setNivaliPantsIsShown (current => false);
+   setNivaliPantsActive (current => false);
+   setNivaliPantsAtk (value => 0);
+   setNivaliPantsDef (value => 0);
+   setNivaliPantsLuck (value => 0);
+   setNivaliShieldIsShown (current => false);
+   setNivaliShieldActive (current => false);
+   setNivaliShieldAtk (value => 0);
+   setNivaliShieldDef (value => 0);
+   setNivaliShieldLuck (value => 0);
+   setRainaBraceletIsShown (current => false);
+   setRainaBraceletActive (current => false);
+   setRainaBraceletAtk (value => 0);
+   setRainaBraceletDef (value => 0);
+   setRainaBraceletLuck (value => 0);
+   setRustyAmuletIsShown (current => false);
+   setRustyAmuletActive (current => false);
+   setRustyAmuletAtk (value => 0);
+   setRustyAmuletDef (value => 0);
+   setRustyAmuletLuck (value => 0);
+   setRustyPendantIsShown (current => false);
+   setRustyPendantActive (current => false);
+   setRustyPendantAtk (value => 0);
+   setRustyPendantDef (value => 0);
+   setRustyPendantLuck (value => 0);
+   setSandsRingIsShown (current => false);
+   setSandsRingActive (current => false);
+   setSandsRingAtk (value => 0);
+   setSandsRingDef (value => 0);
+   setSandsRingLuck (value => 0);
+   setVictorianFanIsShown (current => false);
+   setVictorianFanActive (current => false);
+   setVictorianFanAtk (value => 0);
+   setVictorianFanDef (value => 0);
+   setVictorianFanLuck (value => 0);
+   setGradScrollAstrologyIsShown (current => false);
+   setGradScrollAstrologyActive (current => false);
+   setGradScrollAstrologyAtk (value => 0);
+   setGradScrollAstrologyDef (value => 0);
+   setGradScrollAstrologyLuck (value => 0);
+   setGradScrollAlchemyIsShown (current => false);
+   setGradScrollAlchemyActive (current => false);
+   setGradScrollAlchemyAtk (value => 0);
+   setGradScrollAlchemyDef (value => 0);
+   setGradScrollAlchemyLuck (value => 0);
+   setGradScrollAKIsShown (current => false);
+   setGradScrollAKActive (current => false);
+   setGradScrollAKAtk (value => 0);
+   setGradScrollAKDef (value => 0);
+   setGradScrollAKLuck (value => 0);
+   setGradScrollSpellsIsShown (current => false);
+   setGradScrollSpellsActive (current => false);
+   setGradScrollSpellsAtk (value => 0);
+   setGradScrollSpellsDef (value => 0);
+   setGradScrollSpellsLuck (value => 0);
+   setGradScrollMirrorsIsShown (current => false);
+   setGradScrollMirrorsActive (current => false);
+   setGradScrollMirrorsAtk (value => 0);
+   setGradScrollMirrorsDef (value => 0);
+   setGradScrollMirrorsLuck (value => 0);
+   setGradScrollFungiIsShown (current => false);
+   setGradScrollFungiActive (current => false);
+   setGradScrollFungiAtk (value => 0);
+   setGradScrollFungiDef (value => 0);
+   setGradScrollFungiLuck (value => 0);
+   setGradScrollThreadsIsShown (current => false);
+   setGradScrollThreadsActive (current => false);
+   setGradScrollThreadsAtk (value => 0);
+   setGradScrollThreadsDef (value => 0);
+   setGradScrollThreadsLuck (value => 0);  
+}
+
+const handleLightBloomNoClick = event => {
+   setLightBloomIsShown (current => false);
+   setLightBloomActive (current => false);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 0);
+   setLightBloomLuck (value => 0);
+}
+
+const [MushroomGrenadeIsShown, setMushroomGrenadeIsShown] = useState(false)
+const [MushroomGrenadeActive, setMushroomGrenadeActive] = useState(false)
+const [MushroomGrenadeAtk, setMushroomGrenadeAtk] = useState(0)
+const [MushroomGrenadeDef, setMushroomGrenadeDef] = useState(0)
+const [MushroomGrenadeLuck, setMushroomGrenadeLuck] = useState(0)
+
+
+const handleMushroomGrenadeClick = event => {
+   setGradScrollVoidIsShown (current => false);
+   setGradScrollVoidActive (current => false);
+   setGradScrollVoidAtk (value => 0);
+   setGradScrollVoidDef (value => 0);
+   setGradScrollVoidLuck (value => 0);
+
+   setMushroomGrenadeIsShown (current => !MushroomGrenadeIsShown);
+   setMushroomGrenadeActive (current => !MushroomGrenadeActive);
+   setMushroomGrenadeAtk (value => 0);
+   setMushroomGrenadeDef (value => 0);
+   setMushroomGrenadeLuck (value => 12);
+   
+   setPirateAccordionIsShown (current => false);
+   setPirateAccordionActive (current => false);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 0);
+   setPirateAccordionLuck (value => 0);
+   setAstrolabeIsShown (current => false);
+   setAstrolabeActive (current => false);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 0);
+   setBardNoteIsShown (current => false);
+   setBardNoteActive (current => false);
+   setBardNoteAtk (value => 0);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 0);
+   setDarkForestAmuletIsShown (current => false);
+   setDarkForestAmuletActive (current => false);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 0);
+   setFeatherNecklaceIsShown (current => false);
+   setFeatherNecklaceActive (current => false);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 0);
+   setFeatherNecklaceLuck (value => 0);
+   setGlassNecklaceIsShown (current => false);
+   setGlassNecklaceActive (current => false);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 0);
+   setGlassNecklaceLuck (value => 0);
+   setGoldenDragonTiaraIsShown (current => false);
+   setGoldenDragonTiaraActive (current => false);
+   setGoldenDragonTiaraAtk (value => 0);
+   setGoldenDragonTiaraDef (value => 0);
+   setGoldenDragonTiaraLuck (value => 0);
+   setHauntedNecklaceIsShown (current => false);
+   setHauntedNecklaceActive (current => false);
+   setHauntedNecklaceAtk (value => 0);
+   setHauntedNecklaceDef (value => 0);
+   setHauntedNecklaceLuck (value => 0);
+   setHopeLightIsShown (current => false);
+   setHopeLightActive (current => false);
+   setHopeLightAtk (value => 0);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+   setLightBloomIsShown (current => false);
+   setLightBloomActive (current => false);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 0);
+   setLightBloomLuck (value => 0);
+   setNivaliGlovesIsShown (current => false);
+   setNivaliGlovesActive (current => false);
+   setNivaliGlovesAtk (value => 0);
+   setNivaliGlovesDef (value => 0);
+   setNivaliGlovesLuck (value => 0);
+   setNivaliPantsIsShown (current => false);
+   setNivaliPantsActive (current => false);
+   setNivaliPantsAtk (value => 0);
+   setNivaliPantsDef (value => 0);
+   setNivaliPantsLuck (value => 0);
+   setNivaliShieldIsShown (current => false);
+   setNivaliShieldActive (current => false);
+   setNivaliShieldAtk (value => 0);
+   setNivaliShieldDef (value => 0);
+   setNivaliShieldLuck (value => 0);
+   setRainaBraceletIsShown (current => false);
+   setRainaBraceletActive (current => false);
+   setRainaBraceletAtk (value => 0);
+   setRainaBraceletDef (value => 0);
+   setRainaBraceletLuck (value => 0);
+   setRustyAmuletIsShown (current => false);
+   setRustyAmuletActive (current => false);
+   setRustyAmuletAtk (value => 0);
+   setRustyAmuletDef (value => 0);
+   setRustyAmuletLuck (value => 0);
+   setRustyPendantIsShown (current => false);
+   setRustyPendantActive (current => false);
+   setRustyPendantAtk (value => 0);
+   setRustyPendantDef (value => 0);
+   setRustyPendantLuck (value => 0);
+   setSandsRingIsShown (current => false);
+   setSandsRingActive (current => false);
+   setSandsRingAtk (value => 0);
+   setSandsRingDef (value => 0);
+   setSandsRingLuck (value => 0);
+   setVictorianFanIsShown (current => false);
+   setVictorianFanActive (current => false);
+   setVictorianFanAtk (value => 0);
+   setVictorianFanDef (value => 0);
+   setVictorianFanLuck (value => 0);
+   setGradScrollAstrologyIsShown (current => false);
+   setGradScrollAstrologyActive (current => false);
+   setGradScrollAstrologyAtk (value => 0);
+   setGradScrollAstrologyDef (value => 0);
+   setGradScrollAstrologyLuck (value => 0);
+   setGradScrollAlchemyIsShown (current => false);
+   setGradScrollAlchemyActive (current => false);
+   setGradScrollAlchemyAtk (value => 0);
+   setGradScrollAlchemyDef (value => 0);
+   setGradScrollAlchemyLuck (value => 0);
+   setGradScrollAKIsShown (current => false);
+   setGradScrollAKActive (current => false);
+   setGradScrollAKAtk (value => 0);
+   setGradScrollAKDef (value => 0);
+   setGradScrollAKLuck (value => 0);
+   setGradScrollSpellsIsShown (current => false);
+   setGradScrollSpellsActive (current => false);
+   setGradScrollSpellsAtk (value => 0);
+   setGradScrollSpellsDef (value => 0);
+   setGradScrollSpellsLuck (value => 0);
+   setGradScrollMirrorsIsShown (current => false);
+   setGradScrollMirrorsActive (current => false);
+   setGradScrollMirrorsAtk (value => 0);
+   setGradScrollMirrorsDef (value => 0);
+   setGradScrollMirrorsLuck (value => 0);
+   setGradScrollFungiIsShown (current => false);
+   setGradScrollFungiActive (current => false);
+   setGradScrollFungiAtk (value => 0);
+   setGradScrollFungiDef (value => 0);
+   setGradScrollFungiLuck (value => 0);
+   setGradScrollThreadsIsShown (current => false);
+   setGradScrollThreadsActive (current => false);
+   setGradScrollThreadsAtk (value => 0);
+   setGradScrollThreadsDef (value => 0);
+   setGradScrollThreadsLuck (value => 0);  
+}
+
+const handleMushroomGrenadeNoClick = event => {
+   setMushroomGrenadeIsShown (current => false);
+   setMushroomGrenadeActive (current => false);
+   setMushroomGrenadeAtk (value => 0);
+   setMushroomGrenadeDef (value => 0);
+   setMushroomGrenadeLuck (value => 0);
+}
+
+const [NivaliGlovesIsShown, setNivaliGlovesIsShown] = useState(false)
+const [NivaliGlovesActive, setNivaliGlovesActive] = useState(false)
+const [NivaliGlovesAtk, setNivaliGlovesAtk] = useState(0)
+const [NivaliGlovesDef, setNivaliGlovesDef] = useState(0)
+const [NivaliGlovesLuck, setNivaliGlovesLuck] = useState(0)
+
+
+const handleNivaliGlovesClick = event => {
+   setGradScrollVoidIsShown (current => false);
+   setGradScrollVoidActive (current => false);
+   setGradScrollVoidAtk (value => 0);
+   setGradScrollVoidDef (value => 0);
+   setGradScrollVoidLuck (value => 0);
+
+   setNivaliGlovesIsShown (current => !NivaliGlovesIsShown);
+   setNivaliGlovesActive (current => !NivaliGlovesActive);
+   setNivaliGlovesAtk (value => 0);
+   setNivaliGlovesDef (value => 10);
+   setNivaliGlovesLuck (value => 5);
+   
+   setPirateAccordionIsShown (current => false);
+   setPirateAccordionActive (current => false);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 0);
+   setPirateAccordionLuck (value => 0);
+   setAstrolabeIsShown (current => false);
+   setAstrolabeActive (current => false);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 0);
+   setBardNoteIsShown (current => false);
+   setBardNoteActive (current => false);
+   setBardNoteAtk (value => 0);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 0);
+   setDarkForestAmuletIsShown (current => false);
+   setDarkForestAmuletActive (current => false);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 0);
+   setFeatherNecklaceIsShown (current => false);
+   setFeatherNecklaceActive (current => false);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 0);
+   setFeatherNecklaceLuck (value => 0);
+   setGlassNecklaceIsShown (current => false);
+   setGlassNecklaceActive (current => false);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 0);
+   setGlassNecklaceLuck (value => 0);
+   setGoldenDragonTiaraIsShown (current => false);
+   setGoldenDragonTiaraActive (current => false);
+   setGoldenDragonTiaraAtk (value => 0);
+   setGoldenDragonTiaraDef (value => 0);
+   setGoldenDragonTiaraLuck (value => 0);
+   setHauntedNecklaceIsShown (current => false);
+   setHauntedNecklaceActive (current => false);
+   setHauntedNecklaceAtk (value => 0);
+   setHauntedNecklaceDef (value => 0);
+   setHauntedNecklaceLuck (value => 0);
+   setHopeLightIsShown (current => false);
+   setHopeLightActive (current => false);
+   setHopeLightAtk (value => 0);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+   setLightBloomIsShown (current => false);
+   setLightBloomActive (current => false);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 0);
+   setLightBloomLuck (value => 0);
+   setMushroomGrenadeIsShown (current => false);
+   setMushroomGrenadeActive (current => false);
+   setMushroomGrenadeAtk (value => 0);
+   setMushroomGrenadeDef (value => 0);
+   setMushroomGrenadeLuck (value => 0);
+   setNivaliPantsIsShown (current => false);
+   setNivaliPantsActive (current => false);
+   setNivaliPantsAtk (value => 0);
+   setNivaliPantsDef (value => 0);
+   setNivaliPantsLuck (value => 0);
+   setNivaliShieldIsShown (current => false);
+   setNivaliShieldActive (current => false);
+   setNivaliShieldAtk (value => 0);
+   setNivaliShieldDef (value => 0);
+   setNivaliShieldLuck (value => 0);
+   setRainaBraceletIsShown (current => false);
+   setRainaBraceletActive (current => false);
+   setRainaBraceletAtk (value => 0);
+   setRainaBraceletDef (value => 0);
+   setRainaBraceletLuck (value => 0);
+   setRustyAmuletIsShown (current => false);
+   setRustyAmuletActive (current => false);
+   setRustyAmuletAtk (value => 0);
+   setRustyAmuletDef (value => 0);
+   setRustyAmuletLuck (value => 0);
+   setRustyPendantIsShown (current => false);
+   setRustyPendantActive (current => false);
+   setRustyPendantAtk (value => 0);
+   setRustyPendantDef (value => 0);
+   setRustyPendantLuck (value => 0);
+   setSandsRingIsShown (current => false);
+   setSandsRingActive (current => false);
+   setSandsRingAtk (value => 0);
+   setSandsRingDef (value => 0);
+   setSandsRingLuck (value => 0);
+   setVictorianFanIsShown (current => false);
+   setVictorianFanActive (current => false);
+   setVictorianFanAtk (value => 0);
+   setVictorianFanDef (value => 0);
+   setVictorianFanLuck (value => 0);
+   setGradScrollAstrologyIsShown (current => false);
+   setGradScrollAstrologyActive (current => false);
+   setGradScrollAstrologyAtk (value => 0);
+   setGradScrollAstrologyDef (value => 0);
+   setGradScrollAstrologyLuck (value => 0);
+   setGradScrollAlchemyIsShown (current => false);
+   setGradScrollAlchemyActive (current => false);
+   setGradScrollAlchemyAtk (value => 0);
+   setGradScrollAlchemyDef (value => 0);
+   setGradScrollAlchemyLuck (value => 0);
+   setGradScrollAKIsShown (current => false);
+   setGradScrollAKActive (current => false);
+   setGradScrollAKAtk (value => 0);
+   setGradScrollAKDef (value => 0);
+   setGradScrollAKLuck (value => 0);
+   setGradScrollSpellsIsShown (current => false);
+   setGradScrollSpellsActive (current => false);
+   setGradScrollSpellsAtk (value => 0);
+   setGradScrollSpellsDef (value => 0);
+   setGradScrollSpellsLuck (value => 0);
+   setGradScrollMirrorsIsShown (current => false);
+   setGradScrollMirrorsActive (current => false);
+   setGradScrollMirrorsAtk (value => 0);
+   setGradScrollMirrorsDef (value => 0);
+   setGradScrollMirrorsLuck (value => 0);
+   setGradScrollFungiIsShown (current => false);
+   setGradScrollFungiActive (current => false);
+   setGradScrollFungiAtk (value => 0);
+   setGradScrollFungiDef (value => 0);
+   setGradScrollFungiLuck (value => 0);
+   setGradScrollThreadsIsShown (current => false);
+   setGradScrollThreadsActive (current => false);
+   setGradScrollThreadsAtk (value => 0);
+   setGradScrollThreadsDef (value => 0);
+   setGradScrollThreadsLuck (value => 0);  
+}
+
+const handleNivaliGlovesNoClick = event => {
+   setNivaliGlovesIsShown (current => false);
+   setNivaliGlovesActive (current => false);
+   setNivaliGlovesAtk (value => 0);
+   setNivaliGlovesDef (value => 0);
+   setNivaliGlovesLuck (value => 0);
+}
+
+const [NivaliPantsIsShown, setNivaliPantsIsShown] = useState(false)
+const [NivaliPantsActive, setNivaliPantsActive] = useState(false)
+const [NivaliPantsAtk, setNivaliPantsAtk] = useState(0)
+const [NivaliPantsDef, setNivaliPantsDef] = useState(0)
+const [NivaliPantsLuck, setNivaliPantsLuck] = useState(0)
+
+
+const handleNivaliPantsClick = event => {
+   setGradScrollVoidIsShown (current => false);
+   setGradScrollVoidActive (current => false);
+   setGradScrollVoidAtk (value => 0);
+   setGradScrollVoidDef (value => 0);
+   setGradScrollVoidLuck (value => 0);
+
+   setNivaliPantsIsShown (current => !NivaliPantsIsShown);
+   setNivaliPantsActive (current => !NivaliPantsActive);
+   setNivaliPantsAtk (value => 4);
+   setNivaliPantsDef (value => 12);
+   setNivaliPantsLuck (value => 4);
+   
+   setPirateAccordionIsShown (current => false);
+   setPirateAccordionActive (current => false);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 0);
+   setPirateAccordionLuck (value => 0);
+   setAstrolabeIsShown (current => false);
+   setAstrolabeActive (current => false);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 0);
+   setBardNoteIsShown (current => false);
+   setBardNoteActive (current => false);
+   setBardNoteAtk (value => 0);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 0);
+   setDarkForestAmuletIsShown (current => false);
+   setDarkForestAmuletActive (current => false);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 0);
+   setFeatherNecklaceIsShown (current => false);
+   setFeatherNecklaceActive (current => false);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 0);
+   setFeatherNecklaceLuck (value => 0);
+   setGlassNecklaceIsShown (current => false);
+   setGlassNecklaceActive (current => false);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 0);
+   setGlassNecklaceLuck (value => 0);
+   setGoldenDragonTiaraIsShown (current => false);
+   setGoldenDragonTiaraActive (current => false);
+   setGoldenDragonTiaraAtk (value => 0);
+   setGoldenDragonTiaraDef (value => 0);
+   setGoldenDragonTiaraLuck (value => 0);
+   setHauntedNecklaceIsShown (current => false);
+   setHauntedNecklaceActive (current => false);
+   setHauntedNecklaceAtk (value => 0);
+   setHauntedNecklaceDef (value => 0);
+   setHauntedNecklaceLuck (value => 0);
+   setHopeLightIsShown (current => false);
+   setHopeLightActive (current => false);
+   setHopeLightAtk (value => 0);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+   setLightBloomIsShown (current => false);
+   setLightBloomActive (current => false);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 0);
+   setLightBloomLuck (value => 0);
+   setMushroomGrenadeIsShown (current => false);
+   setMushroomGrenadeActive (current => false);
+   setMushroomGrenadeAtk (value => 0);
+   setMushroomGrenadeDef (value => 0);
+   setMushroomGrenadeLuck (value => 0);
+   setNivaliGlovesIsShown (current => false);
+   setNivaliGlovesActive (current => false);
+   setNivaliGlovesAtk (value => 0);
+   setNivaliGlovesDef (value => 0);
+   setNivaliGlovesLuck (value => 0);
+   setNivaliShieldIsShown (current => false);
+   setNivaliShieldActive (current => false);
+   setNivaliShieldAtk (value => 0);
+   setNivaliShieldDef (value => 0);
+   setNivaliShieldLuck (value => 0);
+   setRainaBraceletIsShown (current => false);
+   setRainaBraceletActive (current => false);
+   setRainaBraceletAtk (value => 0);
+   setRainaBraceletDef (value => 0);
+   setRainaBraceletLuck (value => 0);
+   setRustyAmuletIsShown (current => false);
+   setRustyAmuletActive (current => false);
+   setRustyAmuletAtk (value => 0);
+   setRustyAmuletDef (value => 0);
+   setRustyAmuletLuck (value => 0);
+   setRustyPendantIsShown (current => false);
+   setRustyPendantActive (current => false);
+   setRustyPendantAtk (value => 0);
+   setRustyPendantDef (value => 0);
+   setRustyPendantLuck (value => 0);
+   setSandsRingIsShown (current => false);
+   setSandsRingActive (current => false);
+   setSandsRingAtk (value => 0);
+   setSandsRingDef (value => 0);
+   setSandsRingLuck (value => 0);
+   setVictorianFanIsShown (current => false);
+   setVictorianFanActive (current => false);
+   setVictorianFanAtk (value => 0);
+   setVictorianFanDef (value => 0);
+   setVictorianFanLuck (value => 0);
+   setGradScrollAstrologyIsShown (current => false);
+   setGradScrollAstrologyActive (current => false);
+   setGradScrollAstrologyAtk (value => 0);
+   setGradScrollAstrologyDef (value => 0);
+   setGradScrollAstrologyLuck (value => 0);
+   setGradScrollAlchemyIsShown (current => false);
+   setGradScrollAlchemyActive (current => false);
+   setGradScrollAlchemyAtk (value => 0);
+   setGradScrollAlchemyDef (value => 0);
+   setGradScrollAlchemyLuck (value => 0);
+   setGradScrollAKIsShown (current => false);
+   setGradScrollAKActive (current => false);
+   setGradScrollAKAtk (value => 0);
+   setGradScrollAKDef (value => 0);
+   setGradScrollAKLuck (value => 0);
+   setGradScrollSpellsIsShown (current => false);
+   setGradScrollSpellsActive (current => false);
+   setGradScrollSpellsAtk (value => 0);
+   setGradScrollSpellsDef (value => 0);
+   setGradScrollSpellsLuck (value => 0);
+   setGradScrollMirrorsIsShown (current => false);
+   setGradScrollMirrorsActive (current => false);
+   setGradScrollMirrorsAtk (value => 0);
+   setGradScrollMirrorsDef (value => 0);
+   setGradScrollMirrorsLuck (value => 0);
+   setGradScrollFungiIsShown (current => false);
+   setGradScrollFungiActive (current => false);
+   setGradScrollFungiAtk (value => 0);
+   setGradScrollFungiDef (value => 0);
+   setGradScrollFungiLuck (value => 0);
+   setGradScrollThreadsIsShown (current => false);
+   setGradScrollThreadsActive (current => false);
+   setGradScrollThreadsAtk (value => 0);
+   setGradScrollThreadsDef (value => 0);
+   setGradScrollThreadsLuck (value => 0);  
+}
+
+const handleNivaliPantsNoClick = event => {
+   setNivaliPantsIsShown (current => false);
+   setNivaliPantsActive (current => false);
+   setNivaliPantsAtk (value => 0);
+   setNivaliPantsDef (value => 0);
+   setNivaliPantsLuck (value => 0);
+}
+
+const [NivaliShieldIsShown, setNivaliShieldIsShown] = useState(false)
+const [NivaliShieldActive, setNivaliShieldActive] = useState(false)
+const [NivaliShieldAtk, setNivaliShieldAtk] = useState(0)
+const [NivaliShieldDef, setNivaliShieldDef] = useState(0)
+const [NivaliShieldLuck, setNivaliShieldLuck] = useState(0)
+
+
+const handleNivaliShieldClick = event => {
+   setGradScrollVoidIsShown (current => false);
+   setGradScrollVoidActive (current => false);
+   setGradScrollVoidAtk (value => 0);
+   setGradScrollVoidDef (value => 0);
+   setGradScrollVoidLuck (value => 0);
+
+   setNivaliShieldIsShown (current => !NivaliShieldIsShown);
+   setNivaliShieldActive (current => !NivaliShieldActive);
+   setNivaliShieldAtk (value => 2);
+   setNivaliShieldDef (value => 15);
+   setNivaliShieldLuck (value => 2);
+   
+   setPirateAccordionIsShown (current => false);
+   setPirateAccordionActive (current => false);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 0);
+   setPirateAccordionLuck (value => 0);
+   setAstrolabeIsShown (current => false);
+   setAstrolabeActive (current => false);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 0);
+   setBardNoteIsShown (current => false);
+   setBardNoteActive (current => false);
+   setBardNoteAtk (value => 0);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 0);
+   setDarkForestAmuletIsShown (current => false);
+   setDarkForestAmuletActive (current => false);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 0);
+   setFeatherNecklaceIsShown (current => false);
+   setFeatherNecklaceActive (current => false);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 0);
+   setFeatherNecklaceLuck (value => 0);
+   setGlassNecklaceIsShown (current => false);
+   setGlassNecklaceActive (current => false);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 0);
+   setGlassNecklaceLuck (value => 0);
+   setGoldenDragonTiaraIsShown (current => false);
+   setGoldenDragonTiaraActive (current => false);
+   setGoldenDragonTiaraAtk (value => 0);
+   setGoldenDragonTiaraDef (value => 0);
+   setGoldenDragonTiaraLuck (value => 0);
+   setHauntedNecklaceIsShown (current => false);
+   setHauntedNecklaceActive (current => false);
+   setHauntedNecklaceAtk (value => 0);
+   setHauntedNecklaceDef (value => 0);
+   setHauntedNecklaceLuck (value => 0);
+   setHopeLightIsShown (current => false);
+   setHopeLightActive (current => false);
+   setHopeLightAtk (value => 0);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+   setLightBloomIsShown (current => false);
+   setLightBloomActive (current => false);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 0);
+   setLightBloomLuck (value => 0);
+   setMushroomGrenadeIsShown (current => false);
+   setMushroomGrenadeActive (current => false);
+   setMushroomGrenadeAtk (value => 0);
+   setMushroomGrenadeDef (value => 0);
+   setMushroomGrenadeLuck (value => 0);
+   setNivaliGlovesIsShown (current => false);
+   setNivaliGlovesActive (current => false);
+   setNivaliGlovesAtk (value => 0);
+   setNivaliGlovesDef (value => 0);
+   setNivaliGlovesLuck (value => 0);
+   setNivaliPantsIsShown (current => false);
+   setNivaliPantsActive (current => false);
+   setNivaliPantsAtk (value => 0);
+   setNivaliPantsDef (value => 0);
+   setNivaliPantsLuck (value => 0);
+   setRainaBraceletIsShown (current => false);
+   setRainaBraceletActive (current => false);
+   setRainaBraceletAtk (value => 0);
+   setRainaBraceletDef (value => 0);
+   setRainaBraceletLuck (value => 0);
+   setRustyAmuletIsShown (current => false);
+   setRustyAmuletActive (current => false);
+   setRustyAmuletAtk (value => 0);
+   setRustyAmuletDef (value => 0);
+   setRustyAmuletLuck (value => 0);
+   setRustyPendantIsShown (current => false);
+   setRustyPendantActive (current => false);
+   setRustyPendantAtk (value => 0);
+   setRustyPendantDef (value => 0);
+   setRustyPendantLuck (value => 0);
+   setSandsRingIsShown (current => false);
+   setSandsRingActive (current => false);
+   setSandsRingAtk (value => 0);
+   setSandsRingDef (value => 0);
+   setSandsRingLuck (value => 0);
+   setVictorianFanIsShown (current => false);
+   setVictorianFanActive (current => false);
+   setVictorianFanAtk (value => 0);
+   setVictorianFanDef (value => 0);
+   setVictorianFanLuck (value => 0);
+   setGradScrollAstrologyIsShown (current => false);
+   setGradScrollAstrologyActive (current => false);
+   setGradScrollAstrologyAtk (value => 0);
+   setGradScrollAstrologyDef (value => 0);
+   setGradScrollAstrologyLuck (value => 0);
+   setGradScrollAlchemyIsShown (current => false);
+   setGradScrollAlchemyActive (current => false);
+   setGradScrollAlchemyAtk (value => 0);
+   setGradScrollAlchemyDef (value => 0);
+   setGradScrollAlchemyLuck (value => 0);
+   setGradScrollAKIsShown (current => false);
+   setGradScrollAKActive (current => false);
+   setGradScrollAKAtk (value => 0);
+   setGradScrollAKDef (value => 0);
+   setGradScrollAKLuck (value => 0);
+   setGradScrollSpellsIsShown (current => false);
+   setGradScrollSpellsActive (current => false);
+   setGradScrollSpellsAtk (value => 0);
+   setGradScrollSpellsDef (value => 0);
+   setGradScrollSpellsLuck (value => 0);
+   setGradScrollMirrorsIsShown (current => false);
+   setGradScrollMirrorsActive (current => false);
+   setGradScrollMirrorsAtk (value => 0);
+   setGradScrollMirrorsDef (value => 0);
+   setGradScrollMirrorsLuck (value => 0);
+   setGradScrollFungiIsShown (current => false);
+   setGradScrollFungiActive (current => false);
+   setGradScrollFungiAtk (value => 0);
+   setGradScrollFungiDef (value => 0);
+   setGradScrollFungiLuck (value => 0);
+   setGradScrollThreadsIsShown (current => false);
+   setGradScrollThreadsActive (current => false);
+   setGradScrollThreadsAtk (value => 0);
+   setGradScrollThreadsDef (value => 0);
+   setGradScrollThreadsLuck (value => 0);  
+}
+
+const handleNivaliShieldNoClick = event => {
+   setNivaliShieldIsShown (current => false);
+   setNivaliShieldActive (current => false);
+   setNivaliShieldAtk (value => 0);
+   setNivaliShieldDef (value => 0);
+   setNivaliShieldLuck (value => 0);
+}
+
+const [RainaBraceletIsShown, setRainaBraceletIsShown] = useState(false)
+const [RainaBraceletActive, setRainaBraceletActive] = useState(false)
+const [RainaBraceletAtk, setRainaBraceletAtk] = useState(0)
+const [RainaBraceletDef, setRainaBraceletDef] = useState(0)
+const [RainaBraceletLuck, setRainaBraceletLuck] = useState(0)
+
+
+const handleRainaBraceletClick = event => {
+   setGradScrollVoidIsShown (current => false);
+   setGradScrollVoidActive (current => false);
+   setGradScrollVoidAtk (value => 0);
+   setGradScrollVoidDef (value => 0);
+   setGradScrollVoidLuck (value => 0);
+
+   setRainaBraceletIsShown (current => !RainaBraceletIsShown);
+   setRainaBraceletActive (current => !RainaBraceletActive);
+   setRainaBraceletAtk (value => 0);
+   setRainaBraceletDef (value => 0);
+   setRainaBraceletLuck (value => 15);
+   
+   setPirateAccordionIsShown (current => false);
+   setPirateAccordionActive (current => false);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 0);
+   setPirateAccordionLuck (value => 0);
+   setAstrolabeIsShown (current => false);
+   setAstrolabeActive (current => false);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 0);
+   setBardNoteIsShown (current => false);
+   setBardNoteActive (current => false);
+   setBardNoteAtk (value => 0);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 0);
+   setDarkForestAmuletIsShown (current => false);
+   setDarkForestAmuletActive (current => false);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 0);
+   setFeatherNecklaceIsShown (current => false);
+   setFeatherNecklaceActive (current => false);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 0);
+   setFeatherNecklaceLuck (value => 0);
+   setGlassNecklaceIsShown (current => false);
+   setGlassNecklaceActive (current => false);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 0);
+   setGlassNecklaceLuck (value => 0);
+   setGoldenDragonTiaraIsShown (current => false);
+   setGoldenDragonTiaraActive (current => false);
+   setGoldenDragonTiaraAtk (value => 0);
+   setGoldenDragonTiaraDef (value => 0);
+   setGoldenDragonTiaraLuck (value => 0);
+   setHauntedNecklaceIsShown (current => false);
+   setHauntedNecklaceActive (current => false);
+   setHauntedNecklaceAtk (value => 0);
+   setHauntedNecklaceDef (value => 0);
+   setHauntedNecklaceLuck (value => 0);
+   setHopeLightIsShown (current => false);
+   setHopeLightActive (current => false);
+   setHopeLightAtk (value => 0);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+   setLightBloomIsShown (current => false);
+   setLightBloomActive (current => false);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 0);
+   setLightBloomLuck (value => 0);
+   setMushroomGrenadeIsShown (current => false);
+   setMushroomGrenadeActive (current => false);
+   setMushroomGrenadeAtk (value => 0);
+   setMushroomGrenadeDef (value => 0);
+   setMushroomGrenadeLuck (value => 0);
+   setNivaliGlovesIsShown (current => false);
+   setNivaliGlovesActive (current => false);
+   setNivaliGlovesAtk (value => 0);
+   setNivaliGlovesDef (value => 0);
+   setNivaliGlovesLuck (value => 0);
+   setNivaliPantsIsShown (current => false);
+   setNivaliPantsActive (current => false);
+   setNivaliPantsAtk (value => 0);
+   setNivaliPantsDef (value => 0);
+   setNivaliPantsLuck (value => 0);
+   setNivaliShieldIsShown (current => false);
+   setNivaliShieldActive (current => false);
+   setNivaliShieldAtk (value => 0);
+   setNivaliShieldDef (value => 0);
+   setNivaliShieldLuck (value => 0);
+   setRustyAmuletIsShown (current => false);
+   setRustyAmuletActive (current => false);
+   setRustyAmuletAtk (value => 0);
+   setRustyAmuletDef (value => 0);
+   setRustyAmuletLuck (value => 0);
+   setRustyPendantIsShown (current => false);
+   setRustyPendantActive (current => false);
+   setRustyPendantAtk (value => 0);
+   setRustyPendantDef (value => 0);
+   setRustyPendantLuck (value => 0);
+   setSandsRingIsShown (current => false);
+   setSandsRingActive (current => false);
+   setSandsRingAtk (value => 0);
+   setSandsRingDef (value => 0);
+   setSandsRingLuck (value => 0);
+   setVictorianFanIsShown (current => false);
+   setVictorianFanActive (current => false);
+   setVictorianFanAtk (value => 0);
+   setVictorianFanDef (value => 0);
+   setVictorianFanLuck (value => 0);
+   setGradScrollAstrologyIsShown (current => false);
+   setGradScrollAstrologyActive (current => false);
+   setGradScrollAstrologyAtk (value => 0);
+   setGradScrollAstrologyDef (value => 0);
+   setGradScrollAstrologyLuck (value => 0);
+   setGradScrollAlchemyIsShown (current => false);
+   setGradScrollAlchemyActive (current => false);
+   setGradScrollAlchemyAtk (value => 0);
+   setGradScrollAlchemyDef (value => 0);
+   setGradScrollAlchemyLuck (value => 0);
+   setGradScrollAKIsShown (current => false);
+   setGradScrollAKActive (current => false);
+   setGradScrollAKAtk (value => 0);
+   setGradScrollAKDef (value => 0);
+   setGradScrollAKLuck (value => 0);
+   setGradScrollSpellsIsShown (current => false);
+   setGradScrollSpellsActive (current => false);
+   setGradScrollSpellsAtk (value => 0);
+   setGradScrollSpellsDef (value => 0);
+   setGradScrollSpellsLuck (value => 0);
+   setGradScrollMirrorsIsShown (current => false);
+   setGradScrollMirrorsActive (current => false);
+   setGradScrollMirrorsAtk (value => 0);
+   setGradScrollMirrorsDef (value => 0);
+   setGradScrollMirrorsLuck (value => 0);
+   setGradScrollFungiIsShown (current => false);
+   setGradScrollFungiActive (current => false);
+   setGradScrollFungiAtk (value => 0);
+   setGradScrollFungiDef (value => 0);
+   setGradScrollFungiLuck (value => 0);
+   setGradScrollThreadsIsShown (current => false);
+   setGradScrollThreadsActive (current => false);
+   setGradScrollThreadsAtk (value => 0);
+   setGradScrollThreadsDef (value => 0);
+   setGradScrollThreadsLuck (value => 0);  
+}
+
+const handleRainaBraceletNoClick = event => {
+   setRainaBraceletIsShown (current => false);
+   setRainaBraceletActive (current => false);
+   setRainaBraceletAtk (value => 0);
+   setRainaBraceletDef (value => 0);
+   setRainaBraceletLuck (value => 0);
+}
+
+const [RustyAmuletIsShown, setRustyAmuletIsShown] = useState(false)
+const [RustyAmuletActive, setRustyAmuletActive] = useState(false)
+const [RustyAmuletAtk, setRustyAmuletAtk] = useState(0)
+const [RustyAmuletDef, setRustyAmuletDef] = useState(0)
+const [RustyAmuletLuck, setRustyAmuletLuck] = useState(0)
+
+
+const handleRustyAmuletClick = event => {
+   setGradScrollVoidIsShown (current => false);
+   setGradScrollVoidActive (current => false);
+   setGradScrollVoidAtk (value => 0);
+   setGradScrollVoidDef (value => 0);
+   setGradScrollVoidLuck (value => 0);
+
+   setRustyAmuletIsShown (current => !RustyAmuletIsShown);
+   setRustyAmuletActive (current => !RustyAmuletActive);
+   setRustyAmuletAtk (value => 0);
+   setRustyAmuletDef (value => 0);
+   setRustyAmuletLuck (value => 1);
+   
+   setPirateAccordionIsShown (current => false);
+   setPirateAccordionActive (current => false);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 0);
+   setPirateAccordionLuck (value => 0);
+   setAstrolabeIsShown (current => false);
+   setAstrolabeActive (current => false);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 0);
+   setBardNoteIsShown (current => false);
+   setBardNoteActive (current => false);
+   setBardNoteAtk (value => 0);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 0);
+   setDarkForestAmuletIsShown (current => false);
+   setDarkForestAmuletActive (current => false);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 0);
+   setFeatherNecklaceIsShown (current => false);
+   setFeatherNecklaceActive (current => false);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 0);
+   setFeatherNecklaceLuck (value => 0);
+   setGlassNecklaceIsShown (current => false);
+   setGlassNecklaceActive (current => false);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 0);
+   setGlassNecklaceLuck (value => 0);
+   setGoldenDragonTiaraIsShown (current => false);
+   setGoldenDragonTiaraActive (current => false);
+   setGoldenDragonTiaraAtk (value => 0);
+   setGoldenDragonTiaraDef (value => 0);
+   setGoldenDragonTiaraLuck (value => 0);
+   setHauntedNecklaceIsShown (current => false);
+   setHauntedNecklaceActive (current => false);
+   setHauntedNecklaceAtk (value => 0);
+   setHauntedNecklaceDef (value => 0);
+   setHauntedNecklaceLuck (value => 0);
+   setHopeLightIsShown (current => false);
+   setHopeLightActive (current => false);
+   setHopeLightAtk (value => 0);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+   setLightBloomIsShown (current => false);
+   setLightBloomActive (current => false);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 0);
+   setLightBloomLuck (value => 0);
+   setMushroomGrenadeIsShown (current => false);
+   setMushroomGrenadeActive (current => false);
+   setMushroomGrenadeAtk (value => 0);
+   setMushroomGrenadeDef (value => 0);
+   setMushroomGrenadeLuck (value => 0);
+   setNivaliGlovesIsShown (current => false);
+   setNivaliGlovesActive (current => false);
+   setNivaliGlovesAtk (value => 0);
+   setNivaliGlovesDef (value => 0);
+   setNivaliGlovesLuck (value => 0);
+   setNivaliPantsIsShown (current => false);
+   setNivaliPantsActive (current => false);
+   setNivaliPantsAtk (value => 0);
+   setNivaliPantsDef (value => 0);
+   setNivaliPantsLuck (value => 0);
+   setNivaliShieldIsShown (current => false);
+   setNivaliShieldActive (current => false);
+   setNivaliShieldAtk (value => 0);
+   setNivaliShieldDef (value => 0);
+   setNivaliShieldLuck (value => 0);
+   setRainaBraceletIsShown (current => false);
+   setRainaBraceletActive (current => false);
+   setRainaBraceletAtk (value => 0);
+   setRainaBraceletDef (value => 0);
+   setRainaBraceletLuck (value => 0);
+   setRustyPendantIsShown (current => false);
+   setRustyPendantActive (current => false);
+   setRustyPendantAtk (value => 0);
+   setRustyPendantDef (value => 0);
+   setRustyPendantLuck (value => 0);
+   setSandsRingIsShown (current => false);
+   setSandsRingActive (current => false);
+   setSandsRingAtk (value => 0);
+   setSandsRingDef (value => 0);
+   setSandsRingLuck (value => 0);
+   setVictorianFanIsShown (current => false);
+   setVictorianFanActive (current => false);
+   setVictorianFanAtk (value => 0);
+   setVictorianFanDef (value => 0);
+   setVictorianFanLuck (value => 0);
+   setGradScrollAstrologyIsShown (current => false);
+   setGradScrollAstrologyActive (current => false);
+   setGradScrollAstrologyAtk (value => 0);
+   setGradScrollAstrologyDef (value => 0);
+   setGradScrollAstrologyLuck (value => 0);
+   setGradScrollAlchemyIsShown (current => false);
+   setGradScrollAlchemyActive (current => false);
+   setGradScrollAlchemyAtk (value => 0);
+   setGradScrollAlchemyDef (value => 0);
+   setGradScrollAlchemyLuck (value => 0);
+   setGradScrollAKIsShown (current => false);
+   setGradScrollAKActive (current => false);
+   setGradScrollAKAtk (value => 0);
+   setGradScrollAKDef (value => 0);
+   setGradScrollAKLuck (value => 0);
+   setGradScrollSpellsIsShown (current => false);
+   setGradScrollSpellsActive (current => false);
+   setGradScrollSpellsAtk (value => 0);
+   setGradScrollSpellsDef (value => 0);
+   setGradScrollSpellsLuck (value => 0);
+   setGradScrollMirrorsIsShown (current => false);
+   setGradScrollMirrorsActive (current => false);
+   setGradScrollMirrorsAtk (value => 0);
+   setGradScrollMirrorsDef (value => 0);
+   setGradScrollMirrorsLuck (value => 0);
+   setGradScrollFungiIsShown (current => false);
+   setGradScrollFungiActive (current => false);
+   setGradScrollFungiAtk (value => 0);
+   setGradScrollFungiDef (value => 0);
+   setGradScrollFungiLuck (value => 0);
+   setGradScrollThreadsIsShown (current => false);
+   setGradScrollThreadsActive (current => false);
+   setGradScrollThreadsAtk (value => 0);
+   setGradScrollThreadsDef (value => 0);
+   setGradScrollThreadsLuck (value => 0);  
+}
+
+const handleRustyAmuletNoClick = event => {
+   setRustyAmuletIsShown (current => false);
+   setRustyAmuletActive (current => false);
+   setRustyAmuletAtk (value => 0);
+   setRustyAmuletDef (value => 0);
+   setRustyAmuletLuck (value => 0);
+}
+
+const [RustyPendantIsShown, setRustyPendantIsShown] = useState(false)
+const [RustyPendantActive, setRustyPendantActive] = useState(false)
+const [RustyPendantAtk, setRustyPendantAtk] = useState(0)
+const [RustyPendantDef, setRustyPendantDef] = useState(0)
+const [RustyPendantLuck, setRustyPendantLuck] = useState(0)
+
+
+const handleRustyPendantClick = event => {   
+   setGradScrollVoidIsShown (current => false);
+   setGradScrollVoidActive (current => false);
+   setGradScrollVoidAtk (value => 0);
+   setGradScrollVoidDef (value => 0);
+   setGradScrollVoidLuck (value => 0);
+
+   setRustyPendantIsShown (current => !RustyPendantIsShown);
+   setRustyPendantActive (current => !RustyPendantActive);
+   setRustyPendantAtk (value => 0);
+   setRustyPendantDef (value => 1);
+   setRustyPendantLuck (value => 2);
+   
+   setPirateAccordionIsShown (current => false);
+   setPirateAccordionActive (current => false);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 0);
+   setPirateAccordionLuck (value => 0);
+   setAstrolabeIsShown (current => false);
+   setAstrolabeActive (current => false);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 0);
+   setBardNoteIsShown (current => false);
+   setBardNoteActive (current => false);
+   setBardNoteAtk (value => 0);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 0);
+   setDarkForestAmuletIsShown (current => false);
+   setDarkForestAmuletActive (current => false);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 0);
+   setFeatherNecklaceIsShown (current => false);
+   setFeatherNecklaceActive (current => false);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 0);
+   setFeatherNecklaceLuck (value => 0);
+   setGlassNecklaceIsShown (current => false);
+   setGlassNecklaceActive (current => false);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 0);
+   setGlassNecklaceLuck (value => 0);
+   setGoldenDragonTiaraIsShown (current => false);
+   setGoldenDragonTiaraActive (current => false);
+   setGoldenDragonTiaraAtk (value => 0);
+   setGoldenDragonTiaraDef (value => 0);
+   setGoldenDragonTiaraLuck (value => 0);
+   setHauntedNecklaceIsShown (current => false);
+   setHauntedNecklaceActive (current => false);
+   setHauntedNecklaceAtk (value => 0);
+   setHauntedNecklaceDef (value => 0);
+   setHauntedNecklaceLuck (value => 0);
+   setHopeLightIsShown (current => false);
+   setHopeLightActive (current => false);
+   setHopeLightAtk (value => 0);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+   setLightBloomIsShown (current => false);
+   setLightBloomActive (current => false);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 0);
+   setLightBloomLuck (value => 0);
+   setMushroomGrenadeIsShown (current => false);
+   setMushroomGrenadeActive (current => false);
+   setMushroomGrenadeAtk (value => 0);
+   setMushroomGrenadeDef (value => 0);
+   setMushroomGrenadeLuck (value => 0);
+   setNivaliGlovesIsShown (current => false);
+   setNivaliGlovesActive (current => false);
+   setNivaliGlovesAtk (value => 0);
+   setNivaliGlovesDef (value => 0);
+   setNivaliGlovesLuck (value => 0);
+   setNivaliPantsIsShown (current => false);
+   setNivaliPantsActive (current => false);
+   setNivaliPantsAtk (value => 0);
+   setNivaliPantsDef (value => 0);
+   setNivaliPantsLuck (value => 0);
+   setNivaliShieldIsShown (current => false);
+   setNivaliShieldActive (current => false);
+   setNivaliShieldAtk (value => 0);
+   setNivaliShieldDef (value => 0);
+   setNivaliShieldLuck (value => 0);
+   setRainaBraceletIsShown (current => false);
+   setRainaBraceletActive (current => false);
+   setRainaBraceletAtk (value => 0);
+   setRainaBraceletDef (value => 0);
+   setRainaBraceletLuck (value => 0);
+   setRustyAmuletIsShown (current => false);
+   setRustyAmuletActive (current => false);
+   setRustyAmuletAtk (value => 0);
+   setRustyAmuletDef (value => 0);
+   setRustyAmuletLuck (value => 0);
+   setSandsRingIsShown (current => false);
+   setSandsRingActive (current => false);
+   setSandsRingAtk (value => 0);
+   setSandsRingDef (value => 0);
+   setSandsRingLuck (value => 0);
+   setVictorianFanIsShown (current => false);
+   setVictorianFanActive (current => false);
+   setVictorianFanAtk (value => 0);
+   setVictorianFanDef (value => 0);
+   setVictorianFanLuck (value => 0);
+   setGradScrollAstrologyIsShown (current => false);
+   setGradScrollAstrologyActive (current => false);
+   setGradScrollAstrologyAtk (value => 0);
+   setGradScrollAstrologyDef (value => 0);
+   setGradScrollAstrologyLuck (value => 0);
+   setGradScrollAlchemyIsShown (current => false);
+   setGradScrollAlchemyActive (current => false);
+   setGradScrollAlchemyAtk (value => 0);
+   setGradScrollAlchemyDef (value => 0);
+   setGradScrollAlchemyLuck (value => 0);
+   setGradScrollAKIsShown (current => false);
+   setGradScrollAKActive (current => false);
+   setGradScrollAKAtk (value => 0);
+   setGradScrollAKDef (value => 0);
+   setGradScrollAKLuck (value => 0);
+   setGradScrollSpellsIsShown (current => false);
+   setGradScrollSpellsActive (current => false);
+   setGradScrollSpellsAtk (value => 0);
+   setGradScrollSpellsDef (value => 0);
+   setGradScrollSpellsLuck (value => 0);
+   setGradScrollMirrorsIsShown (current => false);
+   setGradScrollMirrorsActive (current => false);
+   setGradScrollMirrorsAtk (value => 0);
+   setGradScrollMirrorsDef (value => 0);
+   setGradScrollMirrorsLuck (value => 0);
+   setGradScrollFungiIsShown (current => false);
+   setGradScrollFungiActive (current => false);
+   setGradScrollFungiAtk (value => 0);
+   setGradScrollFungiDef (value => 0);
+   setGradScrollFungiLuck (value => 0);
+   setGradScrollThreadsIsShown (current => false);
+   setGradScrollThreadsActive (current => false);
+   setGradScrollThreadsAtk (value => 0);
+   setGradScrollThreadsDef (value => 0);
+   setGradScrollThreadsLuck (value => 0);  
+}
+
+const handleRustyPendantNoClick = event => {
+   setRustyPendantIsShown (current => false);
+   setRustyPendantActive (current => false);
+   setRustyPendantAtk (value => 0);
+   setRustyPendantDef (value => 0);
+   setRustyPendantLuck (value => 0);
+}
+
+const [SandsRingIsShown, setSandsRingIsShown] = useState(false)
+const [SandsRingActive, setSandsRingActive] = useState(false)
+const [SandsRingAtk, setSandsRingAtk] = useState(0)
+const [SandsRingDef, setSandsRingDef] = useState(0)
+const [SandsRingLuck, setSandsRingLuck] = useState(0)
+
+
+const handleSandsRingClick = event => {
+   setGradScrollVoidIsShown (current => false);
+   setGradScrollVoidActive (current => false);
+   setGradScrollVoidAtk (value => 0);
+   setGradScrollVoidDef (value => 0);
+   setGradScrollVoidLuck (value => 0);
+
+   setSandsRingIsShown (current => !SandsRingIsShown);
+   setSandsRingActive (current => !SandsRingActive);
+   setSandsRingAtk (value => 1);
+   setSandsRingDef (value => 5);
+   setSandsRingLuck (value => 5);
+   
+   setPirateAccordionIsShown (current => false);
+   setPirateAccordionActive (current => false);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 0);
+   setPirateAccordionLuck (value => 0);
+   setAstrolabeIsShown (current => false);
+   setAstrolabeActive (current => false);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 0);
+   setBardNoteIsShown (current => false);
+   setBardNoteActive (current => false);
+   setBardNoteAtk (value => 0);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 0);
+   setDarkForestAmuletIsShown (current => false);
+   setDarkForestAmuletActive (current => false);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 0);
+   setFeatherNecklaceIsShown (current => false);
+   setFeatherNecklaceActive (current => false);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 0);
+   setFeatherNecklaceLuck (value => 0);
+   setGlassNecklaceIsShown (current => false);
+   setGlassNecklaceActive (current => false);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 0);
+   setGlassNecklaceLuck (value => 0);
+   setGoldenDragonTiaraIsShown (current => false);
+   setGoldenDragonTiaraActive (current => false);
+   setGoldenDragonTiaraAtk (value => 0);
+   setGoldenDragonTiaraDef (value => 0);
+   setGoldenDragonTiaraLuck (value => 0);
+   setHauntedNecklaceIsShown (current => false);
+   setHauntedNecklaceActive (current => false);
+   setHauntedNecklaceAtk (value => 0);
+   setHauntedNecklaceDef (value => 0);
+   setHauntedNecklaceLuck (value => 0);
+   setHopeLightIsShown (current => false);
+   setHopeLightActive (current => false);
+   setHopeLightAtk (value => 0);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+   setLightBloomIsShown (current => false);
+   setLightBloomActive (current => false);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 0);
+   setLightBloomLuck (value => 0);
+   setMushroomGrenadeIsShown (current => false);
+   setMushroomGrenadeActive (current => false);
+   setMushroomGrenadeAtk (value => 0);
+   setMushroomGrenadeDef (value => 0);
+   setMushroomGrenadeLuck (value => 0);
+   setNivaliGlovesIsShown (current => false);
+   setNivaliGlovesActive (current => false);
+   setNivaliGlovesAtk (value => 0);
+   setNivaliGlovesDef (value => 0);
+   setNivaliGlovesLuck (value => 0);
+   setNivaliPantsIsShown (current => false);
+   setNivaliPantsActive (current => false);
+   setNivaliPantsAtk (value => 0);
+   setNivaliPantsDef (value => 0);
+   setNivaliPantsLuck (value => 0);
+   setNivaliShieldIsShown (current => false);
+   setNivaliShieldActive (current => false);
+   setNivaliShieldAtk (value => 0);
+   setNivaliShieldDef (value => 0);
+   setNivaliShieldLuck (value => 0);
+   setRainaBraceletIsShown (current => false);
+   setRainaBraceletActive (current => false);
+   setRainaBraceletAtk (value => 0);
+   setRainaBraceletDef (value => 0);
+   setRainaBraceletLuck (value => 0);
+   setRustyAmuletIsShown (current => false);
+   setRustyAmuletActive (current => false);
+   setRustyAmuletAtk (value => 0);
+   setRustyAmuletDef (value => 0);
+   setRustyAmuletLuck (value => 0);
+   setRustyPendantIsShown (current => false);
+   setRustyPendantActive (current => false);
+   setRustyPendantAtk (value => 0);
+   setRustyPendantDef (value => 0);
+   setRustyPendantLuck (value => 0);
+   setVictorianFanIsShown (current => false);
+   setVictorianFanActive (current => false);
+   setVictorianFanAtk (value => 0);
+   setVictorianFanDef (value => 0);
+   setVictorianFanLuck (value => 0);
+   setGradScrollAstrologyIsShown (current => false);
+   setGradScrollAstrologyActive (current => false);
+   setGradScrollAstrologyAtk (value => 0);
+   setGradScrollAstrologyDef (value => 0);
+   setGradScrollAstrologyLuck (value => 0);
+   setGradScrollAlchemyIsShown (current => false);
+   setGradScrollAlchemyActive (current => false);
+   setGradScrollAlchemyAtk (value => 0);
+   setGradScrollAlchemyDef (value => 0);
+   setGradScrollAlchemyLuck (value => 0);
+   setGradScrollAKIsShown (current => false);
+   setGradScrollAKActive (current => false);
+   setGradScrollAKAtk (value => 0);
+   setGradScrollAKDef (value => 0);
+   setGradScrollAKLuck (value => 0);
+   setGradScrollSpellsIsShown (current => false);
+   setGradScrollSpellsActive (current => false);
+   setGradScrollSpellsAtk (value => 0);
+   setGradScrollSpellsDef (value => 0);
+   setGradScrollSpellsLuck (value => 0);
+   setGradScrollMirrorsIsShown (current => false);
+   setGradScrollMirrorsActive (current => false);
+   setGradScrollMirrorsAtk (value => 0);
+   setGradScrollMirrorsDef (value => 0);
+   setGradScrollMirrorsLuck (value => 0);
+   setGradScrollFungiIsShown (current => false);
+   setGradScrollFungiActive (current => false);
+   setGradScrollFungiAtk (value => 0);
+   setGradScrollFungiDef (value => 0);
+   setGradScrollFungiLuck (value => 0);
+   setGradScrollThreadsIsShown (current => false);
+   setGradScrollThreadsActive (current => false);
+   setGradScrollThreadsAtk (value => 0);
+   setGradScrollThreadsDef (value => 0);
+   setGradScrollThreadsLuck (value => 0);  
+}
+
+const handleSandsRingNoClick = event => {
+   setSandsRingIsShown (current => false);
+   setSandsRingActive (current => false);
+   setSandsRingAtk (value => 0);
+   setSandsRingDef (value => 0);
+   setSandsRingLuck (value => 0);
+}
+
+const [VictorianFanIsShown, setVictorianFanIsShown] = useState(false)
+const [VictorianFanActive, setVictorianFanActive] = useState(false)
+const [VictorianFanAtk, setVictorianFanAtk] = useState(0)
+const [VictorianFanDef, setVictorianFanDef] = useState(0)
+const [VictorianFanLuck, setVictorianFanLuck] = useState(0)
+
+
+const handleVictorianFanClick = event => {
+   setGradScrollVoidIsShown (current => false);
+   setGradScrollVoidActive (current => false);
+   setGradScrollVoidAtk (value => 0);
+   setGradScrollVoidDef (value => 0);
+   setGradScrollVoidLuck (value => 0);
+
+   setVictorianFanIsShown (current => !VictorianFanIsShown);
+   setVictorianFanActive (current => !VictorianFanActive);
+   setVictorianFanAtk (value => 8);
+   setVictorianFanDef (value => 0);
+   setVictorianFanLuck (value => 0);
+   
+   setPirateAccordionIsShown (current => false);
+   setPirateAccordionActive (current => false);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 0);
+   setPirateAccordionLuck (value => 0);
+   setAstrolabeIsShown (current => false);
+   setAstrolabeActive (current => false);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 0);
+   setBardNoteIsShown (current => false);
+   setBardNoteActive (current => false);
+   setBardNoteAtk (value => 0);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 0);
+   setDarkForestAmuletIsShown (current => false);
+   setDarkForestAmuletActive (current => false);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 0);
+   setFeatherNecklaceIsShown (current => false);
+   setFeatherNecklaceActive (current => false);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 0);
+   setFeatherNecklaceLuck (value => 0);
+   setGlassNecklaceIsShown (current => false);
+   setGlassNecklaceActive (current => false);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 0);
+   setGlassNecklaceLuck (value => 0);
+   setGoldenDragonTiaraIsShown (current => false);
+   setGoldenDragonTiaraActive (current => false);
+   setGoldenDragonTiaraAtk (value => 0);
+   setGoldenDragonTiaraDef (value => 0);
+   setGoldenDragonTiaraLuck (value => 0);
+   setHauntedNecklaceIsShown (current => false);
+   setHauntedNecklaceActive (current => false);
+   setHauntedNecklaceAtk (value => 0);
+   setHauntedNecklaceDef (value => 0);
+   setHauntedNecklaceLuck (value => 0);
+   setHopeLightIsShown (current => false);
+   setHopeLightActive (current => false);
+   setHopeLightAtk (value => 0);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+   setLightBloomIsShown (current => false);
+   setLightBloomActive (current => false);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 0);
+   setLightBloomLuck (value => 0);
+   setMushroomGrenadeIsShown (current => false);
+   setMushroomGrenadeActive (current => false);
+   setMushroomGrenadeAtk (value => 0);
+   setMushroomGrenadeDef (value => 0);
+   setMushroomGrenadeLuck (value => 0);
+   setNivaliGlovesIsShown (current => false);
+   setNivaliGlovesActive (current => false);
+   setNivaliGlovesAtk (value => 0);
+   setNivaliGlovesDef (value => 0);
+   setNivaliGlovesLuck (value => 0);
+   setNivaliPantsIsShown (current => false);
+   setNivaliPantsActive (current => false);
+   setNivaliPantsAtk (value => 0);
+   setNivaliPantsDef (value => 0);
+   setNivaliPantsLuck (value => 0);
+   setNivaliShieldIsShown (current => false);
+   setNivaliShieldActive (current => false);
+   setNivaliShieldAtk (value => 0);
+   setNivaliShieldDef (value => 0);
+   setNivaliShieldLuck (value => 0);
+   setRainaBraceletIsShown (current => false);
+   setRainaBraceletActive (current => false);
+   setRainaBraceletAtk (value => 0);
+   setRainaBraceletDef (value => 0);
+   setRainaBraceletLuck (value => 0);
+   setRustyAmuletIsShown (current => false);
+   setRustyAmuletActive (current => false);
+   setRustyAmuletAtk (value => 0);
+   setRustyAmuletDef (value => 0);
+   setRustyAmuletLuck (value => 0);
+   setRustyPendantIsShown (current => false);
+   setRustyPendantActive (current => false);
+   setRustyPendantAtk (value => 0);
+   setRustyPendantDef (value => 0);
+   setRustyPendantLuck (value => 0);
+   setSandsRingIsShown (current => false);
+   setSandsRingActive (current => false);
+   setSandsRingAtk (value => 0);
+   setSandsRingDef (value => 0);
+   setSandsRingLuck (value => 0);
+   setGradScrollAstrologyIsShown (current => false);
+   setGradScrollAstrologyActive (current => false);
+   setGradScrollAstrologyAtk (value => 0);
+   setGradScrollAstrologyDef (value => 0);
+   setGradScrollAstrologyLuck (value => 0);
+   setGradScrollAlchemyIsShown (current => false);
+   setGradScrollAlchemyActive (current => false);
+   setGradScrollAlchemyAtk (value => 0);
+   setGradScrollAlchemyDef (value => 0);
+   setGradScrollAlchemyLuck (value => 0);
+   setGradScrollAKIsShown (current => false);
+   setGradScrollAKActive (current => false);
+   setGradScrollAKAtk (value => 0);
+   setGradScrollAKDef (value => 0);
+   setGradScrollAKLuck (value => 0);
+   setGradScrollSpellsIsShown (current => false);
+   setGradScrollSpellsActive (current => false);
+   setGradScrollSpellsAtk (value => 0);
+   setGradScrollSpellsDef (value => 0);
+   setGradScrollSpellsLuck (value => 0);
+   setGradScrollMirrorsIsShown (current => false);
+   setGradScrollMirrorsActive (current => false);
+   setGradScrollMirrorsAtk (value => 0);
+   setGradScrollMirrorsDef (value => 0);
+   setGradScrollMirrorsLuck (value => 0);
+   setGradScrollFungiIsShown (current => false);
+   setGradScrollFungiActive (current => false);
+   setGradScrollFungiAtk (value => 0);
+   setGradScrollFungiDef (value => 0);
+   setGradScrollFungiLuck (value => 0);
+   setGradScrollThreadsIsShown (current => false);
+   setGradScrollThreadsActive (current => false);
+   setGradScrollThreadsAtk (value => 0);
+   setGradScrollThreadsDef (value => 0);
+   setGradScrollThreadsLuck (value => 0);  
+}
+
+const handleVictorianFanNoClick = event => {
+   setVictorianFanIsShown (current => false);
+   setVictorianFanActive (current => false);
+   setVictorianFanAtk (value => 0);
+   setVictorianFanDef (value => 0);
+   setVictorianFanLuck (value => 0);
+}
+
+const [GradScrollAstrologyIsShown, setGradScrollAstrologyIsShown] = useState(false)
+const [GradScrollAstrologyActive, setGradScrollAstrologyActive] = useState(false)
+const [GradScrollAstrologyAtk, setGradScrollAstrologyAtk] = useState(0)
+const [GradScrollAstrologyDef, setGradScrollAstrologyDef] = useState(0)
+const [GradScrollAstrologyLuck, setGradScrollAstrologyLuck] = useState(0)
+
+
+const handleGradScrollAstrologyClick = event => {
+   setGradScrollVoidIsShown (current => false);
+   setGradScrollVoidActive (current => false);
+   setGradScrollVoidAtk (value => 0);
+   setGradScrollVoidDef (value => 0);
+   setGradScrollVoidLuck (value => 0);
+
+   setGradScrollAstrologyIsShown (current => !GradScrollAstrologyIsShown);
+   setGradScrollAstrologyActive (current => !GradScrollAstrologyActive);
+   setGradScrollAstrologyAtk (value => 2);
+   setGradScrollAstrologyDef (value => 4);
+   setGradScrollAstrologyLuck (value => 6);
+   
+   setPirateAccordionIsShown (current => false);
+   setPirateAccordionActive (current => false);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 0);
+   setPirateAccordionLuck (value => 0);
+   setAstrolabeIsShown (current => false);
+   setAstrolabeActive (current => false);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 0);
+   setBardNoteIsShown (current => false);
+   setBardNoteActive (current => false);
+   setBardNoteAtk (value => 0);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 0);
+   setDarkForestAmuletIsShown (current => false);
+   setDarkForestAmuletActive (current => false);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 0);
+   setFeatherNecklaceIsShown (current => false);
+   setFeatherNecklaceActive (current => false);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 0);
+   setFeatherNecklaceLuck (value => 0);
+   setGlassNecklaceIsShown (current => false);
+   setGlassNecklaceActive (current => false);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 0);
+   setGlassNecklaceLuck (value => 0);
+   setGoldenDragonTiaraIsShown (current => false);
+   setGoldenDragonTiaraActive (current => false);
+   setGoldenDragonTiaraAtk (value => 0);
+   setGoldenDragonTiaraDef (value => 0);
+   setGoldenDragonTiaraLuck (value => 0);
+   setHauntedNecklaceIsShown (current => false);
+   setHauntedNecklaceActive (current => false);
+   setHauntedNecklaceAtk (value => 0);
+   setHauntedNecklaceDef (value => 0);
+   setHauntedNecklaceLuck (value => 0);
+   setHopeLightIsShown (current => false);
+   setHopeLightActive (current => false);
+   setHopeLightAtk (value => 0);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+   setLightBloomIsShown (current => false);
+   setLightBloomActive (current => false);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 0);
+   setLightBloomLuck (value => 0);
+   setMushroomGrenadeIsShown (current => false);
+   setMushroomGrenadeActive (current => false);
+   setMushroomGrenadeAtk (value => 0);
+   setMushroomGrenadeDef (value => 0);
+   setMushroomGrenadeLuck (value => 0);
+   setNivaliGlovesIsShown (current => false);
+   setNivaliGlovesActive (current => false);
+   setNivaliGlovesAtk (value => 0);
+   setNivaliGlovesDef (value => 0);
+   setNivaliGlovesLuck (value => 0);
+   setNivaliPantsIsShown (current => false);
+   setNivaliPantsActive (current => false);
+   setNivaliPantsAtk (value => 0);
+   setNivaliPantsDef (value => 0);
+   setNivaliPantsLuck (value => 0);
+   setNivaliShieldIsShown (current => false);
+   setNivaliShieldActive (current => false);
+   setNivaliShieldAtk (value => 0);
+   setNivaliShieldDef (value => 0);
+   setNivaliShieldLuck (value => 0);
+   setRainaBraceletIsShown (current => false);
+   setRainaBraceletActive (current => false);
+   setRainaBraceletAtk (value => 0);
+   setRainaBraceletDef (value => 0);
+   setRainaBraceletLuck (value => 0);
+   setRustyAmuletIsShown (current => false);
+   setRustyAmuletActive (current => false);
+   setRustyAmuletAtk (value => 0);
+   setRustyAmuletDef (value => 0);
+   setRustyAmuletLuck (value => 0);
+   setRustyPendantIsShown (current => false);
+   setRustyPendantActive (current => false);
+   setRustyPendantAtk (value => 0);
+   setRustyPendantDef (value => 0);
+   setRustyPendantLuck (value => 0);
+   setSandsRingIsShown (current => false);
+   setSandsRingActive (current => false);
+   setSandsRingAtk (value => 0);
+   setSandsRingDef (value => 0);
+   setSandsRingLuck (value => 0);
+   setVictorianFanIsShown (current => false);
+   setVictorianFanActive (current => false);
+   setVictorianFanAtk (value => 0);
+   setVictorianFanDef (value => 0);
+   setVictorianFanLuck (value => 0);
+   setGradScrollAlchemyIsShown (current => false);
+   setGradScrollAlchemyActive (current => false);
+   setGradScrollAlchemyAtk (value => 0);
+   setGradScrollAlchemyDef (value => 0);
+   setGradScrollAlchemyLuck (value => 0);
+   setGradScrollAKIsShown (current => false);
+   setGradScrollAKActive (current => false);
+   setGradScrollAKAtk (value => 0);
+   setGradScrollAKDef (value => 0);
+   setGradScrollAKLuck (value => 0);
+   setGradScrollSpellsIsShown (current => false);
+   setGradScrollSpellsActive (current => false);
+   setGradScrollSpellsAtk (value => 0);
+   setGradScrollSpellsDef (value => 0);
+   setGradScrollSpellsLuck (value => 0);
+   setGradScrollMirrorsIsShown (current => false);
+   setGradScrollMirrorsActive (current => false);
+   setGradScrollMirrorsAtk (value => 0);
+   setGradScrollMirrorsDef (value => 0);
+   setGradScrollMirrorsLuck (value => 0);
+   setGradScrollFungiIsShown (current => false);
+   setGradScrollFungiActive (current => false);
+   setGradScrollFungiAtk (value => 0);
+   setGradScrollFungiDef (value => 0);
+   setGradScrollFungiLuck (value => 0);
+   setGradScrollThreadsIsShown (current => false);
+   setGradScrollThreadsActive (current => false);
+   setGradScrollThreadsAtk (value => 0);
+   setGradScrollThreadsDef (value => 0);
+   setGradScrollThreadsLuck (value => 0);  
+}
+
+const handleGradScrollAstrologyNoClick = event => {
+   setGradScrollAstrologyIsShown (current => false);
+   setGradScrollAstrologyActive (current => false);
+   setGradScrollAstrologyAtk (value => 0);
+   setGradScrollAstrologyDef (value => 0);
+   setGradScrollAstrologyLuck (value => 0);
+}
+
+const [GradScrollAlchemyIsShown, setGradScrollAlchemyIsShown] = useState(false)
+const [GradScrollAlchemyActive, setGradScrollAlchemyActive] = useState(false)
+const [GradScrollAlchemyAtk, setGradScrollAlchemyAtk] = useState(0)
+const [GradScrollAlchemyDef, setGradScrollAlchemyDef] = useState(0)
+const [GradScrollAlchemyLuck, setGradScrollAlchemyLuck] = useState(0)
+
+
+const handleGradScrollAlchemyClick = event => {
+   setGradScrollVoidIsShown (current => false);
+   setGradScrollVoidActive (current => false);
+   setGradScrollVoidAtk (value => 0);
+   setGradScrollVoidDef (value => 0);
+   setGradScrollVoidLuck (value => 0);
+
+   setGradScrollAlchemyIsShown (current => !GradScrollAlchemyIsShown);
+   setGradScrollAlchemyActive (current => !GradScrollAlchemyActive);
+   setGradScrollAlchemyAtk (value => 6);
+   setGradScrollAlchemyDef (value => 4);
+   setGradScrollAlchemyLuck (value => 2);
+   
+   setPirateAccordionIsShown (current => false);
+   setPirateAccordionActive (current => false);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 0);
+   setPirateAccordionLuck (value => 0);
+   setAstrolabeIsShown (current => false);
+   setAstrolabeActive (current => false);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 0);
+   setBardNoteIsShown (current => false);
+   setBardNoteActive (current => false);
+   setBardNoteAtk (value => 0);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 0);
+   setDarkForestAmuletIsShown (current => false);
+   setDarkForestAmuletActive (current => false);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 0);
+   setFeatherNecklaceIsShown (current => false);
+   setFeatherNecklaceActive (current => false);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 0);
+   setFeatherNecklaceLuck (value => 0);
+   setGlassNecklaceIsShown (current => false);
+   setGlassNecklaceActive (current => false);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 0);
+   setGlassNecklaceLuck (value => 0);
+   setGoldenDragonTiaraIsShown (current => false);
+   setGoldenDragonTiaraActive (current => false);
+   setGoldenDragonTiaraAtk (value => 0);
+   setGoldenDragonTiaraDef (value => 0);
+   setGoldenDragonTiaraLuck (value => 0);
+   setHauntedNecklaceIsShown (current => false);
+   setHauntedNecklaceActive (current => false);
+   setHauntedNecklaceAtk (value => 0);
+   setHauntedNecklaceDef (value => 0);
+   setHauntedNecklaceLuck (value => 0);
+   setHopeLightIsShown (current => false);
+   setHopeLightActive (current => false);
+   setHopeLightAtk (value => 0);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+   setLightBloomIsShown (current => false);
+   setLightBloomActive (current => false);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 0);
+   setLightBloomLuck (value => 0);
+   setMushroomGrenadeIsShown (current => false);
+   setMushroomGrenadeActive (current => false);
+   setMushroomGrenadeAtk (value => 0);
+   setMushroomGrenadeDef (value => 0);
+   setMushroomGrenadeLuck (value => 0);
+   setNivaliGlovesIsShown (current => false);
+   setNivaliGlovesActive (current => false);
+   setNivaliGlovesAtk (value => 0);
+   setNivaliGlovesDef (value => 0);
+   setNivaliGlovesLuck (value => 0);
+   setNivaliPantsIsShown (current => false);
+   setNivaliPantsActive (current => false);
+   setNivaliPantsAtk (value => 0);
+   setNivaliPantsDef (value => 0);
+   setNivaliPantsLuck (value => 0);
+   setNivaliShieldIsShown (current => false);
+   setNivaliShieldActive (current => false);
+   setNivaliShieldAtk (value => 0);
+   setNivaliShieldDef (value => 0);
+   setNivaliShieldLuck (value => 0);
+   setRainaBraceletIsShown (current => false);
+   setRainaBraceletActive (current => false);
+   setRainaBraceletAtk (value => 0);
+   setRainaBraceletDef (value => 0);
+   setRainaBraceletLuck (value => 0);
+   setRustyAmuletIsShown (current => false);
+   setRustyAmuletActive (current => false);
+   setRustyAmuletAtk (value => 0);
+   setRustyAmuletDef (value => 0);
+   setRustyAmuletLuck (value => 0);
+   setRustyPendantIsShown (current => false);
+   setRustyPendantActive (current => false);
+   setRustyPendantAtk (value => 0);
+   setRustyPendantDef (value => 0);
+   setRustyPendantLuck (value => 0);
+   setSandsRingIsShown (current => false);
+   setSandsRingActive (current => false);
+   setSandsRingAtk (value => 0);
+   setSandsRingDef (value => 0);
+   setSandsRingLuck (value => 0);
+   setVictorianFanIsShown (current => false);
+   setVictorianFanActive (current => false);
+   setVictorianFanAtk (value => 0);
+   setVictorianFanDef (value => 0);
+   setVictorianFanLuck (value => 0);
+   setGradScrollAstrologyIsShown (current => false);
+   setGradScrollAstrologyActive (current => false);
+   setGradScrollAstrologyAtk (value => 0);
+   setGradScrollAstrologyDef (value => 0);
+   setGradScrollAstrologyLuck (value => 0);
+   setGradScrollAKIsShown (current => false);
+   setGradScrollAKActive (current => false);
+   setGradScrollAKAtk (value => 0);
+   setGradScrollAKDef (value => 0);
+   setGradScrollAKLuck (value => 0);
+   setGradScrollSpellsIsShown (current => false);
+   setGradScrollSpellsActive (current => false);
+   setGradScrollSpellsAtk (value => 0);
+   setGradScrollSpellsDef (value => 0);
+   setGradScrollSpellsLuck (value => 0);
+   setGradScrollMirrorsIsShown (current => false);
+   setGradScrollMirrorsActive (current => false);
+   setGradScrollMirrorsAtk (value => 0);
+   setGradScrollMirrorsDef (value => 0);
+   setGradScrollMirrorsLuck (value => 0);
+   setGradScrollFungiIsShown (current => false);
+   setGradScrollFungiActive (current => false);
+   setGradScrollFungiAtk (value => 0);
+   setGradScrollFungiDef (value => 0);
+   setGradScrollFungiLuck (value => 0);
+   setGradScrollThreadsIsShown (current => false);
+   setGradScrollThreadsActive (current => false);
+   setGradScrollThreadsAtk (value => 0);
+   setGradScrollThreadsDef (value => 0);
+   setGradScrollThreadsLuck (value => 0);  
+}
+
+const handleGradScrollAlchemyNoClick = event => {
+   setGradScrollAlchemyIsShown (current => false);
+   setGradScrollAlchemyActive (current => false);
+   setGradScrollAlchemyAtk (value => 0);
+   setGradScrollAlchemyDef (value => 0);
+   setGradScrollAlchemyLuck (value => 0);
+}
+
+const [GradScrollAKIsShown, setGradScrollAKIsShown] = useState(false)
+const [GradScrollAKActive, setGradScrollAKActive] = useState(false)
+const [GradScrollAKAtk, setGradScrollAKAtk] = useState(0)
+const [GradScrollAKDef, setGradScrollAKDef] = useState(0)
+const [GradScrollAKLuck, setGradScrollAKLuck] = useState(0)
+
+
+const handleGradScrollAKClick = event => {
+   setGradScrollVoidIsShown (current => false);
+   setGradScrollVoidActive (current => false);
+   setGradScrollVoidAtk (value => 0);
+   setGradScrollVoidDef (value => 0);
+   setGradScrollVoidLuck (value => 0);
+
+   setGradScrollAKIsShown (current => !GradScrollAKIsShown);
+   setGradScrollAKActive (current => !GradScrollAKActive);
+   setGradScrollAKAtk (value => 4);
+   setGradScrollAKDef (value => 6);
+   setGradScrollAKLuck (value => 2);
+   
+   setPirateAccordionIsShown (current => false);
+   setPirateAccordionActive (current => false);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 0);
+   setPirateAccordionLuck (value => 0);
+   setAstrolabeIsShown (current => false);
+   setAstrolabeActive (current => false);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 0);
+   setBardNoteIsShown (current => false);
+   setBardNoteActive (current => false);
+   setBardNoteAtk (value => 0);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 0);
+   setDarkForestAmuletIsShown (current => false);
+   setDarkForestAmuletActive (current => false);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 0);
+   setFeatherNecklaceIsShown (current => false);
+   setFeatherNecklaceActive (current => false);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 0);
+   setFeatherNecklaceLuck (value => 0);
+   setGlassNecklaceIsShown (current => false);
+   setGlassNecklaceActive (current => false);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 0);
+   setGlassNecklaceLuck (value => 0);
+   setGoldenDragonTiaraIsShown (current => false);
+   setGoldenDragonTiaraActive (current => false);
+   setGoldenDragonTiaraAtk (value => 0);
+   setGoldenDragonTiaraDef (value => 0);
+   setGoldenDragonTiaraLuck (value => 0);
+   setHauntedNecklaceIsShown (current => false);
+   setHauntedNecklaceActive (current => false);
+   setHauntedNecklaceAtk (value => 0);
+   setHauntedNecklaceDef (value => 0);
+   setHauntedNecklaceLuck (value => 0);
+   setHopeLightIsShown (current => false);
+   setHopeLightActive (current => false);
+   setHopeLightAtk (value => 0);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+   setLightBloomIsShown (current => false);
+   setLightBloomActive (current => false);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 0);
+   setLightBloomLuck (value => 0);
+   setMushroomGrenadeIsShown (current => false);
+   setMushroomGrenadeActive (current => false);
+   setMushroomGrenadeAtk (value => 0);
+   setMushroomGrenadeDef (value => 0);
+   setMushroomGrenadeLuck (value => 0);
+   setNivaliGlovesIsShown (current => false);
+   setNivaliGlovesActive (current => false);
+   setNivaliGlovesAtk (value => 0);
+   setNivaliGlovesDef (value => 0);
+   setNivaliGlovesLuck (value => 0);
+   setNivaliPantsIsShown (current => false);
+   setNivaliPantsActive (current => false);
+   setNivaliPantsAtk (value => 0);
+   setNivaliPantsDef (value => 0);
+   setNivaliPantsLuck (value => 0);
+   setNivaliShieldIsShown (current => false);
+   setNivaliShieldActive (current => false);
+   setNivaliShieldAtk (value => 0);
+   setNivaliShieldDef (value => 0);
+   setNivaliShieldLuck (value => 0);
+   setRainaBraceletIsShown (current => false);
+   setRainaBraceletActive (current => false);
+   setRainaBraceletAtk (value => 0);
+   setRainaBraceletDef (value => 0);
+   setRainaBraceletLuck (value => 0);
+   setRustyAmuletIsShown (current => false);
+   setRustyAmuletActive (current => false);
+   setRustyAmuletAtk (value => 0);
+   setRustyAmuletDef (value => 0);
+   setRustyAmuletLuck (value => 0);
+   setRustyPendantIsShown (current => false);
+   setRustyPendantActive (current => false);
+   setRustyPendantAtk (value => 0);
+   setRustyPendantDef (value => 0);
+   setRustyPendantLuck (value => 0);
+   setSandsRingIsShown (current => false);
+   setSandsRingActive (current => false);
+   setSandsRingAtk (value => 0);
+   setSandsRingDef (value => 0);
+   setSandsRingLuck (value => 0);
+   setVictorianFanIsShown (current => false);
+   setVictorianFanActive (current => false);
+   setVictorianFanAtk (value => 0);
+   setVictorianFanDef (value => 0);
+   setVictorianFanLuck (value => 0);
+   setGradScrollAstrologyIsShown (current => false);
+   setGradScrollAstrologyActive (current => false);
+   setGradScrollAstrologyAtk (value => 0);
+   setGradScrollAstrologyDef (value => 0);
+   setGradScrollAstrologyLuck (value => 0);
+   setGradScrollAlchemyIsShown (current => false);
+   setGradScrollAlchemyActive (current => false);
+   setGradScrollAlchemyAtk (value => 0);
+   setGradScrollAlchemyDef (value => 0);
+   setGradScrollAlchemyLuck (value => 0);
+   setGradScrollSpellsIsShown (current => false);
+   setGradScrollSpellsActive (current => false);
+   setGradScrollSpellsAtk (value => 0);
+   setGradScrollSpellsDef (value => 0);
+   setGradScrollSpellsLuck (value => 0);
+   setGradScrollMirrorsIsShown (current => false);
+   setGradScrollMirrorsActive (current => false);
+   setGradScrollMirrorsAtk (value => 0);
+   setGradScrollMirrorsDef (value => 0);
+   setGradScrollMirrorsLuck (value => 0);
+   setGradScrollFungiIsShown (current => false);
+   setGradScrollFungiActive (current => false);
+   setGradScrollFungiAtk (value => 0);
+   setGradScrollFungiDef (value => 0);
+   setGradScrollFungiLuck (value => 0);
+   setGradScrollThreadsIsShown (current => false);
+   setGradScrollThreadsActive (current => false);
+   setGradScrollThreadsAtk (value => 0);
+   setGradScrollThreadsDef (value => 0);
+   setGradScrollThreadsLuck (value => 0);  
+}
+
+const handleGradScrollAKNoClick = event => {
+   setGradScrollAKIsShown (current => false);
+   setGradScrollAKActive (current => false);
+   setGradScrollAKAtk (value => 0);
+   setGradScrollAKDef (value => 0);
+   setGradScrollAKLuck (value => 0);
+}
+
+const [GradScrollSpellsIsShown, setGradScrollSpellsIsShown] = useState(false)
+const [GradScrollSpellsActive, setGradScrollSpellsActive] = useState(false)
+const [GradScrollSpellsAtk, setGradScrollSpellsAtk] = useState(0)
+const [GradScrollSpellsDef, setGradScrollSpellsDef] = useState(0)
+const [GradScrollSpellsLuck, setGradScrollSpellsLuck] = useState(0)
+
+
+const handleGradScrollSpellsClick = event => {
+   setGradScrollVoidIsShown (current => false);
+   setGradScrollVoidActive (current => false);
+   setGradScrollVoidAtk (value => 0);
+   setGradScrollVoidDef (value => 0);
+   setGradScrollVoidLuck (value => 0);
+
+   setGradScrollSpellsIsShown (current => !GradScrollSpellsIsShown);
+   setGradScrollSpellsActive (current => !GradScrollSpellsActive);
+   setGradScrollSpellsAtk (value => 6);
+   setGradScrollSpellsDef (value => 2);
+   setGradScrollSpellsLuck (value => 4);
+   
+   setPirateAccordionIsShown (current => false);
+   setPirateAccordionActive (current => false);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 0);
+   setPirateAccordionLuck (value => 0);
+   setAstrolabeIsShown (current => false);
+   setAstrolabeActive (current => false);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 0);
+   setBardNoteIsShown (current => false);
+   setBardNoteActive (current => false);
+   setBardNoteAtk (value => 0);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 0);
+   setDarkForestAmuletIsShown (current => false);
+   setDarkForestAmuletActive (current => false);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 0);
+   setFeatherNecklaceIsShown (current => false);
+   setFeatherNecklaceActive (current => false);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 0);
+   setFeatherNecklaceLuck (value => 0);
+   setGlassNecklaceIsShown (current => false);
+   setGlassNecklaceActive (current => false);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 0);
+   setGlassNecklaceLuck (value => 0);
+   setGoldenDragonTiaraIsShown (current => false);
+   setGoldenDragonTiaraActive (current => false);
+   setGoldenDragonTiaraAtk (value => 0);
+   setGoldenDragonTiaraDef (value => 0);
+   setGoldenDragonTiaraLuck (value => 0);
+   setHauntedNecklaceIsShown (current => false);
+   setHauntedNecklaceActive (current => false);
+   setHauntedNecklaceAtk (value => 0);
+   setHauntedNecklaceDef (value => 0);
+   setHauntedNecklaceLuck (value => 0);
+   setHopeLightIsShown (current => false);
+   setHopeLightActive (current => false);
+   setHopeLightAtk (value => 0);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+   setLightBloomIsShown (current => false);
+   setLightBloomActive (current => false);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 0);
+   setLightBloomLuck (value => 0);
+   setMushroomGrenadeIsShown (current => false);
+   setMushroomGrenadeActive (current => false);
+   setMushroomGrenadeAtk (value => 0);
+   setMushroomGrenadeDef (value => 0);
+   setMushroomGrenadeLuck (value => 0);
+   setNivaliGlovesIsShown (current => false);
+   setNivaliGlovesActive (current => false);
+   setNivaliGlovesAtk (value => 0);
+   setNivaliGlovesDef (value => 0);
+   setNivaliGlovesLuck (value => 0);
+   setNivaliPantsIsShown (current => false);
+   setNivaliPantsActive (current => false);
+   setNivaliPantsAtk (value => 0);
+   setNivaliPantsDef (value => 0);
+   setNivaliPantsLuck (value => 0);
+   setNivaliShieldIsShown (current => false);
+   setNivaliShieldActive (current => false);
+   setNivaliShieldAtk (value => 0);
+   setNivaliShieldDef (value => 0);
+   setNivaliShieldLuck (value => 0);
+   setRainaBraceletIsShown (current => false);
+   setRainaBraceletActive (current => false);
+   setRainaBraceletAtk (value => 0);
+   setRainaBraceletDef (value => 0);
+   setRainaBraceletLuck (value => 0);
+   setRustyAmuletIsShown (current => false);
+   setRustyAmuletActive (current => false);
+   setRustyAmuletAtk (value => 0);
+   setRustyAmuletDef (value => 0);
+   setRustyAmuletLuck (value => 0);
+   setRustyPendantIsShown (current => false);
+   setRustyPendantActive (current => false);
+   setRustyPendantAtk (value => 0);
+   setRustyPendantDef (value => 0);
+   setRustyPendantLuck (value => 0);
+   setSandsRingIsShown (current => false);
+   setSandsRingActive (current => false);
+   setSandsRingAtk (value => 0);
+   setSandsRingDef (value => 0);
+   setSandsRingLuck (value => 0);
+   setVictorianFanIsShown (current => false);
+   setVictorianFanActive (current => false);
+   setVictorianFanAtk (value => 0);
+   setVictorianFanDef (value => 0);
+   setVictorianFanLuck (value => 0);
+   setGradScrollAstrologyIsShown (current => false);
+   setGradScrollAstrologyActive (current => false);
+   setGradScrollAstrologyAtk (value => 0);
+   setGradScrollAstrologyDef (value => 0);
+   setGradScrollAstrologyLuck (value => 0);
+   setGradScrollAlchemyIsShown (current => false);
+   setGradScrollAlchemyActive (current => false);
+   setGradScrollAlchemyAtk (value => 0);
+   setGradScrollAlchemyDef (value => 0);
+   setGradScrollAlchemyLuck (value => 0);
+   setGradScrollAKIsShown (current => false);
+   setGradScrollAKActive (current => false);
+   setGradScrollAKAtk (value => 0);
+   setGradScrollAKDef (value => 0);
+   setGradScrollAKLuck (value => 0);
+   setGradScrollMirrorsIsShown (current => false);
+   setGradScrollMirrorsActive (current => false);
+   setGradScrollMirrorsAtk (value => 0);
+   setGradScrollMirrorsDef (value => 0);
+   setGradScrollMirrorsLuck (value => 0);
+   setGradScrollFungiIsShown (current => false);
+   setGradScrollFungiActive (current => false);
+   setGradScrollFungiAtk (value => 0);
+   setGradScrollFungiDef (value => 0);
+   setGradScrollFungiLuck (value => 0);
+   setGradScrollThreadsIsShown (current => false);
+   setGradScrollThreadsActive (current => false);
+   setGradScrollThreadsAtk (value => 0);
+   setGradScrollThreadsDef (value => 0);
+   setGradScrollThreadsLuck (value => 0);  
+}
+
+const handleGradScrollSpellsNoClick = event => {
+   setGradScrollSpellsIsShown (current => false);
+   setGradScrollSpellsActive (current => false);
+   setGradScrollSpellsAtk (value => 0);
+   setGradScrollSpellsDef (value => 0);
+   setGradScrollSpellsLuck (value => 0);
+}
+
+const [GradScrollMirrorsIsShown, setGradScrollMirrorsIsShown] = useState(false)
+const [GradScrollMirrorsActive, setGradScrollMirrorsActive] = useState(false)
+const [GradScrollMirrorsAtk, setGradScrollMirrorsAtk] = useState(0)
+const [GradScrollMirrorsDef, setGradScrollMirrorsDef] = useState(0)
+const [GradScrollMirrorsLuck, setGradScrollMirrorsLuck] = useState(0)
+
+
+const handleGradScrollMirrorsClick = event => {
+   setGradScrollVoidIsShown (current => false);
+   setGradScrollVoidActive (current => false);
+   setGradScrollVoidAtk (value => 0);
+   setGradScrollVoidDef (value => 0);
+   setGradScrollVoidLuck (value => 0);
+
+   setGradScrollMirrorsIsShown (current => !GradScrollMirrorsIsShown);
+   setGradScrollMirrorsActive (current => !GradScrollMirrorsActive);
+   setGradScrollMirrorsAtk (value => 2);
+   setGradScrollMirrorsDef (value => 5);
+   setGradScrollMirrorsLuck (value => 8);
+   
+   setPirateAccordionIsShown (current => false);
+   setPirateAccordionActive (current => false);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 0);
+   setPirateAccordionLuck (value => 0);
+   setAstrolabeIsShown (current => false);
+   setAstrolabeActive (current => false);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 0);
+   setBardNoteIsShown (current => false);
+   setBardNoteActive (current => false);
+   setBardNoteAtk (value => 0);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 0);
+   setDarkForestAmuletIsShown (current => false);
+   setDarkForestAmuletActive (current => false);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 0);
+   setFeatherNecklaceIsShown (current => false);
+   setFeatherNecklaceActive (current => false);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 0);
+   setFeatherNecklaceLuck (value => 0);
+   setGlassNecklaceIsShown (current => false);
+   setGlassNecklaceActive (current => false);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 0);
+   setGlassNecklaceLuck (value => 0);
+   setGoldenDragonTiaraIsShown (current => false);
+   setGoldenDragonTiaraActive (current => false);
+   setGoldenDragonTiaraAtk (value => 0);
+   setGoldenDragonTiaraDef (value => 0);
+   setGoldenDragonTiaraLuck (value => 0);
+   setHauntedNecklaceIsShown (current => false);
+   setHauntedNecklaceActive (current => false);
+   setHauntedNecklaceAtk (value => 0);
+   setHauntedNecklaceDef (value => 0);
+   setHauntedNecklaceLuck (value => 0);
+   setHopeLightIsShown (current => false);
+   setHopeLightActive (current => false);
+   setHopeLightAtk (value => 0);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+   setLightBloomIsShown (current => false);
+   setLightBloomActive (current => false);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 0);
+   setLightBloomLuck (value => 0);
+   setMushroomGrenadeIsShown (current => false);
+   setMushroomGrenadeActive (current => false);
+   setMushroomGrenadeAtk (value => 0);
+   setMushroomGrenadeDef (value => 0);
+   setMushroomGrenadeLuck (value => 0);
+   setNivaliGlovesIsShown (current => false);
+   setNivaliGlovesActive (current => false);
+   setNivaliGlovesAtk (value => 0);
+   setNivaliGlovesDef (value => 0);
+   setNivaliGlovesLuck (value => 0);
+   setNivaliPantsIsShown (current => false);
+   setNivaliPantsActive (current => false);
+   setNivaliPantsAtk (value => 0);
+   setNivaliPantsDef (value => 0);
+   setNivaliPantsLuck (value => 0);
+   setNivaliShieldIsShown (current => false);
+   setNivaliShieldActive (current => false);
+   setNivaliShieldAtk (value => 0);
+   setNivaliShieldDef (value => 0);
+   setNivaliShieldLuck (value => 0);
+   setRainaBraceletIsShown (current => false);
+   setRainaBraceletActive (current => false);
+   setRainaBraceletAtk (value => 0);
+   setRainaBraceletDef (value => 0);
+   setRainaBraceletLuck (value => 0);
+   setRustyAmuletIsShown (current => false);
+   setRustyAmuletActive (current => false);
+   setRustyAmuletAtk (value => 0);
+   setRustyAmuletDef (value => 0);
+   setRustyAmuletLuck (value => 0);
+   setRustyPendantIsShown (current => false);
+   setRustyPendantActive (current => false);
+   setRustyPendantAtk (value => 0);
+   setRustyPendantDef (value => 0);
+   setRustyPendantLuck (value => 0);
+   setSandsRingIsShown (current => false);
+   setSandsRingActive (current => false);
+   setSandsRingAtk (value => 0);
+   setSandsRingDef (value => 0);
+   setSandsRingLuck (value => 0);
+   setVictorianFanIsShown (current => false);
+   setVictorianFanActive (current => false);
+   setVictorianFanAtk (value => 0);
+   setVictorianFanDef (value => 0);
+   setVictorianFanLuck (value => 0);
+   setGradScrollAstrologyIsShown (current => false);
+   setGradScrollAstrologyActive (current => false);
+   setGradScrollAstrologyAtk (value => 0);
+   setGradScrollAstrologyDef (value => 0);
+   setGradScrollAstrologyLuck (value => 0);
+   setGradScrollAlchemyIsShown (current => false);
+   setGradScrollAlchemyActive (current => false);
+   setGradScrollAlchemyAtk (value => 0);
+   setGradScrollAlchemyDef (value => 0);
+   setGradScrollAlchemyLuck (value => 0);
+   setGradScrollAKIsShown (current => false);
+   setGradScrollAKActive (current => false);
+   setGradScrollAKAtk (value => 0);
+   setGradScrollAKDef (value => 0);
+   setGradScrollAKLuck (value => 0);
+   setGradScrollSpellsIsShown (current => false);
+   setGradScrollSpellsActive (current => false);
+   setGradScrollSpellsAtk (value => 0);
+   setGradScrollSpellsDef (value => 0);
+   setGradScrollSpellsLuck (value => 0);
+   setGradScrollFungiIsShown (current => false);
+   setGradScrollFungiActive (current => false);
+   setGradScrollFungiAtk (value => 0);
+   setGradScrollFungiDef (value => 0);
+   setGradScrollFungiLuck (value => 0);
+   setGradScrollThreadsIsShown (current => false);
+   setGradScrollThreadsActive (current => false);
+   setGradScrollThreadsAtk (value => 0);
+   setGradScrollThreadsDef (value => 0);
+   setGradScrollThreadsLuck (value => 0);  
+}
+
+const handleGradScrollMirrorsNoClick = event => {
+   setGradScrollMirrorsIsShown (current => false);
+   setGradScrollMirrorsActive (current => false);
+   setGradScrollMirrorsAtk (value => 0);
+   setGradScrollMirrorsDef (value => 0);
+   setGradScrollMirrorsLuck (value => 0);
+}
+
+const [GradScrollFungiIsShown, setGradScrollFungiIsShown] = useState(false)
+const [GradScrollFungiActive, setGradScrollFungiActive] = useState(false)
+const [GradScrollFungiAtk, setGradScrollFungiAtk] = useState(0)
+const [GradScrollFungiDef, setGradScrollFungiDef] = useState(0)
+const [GradScrollFungiLuck, setGradScrollFungiLuck] = useState(0)
+
+
+const handleGradScrollFungiClick = event => {
+   setGradScrollVoidIsShown (current => false);
+   setGradScrollVoidActive (current => false);
+   setGradScrollVoidAtk (value => 0);
+   setGradScrollVoidDef (value => 0);
+   setGradScrollVoidLuck (value => 0);
+
+   setGradScrollFungiIsShown (current => !GradScrollFungiIsShown);
+   setGradScrollFungiActive (current => !GradScrollFungiActive);
+   setGradScrollFungiAtk (value => 8);
+   setGradScrollFungiDef (value => 5);
+   setGradScrollFungiLuck (value => 2);
+   
+   setPirateAccordionIsShown (current => false);
+   setPirateAccordionActive (current => false);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 0);
+   setPirateAccordionLuck (value => 0);
+   setAstrolabeIsShown (current => false);
+   setAstrolabeActive (current => false);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 0);
+   setBardNoteIsShown (current => false);
+   setBardNoteActive (current => false);
+   setBardNoteAtk (value => 0);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 0);
+   setDarkForestAmuletIsShown (current => false);
+   setDarkForestAmuletActive (current => false);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 0);
+   setFeatherNecklaceIsShown (current => false);
+   setFeatherNecklaceActive (current => false);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 0);
+   setFeatherNecklaceLuck (value => 0);
+   setGlassNecklaceIsShown (current => false);
+   setGlassNecklaceActive (current => false);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 0);
+   setGlassNecklaceLuck (value => 0);
+   setGoldenDragonTiaraIsShown (current => false);
+   setGoldenDragonTiaraActive (current => false);
+   setGoldenDragonTiaraAtk (value => 0);
+   setGoldenDragonTiaraDef (value => 0);
+   setGoldenDragonTiaraLuck (value => 0);
+   setHauntedNecklaceIsShown (current => false);
+   setHauntedNecklaceActive (current => false);
+   setHauntedNecklaceAtk (value => 0);
+   setHauntedNecklaceDef (value => 0);
+   setHauntedNecklaceLuck (value => 0);
+   setHopeLightIsShown (current => false);
+   setHopeLightActive (current => false);
+   setHopeLightAtk (value => 0);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+   setLightBloomIsShown (current => false);
+   setLightBloomActive (current => false);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 0);
+   setLightBloomLuck (value => 0);
+   setMushroomGrenadeIsShown (current => false);
+   setMushroomGrenadeActive (current => false);
+   setMushroomGrenadeAtk (value => 0);
+   setMushroomGrenadeDef (value => 0);
+   setMushroomGrenadeLuck (value => 0);
+   setNivaliGlovesIsShown (current => false);
+   setNivaliGlovesActive (current => false);
+   setNivaliGlovesAtk (value => 0);
+   setNivaliGlovesDef (value => 0);
+   setNivaliGlovesLuck (value => 0);
+   setNivaliPantsIsShown (current => false);
+   setNivaliPantsActive (current => false);
+   setNivaliPantsAtk (value => 0);
+   setNivaliPantsDef (value => 0);
+   setNivaliPantsLuck (value => 0);
+   setNivaliShieldIsShown (current => false);
+   setNivaliShieldActive (current => false);
+   setNivaliShieldAtk (value => 0);
+   setNivaliShieldDef (value => 0);
+   setNivaliShieldLuck (value => 0);
+   setRainaBraceletIsShown (current => false);
+   setRainaBraceletActive (current => false);
+   setRainaBraceletAtk (value => 0);
+   setRainaBraceletDef (value => 0);
+   setRainaBraceletLuck (value => 0);
+   setRustyAmuletIsShown (current => false);
+   setRustyAmuletActive (current => false);
+   setRustyAmuletAtk (value => 0);
+   setRustyAmuletDef (value => 0);
+   setRustyAmuletLuck (value => 0);
+   setRustyPendantIsShown (current => false);
+   setRustyPendantActive (current => false);
+   setRustyPendantAtk (value => 0);
+   setRustyPendantDef (value => 0);
+   setRustyPendantLuck (value => 0);
+   setSandsRingIsShown (current => false);
+   setSandsRingActive (current => false);
+   setSandsRingAtk (value => 0);
+   setSandsRingDef (value => 0);
+   setSandsRingLuck (value => 0);
+   setVictorianFanIsShown (current => false);
+   setVictorianFanActive (current => false);
+   setVictorianFanAtk (value => 0);
+   setVictorianFanDef (value => 0);
+   setVictorianFanLuck (value => 0);
+   setGradScrollAstrologyIsShown (current => false);
+   setGradScrollAstrologyActive (current => false);
+   setGradScrollAstrologyAtk (value => 0);
+   setGradScrollAstrologyDef (value => 0);
+   setGradScrollAstrologyLuck (value => 0);
+   setGradScrollAlchemyIsShown (current => false);
+   setGradScrollAlchemyActive (current => false);
+   setGradScrollAlchemyAtk (value => 0);
+   setGradScrollAlchemyDef (value => 0);
+   setGradScrollAlchemyLuck (value => 0);
+   setGradScrollAKIsShown (current => false);
+   setGradScrollAKActive (current => false);
+   setGradScrollAKAtk (value => 0);
+   setGradScrollAKDef (value => 0);
+   setGradScrollAKLuck (value => 0);
+   setGradScrollSpellsIsShown (current => false);
+   setGradScrollSpellsActive (current => false);
+   setGradScrollSpellsAtk (value => 0);
+   setGradScrollSpellsDef (value => 0);
+   setGradScrollSpellsLuck (value => 0);
+   setGradScrollMirrorsIsShown (current => false);
+   setGradScrollMirrorsActive (current => false);
+   setGradScrollMirrorsAtk (value => 0);
+   setGradScrollMirrorsDef (value => 0);
+   setGradScrollMirrorsLuck (value => 0);
+   setGradScrollThreadsIsShown (current => false);
+   setGradScrollThreadsActive (current => false);
+   setGradScrollThreadsAtk (value => 0);
+   setGradScrollThreadsDef (value => 0);
+   setGradScrollThreadsLuck (value => 0);  
+}
+
+const handleGradScrollFungiNoClick = event => {
+   setGradScrollFungiIsShown (current => false);
+   setGradScrollFungiActive (current => false);
+   setGradScrollFungiAtk (value => 0);
+   setGradScrollFungiDef (value => 0);
+   setGradScrollFungiLuck (value => 0);
+}
+
+const [GradScrollThreadsIsShown, setGradScrollThreadsIsShown] = useState(false)
+const [GradScrollThreadsActive, setGradScrollThreadsActive] = useState(false)
+const [GradScrollThreadsAtk, setGradScrollThreadsAtk] = useState(0)
+const [GradScrollThreadsDef, setGradScrollThreadsDef] = useState(0)
+const [GradScrollThreadsLuck, setGradScrollThreadsLuck] = useState(0)
+
+
+const handleGradScrollThreadsClick = event => {
+   setGradScrollVoidIsShown (current => false);
+   setGradScrollVoidActive (current => false);
+   setGradScrollVoidAtk (value => 0);
+   setGradScrollVoidDef (value => 0);
+   setGradScrollVoidLuck (value => 0);
+
+   setGradScrollThreadsIsShown (current => !GradScrollThreadsIsShown);
+   setGradScrollThreadsActive (current => !GradScrollThreadsActive);
+   setGradScrollThreadsAtk (value => 5);
+   setGradScrollThreadsDef (value => 8);
+   setGradScrollThreadsLuck (value => 2);
+   
+   setPirateAccordionIsShown (current => false);
+   setPirateAccordionActive (current => false);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 0);
+   setPirateAccordionLuck (value => 0);
+   setAstrolabeIsShown (current => false);
+   setAstrolabeActive (current => false);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 0);
+   setBardNoteIsShown (current => false);
+   setBardNoteActive (current => false);
+   setBardNoteAtk (value => 0);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 0);
+   setDarkForestAmuletIsShown (current => false);
+   setDarkForestAmuletActive (current => false);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 0);
+   setFeatherNecklaceIsShown (current => false);
+   setFeatherNecklaceActive (current => false);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 0);
+   setFeatherNecklaceLuck (value => 0);
+   setGlassNecklaceIsShown (current => false);
+   setGlassNecklaceActive (current => false);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 0);
+   setGlassNecklaceLuck (value => 0);
+   setGoldenDragonTiaraIsShown (current => false);
+   setGoldenDragonTiaraActive (current => false);
+   setGoldenDragonTiaraAtk (value => 0);
+   setGoldenDragonTiaraDef (value => 0);
+   setGoldenDragonTiaraLuck (value => 0);
+   setHauntedNecklaceIsShown (current => false);
+   setHauntedNecklaceActive (current => false);
+   setHauntedNecklaceAtk (value => 0);
+   setHauntedNecklaceDef (value => 0);
+   setHauntedNecklaceLuck (value => 0);
+   setHopeLightIsShown (current => false);
+   setHopeLightActive (current => false);
+   setHopeLightAtk (value => 0);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+   setLightBloomIsShown (current => false);
+   setLightBloomActive (current => false);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 0);
+   setLightBloomLuck (value => 0);
+   setMushroomGrenadeIsShown (current => false);
+   setMushroomGrenadeActive (current => false);
+   setMushroomGrenadeAtk (value => 0);
+   setMushroomGrenadeDef (value => 0);
+   setMushroomGrenadeLuck (value => 0);
+   setNivaliGlovesIsShown (current => false);
+   setNivaliGlovesActive (current => false);
+   setNivaliGlovesAtk (value => 0);
+   setNivaliGlovesDef (value => 0);
+   setNivaliGlovesLuck (value => 0);
+   setNivaliPantsIsShown (current => false);
+   setNivaliPantsActive (current => false);
+   setNivaliPantsAtk (value => 0);
+   setNivaliPantsDef (value => 0);
+   setNivaliPantsLuck (value => 0);
+   setNivaliShieldIsShown (current => false);
+   setNivaliShieldActive (current => false);
+   setNivaliShieldAtk (value => 0);
+   setNivaliShieldDef (value => 0);
+   setNivaliShieldLuck (value => 0);
+   setRainaBraceletIsShown (current => false);
+   setRainaBraceletActive (current => false);
+   setRainaBraceletAtk (value => 0);
+   setRainaBraceletDef (value => 0);
+   setRainaBraceletLuck (value => 0);
+   setRustyAmuletIsShown (current => false);
+   setRustyAmuletActive (current => false);
+   setRustyAmuletAtk (value => 0);
+   setRustyAmuletDef (value => 0);
+   setRustyAmuletLuck (value => 0);
+   setRustyPendantIsShown (current => false);
+   setRustyPendantActive (current => false);
+   setRustyPendantAtk (value => 0);
+   setRustyPendantDef (value => 0);
+   setRustyPendantLuck (value => 0);
+   setSandsRingIsShown (current => false);
+   setSandsRingActive (current => false);
+   setSandsRingAtk (value => 0);
+   setSandsRingDef (value => 0);
+   setSandsRingLuck (value => 0);
+   setVictorianFanIsShown (current => false);
+   setVictorianFanActive (current => false);
+   setVictorianFanAtk (value => 0);
+   setVictorianFanDef (value => 0);
+   setVictorianFanLuck (value => 0);
+   setGradScrollAstrologyIsShown (current => false);
+   setGradScrollAstrologyActive (current => false);
+   setGradScrollAstrologyAtk (value => 0);
+   setGradScrollAstrologyDef (value => 0);
+   setGradScrollAstrologyLuck (value => 0);
+   setGradScrollAlchemyIsShown (current => false);
+   setGradScrollAlchemyActive (current => false);
+   setGradScrollAlchemyAtk (value => 0);
+   setGradScrollAlchemyDef (value => 0);
+   setGradScrollAlchemyLuck (value => 0);
+   setGradScrollAKIsShown (current => false);
+   setGradScrollAKActive (current => false);
+   setGradScrollAKAtk (value => 0);
+   setGradScrollAKDef (value => 0);
+   setGradScrollAKLuck (value => 0);
+   setGradScrollSpellsIsShown (current => false);
+   setGradScrollSpellsActive (current => false);
+   setGradScrollSpellsAtk (value => 0);
+   setGradScrollSpellsDef (value => 0);
+   setGradScrollSpellsLuck (value => 0);
+   setGradScrollMirrorsIsShown (current => false);
+   setGradScrollMirrorsActive (current => false);
+   setGradScrollMirrorsAtk (value => 0);
+   setGradScrollMirrorsDef (value => 0);
+   setGradScrollMirrorsLuck (value => 0);
+   setGradScrollFungiIsShown (current => false);
+   setGradScrollFungiActive (current => false);
+   setGradScrollFungiAtk (value => 0);
+   setGradScrollFungiDef (value => 0);
+   setGradScrollFungiLuck (value => 0);
+}
+
+const handleGradScrollThreadsNoClick = event => {
+   setGradScrollThreadsIsShown (current => false);
+   setGradScrollThreadsActive (current => false);
+   setGradScrollThreadsAtk (value => 0);
+   setGradScrollThreadsDef (value => 0);
+   setGradScrollThreadsLuck (value => 0);
+}
+
+const [GradScrollVoidIsShown, setGradScrollVoidIsShown] = useState(false)
+const [GradScrollVoidActive, setGradScrollVoidActive] = useState(false)
+const [GradScrollVoidAtk, setGradScrollVoidAtk] = useState(0)
+const [GradScrollVoidDef, setGradScrollVoidDef] = useState(0)
+const [GradScrollVoidLuck, setGradScrollVoidLuck] = useState(0)
+
+const handleGradScrollVoidClick = event => {
+   setGradScrollVoidIsShown (current => !GradScrollVoidIsShown);
+   setGradScrollVoidActive (current => !GradScrollVoidActive);
+   setGradScrollVoidAtk (value => 8);
+   setGradScrollVoidDef (value => 2);
+   setGradScrollVoidLuck (value => 5);
+
+   setGradScrollThreadsIsShown (current => false);
+   setGradScrollThreadsActive (current => false);
+   setGradScrollThreadsAtk (value => 0);
+   setGradScrollThreadsDef (value => 0);
+   setGradScrollThreadsLuck (value => 0);
+   
+   setPirateAccordionIsShown (current => false);
+   setPirateAccordionActive (current => false);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 0);
+   setPirateAccordionLuck (value => 0);
+   setAstrolabeIsShown (current => false);
+   setAstrolabeActive (current => false);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 0);
+   setBardNoteIsShown (current => false);
+   setBardNoteActive (current => false);
+   setBardNoteAtk (value => 0);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 0);
+   setDarkForestAmuletIsShown (current => false);
+   setDarkForestAmuletActive (current => false);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 0);
+   setFeatherNecklaceIsShown (current => false);
+   setFeatherNecklaceActive (current => false);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 0);
+   setFeatherNecklaceLuck (value => 0);
+   setGlassNecklaceIsShown (current => false);
+   setGlassNecklaceActive (current => false);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 0);
+   setGlassNecklaceLuck (value => 0);
+   setGoldenDragonTiaraIsShown (current => false);
+   setGoldenDragonTiaraActive (current => false);
+   setGoldenDragonTiaraAtk (value => 0);
+   setGoldenDragonTiaraDef (value => 0);
+   setGoldenDragonTiaraLuck (value => 0);
+   setHauntedNecklaceIsShown (current => false);
+   setHauntedNecklaceActive (current => false);
+   setHauntedNecklaceAtk (value => 0);
+   setHauntedNecklaceDef (value => 0);
+   setHauntedNecklaceLuck (value => 0);
+   setHopeLightIsShown (current => false);
+   setHopeLightActive (current => false);
+   setHopeLightAtk (value => 0);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+   setLightBloomIsShown (current => false);
+   setLightBloomActive (current => false);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 0);
+   setLightBloomLuck (value => 0);
+   setMushroomGrenadeIsShown (current => false);
+   setMushroomGrenadeActive (current => false);
+   setMushroomGrenadeAtk (value => 0);
+   setMushroomGrenadeDef (value => 0);
+   setMushroomGrenadeLuck (value => 0);
+   setNivaliGlovesIsShown (current => false);
+   setNivaliGlovesActive (current => false);
+   setNivaliGlovesAtk (value => 0);
+   setNivaliGlovesDef (value => 0);
+   setNivaliGlovesLuck (value => 0);
+   setNivaliPantsIsShown (current => false);
+   setNivaliPantsActive (current => false);
+   setNivaliPantsAtk (value => 0);
+   setNivaliPantsDef (value => 0);
+   setNivaliPantsLuck (value => 0);
+   setNivaliShieldIsShown (current => false);
+   setNivaliShieldActive (current => false);
+   setNivaliShieldAtk (value => 0);
+   setNivaliShieldDef (value => 0);
+   setNivaliShieldLuck (value => 0);
+   setRainaBraceletIsShown (current => false);
+   setRainaBraceletActive (current => false);
+   setRainaBraceletAtk (value => 0);
+   setRainaBraceletDef (value => 0);
+   setRainaBraceletLuck (value => 0);
+   setRustyAmuletIsShown (current => false);
+   setRustyAmuletActive (current => false);
+   setRustyAmuletAtk (value => 0);
+   setRustyAmuletDef (value => 0);
+   setRustyAmuletLuck (value => 0);
+   setRustyPendantIsShown (current => false);
+   setRustyPendantActive (current => false);
+   setRustyPendantAtk (value => 0);
+   setRustyPendantDef (value => 0);
+   setRustyPendantLuck (value => 0);
+   setSandsRingIsShown (current => false);
+   setSandsRingActive (current => false);
+   setSandsRingAtk (value => 0);
+   setSandsRingDef (value => 0);
+   setSandsRingLuck (value => 0);
+   setVictorianFanIsShown (current => false);
+   setVictorianFanActive (current => false);
+   setVictorianFanAtk (value => 0);
+   setVictorianFanDef (value => 0);
+   setVictorianFanLuck (value => 0);
+   setGradScrollAstrologyIsShown (current => false);
+   setGradScrollAstrologyActive (current => false);
+   setGradScrollAstrologyAtk (value => 0);
+   setGradScrollAstrologyDef (value => 0);
+   setGradScrollAstrologyLuck (value => 0);
+   setGradScrollAlchemyIsShown (current => false);
+   setGradScrollAlchemyActive (current => false);
+   setGradScrollAlchemyAtk (value => 0);
+   setGradScrollAlchemyDef (value => 0);
+   setGradScrollAlchemyLuck (value => 0);
+   setGradScrollAKIsShown (current => false);
+   setGradScrollAKActive (current => false);
+   setGradScrollAKAtk (value => 0);
+   setGradScrollAKDef (value => 0);
+   setGradScrollAKLuck (value => 0);
+   setGradScrollSpellsIsShown (current => false);
+   setGradScrollSpellsActive (current => false);
+   setGradScrollSpellsAtk (value => 0);
+   setGradScrollSpellsDef (value => 0);
+   setGradScrollSpellsLuck (value => 0);
+   setGradScrollMirrorsIsShown (current => false);
+   setGradScrollMirrorsActive (current => false);
+   setGradScrollMirrorsAtk (value => 0);
+   setGradScrollMirrorsDef (value => 0);
+   setGradScrollMirrorsLuck (value => 0);
+   setGradScrollFungiIsShown (current => false);
+   setGradScrollFungiActive (current => false);
+   setGradScrollFungiAtk (value => 0);
+   setGradScrollFungiDef (value => 0);
+   setGradScrollFungiLuck (value => 0);
+}
+
+const handleGradScrollVoidNoClick = event => {
+   setGradScrollVoidIsShown (current => false);
+   setGradScrollVoidActive (current => false);
+   setGradScrollVoidAtk (value => 0);
+   setGradScrollVoidDef (value => 0);
+   setGradScrollVoidLuck (value => 0);
+}
+
+const totalAccessoryTopAtk = Math.max (PirateAccordionAtk, AstrolabeAtk, BardNoteAtk, 
+  DarkForestAmuletAtk, FeatherNecklaceAtk, GlassNecklaceAtk, GoldenDragonTiaraAtk, HauntedNecklaceAtk, 
+  HopeLightAtk, LightBloomAtk, MushroomGrenadeAtk, NivaliGlovesAtk, NivaliPantsAtk, NivaliShieldAtk, 
+  RainaBraceletAtk, RustyAmuletAtk, RustyPendantAtk, SandsRingAtk, VictorianFanAtk, GradScrollAstrologyAtk, 
+  GradScrollAlchemyAtk, GradScrollAKAtk, GradScrollSpellsAtk, GradScrollMirrorsAtk, GradScrollFungiAtk, 
+  GradScrollThreadsAtk, GradScrollVoidAtk)
+
+const totalAccessoryTopDef = Math.max (PirateAccordionDef, AstrolabeDef, BardNoteDef, 
+  DarkForestAmuletDef, FeatherNecklaceDef, GlassNecklaceDef, GoldenDragonTiaraDef, HauntedNecklaceDef, 
+  HopeLightDef, LightBloomDef, MushroomGrenadeDef, NivaliGlovesDef, NivaliPantsDef, NivaliShieldDef, 
+  RainaBraceletDef, RustyAmuletDef, RustyPendantDef, SandsRingDef, VictorianFanDef, GradScrollAstrologyDef, 
+  GradScrollAlchemyDef, GradScrollAKDef, GradScrollSpellsDef, GradScrollMirrorsDef, GradScrollFungiDef, 
+  GradScrollThreadsDef, GradScrollVoidDef)  
+
+const totalAccessoryTopLuck = Math.max (PirateAccordionLuck, AstrolabeLuck, BardNoteLuck, 
+  DarkForestAmuletLuck, FeatherNecklaceLuck, GlassNecklaceLuck, GoldenDragonTiaraLuck, HauntedNecklaceLuck, 
+  HopeLightLuck, LightBloomLuck, MushroomGrenadeLuck, NivaliGlovesLuck, NivaliPantsLuck, NivaliShieldLuck, 
+  RainaBraceletLuck, RustyAmuletLuck, RustyPendantLuck, SandsRingLuck, VictorianFanLuck, GradScrollAstrologyLuck, 
+  GradScrollAlchemyLuck, GradScrollAKLuck, GradScrollSpellsLuck, GradScrollMirrorsLuck, GradScrollFungiLuck, 
+  GradScrollThreadsLuck, GradScrollVoidLuck)
+  
+//Head battle items//
+
+const [NoHead, setNoHead] = useState(0)
+const [NoHeadIsShown, setNoHeadIsShown] = useState(false)
+const [NoHeadActive, setNoHeadActive] = useState(false)
+
+const totalHeadTopAtk = Math.max (0)
+const totalHeadTopDef = Math.max (0)
+const totalHeadTopLuck = Math.max (0)
 
   //chest battle items//
 
@@ -12932,6 +17393,10 @@ const NivaliBreastplateClick = event => {
   )
 };
 
+const totalChestTopAtk = Math.max (0)
+const totalChestTopDef = Math.max (0)
+const totalChestTopLuck = Math.max (0)
+
 //Feet battle items//
 
 const [NoFeet, setNoFeet] = useState(0)
@@ -12942,11 +17407,15 @@ const totalBestDefChest = Math.max (NivaliBreastplateDef)
 
 const totalNivaliDef = Math.max (MountainMaceDef + NivaliBreastplateDef, 0)
 
+const totalFeetTopAtk = Math.max (0)
+const totalFeetTopDef = Math.max (0)
+const totalFeetTopLuck = Math.max (0)
+
 //totals//
 
-const totalAtk = Math.max (totalCompanionTopAtk + totalWeapon1TopAtk + totalWeapon2TopAtk)
-const totalDef = Math.max (totalCompanionTopDef + totalWeapon1TopDef + totalWeapon2TopDef)
-const totalLuck = Math.max (totalCompanionTopLuck + totalWeapon1TopLuck + totalWeapon2TopLuck)
+const totalAtk = Math.max (totalCompanionTopAtk + totalWeapon1TopAtk + totalWeapon2TopAtk + totalAccessoryTopAtk + totalHeadTopAtk + totalChestTopAtk + totalFeetTopAtk)
+const totalDef = Math.max (totalCompanionTopDef + totalWeapon1TopDef + totalWeapon2TopDef + totalAccessoryTopDef + totalHeadTopDef + totalChestTopDef + totalFeetTopDef)
+const totalLuck = Math.max (totalCompanionTopLuck + totalWeapon1TopLuck + totalWeapon2TopLuck + totalAccessoryTopLuck + totalHeadTopLuck + totalChestTopLuck + totalFeetTopLuck)
 
   //region clicks//
 
@@ -14074,6 +18543,175 @@ const GreyAtkWeapon2 = () => {
  <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/9e2WZyS.png' />
    )
  }
+
+ const GreyAtkAccessory = () => {
+  if (totalAccessoryTopAtk === 0)
+   return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/hbcvJHt.png' />
+  )
+}
+
+const ColorAtkAccessory = () => {
+  if (totalAccessoryTopAtk > 0)
+   return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/cPrPVxc.png' />
+  )
+}
+
+const GreyDefAccessory = () => {
+  if (totalAccessoryTopDef === 0)
+   return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/6Pw8bpA.png' />
+  )
+}
+
+const ColorDefAccessory = () => {
+  if (totalAccessoryTopDef > 0)
+   return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/eXyDuR9.png' />
+  )
+}
+
+const GreyLuckAccessory = () => {
+  if (totalAccessoryTopLuck === 0)
+   return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/SsdiAg9.png' />
+  )
+}
+
+const ColorLuckAccessory = () => {
+  if (totalAccessoryTopLuck > 0)
+   return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/9e2WZyS.png' />
+  )
+}
+
+const GreyAtkHead = () => {
+  if (totalHeadTopAtk === 0)
+   return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/hbcvJHt.png' />
+  )
+}
+
+const ColorAtkHead = () => {
+  if (totalHeadTopAtk > 0)
+   return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/cPrPVxc.png' />
+  )
+}
+
+const GreyDefHead = () => {
+  if (totalHeadTopDef === 0)
+   return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/6Pw8bpA.png' />
+  )
+}
+
+const ColorDefHead = () => {
+  if (totalHeadTopDef > 0)
+   return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/eXyDuR9.png' />
+  )
+}
+
+const GreyLuckHead = () => {
+  if (totalHeadTopLuck === 0)
+   return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/SsdiAg9.png' />
+  )
+}
+
+const ColorLuckHead = () => {
+  if (totalHeadTopLuck > 0)
+   return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/9e2WZyS.png' />
+  )
+}
+
+const GreyAtkChest = () => {
+  if (totalChestTopAtk === 0)
+   return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/hbcvJHt.png' />
+  )
+}
+
+const ColorAtkChest = () => {
+  if (totalChestTopAtk > 0)
+   return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/cPrPVxc.png' />
+  )
+}
+
+const GreyDefChest = () => {
+  if (totalChestTopDef === 0)
+   return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/6Pw8bpA.png' />
+  )
+}
+
+const ColorDefChest = () => {
+  if (totalChestTopDef > 0)
+   return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/eXyDuR9.png' />
+  )
+}
+
+const GreyLuckChest = () => {
+  if (totalChestTopLuck === 0)
+   return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/SsdiAg9.png' />
+  )
+}
+
+const ColorLuckChest = () => {
+  if (totalChestTopLuck > 0)
+   return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/9e2WZyS.png' />
+  )
+}
+
+const GreyAtkFeet = () => {
+  if (totalFeetTopAtk === 0)
+   return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/hbcvJHt.png' />
+  )
+}
+
+const ColorAtkFeet = () => {
+  if (totalFeetTopAtk > 0)
+   return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/cPrPVxc.png' />
+  )
+}
+
+const GreyDefFeet = () => {
+  if (totalFeetTopDef === 0)
+   return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/6Pw8bpA.png' />
+  )
+}
+
+const ColorDefFeet = () => {
+  if (totalFeetTopDef > 0)
+   return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/eXyDuR9.png' />
+  )
+}
+
+const GreyLuckFeet = () => {
+  if (totalFeetTopLuck === 0)
+   return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/SsdiAg9.png' />
+  )
+}
+
+const ColorLuckFeet = () => {
+  if (totalFeetTopLuck > 0)
+   return(
+<Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/9e2WZyS.png' />
+  )
+}
+
   return (
       <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh" maxW='100%'>
@@ -15081,7 +19719,8 @@ const GreyAtkWeapon2 = () => {
    !CrossbowIsShown && !GlassStaffIsShown && !NetIsShown && !SteelSpearIsShown && !StoneHammerIsShown &&
    !HarpoonIsShown && !SteelAxeIsShown && !SteelShieldIsShown && !TempestYoYoIsShown && 
    !StaffOfTheDeadIsShown && !WoodenGardenHornIsShown && !FusionCrossbowIsShown && !PoePickIsShown && 
-   !MountainMaceIsShown && !NivaliBowIsShown && !NivaliSlingshotIsShown &&
+   !MountainMaceIsShown && !NivaliBowIsShown && !NivaliSlingshotIsShown && !LoveWandIsShown && !DragonFangBowIsShown &&
+   !WitchStaffIsShown && !TentacleShieldIsShown && !TentacleWhipIsShown && !BraceletsofWaterIsShown &&
            <Image
          style={{position:'absolute'}}
          mt={['37px', '47px', '55px']}
@@ -15093,7 +19732,8 @@ const GreyAtkWeapon2 = () => {
    !CrossbowIsShown && !GlassStaffIsShown && !NetIsShown && !SteelSpearIsShown && !StoneHammerIsShown &&
    !HarpoonIsShown && !SteelAxeIsShown && !SteelShieldIsShown && !TempestYoYoIsShown && 
    !StaffOfTheDeadIsShown && !WoodenGardenHornIsShown && !FusionCrossbowIsShown && !PoePickIsShown && 
-   !MountainMaceIsShown && !NivaliBowIsShown && !NivaliSlingshotIsShown &&
+   !MountainMaceIsShown && !NivaliBowIsShown && !NivaliSlingshotIsShown  && !LoveWandIsShown && !DragonFangBowIsShown &&
+   !WitchStaffIsShown && !TentacleShieldIsShown && !TentacleWhipIsShown && !BraceletsofWaterIsShown &&
          <Text        
          style={{position:'absolute'}}
          mt={['110px', '130px', '145px']}
@@ -15260,6 +19900,22 @@ const GreyAtkWeapon2 = () => {
       Stone Hammer</Text>
       }
  
+ {BraceletsofWaterIsShown &&        
+    <Image
+    style={{position:'absolute'}}
+    mt={['37px', '47px', '55px']}
+    align='center' 
+    boxSize={['4rem', '4.5rem', '5rem']}
+    src='https://static.wikia.nocookie.net/4thewords/images/3/37/BraceletsofWater.png/'
+    />}
+    {BraceletsofWaterIsShown &&        
+    <Text        
+    style={{position:'absolute'}}
+    mt={['110px', '130px', '145px']}
+    fontSize={['sm', 'md', 'md']}>
+     Harpoon</Text>
+      }
+
  {HarpoonIsShown &&        
     <Image
     style={{position:'absolute'}}
@@ -15435,7 +20091,85 @@ const GreyAtkWeapon2 = () => {
     fontSize={['sm', 'md', 'md']}>
       Nivali Slingshot</Text>
       }
- 
+ {LoveWandIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/6/68/Love-wand.png/'
+   />}
+   {LoveWandIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Love Wand</Text>
+     }
+
+ {DragonFangBowIsShown &&        
+    <Image
+    style={{position:'absolute'}}
+    mt={['37px', '47px', '55px']}
+    align='center' 
+    boxSize={['4rem', '4.5rem', '5rem']}
+    src='https://static.wikia.nocookie.net/4thewords/images/3/38/DragonsFangBow.png/'
+    />}
+    {DragonFangBowIsShown &&        
+    <Text        
+    style={{position:'absolute'}}
+    mt={['110px', '130px', '145px']}
+    fontSize={['sm', 'md', 'md']}>
+      Dragon's Fang Bow</Text>
+      }
+
+ {WitchStaffIsShown &&        
+    <Image
+    style={{position:'absolute'}}
+    mt={['37px', '47px', '55px']}
+    align='center' 
+    boxSize={['4rem', '4.5rem', '5rem']}
+    src='https://static.wikia.nocookie.net/4thewords/images/b/b8/Witchs_Staff.png/'
+    />}
+    {WitchStaffIsShown &&        
+    <Text        
+    style={{position:'absolute'}}
+    mt={['110px', '130px', '145px']}
+    fontSize={['sm', 'md', 'md']}>
+      Witch's Staff</Text>
+      }
+
+ {TentacleShieldIsShown &&        
+    <Image
+    style={{position:'absolute'}}
+    mt={['37px', '47px', '55px']}
+    align='center' 
+    boxSize={['4rem', '4.5rem', '5rem']}
+    src='https://static.wikia.nocookie.net/4thewords/images/4/4e/Tentacle-shield.png/'
+    />}
+    {TentacleShieldIsShown &&        
+    <Text        
+    style={{position:'absolute'}}
+    mt={['110px', '130px', '145px']}
+    fontSize={['sm', 'md', 'md']}>
+      Tentacle Shield</Text>
+      }
+
+ {TentacleWhipIsShown &&        
+    <Image
+    style={{position:'absolute'}}
+    mt={['37px', '47px', '55px']}
+    align='center' 
+    boxSize={['4rem', '4.5rem', '5rem']}
+    src='https://static.wikia.nocookie.net/4thewords/images/8/8a/Tentacle-whip.png/'
+    />}
+    {TentacleWhipIsShown &&        
+    <Text        
+    style={{position:'absolute'}}
+    mt={['110px', '130px', '145px']}
+    fontSize={['sm', 'md', 'md']}>
+      Tentacle Whip</Text>
+      }
  <HStack
 style={{position:'absolute'}}
 mt={['135px', '160px', '175px']}
@@ -15474,38 +20208,482 @@ mt={['135px', '160px', '175px']}
         <Text fontSize={['md', 'lg', 'lg']} mt={['4px', '6px', '8px']}>
           <b>Accessory</b>
         </Text>
+        {!PirateAccordionIsShown && !AstrolabeIsShown && !BardNoteIsShown && !DarkForestAmuletIsShown && !FeatherNecklaceIsShown && !GlassNecklaceIsShown && !GoldenDragonTiaraIsShown && !HauntedNecklaceIsShown && !HopeLightIsShown && !LightBloomIsShown && !MushroomGrenadeIsShown && !NivaliGlovesIsShown 
+&& !NivaliPantsIsShown && !NivaliShieldIsShown && !RainaBraceletIsShown && !RustyAmuletIsShown && !RustyPendantIsShown && !SandsRingIsShown && !VictorianFanIsShown && !GradScrollAstrologyIsShown && !GradScrollAlchemyIsShown && !GradScrollAKIsShown && !GradScrollSpellsIsShown && !GradScrollMirrorsIsShown && !GradScrollFungiIsShown && !GradScrollThreadsIsShown && !GradScrollVoidIsShown &&    
         <Image
         style={{position:'absolute'}}
         mt={['37px', '47px', '55px']}
         align='center' 
         boxSize={['4rem', '4.5rem', '5rem']}
         src='https://i.imgur.com/6J2IXDf.png'
-      />
+      />}
+{!PirateAccordionIsShown && !AstrolabeIsShown && !BardNoteIsShown && !DarkForestAmuletIsShown && !FeatherNecklaceIsShown && !GlassNecklaceIsShown && !GoldenDragonTiaraIsShown && !HauntedNecklaceIsShown && !HopeLightIsShown && !LightBloomIsShown && !MushroomGrenadeIsShown && !NivaliGlovesIsShown 
+&& !NivaliPantsIsShown && !NivaliShieldIsShown && !RainaBraceletIsShown && !RustyAmuletIsShown && !RustyPendantIsShown && !SandsRingIsShown && !VictorianFanIsShown && !GradScrollAstrologyIsShown && !GradScrollAlchemyIsShown && !GradScrollAKIsShown && !GradScrollSpellsIsShown && !GradScrollMirrorsIsShown && !GradScrollFungiIsShown && !GradScrollThreadsIsShown && !GradScrollVoidIsShown &&      
         <Text        
         style={{position:'absolute'}}
         mt={['110px', '130px', '145px']}
         fontSize={['sm', 'md', 'md']}>
-          No item</Text>
-        <HStack
-        style={{position:'absolute'}}
-        mt={['135px', '160px', '175px']}
-        >
-        <span>
-          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
-          <span>
-          <Text ml='-7px' fontSize='md'>+0</Text>
-        </span>
-        <span>
-          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
-          <span>
-          <Text ml='-7px' fontSize='md'>+0</Text>
-        </span>
-        <span>
-          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
-          <span>
-          <Text ml='-7px' fontSize='md'>+0</Text>
-        </span>
-        </HStack>
+          No item</Text>}
+
+          {PirateAccordionIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/b/ba/Accordion_md.png/'
+   />}
+   {PirateAccordionIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Pirate Accordion</Text>
+     }
+
+{AstrolabeIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/a/a0/Astrolabe_md.png/'
+   />}
+   {AstrolabeIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Astrolabe</Text>
+     }
+
+{BardNoteIsShown &&        
+      <Image
+      style={{position:'absolute'}}
+      mt={['37px', '47px', '55px']}
+      align='center' 
+      boxSize={['4rem', '4.5rem', '5rem']}
+      src='https://static.wikia.nocookie.net/4thewords/images/4/46/BardsNote.png/'
+      />}
+      {BardNoteIsShown &&        
+      <Text        
+      style={{position:'absolute'}}
+      mt={['110px', '130px', '145px']}
+      fontSize={['sm', 'md', 'md']}>
+        Bard's Note</Text>
+        }
+   
+{DarkForestAmuletIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/8/8d/Dark-forest-amulet.png/'
+   />}
+   {DarkForestAmuletIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Dark Forest Amulet</Text>
+     }
+
+{FeatherNecklaceIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/c/c2/Feather-necklace.png/'
+   />}
+   {FeatherNecklaceIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Feather Necklace</Text>
+     }
+
+{GlassNecklaceIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/0/0d/Glassnecklace_md.png/'
+   />}
+   {GlassNecklaceIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Glass Necklace</Text>
+     }
+
+{GoldenDragonTiaraIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/6/62/GoldenDragonTiara.png'
+   />}
+   {GoldenDragonTiaraIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Golden Dragon Tiara</Text>
+     }
+
+{HauntedNecklaceIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/1/14/HauntedNecklace.png/'
+   />}
+   {HauntedNecklaceIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Haunted Necklace</Text>
+     }
+
+     {HopeLightIsShown &&        
+      <Image
+      style={{position:'absolute'}}
+      mt={['37px', '47px', '55px']}
+      align='center' 
+      boxSize={['4rem', '4.5rem', '5rem']}
+      src='https://static.wikia.nocookie.net/4thewords/images/3/3c/HopesLight.png/'
+      />}
+      {HopeLightIsShown &&        
+      <Text        
+      style={{position:'absolute'}}
+      mt={['110px', '130px', '145px']}
+      fontSize={['sm', 'md', 'md']}>
+        Hope's Light</Text>
+        }
+   
+{LightBloomIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/a/a7/LightsBloom.png/'
+   />}
+   {LightBloomIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Light's Blossom</Text>
+     }
+
+{MushroomGrenadeIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/8/83/MushroomGrenade.png/'
+   />}
+   {MushroomGrenadeIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Mushroom Grenade</Text>
+     }
+
+{NivaliGlovesIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/2/2c/Nivali_Gloves.png/'
+   />}
+   {NivaliGlovesIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Nivali Gloves</Text>
+     }
+
+{NivaliPantsIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/4/4b/Nivali_Pants.png/'
+   />}
+   {NivaliPantsIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Nivali Pants</Text>
+     }
+
+{NivaliShieldIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/3/3f/Nivali_Shield.png/'
+   />}
+   {NivaliShieldIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Nivali Shield</Text>
+     }
+
+{RainaBraceletIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/9/95/Raina_bracelet.png/'
+   />}
+   {RainaBraceletIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Raina Bracelet</Text>
+     }
+
+{RustyAmuletIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/1/19/Rustyamulet_md.png/'
+   />}
+   {RustyAmuletIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Rusty Amulet</Text>
+     }
+
+{RustyPendantIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/8/8b/Rustypendant_md.png/'
+   />}
+   {RustyPendantIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Rusty Pendant</Text>
+     }
+
+{SandsRingIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/2/24/Sandsring_md.png/'
+   />}
+   {SandsRingIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Sands Ring</Text>
+     }
+
+{VictorianFanIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/c/c3/Victorianfan_md.png/'
+   />}
+   {VictorianFanIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Victorian Fan</Text>
+     }
+
+{GradScrollAstrologyIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/4/44/Astrology_Graduation_Scroll.png/'
+   />}
+   {GradScrollAstrologyIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Astrology Grad. Scroll</Text>
+     }
+
+{GradScrollAlchemyIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/c/c5/Alchemy_Graduation_Scroll.png/'
+   />}
+   {GradScrollAlchemyIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Alchemy Grad. Scroll</Text>
+     }
+
+{GradScrollAKIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/8/81/Ancient_Knowledge_Graduation_Scroll.png/'
+   />}
+   {GradScrollAKIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     AK Grad. Scroll</Text>
+     }
+
+{GradScrollSpellsIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/f/f0/Spells_Graduation_Scroll.png/'
+   />}
+   {GradScrollSpellsIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Spells Grad. Scroll</Text>
+     }
+
+{GradScrollMirrorsIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/3/31/Mirror_Graduation_Scroll.png/'
+   />}
+   {GradScrollMirrorsIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Mirrors Grad. Scroll</Text>
+     }
+
+{GradScrollFungiIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/9/9a/Fungi_Graduation_Scroll.png/'
+   />}
+   {GradScrollFungiIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Fungi Grad. Scroll</Text>
+     }
+
+{GradScrollThreadsIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/a/a2/Threads_Graduation_Scroll.png/'
+   />}
+   {GradScrollThreadsIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Threads Grad. Scroll</Text>
+     }
+
+{GradScrollVoidIsShown &&   	 
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center'
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/b/b2/Void_Graduation_Scroll.png'
+   />}
+   {GradScrollVoidIsShown &&   	 
+   <Text   	 
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+ 	Void Grad. Scroll</Text>
+ 	}
+
+
+<HStack
+style={{position:'absolute'}}
+mt={['135px', '160px', '175px']}
+>
+<span>
+  <GreyAtkAccessory />
+  <ColorAtkAccessory />
+  </span>
+  <span>
+  <Text ml='-7px' fontSize='md'>+{totalAccessoryTopAtk}</Text>
+</span>
+<span>
+<GreyDefAccessory />
+<ColorDefAccessory />
+</span>
+  <span>
+  <Text ml='-7px' fontSize='md'>+{totalAccessoryTopDef}</Text>
+</span>
+<span>
+<GreyLuckAccessory />
+<ColorLuckAccessory />
+</span>
+  <span>
+  <Text ml='-7px' fontSize='md'>+{totalAccessoryTopLuck}</Text>
+</span>
+</HStack>
       </VStack>
     </Box>
   </WrapItem>
@@ -15528,27 +20706,32 @@ mt={['135px', '160px', '175px']}
         mt={['110px', '130px', '145px']}
         fontSize={['sm', 'md', 'md']}>
           No item</Text>
-        <HStack
-        style={{position:'absolute'}}
-        mt={['135px', '160px', '175px']}
-        >
-        <span>
-          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
-          <span>
-          <Text ml='-7px' fontSize='md'>+0</Text>
-        </span>
-        <span>
-          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
-          <span>
-          <Text ml='-7px' fontSize='md'>+0</Text>
-        </span>
-        <span>
-          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
-          <span>
-          <Text ml='-7px' fontSize='md'>+0</Text>
-        </span>
-        </HStack>
-      </VStack>
+          <HStack
+style={{position:'absolute'}}
+mt={['135px', '160px', '175px']}
+>
+<span>
+  <GreyAtkHead />
+  <ColorAtkHead />
+  </span>
+  <span>
+  <Text ml='-7px' fontSize='md'>+{totalHeadTopAtk}</Text>
+</span>
+<span>
+<GreyDefHead />
+<ColorDefHead />
+</span>
+  <span>
+  <Text ml='-7px' fontSize='md'>+{totalHeadTopDef}</Text>
+</span>
+<span>
+<GreyLuckHead />
+<ColorLuckHead />
+</span>
+  <span>
+  <Text ml='-7px' fontSize='md'>+{totalHeadTopLuck}</Text>
+</span>
+</HStack>      </VStack>
     </Box>
   </WrapItem>
 
@@ -15570,26 +20753,32 @@ mt={['135px', '160px', '175px']}
         mt={['110px', '130px', '145px']}
         fontSize={['sm', 'md', 'md']}>
           No item</Text>
-        <HStack
-        style={{position:'absolute'}}
-        mt={['135px', '160px', '175px']}
-        >
-        <span>
-          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
-          <span>
-          <Text ml='-7px' fontSize='md'>+0</Text>
-        </span>
-        <span>
-          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
-          <span>
-          <Text ml='-7px' fontSize='md'>+0</Text>
-        </span>
-        <span>
-          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
-          <span>
-          <Text ml='-7px' fontSize='md'>+0</Text>
-        </span>
-        </HStack>
+          <HStack
+style={{position:'absolute'}}
+mt={['135px', '160px', '175px']}
+>
+<span>
+  <GreyAtkChest />
+  <ColorAtkChest />
+  </span>
+  <span>
+  <Text ml='-7px' fontSize='md'>+{totalChestTopAtk}</Text>
+</span>
+<span>
+<GreyDefChest />
+<ColorDefChest />
+</span>
+  <span>
+  <Text ml='-7px' fontSize='md'>+{totalChestTopDef}</Text>
+</span>
+<span>
+<GreyLuckChest />
+<ColorLuckChest />
+</span>
+  <span>
+  <Text ml='-7px' fontSize='md'>+{totalChestTopLuck}</Text>
+</span>
+</HStack>
       </VStack>
     </Box>
   </WrapItem>
@@ -15612,26 +20801,33 @@ mt={['135px', '160px', '175px']}
         mt={['110px', '130px', '145px']}
         fontSize={['sm', 'md', 'md']}>
           No item</Text>
-        <HStack
-        style={{position:'absolute'}}
-        mt={['135px', '160px', '175px']}
-        >
-        <span>
-          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/hbcvJHt.png' /></span>
-          <span>
-          <Text ml='-7px' fontSize='md'>+0</Text>
-        </span>
-        <span>
-          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/6Pw8bpA.png' /></span>
-          <span>
-          <Text ml='-7px' fontSize='md'>+0</Text>
-        </span>
-        <span>
-          <Image boxSize={['1rem', '1.25rem', '1.5rem']} align='center' src='https://i.imgur.com/SsdiAg9.png' /></span>
-          <span>
-          <Text ml='-7px' fontSize='md'>+0</Text>
-        </span>
-        </HStack>
+          <HStack
+style={{position:'absolute'}}
+mt={['135px', '160px', '175px']}
+>
+<span>
+  <GreyAtkFeet />
+  <ColorAtkFeet />
+  </span>
+  <span>
+  <Text ml='-7px' fontSize='md'>+{totalFeetTopAtk}</Text>
+</span>
+<span>
+<GreyDefFeet />
+<ColorDefFeet />
+</span>
+  <span>
+  <Text ml='-7px' fontSize='md'>+{totalFeetTopDef}</Text>
+</span>
+<span>
+<GreyLuckFeet />
+<ColorLuckFeet />
+</span>
+  <span>
+  <Text ml='-7px' fontSize='md'>+{totalFeetTopLuck}</Text>
+</span>
+</HStack>
+
       </VStack>
     </Box>
   </WrapItem>
@@ -18454,7 +23650,37 @@ src='https://static.wikia.nocookie.net/4thewords/images/c/c5/WoodenGardenHorn.pn
 </Button>
 </WrapItem>}
 
+{(AllIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !BraceletsofWaterIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleBraceletsofWaterClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/3/37/BraceletsofWater.png/'
+/> 
+<Text fontSize='md' mt='-2px' align='center'><b>Bracelets<br/>of Water</b></Text>
+<Text fontSize='sm' align='center'>+2 Atk<br/>+14 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
 
+{(AllIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && BraceletsofWaterIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleBraceletsofWaterNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/3/37/BraceletsofWater.png/'
+/> 
+<Text fontSize='md' mt='-2px' align='center'><b>Bracelets<br/>of Water</b></Text>
+<Text fontSize='sm' align='center'>+2 Atk<br/>+14 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
 
 {(AllIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !HarpoonIsShown &&
 <WrapItem>
@@ -18987,7 +24213,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/3/38/DragonsFangBow.png/
 mt='12px'
 align='center' 
 boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/8/8e/Niftras-sword.png'
+src='https://static.wikia.nocookie.net/4thewords/images/b/b8/Witchs_Staff.png/'
 /> 
 <Text fontSize='sm' align='center'><b>Witch's Staff</b></Text>
 <Text fontSize='sm' align='center'>+6 Atk<br/>+4 Def<br/>+10 Luck </Text>
@@ -19003,7 +24229,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/8/8e/Niftras-sword.png'
 mt='12px'
 align='center' 
 boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/8/8e/Niftras-sword.png'
+src='https://static.wikia.nocookie.net/4thewords/images/b/b8/Witchs_Staff.png/'
 /> 
 <Text fontSize='sm' align='center'><b>Witch's Staff</b></Text>
 <Text fontSize='sm' align='center'>+6 Atk<br/>+4 Def<br/>+10 Luck </Text>
@@ -19075,9 +24301,880 @@ src='https://static.wikia.nocookie.net/4thewords/images/8/8a/Tentacle-whip.png/'
 </Button>
 </WrapItem>}
 
-
 </Wrap>
   </TabPanel>
+<TabPanel>
+<Wrap justify='center'>
+{(AllIsShown || PastEventsIsShown) && !PirateAccordionIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handlePirateAccordionClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/b/ba/Accordion_md.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Pirate<br/>Accordion</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+6 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || PastEventsIsShown) && PirateAccordionIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handlePirateAccordionNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/b/ba/Accordion_md.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Pirate<br/>Accordion</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+6 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || PastEventsIsShown) && !AstrolabeIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleAstrolabeClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/a/a0/Astrolabe_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Astrolabe</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || PastEventsIsShown) && AstrolabeIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleAstrolabeNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/a/a0/Astrolabe_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Astrolabe</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+{(AllIsShown || HuntIsShown) && !BardNoteIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleBardNoteClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/4/46/BardsNote.png/'
+/> 
+<Text fontSize='md' align='center'><b>Bard's Note</b></Text>
+<Text fontSize='sm' align='center'>+14 Atk<br/>+0 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || HuntIsShown) && BardNoteIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleBardNoteNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/4/46/BardsNote.png/'
+/> 
+<Text fontSize='md' align='center'><b>Bard's Note</b></Text>
+<Text fontSize='sm' align='center'>+14 Atk<br/>+0 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !DarkForestAmuletIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleDarkForestAmuletClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/8d/Dark-forest-amulet.png/'
+/> 
+<Text fontSize='md' align='center'><b>Dark Forest<br/>Amulet</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+10 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && DarkForestAmuletIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleDarkForestAmuletNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/8d/Dark-forest-amulet.png/'
+/> 
+<Text fontSize='md' align='center'><b>Dark Forest<br/>Amulet</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+10 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || PastEventsIsShown) && !FeatherNecklaceIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleFeatherNecklaceClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/c/c2/Feather-necklace.png/'
+/> 
+<Text fontSize='md' align='center'><b>Feather<br/>Necklace</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+4 Def<br/>+12 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || PastEventsIsShown) && FeatherNecklaceIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleFeatherNecklaceNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/c/c2/Feather-necklace.png/'
+/> 
+<Text fontSize='md' align='center'><b>Feather<br/>Necklace</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+4 Def<br/>+12 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && !GlassNecklaceIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleGlassNecklaceClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/0/0d/Glassnecklace_md.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Glass<br/>Necklace</b></Text>
+   <Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+6 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && GlassNecklaceIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleGlassNecklaceNoClick} style={{ backgroundColor: "#211742"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/0/0d/Glassnecklace_md.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Glass<br/>Necklace</b></Text>
+   <Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+6 Luck </Text>
+
+   </VStack>
+   </Button>
+   </WrapItem>}
+
+   {(AllIsShown || PastEventsIsShown) && !GoldenDragonTiaraIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleGoldenDragonTiaraClick} style={{ backgroundColor: "#2D3748"}}>
+      <VStack justify='center'>  
+      <Image
+      mt='12px'
+      align='center' 
+      boxSize='4rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/6/62/GoldenDragonTiara.png'
+      /> 
+      <Text fontSize='sm' align='center'><b>Golden<br/>Dragon Tiara</b></Text>
+      <Text fontSize='sm' align='center'>+2 Atk<br/>+2 Def<br/>+8 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+      
+      {(AllIsShown || PastEventsIsShown) && GoldenDragonTiaraIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleGoldenDragonTiaraNoClick} style={{ backgroundColor: "#211742"}}>
+      <VStack justify='center'>  
+      <Image
+      mt='12px'
+      align='center' 
+      boxSize='4rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/6/62/GoldenDragonTiara.png'
+      /> 
+      <Text fontSize='sm' align='center'><b>Golden<br/>Dragon Tiara</b></Text>
+      <Text fontSize='sm' align='center'>+2 Atk<br/>+2 Def<br/>+8 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !HauntedNecklaceIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleHauntedNecklaceClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='15px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/1/14/HauntedNecklace.png/'
+/> 
+<Text fontSize='md' align='center'><b>Haunted<br/>Necklace</b></Text>
+<Text fontSize='sm' align='center'>+5 Atk<br/>+10 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && HauntedNecklaceIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleHauntedNecklaceNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/1/14/HauntedNecklace.png/'
+/> 
+<Text fontSize='md' align='center'><b>Haunted<br/>Necklace</b></Text>
+<Text fontSize='sm' align='center'>+5 Atk<br/>+10 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !HopeLightIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleHopeLightClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='4rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/3/3c/HopesLight.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Hope's Light</b></Text>
+   <Text fontSize='sm' align='center'>+15 Atk<br/>+0 Def<br/>+0 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && HopeLightIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleHopeLightNoClick} style={{ backgroundColor: "#211742"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='4rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/3/3c/HopesLight.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Hope's Light</b></Text>
+   <Text fontSize='sm' align='center'>+15 Atk<br/>+0 Def<br/>+0 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !LightBloomIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleLightBloomClick} style={{ backgroundColor: "#2D3748"}}>
+      <VStack justify='center'>  
+      <Image
+      mt='12px'
+      align='center' 
+      boxSize='4rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/a/a7/LightsBloom.png/'
+      /> 
+      <Text fontSize='md' align='center'><b>Light's Bloom</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br/>+15 Def<br/>+0 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+      
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && LightBloomIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleLightBloomNoClick} style={{ backgroundColor: "#211742"}}>
+      <VStack justify='center'>  
+      <Image
+      mt='12px'
+      align='center' 
+      boxSize='4rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/a/a7/LightsBloom.png/'
+      /> 
+      <Text fontSize='md' align='center'><b>Light's Bloom</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br/>+15 Def<br/>+0 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+
+{(AllIsShown || GardenIsShown) && !MushroomGrenadeIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleMushroomGrenadeClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/83/MushroomGrenade.png/'
+/> 
+<Text fontSize='md' align='center'><b>Mushroom<br/>Grenade</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+12 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || GardenIsShown) && MushroomGrenadeIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleMushroomGrenadeNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/83/MushroomGrenade.png/'
+/> 
+<Text fontSize='md' align='center'><b>Mushroom<br/>Grenade</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+12 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown) && !NivaliGlovesIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleNivaliGlovesClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/2/2c/Nivali_Gloves.png/'
+/> 
+<Text fontSize='md' align='center'><b>Nivali Gloves</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown) && NivaliGlovesIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleNivaliGlovesNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/2/2c/Nivali_Gloves.png/'
+/> 
+<Text fontSize='md' align='center'><b>Nivali Gloves</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown) && !NivaliPantsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleNivaliPantsClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/4/4b/Nivali_Pants.png/'
+/> 
+<Text fontSize='md' align='center'><b>Nivali Pants</b></Text>
+<Text fontSize='sm' align='center'>+4 Atk<br/>+12 Def<br/>+4 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown) && NivaliPantsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleNivaliPantsNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/4/4b/Nivali_Pants.png/'
+/> 
+<Text fontSize='md' align='center'><b>Nivali Pants</b></Text>
+<Text fontSize='sm' align='center'>+4 Atk<br/>+12 Def<br/>+4 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown) && !NivaliShieldIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleNivaliShieldClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='3.75rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/3/3f/Nivali_Shield.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Nivali Shield</b></Text>
+   <Text fontSize='sm' align='center'>+2 Atk<br/>+15 Def<br/>+2 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   
+{(AllIsShown || World2RegionIsShown) && NivaliShieldIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleNivaliShieldNoClick} style={{ backgroundColor: "#211742"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='3.75rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/3/3f/Nivali_Shield.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Nivali Shield</b></Text>
+   <Text fontSize='sm' align='center'>+2 Atk<br/>+15 Def<br/>+2 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+
+   {(AllIsShown || RainaIsShown) && !RainaBraceletIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleRainaBraceletClick} style={{ backgroundColor: "#2D3748"}}>
+      <VStack justify='center'>  
+      <Image
+      mt='12px'
+      align='center' 
+      boxSize='3.5rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/9/95/Raina_bracelet.png/'
+      /> 
+      <Text fontSize='md' align='center'><b>Raina<br/>Bracelet</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+15 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+      
+   {(AllIsShown || RainaIsShown) && RainaBraceletIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleRainaBraceletNoClick} style={{ backgroundColor: "#211742"}}>
+      <VStack justify='center'>  
+      <Image
+      mt='12px'
+      align='center' 
+      boxSize='3.5rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/9/95/Raina_bracelet.png/'
+      /> 
+      <Text fontSize='md' align='center'><b>Raina<br/>Bracelet</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+15 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+
+      {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) && !RustyAmuletIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleRustyAmuletClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/1/19/Rustyamulet_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Rusty<br/>Amulet</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+1 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) && RustyAmuletIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleRustyAmuletNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/1/19/Rustyamulet_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Rusty<br/>Amulet</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+1 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && !RustyPendantIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleRustyPendantClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/8b/Rustypendant_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Rusty<br/>Pendant</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+1 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && RustyPendantIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleRustyPendantNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/8b/Rustypendant_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Rusty<br/>Pendant</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+1 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && !SandsRingIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleSandsRingClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/2/24/Sandsring_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Sands Ring</b></Text>
+<Text fontSize='sm' align='center'>+1 Atk<br/>+5 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && SandsRingIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleSandsRingNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/2/24/Sandsring_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Sands Ring</b></Text>
+<Text fontSize='sm' align='center'>+1 Atk<br/>+5 Def<br/>+5 Luck </Text>
+
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || PastEventsIsShown) && !VictorianFanIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleVictorianFanClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='4rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/c/c3/Victorianfan_md.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Victorian Fan</b></Text>
+   <Text fontSize='sm' align='center'>+8 Atk<br/>+0 Def<br/>+0 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   
+   {(AllIsShown || PastEventsIsShown) && VictorianFanIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleVictorianFanNoClick} style={{ backgroundColor: "#211742"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='4rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/c/c3/Victorianfan_md.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Victorian Fan</b></Text>
+   <Text fontSize='sm' align='center'>+8 Atk<br/>+0 Def<br/>+0 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+
+   {(AllIsShown || AurilisIsShown) && !GradScrollAstrologyIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleGradScrollAstrologyClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/4/44/Astrology_Graduation_Scroll.png/'
+/> 
+<Text fontSize='md' align='center'><b>Astrology</b></Text>
+<Text fontSize='sm' align='center'>+2 Atk<br/>+4 Def<br/>+6 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || AurilisIsShown) && GradScrollAstrologyIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleGradScrollAstrologyNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/4/44/Astrology_Graduation_Scroll.png/'
+/> 
+<Text fontSize='md' align='center'><b>Astrology</b></Text>
+<Text fontSize='sm' align='center'>+2 Atk<br/>+4 Def<br/>+6 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || AurilisIsShown) && !GradScrollAlchemyIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleGradScrollAlchemyClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/c/c5/Alchemy_Graduation_Scroll.png/'
+/> 
+<Text fontSize='md' align='center'><b>Alchemy</b></Text>
+<Text fontSize='sm' align='center'>+6 Atk<br/>+4 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || AurilisIsShown) && GradScrollAlchemyIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleGradScrollAlchemyNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/c/c5/Alchemy_Graduation_Scroll.png/'
+/> 
+<Text fontSize='md' align='center'><b>Alchemy</b></Text>
+<Text fontSize='sm' align='center'>+6 Atk<br/>+4 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || AurilisIsShown) && !GradScrollAKIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleGradScrollAKClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/81/Ancient_Knowledge_Graduation_Scroll.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Ancient<br/>Knowledge</b></Text>
+<Text fontSize='sm' align='center'>+4 Atk<br/>+6 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || AurilisIsShown) && GradScrollAKIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleGradScrollAKNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/8/81/Ancient_Knowledge_Graduation_Scroll.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Ancient<br/>Knowledge</b></Text>
+<Text fontSize='sm' align='center'>+4 Atk<br/>+6 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || AurilisIsShown) && !GradScrollSpellsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleGradScrollSpellsClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/f/f0/Spells_Graduation_Scroll.png/'
+/> 
+<Text fontSize='md' align='center'><b>Spells</b></Text>
+<Text fontSize='sm' align='center'>+6 Atk<br/>+4 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || AurilisIsShown) && GradScrollSpellsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleGradScrollSpellsNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/f/f0/Spells_Graduation_Scroll.png/'
+/> 
+<Text fontSize='md' align='center'><b>Spells</b></Text>
+<Text fontSize='sm' align='center'>+6 Atk<br/>+4 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || AurilisIsShown) && !GradScrollMirrorsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleGradScrollMirrorsClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/3/31/Mirror_Graduation_Scroll.png/'
+/> 
+<Text fontSize='md' align='center'><b>Mirrors</b></Text>
+<Text fontSize='sm' align='center'>+2 Atk<br/>+5 Def<br/>+8 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || AurilisIsShown) && GradScrollMirrorsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleGradScrollMirrorsNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/3/31/Mirror_Graduation_Scroll.png/'
+/> 
+<Text fontSize='md' align='center'><b>Mirrors</b></Text>
+<Text fontSize='sm' align='center'>+2 Atk<br/>+5 Def<br/>+8 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || AurilisIsShown) && !GradScrollFungiIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleGradScrollFungiClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/9/9a/Fungi_Graduation_Scroll.png/'
+/> 
+<Text fontSize='md' align='center'><b>Fungi</b></Text>
+<Text fontSize='sm' align='center'>+8 Atk<br/>+5 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || AurilisIsShown) && GradScrollFungiIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleGradScrollFungiNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/9/9a/Fungi_Graduation_Scroll.png/'
+/> 
+<Text fontSize='md' align='center'><b>Fungi</b></Text>
+<Text fontSize='sm' align='center'>+8 Atk<br/>+5 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || AurilisIsShown) && !GradScrollThreadsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleGradScrollThreadsClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/a/a2/Threads_Graduation_Scroll.png/'
+/> 
+<Text fontSize='md' align='center'><b>Threads</b></Text>
+<Text fontSize='sm' align='center'>+5 Atk<br/>+8 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || AurilisIsShown) && GradScrollThreadsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleGradScrollThreadsNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/a/a2/Threads_Graduation_Scroll.png/'
+/> 
+<Text fontSize='md' align='center'><b>Threads</b></Text>
+<Text fontSize='sm' align='center'>+5 Atk<br/>+8 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || AurilisIsShown) && !GradScrollVoidIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleGradScrollVoidClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center'
+   boxSize='4rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/b/b2/Void_Graduation_Scroll.png'
+   />
+   <Text fontSize='md' align='center'><b>Void</b></Text>
+   <Text fontSize='sm' align='center'>+8 Atk<br/>+2 Def<br/>+5 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   
+   {(AllIsShown || AurilisIsShown) && GradScrollVoidIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleGradScrollVoidNoClick} style={{ backgroundColor: "#211742"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center'
+   boxSize='4rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/b/b2/Void_Graduation_Scroll.png'
+   />
+   <Text fontSize='md' align='center'><b>Void</b></Text>
+   <Text fontSize='sm' align='center'>+8 Atk<br/>+2 Def<br/>+5 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   
+</Wrap>
+</TabPanel>
   </TabPanels>
 </Tabs>
 <Box h='100px' />

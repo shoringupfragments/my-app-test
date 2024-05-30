@@ -1,189 +1,791 @@
-const handleWhodiniSwitchClick = event => {
-   setWhodiniIsShown (current => !WhodiniIsShown);
-   setWhodiniActive (current => !WhodiniActive);
-   setNoanzaAtk (value => 0);
-   setNoanzaDef (value => 0);
-   setNoanzaLuck (value => 0);
-   setLodoAtk (value => 0);
-   setLodoDef (value => 0);
-   setLodoLuck (value => 0);
-   setAzadiAtk (value => 0);
-   setAzadiDef (value => 0);
-   setAzadiLuck (value => 0);
-   setSuwoAtk (value => 0);
-   setSuwoDef (value => 0);
-   setSuwoLuck (value => 0);
- 
-   setLodoIsShown (current => false)
-   setLodoIsShown (current => false)
-   setAzadiIsShown (current => false)
-   setAzadiIsShown (current => false)
-   setSuwoIsShown (current => false)
-   setSuwoIsShown (current => false)
-   setNoanzaIsShown (current => false);
-   setNoanzaActive (current => false);
+const [PirateAccordionIsShown, setPirateAccordionIsShown] = useState(false)
+const [PirateAccordionActive, setPirateAccordionActive] = useState(false)
+const [PirateAccordionAtk, setPirateAccordionAtk] = useState(0)
+const [PirateAccordionDef, setPirateAccordionDef] = useState(0)
+const [PirateAccordionLuck, setPirateAccordionLuck] = useState(0)
 
-   setNoanzaAtk (value => 0);
-   setNoanzaDef (value => 14);
-   setNoanzaLuck (value => 6);
-   setLodoAtk (value => 0);
-   setLodoDef (value => 0);
-   setLodoLuck (value => 0);
-   setAzadiAtk (value => 0);
-   setAzadiDef (value => 0);
-   setAzadiLuck (value => 0);
-   setSuwoAtk (value => 0);
-   setSuwoDef (value => 0);
-   setSuwoLuck (value => 0);
- 
-   setLodoIsShown (current => false)
-   setLodoIsShown (current => false)
-   setAzadiIsShown (current => false)
-   setAzadiIsShown (current => false)
-   setSuwoIsShown (current => false)
-   setSuwoIsShown (current => false)
- 
-   setAlderbamAtk (value => 0);
-   setAlderbamDef (value => 0);
-   setAlderbamLuck (value => 0);
-   setChysisAtk (value => 0);
-   setChysisDef (value => 0);
-   setChysisLuck (value => 0);
-   setMundAtk (value => 0);
-   setMundDef (value => 0);
-   setMundLuck (value => 0);
-   setWhodiniAtk (value => 0);
-   setWhodiniDef (value => 12);
-   setWhodiniLuck (value => 0);
- 
-   setAlderbamIsShown (current => false)
-   setAlderbamIsShown (current => false)
-   setChysisIsShown (current => false)
-   setChysisIsShown (current => false)
-   setMundIsShown (current => false)
-   setMundIsShown (current => false)
-   setWhodiniIsShown (current => false)
-   setWhodiniIsShown (current => false)
- 
-   setKaiszarAtk (value => 0);
-   setKaiszarDef (value => 0);
-   setKaiszarLuck (value => 0);
-   setAtkKaiszarAtk (value => 0);
-   setAtkKaiszarDef (value => 0);
-   setAtkKaiszarLuck (value => 0);
-   setDefKaiszarAtk (value => 0);
-   setDefKaiszarDef (value => 0);
-   setDefKaiszarLuck (value => 0);
-   setLuckKaiszarAtk (value => 0);
-   setLuckKaiszarDef (value => 0);
-   setLuckKaiszarLuck (value => 0);
-   setLoksiAtk (value => 0);
-   setLoksiDef (value => 0);
-   setLoksiLuck (value => 0);
-   setAtkLoksiAtk (value => 0);
-   setAtkLoksiDef (value => 0);
-   setAtkLoksiLuck (value => 0);
-   setDefLoksiAtk (value => 0);
-   setDefLoksiDef (value => 0);
-   setDefLoksiLuck (value => 0);
-   setLuckLoksiAtk (value => 0);
-   setLuckLoksiDef (value => 0);
-   setLuckLoksiLuck (value => 0);
-   setThalamarisAtk (value => 0);
-   setThalamarisDef (value => 0);
-   setThalamarisLuck (value => 0);
-   setAtkThalamarisAtk (value => 0);
-   setAtkThalamarisDef (value => 0);
-   setAtkThalamarisLuck (value => 0);
-   setDefThalamarisAtk (value => 0);
-   setDefThalamarisDef (value => 0);
-   setDefThalamarisLuck (value => 0);
-   setLuckThalamarisAtk (value => 0);
-   setLuckThalamarisDef (value => 0);
-   setLuckThalamarisLuck (value => 0);
-   setValkosAtk (value => 0);
-   setValkosDef (value => 0);
-   setValkosLuck (value => 0);
-   setAtkValkosAtk (value => 0);
-   setAtkValkosDef (value => 0);
-   setAtkValkosLuck (value => 0);
-   setDefValkosAtk (value => 0);
-   setDefValkosDef (value => 0);
-   setDefValkosLuck (value => 0);
-   setLuckValkosAtk (value => 0);
-   setLuckValkosDef (value => 0);
-   setLuckValkosLuck (value => 0);
-   setEenrisAtk (value => 0);
-   setEenrisDef (value => 0);
-   setEenrisLuck (value => 0);
-   setAtkEenrisAtk (value => 0);
-   setAtkEenrisDef (value => 0);
-   setAtkEenrisLuck (value => 0);
-   setDefEenrisAtk (value => 0);
-   setDefEenrisDef (value => 0);
-   setDefEenrisLuck (value => 0);
-   setLuckEenrisAtk (value => 0);
-   setLuckEenrisDef (value => 0);
-   setLuckEenrisLuck (value => 0);
-   setRairaselAtk (value => 0);
-   setRairaselDef (value => 0);
-   setRairaselLuck (value => 0);
-   setAtkRairaselAtk (value => 0);
-   setAtkRairaselDef (value => 0);
-   setAtkRairaselLuck (value => 0);
-   setDefRairaselAtk (value => 0);
-   setDefRairaselDef (value => 0);
-   setDefRairaselLuck (value => 0);
-   setLuckRairaselAtk (value => 0);
-   setLuckRairaselDef (value => 0);
-   setLuckRairaselLuck (value => 0);
- 
-   setKaiszarIsShown (current => false);
-   setKaiszarActive (current => false);
-   setAtkKaiszarIsShown (current => false);
-   setAtkKaiszarActive (current => false);
-   setDefKaiszarIsShown (current => false);
-   setDefKaiszarActive (current => false);
-   setLuckKaiszarIsShown (current => false);
-   setLuckKaiszarActive (current => false);
-   setLoksiIsShown (current => false);
-   setLoksiActive (current => false);
-   setAtkLoksiIsShown (current => false);
-   setAtkLoksiActive (current => false);
-   setDefLoksiIsShown (current => false);
-   setDefLoksiActive (current => false);
-   setLuckLoksiIsShown (current => false);
-   setLuckLoksiActive (current => false);
-   setThalamarisIsShown (current => false);
-   setThalamarisActive (current => false);
-   setAtkThalamarisIsShown (current => false);
-   setAtkThalamarisActive (current => false);
-   setDefThalamarisIsShown (current => false);
-   setDefThalamarisActive (current => false);
-   setLuckThalamarisIsShown (current => false);
-   setLuckThalamarisActive (current => false);
-   setValkosIsShown (current => false);
-   setValkosActive (current => false);
-   setAtkValkosIsShown (current => false);
-   setAtkValkosActive (current => false);
-   setDefValkosIsShown (current => false);
-   setDefValkosActive (current => false);
-   setLuckValkosIsShown (current => false);
-   setLuckValkosActive (current => false);
-   setEenrisIsShown (current => false);
-   setEenrisActive (current => false);
-   setAtkEenrisIsShown (current => false);
-   setAtkEenrisActive (current => false);
-   setDefEenrisIsShown (current => false);
-   setDefEenrisActive (current => false);
-   setLuckEenrisIsShown (current => false);
-   setLuckEenrisActive (current => false);
-   setRairaselIsShown (current => false);
-   setRairaselActive (current => false);
-   setAtkRairaselIsShown (current => false);
-   setAtkRairaselActive (current => false);
-   setDefRairaselIsShown (current => false);
-   setDefRairaselActive (current => false);
-   setLuckRairaselIsShown (current => false);
-   setLuckRairaselActive (current => false);
-   };
+
+const handlePirateAccordionClick = event => {
+   setPirateAccordionIsShown (current => !PirateAccordionIsShown);
+   setPirateAccordionActive (current => !PirateAccordionActive);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 3);
+   setPirateAccordionLuck (value => 6);
+
+}
+
+const handlePirateAccordionNoClick = event => {
+   setPirateAccordionIsShown (current => false);
+   setPirateAccordionActive (current => false);
+   setPirateAccordionAtk (value => 0);
+   setPirateAccordionDef (value => 0);
+   setPirateAccordionLuck (value => 0);
+}
+
+const [AstrolabeIsShown, setAstrolabeIsShown] = useState(false)
+const [AstrolabeActive, setAstrolabeActive] = useState(false)
+const [AstrolabeAtk, setAstrolabeAtk] = useState(0)
+const [AstrolabeDef, setAstrolabeDef] = useState(0)
+const [AstrolabeLuck, setAstrolabeLuck] = useState(0)
+
+
+const handleAstrolabeClick = event => {
+   setAstrolabeIsShown (current => !AstrolabeIsShown);
+   setAstrolabeActive (current => !AstrolabeActive);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 5);
+   
+}
+
+const handleAstrolabeNoClick = event => {
+   setAstrolabeIsShown (current => false);
+   setAstrolabeActive (current => false);
+   setAstrolabeAtk (value => 0);
+   setAstrolabeDef (value => 0);
+   setAstrolabeLuck (value => 0);
+}
+
+const [BardNoteIsShown, setBardNoteIsShown] = useState(false)
+const [BardNoteActive, setBardNoteActive] = useState(false)
+const [BardNoteAtk, setBardNoteAtk] = useState(0)
+const [BardNoteDef, setBardNoteDef] = useState(0)
+const [BardNoteLuck, setBardNoteLuck] = useState(0)
+
+
+const handleBardNoteClick = event => {
+   setBardNoteIsShown (current => !BardNoteIsShown);
+   setBardNoteActive (current => !BardNoteActive);
+   setBardNoteAtk (value => 14);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 2);
+   
+}
+
+const handleBardNoteNoClick = event => {
+   setBardNoteIsShown (current => false);
+   setBardNoteActive (current => false);
+   setBardNoteAtk (value => 0);
+   setBardNoteDef (value => 0);
+   setBardNoteLuck (value => 0);
+}
+
+const [DarkForestAmuletIsShown, setDarkForestAmuletIsShown] = useState(false)
+const [DarkForestAmuletActive, setDarkForestAmuletActive] = useState(false)
+const [DarkForestAmuletAtk, setDarkForestAmuletAtk] = useState(0)
+const [DarkForestAmuletDef, setDarkForestAmuletDef] = useState(0)
+const [DarkForestAmuletLuck, setDarkForestAmuletLuck] = useState(0)
+
+
+const handleDarkForestAmuletClick = event => {
+   setDarkForestAmuletIsShown (current => !DarkForestAmuletIsShown);
+   setDarkForestAmuletActive (current => !DarkForestAmuletActive);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 10);
+   
+}
+
+const handleDarkForestAmuletNoClick = event => {
+   setDarkForestAmuletIsShown (current => false);
+   setDarkForestAmuletActive (current => false);
+   setDarkForestAmuletAtk (value => 0);
+   setDarkForestAmuletDef (value => 0);
+   setDarkForestAmuletLuck (value => 0);
+}
+
+const [FeatherNecklaceIsShown, setFeatherNecklaceIsShown] = useState(false)
+const [FeatherNecklaceActive, setFeatherNecklaceActive] = useState(false)
+const [FeatherNecklaceAtk, setFeatherNecklaceAtk] = useState(0)
+const [FeatherNecklaceDef, setFeatherNecklaceDef] = useState(0)
+const [FeatherNecklaceLuck, setFeatherNecklaceLuck] = useState(0)
+
+
+const handleFeatherNecklaceClick = event => {
+   setFeatherNecklaceIsShown (current => !FeatherNecklaceIsShown);
+   setFeatherNecklaceActive (current => !FeatherNecklaceActive);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 0);
+   setFeatherNecklaceLuck (value => 0);
+   
+}
+
+const handleFeatherNecklaceNoClick = event => {
+   setFeatherNecklaceIsShown (current => false);
+   setFeatherNecklaceActive (current => false);
+   setFeatherNecklaceAtk (value => 0);
+   setFeatherNecklaceDef (value => 0);
+   setFeatherNecklaceLuck (value => 0);
+}
+
+const [GlassNecklaceIsShown, setGlassNecklaceIsShown] = useState(false)
+const [GlassNecklaceActive, setGlassNecklaceActive] = useState(false)
+const [GlassNecklaceAtk, setGlassNecklaceAtk] = useState(0)
+const [GlassNecklaceDef, setGlassNecklaceDef] = useState(0)
+const [GlassNecklaceLuck, setGlassNecklaceLuck] = useState(0)
+
+
+const handleGlassNecklaceClick = event => {
+   setGlassNecklaceIsShown (current => !GlassNecklaceIsShown);
+   setGlassNecklaceActive (current => !GlassNecklaceActive);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 0);
+   setGlassNecklaceLuck (value => 0);
+   
+}
+
+const handleGlassNecklaceNoClick = event => {
+   setGlassNecklaceIsShown (current => false);
+   setGlassNecklaceActive (current => false);
+   setGlassNecklaceAtk (value => 0);
+   setGlassNecklaceDef (value => 0);
+   setGlassNecklaceLuck (value => 0);
+}
+
+const [GoldenDragonTiaraIsShown, setGoldenDragonTiaraIsShown] = useState(false)
+const [GoldenDragonTiaraActive, setGoldenDragonTiaraActive] = useState(false)
+const [GoldenDragonTiaraAtk, setGoldenDragonTiaraAtk] = useState(0)
+const [GoldenDragonTiaraDef, setGoldenDragonTiaraDef] = useState(0)
+const [GoldenDragonTiaraLuck, setGoldenDragonTiaraLuck] = useState(0)
+
+
+const handleGoldenDragonTiaraClick = event => {
+   setGoldenDragonTiaraIsShown (current => !GoldenDragonTiaraIsShown);
+   setGoldenDragonTiaraActive (current => !GoldenDragonTiaraActive);
+   setGoldenDragonTiaraAtk (value => 0);
+   setGoldenDragonTiaraDef (value => 0);
+   setGoldenDragonTiaraLuck (value => 0);
+   
+}
+
+const handleGoldenDragonTiaraNoClick = event => {
+   setGoldenDragonTiaraIsShown (current => false);
+   setGoldenDragonTiaraActive (current => false);
+   setGoldenDragonTiaraAtk (value => 0);
+   setGoldenDragonTiaraDef (value => 0);
+   setGoldenDragonTiaraLuck (value => 0);
+}
+
+const [HauntedNecklaceIsShown, setHauntedNecklaceIsShown] = useState(false)
+const [HauntedNecklaceActive, setHauntedNecklaceActive] = useState(false)
+const [HauntedNecklaceAtk, setHauntedNecklaceAtk] = useState(0)
+const [HauntedNecklaceDef, setHauntedNecklaceDef] = useState(0)
+const [HauntedNecklaceLuck, setHauntedNecklaceLuck] = useState(0)
+
+
+const handleHauntedNecklaceClick = event => {
+   setHauntedNecklaceIsShown (current => !HauntedNecklaceIsShown);
+   setHauntedNecklaceActive (current => !HauntedNecklaceActive);
+   setHauntedNecklaceAtk (value => 0);
+   setHauntedNecklaceDef (value => 0);
+   setHauntedNecklaceLuck (value => 0);
+   
+}
+
+const handleHauntedNecklaceNoClick = event => {
+   setHauntedNecklaceIsShown (current => false);
+   setHauntedNecklaceActive (current => false);
+   setHauntedNecklaceAtk (value => 0);
+   setHauntedNecklaceDef (value => 0);
+   setHauntedNecklaceLuck (value => 0);
+}
+
+const [HopeLightIsShown, setHopeLightIsShown] = useState(false)
+const [HopeLightActive, setHopeLightActive] = useState(false)
+const [HopeLightAtk, setHopeLightAtk] = useState(0)
+const [HopeLightDef, setHopeLightDef] = useState(0)
+const [HopeLightLuck, setHopeLightLuck] = useState(0)
+
+
+const handleHopeLightClick = event => {
+   setHopeLightIsShown (current => !HopeLightIsShown);
+   setHopeLightActive (current => !HopeLightActive);
+   setHopeLightAtk (value => 0);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+   
+}
+
+const handleHopeLightNoClick = event => {
+   setHopeLightIsShown (current => false);
+   setHopeLightActive (current => false);
+   setHopeLightAtk (value => 0);
+   setHopeLightDef (value => 0);
+   setHopeLightLuck (value => 0);
+}
+
+const [LightBloomIsShown, setLightBloomIsShown] = useState(false)
+const [LightBloomActive, setLightBloomActive] = useState(false)
+const [LightBloomAtk, setLightBloomAtk] = useState(0)
+const [LightBloomDef, setLightBloomDef] = useState(0)
+const [LightBloomLuck, setLightBloomLuck] = useState(0)
+
+
+const handleLightBloomClick = event => {
+   setLightBloomIsShown (current => !LightBloomIsShown);
+   setLightBloomActive (current => !LightBloomActive);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 0);
+   setLightBloomLuck (value => 0);
+   
+}
+
+const handleLightBloomNoClick = event => {
+   setLightBloomIsShown (current => false);
+   setLightBloomActive (current => false);
+   setLightBloomAtk (value => 0);
+   setLightBloomDef (value => 0);
+   setLightBloomLuck (value => 0);
+}
+
+const [PoePickIsShown, setPoePickIsShown] = useState(false)
+const [PoePickActive, setPoePickActive] = useState(false)
+const [PoePickAtk, setPoePickAtk] = useState(0)
+const [PoePickDef, setPoePickDef] = useState(0)
+const [PoePickLuck, setPoePickLuck] = useState(0)
+
+
+const handlePoePickClick = event => {
+   setPoePickIsShown (current => !PoePickIsShown);
+   setPoePickActive (current => !PoePickActive);
+   setPoePickAtk (value => 0);
+   setPoePickDef (value => 0);
+   setPoePickLuck (value => 0);
+   
+}
+
+const handlePoePickNoClick = event => {
+   setPoePickIsShown (current => false);
+   setPoePickActive (current => false);
+   setPoePickAtk (value => 0);
+   setPoePickDef (value => 0);
+   setPoePickLuck (value => 0);
+}
+
+{PirateAccordionIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/f/f0/PirateAccordion.png/'
+   />}
+   {PirateAccordionIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Poe Pick</Text>
+     }
+
+{AstrolabeIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/f/f0/Astrolabe.png/'
+   />}
+   {AstrolabeIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Poe Pick</Text>
+     }
+
+{BardNoteIsShown &&        
+      <Image
+      style={{position:'absolute'}}
+      mt={['37px', '47px', '55px']}
+      align='center' 
+      boxSize={['4rem', '4.5rem', '5rem']}
+      src='https://static.wikia.nocookie.net/4thewords/images/f/f0/BardNote.png/'
+      />}
+      {BardNoteIsShown &&        
+      <Text        
+      style={{position:'absolute'}}
+      mt={['110px', '130px', '145px']}
+      fontSize={['sm', 'md', 'md']}>
+        Poe Pick</Text>
+        }
+   
+{DarkForestAmuletIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/f/f0/DarkForestAmulet.png/'
+   />}
+   {DarkForestAmuletIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Poe Pick</Text>
+     }
+
+{FeatherNecklaceIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/f/f0/FeatherNecklace.png/'
+   />}
+   {FeatherNecklaceIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Poe Pick</Text>
+     }
+
+{GlassNecklaceIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/f/f0/GlassNecklace.png/'
+   />}
+   {GlassNecklaceIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Poe Pick</Text>
+     }
+
+{GoldenDragonTiaraIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/f/f0/GoldenDragonTiara.png/'
+   />}
+   {GoldenDragonTiaraIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Poe Pick</Text>
+     }
+
+{HauntedNecklaceIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/f/f0/HauntedNecklace.png/'
+   />}
+   {HauntedNecklaceIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Poe Pick</Text>
+     }
+
+     {HopeLightIsShown &&        
+      <Image
+      style={{position:'absolute'}}
+      mt={['37px', '47px', '55px']}
+      align='center' 
+      boxSize={['4rem', '4.5rem', '5rem']}
+      src='https://static.wikia.nocookie.net/4thewords/images/f/f0/HopeLight.png/'
+      />}
+      {HopeLightIsShown &&        
+      <Text        
+      style={{position:'absolute'}}
+      mt={['110px', '130px', '145px']}
+      fontSize={['sm', 'md', 'md']}>
+        Poe Pick</Text>
+        }
+   
+{LightBloomIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/f/f0/LightBloom.png/'
+   />}
+   {LightBloomIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Poe Pick</Text>
+     }
+
+{PoePickIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/f/f0/PoePick.png/'
+   />}
+   {PoePickIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Poe Pick</Text>
+     }
+
+
+{(AllIsShown || ###LOCATION###) && !PirateAccordionIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handlePirateAccordionClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='link'
+/> 
+<Text fontSize='md' align='center'><b>Poe Pick</b></Text>
+<Text fontSize='sm' align='center'>+15 Atk<br/>+5 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || ###LOCATION###) && PirateAccordionIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handlePirateAccordionNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='link'
+/> 
+<Text fontSize='md' align='center'><b>Poe Pick</b></Text>
+<Text fontSize='sm' align='center'>+15 Atk<br/>+5 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || ###LOCATION###) && !AstrolabeIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleAstrolabeClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='link'
+/> 
+<Text fontSize='md' align='center'><b>Poe Pick</b></Text>
+<Text fontSize='sm' align='center'>+15 Atk<br/>+5 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || ###LOCATION###) && AstrolabeIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleAstrolabeNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='link'
+/> 
+<Text fontSize='md' align='center'><b>Poe Pick</b></Text>
+<Text fontSize='sm' align='center'>+15 Atk<br/>+5 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+{(AllIsShown || ###LOCATION###) && !BardNoteIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleBardNoteClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='link'
+/> 
+<Text fontSize='md' align='center'><b>Poe Pick</b></Text>
+<Text fontSize='sm' align='center'>+15 Atk<br/>+5 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || ###LOCATION###) && BardNoteIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleBardNoteNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='link'
+/> 
+<Text fontSize='md' align='center'><b>Poe Pick</b></Text>
+<Text fontSize='sm' align='center'>+15 Atk<br/>+5 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || ###LOCATION###) && !DarkForestAmuletIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleDarkForestAmuletClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='link'
+/> 
+<Text fontSize='md' align='center'><b>Poe Pick</b></Text>
+<Text fontSize='sm' align='center'>+15 Atk<br/>+5 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || ###LOCATION###) && DarkForestAmuletIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleDarkForestAmuletNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='link'
+/> 
+<Text fontSize='md' align='center'><b>Poe Pick</b></Text>
+<Text fontSize='sm' align='center'>+15 Atk<br/>+5 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || ###LOCATION###) && !FeatherNecklaceIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleFeatherNecklaceClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='link'
+/> 
+<Text fontSize='md' align='center'><b>Poe Pick</b></Text>
+<Text fontSize='sm' align='center'>+15 Atk<br/>+5 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || ###LOCATION###) && FeatherNecklaceIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleFeatherNecklaceNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='link'
+/> 
+<Text fontSize='md' align='center'><b>Poe Pick</b></Text>
+<Text fontSize='sm' align='center'>+15 Atk<br/>+5 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || ###LOCATION###) && !GlassNecklaceIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleGlassNecklaceClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='4rem'
+   src='link'
+   /> 
+   <Text fontSize='md' align='center'><b>Poe Pick</b></Text>
+   <Text fontSize='sm' align='center'>+15 Atk<br/>+5 Def<br/>+0 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   
+   {(AllIsShown || ###LOCATION###) && GlassNecklaceIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleGlassNecklaceNoClick} style={{ backgroundColor: "#211742"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='4rem'
+   src='link'
+   /> 
+   <Text fontSize='md' align='center'><b>Poe Pick</b></Text>
+   <Text fontSize='sm' align='center'>+15 Atk<br/>+5 Def<br/>+0 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+
+   {(AllIsShown || ###LOCATION###) && !GoldenDragonTiaraIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleGoldenDragonTiaraClick} style={{ backgroundColor: "#2D3748"}}>
+      <VStack justify='center'>  
+      <Image
+      mt='12px'
+      align='center' 
+      boxSize='4rem'
+      src='link'
+      /> 
+      <Text fontSize='md' align='center'><b>Poe Pick</b></Text>
+      <Text fontSize='sm' align='center'>+15 Atk<br/>+5 Def<br/>+0 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+      
+      {(AllIsShown || ###LOCATION###) && GoldenDragonTiaraIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleGoldenDragonTiaraNoClick} style={{ backgroundColor: "#211742"}}>
+      <VStack justify='center'>  
+      <Image
+      mt='12px'
+      align='center' 
+      boxSize='4rem'
+      src='link'
+      /> 
+      <Text fontSize='md' align='center'><b>Poe Pick</b></Text>
+      <Text fontSize='sm' align='center'>+15 Atk<br/>+5 Def<br/>+0 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+
+{(AllIsShown || ###LOCATION###) && !HauntedNecklaceIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleHauntedNecklaceClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='link'
+/> 
+<Text fontSize='md' align='center'><b>Poe Pick</b></Text>
+<Text fontSize='sm' align='center'>+15 Atk<br/>+5 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || ###LOCATION###) && HauntedNecklaceIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleHauntedNecklaceNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='link'
+/> 
+<Text fontSize='md' align='center'><b>Poe Pick</b></Text>
+<Text fontSize='sm' align='center'>+15 Atk<br/>+5 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || ###LOCATION###) && !HopeLightIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleHopeLightClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='4rem'
+   src='link'
+   /> 
+   <Text fontSize='md' align='center'><b>Poe Pick</b></Text>
+   <Text fontSize='sm' align='center'>+15 Atk<br/>+5 Def<br/>+0 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   
+   {(AllIsShown || ###LOCATION###) && HopeLightIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleHopeLightNoClick} style={{ backgroundColor: "#211742"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='4rem'
+   src='link'
+   /> 
+   <Text fontSize='md' align='center'><b>Poe Pick</b></Text>
+   <Text fontSize='sm' align='center'>+15 Atk<br/>+5 Def<br/>+0 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+
+   {(AllIsShown || ###LOCATION###) && !LightBloomIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleLightBloomClick} style={{ backgroundColor: "#2D3748"}}>
+      <VStack justify='center'>  
+      <Image
+      mt='12px'
+      align='center' 
+      boxSize='4rem'
+      src='link'
+      /> 
+      <Text fontSize='md' align='center'><b>Poe Pick</b></Text>
+      <Text fontSize='sm' align='center'>+15 Atk<br/>+5 Def<br/>+0 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+      
+      {(AllIsShown || ###LOCATION###) && LightBloomIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleLightBloomNoClick} style={{ backgroundColor: "#211742"}}>
+      <VStack justify='center'>  
+      <Image
+      mt='12px'
+      align='center' 
+      boxSize='4rem'
+      src='link'
+      /> 
+      <Text fontSize='md' align='center'><b>Poe Pick</b></Text>
+      <Text fontSize='sm' align='center'>+15 Atk<br/>+5 Def<br/>+0 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+
+{(AllIsShown || ###LOCATION###) && !PoePickIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handlePoePickClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='link'
+/> 
+<Text fontSize='md' align='center'><b>Poe Pick</b></Text>
+<Text fontSize='sm' align='center'>+15 Atk<br/>+5 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || ###LOCATION###) && PoePickIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handlePoePickNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='link'
+/> 
+<Text fontSize='md' align='center'><b>Poe Pick</b></Text>
+<Text fontSize='sm' align='center'>+15 Atk<br/>+5 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
