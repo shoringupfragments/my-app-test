@@ -93,37 +93,7 @@ const [HeadpieceofOldGoldAtk, setHeadpieceofOldGoldAtk] = useState(0)
 const [HeadpieceofOldGoldDef, setHeadpieceofOldGoldDef] = useState(0)
 const [HeadpieceofOldGoldLuck, setHeadpieceofOldGoldLuck] = useState(0)
 
-const [StoriedHorns, setStoriedHorns] = useState(0)
-const [StoriedHornsIsShown, setStoriedHornsIsShown] = useState(false)
-const [StoriedHornsActive, setStoriedHornsActive] = useState(false)
-const [StoriedHornsAtk, setStoriedHornsAtk] = useState(0)
-const [StoriedHornsDef, setStoriedHornsDef] = useState(0)
-const [StoriedHornsLuck, setStoriedHornsLuck] = useState(0)
 
-const handleHornsofWisdomClick = event => {
-  setHornsofWisdomIsShown (current => true);
-  setHornsofWisdomActive (current => true);
-  setHornsofWisdomAtk (value => 2);
-  setHornsofWisdomDef (value => 0);
-  setHornsofWisdomLuck (value => 14);
-  };
-
-const handleHeadpieceofOldGoldClick = event => {
-  setHeadpieceofOldGoldIsShown (current => true);
-  setHeadpieceofOldGoldActive (current => true);
-  setHeadpieceofOldGoldAtk (value => 14);
-  setHeadpieceofOldGoldDef (value => 0);
-  setHeadpieceofOldGoldLuck (value => 2);
-  };
-
-
-const handleStoriedHornsClick = event => {
-  setStoriedHornsIsShown (current => true);
-  setStoriedHornsActive (current => true);
-  setStoriedHornsAtk (value => 16);
-  setStoriedHornsDef (value => 0);
-  setStoriedHornsLuck (value => 0);
-  };
 
 //companion slots//
 
@@ -17346,9 +17316,1472 @@ const [NoHead, setNoHead] = useState(0)
 const [NoHeadIsShown, setNoHeadIsShown] = useState(false)
 const [NoHeadActive, setNoHeadActive] = useState(false)
 
-const totalHeadTopAtk = Math.max (0)
-const totalHeadTopDef = Math.max (0)
-const totalHeadTopLuck = Math.max (0)
+const [AakultaHelmetIsShown, setAakultaHelmetIsShown] = useState(false)
+const [AakultaHelmetActive, setAakultaHelmetActive] = useState(false)
+const [AakultaHelmetAtk, setAakultaHelmetAtk] = useState(0)
+const [AakultaHelmetDef, setAakultaHelmetDef] = useState(0)
+const [AakultaHelmetLuck, setAakultaHelmetLuck] = useState(0)
+
+
+const handleAakultaHelmetClick = event => {
+
+   setAakultaHelmetIsShown (current => !AakultaHelmetIsShown);
+   setAakultaHelmetActive (current => !AakultaHelmetActive);
+   setAakultaHelmetAtk (value => 15);
+   setAakultaHelmetDef (value => 0);
+   setAakultaHelmetLuck (value => 5);
+
+   setCrestedHelmetIsShown (current => false);
+   setCrestedHelmetActive (current => false);
+   setCrestedHelmetAtk (value => 0);
+   setCrestedHelmetDef (value => 0);
+   setCrestedHelmetLuck (value => 0);
+   setDarkForestHelmetIsShown (current => false);
+   setDarkForestHelmetActive (current => false);
+   setDarkForestHelmetAtk (value => 0);
+   setDarkForestHelmetDef (value => 0);
+   setDarkForestHelmetLuck (value => 0);
+   setDragonHornedHelmetIsShown (current => false);
+   setDragonHornedHelmetActive (current => false);
+   setDragonHornedHelmetAtk (value => 0);
+   setDragonHornedHelmetDef (value => 0);
+   setDragonHornedHelmetLuck (value => 0);
+   setFabricHelmetIsShown (current => false);
+   setFabricHelmetActive (current => false);
+   setFabricHelmetAtk (value => 0);
+   setFabricHelmetDef (value => 0);
+   setFabricHelmetLuck (value => 0);
+   setHeadpieceOfOldGoldIsShown (current => false);
+   setHeadpieceOfOldGoldActive (current => false);
+   setHeadpieceOfOldGoldAtk (value => 0);
+   setHeadpieceOfOldGoldDef (value => 0);
+   setHeadpieceOfOldGoldLuck (value => 0);
+   setHornsOfWisdomIsShown (current => false);
+   setHornsOfWisdomActive (current => false);
+   setHornsOfWisdomAtk (value => 0);
+   setHornsOfWisdomDef (value => 0);
+   setHornsOfWisdomLuck (value => 0);
+   setKingMaiCrownIsShown (current => false);
+   setKingMaiCrownActive (current => false);
+   setKingMaiCrownAtk (value => 0);
+   setKingMaiCrownDef (value => 0);
+   setKingMaiCrownLuck (value => 0);
+   setLeafHelmetIsShown (current => false);
+   setLeafHelmetActive (current => false);
+   setLeafHelmetAtk (value => 0);
+   setLeafHelmetDef (value => 0);
+   setLeafHelmetLuck (value => 0);
+   setMinerHatIsShown (current => false);
+   setMinerHatActive (current => false);
+   setMinerHatAtk (value => 0);
+   setMinerHatDef (value => 0);
+   setMinerHatLuck (value => 0);
+   setNivaliHatIsShown (current => false);
+   setNivaliHatActive (current => false);
+   setNivaliHatAtk (value => 0);
+   setNivaliHatDef (value => 0);
+   setNivaliHatLuck (value => 0);
+   setNivaliMaskIsShown (current => false);
+   setNivaliMaskActive (current => false);
+   setNivaliMaskAtk (value => 0);
+   setNivaliMaskDef (value => 0);
+   setNivaliMaskLuck (value => 0);
+   setProtectedLeafHelmetIsShown (current => false);
+   setProtectedLeafHelmetActive (current => false);
+   setProtectedLeafHelmetAtk (value => 0);
+   setProtectedLeafHelmetDef (value => 0);
+   setProtectedLeafHelmetLuck (value => 0);
+   setReinforcedSteelHelmetIsShown (current => false);
+   setReinforcedSteelHelmetActive (current => false);
+   setReinforcedSteelHelmetAtk (value => 0);
+   setReinforcedSteelHelmetDef (value => 0);
+   setReinforcedSteelHelmetLuck (value => 0);
+   setStoriedHornsIsShown (current => false);
+   setStoriedHornsActive (current => false);
+   setStoriedHornsAtk (value => 0);
+   setStoriedHornsDef (value => 0);
+   setStoriedHornsLuck (value => 0);
+
+}
+
+const handleAakultaHelmetNoClick = event => {
+   setAakultaHelmetIsShown (current => false);
+   setAakultaHelmetActive (current => false);
+   setAakultaHelmetAtk (value => 0);
+   setAakultaHelmetDef (value => 0);
+   setAakultaHelmetLuck (value => 0);
+}
+
+const [CrestedHelmetIsShown, setCrestedHelmetIsShown] = useState(false)
+const [CrestedHelmetActive, setCrestedHelmetActive] = useState(false)
+const [CrestedHelmetAtk, setCrestedHelmetAtk] = useState(0)
+const [CrestedHelmetDef, setCrestedHelmetDef] = useState(0)
+const [CrestedHelmetLuck, setCrestedHelmetLuck] = useState(0)
+
+
+const handleCrestedHelmetClick = event => {
+
+
+
+   setCrestedHelmetIsShown (current => !CrestedHelmetIsShown);
+   setCrestedHelmetActive (current => !CrestedHelmetActive);
+   setCrestedHelmetAtk (value => 10);
+   setCrestedHelmetDef (value => 5);
+   setCrestedHelmetLuck (value => 5);
+ 
+   setAakultaHelmetIsShown (current => false);
+   setAakultaHelmetActive (current => false);
+   setAakultaHelmetAtk (value => 0);
+   setAakultaHelmetDef (value => 0);
+   setAakultaHelmetLuck (value => 0);
+   setDarkForestHelmetIsShown (current => false);
+   setDarkForestHelmetActive (current => false);
+   setDarkForestHelmetAtk (value => 0);
+   setDarkForestHelmetDef (value => 0);
+   setDarkForestHelmetLuck (value => 0);
+   setDragonHornedHelmetIsShown (current => false);
+   setDragonHornedHelmetActive (current => false);
+   setDragonHornedHelmetAtk (value => 0);
+   setDragonHornedHelmetDef (value => 0);
+   setDragonHornedHelmetLuck (value => 0);
+   setFabricHelmetIsShown (current => false);
+   setFabricHelmetActive (current => false);
+   setFabricHelmetAtk (value => 0);
+   setFabricHelmetDef (value => 0);
+   setFabricHelmetLuck (value => 0);
+   setHeadpieceOfOldGoldIsShown (current => false);
+   setHeadpieceOfOldGoldActive (current => false);
+   setHeadpieceOfOldGoldAtk (value => 0);
+   setHeadpieceOfOldGoldDef (value => 0);
+   setHeadpieceOfOldGoldLuck (value => 0);
+   setHornsOfWisdomIsShown (current => false);
+   setHornsOfWisdomActive (current => false);
+   setHornsOfWisdomAtk (value => 0);
+   setHornsOfWisdomDef (value => 0);
+   setHornsOfWisdomLuck (value => 0);
+   setKingMaiCrownIsShown (current => false);
+   setKingMaiCrownActive (current => false);
+   setKingMaiCrownAtk (value => 0);
+   setKingMaiCrownDef (value => 0);
+   setKingMaiCrownLuck (value => 0);
+   setLeafHelmetIsShown (current => false);
+   setLeafHelmetActive (current => false);
+   setLeafHelmetAtk (value => 0);
+   setLeafHelmetDef (value => 0);
+   setLeafHelmetLuck (value => 0);
+   setMinerHatIsShown (current => false);
+   setMinerHatActive (current => false);
+   setMinerHatAtk (value => 0);
+   setMinerHatDef (value => 0);
+   setMinerHatLuck (value => 0);
+   setNivaliHatIsShown (current => false);
+   setNivaliHatActive (current => false);
+   setNivaliHatAtk (value => 0);
+   setNivaliHatDef (value => 0);
+   setNivaliHatLuck (value => 0);
+   setNivaliMaskIsShown (current => false);
+   setNivaliMaskActive (current => false);
+   setNivaliMaskAtk (value => 0);
+   setNivaliMaskDef (value => 0);
+   setNivaliMaskLuck (value => 0);
+   setProtectedLeafHelmetIsShown (current => false);
+   setProtectedLeafHelmetActive (current => false);
+   setProtectedLeafHelmetAtk (value => 0);
+   setProtectedLeafHelmetDef (value => 0);
+   setProtectedLeafHelmetLuck (value => 0);
+   setReinforcedSteelHelmetIsShown (current => false);
+   setReinforcedSteelHelmetActive (current => false);
+   setReinforcedSteelHelmetAtk (value => 0);
+   setReinforcedSteelHelmetDef (value => 0);
+   setReinforcedSteelHelmetLuck (value => 0);
+   setStoriedHornsIsShown (current => false);
+   setStoriedHornsActive (current => false);
+   setStoriedHornsAtk (value => 0);
+   setStoriedHornsDef (value => 0);
+   setStoriedHornsLuck (value => 0);
+
+}
+
+const handleCrestedHelmetNoClick = event => {
+   setCrestedHelmetIsShown (current => false);
+   setCrestedHelmetActive (current => false);
+   setCrestedHelmetAtk (value => 0);
+   setCrestedHelmetDef (value => 0);
+   setCrestedHelmetLuck (value => 0);
+}
+
+const [DarkForestHelmetIsShown, setDarkForestHelmetIsShown] = useState(false)
+const [DarkForestHelmetActive, setDarkForestHelmetActive] = useState(false)
+const [DarkForestHelmetAtk, setDarkForestHelmetAtk] = useState(0)
+const [DarkForestHelmetDef, setDarkForestHelmetDef] = useState(0)
+const [DarkForestHelmetLuck, setDarkForestHelmetLuck] = useState(0)
+
+
+const handleDarkForestHelmetClick = event => {
+
+
+
+   setDarkForestHelmetIsShown (current => !DarkForestHelmetIsShown);
+   setDarkForestHelmetActive (current => !DarkForestHelmetActive);
+   setDarkForestHelmetAtk (value => 2);
+   setDarkForestHelmetDef (value => 12);
+   setDarkForestHelmetLuck (value => 4);
+   
+   setAakultaHelmetIsShown (current => false);
+   setAakultaHelmetActive (current => false);
+   setAakultaHelmetAtk (value => 0);
+   setAakultaHelmetDef (value => 0);
+   setAakultaHelmetLuck (value => 0);
+   setCrestedHelmetIsShown (current => false);
+   setCrestedHelmetActive (current => false);
+   setCrestedHelmetAtk (value => 0);
+   setCrestedHelmetDef (value => 0);
+   setCrestedHelmetLuck (value => 0);
+   setDragonHornedHelmetIsShown (current => false);
+   setDragonHornedHelmetActive (current => false);
+   setDragonHornedHelmetAtk (value => 0);
+   setDragonHornedHelmetDef (value => 0);
+   setDragonHornedHelmetLuck (value => 0);
+   setFabricHelmetIsShown (current => false);
+   setFabricHelmetActive (current => false);
+   setFabricHelmetAtk (value => 0);
+   setFabricHelmetDef (value => 0);
+   setFabricHelmetLuck (value => 0);
+   setHeadpieceOfOldGoldIsShown (current => false);
+   setHeadpieceOfOldGoldActive (current => false);
+   setHeadpieceOfOldGoldAtk (value => 0);
+   setHeadpieceOfOldGoldDef (value => 0);
+   setHeadpieceOfOldGoldLuck (value => 0);
+   setHornsOfWisdomIsShown (current => false);
+   setHornsOfWisdomActive (current => false);
+   setHornsOfWisdomAtk (value => 0);
+   setHornsOfWisdomDef (value => 0);
+   setHornsOfWisdomLuck (value => 0);
+   setKingMaiCrownIsShown (current => false);
+   setKingMaiCrownActive (current => false);
+   setKingMaiCrownAtk (value => 0);
+   setKingMaiCrownDef (value => 0);
+   setKingMaiCrownLuck (value => 0);
+   setLeafHelmetIsShown (current => false);
+   setLeafHelmetActive (current => false);
+   setLeafHelmetAtk (value => 0);
+   setLeafHelmetDef (value => 0);
+   setLeafHelmetLuck (value => 0);
+   setMinerHatIsShown (current => false);
+   setMinerHatActive (current => false);
+   setMinerHatAtk (value => 0);
+   setMinerHatDef (value => 0);
+   setMinerHatLuck (value => 0);
+   setNivaliHatIsShown (current => false);
+   setNivaliHatActive (current => false);
+   setNivaliHatAtk (value => 0);
+   setNivaliHatDef (value => 0);
+   setNivaliHatLuck (value => 0);
+   setNivaliMaskIsShown (current => false);
+   setNivaliMaskActive (current => false);
+   setNivaliMaskAtk (value => 0);
+   setNivaliMaskDef (value => 0);
+   setNivaliMaskLuck (value => 0);
+   setProtectedLeafHelmetIsShown (current => false);
+   setProtectedLeafHelmetActive (current => false);
+   setProtectedLeafHelmetAtk (value => 0);
+   setProtectedLeafHelmetDef (value => 0);
+   setProtectedLeafHelmetLuck (value => 0);
+   setReinforcedSteelHelmetIsShown (current => false);
+   setReinforcedSteelHelmetActive (current => false);
+   setReinforcedSteelHelmetAtk (value => 0);
+   setReinforcedSteelHelmetDef (value => 0);
+   setReinforcedSteelHelmetLuck (value => 0);
+   setStoriedHornsIsShown (current => false);
+   setStoriedHornsActive (current => false);
+   setStoriedHornsAtk (value => 0);
+   setStoriedHornsDef (value => 0);
+   setStoriedHornsLuck (value => 0);
+
+}
+
+const handleDarkForestHelmetNoClick = event => {
+   setDarkForestHelmetIsShown (current => false);
+   setDarkForestHelmetActive (current => false);
+   setDarkForestHelmetAtk (value => 0);
+   setDarkForestHelmetDef (value => 0);
+   setDarkForestHelmetLuck (value => 0);
+}
+
+const [DragonHornedHelmetIsShown, setDragonHornedHelmetIsShown] = useState(false)
+const [DragonHornedHelmetActive, setDragonHornedHelmetActive] = useState(false)
+const [DragonHornedHelmetAtk, setDragonHornedHelmetAtk] = useState(0)
+const [DragonHornedHelmetDef, setDragonHornedHelmetDef] = useState(0)
+const [DragonHornedHelmetLuck, setDragonHornedHelmetLuck] = useState(0)
+
+
+const handleDragonHornedHelmetClick = event => {
+
+
+
+   setDragonHornedHelmetIsShown (current => !DragonHornedHelmetIsShown);
+   setDragonHornedHelmetActive (current => !DragonHornedHelmetActive);
+   setDragonHornedHelmetAtk (value => 2);
+   setDragonHornedHelmetDef (value => 5);
+   setDragonHornedHelmetLuck (value => 5);
+   
+   setAakultaHelmetIsShown (current => false);
+   setAakultaHelmetActive (current => false);
+   setAakultaHelmetAtk (value => 0);
+   setAakultaHelmetDef (value => 0);
+   setAakultaHelmetLuck (value => 0);
+   setCrestedHelmetIsShown (current => false);
+   setCrestedHelmetActive (current => false);
+   setCrestedHelmetAtk (value => 0);
+   setCrestedHelmetDef (value => 0);
+   setCrestedHelmetLuck (value => 0);
+   setDarkForestHelmetIsShown (current => false);
+   setDarkForestHelmetActive (current => false);
+   setDarkForestHelmetAtk (value => 0);
+   setDarkForestHelmetDef (value => 0);
+   setDarkForestHelmetLuck (value => 0);
+   setFabricHelmetIsShown (current => false);
+   setFabricHelmetActive (current => false);
+   setFabricHelmetAtk (value => 0);
+   setFabricHelmetDef (value => 0);
+   setFabricHelmetLuck (value => 0);
+   setHeadpieceOfOldGoldIsShown (current => false);
+   setHeadpieceOfOldGoldActive (current => false);
+   setHeadpieceOfOldGoldAtk (value => 0);
+   setHeadpieceOfOldGoldDef (value => 0);
+   setHeadpieceOfOldGoldLuck (value => 0);
+   setHornsOfWisdomIsShown (current => false);
+   setHornsOfWisdomActive (current => false);
+   setHornsOfWisdomAtk (value => 0);
+   setHornsOfWisdomDef (value => 0);
+   setHornsOfWisdomLuck (value => 0);
+   setKingMaiCrownIsShown (current => false);
+   setKingMaiCrownActive (current => false);
+   setKingMaiCrownAtk (value => 0);
+   setKingMaiCrownDef (value => 0);
+   setKingMaiCrownLuck (value => 0);
+   setLeafHelmetIsShown (current => false);
+   setLeafHelmetActive (current => false);
+   setLeafHelmetAtk (value => 0);
+   setLeafHelmetDef (value => 0);
+   setLeafHelmetLuck (value => 0);
+   setMinerHatIsShown (current => false);
+   setMinerHatActive (current => false);
+   setMinerHatAtk (value => 0);
+   setMinerHatDef (value => 0);
+   setMinerHatLuck (value => 0);
+   setNivaliHatIsShown (current => false);
+   setNivaliHatActive (current => false);
+   setNivaliHatAtk (value => 0);
+   setNivaliHatDef (value => 0);
+   setNivaliHatLuck (value => 0);
+   setNivaliMaskIsShown (current => false);
+   setNivaliMaskActive (current => false);
+   setNivaliMaskAtk (value => 0);
+   setNivaliMaskDef (value => 0);
+   setNivaliMaskLuck (value => 0);
+   setProtectedLeafHelmetIsShown (current => false);
+   setProtectedLeafHelmetActive (current => false);
+   setProtectedLeafHelmetAtk (value => 0);
+   setProtectedLeafHelmetDef (value => 0);
+   setProtectedLeafHelmetLuck (value => 0);
+   setReinforcedSteelHelmetIsShown (current => false);
+   setReinforcedSteelHelmetActive (current => false);
+   setReinforcedSteelHelmetAtk (value => 0);
+   setReinforcedSteelHelmetDef (value => 0);
+   setReinforcedSteelHelmetLuck (value => 0);
+   setStoriedHornsIsShown (current => false);
+   setStoriedHornsActive (current => false);
+   setStoriedHornsAtk (value => 0);
+   setStoriedHornsDef (value => 0);
+   setStoriedHornsLuck (value => 0);
+
+}
+
+const handleDragonHornedHelmetNoClick = event => {
+   setDragonHornedHelmetIsShown (current => false);
+   setDragonHornedHelmetActive (current => false);
+   setDragonHornedHelmetAtk (value => 0);
+   setDragonHornedHelmetDef (value => 0);
+   setDragonHornedHelmetLuck (value => 0);
+}
+
+const [FabricHelmetIsShown, setFabricHelmetIsShown] = useState(false)
+const [FabricHelmetActive, setFabricHelmetActive] = useState(false)
+const [FabricHelmetAtk, setFabricHelmetAtk] = useState(0)
+const [FabricHelmetDef, setFabricHelmetDef] = useState(0)
+const [FabricHelmetLuck, setFabricHelmetLuck] = useState(0)
+
+
+const handleFabricHelmetClick = event => {
+
+
+   setFabricHelmetIsShown (current => !FabricHelmetIsShown);
+   setFabricHelmetActive (current => !FabricHelmetActive);
+   setFabricHelmetAtk (value => 0);
+   setFabricHelmetDef (value => 8);
+   setFabricHelmetLuck (value => 0);
+   
+   setAakultaHelmetIsShown (current => false);
+   setAakultaHelmetActive (current => false);
+   setAakultaHelmetAtk (value => 0);
+   setAakultaHelmetDef (value => 0);
+   setAakultaHelmetLuck (value => 0);
+   setCrestedHelmetIsShown (current => false);
+   setCrestedHelmetActive (current => false);
+   setCrestedHelmetAtk (value => 0);
+   setCrestedHelmetDef (value => 0);
+   setCrestedHelmetLuck (value => 0);
+   setDarkForestHelmetIsShown (current => false);
+   setDarkForestHelmetActive (current => false);
+   setDarkForestHelmetAtk (value => 0);
+   setDarkForestHelmetDef (value => 0);
+   setDarkForestHelmetLuck (value => 0);
+   setDragonHornedHelmetIsShown (current => false);
+   setDragonHornedHelmetActive (current => false);
+   setDragonHornedHelmetAtk (value => 0);
+   setDragonHornedHelmetDef (value => 0);
+   setDragonHornedHelmetLuck (value => 0);
+   setHeadpieceOfOldGoldIsShown (current => false);
+   setHeadpieceOfOldGoldActive (current => false);
+   setHeadpieceOfOldGoldAtk (value => 0);
+   setHeadpieceOfOldGoldDef (value => 0);
+   setHeadpieceOfOldGoldLuck (value => 0);
+   setHornsOfWisdomIsShown (current => false);
+   setHornsOfWisdomActive (current => false);
+   setHornsOfWisdomAtk (value => 0);
+   setHornsOfWisdomDef (value => 0);
+   setHornsOfWisdomLuck (value => 0);
+   setKingMaiCrownIsShown (current => false);
+   setKingMaiCrownActive (current => false);
+   setKingMaiCrownAtk (value => 0);
+   setKingMaiCrownDef (value => 0);
+   setKingMaiCrownLuck (value => 0);
+   setLeafHelmetIsShown (current => false);
+   setLeafHelmetActive (current => false);
+   setLeafHelmetAtk (value => 0);
+   setLeafHelmetDef (value => 0);
+   setLeafHelmetLuck (value => 0);
+   setMinerHatIsShown (current => false);
+   setMinerHatActive (current => false);
+   setMinerHatAtk (value => 0);
+   setMinerHatDef (value => 0);
+   setMinerHatLuck (value => 0);
+   setNivaliHatIsShown (current => false);
+   setNivaliHatActive (current => false);
+   setNivaliHatAtk (value => 0);
+   setNivaliHatDef (value => 0);
+   setNivaliHatLuck (value => 0);
+   setNivaliMaskIsShown (current => false);
+   setNivaliMaskActive (current => false);
+   setNivaliMaskAtk (value => 0);
+   setNivaliMaskDef (value => 0);
+   setNivaliMaskLuck (value => 0);
+   setProtectedLeafHelmetIsShown (current => false);
+   setProtectedLeafHelmetActive (current => false);
+   setProtectedLeafHelmetAtk (value => 0);
+   setProtectedLeafHelmetDef (value => 0);
+   setProtectedLeafHelmetLuck (value => 0);
+   setReinforcedSteelHelmetIsShown (current => false);
+   setReinforcedSteelHelmetActive (current => false);
+   setReinforcedSteelHelmetAtk (value => 0);
+   setReinforcedSteelHelmetDef (value => 0);
+   setReinforcedSteelHelmetLuck (value => 0);
+   setStoriedHornsIsShown (current => false);
+   setStoriedHornsActive (current => false);
+   setStoriedHornsAtk (value => 0);
+   setStoriedHornsDef (value => 0);
+   setStoriedHornsLuck (value => 0);
+
+}
+
+const handleFabricHelmetNoClick = event => {
+   setFabricHelmetIsShown (current => false);
+   setFabricHelmetActive (current => false);
+   setFabricHelmetAtk (value => 0);
+   setFabricHelmetDef (value => 0);
+   setFabricHelmetLuck (value => 0);
+}
+
+const [HeadpieceOfOldGoldIsShown, setHeadpieceOfOldGoldIsShown] = useState(false)
+const [HeadpieceOfOldGoldActive, setHeadpieceOfOldGoldActive] = useState(false)
+const [HeadpieceOfOldGoldAtk, setHeadpieceOfOldGoldAtk] = useState(0)
+const [HeadpieceOfOldGoldDef, setHeadpieceOfOldGoldDef] = useState(0)
+const [HeadpieceOfOldGoldLuck, setHeadpieceOfOldGoldLuck] = useState(0)
+
+
+const handleHeadpieceOfOldGoldClick = event => {
+
+
+   setHeadpieceOfOldGoldIsShown (current => !HeadpieceOfOldGoldIsShown);
+   setHeadpieceOfOldGoldActive (current => !HeadpieceOfOldGoldActive);
+   setHeadpieceOfOldGoldAtk (value => 14);
+   setHeadpieceOfOldGoldDef (value => 0);
+   setHeadpieceOfOldGoldLuck (value => 2);
+   
+   setAakultaHelmetIsShown (current => false);
+   setAakultaHelmetActive (current => false);
+   setAakultaHelmetAtk (value => 0);
+   setAakultaHelmetDef (value => 0);
+   setAakultaHelmetLuck (value => 0);
+   setCrestedHelmetIsShown (current => false);
+   setCrestedHelmetActive (current => false);
+   setCrestedHelmetAtk (value => 0);
+   setCrestedHelmetDef (value => 0);
+   setCrestedHelmetLuck (value => 0);
+   setDarkForestHelmetIsShown (current => false);
+   setDarkForestHelmetActive (current => false);
+   setDarkForestHelmetAtk (value => 0);
+   setDarkForestHelmetDef (value => 0);
+   setDarkForestHelmetLuck (value => 0);
+   setDragonHornedHelmetIsShown (current => false);
+   setDragonHornedHelmetActive (current => false);
+   setDragonHornedHelmetAtk (value => 0);
+   setDragonHornedHelmetDef (value => 0);
+   setDragonHornedHelmetLuck (value => 0);
+   setFabricHelmetIsShown (current => false);
+   setFabricHelmetActive (current => false);
+   setFabricHelmetAtk (value => 0);
+   setFabricHelmetDef (value => 0);
+   setFabricHelmetLuck (value => 0);
+   setHornsOfWisdomIsShown (current => false);
+   setHornsOfWisdomActive (current => false);
+   setHornsOfWisdomAtk (value => 0);
+   setHornsOfWisdomDef (value => 0);
+   setHornsOfWisdomLuck (value => 0);
+   setKingMaiCrownIsShown (current => false);
+   setKingMaiCrownActive (current => false);
+   setKingMaiCrownAtk (value => 0);
+   setKingMaiCrownDef (value => 0);
+   setKingMaiCrownLuck (value => 0);
+   setLeafHelmetIsShown (current => false);
+   setLeafHelmetActive (current => false);
+   setLeafHelmetAtk (value => 0);
+   setLeafHelmetDef (value => 0);
+   setLeafHelmetLuck (value => 0);
+   setMinerHatIsShown (current => false);
+   setMinerHatActive (current => false);
+   setMinerHatAtk (value => 0);
+   setMinerHatDef (value => 0);
+   setMinerHatLuck (value => 0);
+   setNivaliHatIsShown (current => false);
+   setNivaliHatActive (current => false);
+   setNivaliHatAtk (value => 0);
+   setNivaliHatDef (value => 0);
+   setNivaliHatLuck (value => 0);
+   setNivaliMaskIsShown (current => false);
+   setNivaliMaskActive (current => false);
+   setNivaliMaskAtk (value => 0);
+   setNivaliMaskDef (value => 0);
+   setNivaliMaskLuck (value => 0);
+   setProtectedLeafHelmetIsShown (current => false);
+   setProtectedLeafHelmetActive (current => false);
+   setProtectedLeafHelmetAtk (value => 0);
+   setProtectedLeafHelmetDef (value => 0);
+   setProtectedLeafHelmetLuck (value => 0);
+   setReinforcedSteelHelmetIsShown (current => false);
+   setReinforcedSteelHelmetActive (current => false);
+   setReinforcedSteelHelmetAtk (value => 0);
+   setReinforcedSteelHelmetDef (value => 0);
+   setReinforcedSteelHelmetLuck (value => 0);
+   setStoriedHornsIsShown (current => false);
+   setStoriedHornsActive (current => false);
+   setStoriedHornsAtk (value => 0);
+   setStoriedHornsDef (value => 0);
+   setStoriedHornsLuck (value => 0);
+
+}
+
+const handleHeadpieceOfOldGoldNoClick = event => {
+   setHeadpieceOfOldGoldIsShown (current => false);
+   setHeadpieceOfOldGoldActive (current => false);
+   setHeadpieceOfOldGoldAtk (value => 0);
+   setHeadpieceOfOldGoldDef (value => 0);
+   setHeadpieceOfOldGoldLuck (value => 0);
+}
+
+const [HornsOfWisdomIsShown, setHornsOfWisdomIsShown] = useState(false)
+const [HornsOfWisdomActive, setHornsOfWisdomActive] = useState(false)
+const [HornsOfWisdomAtk, setHornsOfWisdomAtk] = useState(0)
+const [HornsOfWisdomDef, setHornsOfWisdomDef] = useState(0)
+const [HornsOfWisdomLuck, setHornsOfWisdomLuck] = useState(0)
+
+
+const handleHornsOfWisdomClick = event => {
+
+
+   setHornsOfWisdomIsShown (current => !HornsOfWisdomIsShown);
+   setHornsOfWisdomActive (current => !HornsOfWisdomActive);
+   setHornsOfWisdomAtk (value => 2);
+   setHornsOfWisdomDef (value => 0);
+   setHornsOfWisdomLuck (value => 14);
+   
+   setAakultaHelmetIsShown (current => false);
+   setAakultaHelmetActive (current => false);
+   setAakultaHelmetAtk (value => 0);
+   setAakultaHelmetDef (value => 0);
+   setAakultaHelmetLuck (value => 0);
+   setCrestedHelmetIsShown (current => false);
+   setCrestedHelmetActive (current => false);
+   setCrestedHelmetAtk (value => 0);
+   setCrestedHelmetDef (value => 0);
+   setCrestedHelmetLuck (value => 0);
+   setDarkForestHelmetIsShown (current => false);
+   setDarkForestHelmetActive (current => false);
+   setDarkForestHelmetAtk (value => 0);
+   setDarkForestHelmetDef (value => 0);
+   setDarkForestHelmetLuck (value => 0);
+   setDragonHornedHelmetIsShown (current => false);
+   setDragonHornedHelmetActive (current => false);
+   setDragonHornedHelmetAtk (value => 0);
+   setDragonHornedHelmetDef (value => 0);
+   setDragonHornedHelmetLuck (value => 0);
+   setFabricHelmetIsShown (current => false);
+   setFabricHelmetActive (current => false);
+   setFabricHelmetAtk (value => 0);
+   setFabricHelmetDef (value => 0);
+   setFabricHelmetLuck (value => 0);
+   setHeadpieceOfOldGoldIsShown (current => false);
+   setHeadpieceOfOldGoldActive (current => false);
+   setHeadpieceOfOldGoldAtk (value => 0);
+   setHeadpieceOfOldGoldDef (value => 0);
+   setHeadpieceOfOldGoldLuck (value => 0);
+   setKingMaiCrownIsShown (current => false);
+   setKingMaiCrownActive (current => false);
+   setKingMaiCrownAtk (value => 0);
+   setKingMaiCrownDef (value => 0);
+   setKingMaiCrownLuck (value => 0);
+   setLeafHelmetIsShown (current => false);
+   setLeafHelmetActive (current => false);
+   setLeafHelmetAtk (value => 0);
+   setLeafHelmetDef (value => 0);
+   setLeafHelmetLuck (value => 0);
+   setMinerHatIsShown (current => false);
+   setMinerHatActive (current => false);
+   setMinerHatAtk (value => 0);
+   setMinerHatDef (value => 0);
+   setMinerHatLuck (value => 0);
+   setNivaliHatIsShown (current => false);
+   setNivaliHatActive (current => false);
+   setNivaliHatAtk (value => 0);
+   setNivaliHatDef (value => 0);
+   setNivaliHatLuck (value => 0);
+   setNivaliMaskIsShown (current => false);
+   setNivaliMaskActive (current => false);
+   setNivaliMaskAtk (value => 0);
+   setNivaliMaskDef (value => 0);
+   setNivaliMaskLuck (value => 0);
+   setProtectedLeafHelmetIsShown (current => false);
+   setProtectedLeafHelmetActive (current => false);
+   setProtectedLeafHelmetAtk (value => 0);
+   setProtectedLeafHelmetDef (value => 0);
+   setProtectedLeafHelmetLuck (value => 0);
+   setReinforcedSteelHelmetIsShown (current => false);
+   setReinforcedSteelHelmetActive (current => false);
+   setReinforcedSteelHelmetAtk (value => 0);
+   setReinforcedSteelHelmetDef (value => 0);
+   setReinforcedSteelHelmetLuck (value => 0);
+   setStoriedHornsIsShown (current => false);
+   setStoriedHornsActive (current => false);
+   setStoriedHornsAtk (value => 0);
+   setStoriedHornsDef (value => 0);
+   setStoriedHornsLuck (value => 0);
+
+}
+
+const handleHornsOfWisdomNoClick = event => {
+   setHornsOfWisdomIsShown (current => false);
+   setHornsOfWisdomActive (current => false);
+   setHornsOfWisdomAtk (value => 0);
+   setHornsOfWisdomDef (value => 0);
+   setHornsOfWisdomLuck (value => 0);
+}
+
+const [KingMaiCrownIsShown, setKingMaiCrownIsShown] = useState(false)
+const [KingMaiCrownActive, setKingMaiCrownActive] = useState(false)
+const [KingMaiCrownAtk, setKingMaiCrownAtk] = useState(0)
+const [KingMaiCrownDef, setKingMaiCrownDef] = useState(0)
+const [KingMaiCrownLuck, setKingMaiCrownLuck] = useState(0)
+
+
+const handleKingMaiCrownClick = event => {
+
+
+   setKingMaiCrownIsShown (current => !KingMaiCrownIsShown);
+   setKingMaiCrownActive (current => !KingMaiCrownActive);
+   setKingMaiCrownAtk (value => 10);
+   setKingMaiCrownDef (value => 10);
+   setKingMaiCrownLuck (value => 10);
+   
+   setAakultaHelmetIsShown (current => false);
+   setAakultaHelmetActive (current => false);
+   setAakultaHelmetAtk (value => 0);
+   setAakultaHelmetDef (value => 0);
+   setAakultaHelmetLuck (value => 0);
+   setCrestedHelmetIsShown (current => false);
+   setCrestedHelmetActive (current => false);
+   setCrestedHelmetAtk (value => 0);
+   setCrestedHelmetDef (value => 0);
+   setCrestedHelmetLuck (value => 0);
+   setDarkForestHelmetIsShown (current => false);
+   setDarkForestHelmetActive (current => false);
+   setDarkForestHelmetAtk (value => 0);
+   setDarkForestHelmetDef (value => 0);
+   setDarkForestHelmetLuck (value => 0);
+   setDragonHornedHelmetIsShown (current => false);
+   setDragonHornedHelmetActive (current => false);
+   setDragonHornedHelmetAtk (value => 0);
+   setDragonHornedHelmetDef (value => 0);
+   setDragonHornedHelmetLuck (value => 0);
+   setFabricHelmetIsShown (current => false);
+   setFabricHelmetActive (current => false);
+   setFabricHelmetAtk (value => 0);
+   setFabricHelmetDef (value => 0);
+   setFabricHelmetLuck (value => 0);
+   setHeadpieceOfOldGoldIsShown (current => false);
+   setHeadpieceOfOldGoldActive (current => false);
+   setHeadpieceOfOldGoldAtk (value => 0);
+   setHeadpieceOfOldGoldDef (value => 0);
+   setHeadpieceOfOldGoldLuck (value => 0);
+   setHornsOfWisdomIsShown (current => false);
+   setHornsOfWisdomActive (current => false);
+   setHornsOfWisdomAtk (value => 0);
+   setHornsOfWisdomDef (value => 0);
+   setHornsOfWisdomLuck (value => 0);
+   setLeafHelmetIsShown (current => false);
+   setLeafHelmetActive (current => false);
+   setLeafHelmetAtk (value => 0);
+   setLeafHelmetDef (value => 0);
+   setLeafHelmetLuck (value => 0);
+   setMinerHatIsShown (current => false);
+   setMinerHatActive (current => false);
+   setMinerHatAtk (value => 0);
+   setMinerHatDef (value => 0);
+   setMinerHatLuck (value => 0);
+   setNivaliHatIsShown (current => false);
+   setNivaliHatActive (current => false);
+   setNivaliHatAtk (value => 0);
+   setNivaliHatDef (value => 0);
+   setNivaliHatLuck (value => 0);
+   setNivaliMaskIsShown (current => false);
+   setNivaliMaskActive (current => false);
+   setNivaliMaskAtk (value => 0);
+   setNivaliMaskDef (value => 0);
+   setNivaliMaskLuck (value => 0);
+   setProtectedLeafHelmetIsShown (current => false);
+   setProtectedLeafHelmetActive (current => false);
+   setProtectedLeafHelmetAtk (value => 0);
+   setProtectedLeafHelmetDef (value => 0);
+   setProtectedLeafHelmetLuck (value => 0);
+   setReinforcedSteelHelmetIsShown (current => false);
+   setReinforcedSteelHelmetActive (current => false);
+   setReinforcedSteelHelmetAtk (value => 0);
+   setReinforcedSteelHelmetDef (value => 0);
+   setReinforcedSteelHelmetLuck (value => 0);
+   setStoriedHornsIsShown (current => false);
+   setStoriedHornsActive (current => false);
+   setStoriedHornsAtk (value => 0);
+   setStoriedHornsDef (value => 0);
+   setStoriedHornsLuck (value => 0);
+
+}
+
+const handleKingMaiCrownNoClick = event => {
+   setKingMaiCrownIsShown (current => false);
+   setKingMaiCrownActive (current => false);
+   setKingMaiCrownAtk (value => 0);
+   setKingMaiCrownDef (value => 0);
+   setKingMaiCrownLuck (value => 0);
+}
+
+const [LeafHelmetIsShown, setLeafHelmetIsShown] = useState(false)
+const [LeafHelmetActive, setLeafHelmetActive] = useState(false)
+const [LeafHelmetAtk, setLeafHelmetAtk] = useState(0)
+const [LeafHelmetDef, setLeafHelmetDef] = useState(0)
+const [LeafHelmetLuck, setLeafHelmetLuck] = useState(0)
+
+
+const handleLeafHelmetClick = event => {
+
+
+   setLeafHelmetIsShown (current => !LeafHelmetIsShown);
+   setLeafHelmetActive (current => !LeafHelmetActive);
+   setLeafHelmetAtk (value => 0);
+   setLeafHelmetDef (value => 3);
+   setLeafHelmetLuck (value => 2);
+   
+   setAakultaHelmetIsShown (current => false);
+   setAakultaHelmetActive (current => false);
+   setAakultaHelmetAtk (value => 0);
+   setAakultaHelmetDef (value => 0);
+   setAakultaHelmetLuck (value => 0);
+   setCrestedHelmetIsShown (current => false);
+   setCrestedHelmetActive (current => false);
+   setCrestedHelmetAtk (value => 0);
+   setCrestedHelmetDef (value => 0);
+   setCrestedHelmetLuck (value => 0);
+   setDarkForestHelmetIsShown (current => false);
+   setDarkForestHelmetActive (current => false);
+   setDarkForestHelmetAtk (value => 0);
+   setDarkForestHelmetDef (value => 0);
+   setDarkForestHelmetLuck (value => 0);
+   setDragonHornedHelmetIsShown (current => false);
+   setDragonHornedHelmetActive (current => false);
+   setDragonHornedHelmetAtk (value => 0);
+   setDragonHornedHelmetDef (value => 0);
+   setDragonHornedHelmetLuck (value => 0);
+   setFabricHelmetIsShown (current => false);
+   setFabricHelmetActive (current => false);
+   setFabricHelmetAtk (value => 0);
+   setFabricHelmetDef (value => 0);
+   setFabricHelmetLuck (value => 0);
+   setHeadpieceOfOldGoldIsShown (current => false);
+   setHeadpieceOfOldGoldActive (current => false);
+   setHeadpieceOfOldGoldAtk (value => 0);
+   setHeadpieceOfOldGoldDef (value => 0);
+   setHeadpieceOfOldGoldLuck (value => 0);
+   setHornsOfWisdomIsShown (current => false);
+   setHornsOfWisdomActive (current => false);
+   setHornsOfWisdomAtk (value => 0);
+   setHornsOfWisdomDef (value => 0);
+   setHornsOfWisdomLuck (value => 0);
+   setKingMaiCrownIsShown (current => false);
+   setKingMaiCrownActive (current => false);
+   setKingMaiCrownAtk (value => 0);
+   setKingMaiCrownDef (value => 0);
+   setKingMaiCrownLuck (value => 0);
+   setMinerHatIsShown (current => false);
+   setMinerHatActive (current => false);
+   setMinerHatAtk (value => 0);
+   setMinerHatDef (value => 0);
+   setMinerHatLuck (value => 0);
+   setNivaliHatIsShown (current => false);
+   setNivaliHatActive (current => false);
+   setNivaliHatAtk (value => 0);
+   setNivaliHatDef (value => 0);
+   setNivaliHatLuck (value => 0);
+   setNivaliMaskIsShown (current => false);
+   setNivaliMaskActive (current => false);
+   setNivaliMaskAtk (value => 0);
+   setNivaliMaskDef (value => 0);
+   setNivaliMaskLuck (value => 0);
+   setProtectedLeafHelmetIsShown (current => false);
+   setProtectedLeafHelmetActive (current => false);
+   setProtectedLeafHelmetAtk (value => 0);
+   setProtectedLeafHelmetDef (value => 0);
+   setProtectedLeafHelmetLuck (value => 0);
+   setReinforcedSteelHelmetIsShown (current => false);
+   setReinforcedSteelHelmetActive (current => false);
+   setReinforcedSteelHelmetAtk (value => 0);
+   setReinforcedSteelHelmetDef (value => 0);
+   setReinforcedSteelHelmetLuck (value => 0);
+   setStoriedHornsIsShown (current => false);
+   setStoriedHornsActive (current => false);
+   setStoriedHornsAtk (value => 0);
+   setStoriedHornsDef (value => 0);
+   setStoriedHornsLuck (value => 0);
+
+}
+
+const handleLeafHelmetNoClick = event => {
+   setLeafHelmetIsShown (current => false);
+   setLeafHelmetActive (current => false);
+   setLeafHelmetAtk (value => 0);
+   setLeafHelmetDef (value => 0);
+   setLeafHelmetLuck (value => 0);
+}
+
+const [MinerHatIsShown, setMinerHatIsShown] = useState(false)
+const [MinerHatActive, setMinerHatActive] = useState(false)
+const [MinerHatAtk, setMinerHatAtk] = useState(0)
+const [MinerHatDef, setMinerHatDef] = useState(0)
+const [MinerHatLuck, setMinerHatLuck] = useState(0)
+
+
+const handleMinerHatClick = event => {
+
+
+   setMinerHatIsShown (current => !MinerHatIsShown);
+   setMinerHatActive (current => !MinerHatActive);
+   setMinerHatAtk (value => 0);
+   setMinerHatDef (value => 4);
+   setMinerHatLuck (value => 10);
+   
+   setAakultaHelmetIsShown (current => false);
+   setAakultaHelmetActive (current => false);
+   setAakultaHelmetAtk (value => 0);
+   setAakultaHelmetDef (value => 0);
+   setAakultaHelmetLuck (value => 0);
+   setCrestedHelmetIsShown (current => false);
+   setCrestedHelmetActive (current => false);
+   setCrestedHelmetAtk (value => 0);
+   setCrestedHelmetDef (value => 0);
+   setCrestedHelmetLuck (value => 0);
+   setDarkForestHelmetIsShown (current => false);
+   setDarkForestHelmetActive (current => false);
+   setDarkForestHelmetAtk (value => 0);
+   setDarkForestHelmetDef (value => 0);
+   setDarkForestHelmetLuck (value => 0);
+   setDragonHornedHelmetIsShown (current => false);
+   setDragonHornedHelmetActive (current => false);
+   setDragonHornedHelmetAtk (value => 0);
+   setDragonHornedHelmetDef (value => 0);
+   setDragonHornedHelmetLuck (value => 0);
+   setFabricHelmetIsShown (current => false);
+   setFabricHelmetActive (current => false);
+   setFabricHelmetAtk (value => 0);
+   setFabricHelmetDef (value => 0);
+   setFabricHelmetLuck (value => 0);
+   setHeadpieceOfOldGoldIsShown (current => false);
+   setHeadpieceOfOldGoldActive (current => false);
+   setHeadpieceOfOldGoldAtk (value => 0);
+   setHeadpieceOfOldGoldDef (value => 0);
+   setHeadpieceOfOldGoldLuck (value => 0);
+   setHornsOfWisdomIsShown (current => false);
+   setHornsOfWisdomActive (current => false);
+   setHornsOfWisdomAtk (value => 0);
+   setHornsOfWisdomDef (value => 0);
+   setHornsOfWisdomLuck (value => 0);
+   setKingMaiCrownIsShown (current => false);
+   setKingMaiCrownActive (current => false);
+   setKingMaiCrownAtk (value => 0);
+   setKingMaiCrownDef (value => 0);
+   setKingMaiCrownLuck (value => 0);
+   setLeafHelmetIsShown (current => false);
+   setLeafHelmetActive (current => false);
+   setLeafHelmetAtk (value => 0);
+   setLeafHelmetDef (value => 0);
+   setLeafHelmetLuck (value => 0);
+   setNivaliHatIsShown (current => false);
+   setNivaliHatActive (current => false);
+   setNivaliHatAtk (value => 0);
+   setNivaliHatDef (value => 0);
+   setNivaliHatLuck (value => 0);
+   setNivaliMaskIsShown (current => false);
+   setNivaliMaskActive (current => false);
+   setNivaliMaskAtk (value => 0);
+   setNivaliMaskDef (value => 0);
+   setNivaliMaskLuck (value => 0);
+   setProtectedLeafHelmetIsShown (current => false);
+   setProtectedLeafHelmetActive (current => false);
+   setProtectedLeafHelmetAtk (value => 0);
+   setProtectedLeafHelmetDef (value => 0);
+   setProtectedLeafHelmetLuck (value => 0);
+   setReinforcedSteelHelmetIsShown (current => false);
+   setReinforcedSteelHelmetActive (current => false);
+   setReinforcedSteelHelmetAtk (value => 0);
+   setReinforcedSteelHelmetDef (value => 0);
+   setReinforcedSteelHelmetLuck (value => 0);
+   setStoriedHornsIsShown (current => false);
+   setStoriedHornsActive (current => false);
+   setStoriedHornsAtk (value => 0);
+   setStoriedHornsDef (value => 0);
+   setStoriedHornsLuck (value => 0);
+
+}
+
+const handleMinerHatNoClick = event => {
+   setMinerHatIsShown (current => false);
+   setMinerHatActive (current => false);
+   setMinerHatAtk (value => 0);
+   setMinerHatDef (value => 0);
+   setMinerHatLuck (value => 0);
+}
+
+const [NivaliHatIsShown, setNivaliHatIsShown] = useState(false)
+const [NivaliHatActive, setNivaliHatActive] = useState(false)
+const [NivaliHatAtk, setNivaliHatAtk] = useState(0)
+const [NivaliHatDef, setNivaliHatDef] = useState(0)
+const [NivaliHatLuck, setNivaliHatLuck] = useState(0)
+
+
+const handleNivaliHatClick = event => {
+
+
+   setNivaliHatIsShown (current => !NivaliHatIsShown);
+   setNivaliHatActive (current => !NivaliHatActive);
+   setNivaliHatAtk (value => 7);
+   setNivaliHatDef (value => 15);
+   setNivaliHatLuck (value => 7);
+   
+   setAakultaHelmetIsShown (current => false);
+   setAakultaHelmetActive (current => false);
+   setAakultaHelmetAtk (value => 0);
+   setAakultaHelmetDef (value => 0);
+   setAakultaHelmetLuck (value => 0);
+   setCrestedHelmetIsShown (current => false);
+   setCrestedHelmetActive (current => false);
+   setCrestedHelmetAtk (value => 0);
+   setCrestedHelmetDef (value => 0);
+   setCrestedHelmetLuck (value => 0);
+   setDarkForestHelmetIsShown (current => false);
+   setDarkForestHelmetActive (current => false);
+   setDarkForestHelmetAtk (value => 0);
+   setDarkForestHelmetDef (value => 0);
+   setDarkForestHelmetLuck (value => 0);
+   setDragonHornedHelmetIsShown (current => false);
+   setDragonHornedHelmetActive (current => false);
+   setDragonHornedHelmetAtk (value => 0);
+   setDragonHornedHelmetDef (value => 0);
+   setDragonHornedHelmetLuck (value => 0);
+   setFabricHelmetIsShown (current => false);
+   setFabricHelmetActive (current => false);
+   setFabricHelmetAtk (value => 0);
+   setFabricHelmetDef (value => 0);
+   setFabricHelmetLuck (value => 0);
+   setHeadpieceOfOldGoldIsShown (current => false);
+   setHeadpieceOfOldGoldActive (current => false);
+   setHeadpieceOfOldGoldAtk (value => 0);
+   setHeadpieceOfOldGoldDef (value => 0);
+   setHeadpieceOfOldGoldLuck (value => 0);
+   setHornsOfWisdomIsShown (current => false);
+   setHornsOfWisdomActive (current => false);
+   setHornsOfWisdomAtk (value => 0);
+   setHornsOfWisdomDef (value => 0);
+   setHornsOfWisdomLuck (value => 0);
+   setKingMaiCrownIsShown (current => false);
+   setKingMaiCrownActive (current => false);
+   setKingMaiCrownAtk (value => 0);
+   setKingMaiCrownDef (value => 0);
+   setKingMaiCrownLuck (value => 0);
+   setLeafHelmetIsShown (current => false);
+   setLeafHelmetActive (current => false);
+   setLeafHelmetAtk (value => 0);
+   setLeafHelmetDef (value => 0);
+   setLeafHelmetLuck (value => 0);
+   setMinerHatIsShown (current => false);
+   setMinerHatActive (current => false);
+   setMinerHatAtk (value => 0);
+   setMinerHatDef (value => 0);
+   setMinerHatLuck (value => 0);
+   setNivaliMaskIsShown (current => false);
+   setNivaliMaskActive (current => false);
+   setNivaliMaskAtk (value => 0);
+   setNivaliMaskDef (value => 0);
+   setNivaliMaskLuck (value => 0);
+   setProtectedLeafHelmetIsShown (current => false);
+   setProtectedLeafHelmetActive (current => false);
+   setProtectedLeafHelmetAtk (value => 0);
+   setProtectedLeafHelmetDef (value => 0);
+   setProtectedLeafHelmetLuck (value => 0);
+   setReinforcedSteelHelmetIsShown (current => false);
+   setReinforcedSteelHelmetActive (current => false);
+   setReinforcedSteelHelmetAtk (value => 0);
+   setReinforcedSteelHelmetDef (value => 0);
+   setReinforcedSteelHelmetLuck (value => 0);
+   setStoriedHornsIsShown (current => false);
+   setStoriedHornsActive (current => false);
+   setStoriedHornsAtk (value => 0);
+   setStoriedHornsDef (value => 0);
+   setStoriedHornsLuck (value => 0);
+
+}
+
+const handleNivaliHatNoClick = event => {
+   setNivaliHatIsShown (current => false);
+   setNivaliHatActive (current => false);
+   setNivaliHatAtk (value => 0);
+   setNivaliHatDef (value => 0);
+   setNivaliHatLuck (value => 0);
+}
+
+const [NivaliMaskIsShown, setNivaliMaskIsShown] = useState(false)
+const [NivaliMaskActive, setNivaliMaskActive] = useState(false)
+const [NivaliMaskAtk, setNivaliMaskAtk] = useState(0)
+const [NivaliMaskDef, setNivaliMaskDef] = useState(0)
+const [NivaliMaskLuck, setNivaliMaskLuck] = useState(0)
+
+
+const handleNivaliMaskClick = event => {
+
+
+   setNivaliMaskIsShown (current => !NivaliMaskIsShown);
+   setNivaliMaskActive (current => !NivaliMaskActive);
+   setNivaliMaskAtk (value => 15);
+   setNivaliMaskDef (value => 15);
+   setNivaliMaskLuck (value => 0);
+   
+   setAakultaHelmetIsShown (current => false);
+   setAakultaHelmetActive (current => false);
+   setAakultaHelmetAtk (value => 0);
+   setAakultaHelmetDef (value => 0);
+   setAakultaHelmetLuck (value => 0);
+   setCrestedHelmetIsShown (current => false);
+   setCrestedHelmetActive (current => false);
+   setCrestedHelmetAtk (value => 0);
+   setCrestedHelmetDef (value => 0);
+   setCrestedHelmetLuck (value => 0);
+   setDarkForestHelmetIsShown (current => false);
+   setDarkForestHelmetActive (current => false);
+   setDarkForestHelmetAtk (value => 0);
+   setDarkForestHelmetDef (value => 0);
+   setDarkForestHelmetLuck (value => 0);
+   setDragonHornedHelmetIsShown (current => false);
+   setDragonHornedHelmetActive (current => false);
+   setDragonHornedHelmetAtk (value => 0);
+   setDragonHornedHelmetDef (value => 0);
+   setDragonHornedHelmetLuck (value => 0);
+   setFabricHelmetIsShown (current => false);
+   setFabricHelmetActive (current => false);
+   setFabricHelmetAtk (value => 0);
+   setFabricHelmetDef (value => 0);
+   setFabricHelmetLuck (value => 0);
+   setHeadpieceOfOldGoldIsShown (current => false);
+   setHeadpieceOfOldGoldActive (current => false);
+   setHeadpieceOfOldGoldAtk (value => 0);
+   setHeadpieceOfOldGoldDef (value => 0);
+   setHeadpieceOfOldGoldLuck (value => 0);
+   setHornsOfWisdomIsShown (current => false);
+   setHornsOfWisdomActive (current => false);
+   setHornsOfWisdomAtk (value => 0);
+   setHornsOfWisdomDef (value => 0);
+   setHornsOfWisdomLuck (value => 0);
+   setKingMaiCrownIsShown (current => false);
+   setKingMaiCrownActive (current => false);
+   setKingMaiCrownAtk (value => 0);
+   setKingMaiCrownDef (value => 0);
+   setKingMaiCrownLuck (value => 0);
+   setLeafHelmetIsShown (current => false);
+   setLeafHelmetActive (current => false);
+   setLeafHelmetAtk (value => 0);
+   setLeafHelmetDef (value => 0);
+   setLeafHelmetLuck (value => 0);
+   setMinerHatIsShown (current => false);
+   setMinerHatActive (current => false);
+   setMinerHatAtk (value => 0);
+   setMinerHatDef (value => 0);
+   setMinerHatLuck (value => 0);
+   setNivaliHatIsShown (current => false);
+   setNivaliHatActive (current => false);
+   setNivaliHatAtk (value => 0);
+   setNivaliHatDef (value => 0);
+   setNivaliHatLuck (value => 0);
+   setProtectedLeafHelmetIsShown (current => false);
+   setProtectedLeafHelmetActive (current => false);
+   setProtectedLeafHelmetAtk (value => 0);
+   setProtectedLeafHelmetDef (value => 0);
+   setProtectedLeafHelmetLuck (value => 0);
+   setReinforcedSteelHelmetIsShown (current => false);
+   setReinforcedSteelHelmetActive (current => false);
+   setReinforcedSteelHelmetAtk (value => 0);
+   setReinforcedSteelHelmetDef (value => 0);
+   setReinforcedSteelHelmetLuck (value => 0);
+   setStoriedHornsIsShown (current => false);
+   setStoriedHornsActive (current => false);
+   setStoriedHornsAtk (value => 0);
+   setStoriedHornsDef (value => 0);
+   setStoriedHornsLuck (value => 0);
+
+}
+
+const handleNivaliMaskNoClick = event => {
+   setNivaliMaskIsShown (current => false);
+   setNivaliMaskActive (current => false);
+   setNivaliMaskAtk (value => 0);
+   setNivaliMaskDef (value => 0);
+   setNivaliMaskLuck (value => 0);
+}
+
+const [ProtectedLeafHelmetIsShown, setProtectedLeafHelmetIsShown] = useState(false)
+const [ProtectedLeafHelmetActive, setProtectedLeafHelmetActive] = useState(false)
+const [ProtectedLeafHelmetAtk, setProtectedLeafHelmetAtk] = useState(0)
+const [ProtectedLeafHelmetDef, setProtectedLeafHelmetDef] = useState(0)
+const [ProtectedLeafHelmetLuck, setProtectedLeafHelmetLuck] = useState(0)
+
+
+const handleProtectedLeafHelmetClick = event => {
+
+
+   setProtectedLeafHelmetIsShown (current => !ProtectedLeafHelmetIsShown);
+   setProtectedLeafHelmetActive (current => !ProtectedLeafHelmetActive);
+   setProtectedLeafHelmetAtk (value => 0);
+   setProtectedLeafHelmetDef (value => 5);
+   setProtectedLeafHelmetLuck (value => 2);
+   
+   setAakultaHelmetIsShown (current => false);
+   setAakultaHelmetActive (current => false);
+   setAakultaHelmetAtk (value => 0);
+   setAakultaHelmetDef (value => 0);
+   setAakultaHelmetLuck (value => 0);
+   setCrestedHelmetIsShown (current => false);
+   setCrestedHelmetActive (current => false);
+   setCrestedHelmetAtk (value => 0);
+   setCrestedHelmetDef (value => 0);
+   setCrestedHelmetLuck (value => 0);
+   setDarkForestHelmetIsShown (current => false);
+   setDarkForestHelmetActive (current => false);
+   setDarkForestHelmetAtk (value => 0);
+   setDarkForestHelmetDef (value => 0);
+   setDarkForestHelmetLuck (value => 0);
+   setDragonHornedHelmetIsShown (current => false);
+   setDragonHornedHelmetActive (current => false);
+   setDragonHornedHelmetAtk (value => 0);
+   setDragonHornedHelmetDef (value => 0);
+   setDragonHornedHelmetLuck (value => 0);
+   setFabricHelmetIsShown (current => false);
+   setFabricHelmetActive (current => false);
+   setFabricHelmetAtk (value => 0);
+   setFabricHelmetDef (value => 0);
+   setFabricHelmetLuck (value => 0);
+   setHeadpieceOfOldGoldIsShown (current => false);
+   setHeadpieceOfOldGoldActive (current => false);
+   setHeadpieceOfOldGoldAtk (value => 0);
+   setHeadpieceOfOldGoldDef (value => 0);
+   setHeadpieceOfOldGoldLuck (value => 0);
+   setHornsOfWisdomIsShown (current => false);
+   setHornsOfWisdomActive (current => false);
+   setHornsOfWisdomAtk (value => 0);
+   setHornsOfWisdomDef (value => 0);
+   setHornsOfWisdomLuck (value => 0);
+   setKingMaiCrownIsShown (current => false);
+   setKingMaiCrownActive (current => false);
+   setKingMaiCrownAtk (value => 0);
+   setKingMaiCrownDef (value => 0);
+   setKingMaiCrownLuck (value => 0);
+   setLeafHelmetIsShown (current => false);
+   setLeafHelmetActive (current => false);
+   setLeafHelmetAtk (value => 0);
+   setLeafHelmetDef (value => 0);
+   setLeafHelmetLuck (value => 0);
+   setMinerHatIsShown (current => false);
+   setMinerHatActive (current => false);
+   setMinerHatAtk (value => 0);
+   setMinerHatDef (value => 0);
+   setMinerHatLuck (value => 0);
+   setNivaliHatIsShown (current => false);
+   setNivaliHatActive (current => false);
+   setNivaliHatAtk (value => 0);
+   setNivaliHatDef (value => 0);
+   setNivaliHatLuck (value => 0);
+   setNivaliMaskIsShown (current => false);
+   setNivaliMaskActive (current => false);
+   setNivaliMaskAtk (value => 0);
+   setNivaliMaskDef (value => 0);
+   setNivaliMaskLuck (value => 0);
+   setReinforcedSteelHelmetIsShown (current => false);
+   setReinforcedSteelHelmetActive (current => false);
+   setReinforcedSteelHelmetAtk (value => 0);
+   setReinforcedSteelHelmetDef (value => 0);
+   setReinforcedSteelHelmetLuck (value => 0);
+   setStoriedHornsIsShown (current => false);
+   setStoriedHornsActive (current => false);
+   setStoriedHornsAtk (value => 0);
+   setStoriedHornsDef (value => 0);
+   setStoriedHornsLuck (value => 0);
+
+}
+
+const handleProtectedLeafHelmetNoClick = event => {
+   setProtectedLeafHelmetIsShown (current => false);
+   setProtectedLeafHelmetActive (current => false);
+   setProtectedLeafHelmetAtk (value => 0);
+   setProtectedLeafHelmetDef (value => 0);
+   setProtectedLeafHelmetLuck (value => 0);
+}
+
+const [ReinforcedSteelHelmetIsShown, setReinforcedSteelHelmetIsShown] = useState(false)
+const [ReinforcedSteelHelmetActive, setReinforcedSteelHelmetActive] = useState(false)
+const [ReinforcedSteelHelmetAtk, setReinforcedSteelHelmetAtk] = useState(0)
+const [ReinforcedSteelHelmetDef, setReinforcedSteelHelmetDef] = useState(0)
+const [ReinforcedSteelHelmetLuck, setReinforcedSteelHelmetLuck] = useState(0)
+
+
+const handleReinforcedSteelHelmetClick = event => {
+
+
+   setReinforcedSteelHelmetIsShown (current => !ReinforcedSteelHelmetIsShown);
+   setReinforcedSteelHelmetActive (current => !ReinforcedSteelHelmetActive);
+   setReinforcedSteelHelmetAtk (value => 2);
+   setReinforcedSteelHelmetDef (value => 12);
+   setReinforcedSteelHelmetLuck (value => 0);
+   
+   setAakultaHelmetIsShown (current => false);
+   setAakultaHelmetActive (current => false);
+   setAakultaHelmetAtk (value => 0);
+   setAakultaHelmetDef (value => 0);
+   setAakultaHelmetLuck (value => 0);
+   setCrestedHelmetIsShown (current => false);
+   setCrestedHelmetActive (current => false);
+   setCrestedHelmetAtk (value => 0);
+   setCrestedHelmetDef (value => 0);
+   setCrestedHelmetLuck (value => 0);
+   setDarkForestHelmetIsShown (current => false);
+   setDarkForestHelmetActive (current => false);
+   setDarkForestHelmetAtk (value => 0);
+   setDarkForestHelmetDef (value => 0);
+   setDarkForestHelmetLuck (value => 0);
+   setDragonHornedHelmetIsShown (current => false);
+   setDragonHornedHelmetActive (current => false);
+   setDragonHornedHelmetAtk (value => 0);
+   setDragonHornedHelmetDef (value => 0);
+   setDragonHornedHelmetLuck (value => 0);
+   setFabricHelmetIsShown (current => false);
+   setFabricHelmetActive (current => false);
+   setFabricHelmetAtk (value => 0);
+   setFabricHelmetDef (value => 0);
+   setFabricHelmetLuck (value => 0);
+   setHeadpieceOfOldGoldIsShown (current => false);
+   setHeadpieceOfOldGoldActive (current => false);
+   setHeadpieceOfOldGoldAtk (value => 0);
+   setHeadpieceOfOldGoldDef (value => 0);
+   setHeadpieceOfOldGoldLuck (value => 0);
+   setHornsOfWisdomIsShown (current => false);
+   setHornsOfWisdomActive (current => false);
+   setHornsOfWisdomAtk (value => 0);
+   setHornsOfWisdomDef (value => 0);
+   setHornsOfWisdomLuck (value => 0);
+   setKingMaiCrownIsShown (current => false);
+   setKingMaiCrownActive (current => false);
+   setKingMaiCrownAtk (value => 0);
+   setKingMaiCrownDef (value => 0);
+   setKingMaiCrownLuck (value => 0);
+   setLeafHelmetIsShown (current => false);
+   setLeafHelmetActive (current => false);
+   setLeafHelmetAtk (value => 0);
+   setLeafHelmetDef (value => 0);
+   setLeafHelmetLuck (value => 0);
+   setMinerHatIsShown (current => false);
+   setMinerHatActive (current => false);
+   setMinerHatAtk (value => 0);
+   setMinerHatDef (value => 0);
+   setMinerHatLuck (value => 0);
+   setNivaliHatIsShown (current => false);
+   setNivaliHatActive (current => false);
+   setNivaliHatAtk (value => 0);
+   setNivaliHatDef (value => 0);
+   setNivaliHatLuck (value => 0);
+   setNivaliMaskIsShown (current => false);
+   setNivaliMaskActive (current => false);
+   setNivaliMaskAtk (value => 0);
+   setNivaliMaskDef (value => 0);
+   setNivaliMaskLuck (value => 0);
+   setProtectedLeafHelmetIsShown (current => false);
+   setProtectedLeafHelmetActive (current => false);
+   setProtectedLeafHelmetAtk (value => 0);
+   setProtectedLeafHelmetDef (value => 0);
+   setProtectedLeafHelmetLuck (value => 0);
+   setStoriedHornsIsShown (current => false);
+   setStoriedHornsActive (current => false);
+   setStoriedHornsAtk (value => 0);
+   setStoriedHornsDef (value => 0);
+   setStoriedHornsLuck (value => 0);
+
+}
+
+const handleReinforcedSteelHelmetNoClick = event => {
+   setReinforcedSteelHelmetIsShown (current => false);
+   setReinforcedSteelHelmetActive (current => false);
+   setReinforcedSteelHelmetAtk (value => 0);
+   setReinforcedSteelHelmetDef (value => 0);
+   setReinforcedSteelHelmetLuck (value => 0);
+}
+
+const [StoriedHornsIsShown, setStoriedHornsIsShown] = useState(false)
+const [StoriedHornsActive, setStoriedHornsActive] = useState(false)
+const [StoriedHornsAtk, setStoriedHornsAtk] = useState(0)
+const [StoriedHornsDef, setStoriedHornsDef] = useState(0)
+const [StoriedHornsLuck, setStoriedHornsLuck] = useState(0)
+
+
+const handleStoriedHornsClick = event => {
+
+
+   setStoriedHornsIsShown (current => !StoriedHornsIsShown);
+   setStoriedHornsActive (current => !StoriedHornsActive);
+   setStoriedHornsAtk (value => 16);
+   setStoriedHornsDef (value => 0);
+   setStoriedHornsLuck (value => 0);
+   
+   setAakultaHelmetIsShown (current => false);
+   setAakultaHelmetActive (current => false);
+   setAakultaHelmetAtk (value => 0);
+   setAakultaHelmetDef (value => 0);
+   setAakultaHelmetLuck (value => 0);
+   setCrestedHelmetIsShown (current => false);
+   setCrestedHelmetActive (current => false);
+   setCrestedHelmetAtk (value => 0);
+   setCrestedHelmetDef (value => 0);
+   setCrestedHelmetLuck (value => 0);
+   setDarkForestHelmetIsShown (current => false);
+   setDarkForestHelmetActive (current => false);
+   setDarkForestHelmetAtk (value => 0);
+   setDarkForestHelmetDef (value => 0);
+   setDarkForestHelmetLuck (value => 0);
+   setDragonHornedHelmetIsShown (current => false);
+   setDragonHornedHelmetActive (current => false);
+   setDragonHornedHelmetAtk (value => 0);
+   setDragonHornedHelmetDef (value => 0);
+   setDragonHornedHelmetLuck (value => 0);
+   setFabricHelmetIsShown (current => false);
+   setFabricHelmetActive (current => false);
+   setFabricHelmetAtk (value => 0);
+   setFabricHelmetDef (value => 0);
+   setFabricHelmetLuck (value => 0);
+   setHeadpieceOfOldGoldIsShown (current => false);
+   setHeadpieceOfOldGoldActive (current => false);
+   setHeadpieceOfOldGoldAtk (value => 0);
+   setHeadpieceOfOldGoldDef (value => 0);
+   setHeadpieceOfOldGoldLuck (value => 0);
+   setHornsOfWisdomIsShown (current => false);
+   setHornsOfWisdomActive (current => false);
+   setHornsOfWisdomAtk (value => 0);
+   setHornsOfWisdomDef (value => 0);
+   setHornsOfWisdomLuck (value => 0);
+   setKingMaiCrownIsShown (current => false);
+   setKingMaiCrownActive (current => false);
+   setKingMaiCrownAtk (value => 0);
+   setKingMaiCrownDef (value => 0);
+   setKingMaiCrownLuck (value => 0);
+   setLeafHelmetIsShown (current => false);
+   setLeafHelmetActive (current => false);
+   setLeafHelmetAtk (value => 0);
+   setLeafHelmetDef (value => 0);
+   setLeafHelmetLuck (value => 0);
+   setMinerHatIsShown (current => false);
+   setMinerHatActive (current => false);
+   setMinerHatAtk (value => 0);
+   setMinerHatDef (value => 0);
+   setMinerHatLuck (value => 0);
+   setNivaliHatIsShown (current => false);
+   setNivaliHatActive (current => false);
+   setNivaliHatAtk (value => 0);
+   setNivaliHatDef (value => 0);
+   setNivaliHatLuck (value => 0);
+   setNivaliMaskIsShown (current => false);
+   setNivaliMaskActive (current => false);
+   setNivaliMaskAtk (value => 0);
+   setNivaliMaskDef (value => 0);
+   setNivaliMaskLuck (value => 0);
+   setProtectedLeafHelmetIsShown (current => false);
+   setProtectedLeafHelmetActive (current => false);
+   setProtectedLeafHelmetAtk (value => 0);
+   setProtectedLeafHelmetDef (value => 0);
+   setProtectedLeafHelmetLuck (value => 0);
+   setReinforcedSteelHelmetIsShown (current => false);
+   setReinforcedSteelHelmetActive (current => false);
+   setReinforcedSteelHelmetAtk (value => 0);
+   setReinforcedSteelHelmetDef (value => 0);
+   setReinforcedSteelHelmetLuck (value => 0);
+
+}
+
+const handleStoriedHornsNoClick = event => {
+   setStoriedHornsIsShown (current => false);
+   setStoriedHornsActive (current => false);
+   setStoriedHornsAtk (value => 0);
+   setStoriedHornsDef (value => 0);
+   setStoriedHornsLuck (value => 0);
+}
+
+const totalHeadTopAtk = Math.max (AakultaHelmetAtk, CrestedHelmetAtk, DarkForestHelmetAtk, DragonHornedHelmetAtk, 
+  FabricHelmetAtk, HeadpieceOfOldGoldAtk, HornsOfWisdomAtk, KingMaiCrownAtk, LeafHelmetAtk, MinerHatAtk, NivaliHatAtk, 
+  NivaliMaskAtk, ProtectedLeafHelmetAtk, ReinforcedSteelHelmetAtk, StoriedHornsAtk)
+const totalHeadTopDef = Math.max (AakultaHelmetDef, CrestedHelmetDef, DarkForestHelmetDef, DragonHornedHelmetDef, 
+  FabricHelmetDef, HeadpieceOfOldGoldDef, HornsOfWisdomDef, KingMaiCrownDef, LeafHelmetDef, MinerHatDef, NivaliHatDef, 
+  NivaliMaskDef, ProtectedLeafHelmetDef, ReinforcedSteelHelmetDef, StoriedHornsDef)
+const totalHeadTopLuck = Math.max (AakultaHelmetLuck, CrestedHelmetLuck, DarkForestHelmetLuck, DragonHornedHelmetLuck, 
+  FabricHelmetLuck, HeadpieceOfOldGoldLuck, HornsOfWisdomLuck, KingMaiCrownLuck, LeafHelmetLuck, MinerHatLuck, NivaliHatLuck, 
+  NivaliMaskLuck, ProtectedLeafHelmetLuck, ReinforcedSteelHelmetLuck, StoriedHornsLuck)
 
   //chest battle items//
 
@@ -20532,7 +21965,7 @@ mt={['135px', '160px', '175px']}
 {GradScrollAstrologyIsShown &&        
    <Image
    style={{position:'absolute'}}
-   mt={['37px', '47px', '55px']}
+   mt={['27px', '37px', '45px']}
    align='center' 
    boxSize={['4rem', '4.5rem', '5rem']}
    src='https://static.wikia.nocookie.net/4thewords/images/4/44/Astrology_Graduation_Scroll.png/'
@@ -20540,15 +21973,15 @@ mt={['135px', '160px', '175px']}
    {GradScrollAstrologyIsShown &&        
    <Text        
    style={{position:'absolute'}}
-   mt={['110px', '130px', '145px']}
+   mt={['90px', '105px', '120px']}
    fontSize={['sm', 'md', 'md']}>
-     Astrology Grad. Scroll</Text>
+     Astrology<br/>Gradution Scroll</Text>
      }
 
 {GradScrollAlchemyIsShown &&        
    <Image
    style={{position:'absolute'}}
-   mt={['37px', '47px', '55px']}
+   mt={['27px', '37px', '45px']}
    align='center' 
    boxSize={['4rem', '4.5rem', '5rem']}
    src='https://static.wikia.nocookie.net/4thewords/images/c/c5/Alchemy_Graduation_Scroll.png/'
@@ -20556,15 +21989,15 @@ mt={['135px', '160px', '175px']}
    {GradScrollAlchemyIsShown &&        
    <Text        
    style={{position:'absolute'}}
-   mt={['110px', '130px', '145px']}
+   mt={['90px', '105px', '120px']}
    fontSize={['sm', 'md', 'md']}>
-     Alchemy Grad. Scroll</Text>
+     Alchemy<br/>Gradution Scroll</Text>
      }
 
 {GradScrollAKIsShown &&        
    <Image
    style={{position:'absolute'}}
-   mt={['37px', '47px', '55px']}
+   mt={['27px', '37px', '45px']}
    align='center' 
    boxSize={['4rem', '4.5rem', '5rem']}
    src='https://static.wikia.nocookie.net/4thewords/images/8/81/Ancient_Knowledge_Graduation_Scroll.png/'
@@ -20572,15 +22005,15 @@ mt={['135px', '160px', '175px']}
    {GradScrollAKIsShown &&        
    <Text        
    style={{position:'absolute'}}
-   mt={['110px', '130px', '145px']}
+   mt={['90px', '105px', '120px']}
    fontSize={['sm', 'md', 'md']}>
-     AK Grad. Scroll</Text>
+     Ancient Knowledge<br/>Gradution Scroll</Text>
      }
 
 {GradScrollSpellsIsShown &&        
    <Image
    style={{position:'absolute'}}
-   mt={['37px', '47px', '55px']}
+   mt={['27px', '37px', '45px']}
    align='center' 
    boxSize={['4rem', '4.5rem', '5rem']}
    src='https://static.wikia.nocookie.net/4thewords/images/f/f0/Spells_Graduation_Scroll.png/'
@@ -20588,15 +22021,15 @@ mt={['135px', '160px', '175px']}
    {GradScrollSpellsIsShown &&        
    <Text        
    style={{position:'absolute'}}
-   mt={['110px', '130px', '145px']}
+   mt={['90px', '105px', '120px']}
    fontSize={['sm', 'md', 'md']}>
-     Spells Grad. Scroll</Text>
+     Spells<br/>Gradution Scroll</Text>
      }
 
 {GradScrollMirrorsIsShown &&        
    <Image
    style={{position:'absolute'}}
-   mt={['37px', '47px', '55px']}
+   mt={['27px', '37px', '45px']}
    align='center' 
    boxSize={['4rem', '4.5rem', '5rem']}
    src='https://static.wikia.nocookie.net/4thewords/images/3/31/Mirror_Graduation_Scroll.png/'
@@ -20604,15 +22037,15 @@ mt={['135px', '160px', '175px']}
    {GradScrollMirrorsIsShown &&        
    <Text        
    style={{position:'absolute'}}
-   mt={['110px', '130px', '145px']}
+   mt={['90px', '105px', '120px']}
    fontSize={['sm', 'md', 'md']}>
-     Mirrors Grad. Scroll</Text>
+     Mirrors<br/>Gradution Scroll</Text>
      }
 
 {GradScrollFungiIsShown &&        
    <Image
    style={{position:'absolute'}}
-   mt={['37px', '47px', '55px']}
+   mt={['27px', '37px', '45px']}
    align='center' 
    boxSize={['4rem', '4.5rem', '5rem']}
    src='https://static.wikia.nocookie.net/4thewords/images/9/9a/Fungi_Graduation_Scroll.png/'
@@ -20620,15 +22053,15 @@ mt={['135px', '160px', '175px']}
    {GradScrollFungiIsShown &&        
    <Text        
    style={{position:'absolute'}}
-   mt={['110px', '130px', '145px']}
+   mt={['90px', '105px', '120px']}
    fontSize={['sm', 'md', 'md']}>
-     Fungi Grad. Scroll</Text>
+     Fungi<br/>Gradution Scroll</Text>
      }
 
 {GradScrollThreadsIsShown &&        
    <Image
    style={{position:'absolute'}}
-   mt={['37px', '47px', '55px']}
+   mt={['27px', '37px', '45px']}
    align='center' 
    boxSize={['4rem', '4.5rem', '5rem']}
    src='https://static.wikia.nocookie.net/4thewords/images/a/a2/Threads_Graduation_Scroll.png/'
@@ -20636,25 +22069,25 @@ mt={['135px', '160px', '175px']}
    {GradScrollThreadsIsShown &&        
    <Text        
    style={{position:'absolute'}}
-   mt={['110px', '130px', '145px']}
+   mt={['90px', '105px', '120px']}
    fontSize={['sm', 'md', 'md']}>
-     Threads Grad. Scroll</Text>
+     Threads<br/>Gradution Scroll</Text>
      }
 
 {GradScrollVoidIsShown &&   	 
    <Image
    style={{position:'absolute'}}
-   mt={['37px', '47px', '55px']}
-   align='center'
+   mt={['27px', '37px', '45px']}
+   align='center' 
    boxSize={['4rem', '4.5rem', '5rem']}
    src='https://static.wikia.nocookie.net/4thewords/images/b/b2/Void_Graduation_Scroll.png'
    />}
    {GradScrollVoidIsShown &&   	 
    <Text   	 
    style={{position:'absolute'}}
-   mt={['110px', '130px', '145px']}
+   mt={['90px', '105px', '120px']}
    fontSize={['sm', 'md', 'md']}>
- 	Void Grad. Scroll</Text>
+     Void<br/>Gradution Scroll</Text>
  	}
 
 
@@ -20694,18 +22127,267 @@ mt={['135px', '160px', '175px']}
         <Text fontSize={['md', 'lg', 'lg']} mt={['4px', '6px', '8px']}>
           <b>Head</b>
         </Text>
+{!AakultaHelmetIsShown && !CrestedHelmetIsShown && !DarkForestHelmetIsShown && !DragonHornedHelmetIsShown && 
+!FabricHelmetIsShown && !HeadpieceOfOldGoldIsShown && !HornsOfWisdomIsShown && !KingMaiCrownIsShown && 
+!LeafHelmetIsShown && !MinerHatIsShown && !NivaliHatIsShown && !NivaliMaskIsShown && !ProtectedLeafHelmetIsShown && 
+!ReinforcedSteelHelmetIsShown && !StoriedHornsIsShown &&
         <Image
         style={{position:'absolute'}}
         mt={['37px', '47px', '55px']}
         align='center' 
         boxSize={['4rem', '4.5rem', '5rem']}
         src='https://i.imgur.com/T9o4YqE.png'
-      />
+      />}
+{!AakultaHelmetIsShown && !CrestedHelmetIsShown && !DarkForestHelmetIsShown && !DragonHornedHelmetIsShown && 
+!FabricHelmetIsShown && !HeadpieceOfOldGoldIsShown && !HornsOfWisdomIsShown && !KingMaiCrownIsShown && 
+!LeafHelmetIsShown && !MinerHatIsShown && !NivaliHatIsShown && !NivaliMaskIsShown && !ProtectedLeafHelmetIsShown && 
+!ReinforcedSteelHelmetIsShown && !StoriedHornsIsShown &&
         <Text        
         style={{position:'absolute'}}
         mt={['110px', '130px', '145px']}
         fontSize={['sm', 'md', 'md']}>
-          No item</Text>
+          No item</Text>}
+
+          {AakultaHelmetIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/0/07/AakultaHelmet.png/'
+   />}
+   {AakultaHelmetIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Aakulta Helmet</Text>
+     }
+
+{CrestedHelmetIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/f/f8/CrestedHelmet.png/'
+   />}
+   {CrestedHelmetIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Crested Helmet</Text>
+     }
+
+{DarkForestHelmetIsShown &&        
+      <Image
+      style={{position:'absolute'}}
+      mt={['37px', '47px', '55px']}
+      align='center' 
+      boxSize={['4rem', '4.5rem', '5rem']}
+      src='https://static.wikia.nocookie.net/4thewords/images/9/9f/Dark-forest-helmet.png/'
+      />}
+      {DarkForestHelmetIsShown &&        
+      <Text        
+      style={{position:'absolute'}}
+      mt={['110px', '130px', '145px']}
+      fontSize={['sm', 'md', 'md']}>
+        Dark Forest Helmet</Text>
+        }
+   
+{DragonHornedHelmetIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['27px', '37px', '45px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/e/e5/DragonsHornedHelmet.png/'
+   />}
+   {DragonHornedHelmetIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['90px', '105px', '120px']}
+   fontSize={['sm', 'md', 'md']}>
+     Dragon's Horned<br/>Helmet</Text>
+     }
+
+{FabricHelmetIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/c/c8/Fabrichelmet_md.png/'
+   />}
+   {FabricHelmetIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Fabric Helmet</Text>
+     }
+
+{HeadpieceOfOldGoldIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/a/a4/HeadpieceOfOldGold.png/'
+   />}
+   {HeadpieceOfOldGoldIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Headpiece of Old Gold</Text>
+     }
+
+{HornsOfWisdomIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/a/a7/HornsofWisdom.png/'
+      />}
+   {HornsOfWisdomIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Horns of Wisdom</Text>
+     }
+
+{KingMaiCrownIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/3/33/KingMaiCrown.png/'
+   />}
+   {KingMaiCrownIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     King Mai's Crown</Text>
+     }
+
+     {LeafHelmetIsShown &&        
+      <Image
+      style={{position:'absolute'}}
+      mt={['37px', '47px', '55px']}
+      align='center' 
+      boxSize={['4rem', '4.5rem', '5rem']}
+      src='https://static.wikia.nocookie.net/4thewords/images/f/f3/Leafhelmet_md.png/'
+      />}
+      {LeafHelmetIsShown &&        
+      <Text        
+      style={{position:'absolute'}}
+      mt={['110px', '130px', '145px']}
+      fontSize={['sm', 'md', 'md']}>
+        Leaf Helmet</Text>
+        }
+   
+{MinerHatIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/8/8c/Miner-hat.png/'
+   />}
+   {MinerHatIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Miner Hat</Text>
+     }
+
+{NivaliHatIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/1/11/Nivali_Hat.png/'
+   />}
+   {NivaliHatIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Nivali Hat</Text>
+     }
+
+{NivaliMaskIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/2/24/Nivali_Mask.png/'
+   />}
+   {NivaliMaskIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Nivali Mask</Text>
+     }
+
+{ProtectedLeafHelmetIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/7/78/Protectedleafhelmet_md.png/'
+   />}
+   {ProtectedLeafHelmetIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Protected Leaf Helmet</Text>
+     }
+
+{ReinforcedSteelHelmetIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/3/35/Reinforced-steel-helmet.png/'
+   />}
+   {ReinforcedSteelHelmetIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Reinforced Steel Helmet</Text>
+     }
+
+{StoriedHornsIsShown &&        
+   <Image
+   style={{position:'absolute'}}
+   mt={['37px', '47px', '55px']}
+   align='center' 
+   boxSize={['4rem', '4.5rem', '5rem']}
+   src='https://static.wikia.nocookie.net/4thewords/images/4/43/StoriedHorns.png/'
+   />}
+   {StoriedHornsIsShown &&        
+   <Text        
+   style={{position:'absolute'}}
+   mt={['110px', '130px', '145px']}
+   fontSize={['sm', 'md', 'md']}>
+     Storied Horns</Text>
+     }
+
           <HStack
 style={{position:'absolute'}}
 mt={['135px', '160px', '175px']}
@@ -22772,7 +24454,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/8/8b/LuckUpgrade.png/'
                 </TabPanel>
     <TabPanel>
 {(AllIsShown || ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) &&
-    <Text fontSize='md' mt='25px' mb='15px'><b>Main Quest Battle Items:</b></Text>}
+    <Text fontSize='md' mb='15px'><b>Main Quest Battle Items:</b></Text>}
       <Wrap justify='center'>
       {(AllIsShown || DCIsShown || World2RegionIsShown) && !KingMaiSwordIsShown &&
 <WrapItem>
@@ -23158,7 +24840,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/a/ac/Steeldagger_md.png/
 </Button>
 </WrapItem>}
 
-{(AllIsShown || ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !WoodSpearIsShown &&
+{(AllIsShown || MamaTreeIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !WoodSpearIsShown &&
    <WrapItem>
    <Button w='110px' h='170px' pb={5} onClick={handleWoodSpearClick} style={{ backgroundColor: "#2D3748"}}>
 <VStack justify='center'>  
@@ -23175,7 +24857,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/a/ac/Woodspear_md.png/'
 </WrapItem>
 }
 
-{(AllIsShown || ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && WoodSpearIsShown &&
+{(AllIsShown || MamaTreeIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && WoodSpearIsShown &&
    <WrapItem>
     <Button w='110px' h='170px' pb={5} onClick={handleWoodSpearNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack justify='center'>  
@@ -24304,71 +25986,109 @@ src='https://static.wikia.nocookie.net/4thewords/images/8/8a/Tentacle-whip.png/'
 </Wrap>
   </TabPanel>
 <TabPanel>
+{(AllIsShown || ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) &&
+    <Text fontSize='md' mt='25px' mb='15px'><b>Main Quest Battle Items:</b></Text>}
+
 <Wrap justify='center'>
-{(AllIsShown || PastEventsIsShown) && !PirateAccordionIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handlePirateAccordionClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='3.75rem'
-src='https://static.wikia.nocookie.net/4thewords/images/b/ba/Accordion_md.png/'
-/> 
-<Text fontSize='sm' align='center'><b>Pirate<br/>Accordion</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+6 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
 
-{(AllIsShown || PastEventsIsShown) && PirateAccordionIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handlePirateAccordionNoClick} style={{ backgroundColor: "#211742"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='3.75rem'
-src='https://static.wikia.nocookie.net/4thewords/images/b/ba/Accordion_md.png/'
-/> 
-<Text fontSize='sm' align='center'><b>Pirate<br/>Accordion</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+6 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
 
-{(AllIsShown || PastEventsIsShown) && !AstrolabeIsShown &&
+{(AllIsShown || World2RegionIsShown) && !NivaliGlovesIsShown &&
 <WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleAstrolabeClick} style={{ backgroundColor: "#2D3748"}}>
+<Button w='110px' h='170px' pb={5} onClick={handleNivaliGlovesClick} style={{ backgroundColor: "#2D3748"}}>
 <VStack justify='center'>  
 <Image
 mt='12px'
 align='center' 
 boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/a/a0/Astrolabe_md.png/'
+src='https://static.wikia.nocookie.net/4thewords/images/2/2c/Nivali_Gloves.png/'
 /> 
-<Text fontSize='md' align='center'><b>Astrolabe</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+5 Luck </Text>
+<Text fontSize='md' align='center'><b>Nivali Gloves</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+5 Luck </Text>
 </VStack>
 </Button>
 </WrapItem>}
 
-{(AllIsShown || PastEventsIsShown) && AstrolabeIsShown &&
+{(AllIsShown || World2RegionIsShown) && NivaliGlovesIsShown &&
 <WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleAstrolabeNoClick} style={{ backgroundColor: "#211742"}}>
+<Button w='110px' h='170px' pb={5} onClick={handleNivaliGlovesNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack justify='center'>  
 <Image
 mt='12px'
 align='center' 
 boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/a/a0/Astrolabe_md.png/'
+src='https://static.wikia.nocookie.net/4thewords/images/2/2c/Nivali_Gloves.png/'
 /> 
-<Text fontSize='md' align='center'><b>Astrolabe</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+5 Luck </Text>
+<Text fontSize='md' align='center'><b>Nivali Gloves</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+5 Luck </Text>
 </VStack>
 </Button>
 </WrapItem>}
-{(AllIsShown || HuntIsShown) && !BardNoteIsShown &&
+
+{(AllIsShown || World2RegionIsShown) && !NivaliPantsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleNivaliPantsClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/4/4b/Nivali_Pants.png/'
+/> 
+<Text fontSize='md' align='center'><b>Nivali Pants</b></Text>
+<Text fontSize='sm' align='center'>+4 Atk<br/>+12 Def<br/>+4 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown) && NivaliPantsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleNivaliPantsNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/4/4b/Nivali_Pants.png/'
+/> 
+<Text fontSize='md' align='center'><b>Nivali Pants</b></Text>
+<Text fontSize='sm' align='center'>+4 Atk<br/>+12 Def<br/>+4 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown) && !NivaliShieldIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleNivaliShieldClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/3/3f/Nivali_Shield.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Nivali Shield</b></Text>
+   <Text fontSize='sm' align='center'>+2 Atk<br/>+15 Def<br/>+2 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   
+{(AllIsShown || World2RegionIsShown) && NivaliShieldIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleNivaliShieldNoClick} style={{ backgroundColor: "#211742"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/3/3f/Nivali_Shield.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Nivali Shield</b></Text>
+   <Text fontSize='sm' align='center'>+2 Atk<br/>+15 Def<br/>+2 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+
+   {(AllIsShown || HuntIsShown) && !BardNoteIsShown &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleBardNoteClick} style={{ backgroundColor: "#2D3748"}}>
 <VStack justify='center'>  
@@ -24400,134 +26120,6 @@ src='https://static.wikia.nocookie.net/4thewords/images/4/46/BardsNote.png/'
 </Button>
 </WrapItem>}
 
-{(AllIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !DarkForestAmuletIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleDarkForestAmuletClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/8/8d/Dark-forest-amulet.png/'
-/> 
-<Text fontSize='md' align='center'><b>Dark Forest<br/>Amulet</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+10 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && DarkForestAmuletIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleDarkForestAmuletNoClick} style={{ backgroundColor: "#211742"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/8/8d/Dark-forest-amulet.png/'
-/> 
-<Text fontSize='md' align='center'><b>Dark Forest<br/>Amulet</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+10 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || PastEventsIsShown) && !FeatherNecklaceIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleFeatherNecklaceClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/c/c2/Feather-necklace.png/'
-/> 
-<Text fontSize='md' align='center'><b>Feather<br/>Necklace</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+4 Def<br/>+12 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || PastEventsIsShown) && FeatherNecklaceIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleFeatherNecklaceNoClick} style={{ backgroundColor: "#211742"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/c/c2/Feather-necklace.png/'
-/> 
-<Text fontSize='md' align='center'><b>Feather<br/>Necklace</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+4 Def<br/>+12 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && !GlassNecklaceIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleGlassNecklaceClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/0/0d/Glassnecklace_md.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Glass<br/>Necklace</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+6 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
-   
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && GlassNecklaceIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleGlassNecklaceNoClick} style={{ backgroundColor: "#211742"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/0/0d/Glassnecklace_md.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Glass<br/>Necklace</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+6 Luck </Text>
-
-   </VStack>
-   </Button>
-   </WrapItem>}
-
-   {(AllIsShown || PastEventsIsShown) && !GoldenDragonTiaraIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleGoldenDragonTiaraClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='12px'
-      align='center' 
-      boxSize='4rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/6/62/GoldenDragonTiara.png'
-      /> 
-      <Text fontSize='sm' align='center'><b>Golden<br/>Dragon Tiara</b></Text>
-      <Text fontSize='sm' align='center'>+2 Atk<br/>+2 Def<br/>+8 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
-      
-      {(AllIsShown || PastEventsIsShown) && GoldenDragonTiaraIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleGoldenDragonTiaraNoClick} style={{ backgroundColor: "#211742"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='12px'
-      align='center' 
-      boxSize='4rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/6/62/GoldenDragonTiara.png'
-      /> 
-      <Text fontSize='sm' align='center'><b>Golden<br/>Dragon Tiara</b></Text>
-      <Text fontSize='sm' align='center'>+2 Atk<br/>+2 Def<br/>+8 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
 
 {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !HauntedNecklaceIsShown &&
 <WrapItem>
@@ -24624,13 +26216,13 @@ src='https://static.wikia.nocookie.net/4thewords/images/1/14/HauntedNecklace.png
       </VStack>
       </Button>
       </WrapItem>}
-
+   
 {(AllIsShown || GardenIsShown) && !MushroomGrenadeIsShown &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleMushroomGrenadeClick} style={{ backgroundColor: "#2D3748"}}>
 <VStack justify='center'>  
 <Image
-mt='18px'
+mt='24px'
 align='center' 
 boxSize='3.5rem'
 src='https://static.wikia.nocookie.net/4thewords/images/8/83/MushroomGrenade.png/'
@@ -24646,7 +26238,7 @@ src='https://static.wikia.nocookie.net/4thewords/images/8/83/MushroomGrenade.png
 <Button w='110px' h='170px' pb={5} onClick={handleMushroomGrenadeNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack justify='center'>  
 <Image
-mt='18px'
+mt='21px'
 align='center' 
 boxSize='3.5rem'
 src='https://static.wikia.nocookie.net/4thewords/images/8/83/MushroomGrenade.png/'
@@ -24657,101 +26249,38 @@ src='https://static.wikia.nocookie.net/4thewords/images/8/83/MushroomGrenade.png
 </Button>
 </WrapItem>}
 
-{(AllIsShown || World2RegionIsShown) && !NivaliGlovesIsShown &&
+   {(AllIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !DarkForestAmuletIsShown &&
 <WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleNivaliGlovesClick} style={{ backgroundColor: "#2D3748"}}>
+<Button w='110px' h='170px' pb={5} onClick={handleDarkForestAmuletClick} style={{ backgroundColor: "#2D3748"}}>
 <VStack justify='center'>  
 <Image
 mt='12px'
 align='center' 
 boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/2/2c/Nivali_Gloves.png/'
+src='https://static.wikia.nocookie.net/4thewords/images/8/8d/Dark-forest-amulet.png/'
 /> 
-<Text fontSize='md' align='center'><b>Nivali Gloves</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+5 Luck </Text>
+<Text fontSize='md' align='center'><b>Dark Forest<br/>Amulet</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+10 Luck </Text>
 </VStack>
 </Button>
 </WrapItem>}
 
-{(AllIsShown || World2RegionIsShown) && NivaliGlovesIsShown &&
+{(AllIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && DarkForestAmuletIsShown &&
 <WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleNivaliGlovesNoClick} style={{ backgroundColor: "#211742"}}>
+<Button w='110px' h='170px' pb={5} onClick={handleDarkForestAmuletNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack justify='center'>  
 <Image
 mt='12px'
 align='center' 
 boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/2/2c/Nivali_Gloves.png/'
+src='https://static.wikia.nocookie.net/4thewords/images/8/8d/Dark-forest-amulet.png/'
 /> 
-<Text fontSize='md' align='center'><b>Nivali Gloves</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+5 Luck </Text>
+<Text fontSize='md' align='center'><b>Dark Forest<br/>Amulet</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+10 Luck </Text>
 </VStack>
 </Button>
 </WrapItem>}
 
-{(AllIsShown || World2RegionIsShown) && !NivaliPantsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleNivaliPantsClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/4/4b/Nivali_Pants.png/'
-/> 
-<Text fontSize='md' align='center'><b>Nivali Pants</b></Text>
-<Text fontSize='sm' align='center'>+4 Atk<br/>+12 Def<br/>+4 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || World2RegionIsShown) && NivaliPantsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleNivaliPantsNoClick} style={{ backgroundColor: "#211742"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/4/4b/Nivali_Pants.png/'
-/> 
-<Text fontSize='md' align='center'><b>Nivali Pants</b></Text>
-<Text fontSize='sm' align='center'>+4 Atk<br/>+12 Def<br/>+4 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || World2RegionIsShown) && !NivaliShieldIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleNivaliShieldClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center' 
-   boxSize='3.75rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/3/3f/Nivali_Shield.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Nivali Shield</b></Text>
-   <Text fontSize='sm' align='center'>+2 Atk<br/>+15 Def<br/>+2 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
-   
-{(AllIsShown || World2RegionIsShown) && NivaliShieldIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleNivaliShieldNoClick} style={{ backgroundColor: "#211742"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center' 
-   boxSize='3.75rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/3/3f/Nivali_Shield.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Nivali Shield</b></Text>
-   <Text fontSize='sm' align='center'>+2 Atk<br/>+15 Def<br/>+2 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
 
    {(AllIsShown || RainaIsShown) && !RainaBraceletIsShown &&
       <WrapItem>
@@ -24785,37 +26314,67 @@ src='https://static.wikia.nocookie.net/4thewords/images/4/4b/Nivali_Pants.png/'
       </Button>
       </WrapItem>}
 
-      {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) && !RustyAmuletIsShown &&
+      {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && !GlassNecklaceIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleGlassNecklaceClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/0/0d/Glassnecklace_md.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Glass<br/>Necklace</b></Text>
+   <Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+6 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && GlassNecklaceIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleGlassNecklaceNoClick} style={{ backgroundColor: "#211742"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/0/0d/Glassnecklace_md.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Glass<br/>Necklace</b></Text>
+   <Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+6 Luck </Text>
+
+   </VStack>
+   </Button>
+   </WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && !SandsRingIsShown &&
 <WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleRustyAmuletClick} style={{ backgroundColor: "#2D3748"}}>
+<Button w='110px' h='170px' pb={5} onClick={handleSandsRingClick} style={{ backgroundColor: "#2D3748"}}>
 <VStack justify='center'>  
 <Image
 mt='18px'
 align='center' 
 boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/1/19/Rustyamulet_md.png/'
+src='https://static.wikia.nocookie.net/4thewords/images/2/24/Sandsring_md.png/'
 /> 
-<Text fontSize='md' align='center'><b>Rusty<br/>Amulet</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+1 Luck </Text>
+<Text fontSize='md' align='center'><b>Sands Ring</b></Text>
+<Text fontSize='sm' align='center'>+1 Atk<br/>+5 Def<br/>+5 Luck </Text>
 </VStack>
 </Button>
 </WrapItem>}
 
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) && RustyAmuletIsShown &&
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && SandsRingIsShown &&
 <WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleRustyAmuletNoClick} style={{ backgroundColor: "#211742"}}>
+<Button w='110px' h='170px' pb={5} onClick={handleSandsRingNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack justify='center'>  
 <Image
 mt='18px'
 align='center' 
 boxSize='3.5rem'
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/1/19/Rustyamulet_md.png/'
+src='https://static.wikia.nocookie.net/4thewords/images/2/24/Sandsring_md.png/'
 /> 
-<Text fontSize='md' align='center'><b>Rusty<br/>Amulet</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+1 Luck </Text>
+<Text fontSize='md' align='center'><b>Sands Ring</b></Text>
+<Text fontSize='sm' align='center'>+1 Atk<br/>+5 Def<br/>+5 Luck </Text>
 </VStack>
 </Button>
 </WrapItem>}
@@ -24852,71 +26411,47 @@ src='https://static.wikia.nocookie.net/4thewords/images/8/8b/Rustypendant_md.png
 </Button>
 </WrapItem>}
 
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && !SandsRingIsShown &&
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) && !RustyAmuletIsShown &&
 <WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleSandsRingClick} style={{ backgroundColor: "#2D3748"}}>
+<Button w='110px' h='170px' pb={5} onClick={handleRustyAmuletClick} style={{ backgroundColor: "#2D3748"}}>
 <VStack justify='center'>  
 <Image
 mt='18px'
 align='center' 
 boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/2/24/Sandsring_md.png/'
+src='https://static.wikia.nocookie.net/4thewords/images/1/19/Rustyamulet_md.png/'
 /> 
-<Text fontSize='md' align='center'><b>Sands Ring</b></Text>
-<Text fontSize='sm' align='center'>+1 Atk<br/>+5 Def<br/>+5 Luck </Text>
+<Text fontSize='md' align='center'><b>Rusty<br/>Amulet</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+1 Luck </Text>
 </VStack>
 </Button>
 </WrapItem>}
 
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && SandsRingIsShown &&
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) && RustyAmuletIsShown &&
 <WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleSandsRingNoClick} style={{ backgroundColor: "#211742"}}>
+<Button w='110px' h='170px' pb={5} onClick={handleRustyAmuletNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack justify='center'>  
 <Image
 mt='18px'
 align='center' 
 boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/2/24/Sandsring_md.png/'
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/1/19/Rustyamulet_md.png/'
 /> 
-<Text fontSize='md' align='center'><b>Sands Ring</b></Text>
-<Text fontSize='sm' align='center'>+1 Atk<br/>+5 Def<br/>+5 Luck </Text>
-
+<Text fontSize='md' align='center'><b>Rusty<br/>Amulet</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+1 Luck </Text>
 </VStack>
 </Button>
 </WrapItem>}
 
-{(AllIsShown || PastEventsIsShown) && !VictorianFanIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleVictorianFanClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center' 
-   boxSize='4rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/c/c3/Victorianfan_md.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Victorian Fan</b></Text>
-   <Text fontSize='sm' align='center'>+8 Atk<br/>+0 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
-   
-   {(AllIsShown || PastEventsIsShown) && VictorianFanIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleVictorianFanNoClick} style={{ backgroundColor: "#211742"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center' 
-   boxSize='4rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/c/c3/Victorianfan_md.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Victorian Fan</b></Text>
-   <Text fontSize='sm' align='center'>+8 Atk<br/>+0 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
 
+
+</Wrap>
+   {(AllIsShown || AurilisIsShown) &&
+    <Text fontSize='md' mt='25px' mb='15px'><b>Aurilis Graduation Scrolls:</b></Text>}
+  <Wrap justify='center'>
    {(AllIsShown || AurilisIsShown) && !GradScrollAstrologyIsShown &&
 <WrapItem>
 <Button w='110px' h='170px' pb={5} onClick={handleGradScrollAstrologyClick} style={{ backgroundColor: "#2D3748"}}>
@@ -25172,8 +26707,667 @@ src='https://static.wikia.nocookie.net/4thewords/images/a/a2/Threads_Graduation_
    </VStack>
    </Button>
    </WrapItem>}
+  </Wrap>
+{(AllIsShown || PastEventsIsShown) &&
+    <Text fontSize='md' mt='25px' mb='15px'><b>Past Event Battle Items:</b></Text>}
+<Wrap justify='center'>
+{(AllIsShown || PastEventsIsShown) && !AstrolabeIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleAstrolabeClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/a/a0/Astrolabe_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Astrolabe</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || PastEventsIsShown) && AstrolabeIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleAstrolabeNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/a/a0/Astrolabe_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Astrolabe</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || PastEventsIsShown) && !FeatherNecklaceIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleFeatherNecklaceClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/c/c2/Feather-necklace.png/'
+/> 
+<Text fontSize='md' align='center'><b>Feather<br/>Necklace</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+4 Def<br/>+12 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || PastEventsIsShown) && FeatherNecklaceIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleFeatherNecklaceNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/c/c2/Feather-necklace.png/'
+/> 
+<Text fontSize='md' align='center'><b>Feather<br/>Necklace</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+4 Def<br/>+12 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || PastEventsIsShown) && !GoldenDragonTiaraIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleGoldenDragonTiaraClick} style={{ backgroundColor: "#2D3748"}}>
+      <VStack justify='center'>  
+      <Image
+      mt='12px'
+      align='center' 
+      boxSize='4rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/6/62/GoldenDragonTiara.png'
+      /> 
+      <Text fontSize='sm' align='center'><b>Golden<br/>Dragon Tiara</b></Text>
+      <Text fontSize='sm' align='center'>+2 Atk<br/>+2 Def<br/>+8 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+      
+      {(AllIsShown || PastEventsIsShown) && GoldenDragonTiaraIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleGoldenDragonTiaraNoClick} style={{ backgroundColor: "#211742"}}>
+      <VStack justify='center'>  
+      <Image
+      mt='12px'
+      align='center' 
+      boxSize='4rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/6/62/GoldenDragonTiara.png'
+      /> 
+      <Text fontSize='sm' align='center'><b>Golden<br/>Dragon Tiara</b></Text>
+      <Text fontSize='sm' align='center'>+2 Atk<br/>+2 Def<br/>+8 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+
+      {(AllIsShown || PastEventsIsShown) && !PirateAccordionIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handlePirateAccordionClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/b/ba/Accordion_md.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Pirate<br/>Accordion</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+6 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || PastEventsIsShown) && PirateAccordionIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handlePirateAccordionNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/b/ba/Accordion_md.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Pirate<br/>Accordion</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+6 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || PastEventsIsShown) && !VictorianFanIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleVictorianFanClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='4rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/c/c3/Victorianfan_md.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Victorian Fan</b></Text>
+   <Text fontSize='sm' align='center'>+8 Atk<br/>+0 Def<br/>+0 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
    
+   {(AllIsShown || PastEventsIsShown) && VictorianFanIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleVictorianFanNoClick} style={{ backgroundColor: "#211742"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='4rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/c/c3/Victorianfan_md.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Victorian Fan</b></Text>
+   <Text fontSize='sm' align='center'>+8 Atk<br/>+0 Def<br/>+0 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
 </Wrap>
+</TabPanel>
+<TabPanel>
+{(AllIsShown || ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) &&
+    <Text fontSize='md' mb='15px'><b>Main Quest Battle Items:</b></Text>}
+  <Wrap justify='center'>
+  
+  {(AllIsShown || World2RegionIsShown || DCIsShown) && !KingMaiCrownIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleKingMaiCrownClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/3/33/KingMaiCrown.png/'
+/> 
+<Text fontSize='md' align='center'><b>King Mai's<br/>Crown</b></Text>
+<Text fontSize='sm' align='center'>+10 Atk<br/>+10 Def<br/>+10 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || DCIsShown) && KingMaiCrownIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleKingMaiCrownNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/3/33/KingMaiCrown.png/'
+/> 
+<Text fontSize='md' align='center'><b>King Mai's<br/>Crown</b></Text>
+<Text fontSize='sm' align='center'>+10 Atk<br/>+10 Def<br/>+10 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || HuntIsShown) && !HeadpieceOfOldGoldIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleHeadpieceOfOldGoldClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/a/a4/HeadpieceOfOldGold.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Headpiece<br/>of Old Gold</b></Text>
+   <Text fontSize='sm' align='center'>+14 Atk<br/>+0 Def<br/>+2 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   
+   {(AllIsShown || HuntIsShown) && HeadpieceOfOldGoldIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleHeadpieceOfOldGoldNoClick} style={{ backgroundColor: "#211742"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/a/a4/HeadpieceOfOldGold.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Headpiece<br/>of Old Gold</b></Text>
+   <Text fontSize='sm' align='center'>+14 Atk<br/>+0 Def<br/>+2 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+
+   {(AllIsShown || HuntIsShown) && !HornsOfWisdomIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleHornsOfWisdomClick} style={{ backgroundColor: "#2D3748"}}>
+      <VStack justify='center'>  
+      <Image
+      mt='18px'
+      align='center' 
+      boxSize='3.5rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/a/a7/HornsofWisdom.png/'
+      /> 
+      <Text fontSize='md' align='center'><b>Horns of<br/>Wisdom</b></Text>
+      <Text fontSize='sm' align='center'>+2 Atk<br/>+0 Def<br/>+14 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+      
+      {(AllIsShown || HuntIsShown) && HornsOfWisdomIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleHornsOfWisdomNoClick} style={{ backgroundColor: "#211742"}}>
+      <VStack justify='center'>  
+      <Image
+      mt='18px'
+      align='center' 
+      boxSize='3.5rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/a/a7/HornsofWisdom.png/'      
+      /> 
+      <Text fontSize='md' align='center'><b>Horns of<br/>Wisdom</b></Text>
+      <Text fontSize='sm' align='center'>+2 Atk<br/>+0 Def<br/>+14 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+
+
+{(AllIsShown || HuntIsShown) && !StoriedHornsIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleStoriedHornsClick} style={{ backgroundColor: "#2D3748"}}>
+      <VStack justify='center'>  
+      <Image
+      mt='12px'
+      align='center' 
+      boxSize='4rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/4/43/StoriedHorns.png/'
+      /> 
+      <Text fontSize='md' align='center'><b>Storied Horns</b></Text>
+      <Text fontSize='sm' align='center'>+16 Atk<br/>+0 Def<br/>+0 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+      
+      {(AllIsShown || HuntIsShown) && StoriedHornsIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleStoriedHornsNoClick} style={{ backgroundColor: "#211742"}}>
+      <VStack justify='center'>  
+      <Image
+      mt='12px'
+      align='center' 
+      boxSize='4rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/4/43/StoriedHorns.png/'
+      /> 
+      <Text fontSize='md' align='center'><b>Storied Horns</b></Text>
+      <Text fontSize='sm' align='center'>+16 Atk<br/>+0 Def<br/>+0 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+
+  {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !AakultaHelmetIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleAakultaHelmetClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/0/07/AakultaHelmet.png/'
+/> 
+<Text fontSize='md' align='center'><b>Aakulta<br/>Helmet</b></Text>
+<Text fontSize='sm' align='center'>+15 Atk<br/>+0 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && AakultaHelmetIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleAakultaHelmetNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/0/07/AakultaHelmet.png/'
+/> 
+<Text fontSize='md' align='center'><b>Aakulta<br/>Helmet</b></Text>
+<Text fontSize='sm' align='center'>+15 Atk<br/>+0 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !CrestedHelmetIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleCrestedHelmetClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/f/f8/CrestedHelmet.png/'
+/> 
+<Text fontSize='md' align='center'><b>Crested<br/>Helmet</b></Text>
+<Text fontSize='sm' align='center'>+10 Atk<br/>+5 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && CrestedHelmetIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleCrestedHelmetNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/f/f8/CrestedHelmet.png/'
+/> 
+<Text fontSize='md' align='center'><b>Crested<br/>Helmet</b></Text>
+<Text fontSize='sm' align='center'>+10 Atk<br/>+5 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) && !DarkForestHelmetIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleDarkForestHelmetClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/9/9f/Dark-forest-helmet.png/'
+/> 
+<Text fontSize='md' align='center'><b>Dark Forest<br/>Helmet</b></Text>
+<Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+4 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) && DarkForestHelmetIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleDarkForestHelmetNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/9/9f/Dark-forest-helmet.png/'
+/> 
+<Text fontSize='md' align='center'><b>Dark Forest<br/>Helmet</b></Text>
+<Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+4 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+
+
+
+{(AllIsShown || World2RegionIsShown) && !NivaliHatIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleNivaliHatClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/1/11/Nivali_Hat.png/'
+/> 
+<Text fontSize='md' align='center'><b>Nivali Hat</b></Text>
+<Text fontSize='sm' align='center'>+7 Atk<br/>+15 Def<br/>+7 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown) && NivaliHatIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleNivaliHatNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/1/11/Nivali_Hat.png/'
+/> 
+<Text fontSize='md' align='center'><b>Nivali Hat</b></Text>
+<Text fontSize='sm' align='center'>+7 Atk<br/>+15 Def<br/>+7 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown) && !NivaliMaskIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleNivaliMaskClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/2/24/Nivali_Mask.png/'
+/> 
+<Text fontSize='md' align='center'><b>Nivali Mask</b></Text>
+<Text fontSize='sm' align='center'>+15 Atk<br/>+15 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown) && NivaliMaskIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleNivaliMaskNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/2/24/Nivali_Mask.png/'
+/> 
+<Text fontSize='md' align='center'><b>Nivali Mask</b></Text>
+<Text fontSize='sm' align='center'>+15 Atk<br/>+15 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && !ReinforcedSteelHelmetIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleReinforcedSteelHelmetClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/3/35/Reinforced-steel-helmet.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Reinforced<br/>Steel Helmet</b></Text>
+   <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+0 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && ReinforcedSteelHelmetIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleReinforcedSteelHelmetNoClick} style={{ backgroundColor: "#211742"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/3/35/Reinforced-steel-helmet.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Reinforced<br/>Steel Helmet</b></Text>
+   <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+0 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+
+
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && !FabricHelmetIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleFabricHelmetClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/c/c8/Fabrichelmet_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Fabric Helmet</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+8 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && FabricHelmetIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleFabricHelmetNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/c/c8/Fabrichelmet_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Fabric Helmet</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+8 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+
+
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && !LeafHelmetIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleLeafHelmetClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='4rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/f/f3/Leafhelmet_md.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Leaf Helmet</b></Text>
+   <Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+2 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && LeafHelmetIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleLeafHelmetNoClick} style={{ backgroundColor: "#211742"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='4rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/f/f3/Leafhelmet_md.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Leaf Helmet</b></Text>
+   <Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+2 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+
+
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && !ProtectedLeafHelmetIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleProtectedLeafHelmetClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/78/Protectedleafhelmet_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Protected<br/>Leaf Helmet</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+5 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && ProtectedLeafHelmetIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleProtectedLeafHelmetNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/78/Protectedleafhelmet_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Protected<br/>Leaf Helmet</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+5 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+  </Wrap>
+  {(AllIsShown ||  PastEventsIsShown) && 
+      <Text fontSize='md' mt='25px' mb='15px'><b>Past Event Battle Items:</b></Text>}
+      <Wrap justify='center'>
+      {(AllIsShown || PastEventsIsShown) && !DragonHornedHelmetIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleDragonHornedHelmetClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/e/e5/DragonsHornedHelmet.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Dragon's<br/>Horned Helmet</b></Text>
+<Text fontSize='sm' align='center'>+2 Atk<br/>+5 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+
+{(AllIsShown || PastEventsIsShown) && DragonHornedHelmetIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleDragonHornedHelmetNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/e/e5/DragonsHornedHelmet.png/'
+/> 
+<Text fontSize='sm' align='center'><b>Dragon's<br/>Horned Helmet</b></Text>
+<Text fontSize='sm' align='center'>+2 Atk<br/>+5 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
+{(AllIsShown || PastEventsIsShown) && !MinerHatIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleMinerHatClick} style={{ backgroundColor: "#2D3748"}}>
+      <VStack justify='center'>  
+      <Image
+      mt='12px'
+      align='center' 
+      boxSize='4rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/8/8c/Miner-hat.png/'
+      /> 
+      <Text fontSize='md' align='center'><b>Miner Hat</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br/>+4 Def<br/>+10 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+      
+      {(AllIsShown || PastEventsIsShown) && MinerHatIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleMinerHatNoClick} style={{ backgroundColor: "#211742"}}>
+      <VStack justify='center'>  
+      <Image
+      mt='12px'
+      align='center' 
+      boxSize='4rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/8/8c/Miner-hat.png/'
+      /> 
+      <Text fontSize='md' align='center'><b>Miner Hat</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br/>+4 Def<br/>+10 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+      </Wrap>
 </TabPanel>
   </TabPanels>
 </Tabs>
