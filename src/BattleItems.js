@@ -29186,138 +29186,332 @@ src='https://static.wikia.nocookie.net/4thewords/images/b/ba/Accordion_md.png/'
 <TabPanel>
 {(AllIsShown || ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) &&
     <Text fontSize='md' mb='15px'><b>Main Quest Battle Items:</b></Text>}
-  <Wrap justify='center'>
+
+{SortByLocationIsShown &&
+   <Wrap justify='center'>
   
-
-
-
-{(AllIsShown || World2RegionIsShown) && !NivaliHatIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleNivaliHatClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/1/11/Nivali_Hat.png/'
-/> 
-<Text fontSize='md' align='center'><b>Nivali Hat</b></Text>
-<Text fontSize='sm' align='center'>+7 Atk<br/>+15 Def<br/>+7 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || World2RegionIsShown) && NivaliHatIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleNivaliHatNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/1/11/Nivali_Hat.png/'
-/> 
-<Text fontSize='md' align='center'><b>Nivali Hat</b></Text>
-<Text fontSize='sm' align='center'>+7 Atk<br/>+15 Def<br/>+7 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || World2RegionIsShown) && !NivaliMaskIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleNivaliMaskClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/2/24/Nivali_Mask.png/'
-/> 
-<Text fontSize='md' align='center'><b>Nivali Mask</b></Text>
-<Text fontSize='sm' align='center'>+15 Atk<br/>+15 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || World2RegionIsShown) && NivaliMaskIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleNivaliMaskNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/2/24/Nivali_Mask.png/'
-/> 
-<Text fontSize='md' align='center'><b>Nivali Mask</b></Text>
-<Text fontSize='sm' align='center'>+15 Atk<br/>+15 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-  {(AllIsShown || World2RegionIsShown || DCIsShown) && !KingMaiCrownIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleKingMaiCrownClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/3/33/KingMaiCrown.png/'
-/> 
-<Text fontSize='md' align='center'><b>King Mai's<br/>Crown</b></Text>
-<Text fontSize='sm' align='center'>+10 Atk<br/>+10 Def<br/>+10 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || World2RegionIsShown || DCIsShown) && KingMaiCrownIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleKingMaiCrownNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/3/33/KingMaiCrown.png/'
-/> 
-<Text fontSize='md' align='center'><b>King Mai's<br/>Crown</b></Text>
-<Text fontSize='sm' align='center'>+10 Atk<br/>+10 Def<br/>+10 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || HuntIsShown) && !HeadpieceOfOldGoldIsShown &&
+   {(AllIsShown || World2RegionIsShown) && !NivaliHatIsShown &&
    <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleHeadpieceOfOldGoldClick} style={{ backgroundColor: "#2D3748"}}>
+   <Button w='110px' h='170px' pb={5} onClick={handleNivaliHatClick} style={{ backgroundColor: "#2D3748"}}>
    <VStack justify='center'>  
    <Image
-   mt='18px'
+   mt='12px'
    align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/a/a4/HeadpieceOfOldGold.png/'
+   boxSize='4rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/1/11/Nivali_Hat.png/'
    /> 
-   <Text fontSize='md' align='center'><b>Headpiece<br/>of Old Gold</b></Text>
-   <Text fontSize='sm' align='center'>+14 Atk<br/>+0 Def<br/>+2 Luck </Text>
+   <Text fontSize='md' align='center'><b>Nivali Hat</b></Text>
+   <Text fontSize='sm' align='center'>+7 Atk<br/>+15 Def<br/>+7 Luck </Text>
    </VStack>
    </Button>
    </WrapItem>}
    
-   {(AllIsShown || HuntIsShown) && HeadpieceOfOldGoldIsShown &&
+   {(AllIsShown || World2RegionIsShown) && NivaliHatIsShown &&
    <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleHeadpieceOfOldGoldNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+   <Button w='110px' h='170px' pb={5} onClick={handleNivaliHatNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='4rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/1/11/Nivali_Hat.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Nivali Hat</b></Text>
+   <Text fontSize='sm' align='center'>+7 Atk<br/>+15 Def<br/>+7 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   
+   {(AllIsShown || World2RegionIsShown) && !NivaliMaskIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleNivaliMaskClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='4rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/2/24/Nivali_Mask.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Nivali Mask</b></Text>
+   <Text fontSize='sm' align='center'>+15 Atk<br/>+15 Def<br/>+0 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   
+   {(AllIsShown || World2RegionIsShown) && NivaliMaskIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleNivaliMaskNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='4rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/2/24/Nivali_Mask.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Nivali Mask</b></Text>
+   <Text fontSize='sm' align='center'>+15 Atk<br/>+15 Def<br/>+0 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+     {(AllIsShown || World2RegionIsShown || DCIsShown) && !KingMaiCrownIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleKingMaiCrownClick} style={{ backgroundColor: "#2D3748"}}>
    <VStack justify='center'>  
    <Image
    mt='18px'
    align='center' 
    boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/a/a4/HeadpieceOfOldGold.png/'
+   src='https://static.wikia.nocookie.net/4thewords/images/3/33/KingMaiCrown.png/'
    /> 
-   <Text fontSize='md' align='center'><b>Headpiece<br/>of Old Gold</b></Text>
-   <Text fontSize='sm' align='center'>+14 Atk<br/>+0 Def<br/>+2 Luck </Text>
+   <Text fontSize='md' align='center'><b>King Mai's<br/>Crown</b></Text>
+   <Text fontSize='sm' align='center'>+10 Atk<br/>+10 Def<br/>+10 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   
+   {(AllIsShown || World2RegionIsShown || DCIsShown) && KingMaiCrownIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleKingMaiCrownNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/3/33/KingMaiCrown.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>King Mai's<br/>Crown</b></Text>
+   <Text fontSize='sm' align='center'>+10 Atk<br/>+10 Def<br/>+10 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   
+      
+     {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !AakultaHelmetIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleAakultaHelmetClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/0/07/AakultaHelmet.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Aakulta<br/>Helmet</b></Text>
+   <Text fontSize='sm' align='center'>+15 Atk<br/>+0 Def<br/>+5 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && AakultaHelmetIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleAakultaHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/0/07/AakultaHelmet.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Aakulta<br/>Helmet</b></Text>
+   <Text fontSize='sm' align='center'>+15 Atk<br/>+0 Def<br/>+5 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !CrestedHelmetIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleCrestedHelmetClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/f/f8/CrestedHelmet.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Crested<br/>Helmet</b></Text>
+   <Text fontSize='sm' align='center'>+10 Atk<br/>+5 Def<br/>+5 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && CrestedHelmetIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleCrestedHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/f/f8/CrestedHelmet.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Crested<br/>Helmet</b></Text>
+   <Text fontSize='sm' align='center'>+10 Atk<br/>+5 Def<br/>+5 Luck </Text>
    </VStack>
    </Button>
    </WrapItem>}
 
+   {(AllIsShown || HuntIsShown) && !StoriedHornsIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleStoriedHornsClick} style={{ backgroundColor: "#2D3748"}}>
+      <VStack justify='center'>  
+      <Image
+      mt='12px'
+      align='center' 
+      boxSize='4rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/4/43/StoriedHorns.png/'
+      /> 
+      <Text fontSize='md' align='center'><b>Storied Horns</b></Text>
+      <Text fontSize='sm' align='center'>+16 Atk<br/>+0 Def<br/>+0 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+      
+      {(AllIsShown || HuntIsShown) && StoriedHornsIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleStoriedHornsNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+      <VStack justify='center'>  
+      <Image
+      mt='12px'
+      align='center' 
+      boxSize='4rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/4/43/StoriedHorns.png/'
+      /> 
+      <Text fontSize='md' align='center'><b>Storied Horns</b></Text>
+      <Text fontSize='sm' align='center'>+16 Atk<br/>+0 Def<br/>+0 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) && !DarkForestHelmetIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleDarkForestHelmetClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.75rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/9/9f/Dark-forest-helmet.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Dark Forest<br/>Helmet</b></Text>
+   <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+4 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) && DarkForestHelmetIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleDarkForestHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.75rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/9/9f/Dark-forest-helmet.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Dark Forest<br/>Helmet</b></Text>
+   <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+4 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   
+   
+   
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && !ReinforcedSteelHelmetIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleReinforcedSteelHelmetClick} style={{ backgroundColor: "#2D3748"}}>
+      <VStack justify='center'>  
+      <Image
+      mt='18px'
+      align='center' 
+      boxSize='3.5rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/3/35/Reinforced-steel-helmet.png/'
+      /> 
+      <Text fontSize='md' align='center'><b>Reinforced<br/>Steel Helmet</b></Text>
+      <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+0 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+      
+      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && ReinforcedSteelHelmetIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleReinforcedSteelHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+      <VStack justify='center'>  
+      <Image
+      mt='18px'
+      align='center' 
+      boxSize='3.5rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/3/35/Reinforced-steel-helmet.png/'
+      /> 
+      <Text fontSize='md' align='center'><b>Reinforced<br/>Steel Helmet</b></Text>
+      <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+0 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+   
+      {(AllIsShown || HuntIsShown) && !HeadpieceOfOldGoldIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleHeadpieceOfOldGoldClick} style={{ backgroundColor: "#2D3748"}}>
+      <VStack justify='center'>  
+      <Image
+      mt='18px'
+      align='center' 
+      boxSize='3.5rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/a/a4/HeadpieceOfOldGold.png/'
+      /> 
+      <Text fontSize='md' align='center'><b>Headpiece<br/>of Old Gold</b></Text>
+      <Text fontSize='sm' align='center'>+14 Atk<br/>+0 Def<br/>+2 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+      
+      {(AllIsShown || HuntIsShown) && HeadpieceOfOldGoldIsShown &&
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleHeadpieceOfOldGoldNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+      <VStack justify='center'>  
+      <Image
+      mt='18px'
+      align='center' 
+      boxSize='3.5rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/a/a4/HeadpieceOfOldGold.png/'
+      /> 
+      <Text fontSize='md' align='center'><b>Headpiece<br/>of Old Gold</b></Text>
+      <Text fontSize='sm' align='center'>+14 Atk<br/>+0 Def<br/>+2 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>}
+   
+      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && !FabricHelmetIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleFabricHelmetClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='4rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/c/c8/Fabrichelmet_md.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Fabric Helmet</b></Text>
+   <Text fontSize='sm' align='center'>+0 Atk<br/>+8 Def<br/>+0 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && FabricHelmetIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleFabricHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='4rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/c/c8/Fabrichelmet_md.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Fabric Helmet</b></Text>
+   <Text fontSize='sm' align='center'>+0 Atk<br/>+8 Def<br/>+0 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   
    {(AllIsShown || HuntIsShown) && !HornsOfWisdomIsShown &&
       <WrapItem>
       <Button w='110px' h='170px' pb={5} onClick={handleHornsOfWisdomClick} style={{ backgroundColor: "#2D3748"}}>
@@ -29350,269 +29544,75 @@ src='https://static.wikia.nocookie.net/4thewords/images/3/33/KingMaiCrown.png/'
       </Button>
       </WrapItem>}
 
-
-{(AllIsShown || HuntIsShown) && !StoriedHornsIsShown &&
+      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && !ProtectedLeafHelmetIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleProtectedLeafHelmetClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/7/78/Protectedleafhelmet_md.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Protected<br/>Leaf Helmet</b></Text>
+   <Text fontSize='sm' align='center'>+0 Atk<br/>+5 Def<br/>+2 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && ProtectedLeafHelmetIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleProtectedLeafHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/7/78/Protectedleafhelmet_md.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Protected<br/>Leaf Helmet</b></Text>
+   <Text fontSize='sm' align='center'>+0 Atk<br/>+5 Def<br/>+2 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+  
+   
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && !LeafHelmetIsShown &&
       <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleStoriedHornsClick} style={{ backgroundColor: "#2D3748"}}>
+      <Button w='110px' h='170px' pb={5} onClick={handleLeafHelmetClick} style={{ backgroundColor: "#2D3748"}}>
       <VStack justify='center'>  
       <Image
       mt='12px'
       align='center' 
       boxSize='4rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/4/43/StoriedHorns.png/'
+      src='https://static.wikia.nocookie.net/4thewords/images/f/f3/Leafhelmet_md.png/'
       /> 
-      <Text fontSize='md' align='center'><b>Storied Horns</b></Text>
-      <Text fontSize='sm' align='center'>+16 Atk<br/>+0 Def<br/>+0 Luck </Text>
+      <Text fontSize='md' align='center'><b>Leaf Helmet</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+2 Luck </Text>
       </VStack>
       </Button>
       </WrapItem>}
       
-      {(AllIsShown || HuntIsShown) && StoriedHornsIsShown &&
+      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && LeafHelmetIsShown &&
       <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleStoriedHornsNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+      <Button w='110px' h='170px' pb={5} onClick={handleLeafHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
       <VStack justify='center'>  
       <Image
       mt='12px'
       align='center' 
       boxSize='4rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/4/43/StoriedHorns.png/'
+      src='https://static.wikia.nocookie.net/4thewords/images/f/f3/Leafhelmet_md.png/'
       /> 
-      <Text fontSize='md' align='center'><b>Storied Horns</b></Text>
-      <Text fontSize='sm' align='center'>+16 Atk<br/>+0 Def<br/>+0 Luck </Text>
+      <Text fontSize='md' align='center'><b>Leaf Helmet</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+2 Luck </Text>
       </VStack>
       </Button>
       </WrapItem>}
-
-  {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !AakultaHelmetIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleAakultaHelmetClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/0/07/AakultaHelmet.png/'
-/> 
-<Text fontSize='md' align='center'><b>Aakulta<br/>Helmet</b></Text>
-<Text fontSize='sm' align='center'>+15 Atk<br/>+0 Def<br/>+5 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && AakultaHelmetIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleAakultaHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/0/07/AakultaHelmet.png/'
-/> 
-<Text fontSize='md' align='center'><b>Aakulta<br/>Helmet</b></Text>
-<Text fontSize='sm' align='center'>+15 Atk<br/>+0 Def<br/>+5 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !CrestedHelmetIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleCrestedHelmetClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/f/f8/CrestedHelmet.png/'
-/> 
-<Text fontSize='md' align='center'><b>Crested<br/>Helmet</b></Text>
-<Text fontSize='sm' align='center'>+10 Atk<br/>+5 Def<br/>+5 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && CrestedHelmetIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleCrestedHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/f/f8/CrestedHelmet.png/'
-/> 
-<Text fontSize='md' align='center'><b>Crested<br/>Helmet</b></Text>
-<Text fontSize='sm' align='center'>+10 Atk<br/>+5 Def<br/>+5 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) && !DarkForestHelmetIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleDarkForestHelmetClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.75rem'
-src='https://static.wikia.nocookie.net/4thewords/images/9/9f/Dark-forest-helmet.png/'
-/> 
-<Text fontSize='md' align='center'><b>Dark Forest<br/>Helmet</b></Text>
-<Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+4 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) && DarkForestHelmetIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleDarkForestHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.75rem'
-src='https://static.wikia.nocookie.net/4thewords/images/9/9f/Dark-forest-helmet.png/'
-/> 
-<Text fontSize='md' align='center'><b>Dark Forest<br/>Helmet</b></Text>
-<Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+4 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-
-
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && !ReinforcedSteelHelmetIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleReinforcedSteelHelmetClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/3/35/Reinforced-steel-helmet.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Reinforced<br/>Steel Helmet</b></Text>
-   <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
    
-   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && ReinforcedSteelHelmetIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleReinforcedSteelHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/3/35/Reinforced-steel-helmet.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Reinforced<br/>Steel Helmet</b></Text>
-   <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+ 
+     </Wrap>
+}
 
-
-   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && !FabricHelmetIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleFabricHelmetClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/c/c8/Fabrichelmet_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Fabric Helmet</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+8 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && FabricHelmetIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleFabricHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/c/c8/Fabrichelmet_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Fabric Helmet</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+8 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-
-
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && !LeafHelmetIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleLeafHelmetClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center' 
-   boxSize='4rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/f/f3/Leafhelmet_md.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Leaf Helmet</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+2 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
-   
-   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && LeafHelmetIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleLeafHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center' 
-   boxSize='4rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/f/f3/Leafhelmet_md.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Leaf Helmet</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+2 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
-
-
-   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && !ProtectedLeafHelmetIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleProtectedLeafHelmetClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/7/78/Protectedleafhelmet_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Protected<br/>Leaf Helmet</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+5 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && ProtectedLeafHelmetIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleProtectedLeafHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/7/78/Protectedleafhelmet_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Protected<br/>Leaf Helmet</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+5 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-  </Wrap>
   {(AllIsShown ||  PastEventsIsShown) && 
       <Text fontSize='md' mt='25px' mb='15px'><b>Past Event Battle Items:</b></Text>}
       <Wrap justify='center'>
