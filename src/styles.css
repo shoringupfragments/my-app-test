@@ -1,1583 +1,291 @@
-{!AmidalaChestpieceIsShown && !CloudChestPlateIsShown && !DragonScaleArmorIsShown && !FabricBreastplateIsShown && 
-   !FusionCuirassIsShown && !KingBreastplateIsShown && !LeafBreastplateIsShown && !LeatherCuirassIsShown && 
-   !MarionetteBodyArmorIsShown && !NivaliBreastplateIsShown && !ReinforcedSteelBreastplateIsShown && !RobotTorsoIsShown && 
-
+{SortByAtkIsShown &&
+<Wrap justify='center'>
+{(AllIsShown || World2RegionIsShown || DCIsShown) && !AgelessBootsIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleAgelessBootsClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.75rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/5/5f/AgelessBoots.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Ageless<br/>Boots</b></Text>
+   <Text fontSize='sm' align='center'>+2 Atk<br/>+14 Def<br/>+2 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
    
+   {(AllIsShown || World2RegionIsShown || DCIsShown) && AgelessBootsIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleAgelessBootsNoClick} style={{ backgroundColor: "#211742"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.75rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/5/5f/AgelessBoots.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Ageless<br/>Boots</b></Text>
+   <Text fontSize='sm' align='center'>+2 Atk<br/>+14 Def<br/>+2 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   }
 
-const [AmidalaChestpieceIsShown, setAmidalaChestpieceIsShown] = useState(false)
-const [AmidalaChestpieceActive, setAmidalaChestpieceActive] = useState(false)
-const [AmidalaChestpieceAtk, setAmidalaChestpieceAtk] = useState(0)
-const [AmidalaChestpieceDef, setAmidalaChestpieceDef] = useState(0)
-const [AmidalaChestpieceLuck, setAmidalaChestpieceLuck] = useState(0)
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !ClimbingBootsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleClimbingBootsClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/7d/ClimbingBoots.png/'
+/> 
+<Text fontSize='md' align='center'><b>Climbing<br/>Boots</b></Text>
+<Text fontSize='sm' align='center'>+12 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
 
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && ClimbingBootsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleClimbingBootsNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/7d/ClimbingBoots.png/'
+/> 
+<Text fontSize='md' align='center'><b>Climbing<br/>Boots</b></Text>
+<Text fontSize='sm' align='center'>+12 Atk<br/>+0 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
 
-const handleAmidalaChestpieceClick = event => {
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) && !DarkForestBootsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleDarkForestBootsClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/6/64/Dark-forest-boots_battle.png/'
+/> 
+<Text fontSize='md' align='center'><b>Dark Forest<br/>Boots</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+8 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
 
-   setAmidalaChestpieceIsShown (current => !AmidalaChestpieceIsShown);
-   setAmidalaChestpieceActive (current => !AmidalaChestpieceActive);
-   setAmidalaChestpieceAtk (value => 6);
-   setAmidalaChestpieceDef (value => 6);
-   setAmidalaChestpieceLuck (value => 2);
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) && DarkForestBootsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleDarkForestBootsNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/6/64/Dark-forest-boots_battle.png/'
+/> 
+<Text fontSize='md' align='center'><b>Dark Forest<br/>Boots</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+8 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
 
-   setCloudChestPlateIsShown (current => false);
-   setCloudChestPlateActive (current => false);
-   setCloudChestPlateAtk (value => 0);
-   setCloudChestPlateDef (value => 0);
-   setCloudChestPlateLuck (value => 0);
-   setDragonScaleArmorIsShown (current => false);
-   setDragonScaleArmorActive (current => false);
-   setDragonScaleArmorAtk (value => 0);
-   setDragonScaleArmorDef (value => 0);
-   setDragonScaleArmorLuck (value => 0);
-   setFabricBreastplateIsShown (current => false);
-   setFabricBreastplateActive (current => false);
-   setFabricBreastplateAtk (value => 0);
-   setFabricBreastplateDef (value => 0);
-   setFabricBreastplateLuck (value => 0);
-   setFusionCuirassIsShown (current => false);
-   setFusionCuirassActive (current => false);
-   setFusionCuirassAtk (value => 0);
-   setFusionCuirassDef (value => 0);
-   setFusionCuirassLuck (value => 0);
-   setKingBreastplateIsShown (current => false);
-   setKingBreastplateActive (current => false);
-   setKingBreastplateAtk (value => 0);
-   setKingBreastplateDef (value => 0);
-   setKingBreastplateLuck (value => 0);
-   setLeafBreastplateIsShown (current => false);
-   setLeafBreastplateActive (current => false);
-   setLeafBreastplateAtk (value => 0);
-   setLeafBreastplateDef (value => 0);
-   setLeafBreastplateLuck (value => 0);
-   setLeatherCuirassIsShown (current => false);
-   setLeatherCuirassActive (current => false);
-   setLeatherCuirassAtk (value => 0);
-   setLeatherCuirassDef (value => 0);
-   setLeatherCuirassLuck (value => 0);
-   setMarionetteBodyArmorIsShown (current => false);
-   setMarionetteBodyArmorActive (current => false);
-   setMarionetteBodyArmorAtk (value => 0);
-   setMarionetteBodyArmorDef (value => 0);
-   setMarionetteBodyArmorLuck (value => 0);
-   setNivaliBreastplateIsShown (current => false);
-   setNivaliBreastplateActive (current => false);
-   setNivaliBreastplateAtk (value => 0);
-   setNivaliBreastplateDef (value => 0);
-   setNivaliBreastplateLuck (value => 0);
-   setReinforcedSteelBreastplateIsShown (current => false);
-   setReinforcedSteelBreastplateActive (current => false);
-   setReinforcedSteelBreastplateAtk (value => 0);
-   setReinforcedSteelBreastplateDef (value => 0);
-   setReinforcedSteelBreastplateLuck (value => 0);
-   setRobotTorsoIsShown (current => false);
-   setRobotTorsoActive (current => false);
-   setRobotTorsoAtk (value => 0);
-   setRobotTorsoDef (value => 0);
-   setRobotTorsoLuck (value => 0);
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && !FabricBootsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleFabricBootsClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/7c/Fabricboots_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Fabric Boots</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+6 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
 
-}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && FabricBootsIsShown &&
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleFabricBootsNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/7c/Fabricboots_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Fabric Boots</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+6 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>}
 
-const handleAmidalaChestpieceNoClick = event => {
-   setAmidalaChestpieceIsShown (current => false);
-   setAmidalaChestpieceActive (current => false);
-   setAmidalaChestpieceAtk (value => 0);
-   setAmidalaChestpieceDef (value => 0);
-   setAmidalaChestpieceLuck (value => 0);
-}
-
-const [CloudChestPlateIsShown, setCloudChestPlateIsShown] = useState(false)
-const [CloudChestPlateActive, setCloudChestPlateActive] = useState(false)
-const [CloudChestPlateAtk, setCloudChestPlateAtk] = useState(0)
-const [CloudChestPlateDef, setCloudChestPlateDef] = useState(0)
-const [CloudChestPlateLuck, setCloudChestPlateLuck] = useState(0)
-
-
-const handleCloudChestPlateClick = event => {
-
-
-
-   setCloudChestPlateIsShown (current => !CloudChestPlateIsShown);
-   setCloudChestPlateActive (current => !CloudChestPlateActive);
-   setCloudChestPlateAtk (value => 0);
-   setCloudChestPlateDef (value => 18);
-   setCloudChestPlateLuck (value => 2);
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) && !LeafBootsIsShown &&
+ <WrapItem>
+ <Button w='110px' h='170px' pb={5} onClick={handleLeafBootsClick} style={{ backgroundColor: "#2D3748"}}>
+ <VStack justify='center'>  
+ <Image
+ mt='12px'
+ align='center' 
+ boxSize='4rem'
+ src='https://static.wikia.nocookie.net/4thewords/images/3/30/Leafboots_md.png/'
+ /> 
+ <Text fontSize='md' align='center'><b>Leaf Boots</b></Text>
+ <Text fontSize='sm' align='center'>+0 Atk<br/>+1 Def<br/>+1 Luck </Text>
+ </VStack>
+ </Button>
+ </WrapItem>}
  
-   setAmidalaChestpieceIsShown (current => false);
-   setAmidalaChestpieceActive (current => false);
-   setAmidalaChestpieceAtk (value => 0);
-   setAmidalaChestpieceDef (value => 0);
-   setAmidalaChestpieceLuck (value => 0);
-   setDragonScaleArmorIsShown (current => false);
-   setDragonScaleArmorActive (current => false);
-   setDragonScaleArmorAtk (value => 0);
-   setDragonScaleArmorDef (value => 0);
-   setDragonScaleArmorLuck (value => 0);
-   setFabricBreastplateIsShown (current => false);
-   setFabricBreastplateActive (current => false);
-   setFabricBreastplateAtk (value => 0);
-   setFabricBreastplateDef (value => 0);
-   setFabricBreastplateLuck (value => 0);
-   setFusionCuirassIsShown (current => false);
-   setFusionCuirassActive (current => false);
-   setFusionCuirassAtk (value => 0);
-   setFusionCuirassDef (value => 0);
-   setFusionCuirassLuck (value => 0);
-   setKingBreastplateIsShown (current => false);
-   setKingBreastplateActive (current => false);
-   setKingBreastplateAtk (value => 0);
-   setKingBreastplateDef (value => 0);
-   setKingBreastplateLuck (value => 0);
-   setLeafBreastplateIsShown (current => false);
-   setLeafBreastplateActive (current => false);
-   setLeafBreastplateAtk (value => 0);
-   setLeafBreastplateDef (value => 0);
-   setLeafBreastplateLuck (value => 0);
-   setLeatherCuirassIsShown (current => false);
-   setLeatherCuirassActive (current => false);
-   setLeatherCuirassAtk (value => 0);
-   setLeatherCuirassDef (value => 0);
-   setLeatherCuirassLuck (value => 0);
-   setMarionetteBodyArmorIsShown (current => false);
-   setMarionetteBodyArmorActive (current => false);
-   setMarionetteBodyArmorAtk (value => 0);
-   setMarionetteBodyArmorDef (value => 0);
-   setMarionetteBodyArmorLuck (value => 0);
-   setNivaliBreastplateIsShown (current => false);
-   setNivaliBreastplateActive (current => false);
-   setNivaliBreastplateAtk (value => 0);
-   setNivaliBreastplateDef (value => 0);
-   setNivaliBreastplateLuck (value => 0);
-   setReinforcedSteelBreastplateIsShown (current => false);
-   setReinforcedSteelBreastplateActive (current => false);
-   setReinforcedSteelBreastplateAtk (value => 0);
-   setReinforcedSteelBreastplateDef (value => 0);
-   setReinforcedSteelBreastplateLuck (value => 0);
-   setRobotTorsoIsShown (current => false);
-   setRobotTorsoActive (current => false);
-   setRobotTorsoAtk (value => 0);
-   setRobotTorsoDef (value => 0);
-   setRobotTorsoLuck (value => 0);
-
-}
-
-const handleCloudChestPlateNoClick = event => {
-   setCloudChestPlateIsShown (current => false);
-   setCloudChestPlateActive (current => false);
-   setCloudChestPlateAtk (value => 0);
-   setCloudChestPlateDef (value => 0);
-   setCloudChestPlateLuck (value => 0);
-}
-
-const [DragonScaleArmorIsShown, setDragonScaleArmorIsShown] = useState(false)
-const [DragonScaleArmorActive, setDragonScaleArmorActive] = useState(false)
-const [DragonScaleArmorAtk, setDragonScaleArmorAtk] = useState(0)
-const [DragonScaleArmorDef, setDragonScaleArmorDef] = useState(0)
-const [DragonScaleArmorLuck, setDragonScaleArmorLuck] = useState(0)
-
-
-const handleDragonScaleArmorClick = event => {
-
-
-
-   setDragonScaleArmorIsShown (current => !DragonScaleArmorIsShown);
-   setDragonScaleArmorActive (current => !DragonScaleArmorActive);
-   setDragonScaleArmorAtk (value => 2);
-   setDragonScaleArmorDef (value => 12);
-   setDragonScaleArmorLuck (value => 2);
-   
-   setAmidalaChestpieceIsShown (current => false);
-   setAmidalaChestpieceActive (current => false);
-   setAmidalaChestpieceAtk (value => 0);
-   setAmidalaChestpieceDef (value => 0);
-   setAmidalaChestpieceLuck (value => 0);
-   setCloudChestPlateIsShown (current => false);
-   setCloudChestPlateActive (current => false);
-   setCloudChestPlateAtk (value => 0);
-   setCloudChestPlateDef (value => 0);
-   setCloudChestPlateLuck (value => 0);
-   setFabricBreastplateIsShown (current => false);
-   setFabricBreastplateActive (current => false);
-   setFabricBreastplateAtk (value => 0);
-   setFabricBreastplateDef (value => 0);
-   setFabricBreastplateLuck (value => 0);
-   setFusionCuirassIsShown (current => false);
-   setFusionCuirassActive (current => false);
-   setFusionCuirassAtk (value => 0);
-   setFusionCuirassDef (value => 0);
-   setFusionCuirassLuck (value => 0);
-   setKingBreastplateIsShown (current => false);
-   setKingBreastplateActive (current => false);
-   setKingBreastplateAtk (value => 0);
-   setKingBreastplateDef (value => 0);
-   setKingBreastplateLuck (value => 0);
-   setLeafBreastplateIsShown (current => false);
-   setLeafBreastplateActive (current => false);
-   setLeafBreastplateAtk (value => 0);
-   setLeafBreastplateDef (value => 0);
-   setLeafBreastplateLuck (value => 0);
-   setLeatherCuirassIsShown (current => false);
-   setLeatherCuirassActive (current => false);
-   setLeatherCuirassAtk (value => 0);
-   setLeatherCuirassDef (value => 0);
-   setLeatherCuirassLuck (value => 0);
-   setMarionetteBodyArmorIsShown (current => false);
-   setMarionetteBodyArmorActive (current => false);
-   setMarionetteBodyArmorAtk (value => 0);
-   setMarionetteBodyArmorDef (value => 0);
-   setMarionetteBodyArmorLuck (value => 0);
-   setNivaliBreastplateIsShown (current => false);
-   setNivaliBreastplateActive (current => false);
-   setNivaliBreastplateAtk (value => 0);
-   setNivaliBreastplateDef (value => 0);
-   setNivaliBreastplateLuck (value => 0);
-   setReinforcedSteelBreastplateIsShown (current => false);
-   setReinforcedSteelBreastplateActive (current => false);
-   setReinforcedSteelBreastplateAtk (value => 0);
-   setReinforcedSteelBreastplateDef (value => 0);
-   setReinforcedSteelBreastplateLuck (value => 0);
-   setRobotTorsoIsShown (current => false);
-   setRobotTorsoActive (current => false);
-   setRobotTorsoAtk (value => 0);
-   setRobotTorsoDef (value => 0);
-   setRobotTorsoLuck (value => 0);
-
-}
-
-const handleDragonScaleArmorNoClick = event => {
-   setDragonScaleArmorIsShown (current => false);
-   setDragonScaleArmorActive (current => false);
-   setDragonScaleArmorAtk (value => 0);
-   setDragonScaleArmorDef (value => 0);
-   setDragonScaleArmorLuck (value => 0);
-}
-
-const [FabricBreastplateIsShown, setFabricBreastplateIsShown] = useState(false)
-const [FabricBreastplateActive, setFabricBreastplateActive] = useState(false)
-const [FabricBreastplateAtk, setFabricBreastplateAtk] = useState(0)
-const [FabricBreastplateDef, setFabricBreastplateDef] = useState(0)
-const [FabricBreastplateLuck, setFabricBreastplateLuck] = useState(0)
-
-
-const handleFabricBreastplateClick = event => {
-
-
-
-   setFabricBreastplateIsShown (current => !FabricBreastplateIsShown);
-   setFabricBreastplateActive (current => !FabricBreastplateActive);
-   setFabricBreastplateAtk (value => 0);
-   setFabricBreastplateDef (value => 10);
-   setFabricBreastplateLuck (value => 0);
-   
-   setAmidalaChestpieceIsShown (current => false);
-   setAmidalaChestpieceActive (current => false);
-   setAmidalaChestpieceAtk (value => 0);
-   setAmidalaChestpieceDef (value => 0);
-   setAmidalaChestpieceLuck (value => 0);
-   setCloudChestPlateIsShown (current => false);
-   setCloudChestPlateActive (current => false);
-   setCloudChestPlateAtk (value => 0);
-   setCloudChestPlateDef (value => 0);
-   setCloudChestPlateLuck (value => 0);
-   setDragonScaleArmorIsShown (current => false);
-   setDragonScaleArmorActive (current => false);
-   setDragonScaleArmorAtk (value => 0);
-   setDragonScaleArmorDef (value => 0);
-   setDragonScaleArmorLuck (value => 0);
-   setFusionCuirassIsShown (current => false);
-   setFusionCuirassActive (current => false);
-   setFusionCuirassAtk (value => 0);
-   setFusionCuirassDef (value => 0);
-   setFusionCuirassLuck (value => 0);
-   setKingBreastplateIsShown (current => false);
-   setKingBreastplateActive (current => false);
-   setKingBreastplateAtk (value => 0);
-   setKingBreastplateDef (value => 0);
-   setKingBreastplateLuck (value => 0);
-   setLeafBreastplateIsShown (current => false);
-   setLeafBreastplateActive (current => false);
-   setLeafBreastplateAtk (value => 0);
-   setLeafBreastplateDef (value => 0);
-   setLeafBreastplateLuck (value => 0);
-   setLeatherCuirassIsShown (current => false);
-   setLeatherCuirassActive (current => false);
-   setLeatherCuirassAtk (value => 0);
-   setLeatherCuirassDef (value => 0);
-   setLeatherCuirassLuck (value => 0);
-   setMarionetteBodyArmorIsShown (current => false);
-   setMarionetteBodyArmorActive (current => false);
-   setMarionetteBodyArmorAtk (value => 0);
-   setMarionetteBodyArmorDef (value => 0);
-   setMarionetteBodyArmorLuck (value => 0);
-   setNivaliBreastplateIsShown (current => false);
-   setNivaliBreastplateActive (current => false);
-   setNivaliBreastplateAtk (value => 0);
-   setNivaliBreastplateDef (value => 0);
-   setNivaliBreastplateLuck (value => 0);
-   setReinforcedSteelBreastplateIsShown (current => false);
-   setReinforcedSteelBreastplateActive (current => false);
-   setReinforcedSteelBreastplateAtk (value => 0);
-   setReinforcedSteelBreastplateDef (value => 0);
-   setReinforcedSteelBreastplateLuck (value => 0);
-   setRobotTorsoIsShown (current => false);
-   setRobotTorsoActive (current => false);
-   setRobotTorsoAtk (value => 0);
-   setRobotTorsoDef (value => 0);
-   setRobotTorsoLuck (value => 0);
-
-}
-
-const handleFabricBreastplateNoClick = event => {
-   setFabricBreastplateIsShown (current => false);
-   setFabricBreastplateActive (current => false);
-   setFabricBreastplateAtk (value => 0);
-   setFabricBreastplateDef (value => 0);
-   setFabricBreastplateLuck (value => 0);
-}
-
-const [FusionCuirassIsShown, setFusionCuirassIsShown] = useState(false)
-const [FusionCuirassActive, setFusionCuirassActive] = useState(false)
-const [FusionCuirassAtk, setFusionCuirassAtk] = useState(0)
-const [FusionCuirassDef, setFusionCuirassDef] = useState(0)
-const [FusionCuirassLuck, setFusionCuirassLuck] = useState(0)
-
-
-const handleFusionCuirassClick = event => {
-
-
-   setFusionCuirassIsShown (current => !FusionCuirassIsShown);
-   setFusionCuirassActive (current => !FusionCuirassActive);
-   setFusionCuirassAtk (value => 8);
-   setFusionCuirassDef (value => 20);
-   setFusionCuirassLuck (value => 0);
-   
-   setAmidalaChestpieceIsShown (current => false);
-   setAmidalaChestpieceActive (current => false);
-   setAmidalaChestpieceAtk (value => 0);
-   setAmidalaChestpieceDef (value => 0);
-   setAmidalaChestpieceLuck (value => 0);
-   setCloudChestPlateIsShown (current => false);
-   setCloudChestPlateActive (current => false);
-   setCloudChestPlateAtk (value => 0);
-   setCloudChestPlateDef (value => 0);
-   setCloudChestPlateLuck (value => 0);
-   setDragonScaleArmorIsShown (current => false);
-   setDragonScaleArmorActive (current => false);
-   setDragonScaleArmorAtk (value => 0);
-   setDragonScaleArmorDef (value => 0);
-   setDragonScaleArmorLuck (value => 0);
-   setFabricBreastplateIsShown (current => false);
-   setFabricBreastplateActive (current => false);
-   setFabricBreastplateAtk (value => 0);
-   setFabricBreastplateDef (value => 0);
-   setFabricBreastplateLuck (value => 0);
-   setKingBreastplateIsShown (current => false);
-   setKingBreastplateActive (current => false);
-   setKingBreastplateAtk (value => 0);
-   setKingBreastplateDef (value => 0);
-   setKingBreastplateLuck (value => 0);
-   setLeafBreastplateIsShown (current => false);
-   setLeafBreastplateActive (current => false);
-   setLeafBreastplateAtk (value => 0);
-   setLeafBreastplateDef (value => 0);
-   setLeafBreastplateLuck (value => 0);
-   setLeatherCuirassIsShown (current => false);
-   setLeatherCuirassActive (current => false);
-   setLeatherCuirassAtk (value => 0);
-   setLeatherCuirassDef (value => 0);
-   setLeatherCuirassLuck (value => 0);
-   setMarionetteBodyArmorIsShown (current => false);
-   setMarionetteBodyArmorActive (current => false);
-   setMarionetteBodyArmorAtk (value => 0);
-   setMarionetteBodyArmorDef (value => 0);
-   setMarionetteBodyArmorLuck (value => 0);
-   setNivaliBreastplateIsShown (current => false);
-   setNivaliBreastplateActive (current => false);
-   setNivaliBreastplateAtk (value => 0);
-   setNivaliBreastplateDef (value => 0);
-   setNivaliBreastplateLuck (value => 0);
-   setReinforcedSteelBreastplateIsShown (current => false);
-   setReinforcedSteelBreastplateActive (current => false);
-   setReinforcedSteelBreastplateAtk (value => 0);
-   setReinforcedSteelBreastplateDef (value => 0);
-   setReinforcedSteelBreastplateLuck (value => 0);
-   setRobotTorsoIsShown (current => false);
-   setRobotTorsoActive (current => false);
-   setRobotTorsoAtk (value => 0);
-   setRobotTorsoDef (value => 0);
-   setRobotTorsoLuck (value => 0);
-
-}
-
-const handleFusionCuirassNoClick = event => {
-   setFusionCuirassIsShown (current => false);
-   setFusionCuirassActive (current => false);
-   setFusionCuirassAtk (value => 0);
-   setFusionCuirassDef (value => 0);
-   setFusionCuirassLuck (value => 0);
-}
-
-const [KingBreastplateIsShown, setKingBreastplateIsShown] = useState(false)
-const [KingBreastplateActive, setKingBreastplateActive] = useState(false)
-const [KingBreastplateAtk, setKingBreastplateAtk] = useState(0)
-const [KingBreastplateDef, setKingBreastplateDef] = useState(0)
-const [KingBreastplateLuck, setKingBreastplateLuck] = useState(0)
-
-
-const handleKingBreastplateClick = event => {
-
-
-   setKingBreastplateIsShown (current => !KingBreastplateIsShown);
-   setKingBreastplateActive (current => !KingBreastplateActive);
-   setKingBreastplateAtk (value => 5);
-   setKingBreastplateDef (value => 25);
-   setKingBreastplateLuck (value => 0);
-   
-   setAmidalaChestpieceIsShown (current => false);
-   setAmidalaChestpieceActive (current => false);
-   setAmidalaChestpieceAtk (value => 0);
-   setAmidalaChestpieceDef (value => 0);
-   setAmidalaChestpieceLuck (value => 0);
-   setCloudChestPlateIsShown (current => false);
-   setCloudChestPlateActive (current => false);
-   setCloudChestPlateAtk (value => 0);
-   setCloudChestPlateDef (value => 0);
-   setCloudChestPlateLuck (value => 0);
-   setDragonScaleArmorIsShown (current => false);
-   setDragonScaleArmorActive (current => false);
-   setDragonScaleArmorAtk (value => 0);
-   setDragonScaleArmorDef (value => 0);
-   setDragonScaleArmorLuck (value => 0);
-   setFabricBreastplateIsShown (current => false);
-   setFabricBreastplateActive (current => false);
-   setFabricBreastplateAtk (value => 0);
-   setFabricBreastplateDef (value => 0);
-   setFabricBreastplateLuck (value => 0);
-   setFusionCuirassIsShown (current => false);
-   setFusionCuirassActive (current => false);
-   setFusionCuirassAtk (value => 0);
-   setFusionCuirassDef (value => 0);
-   setFusionCuirassLuck (value => 0);
-   setLeafBreastplateIsShown (current => false);
-   setLeafBreastplateActive (current => false);
-   setLeafBreastplateAtk (value => 0);
-   setLeafBreastplateDef (value => 0);
-   setLeafBreastplateLuck (value => 0);
-   setLeatherCuirassIsShown (current => false);
-   setLeatherCuirassActive (current => false);
-   setLeatherCuirassAtk (value => 0);
-   setLeatherCuirassDef (value => 0);
-   setLeatherCuirassLuck (value => 0);
-   setMarionetteBodyArmorIsShown (current => false);
-   setMarionetteBodyArmorActive (current => false);
-   setMarionetteBodyArmorAtk (value => 0);
-   setMarionetteBodyArmorDef (value => 0);
-   setMarionetteBodyArmorLuck (value => 0);
-   setNivaliBreastplateIsShown (current => false);
-   setNivaliBreastplateActive (current => false);
-   setNivaliBreastplateAtk (value => 0);
-   setNivaliBreastplateDef (value => 0);
-   setNivaliBreastplateLuck (value => 0);
-   setReinforcedSteelBreastplateIsShown (current => false);
-   setReinforcedSteelBreastplateActive (current => false);
-   setReinforcedSteelBreastplateAtk (value => 0);
-   setReinforcedSteelBreastplateDef (value => 0);
-   setReinforcedSteelBreastplateLuck (value => 0);
-   setRobotTorsoIsShown (current => false);
-   setRobotTorsoActive (current => false);
-   setRobotTorsoAtk (value => 0);
-   setRobotTorsoDef (value => 0);
-   setRobotTorsoLuck (value => 0);
-
-}
-
-const handleKingBreastplateNoClick = event => {
-   setKingBreastplateIsShown (current => false);
-   setKingBreastplateActive (current => false);
-   setKingBreastplateAtk (value => 0);
-   setKingBreastplateDef (value => 0);
-   setKingBreastplateLuck (value => 0);
-}
-
-const [LeafBreastplateIsShown, setLeafBreastplateIsShown] = useState(false)
-const [LeafBreastplateActive, setLeafBreastplateActive] = useState(false)
-const [LeafBreastplateAtk, setLeafBreastplateAtk] = useState(0)
-const [LeafBreastplateDef, setLeafBreastplateDef] = useState(0)
-const [LeafBreastplateLuck, setLeafBreastplateLuck] = useState(0)
-
-
-const handleLeafBreastplateClick = event => {
-
-
-   setLeafBreastplateIsShown (current => !LeafBreastplateIsShown);
-   setLeafBreastplateActive (current => !LeafBreastplateActive);
-   setLeafBreastplateAtk (value => 0);
-   setLeafBreastplateDef (value => 2);
-   setLeafBreastplateLuck (value => 0);
-   
-   setAmidalaChestpieceIsShown (current => false);
-   setAmidalaChestpieceActive (current => false);
-   setAmidalaChestpieceAtk (value => 0);
-   setAmidalaChestpieceDef (value => 0);
-   setAmidalaChestpieceLuck (value => 0);
-   setCloudChestPlateIsShown (current => false);
-   setCloudChestPlateActive (current => false);
-   setCloudChestPlateAtk (value => 0);
-   setCloudChestPlateDef (value => 0);
-   setCloudChestPlateLuck (value => 0);
-   setDragonScaleArmorIsShown (current => false);
-   setDragonScaleArmorActive (current => false);
-   setDragonScaleArmorAtk (value => 0);
-   setDragonScaleArmorDef (value => 0);
-   setDragonScaleArmorLuck (value => 0);
-   setFabricBreastplateIsShown (current => false);
-   setFabricBreastplateActive (current => false);
-   setFabricBreastplateAtk (value => 0);
-   setFabricBreastplateDef (value => 0);
-   setFabricBreastplateLuck (value => 0);
-   setFusionCuirassIsShown (current => false);
-   setFusionCuirassActive (current => false);
-   setFusionCuirassAtk (value => 0);
-   setFusionCuirassDef (value => 0);
-   setFusionCuirassLuck (value => 0);
-   setKingBreastplateIsShown (current => false);
-   setKingBreastplateActive (current => false);
-   setKingBreastplateAtk (value => 0);
-   setKingBreastplateDef (value => 0);
-   setKingBreastplateLuck (value => 0);
-   setLeatherCuirassIsShown (current => false);
-   setLeatherCuirassActive (current => false);
-   setLeatherCuirassAtk (value => 0);
-   setLeatherCuirassDef (value => 0);
-   setLeatherCuirassLuck (value => 0);
-   setMarionetteBodyArmorIsShown (current => false);
-   setMarionetteBodyArmorActive (current => false);
-   setMarionetteBodyArmorAtk (value => 0);
-   setMarionetteBodyArmorDef (value => 0);
-   setMarionetteBodyArmorLuck (value => 0);
-   setNivaliBreastplateIsShown (current => false);
-   setNivaliBreastplateActive (current => false);
-   setNivaliBreastplateAtk (value => 0);
-   setNivaliBreastplateDef (value => 0);
-   setNivaliBreastplateLuck (value => 0);
-   setReinforcedSteelBreastplateIsShown (current => false);
-   setReinforcedSteelBreastplateActive (current => false);
-   setReinforcedSteelBreastplateAtk (value => 0);
-   setReinforcedSteelBreastplateDef (value => 0);
-   setReinforcedSteelBreastplateLuck (value => 0);
-   setRobotTorsoIsShown (current => false);
-   setRobotTorsoActive (current => false);
-   setRobotTorsoAtk (value => 0);
-   setRobotTorsoDef (value => 0);
-   setRobotTorsoLuck (value => 0);
-
-}
-
-const handleLeafBreastplateNoClick = event => {
-   setLeafBreastplateIsShown (current => false);
-   setLeafBreastplateActive (current => false);
-   setLeafBreastplateAtk (value => 0);
-   setLeafBreastplateDef (value => 0);
-   setLeafBreastplateLuck (value => 0);
-}
-
-const [LeatherCuirassIsShown, setLeatherCuirassIsShown] = useState(false)
-const [LeatherCuirassActive, setLeatherCuirassActive] = useState(false)
-const [LeatherCuirassAtk, setLeatherCuirassAtk] = useState(0)
-const [LeatherCuirassDef, setLeatherCuirassDef] = useState(0)
-const [LeatherCuirassLuck, setLeatherCuirassLuck] = useState(0)
-
-
-const handleLeatherCuirassClick = event => {
-
-
-   setLeatherCuirassIsShown (current => !LeatherCuirassIsShown);
-   setLeatherCuirassActive (current => !LeatherCuirassActive);
-   setLeatherCuirassAtk (value => 0);
-   setLeatherCuirassDef (value => 20);
-   setLeatherCuirassLuck (value => 5);
-   
-   setAmidalaChestpieceIsShown (current => false);
-   setAmidalaChestpieceActive (current => false);
-   setAmidalaChestpieceAtk (value => 0);
-   setAmidalaChestpieceDef (value => 0);
-   setAmidalaChestpieceLuck (value => 0);
-   setCloudChestPlateIsShown (current => false);
-   setCloudChestPlateActive (current => false);
-   setCloudChestPlateAtk (value => 0);
-   setCloudChestPlateDef (value => 0);
-   setCloudChestPlateLuck (value => 0);
-   setDragonScaleArmorIsShown (current => false);
-   setDragonScaleArmorActive (current => false);
-   setDragonScaleArmorAtk (value => 0);
-   setDragonScaleArmorDef (value => 0);
-   setDragonScaleArmorLuck (value => 0);
-   setFabricBreastplateIsShown (current => false);
-   setFabricBreastplateActive (current => false);
-   setFabricBreastplateAtk (value => 0);
-   setFabricBreastplateDef (value => 0);
-   setFabricBreastplateLuck (value => 0);
-   setFusionCuirassIsShown (current => false);
-   setFusionCuirassActive (current => false);
-   setFusionCuirassAtk (value => 0);
-   setFusionCuirassDef (value => 0);
-   setFusionCuirassLuck (value => 0);
-   setKingBreastplateIsShown (current => false);
-   setKingBreastplateActive (current => false);
-   setKingBreastplateAtk (value => 0);
-   setKingBreastplateDef (value => 0);
-   setKingBreastplateLuck (value => 0);
-   setLeafBreastplateIsShown (current => false);
-   setLeafBreastplateActive (current => false);
-   setLeafBreastplateAtk (value => 0);
-   setLeafBreastplateDef (value => 0);
-   setLeafBreastplateLuck (value => 0);
-   setMarionetteBodyArmorIsShown (current => false);
-   setMarionetteBodyArmorActive (current => false);
-   setMarionetteBodyArmorAtk (value => 0);
-   setMarionetteBodyArmorDef (value => 0);
-   setMarionetteBodyArmorLuck (value => 0);
-   setNivaliBreastplateIsShown (current => false);
-   setNivaliBreastplateActive (current => false);
-   setNivaliBreastplateAtk (value => 0);
-   setNivaliBreastplateDef (value => 0);
-   setNivaliBreastplateLuck (value => 0);
-   setReinforcedSteelBreastplateIsShown (current => false);
-   setReinforcedSteelBreastplateActive (current => false);
-   setReinforcedSteelBreastplateAtk (value => 0);
-   setReinforcedSteelBreastplateDef (value => 0);
-   setReinforcedSteelBreastplateLuck (value => 0);
-   setRobotTorsoIsShown (current => false);
-   setRobotTorsoActive (current => false);
-   setRobotTorsoAtk (value => 0);
-   setRobotTorsoDef (value => 0);
-   setRobotTorsoLuck (value => 0);
-
-}
-
-const handleLeatherCuirassNoClick = event => {
-   setLeatherCuirassIsShown (current => false);
-   setLeatherCuirassActive (current => false);
-   setLeatherCuirassAtk (value => 0);
-   setLeatherCuirassDef (value => 0);
-   setLeatherCuirassLuck (value => 0);
-}
-
-const [MarionetteBodyArmorIsShown, setMarionetteBodyArmorIsShown] = useState(false)
-const [MarionetteBodyArmorActive, setMarionetteBodyArmorActive] = useState(false)
-const [MarionetteBodyArmorAtk, setMarionetteBodyArmorAtk] = useState(0)
-const [MarionetteBodyArmorDef, setMarionetteBodyArmorDef] = useState(0)
-const [MarionetteBodyArmorLuck, setMarionetteBodyArmorLuck] = useState(0)
-
-
-const handleMarionetteBodyArmorClick = event => {
-
-
-   setMarionetteBodyArmorIsShown (current => !MarionetteBodyArmorIsShown);
-   setMarionetteBodyArmorActive (current => !MarionetteBodyArmorActive);
-   setMarionetteBodyArmorAtk (value => 0);
-   setMarionetteBodyArmorDef (value => 18);
-   setMarionetteBodyArmorLuck (value => 0);
-   
-   setAmidalaChestpieceIsShown (current => false);
-   setAmidalaChestpieceActive (current => false);
-   setAmidalaChestpieceAtk (value => 0);
-   setAmidalaChestpieceDef (value => 0);
-   setAmidalaChestpieceLuck (value => 0);
-   setCloudChestPlateIsShown (current => false);
-   setCloudChestPlateActive (current => false);
-   setCloudChestPlateAtk (value => 0);
-   setCloudChestPlateDef (value => 0);
-   setCloudChestPlateLuck (value => 0);
-   setDragonScaleArmorIsShown (current => false);
-   setDragonScaleArmorActive (current => false);
-   setDragonScaleArmorAtk (value => 0);
-   setDragonScaleArmorDef (value => 0);
-   setDragonScaleArmorLuck (value => 0);
-   setFabricBreastplateIsShown (current => false);
-   setFabricBreastplateActive (current => false);
-   setFabricBreastplateAtk (value => 0);
-   setFabricBreastplateDef (value => 0);
-   setFabricBreastplateLuck (value => 0);
-   setFusionCuirassIsShown (current => false);
-   setFusionCuirassActive (current => false);
-   setFusionCuirassAtk (value => 0);
-   setFusionCuirassDef (value => 0);
-   setFusionCuirassLuck (value => 0);
-   setKingBreastplateIsShown (current => false);
-   setKingBreastplateActive (current => false);
-   setKingBreastplateAtk (value => 0);
-   setKingBreastplateDef (value => 0);
-   setKingBreastplateLuck (value => 0);
-   setLeafBreastplateIsShown (current => false);
-   setLeafBreastplateActive (current => false);
-   setLeafBreastplateAtk (value => 0);
-   setLeafBreastplateDef (value => 0);
-   setLeafBreastplateLuck (value => 0);
-   setLeatherCuirassIsShown (current => false);
-   setLeatherCuirassActive (current => false);
-   setLeatherCuirassAtk (value => 0);
-   setLeatherCuirassDef (value => 0);
-   setLeatherCuirassLuck (value => 0);
-   setNivaliBreastplateIsShown (current => false);
-   setNivaliBreastplateActive (current => false);
-   setNivaliBreastplateAtk (value => 0);
-   setNivaliBreastplateDef (value => 0);
-   setNivaliBreastplateLuck (value => 0);
-   setReinforcedSteelBreastplateIsShown (current => false);
-   setReinforcedSteelBreastplateActive (current => false);
-   setReinforcedSteelBreastplateAtk (value => 0);
-   setReinforcedSteelBreastplateDef (value => 0);
-   setReinforcedSteelBreastplateLuck (value => 0);
-   setRobotTorsoIsShown (current => false);
-   setRobotTorsoActive (current => false);
-   setRobotTorsoAtk (value => 0);
-   setRobotTorsoDef (value => 0);
-   setRobotTorsoLuck (value => 0);
-
-}
-
-const handleMarionetteBodyArmorNoClick = event => {
-   setMarionetteBodyArmorIsShown (current => false);
-   setMarionetteBodyArmorActive (current => false);
-   setMarionetteBodyArmorAtk (value => 0);
-   setMarionetteBodyArmorDef (value => 0);
-   setMarionetteBodyArmorLuck (value => 0);
-}
-
-const [NivaliBreastplateIsShown, setNivaliBreastplateIsShown] = useState(false)
-const [NivaliBreastplateActive, setNivaliBreastplateActive] = useState(false)
-const [NivaliBreastplateAtk, setNivaliBreastplateAtk] = useState(0)
-const [NivaliBreastplateDef, setNivaliBreastplateDef] = useState(0)
-const [NivaliBreastplateLuck, setNivaliBreastplateLuck] = useState(0)
-
-
-const handleNivaliBreastplateClick = event => {
-
-
-   setNivaliBreastplateIsShown (current => !NivaliBreastplateIsShown);
-   setNivaliBreastplateActive (current => !NivaliBreastplateActive);
-   setNivaliBreastplateAtk (value => 0);
-   setNivaliBreastplateDef (value => 22);
-   setNivaliBreastplateLuck (value => 8);
-   
-   setAmidalaChestpieceIsShown (current => false);
-   setAmidalaChestpieceActive (current => false);
-   setAmidalaChestpieceAtk (value => 0);
-   setAmidalaChestpieceDef (value => 0);
-   setAmidalaChestpieceLuck (value => 0);
-   setCloudChestPlateIsShown (current => false);
-   setCloudChestPlateActive (current => false);
-   setCloudChestPlateAtk (value => 0);
-   setCloudChestPlateDef (value => 0);
-   setCloudChestPlateLuck (value => 0);
-   setDragonScaleArmorIsShown (current => false);
-   setDragonScaleArmorActive (current => false);
-   setDragonScaleArmorAtk (value => 0);
-   setDragonScaleArmorDef (value => 0);
-   setDragonScaleArmorLuck (value => 0);
-   setFabricBreastplateIsShown (current => false);
-   setFabricBreastplateActive (current => false);
-   setFabricBreastplateAtk (value => 0);
-   setFabricBreastplateDef (value => 0);
-   setFabricBreastplateLuck (value => 0);
-   setFusionCuirassIsShown (current => false);
-   setFusionCuirassActive (current => false);
-   setFusionCuirassAtk (value => 0);
-   setFusionCuirassDef (value => 0);
-   setFusionCuirassLuck (value => 0);
-   setKingBreastplateIsShown (current => false);
-   setKingBreastplateActive (current => false);
-   setKingBreastplateAtk (value => 0);
-   setKingBreastplateDef (value => 0);
-   setKingBreastplateLuck (value => 0);
-   setLeafBreastplateIsShown (current => false);
-   setLeafBreastplateActive (current => false);
-   setLeafBreastplateAtk (value => 0);
-   setLeafBreastplateDef (value => 0);
-   setLeafBreastplateLuck (value => 0);
-   setLeatherCuirassIsShown (current => false);
-   setLeatherCuirassActive (current => false);
-   setLeatherCuirassAtk (value => 0);
-   setLeatherCuirassDef (value => 0);
-   setLeatherCuirassLuck (value => 0);
-   setMarionetteBodyArmorIsShown (current => false);
-   setMarionetteBodyArmorActive (current => false);
-   setMarionetteBodyArmorAtk (value => 0);
-   setMarionetteBodyArmorDef (value => 0);
-   setMarionetteBodyArmorLuck (value => 0);
-   setReinforcedSteelBreastplateIsShown (current => false);
-   setReinforcedSteelBreastplateActive (current => false);
-   setReinforcedSteelBreastplateAtk (value => 0);
-   setReinforcedSteelBreastplateDef (value => 0);
-   setReinforcedSteelBreastplateLuck (value => 0);
-   setRobotTorsoIsShown (current => false);
-   setRobotTorsoActive (current => false);
-   setRobotTorsoAtk (value => 0);
-   setRobotTorsoDef (value => 0);
-   setRobotTorsoLuck (value => 0);
-
-}
-
-const handleNivaliBreastplateNoClick = event => {
-   setNivaliBreastplateIsShown (current => false);
-   setNivaliBreastplateActive (current => false);
-   setNivaliBreastplateAtk (value => 0);
-   setNivaliBreastplateDef (value => 0);
-   setNivaliBreastplateLuck (value => 0);
-}
-
-const [ReinforcedSteelBreastplateIsShown, setReinforcedSteelBreastplateIsShown] = useState(false)
-const [ReinforcedSteelBreastplateActive, setReinforcedSteelBreastplateActive] = useState(false)
-const [ReinforcedSteelBreastplateAtk, setReinforcedSteelBreastplateAtk] = useState(0)
-const [ReinforcedSteelBreastplateDef, setReinforcedSteelBreastplateDef] = useState(0)
-const [ReinforcedSteelBreastplateLuck, setReinforcedSteelBreastplateLuck] = useState(0)
-
-
-const handleReinforcedSteelBreastplateClick = event => {
-
-
-   setReinforcedSteelBreastplateIsShown (current => !ReinforcedSteelBreastplateIsShown);
-   setReinforcedSteelBreastplateActive (current => !ReinforcedSteelBreastplateActive);
-   setReinforcedSteelBreastplateAtk (value => 0);
-   setReinforcedSteelBreastplateDef (value => 15);
-   setReinforcedSteelBreastplateLuck (value => 0);
-   
-   setAmidalaChestpieceIsShown (current => false);
-   setAmidalaChestpieceActive (current => false);
-   setAmidalaChestpieceAtk (value => 0);
-   setAmidalaChestpieceDef (value => 0);
-   setAmidalaChestpieceLuck (value => 0);
-   setCloudChestPlateIsShown (current => false);
-   setCloudChestPlateActive (current => false);
-   setCloudChestPlateAtk (value => 0);
-   setCloudChestPlateDef (value => 0);
-   setCloudChestPlateLuck (value => 0);
-   setDragonScaleArmorIsShown (current => false);
-   setDragonScaleArmorActive (current => false);
-   setDragonScaleArmorAtk (value => 0);
-   setDragonScaleArmorDef (value => 0);
-   setDragonScaleArmorLuck (value => 0);
-   setFabricBreastplateIsShown (current => false);
-   setFabricBreastplateActive (current => false);
-   setFabricBreastplateAtk (value => 0);
-   setFabricBreastplateDef (value => 0);
-   setFabricBreastplateLuck (value => 0);
-   setFusionCuirassIsShown (current => false);
-   setFusionCuirassActive (current => false);
-   setFusionCuirassAtk (value => 0);
-   setFusionCuirassDef (value => 0);
-   setFusionCuirassLuck (value => 0);
-   setKingBreastplateIsShown (current => false);
-   setKingBreastplateActive (current => false);
-   setKingBreastplateAtk (value => 0);
-   setKingBreastplateDef (value => 0);
-   setKingBreastplateLuck (value => 0);
-   setLeafBreastplateIsShown (current => false);
-   setLeafBreastplateActive (current => false);
-   setLeafBreastplateAtk (value => 0);
-   setLeafBreastplateDef (value => 0);
-   setLeafBreastplateLuck (value => 0);
-   setLeatherCuirassIsShown (current => false);
-   setLeatherCuirassActive (current => false);
-   setLeatherCuirassAtk (value => 0);
-   setLeatherCuirassDef (value => 0);
-   setLeatherCuirassLuck (value => 0);
-   setMarionetteBodyArmorIsShown (current => false);
-   setMarionetteBodyArmorActive (current => false);
-   setMarionetteBodyArmorAtk (value => 0);
-   setMarionetteBodyArmorDef (value => 0);
-   setMarionetteBodyArmorLuck (value => 0);
-   setNivaliBreastplateIsShown (current => false);
-   setNivaliBreastplateActive (current => false);
-   setNivaliBreastplateAtk (value => 0);
-   setNivaliBreastplateDef (value => 0);
-   setNivaliBreastplateLuck (value => 0);
-   setRobotTorsoIsShown (current => false);
-   setRobotTorsoActive (current => false);
-   setRobotTorsoAtk (value => 0);
-   setRobotTorsoDef (value => 0);
-   setRobotTorsoLuck (value => 0);
-
-}
-
-const handleReinforcedSteelBreastplateNoClick = event => {
-   setReinforcedSteelBreastplateIsShown (current => false);
-   setReinforcedSteelBreastplateActive (current => false);
-   setReinforcedSteelBreastplateAtk (value => 0);
-   setReinforcedSteelBreastplateDef (value => 0);
-   setReinforcedSteelBreastplateLuck (value => 0);
-}
-
-const [RobotTorsoIsShown, setRobotTorsoIsShown] = useState(false)
-const [RobotTorsoActive, setRobotTorsoActive] = useState(false)
-const [RobotTorsoAtk, setRobotTorsoAtk] = useState(0)
-const [RobotTorsoDef, setRobotTorsoDef] = useState(0)
-const [RobotTorsoLuck, setRobotTorsoLuck] = useState(0)
-
-
-const handleRobotTorsoClick = event => {
-
-
-   setRobotTorsoIsShown (current => !RobotTorsoIsShown);
-   setRobotTorsoActive (current => !RobotTorsoActive);
-   setRobotTorsoAtk (value => 0);
-   setRobotTorsoDef (value => 16);
-   setRobotTorsoLuck (value => 2);
-   
-   setAmidalaChestpieceIsShown (current => false);
-   setAmidalaChestpieceActive (current => false);
-   setAmidalaChestpieceAtk (value => 0);
-   setAmidalaChestpieceDef (value => 0);
-   setAmidalaChestpieceLuck (value => 0);
-   setCloudChestPlateIsShown (current => false);
-   setCloudChestPlateActive (current => false);
-   setCloudChestPlateAtk (value => 0);
-   setCloudChestPlateDef (value => 0);
-   setCloudChestPlateLuck (value => 0);
-   setDragonScaleArmorIsShown (current => false);
-   setDragonScaleArmorActive (current => false);
-   setDragonScaleArmorAtk (value => 0);
-   setDragonScaleArmorDef (value => 0);
-   setDragonScaleArmorLuck (value => 0);
-   setFabricBreastplateIsShown (current => false);
-   setFabricBreastplateActive (current => false);
-   setFabricBreastplateAtk (value => 0);
-   setFabricBreastplateDef (value => 0);
-   setFabricBreastplateLuck (value => 0);
-   setFusionCuirassIsShown (current => false);
-   setFusionCuirassActive (current => false);
-   setFusionCuirassAtk (value => 0);
-   setFusionCuirassDef (value => 0);
-   setFusionCuirassLuck (value => 0);
-   setKingBreastplateIsShown (current => false);
-   setKingBreastplateActive (current => false);
-   setKingBreastplateAtk (value => 0);
-   setKingBreastplateDef (value => 0);
-   setKingBreastplateLuck (value => 0);
-   setLeafBreastplateIsShown (current => false);
-   setLeafBreastplateActive (current => false);
-   setLeafBreastplateAtk (value => 0);
-   setLeafBreastplateDef (value => 0);
-   setLeafBreastplateLuck (value => 0);
-   setLeatherCuirassIsShown (current => false);
-   setLeatherCuirassActive (current => false);
-   setLeatherCuirassAtk (value => 0);
-   setLeatherCuirassDef (value => 0);
-   setLeatherCuirassLuck (value => 0);
-   setMarionetteBodyArmorIsShown (current => false);
-   setMarionetteBodyArmorActive (current => false);
-   setMarionetteBodyArmorAtk (value => 0);
-   setMarionetteBodyArmorDef (value => 0);
-   setMarionetteBodyArmorLuck (value => 0);
-   setNivaliBreastplateIsShown (current => false);
-   setNivaliBreastplateActive (current => false);
-   setNivaliBreastplateAtk (value => 0);
-   setNivaliBreastplateDef (value => 0);
-   setNivaliBreastplateLuck (value => 0);
-   setReinforcedSteelBreastplateIsShown (current => false);
-   setReinforcedSteelBreastplateActive (current => false);
-   setReinforcedSteelBreastplateAtk (value => 0);
-   setReinforcedSteelBreastplateDef (value => 0);
-   setReinforcedSteelBreastplateLuck (value => 0);
-
-}
-
-const handleRobotTorsoNoClick = event => {
-   setRobotTorsoIsShown (current => false);
-   setRobotTorsoActive (current => false);
-   setRobotTorsoAtk (value => 0);
-   setRobotTorsoDef (value => 0);
-   setRobotTorsoLuck (value => 0);
-}
-
-
-const totalChestTopAtk = Math.max (AmidalaChestpieceAtk, CloudChestPlateAtk, DragonScaleArmorAtk, FabricBreastplateAtk, 
-  FusionCuirassAtk, KingBreastplateAtk, LeafBreastplateAtk, LeatherCuirassAtk, MarionetteBodyArmorAtk, NivaliBreastplateAtk, 
-  ReinforcedSteelBreastplateAtk, RobotTorsoAtk)
-const totalChestTopDef = Math.max (AmidalaChestpieceDef, CloudChestPlateDef, DragonScaleArmorDef, FabricBreastplateDef, 
-  FusionCuirassDef, KingBreastplateDef, LeafBreastplateDef, LeatherCuirassDef, MarionetteBodyArmorDef, NivaliBreastplateDef, 
-  ReinforcedSteelBreastplateDef, RobotTorsoDef)
-const totalChestTopLuck = Math.max (AmidalaChestpieceLuck, CloudChestPlateLuck, DragonScaleArmorLuck, FabricBreastplateLuck, 
-  FusionCuirassLuck, KingBreastplateLuck, LeafBreastplateLuck, LeatherCuirassLuck, MarionetteBodyArmorLuck, NivaliBreastplateLuck, 
-  ReinforcedSteelBreastplateLuck, RobotTorsoLuck)
-
-
-
-{AmidalaChestpieceIsShown &&        
-   <Image
-   style={{position:'absolute'}}
-   mt={['37px', '47px', '55px']}
-   align='center' 
-   boxSize={['4rem', '4.5rem', '5rem']}
-   src='https://static.wikia.nocookie.net/4thewords/images/3/37/Amidala_Chestpiece.png/'
-   />}
-   {AmidalaChestpieceIsShown &&        
-   <Text        
-   style={{position:'absolute'}}
-   mt={['110px', '130px', '145px']}
-   fontSize={['sm', 'md', 'md']}>
-     Amidala Chestpiece</Text>
-     }
-
-{CloudChestPlateIsShown &&        
-   <Image
-   style={{position:'absolute'}}
-   mt={['37px', '47px', '55px']}
-   align='center' 
-   boxSize={['4rem', '4.5rem', '5rem']}
-   src='https://static.wikia.nocookie.net/4thewords/images/7/75/Cloud-chest-plate.png/'
-   />}
-   {CloudChestPlateIsShown &&        
-   <Text        
-   style={{position:'absolute'}}
-   mt={['110px', '130px', '145px']}
-   fontSize={['sm', 'md', 'md']}>
-     Cloud Chest Plate</Text>
-     }
-
-{DragonScaleArmorIsShown &&        
-      <Image
-      style={{position:'absolute'}}
-      mt={['37px', '47px', '55px']}
-      align='center' 
-      boxSize={['4rem', '4.5rem', '5rem']}
-      src='https://static.wikia.nocookie.net/4thewords/images/c/c5/DragonScaleArmor.png/'
-      />}
-      {DragonScaleArmorIsShown &&        
-      <Text        
-      style={{position:'absolute'}}
-      mt={['110px', '130px', '145px']}
-      fontSize={['sm', 'md', 'md']}>
-        Dragon Scale Armor</Text>
-        }
-   
-{FabricBreastplateIsShown &&        
-   <Image
-   style={{position:'absolute'}}
-   mt={['37px', '47px', '55px']}
-   align='center' 
-   boxSize={['4rem', '4.5rem', '5rem']}
-   src='https://static.wikia.nocookie.net/4thewords/images/3/31/Fabricbreastplate_md.png/'
-   />}
-   {FabricBreastplateIsShown &&        
-   <Text        
-   style={{position:'absolute'}}
-   mt={['110px', '130px', '145px']}
-   fontSize={['sm', 'md', 'md']}>
-     Fabric Breastplate</Text>
-     }
-
-{FusionCuirassIsShown &&        
-   <Image
-   style={{position:'absolute'}}
-   mt={['37px', '47px', '55px']}
-   align='center' 
-   boxSize={['4rem', '4.5rem', '5rem']}
-   src='https://static.wikia.nocookie.net/4thewords/images/f/fa/FusionCuirass.png/'
-   />}
-   {FusionCuirassIsShown &&        
-   <Text        
-   style={{position:'absolute'}}
-   mt={['110px', '130px', '145px']}
-   fontSize={['sm', 'md', 'md']}>
-     Fusion Cuirass</Text>
-     }
-
-{KingBreastplateIsShown &&        
-   <Image
-   style={{position:'absolute'}}
-   mt={['37px', '47px', '55px']}
-   align='center' 
-   boxSize={['4rem', '4.5rem', '5rem']}
-   src='https://static.wikia.nocookie.net/4thewords/images/6/6b/KingsBreastplate.png/'
-   />}
-   {KingBreastplateIsShown &&        
-   <Text        
-   style={{position:'absolute'}}
-   mt={['110px', '130px', '145px']}
-   fontSize={['sm', 'md', 'md']}>
-     King's Breastplate</Text>
-     }
-
-{LeafBreastplateIsShown &&        
-   <Image
-   style={{position:'absolute'}}
-   mt={['37px', '47px', '55px']}
-   align='center' 
-   boxSize={['4rem', '4.5rem', '5rem']}
-   src='https://static.wikia.nocookie.net/4thewords/images/6/60/Leafbreastplate_md.png/'
-      />}
-   {LeafBreastplateIsShown &&        
-   <Text        
-   style={{position:'absolute'}}
-   mt={['110px', '130px', '145px']}
-   fontSize={['sm', 'md', 'md']}>
-     Leaf Breastplate</Text>
-     }
-
-{LeatherCuirassIsShown &&        
-   <Image
-   style={{position:'absolute'}}
-   mt={['37px', '47px', '55px']}
-   align='center' 
-   boxSize={['4rem', '4.5rem', '5rem']}
-   src='https://static.wikia.nocookie.net/4thewords/images/d/db/LeatherCuriass.png/'
-   />}
-   {LeatherCuirassIsShown &&        
-   <Text        
-   style={{position:'absolute'}}
-   mt={['110px', '130px', '145px']}
-   fontSize={['sm', 'md', 'md']}>
-     Leather Cuirass</Text>
-     }
-   
-{MarionetteBodyArmorIsShown &&        
-   <Image
-   style={{position:'absolute'}}
-   mt={['37px', '47px', '55px']}
-   align='center' 
-   boxSize={['4rem', '4.5rem', '5rem']}
-   src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Maronettearmor.png/'
-   />}
-   {MarionetteBodyArmorIsShown &&        
-   <Text        
-   style={{position:'absolute'}}
-   mt={['110px', '130px', '145px']}
-   fontSize={['sm', 'md', 'md']}>
-     Marionette Body Armor</Text>
-     }
-
-{NivaliBreastplateIsShown &&        
-   <Image
-   style={{position:'absolute'}}
-   mt={['37px', '47px', '55px']}
-   align='center' 
-   boxSize={['4rem', '4.5rem', '5rem']}
-   src='https://static.wikia.nocookie.net/4thewords/images/3/39/Nivali_Breastplate.png/'
-   />}
-   {NivaliBreastplateIsShown &&        
-   <Text        
-   style={{position:'absolute'}}
-   mt={['110px', '130px', '145px']}
-   fontSize={['sm', 'md', 'md']}>
-     Nivali Breastplate</Text>
-     }
-
-{ReinforcedSteelBreastplateIsShown &&        
-   <Image
-   style={{position:'absolute'}}
-   mt={['27px', '37px', '45px']}
-   align='center' 
-   boxSize={['4rem', '4.5rem', '5rem']}
-   src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Reinforced-steel-breastplate.png/'
-   />}
-   {ReinforcedSteelBreastplateIsShown &&        
-   <Text        
-   style={{position:'absolute'}}
-   mt={['90px', '105px', '120px']}
-   fontSize={['sm', 'md', 'md']}>
-     Reinforced Steel<br/>Breastplate</Text>
-     }
-
-{RobotTorsoIsShown &&        
-   <Image
-   style={{position:'absolute'}}
-   mt={['37px', '47px', '55px']}
-   align='center' 
-   boxSize={['4rem', '4.5rem', '5rem']}
-   src='https://static.wikia.nocookie.net/4thewords/images/1/1b/Robot-torso.png/'
-   />}
-   {RobotTorsoIsShown &&        
-   <Text        
-   style={{position:'absolute'}}
-   mt={['110px', '130px', '145px']}
-   fontSize={['sm', 'md', 'md']}>
-     Robot Torso</Text>
-     }
-
-
-
-{(AllIsShown || AurilisIsShown) && !AmidalaChestpieceIsShown &&
+ {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) && LeafBootsIsShown &&
+ <WrapItem>
+ <Button w='110px' h='170px' pb={5} onClick={handleLeafBootsNoClick} style={{ backgroundColor: "#211742"}}>
+ <VStack justify='center'>  
+ <Image
+ mt='12px'
+ align='center' 
+ boxSize='4rem'
+ src='https://static.wikia.nocookie.net/4thewords/images/3/30/Leafboots_md.png/'
+    /> 
+ <Text fontSize='md' align='center'><b>Leaf Boots</b></Text>
+ <Text fontSize='sm' align='center'>+0 Atk<br/>+1 Def<br/>+1 Luck </Text>
+ </VStack>
+ </Button>
+ </WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && !LeafsungBootsIsShown &&
 <WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleAmidalaChestpieceClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.75rem'
-src='https://static.wikia.nocookie.net/4thewords/images/3/37/Amidala_Chestpiece.png/'
-/> 
-<Text fontSize='md' align='center'><b>Amidala<br/>Chestpiece</b></Text>
-<Text fontSize='sm' align='center'>+6 Atk<br/>+6 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || AurilisIsShown) && AmidalaChestpieceIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleAmidalaChestpieceNoClick} style={{ backgroundColor: "#211742"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.75rem'
-src='https://static.wikia.nocookie.net/4thewords/images/3/37/Amidala_Chestpiece.png/'
-/> 
-<Text fontSize='md' align='center'><b>Amidala<br/>Chestpiece</b></Text>
-<Text fontSize='sm' align='center'>+6 Atk<br/>+6 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || CloudsIsShown) && !CloudChestPlateIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleCloudChestPlateClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/7/75/Cloud-chest-plate.png/'
-/> 
-<Text fontSize='md' align='center'><b>Cloud Chest Plate</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+18 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || CloudsIsShown) && CloudChestPlateIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleCloudChestPlateNoClick} style={{ backgroundColor: "#211742"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/7/75/Cloud-chest-plate.png/'
-/> 
-<Text fontSize='md' align='center'><b>Cloud Chest Plate</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+18 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-{(AllIsShown || PastEventsIsShown) && !DragonScaleArmorIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleDragonScaleArmorClick} style={{ backgroundColor: "#2D3748"}}>
+<Button w='110px' h='170px' pb={5} onClick={handleLeafsungBootsClick} style={{ backgroundColor: "#2D3748"}}>
 <VStack justify='center'>  
 <Image
 mt='18px'
 align='center' 
 boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/c/c5/DragonScaleArmor.png/'
+src='https://static.wikia.nocookie.net/4thewords/images/b/b5/Leafsungboots_md.png/'
 /> 
-<Text fontSize='md' align='center'><b>Dragon Scale<br/>Armor</b></Text>
-<Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+2 Luck </Text>
+<Text fontSize='md' align='center'><b>Leafsung<br/>Boots</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+2 Luck </Text>
 </VStack>
 </Button>
 </WrapItem>}
 
-{(AllIsShown || PastEventsIsShown) && DragonScaleArmorIsShown &&
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && LeafsungBootsIsShown &&
 <WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleDragonScaleArmorNoClick} style={{ backgroundColor: "#211742"}}>
+<Button w='110px' h='170px' pb={5} onClick={handleLeafsungBootsNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack justify='center'>  
 <Image
 mt='18px'
 align='center' 
 boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/c/c5/DragonScaleArmor.png/'
+src='https://static.wikia.nocookie.net/4thewords/images/b/b5/Leafsungboots_md.png/'
 /> 
-<Text fontSize='md' align='center'><b>Dragon Scale<br/>Armor</b></Text>
-<Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+2 Luck </Text>
+<Text fontSize='md' align='center'><b>Leafsung<br/>Boots</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+2 Luck </Text>
 </VStack>
 </Button>
 </WrapItem>}
 
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && !FabricBreastplateIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleFabricBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/3/31/Fabricbreastplate_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Dragon's<br/>Horned Helmet</b></Text>
-<Text fontSize='sm' align='center'>+2 Atk<br/>+5 Def<br/>+5 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && FabricBreastplateIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleFabricBreastplateNoClick} style={{ backgroundColor: "#211742"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/3/31/Fabricbreastplate_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Dragon's<br/>Horned Helmet</b></Text>
-<Text fontSize='sm' align='center'>+2 Atk<br/>+5 Def<br/>+5 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !FusionCuirassIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleFusionCuirassClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/f/fa/FusionCuirass.png/'
-/> 
-<Text fontSize='md' align='center'><b>Fabric Helmet</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+8 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && FusionCuirassIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleFusionCuirassNoClick} style={{ backgroundColor: "#211742"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/f/fa/FusionCuirass.png/'
-/> 
-<Text fontSize='md' align='center'><b>Fabric Helmet</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+8 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || World2RegionIsShown || DCIsShown) && !KingBreastplateIsShown &&
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !LeatherTurnshoeIsShown &&
    <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleKingBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
+   <Button w='110px' h='170px' pb={5} onClick={handleLeatherTurnshoeClick} style={{ backgroundColor: "#2D3748"}}>
    <VStack justify='center'>  
    <Image
    mt='18px'
    align='center' 
    boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/6/6b/KingsBreastplate.png/'
+   src='https://static.wikia.nocookie.net/4thewords/images/f/f6/LeatherTurnshoe.png/'
    /> 
-   <Text fontSize='md' align='center'><b>Headpiece<br/>of Old Gold</b></Text>
-   <Text fontSize='sm' align='center'>+14 Atk<br/>+0 Def<br/>+2 Luck </Text>
+   <Text fontSize='md' align='center'><b>Leather<br/>Turnshoe</b></Text>
+   <Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+5 Luck </Text>
    </VStack>
    </Button>
    </WrapItem>}
    
-   {(AllIsShown || World2RegionIsShown || DCIsShown) && KingBreastplateIsShown &&
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && LeatherTurnshoeIsShown &&
    <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleKingBreastplateNoClick} style={{ backgroundColor: "#211742"}}>
+   <Button w='110px' h='170px' pb={5} onClick={handleLeatherTurnshoeNoClick} style={{ backgroundColor: "#211742"}}>
    <VStack justify='center'>  
    <Image
    mt='18px'
    align='center' 
    boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/6/6b/KingsBreastplate.png/'
+   src='https://static.wikia.nocookie.net/4thewords/images/f/f6/LeatherTurnshoe.png/'
    /> 
-   <Text fontSize='md' align='center'><b>Headpiece<br/>of Old Gold</b></Text>
-   <Text fontSize='sm' align='center'>+14 Atk<br/>+0 Def<br/>+2 Luck </Text>
+   <Text fontSize='md' align='center'><b>Leather<br/>Turnshoe</b></Text>
+   <Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+5 Luck </Text>
    </VStack>
    </Button>
    </WrapItem>}
 
-   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && !LeafBreastplateIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleLeafBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/6/60/Leafbreastplate_md.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Horns of<br/>Wisdom</b></Text>
-      <Text fontSize='sm' align='center'>+2 Atk<br/>+0 Def<br/>+14 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
-      
-      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && LeafBreastplateIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleLeafBreastplateNoClick} style={{ backgroundColor: "#211742"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/6/60/Leafbreastplate_md.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Horns of<br/>Wisdom</b></Text>
-      <Text fontSize='sm' align='center'>+2 Atk<br/>+0 Def<br/>+14 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
-
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !LeatherCuirassIsShown &&
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && !SteelBootsIsShown &&
 <WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleLeatherCuirassClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/d/db/LeatherCuriass.png/'
-/> 
-<Text fontSize='md' align='center'><b>King Mai's<br/>Crown</b></Text>
-<Text fontSize='sm' align='center'>+10 Atk<br/>+10 Def<br/>+10 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && LeatherCuirassIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleLeatherCuirassNoClick} style={{ backgroundColor: "#211742"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/d/db/LeatherCuriass.png/'
-/> 
-<Text fontSize='md' align='center'><b>King Mai's<br/>Crown</b></Text>
-<Text fontSize='sm' align='center'>+10 Atk<br/>+10 Def<br/>+10 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-
-   {(AllIsShown || PastEventsIsShown) && !MarionetteBodyArmorIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleMarionetteBodyArmorClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Maronettearmor.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Miner Hat</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+4 Def<br/>+10 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
-      
-      {(AllIsShown || PastEventsIsShown) && MarionetteBodyArmorIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleMarionetteBodyArmorNoClick} style={{ backgroundColor: "#211742"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Maronettearmor.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Miner Hat</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+4 Def<br/>+10 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
-
-{(AllIsShown || World2RegionIsShown) && !NivaliBreastplateIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleNivaliBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/3/39/Nivali_Breastplate.png/'
-/> 
-<Text fontSize='md' align='center'><b>Nivali<br/>Breastplate</b></Text>
-<Text fontSize='sm' align='center'>+7 Atk<br/>+22 Def<br/>+8 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || World2RegionIsShown) && NivaliBreastplateIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleNivaliBreastplateNoClick} style={{ backgroundColor: "#211742"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/3/39/Nivali_Breastplate.png/'
-/> 
-<Text fontSize='md' align='center'><b>Nivali<br/>Breastplate</b></Text>
-<Text fontSize='sm' align='center'>+7 Atk<br/>+22 Def<br/>+8 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && !ReinforcedSteelBreastplateIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleReinforcedSteelBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Reinforced-steel-breastplate.png/'
-/> 
-<Text fontSize='sm' align='center'><b>Reinforced Steel<br/>Breastplate</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+15 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && ReinforcedSteelBreastplateIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleReinforcedSteelBreastplateNoClick} style={{ backgroundColor: "#211742"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Reinforced-steel-breastplate.png/'
-/> 
-<Text fontSize='sm' align='center'><b>Reinforced Steel<br/>Breastplate</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+15 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || PastEventsIsShown) && !RobotTorsoIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleRobotTorsoClick} style={{ backgroundColor: "#2D3748"}}>
+<Button w='110px' h='170px' pb={5} onClick={handleSteelBootsClick} style={{ backgroundColor: "#2D3748"}}>
 <VStack justify='center'>  
 <Image
 mt='12px'
 align='center' 
 boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/1/1b/Robot-torso.png/'
+src='https://static.wikia.nocookie.net/4thewords/images/d/d8/Steelboots_md.png/'
 /> 
-<Text fontSize='md' align='center'><b>Robot Torso</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+16 Def<br/>+2 Luck </Text>
+<Text fontSize='sm' align='center'><b>Steel Boots</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+9 Def<br/>+0 Luck </Text>
 </VStack>
 </Button>
 </WrapItem>}
 
-{(AllIsShown || PastEventsIsShown) && RobotTorsoIsShown &&
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && SteelBootsIsShown &&
 <WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleRobotTorsoNoClick} style={{ backgroundColor: "#211742"}}>
+<Button w='110px' h='170px' pb={5} onClick={handleSteelBootsNoClick} style={{ backgroundColor: "#211742"}}>
 <VStack justify='center'>  
 <Image
 mt='12px'
 align='center' 
 boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/1/1b/Robot-torso.png/'
+src='https://static.wikia.nocookie.net/4thewords/images/d/d8/Steelboots_md.png/'
 /> 
-<Text fontSize='md' align='center'><b>Robot Torso</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+16 Def<br/>+2 Luck </Text>
+<Text fontSize='sm' align='center'><b>Steel Boots</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+9 Def<br/>+0 Luck </Text>
 </VStack>
 </Button>
 </WrapItem>}
 
+{(AllIsShown || GardenIsShown) && !WoodenGardenBootsIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleWoodenGardenBootsClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/1/14/WoodenGardenBoots.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Wooden<br/>Garden Boots</b></Text>
+   <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+0 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   
+   {(AllIsShown || GardenIsShown) && WoodenGardenBootsIsShown &&
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleWoodenGardenBootsNoClick} style={{ backgroundColor: "#211742"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/1/14/WoodenGardenBoots.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Wooden<br/>Garden Boots</b></Text>
+   <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+0 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>}
+   
+</Wrap>
