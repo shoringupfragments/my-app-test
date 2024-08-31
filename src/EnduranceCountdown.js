@@ -57,7 +57,10 @@ function App() {
   
   const [VoidWignowIsShown, setVoidWignowIsShown] = useState(false)
   const [VoidWignowActive, setVoidWignowActive] = useState(false)
-  
+
+  const [WyrteIsShown, setWyrteIsShown] = useState(false)
+  const [WyrteActive, setWyrteActive] = useState(false)
+
   const [LucerebIsShown, setLucerebIsShown] = useState(false)
   const [LucerebActive, setLucerebActive] = useState(false)
   
@@ -105,6 +108,8 @@ function App() {
       setViActive (current => null);
       setVoidWignowIsShown (current => null);
       setVoidWignowActive (current => null);
+      setWyrteIsShown (current => null);
+      setWyrteActive (current => null);
       setLucerebIsShown (current => null);
       setLucerebActive (current => null);
       setProfBartIsShown (current => null);
@@ -132,6 +137,8 @@ function App() {
       setVanstraActive (current => null);
       setVoidWignowIsShown (current => null);
       setVoidWignowActive (current => null);
+      setWyrteIsShown (current => null);
+      setWyrteActive (current => null);
       setLucerebIsShown (current => null);
       setLucerebActive (current => null);
       setProfBartIsShown (current => null);
@@ -159,6 +166,8 @@ function App() {
       setVanstraActive (current => null);
       setViIsShown (current => null);
       setViActive (current => null);
+      setWyrteIsShown (current => null);
+      setWyrteActive (current => null);
       setLucerebIsShown (current => null);
       setLucerebActive (current => null);
       setProfBartIsShown (current => null);
@@ -178,6 +187,35 @@ function App() {
       setGuidedCountdownMinIsShown (current => null);
       setGuidedCountdownMinActive (current => null);
     };
+
+    const handleWyrteClick = event => {
+      setWyrteIsShown (current => !WyrteIsShown);
+      setWyrteActive (current => !WyrteActive);
+      setVanstraIsShown (current => null);
+      setVanstraActive (current => null);
+      setViIsShown (current => null);
+      setViActive (current => null);
+      setVoidWignowIsShown (current => null);
+      setVoidWignowActive (current => null);
+      setLucerebIsShown (current => null);
+      setLucerebActive (current => null);
+      setProfBartIsShown (current => null);
+      setProfBartActive (current => null);
+      setVanspiIsShown (current => null);
+      setVanspiActive (current => null);
+      setVanvriIsShown (current => null);
+      setVanvriActive (current => null);
+      setViyusaIsShown (current => null);
+      setViyusaActive (current => null);
+      setViyuIsShown (current => null);
+      setViyuActive (current => null);
+      setViradiseIsShown (current => null);
+      setViradiseActive (current => null);
+      setGuidedCountdownIsShown (current => null);
+      setGuidedCountdownActive (current => null);      
+      setGuidedCountdownMinIsShown (current => null);
+      setGuidedCountdownMinActive (current => null);
+    };
     
       const handleLucerebClick = event => {
       setLucerebIsShown (current => !LucerebIsShown);
@@ -188,6 +226,8 @@ function App() {
       setViActive (current => null);
       setVoidWignowIsShown (current => null);
       setVoidWignowActive (current => null);
+      setWyrteIsShown (current => null);
+      setWyrteActive (current => null);
       setProfBartIsShown (current => null);
       setProfBartActive (current => null);
       setVanspiIsShown (current => null);
@@ -215,6 +255,8 @@ function App() {
       setViActive (current => null);
       setVoidWignowIsShown (current => null);
       setVoidWignowActive (current => null);
+      setWyrteIsShown (current => null);
+      setWyrteActive (current => null);
       setLucerebIsShown (current => null);
       setLucerebActive (current => null);
       setVanspiIsShown (current => null);
@@ -242,6 +284,8 @@ function App() {
       setViActive (current => null);
       setVoidWignowIsShown (current => null);
       setVoidWignowActive (current => null);
+      setWyrteIsShown (current => null);
+      setWyrteActive (current => null);
       setLucerebIsShown (current => null);
       setLucerebActive (current => null);
       setProfBartIsShown (current => null);
@@ -269,6 +313,8 @@ function App() {
       setViActive (current => null);
       setVoidWignowIsShown (current => null);
       setVoidWignowActive (current => null);
+      setWyrteIsShown (current => null);
+      setWyrteActive (current => null);
       setLucerebIsShown (current => null);
       setLucerebActive (current => null);
       setProfBartIsShown (current => null);
@@ -297,6 +343,8 @@ function App() {
       setViActive (current => null);
       setVoidWignowIsShown (current => null);
       setVoidWignowActive (current => null);
+      setWyrteIsShown (current => null);
+      setWyrteActive (current => null);
       setLucerebIsShown (current => null);
       setLucerebActive (current => null);
       setProfBartIsShown (current => null);
@@ -324,6 +372,8 @@ function App() {
       setViActive (current => null);
       setVoidWignowIsShown (current => null);
       setVoidWignowActive (current => null);
+      setWyrteIsShown (current => null);
+      setWyrteActive (current => null);
       setLucerebIsShown (current => null);
       setLucerebActive (current => null);
       setProfBartIsShown (current => null);
@@ -351,6 +401,8 @@ function App() {
       setViActive (current => null);
       setVoidWignowIsShown (current => null);
       setVoidWignowActive (current => null);
+      setWyrteIsShown (current => null);
+      setWyrteActive (current => null);
       setLucerebIsShown (current => null);
       setLucerebActive (current => null);
       setProfBartIsShown (current => null);
@@ -419,6 +471,8 @@ function App() {
   
     const totalHP75Round = Math.ceil(HP75)
     const totalHPCalculatedValue = Math.max (((totalHP75Round*2)+2))
+    const total3HPLossCalculatedValue = Math.max (((totalHP75Round*3)+3))
+
     
     const [MaxHP, setMaxHP] = useState(0);
     const totalMaxHP = Math.max ((30+DefenseStat),0)
@@ -717,6 +771,110 @@ const totalVoidWignow75Loops = Math.floor ((totalVoidWignow75LoopsRaw-1)+totalVo
 
 const [LeftoverVoidWignowTime, setLeftoverVoidWignowTime] = useState(0)
 const totalLeftoverVoidWignowTime = Math.max (360-(totalVoidWignowSecsto75*totalVoidWignow75Loops),0)
+
+
+//Wyrte - MINIMUM TO WIN//
+
+const [WyrteDownTo10Raw, setWyrteDownTo10Raw] = useState(0)
+const totalWyrteDownTo10Raw = Math.ceil (totalBaseHP*.1)
+
+//amount Wyrtle can lose w/o dipping below 10% HP
+
+const [WyrteHPCanLose, setWyrteHPCanLose] = useState(0)
+const totalWyrteHPCanLose = ((Math.ceil((totalBaseHP-totalWyrteDownTo10Raw)/3))*3)
+
+const [WyrteDownTo10, setWyrteDownTo10] = useState(0)
+const totalWyrteDownTo10 = totalBaseHP-totalWyrteHPCanLose
+
+//seconds to reach 10%//
+
+const [WyrteHPToLoseRaw, setWyrteHPToLoseRaw] = useState(0)
+const totalWyrteHPToLoseRaw = Math.max(totalBaseHP-totalWyrteDownTo10,0)
+
+const [WyrteHPToLose, setWyrteHPToLose] = useState(0)
+const totalWyrteHPToLose = 3 * Math.floor(totalWyrteHPToLoseRaw/3)
+
+const [WyrteSecsTo10, setWyrteSecsTo10] = useState(0)
+const totalWyrteSecsTo10 = Math.max ((totalWyrteHPToLose/3)*9)
+
+const [WyrteLoopsRaw, setWyrteLoopsRaw] = useState(0)
+const totalWyrteLoopsRaw = Math.floor (480/totalWyrteSecsTo10)
+
+const [WyrteCheck0, setWyrteCheck0] = useState(0)
+const totalWyrteCheck0 = Math.max (480-(totalWyrteLoopsRaw*totalWyrteSecsTo10),0)
+
+const [WyrteCheckLoops0, setWyrteCheckLoops0] = useState(0)
+const totalWyrteCheckLoops0 = Math.ceil (totalWyrteCheck0/1000)
+
+const [WyrteLoops, setWyrteLoops] = useState(0)
+const totalWyrteLoops = Math.max ((totalWyrteLoopsRaw-1)+totalWyrteCheckLoops0)
+
+const [WyrteSecsRemaining, setWyrteSecsRemaining] = useState(0)
+const totalWyrteSecsRemaining = Math.max (480-(totalWyrteLoops*totalWyrteSecsTo10),0)
+
+const [WyrteFinalMins, setWyrteFinalMins] = useState(0)
+const totalWyrteFinalMins = Math.floor (totalWyrteSecsRemaining/60)
+
+const [WyrteFinalSecs, setWyrteFinalSecs] = useState(0)
+const totalWyrteFinalSecs = Math.max (totalWyrteSecsRemaining-(totalWyrteFinalMins*60),0)
+
+const [WyrteMins10, setWyrteMins10] = useState(0)
+const totalWyrteMins10 = Math.floor (totalWyrteSecsTo10/60)
+
+const [WyrteSecs10, setWyrteSecs10] = useState(0)
+const totalWyrteSecs10 = Math.max (totalWyrteSecsTo10-(totalWyrteMins10*60),0)
+
+//4x MINIMUM BONUS//
+
+//Wyrte loses 1 HP per 3 seconds. Lasts 480 seconds//
+
+const [Wyrte75Raw, setWyrte75Raw] = useState(0)
+const totalWyrte75Raw = Math.ceil(totalMaxHP*.75)
+
+//amount Wyrtle can lose w/o dipping below 75% HP
+
+const [Wyrtle75CanLoseHP, setWyrtle75CanLoseHP] = useState(0)
+const totalWyrtle75CanLoseHP = 3*(Math.ceil((totalBaseHP-totalWyrte75Raw)/3))
+
+const [Wyrte75, setWyrte75] = useState(0)
+const totalWyrte75 = Math.max(totalBaseHP-totalWyrtle75CanLoseHP,0)
+
+
+//get back to Baseline HP - update to totalMaxHP when bug is fixed//
+
+const [WyrteBackTo100, setWyrteBackTo100] = useState(0)
+const totalWyrteBackTo100 = Math.max (totalBaseHP-totalWyrte75, 0)
+
+
+
+
+//time to get down to 75%//
+
+const [WyrteSecsto75, setWyrteSecsto75] = useState(0)
+const totalWyrteSecsto75 = Math.max ((totalWyrteBackTo100/3)*9,0)
+
+const [WyrteMins75, setWyrteMins75] = useState(0)
+const totalWyrteMins75 = Math.floor (totalWyrteSecsto75/60)
+
+const [WyrteSecsAdj75, setWyrteSecsAdj75] = useState(0)
+const totalWyrteSecsAdj75 = Math.max ((totalWyrteSecsto75-(totalWyrteMins75*60)),0)
+
+const [Wyrte75LoopsRaw, setWyrte75LoopsRaw] = useState(0)
+const totalWyrte75LoopsRaw = Math.floor (480/totalWyrteSecsto75)
+
+const [Wyrte75Check0, setWyrte75Check0] = useState(0)
+const totalWyrte75Check0 = Math.max (480-(totalWyrte75LoopsRaw*totalWyrteSecsto75),0)
+
+const [Wyrte75CheckLoops0, setWyrte75CheckLoops0] = useState(0)
+const totalWyrte75CheckLoops0 = Math.ceil (totalWyrte75Check0/100)
+
+const [Wyrte75Loops, setWyrte75Loops] = useState(0)
+const totalWyrte75Loops = Math.floor ((totalWyrte75LoopsRaw-1)+totalWyrte75CheckLoops0)
+
+const [LeftoverWyrteTime, setLeftoverWyrteTime] = useState(0)
+const totalLeftoverWyrteTime = Math.max (480-(totalWyrteSecsto75*totalWyrte75Loops),0)
+
+
 
 //Lucereb- MINIMUM TO WIN//
 
@@ -2183,6 +2341,131 @@ const totalRemainingSecondsViyu = Math.max((900000-totalWhenToStartFinalViyuLoop
 
 const [FinalLoopSecsViyu, setFinalLoopSecsViyu] = useState(0);
 const totalFinalLoopSecsViyu = Math.max (totalLeftoverViyuTime*1000)
+
+//Wyrte - min to win - loops by X sec to lose 1 HP//
+
+const [LoopTimeMin3SecPerHP8Min, setLoopTimeMin3SecPerHP8Min] = useState(null)
+const totalLoopTimeMin3SecPerHP8Min = Math.ceil((totalBaseHP-totalWyrteDownTo10)*3)
+
+const [LoopTimeMin3SecPerHP8MinTimeVal2, setLoopTimeMin3SecPerHP8MinTimeVal2] = useState(null)
+const totalLoopTimeMin3SecPerHP8MinTimeVal2 = Math.max(totalLoopTimeMin3SecPerHP8Min*1000)
+
+const [LoopTimeMin3SecPerHP8MinTimeVal3, setLoopTimeMin3SecPerHP8MinTimeVal3] = useState(null)
+const totalLoopTimeMin3SecPerHP8MinTimeVal3 = Math.max(totalLoopTimeMin3SecPerHP8MinTimeVal2*2)
+
+const [LoopTimeMin3SecPerHP8MinTimeVal4, setLoopTimeMin3SecPerHP8MinTimeVal4] = useState(null)
+const totalLoopTimeMin3SecPerHP8MinTimeVal4 = Math.max(totalLoopTimeMin3SecPerHP8MinTimeVal2*3)
+
+const [LoopTimeMin3SecPerHP8MinTimeVal5, setLoopTimeMin3SecPerHP8MinTimeVal5] = useState(null)
+const totalLoopTimeMin3SecPerHP8MinTimeVal5 = Math.max(totalLoopTimeMin3SecPerHP8MinTimeVal2*4)
+
+const [LoopTimeMin3SecPerHP8MinTimeVal6, setLoopTimeMin3SecPerHP8MinTimeVal6] = useState(null)
+const totalLoopTimeMin3SecPerHP8MinTimeVal6 = Math.max(totalLoopTimeMin3SecPerHP8MinTimeVal2*5)
+
+
+const [WhenToStartFinalWyrteLoopMin, setWhenToStartFinalWyrteLoopMin] = useState(0)
+const totalWhenToStartFinalWyrteLoopMin = Math.max
+(totalLoopTimeMin3SecPerHP8MinTimeVal2*totalWyrteLoops)
+
+const [FinalLoopSecsWyrteMin, setFinalLoopSecsWyrteMin] = useState(0);
+const totalFinalLoopSecsWyrteMin = Math.max (totalWyrteSecsRemaining*1000)
+
+
+
+//Wyrte - loops by X sec to lose 1 HP//
+
+const [LoopTime3SecPerHP8Min, setLoopTime3SecPerHP8Min] = useState(null)
+const totalLoopTime3SecPerHP8Min = Math.ceil((totalBaseHP-totalWyrte75)*3)
+
+const [LoopTime3SecPerHP8MinTimeVal2, setLoopTime3SecPerHP8MinTimeVal2] = useState(0)
+const totalLoopTime3SecPerHP8MinTimeVal2 = Math.max(totalLoopTime3SecPerHP8Min*1000, 0)
+
+const [LoopTime3SecPerHP8MinTimeVal3, setLoopTime3SecPerHP8MinTimeVal3] = useState(null)
+const totalLoopTime3SecPerHP8MinTimeVal3 = Math.max(totalLoopTime3SecPerHP8MinTimeVal2*2)
+
+const [LoopTime3SecPerHP8MinTimeVal4, setLoopTime3SecPerHP8MinTimeVal4] = useState(null)
+const totalLoopTime3SecPerHP8MinTimeVal4 = Math.max(totalLoopTime3SecPerHP8MinTimeVal2*3)
+
+const [LoopTime3SecPerHP8MinTimeVal5, setLoopTime3SecPerHP8MinTimeVal5] = useState(null)
+const totalLoopTime3SecPerHP8MinTimeVal5 = Math.max(totalLoopTime3SecPerHP8MinTimeVal2*4)
+
+const [LoopTime3SecPerHP8MinTimeVal6, setLoopTime3SecPerHP8MinTimeVal6] = useState(null)
+const totalLoopTime3SecPerHP8MinTimeVal6 = Math.max(totalLoopTime3SecPerHP8MinTimeVal2*5)
+
+const [LoopTime3SecPerHP8MinTimeVal7, setLoopTime3SecPerHP8MinTimeVal7] = useState(null)
+const totalLoopTime3SecPerHP8MinTimeVal7 = Math.max(totalLoopTime3SecPerHP8MinTimeVal2*6)
+
+const [LoopTime3SecPerHP8MinTimeVal8, setLoopTime3SecPerHP8MinTimeVal8] = useState(null)
+const totalLoopTime3SecPerHP8MinTimeVal8 = Math.max(totalLoopTime3SecPerHP8MinTimeVal2*7)
+
+const [LoopTime3SecPerHP8MinTimeVal9, setLoopTime3SecPerHP8MinTimeVal9] = useState(null)
+const totalLoopTime3SecPerHP8MinTimeVal9 = Math.max(totalLoopTime3SecPerHP8MinTimeVal2*8)
+
+const [LoopTime3SecPerHP8MinTimeVal10, setLoopTime3SecPerHP8MinTimeVal10] = useState(null)
+const totalLoopTime3SecPerHP8MinTimeVal10 = Math.max(totalLoopTime3SecPerHP8MinTimeVal2*9)
+
+const [LoopTime3SecPerHP8MinTimeVal11, setLoopTime3SecPerHP8MinTimeVal11] = useState(null)
+const totalLoopTime3SecPerHP8MinTimeVal11 = Math.max(totalLoopTime3SecPerHP8MinTimeVal2*10)
+
+const [LoopTime3SecPerHP8MinTimeVal12, setLoopTime3SecPerHP8MinTimeVal12] = useState(null)
+const totalLoopTime3SecPerHP8MinTimeVal12 = Math.max(totalLoopTime3SecPerHP8MinTimeVal2*11)
+
+const [LoopTime3SecPerHP8MinTimeVal13, setLoopTime3SecPerHP8MinTimeVal13] = useState(null)
+const totalLoopTime3SecPerHP8MinTimeVal13 = Math.max(totalLoopTime3SecPerHP8MinTimeVal2*12)
+
+const [LoopTime3SecPerHP8MinTimeVal14, setLoopTime3SecPerHP8MinTimeVal14] = useState(null)
+const totalLoopTime3SecPerHP8MinTimeVal14 = Math.max(totalLoopTime3SecPerHP8MinTimeVal2*13)
+
+const [LoopTime3SecPerHP8MinTimeVal15, setLoopTime3SecPerHP8MinTimeVal15] = useState(null)
+const totalLoopTime3SecPerHP8MinTimeVal15 = Math.max(totalLoopTime3SecPerHP8MinTimeVal2*14)
+
+const [LoopTime3SecPerHP8MinTimeVal16, setLoopTime3SecPerHP8MinTimeVal16] = useState(null)
+const totalLoopTime3SecPerHP8MinTimeVal16 = Math.max(totalLoopTime3SecPerHP8MinTimeVal2*15)
+
+const [LoopTime3SecPerHP8MinTimeVal17, setLoopTime3SecPerHP8MinTimeVal17] = useState(null)
+const totalLoopTime3SecPerHP8MinTimeVal17 = Math.max(totalLoopTime3SecPerHP8MinTimeVal2*16)
+
+const [LoopTime3SecPerHP8MinTimeVal18, setLoopTime3SecPerHP8MinTimeVal18] = useState(null)
+const totalLoopTime3SecPerHP8MinTimeVal18 = Math.max(totalLoopTime3SecPerHP8MinTimeVal2*17)
+
+const [LoopTime3SecPerHP8MinTimeVal19, setLoopTime3SecPerHP8MinTimeVal19] = useState(null)
+const totalLoopTime3SecPerHP8MinTimeVal19 = Math.max(totalLoopTime3SecPerHP8MinTimeVal2*18)
+
+const [LoopTime3SecPerHP8MinTimeVal20, setLoopTime3SecPerHP8MinTimeVal20] = useState(null)
+const totalLoopTime3SecPerHP8MinTimeVal20 = Math.max(totalLoopTime3SecPerHP8MinTimeVal2*19)
+
+const [LoopTime3SecPerHP8MinTimeVal21, setLoopTime3SecPerHP8MinTimeVal21] = useState(null)
+const totalLoopTime3SecPerHP8MinTimeVal21 = Math.max(totalLoopTime3SecPerHP8MinTimeVal2*20)
+
+const [LoopTime3SecPerHP8MinTimeVal22, setLoopTime3SecPerHP8MinTimeVal22] = useState(null)
+const totalLoopTime3SecPerHP8MinTimeVal22 = Math.max(totalLoopTime3SecPerHP8MinTimeVal2*21)
+
+const [LoopTime3SecPerHP8MinTimeVal23, setLoopTime3SecPerHP8MinTimeVal23] = useState(null)
+const totalLoopTime3SecPerHP8MinTimeVal23 = Math.max(totalLoopTime3SecPerHP8MinTimeVal2*22)
+
+const [LoopTime3SecPerHP8MinTimeVal24, setLoopTime3SecPerHP8MinTimeVal24] = useState(null)
+const totalLoopTime3SecPerHP8MinTimeVal24 = Math.max(totalLoopTime3SecPerHP8MinTimeVal2*23)
+
+const [LoopTime3SecPerHP8MinTimeVal25, setLoopTime3SecPerHP8MinTimeVal25] = useState(null)
+const totalLoopTime3SecPerHP8MinTimeVal25 = Math.max(totalLoopTime3SecPerHP8MinTimeVal2*24)
+
+const [LoopTime3SecPerHP8MinTimeVal26, setLoopTime3SecPerHP8MinTimeVal26] = useState(null)
+const totalLoopTime3SecPerHP8MinTimeVal26 = Math.max(totalLoopTime3SecPerHP8MinTimeVal2*25)
+
+const [WhenToStartFinalWyrteLoop, setWhenToStartFinalWyrteLoop] = useState(0)
+const totalWhenToStartFinalWyrteLoop = Math.max(totalLoopTime3SecPerHP8MinTimeVal2*totalWyrte75Loops)
+
+const [RemainingSecondsWyrte, setRemainingSecondsWyrte] = useState(0)
+const totalRemainingSecondsWyrte = Math.max((480000-totalWhenToStartFinalWyrteLoop)/1000,0)
+
+const [FinalLoopSecsWyrte, setFinalLoopSecsWyrte] = useState(0);
+const totalFinalLoopSecsWyrte = Math.max (totalLeftoverWyrteTime*1000) 
+
+const [FinalLoopDisplayMinsWyrte, setFinalLoopDisplayMinsWyrte] = useState(0)
+const totalFinalLoopDisplayMinsWyrte = Math.floor((totalFinalLoopSecsWyrte/1000)/60)
+
+const [FinalLoopDisplaySecsWyrte, setFinalLoopDisplaySecsWyrte] = useState(0)
+const totalFinalLoopDisplaySecsWyrte = (totalFinalLoopSecsWyrte/1000)-(totalFinalLoopDisplayMinsWyrte*60)
 
 //Lucereb - min to win - loops by X sec to lose 1 HP//
 
@@ -6136,6 +6419,56 @@ const YayBattleEndViyu = () => {
     	</div>
   	</React.Fragment>
 	)}
+  </Timer>
+)
+};
+
+const YayBattleEndWyrteMin = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, 480000)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (null)
+  return (   <Timer initialTime={totalFinalLoopSecsWyrteMin}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+        <div>
+        <Text fontSize='md' style={{color: '#B794F4'}}>
+        <b>The battle is over!</b> 🎉</Text>
+        </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const YayBattleEndWyrte = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, 480000)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (null)
+  return (   <Timer initialTime={totalFinalLoopSecsWyrte}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+        <div>
+        <Text mb='8px' fontSize='md' style={{color: '#B794F4'}}>
+        <b>The battle is over!</b> 🎉</Text>
+        </div>
+      </React.Fragment>
+    )}
   </Timer>
 )
 };
@@ -16529,6 +16862,638 @@ const DelayComponentViyuLoopFinal = () => {
 )
 };
 
+//Wyrte - min - it goes in its boxes precious//
+
+const WyrteTimerMin = () => {
+  if (totalWyrteLoops == 1)
+    return(<Container>
+<DelayComponentWyrteMinLoop />
+<DelayComponentWyrteMinLoopFinal />
+<YayBattleEndWyrteMin />
+</Container>
+)
+};
+
+const WyrteTimerMin2 = () => {
+  if (totalWyrteLoops == 2)
+    return(<Container>
+<DelayComponentWyrteMinLoop />
+<DelayComponentWyrteMinLoop2 />
+<DelayComponentWyrteMinLoopFinal />
+<YayBattleEndWyrteMin />
+</Container>
+)
+};
+
+const WyrteTimerMin3 = () => {
+  if (totalWyrteLoops == 3)
+    return(<Container>
+<DelayComponentWyrteMinLoop />
+<DelayComponentWyrteMinLoop2 />
+<DelayComponentWyrteMinLoop3 />
+<DelayComponentWyrteMinLoopFinal />
+<YayBattleEndWyrteMin />
+</Container>
+)
+};
+
+const WyrteTimerMin4 = () => {
+  if (totalWyrteLoops == 4)
+    return(<Container>
+<DelayComponentWyrteMinLoop />
+<DelayComponentWyrteMinLoop2 />
+<DelayComponentWyrteMinLoop3 />
+<DelayComponentWyrteMinLoop4 />
+<DelayComponentWyrteMinLoopFinal />
+<YayBattleEndWyrteMin />
+</Container>
+)
+};
+
+const WyrteTimerMin5 = () => {
+  if (totalWyrteLoops == 5)
+    return(<Container>
+<DelayComponentWyrteMinLoop />
+<DelayComponentWyrteMinLoop2 />
+<DelayComponentWyrteMinLoop3 />
+<DelayComponentWyrteMinLoop4 />
+<DelayComponentWyrteMinLoop5 />
+<DelayComponentWyrteMinLoopFinal />
+<YayBattleEndWyrteMin />
+</Container>
+)
+};
+
+const WyrteTimerMin6 = () => {
+  if (totalWyrteLoops == 6)
+    return(<Container>
+<DelayComponentWyrteMinLoop />
+<DelayComponentWyrteMinLoop2 />
+<DelayComponentWyrteMinLoop3 />
+<DelayComponentWyrteMinLoop4 />
+<DelayComponentWyrteMinLoop5 />
+<DelayComponentWyrteMinLoop6 />
+<DelayComponentWyrteMinLoopFinal />
+<YayBattleEndWyrteMin />
+</Container>
+)
+};
+
+//Wyrte - it goes in its boxes precious//
+
+const WyrteTimer4 = () => {
+if (totalWyrte75Loops == 4)
+  return(<Container>
+<DelayComponentWyrteLoop />
+<DelayComponentWyrteLoop2 />
+<DelayComponentWyrteLoop3 />
+<DelayComponentWyrteLoop4 />
+<DelayComponentWyrteLoopFinal />
+<YayBattleEndWyrte />
+</Container>
+)
+};
+
+const WyrteTimer5 = () => {
+if (totalWyrte75Loops == 5)
+  return(<Container>
+<DelayComponentWyrteLoop />
+<DelayComponentWyrteLoop2 />
+<DelayComponentWyrteLoop3 />
+<DelayComponentWyrteLoop4 />
+<DelayComponentWyrteLoop5 />
+<DelayComponentWyrteLoopFinal />
+<YayBattleEndWyrte /></Container>
+)
+};
+
+const WyrteTimer6 = () => {
+if (totalWyrte75Loops == 6)
+  return(<Container>
+<DelayComponentWyrteLoop />
+<DelayComponentWyrteLoop2 />
+<DelayComponentWyrteLoop3 />
+<DelayComponentWyrteLoop4 />
+<DelayComponentWyrteLoop5 />
+<DelayComponentWyrteLoop6 />
+<DelayComponentWyrteLoopFinal />
+<YayBattleEndWyrte />
+</Container>
+)
+};
+
+
+const WyrteTimer7 = () => {
+if (totalWyrte75Loops == 7)
+  return(<Container>
+<DelayComponentWyrteLoop />
+<DelayComponentWyrteLoop2 />
+<DelayComponentWyrteLoop3 />
+<DelayComponentWyrteLoop4 />
+<DelayComponentWyrteLoop5 />
+<DelayComponentWyrteLoop6 />
+<DelayComponentWyrteLoop7 />
+<DelayComponentWyrteLoopFinal />
+<YayBattleEndWyrte />
+</Container>
+)
+};
+
+
+const WyrteTimer8 = () => {
+if (totalWyrte75Loops == 8)
+  return(<Container>
+<DelayComponentWyrteLoop />
+<DelayComponentWyrteLoop2 />
+<DelayComponentWyrteLoop3 />
+<DelayComponentWyrteLoop4 />
+<DelayComponentWyrteLoop5 />
+<DelayComponentWyrteLoop6 />
+<DelayComponentWyrteLoop7 />
+<DelayComponentWyrteLoop8 />
+<DelayComponentWyrteLoopFinal />
+<YayBattleEndWyrte />
+</Container>
+)
+};
+
+const WyrteTimer9 = () => {
+if (totalWyrte75Loops == 9)
+  return(<Container>
+<DelayComponentWyrteLoop />
+<DelayComponentWyrteLoop2 />
+<DelayComponentWyrteLoop3 />
+<DelayComponentWyrteLoop4 />
+<DelayComponentWyrteLoop5 />
+<DelayComponentWyrteLoop6 />
+<DelayComponentWyrteLoop7 />
+<DelayComponentWyrteLoop8 />
+<DelayComponentWyrteLoop9 />
+<DelayComponentWyrteLoopFinal />
+<YayBattleEndWyrte />
+</Container>
+)
+};
+
+const WyrteTimer10 = () => {
+if (totalWyrte75Loops == 10)
+  return(<Container>
+<DelayComponentWyrteLoop />
+<DelayComponentWyrteLoop2 />
+<DelayComponentWyrteLoop3 />
+<DelayComponentWyrteLoop4 />
+<DelayComponentWyrteLoop5 />
+<DelayComponentWyrteLoop6 />
+<DelayComponentWyrteLoop7 />
+<DelayComponentWyrteLoop8 />
+<DelayComponentWyrteLoop9 />
+<DelayComponentWyrteLoop10 />
+<DelayComponentWyrteLoopFinal />
+<YayBattleEndWyrte />
+</Container>
+)
+};
+
+const WyrteTimer11 = () => {
+if (totalWyrte75Loops == 11)
+  return(<Container>
+<DelayComponentWyrteLoop />
+<DelayComponentWyrteLoop2 />
+<DelayComponentWyrteLoop3 />
+<DelayComponentWyrteLoop4 />
+<DelayComponentWyrteLoop5 />
+<DelayComponentWyrteLoop6 />
+<DelayComponentWyrteLoop7 />
+<DelayComponentWyrteLoop8 />
+<DelayComponentWyrteLoop9 />
+<DelayComponentWyrteLoop10 />
+<DelayComponentWyrteLoop11 />
+<DelayComponentWyrteLoopFinal />
+<YayBattleEndWyrte />
+</Container>
+)
+};
+
+const WyrteTimer12 = () => {
+if (totalWyrte75Loops == 12)
+  return(<Container>
+<DelayComponentWyrteLoop />
+<DelayComponentWyrteLoop2 />
+<DelayComponentWyrteLoop3 />
+<DelayComponentWyrteLoop4 />
+<DelayComponentWyrteLoop5 />
+<DelayComponentWyrteLoop6 />
+<DelayComponentWyrteLoop7 />
+<DelayComponentWyrteLoop8 />
+<DelayComponentWyrteLoop9 />
+<DelayComponentWyrteLoop10 />
+<DelayComponentWyrteLoop11 />
+<DelayComponentWyrteLoop12 />
+<DelayComponentWyrteLoopFinal />
+<YayBattleEndWyrte />
+</Container>
+)
+};
+
+const WyrteTimer13 = () => {
+if (totalWyrte75Loops == 13)
+  return(<Container>
+<DelayComponentWyrteLoop />
+<DelayComponentWyrteLoop2 />
+<DelayComponentWyrteLoop3 />
+<DelayComponentWyrteLoop4 />
+<DelayComponentWyrteLoop5 />
+<DelayComponentWyrteLoop6 />
+<DelayComponentWyrteLoop7 />
+<DelayComponentWyrteLoop8 />
+<DelayComponentWyrteLoop9 />
+<DelayComponentWyrteLoop10 />
+<DelayComponentWyrteLoop11 />
+<DelayComponentWyrteLoop12 />
+<DelayComponentWyrteLoop13 />
+<DelayComponentWyrteLoopFinal />
+<YayBattleEndWyrte />
+</Container>
+)
+};
+
+const WyrteTimer14 = () => {
+if (totalWyrte75Loops == 14)
+  return(<Container>
+<DelayComponentWyrteLoop />
+<DelayComponentWyrteLoop2 />
+<DelayComponentWyrteLoop3 />
+<DelayComponentWyrteLoop4 />
+<DelayComponentWyrteLoop5 />
+<DelayComponentWyrteLoop6 />
+<DelayComponentWyrteLoop7 />
+<DelayComponentWyrteLoop8 />
+<DelayComponentWyrteLoop9 />
+<DelayComponentWyrteLoop10 />
+<DelayComponentWyrteLoop11 />
+<DelayComponentWyrteLoop12 />
+<DelayComponentWyrteLoop13 />
+<DelayComponentWyrteLoop14 />
+<DelayComponentWyrteLoopFinal />
+<YayBattleEndWyrte />
+</Container>
+)
+};
+
+const WyrteTimer15 = () => {
+if (totalWyrte75Loops == 15)
+  return(<Container>
+<DelayComponentWyrteLoop />
+<DelayComponentWyrteLoop2 />
+<DelayComponentWyrteLoop3 />
+<DelayComponentWyrteLoop4 />
+<DelayComponentWyrteLoop5 />
+<DelayComponentWyrteLoop6 />
+<DelayComponentWyrteLoop7 />
+<DelayComponentWyrteLoop8 />
+<DelayComponentWyrteLoop9 />
+<DelayComponentWyrteLoop10 />
+<DelayComponentWyrteLoop11 />
+<DelayComponentWyrteLoop12 />
+<DelayComponentWyrteLoop13 />
+<DelayComponentWyrteLoop14 />
+<DelayComponentWyrteLoop15 />
+<DelayComponentWyrteLoopFinal />
+<YayBattleEndWyrte />
+</Container>
+)
+};
+
+const WyrteTimer16 = () => {
+if (totalWyrte75Loops == 16)
+  return(<Container>
+<DelayComponentWyrteLoop />
+<DelayComponentWyrteLoop2 />
+<DelayComponentWyrteLoop3 />
+<DelayComponentWyrteLoop4 />
+<DelayComponentWyrteLoop5 />
+<DelayComponentWyrteLoop6 />
+<DelayComponentWyrteLoop7 />
+<DelayComponentWyrteLoop8 />
+<DelayComponentWyrteLoop9 />
+<DelayComponentWyrteLoop10 />
+<DelayComponentWyrteLoop11 />
+<DelayComponentWyrteLoop12 />
+<DelayComponentWyrteLoop13 />
+<DelayComponentWyrteLoop14 />
+<DelayComponentWyrteLoop15 />
+<DelayComponentWyrteLoop16 />
+<DelayComponentWyrteLoopFinal />
+<YayBattleEndWyrte />
+</Container>
+)
+};
+
+const WyrteTimer17 = () => {
+if (totalWyrte75Loops == 17)
+  return(<Container>
+<DelayComponentWyrteLoop />
+<DelayComponentWyrteLoop2 />
+<DelayComponentWyrteLoop3 />
+<DelayComponentWyrteLoop4 />
+<DelayComponentWyrteLoop5 />
+<DelayComponentWyrteLoop6 />
+<DelayComponentWyrteLoop7 />
+<DelayComponentWyrteLoop8 />
+<DelayComponentWyrteLoop9 />
+<DelayComponentWyrteLoop10 />
+<DelayComponentWyrteLoop11 />
+<DelayComponentWyrteLoop12 />
+<DelayComponentWyrteLoop13 />
+<DelayComponentWyrteLoop14 />
+<DelayComponentWyrteLoop15 />
+<DelayComponentWyrteLoop16 />
+<DelayComponentWyrteLoop17 />
+<DelayComponentWyrteLoopFinal />
+<YayBattleEndWyrte />
+</Container>
+)
+};
+
+const WyrteTimer18 = () => {
+if (totalWyrte75Loops == 18)
+  return(<Container>
+<DelayComponentWyrteLoop />
+<DelayComponentWyrteLoop2 />
+<DelayComponentWyrteLoop3 />
+<DelayComponentWyrteLoop4 />
+<DelayComponentWyrteLoop5 />
+<DelayComponentWyrteLoop6 />
+<DelayComponentWyrteLoop7 />
+<DelayComponentWyrteLoop8 />
+<DelayComponentWyrteLoop9 />
+<DelayComponentWyrteLoop10 />
+<DelayComponentWyrteLoop11 />
+<DelayComponentWyrteLoop12 />
+<DelayComponentWyrteLoop13 />
+<DelayComponentWyrteLoop14 />
+<DelayComponentWyrteLoop15 />
+<DelayComponentWyrteLoop16 />
+<DelayComponentWyrteLoop17 />
+<DelayComponentWyrteLoop18 />
+<DelayComponentWyrteLoopFinal />
+<YayBattleEndWyrte />
+</Container>
+)
+};
+
+const WyrteTimer19 = () => {
+if (totalWyrte75Loops == 19)
+  return(<Container>
+<DelayComponentWyrteLoop />
+<DelayComponentWyrteLoop2 />
+<DelayComponentWyrteLoop3 />
+<DelayComponentWyrteLoop4 />
+<DelayComponentWyrteLoop5 />
+<DelayComponentWyrteLoop6 />
+<DelayComponentWyrteLoop7 />
+<DelayComponentWyrteLoop8 />
+<DelayComponentWyrteLoop9 />
+<DelayComponentWyrteLoop10 />
+<DelayComponentWyrteLoop11 />
+<DelayComponentWyrteLoop12 />
+<DelayComponentWyrteLoop13 />
+<DelayComponentWyrteLoop14 />
+<DelayComponentWyrteLoop15 />
+<DelayComponentWyrteLoop16 />
+<DelayComponentWyrteLoop17 />
+<DelayComponentWyrteLoop18 />
+<DelayComponentWyrteLoop19 />
+<DelayComponentWyrteLoopFinal />
+<YayBattleEndWyrte />
+</Container>
+)
+};
+
+const WyrteTimer20 = () => {
+if (totalWyrte75Loops == 20)
+  return(<Container>
+<DelayComponentWyrteLoop />
+<DelayComponentWyrteLoop2 />
+<DelayComponentWyrteLoop3 />
+<DelayComponentWyrteLoop4 />
+<DelayComponentWyrteLoop5 />
+<DelayComponentWyrteLoop6 />
+<DelayComponentWyrteLoop7 />
+<DelayComponentWyrteLoop8 />
+<DelayComponentWyrteLoop9 />
+<DelayComponentWyrteLoop10 />
+<DelayComponentWyrteLoop11 />
+<DelayComponentWyrteLoop12 />
+<DelayComponentWyrteLoop13 />
+<DelayComponentWyrteLoop14 />
+<DelayComponentWyrteLoop15 />
+<DelayComponentWyrteLoop16 />
+<DelayComponentWyrteLoop17 />
+<DelayComponentWyrteLoop18 />
+<DelayComponentWyrteLoop19 />
+<DelayComponentWyrteLoop20 />
+<DelayComponentWyrteLoopFinal />
+<YayBattleEndWyrte />
+</Container>
+)
+};
+
+const WyrteTimer21 = () => {
+if (totalWyrte75Loops == 21)
+  return(<Container>
+<DelayComponentWyrteLoop />
+<DelayComponentWyrteLoop2 />
+<DelayComponentWyrteLoop3 />
+<DelayComponentWyrteLoop4 />
+<DelayComponentWyrteLoop5 />
+<DelayComponentWyrteLoop6 />
+<DelayComponentWyrteLoop7 />
+<DelayComponentWyrteLoop8 />
+<DelayComponentWyrteLoop9 />
+<DelayComponentWyrteLoop10 />
+<DelayComponentWyrteLoop11 />
+<DelayComponentWyrteLoop12 />
+<DelayComponentWyrteLoop13 />
+<DelayComponentWyrteLoop14 />
+<DelayComponentWyrteLoop15 />
+<DelayComponentWyrteLoop16 />
+<DelayComponentWyrteLoop17 />
+<DelayComponentWyrteLoop18 />
+<DelayComponentWyrteLoop19 />
+<DelayComponentWyrteLoop20 />
+<DelayComponentWyrteLoop21 />
+<DelayComponentWyrteLoopFinal />
+<YayBattleEndWyrte />
+</Container>
+)
+};
+
+const WyrteTimer22 = () => {
+if (totalWyrte75Loops == 22)
+  return(<Container>
+<DelayComponentWyrteLoop />
+<DelayComponentWyrteLoop2 />
+<DelayComponentWyrteLoop3 />
+<DelayComponentWyrteLoop4 />
+<DelayComponentWyrteLoop5 />
+<DelayComponentWyrteLoop6 />
+<DelayComponentWyrteLoop7 />
+<DelayComponentWyrteLoop8 />
+<DelayComponentWyrteLoop9 />
+<DelayComponentWyrteLoop10 />
+<DelayComponentWyrteLoop11 />
+<DelayComponentWyrteLoop12 />
+<DelayComponentWyrteLoop13 />
+<DelayComponentWyrteLoop14 />
+<DelayComponentWyrteLoop15 />
+<DelayComponentWyrteLoop16 />
+<DelayComponentWyrteLoop17 />
+<DelayComponentWyrteLoop18 />
+<DelayComponentWyrteLoop19 />
+<DelayComponentWyrteLoop20 />
+<DelayComponentWyrteLoop21 />
+<DelayComponentWyrteLoop22 />
+<DelayComponentWyrteLoopFinal />
+<YayBattleEndWyrte />
+</Container>
+)
+};
+
+const WyrteTimer23 = () => {
+if (totalWyrte75Loops == 23)
+  return(<Container>
+<DelayComponentWyrteLoop />
+<DelayComponentWyrteLoop2 />
+<DelayComponentWyrteLoop3 />
+<DelayComponentWyrteLoop4 />
+<DelayComponentWyrteLoop5 />
+<DelayComponentWyrteLoop6 />
+<DelayComponentWyrteLoop7 />
+<DelayComponentWyrteLoop8 />
+<DelayComponentWyrteLoop9 />
+<DelayComponentWyrteLoop10 />
+<DelayComponentWyrteLoop11 />
+<DelayComponentWyrteLoop12 />
+<DelayComponentWyrteLoop13 />
+<DelayComponentWyrteLoop14 />
+<DelayComponentWyrteLoop15 />
+<DelayComponentWyrteLoop16 />
+<DelayComponentWyrteLoop17 />
+<DelayComponentWyrteLoop18 />
+<DelayComponentWyrteLoop19 />
+<DelayComponentWyrteLoop20 />
+<DelayComponentWyrteLoop21 />
+<DelayComponentWyrteLoop22 />
+<DelayComponentWyrteLoop23 />
+<DelayComponentWyrteLoopFinal />
+<YayBattleEndWyrte />
+</Container>
+)
+};
+
+const WyrteTimer24 = () => {
+if (totalWyrte75Loops == 24)
+  return(<Container>
+<DelayComponentWyrteLoop />
+<DelayComponentWyrteLoop2 />
+<DelayComponentWyrteLoop3 />
+<DelayComponentWyrteLoop4 />
+<DelayComponentWyrteLoop5 />
+<DelayComponentWyrteLoop6 />
+<DelayComponentWyrteLoop7 />
+<DelayComponentWyrteLoop8 />
+<DelayComponentWyrteLoop9 />
+<DelayComponentWyrteLoop10 />
+<DelayComponentWyrteLoop11 />
+<DelayComponentWyrteLoop12 />
+<DelayComponentWyrteLoop13 />
+<DelayComponentWyrteLoop14 />
+<DelayComponentWyrteLoop15 />
+<DelayComponentWyrteLoop16 />
+<DelayComponentWyrteLoop17 />
+<DelayComponentWyrteLoop18 />
+<DelayComponentWyrteLoop19 />
+<DelayComponentWyrteLoop20 />
+<DelayComponentWyrteLoop21 />
+<DelayComponentWyrteLoop22 />
+<DelayComponentWyrteLoop23 />
+<DelayComponentWyrteLoop24 />
+<DelayComponentWyrteLoopFinal />
+<YayBattleEndWyrte />
+</Container>
+)
+};
+
+const WyrteTimer25 = () => {
+if (totalWyrte75Loops == 25)
+  return(<Container>
+<DelayComponentWyrteLoop />
+<DelayComponentWyrteLoop2 />
+<DelayComponentWyrteLoop3 />
+<DelayComponentWyrteLoop4 />
+<DelayComponentWyrteLoop5 />
+<DelayComponentWyrteLoop6 />
+<DelayComponentWyrteLoop7 />
+<DelayComponentWyrteLoop8 />
+<DelayComponentWyrteLoop9 />
+<DelayComponentWyrteLoop10 />
+<DelayComponentWyrteLoop11 />
+<DelayComponentWyrteLoop12 />
+<DelayComponentWyrteLoop13 />
+<DelayComponentWyrteLoop14 />
+<DelayComponentWyrteLoop15 />
+<DelayComponentWyrteLoop16 />
+<DelayComponentWyrteLoop17 />
+<DelayComponentWyrteLoop18 />
+<DelayComponentWyrteLoop19 />
+<DelayComponentWyrteLoop20 />
+<DelayComponentWyrteLoop21 />
+<DelayComponentWyrteLoop22 />
+<DelayComponentWyrteLoop23 />
+<DelayComponentWyrteLoop24 />
+<DelayComponentWyrteLoop25 />
+<DelayComponentWyrteLoopFinal />
+<YayBattleEndWyrte />
+</Container>
+)
+};
+
+const WyrteTimer26 = () => {
+if (totalWyrte75Loops == 26)
+  return(<Container>
+<DelayComponentWyrteLoop />
+<DelayComponentWyrteLoop2 />
+<DelayComponentWyrteLoop3 />
+<DelayComponentWyrteLoop4 />
+<DelayComponentWyrteLoop5 />
+<DelayComponentWyrteLoop6 />
+<DelayComponentWyrteLoop7 />
+<DelayComponentWyrteLoop8 />
+<DelayComponentWyrteLoop9 />
+<DelayComponentWyrteLoop10 />
+<DelayComponentWyrteLoop11 />
+<DelayComponentWyrteLoop12 />
+<DelayComponentWyrteLoop13 />
+<DelayComponentWyrteLoop14 />
+<DelayComponentWyrteLoop15 />
+<DelayComponentWyrteLoop16 />
+<DelayComponentWyrteLoop17 />
+<DelayComponentWyrteLoop18 />
+<DelayComponentWyrteLoop19 />
+<DelayComponentWyrteLoop20 />
+<DelayComponentWyrteLoop21 />
+<DelayComponentWyrteLoop22 />
+<DelayComponentWyrteLoop23 />
+<DelayComponentWyrteLoop24 />
+<DelayComponentWyrteLoop25 />
+<DelayComponentWyrteLoop26 />
+<DelayComponentWyrteLoopFinal />
+<YayBattleEndWyrte />
+</Container>
+)
+};
+
   //Lucereb - min - it goes in its boxes precious//
 
   const LucerebTimerMin = () => {
@@ -23942,6 +24907,1113 @@ const Viyu90 = () => {
 <Button mt='15px' mb='15px' height='50px'
 onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu dignissim neque. Quisque a commodo diam. Cras in accumsan nisl. Maecenas vitae scelerisque arcu, at pretium ipsum. Nam tincidunt ullamcorper congue. Donec scelerisque, augue nec hendrerit vehicula, erat dui pellentesque odio, et viverra dolor felis nec sem. Praesent a lorem vel tellus feugiat ultricies. Etiam lacinia, sapien quis vulputate tincidunt, nisi lacus ornare augue, elementum efficitur elit diam in nibh. Suspendisse ullamcorper mollis purus, at tincidunt odio porta rhoncus. Quisque efficitur nisl nibh, id auctor libero viverra ac. In hac. ')}}>
 Copy {totalViyuHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+//Wyrte - min - timers//
+
+const DelayComponentWyrteMinLoop = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, 0)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (null)
+  return (   <Timer initialTime={totalLoopTimeMin3SecPerHP8MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+    	<div>
+    	<Text mb='8px' mt='25px' fontSize='md'>
+      	<b>Loop 1: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>	 
+    	</div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+
+
+const DelayComponentWyrteMinLoop2 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, totalLoopTimeMin3SecPerHP8MinTimeVal2)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}>
+	<b>Loop 2: </b>{totalWyrteMins10} minutes and {totalWyrteSecs10} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTimeMin3SecPerHP8MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+    	<div>
+    	<Text mb='8px' fontSize='md'>
+      	<b>Loop 2: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>	 
+    	</div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+  
+  const DelayComponentWyrteMinLoop3 = () => {
+    const [show, setShow] = React.useState(false)
+  
+    React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTimeMin3SecPerHP8MinTimeVal3)
+    return () => clearTimeout(timeout)
+    }, [show])
+    if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}>
+    <b>Loop 3: </b>{totalWyrteMins10} minutes and {totalWyrteSecs10} seconds </Text>)
+    return (   <Timer initialTime={totalLoopTimeMin3SecPerHP8MinTimeVal2}
+    direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+        <div>
+        <Text mb='8px' fontSize='md'><b>Loop 3: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>	 
+        </div>
+      </React.Fragment>
+    )}
+    </Timer>
+  )
+  };
+  
+  const DelayComponentWyrteMinLoop4 = () => {
+    const [show, setShow] = React.useState(false)
+  
+    React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTimeMin3SecPerHP8MinTimeVal4)
+    return () => clearTimeout(timeout)
+    }, [show])
+    if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}>
+    <b>Loop 4: </b>{totalWyrteMins10} minutes and {totalWyrteSecs10} seconds </Text>)
+    return (   <Timer initialTime={totalLoopTimeMin3SecPerHP8MinTimeVal2}
+    direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+        <div>
+        <Text mb='8px' fontSize='md'><b>Loop 5: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>	 
+        </div>
+      </React.Fragment>
+    )}
+    </Timer>
+  )
+  };
+  
+  const DelayComponentWyrteMinLoop5 = () => {
+    const [show, setShow] = React.useState(false)
+  
+    React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTimeMin3SecPerHP8MinTimeVal5)
+    return () => clearTimeout(timeout)
+    }, [show])
+    if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}>
+    <b>Loop 5: </b>{totalWyrteMins10} minutes and {totalWyrteSecs10} seconds </Text>)
+    return (   <Timer initialTime={totalLoopTimeMin3SecPerHP8MinTimeVal2}
+    direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+        <div>
+        <Text mb='8px' fontSize='md'><b>Loop 5: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>	 
+        </div>
+      </React.Fragment>
+    )}
+    </Timer>
+  )
+  };
+
+  const DelayComponentWyrteMinLoop6 = () => {
+    const [show, setShow] = React.useState(false)
+  
+    React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTimeMin3SecPerHP8MinTimeVal6)
+    return () => clearTimeout(timeout)
+    }, [show])
+    if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}>
+    <b>Loop 5: </b>{totalWyrteMins10} minutes and {totalWyrteSecs10} seconds </Text>)
+    return (   <Timer initialTime={totalLoopTimeMin3SecPerHP8MinTimeVal2}
+    direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+        <div>
+        <Text mb='8px' fontSize='md'><b>Loop 5: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>	 
+        </div>
+      </React.Fragment>
+    )}
+    </Timer>
+  )
+  };
+  
+
+  const DelayComponentWyrteMinLoopFinal = () => {
+      const [show, setShow] = React.useState(false)
+    
+      React.useEffect(() => {
+        const timeout = setTimeout(() => {
+          setShow(true)
+        }, totalWhenToStartFinalWyrteLoopMin)
+        return () => clearTimeout(timeout)
+      }, [show])
+      if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}>
+        <b>Final Loop: </b>{totalWyrteFinalMins} minutes and {totalWyrteFinalSecs} seconds<br /></Text>)
+      return (   <Timer initialTime={totalFinalLoopSecsWyrteMin}
+      direction="backward"
+          timeToUpdate={10}>
+        {({ start, resume, pause, stop, reset, timerState }) => (
+          <React.Fragment>
+            <div>
+            <Text mb='8px' fontSize='md'>
+              <b>Final Loop: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+            </div>
+          </React.Fragment>
+        )}
+      </Timer>
+    )
+    };
+
+
+//Wyrte - timers//
+
+const DelayComponentWyrteLoop = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, 0)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (null)
+  return (   <Timer initialTime={totalLoopTime3SecPerHP8MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+  	  <div>
+  	  <Text mb='8px' mt='25px' fontSize='md'>
+		  <b>Loop 1: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>    
+  	  </div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+
+
+const DelayComponentWyrteLoop2 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, totalLoopTime3SecPerHP8MinTimeVal2)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}>
+	<b>Loop 2: </b>{totalWyrteMins75} minutes and {totalWyrteSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3SecPerHP8MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+  	  <div>
+  	  <Text mb='8px' fontSize='md'>
+		  <b>Loop 2: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>    
+  	  </div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+
+const DelayComponentWyrteLoop3 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, totalLoopTime3SecPerHP8MinTimeVal3)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}>
+	<b>Loop 3: </b>{totalWyrteMins75} minutes and {totalWyrteSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3SecPerHP8MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+  	  <div>
+  	  <Text mb='8px' fontSize='md'><b>Loop 3: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>    
+  	  </div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+
+const DelayComponentWyrteLoop4 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, totalLoopTime3SecPerHP8MinTimeVal4)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}>
+	<b>Loop 4: </b>{totalWyrteMins75} minutes and {totalWyrteSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3SecPerHP8MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+  	  <div>
+  	  <Text mb='8px' fontSize='md'><b>Loop 4: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+  	  </div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+
+const DelayComponentWyrteLoop5 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, totalLoopTime3SecPerHP8MinTimeVal5)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 5: </b>{totalWyrteMins75} minutes and {totalWyrteSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3SecPerHP8MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+  	  <div>
+  	  <Text mb='8px' fontSize='md'><b>Loop 5: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+  	  </div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+
+const DelayComponentWyrteLoop6 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, totalLoopTime3SecPerHP8MinTimeVal6)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 6: </b>{totalWyrteMins75} minutes and {totalWyrteSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3SecPerHP8MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+  	  <div>
+  	  <Text mb='8px' fontSize='md'><b>Loop 6: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+  	  </div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+
+const DelayComponentWyrteLoop7 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, totalLoopTime3SecPerHP8MinTimeVal7)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 7: </b>{totalWyrteMins75} minutes and {totalWyrteSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3SecPerHP8MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+  	  <div>
+  	  <Text mb='8px' fontSize='md'><b>Loop 7: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+  	  </div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+
+const DelayComponentWyrteLoop8 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, totalLoopTime3SecPerHP8MinTimeVal8)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 8: </b>{totalWyrteMins75} minutes and {totalWyrteSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3SecPerHP8MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+  	  <div>
+  	  <Text mb='8px' fontSize='md'><b>Loop 8: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+  	  </div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+const DelayComponentWyrteLoop9 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, totalLoopTime3SecPerHP8MinTimeVal9)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 9: </b>{totalWyrteMins75} minutes and {totalWyrteSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3SecPerHP8MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+  	  <div>
+  	  <Text mb='8px' fontSize='md'><b>Loop 9: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+  	  </div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+const DelayComponentWyrteLoop10 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, totalLoopTime3SecPerHP8MinTimeVal10)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 10: </b>{totalWyrteMins75} minutes and {totalWyrteSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3SecPerHP8MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+  	  <div>
+  	  <Text mb='8px' fontSize='md'><b>Loop 10: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+  	  </div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+const DelayComponentWyrteLoop11 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, totalLoopTime3SecPerHP8MinTimeVal11)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 11: </b>{totalWyrteMins75} minutes and {totalWyrteSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3SecPerHP8MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+  	  <div>
+  	  <Text mb='8px' fontSize='md'><b>Loop 11: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+  	  </div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+const DelayComponentWyrteLoop12 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, totalLoopTime3SecPerHP8MinTimeVal12)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 12: </b>{totalWyrteMins75} minutes and {totalWyrteSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3SecPerHP8MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+  	  <div>
+  	  <Text mb='8px' fontSize='md'><b>Loop 12: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+  	  </div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+const DelayComponentWyrteLoop13 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, totalLoopTime3SecPerHP8MinTimeVal13)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 13: </b>{totalWyrteMins75} minutes and {totalWyrteSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3SecPerHP8MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+  	  <div>
+  	  <Text mb='8px' fontSize='md'><b>Loop 13: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+  	  </div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+const DelayComponentWyrteLoop14 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, totalLoopTime3SecPerHP8MinTimeVal14)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 14: </b>{totalWyrteMins75} minutes and {totalWyrteSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3SecPerHP8MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+  	  <div>
+  	  <Text mb='8px' fontSize='md'><b>Loop 14: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+  	  </div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+const DelayComponentWyrteLoop15 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, totalLoopTime3SecPerHP8MinTimeVal15)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 15: </b>{totalWyrteMins75} minutes and {totalWyrteSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3SecPerHP8MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+  	  <div>
+  	  <Text mb='8px' fontSize='md'><b>Loop 15: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+  	  </div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+
+const DelayComponentWyrteLoop16 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, totalLoopTime3SecPerHP8MinTimeVal16)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 16: </b>{totalWyrteMins75} minutes and {totalWyrteSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3SecPerHP8MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+  	  <div>
+  	  <Text mb='8px' fontSize='md'><b>Loop 16: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+  	  </div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+
+const DelayComponentWyrteLoop17 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, totalLoopTime3SecPerHP8MinTimeVal17)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 17: </b>{totalWyrteMins75} minutes and {totalWyrteSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3SecPerHP8MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+  	  <div>
+  	  <Text mb='8px' fontSize='md'><b>Loop 17: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+  	  </div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+
+const DelayComponentWyrteLoop18 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, totalLoopTime3SecPerHP8MinTimeVal18)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 18: </b>{totalWyrteMins75} minutes and {totalWyrteSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3SecPerHP8MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+  	  <div>
+  	  <Text mb='8px' fontSize='md'><b>Loop 18: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+  	  </div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+
+const DelayComponentWyrteLoop19 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, totalLoopTime3SecPerHP8MinTimeVal19)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 19: </b>{totalWyrteMins75} minutes and {totalWyrteSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3SecPerHP8MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+  	  <div>
+  	  <Text mb='8px' fontSize='md'><b>Loop 19: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+  	  </div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+
+const DelayComponentWyrteLoop20 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, totalLoopTime3SecPerHP8MinTimeVal20)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 20: </b>{totalWyrteMins75} minutes and {totalWyrteSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3SecPerHP8MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+  	  <div>
+  	  <Text mb='8px' fontSize='md'><b>Loop 20: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+  	  </div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+
+const DelayComponentWyrteLoop21 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, totalLoopTime3SecPerHP8MinTimeVal21)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 21: </b>{totalWyrteMins75} minutes and {totalWyrteSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3SecPerHP8MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+  	  <div>
+  	  <Text mb='8px' fontSize='md'><b>Loop 21: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+  	  </div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+
+const DelayComponentWyrteLoop22 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, totalLoopTime3SecPerHP8MinTimeVal22)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 22: </b>{totalWyrteMins75} minutes and {totalWyrteSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3SecPerHP8MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+  	  <div>
+  	  <Text mb='8px' fontSize='md'><b>Loop 22: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+  	  </div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+
+const DelayComponentWyrteLoop23 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, totalLoopTime3SecPerHP8MinTimeVal23)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 23: </b>{totalWyrteMins75} minutes and {totalWyrteSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3SecPerHP8MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+  	  <div>
+  	  <Text mb='8px' fontSize='md'><b>Loop 23: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+  	  </div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+
+const DelayComponentWyrteLoop24 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, totalLoopTime3SecPerHP8MinTimeVal24)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 24: </b>{totalWyrteMins75} minutes and {totalWyrteSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3SecPerHP8MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+  	  <div>
+  	  <Text mb='8px' fontSize='md'><b>Loop 24: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+  	  </div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+
+const DelayComponentWyrteLoop25 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, totalLoopTime3SecPerHP8MinTimeVal25)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 25: </b>{totalWyrteMins75} minutes and {totalWyrteSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3SecPerHP8MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+  	  <div>
+  	  <Text mb='8px' fontSize='md'><b>Loop 25: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+  	  </div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+
+const DelayComponentWyrteLoop26 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, totalLoopTime3SecPerHP8MinTimeVal26)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 26: </b>{totalWyrteMins75} minutes and {totalWyrteSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3SecPerHP8MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+  	  <div>
+  	  <Text mb='8px' fontSize='md'><b>Loop 26: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+  	  </div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+
+
+
+const DelayComponentWyrteLoop4x = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, (((Math.ceil((480/9)*.9))*9)*1000))
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (
+    <Container height='100px' mt='-20px' align='center' style={{backgroundColor: '#000000'
+    }} >
+        <Text mt='15px' pt='10px'  fontSize='md' style={{color: '#7a7a7a'}}>
+          At ~1 mins remaining:
+  the timer will flash 1x, then show the 4x reward multiplier</Text>
+      </Container>
+    )
+return (   <Timer initialTime={totalFinalLoopSecsVoidWignow}
+direction="backward"
+    timeToUpdate={10}>
+  {({ start, resume, pause, stop, reset, timerState }) => (
+    <React.Fragment>
+      <Container height='100px' mt='-20px' align='center' style={{backgroundColor: '#000000'
+    }} >
+        <Text mt='15px' pt='25px' fontSize='md'><span>When you see the </span><span style={{color: '#B794F4'}}><b>x4 multiplier</b></span><span>, <b><i>type</i></b> at least 1 word</span></Text>
+      </Container>
+    </React.Fragment>
+  )}
+</Timer>
+)
+};
+
+const DelayComponentWyrteLoopFinal = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, totalWhenToStartFinalWyrteLoop)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}>
+	<b>Final Loop: </b>{totalFinalLoopDisplayMinsWyrte} minutes and {totalFinalLoopDisplaySecsWyrte} seconds </Text>)
+  return (   <Timer initialTime={totalFinalLoopSecsWyrte}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+  	  <div>
+  	  <Text mb='8px' fontSize='md'>
+		  <b>Final Loop: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+  	  </div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+
+
+const Wyrte9 = () => {
+  if (totalWyrteBackTo100 == 9)
+	return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi.')}}>
+Copy {totalWyrteBackTo100} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+
+const Wyrte12 = () => {
+  if (totalWyrteBackTo100 == 12)
+	return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in nunc at.')}}>
+Copy {totalWyrteBackTo100} words<br/>(Lorem Ipsum)</Button>  )
+}
+
+
+const Wyrte15 = () => {
+  if (totalWyrteBackTo100 == 15)
+	return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in nunc at elia ex sodales.')}}>
+Copy {totalWyrteBackTo100} words<br/>(Lorem Ipsum)</Button>  )
+}
+
+
+const Wyrte18 = () => {
+  if (totalWyrteBackTo100 == 18)
+	return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut efficitur sem eros, sed auctor mi maximus in orci. ')}}>
+Copy {totalWyrteBackTo100} words<br/>(Lorem Ipsum)</Button>  )
+}
+
+const Wyrte21 = () => {
+  if (totalWyrteBackTo100 == 21)
+	return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut efficitur sem eros, sed auctor mi maximus in. Orci varius natoque penatibus.')}}>
+Copy {totalWyrteBackTo100} words<br/>(Lorem Ipsum)</Button>  )
+}
+
+const Wyrte24 = () => {
+    if (totalWyrteBackTo100 == 24)
+      return(
+  <Button mt='15px' mb='15px' height='50px'
+  onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut efficitur sem eros, sed auctor et mi maximus in. Orci varius quod natoque penatibus et. ')}}>
+  Copy {totalWyrteBackTo100} words<br/>(Lorem Ipsum)</Button>  )
+  }
+
+const Wyrte27 = () => {
+  if (totalWyrteBackTo100 == 27)
+    return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non purus feugiat, gravida dolor eget, porta mi. Aliquam iaculis elit diam. Ut id blandit. Nulla et dolor.')}}>
+Copy {totalWyrteBackTo100} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const WyrteFix27 = () => {
+  if (totalWyrteHPToLose == 27)
+    return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non purus feugiat, gravida dolor eget, porta mi. Aliquam iaculis elit diam. Ut id blandit. Nulla et dolor.')}}>
+Copy {totalWyrteHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Wyrte30 = () => {
+  if (totalWyrteHPToLose == 30)
+    return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rhoncus euismod lacus ut lobortis. Maecenas tincidunt lacus quis interdum faucibus. Aliquam erat volutpat. Vestibulum semper est in condimentum mattis. Suspendisse.')}}>
+Copy {totalWyrteHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Wyrte33 = () => {
+  if (totalWyrteHPToLose == 33)
+    return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, et consectetur adipiscing elit. Donec faucibus risus justo, ac consectetur orci maximus nec. Proin placerat, lectus nec tempus cursus, augue nibh eleifend erat, at porttitor nulla arcu in.')}}>
+Copy {totalWyrteHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Wyrte36 = () => {
+  if (totalWyrteHPToLose == 36)
+    return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis egestas ex. Vivamus tempus neque odio, nec scelerisque ipsum vehicula sit amet. Duis nisl dolor, posuere sed ante vel, euismod faucibus nisi. Donec nulla leo, aliquet.')}}>
+Copy {totalWyrteHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Wyrte39 = () => {
+  if (totalWyrteHPToLose == 39)
+    return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, et consectetur adipiscing elit. Pellentesque feugiat aliquam ipsum ac auctor. Phasellus a nisi auctor, tempus felis eget, porta felis. Maecenas et tempor nisi. Aenean metus arcu, posuere sit amet nunc vel, cursus porttitor nisl.')}}>
+Copy {totalWyrteHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Wyrte42 = () => {
+  if (totalWyrteHPToLose == 42)
+    return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac aliquam nunc. Sed vitae tellus a tellus dictum condimentum. Nunc volutpat feugiat justo. Fusce vulputate ligula nisl, sed ullamcorper libero imperdiet sit amet. In fermentum sed metus nec pellentesque. Duis eget tellus. ')}}>
+Copy {totalWyrteHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Wyrte45 = () => {
+  if (totalWyrteHPToLose == 45)
+    return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, et consectetur adipiscing elit. Phasellus vehicula volutpat ligula eu efficitur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris mollis et odio eu placerat. Phasellus mollis eleifend orci, eget pulvinar sem viverra eu. Nam turpis. ')}}>
+Copy {totalWyrteHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Wyrte48 = () => {
+  if (totalWyrteHPToLose == 48)
+    return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu ligula ac ipsum tempus tristique ac at urna. Phasellus accumsan erat ac dui elementum fringilla. Phasellus sagittis et mi ac malesuada. Nam eleifend mi in velit auctor, vel mollis massa volutpat. Ut tempus lorem diam, a sollicitudin ex.')}}>
+Copy {totalWyrteHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Wyrte51 = () => {
+  if (totalWyrteHPToLose == 51)
+    return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, et consectetur adipiscing elit. Etiam consequat blandit eros, pellentesque vulputate tortor imperdiet et. In hac habitasse platea dictumst. Aenean non dapibus diam, vitae suscipit augue. Phasellus ut aliquam magna, nec efficitur lacus. Pellentesque lacus sapien, vulputate in blandit at, venenatis vestibulum magna. Nullam quis facilisis dui. ')}}>
+Copy {totalWyrteHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+
+const Wyrte54 = () => {
+  if (totalWyrteHPToLose == 54)
+    return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id posuere est, a ultrices nisi. In porttitor ligula vel arcu dapibus, vel interdum magna ultricies. Aenean odio ante, ultrices vitae fermentum sed, aliquam eu tellus. Vestibulum mattis dignissim sollicitudin. Integer mollis, lorem et convallis elementum, lorem nisi vehicula dolor, congue vulputate metus eros id. ')}}>
+Copy {totalWyrteHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Wyrte57 = () => {
+  if (totalWyrteHPToLose == 57)
+    return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, et consectetur adipiscing elit. Fusce blandit viverra neque, iaculis blandit urna vulputate et. Etiam eu imperdiet nulla, ut malesuada mi. Nullam ex nisi, fringilla eget orci sed, porta porttitor tellus. Donec nec turpis feugiat, commodo eros in, sodales lacus. Maecenas fermentum lacus posuere mauris placerat tempus. Mauris a lectus tincidunt, aliquet nunc. ')}}>
+Copy {totalWyrteHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Wyrte60 = () => {
+  if (totalWyrteHPToLose == 60)
+    return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut sapien ac lacus porttitor aliquam at at nulla. Vivamus pharetra pulvinar elementum. Nullam imperdiet augue vel eros imperdiet eleifend. Suspendisse rutrum, tortor id volutpat sagittis, elit urna luctus odio, ut congue massa felis eu ligula. Maecenas tempor, urna in eleifend eleifend, eros ante vehicula odio, vitae maximus ipsum sapien sed.')}}>
+Copy {totalWyrteHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Wyrte63 = () => {
+  if (totalWyrteHPToLose == 63)
+    return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, et consectetur adipiscing elit. Nunc viverra finibus sapien, nec aliquam sem ornare elementum. Mauris a ornare nunc. Vestibulum placerat massa sit amet nisl faucibus, in euismod turpis sollicitudin. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean consectetur vel quam dapibus interdum. Maecenas lacinia dolor justo, at vestibulum ex sollicitudin eget. Nunc in velit. ')}}>
+Copy {totalWyrteHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+
+const Wyrte66 = () => {
+  if (totalWyrteHPToLose == 66)
+    return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo rutrum ultrices. Nullam dapibus nisi ut nisl placerat malesuada. Proin luctus dignissim dui, vitae lacinia velit gravida ac. Proin et nisi ac mi ultricies blandit ac ac sem. Nullam id mattis libero. Sed euismod metus ut odio tincidunt, sed sodales metus blandit. Phasellus aliquam elit in lacinia ornare. Nullam suscipit ipsum ac auctor convallis. Donec tempor. ')}}>
+Copy {totalWyrteHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Wyrte69 = () => {
+  if (totalWyrteHPToLose == 69)
+    return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, et consectetur adipiscing elit. Etiam ac dolor lobortis ante ornare scelerisque. Ut finibus luctus purus sit amet accumsan. Duis vel suscipit erat, nec molestie enim. Nullam bibendum odio nunc. Vivamus mollis fermentum ex, in dictum eros blandit nec. Sed sollicitudin quis tortor ac pharetra. Sed consectetur, turpis eu eleifend rutrum, nibh urna condimentum leo, eget interdum urna est nec sapien. Interdum et malesuada fames. ')}}>
+Copy {totalWyrteHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+
+const Wyrte72 = () => {
+  if (totalWyrteHPToLose == 72)
+    return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales, elit sed posuere laoreet, ante mi maximus velit, vel accumsan sem metus vel justo. Curabitur nec tincidunt tellus, at laoreet felis. Fusce eu luctus felis. Morbi varius, turpis eu aliquam auctor, magna ante interdum nulla, quis maximus magna felis nec nisl. Vivamus vitae ullamcorper dolor. Donec feugiat in dolor in maximus. Integer viverra dui sit amet nulla tristique, sit amet suscipit leo. ')}}>
+Copy {totalWyrteHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const WyrteCP75 = () => {
+  if (totalWyrteHPToLose == 75)
+    return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, et consectetur adipiscing elit. Morbi quis magna a justo bibendum dictum sit amet sit amet ex. Aenean quis hendrerit urna, ut ullamcorper nisi. Aenean a nunc consectetur, pharetra lectus non, rhoncus sapien. Sed quis nulla gravida, interdum turpis a, faucibus est. Curabitur a odio vitae ex tristique luctus vitae a sem. Nulla congue vel lacus eget varius. Aliquam fermentum nibh quis diam dictum, vel porta justo rhoncus. Morbi at rhoncus. ')}}>
+Copy {totalWyrteHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+
+const Wyrte78 = () => {
+  if (totalWyrteHPToLose == 78)
+    return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue arcu, fringilla vitae tempus vel, ultricies commodo turpis. Pellentesque ut risus luctus, accumsan dolor eget, luctus felis. Suspendisse ac egestas nunc. Sed viverra felis nec lectus tempor feugiat. Nunc tincidunt finibus turpis non luctus. Nullam orci nisl, porttitor ut neque in, malesuada porta nisi. Phasellus sollicitudin magna faucibus est lobortis, ornare mollis lacus sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent. ')}}>
+Copy {totalWyrteHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Wyrte81 = () => {
+  if (totalWyrteHPToLose == 81)
+    return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, et consectetur adipiscing elit. Maecenas congue dignissim cursus. Vivamus id nulla ut risus pellentesque semper. Pellentesque lobortis augue eget ultrices molestie. Nunc euismod massa a lectus varius sollicitudin. Sed dictum quis est placerat porta. Ut malesuada feugiat nisi et accumsan. Morbi et pulvinar nunc. Proin fringilla condimentum metus, id blandit mauris egestas in. Fusce tincidunt, nisi eget ornare fermentum, elit erat dictum nulla, tristique iaculis leo massa in orci. Ut aliquam efficitur lacus, in commodo nibh.')}}>
+Copy {totalWyrteHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Wyrte84 = () => {
+  if (totalWyrteHPToLose == 84)
+    return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum velit vitae nunc ultrices, non sagittis eros euismod. Donec mattis leo id tempor tristique. In dignissim tempus augue, et posuere eros tempus sed. Suspendisse in ex felis. Ut faucibus blandit imperdiet. Sed convallis quam quis augue viverra rutrum. Ut sapien orci, scelerisque blandit nulla sit amet, malesuada sollicitudin justo. Proin et nulla consequat, fermentum eros non, rutrum orci. Suspendisse porttitor viverra tortor sed consequat. Etiam et augue ac metus condimentum finibus. Nunc vel dictum. ')}}>
+Copy {totalWyrteHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Wyrte87 = () => {
+  if (totalWyrteHPToLose == 87)
+    return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, et consectetur adipiscing elit. In a rutrum lorem, vel congue libero. Maecenas egestas tincidunt mauris, ut interdum turpis eleifend id. Mauris consectetur metus id eros consectetur gravida. Vivamus eget velit ipsum. Nunc porta tortor eu est imperdiet fringilla. Curabitur vel nibh ac odio imperdiet ultricies. Donec tempus ante non libero euismod dapibus. Aenean faucibus consectetur bibendum. Morbi sollicitudin, enim id congue laoreet, elit dui volutpat metus, non egestas ante tortor sit amet ex. Mauris sagittis pulvinar finibus. Integer non vehicula lectus, ut. ')}}>
+Copy {totalWyrteHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Wyrte90 = () => {
+  if (totalWyrteHPToLose == 90)
+    return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu dignissim neque. Quisque a commodo diam. Cras in accumsan nisl. Maecenas vitae scelerisque arcu, at pretium ipsum. Nam tincidunt ullamcorper congue. Donec scelerisque, augue nec hendrerit vehicula, erat dui pellentesque odio, et viverra dolor felis nec sem. Praesent a lorem vel tellus feugiat ultricies. Etiam lacinia, sapien quis vulputate tincidunt, nisi lacus ornare augue, elementum efficitur elit diam in nibh. Suspendisse ullamcorper mollis purus, at tincidunt odio porta rhoncus. Quisque efficitur nisl nibh, id auctor libero viverra ac. In hac. ')}}>
+Copy {totalWyrteHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
 //Lucereb - min - timers//
@@ -60084,7 +62156,7 @@ const VanstraLowerDef = () => {
 const Vanstra60Def = () => {
   if (DefenseStat >= 60)
 	return(
-      <Box>
+      <Box> 
       <Text mt='5px' fontSize='lg'>At this defense, Vanstra can be fought in a continuous loop 
       without typing. Great for editing, research, or any kind of non-typing work.
       </Text>
@@ -60215,6 +62287,26 @@ const VoidWignow60Def = () => {
   </Table>
 </TableContainer>
 <br/>
+<Text><b>Exceptions</b></Text>
+<Text>
+  <b>Wyrte the Word Devourer</b> is the first monster to lose 3 HP per X seconds.
+</Text>
+<TableContainer>
+<Table align='center' variant='striped' width='200px' size='sm'>
+    <Thead>
+      <Tr>
+        <Th isNumeric>Secs to<br/>lose 3 HP</Th>
+        <Th>Monster</Th>
+      </Tr>
+    </Thead>
+    <Tbody>
+      <Tr>
+        <Td isNumeric>9</Td>
+        <Td>Wyrte the Word Devourer</Td>
+      </Tr>
+      </Tbody>
+      </Table>
+      </TableContainer>
     </AccordionPanel>
   </AccordionItem>
   <AccordionItem>
@@ -60351,6 +62443,21 @@ const VoidWignow60Def = () => {
       </VStack>
             </Button>
             </WrapItem>
+
+            <WrapItem>
+            <Button w='100px' h='150px' pb={5} onClick={handleWyrteClick} style={{ backgroundColor: WyrteActive ? "#1A1521" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        borderRadius='full'
+        src='https://i.imgur.com/M5VOSfq.png'
+        mr='5px'
+      /> <Text fontSize='xs' align='center'>Wyrte the<br/>Word Devourer<br></br>8 minutes</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
             
 
             <WrapItem>
@@ -60465,7 +62572,7 @@ const VoidWignow60Def = () => {
     <Tab onClick={handleTab2Click} _selected={{ color: '#B794F4', bg: '#1a1521' }}>Minimum for 4x Bonus</Tab>
   </TabList>
 
-{!VanstraIsShown && !ViIsShown && !VoidWignowIsShown && !LucerebIsShown && !ProfBartIsShown &&
+{!VanstraIsShown && !ViIsShown && !VoidWignowIsShown && !WyrteIsShown && !LucerebIsShown && !ProfBartIsShown &&
 !VanspiIsShown && !ViyuIsShown && !VanvriIsShown && !ViyusaIsShown && !ViradiseIsShown &&
 <TabPanels height='400px' mt='-20px' style={{backgroundColor: '#1a1521'}}>
 <TabPanel>
@@ -60695,6 +62802,79 @@ const VoidWignow60Def = () => {
       </VStack>    
     </TabPanel>
   </TabPanels>
+}
+
+{WyrteIsShown &&
+  <TabPanels mt='-20px' style={{backgroundColor: '#1a1521'}}>
+    <TabPanel>
+      <VStack>
+   	 <Heading size='lg' mt='15px' ><b>Wyrte the Word Devourer</b></Heading>
+      <Text mt='-8px' mb='3px'>
+          <span style={{color: '#B794F4'}}><b>{totalMaxHP} HP</b></span><span> | </span>
+            <span style={{color: '#B794F4'}}><b>8 mins</b></span>
+            </Text> 
+     <Text mt='-8px' mb='3px' fontSize='md'>
+          <span>loses </span>
+          <span style={{color: '#B794F4'}}><b>3 HP</b></span><span> every </span>
+            <span style={{color: '#B794F4'}}><b>9 secs</b></span>
+            </Text>
+         	 <br></br>
+
+   	 <Image
+   	 align='center'
+   	 boxSize='7.5rem'
+   	 borderRadius='full'
+   	 src='https://i.imgur.com/M5VOSfq.png'
+      />
+      <br></br>
+      <Text fontSize='lg'>calculated at {DefenseStat} Defense</Text><br></br>
+      <div>
+      <Divider align='center' width='200px'></Divider>
+      </div>
+      <Text fontSize='lg'><i>paste or write</i></Text>
+      <Text mt='-8px'><b>{totalWyrteHPToLose} words</b></Text>
+      <Text fontSize='lg'><i>approx. every</i></Text>
+      <Text mt='-8px'><b>{totalWyrteMins10} mins {totalWyrteSecs10} secs</b></Text>
+      <Text fontSize='lg'><i>to keep Wyrte at or above</i></Text>
+      <Text mt='-8px'><b>{totalWyrteDownTo10} HP</b></Text>
+      </VStack>    
+    </TabPanel>
+
+    <TabPanel>
+      <VStack>
+   	 <Heading size='lg' mt='15px' ><b>Wyrte the Word Devourer</b></Heading>
+      <Text mt='-8px' mb='3px'>
+          <span style={{color: '#B794F4'}}><b>{totalMaxHP} HP</b></span><span> | </span>
+            <span style={{color: '#B794F4'}}><b>8 mins</b></span>
+            </Text> 
+     <Text mt='-8px' mb='3px' fontSize='md'>
+          <span>loses </span>
+          <span style={{color: '#B794F4'}}><b>3 HP</b></span><span> every </span>
+            <span style={{color: '#B794F4'}}><b>9 secs</b></span>
+            </Text>
+         	 <br></br>
+
+   	 <Image
+   	 align='center'
+   	 boxSize='7.5rem'
+   	 borderRadius='full'
+   	 src='https://i.imgur.com/M5VOSfq.png'
+      />
+      <br></br>
+      <Text fontSize='lg'>calculated at {DefenseStat} Defense</Text><br></br>
+      <div>
+      <Divider align='center' width='200px'></Divider>
+      </div>
+      <Text fontSize='lg'><i>paste or write</i></Text>
+      <Text mt='-8px'><b>{totalWyrteBackTo100} words</b></Text>
+      <Text fontSize='lg'><i>approx. every</i></Text>
+      <Text mt='-8px'><b>{totalWyrteMins75} mins {totalWyrteSecsAdj75} secs</b></Text>
+      <Text fontSize='lg'><i>to keep Wyrte at or above</i></Text>
+      <Text mt='-8px'><b>{totalWyrte75} HP</b></Text>
+      </VStack>    
+    </TabPanel>
+
+    </TabPanels>
 }
 
 {LucerebIsShown &&
@@ -61200,7 +63380,7 @@ const VoidWignow60Def = () => {
 }
 </Tabs>
 
-{(VanstraIsShown || ViIsShown || VoidWignowIsShown || LucerebIsShown || ProfBartIsShown || ViyuIsShown || 
+{(VanstraIsShown || ViIsShown || VoidWignowIsShown || WyrteIsShown || LucerebIsShown||  ProfBartIsShown || ViyuIsShown || 
 ViyusaIsShown || VanspiIsShown ||  VanvriIsShown || ViradiseIsShown) && (DefenseStat === 0) &&
 
 <Container align='center' mt='12px' width='275px' padding='12px' rounded='10px' style={{backgroundColor: 'rgba(0,0,0,0.36'}}>
@@ -61209,7 +63389,7 @@ ViyusaIsShown || VanspiIsShown ||  VanvriIsShown || ViradiseIsShown) && (Defense
 </Container>
 }
 
-{(ViIsShown || LucerebIsShown || ProfBartIsShown || ViyuIsShown || 
+{(ViIsShown || WyrteIsShown || LucerebIsShown || ProfBartIsShown || ViyuIsShown || 
 ViyusaIsShown || VanspiIsShown ||  VanvriIsShown || ViradiseIsShown) && !Tab2IsShown && (DefenseStat>0) &&
 
 <Container mt='15px'>
@@ -61269,6 +63449,35 @@ Scroll down for detailed instructions and tips for use
   </Container>
   }
 
+{GuidedCountdownMinIsShown && WyrteIsShown &&
+    <Container height='180px' align='center' style={{backgroundColor: '#000000'
+    }} >
+            <Text pt='15px' mt='20px' mb='3px' fontSize='md'>
+          <span>Paste </span>
+          <span style={{color: '#B794F4'}}><b>{totalWyrteHPToLose} words</b></span><br/><span> every </span>
+            <span style={{color: '#B794F4'}}><b>{totalWyrteMins10}m {totalWyrteSecs10}s</b></span>
+          <br/>
+          <span> to stay at or above </span>
+            <span style={{color: '#B794F4'}}><b>{totalWyrteDownTo10} HP</b></span>
+            </Text>  
+            <HStack>
+  <Button mt='15px' mb='15px' height='50px' onClick={setGuidedCountdownActive}>Reset<br/>Battle</Button>
+            <WyrteFix27 /><Wyrte30 />
+            <Wyrte33 /><Wyrte36 /><Wyrte39 /><Wyrte42 /><Wyrte45 /><Wyrte48 /><Wyrte51 />
+            <Wyrte54 /><Wyrte57 /><Wyrte60 /><Wyrte63 /><Wyrte66 /><Wyrte69 /><Wyrte72 />
+            <WyrteCP75 /><Wyrte78 /><Wyrte81 /><Wyrte84 /><Wyrte87 /><Wyrte90 />
+            </HStack>
+          </Container>}
+
+  {GuidedCountdownMinIsShown && WyrteIsShown &&
+    <Container mt='-10px' pb='50px' overflowY='scroll' height='475px' style={{backgroundColor: '#00000080'}}>
+  <WyrteTimerMin />
+  <WyrteTimerMin2 />
+  <WyrteTimerMin3 />
+  <WyrteTimerMin4 />
+  <WyrteTimerMin5 />
+  </Container>
+  }
 
 {GuidedCountdownMinIsShown && LucerebIsShown &&
     <Container height='180px' align='center' style={{backgroundColor: '#000000'
@@ -61745,7 +63954,7 @@ Scroll down for detailed instructions and tips for use
 
 
 
-{(VanstraIsShown || ViIsShown || VoidWignowIsShown || LucerebIsShown || ProfBartIsShown || ViyuIsShown || 
+{(VanstraIsShown || ViIsShown || VoidWignowIsShown || WyrteIsShown || LucerebIsShown || ProfBartIsShown || ViyuIsShown || 
 ViyusaIsShown || VanspiIsShown ||  VanvriIsShown || ViradiseIsShown) && Tab2IsShown && (DefenseStat>=99) &&
 
 <Text pt='25px' mb='100px'>
@@ -61753,7 +63962,7 @@ Due to a bug that disallows typing above 100 HP, it's impossible to get a 4x mul
 </Text>
 }
 
-{(VanstraIsShown || ViIsShown || VoidWignowIsShown || LucerebIsShown || ProfBartIsShown || ViyuIsShown || 
+{(VanstraIsShown || ViIsShown || VoidWignowIsShown || WyrteIsShown || LucerebIsShown || ProfBartIsShown || ViyuIsShown || 
 ViyusaIsShown || VanspiIsShown ||  VanvriIsShown || ViradiseIsShown) && Tab2IsShown && (DefenseStat<=99) && (DefenseStat>0) &&
 
 <Container align='center' mt='15px'>
@@ -62441,6 +64650,52 @@ Scroll down for detailed instructions and tips for use
   <DelayComponentVanvriLoop4x mt='-20px' style={{position: 'absolute',}} />
 }
 
+{GuidedCountdownIsShown && WyrteIsShown &&
+    <Container height='180px' align='center' style={{backgroundColor: '#000000'
+  }} >
+        <Text pt='15px' mt='20px' mb='3px' fontSize='md'>
+            <span>Paste </span><span style={{color: '#B794F4'}}><b>{totalWyrteBackTo100} words</b></span><br/><span> every </span>
+            <span style={{color: '#B794F4'}}><b>{totalWyrteMins75}m {totalWyrteSecsAdj75}s</b></span><br/><span> to stay at or above </span>
+            <span style={{color: '#B794F4'}}><b>{totalWyrte75} HP</b></span>
+            </Text>
+          <HStack>
+    <Button mt='15px' mb='15px' height='50px' onClick={setGuidedCountdownActive}>Reset<br/>Battle</Button>
+    <Wyrte9 /><Wyrte12 /><Wyrte15 /><Wyrte18 /><Wyrte21 /><Wyrte24 /><Wyrte27 />
+  </HStack>
+      </Container>
+      }
+  
+  {GuidedCountdownIsShown && WyrteIsShown &&
+    <Container mt='-10px' pb='50px' overflowY='scroll' height='475px' style={{backgroundColor: '#00000080'}}>
+  
+  <WyrteTimer4 />
+  <WyrteTimer5 />
+  <WyrteTimer6 />
+  <WyrteTimer7 />
+  <WyrteTimer8 />
+  <WyrteTimer9 />
+  <WyrteTimer10 />
+  <WyrteTimer11 />
+  <WyrteTimer12 />
+  <WyrteTimer13 />
+  <WyrteTimer14 />
+  <WyrteTimer15 />
+  <WyrteTimer16 />
+  <WyrteTimer17 />
+  <WyrteTimer18 />
+  <WyrteTimer19 />
+  <WyrteTimer20 />
+  <WyrteTimer21 />
+  <WyrteTimer22 />
+  <WyrteTimer23 />
+  <WyrteTimer24 />
+  <WyrteTimer25 />
+  <WyrteTimer26 />
+  </Container>
+  }
+  {GuidedCountdownIsShown && WyrteIsShown &&
+    <DelayComponentWyrteLoop4x mt='-20px' style={{position: 'absolute',}} />
+  }
 
 {GuidedCountdownIsShown && LucerebIsShown &&
   <Container height='180px' align='center' style={{backgroundColor: '#000000'

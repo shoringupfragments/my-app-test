@@ -29,7 +29,6 @@ import {
   AbsoluteCenter,
 } from '@chakra-ui/react';
 
-
 function App() {
 
 const [All, setAll] = useState(false)
@@ -22043,6 +22042,2696 @@ const ColorLuckFeet = () => {
   )
 }
 
+const NoanzaOption = () => {
+if (!NoanzaIsShown)
+return(
+  <WrapItem>
+  <Button w='110px' h='170px' pb={5} onClick={handleNoanzaSwitchClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png/'
+/> 
+<Text fontSize='md' mt='-15px' align='center'><b>Noanza</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+14 Def<br/>+6 Luck </Text>
+</VStack>
+  </Button>
+  </WrapItem>)
+}
+ 
+const NoanzaSelect = () => {
+  if (NoanzaIsShown)
+    return(           
+    <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleNoanzaSwitchNoClick} style={{ backgroundColor: "#211742" }}>
+<VStack justify='center'>  
+ <Image
+  mt='12px'
+  align='center' 
+  boxSize='5rem'
+  src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png/'
+/> 
+<Text fontSize='md' mt='-15px' align='center'><b>Noanza</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+14 Def<br/>+6 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>
+  )
+}
+
+const LodoOption = () => {
+  if (!LodoIsShown)
+  return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleLodoSwitchClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/e/e6/Lodo.png/'
+/> 
+<Text mt='-8px' fontSize='md' align='center'><b>Lodo</b></Text>
+<Text fontSize='sm' align='center'>+12 Atk<br />+2 Def<br />+0 Luck </Text>
+</VStack>
+
+    </Button>
+    </WrapItem>
+  )
+  }
+  
+  const LodoSelect = () => {
+    if (LodoIsShown)
+      return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleLodoSwitchNoClick} style={{ backgroundColor: "#211742" }}>
+   <VStack justify='center'>  
+   <Image
+    mt='12px'
+    align='center' 
+    boxSize='4.5rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/e/e6/Lodo.png/'
+  /> 
+  <Text mt='-8px' fontSize='md' align='center'><b>Lodo</b></Text>
+  <Text fontSize='sm' align='center'>+12 Atk<br />+2 Def<br />+0 Luck </Text>
+  </VStack>
+
+        </Button>
+        </WrapItem>
+    )
+  }
+
+const AzadiOption = () => {
+   if (!AzadiIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleAzadiSwitchClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png/'
+/> 
+<Text mt='-8px' fontSize='md' align='center'><b>Azadi</b></Text>
+<Text fontSize='sm' align='center'>+5 Atk<br />+0 Def<br />+10 Luck </Text>
+</VStack>
+
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const AzadiSelect = () => {
+     if (AzadiIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleAzadiSwitchNoClick} style={{ backgroundColor: "#211742" }}>
+   <VStack justify='center'>  
+   <Image
+    mt='12px'
+    align='center' 
+    boxSize='4.5rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png/'
+  /> 
+  <Text mt='-8px' fontSize='md' align='center'><b>Azadi</b></Text>
+  <Text fontSize='sm' align='center'>+5 Atk<br />+0 Def<br />+10 Luck </Text>
+  </VStack>
+
+        </Button>
+        </WrapItem>
+     )
+   }
+
+const SuwoOption = () => {
+   if (!SuwoIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleSuwoSwitchClick} style={{ backgroundColor: "#2D3748" }}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
+/> 
+<Text mt='-8px' fontSize='md' align='center'><b>Suwo</b></Text>
+<Text fontSize='sm' align='center'>+3 Atk<br />+7 Def<br />+2 Luck </Text>
+</VStack>
+
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const SuwoSelect = () => {
+     if (SuwoIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleSuwoSwitchNoClick} style={{ backgroundColor: "#211742" }}>
+   <VStack justify='center'>  
+   <Image
+    mt='12px'
+    align='center' 
+    boxSize='4.5rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
+  /> 
+  <Text mt='-8px' fontSize='md' align='center'><b>Suwo</b></Text>
+  <Text fontSize='sm' align='center'>+3 Atk<br />+7 Def<br />+2 Luck </Text>
+  </VStack>
+
+        </Button>
+        </WrapItem>
+     )
+   }
+
+//feet buttons//
+
+const AgelessBootsOption = () => {
+  if (!AgelessBootsIsShown)
+  return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleAgelessBootsClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='18px'
+    align='center' 
+    boxSize='3.75rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/5/5f/AgelessBoots.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Ageless<br/>Boots</b></Text>
+    <Text fontSize='sm' align='center'>+2 Atk<br/>+14 Def<br/>+2 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+  )
+  }
+  
+  const AgelessBootsSelect = () => {
+    if (AgelessBootsIsShown)
+      return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleAgelessBootsNoClick} style={{ backgroundColor: "#211742"}}>
+        <VStack justify='center'>  
+        <Image
+        mt='18px'
+        align='center' 
+        boxSize='3.75rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/5/5f/AgelessBoots.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Ageless<br/>Boots</b></Text>
+        <Text fontSize='sm' align='center'>+2 Atk<br/>+14 Def<br/>+2 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+    )
+  }
+
+const ClimbingBootsOption = () => {
+  if (!ClimbingBootsIsShown)
+  return(
+     <WrapItem>
+     <Button w='110px' h='170px' pb={5} onClick={handleClimbingBootsClick} style={{ backgroundColor: "#2D3748"}}>
+     <VStack justify='center'>  
+     <Image
+     mt='18px'
+     align='center' 
+     boxSize='3.5rem'
+     src='https://static.wikia.nocookie.net/4thewords/images/7/7d/ClimbingBoots.png/'
+     /> 
+     <Text fontSize='md' align='center'><b>Climbing<br/>Boots</b></Text>
+     <Text fontSize='sm' align='center'>+12 Atk<br/>+0 Def<br/>+0 Luck </Text>
+     </VStack>
+     </Button>
+     </WrapItem>
+  )
+  }
+  
+  const ClimbingBootsSelect = () => {
+    if (ClimbingBootsIsShown)
+      return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleClimbingBootsNoClick} style={{ backgroundColor: "#211742"}}>
+        <VStack justify='center'>  
+        <Image
+        mt='18px'
+        align='center' 
+        boxSize='3.5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/7d/ClimbingBoots.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Climbing<br/>Boots</b></Text>
+        <Text fontSize='sm' align='center'>+12 Atk<br/>+0 Def<br/>+0 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+    )
+  }
+
+const DarkForestBootsOption = () => {
+   if (!DarkForestBootsIsShown)
+   return(
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleDarkForestBootsClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/6/64/Dark-forest-boots_battle.png/'
+/> 
+<Text fontSize='md' align='center'><b>Dark Forest<br/>Boots</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+8 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>   )
+   }
+   
+   const DarkForestBootsSelect = () => {
+     if (DarkForestBootsIsShown)
+       return(           
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleDarkForestBootsNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/6/64/Dark-forest-boots_battle.png/'
+/> 
+<Text fontSize='md' align='center'><b>Dark Forest<br/>Boots</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+8 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>
+     )
+   }  
+
+const FabricBootsOption = () => {
+   if (!FabricBootsIsShown)
+   return(
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleFabricBootsClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/7c/Fabricboots_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Fabric Boots</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+6 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>
+   )
+   }
+   
+   const FabricBootsSelect = () => {
+     if (FabricBootsIsShown)
+       return(           
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleFabricBootsNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/7/7c/Fabricboots_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Fabric Boots</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+6 Def<br/>+0 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>
+     )
+   }
+
+const LeafBootsOption = () => {
+   if (!LeafBootsIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleLeafBootsClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='12px'
+    align='center' 
+    boxSize='4rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/3/30/Leafboots_md.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Leaf Boots</b></Text>
+    <Text fontSize='sm' align='center'>+0 Atk<br/>+1 Def<br/>+1 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const LeafBootsSelect = () => {
+     if (LeafBootsIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleLeafBootsNoClick} style={{ backgroundColor: "#211742"}}>
+        <VStack justify='center'>  
+        <Image
+        mt='12px'
+        align='center' 
+        boxSize='4rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/3/30/Leafboots_md.png/'
+           /> 
+        <Text fontSize='md' align='center'><b>Leaf Boots</b></Text>
+        <Text fontSize='sm' align='center'>+0 Atk<br/>+1 Def<br/>+1 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }   
+
+const LeafsungBootsOption = () => {
+   if (!LeafsungBootsIsShown)
+   return(
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleLeafsungBootsClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/b/b5/Leafsungboots_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Leafsung<br/>Boots</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>
+   )
+   }
+   
+   const LeafsungBootsSelect = () => {
+     if (LeafsungBootsIsShown)
+       return(           
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleLeafsungBootsNoClick} style={{ backgroundColor: "#211742"}}>
+<VStack justify='center'>  
+<Image
+mt='18px'
+align='center' 
+boxSize='3.5rem'
+src='https://static.wikia.nocookie.net/4thewords/images/b/b5/Leafsungboots_md.png/'
+/> 
+<Text fontSize='md' align='center'><b>Leafsung<br/>Boots</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>
+     )
+   }
+
+const LeatherTurnshoeOption = () => {
+   if (!LeatherTurnshoeIsShown)
+   return(
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleLeatherTurnshoeClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/f/f6/LeatherTurnshoe.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Leather<br/>Turnshoe</b></Text>
+   <Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+5 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>
+   )
+   }
+   
+   const LeatherTurnshoeSelect = () => {
+     if (LeatherTurnshoeIsShown)
+       return(           
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleLeatherTurnshoeNoClick} style={{ backgroundColor: "#211742"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/f/f6/LeatherTurnshoe.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Leather<br/>Turnshoe</b></Text>
+   <Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+5 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>
+     )
+   }
+
+const SteelBootsOption = () => {
+   if (!SteelBootsIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleSteelBootsClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='12px'
+    align='center' 
+    boxSize='4rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/d/d8/Steelboots_md.png/'
+    /> 
+    <Text fontSize='sm' align='center'><b>Steel Boots</b></Text>
+    <Text fontSize='sm' align='center'>+0 Atk<br/>+9 Def<br/>+0 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+  
+   const SteelBootsSelect = () => {
+     if (SteelBootsIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleSteelBootsNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='12px'
+        align='center' 
+        boxSize='4rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/d8/Steelboots_md.png/'
+        /> 
+        <Text fontSize='sm' align='center'><b>Steel Boots</b></Text>
+        <Text fontSize='sm' align='center'>+0 Atk<br/>+9 Def<br/>+0 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+
+const WoodenGardenBootsOption = () => {
+   if (!WoodenGardenBootsIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleWoodenGardenBootsClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='18px'
+    align='center' 
+    boxSize='3.5rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/1/14/WoodenGardenBoots.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Wooden<br/>Garden Boots</b></Text>
+    <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+0 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const WoodenGardenBootsSelect = () => {
+     if (WoodenGardenBootsIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleWoodenGardenBootsNoClick} style={{ backgroundColor: "#211742"}}>
+        <VStack justify='center'>  
+        <Image
+        mt='18px'
+        align='center' 
+        boxSize='3.5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/14/WoodenGardenBoots.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Wooden<br/>Garden Boots</b></Text>
+        <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+0 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }   
+
+const AmidalaChestpieceOption = () => {
+   if (!AmidalaChestpieceIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleAmidalaChestpieceClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='18px'
+    align='center' 
+    boxSize='3.75rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/3/37/Amidala_Chestpiece.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Amidala<br/>Chestpiece</b></Text>
+    <Text fontSize='sm' align='center'>+6 Atk<br/>+6 Def<br/>+2 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const AmidalaChestpieceSelect = () => {
+     if (AmidalaChestpieceIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleAmidalaChestpieceNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='18px'
+        align='center' 
+        boxSize='3.75rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/3/37/Amidala_Chestpiece.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Amidala<br/>Chestpiece</b></Text>
+        <Text fontSize='sm' align='center'>+6 Atk<br/>+6 Def<br/>+2 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }   
+
+const CloudChestPlateOption = () => {
+   if (!CloudChestPlateIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleCloudChestPlateClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='18px'
+    align='center' 
+    boxSize='3.5rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/7/75/Cloud-chest-plate.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Cloud<br/>Chest Plate</b></Text>
+    <Text fontSize='sm' align='center'>+0 Atk<br/>+18 Def<br/>+2 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const CloudChestPlateSelect = () => {
+     if (CloudChestPlateIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleCloudChestPlateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='18px'
+        align='center' 
+        boxSize='3.5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/75/Cloud-chest-plate.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Cloud<br/>Chest Plate</b></Text>
+        <Text fontSize='sm' align='center'>+0 Atk<br/>+18 Def<br/>+2 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+
+const FabricBreastplateOption = () => {
+   if (!FabricBreastplateIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleFabricBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='18px'
+    align='center' 
+    boxSize='3.5rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/3/31/Fabricbreastplate_md.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Fabric<br/>Breastplate</b></Text>
+    <Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+0 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const FabricBreastplateSelect = () => {
+     if (FabricBreastplateIsShown)
+       return(           
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleFabricBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/3/31/Fabricbreastplate_md.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Fabric<br/>Breastplate</b></Text>
+   <Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+0 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>
+     )
+   }
+
+const FusionCuirassOption = () => {
+   if (!FusionCuirassIsShown)
+   return(
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleFusionCuirassClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='4rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/f/fa/FusionCuirass.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Fusion Cuirass</b></Text>
+   <Text fontSize='sm' align='center'>+8 Atk<br/>+20 Def<br/>+0 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>
+   )
+   }
+   
+   const FusionCuirassSelect = () => {
+     if (FusionCuirassIsShown)
+       return(           
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleFusionCuirassNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='4rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/f/fa/FusionCuirass.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Fusion Cuirass</b></Text>
+   <Text fontSize='sm' align='center'>+8 Atk<br/>+20 Def<br/>+0 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>
+     )
+   }   
+
+const KingBreastplateOption = () => {
+   if (!KingBreastplateIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleKingBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='18px'
+    align='center' 
+    boxSize='3.5rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/6/6b/KingsBreastplate.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>King's<br/>Breastplate</b></Text>
+    <Text fontSize='sm' align='center'>+5 Atk<br/>+25 Def<br/>+0 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const KingBreastplateSelect = () => {
+     if (KingBreastplateIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleKingBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='18px'
+        align='center' 
+        boxSize='3.5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/6b/KingsBreastplate.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>King's<br/>Breastplate</b></Text>
+        <Text fontSize='sm' align='center'>+5 Atk<br/>+25 Def<br/>+0 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+
+const LeafBreastplateOption = () => {
+   if (!LeafBreastplateIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleLeafBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='18px'
+    align='center' 
+    boxSize='3.5rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/6/60/Leafbreastplate_md.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Leaf<br/>Breastplate</b></Text>
+    <Text fontSize='sm' align='center'>+0 Atk<br/>+2 Def<br/>+0 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const LeafBreastplateSelect = () => {
+     if (LeafBreastplateIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleLeafBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='18px'
+        align='center' 
+        boxSize='3.5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/60/Leafbreastplate_md.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Leaf<br/>Breastplate</b></Text>
+        <Text fontSize='sm' align='center'>+0 Atk<br/>+2 Def<br/>+0 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+
+const LeatherCuirassOption = () => {
+   if (!LeatherCuirassIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleLeatherCuirassClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='18px'
+    align='center' 
+    boxSize='3.5rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/d/db/LeatherCuriass.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Leather<br/>Cuirass</b></Text>
+    <Text fontSize='sm' align='center'>+0 Atk<br/>+20 Def<br/>+5 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const LeatherCuirassSelect = () => {
+     if (LeatherCuirassIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleLeatherCuirassNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='18px'
+        align='center' 
+        boxSize='3.5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/d/db/LeatherCuriass.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Leather<br/>Cuirass</b></Text>
+        <Text fontSize='sm' align='center'>+0 Atk<br/>+20 Def<br/>+5 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+   
+   const NivaliBreastplateOption = () => {
+    if (!NivaliBreastplateIsShown)
+    return(
+    <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleNivaliBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/3/39/Nivali_Breastplate.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Nivali<br/>Breastplate</b></Text>
+   <Text fontSize='sm' align='center'>+0 Atk<br/>+22 Def<br/>+8 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>
+    )
+    }
+    
+    const NivaliBreastplateSelect = () => {
+      if (NivaliBreastplateIsShown)
+        return(           
+    <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleNivaliBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/3/39/Nivali_Breastplate.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Nivali<br/>Breastplate</b></Text>
+   <Text fontSize='sm' align='center'>+0 Atk<br/>+22 Def<br/>+8 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>
+      )
+    }
+
+const ReinforcedSteelBreastplateOption = () => {
+   if (!ReinforcedSteelBreastplateIsShown)
+   return(
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleReinforcedSteelBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Reinforced-steel-breastplate.png/'
+   /> 
+   <Text fontSize='sm' align='center'><b>Reinforced Steel<br/>Breastplate</b></Text>
+   <Text fontSize='sm' align='center'>+0 Atk<br/>+15 Def<br/>+0 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>
+   )
+   }
+   
+   const ReinforcedSteelBreastplateSelect = () => {
+     if (ReinforcedSteelBreastplateIsShown)
+       return(           
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleReinforcedSteelBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Reinforced-steel-breastplate.png/'
+   /> 
+   <Text fontSize='sm' align='center'><b>Reinforced Steel<br/>Breastplate</b></Text>
+   <Text fontSize='sm' align='center'>+0 Atk<br/>+15 Def<br/>+0 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>
+     )
+   }
+
+const DragonScaleArmorOption = () => {
+   if (!DragonScaleArmorIsShown)
+   return(
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleDragonScaleArmorClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/c/c5/DragonScaleArmor.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Dragon Scale<br/>Armor</b></Text>
+   <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+2 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>
+   )
+   }
+   
+   const DragonScaleArmorSelect = () => {
+     if (DragonScaleArmorIsShown)
+       return(           
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleDragonScaleArmorNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/c/c5/DragonScaleArmor.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Dragon Scale<br/>Armor</b></Text>
+   <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+2 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>
+     )
+   }
+
+const RobotTorsoOption = () => {
+   if (!RobotTorsoIsShown)
+   return(
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleRobotTorsoClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='4rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/1/1b/Robot-torso.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Robot Torso</b></Text>
+   <Text fontSize='sm' align='center'>+0 Atk<br/>+16 Def<br/>+2 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>
+   )
+   }
+   
+   const RobotTorsoSelect = () => {
+     if (RobotTorsoIsShown)
+       return(           
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleRobotTorsoNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='4rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/1/1b/Robot-torso.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Robot Torso</b></Text>
+   <Text fontSize='sm' align='center'>+0 Atk<br/>+16 Def<br/>+2 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>
+     )
+   }
+
+const MarionetteBodyArmorOption = () => {
+   if (!MarionetteBodyArmorIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleMarionetteBodyArmorClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='18px'
+    align='center' 
+    boxSize='3.5rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Maronettearmor.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Marionette<br/>Body Armor</b></Text>
+    <Text fontSize='sm' align='center'>+0 Atk<br/>+18 Def<br/>+0 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const MarionetteBodyArmorSelect = () => {
+     if (MarionetteBodyArmorIsShown)
+       return(           
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleMarionetteBodyArmorNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+      <VStack justify='center'>  
+      <Image
+      mt='18px'
+      align='center' 
+      boxSize='3.5rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Maronettearmor.png/'
+      /> 
+      <Text fontSize='md' align='center'><b>Marionette<br/>Body Armor</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br/>+18 Def<br/>+0 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>
+     )
+   }
+   
+const NivaliHatOption = () => {
+   if (!NivaliHatIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleNivaliHatClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='12px'
+    align='center' 
+    boxSize='4rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/1/11/Nivali_Hat.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Nivali Hat</b></Text>
+    <Text fontSize='sm' align='center'>+7 Atk<br/>+15 Def<br/>+7 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const NivaliHatSelect = () => {
+     if (NivaliHatIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleNivaliHatNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='12px'
+        align='center' 
+        boxSize='4rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/11/Nivali_Hat.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Nivali Hat</b></Text>
+        <Text fontSize='sm' align='center'>+7 Atk<br/>+15 Def<br/>+7 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+
+const NivaliMaskOption = () => {
+   if (!NivaliMaskIsShown)
+   return(
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleNivaliMaskClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='4rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/2/24/Nivali_Mask.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Nivali Mask</b></Text>
+   <Text fontSize='sm' align='center'>+15 Atk<br/>+15 Def<br/>+0 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>
+   )
+   }
+   
+   const NivaliMaskSelect = () => {
+     if (NivaliMaskIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleNivaliMaskNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='12px'
+        align='center' 
+        boxSize='4rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/24/Nivali_Mask.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Nivali Mask</b></Text>
+        <Text fontSize='sm' align='center'>+15 Atk<br/>+15 Def<br/>+0 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+
+const KingMaiCrownOption = () => {
+   if (!KingMaiCrownIsShown)
+   return(
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleKingMaiCrownClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/3/33/KingMaiCrown.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>King Mai's<br/>Crown</b></Text>
+   <Text fontSize='sm' align='center'>+10 Atk<br/>+10 Def<br/>+10 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>
+   )
+   }
+   
+   const KingMaiCrownSelect = () => {
+     if (KingMaiCrownIsShown)
+       return(           
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleKingMaiCrownNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/3/33/KingMaiCrown.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>King Mai's<br/>Crown</b></Text>
+   <Text fontSize='sm' align='center'>+10 Atk<br/>+10 Def<br/>+10 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>
+     )
+   }
+
+const AakultaHelmetOption = () => {
+   if (!AakultaHelmetIsShown)
+   return(
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleAakultaHelmetClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/0/07/AakultaHelmet.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Aakulta<br/>Helmet</b></Text>
+   <Text fontSize='sm' align='center'>+15 Atk<br/>+0 Def<br/>+5 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>
+   )
+   }
+   
+   const AakultaHelmetSelect = () => {
+     if (AakultaHelmetIsShown)
+       return(           
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleAakultaHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/0/07/AakultaHelmet.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Aakulta<br/>Helmet</b></Text>
+   <Text fontSize='sm' align='center'>+15 Atk<br/>+0 Def<br/>+5 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>
+     )
+   }
+
+const CrestedHelmetOption = () => {
+   if (!CrestedHelmetIsShown)
+   return(
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleCrestedHelmetClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/f/f8/CrestedHelmet.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Crested<br/>Helmet</b></Text>
+   <Text fontSize='sm' align='center'>+10 Atk<br/>+5 Def<br/>+5 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>
+   )
+   }
+   
+   const CrestedHelmetSelect = () => {
+     if (CrestedHelmetIsShown)
+       return(           
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleCrestedHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/f/f8/CrestedHelmet.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Crested<br/>Helmet</b></Text>
+   <Text fontSize='sm' align='center'>+10 Atk<br/>+5 Def<br/>+5 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>
+     )
+   }
+
+const StoriedHornsOption = () => {
+   if (!StoriedHornsIsShown)
+   return(
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleStoriedHornsClick} style={{ backgroundColor: "#2D3748"}}>
+      <VStack justify='center'>  
+      <Image
+      mt='12px'
+      align='center' 
+      boxSize='4rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/4/43/StoriedHorns.png/'
+      /> 
+      <Text fontSize='md' align='center'><b>Storied Horns</b></Text>
+      <Text fontSize='sm' align='center'>+16 Atk<br/>+0 Def<br/>+0 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>
+   )
+   }
+   
+   const StoriedHornsSelect = () => {
+     if (StoriedHornsIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleStoriedHornsNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='12px'
+        align='center' 
+        boxSize='4rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/43/StoriedHorns.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Storied Horns</b></Text>
+        <Text fontSize='sm' align='center'>+16 Atk<br/>+0 Def<br/>+0 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+
+const DarkForestHelmetOption = () => {
+   if (!DarkForestHelmetIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleDarkForestHelmetClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='18px'
+    align='center' 
+    boxSize='3.75rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/9/9f/Dark-forest-helmet.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Dark Forest<br/>Helmet</b></Text>
+    <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+4 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const DarkForestHelmetSelect = () => {
+     if (DarkForestHelmetIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleDarkForestHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='18px'
+        align='center' 
+        boxSize='3.75rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/9f/Dark-forest-helmet.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Dark Forest<br/>Helmet</b></Text>
+        <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+4 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+
+const ReinforcedSteelHelmetOption = () => {
+   if (!ReinforcedSteelHelmetIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleReinforcedSteelHelmetClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='18px'
+    align='center' 
+    boxSize='3.5rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/3/35/Reinforced-steel-helmet.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Reinforced<br/>Steel Helmet</b></Text>
+    <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+0 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const ReinforcedSteelHelmetSelect = () => {
+     if (ReinforcedSteelHelmetIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleReinforcedSteelHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='18px'
+        align='center' 
+        boxSize='3.5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/3/35/Reinforced-steel-helmet.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Reinforced<br/>Steel Helmet</b></Text>
+        <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+0 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+
+const HeadpieceOfOldGoldOption = () => {
+   if (!HeadpieceOfOldGoldIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleHeadpieceOfOldGoldClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='18px'
+    align='center' 
+    boxSize='3.5rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/a/a4/HeadpieceOfOldGold.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Headpiece<br/>of Old Gold</b></Text>
+    <Text fontSize='sm' align='center'>+14 Atk<br/>+0 Def<br/>+2 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const HeadpieceOfOldGoldSelect = () => {
+     if (HeadpieceOfOldGoldIsShown)
+       return(           
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleHeadpieceOfOldGoldNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+      <VStack justify='center'>  
+      <Image
+      mt='18px'
+      align='center' 
+      boxSize='3.5rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/a/a4/HeadpieceOfOldGold.png/'
+      /> 
+      <Text fontSize='md' align='center'><b>Headpiece<br/>of Old Gold</b></Text>
+      <Text fontSize='sm' align='center'>+14 Atk<br/>+0 Def<br/>+2 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>
+     )
+   }
+
+const FabricHelmetOption = () => {
+   if (!FabricHelmetIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleFabricHelmetClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='12px'
+    align='center' 
+    boxSize='4rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/c/c8/Fabrichelmet_md.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Fabric Helmet</b></Text>
+    <Text fontSize='sm' align='center'>+0 Atk<br/>+8 Def<br/>+0 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const FabricHelmetSelect = () => {
+     if (FabricHelmetIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleFabricHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='12px'
+        align='center' 
+        boxSize='4rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/c/c8/Fabrichelmet_md.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Fabric Helmet</b></Text>
+        <Text fontSize='sm' align='center'>+0 Atk<br/>+8 Def<br/>+0 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+
+const HornsOfWisdomOption = () => {
+   if (!HornsOfWisdomIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleHornsOfWisdomClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='18px'
+    align='center' 
+    boxSize='3.5rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/a/a7/HornsofWisdom.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Horns of<br/>Wisdom</b></Text>
+    <Text fontSize='sm' align='center'>+2 Atk<br/>+0 Def<br/>+14 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const HornsOfWisdomSelect = () => {
+     if (HornsOfWisdomIsShown)
+       return(           
+      <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleHornsOfWisdomNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+      <VStack justify='center'>  
+      <Image
+      mt='18px'
+      align='center' 
+      boxSize='3.5rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/a/a7/HornsofWisdom.png/'      
+      /> 
+      <Text fontSize='md' align='center'><b>Horns of<br/>Wisdom</b></Text>
+      <Text fontSize='sm' align='center'>+2 Atk<br/>+0 Def<br/>+14 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>
+     )
+   }
+
+const ProtectedLeafHelmetOption = () => {
+   if (!ProtectedLeafHelmetIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleProtectedLeafHelmetClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='18px'
+    align='center' 
+    boxSize='3.5rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/7/78/Protectedleafhelmet_md.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Protected<br/>Leaf Helmet</b></Text>
+    <Text fontSize='sm' align='center'>+0 Atk<br/>+5 Def<br/>+2 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const ProtectedLeafHelmetSelect = () => {
+     if (ProtectedLeafHelmetIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleProtectedLeafHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='18px'
+        align='center' 
+        boxSize='3.5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/7/78/Protectedleafhelmet_md.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Protected<br/>Leaf Helmet</b></Text>
+        <Text fontSize='sm' align='center'>+0 Atk<br/>+5 Def<br/>+2 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+
+const LeafHelmetOption = () => {
+   if (!LeafHelmetIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleLeafHelmetClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='12px'
+    align='center' 
+    boxSize='4rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/f/f3/Leafhelmet_md.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Leaf Helmet</b></Text>
+    <Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+2 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const LeafHelmetSelect = () => {
+     if (LeafHelmetIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleLeafHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='12px'
+        align='center' 
+        boxSize='4rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/f3/Leafhelmet_md.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Leaf Helmet</b></Text>
+        <Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+2 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+
+const DragonHornedHelmetOption = () => {
+  if (!DragonHornedHelmetIsShown)
+  return(
+   <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleDragonHornedHelmetClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='18px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/e/e5/DragonsHornedHelmet.png/'
+   /> 
+   <Text fontSize='sm' align='center'><b>Dragon's<br/>Horned Helmet</b></Text>
+   <Text fontSize='sm' align='center'>+2 Atk<br/>+5 Def<br/>+5 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>
+  )
+  }
+  
+  const DragonHornedHelmetSelect = () => {
+    if (DragonHornedHelmetIsShown)
+      return(           
+         <WrapItem>
+         <Button w='110px' h='170px' pb={5} onClick={handleDragonHornedHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+         <VStack justify='center'>  
+         <Image
+         mt='18px'
+         align='center' 
+         boxSize='3.5rem'
+         src='https://static.wikia.nocookie.net/4thewords/images/e/e5/DragonsHornedHelmet.png/'
+         /> 
+         <Text fontSize='sm' align='center'><b>Dragon's<br/>Horned Helmet</b></Text>
+         <Text fontSize='sm' align='center'>+2 Atk<br/>+5 Def<br/>+5 Luck </Text>
+         </VStack>
+         </Button>
+         </WrapItem>
+    )
+  }
+
+  const MinerHatOption = () => {
+   if (!MinerHatIsShown)
+   return(
+       <WrapItem>
+      <Button w='110px' h='170px' pb={5} onClick={handleMinerHatClick} style={{ backgroundColor: "#2D3748"}}>
+      <VStack justify='center'>  
+      <Image
+      mt='12px'
+      align='center' 
+      boxSize='4rem'
+      src='https://static.wikia.nocookie.net/4thewords/images/8/8c/Miner-hat.png/'
+      /> 
+      <Text fontSize='md' align='center'><b>Miner Hat</b></Text>
+      <Text fontSize='sm' align='center'>+0 Atk<br/>+4 Def<br/>+10 Luck </Text>
+      </VStack>
+      </Button>
+      </WrapItem>
+   )
+   }
+   
+   const MinerHatSelect = () => {
+     if (MinerHatIsShown)
+       return(           
+         <WrapItem>
+         <Button w='110px' h='170px' pb={5} onClick={handleMinerHatNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+         <VStack justify='center'>  
+         <Image
+         mt='12px'
+         align='center' 
+         boxSize='4rem'
+         src='https://static.wikia.nocookie.net/4thewords/images/8/8c/Miner-hat.png/'
+         /> 
+         <Text fontSize='md' align='center'><b>Miner Hat</b></Text>
+         <Text fontSize='sm' align='center'>+0 Atk<br/>+4 Def<br/>+10 Luck </Text>
+         </VStack>
+         </Button>
+         </WrapItem>
+     )
+   }
+   
+const NivaliGlovesOption = () => {
+  if (!NivaliGlovesIsShown)
+  return(
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleNivaliGlovesClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/2/2c/Nivali_Gloves.png/'
+/> 
+<Text fontSize='md' align='center'><b>Nivali Gloves</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>
+  )
+  }
+  
+  const NivaliGlovesSelect = () => {
+    if (NivaliGlovesIsShown)
+      return(           
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleNivaliGlovesNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/2/2c/Nivali_Gloves.png/'
+/> 
+<Text fontSize='md' align='center'><b>Nivali Gloves</b></Text>
+<Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>
+    )
+  }
+
+  const NivaliPantsOption = () => {
+   if (!NivaliPantsIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleNivaliPantsClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='12px'
+    align='center' 
+    boxSize='4rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/4/4b/Nivali_Pants.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Nivali Pants</b></Text>
+    <Text fontSize='sm' align='center'>+4 Atk<br/>+12 Def<br/>+4 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const NivaliPantsSelect = () => {
+     if (NivaliPantsIsShown)
+       return(           
+ <WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleNivaliPantsNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/4/4b/Nivali_Pants.png/'
+/> 
+<Text fontSize='md' align='center'><b>Nivali Pants</b></Text>
+<Text fontSize='sm' align='center'>+4 Atk<br/>+12 Def<br/>+4 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>
+     )
+   }
+   
+  const NivaliShieldOption = () => {
+   if (!NivaliShieldIsShown)
+   return(
+    <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleNivaliShieldClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/3/3f/Nivali_Shield.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Nivali Shield</b></Text>
+   <Text fontSize='sm' align='center'>+2 Atk<br/>+15 Def<br/>+2 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>
+   )
+   }
+   
+   const NivaliShieldSelect = () => {
+     if (NivaliShieldIsShown)
+       return(           
+    <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleNivaliShieldNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='3.5rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/3/3f/Nivali_Shield.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Nivali Shield</b></Text>
+   <Text fontSize='sm' align='center'>+2 Atk<br/>+15 Def<br/>+2 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>
+     )
+   }
+   
+  const BardNoteOption = () => {
+   if (!BardNoteIsShown)
+   return(
+ <WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleBardNoteClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/4/46/BardsNote.png/'
+/> 
+<Text fontSize='md' align='center'><b>Bard's Note</b></Text>
+<Text fontSize='sm' align='center'>+14 Atk<br/>+0 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>
+   )
+   }
+   
+   const BardNoteSelect = () => {
+     if (BardNoteIsShown)
+       return(           
+ <WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleBardNoteNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/4/46/BardsNote.png/'
+/> 
+<Text fontSize='md' align='center'><b>Bard's Note</b></Text>
+<Text fontSize='sm' align='center'>+14 Atk<br/>+0 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>
+     )
+   }
+   
+  const HauntedNecklaceOption = () => {
+   if (!HauntedNecklaceIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleHauntedNecklaceClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='15px'
+    align='center' 
+    boxSize='3.75rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/1/14/HauntedNecklace.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Haunted<br/>Necklace</b></Text>
+    <Text fontSize='sm' align='center'>+5 Atk<br/>+10 Def<br/>+5 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const HauntedNecklaceSelect = () => {
+     if (HauntedNecklaceIsShown)
+       return(           
+ <WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleHauntedNecklaceNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='3.75rem'
+src='https://static.wikia.nocookie.net/4thewords/images/1/14/HauntedNecklace.png/'
+/> 
+<Text fontSize='md' align='center'><b>Haunted<br/>Necklace</b></Text>
+<Text fontSize='sm' align='center'>+5 Atk<br/>+10 Def<br/>+5 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>
+     )
+   }
+   
+  const HopeLightOption = () => {
+   if (!HopeLightIsShown)
+   return(
+    <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleHopeLightClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='4rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/3/3c/HopesLight.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Hope's Light</b></Text>
+   <Text fontSize='sm' align='center'>+15 Atk<br/>+0 Def<br/>+0 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>
+   )
+   }
+   
+   const HopeLightSelect = () => {
+     if (HopeLightIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleHopeLightNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='12px'
+        align='center' 
+        boxSize='4rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/3/3c/HopesLight.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Hope's Light</b></Text>
+        <Text fontSize='sm' align='center'>+15 Atk<br/>+0 Def<br/>+0 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+   
+  const LightBloomOption = () => {
+   if (!LightBloomIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleLightBloomClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='12px'
+    align='center' 
+    boxSize='4rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/a/a7/LightsBloom.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Light's Bloom</b></Text>
+    <Text fontSize='sm' align='center'>+0 Atk<br/>+15 Def<br/>+0 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const LightBloomSelect = () => {
+     if (LightBloomIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleLightBloomNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='12px'
+        align='center' 
+        boxSize='4rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/a7/LightsBloom.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Light's Bloom</b></Text>
+        <Text fontSize='sm' align='center'>+0 Atk<br/>+15 Def<br/>+0 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+   
+  const MushroomGrenadeOption = () => {
+   if (!MushroomGrenadeIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleMushroomGrenadeClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='24px'
+    align='center' 
+    boxSize='3.5rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/8/83/MushroomGrenade.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Mushroom<br/>Grenade</b></Text>
+    <Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+12 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const MushroomGrenadeSelect = () => {
+     if (MushroomGrenadeIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleMushroomGrenadeNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='21px'
+        align='center' 
+        boxSize='3.5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/83/MushroomGrenade.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Mushroom<br/>Grenade</b></Text>
+        <Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+12 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+   
+  const DarkForestAmuletOption = () => {
+   if (!DarkForestAmuletIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleDarkForestAmuletClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='12px'
+    align='center' 
+    boxSize='4rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/8/8d/Dark-forest-amulet.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Dark Forest<br/>Amulet</b></Text>
+    <Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+10 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const DarkForestAmuletSelect = () => {
+     if (DarkForestAmuletIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleDarkForestAmuletNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='12px'
+        align='center' 
+        boxSize='4rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/8d/Dark-forest-amulet.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Dark Forest<br/>Amulet</b></Text>
+        <Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+10 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+   
+  const RainaBraceletOption = () => {
+   if (!RainaBraceletIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleRainaBraceletClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='12px'
+    align='center' 
+    boxSize='3.5rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/9/95/Raina_bracelet.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Raina<br/>Bracelet</b></Text>
+    <Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+15 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const RainaBraceletSelect = () => {
+     if (RainaBraceletIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleRainaBraceletNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='12px'
+        align='center' 
+        boxSize='3.5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/95/Raina_bracelet.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Raina<br/>Bracelet</b></Text>
+        <Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+15 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+const GlassNecklaceOption = () => {
+  if (!GlassNecklaceIsShown)
+  return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleGlassNecklaceClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='18px'
+    align='center' 
+    boxSize='3.5rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/0/0d/Glassnecklace_md.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Glass<br/>Necklace</b></Text>
+    <Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+6 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+  )
+  }
+  
+  const GlassNecklaceSelect = () => {
+    if (GlassNecklaceIsShown)
+      return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleGlassNecklaceNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='18px'
+        align='center' 
+        boxSize='3.5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/0/0d/Glassnecklace_md.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Glass<br/>Necklace</b></Text>
+        <Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+6 Luck </Text>
+     
+        </VStack>
+        </Button>
+        </WrapItem>
+    )
+  }
+
+  const SandsRingOption = () => {
+   if (!SandsRingIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleSandsRingClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='18px'
+    align='center' 
+    boxSize='3.5rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/2/24/Sandsring_md.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Sands Ring</b></Text>
+    <Text fontSize='sm' align='center'>+1 Atk<br/>+5 Def<br/>+5 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const SandsRingSelect = () => {
+     if (SandsRingIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleSandsRingNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='18px'
+        align='center' 
+        boxSize='3.5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/24/Sandsring_md.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Sands Ring</b></Text>
+        <Text fontSize='sm' align='center'>+1 Atk<br/>+5 Def<br/>+5 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+   
+  const RustyPendantOption = () => {
+   if (!RustyPendantIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleRustyPendantClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='18px'
+    align='center' 
+    boxSize='3.5rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/8/8b/Rustypendant_md.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Rusty<br/>Pendant</b></Text>
+    <Text fontSize='sm' align='center'>+0 Atk<br/>+1 Def<br/>+2 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const RustyPendantSelect = () => {
+     if (RustyPendantIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleRustyPendantNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='18px'
+        align='center' 
+        boxSize='3.5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/8b/Rustypendant_md.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Rusty<br/>Pendant</b></Text>
+        <Text fontSize='sm' align='center'>+0 Atk<br/>+1 Def<br/>+2 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+   
+  const RustyAmuletOption = () => {
+   if (!RustyAmuletIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleRustyAmuletClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='18px'
+    align='center' 
+    boxSize='3.5rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/1/19/Rustyamulet_md.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Rusty<br/>Amulet</b></Text>
+    <Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+1 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const RustyAmuletSelect = () => {
+     if (RustyAmuletIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleRustyAmuletNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='18px'
+        align='center' 
+        boxSize='3.5rem'
+        mt='18px'
+        align='center' 
+        boxSize='3.5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/19/Rustyamulet_md.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Rusty<br/>Amulet</b></Text>
+        <Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+1 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+   
+  const GradScrollAstrologyOption = () => {
+   if (!GradScrollAstrologyIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleGradScrollAstrologyClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='12px'
+    align='center' 
+    boxSize='4rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/4/44/Astrology_Graduation_Scroll.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Astrology</b></Text>
+    <Text fontSize='sm' align='center'>+2 Atk<br/>+4 Def<br/>+6 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const GradScrollAstrologySelect = () => {
+     if (GradScrollAstrologyIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleGradScrollAstrologyNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='12px'
+        align='center' 
+        boxSize='4rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/44/Astrology_Graduation_Scroll.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Astrology</b></Text>
+        <Text fontSize='sm' align='center'>+2 Atk<br/>+4 Def<br/>+6 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+   
+  const GradScrollAlchemyOption = () => {
+   if (!GradScrollAlchemyIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleGradScrollAlchemyClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='12px'
+    align='center' 
+    boxSize='4rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/c/c5/Alchemy_Graduation_Scroll.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Alchemy</b></Text>
+    <Text fontSize='sm' align='center'>+6 Atk<br/>+4 Def<br/>+2 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const GradScrollAlchemySelect = () => {
+     if (GradScrollAlchemyIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleGradScrollAlchemyNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='12px'
+        align='center' 
+        boxSize='4rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/c/c5/Alchemy_Graduation_Scroll.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Alchemy</b></Text>
+        <Text fontSize='sm' align='center'>+6 Atk<br/>+4 Def<br/>+2 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+   
+  const GradScrollAKOption = () => {
+   if (!GradScrollAKIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleGradScrollAKClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='18px'
+    align='center' 
+    boxSize='3.5rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/8/81/Ancient_Knowledge_Graduation_Scroll.png/'
+    /> 
+    <Text fontSize='sm' align='center'><b>Ancient<br/>Knowledge</b></Text>
+    <Text fontSize='sm' align='center'>+4 Atk<br/>+6 Def<br/>+2 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const GradScrollAKSelect = () => {
+     if (GradScrollAKIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleGradScrollAKNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='12px'
+        align='center' 
+        boxSize='4rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/8/81/Ancient_Knowledge_Graduation_Scroll.png/'
+        /> 
+        <Text fontSize='sm' align='center'><b>Ancient<br/>Knowledge</b></Text>
+        <Text fontSize='sm' align='center'>+4 Atk<br/>+6 Def<br/>+2 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+   
+  const GradScrollSpellsOption = () => {
+   if (!GradScrollSpellsIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleGradScrollSpellsClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='12px'
+    align='center' 
+    boxSize='4rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/f/f0/Spells_Graduation_Scroll.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Spells</b></Text>
+    <Text fontSize='sm' align='center'>+6 Atk<br/>+4 Def<br/>+2 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const GradScrollSpellsSelect = () => {
+     if (GradScrollSpellsIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleGradScrollSpellsNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='12px'
+        align='center' 
+        boxSize='4rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/f0/Spells_Graduation_Scroll.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Spells</b></Text>
+        <Text fontSize='sm' align='center'>+6 Atk<br/>+4 Def<br/>+2 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+   
+  const GradScrollMirrorsOption = () => {
+   if (!GradScrollMirrorsIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleGradScrollMirrorsClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='12px'
+    align='center' 
+    boxSize='4rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/3/31/Mirror_Graduation_Scroll.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Mirrors</b></Text>
+    <Text fontSize='sm' align='center'>+2 Atk<br/>+5 Def<br/>+8 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const GradScrollMirrorsSelect = () => {
+     if (GradScrollMirrorsIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleGradScrollMirrorsNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='12px'
+        align='center' 
+        boxSize='4rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/3/31/Mirror_Graduation_Scroll.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Mirrors</b></Text>
+        <Text fontSize='sm' align='center'>+2 Atk<br/>+5 Def<br/>+8 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+   
+  const GradScrollFungiOption = () => {
+   if (!GradScrollFungiIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleGradScrollFungiClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='12px'
+    align='center' 
+    boxSize='4rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/9/9a/Fungi_Graduation_Scroll.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Fungi</b></Text>
+    <Text fontSize='sm' align='center'>+8 Atk<br/>+5 Def<br/>+2 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const GradScrollFungiSelect = () => {
+     if (GradScrollFungiIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleGradScrollFungiNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='12px'
+        align='center' 
+        boxSize='4rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/9a/Fungi_Graduation_Scroll.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Fungi</b></Text>
+        <Text fontSize='sm' align='center'>+8 Atk<br/>+5 Def<br/>+2 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+
+const GradScrollThreadsOption = () => {
+  if (!GradScrollThreadsIsShown)
+  return(
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleGradScrollThreadsClick} style={{ backgroundColor: "#2D3748"}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/a/a2/Threads_Graduation_Scroll.png/'
+/> 
+<Text fontSize='md' align='center'><b>Threads</b></Text>
+<Text fontSize='sm' align='center'>+5 Atk<br/>+8 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>
+  )
+  }
+  
+  const GradScrollThreadsSelect = () => {
+    if (GradScrollThreadsIsShown)
+      return(           
+<WrapItem>
+<Button w='110px' h='170px' pb={5} onClick={handleGradScrollThreadsNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+<VStack justify='center'>  
+<Image
+mt='12px'
+align='center' 
+boxSize='4rem'
+src='https://static.wikia.nocookie.net/4thewords/images/a/a2/Threads_Graduation_Scroll.png/'
+/> 
+<Text fontSize='md' align='center'><b>Threads</b></Text>
+<Text fontSize='sm' align='center'>+5 Atk<br/>+8 Def<br/>+2 Luck </Text>
+</VStack>
+</Button>
+</WrapItem>
+    )
+  }
+
+  const GradScrollVoidOption = () => {
+   if (!GradScrollVoidIsShown)
+   return(
+    <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleGradScrollVoidClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center'
+   boxSize='4rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/b/b2/Void_Graduation_Scroll.png'
+   />
+   <Text fontSize='md' align='center'><b>Void</b></Text>
+   <Text fontSize='sm' align='center'>+8 Atk<br/>+2 Def<br/>+5 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>
+   )
+   }
+   
+   const GradScrollVoidSelect = () => {
+     if (GradScrollVoidIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleGradScrollVoidNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='12px'
+        align='center'
+        boxSize='4rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/b2/Void_Graduation_Scroll.png'
+        />
+        <Text fontSize='md' align='center'><b>Void</b></Text>
+        <Text fontSize='sm' align='center'>+8 Atk<br/>+2 Def<br/>+5 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+   
+  const AstrolabeOption = () => {
+   if (!AstrolabeIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleAstrolabeClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='12px'
+    align='center' 
+    boxSize='4rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/a/a0/Astrolabe_md.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Astrolabe</b></Text>
+    <Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+5 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const AstrolabeSelect = () => {
+     if (AstrolabeIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleAstrolabeNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='12px'
+        align='center' 
+        boxSize='4rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/a/a0/Astrolabe_md.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Astrolabe</b></Text>
+        <Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+5 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+   
+  const FeatherNecklaceOption = () => {
+   if (!FeatherNecklaceIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleFeatherNecklaceClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='18px'
+    align='center' 
+    boxSize='3.5rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/c/c2/Feather-necklace.png/'
+    /> 
+    <Text fontSize='md' align='center'><b>Feather<br/>Necklace</b></Text>
+    <Text fontSize='sm' align='center'>+0 Atk<br/>+4 Def<br/>+12 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const FeatherNecklaceSelect = () => {
+     if (FeatherNecklaceIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleFeatherNecklaceNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='18px'
+        align='center' 
+        boxSize='3.5rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/c/c2/Feather-necklace.png/'
+        /> 
+        <Text fontSize='md' align='center'><b>Feather<br/>Necklace</b></Text>
+        <Text fontSize='sm' align='center'>+0 Atk<br/>+4 Def<br/>+12 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+   
+  const GoldenDragonTiaraOption = () => {
+   if (!GoldenDragonTiaraIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handleGoldenDragonTiaraClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='12px'
+    align='center' 
+    boxSize='4rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/6/62/GoldenDragonTiara.png'
+    /> 
+    <Text fontSize='sm' align='center'><b>Golden<br/>Dragon Tiara</b></Text>
+    <Text fontSize='sm' align='center'>+2 Atk<br/>+2 Def<br/>+8 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const GoldenDragonTiaraSelect = () => {
+     if (GoldenDragonTiaraIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handleGoldenDragonTiaraNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='12px'
+        align='center' 
+        boxSize='4rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/6/62/GoldenDragonTiara.png'
+        /> 
+        <Text fontSize='sm' align='center'><b>Golden<br/>Dragon Tiara</b></Text>
+        <Text fontSize='sm' align='center'>+2 Atk<br/>+2 Def<br/>+8 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+   
+  const PirateAccordionOption = () => {
+   if (!PirateAccordionIsShown)
+   return(
+    <WrapItem>
+    <Button w='110px' h='170px' pb={5} onClick={handlePirateAccordionClick} style={{ backgroundColor: "#2D3748"}}>
+    <VStack justify='center'>  
+    <Image
+    mt='12px'
+    align='center' 
+    boxSize='3.75rem'
+    src='https://static.wikia.nocookie.net/4thewords/images/b/ba/Accordion_md.png/'
+    /> 
+    <Text fontSize='sm' align='center'><b>Pirate<br/>Accordion</b></Text>
+    <Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+6 Luck </Text>
+    </VStack>
+    </Button>
+    </WrapItem>
+   )
+   }
+   
+   const PirateAccordionSelect = () => {
+     if (PirateAccordionIsShown)
+       return(           
+        <WrapItem>
+        <Button w='110px' h='170px' pb={5} onClick={handlePirateAccordionNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+        <VStack justify='center'>  
+        <Image
+        mt='12px'
+        align='center' 
+        boxSize='3.75rem'
+        src='https://static.wikia.nocookie.net/4thewords/images/b/ba/Accordion_md.png/'
+        /> 
+        <Text fontSize='sm' align='center'><b>Pirate<br/>Accordion</b></Text>
+        <Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+6 Luck </Text>
+        </VStack>
+        </Button>
+        </WrapItem>
+     )
+   }
+   
+  const VictorianFanOption = () => {
+   if (!VictorianFanIsShown)
+   return(
+    <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleVictorianFanClick} style={{ backgroundColor: "#2D3748"}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='4rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/c/c3/Victorianfan_md.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Victorian Fan</b></Text>
+   <Text fontSize='sm' align='center'>+8 Atk<br/>+0 Def<br/>+0 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>
+   )
+   }
+   
+   const VictorianFanSelect = () => {
+     if (VictorianFanIsShown)
+       return(           
+    <WrapItem>
+   <Button w='110px' h='170px' pb={5} onClick={handleVictorianFanNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
+   <VStack justify='center'>  
+   <Image
+   mt='12px'
+   align='center' 
+   boxSize='4rem'
+   src='https://static.wikia.nocookie.net/4thewords/images/c/c3/Victorianfan_md.png/'
+   /> 
+   <Text fontSize='md' align='center'><b>Victorian Fan</b></Text>
+   <Text fontSize='sm' align='center'>+8 Atk<br/>+0 Def<br/>+0 Luck </Text>
+   </VStack>
+   </Button>
+   </WrapItem>
+     )
+   }
+
+
   return (
       <Box textAlign="center" fontSize="xl">
         <Grid minH="100vh" maxW='100%'>
@@ -24762,7 +27451,7 @@ mt={['135px', '160px', '175px']}
    style={{position:'absolute'}}
    mt={['110px', '130px', '145px']}
    fontSize={['sm', 'md', 'md']}>
-     Robot Torso</Text>
+     Steel Boots</Text>
      }
 
           <HStack
@@ -24878,21 +27567,21 @@ mt={['135px', '160px', '175px']}
         fontSize={['sm', 'md', 'md']}>
           Azadi</Text>
           }
-        {SuwoIsShown &&        
-        <Image
-        style={{position:'absolute'}}
-        mt={['37px', '47px', '55px']}
-        align='center' 
-        boxSize={['4rem', '4.5rem', '5rem']}
-        src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
+        {SuwoIsShown &&    
+              <Image
+      style={{position:'absolute'}}
+      mt={['37px', '47px', '55px']}
+      align='center' 
+      boxSize={['4rem', '4.5rem','5rem']}
+      src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
       />}
-        {SuwoIsShown &&        
-        <Text        
-        style={{position:'absolute'}}
-        mt={['110px', '130px', '145px']}
-        fontSize={['sm', 'md', 'md']}>
-          Suwo</Text>
-          }
+        {SuwoIsShown &&          
+      <Text        
+      style={{position:'absolute'}}
+      mt={['110px', '130px', '145px']}
+      fontSize={['sm', 'md', 'md']}>
+        Suwo</Text>    
+        }
 
 {KaiszarIsShown &&   !AtkKaiszarIsShown && !DefKaiszarIsShown && !LuckKaiszarIsShown &&  
    <Image
@@ -25480,140 +28169,38 @@ mt={['135px', '160px', '175px']}
     {(AllIsShown || ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) &&
     <Text fontSize='md' mb='15px'><b>Main Quest Companions:</b></Text>}
                 <Wrap justify='center'>
-   {(AllIsShown || DCIsShown || World2RegionIsShown) && !NoanzaIsShown &&
-           <WrapItem>
-            <Button w='110px' h='170px' pb={5} onClick={handleNoanzaSwitchClick} style={{ backgroundColor: "#2D3748" }}>
-       <VStack justify='center'>  
-       <Image
-        mt='12px'
-        align='center' 
-        boxSize='5rem'
-        src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png/'
-      /> 
-      <Text fontSize='md' mt='-15px' align='center'><b>Noanza</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+14 Def<br/>+6 Luck </Text>
-      </VStack>
-            </Button>
-            </WrapItem>}
+   {(AllIsShown || DCIsShown || World2RegionIsShown) && 
+   <NoanzaOption />
+}
 
-   {(AllIsShown || DCIsShown || World2RegionIsShown) && NoanzaIsShown &&
-           <WrapItem>
-            <Button w='110px' h='170px' pb={5} onClick={handleNoanzaSwitchNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-      <VStack justify='center'>  
-       <Image
-        mt='12px'
-        align='center' 
-        boxSize='5rem'
-        src='https://static.wikia.nocookie.net/4thewords/images/d/df/Noanza.png/'
-      /> 
-  <Text fontSize='md' mt='-15px' align='center'><b>Noanza</b></Text>
-  <Text fontSize='sm' align='center'>+0 Atk<br/>+14 Def<br/>+6 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+   {(AllIsShown || DCIsShown || World2RegionIsShown) && 
+   <NoanzaSelect />
+}
 
 
-{(AllIsShown || FloatingCityIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !LodoIsShown &&
-            <WrapItem>
-            <Button w='110px' h='170px' pb={5} onClick={handleLodoSwitchClick} style={{ backgroundColor: "#2D3748" }}>
-      <VStack justify='center'>  
-       <Image
-        mt='12px'
-        align='center' 
-        boxSize='4.5rem'
-        src='https://static.wikia.nocookie.net/4thewords/images/e/e6/Lodo.png/'
-      /> 
-      <Text mt='-8px' fontSize='md' align='center'><b>Lodo</b></Text>
-      <Text fontSize='sm' align='center'>+12 Atk<br />+2 Def<br />+0 Luck </Text>
-      </VStack>
+{(AllIsShown || FloatingCityIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) &&
+   <LodoOption />
+}
 
-            </Button>
-            </WrapItem>}
+{(AllIsShown || FloatingCityIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && 
+   <LodoSelect />
+}
 
-{(AllIsShown || FloatingCityIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && LodoIsShown &&
-            <WrapItem>
-            <Button w='110px' h='170px' pb={5} onClick={handleLodoSwitchNoClick} style={{ backgroundColor: "#211742" }}>
-       <VStack justify='center'>  
-       <Image
-        mt='12px'
-        align='center' 
-        boxSize='4.5rem'
-        src='https://static.wikia.nocookie.net/4thewords/images/e/e6/Lodo.png/'
-      /> 
-      <Text mt='-8px' fontSize='md' align='center'><b>Lodo</b></Text>
-      <Text fontSize='sm' align='center'>+12 Atk<br />+2 Def<br />+0 Luck </Text>
-      </VStack>
+{(AllIsShown || ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && 
+   <AzadiOption />
+}
 
-            </Button>
-            </WrapItem>}
+{(AllIsShown || ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && 
+   <AzadiSelect />
+}
 
-{(AllIsShown || ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !AzadiIsShown &&
-            <WrapItem>
-            <Button w='110px' h='170px' pb={5} onClick={handleAzadiSwitchClick} style={{ backgroundColor: "#2D3748" }}>
-      <VStack justify='center'>  
-       <Image
-        mt='12px'
-        align='center' 
-        boxSize='4.5rem'
-        src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png/'
-      /> 
-      <Text mt='-8px' fontSize='md' align='center'><b>Azadi</b></Text>
-      <Text fontSize='sm' align='center'>+5 Atk<br />+0 Def<br />+10 Luck </Text>
-      </VStack>
+{(AllIsShown || MamaTreeIsShown || ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && 
+   <SuwoOption />
+}
 
-            </Button>
-            </WrapItem>}
-
-{(AllIsShown || ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && AzadiIsShown &&
-            <WrapItem>
-            <Button w='110px' h='170px' pb={5} onClick={handleAzadiSwitchNoClick} style={{ backgroundColor: "#211742" }}>
-       <VStack justify='center'>  
-       <Image
-        mt='12px'
-        align='center' 
-        boxSize='4.5rem'
-        src='https://static.wikia.nocookie.net/4thewords/images/a/a8/Azadi.png/'
-      /> 
-      <Text mt='-8px' fontSize='md' align='center'><b>Azadi</b></Text>
-      <Text fontSize='sm' align='center'>+5 Atk<br />+0 Def<br />+10 Luck </Text>
-      </VStack>
-
-            </Button>
-            </WrapItem>}
-
-{(AllIsShown || MamaTreeIsShown || ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !SuwoIsShown &&
-            <WrapItem>
-            <Button w='110px' h='170px' pb={5} onClick={handleSuwoSwitchClick} style={{ backgroundColor: "#2D3748" }}>
-      <VStack justify='center'>  
-       <Image
-        mt='12px'
-        align='center' 
-        boxSize='4.5rem'
-        src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
-      /> 
-      <Text mt='-8px' fontSize='md' align='center'><b>Suwo</b></Text>
-      <Text fontSize='sm' align='center'>+3 Atk<br />+7 Def<br />+2 Luck </Text>
-      </VStack>
-
-            </Button>
-            </WrapItem>}
-
-{(AllIsShown || MamaTreeIsShown || ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && SuwoIsShown &&
-            <WrapItem>
-            <Button w='110px' h='170px' pb={5} onClick={handleSuwoSwitchNoClick} style={{ backgroundColor: "#211742" }}>
-       <VStack justify='center'>  
-       <Image
-        mt='12px'
-        align='center' 
-        boxSize='4.5rem'
-        src='https://static.wikia.nocookie.net/4thewords/images/6/64/Suwo.png/'
-      /> 
-      <Text mt='-8px' fontSize='md' align='center'><b>Suwo</b></Text>
-      <Text fontSize='sm' align='center'>+3 Atk<br />+7 Def<br />+2 Luck </Text>
-      </VStack>
-
-            </Button>
-            </WrapItem>}
+{(AllIsShown || MamaTreeIsShown || ThreePCIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && 
+   <SuwoSelect />
+}
       </Wrap>
 {(AllIsShown ||  DragonLairIsShown) &&
           <Text fontSize='md' mt='25px' mb='15px'><b>Dragon Companions:</b></Text>
@@ -28300,1385 +30887,727 @@ src='https://static.wikia.nocookie.net/4thewords/images/8/8a/Tentacle-whip.png/'
 {(AllIsShown || ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) &&
     <Text fontSize='md' mb='15px'><b>Main Quest Battle Items:</b></Text>}
 
+{SortByAtkIsShown && 
+   <Wrap justify='center'>
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+      <HopeLightOption />}
+      
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+      <HopeLightSelect />}
+
+   
+      {(AllIsShown || HuntIsShown) && 
+      <BardNoteOption />}
+   
+   {(AllIsShown || HuntIsShown) && 
+      <BardNoteSelect />}
+   
+   
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+      <HauntedNecklaceOption />}
+   
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+      <HauntedNecklaceSelect />}
+   
+   {(AllIsShown || World2RegionIsShown) && 
+      <NivaliPantsOption />}
+   
+   {(AllIsShown || World2RegionIsShown) && 
+      <NivaliPantsSelect />}      
+
+   {(AllIsShown || World2RegionIsShown) && 
+      <NivaliShieldOption />}
+      
+   {(AllIsShown || World2RegionIsShown) && 
+      <NivaliShieldSelect />}
+
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && 
+      <SandsRingOption />}
+   
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && 
+      <SandsRingSelect />}      
+
+   {(AllIsShown || World2RegionIsShown) &&
+   <NivaliGlovesOption />}
+   
+   {(AllIsShown || World2RegionIsShown) && 
+   <NivaliGlovesSelect />}
+
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+      <LightBloomOption />}
+         
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+      <LightBloomSelect />}
+
+      {(AllIsShown || RainaIsShown) && 
+      <RainaBraceletOption />}
+         
+      {(AllIsShown || RainaIsShown) && 
+      <RainaBraceletSelect />}
+
+   {(AllIsShown || GardenIsShown) && 
+      <MushroomGrenadeOption />}
+   
+   {(AllIsShown || GardenIsShown) && 
+      <MushroomGrenadeSelect />}   
+
+      {(AllIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && 
+      <DarkForestAmuletOption />}
+   
+   {(AllIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && 
+      <DarkForestAmuletSelect />}
+   
+         {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && 
+      <GlassNecklaceOption />}
+      
+      {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && 
+      <GlassNecklaceSelect />}
+      
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && 
+      <RustyPendantOption />}
+   
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && 
+      <RustyPendantSelect />}
+   
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) && 
+      <RustyAmuletOption />}
+   
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) && 
+      <RustyAmuletSelect />}
+   </Wrap>}
+
+
+{SortByLocationIsShown && 
 <Wrap justify='center'>
+{(AllIsShown || World2RegionIsShown) &&
+<NivaliGlovesOption />}
 
+{(AllIsShown || World2RegionIsShown) && 
+<NivaliGlovesSelect />}
 
-{(AllIsShown || World2RegionIsShown) && !NivaliGlovesIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleNivaliGlovesClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/2/2c/Nivali_Gloves.png/'
-/> 
-<Text fontSize='md' align='center'><b>Nivali Gloves</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+5 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown) && 
+   <NivaliPantsOption />}
 
-{(AllIsShown || World2RegionIsShown) && NivaliGlovesIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleNivaliGlovesNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/2/2c/Nivali_Gloves.png/'
-/> 
-<Text fontSize='md' align='center'><b>Nivali Gloves</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+5 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown) && 
+   <NivaliPantsSelect />}
 
-{(AllIsShown || World2RegionIsShown) && !NivaliPantsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleNivaliPantsClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/4/4b/Nivali_Pants.png/'
-/> 
-<Text fontSize='md' align='center'><b>Nivali Pants</b></Text>
-<Text fontSize='sm' align='center'>+4 Atk<br/>+12 Def<br/>+4 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || World2RegionIsShown) && NivaliPantsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleNivaliPantsNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/4/4b/Nivali_Pants.png/'
-/> 
-<Text fontSize='md' align='center'><b>Nivali Pants</b></Text>
-<Text fontSize='sm' align='center'>+4 Atk<br/>+12 Def<br/>+4 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-
-{(AllIsShown || World2RegionIsShown) && !NivaliShieldIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleNivaliShieldClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/3/3f/Nivali_Shield.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Nivali Shield</b></Text>
-   <Text fontSize='sm' align='center'>+2 Atk<br/>+15 Def<br/>+2 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+{(AllIsShown || World2RegionIsShown) && 
+   <NivaliShieldOption />}
    
-{(AllIsShown || World2RegionIsShown) && NivaliShieldIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleNivaliShieldNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/3/3f/Nivali_Shield.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Nivali Shield</b></Text>
-   <Text fontSize='sm' align='center'>+2 Atk<br/>+15 Def<br/>+2 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+{(AllIsShown || World2RegionIsShown) && 
+   <NivaliShieldSelect />}
 
-   {(AllIsShown || HuntIsShown) && !BardNoteIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleBardNoteClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/4/46/BardsNote.png/'
-/> 
-<Text fontSize='md' align='center'><b>Bard's Note</b></Text>
-<Text fontSize='sm' align='center'>+14 Atk<br/>+0 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+   {(AllIsShown || HuntIsShown) && 
+   <BardNoteOption />}
 
-{(AllIsShown || HuntIsShown) && BardNoteIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleBardNoteNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/4/46/BardsNote.png/'
-/> 
-<Text fontSize='md' align='center'><b>Bard's Note</b></Text>
-<Text fontSize='sm' align='center'>+14 Atk<br/>+0 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || HuntIsShown) && 
+   <BardNoteSelect />}
 
 
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !HauntedNecklaceIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleHauntedNecklaceClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='15px'
-align='center' 
-boxSize='3.75rem'
-src='https://static.wikia.nocookie.net/4thewords/images/1/14/HauntedNecklace.png/'
-/> 
-<Text fontSize='md' align='center'><b>Haunted<br/>Necklace</b></Text>
-<Text fontSize='sm' align='center'>+5 Atk<br/>+10 Def<br/>+5 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+   <HauntedNecklaceOption />}
 
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && HauntedNecklaceIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleHauntedNecklaceNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='3.75rem'
-src='https://static.wikia.nocookie.net/4thewords/images/1/14/HauntedNecklace.png/'
-/> 
-<Text fontSize='md' align='center'><b>Haunted<br/>Necklace</b></Text>
-<Text fontSize='sm' align='center'>+5 Atk<br/>+10 Def<br/>+5 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+   <HauntedNecklaceSelect />}
 
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !HopeLightIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleHopeLightClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center' 
-   boxSize='4rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/3/3c/HopesLight.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Hope's Light</b></Text>
-   <Text fontSize='sm' align='center'>+15 Atk<br/>+0 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+   <HopeLightOption />}
    
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && HopeLightIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleHopeLightNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center' 
-   boxSize='4rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/3/3c/HopesLight.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Hope's Light</b></Text>
-   <Text fontSize='sm' align='center'>+15 Atk<br/>+0 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+   <HopeLightSelect />}
 
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !LightBloomIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleLightBloomClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='12px'
-      align='center' 
-      boxSize='4rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/a/a7/LightsBloom.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Light's Bloom</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+15 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+   <LightBloomOption />}
       
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && LightBloomIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleLightBloomNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-      <VStack justify='center'>  
-      <Image
-      mt='12px'
-      align='center' 
-      boxSize='4rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/a/a7/LightsBloom.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Light's Bloom</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+15 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+   <LightBloomSelect />}
    
-{(AllIsShown || GardenIsShown) && !MushroomGrenadeIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleMushroomGrenadeClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='24px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/8/83/MushroomGrenade.png/'
-/> 
-<Text fontSize='md' align='center'><b>Mushroom<br/>Grenade</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+12 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || GardenIsShown) && 
+   <MushroomGrenadeOption />}
 
-{(AllIsShown || GardenIsShown) && MushroomGrenadeIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleMushroomGrenadeNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='21px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/8/83/MushroomGrenade.png/'
-/> 
-<Text fontSize='md' align='center'><b>Mushroom<br/>Grenade</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+12 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || GardenIsShown) && 
+   <MushroomGrenadeSelect />}
 
-   {(AllIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && !DarkForestAmuletIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleDarkForestAmuletClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/8/8d/Dark-forest-amulet.png/'
-/> 
-<Text fontSize='md' align='center'><b>Dark Forest<br/>Amulet</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+10 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+   {(AllIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && 
+   <DarkForestAmuletOption />}
 
-{(AllIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && DarkForestAmuletIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleDarkForestAmuletNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/8/8d/Dark-forest-amulet.png/'
-/> 
-<Text fontSize='md' align='center'><b>Dark Forest<br/>Amulet</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+10 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && 
+   <DarkForestAmuletSelect />}
 
 
-   {(AllIsShown || RainaIsShown) && !RainaBraceletIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleRainaBraceletClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='12px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/9/95/Raina_bracelet.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Raina<br/>Bracelet</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+15 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+   {(AllIsShown || RainaIsShown) && 
+   <RainaBraceletOption />}
       
-   {(AllIsShown || RainaIsShown) && RainaBraceletIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleRainaBraceletNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-      <VStack justify='center'>  
-      <Image
-      mt='12px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/9/95/Raina_bracelet.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Raina<br/>Bracelet</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+15 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+   {(AllIsShown || RainaIsShown) && 
+   <RainaBraceletSelect />}
 
-      {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && !GlassNecklaceIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleGlassNecklaceClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/0/0d/Glassnecklace_md.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Glass<br/>Necklace</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+6 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+      {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && 
+   <GlassNecklaceOption />}
    
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && GlassNecklaceIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleGlassNecklaceNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/0/0d/Glassnecklace_md.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Glass<br/>Necklace</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+6 Luck </Text>
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && 
+   <GlassNecklaceSelect />}
 
-   </VStack>
-   </Button>
-   </WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && 
+   <SandsRingOption />}
 
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && !SandsRingIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleSandsRingClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/2/24/Sandsring_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Sands Ring</b></Text>
-<Text fontSize='sm' align='center'>+1 Atk<br/>+5 Def<br/>+5 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && 
+   <SandsRingSelect />}
 
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && SandsRingIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleSandsRingNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/2/24/Sandsring_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Sands Ring</b></Text>
-<Text fontSize='sm' align='center'>+1 Atk<br/>+5 Def<br/>+5 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && 
+   <RustyPendantOption />}
 
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && !RustyPendantIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleRustyPendantClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/8/8b/Rustypendant_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Rusty<br/>Pendant</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+1 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && 
+   <RustyPendantSelect />}
 
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && RustyPendantIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleRustyPendantNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/8/8b/Rustypendant_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Rusty<br/>Pendant</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+1 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) && 
+   <RustyAmuletOption />}
 
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) && !RustyAmuletIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleRustyAmuletClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/1/19/Rustyamulet_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Rusty<br/>Amulet</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+1 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) && 
+   <RustyAmuletSelect />}
 
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) && RustyAmuletIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleRustyAmuletNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/1/19/Rustyamulet_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Rusty<br/>Amulet</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+1 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+</Wrap>}
 
-
-
-</Wrap>
-   {(AllIsShown || AurilisIsShown) &&
+{(AllIsShown || AurilisIsShown) &&
     <Text fontSize='md' mt='25px' mb='15px'><b>Aurilis Graduation Scrolls:</b></Text>}
   <Wrap justify='center'>
-   {(AllIsShown || AurilisIsShown) && !GradScrollAstrologyIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleGradScrollAstrologyClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/4/44/Astrology_Graduation_Scroll.png/'
-/> 
-<Text fontSize='md' align='center'><b>Astrology</b></Text>
-<Text fontSize='sm' align='center'>+2 Atk<br/>+4 Def<br/>+6 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+   {(AllIsShown || AurilisIsShown) &&
+   <GradScrollAstrologyOption />}
 
-{(AllIsShown || AurilisIsShown) && GradScrollAstrologyIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleGradScrollAstrologyNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/4/44/Astrology_Graduation_Scroll.png/'
-/> 
-<Text fontSize='md' align='center'><b>Astrology</b></Text>
-<Text fontSize='sm' align='center'>+2 Atk<br/>+4 Def<br/>+6 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || AurilisIsShown) &&
+   <GradScrollAstrologySelect />}
 
-{(AllIsShown || AurilisIsShown) && !GradScrollAlchemyIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleGradScrollAlchemyClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/c/c5/Alchemy_Graduation_Scroll.png/'
-/> 
-<Text fontSize='md' align='center'><b>Alchemy</b></Text>
-<Text fontSize='sm' align='center'>+6 Atk<br/>+4 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || AurilisIsShown) && 
+   <GradScrollAlchemyOption />}
 
-{(AllIsShown || AurilisIsShown) && GradScrollAlchemyIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleGradScrollAlchemyNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/c/c5/Alchemy_Graduation_Scroll.png/'
-/> 
-<Text fontSize='md' align='center'><b>Alchemy</b></Text>
-<Text fontSize='sm' align='center'>+6 Atk<br/>+4 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || AurilisIsShown) &&
+   <GradScrollAlchemySelect />}
 
-{(AllIsShown || AurilisIsShown) && !GradScrollAKIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleGradScrollAKClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/8/81/Ancient_Knowledge_Graduation_Scroll.png/'
-/> 
-<Text fontSize='sm' align='center'><b>Ancient<br/>Knowledge</b></Text>
-<Text fontSize='sm' align='center'>+4 Atk<br/>+6 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || AurilisIsShown) && 
+   <GradScrollAKOption />}
 
-{(AllIsShown || AurilisIsShown) && GradScrollAKIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleGradScrollAKNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/8/81/Ancient_Knowledge_Graduation_Scroll.png/'
-/> 
-<Text fontSize='sm' align='center'><b>Ancient<br/>Knowledge</b></Text>
-<Text fontSize='sm' align='center'>+4 Atk<br/>+6 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || AurilisIsShown) && 
+   <GradScrollAKSelect />}
 
-{(AllIsShown || AurilisIsShown) && !GradScrollSpellsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleGradScrollSpellsClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/f/f0/Spells_Graduation_Scroll.png/'
-/> 
-<Text fontSize='md' align='center'><b>Spells</b></Text>
-<Text fontSize='sm' align='center'>+6 Atk<br/>+4 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || AurilisIsShown) && 
+   <GradScrollSpellsOption />}
 
-{(AllIsShown || AurilisIsShown) && GradScrollSpellsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleGradScrollSpellsNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/f/f0/Spells_Graduation_Scroll.png/'
-/> 
-<Text fontSize='md' align='center'><b>Spells</b></Text>
-<Text fontSize='sm' align='center'>+6 Atk<br/>+4 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || AurilisIsShown) && 
+   <GradScrollSpellsSelect />}
 
-{(AllIsShown || AurilisIsShown) && !GradScrollMirrorsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleGradScrollMirrorsClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/3/31/Mirror_Graduation_Scroll.png/'
-/> 
-<Text fontSize='md' align='center'><b>Mirrors</b></Text>
-<Text fontSize='sm' align='center'>+2 Atk<br/>+5 Def<br/>+8 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || AurilisIsShown) && 
+   <GradScrollMirrorsOption />}
 
-{(AllIsShown || AurilisIsShown) && GradScrollMirrorsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleGradScrollMirrorsNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/3/31/Mirror_Graduation_Scroll.png/'
-/> 
-<Text fontSize='md' align='center'><b>Mirrors</b></Text>
-<Text fontSize='sm' align='center'>+2 Atk<br/>+5 Def<br/>+8 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || AurilisIsShown) && 
+   <GradScrollMirrorsSelect />}
 
-{(AllIsShown || AurilisIsShown) && !GradScrollFungiIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleGradScrollFungiClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/9/9a/Fungi_Graduation_Scroll.png/'
-/> 
-<Text fontSize='md' align='center'><b>Fungi</b></Text>
-<Text fontSize='sm' align='center'>+8 Atk<br/>+5 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || AurilisIsShown) && 
+   <GradScrollFungiOption />}
 
-{(AllIsShown || AurilisIsShown) && GradScrollFungiIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleGradScrollFungiNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/9/9a/Fungi_Graduation_Scroll.png/'
-/> 
-<Text fontSize='md' align='center'><b>Fungi</b></Text>
-<Text fontSize='sm' align='center'>+8 Atk<br/>+5 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || AurilisIsShown) && 
+   <GradScrollFungiSelect />}
 
-{(AllIsShown || AurilisIsShown) && !GradScrollThreadsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleGradScrollThreadsClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/a/a2/Threads_Graduation_Scroll.png/'
-/> 
-<Text fontSize='md' align='center'><b>Threads</b></Text>
-<Text fontSize='sm' align='center'>+5 Atk<br/>+8 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || AurilisIsShown) && 
+   <GradScrollThreadsOption />}
 
-{(AllIsShown || AurilisIsShown) && GradScrollThreadsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleGradScrollThreadsNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/a/a2/Threads_Graduation_Scroll.png/'
-/> 
-<Text fontSize='md' align='center'><b>Threads</b></Text>
-<Text fontSize='sm' align='center'>+5 Atk<br/>+8 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || AurilisIsShown) && 
+   <GradScrollThreadsSelect />}
 
-{(AllIsShown || AurilisIsShown) && !GradScrollVoidIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleGradScrollVoidClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center'
-   boxSize='4rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/b/b2/Void_Graduation_Scroll.png'
-   />
-   <Text fontSize='md' align='center'><b>Void</b></Text>
-   <Text fontSize='sm' align='center'>+8 Atk<br/>+2 Def<br/>+5 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+{(AllIsShown || AurilisIsShown) && 
+   <GradScrollVoidOption />}
    
-   {(AllIsShown || AurilisIsShown) && GradScrollVoidIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleGradScrollVoidNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center'
-   boxSize='4rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/b/b2/Void_Graduation_Scroll.png'
-   />
-   <Text fontSize='md' align='center'><b>Void</b></Text>
-   <Text fontSize='sm' align='center'>+8 Atk<br/>+2 Def<br/>+5 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || AurilisIsShown) && 
+   <GradScrollVoidSelect />}
   </Wrap>
 {(AllIsShown || PastEventsIsShown) &&
     <Text fontSize='md' mt='25px' mb='15px'><b>Past Event Battle Items:</b></Text>}
 <Wrap justify='center'>
-{(AllIsShown || PastEventsIsShown) && !AstrolabeIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleAstrolabeClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/a/a0/Astrolabe_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Astrolabe</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+5 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || PastEventsIsShown) && 
+   <AstrolabeOption />}
 
-{(AllIsShown || PastEventsIsShown) && AstrolabeIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleAstrolabeNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/a/a0/Astrolabe_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Astrolabe</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+0 Def<br/>+5 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || PastEventsIsShown) && 
+   <AstrolabeSelect />}
 
-{(AllIsShown || PastEventsIsShown) && !FeatherNecklaceIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleFeatherNecklaceClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/c/c2/Feather-necklace.png/'
-/> 
-<Text fontSize='md' align='center'><b>Feather<br/>Necklace</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+4 Def<br/>+12 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || PastEventsIsShown) && 
+   <FeatherNecklaceOption />}
 
-{(AllIsShown || PastEventsIsShown) && FeatherNecklaceIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleFeatherNecklaceNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/c/c2/Feather-necklace.png/'
-/> 
-<Text fontSize='md' align='center'><b>Feather<br/>Necklace</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+4 Def<br/>+12 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || PastEventsIsShown) && 
+   <FeatherNecklaceSelect />}
 
-{(AllIsShown || PastEventsIsShown) && !GoldenDragonTiaraIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleGoldenDragonTiaraClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='12px'
-      align='center' 
-      boxSize='4rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/6/62/GoldenDragonTiara.png'
-      /> 
-      <Text fontSize='sm' align='center'><b>Golden<br/>Dragon Tiara</b></Text>
-      <Text fontSize='sm' align='center'>+2 Atk<br/>+2 Def<br/>+8 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+{(AllIsShown || PastEventsIsShown) && 
+   <GoldenDragonTiaraOption />}
       
-      {(AllIsShown || PastEventsIsShown) && GoldenDragonTiaraIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleGoldenDragonTiaraNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-      <VStack justify='center'>  
-      <Image
-      mt='12px'
-      align='center' 
-      boxSize='4rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/6/62/GoldenDragonTiara.png'
-      /> 
-      <Text fontSize='sm' align='center'><b>Golden<br/>Dragon Tiara</b></Text>
-      <Text fontSize='sm' align='center'>+2 Atk<br/>+2 Def<br/>+8 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+      {(AllIsShown || PastEventsIsShown) && 
+   <GoldenDragonTiaraSelect />}
 
-      {(AllIsShown || PastEventsIsShown) && !PirateAccordionIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handlePirateAccordionClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='3.75rem'
-src='https://static.wikia.nocookie.net/4thewords/images/b/ba/Accordion_md.png/'
-/> 
-<Text fontSize='sm' align='center'><b>Pirate<br/>Accordion</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+6 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+      {(AllIsShown || PastEventsIsShown) && 
+   <PirateAccordionOption />}
 
-{(AllIsShown || PastEventsIsShown) && PirateAccordionIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handlePirateAccordionNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='3.75rem'
-src='https://static.wikia.nocookie.net/4thewords/images/b/ba/Accordion_md.png/'
-/> 
-<Text fontSize='sm' align='center'><b>Pirate<br/>Accordion</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+6 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || PastEventsIsShown) && 
+   <PirateAccordionSelect />}
 
-{(AllIsShown || PastEventsIsShown) && !VictorianFanIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleVictorianFanClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center' 
-   boxSize='4rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/c/c3/Victorianfan_md.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Victorian Fan</b></Text>
-   <Text fontSize='sm' align='center'>+8 Atk<br/>+0 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+{(AllIsShown || PastEventsIsShown) && 
+   <VictorianFanOption />}
    
-   {(AllIsShown || PastEventsIsShown) && VictorianFanIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleVictorianFanNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center' 
-   boxSize='4rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/c/c3/Victorianfan_md.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Victorian Fan</b></Text>
-   <Text fontSize='sm' align='center'>+8 Atk<br/>+0 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || PastEventsIsShown) && 
+   <VictorianFanSelect />}
 </Wrap>
 </TabPanel>
 <TabPanel>
 {(AllIsShown || ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) &&
     <Text fontSize='md' mb='15px'><b>Main Quest Battle Items:</b></Text>}
+{SortByAtkIsShown &&
+   <Wrap justify='center'>
+   {(AllIsShown || HuntIsShown) && 
+<StoriedHornsOption />}
+      
+      {(AllIsShown || HuntIsShown) &&
+<StoriedHornsSelect />}
+
+   {(AllIsShown || World2RegionIsShown) && 
+<NivaliMaskOption />}
+   
+   {(AllIsShown || World2RegionIsShown) && 
+<NivaliMaskSelect />}
+
+     {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<AakultaHelmetOption />}
+   
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+<AakultaHelmetSelect />}
+
+      {(AllIsShown || HuntIsShown) && 
+<HeadpieceOfOldGoldOption />}
+      
+      {(AllIsShown || HuntIsShown) && 
+<HeadpieceOfOldGoldSelect />}
+   
+     {(AllIsShown || World2RegionIsShown || DCIsShown) && 
+<KingMaiCrownOption />}
+   
+   {(AllIsShown || World2RegionIsShown || DCIsShown) && 
+<KingMaiCrownSelect />}
+   
+   
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+<CrestedHelmetOption />}
+   
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+<CrestedHelmetSelect />}
+
+   {(AllIsShown || World2RegionIsShown) &&
+<NivaliHatOption />}
+   
+   {(AllIsShown || World2RegionIsShown) &&
+<NivaliHatSelect />}
+
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) && 
+<DarkForestHelmetOption />}
+   
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) &&
+<DarkForestHelmetSelect />}
+
+   {(AllIsShown || HuntIsShown) && 
+<HornsOfWisdomOption />}
+      
+      {(AllIsShown || HuntIsShown) &&
+<HornsOfWisdomSelect />}
+
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) &&
+<ReinforcedSteelHelmetOption />}
+      
+      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && 
+<ReinforcedSteelHelmetSelect />}
+   
+   
+      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && 
+<FabricHelmetOption />}
+   
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && 
+<FabricHelmetSelect />}
+   
+      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && 
+<ProtectedLeafHelmetOption />}
+   
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && 
+<ProtectedLeafHelmetSelect />}
+  
+   
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && 
+<LeafHelmetOption />}
+      
+      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && 
+<LeafHelmetSelect />}
+   
+     </Wrap>
+}
+
+{SortByDefIsShown &&
+   <Wrap justify='center'>
+   {(AllIsShown || World2RegionIsShown) && 
+<NivaliMaskOption />}
+   
+   {(AllIsShown || World2RegionIsShown) && 
+<NivaliMaskSelect />}
+
+   {(AllIsShown || World2RegionIsShown) &&
+<NivaliHatOption />}
+   
+   {(AllIsShown || World2RegionIsShown) &&
+<NivaliHatSelect />}
+
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) && 
+<DarkForestHelmetOption />}
+   
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) &&
+<DarkForestHelmetSelect />}
+
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) &&
+<ReinforcedSteelHelmetOption />}
+      
+      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && 
+<ReinforcedSteelHelmetSelect />}
+
+     {(AllIsShown || World2RegionIsShown || DCIsShown) && 
+<KingMaiCrownOption />}
+   
+   {(AllIsShown || World2RegionIsShown || DCIsShown) && 
+<KingMaiCrownSelect />}
+
+    {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && 
+<FabricHelmetOption />}
+   
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && 
+<FabricHelmetSelect />}
+   
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+<CrestedHelmetOption />}
+   
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+<CrestedHelmetSelect />}
+
+      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && 
+<ProtectedLeafHelmetOption />}
+   
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && 
+<ProtectedLeafHelmetSelect />}
+  
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && 
+<LeafHelmetOption />}
+      
+      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && 
+<LeafHelmetSelect />}
+
+     {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<AakultaHelmetOption />}
+   
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+<AakultaHelmetSelect />}
+
+      {(AllIsShown || HuntIsShown) && 
+<HeadpieceOfOldGoldOption />}
+      
+      {(AllIsShown || HuntIsShown) && 
+<HeadpieceOfOldGoldSelect />}
+
+   {(AllIsShown || HuntIsShown) && 
+<HornsOfWisdomOption />}
+      
+      {(AllIsShown || HuntIsShown) &&
+<HornsOfWisdomSelect />}
+
+   {(AllIsShown || HuntIsShown) && 
+<StoriedHornsOption />}
+      
+      {(AllIsShown || HuntIsShown) &&
+<StoriedHornsSelect />}  
+  
+     </Wrap>
+}
+
+{SortByLuckIsShown &&
+   <Wrap justify='center'>
+
+      {(AllIsShown || HuntIsShown) && 
+<HornsOfWisdomOption />}
+      
+      {(AllIsShown || HuntIsShown) &&
+<HornsOfWisdomSelect />}
+
+     {(AllIsShown || World2RegionIsShown || DCIsShown) && 
+<KingMaiCrownOption />}
+   
+   {(AllIsShown || World2RegionIsShown || DCIsShown) && 
+<KingMaiCrownSelect />}
+
+   {(AllIsShown || World2RegionIsShown) &&
+<NivaliHatOption />}
+   
+   {(AllIsShown || World2RegionIsShown) &&
+<NivaliHatSelect />}
+
+     {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<AakultaHelmetOption />}
+   
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+<AakultaHelmetSelect />}
+
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+<CrestedHelmetOption />}
+   
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+<CrestedHelmetSelect />}
+
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) && 
+<DarkForestHelmetOption />}
+   
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) &&
+<DarkForestHelmetSelect />}
+
+      {(AllIsShown || HuntIsShown) && 
+<HeadpieceOfOldGoldOption />}
+      
+      {(AllIsShown || HuntIsShown) && 
+<HeadpieceOfOldGoldSelect />}
+
+      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && 
+<ProtectedLeafHelmetOption />}
+   
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && 
+<ProtectedLeafHelmetSelect />}
+  
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && 
+<LeafHelmetOption />}
+      
+      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && 
+<LeafHelmetSelect />}
+
+   {(AllIsShown || World2RegionIsShown) && 
+<NivaliMaskOption />}
+   
+   {(AllIsShown || World2RegionIsShown) && 
+<NivaliMaskSelect />}
+
+   {(AllIsShown || HuntIsShown) && 
+<StoriedHornsOption />}
+      
+      {(AllIsShown || HuntIsShown) &&
+<StoriedHornsSelect />}
+   
+
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) &&
+<ReinforcedSteelHelmetOption />}
+      
+      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && 
+<ReinforcedSteelHelmetSelect />}
+
+
+    {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && 
+<FabricHelmetOption />}
+   
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && 
+<FabricHelmetSelect />}
+  
+     </Wrap>
+}
 
 {SortByLocationIsShown &&
    <Wrap justify='center'>
   
-   {(AllIsShown || World2RegionIsShown) && !NivaliHatIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleNivaliHatClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center' 
-   boxSize='4rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/1/11/Nivali_Hat.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Nivali Hat</b></Text>
-   <Text fontSize='sm' align='center'>+7 Atk<br/>+15 Def<br/>+7 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown) &&
+<NivaliHatOption />}
    
-   {(AllIsShown || World2RegionIsShown) && NivaliHatIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleNivaliHatNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center' 
-   boxSize='4rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/1/11/Nivali_Hat.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Nivali Hat</b></Text>
-   <Text fontSize='sm' align='center'>+7 Atk<br/>+15 Def<br/>+7 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown) &&
+<NivaliHatSelect />}
    
-   {(AllIsShown || World2RegionIsShown) && !NivaliMaskIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleNivaliMaskClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center' 
-   boxSize='4rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/2/24/Nivali_Mask.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Nivali Mask</b></Text>
-   <Text fontSize='sm' align='center'>+15 Atk<br/>+15 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown) && 
+<NivaliMaskOption />}
    
-   {(AllIsShown || World2RegionIsShown) && NivaliMaskIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleNivaliMaskNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center' 
-   boxSize='4rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/2/24/Nivali_Mask.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Nivali Mask</b></Text>
-   <Text fontSize='sm' align='center'>+15 Atk<br/>+15 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
-     {(AllIsShown || World2RegionIsShown || DCIsShown) && !KingMaiCrownIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleKingMaiCrownClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/3/33/KingMaiCrown.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>King Mai's<br/>Crown</b></Text>
-   <Text fontSize='sm' align='center'>+10 Atk<br/>+10 Def<br/>+10 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown) && 
+<NivaliMaskSelect />}
+     {(AllIsShown || World2RegionIsShown || DCIsShown) && 
+<KingMaiCrownOption />}
    
-   {(AllIsShown || World2RegionIsShown || DCIsShown) && KingMaiCrownIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleKingMaiCrownNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/3/33/KingMaiCrown.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>King Mai's<br/>Crown</b></Text>
-   <Text fontSize='sm' align='center'>+10 Atk<br/>+10 Def<br/>+10 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || DCIsShown) && 
+<KingMaiCrownSelect />}
    
       
-     {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !AakultaHelmetIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleAakultaHelmetClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/0/07/AakultaHelmet.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Aakulta<br/>Helmet</b></Text>
-   <Text fontSize='sm' align='center'>+15 Atk<br/>+0 Def<br/>+5 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+     {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<AakultaHelmetOption />}
    
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && AakultaHelmetIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleAakultaHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/0/07/AakultaHelmet.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Aakulta<br/>Helmet</b></Text>
-   <Text fontSize='sm' align='center'>+15 Atk<br/>+0 Def<br/>+5 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+<AakultaHelmetSelect />}
    
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !CrestedHelmetIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleCrestedHelmetClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/f/f8/CrestedHelmet.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Crested<br/>Helmet</b></Text>
-   <Text fontSize='sm' align='center'>+10 Atk<br/>+5 Def<br/>+5 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+<CrestedHelmetOption />}
    
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && CrestedHelmetIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleCrestedHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/f/f8/CrestedHelmet.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Crested<br/>Helmet</b></Text>
-   <Text fontSize='sm' align='center'>+10 Atk<br/>+5 Def<br/>+5 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+<CrestedHelmetSelect />}
 
-   {(AllIsShown || HuntIsShown) && !StoriedHornsIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleStoriedHornsClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='12px'
-      align='center' 
-      boxSize='4rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/4/43/StoriedHorns.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Storied Horns</b></Text>
-      <Text fontSize='sm' align='center'>+16 Atk<br/>+0 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+   {(AllIsShown || HuntIsShown) && 
+<StoriedHornsOption />}
       
-      {(AllIsShown || HuntIsShown) && StoriedHornsIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleStoriedHornsNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-      <VStack justify='center'>  
-      <Image
-      mt='12px'
-      align='center' 
-      boxSize='4rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/4/43/StoriedHorns.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Storied Horns</b></Text>
-      <Text fontSize='sm' align='center'>+16 Atk<br/>+0 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+      {(AllIsShown || HuntIsShown) &&
+<StoriedHornsSelect />}
 
-   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) && !DarkForestHelmetIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleDarkForestHelmetClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.75rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/9/9f/Dark-forest-helmet.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Dark Forest<br/>Helmet</b></Text>
-   <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+4 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) && 
+<DarkForestHelmetOption />}
    
-   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) && DarkForestHelmetIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleDarkForestHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.75rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/9/9f/Dark-forest-helmet.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Dark Forest<br/>Helmet</b></Text>
-   <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+4 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) &&
+<DarkForestHelmetSelect />}
    
    
    
-   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && !ReinforcedSteelHelmetIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleReinforcedSteelHelmetClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/3/35/Reinforced-steel-helmet.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Reinforced<br/>Steel Helmet</b></Text>
-      <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) &&
+<ReinforcedSteelHelmetOption />}
       
-      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && ReinforcedSteelHelmetIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleReinforcedSteelHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/3/35/Reinforced-steel-helmet.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Reinforced<br/>Steel Helmet</b></Text>
-      <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && 
+<ReinforcedSteelHelmetSelect />}
    
-      {(AllIsShown || HuntIsShown) && !HeadpieceOfOldGoldIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleHeadpieceOfOldGoldClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/a/a4/HeadpieceOfOldGold.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Headpiece<br/>of Old Gold</b></Text>
-      <Text fontSize='sm' align='center'>+14 Atk<br/>+0 Def<br/>+2 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+      {(AllIsShown || HuntIsShown) && 
+<HeadpieceOfOldGoldOption />}
       
-      {(AllIsShown || HuntIsShown) && HeadpieceOfOldGoldIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleHeadpieceOfOldGoldNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/a/a4/HeadpieceOfOldGold.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Headpiece<br/>of Old Gold</b></Text>
-      <Text fontSize='sm' align='center'>+14 Atk<br/>+0 Def<br/>+2 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+      {(AllIsShown || HuntIsShown) && 
+<HeadpieceOfOldGoldSelect />}
    
-      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && !FabricHelmetIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleFabricHelmetClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center' 
-   boxSize='4rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/c/c8/Fabrichelmet_md.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Fabric Helmet</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+8 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && 
+<FabricHelmetOption />}
    
-   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && FabricHelmetIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleFabricHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center' 
-   boxSize='4rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/c/c8/Fabrichelmet_md.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Fabric Helmet</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+8 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && 
+<FabricHelmetSelect />}
    
-   {(AllIsShown || HuntIsShown) && !HornsOfWisdomIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleHornsOfWisdomClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/a/a7/HornsofWisdom.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Horns of<br/>Wisdom</b></Text>
-      <Text fontSize='sm' align='center'>+2 Atk<br/>+0 Def<br/>+14 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+   {(AllIsShown || HuntIsShown) && 
+<HornsOfWisdomOption />}
       
-      {(AllIsShown || HuntIsShown) && HornsOfWisdomIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleHornsOfWisdomNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/a/a7/HornsofWisdom.png/'      
-      /> 
-      <Text fontSize='md' align='center'><b>Horns of<br/>Wisdom</b></Text>
-      <Text fontSize='sm' align='center'>+2 Atk<br/>+0 Def<br/>+14 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+      {(AllIsShown || HuntIsShown) &&
+<HornsOfWisdomSelect />}
 
-      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && !ProtectedLeafHelmetIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleProtectedLeafHelmetClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/7/78/Protectedleafhelmet_md.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Protected<br/>Leaf Helmet</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+5 Def<br/>+2 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && 
+<ProtectedLeafHelmetOption />}
    
-   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && ProtectedLeafHelmetIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleProtectedLeafHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/7/78/Protectedleafhelmet_md.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Protected<br/>Leaf Helmet</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+5 Def<br/>+2 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && 
+<ProtectedLeafHelmetSelect />}
   
    
-   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && !LeafHelmetIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleLeafHelmetClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='12px'
-      align='center' 
-      boxSize='4rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/f/f3/Leafhelmet_md.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Leaf Helmet</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+2 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && 
+<LeafHelmetOption />}
       
-      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && LeafHelmetIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleLeafHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-      <VStack justify='center'>  
-      <Image
-      mt='12px'
-      align='center' 
-      boxSize='4rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/f/f3/Leafhelmet_md.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Leaf Helmet</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+2 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && 
+<LeafHelmetSelect />}
+     </Wrap>
+}
+{SortByNameIsShown &&
+   <Wrap justify='center'>
+     {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<AakultaHelmetOption />}
    
- 
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+<AakultaHelmetSelect />}
+
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+<CrestedHelmetOption />}
+   
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+<CrestedHelmetSelect />}
+
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) && 
+<DarkForestHelmetOption />}
+   
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) &&
+<DarkForestHelmetSelect />}
+
+    {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && 
+<FabricHelmetOption />}
+   
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && 
+<FabricHelmetSelect />}
+
+      {(AllIsShown || HuntIsShown) && 
+<HeadpieceOfOldGoldOption />}
+      
+      {(AllIsShown || HuntIsShown) && 
+<HeadpieceOfOldGoldSelect />}
+
+      {(AllIsShown || HuntIsShown) && 
+<HornsOfWisdomOption />}
+      
+      {(AllIsShown || HuntIsShown) &&
+<HornsOfWisdomSelect />}
+
+     {(AllIsShown || World2RegionIsShown || DCIsShown) && 
+<KingMaiCrownOption />}
+   
+   {(AllIsShown || World2RegionIsShown || DCIsShown) && 
+<KingMaiCrownSelect />}
+
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && 
+<LeafHelmetOption />}
+      
+      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && 
+<LeafHelmetSelect />}
+
+   {(AllIsShown || World2RegionIsShown) &&
+<NivaliHatOption />}
+   
+   {(AllIsShown || World2RegionIsShown) &&
+<NivaliHatSelect />}
+
+   {(AllIsShown || World2RegionIsShown) && 
+<NivaliMaskOption />}
+   
+   {(AllIsShown || World2RegionIsShown) && 
+<NivaliMaskSelect />}
+
+      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && 
+<ProtectedLeafHelmetOption />}
+   
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && 
+<ProtectedLeafHelmetSelect />}
+
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) &&
+<ReinforcedSteelHelmetOption />}
+      
+      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && 
+<ReinforcedSteelHelmetSelect />}
+
+   {(AllIsShown || HuntIsShown) && 
+<StoriedHornsOption />}
+      
+      {(AllIsShown || HuntIsShown) &&
+<StoriedHornsSelect />}
+
      </Wrap>
 }
 
   {(AllIsShown ||  PastEventsIsShown) && 
       <Text fontSize='md' mt='25px' mb='15px'><b>Past Event Battle Items:</b></Text>}
+{(SortByAtkIsShown || SortByDefIsShown || SortByLocationIsShown || SortByNameIsShown) &&
       <Wrap justify='center'>
-      {(AllIsShown || PastEventsIsShown) && !DragonHornedHelmetIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleDragonHornedHelmetClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/e/e5/DragonsHornedHelmet.png/'
-/> 
-<Text fontSize='sm' align='center'><b>Dragon's<br/>Horned Helmet</b></Text>
-<Text fontSize='sm' align='center'>+2 Atk<br/>+5 Def<br/>+5 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+      {(AllIsShown || PastEventsIsShown) && 
+<DragonHornedHelmetOption />}
 
-{(AllIsShown || PastEventsIsShown) && DragonHornedHelmetIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleDragonHornedHelmetNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/e/e5/DragonsHornedHelmet.png/'
-/> 
-<Text fontSize='sm' align='center'><b>Dragon's<br/>Horned Helmet</b></Text>
-<Text fontSize='sm' align='center'>+2 Atk<br/>+5 Def<br/>+5 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
-{(AllIsShown || PastEventsIsShown) && !MinerHatIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleMinerHatClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='12px'
-      align='center' 
-      boxSize='4rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/8/8c/Miner-hat.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Miner Hat</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+4 Def<br/>+10 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+{(AllIsShown || PastEventsIsShown) && 
+<DragonHornedHelmetSelect />}
+{(AllIsShown || PastEventsIsShown) && 
+<MinerHatOption />}
       
-      {(AllIsShown || PastEventsIsShown) && MinerHatIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleMinerHatNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-      <VStack justify='center'>  
-      <Image
-      mt='12px'
-      align='center' 
-      boxSize='4rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/8/8c/Miner-hat.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Miner Hat</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+4 Def<br/>+10 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
-      </Wrap>
+      {(AllIsShown || PastEventsIsShown) && 
+<MinerHatSelect />}
+      </Wrap>}
+{SortByLuckIsShown &&
+      <Wrap justify='center'>
+{(AllIsShown || PastEventsIsShown) && 
+<MinerHatOption />}
+      
+      {(AllIsShown || PastEventsIsShown) && 
+<MinerHatSelect />}
+
+      {(AllIsShown || PastEventsIsShown) && 
+<DragonHornedHelmetOption />}
+
+{(AllIsShown || PastEventsIsShown) && 
+<DragonHornedHelmetSelect />}
+      </Wrap>}
+
 </TabPanel>
 <TabPanel>
 {(AllIsShown || ForestRegionIsShown || DesertRegionIsShown || WaterRegionIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) &&
@@ -29686,1471 +31615,303 @@ src='https://static.wikia.nocookie.net/4thewords/images/e/e5/DragonsHornedHelmet
 {SortByLocationIsShown && 
    <Wrap justify='center'>
 
-   {(AllIsShown || World2RegionIsShown) && !NivaliBreastplateIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleNivaliBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/3/39/Nivali_Breastplate.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Nivali<br/>Breastplate</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+22 Def<br/>+8 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown) &&
+<NivaliBreastplateOption />}
    
-   {(AllIsShown || World2RegionIsShown) && NivaliBreastplateIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleNivaliBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/3/39/Nivali_Breastplate.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Nivali<br/>Breastplate</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+22 Def<br/>+8 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown) &&
+<NivaliBreastplateSelect />}
    
-   {(AllIsShown || World2RegionIsShown || DCIsShown) && !KingBreastplateIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleKingBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/6/6b/KingsBreastplate.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>King's<br/>Breastplate</b></Text>
-      <Text fontSize='sm' align='center'>+5 Atk<br/>+25 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || DCIsShown) &&
+<KingBreastplateOption />}
       
-      {(AllIsShown || World2RegionIsShown || DCIsShown) && KingBreastplateIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleKingBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/6/6b/KingsBreastplate.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>King's<br/>Breastplate</b></Text>
-      <Text fontSize='sm' align='center'>+5 Atk<br/>+25 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+      {(AllIsShown || World2RegionIsShown || DCIsShown) &&
+<KingBreastplateSelect />}
    
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !FusionCuirassIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleFusionCuirassClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center' 
-   boxSize='4rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/f/fa/FusionCuirass.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Fusion Cuirass</b></Text>
-   <Text fontSize='sm' align='center'>+8 Atk<br/>+20 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<FusionCuirassOption />}
    
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && FusionCuirassIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleFusionCuirassNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center' 
-   boxSize='4rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/f/fa/FusionCuirass.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Fusion Cuirass</b></Text>
-   <Text fontSize='sm' align='center'>+8 Atk<br/>+20 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<FusionCuirassSelect />}
    
    
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !LeatherCuirassIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleLeatherCuirassClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/d/db/LeatherCuriass.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Leather<br/>Cuirass</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+20 Def<br/>+5 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<LeatherCuirassOption />}
    
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && LeatherCuirassIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleLeatherCuirassNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/d/db/LeatherCuriass.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Leather<br/>Cuirass</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+20 Def<br/>+5 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<LeatherCuirassSelect />}
    
-   {(AllIsShown || CloudsIsShown) && !CloudChestPlateIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleCloudChestPlateClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/7/75/Cloud-chest-plate.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Cloud<br/>Chest Plate</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+18 Def<br/>+2 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || CloudsIsShown) &&
+<CloudChestPlateOption />}
    
-   {(AllIsShown || CloudsIsShown) && CloudChestPlateIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleCloudChestPlateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/7/75/Cloud-chest-plate.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Cloud<br/>Chest Plate</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+18 Def<br/>+2 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || CloudsIsShown) &&
+<CloudChestPlateSelect />}
    
-   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && !ReinforcedSteelBreastplateIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleReinforcedSteelBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Reinforced-steel-breastplate.png/'
-   /> 
-   <Text fontSize='sm' align='center'><b>Reinforced Steel<br/>Breastplate</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+15 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) &&
+<ReinforcedSteelBreastplateOption />}
    
-   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && ReinforcedSteelBreastplateIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleReinforcedSteelBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Reinforced-steel-breastplate.png/'
-   /> 
-   <Text fontSize='sm' align='center'><b>Reinforced Steel<br/>Breastplate</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+15 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) &&
+<ReinforcedSteelBreastplateSelect />}
    
    
-   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && !FabricBreastplateIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleFabricBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/3/31/Fabricbreastplate_md.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Fabric<br/>Breastplate</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) &&
+<FabricBreastplateOption />}
    
-   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && FabricBreastplateIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleFabricBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/3/31/Fabricbreastplate_md.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Fabric<br/>Breastplate</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) &&
+<FabricBreastplateSelect />}
    
-   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && !LeafBreastplateIsShown &&
-         <WrapItem>
-         <Button w='110px' h='170px' pb={5} onClick={handleLeafBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
-         <VStack justify='center'>  
-         <Image
-         mt='18px'
-         align='center' 
-         boxSize='3.5rem'
-         src='https://static.wikia.nocookie.net/4thewords/images/6/60/Leafbreastplate_md.png/'
-         /> 
-         <Text fontSize='md' align='center'><b>Leaf<br/>Breastplate</b></Text>
-         <Text fontSize='sm' align='center'>+0 Atk<br/>+2 Def<br/>+0 Luck </Text>
-         </VStack>
-         </Button>
-         </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) &&
+<LeafBreastplateOption />}
          
-         {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && LeafBreastplateIsShown &&
-         <WrapItem>
-         <Button w='110px' h='170px' pb={5} onClick={handleLeafBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-         <VStack justify='center'>  
-         <Image
-         mt='18px'
-         align='center' 
-         boxSize='3.5rem'
-         src='https://static.wikia.nocookie.net/4thewords/images/6/60/Leafbreastplate_md.png/'
-         /> 
-         <Text fontSize='md' align='center'><b>Leaf<br/>Breastplate</b></Text>
-         <Text fontSize='sm' align='center'>+0 Atk<br/>+2 Def<br/>+0 Luck </Text>
-         </VStack>
-         </Button>
-         </WrapItem>}
-            {(AllIsShown || AurilisIsShown) && !AmidalaChestpieceIsShown &&
-     <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleAmidalaChestpieceClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.75rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/3/37/Amidala_Chestpiece.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Amidala<br/>Chestpiece</b></Text>
-   <Text fontSize='sm' align='center'>+6 Atk<br/>+6 Def<br/>+2 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+         {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) &&
+<LeafBreastplateSelect />}
+
+            {(AllIsShown || AurilisIsShown) &&
+   <AmidalaChestpieceOption />}
    
-   {(AllIsShown || AurilisIsShown) && AmidalaChestpieceIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleAmidalaChestpieceNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.75rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/3/37/Amidala_Chestpiece.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Amidala<br/>Chestpiece</b></Text>
-   <Text fontSize='sm' align='center'>+6 Atk<br/>+6 Def<br/>+2 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || AurilisIsShown) &&
+   <AmidalaChestpieceSelect />}
      </Wrap>}
+
      {SortByNameIsShown && 
    <Wrap justify='center'>
 
-   {(AllIsShown || AurilisIsShown) && !AmidalaChestpieceIsShown &&
-      <WrapItem>
-    <Button w='110px' h='170px' pb={5} onClick={handleAmidalaChestpieceClick} style={{ backgroundColor: "#2D3748"}}>
-    <VStack justify='center'>  
-    <Image
-    mt='18px'
-    align='center' 
-    boxSize='3.75rem'
-    src='https://static.wikia.nocookie.net/4thewords/images/3/37/Amidala_Chestpiece.png/'
-    /> 
-    <Text fontSize='md' align='center'><b>Amidala<br/>Chestpiece</b></Text>
-    <Text fontSize='sm' align='center'>+6 Atk<br/>+6 Def<br/>+2 Luck </Text>
-    </VStack>
-    </Button>
-    </WrapItem>}
+   {(AllIsShown || AurilisIsShown) &&
+   <AmidalaChestpieceOption />}
     
-    {(AllIsShown || AurilisIsShown) && AmidalaChestpieceIsShown &&
-    <WrapItem>
-    <Button w='110px' h='170px' pb={5} onClick={handleAmidalaChestpieceNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-    <VStack justify='center'>  
-    <Image
-    mt='18px'
-    align='center' 
-    boxSize='3.75rem'
-    src='https://static.wikia.nocookie.net/4thewords/images/3/37/Amidala_Chestpiece.png/'
-    /> 
-    <Text fontSize='md' align='center'><b>Amidala<br/>Chestpiece</b></Text>
-    <Text fontSize='sm' align='center'>+6 Atk<br/>+6 Def<br/>+2 Luck </Text>
-    </VStack>
-    </Button>
-    </WrapItem>}
+    {(AllIsShown || AurilisIsShown) &&
+   <AmidalaChestpieceSelect />}
 
-    {(AllIsShown || CloudsIsShown) && !CloudChestPlateIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleCloudChestPlateClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/7/75/Cloud-chest-plate.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Cloud<br/>Chest Plate</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+18 Def<br/>+2 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+    {(AllIsShown || CloudsIsShown) &&
+<CloudChestPlateOption />}
       
-      {(AllIsShown || CloudsIsShown) && CloudChestPlateIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleCloudChestPlateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/7/75/Cloud-chest-plate.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Cloud<br/>Chest Plate</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+18 Def<br/>+2 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+      {(AllIsShown || CloudsIsShown) &&
+<CloudChestPlateSelect />}
 
-    {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && !FabricBreastplateIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleFabricBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/3/31/Fabricbreastplate_md.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Fabric<br/>Breastplate</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+    {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) &&
+<FabricBreastplateOption />}
       
-      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && FabricBreastplateIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleFabricBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/3/31/Fabricbreastplate_md.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Fabric<br/>Breastplate</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) &&
+<FabricBreastplateSelect />}
 
 
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !FusionCuirassIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleFusionCuirassClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='12px'
-      align='center' 
-      boxSize='4rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/f/fa/FusionCuirass.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Fusion Cuirass</b></Text>
-      <Text fontSize='sm' align='center'>+8 Atk<br/>+20 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<FusionCuirassOption />}
       
-      {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && FusionCuirassIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleFusionCuirassNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-      <VStack justify='center'>  
-      <Image
-      mt='12px'
-      align='center' 
-      boxSize='4rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/f/fa/FusionCuirass.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Fusion Cuirass</b></Text>
-      <Text fontSize='sm' align='center'>+8 Atk<br/>+20 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}      
+      {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<FusionCuirassSelect />}      
 
-    {(AllIsShown || World2RegionIsShown || DCIsShown) && !KingBreastplateIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleKingBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/6/6b/KingsBreastplate.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>King's<br/>Breastplate</b></Text>
-      <Text fontSize='sm' align='center'>+5 Atk<br/>+25 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+    {(AllIsShown || World2RegionIsShown || DCIsShown) &&
+<KingBreastplateOption />}
       
-      {(AllIsShown || World2RegionIsShown || DCIsShown) && KingBreastplateIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleKingBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/6/6b/KingsBreastplate.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>King's<br/>Breastplate</b></Text>
-      <Text fontSize='sm' align='center'>+5 Atk<br/>+25 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}    
+      {(AllIsShown || World2RegionIsShown || DCIsShown) &&
+<KingBreastplateSelect />}    
 
 
-    {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && !LeafBreastplateIsShown &&
-         <WrapItem>
-         <Button w='110px' h='170px' pb={5} onClick={handleLeafBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
-         <VStack justify='center'>  
-         <Image
-         mt='18px'
-         align='center' 
-         boxSize='3.5rem'
-         src='https://static.wikia.nocookie.net/4thewords/images/6/60/Leafbreastplate_md.png/'
-         /> 
-         <Text fontSize='md' align='center'><b>Leaf<br/>Breastplate</b></Text>
-         <Text fontSize='sm' align='center'>+0 Atk<br/>+2 Def<br/>+0 Luck </Text>
-         </VStack>
-         </Button>
-         </WrapItem>}
+    {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) &&
+<LeafBreastplateOption />}
          
-         {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && LeafBreastplateIsShown &&
-         <WrapItem>
-         <Button w='110px' h='170px' pb={5} onClick={handleLeafBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-         <VStack justify='center'>  
-         <Image
-         mt='18px'
-         align='center' 
-         boxSize='3.5rem'
-         src='https://static.wikia.nocookie.net/4thewords/images/6/60/Leafbreastplate_md.png/'
-         /> 
-         <Text fontSize='md' align='center'><b>Leaf<br/>Breastplate</b></Text>
-         <Text fontSize='sm' align='center'>+0 Atk<br/>+2 Def<br/>+0 Luck </Text>
-         </VStack>
-         </Button>
-         </WrapItem>}      
+         {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) &&
+<LeafBreastplateSelect />}      
 
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !LeatherCuirassIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleLeatherCuirassClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/d/db/LeatherCuriass.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Leather<br/>Cuirass</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+20 Def<br/>+5 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<LeatherCuirassOption />}
    
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && LeatherCuirassIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleLeatherCuirassNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/d/db/LeatherCuriass.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Leather<br/>Cuirass</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+20 Def<br/>+5 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<LeatherCuirassSelect />}
    
-   {(AllIsShown || World2RegionIsShown) && !NivaliBreastplateIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleNivaliBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/3/39/Nivali_Breastplate.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Nivali<br/>Breastplate</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+22 Def<br/>+8 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+   {(AllIsShown || World2RegionIsShown) &&
+<NivaliBreastplateOption />}
       
-      {(AllIsShown || World2RegionIsShown) && NivaliBreastplateIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleNivaliBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/3/39/Nivali_Breastplate.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Nivali<br/>Breastplate</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+22 Def<br/>+8 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+      {(AllIsShown || World2RegionIsShown) &&
+<NivaliBreastplateSelect />}
    
-         {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && !ReinforcedSteelBreastplateIsShown &&
-            <WrapItem>
-            <Button w='110px' h='170px' pb={5} onClick={handleReinforcedSteelBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
-            <VStack justify='center'>  
-            <Image
-            mt='18px'
-            align='center' 
-            boxSize='3.5rem'
-            src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Reinforced-steel-breastplate.png/'
-            /> 
-            <Text fontSize='sm' align='center'><b>Reinforced Steel<br/>Breastplate</b></Text>
-            <Text fontSize='sm' align='center'>+0 Atk<br/>+15 Def<br/>+0 Luck </Text>
-            </VStack>
-            </Button>
-            </WrapItem>}
+         {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) &&
+<ReinforcedSteelBreastplateOption />}
             
-            {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && ReinforcedSteelBreastplateIsShown &&
-            <WrapItem>
-            <Button w='110px' h='170px' pb={5} onClick={handleReinforcedSteelBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-            <VStack justify='center'>  
-            <Image
-            mt='18px'
-            align='center' 
-            boxSize='3.5rem'
-            src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Reinforced-steel-breastplate.png/'
-            /> 
-            <Text fontSize='sm' align='center'><b>Reinforced Steel<br/>Breastplate</b></Text>
-            <Text fontSize='sm' align='center'>+0 Atk<br/>+15 Def<br/>+0 Luck </Text>
-            </VStack>
-            </Button>
-            </WrapItem>}
+            {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) &&
+<ReinforcedSteelBreastplateSelect />}
            
      </Wrap>}
 {SortByAtkIsShown && 
    <Wrap justify='center'>
 
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !FusionCuirassIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleFusionCuirassClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='12px'
-      align='center' 
-      boxSize='4rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/f/fa/FusionCuirass.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Fusion Cuirass</b></Text>
-      <Text fontSize='sm' align='center'>+8 Atk<br/>+20 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<FusionCuirassOption />}
       
-      {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && FusionCuirassIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleFusionCuirassNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-      <VStack justify='center'>  
-      <Image
-      mt='12px'
-      align='center' 
-      boxSize='4rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/f/fa/FusionCuirass.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Fusion Cuirass</b></Text>
-      <Text fontSize='sm' align='center'>+8 Atk<br/>+20 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}      
+      {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<FusionCuirassSelect />}      
 
-   {(AllIsShown || AurilisIsShown) && !AmidalaChestpieceIsShown &&
-      <WrapItem>
-    <Button w='110px' h='170px' pb={5} onClick={handleAmidalaChestpieceClick} style={{ backgroundColor: "#2D3748"}}>
-    <VStack justify='center'>  
-    <Image
-    mt='18px'
-    align='center' 
-    boxSize='3.75rem'
-    src='https://static.wikia.nocookie.net/4thewords/images/3/37/Amidala_Chestpiece.png/'
-    /> 
-    <Text fontSize='md' align='center'><b>Amidala<br/>Chestpiece</b></Text>
-    <Text fontSize='sm' align='center'>+6 Atk<br/>+6 Def<br/>+2 Luck </Text>
-    </VStack>
-    </Button>
-    </WrapItem>}
+   {(AllIsShown || AurilisIsShown) &&
+   <AmidalaChestpieceOption />}
     
-    {(AllIsShown || AurilisIsShown) && AmidalaChestpieceIsShown &&
-    <WrapItem>
-    <Button w='110px' h='170px' pb={5} onClick={handleAmidalaChestpieceNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-    <VStack justify='center'>  
-    <Image
-    mt='18px'
-    align='center' 
-    boxSize='3.75rem'
-    src='https://static.wikia.nocookie.net/4thewords/images/3/37/Amidala_Chestpiece.png/'
-    /> 
-    <Text fontSize='md' align='center'><b>Amidala<br/>Chestpiece</b></Text>
-    <Text fontSize='sm' align='center'>+6 Atk<br/>+6 Def<br/>+2 Luck </Text>
-    </VStack>
-    </Button>
-    </WrapItem>}
+    {(AllIsShown || AurilisIsShown) &&
+   <AmidalaChestpieceSelect />}
 
-    {(AllIsShown || World2RegionIsShown || DCIsShown) && !KingBreastplateIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleKingBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/6/6b/KingsBreastplate.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>King's<br/>Breastplate</b></Text>
-      <Text fontSize='sm' align='center'>+5 Atk<br/>+25 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+    {(AllIsShown || World2RegionIsShown || DCIsShown) &&
+<KingBreastplateOption />}
       
-      {(AllIsShown || World2RegionIsShown || DCIsShown) && KingBreastplateIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleKingBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/6/6b/KingsBreastplate.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>King's<br/>Breastplate</b></Text>
-      <Text fontSize='sm' align='center'>+5 Atk<br/>+25 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}    
+      {(AllIsShown || World2RegionIsShown || DCIsShown) &&
+<KingBreastplateSelect />}    
 
-    {(AllIsShown || CloudsIsShown) && !CloudChestPlateIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleCloudChestPlateClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/7/75/Cloud-chest-plate.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Cloud<br/>Chest Plate</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+18 Def<br/>+2 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+    {(AllIsShown || CloudsIsShown) &&
+<CloudChestPlateOption />}
       
-      {(AllIsShown || CloudsIsShown) && CloudChestPlateIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleCloudChestPlateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/7/75/Cloud-chest-plate.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Cloud<br/>Chest Plate</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+18 Def<br/>+2 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+      {(AllIsShown || CloudsIsShown) &&
+<CloudChestPlateSelect />}
 
-    {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && !FabricBreastplateIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleFabricBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/3/31/Fabricbreastplate_md.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Fabric<br/>Breastplate</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+    {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) &&
+<FabricBreastplateOption />}
       
-      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && FabricBreastplateIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleFabricBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/3/31/Fabricbreastplate_md.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Fabric<br/>Breastplate</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) &&
+<FabricBreastplateSelect />}
 
         
 
-    {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && !LeafBreastplateIsShown &&
-         <WrapItem>
-         <Button w='110px' h='170px' pb={5} onClick={handleLeafBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
-         <VStack justify='center'>  
-         <Image
-         mt='18px'
-         align='center' 
-         boxSize='3.5rem'
-         src='https://static.wikia.nocookie.net/4thewords/images/6/60/Leafbreastplate_md.png/'
-         /> 
-         <Text fontSize='md' align='center'><b>Leaf<br/>Breastplate</b></Text>
-         <Text fontSize='sm' align='center'>+0 Atk<br/>+2 Def<br/>+0 Luck </Text>
-         </VStack>
-         </Button>
-         </WrapItem>}
+    {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) &&
+<LeafBreastplateOption />}
          
-         {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && LeafBreastplateIsShown &&
-         <WrapItem>
-         <Button w='110px' h='170px' pb={5} onClick={handleLeafBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-         <VStack justify='center'>  
-         <Image
-         mt='18px'
-         align='center' 
-         boxSize='3.5rem'
-         src='https://static.wikia.nocookie.net/4thewords/images/6/60/Leafbreastplate_md.png/'
-         /> 
-         <Text fontSize='md' align='center'><b>Leaf<br/>Breastplate</b></Text>
-         <Text fontSize='sm' align='center'>+0 Atk<br/>+2 Def<br/>+0 Luck </Text>
-         </VStack>
-         </Button>
-         </WrapItem>}      
+         {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) &&
+<LeafBreastplateSelect />}      
 
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !LeatherCuirassIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleLeatherCuirassClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/d/db/LeatherCuriass.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Leather<br/>Cuirass</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+20 Def<br/>+5 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<LeatherCuirassOption />}
    
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && LeatherCuirassIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleLeatherCuirassNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/d/db/LeatherCuriass.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Leather<br/>Cuirass</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+20 Def<br/>+5 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<LeatherCuirassSelect />}
    
-   {(AllIsShown || World2RegionIsShown) && !NivaliBreastplateIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleNivaliBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/3/39/Nivali_Breastplate.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Nivali<br/>Breastplate</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+22 Def<br/>+8 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+   {(AllIsShown || World2RegionIsShown) &&
+<NivaliBreastplateOption />}
       
-      {(AllIsShown || World2RegionIsShown) && NivaliBreastplateIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleNivaliBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/3/39/Nivali_Breastplate.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Nivali<br/>Breastplate</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+22 Def<br/>+8 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+      {(AllIsShown || World2RegionIsShown) &&
+<NivaliBreastplateSelect />}
    
-         {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && !ReinforcedSteelBreastplateIsShown &&
-            <WrapItem>
-            <Button w='110px' h='170px' pb={5} onClick={handleReinforcedSteelBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
-            <VStack justify='center'>  
-            <Image
-            mt='18px'
-            align='center' 
-            boxSize='3.5rem'
-            src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Reinforced-steel-breastplate.png/'
-            /> 
-            <Text fontSize='sm' align='center'><b>Reinforced Steel<br/>Breastplate</b></Text>
-            <Text fontSize='sm' align='center'>+0 Atk<br/>+15 Def<br/>+0 Luck </Text>
-            </VStack>
-            </Button>
-            </WrapItem>}
+         {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) &&
+<ReinforcedSteelBreastplateOption />}
             
-            {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && ReinforcedSteelBreastplateIsShown &&
-            <WrapItem>
-            <Button w='110px' h='170px' pb={5} onClick={handleReinforcedSteelBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-            <VStack justify='center'>  
-            <Image
-            mt='18px'
-            align='center' 
-            boxSize='3.5rem'
-            src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Reinforced-steel-breastplate.png/'
-            /> 
-            <Text fontSize='sm' align='center'><b>Reinforced Steel<br/>Breastplate</b></Text>
-            <Text fontSize='sm' align='center'>+0 Atk<br/>+15 Def<br/>+0 Luck </Text>
-            </VStack>
-            </Button>
-            </WrapItem>}
+            {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) &&
+<ReinforcedSteelBreastplateSelect />}
            
      </Wrap>}
 
 {SortByDefIsShown && 
    <Wrap justify='center'>
 
-   {(AllIsShown || World2RegionIsShown || DCIsShown) && !KingBreastplateIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleKingBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/6/6b/KingsBreastplate.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>King's<br/>Breastplate</b></Text>
-      <Text fontSize='sm' align='center'>+5 Atk<br/>+25 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || DCIsShown) &&
+<KingBreastplateOption />}
       
-      {(AllIsShown || World2RegionIsShown || DCIsShown) && KingBreastplateIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleKingBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/6/6b/KingsBreastplate.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>King's<br/>Breastplate</b></Text>
-      <Text fontSize='sm' align='center'>+5 Atk<br/>+25 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}   
+      {(AllIsShown || World2RegionIsShown || DCIsShown) &&
+<KingBreastplateSelect />}   
 
-   {(AllIsShown || World2RegionIsShown) && !NivaliBreastplateIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleNivaliBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/3/39/Nivali_Breastplate.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Nivali<br/>Breastplate</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+22 Def<br/>+8 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown) &&
+<NivaliBreastplateOption />}
    
-   {(AllIsShown || World2RegionIsShown) && NivaliBreastplateIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleNivaliBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/3/39/Nivali_Breastplate.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Nivali<br/>Breastplate</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+22 Def<br/>+8 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown) &&
+<NivaliBreastplateSelect />}
    
    
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !FusionCuirassIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleFusionCuirassClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center' 
-   boxSize='4rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/f/fa/FusionCuirass.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Fusion Cuirass</b></Text>
-   <Text fontSize='sm' align='center'>+8 Atk<br/>+20 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<FusionCuirassOption />}
    
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && FusionCuirassIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleFusionCuirassNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center' 
-   boxSize='4rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/f/fa/FusionCuirass.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Fusion Cuirass</b></Text>
-   <Text fontSize='sm' align='center'>+8 Atk<br/>+20 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<FusionCuirassSelect />}
    
    
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !LeatherCuirassIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleLeatherCuirassClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/d/db/LeatherCuriass.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Leather<br/>Cuirass</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+20 Def<br/>+5 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<LeatherCuirassOption />}
    
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && LeatherCuirassIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleLeatherCuirassNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/d/db/LeatherCuriass.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Leather<br/>Cuirass</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+20 Def<br/>+5 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<LeatherCuirassSelect />}
    
-   {(AllIsShown || CloudsIsShown) && !CloudChestPlateIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleCloudChestPlateClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/7/75/Cloud-chest-plate.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Cloud<br/>Chest Plate</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+18 Def<br/>+2 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || CloudsIsShown) &&
+<CloudChestPlateOption />}
    
-   {(AllIsShown || CloudsIsShown) && CloudChestPlateIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleCloudChestPlateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/7/75/Cloud-chest-plate.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Cloud<br/>Chest Plate</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+18 Def<br/>+2 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || CloudsIsShown) &&
+<CloudChestPlateSelect />}
    
-   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && !ReinforcedSteelBreastplateIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleReinforcedSteelBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Reinforced-steel-breastplate.png/'
-   /> 
-   <Text fontSize='sm' align='center'><b>Reinforced Steel<br/>Breastplate</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+15 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) &&
+<ReinforcedSteelBreastplateOption />}
    
-   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && ReinforcedSteelBreastplateIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleReinforcedSteelBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Reinforced-steel-breastplate.png/'
-   /> 
-   <Text fontSize='sm' align='center'><b>Reinforced Steel<br/>Breastplate</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+15 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) &&
+<ReinforcedSteelBreastplateSelect />}
    
    
-   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && !FabricBreastplateIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleFabricBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/3/31/Fabricbreastplate_md.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Fabric<br/>Breastplate</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) &&
+<FabricBreastplateOption />}
    
-   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && FabricBreastplateIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleFabricBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/3/31/Fabricbreastplate_md.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Fabric<br/>Breastplate</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) &&
+<FabricBreastplateSelect />}
    
-   {(AllIsShown || AurilisIsShown) && !AmidalaChestpieceIsShown &&
-      <WrapItem>
-    <Button w='110px' h='170px' pb={5} onClick={handleAmidalaChestpieceClick} style={{ backgroundColor: "#2D3748"}}>
-    <VStack justify='center'>  
-    <Image
-    mt='18px'
-    align='center' 
-    boxSize='3.75rem'
-    src='https://static.wikia.nocookie.net/4thewords/images/3/37/Amidala_Chestpiece.png/'
-    /> 
-    <Text fontSize='md' align='center'><b>Amidala<br/>Chestpiece</b></Text>
-    <Text fontSize='sm' align='center'>+6 Atk<br/>+6 Def<br/>+2 Luck </Text>
-    </VStack>
-    </Button>
-    </WrapItem>}
+   {(AllIsShown || AurilisIsShown) &&
+   <AmidalaChestpieceOption />}
     
-    {(AllIsShown || AurilisIsShown) && AmidalaChestpieceIsShown &&
-    <WrapItem>
-    <Button w='110px' h='170px' pb={5} onClick={handleAmidalaChestpieceNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-    <VStack justify='center'>  
-    <Image
-    mt='18px'
-    align='center' 
-    boxSize='3.75rem'
-    src='https://static.wikia.nocookie.net/4thewords/images/3/37/Amidala_Chestpiece.png/'
-    /> 
-    <Text fontSize='md' align='center'><b>Amidala<br/>Chestpiece</b></Text>
-    <Text fontSize='sm' align='center'>+6 Atk<br/>+6 Def<br/>+2 Luck </Text>
-    </VStack>
-    </Button>
-    </WrapItem>}
+    {(AllIsShown || AurilisIsShown) &&
+   <AmidalaChestpieceSelect />}
 
-   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && !LeafBreastplateIsShown &&
-         <WrapItem>
-         <Button w='110px' h='170px' pb={5} onClick={handleLeafBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
-         <VStack justify='center'>  
-         <Image
-         mt='18px'
-         align='center' 
-         boxSize='3.5rem'
-         src='https://static.wikia.nocookie.net/4thewords/images/6/60/Leafbreastplate_md.png/'
-         /> 
-         <Text fontSize='md' align='center'><b>Leaf<br/>Breastplate</b></Text>
-         <Text fontSize='sm' align='center'>+0 Atk<br/>+2 Def<br/>+0 Luck </Text>
-         </VStack>
-         </Button>
-         </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) &&
+<LeafBreastplateOption />}
          
-         {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && LeafBreastplateIsShown &&
-         <WrapItem>
-         <Button w='110px' h='170px' pb={5} onClick={handleLeafBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-         <VStack justify='center'>  
-         <Image
-         mt='18px'
-         align='center' 
-         boxSize='3.5rem'
-         src='https://static.wikia.nocookie.net/4thewords/images/6/60/Leafbreastplate_md.png/'
-         /> 
-         <Text fontSize='md' align='center'><b>Leaf<br/>Breastplate</b></Text>
-         <Text fontSize='sm' align='center'>+0 Atk<br/>+2 Def<br/>+0 Luck </Text>
-         </VStack>
-         </Button>
-         </WrapItem>}
+         {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) &&
+<LeafBreastplateSelect />}
      </Wrap>}
 
      {SortByLuckIsShown && 
    <Wrap justify='center'>
 
 
-   {(AllIsShown || World2RegionIsShown) && !NivaliBreastplateIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleNivaliBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/3/39/Nivali_Breastplate.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Nivali<br/>Breastplate</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+22 Def<br/>+8 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown) &&
+<NivaliBreastplateOption />}
    
-   {(AllIsShown || World2RegionIsShown) && NivaliBreastplateIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleNivaliBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/3/39/Nivali_Breastplate.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Nivali<br/>Breastplate</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+22 Def<br/>+8 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown) &&
+<NivaliBreastplateSelect />}
       
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !LeatherCuirassIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleLeatherCuirassClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/d/db/LeatherCuriass.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Leather<br/>Cuirass</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+20 Def<br/>+5 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<LeatherCuirassOption />}
    
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && LeatherCuirassIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleLeatherCuirassNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/d/db/LeatherCuriass.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Leather<br/>Cuirass</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+20 Def<br/>+5 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<LeatherCuirassSelect />}
    
    
-   {(AllIsShown || AurilisIsShown) && !AmidalaChestpieceIsShown &&
-      <WrapItem>
-    <Button w='110px' h='170px' pb={5} onClick={handleAmidalaChestpieceClick} style={{ backgroundColor: "#2D3748"}}>
-    <VStack justify='center'>  
-    <Image
-    mt='18px'
-    align='center' 
-    boxSize='3.75rem'
-    src='https://static.wikia.nocookie.net/4thewords/images/3/37/Amidala_Chestpiece.png/'
-    /> 
-    <Text fontSize='md' align='center'><b>Amidala<br/>Chestpiece</b></Text>
-    <Text fontSize='sm' align='center'>+6 Atk<br/>+6 Def<br/>+2 Luck </Text>
-    </VStack>
-    </Button>
-    </WrapItem>}
+   {(AllIsShown || AurilisIsShown) &&
+   <AmidalaChestpieceOption />}
     
-    {(AllIsShown || AurilisIsShown) && AmidalaChestpieceIsShown &&
-    <WrapItem>
-    <Button w='110px' h='170px' pb={5} onClick={handleAmidalaChestpieceNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-    <VStack justify='center'>  
-    <Image
-    mt='18px'
-    align='center' 
-    boxSize='3.75rem'
-    src='https://static.wikia.nocookie.net/4thewords/images/3/37/Amidala_Chestpiece.png/'
-    /> 
-    <Text fontSize='md' align='center'><b>Amidala<br/>Chestpiece</b></Text>
-    <Text fontSize='sm' align='center'>+6 Atk<br/>+6 Def<br/>+2 Luck </Text>
-    </VStack>
-    </Button>
-    </WrapItem>}
+    {(AllIsShown || AurilisIsShown) &&
+   <AmidalaChestpieceSelect />}
 
-    {(AllIsShown || CloudsIsShown) && !CloudChestPlateIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleCloudChestPlateClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/7/75/Cloud-chest-plate.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Cloud<br/>Chest Plate</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+18 Def<br/>+2 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+    {(AllIsShown || CloudsIsShown) &&
+<CloudChestPlateOption />}
       
-      {(AllIsShown || CloudsIsShown) && CloudChestPlateIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleCloudChestPlateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/7/75/Cloud-chest-plate.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Cloud<br/>Chest Plate</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+18 Def<br/>+2 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}    
+      {(AllIsShown || CloudsIsShown) &&
+<CloudChestPlateSelect />}    
 
-    {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && !FabricBreastplateIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleFabricBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/3/31/Fabricbreastplate_md.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Fabric<br/>Breastplate</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+    {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) &&
+<FabricBreastplateOption />}
       
-      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && FabricBreastplateIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleFabricBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/3/31/Fabricbreastplate_md.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Fabric<br/>Breastplate</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+      {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) &&
+<FabricBreastplateSelect />}
 
-      {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !FusionCuirassIsShown &&
-         <WrapItem>
-         <Button w='110px' h='170px' pb={5} onClick={handleFusionCuirassClick} style={{ backgroundColor: "#2D3748"}}>
-         <VStack justify='center'>  
-         <Image
-         mt='12px'
-         align='center' 
-         boxSize='4rem'
-         src='https://static.wikia.nocookie.net/4thewords/images/f/fa/FusionCuirass.png/'
-         /> 
-         <Text fontSize='md' align='center'><b>Fusion Cuirass</b></Text>
-         <Text fontSize='sm' align='center'>+8 Atk<br/>+20 Def<br/>+0 Luck </Text>
-         </VStack>
-         </Button>
-         </WrapItem>}
+      {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<FusionCuirassOption />}
          
-         {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && FusionCuirassIsShown &&
-         <WrapItem>
-         <Button w='110px' h='170px' pb={5} onClick={handleFusionCuirassNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-         <VStack justify='center'>  
-         <Image
-         mt='12px'
-         align='center' 
-         boxSize='4rem'
-         src='https://static.wikia.nocookie.net/4thewords/images/f/fa/FusionCuirass.png/'
-         /> 
-         <Text fontSize='md' align='center'><b>Fusion Cuirass</b></Text>
-         <Text fontSize='sm' align='center'>+8 Atk<br/>+20 Def<br/>+0 Luck </Text>
-         </VStack>
-         </Button>
-         </WrapItem>}      
+         {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<FusionCuirassSelect />}      
 
-         {(AllIsShown || World2RegionIsShown || DCIsShown) && !KingBreastplateIsShown &&
-            <WrapItem>
-            <Button w='110px' h='170px' pb={5} onClick={handleKingBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
-            <VStack justify='center'>  
-            <Image
-            mt='18px'
-            align='center' 
-            boxSize='3.5rem'
-            src='https://static.wikia.nocookie.net/4thewords/images/6/6b/KingsBreastplate.png/'
-            /> 
-            <Text fontSize='md' align='center'><b>King's<br/>Breastplate</b></Text>
-            <Text fontSize='sm' align='center'>+5 Atk<br/>+25 Def<br/>+0 Luck </Text>
-            </VStack>
-            </Button>
-            </WrapItem>}
+         {(AllIsShown || World2RegionIsShown || DCIsShown) &&
+<KingBreastplateOption />}
             
-            {(AllIsShown || World2RegionIsShown || DCIsShown) && KingBreastplateIsShown &&
-            <WrapItem>
-            <Button w='110px' h='170px' pb={5} onClick={handleKingBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-            <VStack justify='center'>  
-            <Image
-            mt='18px'
-            align='center' 
-            boxSize='3.5rem'
-            src='https://static.wikia.nocookie.net/4thewords/images/6/6b/KingsBreastplate.png/'
-            /> 
-            <Text fontSize='md' align='center'><b>King's<br/>Breastplate</b></Text>
-            <Text fontSize='sm' align='center'>+5 Atk<br/>+25 Def<br/>+0 Luck </Text>
-            </VStack>
-            </Button>
-            </WrapItem>}            
+            {(AllIsShown || World2RegionIsShown || DCIsShown) &&
+<KingBreastplateSelect />}            
 
-    {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && !LeafBreastplateIsShown &&
-         <WrapItem>
-         <Button w='110px' h='170px' pb={5} onClick={handleLeafBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
-         <VStack justify='center'>  
-         <Image
-         mt='18px'
-         align='center' 
-         boxSize='3.5rem'
-         src='https://static.wikia.nocookie.net/4thewords/images/6/60/Leafbreastplate_md.png/'
-         /> 
-         <Text fontSize='md' align='center'><b>Leaf<br/>Breastplate</b></Text>
-         <Text fontSize='sm' align='center'>+0 Atk<br/>+2 Def<br/>+0 Luck </Text>
-         </VStack>
-         </Button>
-         </WrapItem>}
+    {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) &&
+<LeafBreastplateOption />}
          
-         {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && LeafBreastplateIsShown &&
-         <WrapItem>
-         <Button w='110px' h='170px' pb={5} onClick={handleLeafBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-         <VStack justify='center'>  
-         <Image
-         mt='18px'
-         align='center' 
-         boxSize='3.5rem'
-         src='https://static.wikia.nocookie.net/4thewords/images/6/60/Leafbreastplate_md.png/'
-         /> 
-         <Text fontSize='md' align='center'><b>Leaf<br/>Breastplate</b></Text>
-         <Text fontSize='sm' align='center'>+0 Atk<br/>+2 Def<br/>+0 Luck </Text>
-         </VStack>
-         </Button>
-         </WrapItem>}
+         {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) &&
+<LeafBreastplateSelect />}
 
-         {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && !ReinforcedSteelBreastplateIsShown &&
-            <WrapItem>
-            <Button w='110px' h='170px' pb={5} onClick={handleReinforcedSteelBreastplateClick} style={{ backgroundColor: "#2D3748"}}>
-            <VStack justify='center'>  
-            <Image
-            mt='18px'
-            align='center' 
-            boxSize='3.5rem'
-            src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Reinforced-steel-breastplate.png/'
-            /> 
-            <Text fontSize='sm' align='center'><b>Reinforced Steel<br/>Breastplate</b></Text>
-            <Text fontSize='sm' align='center'>+0 Atk<br/>+15 Def<br/>+0 Luck </Text>
-            </VStack>
-            </Button>
-            </WrapItem>}
+         {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) &&
+<ReinforcedSteelBreastplateOption />}
             
-            {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && ReinforcedSteelBreastplateIsShown &&
-            <WrapItem>
-            <Button w='110px' h='170px' pb={5} onClick={handleReinforcedSteelBreastplateNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-            <VStack justify='center'>  
-            <Image
-            mt='18px'
-            align='center' 
-            boxSize='3.5rem'
-            src='https://static.wikia.nocookie.net/4thewords/images/7/7e/Reinforced-steel-breastplate.png/'
-            /> 
-            <Text fontSize='sm' align='center'><b>Reinforced Steel<br/>Breastplate</b></Text>
-            <Text fontSize='sm' align='center'>+0 Atk<br/>+15 Def<br/>+0 Luck </Text>
-            </VStack>
-            </Button>
-            </WrapItem>}
+            {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) &&
+<ReinforcedSteelBreastplateSelect />}
            
      </Wrap>}
 
@@ -31159,400 +31920,88 @@ src='https://static.wikia.nocookie.net/4thewords/images/e/e5/DragonsHornedHelmet
 
     {SortByLocationIsShown &&
          <Wrap justify='center'>
-         {(AllIsShown || PastEventsIsShown) && !DragonScaleArmorIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleDragonScaleArmorClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/c/c5/DragonScaleArmor.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Dragon Scale<br/>Armor</b></Text>
-   <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+2 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+         {(AllIsShown || PastEventsIsShown) &&
+<DragonScaleArmorOption />}
    
-   {(AllIsShown || PastEventsIsShown) && DragonScaleArmorIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleDragonScaleArmorNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/c/c5/DragonScaleArmor.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Dragon Scale<br/>Armor</b></Text>
-   <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+2 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || PastEventsIsShown) &&
+<DragonScaleArmorSelect />}
    
-         {(AllIsShown || PastEventsIsShown) && !RobotTorsoIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleRobotTorsoClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center' 
-   boxSize='4rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/1/1b/Robot-torso.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Robot Torso</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+16 Def<br/>+2 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+         {(AllIsShown || PastEventsIsShown) &&
+<RobotTorsoOption />}
    
-   {(AllIsShown || PastEventsIsShown) && RobotTorsoIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleRobotTorsoNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center' 
-   boxSize='4rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/1/1b/Robot-torso.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Robot Torso</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+16 Def<br/>+2 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || PastEventsIsShown) &&
+<RobotTorsoSelect />}
 
-   {(AllIsShown || PastEventsIsShown) && !MarionetteBodyArmorIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleMarionetteBodyArmorClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Maronettearmor.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Marionette<br/>Body Armor</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+18 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+   {(AllIsShown || PastEventsIsShown) &&
+<MarionetteBodyArmorOption />}
       
-      {(AllIsShown || PastEventsIsShown) && MarionetteBodyArmorIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleMarionetteBodyArmorNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Maronettearmor.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Marionette<br/>Body Armor</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+18 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+      {(AllIsShown || PastEventsIsShown) &&
+<MarionetteBodyArmorSelect />}
          </Wrap>}
 
 {SortByDefIsShown &&
          <Wrap justify='center'>
-   {(AllIsShown || PastEventsIsShown) && !MarionetteBodyArmorIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleMarionetteBodyArmorClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Maronettearmor.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Marionette<br/>Body Armor</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+18 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+   {(AllIsShown || PastEventsIsShown) &&
+<MarionetteBodyArmorOption />}
       
-      {(AllIsShown || PastEventsIsShown) && MarionetteBodyArmorIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleMarionetteBodyArmorNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Maronettearmor.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Marionette<br/>Body Armor</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+18 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+      {(AllIsShown || PastEventsIsShown) &&
+<MarionetteBodyArmorSelect />}
 
-   {(AllIsShown || PastEventsIsShown) && !RobotTorsoIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleRobotTorsoClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center' 
-   boxSize='4rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/1/1b/Robot-torso.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Robot Torso</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+16 Def<br/>+2 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || PastEventsIsShown) &&
+<RobotTorsoOption />}
    
-   {(AllIsShown || PastEventsIsShown) && RobotTorsoIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleRobotTorsoNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center' 
-   boxSize='4rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/1/1b/Robot-torso.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Robot Torso</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+16 Def<br/>+2 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || PastEventsIsShown) &&
+<RobotTorsoSelect />}
 
-         {(AllIsShown || PastEventsIsShown) && !DragonScaleArmorIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleDragonScaleArmorClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/c/c5/DragonScaleArmor.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Dragon Scale<br/>Armor</b></Text>
-   <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+2 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+         {(AllIsShown || PastEventsIsShown) &&
+<DragonScaleArmorOption />}
    
-   {(AllIsShown || PastEventsIsShown) && DragonScaleArmorIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleDragonScaleArmorNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/c/c5/DragonScaleArmor.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Dragon Scale<br/>Armor</b></Text>
-   <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+2 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || PastEventsIsShown) &&
+<DragonScaleArmorSelect />}
          </Wrap>
 }
 {SortByLuckIsShown &&
          <Wrap justify='center'>
 
-         {(AllIsShown || PastEventsIsShown) && !DragonScaleArmorIsShown &&
-            <WrapItem>
-            <Button w='110px' h='170px' pb={5} onClick={handleDragonScaleArmorClick} style={{ backgroundColor: "#2D3748"}}>
-            <VStack justify='center'>  
-            <Image
-            mt='18px'
-            align='center' 
-            boxSize='3.5rem'
-            src='https://static.wikia.nocookie.net/4thewords/images/c/c5/DragonScaleArmor.png/'
-            /> 
-            <Text fontSize='md' align='center'><b>Dragon Scale<br/>Armor</b></Text>
-            <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+2 Luck </Text>
-            </VStack>
-            </Button>
-            </WrapItem>}
+         {(AllIsShown || PastEventsIsShown) &&
+<DragonScaleArmorOption />}
             
-            {(AllIsShown || PastEventsIsShown) && DragonScaleArmorIsShown &&
-            <WrapItem>
-            <Button w='110px' h='170px' pb={5} onClick={handleDragonScaleArmorNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-            <VStack justify='center'>  
-            <Image
-            mt='18px'
-            align='center' 
-            boxSize='3.5rem'
-            src='https://static.wikia.nocookie.net/4thewords/images/c/c5/DragonScaleArmor.png/'
-            /> 
-            <Text fontSize='md' align='center'><b>Dragon Scale<br/>Armor</b></Text>
-            <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+2 Luck </Text>
-            </VStack>
-            </Button>
-            </WrapItem>}
+            {(AllIsShown || PastEventsIsShown) &&
+<DragonScaleArmorSelect />}
    
-            {(AllIsShown || PastEventsIsShown) && !RobotTorsoIsShown &&
-               <WrapItem>
-               <Button w='110px' h='170px' pb={5} onClick={handleRobotTorsoClick} style={{ backgroundColor: "#2D3748"}}>
-               <VStack justify='center'>  
-               <Image
-               mt='12px'
-               align='center' 
-               boxSize='4rem'
-               src='https://static.wikia.nocookie.net/4thewords/images/1/1b/Robot-torso.png/'
-               /> 
-               <Text fontSize='md' align='center'><b>Robot Torso</b></Text>
-               <Text fontSize='sm' align='center'>+0 Atk<br/>+16 Def<br/>+2 Luck </Text>
-               </VStack>
-               </Button>
-               </WrapItem>}
+            {(AllIsShown || PastEventsIsShown) &&
+<RobotTorsoOption />}
                
-               {(AllIsShown || PastEventsIsShown) && RobotTorsoIsShown &&
-               <WrapItem>
-               <Button w='110px' h='170px' pb={5} onClick={handleRobotTorsoNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-               <VStack justify='center'>  
-               <Image
-               mt='12px'
-               align='center' 
-               boxSize='4rem'
-               src='https://static.wikia.nocookie.net/4thewords/images/1/1b/Robot-torso.png/'
-               /> 
-               <Text fontSize='md' align='center'><b>Robot Torso</b></Text>
-               <Text fontSize='sm' align='center'>+0 Atk<br/>+16 Def<br/>+2 Luck </Text>
-               </VStack>
-               </Button>
-               </WrapItem>}
+               {(AllIsShown || PastEventsIsShown) &&
+<RobotTorsoSelect />}
          
-   {(AllIsShown || PastEventsIsShown) && !MarionetteBodyArmorIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleMarionetteBodyArmorClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Maronettearmor.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Marionette<br/>Body Armor</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+18 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+   {(AllIsShown || PastEventsIsShown) &&
+<MarionetteBodyArmorOption />}
       
-      {(AllIsShown || PastEventsIsShown) && MarionetteBodyArmorIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleMarionetteBodyArmorNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Maronettearmor.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Marionette<br/>Body Armor</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+18 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+      {(AllIsShown || PastEventsIsShown) &&
+<MarionetteBodyArmorSelect />}
          </Wrap>}
 
          {(SortByAtkIsShown || SortByNameIsShown) &&
          <Wrap justify='center'>
 
-         {(AllIsShown || PastEventsIsShown) && !DragonScaleArmorIsShown &&
-            <WrapItem>
-            <Button w='110px' h='170px' pb={5} onClick={handleDragonScaleArmorClick} style={{ backgroundColor: "#2D3748"}}>
-            <VStack justify='center'>  
-            <Image
-            mt='18px'
-            align='center' 
-            boxSize='3.5rem'
-            src='https://static.wikia.nocookie.net/4thewords/images/c/c5/DragonScaleArmor.png/'
-            /> 
-            <Text fontSize='md' align='center'><b>Dragon Scale<br/>Armor</b></Text>
-            <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+2 Luck </Text>
-            </VStack>
-            </Button>
-            </WrapItem>}
+         {(AllIsShown || PastEventsIsShown) &&
+<DragonScaleArmorOption />}
             
-            {(AllIsShown || PastEventsIsShown) && DragonScaleArmorIsShown &&
-            <WrapItem>
-            <Button w='110px' h='170px' pb={5} onClick={handleDragonScaleArmorNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-            <VStack justify='center'>  
-            <Image
-            mt='18px'
-            align='center' 
-            boxSize='3.5rem'
-            src='https://static.wikia.nocookie.net/4thewords/images/c/c5/DragonScaleArmor.png/'
-            /> 
-            <Text fontSize='md' align='center'><b>Dragon Scale<br/>Armor</b></Text>
-            <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+2 Luck </Text>
-            </VStack>
-            </Button>
-            </WrapItem>}
+            {(AllIsShown || PastEventsIsShown) &&
+<DragonScaleArmorSelect />}
    
-   {(AllIsShown || PastEventsIsShown) && !MarionetteBodyArmorIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleMarionetteBodyArmorClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Maronettearmor.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Marionette<br/>Body Armor</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+18 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+   {(AllIsShown || PastEventsIsShown) &&
+<MarionetteBodyArmorOption />}
       
-      {(AllIsShown || PastEventsIsShown) && MarionetteBodyArmorIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleMarionetteBodyArmorNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/b/b0/Maronettearmor.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Marionette<br/>Body Armor</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+18 Def<br/>+0 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+      {(AllIsShown || PastEventsIsShown) &&
+<MarionetteBodyArmorSelect />}
 
-            {(AllIsShown || PastEventsIsShown) && !RobotTorsoIsShown &&
-               <WrapItem>
-               <Button w='110px' h='170px' pb={5} onClick={handleRobotTorsoClick} style={{ backgroundColor: "#2D3748"}}>
-               <VStack justify='center'>  
-               <Image
-               mt='12px'
-               align='center' 
-               boxSize='4rem'
-               src='https://static.wikia.nocookie.net/4thewords/images/1/1b/Robot-torso.png/'
-               /> 
-               <Text fontSize='md' align='center'><b>Robot Torso</b></Text>
-               <Text fontSize='sm' align='center'>+0 Atk<br/>+16 Def<br/>+2 Luck </Text>
-               </VStack>
-               </Button>
-               </WrapItem>}
+            {(AllIsShown || PastEventsIsShown) &&
+<RobotTorsoOption />}
                
-               {(AllIsShown || PastEventsIsShown) && RobotTorsoIsShown &&
-               <WrapItem>
-               <Button w='110px' h='170px' pb={5} onClick={handleRobotTorsoNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-               <VStack justify='center'>  
-               <Image
-               mt='12px'
-               align='center' 
-               boxSize='4rem'
-               src='https://static.wikia.nocookie.net/4thewords/images/1/1b/Robot-torso.png/'
-               /> 
-               <Text fontSize='md' align='center'><b>Robot Torso</b></Text>
-               <Text fontSize='sm' align='center'>+0 Atk<br/>+16 Def<br/>+2 Luck </Text>
-               </VStack>
-               </Button>
-               </WrapItem>}
+               {(AllIsShown || PastEventsIsShown) &&
+<RobotTorsoSelect />}
       
          </Wrap>
 }         
@@ -31562,1469 +32011,315 @@ src='https://static.wikia.nocookie.net/4thewords/images/e/e5/DragonsHornedHelmet
     <Text fontSize='md' mb='15px'><b>Main Quest Battle Items:</b></Text>}
 {SortByNameIsShown &&
 <Wrap justify='center'>
-{(AllIsShown || World2RegionIsShown || DCIsShown) && !AgelessBootsIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleAgelessBootsClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.75rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/5/5f/AgelessBoots.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Ageless<br/>Boots</b></Text>
-   <Text fontSize='sm' align='center'>+2 Atk<br/>+14 Def<br/>+2 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown) &&
+<AgelessBootsOption />
+}
    
-   {(AllIsShown || World2RegionIsShown || DCIsShown) && AgelessBootsIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleAgelessBootsNoClick} style={{ backgroundColor: "#211742"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.75rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/5/5f/AgelessBoots.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Ageless<br/>Boots</b></Text>
-   <Text fontSize='sm' align='center'>+2 Atk<br/>+14 Def<br/>+2 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || DCIsShown) &&
+<AgelessBootsSelect />
+}
 
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !ClimbingBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleClimbingBootsClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/7/7d/ClimbingBoots.png/'
-/> 
-<Text fontSize='md' align='center'><b>Climbing<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+12 Atk<br/>+0 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+<ClimbingBootsOption />
+}
 
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && ClimbingBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleClimbingBootsNoClick} style={{ backgroundColor: "#211742"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/7/7d/ClimbingBoots.png/'
-/> 
-<Text fontSize='md' align='center'><b>Climbing<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+12 Atk<br/>+0 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+<ClimbingBootsSelect />
+}
 
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) && !DarkForestBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleDarkForestBootsClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/6/64/Dark-forest-boots_battle.png/'
-/> 
-<Text fontSize='md' align='center'><b>Dark Forest<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+8 Def<br/>+5 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) &&
+   <DarkForestBootsOption />
+}
 
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) && DarkForestBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleDarkForestBootsNoClick} style={{ backgroundColor: "#211742"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/6/64/Dark-forest-boots_battle.png/'
-/> 
-<Text fontSize='md' align='center'><b>Dark Forest<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+8 Def<br/>+5 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) &&
+   <DarkForestBootsSelect />
+}
 
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && !FabricBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleFabricBootsClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/7/7c/Fabricboots_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Fabric Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+6 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) &&
+<FabricBootsOption />}
 
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && FabricBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleFabricBootsNoClick} style={{ backgroundColor: "#211742"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/7/7c/Fabricboots_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Fabric Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+6 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) &&
+<FabricBootsSelect />}
 
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) && !LeafBootsIsShown &&
- <WrapItem>
- <Button w='110px' h='170px' pb={5} onClick={handleLeafBootsClick} style={{ backgroundColor: "#2D3748"}}>
- <VStack justify='center'>  
- <Image
- mt='12px'
- align='center' 
- boxSize='4rem'
- src='https://static.wikia.nocookie.net/4thewords/images/3/30/Leafboots_md.png/'
- /> 
- <Text fontSize='md' align='center'><b>Leaf Boots</b></Text>
- <Text fontSize='sm' align='center'>+0 Atk<br/>+1 Def<br/>+1 Luck </Text>
- </VStack>
- </Button>
- </WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) &&
+<LeafBootsOption />}
  
- {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) && LeafBootsIsShown &&
- <WrapItem>
- <Button w='110px' h='170px' pb={5} onClick={handleLeafBootsNoClick} style={{ backgroundColor: "#211742"}}>
- <VStack justify='center'>  
- <Image
- mt='12px'
- align='center' 
- boxSize='4rem'
- src='https://static.wikia.nocookie.net/4thewords/images/3/30/Leafboots_md.png/'
-    /> 
- <Text fontSize='md' align='center'><b>Leaf Boots</b></Text>
- <Text fontSize='sm' align='center'>+0 Atk<br/>+1 Def<br/>+1 Luck </Text>
- </VStack>
- </Button>
- </WrapItem>}
+ {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) &&
+<LeafBootsSelect />}
+
 {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && !LeafsungBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleLeafsungBootsClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/b/b5/Leafsungboots_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Leafsung<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+   <LeafsungBootsOption />
+}
 
 {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && LeafsungBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleLeafsungBootsNoClick} style={{ backgroundColor: "#211742"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/b/b5/Leafsungboots_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Leafsung<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+   <LeafsungBootsSelect />}
 
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !LeatherTurnshoeIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleLeatherTurnshoeClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/f/f6/LeatherTurnshoe.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Leather<br/>Turnshoe</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+5 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<LeatherTurnshoeOption />}
    
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && LeatherTurnshoeIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleLeatherTurnshoeNoClick} style={{ backgroundColor: "#211742"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/f/f6/LeatherTurnshoe.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Leather<br/>Turnshoe</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+5 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<LeatherTurnshoeSelect />}
 
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && !SteelBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleSteelBootsClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/d/d8/Steelboots_md.png/'
-/> 
-<Text fontSize='sm' align='center'><b>Steel Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+9 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) &&
+<SteelBootsOption />}
 
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && SteelBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleSteelBootsNoClick} style={{ backgroundColor: "#211742"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/d/d8/Steelboots_md.png/'
-/> 
-<Text fontSize='sm' align='center'><b>Steel Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+9 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) &&
+<SteelBootsSelect />}
 
-{(AllIsShown || GardenIsShown) && !WoodenGardenBootsIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleWoodenGardenBootsClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/1/14/WoodenGardenBoots.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Wooden<br/>Garden Boots</b></Text>
-   <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+{(AllIsShown || GardenIsShown) &&
+<WoodenGardenBootsOption />}
    
-   {(AllIsShown || GardenIsShown) && WoodenGardenBootsIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleWoodenGardenBootsNoClick} style={{ backgroundColor: "#211742"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/1/14/WoodenGardenBoots.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Wooden<br/>Garden Boots</b></Text>
-   <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || GardenIsShown) &&
+<WoodenGardenBootsSelect />}
 </Wrap>}
 
 {SortByAtkIsShown &&
 <Wrap justify='center'>
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !ClimbingBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleClimbingBootsClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/7/7d/ClimbingBoots.png/'
-/> 
-<Text fontSize='md' align='center'><b>Climbing<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+12 Atk<br/>+0 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+<ClimbingBootsOption />}
 
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && ClimbingBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleClimbingBootsNoClick} style={{ backgroundColor: "#211742"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/7/7d/ClimbingBoots.png/'
-/> 
-<Text fontSize='md' align='center'><b>Climbing<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+12 Atk<br/>+0 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+<ClimbingBootsSelect />}
 
-{(AllIsShown || World2RegionIsShown || DCIsShown) && !AgelessBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleAgelessBootsClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.75rem'
-src='https://static.wikia.nocookie.net/4thewords/images/5/5f/AgelessBoots.png/'
-/> 
-<Text fontSize='md' align='center'><b>Ageless<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+2 Atk<br/>+14 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown) &&
+<AgelessBootsOption />}
 
-{(AllIsShown || World2RegionIsShown || DCIsShown) && AgelessBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleAgelessBootsNoClick} style={{ backgroundColor: "#211742"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.75rem'
-src='https://static.wikia.nocookie.net/4thewords/images/5/5f/AgelessBoots.png/'
-/> 
-<Text fontSize='md' align='center'><b>Ageless<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+2 Atk<br/>+14 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown) &&
+<AgelessBootsSelect />}
 
 
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !LeatherTurnshoeIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleLeatherTurnshoeClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/f/f6/LeatherTurnshoe.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Leather<br/>Turnshoe</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+5 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<LeatherTurnshoeOption />}
    
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && LeatherTurnshoeIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleLeatherTurnshoeNoClick} style={{ backgroundColor: "#211742"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/f/f6/LeatherTurnshoe.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Leather<br/>Turnshoe</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+5 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<LeatherTurnshoeSelect />}
 
-{(AllIsShown || GardenIsShown) && !WoodenGardenBootsIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleWoodenGardenBootsClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/1/14/WoodenGardenBoots.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Wooden<br/>Garden Boots</b></Text>
-   <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+{(AllIsShown || GardenIsShown) &&
+<WoodenGardenBootsOption />}
    
-   {(AllIsShown || GardenIsShown) && WoodenGardenBootsIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleWoodenGardenBootsNoClick} style={{ backgroundColor: "#211742"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/1/14/WoodenGardenBoots.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Wooden<br/>Garden Boots</b></Text>
-   <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || GardenIsShown) &&
+<WoodenGardenBootsSelect />}
    
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) && !DarkForestBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleDarkForestBootsClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/6/64/Dark-forest-boots_battle.png/'
-/> 
-<Text fontSize='md' align='center'><b>Dark Forest<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+8 Def<br/>+5 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) &&
+   <DarkForestBootsOption />
+  }
 
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) && DarkForestBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleDarkForestBootsNoClick} style={{ backgroundColor: "#211742"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/6/64/Dark-forest-boots_battle.png/'
-/> 
-<Text fontSize='md' align='center'><b>Dark Forest<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+8 Def<br/>+5 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) &&
+  <DarkForestBootsSelect />
+  }
 
 
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && !SteelBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleSteelBootsClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/d/d8/Steelboots_md.png/'
-/> 
-<Text fontSize='sm' align='center'><b>Steel Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+9 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) &&
+<SteelBootsOption />}
 
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && SteelBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleSteelBootsNoClick} style={{ backgroundColor: "#211742"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/d/d8/Steelboots_md.png/'
-/> 
-<Text fontSize='sm' align='center'><b>Steel Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+9 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) &&
+<SteelBootsSelect />}
 
 
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && !FabricBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleFabricBootsClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/7/7c/Fabricboots_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Fabric Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+6 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) &&
+<FabricBootsOption />}
 
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && FabricBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleFabricBootsNoClick} style={{ backgroundColor: "#211742"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/7/7c/Fabricboots_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Fabric Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+6 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) &&
+<FabricBootsSelect />}
 
 
 {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && !LeafsungBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleLeafsungBootsClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/b/b5/Leafsungboots_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Leafsung<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+   <LeafsungBootsOption />
+}
 
 {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && LeafsungBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleLeafsungBootsNoClick} style={{ backgroundColor: "#211742"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/b/b5/Leafsungboots_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Leafsung<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+   <LeafsungBootsSelect />}
 
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) && !LeafBootsIsShown &&
- <WrapItem>
- <Button w='110px' h='170px' pb={5} onClick={handleLeafBootsClick} style={{ backgroundColor: "#2D3748"}}>
- <VStack justify='center'>  
- <Image
- mt='12px'
- align='center' 
- boxSize='4rem'
- src='https://static.wikia.nocookie.net/4thewords/images/3/30/Leafboots_md.png/'
- /> 
- <Text fontSize='md' align='center'><b>Leaf Boots</b></Text>
- <Text fontSize='sm' align='center'>+0 Atk<br/>+1 Def<br/>+1 Luck </Text>
- </VStack>
- </Button>
- </WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) &&
+<LeafBootsOption />}
  
- {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) && LeafBootsIsShown &&
- <WrapItem>
- <Button w='110px' h='170px' pb={5} onClick={handleLeafBootsNoClick} style={{ backgroundColor: "#211742"}}>
- <VStack justify='center'>  
- <Image
- mt='12px'
- align='center' 
- boxSize='4rem'
- src='https://static.wikia.nocookie.net/4thewords/images/3/30/Leafboots_md.png/'
-    /> 
- <Text fontSize='md' align='center'><b>Leaf Boots</b></Text>
- <Text fontSize='sm' align='center'>+0 Atk<br/>+1 Def<br/>+1 Luck </Text>
- </VStack>
- </Button>
- </WrapItem>}
+ {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) &&
+<LeafBootsSelect />}
 
 </Wrap>}
 
 {SortByDefIsShown &&
 <Wrap justify='center'>
-{(AllIsShown || World2RegionIsShown || DCIsShown) && !AgelessBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleAgelessBootsClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.75rem'
-src='https://static.wikia.nocookie.net/4thewords/images/5/5f/AgelessBoots.png/'
-/> 
-<Text fontSize='md' align='center'><b>Ageless<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+2 Atk<br/>+14 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown) &&
+<AgelessBootsOption />}
 
-{(AllIsShown || World2RegionIsShown || DCIsShown) && AgelessBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleAgelessBootsNoClick} style={{ backgroundColor: "#211742"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.75rem'
-src='https://static.wikia.nocookie.net/4thewords/images/5/5f/AgelessBoots.png/'
-/> 
-<Text fontSize='md' align='center'><b>Ageless<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+2 Atk<br/>+14 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown) &&
+<AgelessBootsSelect />}
 
 
-{(AllIsShown || GardenIsShown) && !WoodenGardenBootsIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleWoodenGardenBootsClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/1/14/WoodenGardenBoots.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Wooden<br/>Garden Boots</b></Text>
-   <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+{(AllIsShown || GardenIsShown) &&
+<WoodenGardenBootsOption />}
    
-   {(AllIsShown || GardenIsShown) && WoodenGardenBootsIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleWoodenGardenBootsNoClick} style={{ backgroundColor: "#211742"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/1/14/WoodenGardenBoots.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Wooden<br/>Garden Boots</b></Text>
-   <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+0 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || GardenIsShown) &&
+<WoodenGardenBootsSelect />}
    
 
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !LeatherTurnshoeIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleLeatherTurnshoeClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/f/f6/LeatherTurnshoe.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Leather<br/>Turnshoe</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+5 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<LeatherTurnshoeOption />}
    
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && LeatherTurnshoeIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleLeatherTurnshoeNoClick} style={{ backgroundColor: "#211742"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='18px'
-   align='center' 
-   boxSize='3.5rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/f/f6/LeatherTurnshoe.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Leather<br/>Turnshoe</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+5 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<LeatherTurnshoeSelect />}
 
 
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && !SteelBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleSteelBootsClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/d/d8/Steelboots_md.png/'
-/> 
-<Text fontSize='sm' align='center'><b>Steel Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+9 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) &&
+<SteelBootsOption />}
 
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && SteelBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleSteelBootsNoClick} style={{ backgroundColor: "#211742"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/d/d8/Steelboots_md.png/'
-/> 
-<Text fontSize='sm' align='center'><b>Steel Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+9 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) &&
+<SteelBootsSelect />}
 
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) && !DarkForestBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleDarkForestBootsClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/6/64/Dark-forest-boots_battle.png/'
-/> 
-<Text fontSize='md' align='center'><b>Dark Forest<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+8 Def<br/>+5 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) &&
+<DarkForestBootsOption />
+}
 
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) && DarkForestBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleDarkForestBootsNoClick} style={{ backgroundColor: "#211742"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/6/64/Dark-forest-boots_battle.png/'
-/> 
-<Text fontSize='md' align='center'><b>Dark Forest<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+8 Def<br/>+5 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) &&
+  <DarkForestBootsSelect />
+  }
 
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && !FabricBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleFabricBootsClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/7/7c/Fabricboots_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Fabric Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+6 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) &&
+<FabricBootsOption />}
 
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && FabricBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleFabricBootsNoClick} style={{ backgroundColor: "#211742"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/7/7c/Fabricboots_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Fabric Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+6 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) &&
+<FabricBootsSelect />}
 
 
 {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && !LeafsungBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleLeafsungBootsClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/b/b5/Leafsungboots_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Leafsung<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+   <LeafsungBootsOption />
+}
 
 {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && LeafsungBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleLeafsungBootsNoClick} style={{ backgroundColor: "#211742"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/b/b5/Leafsungboots_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Leafsung<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+   <LeafsungBootsSelect />}
 
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) && !LeafBootsIsShown &&
- <WrapItem>
- <Button w='110px' h='170px' pb={5} onClick={handleLeafBootsClick} style={{ backgroundColor: "#2D3748"}}>
- <VStack justify='center'>  
- <Image
- mt='12px'
- align='center' 
- boxSize='4rem'
- src='https://static.wikia.nocookie.net/4thewords/images/3/30/Leafboots_md.png/'
- /> 
- <Text fontSize='md' align='center'><b>Leaf Boots</b></Text>
- <Text fontSize='sm' align='center'>+0 Atk<br/>+1 Def<br/>+1 Luck </Text>
- </VStack>
- </Button>
- </WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) &&
+<LeafBootsOption />}
  
- {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) && LeafBootsIsShown &&
- <WrapItem>
- <Button w='110px' h='170px' pb={5} onClick={handleLeafBootsNoClick} style={{ backgroundColor: "#211742"}}>
- <VStack justify='center'>  
- <Image
- mt='12px'
- align='center' 
- boxSize='4rem'
- src='https://static.wikia.nocookie.net/4thewords/images/3/30/Leafboots_md.png/'
-    /> 
- <Text fontSize='md' align='center'><b>Leaf Boots</b></Text>
- <Text fontSize='sm' align='center'>+0 Atk<br/>+1 Def<br/>+1 Luck </Text>
- </VStack>
- </Button>
- </WrapItem>}
+ {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) &&
+<LeafBootsSelect />}
 
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !ClimbingBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleClimbingBootsClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/7/7d/ClimbingBoots.png/'
-/> 
-<Text fontSize='md' align='center'><b>Climbing<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+12 Atk<br/>+0 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+<ClimbingBootsOption />}
 
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && ClimbingBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleClimbingBootsNoClick} style={{ backgroundColor: "#211742"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/7/7d/ClimbingBoots.png/'
-/> 
-<Text fontSize='md' align='center'><b>Climbing<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+12 Atk<br/>+0 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+<ClimbingBootsSelect />}
 </Wrap>}
 
   {SortByLuckIsShown && 
   <Wrap justify='center'>
-  {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !LeatherTurnshoeIsShown &&
-    <WrapItem>
-    <Button w='110px' h='170px' pb={5} onClick={handleLeatherTurnshoeClick} style={{ backgroundColor: "#2D3748"}}>
-    <VStack justify='center'>  
-    <Image
-    mt='18px'
-    align='center' 
-    boxSize='3.5rem'
-    src='https://static.wikia.nocookie.net/4thewords/images/f/f6/LeatherTurnshoe.png/'
-    /> 
-    <Text fontSize='md' align='center'><b>Leather<br/>Turnshoe</b></Text>
-    <Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+5 Luck </Text>
-    </VStack>
-    </Button>
-    </WrapItem>}
+  {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<LeatherTurnshoeOption />}
     
-    {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && LeatherTurnshoeIsShown &&
-    <WrapItem>
-    <Button w='110px' h='170px' pb={5} onClick={handleLeatherTurnshoeNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-    <VStack justify='center'>  
-    <Image
-    mt='18px'
-    align='center' 
-    boxSize='3.5rem'
-    src='https://static.wikia.nocookie.net/4thewords/images/f/f6/LeatherTurnshoe.png/'
-    /> 
-    <Text fontSize='md' align='center'><b>Leather<br/>Turnshoe</b></Text>
-    <Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+5 Luck </Text>
-    </VStack>
-    </Button>
-    </WrapItem>}
+    {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<LeatherTurnshoeSelect />}
  
- {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) && !DarkForestBootsIsShown &&
- <WrapItem>
- <Button w='110px' h='170px' pb={5} onClick={handleDarkForestBootsClick} style={{ backgroundColor: "#2D3748"}}>
- <VStack justify='center'>  
- <Image
- mt='18px'
- align='center' 
- boxSize='3.5rem'
- src='https://static.wikia.nocookie.net/4thewords/images/6/64/Dark-forest-boots_battle.png/'
- /> 
- <Text fontSize='md' align='center'><b>Dark Forest<br/>Boots</b></Text>
- <Text fontSize='sm' align='center'>+0 Atk<br/>+8 Def<br/>+5 Luck </Text>
- </VStack>
- </Button>
- </WrapItem>}
+ {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) &&
+ <DarkForestBootsOption />}
  
- {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) && DarkForestBootsIsShown &&
- <WrapItem>
- <Button w='110px' h='170px' pb={5} onClick={handleDarkForestBootsNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
- <VStack justify='center'>  
- <Image
- mt='18px'
- align='center' 
- boxSize='3.5rem'
- src='https://static.wikia.nocookie.net/4thewords/images/6/64/Dark-forest-boots_battle.png/'
- /> 
- <Text fontSize='md' align='center'><b>Dark Forest<br/>Boots</b></Text>
- <Text fontSize='sm' align='center'>+0 Atk<br/>+8 Def<br/>+5 Luck </Text>
- </VStack>
- </Button>
- </WrapItem>}
+ {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) &&
+ <DarkForestBootsSelect />}
  
- {(AllIsShown || World2RegionIsShown || DCIsShown) && !AgelessBootsIsShown &&
- <WrapItem>
- <Button w='110px' h='170px' pb={5} onClick={handleAgelessBootsClick} style={{ backgroundColor: "#2D3748"}}>
- <VStack justify='center'>  
- <Image
- mt='18px'
- align='center' 
- boxSize='3.75rem'
- src='https://static.wikia.nocookie.net/4thewords/images/5/5f/AgelessBoots.png/'
- /> 
- <Text fontSize='md' align='center'><b>Ageless<br/>Boots</b></Text>
- <Text fontSize='sm' align='center'>+2 Atk<br/>+14 Def<br/>+2 Luck </Text>
- </VStack>
- </Button>
- </WrapItem>}
+ {(AllIsShown || World2RegionIsShown || DCIsShown) &&
+<AgelessBootsOption />}
  
- {(AllIsShown || World2RegionIsShown || DCIsShown) && AgelessBootsIsShown &&
- <WrapItem>
- <Button w='110px' h='170px' pb={5} onClick={handleAgelessBootsNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
- <VStack justify='center'>  
- <Image
- mt='18px'
- align='center' 
- boxSize='3.75rem'
- src='https://static.wikia.nocookie.net/4thewords/images/5/5f/AgelessBoots.png/'
- /> 
- <Text fontSize='md' align='center'><b>Ageless<br/>Boots</b></Text>
- <Text fontSize='sm' align='center'>+2 Atk<br/>+14 Def<br/>+2 Luck </Text>
- </VStack>
- </Button>
- </WrapItem>}
+ {(AllIsShown || World2RegionIsShown || DCIsShown) &&
+<AgelessBootsSelect />}
  
  {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && !LeafsungBootsIsShown &&
- <WrapItem>
- <Button w='110px' h='170px' pb={5} onClick={handleLeafsungBootsClick} style={{ backgroundColor: "#2D3748"}}>
- <VStack justify='center'>  
- <Image
- mt='18px'
- align='center' 
- boxSize='3.5rem'
- src='https://static.wikia.nocookie.net/4thewords/images/b/b5/Leafsungboots_md.png/'
- /> 
- <Text fontSize='md' align='center'><b>Leafsung<br/>Boots</b></Text>
- <Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+2 Luck </Text>
- </VStack>
- </Button>
- </WrapItem>}
+   <LeafsungBootsOption />}
  
  {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && LeafsungBootsIsShown &&
- <WrapItem>
- <Button w='110px' h='170px' pb={5} onClick={handleLeafsungBootsNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
- <VStack justify='center'>  
- <Image
- mt='18px'
- align='center' 
- boxSize='3.5rem'
- src='https://static.wikia.nocookie.net/4thewords/images/b/b5/Leafsungboots_md.png/'
- /> 
- <Text fontSize='md' align='center'><b>Leafsung<br/>Boots</b></Text>
- <Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+2 Luck </Text>
- </VStack>
- </Button>
- </WrapItem>}
+   <LeafsungBootsSelect />}
  
- {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) && !LeafBootsIsShown &&
-  <WrapItem>
-  <Button w='110px' h='170px' pb={5} onClick={handleLeafBootsClick} style={{ backgroundColor: "#2D3748"}}>
-  <VStack justify='center'>  
-  <Image
-  mt='12px'
-  align='center' 
-  boxSize='4rem'
-  src='https://static.wikia.nocookie.net/4thewords/images/3/30/Leafboots_md.png/'
-  /> 
-  <Text fontSize='md' align='center'><b>Leaf Boots</b></Text>
-  <Text fontSize='sm' align='center'>+0 Atk<br/>+1 Def<br/>+1 Luck </Text>
-  </VStack>
-  </Button>
-  </WrapItem>}
+ {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) &&
+<LeafBootsOption />}
   
-  {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) && LeafBootsIsShown &&
-  <WrapItem>
-  <Button w='110px' h='170px' pb={5} onClick={handleLeafBootsNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-  <VStack justify='center'>  
-  <Image
-  mt='12px'
-  align='center' 
-  boxSize='4rem'
-  src='https://static.wikia.nocookie.net/4thewords/images/3/30/Leafboots_md.png/'
-     /> 
-  <Text fontSize='md' align='center'><b>Leaf Boots</b></Text>
-  <Text fontSize='sm' align='center'>+0 Atk<br/>+1 Def<br/>+1 Luck </Text>
-  </VStack>
-  </Button>
-  </WrapItem>}
+  {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) &&
+<LeafBootsSelect />}
  
- {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !ClimbingBootsIsShown &&
- <WrapItem>
- <Button w='110px' h='170px' pb={5} onClick={handleClimbingBootsClick} style={{ backgroundColor: "#2D3748"}}>
- <VStack justify='center'>  
- <Image
- mt='18px'
- align='center' 
- boxSize='3.5rem'
- src='https://static.wikia.nocookie.net/4thewords/images/7/7d/ClimbingBoots.png/'
- /> 
- <Text fontSize='md' align='center'><b>Climbing<br/>Boots</b></Text>
- <Text fontSize='sm' align='center'>+12 Atk<br/>+0 Def<br/>+0 Luck </Text>
- </VStack>
- </Button>
- </WrapItem>}
+ {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+<ClimbingBootsOption />}
  
- {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && ClimbingBootsIsShown &&
- <WrapItem>
- <Button w='110px' h='170px' pb={5} onClick={handleClimbingBootsNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
- <VStack justify='center'>  
- <Image
- mt='18px'
- align='center' 
- boxSize='3.5rem'
- src='https://static.wikia.nocookie.net/4thewords/images/7/7d/ClimbingBoots.png/'
- /> 
- <Text fontSize='md' align='center'><b>Climbing<br/>Boots</b></Text>
- <Text fontSize='sm' align='center'>+12 Atk<br/>+0 Def<br/>+0 Luck </Text>
- </VStack>
- </Button>
- </WrapItem>}
+ {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+<ClimbingBootsSelect />}
  
  
  
-     {(AllIsShown || GardenIsShown) && !WoodenGardenBootsIsShown &&
- <WrapItem>
- <Button w='110px' h='170px' pb={5} onClick={handleWoodenGardenBootsClick} style={{ backgroundColor: "#2D3748"}}>
- <VStack justify='center'>  
- <Image
- mt='18px'
- align='center' 
- boxSize='3.5rem'
- src='https://static.wikia.nocookie.net/4thewords/images/1/14/WoodenGardenBoots.png/'
- /> 
- <Text fontSize='md' align='center'><b>Wooden<br/>Garden Boots</b></Text>
- <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+0 Luck </Text>
- </VStack>
- </Button>
- </WrapItem>}
+     {(AllIsShown || GardenIsShown) &&
+<WoodenGardenBootsOption />}
  
- {(AllIsShown || GardenIsShown) && WoodenGardenBootsIsShown &&
- <WrapItem>
- <Button w='110px' h='170px' pb={5} onClick={handleWoodenGardenBootsNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
- <VStack justify='center'>  
- <Image
- mt='18px'
- align='center' 
- boxSize='3.5rem'
- src='https://static.wikia.nocookie.net/4thewords/images/1/14/WoodenGardenBoots.png/'
- /> 
- <Text fontSize='md' align='center'><b>Wooden<br/>Garden Boots</b></Text>
- <Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+0 Luck </Text>
- </VStack>
- </Button>
- </WrapItem>}
+ {(AllIsShown || GardenIsShown) &&
+<WoodenGardenBootsOption />}
  
  
  
- {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && !SteelBootsIsShown &&
- <WrapItem>
- <Button w='110px' h='170px' pb={5} onClick={handleSteelBootsClick} style={{ backgroundColor: "#2D3748"}}>
- <VStack justify='center'>  
- <Image
- mt='12px'
- align='center' 
- boxSize='4rem'
- src='https://static.wikia.nocookie.net/4thewords/images/d/d8/Steelboots_md.png/'
- /> 
- <Text fontSize='sm' align='center'><b>Steel Boots</b></Text>
- <Text fontSize='sm' align='center'>+0 Atk<br/>+9 Def<br/>+0 Luck </Text>
- </VStack>
- </Button>
- </WrapItem>}
+ {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) &&
+<SteelBootsOption />}
  
- {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && SteelBootsIsShown &&
- <WrapItem>
- <Button w='110px' h='170px' pb={5} onClick={handleSteelBootsNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
- <VStack justify='center'>  
- <Image
- mt='12px'
- align='center' 
- boxSize='4rem'
- src='https://static.wikia.nocookie.net/4thewords/images/d/d8/Steelboots_md.png/'
- /> 
- <Text fontSize='sm' align='center'><b>Steel Boots</b></Text>
- <Text fontSize='sm' align='center'>+0 Atk<br/>+9 Def<br/>+0 Luck </Text>
- </VStack>
- </Button>
- </WrapItem>}
+ {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) &&
+<SteelBootsSelect />}
  
- {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && !FabricBootsIsShown &&
- <WrapItem>
- <Button w='110px' h='170px' pb={5} onClick={handleFabricBootsClick} style={{ backgroundColor: "#2D3748"}}>
- <VStack justify='center'>  
- <Image
- mt='12px'
- align='center' 
- boxSize='4rem'
- src='https://static.wikia.nocookie.net/4thewords/images/7/7c/Fabricboots_md.png/'
- /> 
- <Text fontSize='md' align='center'><b>Fabric Boots</b></Text>
- <Text fontSize='sm' align='center'>+0 Atk<br/>+6 Def<br/>+0 Luck </Text>
- </VStack>
- </Button>
- </WrapItem>}
+ {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) &&
+<FabricBootsOption />}
  
- {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && FabricBootsIsShown &&
- <WrapItem>
- <Button w='110px' h='170px' pb={5} onClick={handleFabricBootsNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
- <VStack justify='center'>  
- <Image
- mt='12px'
- align='center' 
- boxSize='4rem'
- src='https://static.wikia.nocookie.net/4thewords/images/7/7c/Fabricboots_md.png/'
- /> 
- <Text fontSize='md' align='center'><b>Fabric Boots</b></Text>
- <Text fontSize='sm' align='center'>+0 Atk<br/>+6 Def<br/>+0 Luck </Text>
- </VStack>
- </Button>
- </WrapItem>}
+ {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) &&
+<FabricBootsSelect />}
+
  </Wrap>}
 
 {SortByLocationIsShown &&
   <Wrap justify='center'>
-  {(AllIsShown || World2RegionIsShown || DCIsShown) && !AgelessBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleAgelessBootsClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.75rem'
-src='https://static.wikia.nocookie.net/4thewords/images/5/5f/AgelessBoots.png/'
-/> 
-<Text fontSize='md' align='center'><b>Ageless<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+2 Atk<br/>+14 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+  {(AllIsShown || World2RegionIsShown || DCIsShown) &&
+<AgelessBootsOption />}
 
-{(AllIsShown || World2RegionIsShown || DCIsShown) && AgelessBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleAgelessBootsNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.75rem'
-src='https://static.wikia.nocookie.net/4thewords/images/5/5f/AgelessBoots.png/'
-/> 
-<Text fontSize='md' align='center'><b>Ageless<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+2 Atk<br/>+14 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown) &&
+<AgelessBootsSelect />}
 
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !ClimbingBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleClimbingBootsClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/7/7d/ClimbingBoots.png/'
-/> 
-<Text fontSize='md' align='center'><b>Climbing<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+12 Atk<br/>+0 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+<ClimbingBootsOption />}
 
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && ClimbingBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleClimbingBootsNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/7/7d/ClimbingBoots.png/'
-/> 
-<Text fontSize='md' align='center'><b>Climbing<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+12 Atk<br/>+0 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
+<ClimbingBootsSelect />}
 
-{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && !LeatherTurnshoeIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleLeatherTurnshoeClick} style={{ backgroundColor: "#2D3748"}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/f/f6/LeatherTurnshoe.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Leather<br/>Turnshoe</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+5 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+{(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<LeatherTurnshoeOption />}
       
-      {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && LeatherTurnshoeIsShown &&
-      <WrapItem>
-      <Button w='110px' h='170px' pb={5} onClick={handleLeatherTurnshoeNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-      <VStack justify='center'>  
-      <Image
-      mt='18px'
-      align='center' 
-      boxSize='3.5rem'
-      src='https://static.wikia.nocookie.net/4thewords/images/f/f6/LeatherTurnshoe.png/'
-      /> 
-      <Text fontSize='md' align='center'><b>Leather<br/>Turnshoe</b></Text>
-      <Text fontSize='sm' align='center'>+0 Atk<br/>+10 Def<br/>+5 Luck </Text>
-      </VStack>
-      </Button>
-      </WrapItem>}
+      {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) &&
+<LeatherTurnshoeSelect />}
 
-      {(AllIsShown || GardenIsShown) && !WoodenGardenBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleWoodenGardenBootsClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/1/14/WoodenGardenBoots.png/'
-/> 
-<Text fontSize='md' align='center'><b>Wooden<br/>Garden Boots</b></Text>
-<Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+      {(AllIsShown || GardenIsShown) &&
+<WoodenGardenBootsOption />}
 
-{(AllIsShown || GardenIsShown) && WoodenGardenBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleWoodenGardenBootsNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/1/14/WoodenGardenBoots.png/'
-/> 
-<Text fontSize='md' align='center'><b>Wooden<br/>Garden Boots</b></Text>
-<Text fontSize='sm' align='center'>+2 Atk<br/>+12 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || GardenIsShown) &&
+<WoodenGardenBootsSelect />}
 
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) && !DarkForestBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleDarkForestBootsClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/6/64/Dark-forest-boots_battle.png/'
-/> 
-<Text fontSize='md' align='center'><b>Dark Forest<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+8 Def<br/>+5 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) &&
+<DarkForestBootsOption />}
 
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) && DarkForestBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleDarkForestBootsNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/6/64/Dark-forest-boots_battle.png/'
-/> 
-<Text fontSize='md' align='center'><b>Dark Forest<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+8 Def<br/>+5 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown) &&
+<DarkForestBootsSelect />}
 
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && !SteelBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleSteelBootsClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/d/d8/Steelboots_md.png/'
-/> 
-<Text fontSize='sm' align='center'><b>Steel Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+9 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) &&
+<SteelBootsOption />}
 
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) && SteelBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleSteelBootsNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/d/d8/Steelboots_md.png/'
-/> 
-<Text fontSize='sm' align='center'><b>Steel Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+9 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || FloatingCityIsShown) &&
+<SteelBootsSelect />}
 
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && !FabricBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleFabricBootsClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/7/7c/Fabricboots_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Fabric Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+6 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) &&
+<FabricBootsOption />}
 
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && FabricBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleFabricBootsNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='12px'
-align='center' 
-boxSize='4rem'
-src='https://static.wikia.nocookie.net/4thewords/images/7/7c/Fabricboots_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Fabric Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+6 Def<br/>+0 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) &&
+<FabricBootsSelect />}
 
 {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && !LeafsungBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleLeafsungBootsClick} style={{ backgroundColor: "#2D3748"}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/b/b5/Leafsungboots_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Leafsung<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+   <LeafsungBootsOption />
+}
 
 {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && LeafsungBootsIsShown &&
-<WrapItem>
-<Button w='110px' h='170px' pb={5} onClick={handleLeafsungBootsNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-<VStack justify='center'>  
-<Image
-mt='18px'
-align='center' 
-boxSize='3.5rem'
-src='https://static.wikia.nocookie.net/4thewords/images/b/b5/Leafsungboots_md.png/'
-/> 
-<Text fontSize='md' align='center'><b>Leafsung<br/>Boots</b></Text>
-<Text fontSize='sm' align='center'>+0 Atk<br/>+3 Def<br/>+2 Luck </Text>
-</VStack>
-</Button>
-</WrapItem>}
+   <LeafsungBootsSelect />}
 
-{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) && !LeafBootsIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleLeafBootsClick} style={{ backgroundColor: "#2D3748"}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center' 
-   boxSize='4rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/3/30/Leafboots_md.png/'
-   /> 
-   <Text fontSize='md' align='center'><b>Leaf Boots</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+1 Def<br/>+1 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+{(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) &&
+<LeafBootsOption />}
    
-   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) && LeafBootsIsShown &&
-   <WrapItem>
-   <Button w='110px' h='170px' pb={5} onClick={handleLeafBootsNoClick} style={{ backgroundColor: "#211742", borderColor: SortByDefActive ? '#31294f' : 'transparent', borderWidth: '2px'}}>
-   <VStack justify='center'>  
-   <Image
-   mt='12px'
-   align='center' 
-   boxSize='4rem'
-   src='https://static.wikia.nocookie.net/4thewords/images/3/30/Leafboots_md.png/'
-      /> 
-   <Text fontSize='md' align='center'><b>Leaf Boots</b></Text>
-   <Text fontSize='sm' align='center'>+0 Atk<br/>+1 Def<br/>+1 Luck </Text>
-   </VStack>
-   </Button>
-   </WrapItem>}
+   {(AllIsShown || World2RegionIsShown || LightRegionIsShown || DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) &&
+<LeafBootsSelect />}
 
   </Wrap>}
 
