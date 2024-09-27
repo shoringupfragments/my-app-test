@@ -4218,7 +4218,7 @@ const totalDustyKingMaiMasteryMaskAttack = Math.round (totalDustyKingMaiMasteryM
   }
 
 const [testWC, setTestWC] = useState(null)
-const totalTestWC = Math.max (inputWC+30)
+const totalTestWC = Math.max (inputWC)
   
   const [MasteryMonsterQtyPerPotion, setMasteryMonsterQtyPerPotion] = useState(0);
   const totalMasteryMonsterQtyPerPotion = Math.max (1000/inputWC, 0)

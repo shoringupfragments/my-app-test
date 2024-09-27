@@ -1,88 +1,64 @@
-
-{SortByDefIsShown && 
-   <Wrap justify='center'>
-   {(AllIsShown || World2RegionIsShown) && 
-      <NivaliShieldOption />}
-      
-   {(AllIsShown || World2RegionIsShown) && 
-      <NivaliShieldSelect />}
-   
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
-      <LightBloomOption />}
-         
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
-      <LightBloomSelect />}
-   
-   {(AllIsShown || World2RegionIsShown) && 
-      <NivaliPantsOption />}
-   
-   {(AllIsShown || World2RegionIsShown) && 
-      <NivaliPantsSelect />}
-   
-   {(AllIsShown || World2RegionIsShown) &&
-   <NivaliGlovesOption />}
-   
-   {(AllIsShown || World2RegionIsShown) && 
-   <NivaliGlovesSelect />}
-   
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
-      <HauntedNecklaceOption />}
-   
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
-      <HauntedNecklaceSelect />}
-   
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && 
-      <SandsRingOption />}
-   
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && 
-      <SandsRingSelect />}
-   
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && 
-      <GlassNecklaceOption />}
-      
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown) && 
-      <GlassNecklaceSelect />}
-   
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && 
-      <RustyPendantOption />}
-   
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || MamaTreeIsShown) && 
-      <RustyPendantSelect />}
-   
-   {(AllIsShown || HuntIsShown) && 
-      <BardNoteOption />}
-   
-   {(AllIsShown || HuntIsShown) && 
-      <BardNoteSelect />}
-   
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
-      <HopeLightOption />}
-      
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown) && 
-      <HopeLightSelect />}
-      
-   {(AllIsShown || RainaIsShown) && 
-      <RainaBraceletOption />}
-         
-   {(AllIsShown || RainaIsShown) && 
-      <RainaBraceletSelect />}
-   
-   {(AllIsShown || GardenIsShown) && 
-      <MushroomGrenadeOption />}
-   
-   {(AllIsShown || GardenIsShown) && 
-      <MushroomGrenadeSelect />}
-   
-   {(AllIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && 
-      <DarkForestAmuletOption />}
-   
-   {(AllIsShown || DustRegionIsShown || LightRegionIsShown || World2RegionIsShown) && 
-      <DarkForestAmuletSelect />}
-   
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) && 
-      <RustyAmuletOption />}
-   
-   {(AllIsShown || World2RegionIsShown || DCIsShown || LateCoLIsShown ||DustRegionIsShown || WaterRegionIsShown || DesertRegionIsShown || ForestRegionIsShown) && 
-      <RustyAmuletSelect />}
-   
-   </Wrap>}
+{GuidedCountdownIsShown && WyrteIsShown &&
+    <Container height='180px' align='center' style={{backgroundColor: '#000000'
+  }} >
+        <Text pt='15px' mt='20px' mb='3px' fontSize='md'>
+            <span>Paste </span><span style={{color: '#B794F4'}}><b>{totalWyrteBackTo100} words</b></span><br/><span> every </span>
+            <span style={{color: '#B794F4'}}><b>{totalWyrteMins75}m {totalWyrteSecsAdj75}s</b></span><br/><span> to stay at or above </span>
+            <span style={{color: '#B794F4'}}><b>{totalWyrte75} HP</b></span>
+            </Text>
+          <HStack>
+    <Button mt='15px' mb='15px' height='50px' onClick={setGuidedCountdownActive}>Reset<br/>Battle</Button>
+  <Wyrte4 />
+  <Wyrte5 />
+  <Wyrte6 />
+  <Wyrte7 />
+  <Wyrte8 />
+  <Wyrte9 />
+  <Wyrte10 />
+  <Wyrte11 />
+  <Wyrte12 />
+  <Wyrte13 />
+  <Wyrte14 />
+  <Wyrte15 />
+  <Wyrte16 />
+  <Wyrte17 />
+  <Wyrte18 />
+  <Wyrte19 />
+  <Wyrte20 />
+  <Wyrte21 />
+  <Wyrte22 />
+  </HStack>
+      </Container>
+      }
+  
+  {GuidedCountdownIsShown && WyrteIsShown &&
+    <Container mt='-10px' pb='50px' overflowY='scroll' height='475px' style={{backgroundColor: '#00000080'}}>
+  
+  <WyrteTimer4 />
+  <WyrteTimer5 />
+  <WyrteTimer6 />
+  <WyrteTimer7 />
+  <WyrteTimer8 />
+  <WyrteTimer9 />
+  <WyrteTimer10 />
+  <WyrteTimer11 />
+  <WyrteTimer12 />
+  <WyrteTimer13 />
+  <WyrteTimer14 />
+  <WyrteTimer15 />
+  <WyrteTimer16 />
+  <WyrteTimer17 />
+  <WyrteTimer18 />
+  <WyrteTimer19 />
+  <WyrteTimer20 />
+  <WyrteTimer21 />
+  <WyrteTimer22 />
+  <WyrteTimer23 />
+  <WyrteTimer24 />
+  <WyrteTimer25 />
+  <WyrteTimer26 />
+  </Container>
+  }
+  {GuidedCountdownIsShown && WyrteIsShown &&
+    <DelayComponentWyrteLoop4x mt='-20px' style={{position: 'absolute',}} />
+  }
