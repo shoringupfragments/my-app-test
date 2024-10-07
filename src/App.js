@@ -33,7 +33,6 @@ function App() {
       <Route path="aurilis" element={ <AurilisMain /> } />
       <Route path="potion-calculator" element={ <AurilisPotionCalculator /> } />
       <Route path="endurance" element={ <EnduranceCountdown /> } />
-      <Route path="battle-items" element={ <BattleItems /> } />
       
       </Routes>
     </ChakraProvider>
