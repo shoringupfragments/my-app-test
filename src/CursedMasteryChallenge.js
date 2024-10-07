@@ -7157,7 +7157,7 @@ const totalMasteryMonsterLoleNBook_PotionWC = Math.round (totalMasteryMonsterLol
         h='100px'
         align='center'>
             <Text align='center'>
-            {totalTestWC}-word monster
+            {inputWC}-word monster
             </Text>
         </Box>
 
