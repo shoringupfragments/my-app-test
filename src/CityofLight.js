@@ -1668,7 +1668,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png '
+        src='https://static.wikia.nocookie.net/4thewords/images/3/33/Fusion_Glass.png'
         mr='0px'
       /><text><b>Fusion Glass</b></text>
          Source:</HStack>
@@ -1701,7 +1701,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/7/72/Cave-mushroom.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/96/Mushrooms.png/'
         mr='0px'
       /><text><b>Mushrooms</b></text></HStack>
          <br></br>
@@ -1727,7 +1727,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/7/72/Cave-mushroom.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/96/Mushrooms.png/'
         mr='0px'
       /><text><b>Mushrooms</b></text></HStack>
          <br></br>
@@ -1753,7 +1753,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/7/72/Cave-mushroom.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/96/Mushrooms.png/'
         mr='0px'
       /><text><b>Mushrooms</b></text></HStack>
          <br></br>
@@ -1790,7 +1790,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/47/Dust-Repellent_Elixir.png/'
         mr='0px'
       /><text>Dust-Repellent Elixir</text>
         </HStack>
@@ -1820,7 +1820,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/3/33/Fusion_Glass.png'
         mr='0px'
       /><text>Fusion Glass</text>
         </HStack>
@@ -1883,7 +1883,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/e/e2/Refined-dust.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/29/Refined_Dust.png'
         mr='0px'
       /><text>Refined Dust</text>
         </HStack>
@@ -1914,7 +1914,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/b/b3/Dust_md.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/19/Dust.png'
         mr='0px'
       /><text>Dust</text>
         </HStack>
@@ -1943,7 +1943,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/1/19/Wignowessence_md.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/f6/Essence.png'
         mr='0px'
       /><text>Essence</text>
         </HStack>
@@ -1974,7 +1974,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/7/72/Cave-mushroom.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/96/Mushrooms.png/'
         mr='0px'
       /><text>Mushroom</text>
         </HStack>
@@ -2004,7 +2004,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/d/d8/Dark-forest-leaves.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/9e/Dark_Forest_Leaves.png'
         mr='0px'
       /><text>Dark Forest Leaves</text>
         </HStack>
@@ -2067,7 +2067,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/a/ad/Purple-crystal-shards.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/9e/Purple_Crystal_Shards.png/'
         mr='0px'
       /><text>Purple Crystal Shards</text>
         </HStack>
@@ -2329,7 +2329,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/3/3c/HopesLight.png'
+        src='https://i.imgur.com/KxojbML.png'
         mr='0px'
       /><text>Hope's Light</text>
         </HStack>
@@ -2692,7 +2692,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/3/33/Fusion_Glass.png'
         alt='Fusion Glass'
         mr='0px'
       />
@@ -2722,7 +2722,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/e/e2/Refined-dust.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/29/Refined_Dust.png'
         alt='Refined Dust'
         mr='0px'
       />
@@ -2740,7 +2740,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/b/b3/Dust_md.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/19/Dust.png'
         alt='Dust'
         mr='0px'
       />
@@ -2756,7 +2756,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/1/19/Wignowessence_md.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/f6/Essence.png'
         alt='Essence'
         mr='0px'
       />  	{SummaryNoanzaIsShown && <text align='center'>{totalDustWignowQtyLoot}</text>}
@@ -2770,7 +2770,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/7/72/Cave-mushroom.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/96/Mushrooms.png/'
         alt='Mushrooms'
         mr='0px'
       />  	{MushNoanzaIsShown && <text align='center'>{totalMushLooting}</text>}
@@ -2785,7 +2785,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/d/d8/Dark-forest-leaves.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/9e/Dark_Forest_Leaves.png'
         alt='Dark Forest Leaves'
         mr='0px'
       />  	{SummaryNoanzaIsShown && <text align='center'>{totalDflLooting}</text>}
@@ -2813,7 +2813,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/a/ad/Purple-crystal-shards.png/'
+        src='https://static.wikia.nocookie.net/4thewords/images/9/9e/Purple_Crystal_Shards.png/'
         alt='Purple Crystal Shards'
         mr='0px'
       />  	<Container>  	
@@ -2841,7 +2841,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
        <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/47/Dust-Repellent_Elixir.png/'
         alt='Dust-Repellent Elixir'
         mr='0px'/>
 {SummaryNoanzaIsShown && <text align='center'>{totalAllDre}</text>}
@@ -2855,7 +2855,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
        <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/3/33/Fusion_Glass.png'
         alt='Fusion Glass'
         mr='0px'
       />      
@@ -2898,7 +2898,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/1/19/Wignowessence_md.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/f/f6/Essence.png'
         alt='Essence'
         mr='0px'
       />  	{SummaryNoanzaIsShown && <text align='center'>{totalEssOverlapLoot}</text>}
@@ -2912,7 +2912,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
        <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/0/0b/Finefabric_md.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/3/3d/Fine_Fabric.png'
         alt='Fine Fabric'
         mr='0px'
       />      
@@ -2930,7 +2930,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/8/87/Gold_md.png/'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/10/Gold.png/'
         alt='Gold'
         mr='0px'
       />  	{SummaryNoanzaIsShown && <text align='center'>{totalGold}</text>}
@@ -2944,7 +2944,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/0/0c/Hardwood_md.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/ed/Hardwood.png/'
         alt='Hardwood'
         mr='0px'
       />  	{SummaryNoanzaIsShown && <text align='center'>{totalHardwood}</text>}
@@ -2958,7 +2958,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
        <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/9/99/Leatherroll_md.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/14/Leather_Roll.png'
         alt='Leather Roll'
         mr='0px'
       />      
@@ -2982,7 +2982,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
        <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/4/47/Reinforced-rope.png/'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/24/Reinforced_Rope.png/'
         alt='Reinforced Rope'
         mr='0px'/>
 {SummaryNoanzaIsShown && <text align='center'>{totalReinforcedrope}</text>}
@@ -2996,7 +2996,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
        <Image
         boxSize='3rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/c/c9/Steel.png/'
         alt='Steel'
         mr='0px'
       />      
@@ -3249,7 +3249,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/3/33/Fusion_Glass.png'
         alt='Fusion Glass'
         mr='0px'
       /> 
@@ -3263,7 +3263,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/47/Dust-Repellent_Elixir.png/'
         alt='Dust-Repellent Elixir'
         mr='0px'
       /> 
@@ -3277,7 +3277,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/c/c9/Steel.png/'
         alt='Steel'
         mr='0px'
       /> 
@@ -3291,7 +3291,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/8/87/Gold_md.png/'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/10/Gold.png/'
         alt='Gold'
         mr='0px'
       /> 
@@ -3342,7 +3342,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/47/Dust-Repellent_Elixir.png/'
         alt='Dust-Repellent Elixir'
         mr='0px'
       /> 
@@ -3356,7 +3356,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/9/99/Leatherroll_md.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/14/Leather_Roll.png'
         alt='Leather Roll'
         mr='0px'
       /> 
@@ -3370,7 +3370,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/c/c9/Steel.png/'
         alt='Steel'
         mr='0px'
       /> 
@@ -3420,7 +3420,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/3/33/Fusion_Glass.png'
         alt='Fusion Glass'
         mr='0px'
       /> 
@@ -3434,7 +3434,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/47/Dust-Repellent_Elixir.png/'
         alt='Dust-Repellent Elixir'
         mr='0px'
       /> 
@@ -3448,7 +3448,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/c/c9/Steel.png/'
         alt='Steel'
         mr='0px'
       /> 
@@ -3498,7 +3498,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/47/Dust-Repellent_Elixir.png/'
         alt='Dust-Repellent Elixir'
         mr='0px'
       /> 
@@ -3512,7 +3512,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/0/0c/Hardwood_md.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/ed/Hardwood.png/'
         alt='Hardwood'
         mr='0px'
       /> 
@@ -3526,7 +3526,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/4/47/Reinforced-rope.png/'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/24/Reinforced_Rope.png/'
         alt='Reinforced Rope'
         mr='0px'
       /> 
@@ -3540,7 +3540,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/9/99/Leatherroll_md.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/14/Leather_Roll.png'
         alt='Leather Roll'
         mr='0px'
       /> 
@@ -3590,7 +3590,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='1.5rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/3/33/Fusion_Glass.png'
         alt='Fusion Glass'
         mr='0px'
       /> 
@@ -3604,7 +3604,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='1.5rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/47/Dust-Repellent_Elixir.png/'
         alt='Dust-Repellent Elixir'
         mr='0px'
       /> 
@@ -3618,7 +3618,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='1.5rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/0/0c/Hardwood_md.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/ed/Hardwood.png/'
         alt='Hardwood'
         mr='0px'
       /> 
@@ -3631,7 +3631,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='1.5rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/4/47/Reinforced-rope.png/'
+        src='https://static.wikia.nocookie.net/4thewords/images/2/24/Reinforced_Rope.png/'
         alt='Reinforced Rope'
         mr='0px'
       /> 
@@ -3645,7 +3645,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='1.5rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/c/c9/Steel.png/'
         alt='Steel'
         mr='0px'
       /> 
@@ -3696,7 +3696,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/3/33/Fusion_Glass.png'
         alt='Fusion Glass'
         mr='0px'
       /> 
@@ -3710,7 +3710,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/47/Dust-Repellent_Elixir.png/'
         alt='Dust-Repellent Elixir'
         mr='0px'
       /> 
@@ -3724,7 +3724,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/c/c9/Steel.png/'
         alt='Steel'
         mr='0px'
       /> 
@@ -3738,7 +3738,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/0/0b/Finefabric_md.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/3/3d/Fine_Fabric.png'
         alt='Fine Fabric'
         mr='0px'
       /> 
@@ -3789,7 +3789,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/3/33/Fusion_Glass.png'
         alt='Fusion Glass'
         mr='0px'
       /> 
@@ -3803,7 +3803,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/47/Dust-Repellent_Elixir.png/'
         alt='Dust-Repellent Elixir'
         mr='0px'
       /> 
@@ -3817,7 +3817,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/c/c9/Steel.png/'
         alt='Steel'
         mr='0px'
       /> 
@@ -3831,7 +3831,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/8/87/Gold_md.png/'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/10/Gold.png/'
         alt='Gold'
         mr='0px'
       /> 
@@ -3870,7 +3870,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='5rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/3/3c/HopesLight.png'
+        src='https://i.imgur.com/KxojbML.png'
         mr='0px'/>
         </Center>
        <Heading size='md'>{hopligResult} Hope's Light</Heading>
@@ -3881,7 +3881,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/3/33/Fusion_Glass.png'
         alt='Fusion Glass'
         mr='0px'
       /> 
@@ -3895,7 +3895,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/47/Dust-Repellent_Elixir.png/'
         alt='Dust-Repellent Elixir'
         mr='0px'
       /> 
@@ -3909,7 +3909,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/c/c9/Steel.png/'
         alt='Steel'
         mr='0px'
       /> 
@@ -3959,7 +3959,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/47/Dust-Repellent_Elixir.png/'
         alt='Dust-Repellent Elixir'
         mr='0px'
       /> 
@@ -3973,7 +3973,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/9/99/Leatherroll_md.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/14/Leather_Roll.png'
         alt='Leather Roll'
         mr='0px'
       /> 
@@ -3987,7 +3987,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/c/c9/Steel.png/'
         alt='Steel'
         mr='0px'
       /> 
@@ -4001,7 +4001,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/0/0b/Finefabric_md.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/3/3d/Fine_Fabric.png'
         alt='Fine Fabric'
         mr='0px'
       /> 
@@ -4052,7 +4052,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/47/Dust-Repellent_Elixir.png/'
         alt='Dust-Repellent Elixir'
         mr='0px'
       /> 
@@ -4066,7 +4066,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/9/99/Leatherroll_md.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/14/Leather_Roll.png'
         alt='Leather Roll'
         mr='0px'
       /> 
@@ -4080,7 +4080,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/0/0b/Finefabric_md.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/3/3d/Fine_Fabric.png'
         alt='Fine Fabric'
         mr='0px'
       /> 
@@ -4131,7 +4131,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/1/1f/FusionGlass.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/3/33/Fusion_Glass.png'
         alt='Fusion Glass'
         mr='0px'
       /> 
@@ -4145,7 +4145,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/47/Dust-Repellent_Elixir.png/'
         alt='Dust-Repellent Elixir'
         mr='0px'
       /> 
@@ -4159,7 +4159,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/8/87/Gold_md.png/'
+        src='https://static.wikia.nocookie.net/4thewords/images/1/10/Gold.png/'
         alt='Gold'
         mr='0px'
       /> 
@@ -4209,7 +4209,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/e/e7/DustRepellentElixir.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/4/47/Dust-Repellent_Elixir.png/'
         alt='Dust-Repellent Elixir'
         mr='0px'
       /> 
@@ -4223,7 +4223,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/0/0c/Hardwood_md.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/e/ed/Hardwood.png/'
         alt='Hardwood'
         mr='0px'
       /> 
@@ -4237,7 +4237,7 @@ const totalSteel = (steelAakhelResult + steelClibooResult + steelCrehelResult +
         <Image
         boxSize='2rem'
         borderRadius='full'
-        src='https://static.wikia.nocookie.net/4thewords/images/b/b4/Steel_md.png'
+        src='https://static.wikia.nocookie.net/4thewords/images/c/c9/Steel.png/'
         alt='Steel'
         mr='0px'
       /> 
