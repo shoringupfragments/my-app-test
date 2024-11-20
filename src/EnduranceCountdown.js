@@ -70,6 +70,9 @@ function App() {
   const [VanspiIsShown, setVanspiIsShown] = useState(false)
   const [VanspiActive, setVanspiActive] = useState(false)
 
+  const [TivyarIsShown, setTivyarIsShown] = useState(false)
+  const [TivyarActive, setTivyarActive] = useState(false)
+
   const [ViyuIsShown, setViyuIsShown] = useState(false)
   const [ViyuActive, setViyuActive] = useState(false)
 
@@ -116,6 +119,8 @@ function App() {
       setProfBartActive (current => null);
       setVanspiIsShown (current => null);
       setVanspiActive (current => null);
+      setTivyarIsShown (current => null);
+      setTivyarActive (current => null);
       setVanvriIsShown (current => null);
       setVanvriActive (current => null);
       setViyusaIsShown (current => null);
@@ -145,6 +150,8 @@ function App() {
       setProfBartActive (current => null);
       setVanspiIsShown (current => null);
       setVanspiActive (current => null);
+      setTivyarIsShown (current => null);
+      setTivyarActive (current => null);
       setVanvriIsShown (current => null);
       setVanvriActive (current => null);
       setViyusaIsShown (current => null);
@@ -174,6 +181,8 @@ function App() {
       setProfBartActive (current => null);
       setVanspiIsShown (current => null);
       setVanspiActive (current => null);
+      setTivyarIsShown (current => null);
+      setTivyarActive (current => null);
       setVanvriIsShown (current => null);
       setVanvriActive (current => null);
       setViyusaIsShown (current => null);
@@ -203,6 +212,8 @@ function App() {
       setProfBartActive (current => null);
       setVanspiIsShown (current => null);
       setVanspiActive (current => null);
+      setTivyarIsShown (current => null);
+      setTivyarActive (current => null);
       setVanvriIsShown (current => null);
       setVanvriActive (current => null);
       setViyusaIsShown (current => null);
@@ -232,6 +243,8 @@ function App() {
       setProfBartActive (current => null);
       setVanspiIsShown (current => null);
       setVanspiActive (current => null);
+      setTivyarIsShown (current => null);
+      setTivyarActive (current => null);
       setVanvriIsShown (current => null);
       setVanvriActive (current => null);
       setViyusaIsShown (current => null);
@@ -261,6 +274,8 @@ function App() {
       setLucerebActive (current => null);
       setVanspiIsShown (current => null);
       setVanspiActive (current => null);
+      setTivyarIsShown (current => null);
+      setTivyarActive (current => null);
       setVanvriIsShown (current => null);
       setVanvriActive (current => null);
       setViyusaIsShown (current => null);
@@ -278,6 +293,39 @@ function App() {
     const handleVanspiClick = event => {
       setVanspiIsShown (current => !VanspiIsShown);
       setVanspiActive (current => !VanspiActive);
+      setTivyarIsShown (current => null);
+      setTivyarActive (current => null);
+      setVanstraIsShown (current => null);
+      setVanstraActive (current => null);
+      setViIsShown (current => null);
+      setViActive (current => null);
+      setVoidWignowIsShown (current => null);
+      setVoidWignowActive (current => null);
+      setWyrteIsShown (current => null);
+      setWyrteActive (current => null);
+      setLucerebIsShown (current => null);
+      setLucerebActive (current => null);
+      setProfBartIsShown (current => null);
+      setProfBartActive (current => null);
+      setVanvriIsShown (current => null);
+      setVanvriActive (current => null);
+      setViyusaIsShown (current => null);
+      setViyusaActive (current => null);
+      setViradiseIsShown (current => null);
+      setViradiseActive (current => null);
+      setViyuIsShown (current => null);
+      setViyuActive (current => null);
+      setGuidedCountdownIsShown (current => null);
+      setGuidedCountdownActive (current => null);
+      setGuidedCountdownMinIsShown (current => null);
+      setGuidedCountdownMinActive (current => null);
+    };
+
+    const handleTivyarClick = event => {
+      setTivyarIsShown (current => !TivyarIsShown);
+      setTivyarActive (current => !TivyarActive);
+      setVanspiIsShown (current => null);
+      setVanspiActive (current => null);
       setVanstraIsShown (current => null);
       setVanstraActive (current => null);
       setViIsShown (current => null);
@@ -321,6 +369,8 @@ function App() {
       setProfBartActive (current => null);
       setVanspiIsShown (current => null);
       setVanspiActive (current => null);
+      setTivyarIsShown (current => null);
+      setTivyarActive (current => null);
       setViyusaIsShown (current => null);
       setViyusaActive (current => null);
       setViradiseIsShown (current => null);
@@ -351,6 +401,8 @@ function App() {
       setProfBartActive (current => null);
       setVanspiIsShown (current => null);
       setVanspiActive (current => null);
+      setTivyarIsShown (current => null);
+      setTivyarActive (current => null);
       setViyusaIsShown (current => null);
       setViyusaActive (current => null);
       setViradiseIsShown (current => null);
@@ -380,6 +432,8 @@ function App() {
       setProfBartActive (current => null);
       setVanspiIsShown (current => null);
       setVanspiActive (current => null);
+      setTivyarIsShown (current => null);
+      setTivyarActive (current => null);
       setVanvriIsShown (current => null);
       setVanvriActive (current => null);
       setViradiseIsShown (current => null);
@@ -409,6 +463,8 @@ function App() {
       setProfBartActive (current => null);
       setVanspiIsShown (current => null);
       setVanspiActive (current => null);
+      setTivyarIsShown (current => null);
+      setTivyarActive (current => null);
       setVanvriIsShown (current => null);
       setVanvriActive (current => null);
       setViyusaIsShown (current => null);
@@ -532,7 +588,7 @@ const totalVanstraSecs10 = Math.max (totalVanstraSecsTo10-(totalVanstraMins10*60
 //vanstra - min to win - loops by X sec to lose 1 HP//
 
 const [LoopTimeMin2SecPerHP, setLoopTimeMin2SecPerHP] = useState(null)
-const totalLoopTimeMin2SecPerHP = Math.ceil((totalBaseHP-totalVanstraDownTo10)*2)
+const totalLoopTimeMin2SecPerHP = Math.max((totalVanstraMins10*60)+totalVanstraSecs10)
 
 const [LoopTimeMin2SecPerHPTimeVal2, setLoopTimeMin2SecPerHPTimeVal2] = useState(null)
 const totalLoopTimeMin2SecPerHPTimeVal2 = Math.max(totalLoopTimeMin2SecPerHP*1000)
@@ -1131,6 +1187,9 @@ const [LeftoverVanspiProfBTime, setLeftoverVanspiProfBTime] = useState(0)
 const totalLeftoverVanspiProfBTime = Math.max (600-(totalVanspiSecsto75*totalVanspiProfB75Loops),0)
 
 
+
+
+
 //Viyu- MINIMUM TO WIN//
 
 const [ViyuDownTo10Raw, setViyuDownTo10Raw] = useState(0)
@@ -1573,7 +1632,7 @@ const totalFinalLoopSecsVanstra = Math.max (totalLeftoverVanstraTime*1000)
 //Vi - min to win - loops by X sec to lose 1 HP//
 
 const [LoopTimeMin2_5SecPerHP5Min, setLoopTimeMin2_5SecPerHP5Min] = useState(null)
-const totalLoopTimeMin2_5SecPerHP5Min = Math.ceil((totalBaseHP-totalViDownTo10)*2.5)
+const totalLoopTimeMin2_5SecPerHP5Min = Math.max((totalViMins10*60)+totalViSecs10)
 
 const [LoopTimeMin2_5SecPerHP5MinTimeVal2, setLoopTimeMin2_5SecPerHP5MinTimeVal2] = useState(null)
 const totalLoopTimeMin2_5SecPerHP5MinTimeVal2 = Math.max(totalLoopTimeMin2_5SecPerHP5Min*1000)
@@ -1693,7 +1752,7 @@ const totalFinalLoopSecsVi = Math.max (totalLeftoverViTime*1000)
 //VoidWignow - min to win - loops by X sec to lose 1 HP//
 
 const [LoopTimeMin4SecPerHP, setLoopTimeMin4SecPerHP] = useState(null)
-const totalLoopTimeMin4SecPerHP = Math.ceil((totalBaseHP-totalVoidWignowDownTo10)*4)
+const totalLoopTimeMin4SecPerHP = Math.max((totalVoidWignowMins10*60)+totalVoidWignowSecs10)
 
 const [LoopTimeMin4SecPerHPTimeVal2, setLoopTimeMin4SecPerHPTimeVal2] = useState(null)
 const totalLoopTimeMin4SecPerHPTimeVal2 = Math.max(totalLoopTimeMin4SecPerHP*1000)
@@ -1788,7 +1847,7 @@ const totalFinalLoopSecsVoidWignow = Math.max (totalLeftoverVoidWignowTime*1000)
 //VanspiProfB - min to win - loops by X sec to lose 1 HP//
 
 const [LoopTimeMin2_5SecPerHP10Min, setLoopTimeMin2_5SecPerHP10Min] = useState(null)
-const totalLoopTimeMin2_5SecPerHP10Min = Math.ceil((totalBaseHP-totalVanspiDownTo10)*2.5)
+const totalLoopTimeMin2_5SecPerHP10Min = Math.max((totalVanspiMins10*60)+totalVanspiSecs10)
 
 const [LoopTimeMin2_5SecPerHP10MinTimeVal2, setLoopTimeMin2_5SecPerHP10MinTimeVal2] = useState(null)
 const totalLoopTimeMin2_5SecPerHP10MinTimeVal2 = Math.max(totalLoopTimeMin2_5SecPerHP10Min*1000)
@@ -2015,7 +2074,7 @@ const totalFinalLoopSecsVanspiProfB = Math.max (totalLeftoverVanspiProfBTime*100
 //Viyu - min to win - loops by X sec to lose 1 HP//
 
 const [LoopTimeMin2_5SecPerHP15Min, setLoopTimeMin2_5SecPerHP15Min] = useState(null)
-const totalLoopTimeMin2_5SecPerHP15Min = Math.ceil((totalBaseHP-totalViyuDownTo10)*2.5)
+const totalLoopTimeMin2_5SecPerHP15Min =Math.max((totalViyuMins10*60)+totalViyuSecs10)
 
 const [LoopTimeMin2_5SecPerHP15MinTimeVal2, setLoopTimeMin2_5SecPerHP15MinTimeVal2] = useState(null)
 const totalLoopTimeMin2_5SecPerHP15MinTimeVal2 = Math.max(totalLoopTimeMin2_5SecPerHP15Min*1000)
@@ -2470,7 +2529,7 @@ const totalFinalLoopDisplaySecsWyrte = (totalFinalLoopSecsWyrte/1000)-(totalFina
 //Lucereb - min to win - loops by X sec to lose 1 HP//
 
 const [LoopTimeMin3SecPerHP10Min, setLoopTimeMin3SecPerHP10Min] = useState(null)
-const totalLoopTimeMin3SecPerHP10Min = Math.ceil((totalBaseHP-totalLucerebDownTo10)*3)
+const totalLoopTimeMin3SecPerHP10Min = Math.max((totalLucerebMins10*60)+totalLucerebSecs10)
 
 const [LoopTimeMin3SecPerHP10MinTimeVal2, setLoopTimeMin3SecPerHP10MinTimeVal2] = useState(null)
 const totalLoopTimeMin3SecPerHP10MinTimeVal2 = Math.max(totalLoopTimeMin3SecPerHP10Min*1000)
@@ -2664,7 +2723,7 @@ const totalFinalLoopSecsLucereb = Math.max (totalLeftoverLucerebTime*1000)
 //Vanvri - min to win - loops by X sec to lose 1 HP//
 
 const [LoopTimeMin3SecPerHP20Min, setLoopTimeMin3SecPerHP20Min] = useState(null)
-const totalLoopTimeMin3SecPerHP20Min = Math.ceil((totalBaseHP-totalVanvriDownTo10)*3)
+const totalLoopTimeMin3SecPerHP20Min = Math.max((totalVanvriMins10*60)+totalVanvriSecs10)
 
 const [LoopTimeMin3SecPerHP20MinTimeVal2, setLoopTimeMin3SecPerHP20MinTimeVal2] = useState(null)
 const totalLoopTimeMin3SecPerHP20MinTimeVal2 = Math.max(totalLoopTimeMin3SecPerHP20Min*1000)
@@ -3031,7 +3090,7 @@ const totalFinalLoopSecsVanvri = Math.max (totalLeftoverVanvriTime*1000)
 //Viyusa - min to win - loops by X sec to lose 1 HP//
 
 const [LoopTimeMin3_5SecPerHP25Min, setLoopTimeMin3_5SecPerHP25Min] = useState(null)
-const totalLoopTimeMin3_5SecPerHP25Min = Math.ceil((totalBaseHP-totalViyusaDownTo10)*3.5)
+const totalLoopTimeMin3_5SecPerHP25Min = Math.max((totalViyusaMins10*60)+totalViyusaSecs10)
 
 const [LoopTimeMin3_5SecPerHP25MinTimeVal2, setLoopTimeMin3_5SecPerHP25MinTimeVal2] = useState(null)
 const totalLoopTimeMin3_5SecPerHP25MinTimeVal2 = Math.max(totalLoopTimeMin3_5SecPerHP25Min*1000)
@@ -3421,7 +3480,7 @@ const totalFinalLoopSecsViyusa = Math.max (totalLeftoverViyusaTime*1000)
 //Viradise - min to win - loops by X sec to lose 1 HP//
 
 const [LoopTimeMin3_5SecPerHP30Min, setLoopTimeMin3_5SecPerHP30Min] = useState(null)
-const totalLoopTimeMin3_5SecPerHP30Min = Math.ceil((totalBaseHP-totalViradiseDownTo10)*3.5)
+const totalLoopTimeMin3_5SecPerHP30Min = Math.max((totalViradiseMins10*60)+totalViradiseSecs10)
 
 const [LoopTimeMin3_5SecPerHP30MinTimeVal2, setLoopTimeMin3_5SecPerHP30MinTimeVal2] = useState(null)
 const totalLoopTimeMin3_5SecPerHP30MinTimeVal2 = Math.max(totalLoopTimeMin3_5SecPerHP30Min*1000)
@@ -6358,6 +6417,57 @@ const YayBattleEndVanspiProfB = () => {
   }, [show])
   if (!show) return (null)
   return (   <Timer initialTime={totalFinalLoopSecsVanspiProfB}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+    	<div>
+    	<Text mb='8px' fontSize='md' style={{color: '#B794F4'}}>
+    	<b>The battle is over!</b> 🎉</Text>
+    	</div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+
+const YayBattleEndTivyarMin = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, 660000)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (null)
+  return (   <Timer initialTime={totalFinalLoopSecsTivyarMin}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+        <div>
+        <Text fontSize='md' style={{color: '#B794F4'}}>
+        <b>The battle is over!</b> 🎉</Text>
+        </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+
+const YayBattleEndTivyar = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, 660000)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (null)
+  return (   <Timer initialTime={totalFinalLoopSecsTivyar}
   direction="backward"
   	timeToUpdate={10}>
 	{({ start, resume, pause, stop, reset, timerState }) => (
@@ -14280,6 +14390,5146 @@ const VanspiProfB90 = () => {
 <Button mt='15px' mb='15px' height='50px'
 onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu dignissim neque. Quisque a commodo diam. Cras in accumsan nisl. Maecenas vitae scelerisque arcu, at pretium ipsum. Nam tincidunt ullamcorper congue. Donec scelerisque, augue nec hendrerit vehicula, erat dui pellentesque odio, et viverra dolor felis nec sem. Praesent a lorem vel tellus feugiat ultricies. Etiam lacinia, sapien quis vulputate tincidunt, nisi lacus ornare augue, elementum efficitur elit diam in nibh. Suspendisse ullamcorper mollis purus, at tincidunt odio porta rhoncus. Quisque efficitur nisl nibh, id auctor libero viverra ac. In hac. ')}}>
 Copy {totalVanspiHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+//Tivyar- MINIMUM TO WIN//
+
+const [TivyarDownTo10Raw, setTivyarDownTo10Raw] = useState(0)
+const totalTivyarDownTo10Raw = Math.max(totalBaseHP*.1,0)
+
+//account for even number
+const [TivyarDownTo10, setTivyarDownTo10] = useState(0)
+const totalTivyarDownTo10 = 2 * Math.ceil(totalTivyarDownTo10Raw/2)
+
+//seconds to reach 10%//
+
+const [TivyarHPToLoseRaw, setTivyarHPToLoseRaw] = useState(0)
+const totalTivyarHPToLoseRaw = Math.max(totalBaseHP-totalTivyarDownTo10,0)
+
+const [TivyarHPToLose, setTivyarHPToLose] = useState(0)
+const totalTivyarHPToLose = 2 * Math.floor(totalTivyarHPToLoseRaw/2)
+
+const [TivyarSecsTo10, setTivyarSecsTo10] = useState(0)
+const totalTivyarSecsTo10 = Math.max((totalTivyarHPToLose/2)*6)
+
+const [TivyarLoopsRaw, setTivyarLoopsRaw] = useState(0)
+const totalTivyarLoopsRaw = Math.floor (660/totalTivyarSecsTo10)
+
+const [TivyarCheck0, setTivyarCheck0] = useState(0)
+const totalTivyarCheck0 = Math.max (660-(totalTivyarLoopsRaw*totalTivyarSecsTo10),0)
+
+const [TivyarCheckLoops0, setTivyarCheckLoops0] = useState(0)
+const totalTivyarCheckLoops0 = Math.ceil (totalTivyarCheck0/1000)
+
+const [TivyarLoops, setTivyarLoops] = useState(0)
+const totalTivyarLoops = Math.max ((totalTivyarLoopsRaw-1)+totalTivyarCheckLoops0)
+
+const [TivyarSecsRemaining, setTivyarSecsRemaining] = useState(0)
+const totalTivyarSecsRemaining = Math.max (660-(totalTivyarLoops*totalTivyarSecsTo10),0)
+
+const [TivyarFinalMins, setTivyarFinalMins] = useState(0)
+const totalTivyarFinalMins = Math.floor (totalTivyarSecsRemaining/60)
+
+const [TivyarFinalSecs, setTivyarFinalSecs] = useState(0)
+const totalTivyarFinalSecs = Math.max (totalTivyarSecsRemaining-(totalTivyarFinalMins*60),0)
+
+const [TivyarMins10, setTivyarMins10] = useState(0)
+const totalTivyarMins10 = Math.floor (totalTivyarSecsTo10/60)
+
+const [TivyarSecs10, setTivyarSecs10] = useState(0)
+const totalTivyarSecs10 = Math.max (totalTivyarSecsTo10-(totalTivyarMins10*60),0)
+
+//Tivyar - min to win - loops by X sec to lose 1 HP//
+
+const [LoopTimeMin3_25SecPerHP11Min, setLoopTimeMin3_25SecPerHP11Min] = useState(null)
+const totalLoopTimeMin3_25SecPerHP11Min = Math.max((totalTivyarMins10*60)+totalTivyarSecs10)
+
+const [LoopTimeMin3_25SecPerHP11MinTimeVal2, setLoopTimeMin3_25SecPerHP11MinTimeVal2] = useState(null)
+const totalLoopTimeMin3_25SecPerHP11MinTimeVal2 = Math.max(totalLoopTimeMin3_25SecPerHP11Min*1000)
+
+const [LoopTimeMin3_25SecPerHP11MinTimeVal3, setLoopTimeMin3_25SecPerHP11MinTimeVal3] = useState(null)
+const totalLoopTimeMin3_25SecPerHP11MinTimeVal3 = Math.max(totalLoopTimeMin3_25SecPerHP11MinTimeVal2*2)
+
+const [LoopTimeMin3_25SecPerHP11MinTimeVal4, setLoopTimeMin3_25SecPerHP11MinTimeVal4] = useState(null)
+const totalLoopTimeMin3_25SecPerHP11MinTimeVal4 = Math.max(totalLoopTimeMin3_25SecPerHP11MinTimeVal2*3)
+
+const [LoopTimeMin3_25SecPerHP11MinTimeVal5, setLoopTimeMin3_25SecPerHP11MinTimeVal5] = useState(null)
+const totalLoopTimeMin3_25SecPerHP11MinTimeVal5 = Math.max(totalLoopTimeMin3_25SecPerHP11MinTimeVal2*4)
+
+const [LoopTimeMin3_25SecPerHP11MinTimeVal6, setLoopTimeMin3_25SecPerHP11MinTimeVal6] = useState(null)
+const totalLoopTimeMin3_25SecPerHP11MinTimeVal6 = Math.max(totalLoopTimeMin3_25SecPerHP11MinTimeVal2*5)
+
+const [LoopTimeMin3_25SecPerHP11MinTimeVal7, setLoopTimeMin3_25SecPerHP11MinTimeVal7] = useState(null)
+const totalLoopTimeMin3_25SecPerHP11MinTimeVal7 = Math.max(totalLoopTimeMin3_25SecPerHP11MinTimeVal2*6)
+
+const [LoopTimeMin3_25SecPerHP11MinTimeVal8, setLoopTimeMin3_25SecPerHP11MinTimeVal8] = useState(null)
+const totalLoopTimeMin3_25SecPerHP11MinTimeVal8 = Math.max(totalLoopTimeMin3_25SecPerHP11MinTimeVal2*7)
+
+const [LoopTimeMin3_25SecPerHP11MinTimeVal9, setLoopTimeMin3_25SecPerHP11MinTimeVal9] = useState(null)
+const totalLoopTimeMin3_25SecPerHP11MinTimeVal9 = Math.max(totalLoopTimeMin3_25SecPerHP11MinTimeVal2*8)
+
+const [WhenToStartFinalTivyarLoopMin, setWhenToStartFinalTivyarLoopMin] = useState(0)
+const totalWhenToStartFinalTivyarLoopMin = Math.max
+(totalLoopTimeMin3_25SecPerHP11MinTimeVal2*totalTivyarLoops)
+
+const [FinalLoopSecsTivyarMin, setFinalLoopSecsTivyarMin] = useState(0);
+const totalFinalLoopSecsTivyarMin = Math.max (totalTivyarSecsRemaining*1000)
+
+
+//4x MINIMUM BONUS//
+
+//Tivyar loses 1 HP per 4 seconds. Lasts 360 seconds//
+
+const [Tivyar75Raw, setTivyar75Raw] = useState(0)
+const totalTivyar75Raw = Math.max (totalMaxHP*.75,0)
+
+//account for even number
+const [Tivyar75, setTivyar75] = useState(0)
+const totalTivyar75 = ((2 * Math.ceil(totalTivyar75Raw/2))+2)
+
+//get back to Baseline HP - update to totalMaxHP when bug is fixed//
+
+const [TivyarBackTo100, setTivyarBackTo100] = useState(0)
+const totalTivyarBackTo100 = Math.max (totalBaseHP-totalTivyar75, 0)
+
+//time to get down to 75%//
+
+const [TivyarSecsto75, setTivyarSecsto75] = useState(0)
+const totalTivyarSecsto75 = Math.floor (totalTivyarBackTo100*3.25,0)
+
+const [TivyarMins75, setTivyarMins75] = useState(0)
+const totalTivyarMins75 = Math.floor (totalTivyarSecsto75/60)
+
+const [TivyarSecsAdj75, setTivyarSecsAdj75] = useState(0)
+const totalTivyarSecsAdj75 = Math.max ((totalTivyarSecsto75-(totalTivyarMins75*60)),0)
+
+const [Tivyar75LoopsRaw, setTivyar75LoopsRaw] = useState(0)
+const totalTivyar75LoopsRaw = Math.floor (660/totalTivyarSecsto75)
+
+const [Tivyar75Check0, setTivyar75Check0] = useState(0)
+const totalTivyar75Check0 = Math.max (660-(totalTivyar75LoopsRaw*totalTivyarSecsto75),0)
+
+const [Tivyar75CheckLoops0, setTivyar75CheckLoops0] = useState(0)
+const totalTivyar75CheckLoops0 = Math.ceil (totalTivyar75Check0/100)
+
+const [Tivyar75Loops, setTivyar75Loops] = useState(0)
+const totalTivyar75Loops = Math.floor ((totalTivyar75LoopsRaw-1)+totalTivyar75CheckLoops0)
+
+const [LeftoverTivyarTime, setLeftoverTivyarTime] = useState(0)
+const totalLeftoverTivyarTime = Math.max (660-(totalTivyarSecsto75*totalTivyar75Loops),0)
+
+
+
+
+//Tivyar - loops by X sec to lose 1 HP//
+
+const [LoopTime3_25SecPerHP11Min, setLoopTime3_25SecPerHP11Min] = useState(null)
+const totalLoopTime3_25SecPerHP11Min = Math.ceil((totalBaseHP-totalHPCalculatedValue)*3.25)
+
+const [LoopTime3_25SecPerHP11MinTimeVal2, setLoopTime3_25SecPerHP11MinTimeVal2] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal2 = Math.max(totalLoopTime3_25SecPerHP11Min*1000)
+
+const [LoopTime3_25SecPerHP11MinTimeVal3, setLoopTime3_25SecPerHP11MinTimeVal3] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal3 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*2)
+
+const [LoopTime3_25SecPerHP11MinTimeVal4, setLoopTime3_25SecPerHP11MinTimeVal4] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal4 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*3)
+
+const [LoopTime3_25SecPerHP11MinTimeVal5, setLoopTime3_25SecPerHP11MinTimeVal5] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal5 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*4)
+
+const [LoopTime3_25SecPerHP11MinTimeVal6, setLoopTime3_25SecPerHP11MinTimeVal6] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal6 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*5)
+
+const [LoopTime3_25SecPerHP11MinTimeVal7, setLoopTime3_25SecPerHP11MinTimeVal7] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal7 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*6)
+
+const [LoopTime3_25SecPerHP11MinTimeVal8, setLoopTime3_25SecPerHP11MinTimeVal8] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal8 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*7)
+
+const [LoopTime3_25SecPerHP11MinTimeVal9, setLoopTime3_25SecPerHP11MinTimeVal9] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal9 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*8)
+
+const [LoopTime3_25SecPerHP11MinTimeVal10, setLoopTime3_25SecPerHP11MinTimeVal10] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal10 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*9)
+
+const [LoopTime3_25SecPerHP11MinTimeVal11, setLoopTime3_25SecPerHP11MinTimeVal11] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal11 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*10)
+
+const [LoopTime3_25SecPerHP11MinTimeVal12, setLoopTime3_25SecPerHP11MinTimeVal12] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal12 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*11)
+
+const [LoopTime3_25SecPerHP11MinTimeVal13, setLoopTime3_25SecPerHP11MinTimeVal13] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal13 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*12)
+
+const [LoopTime3_25SecPerHP11MinTimeVal14, setLoopTime3_25SecPerHP11MinTimeVal14] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal14 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*13)
+
+const [LoopTime3_25SecPerHP11MinTimeVal15, setLoopTime3_25SecPerHP11MinTimeVal15] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal15 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*14)
+
+const [LoopTime3_25SecPerHP11MinTimeVal16, setLoopTime3_25SecPerHP11MinTimeVal16] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal16 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*15)
+
+const [LoopTime3_25SecPerHP11MinTimeVal17, setLoopTime3_25SecPerHP11MinTimeVal17] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal17 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*16)
+
+const [LoopTime3_25SecPerHP11MinTimeVal18, setLoopTime3_25SecPerHP11MinTimeVal18] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal18 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*17)
+
+const [LoopTime3_25SecPerHP11MinTimeVal19, setLoopTime3_25SecPerHP11MinTimeVal19] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal19 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*18)
+
+const [LoopTime3_25SecPerHP11MinTimeVal20, setLoopTime3_25SecPerHP11MinTimeVal20] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal20 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*19)
+
+const [LoopTime3_25SecPerHP11MinTimeVal21, setLoopTime3_25SecPerHP11MinTimeVal21] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal21 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*20)
+
+const [LoopTime3_25SecPerHP11MinTimeVal22, setLoopTime3_25SecPerHP11MinTimeVal22] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal22 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*21)
+
+const [LoopTime3_25SecPerHP11MinTimeVal23, setLoopTime3_25SecPerHP11MinTimeVal23] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal23 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*22)
+
+const [LoopTime3_25SecPerHP11MinTimeVal24, setLoopTime3_25SecPerHP11MinTimeVal24] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal24 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*23)
+
+const [LoopTime3_25SecPerHP11MinTimeVal25, setLoopTime3_25SecPerHP11MinTimeVal25] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal25 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*24)
+
+const [LoopTime3_25SecPerHP11MinTimeVal26, setLoopTime3_25SecPerHP11MinTimeVal26] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal26 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*25)
+
+const [LoopTime3_25SecPerHP11MinTimeVal27, setLoopTime3_25SecPerHP11MinTimeVal27] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal27 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*26)
+
+const [LoopTime3_25SecPerHP11MinTimeVal28, setLoopTime3_25SecPerHP11MinTimeVal28] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal28 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*27)
+
+const [LoopTime3_25SecPerHP11MinTimeVal29, setLoopTime3_25SecPerHP11MinTimeVal29] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal29 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*28)
+
+const [LoopTime3_25SecPerHP11MinTimeVal30, setLoopTime3_25SecPerHP11MinTimeVal30] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal30 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*29)
+
+const [LoopTime3_25SecPerHP11MinTimeVal31, setLoopTime3_25SecPerHP11MinTimeVal31] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal31 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*30)
+
+const [LoopTime3_25SecPerHP11MinTimeVal32, setLoopTime3_25SecPerHP11MinTimeVal32] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal32 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*31)
+
+const [LoopTime3_25SecPerHP11MinTimeVal33, setLoopTime3_25SecPerHP11MinTimeVal33] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal33 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*32)
+
+const [LoopTime3_25SecPerHP11MinTimeVal34, setLoopTime3_25SecPerHP11MinTimeVal34] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal34 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*33)
+
+const [LoopTime3_25SecPerHP11MinTimeVal35, setLoopTime3_25SecPerHP11MinTimeVal35] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal35 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*34)
+
+const [LoopTime3_25SecPerHP11MinTimeVal36, setLoopTime3_25SecPerHP11MinTimeVal36] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal36 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*35)
+
+const [LoopTime3_25SecPerHP11MinTimeVal37, setLoopTime3_25SecPerHP11MinTimeVal37] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal37 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*36)
+
+const [LoopTime3_25SecPerHP11MinTimeVal38, setLoopTime3_25SecPerHP11MinTimeVal38] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal38 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*37)
+
+const [LoopTime3_25SecPerHP11MinTimeVal39, setLoopTime3_25SecPerHP11MinTimeVal39] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal39 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*38)
+
+const [LoopTime3_25SecPerHP11MinTimeVal40, setLoopTime3_25SecPerHP11MinTimeVal40] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal40 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*39)
+
+const [LoopTime3_25SecPerHP11MinTimeVal41, setLoopTime3_25SecPerHP11MinTimeVal41] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal41 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*40)
+
+const [LoopTime3_25SecPerHP11MinTimeVal42, setLoopTime3_25SecPerHP11MinTimeVal42] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal42 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*41)
+
+const [LoopTime3_25SecPerHP11MinTimeVal43, setLoopTime3_25SecPerHP11MinTimeVal43] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal43 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*42)
+
+const [LoopTime3_25SecPerHP11MinTimeVal44, setLoopTime3_25SecPerHP11MinTimeVal44] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal44 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*43)
+
+const [LoopTime3_25SecPerHP11MinTimeVal45, setLoopTime3_25SecPerHP11MinTimeVal45] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal45 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*44)
+
+const [LoopTime3_25SecPerHP11MinTimeVal46, setLoopTime3_25SecPerHP11MinTimeVal46] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal46 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*45)
+
+const [LoopTime3_25SecPerHP11MinTimeVal47, setLoopTime3_25SecPerHP11MinTimeVal47] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal47 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*46)
+
+const [LoopTime3_25SecPerHP11MinTimeVal48, setLoopTime3_25SecPerHP11MinTimeVal48] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal48 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*47)
+
+const [LoopTime3_25SecPerHP11MinTimeVal49, setLoopTime3_25SecPerHP11MinTimeVal49] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal49 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*48)
+
+const [LoopTime3_25SecPerHP11MinTimeVal50, setLoopTime3_25SecPerHP11MinTimeVal50] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal50 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*49)
+
+const [LoopTime3_25SecPerHP11MinTimeVal51, setLoopTime3_25SecPerHP11MinTimeVal51] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal51 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*50)
+
+const [LoopTime3_25SecPerHP11MinTimeVal52, setLoopTime3_25SecPerHP11MinTimeVal52] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal52 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*51)
+
+const [LoopTime3_25SecPerHP11MinTimeVal53, setLoopTime3_25SecPerHP11MinTimeVal53] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal53 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*52)
+
+const [LoopTime3_25SecPerHP11MinTimeVal54, setLoopTime3_25SecPerHP11MinTimeVal54] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal54 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*53)
+
+const [LoopTime3_25SecPerHP11MinTimeVal55, setLoopTime3_25SecPerHP11MinTimeVal55] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal55 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*54)
+
+const [LoopTime3_25SecPerHP11MinTimeVal56, setLoopTime3_25SecPerHP11MinTimeVal56] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal56 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*55)
+
+const [LoopTime3_25SecPerHP11MinTimeVal57, setLoopTime3_25SecPerHP11MinTimeVal57] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal57 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*56)
+
+const [LoopTime3_25SecPerHP11MinTimeVal58, setLoopTime3_25SecPerHP11MinTimeVal58] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal58 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*57)
+
+const [LoopTime3_25SecPerHP11MinTimeVal59, setLoopTime3_25SecPerHP11MinTimeVal59] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal59 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*58)
+
+const [LoopTime3_25SecPerHP11MinTimeVal60, setLoopTime3_25SecPerHP11MinTimeVal60] = useState(null)
+const totalLoopTime3_25SecPerHP11MinTimeVal60 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*59)
+
+const [LoopTime3_25SecPerHP11minTimeVal61, setLoopTime3_25SecPerHP11minTimeVal61] = useState(null)
+const totalLoopTime3_25SecPerHP11minTimeVal61 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*60)
+
+const [LoopTime3_25SecPerHP11minTimeVal62, setLoopTime3_25SecPerHP11minTimeVal62] = useState(null)
+const totalLoopTime3_25SecPerHP11minTimeVal62 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*61)
+
+const [LoopTime3_25SecPerHP11minTimeVal63, setLoopTime3_25SecPerHP11minTimeVal63] = useState(null)
+const totalLoopTime3_25SecPerHP11minTimeVal63 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*62)
+
+const [LoopTime3_25SecPerHP11minTimeVal64, setLoopTime3_25SecPerHP11minTimeVal64] = useState(null)
+const totalLoopTime3_25SecPerHP11minTimeVal64 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*63)
+
+const [LoopTime3_25SecPerHP11minTimeVal65, setLoopTime3_25SecPerHP11minTimeVal65] = useState(null)
+const totalLoopTime3_25SecPerHP11minTimeVal65 = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*64)
+
+const [WhenToStartFinalTivyarLoop, setWhenToStartFinalTivyarLoop] = useState(0)
+const totalWhenToStartFinalTivyarLoop = Math.max(totalLoopTime3_25SecPerHP11MinTimeVal2*totalTivyar75Loops)
+
+const [RemainingSecondsTivyar, setRemainingSecondsTivyar] = useState(0)
+const totalRemainingSecondsTivyar = Math.max((660000-totalWhenToStartFinalTivyarLoop)/1000,0)
+
+const [FinalLoopSecsTivyar, setFinalLoopSecsTivyar] = useState(0);
+const totalFinalLoopSecsTivyar = Math.max (totalLeftoverTivyarTime*1000)
+
+
+//Tivyar - min - timers//
+
+const DelayComponentTivyarMinLoop = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, 0)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (null)
+  return (   <Timer initialTime={totalLoopTimeMin3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+    	<div>
+    	<Text mb='8px' mt='25px' fontSize='md'>
+      	<b>Loop 1: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>	 
+    	</div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+
+
+const DelayComponentTivyarMinLoop2 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+	const timeout = setTimeout(() => {
+  	setShow(true)
+	}, totalLoopTimeMin3_25SecPerHP11MinTimeVal2)
+	return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}>
+	<b>Loop 2: </b>{totalTivyarMins10} minutes and {totalTivyarSecs10} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTimeMin3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+  	timeToUpdate={10}>
+	{({ start, resume, pause, stop, reset, timerState }) => (
+  	<React.Fragment>
+    	<div>
+    	<Text mb='8px' fontSize='md'>
+      	<b>Loop 2: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>	 
+    	</div>
+  	</React.Fragment>
+	)}
+  </Timer>
+)
+};
+  
+  const DelayComponentTivyarMinLoop3 = () => {
+    const [show, setShow] = React.useState(false)
+  
+    React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTimeMin3_25SecPerHP11MinTimeVal3)
+    return () => clearTimeout(timeout)
+    }, [show])
+    if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}>
+    <b>Loop 3: </b>{totalTivyarMins10} minutes and {totalTivyarSecs10} seconds </Text>)
+    return (   <Timer initialTime={totalLoopTimeMin3_25SecPerHP11MinTimeVal2}
+    direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+        <div>
+        <Text mb='8px' fontSize='md'><b>Loop 3: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>	 
+        </div>
+      </React.Fragment>
+    )}
+    </Timer>
+  )
+  };
+  
+  const DelayComponentTivyarMinLoop4 = () => {
+    const [show, setShow] = React.useState(false)
+  
+    React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTimeMin3_25SecPerHP11MinTimeVal4)
+    return () => clearTimeout(timeout)
+    }, [show])
+    if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}>
+    <b>Loop 4: </b>{totalTivyarMins10} minutes and {totalTivyarSecs10} seconds </Text>)
+    return (   <Timer initialTime={totalLoopTimeMin3_25SecPerHP11MinTimeVal2}
+    direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+        <div>
+        <Text mb='8px' fontSize='md'><b>Loop 5: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>	 
+        </div>
+      </React.Fragment>
+    )}
+    </Timer>
+  )
+  };
+  
+  const DelayComponentTivyarMinLoop5 = () => {
+    const [show, setShow] = React.useState(false)
+  
+    React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTimeMin3_25SecPerHP11MinTimeVal5)
+    return () => clearTimeout(timeout)
+    }, [show])
+    if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}>
+    <b>Loop 5: </b>{totalTivyarMins10} minutes and {totalTivyarSecs10} seconds </Text>)
+    return (   <Timer initialTime={totalLoopTimeMin3_25SecPerHP11MinTimeVal2}
+    direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+        <div>
+        <Text mb='8px' fontSize='md'><b>Loop 5: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>	 
+        </div>
+      </React.Fragment>
+    )}
+    </Timer>
+  )
+  };
+  
+  const DelayComponentTivyarMinLoop6 = () => {
+    const [show, setShow] = React.useState(false)
+  
+    React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTimeMin3_25SecPerHP11MinTimeVal6)
+    return () => clearTimeout(timeout)
+    }, [show])
+    if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}>
+    <b>Loop 6: </b>{totalTivyarMins10} minutes and {totalTivyarSecs10} seconds </Text>)
+    return (   <Timer initialTime={totalLoopTimeMin3_25SecPerHP11MinTimeVal2}
+    direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+        <div>
+        <Text mb='8px' fontSize='md'><b>Loop 6: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>	 
+        </div>
+      </React.Fragment>
+    )}
+    </Timer>
+  )
+  };
+  
+  const DelayComponentTivyarMinLoop7 = () => {
+    const [show, setShow] = React.useState(false)
+  
+    React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTimeMin3_25SecPerHP11MinTimeVal7)
+    return () => clearTimeout(timeout)
+    }, [show])
+    if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}>
+    <b>Loop 7: </b>{totalTivyarMins10} minutes and {totalTivyarSecs10} seconds </Text>)
+    return (   <Timer initialTime={totalLoopTimeMin3_25SecPerHP11MinTimeVal2}
+    direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+        <div>
+        <Text mb='8px' fontSize='md'><b>Loop 7: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>	 
+        </div>
+      </React.Fragment>
+    )}
+    </Timer>
+  )
+  };
+
+
+  const DelayComponentTivyarMinLoop8 = () => {
+    const [show, setShow] = React.useState(false)
+  
+    React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTimeMin3_25SecPerHP11MinTimeVal8)
+    return () => clearTimeout(timeout)
+    }, [show])
+    if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}>
+    <b>Loop 8: </b>{totalTivyarMins10} minutes and {totalTivyarSecs10} seconds </Text>)
+    return (   <Timer initialTime={totalLoopTimeMin3_25SecPerHP11MinTimeVal2}
+    direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+        <div>
+        <Text mb='8px' fontSize='md'><b>Loop 8: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>	 
+        </div>
+      </React.Fragment>
+    )}
+    </Timer>
+  )
+  };
+  
+  const DelayComponentTivyarMinLoop9 = () => {
+    const [show, setShow] = React.useState(false)
+  
+    React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTimeMin3_25SecPerHP11MinTimeVal9)
+    return () => clearTimeout(timeout)
+    }, [show])
+    if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}>
+    <b>Loop 9: </b>{totalTivyarMins10} minutes and {totalTivyarSecs10} seconds </Text>)
+    return (   <Timer initialTime={totalLoopTimeMin3_25SecPerHP11MinTimeVal2}
+    direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+        <div>
+        <Text mb='8px' fontSize='md'><b>Loop 9: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>	 
+        </div>
+      </React.Fragment>
+    )}
+    </Timer>
+  )
+  };
+    
+  const DelayComponentTivyarMinLoopFinal = () => {
+      const [show, setShow] = React.useState(false)
+    
+      React.useEffect(() => {
+        const timeout = setTimeout(() => {
+          setShow(true)
+        }, totalWhenToStartFinalTivyarLoopMin)
+        return () => clearTimeout(timeout)
+      }, [show])
+      if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}>
+        <b>Final Loop: </b>{totalTivyarFinalMins} minutes and {totalTivyarFinalSecs} seconds </Text>)
+      return (   <Timer initialTime={totalFinalLoopSecsTivyarMin}
+      direction="backward"
+          timeToUpdate={10}>
+        {({ start, resume, pause, stop, reset, timerState }) => (
+          <React.Fragment>
+            <div>
+            <Text mb='8px' fontSize='md'>
+              <b>Final Loop: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+            </div>
+          </React.Fragment>
+        )}
+      </Timer>
+    )
+    };
+
+//Tivyar - timers//
+
+const DelayComponentTivyarLoop = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, 0)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (null)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' mt='25px' fontSize='md'>
+ 		 <b>Loop 1: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>    
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+
+const DelayComponentTivyarLoop2 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal2)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}>
+    <b>Loop 2: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'>
+ 		 <b>Loop 2: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>    
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop3 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal3)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}>
+    <b>Loop 3: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 3: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>    
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop4 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal4)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}>
+    <b>Loop 4: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 4: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop5 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal5)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 5: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 5: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop6 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal6)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 6: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 6: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop7 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal7)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 7: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 7: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop8 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal8)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 8: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 8: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+const DelayComponentTivyarLoop9 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal9)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 9: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 9: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+const DelayComponentTivyarLoop10 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal10)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 10: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 10: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+const DelayComponentTivyarLoop11 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal11)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 11: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 11: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+const DelayComponentTivyarLoop12 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal12)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 12: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 12: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+const DelayComponentTivyarLoop13 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal13)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 13: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 13: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+const DelayComponentTivyarLoop14 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal14)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 14: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 14: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+const DelayComponentTivyarLoop15 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal15)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 15: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 15: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop16 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal16)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 16: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 16: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop17 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal17)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 17: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 17: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop18 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal18)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 18: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 18: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop19 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal19)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 19: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 19: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop20 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal20)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 20: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 20: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop21 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal21)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 21: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 21: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop22 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal22)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 22: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 22: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop23 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal23)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 23: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 23: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop24 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal24)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 24: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 24: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop25 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal25)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 25: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 25: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop26 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal26)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 26: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 26: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop27 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal27)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 27: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 27: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop28 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal28)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 28: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 28: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop29 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal29)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 33: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 33: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop30 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal30)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 30: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 30: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop31 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal31)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 31: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 31: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop32 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal32)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 32: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 32: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop33 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal33)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 33: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 33: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop34 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal34)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 34: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 34: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop35 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal35)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 35: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 35: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop36 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal36)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 36: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 36: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop37 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal37)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 37: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 37: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop38 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal38)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 38: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 38: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop39 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal39)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 39: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 39: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop40 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal40)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 40: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 40: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop41 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal41)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 41: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 41: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop42 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal42)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 42: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 42: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop43 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal43)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 43: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 43: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop44 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal44)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 44: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 44: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop45 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal45)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 45: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 45: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop46 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal46)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 46: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 46: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop47 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal47)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 47: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 47: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop48 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal48)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 48: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 48: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop49 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal49)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 49: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 49: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop50 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal50)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 50: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 50: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop51 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal51)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 51: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 51: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop52 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal52)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 52: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 52: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop53 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal53)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 53: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 53: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop54 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal54)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 54: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 54: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop55 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal55)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 55: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 55: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop56 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal56)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 56: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 56: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop57 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal57)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 57: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 57: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop58 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal58)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 58: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 58: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop59 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal59)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 59: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 59: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop60 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11MinTimeVal60)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 60: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 60: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop61 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11minTimeVal61)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 60: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 60: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop62 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11minTimeVal62)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 60: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 60: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop63 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11minTimeVal63)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 60: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 60: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop64 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11minTimeVal64)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 60: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 60: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop65 = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalLoopTime3_25SecPerHP11minTimeVal65)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}><b>Loop 60: </b>{totalTivyarMins75} minutes and {totalTivyarSecsAdj75} seconds </Text>)
+  return (   <Timer initialTime={totalLoopTime3_25SecPerHP11MinTimeVal2}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'><b>Loop 60: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+const DelayComponentTivyarLoop4x = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, (((Math.ceil((660/6)*.9))*6)*1000))
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (
+    <Container height='100px' mt='-20px' align='center' style={{backgroundColor: '#000000'
+    }} >
+        <Text mt='15px' pt='10px'  fontSize='md' style={{color: '#7a7a7a'}}>
+        At ~1 min remaining:<br/>
+  the timer will flash 1x, then show the 4x reward multiplier</Text>
+      </Container>
+    )
+return (   <Timer initialTime={totalFinalLoopSecsVoidWignow}
+direction="backward"
+    timeToUpdate={10}>
+  {({ start, resume, pause, stop, reset, timerState }) => (
+    <React.Fragment>
+      <Container height='100px' mt='-20px' align='center' style={{backgroundColor: '#000000'
+    }} >
+        <Text mt='15px' pt='25px' fontSize='md'><span>When you see the </span><span style={{color: '#B794F4'}}><b>x4 multiplier</b></span><span>, <b><i>type</i></b> at least 1 word</span></Text>
+      </Container>
+    </React.Fragment>
+  )}
+</Timer>
+)
+};
+
+
+const DelayComponentTivyarLoopFinal = () => {
+  const [show, setShow] = React.useState(false)
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShow(true)
+    }, totalWhenToStartFinalTivyarLoop)
+    return () => clearTimeout(timeout)
+  }, [show])
+  if (!show) return (<Text mb='8px' fontSize='md' style={{color: '#7a7a7a'}}>
+    <b>Final Loop: </b>0 minutes and {totalLeftoverTivyarTime} seconds </Text>)
+  return (   <Timer initialTime={totalFinalLoopSecsTivyar}
+  direction="backward"
+      timeToUpdate={10}>
+    {({ start, resume, pause, stop, reset, timerState }) => (
+      <React.Fragment>
+   	 <div>
+   	 <Text mb='8px' fontSize='md'>
+ 		 <b>Final Loop: </b><Timer.Minutes /> minutes and <Timer.Seconds /> seconds </Text>
+   	 </div>
+      </React.Fragment>
+    )}
+  </Timer>
+)
+};
+
+
+//Tivyar - min - it goes in its boxes precious//
+
+const TivyarTimerMin = () => {
+  if (totalTivyarLoops == 1)
+    return(<Container>
+<DelayComponentTivyarMinLoop />
+<DelayComponentTivyarMinLoopFinal />
+<YayBattleEndTivyarMin />
+</Container>
+)
+};
+
+const TivyarTimerMin2 = () => {
+  if (totalTivyarLoops == 2)
+    return(<Container>
+<DelayComponentTivyarMinLoop />
+<DelayComponentTivyarMinLoop2 />
+<DelayComponentTivyarMinLoopFinal />
+<YayBattleEndTivyarMin />
+</Container>
+)
+};
+
+const TivyarTimerMin3 = () => {
+  if (totalTivyarLoops == 3)
+    return(<Container>
+<DelayComponentTivyarMinLoop />
+<DelayComponentTivyarMinLoop2 />
+<DelayComponentTivyarMinLoop3 />
+<DelayComponentTivyarMinLoopFinal />
+<YayBattleEndTivyarMin />
+</Container>
+)
+};
+
+const TivyarTimerMin4 = () => {
+  if (totalTivyarLoops == 4)
+    return(<Container>
+<DelayComponentTivyarMinLoop />
+<DelayComponentTivyarMinLoop2 />
+<DelayComponentTivyarMinLoop3 />
+<DelayComponentTivyarMinLoop4 />
+<DelayComponentTivyarMinLoopFinal />
+<YayBattleEndTivyarMin />
+</Container>
+)
+};
+
+const TivyarTimerMin5 = () => {
+  if (totalTivyarLoops == 5)
+    return(<Container>
+<DelayComponentTivyarMinLoop />
+<DelayComponentTivyarMinLoop2 />
+<DelayComponentTivyarMinLoop3 />
+<DelayComponentTivyarMinLoop4 />
+<DelayComponentTivyarMinLoop5 />
+<DelayComponentTivyarMinLoopFinal />
+<YayBattleEndTivyarMin />
+</Container>
+)
+};
+
+const TivyarTimerMin6 = () => {
+  if (totalTivyarLoops == 6)
+    return(<Container>
+<DelayComponentTivyarMinLoop />
+<DelayComponentTivyarMinLoop2 />
+<DelayComponentTivyarMinLoop3 />
+<DelayComponentTivyarMinLoop4 />
+<DelayComponentTivyarMinLoop5 />
+<DelayComponentTivyarMinLoop6 />
+<DelayComponentTivyarMinLoopFinal />
+<YayBattleEndTivyarMin />
+</Container>
+)
+};
+
+const TivyarTimerMin7 = () => {
+  if (totalTivyarLoops == 7)
+    return(<Container>
+<DelayComponentTivyarMinLoop />
+<DelayComponentTivyarMinLoop2 />
+<DelayComponentTivyarMinLoop3 />
+<DelayComponentTivyarMinLoop4 />
+<DelayComponentTivyarMinLoop5 />
+<DelayComponentTivyarMinLoop6 />
+<DelayComponentTivyarMinLoop7 />
+<DelayComponentTivyarMinLoopFinal />
+<YayBattleEndTivyarMin />
+</Container>
+)
+};
+
+const TivyarTimerMin8 = () => {
+  if (totalTivyarLoops == 8)
+    return(<Container>
+<DelayComponentTivyarMinLoop />
+<DelayComponentTivyarMinLoop2 />
+<DelayComponentTivyarMinLoop3 />
+<DelayComponentTivyarMinLoop4 />
+<DelayComponentTivyarMinLoop5 />
+<DelayComponentTivyarMinLoop6 />
+<DelayComponentTivyarMinLoop7 />
+<DelayComponentTivyarMinLoop8 />
+<DelayComponentTivyarMinLoopFinal />
+<YayBattleEndTivyarMin />
+</Container>
+)
+};
+
+const TivyarTimerMin9 = () => {
+  if (totalTivyarLoops == 9)
+    return(<Container>
+<DelayComponentTivyarMinLoop />
+<DelayComponentTivyarMinLoop2 />
+<DelayComponentTivyarMinLoop3 />
+<DelayComponentTivyarMinLoop4 />
+<DelayComponentTivyarMinLoop5 />
+<DelayComponentTivyarMinLoop6 />
+<DelayComponentTivyarMinLoop7 />
+<DelayComponentTivyarMinLoop8 />
+<DelayComponentTivyarMinLoop9 />
+<DelayComponentTivyarMinLoopFinal />
+<YayBattleEndTivyarMin />
+</Container>
+)
+};
+
+//Tivyar boxes precious//
+
+const TivyarTimer4 = () => {
+if (totalTivyar75Loops == 4)
+  return(<Container>
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer5 = () => {
+if (totalTivyar75Loops == 5)
+  return(<Container>
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar /></Container>
+)
+};
+
+const TivyarTimer6 = () => {
+if (totalTivyar75Loops == 6)
+  return(<Container>
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+
+const TivyarTimer7 = () => {
+if (totalTivyar75Loops == 7)
+  return(<Container>
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+
+const TivyarTimer8 = () => {
+if (totalTivyar75Loops == 8)
+  return(<Container>
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer9 = () => {
+if (totalTivyar75Loops == 9)
+  return(<Container>
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer10 = () => {
+if (totalTivyar75Loops == 10)
+  return(<Container>
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer11 = () => {
+if (totalTivyar75Loops == 11)
+  return(<Container>
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer12 = () => {
+if (totalTivyar75Loops == 12)
+  return(<Container>
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer13 = () => {
+if (totalTivyar75Loops == 13)
+  return(<Container>
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer14 = () => {
+if (totalTivyar75Loops == 14)
+  return(<Container>
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer15 = () => {
+if (totalTivyar75Loops == 15)
+  return(<Container>
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer16 = () => {
+if (totalTivyar75Loops == 16)
+  return(<Container>
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer17 = () => {
+if (totalTivyar75Loops == 17)
+  return(<Container>
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer18 = () => {
+if (totalTivyar75Loops == 18)
+  return(<Container>
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer19 = () => {
+if (totalTivyar75Loops == 19)
+  return(<Container>
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer20 = () => {
+if (totalTivyar75Loops == 20)
+  return(<Container>
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer21 = () => {
+if (totalTivyar75Loops == 21)
+  return(<Container>
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer22 = () => {
+if (totalTivyar75Loops == 22)
+  return(<Container>
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer23 = () => {
+if (totalTivyar75Loops == 23)
+  return(<Container>
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer24 = () => {
+if (totalTivyar75Loops == 24)
+  return(<Container>
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer25 = () => {
+if (totalTivyar75Loops == 25)
+  return(<Container>
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer26 = () => {
+if (totalTivyar75Loops == 26)
+  return(<Container>
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer27 = () => {
+if (totalTivyar75Loops == 27)
+  return(<Container>
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer28 = () => {
+if (totalTivyar75Loops == 28)
+  return(<Container>
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer29 = () => {
+if (totalTivyar75Loops == 29)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer30 = () => {
+if (totalTivyar75Loops == 30)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer31 = () => {
+if (totalTivyar75Loops == 31)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer32 = () => {
+if (totalTivyar75Loops == 32)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoop32 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer33 = () => {
+if (totalTivyar75Loops == 33)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoop32 />
+<DelayComponentTivyarLoop33 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer34 = () => {
+if (totalTivyar75Loops == 34)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoop32 />
+<DelayComponentTivyarLoop33 />
+<DelayComponentTivyarLoop34 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer35 = () => {
+if (totalTivyar75Loops == 35)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoop32 />
+<DelayComponentTivyarLoop33 />
+<DelayComponentTivyarLoop34 />
+<DelayComponentTivyarLoop35 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer36 = () => {
+if (totalTivyar75Loops == 36)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoop32 />
+<DelayComponentTivyarLoop33 />
+<DelayComponentTivyarLoop34 />
+<DelayComponentTivyarLoop35 />
+<DelayComponentTivyarLoop36 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer37 = () => {
+if (totalTivyar75Loops == 37)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoop32 />
+<DelayComponentTivyarLoop33 />
+<DelayComponentTivyarLoop34 />
+<DelayComponentTivyarLoop35 />
+<DelayComponentTivyarLoop36 />
+<DelayComponentTivyarLoop37 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer38 = () => {
+if (totalTivyar75Loops == 38)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoop32 />
+<DelayComponentTivyarLoop33 />
+<DelayComponentTivyarLoop34 />
+<DelayComponentTivyarLoop35 />
+<DelayComponentTivyarLoop36 />
+<DelayComponentTivyarLoop37 />
+<DelayComponentTivyarLoop38 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer39 = () => {
+if (totalTivyar75Loops == 39)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoop32 />
+<DelayComponentTivyarLoop33 />
+<DelayComponentTivyarLoop34 />
+<DelayComponentTivyarLoop35 />
+<DelayComponentTivyarLoop36 />
+<DelayComponentTivyarLoop37 />
+<DelayComponentTivyarLoop38 />
+<DelayComponentTivyarLoop39 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer40 = () => {
+if (totalTivyar75Loops == 40)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoop32 />
+<DelayComponentTivyarLoop33 />
+<DelayComponentTivyarLoop34 />
+<DelayComponentTivyarLoop35 />
+<DelayComponentTivyarLoop36 />
+<DelayComponentTivyarLoop37 />
+<DelayComponentTivyarLoop38 />
+<DelayComponentTivyarLoop39 />
+<DelayComponentTivyarLoop40 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer41 = () => {
+if (totalTivyar75Loops == 41)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoop32 />
+<DelayComponentTivyarLoop33 />
+<DelayComponentTivyarLoop34 />
+<DelayComponentTivyarLoop35 />
+<DelayComponentTivyarLoop36 />
+<DelayComponentTivyarLoop37 />
+<DelayComponentTivyarLoop38 />
+<DelayComponentTivyarLoop39 />
+<DelayComponentTivyarLoop40 />
+<DelayComponentTivyarLoop41 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer42 = () => {
+if (totalTivyar75Loops == 42)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoop32 />
+<DelayComponentTivyarLoop33 />
+<DelayComponentTivyarLoop34 />
+<DelayComponentTivyarLoop35 />
+<DelayComponentTivyarLoop36 />
+<DelayComponentTivyarLoop37 />
+<DelayComponentTivyarLoop38 />
+<DelayComponentTivyarLoop39 />
+<DelayComponentTivyarLoop40 />
+<DelayComponentTivyarLoop41 />
+<DelayComponentTivyarLoop42 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer43 = () => {
+if (totalTivyar75Loops == 43)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoop32 />
+<DelayComponentTivyarLoop33 />
+<DelayComponentTivyarLoop34 />
+<DelayComponentTivyarLoop35 />
+<DelayComponentTivyarLoop36 />
+<DelayComponentTivyarLoop37 />
+<DelayComponentTivyarLoop38 />
+<DelayComponentTivyarLoop39 />
+<DelayComponentTivyarLoop40 />
+<DelayComponentTivyarLoop41 />
+<DelayComponentTivyarLoop42 />
+<DelayComponentTivyarLoop43 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer44 = () => {
+if (totalTivyar75Loops == 44)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoop32 />
+<DelayComponentTivyarLoop33 />
+<DelayComponentTivyarLoop34 />
+<DelayComponentTivyarLoop35 />
+<DelayComponentTivyarLoop36 />
+<DelayComponentTivyarLoop37 />
+<DelayComponentTivyarLoop38 />
+<DelayComponentTivyarLoop39 />
+<DelayComponentTivyarLoop40 />
+<DelayComponentTivyarLoop41 />
+<DelayComponentTivyarLoop42 />
+<DelayComponentTivyarLoop43 />
+<DelayComponentTivyarLoop44 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer45 = () => {
+if (totalTivyar75Loops == 45)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoop32 />
+<DelayComponentTivyarLoop33 />
+<DelayComponentTivyarLoop34 />
+<DelayComponentTivyarLoop35 />
+<DelayComponentTivyarLoop36 />
+<DelayComponentTivyarLoop37 />
+<DelayComponentTivyarLoop38 />
+<DelayComponentTivyarLoop39 />
+<DelayComponentTivyarLoop40 />
+<DelayComponentTivyarLoop41 />
+<DelayComponentTivyarLoop42 />
+<DelayComponentTivyarLoop43 />
+<DelayComponentTivyarLoop44 />
+<DelayComponentTivyarLoop45 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer46 = () => {
+if (totalTivyar75Loops == 46)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoop32 />
+<DelayComponentTivyarLoop33 />
+<DelayComponentTivyarLoop34 />
+<DelayComponentTivyarLoop35 />
+<DelayComponentTivyarLoop36 />
+<DelayComponentTivyarLoop37 />
+<DelayComponentTivyarLoop38 />
+<DelayComponentTivyarLoop39 />
+<DelayComponentTivyarLoop40 />
+<DelayComponentTivyarLoop41 />
+<DelayComponentTivyarLoop42 />
+<DelayComponentTivyarLoop43 />
+<DelayComponentTivyarLoop44 />
+<DelayComponentTivyarLoop45 />
+<DelayComponentTivyarLoop46 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer47 = () => {
+if (totalTivyar75Loops == 47)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoop32 />
+<DelayComponentTivyarLoop33 />
+<DelayComponentTivyarLoop34 />
+<DelayComponentTivyarLoop35 />
+<DelayComponentTivyarLoop36 />
+<DelayComponentTivyarLoop37 />
+<DelayComponentTivyarLoop38 />
+<DelayComponentTivyarLoop39 />
+<DelayComponentTivyarLoop40 />
+<DelayComponentTivyarLoop41 />
+<DelayComponentTivyarLoop42 />
+<DelayComponentTivyarLoop43 />
+<DelayComponentTivyarLoop44 />
+<DelayComponentTivyarLoop45 />
+<DelayComponentTivyarLoop46 />
+<DelayComponentTivyarLoop47 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer48 = () => {
+if (totalTivyar75Loops == 48)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoop32 />
+<DelayComponentTivyarLoop33 />
+<DelayComponentTivyarLoop34 />
+<DelayComponentTivyarLoop35 />
+<DelayComponentTivyarLoop36 />
+<DelayComponentTivyarLoop37 />
+<DelayComponentTivyarLoop38 />
+<DelayComponentTivyarLoop39 />
+<DelayComponentTivyarLoop40 />
+<DelayComponentTivyarLoop41 />
+<DelayComponentTivyarLoop42 />
+<DelayComponentTivyarLoop43 />
+<DelayComponentTivyarLoop44 />
+<DelayComponentTivyarLoop45 />
+<DelayComponentTivyarLoop46 />
+<DelayComponentTivyarLoop47 />
+<DelayComponentTivyarLoop48 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer49 = () => {
+if (totalTivyar75Loops == 49)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoop32 />
+<DelayComponentTivyarLoop33 />
+<DelayComponentTivyarLoop34 />
+<DelayComponentTivyarLoop35 />
+<DelayComponentTivyarLoop36 />
+<DelayComponentTivyarLoop37 />
+<DelayComponentTivyarLoop38 />
+<DelayComponentTivyarLoop39 />
+<DelayComponentTivyarLoop40 />
+<DelayComponentTivyarLoop41 />
+<DelayComponentTivyarLoop42 />
+<DelayComponentTivyarLoop43 />
+<DelayComponentTivyarLoop44 />
+<DelayComponentTivyarLoop45 />
+<DelayComponentTivyarLoop46 />
+<DelayComponentTivyarLoop47 />
+<DelayComponentTivyarLoop48 />
+<DelayComponentTivyarLoop49 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer50 = () => {
+if (totalTivyar75Loops == 50)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoop32 />
+<DelayComponentTivyarLoop33 />
+<DelayComponentTivyarLoop34 />
+<DelayComponentTivyarLoop35 />
+<DelayComponentTivyarLoop36 />
+<DelayComponentTivyarLoop37 />
+<DelayComponentTivyarLoop38 />
+<DelayComponentTivyarLoop39 />
+<DelayComponentTivyarLoop40 />
+<DelayComponentTivyarLoop41 />
+<DelayComponentTivyarLoop42 />
+<DelayComponentTivyarLoop43 />
+<DelayComponentTivyarLoop44 />
+<DelayComponentTivyarLoop45 />
+<DelayComponentTivyarLoop46 />
+<DelayComponentTivyarLoop47 />
+<DelayComponentTivyarLoop48 />
+<DelayComponentTivyarLoop49 />
+<DelayComponentTivyarLoop50 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer51 = () => {
+if (totalTivyar75Loops == 51)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoop32 />
+<DelayComponentTivyarLoop33 />
+<DelayComponentTivyarLoop34 />
+<DelayComponentTivyarLoop35 />
+<DelayComponentTivyarLoop36 />
+<DelayComponentTivyarLoop37 />
+<DelayComponentTivyarLoop38 />
+<DelayComponentTivyarLoop39 />
+<DelayComponentTivyarLoop40 />
+<DelayComponentTivyarLoop41 />
+<DelayComponentTivyarLoop42 />
+<DelayComponentTivyarLoop43 />
+<DelayComponentTivyarLoop44 />
+<DelayComponentTivyarLoop45 />
+<DelayComponentTivyarLoop46 />
+<DelayComponentTivyarLoop47 />
+<DelayComponentTivyarLoop48 />
+<DelayComponentTivyarLoop49 />
+<DelayComponentTivyarLoop50 />
+<DelayComponentTivyarLoop51 />
+
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer52 = () => {
+if (totalTivyar75Loops == 52)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoop32 />
+<DelayComponentTivyarLoop33 />
+<DelayComponentTivyarLoop34 />
+<DelayComponentTivyarLoop35 />
+<DelayComponentTivyarLoop36 />
+<DelayComponentTivyarLoop37 />
+<DelayComponentTivyarLoop38 />
+<DelayComponentTivyarLoop39 />
+<DelayComponentTivyarLoop40 />
+<DelayComponentTivyarLoop41 />
+<DelayComponentTivyarLoop42 />
+<DelayComponentTivyarLoop43 />
+<DelayComponentTivyarLoop44 />
+<DelayComponentTivyarLoop45 />
+<DelayComponentTivyarLoop46 />
+<DelayComponentTivyarLoop47 />
+<DelayComponentTivyarLoop48 />
+<DelayComponentTivyarLoop49 />
+<DelayComponentTivyarLoop50 />
+<DelayComponentTivyarLoop51 />
+<DelayComponentTivyarLoop52 />
+
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer53 = () => {
+if (totalTivyar75Loops == 53)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoop32 />
+<DelayComponentTivyarLoop33 />
+<DelayComponentTivyarLoop34 />
+<DelayComponentTivyarLoop35 />
+<DelayComponentTivyarLoop36 />
+<DelayComponentTivyarLoop37 />
+<DelayComponentTivyarLoop38 />
+<DelayComponentTivyarLoop39 />
+<DelayComponentTivyarLoop40 />
+<DelayComponentTivyarLoop41 />
+<DelayComponentTivyarLoop42 />
+<DelayComponentTivyarLoop43 />
+<DelayComponentTivyarLoop44 />
+<DelayComponentTivyarLoop45 />
+<DelayComponentTivyarLoop46 />
+<DelayComponentTivyarLoop47 />
+<DelayComponentTivyarLoop48 />
+<DelayComponentTivyarLoop49 />
+<DelayComponentTivyarLoop50 />
+<DelayComponentTivyarLoop51 />
+<DelayComponentTivyarLoop52 />
+<DelayComponentTivyarLoop53 />
+
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer54 = () => {
+if (totalTivyar75Loops == 54)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoop32 />
+<DelayComponentTivyarLoop33 />
+<DelayComponentTivyarLoop34 />
+<DelayComponentTivyarLoop35 />
+<DelayComponentTivyarLoop36 />
+<DelayComponentTivyarLoop37 />
+<DelayComponentTivyarLoop38 />
+<DelayComponentTivyarLoop39 />
+<DelayComponentTivyarLoop40 />
+<DelayComponentTivyarLoop41 />
+<DelayComponentTivyarLoop42 />
+<DelayComponentTivyarLoop43 />
+<DelayComponentTivyarLoop44 />
+<DelayComponentTivyarLoop45 />
+<DelayComponentTivyarLoop46 />
+<DelayComponentTivyarLoop47 />
+<DelayComponentTivyarLoop48 />
+<DelayComponentTivyarLoop49 />
+<DelayComponentTivyarLoop50 />
+<DelayComponentTivyarLoop51 />
+<DelayComponentTivyarLoop52 />
+<DelayComponentTivyarLoop53 />
+<DelayComponentTivyarLoop54 />
+
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer55 = () => {
+if (totalTivyar75Loops == 55)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoop32 />
+<DelayComponentTivyarLoop33 />
+<DelayComponentTivyarLoop34 />
+<DelayComponentTivyarLoop35 />
+<DelayComponentTivyarLoop36 />
+<DelayComponentTivyarLoop37 />
+<DelayComponentTivyarLoop38 />
+<DelayComponentTivyarLoop39 />
+<DelayComponentTivyarLoop40 />
+<DelayComponentTivyarLoop41 />
+<DelayComponentTivyarLoop42 />
+<DelayComponentTivyarLoop43 />
+<DelayComponentTivyarLoop44 />
+<DelayComponentTivyarLoop45 />
+<DelayComponentTivyarLoop46 />
+<DelayComponentTivyarLoop47 />
+<DelayComponentTivyarLoop48 />
+<DelayComponentTivyarLoop49 />
+<DelayComponentTivyarLoop50 />
+<DelayComponentTivyarLoop51 />
+<DelayComponentTivyarLoop52 />
+<DelayComponentTivyarLoop53 />
+<DelayComponentTivyarLoop54 />
+<DelayComponentTivyarLoop55 />
+
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer56 = () => {
+if (totalTivyar75Loops == 56)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoop32 />
+<DelayComponentTivyarLoop33 />
+<DelayComponentTivyarLoop34 />
+<DelayComponentTivyarLoop35 />
+<DelayComponentTivyarLoop36 />
+<DelayComponentTivyarLoop37 />
+<DelayComponentTivyarLoop38 />
+<DelayComponentTivyarLoop39 />
+<DelayComponentTivyarLoop40 />
+<DelayComponentTivyarLoop41 />
+<DelayComponentTivyarLoop42 />
+<DelayComponentTivyarLoop43 />
+<DelayComponentTivyarLoop44 />
+<DelayComponentTivyarLoop45 />
+<DelayComponentTivyarLoop46 />
+<DelayComponentTivyarLoop47 />
+<DelayComponentTivyarLoop48 />
+<DelayComponentTivyarLoop49 />
+<DelayComponentTivyarLoop50 />
+<DelayComponentTivyarLoop51 />
+<DelayComponentTivyarLoop52 />
+<DelayComponentTivyarLoop53 />
+<DelayComponentTivyarLoop54 />
+<DelayComponentTivyarLoop55 />
+<DelayComponentTivyarLoop56 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer57 = () => {
+if (totalTivyar75Loops == 57)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoop32 />
+<DelayComponentTivyarLoop33 />
+<DelayComponentTivyarLoop34 />
+<DelayComponentTivyarLoop35 />
+<DelayComponentTivyarLoop36 />
+<DelayComponentTivyarLoop37 />
+<DelayComponentTivyarLoop38 />
+<DelayComponentTivyarLoop39 />
+<DelayComponentTivyarLoop40 />
+<DelayComponentTivyarLoop41 />
+<DelayComponentTivyarLoop42 />
+<DelayComponentTivyarLoop43 />
+<DelayComponentTivyarLoop44 />
+<DelayComponentTivyarLoop45 />
+<DelayComponentTivyarLoop46 />
+<DelayComponentTivyarLoop47 />
+<DelayComponentTivyarLoop48 />
+<DelayComponentTivyarLoop49 />
+<DelayComponentTivyarLoop50 />
+<DelayComponentTivyarLoop51 />
+<DelayComponentTivyarLoop52 />
+<DelayComponentTivyarLoop53 />
+<DelayComponentTivyarLoop54 />
+<DelayComponentTivyarLoop55 />
+<DelayComponentTivyarLoop56 />
+<DelayComponentTivyarLoop57 />
+
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer58 = () => {
+if (totalTivyar75Loops == 58)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoop32 />
+<DelayComponentTivyarLoop33 />
+<DelayComponentTivyarLoop34 />
+<DelayComponentTivyarLoop35 />
+<DelayComponentTivyarLoop36 />
+<DelayComponentTivyarLoop37 />
+<DelayComponentTivyarLoop38 />
+<DelayComponentTivyarLoop39 />
+<DelayComponentTivyarLoop40 />
+<DelayComponentTivyarLoop41 />
+<DelayComponentTivyarLoop42 />
+<DelayComponentTivyarLoop43 />
+<DelayComponentTivyarLoop44 />
+<DelayComponentTivyarLoop45 />
+<DelayComponentTivyarLoop46 />
+<DelayComponentTivyarLoop47 />
+<DelayComponentTivyarLoop48 />
+<DelayComponentTivyarLoop49 />
+<DelayComponentTivyarLoop50 />
+<DelayComponentTivyarLoop51 />
+<DelayComponentTivyarLoop52 />
+<DelayComponentTivyarLoop53 />
+<DelayComponentTivyarLoop54 />
+<DelayComponentTivyarLoop55 />
+<DelayComponentTivyarLoop56 />
+<DelayComponentTivyarLoop57 />
+<DelayComponentTivyarLoop58 />
+
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer59 = () => {
+if (totalTivyar75Loops == 59)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoop32 />
+<DelayComponentTivyarLoop33 />
+<DelayComponentTivyarLoop34 />
+<DelayComponentTivyarLoop35 />
+<DelayComponentTivyarLoop36 />
+<DelayComponentTivyarLoop37 />
+<DelayComponentTivyarLoop38 />
+<DelayComponentTivyarLoop39 />
+<DelayComponentTivyarLoop40 />
+<DelayComponentTivyarLoop41 />
+<DelayComponentTivyarLoop42 />
+<DelayComponentTivyarLoop43 />
+<DelayComponentTivyarLoop44 />
+<DelayComponentTivyarLoop45 />
+<DelayComponentTivyarLoop46 />
+<DelayComponentTivyarLoop47 />
+<DelayComponentTivyarLoop48 />
+<DelayComponentTivyarLoop49 />
+<DelayComponentTivyarLoop50 />
+<DelayComponentTivyarLoop51 />
+<DelayComponentTivyarLoop52 />
+<DelayComponentTivyarLoop53 />
+<DelayComponentTivyarLoop54 />
+<DelayComponentTivyarLoop55 />
+<DelayComponentTivyarLoop56 />
+<DelayComponentTivyarLoop57 />
+<DelayComponentTivyarLoop58 />
+<DelayComponentTivyarLoop59 />
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+const TivyarTimer60 = () => {
+if (totalTivyar75Loops == 60)
+  return(<Container>
+
+<DelayComponentTivyarLoop />
+<DelayComponentTivyarLoop2 />
+<DelayComponentTivyarLoop3 />
+<DelayComponentTivyarLoop4 />
+<DelayComponentTivyarLoop5 />
+<DelayComponentTivyarLoop6 />
+<DelayComponentTivyarLoop7 />
+<DelayComponentTivyarLoop8 />
+<DelayComponentTivyarLoop9 />
+<DelayComponentTivyarLoop10 />
+<DelayComponentTivyarLoop11 />
+<DelayComponentTivyarLoop12 />
+<DelayComponentTivyarLoop13 />
+<DelayComponentTivyarLoop14 />
+<DelayComponentTivyarLoop15 />
+<DelayComponentTivyarLoop16 />
+<DelayComponentTivyarLoop17 />
+<DelayComponentTivyarLoop18 />
+<DelayComponentTivyarLoop19 />
+<DelayComponentTivyarLoop20 />
+<DelayComponentTivyarLoop21 />
+<DelayComponentTivyarLoop22 />
+<DelayComponentTivyarLoop23 />
+<DelayComponentTivyarLoop24 />
+<DelayComponentTivyarLoop25 />
+<DelayComponentTivyarLoop26 />
+<DelayComponentTivyarLoop27 />
+<DelayComponentTivyarLoop28 />
+<DelayComponentTivyarLoop29 />
+<DelayComponentTivyarLoop30 />
+<DelayComponentTivyarLoop31 />
+<DelayComponentTivyarLoop32 />
+<DelayComponentTivyarLoop33 />
+<DelayComponentTivyarLoop34 />
+<DelayComponentTivyarLoop35 />
+<DelayComponentTivyarLoop36 />
+<DelayComponentTivyarLoop37 />
+<DelayComponentTivyarLoop38 />
+<DelayComponentTivyarLoop39 />
+<DelayComponentTivyarLoop40 />
+<DelayComponentTivyarLoop41 />
+<DelayComponentTivyarLoop42 />
+<DelayComponentTivyarLoop43 />
+<DelayComponentTivyarLoop44 />
+<DelayComponentTivyarLoop45 />
+<DelayComponentTivyarLoop46 />
+<DelayComponentTivyarLoop47 />
+<DelayComponentTivyarLoop48 />
+<DelayComponentTivyarLoop49 />
+<DelayComponentTivyarLoop50 />
+<DelayComponentTivyarLoop51 />
+<DelayComponentTivyarLoop52 />
+<DelayComponentTivyarLoop53 />
+<DelayComponentTivyarLoop54 />
+<DelayComponentTivyarLoop55 />
+<DelayComponentTivyarLoop56 />
+<DelayComponentTivyarLoop57 />
+<DelayComponentTivyarLoop58 />
+<DelayComponentTivyarLoop59 />
+<DelayComponentTivyarLoop60 />
+
+<DelayComponentTivyarLoopFinal />
+<YayBattleEndTivyar />
+</Container>
+)
+};
+
+
+
+const Tivyar4 = () => {
+if (totalTivyarBackTo100 == 4)
+return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit.')}}>
+Copy {totalTivyarBackTo100} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar5 = () => {
+if (totalTivyarBackTo100 == 5)
+return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet.')}}>
+Copy {totalTivyarBackTo100} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar6 = () => {
+if (totalTivyarBackTo100 == 6)
+return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur.')}}>
+Copy {totalTivyarBackTo100} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar7 = () => {
+if (totalTivyarBackTo100 == 7)
+return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing.')}}>
+Copy {totalTivyarBackTo100} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar8 = () => {
+if (totalTivyarBackTo100 == 8)
+return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit.')}}>
+Copy {totalTivyarBackTo100} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar9 = () => {
+if (totalTivyarBackTo100 == 9)
+return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi.')}}>
+Copy {totalTivyarBackTo100} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar10 = () => {
+if (totalTivyarBackTo100 == 10)
+return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in.')}}>
+Copy {totalTivyarBackTo100} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar11 = () => {
+if (totalTivyarBackTo100 == 11)
+return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in nunc.')}}>
+Copy {totalTivyarBackTo100} words<br/>(Lorem Ipsum)</Button>  )
+}
+
+const Tivyar12 = () => {
+if (totalTivyarBackTo100 == 12)
+return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in nunc at.')}}>
+Copy {totalTivyarBackTo100} words<br/>(Lorem Ipsum)</Button>  )
+}
+
+const Tivyar13 = () => {
+if (totalTivyarBackTo100 == 13)
+return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in nunc ex sodales.')}}>
+Copy {totalTivyarBackTo100} words<br/>(Lorem Ipsum)</Button>  )
+}
+
+const Tivyar14 = () => {
+if (totalTivyarBackTo100 == 14)
+return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in nunc at ex sodales.')}}>
+Copy {totalTivyarBackTo100} words<br/>(Lorem Ipsum)</Button>  )
+}
+
+const Tivyar15 = () => {
+if (totalTivyarBackTo100 == 15)
+return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in nunc at elia ex sodales.')}}>
+Copy {totalTivyarBackTo100} words<br/>(Lorem Ipsum)</Button>  )
+}
+
+const Tivyar16 = () => {
+if (totalTivyarBackTo100 == 16)
+return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in nunc at elia ex sodales consequat.')}}>
+Copy {totalTivyarBackTo100} words<br/>(Lorem Ipsum)</Button>  )
+}
+
+
+const Tivyar17 = () => {
+if (totalTivyarBackTo100 == 17)
+return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut efficitur sem eros, sed auctor mi maximus orci. ')}}>
+Copy {totalTivyarBackTo100} words<br/>(Lorem Ipsum)</Button>  )
+}
+
+const Tivyar18 = () => {
+if (totalTivyarBackTo100 == 18)
+return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut efficitur sem eros, sed auctor mi maximus in orci. ')}}>
+Copy {totalTivyarBackTo100} words<br/>(Lorem Ipsum)</Button>  )
+}
+
+const Tivyar19 = () => {
+if (totalTivyarBackTo100 == 19)
+return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut efficitur sem eros, sed auctor mi maximus in. Orci varius. ')}}>
+Copy {totalTivyarBackTo100} words<br/>(Lorem Ipsum)</Button>  )
+}
+
+const Tivyar20 = () => {
+if (totalTivyarBackTo100 == 20)
+return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut efficitur sem eros, sed auctor mi maximus in. Orci varius natoque. ')}}>
+Copy {totalTivyarBackTo100} words<br/>(Lorem Ipsum)</Button>  )
+}
+
+const Tivyar21 = () => {
+if (totalTivyarBackTo100 == 21)
+return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut efficitur sem eros, sed auctor mi maximus in. Orci varius natoque penatibus.')}}>
+Copy {totalTivyarBackTo100} words<br/>(Lorem Ipsum)</Button>  )
+}
+
+const Tivyar22 = () => {
+if (totalTivyarBackTo100 == 22)
+return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut efficitur sem eros, sed auctor mi maximus in. Orci varius natoque penatibus et. ')}}>
+Copy {totalTivyarBackTo100} words<br/>(Lorem Ipsum)</Button>  )
+}
+
+const Tivyar26 = () => {
+if (totalTivyarHPToLose == 26)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel ante quam. Nulla egestas auctor enim non rhoncus. Maecenas feugiat dapibus lacus nec gravida. Quisque dictum.')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar28 = () => {
+if (totalTivyarHPToLose == 28)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non purus feugiat, gravida dolor eget, porta mi. Aliquam iaculis elit diam. Ut id blandit dui. Nulla et dolor.')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar30 = () => {
+if (totalTivyarHPToLose == 30)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas rhoncus euismod lacus ut lobortis. Maecenas tincidunt lacus quis interdum faucibus. Aliquam erat volutpat. Vestibulum semper est in condimentum mattis. Suspendisse.')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar32 = () => {
+if (totalTivyarHPToLose == 32)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus risus justo, ac consectetur orci maximus nec. Proin placerat, lectus nec tempus cursus, augue nibh eleifend erat, at porttitor nulla arcu in.')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar34 = () => {
+if (totalTivyarHPToLose == 34)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus diam tellus, volutpat vitae dapibus vel, convallis auctor tellus. Cras fringilla tincidunt lorem, quis sagittis odio accumsan at. Sed nec dictum diam. Cras ac pulvinar.')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar36 = () => {
+if (totalTivyarHPToLose == 36)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus mollis egestas ex. Vivamus tempus neque odio, nec scelerisque ipsum vehicula sit amet. Duis nisl dolor, posuere sed ante vel, euismod faucibus nisi. Donec nulla leo, aliquet.')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar38 = () => {
+if (totalTivyarHPToLose == 38)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque feugiat aliquam ipsum ac auctor. Phasellus a nisi auctor, tempus felis eget, porta felis. Maecenas et tempor nisi. Aenean metus arcu, posuere sit amet nunc vel, cursus porttitor nisl.')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar40 = () => {
+if (totalTivyarHPToLose == 40)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus at est et ipsum suscipit lacinia nec sit amet turpis. Vestibulum nec ex nibh. Etiam consequat et justo sit amet commodo. Suspendisse mattis semper arcu eget fermentum. Donec eu nisi elementum.')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar42 = () => {
+if (totalTivyarHPToLose == 42)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac aliquam nunc. Sed vitae tellus a tellus dictum condimentum. Nunc volutpat feugiat justo. Fusce vulputate ligula nisl, sed ullamcorper libero imperdiet sit amet. In fermentum sed metus nec pellentesque. Duis eget tellus. ')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar44 = () => {
+if (totalTivyarHPToLose == 44)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula volutpat ligula eu efficitur. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris mollis et odio eu placerat. Phasellus mollis eleifend orci, eget pulvinar sem viverra eu. Nam turpis. ')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar46 = () => {
+if (totalTivyarHPToLose == 46)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer aliquam mauris ac dignissim hendrerit. Suspendisse leo nulla, hendrerit ultrices diam interdum, consequat mollis sapien. Donec ac placerat leo. In ante libero, facilisis sit amet quam in, iaculis commodo nisl. Aliquam tincidunt nunc massa, sit amet viverra.')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar48 = () => {
+if (totalTivyarHPToLose == 48)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu ligula ac ipsum tempus tristique ac at urna. Phasellus accumsan erat ac dui elementum fringilla. Phasellus sagittis et mi ac malesuada. Nam eleifend mi in velit auctor, vel mollis massa volutpat. Ut tempus lorem diam, a sollicitudin ex.')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar50 = () => {
+if (totalTivyarHPToLose == 50)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat blandit eros, pellentesque vulputate tortor imperdiet et. In hac habitasse platea dictumst. Aenean non dapibus diam, vitae suscipit augue. Phasellus ut aliquam magna, nec efficitur lacus. Pellentesque lacus sapien, vulputate in blandit at, venenatis vestibulum magna. Nullam quis facilisis dui. ')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar52 = () => {
+if (totalTivyarHPToLose == 52)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eros odio, pellentesque quis tellus at, consectetur lobortis sem. Etiam turpis libero, viverra at malesuada ac, fringilla consectetur orci. Etiam sed convallis magna. Morbi feugiat rutrum metus vitae placerat. Cras fermentum convallis posuere. Vivamus hendrerit neque id pharetra consectetur. Etiam fringilla augue et. ')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar54 = () => {
+if (totalTivyarHPToLose == 54)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id posuere est, a ultrices nisi. In porttitor ligula vel arcu dapibus, vel interdum magna ultricies. Aenean odio ante, ultrices vitae fermentum sed, aliquam eu tellus. Vestibulum mattis dignissim sollicitudin. Integer mollis, lorem et convallis elementum, lorem nisi vehicula dolor, congue vulputate metus eros id. ')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar56 = () => {
+if (totalTivyarHPToLose == 56)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce blandit viverra neque, iaculis blandit urna vulputate et. Etiam eu imperdiet nulla, ut malesuada mi. Nullam ex nisi, fringilla eget orci sed, porta porttitor tellus. Donec nec turpis feugiat, commodo eros in, sodales lacus. Maecenas fermentum lacus posuere mauris placerat tempus. Mauris a lectus tincidunt, aliquet nunc. ')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar58 = () => {
+if (totalTivyarHPToLose == 58)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat erat libero, et auctor lorem maximus et. Nam vel massa sed eros luctus finibus nec vitae augue. In pellentesque tortor vel pulvinar efficitur. Aenean non nunc volutpat, semper lacus quis, dignissim erat. Phasellus dignissim, leo et finibus maximus, nunc est dignissim augue, quis placerat urna ligula sit amet. ')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar60 = () => {
+if (totalTivyarHPToLose == 60)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut sapien ac lacus porttitor aliquam at at nulla. Vivamus pharetra pulvinar elementum. Nullam imperdiet augue vel eros imperdiet eleifend. Suspendisse rutrum, tortor id volutpat sagittis, elit urna luctus odio, ut congue massa felis eu ligula. Maecenas tempor, urna in eleifend eleifend, eros ante vehicula odio, vitae maximus ipsum sapien sed.')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar62 = () => {
+if (totalTivyarHPToLose == 62)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra finibus sapien, nec aliquam sem ornare elementum. Mauris a ornare nunc. Vestibulum placerat massa sit amet nisl faucibus, in euismod turpis sollicitudin. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean consectetur vel quam dapibus interdum. Maecenas lacinia dolor justo, at vestibulum ex sollicitudin eget. Nunc in velit. ')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar64 = () => {
+if (totalTivyarHPToLose == 64)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu elementum odio. Nulla imperdiet sit amet risus nec pharetra. Duis auctor, justo et sodales posuere, risus sapien maximus enim, at convallis lorem ex eu orci. Donec imperdiet dictum ex, semper fermentum diam auctor sit amet. In suscipit nec odio vitae viverra. Nullam vitae hendrerit lectus, at accumsan mauris. Suspendisse facilisis quam eu imperdiet interdum. ')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar66 = () => {
+if (totalTivyarHPToLose == 66)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo rutrum ultrices. Nullam dapibus nisi ut nisl placerat malesuada. Proin luctus dignissim dui, vitae lacinia velit gravida ac. Proin et nisi ac mi ultricies blandit ac ac sem. Nullam id mattis libero. Sed euismod metus ut odio tincidunt, sed sodales metus blandit. Phasellus aliquam elit in lacinia ornare. Nullam suscipit ipsum ac auctor convallis. Donec tempor. ')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar68 = () => {
+if (totalTivyarHPToLose == 68)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac dolor lobortis ante ornare scelerisque. Ut finibus luctus purus sit amet accumsan. Duis vel suscipit erat, nec molestie enim. Nullam bibendum odio nunc. Vivamus mollis fermentum ex, in dictum eros blandit nec. Sed sollicitudin quis tortor ac pharetra. Sed consectetur, turpis eu eleifend rutrum, nibh urna condimentum leo, eget interdum urna est nec sapien. Interdum et malesuada fames. ')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar70 = () => {
+if (totalTivyarHPToLose == 70)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra purus elementum auctor varius. Morbi elementum mi nec iaculis pretium. Cras nec porta turpis. Nullam vehicula urna vitae volutpat sollicitudin. Aliquam erat volutpat. In vehicula ex in augue scelerisque bibendum. Suspendisse cursus neque at mauris feugiat mattis. Ut at congue justo. Phasellus elementum aliquet gravida. Aliquam rhoncus vulputate est eget efficitur. Cras tristique elit non tellus consequat iaculis. Nunc sit. ')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar72 = () => {
+if (totalTivyarHPToLose == 72)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales, elit sed posuere laoreet, ante mi maximus velit, vel accumsan sem metus vel justo. Curabitur nec tincidunt tellus, at laoreet felis. Fusce eu luctus felis. Morbi varius, turpis eu aliquam auctor, magna ante interdum nulla, quis maximus magna felis nec nisl. Vivamus vitae ullamcorper dolor. Donec feugiat in dolor in maximus. Integer viverra dui sit amet nulla tristique, sit amet suscipit leo. ')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar74 = () => {
+if (totalTivyarHPToLose == 74)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis magna a justo bibendum dictum sit amet sit amet ex. Aenean quis hendrerit urna, ut ullamcorper nisi. Aenean a nunc consectetur, pharetra lectus non, rhoncus sapien. Sed quis nulla gravida, interdum turpis a, faucibus est. Curabitur a odio vitae ex tristique luctus vitae a sem. Nulla congue vel lacus eget varius. Aliquam fermentum nibh quis diam dictum, vel porta justo rhoncus. Morbi at rhoncus. ')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar76 = () => {
+if (totalTivyarHPToLose == 76)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec euismod est. Cras tincidunt tempus blandit. Vestibulum vel tortor sed ligula vestibulum aliquet sit amet vel tellus. Mauris vitae ultricies nibh. Integer eu augue non nulla consectetur cursus. Fusce diam purus, faucibus non interdum sed, varius eget tellus. Suspendisse vehicula justo diam, ac fringilla eros sagittis sit amet. Suspendisse non justo lacinia, tempor libero pulvinar, efficitur arcu. Nunc vitae enim vestibulum massa interdum volutpat sit amet. ')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar78 = () => {
+if (totalTivyarHPToLose == 78)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue arcu, fringilla vitae tempus vel, ultricies commodo turpis. Pellentesque ut risus luctus, accumsan dolor eget, luctus felis. Suspendisse ac egestas nunc. Sed viverra felis nec lectus tempor feugiat. Nunc tincidunt finibus turpis non luctus. Nullam orci nisl, porttitor ut neque in, malesuada porta nisi. Phasellus sollicitudin magna faucibus est lobortis, ornare mollis lacus sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent. ')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar80 = () => {
+if (totalTivyarHPToLose == 80)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue dignissim cursus. Vivamus id nulla ut risus pellentesque semper. Pellentesque lobortis augue eget ultrices molestie. Nunc euismod massa a lectus varius sollicitudin. Sed dictum quis est placerat porta. Ut malesuada feugiat nisi et accumsan. Morbi et pulvinar nunc. Proin fringilla condimentum metus, id blandit mauris egestas in. Fusce tincidunt, nisi eget ornare fermentum, elit erat dictum nulla, tristique iaculis leo massa in orci. Ut aliquam efficitur lacus, in commodo nibh.')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar82 = () => {
+if (totalTivyarHPToLose == 82)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor felis ligula, sit amet pulvinar arcu porta quis. Mauris ultrices tristique neque, id ullamcorper nisi pharetra sit amet. Nam commodo leo sit amet sollicitudin vehicula. Morbi congue tellus risus, eu dapibus ex consequat id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque vestibulum arcu diam, non ornare dui volutpat sollicitudin. Nunc vitae massa in leo volutpat fermentum nec eu lectus. Sed sit amet finibus dui, sed. ')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar84 = () => {
+if (totalTivyarHPToLose == 84)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dictum velit vitae nunc ultrices, non sagittis eros euismod. Donec mattis leo id tempor tristique. In dignissim tempus augue, et posuere eros tempus sed. Suspendisse in ex felis. Ut faucibus blandit imperdiet. Sed convallis quam quis augue viverra rutrum. Ut sapien orci, scelerisque blandit nulla sit amet, malesuada sollicitudin justo. Proin et nulla consequat, fermentum eros non, rutrum orci. Suspendisse porttitor viverra tortor sed consequat. Etiam et augue ac metus condimentum finibus. Nunc vel dictum. ')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar86 = () => {
+if (totalTivyarHPToLose == 86)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum lorem, vel congue libero. Maecenas egestas tincidunt mauris, ut interdum turpis eleifend id. Mauris consectetur metus id eros consectetur gravida. Vivamus eget velit ipsum. Nunc porta tortor eu est imperdiet fringilla. Curabitur vel nibh ac odio imperdiet ultricies. Donec tempus ante non libero euismod dapibus. Aenean faucibus consectetur bibendum. Morbi sollicitudin, enim id congue laoreet, elit dui volutpat metus, non egestas ante tortor sit amet ex. Mauris sagittis pulvinar finibus. Integer non vehicula lectus, ut. ')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar88 = () => {
+if (totalTivyarHPToLose == 88)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla arcu odio, vulputate eu tortor ac, convallis convallis ipsum. Proin imperdiet luctus odio id vehicula. Sed congue posuere tristique. Vivamus accumsan luctus tellus. Mauris porttitor leo et metus convallis elementum. Suspendisse in urna pharetra, eleifend arcu et, porttitor lectus. Vivamus eros tellus, volutpat in est accumsan, bibendum congue est. Phasellus dignissim consequat sem, in rutrum lorem interdum nec. Phasellus facilisis lectus eu eros condimentum, vel luctus justo eleifend. Fusce venenatis ipsum ut ante tincidunt commodo. Suspendisse potenti. Sed volutpat. .')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
+};
+
+const Tivyar90 = () => {
+if (totalTivyarHPToLose == 90)
+  return(
+<Button mt='15px' mb='15px' height='50px'
+onClick={() => {navigator.clipboard.writeText('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu dignissim neque. Quisque a commodo diam. Cras in accumsan nisl. Maecenas vitae scelerisque arcu, at pretium ipsum. Nam tincidunt ullamcorper congue. Donec scelerisque, augue nec hendrerit vehicula, erat dui pellentesque odio, et viverra dolor felis nec sem. Praesent a lorem vel tellus feugiat ultricies. Etiam lacinia, sapien quis vulputate tincidunt, nisi lacus ornare augue, elementum efficitur elit diam in nibh. Suspendisse ullamcorper mollis purus, at tincidunt odio porta rhoncus. Quisque efficitur nisl nibh, id auctor libero viverra ac. In hac. ')}}>
+Copy {totalTivyarHPToLose} words<br/>(Lorem Ipsum)</Button>  )
 };
 
 //Viyu - min - timers//
@@ -62269,6 +67519,10 @@ const VoidWignow60Def = () => {
       </Tr>
       <Tr>
         <Td isNumeric>6</Td>
+        <Td>Tivyar</Td>
+      </Tr>
+      <Tr>
+        <Td isNumeric>6</Td>
         <Td>Vanvri</Td>
       </Tr>
       <Tr>
@@ -62288,10 +67542,11 @@ const VoidWignow60Def = () => {
 </TableContainer>
 <br/>
 <Text><b>Exceptions</b></Text>
-<Text>
-  <b>Wyrte the Word Devourer</b> is the first monster to lose 3 HP per X seconds.
+<Text fontSize='md' mt='8px' mb='25px'>
+<b>Wyrte the Word Devourer</b> is the first monster to lose 3 HP per X seconds.
 </Text>
-<TableContainer>
+<TableContainer align='center'>
+<Divider width='240px' mb='3px' align='center' />
 <Table align='center' variant='striped' width='200px' size='sm'>
     <Thead>
       <Tr>
@@ -62504,6 +67759,20 @@ const VoidWignow60Def = () => {
             </Button>
             </WrapItem>
             <WrapItem>
+            <Button w='100px' h='150px' pb={5} onClick={handleTivyarClick} style={{ backgroundColor: TivyarActive ? "#1A1521" : "#2D3748" }}>
+       <VStack> 
+       <Image
+        mt='12px'
+        align='center' 
+        boxSize='5rem'
+        borderRadius='full'
+        src='https://static.wikia.nocookie.net/4thewords/images/c/c2/Tivyar.png'
+        mr='5px'
+      /> <Text fontSize='sm' align='center'>Tivyar<br></br> 11 minutes</Text>
+      </VStack>
+            </Button>
+            </WrapItem>
+            <WrapItem>
             <Button w='100px' h='150px' pb={5} onClick={handleViyuClick} style={{ backgroundColor: ViyuActive ? "#1A1521" : "#2D3748" }}>
        <VStack> 
        <Image
@@ -62573,7 +67842,7 @@ const VoidWignow60Def = () => {
   </TabList>
 
 {!VanstraIsShown && !ViIsShown && !VoidWignowIsShown && !WyrteIsShown && !LucerebIsShown && !ProfBartIsShown &&
-!VanspiIsShown && !ViyuIsShown && !VanvriIsShown && !ViyusaIsShown && !ViradiseIsShown &&
+!VanspiIsShown && !TivyarIsShown && !ViyuIsShown && !VanvriIsShown && !ViyusaIsShown && !ViradiseIsShown &&
 <TabPanels height='400px' mt='-20px' style={{backgroundColor: '#1a1521'}}>
 <TabPanel>
   <VStack>
@@ -62583,7 +67852,7 @@ const VoidWignow60Def = () => {
    	 boxSize='7.5rem'
    	 src='https://static.wikia.nocookie.net/4thewords/images/3/32/TellMeMore.png'
       />
-      <br></br>
+      <br></br> 
   <Text>Select a monster to show its info</Text>
   </VStack>
 </TabPanel>
@@ -63090,6 +68359,79 @@ const VoidWignow60Def = () => {
     </TabPanel>
   </TabPanels>
 }
+
+{TivyarIsShown &&
+  <TabPanels mt='-20px' style={{backgroundColor: '#1a1521'}}>
+    <TabPanel>
+      <VStack>
+      <Heading size='lg' mt='15px' ><b>Tivyar</b></Heading>
+      <Text mt='-8px' mb='3px'>
+          <span style={{color: '#B794F4'}}><b>{totalMaxHP} HP</b></span><span> | </span>
+            <span style={{color: '#B794F4'}}><b>11 mins</b></span>
+            </Text>
+     <Text mt='-8px' mb='3px' fontSize='md'>
+          <span>loses </span>
+          <span style={{color: '#B794F4'}}><b>2 HP</b></span><span> every </span>
+            <span style={{color: '#B794F4'}}><b>6 secs</b></span>
+            </Text>   	 
+   	 <br></br>
+
+   	 <Image
+   	 align='center'
+   	 boxSize='7.5rem'
+   	 borderRadius='full'
+   	 src='https://static.wikia.nocookie.net/4thewords/images/c/c2/Tivyar.png'
+      />
+      <br></br>
+      <Text fontSize='lg'>calculated at {DefenseStat} Defense</Text><br></br>
+      <div>
+      <Divider align='center' width='200px'></Divider>
+      </div>
+      <Text fontSize='lg'><i>paste or write</i></Text>
+      <Text mt='-8px'><b>{totalTivyarHPToLose} words</b></Text>
+      <Text fontSize='lg'><i>approx. every</i></Text>
+      <Text mt='-8px'><b>{totalTivyarMins10} mins {totalTivyarSecs10} secs</b></Text>
+      <Text fontSize='lg'><i>to keep Tivyar at or above</i></Text>
+      <Text mt='-8px'><b>{totalTivyarDownTo10} HP</b></Text>
+
+      </VStack>    
+    </TabPanel>
+    <TabPanel>
+      <VStack>
+   	 <Heading size='lg' mt='15px' ><b>Tivyar</b></Heading>
+      <Text mt='-8px' mb='3px'>
+          <span style={{color: '#B794F4'}}><b>{totalMaxHP} HP</b></span><span> | </span>
+            <span style={{color: '#B794F4'}}><b>11 mins</b></span>
+            </Text> 
+     <Text mt='-8px' mb='3px' fontSize='md'>
+          <span>loses </span>
+          <span style={{color: '#B794F4'}}><b>2 HP</b></span><span> every </span>
+            <span style={{color: '#B794F4'}}><b>6 secs</b></span>
+            </Text>   	 <br></br>
+
+   	 <Image
+   	 align='center'
+   	 boxSize='7.5rem'
+   	 borderRadius='full'
+   	 src='https://static.wikia.nocookie.net/4thewords/images/c/c2/Tivyar.png'
+      />
+      <br></br>
+      <Text fontSize='lg'>calculated at {DefenseStat} Defense</Text><br></br>
+      <div>
+      <Divider align='center' width='200px'></Divider>
+      </div>
+      <Text fontSize='lg'><i>paste or write</i></Text>
+      <Text mt='-8px'><b>{totalTivyarBackTo100} words</b></Text>
+      <Text fontSize='lg'><i>approx. every</i></Text>
+      <Text mt='-8px'><b>{totalTivyarMins75} mins {totalTivyarSecsAdj75} secs</b></Text>
+      <Text fontSize='lg'><i>to keep Tivyar at or above</i></Text>
+      <Text mt='-8px'><b>{totalTivyar75} HP</b></Text>
+
+      </VStack>    
+    </TabPanel>
+  </TabPanels>
+}
+
 {ViyuIsShown &&
   <TabPanels mt='-20px' style={{backgroundColor: '#1a1521'}}>
     <TabPanel>
@@ -63381,7 +68723,7 @@ const VoidWignow60Def = () => {
 </Tabs>
 
 {(VanstraIsShown || ViIsShown || VoidWignowIsShown || WyrteIsShown || LucerebIsShown||  ProfBartIsShown || ViyuIsShown || 
-ViyusaIsShown || VanspiIsShown ||  VanvriIsShown || ViradiseIsShown) && (DefenseStat === 0) &&
+ViyusaIsShown || VanspiIsShown || TivyarIsShown ||  VanvriIsShown || ViradiseIsShown) && (DefenseStat === 0) &&
 
 <Container align='center' mt='12px' width='275px' padding='12px' rounded='10px' style={{backgroundColor: 'rgba(0,0,0,0.36'}}>
 <Text fontSize='md'>psst - your defense stat is currently 0 </Text>
@@ -63390,7 +68732,7 @@ ViyusaIsShown || VanspiIsShown ||  VanvriIsShown || ViradiseIsShown) && (Defense
 }
 
 {(ViIsShown || WyrteIsShown || LucerebIsShown || ProfBartIsShown || ViyuIsShown || 
-ViyusaIsShown || VanspiIsShown ||  VanvriIsShown || ViradiseIsShown) && !Tab2IsShown && (DefenseStat>0) &&
+ViyusaIsShown || VanspiIsShown || TivyarIsShown ||  VanvriIsShown || ViradiseIsShown) && !Tab2IsShown && (DefenseStat>0) &&
 
 <Container mt='15px'>
 
@@ -63735,6 +69077,39 @@ Scroll down for detailed instructions and tips for use
   </Container>
   }
 
+{GuidedCountdownMinIsShown && TivyarIsShown &&
+  <Container height='180px' align='center' style={{backgroundColor: '#000000'
+  }} >
+          <Text pt='15px' mt='20px' mb='3px' fontSize='md'>
+        <span>Paste </span>
+        <span style={{color: '#B794F4'}}><b>{totalTivyarHPToLose} words</b></span><br/><span> every </span>
+          <span style={{color: '#B794F4'}}><b>{totalTivyarMins10}m {totalTivyarSecs10}s</b></span>
+        <br/>
+        <span> to stay at or above </span>
+          <span style={{color: '#B794F4'}}><b>{totalTivyarDownTo10} HP</b></span>
+          </Text>  
+          <HStack>
+<Button mt='15px' mb='15px' height='50px' onClick={setGuidedCountdownActive}>Reset<br/>Battle</Button>
+          <Tivyar26 /><Tivyar28 /><Tivyar30 /><Tivyar32 /><Tivyar34 /><Tivyar36 /><Tivyar38 /><Tivyar40 /><Tivyar42 /><Tivyar44 />
+          <Tivyar46 /><Tivyar48 /><Tivyar50 /><Tivyar52 /><Tivyar54 /><Tivyar56 /><Tivyar58 /><Tivyar60 /><Tivyar62 /><Tivyar64 />
+          <Tivyar66 /><Tivyar68 /><Tivyar70 /><Tivyar72 /><Tivyar74 /><Tivyar76 /><Tivyar78 /><Tivyar80 /><Tivyar82 /><Tivyar84 />
+          <Tivyar86 /><Tivyar88 /><Tivyar90 />
+          </HStack>
+        </Container>}
+{GuidedCountdownMinIsShown && TivyarIsShown &&
+  <Container mt='-10px' pb='50px' overflowY='scroll' height='475px' style={{backgroundColor: '#00000080'}}>
+<TivyarTimerMin />
+<TivyarTimerMin2 />
+<TivyarTimerMin3 />
+<TivyarTimerMin4 />
+<TivyarTimerMin5 />
+<TivyarTimerMin6 />
+<TivyarTimerMin7 />
+<TivyarTimerMin8 />
+<TivyarTimerMin9 />
+</Container>
+}
+
 {!Tab2IsShown &&
   <Container align='center' mt='25px'>
 <Text fontSize='xl' mt='35px'><b>Guided Countdown Instructions</b></Text>
@@ -63954,7 +69329,7 @@ Scroll down for detailed instructions and tips for use
 
 
 
-{(VanstraIsShown || ViIsShown || VoidWignowIsShown || WyrteIsShown || LucerebIsShown || ProfBartIsShown || ViyuIsShown || 
+{(VanstraIsShown || ViIsShown || VoidWignowIsShown || WyrteIsShown || LucerebIsShown || ProfBartIsShown || TivyarIsShown || ViyuIsShown || 
 ViyusaIsShown || VanspiIsShown ||  VanvriIsShown || ViradiseIsShown) && Tab2IsShown && (DefenseStat>=99) &&
 
 <Text pt='25px' mb='100px'>
@@ -63962,7 +69337,7 @@ Due to a bug that disallows typing above 100 HP, it's impossible to get a 4x mul
 </Text>
 }
 
-{(VanstraIsShown || ViIsShown || VoidWignowIsShown || WyrteIsShown || LucerebIsShown || ProfBartIsShown || ViyuIsShown || 
+{(VanstraIsShown || ViIsShown || VoidWignowIsShown || WyrteIsShown || LucerebIsShown || ProfBartIsShown || TivyarIsShown || ViyuIsShown || 
 ViyusaIsShown || VanspiIsShown ||  VanvriIsShown || ViradiseIsShown) && Tab2IsShown && (DefenseStat<=99) && (DefenseStat>0) &&
 
 <Container align='center' mt='15px'>
@@ -64380,6 +69755,106 @@ Scroll down for detailed instructions and tips for use
 }
 {GuidedCountdownIsShown && VanspiIsShown &&
   <DelayComponentVanspiProfBLoop4x mt='-20px' style={{position: 'absolute',}} />
+}
+
+{GuidedCountdownIsShown && TivyarIsShown &&
+  <Container height='180px' align='center' style={{backgroundColor: '#000000'
+  }} >
+      	<Text pt='15px' mt='20px' mb='3px' fontSize='md'>
+          <span>Paste </span><span style={{color: '#B794F4'}}><b>{totalTivyarBackTo100} words</b></span><br/><span> every </span>
+      	<span style={{color: '#B794F4'}}><b>{totalTivyarMins75}m {totalTivyarSecsAdj75}s</b></span><br/><span> to stay at or above </span>
+      	<span style={{color: '#B794F4'}}><b>{totalTivyar75} HP</b></span>
+
+      	</Text>
+
+
+        <HStack>
+  <Button mt='15px' mb='15px' height='50px' onClick={setGuidedCountdownActive}>Reset<br/>Battle</Button>
+<Tivyar4 />
+<Tivyar5 />
+<Tivyar6 />
+<Tivyar7 />
+<Tivyar8 />
+<Tivyar9 />
+<Tivyar10 />
+<Tivyar11 />
+<Tivyar12 />
+<Tivyar13 />
+<Tivyar14 />
+<Tivyar15 />
+<Tivyar16 />
+<Tivyar17 />
+<Tivyar18 />
+<Tivyar19 />
+<Tivyar20 />
+<Tivyar21 />
+<Tivyar22 />
+</HStack>
+</Container>}
+
+{GuidedCountdownIsShown && TivyarIsShown &&
+  <Container mt='-10px' pb='50px' overflowY='scroll' height='475px' style={{backgroundColor: '#00000080'}}>
+<TivyarTimer4 />
+<TivyarTimer5 />
+<TivyarTimer6 />
+<TivyarTimer7 />
+<TivyarTimer8 />
+<TivyarTimer9 />
+<TivyarTimer10 />
+<TivyarTimer11 />
+<TivyarTimer12 />
+<TivyarTimer13 />
+<TivyarTimer14 />
+<TivyarTimer15 />
+<TivyarTimer16 />
+<TivyarTimer17 />
+<TivyarTimer18 />
+<TivyarTimer19 />
+<TivyarTimer20 />
+<TivyarTimer21 />
+<TivyarTimer22 />
+<TivyarTimer23 />
+<TivyarTimer24 />
+<TivyarTimer25 />
+<TivyarTimer26 />
+<TivyarTimer27 />
+<TivyarTimer28 />
+<TivyarTimer29 />
+<TivyarTimer30 />
+<TivyarTimer31 />
+<TivyarTimer32 />
+<TivyarTimer33 />
+<TivyarTimer34 />
+<TivyarTimer35 />
+<TivyarTimer36 />
+<TivyarTimer37 />
+<TivyarTimer38 />
+<TivyarTimer39 />
+<TivyarTimer40 />
+<TivyarTimer41 />
+<TivyarTimer42 />
+<TivyarTimer43 />
+<TivyarTimer44 />
+<TivyarTimer45 />
+<TivyarTimer46 />
+<TivyarTimer47 />
+<TivyarTimer48 />
+<TivyarTimer49 />
+<TivyarTimer50 />
+<TivyarTimer51 />
+<TivyarTimer52 />
+<TivyarTimer53 />
+<TivyarTimer54 />
+<TivyarTimer55 />
+<TivyarTimer56 />
+<TivyarTimer57 />
+<TivyarTimer58 />
+<TivyarTimer59 />
+<TivyarTimer60 />
+</Container>
+}
+{GuidedCountdownIsShown && TivyarIsShown &&
+  <DelayComponentTivyarLoop4x mt='-20px' style={{position: 'absolute',}} />
 }
 
 {GuidedCountdownIsShown && ViyuIsShown &&
